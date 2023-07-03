@@ -1,0 +1,210 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-149-398177_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.uvo.gov.sk/vyhladavanie-zakaziek/detail/dokumenty/433325"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-149-398177_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "70"@sk .
+
+epd:id_2021-S-149-398177_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Sporeba paliva l/100km"@sk;
+  cccev:weight "30"@sk .
+
+epd:id_2021-S-149-398177_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://www.uvo.gov.sk/vyhladavanie-profilov/zakazky/8324"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-149-398177_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-149-398177_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-149-398177_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Ing. Peter Nemec"@sk;
+  epo:hasInternetAddress "https://arriva.sk"^^xsd:anyURI;
+  cccev:email "peter.nemec@arriva.sk" .
+
+epd:id_2021-S-149-398177_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "okres: Trnava, mesto: Trnava"@sk .
+
+epd:id_2021-S-149-398177_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SK021>;
+  locn:address epd:id_2021-S-149-398177_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-149-398177_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-149-398177_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-149-398177_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-149-398177_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-149-398177_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a epo:EAuctionTechniqueUsage .
+
+epd:id_2021-S-149-398177_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasContactName "JUDr. Dávid Šišmič"@sk;
+  epo:hasInternetAddress "https://arriva.sk"^^xsd:anyURI;
+  cccev:email "dsismic@cratus.sk";
+  cccev:telephone "+421 220769282" .
+
+epd:id_2021-S-149-398177_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SK010>;
+  locn:postCode "81101";
+  locn:postName "Bratislava";
+  locn:thoroughfare "Gorkého 5" .
+
+epd:id_2021-S-149-398177_InformationProviderOrganisationIdentifier_FxmRFqszG85mxBF5kaCcKe
+  a epo:Identifier;
+  epo:hasIdentifierValue "36862584" .
+
+epd:id_2021-S-149-398177_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasID epd:id_2021-S-149-398177_InformationProviderOrganisationIdentifier_FxmRFqszG85mxBF5kaCcKe;
+  epo:hasLegalName "CRATUS SK, s. r. o."@sk;
+  cccev:registeredAddress epd:id_2021-S-149-398177_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2021-S-149-398177_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34121400>, <http://data.europa.eu/cpv/cpv/50100000> .
+
+epd:id_2021-S-149-398177_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-149-398177_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Predmetom zákazky je nákup autobusov prímestskej dopravy typu low entry v počte 16 ks, vrátane riadiacich, kamerových, informačných, komunikačných systémov a predprípravy tarifných systémov a zabezpečenie ďalších tovarov a služieb súvisiacich s opravou a údržbou autobusov."@sk;
+  epo:hasEstimatedValue epd:id_2021-S-149-398177_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-149-398177_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-149-398177_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ,
+    epd:id_2021-S-149-398177_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J .
+
+epd:id_2021-S-149-398177_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 3288000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-149-398177_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 3288000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-149-398177_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-149-398177_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-149-398177_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2021-S-149-398177_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-149-398177_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-07-30"^^xsd:date;
+  epo:hasID epd:id_2021-S-149-398177_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210804";
+  epo:refersToLot epd:id_2021-S-149-398177_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-149-398177_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-149-398177_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 149-398177" .
+
+epd:id_2021-S-149-398177_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SK021>;
+  locn:postCode "91702";
+  locn:postName "Trnava";
+  locn:thoroughfare "Nitrianska 5" .
+
+epd:id_2021-S-149-398177_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "36249840" .
+
+epd:id_2021-S-149-398177_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2021-S-149-398177_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "ARRIVA Trnava, a.s."@sk;
+  epo:hasMainActivityDescription "Autobusová doprava";
+  cccev:registeredAddress epd:id_2021-S-149-398177_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-149-398177_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2022-01-10"^^xsd:date;
+  epo:hasEnd "2022-01-30"^^xsd:date .
+
+epd:id_2021-S-149-398177_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "ARRIVA/TT/VS/4/2021" .
+
+epd:id_2021-S-149-398177_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34121100> .
+
+epd:id_2021-S-149-398177_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-149-398177_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "(1) Zákazka bude zadaná postupom verejnej súťaže podľa § 91 ods. 1 ZVO v nadväznosti na § 66 ZVO s použitím elektronickej aukcie.(2) Podmienky účasti týkajúce sa ekonomického a finančného postavenia sú uvedené v súťažných podkladoch. Uchádzač musí v ponuke predložiť informácie a dokumenty, ktorými preukazuje ekonomické a finančné postavenie zmysle § 33 ods. 1 písm. d) ZVO.(3) Podmienky účasti týkajúce sa technickej a odbornej spôsobilosti sú uvedené v súťažných podkladoch. Uchádzač musí v ponuke predložiť informácie a dokumenty, ktorými preukazuje technickú alebo odbornú spôsobilosť v zmysle § 34 ods. 1 písm. a) a d) ZVO.(4) Všetky náklady a výdavky spojené s prípravou a predložením ponuky, dokladov ktorými preukazuje splnenie podmienok účasti a iných dokladov, súvisiacich s týmto oznámením znáša záujemca/uchádzač bez finančného nároku voči obstarávateľovi, a to bez ohľadu na výsledok verejného obstarávania.(5) Obstarávateľ je povinný zrušiť vyhlásený postup zadávania nadlimitnej zákazky v prípadoch stanovených ZVO. Obstarávateľ môže zrušiť verejné obstarávanie alebo jeho časť aj vtedy, ak sa zmenili okolnosti, za ktorých sa vyhlásilo verejné obstarávanie, ak sa v priebehu postupu verejného obstarávania vyskytli dôvody hodné osobitného zreteľa, pre ktoré nemožno od obstarávateľa požadovať, aby vo verejnom obstarávaní pokračoval, najmä ak sa zistilo porušenie ZVO, ktoré má alebo by mohlo mať zásadný vplyv na výsledok verejného obstarávania, ak nebolo predložených viac ako dve ponuky alebo ak navrhované ceny v predložených ponukách sú vyššie ako predpokladaná hodnota. Ak bola predložená len jedna ponuka a obstarávateľ nezrušil verejné obstarávanie alebo jeho časť, je povinný zverejniť v profile odôvodnenie, prečo verejné obstarávanie nezrušil.(6) Akákoľvek komunikácia medzi obstarávateľom a záujemcami/uchádzačmi bude výlučne v slovenskom jazyku a písomnou formou prostredníctvom komunikačného modulu systému EVO. Zo strany záujemcu/ uchádzača bude akceptovaný aj český jazyk. V prípade preukázateľného výpadku a/alebo nedostupnosti systému EVO možno komunikáciu medzi obstarávateľom a záujemcami/uchádzačmi uskutočňovať aj písomne. Bližšie informácie o komunikácii sú uvedené v súťažných podkladoch.(7) Na prepočet inej meny sa použije priemerný ročný kurz Európskej centrálnej banky za príslušný kalendárny rok a za rok 2021 kurz Európskej centrálnej banky ku dňu zaslania oznámenia o vyhlásení verejného obstarávania do Úradného vestníka Európskej únie; v prípade, ak kurz danej meny nestanovuje Európska centrálna banka, prepočet sa vykoná obdobným spôsobom podľa kurzu Národnej banky Slovenska.(8) Ak uchádzač preukazuje splnenie podmienok účasti prostredníctvom Jednotného európskeho dokumentu v časti IV Jednotného európskeho dokumentu môže vyplniť len oddiel: Globálny údaj pre všetky podmienky účasti bez toho, aby musel vyplniť iné oddiely častí IV Jednotného európskeho dokumentu."@sk;
+  epo:hasDescription "Predmetom zákazky je nákup autobusov prímestskej dopravy a zabezpečenie ďalších tovarov a služieb súvisiacich sopravou a údržbou autobusov."@sk;
+  epo:hasEstimatedValue epd:id_2021-S-149-398177_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2021-S-149-398177_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-149-398177_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-149-398177_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Nákup autobusov pre prímestskú dopravu v regióne Trnava – 10,5 m – 2. etapa"@sk;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-149-398177_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-149-398177_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-149-398177_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-149-398177_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-149-398177_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2021-S-149-398177_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2021-S-149-398177_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  locn:postCode "82005";
+  locn:postName "Bratislava";
+  locn:thoroughfare "Ružová dolina 10, P.O.BOX" .
+
+epd:id_2021-S-149-398177_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+421 250264219";
+  epo:hasInternetAddress "http://www.uvo.gov.sk"^^xsd:anyURI;
+  cccev:telephone "+421 250264176" .
+
+epd:id_2021-S-149-398177_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Úrad pre verejné obstarávanie"@sk;
+  epo:hasPrimaryContactPoint epd:id_2021-S-149-398177_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-149-398177_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-149-398177_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-149-398177_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-149-398177_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+421 250264219";
+  epo:hasInternetAddress "http://www.uvo.gov.sk"^^xsd:anyURI;
+  cccev:telephone "+421 250264176" .
+
+epd:id_2021-S-149-398177_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  locn:postCode "82005";
+  locn:postName "Bratislava";
+  locn:thoroughfare "Ružová dolina 10, P.O.BOX" .
+
+epd:id_2021-S-149-398177_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Úrad pre verejné obstarávanie"@sk;
+  epo:hasPrimaryContactPoint epd:id_2021-S-149-398177_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-149-398177_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-149-398177_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-149-398177_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-149-398177_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "CS", "SK";
+  epo:hasSubmissionURL "https://www.uvo.gov.sk/vyhladavanie-zakaziek/detail/433325"^^xsd:anyURI .

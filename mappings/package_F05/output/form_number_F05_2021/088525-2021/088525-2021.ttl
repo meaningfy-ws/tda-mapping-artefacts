@@ -1,0 +1,158 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-035-088525_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://tisseo.marches-publics.info/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-035-088525_AwardCriterionCost_cC3ziTMBQ3JgrEnVYmznhR a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Prix"@fr;
+  cccev:weight "30"@fr .
+
+epd:id_2021-S-035-088525_AwardCriterionQuality_MHHVFRAwG5ikE4mcm67ZLA a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Adéquation de la méthodologie"@fr;
+  cccev:weight "30"@fr .
+
+epd:id_2021-S-035-088525_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Adéquation de l'organisation"@fr;
+  cccev:weight "40"@fr .
+
+epd:id_2021-S-035-088525_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://tisseo.marches-publics.info/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-035-088525_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-035-088525_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-035-088525_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.tisseo.fr"^^xsd:anyURI;
+  cccev:email "commande-publique@tisseo-ingenierie.fr";
+  cccev:telephone "+33 561144850" .
+
+epd:id_2021-S-035-088525_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ23> .
+
+epd:id_2021-S-035-088525_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-035-088525_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-035-088525_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-035-088525_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-035-088525_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-035-088525_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-035-088525_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2021-S-035-088525_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71210000>, <http://data.europa.eu/cpv/cpv/71221000>,
+    <http://data.europa.eu/cpv/cpv/92522000> .
+
+epd:id_2021-S-035-088525_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-035-088525_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Le présent accord-cadre mono-attributaire a pour objectif de retenir un maître d'œuvre, capable de réaliser les missions énoncées dans les articles R. 2431-1 à R. 2431-3 et R. 2431-19 à R. 2431-23 du code de la commande publique relatifs à la mission de maîtrise d'œuvre privée et les articles R. 621-25 à R.  621-44 du code du patrimoine relatif à la maîtrise d'œuvre sur les immeubles classés au titre des monuments historiques (étude d'évaluation et de diagnostic, mission de maîtrise d'œuvre et missions complémentaires…) le monument concerné est le Monument à la Gloire des Combattants de la Haute-Garonne, monument historique inscrit appartenant à la ville de Toulouse, afin de pouvoir réaliser les travaux de construction de la station François Verdier de la 3e ligne de métro de Toulouse."@fr;
+  epo:hasPurpose epd:id_2021-S-035-088525_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-035-088525_AwardCriterionCost_cC3ziTMBQ3JgrEnVYmznhR,
+    epd:id_2021-S-035-088525_AwardCriterionQuality_MHHVFRAwG5ikE4mcm67ZLA, epd:id_2021-S-035-088525_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J .
+
+epd:id_2021-S-035-088525_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-035-088525_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-035-088525_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-035-088525_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-02-16"^^xsd:date;
+  epo:hasID epd:id_2021-S-035-088525_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210219";
+  epo:refersToLot epd:id_2021-S-035-088525_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-035-088525_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-035-088525_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 035-088525" .
+
+epd:id_2021-S-035-088525_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ23>;
+  locn:postCode "31004";
+  locn:postName "Toulouse";
+  locn:thoroughfare "21 boulevard de la Marquette, BP 10416" .
+
+epd:id_2021-S-035-088525_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "40837074000032" .
+
+epd:id_2021-S-035-088525_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2021-S-035-088525_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Société de la mobilité de l'agglomération toulousaine"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2021-S-035-088525_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-035-088525_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "M3_ac_moe Mgc" .
+
+epd:id_2021-S-035-088525_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71240000> .
+
+epd:id_2021-S-035-088525_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-035-088525_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Les dépôts de plis doivent être impérativement remis par voie dématérialisée. Pour retrouver cet avis intégral, accéder au DCE, poser des questions à l'acheteur, déposer un pli, allez sur http://tisseo.marches-publics.info/ — L'accord-cadre donnera lieu à la conclusion d'un premier marché subséquent qui portera sur:— une étude de diagnostic préalable tel que défini à l'article R. 2431-19 du code de la commande publique pour disposer d'une connaissance globale de l'édifice d'un point de vue administratif, historique, archéologique, architectural, sculptural, technique et notamment des modalités de sa construction entre 1920 et 1931 et des interventions ultérieures;— une étude d'évaluation pour vérifier la faisabilité de solutions de déplacement/replacement in situ ou démontage/remontage in situ du monument à la gloire des combattants de la Haute-Garonne, le temps des travaux de construction de la station François Verdier de la 3e ligne de métro — les résultats de cette étude constitueront le programme détaillé du 2nd marché subséquent, ce premier marché sera suivi le cas échéant, en fonction des résultats des études ci-dessus et de l'avis du conservateur régional des monuments historiques selon le choix du maître d'ouvrage par:— des mission(s) de base de maîtrise d'œuvre telle que définie par l'article R. 621-34 du code du patrimoine et dans l'arrêté du 22.3.2019 précisant les modalités techniques d'exécution des éléments de mission de maîtrise d'œuvre confiés par des maîtres d'ouvrage publics à des prestataires de droit privé pris en application de l'article R. 2431-37 du code de la commande publique. La description complète des missions et du contexte de l'opération est présentée dans le règlement d'appel à candidature librement téléchargeable sur le site www.tisseo.fr espace marchés publics.Documents à fournir au dossier de candidature: le candidat devra fournir:— une attestation de conformité au règlement (UE) 2016/679 du Parlement européen et du Conseil du 27.4.2016, relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel (RGPD);— le formulaire déclaratif de prévention des risques de conflits d'intérêt et de distorsion de la concurrence annexé au règlement d'appel à la candidature."@fr;
+  epo:hasDescription "Le présent accord-cadre mono-attributaire a pour objectif de retenir un maître d'œuvre, capable de réaliser les missions énoncées dans les articles R. 2431-1 à R. 2431-3 et R. 2431-19 à R. 2431-23 du code de la commande publique relatifs à la mission de maîtrise d'œuvre privée et les articles R. 621-25 à R.  621-44 du code du patrimoine relatif à la maîtrise d'œuvre sur les immeubles classés au titre des monuments historiques (étude d'évaluation et de diagnostic, mission de maîtrise d'œuvre et missions complémentaires…) le monument concerné est le Monument à la Gloire des Combattants de la Haute-Garonne, monument historique inscrit appartenant à la ville de Toulouse, afin de pouvoir réaliser les travaux de construction de la station François Verdier de la 3e ligne de métro de Toulouse."@fr;
+  epo:hasID epd:id_2021-S-035-088525_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-035-088525_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-035-088525_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Maîtrise d'œuvre pour le déplacement du Monument à la Gloire des Combattants"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-035-088525_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-035-088525_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-035-088525_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB,
+    epd:id_2021-S-035-088525_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-035-088525_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-035-088525_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-035-088525_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-035-088525_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-035-088525_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Toute décision pourra faire l'objet d'un recours:— conformément aux dispositions de l'article R. 421-1 du code de la justice administrative dans un délai de deux mois à compter de la notification de la décision d'attribution ou de rejet;— conformément aux dispositions de l'article L. 551-5 du code de la justice administrative avant la conclusion du contrat (référé précontractuel pouvant être introduit depuis le début de la procédure de passation jusqu'à la signature du contrat);— conformément aux dispositions de l'article L. 551-13 du code de la justice administrative, après la conclusion du contrat;— conformément aux dispositions de l'article L. 521-1 du code de la justice administrative, dans un délai de deux mois à compter de la publication de l'avis d'attribution." .
+
+epd:id_2021-S-035-088525_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 562735740";
+  cccev:email "greffe.ta-toulouse@juradm.fr";
+  cccev:telephone "+33 562735757" .
+
+epd:id_2021-S-035-088525_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "31068";
+  locn:postName "Toulouse";
+  locn:thoroughfare "68 rue Raymond IV" .
+
+epd:id_2021-S-035-088525_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Toulouse"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-035-088525_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-035-088525_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-035-088525_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-035-088525_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-035-088525_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://tisseo.marches-publics.info/"^^xsd:anyURI .

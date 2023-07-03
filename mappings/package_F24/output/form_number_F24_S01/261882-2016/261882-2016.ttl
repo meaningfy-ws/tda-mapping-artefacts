@@ -1,0 +1,194 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-145-261882_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://marches.maximilien.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2016-S-145-261882_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://marches.maximilien.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-145-261882_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2016-S-145-261882_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2016-S-145-261882_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasFax "+33 143370253";
+  epo:hasInternetAddress "http://www.paris.fr"^^xsd:anyURI;
+  cccev:email "dvd-ssc-mib@paris.fr";
+  cccev:telephone "+33 144672919" .
+
+epd:id_2016-S-145-261882_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+Parc de stationnement «Malesherbes-Anjou» implanté sous le boulevard Malesherbes à Paris 8e.
+"""@fr .
+
+epd:id_2016-S-145-261882_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:address epd:id_2016-S-145-261882_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2016-S-145-261882_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2016-S-145-261882_Period_RgULVPVVYP9pkvK789PCUZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-145-261882_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2016-S-145-261882_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-145-261882_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/63712400> .
+
+epd:id_2016-S-145-261882_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-145-261882_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation """
+Dans le parc, une modernisation relativement importante est prévue. Celle-Ci portera sur l'amélioration du confort et de la sécurité des usagers et sur la fonctionnalité globale de l'ouvrage. Est également prévue l'amélioration de l'accessibilité et de la sécurité vis-à-vis des risques incendie. Certains équipements obsolètes seront déposés et des nouveaux plus performants seront mis en place.
+"""@fr;
+  epo:hasDescription """
+À compter de la prise d'effet du contrat, les emplacements du parc seront exploités en stationnement horaire et abonnement. Aucune amodiation n'est prévue. Une tarification spécifique sera proposée aux résidents du secteur et aux PMR; le stationnement des véhicules basse émission, VE et GPL et de ceux de petit gabarit sera facilité; celui des 2-roues sera assuré dans des zones spécifiques. Le futur délégataire devra faciliter l'implantation de sociétés de location de véhicules à temps partagé ainsi que des sociétés proposant tout service visant à favoriser les modes de déplacements propres en leur consentant des tarifs d'abonnement spécifiques, il s'engage à prévoir la réservation d'emplacements pour le service Autolib', de même, il ne pourra s'opposer à l'implantation éventuelle d'un espace logistique urbain. Le parc devra être accessible à tous les usagers 24h/24, 7j/7. La surveillance permanente et l'entretien de l'ouvrage seront assurés.
+"""@fr;
+  epo:hasPurpose epd:id_2016-S-145-261882_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-145-261882_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-145-261882_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2016-S-145-261882_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2016-S-145-261882_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2016-S-145-261882_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2016-S-145-261882_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2016-07-25"^^xsd:date;
+  epo:hasID epd:id_2016-S-145-261882_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20160729";
+  epo:refersToLot epd:id_2016-S-145-261882_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2016-S-145-261882_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2016-S-145-261882_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 145-261882" .
+
+epd:id_2016-S-145-261882_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75012";
+  locn:postName "Paris";
+  locn:thoroughfare "Service des déplacements — section du stationnement concédé — Mme la cheffe de la section du stationnement concédé — 15 boulevard Carnot" .
+
+epd:id_2016-S-145-261882_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Ville de Paris"@fr;
+  epo:hasMainActivityDescription "Collectivité territoriale";
+  cccev:registeredAddress epd:id_2016-S-145-261882_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2016-S-145-261882_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;
+  epo:hasBeginning "2018-02-01"^^xsd:date;
+  epo:hasEnd "2030-01-31"^^xsd:date .
+
+epd:id_2016-S-145-261882_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2016V37D3DSP-R1467" .
+
+epd:id_2016-S-145-261882_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/63712400> .
+
+epd:id_2016-S-145-261882_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-145-261882_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+Les candidats pourront se présenter seuls ou en groupement, ils devront mentionner l'identification de la société, sa forme juridique, le n d'immatriculation au RCS (ou pièce équivalente pour les sociétés étrangères) ainsi que l'identité des personnes ayant pouvoir d'engager la société. Si le candidat s'appuie sur les capacités d'autres opérateurs économiques pour présenter sa candidature, il doit les mentionner dans sa lettre de candidature et, produire pour chacun d'eux, les mêmes documents que ceux qui sont exigés de lui pour justifier de ses capacités, ainsi qu'un engagement écrit de chacun d'eux justifiant qu'il disposera de leurs capacités pour l'exécution de la concession.
+La sélection des candidats se fera sur l'examen de leurs capacités financière et technique et leur aptitude à assurer la continuité du service public et l'égalité des usagers devant le service public.
+"""@fr;
+  epo:hasDescription """
+Délégation de service public, d'une durée de 12 ans pour assurer l'exploitation et la modernisation du parc de stationnement souterrain «Malesherbes-Anjou» d'une capacité d'environ 945 places réparties sur 5 niveaux et destiné aux usagers horaires et aux abonnés.
+"""@fr;
+  epo:hasID epd:id_2016-S-145-261882_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-145-261882_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2016-S-145-261882_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+Exploitation et modernisation du parc de stationnement souterrain «Malesherbes-Anjou» à Paris 8e.
+"""@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-145-261882_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2016-S-145-261882_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2016-S-145-261882_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2016-S-145-261882_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-145-261882_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2016-S-145-261882_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2016-S-145-261882_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2016-S-145-261882_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2016-S-145-261882_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-145-261882_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2016-S-145-261882_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2016-S-145-261882_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-145-261882_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2016-S-145-261882_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Introduction du recours.
+""" .
+
+epd:id_2016-S-145-261882_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2016-S-145-261882_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2016-S-145-261882_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-145-261882_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2016-S-145-261882_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2016-S-145-261882_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-145-261882_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2016-S-145-261882_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2016-S-145-261882_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75012";
+  locn:postName "Paris";
+  locn:thoroughfare "Les candidatures devront être reçues sous pli scellé recommandé AR ou déposées contre récépissé et l'enveloppe portera les mentions: «Candidature pour la concession du parc de stationnement “Malesherbes-Anjou” à Paris 8e “Ne pas ouvrir avant la Commission”»" .
+
+epd:id_2016-S-145-261882_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasFax "+33 143370253";
+  epo:hasInternetAddress "http://www.paris.fr"^^xsd:anyURI;
+  cccev:email "dvd-ssc-mib@paris.fr";
+  cccev:telephone "+33 144672919" .
+
+epd:id_2016-S-145-261882_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Mairie de Paris — Direction de la voirie et des déplacements — service des déplacements — section du stationnement concédé — bureau 204 — 2e étage — 15 boulevard Carnot"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-145-261882_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2016-S-145-261882_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2016-S-145-261882_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-145-261882_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2016-S-145-261882_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

@@ -1,0 +1,226 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-205-499471_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://pt.vortal.biz/gov-setor-publico"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-205-499471_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38 a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-205-499471_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38;
+  epo:playedBy epd:id_2019-S-205-499471_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2019-S-205-499471_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38 a cccev:ContactPoint;
+  epo:hasInternetAddress "http://pt.vortal.biz/gov-setor-publico"^^xsd:anyURI;
+  cccev:email "mail.cglon@dgaccp.pt" .
+
+epd:id_2019-S-205-499471_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 a org:Organization;
+  epo:hasID epd:id_2019-S-205-499471_OrganisationIdentifier_5ZAqFrPEQTFNv88ScKSm38;
+  epo:hasLegalName "Consulado Geral de Portugal em Londres"@pt;
+  cccev:registeredAddress epd:id_2019-S-205-499471_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2019-S-205-499471_AwardCriterionPrice_3uGTM2cqEne5njpKeoEoLF a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2019-S-205-499471_AwardCriterionPrice_RBGYEez98Pij3NLYxwzMz2 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2019-S-205-499471_BuyerOrganisationGroup_5ZAqFrPEQTFNv88ScKSm38 a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  epo:hasMember epd:id_2019-S-205-499471_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2019-S-205-499471_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-205-499471_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-205-499471_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-205-499471_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-205-499471_Channel_iRCDPixbNsrvdzVqkxqWso a cccev:Channel;
+  epo:hasURL "http://pt.vortal.biz/gov-setor-publico"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2019-S-205-499471_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.portaldiplomatico.mne.gov.pt/"^^xsd:anyURI;
+  cccev:email "umc@mne.pt";
+  cccev:telephone "+351 213946414" .
+
+epd:id_2019-S-205-499471_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKI31> .
+
+epd:id_2019-S-205-499471_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKI31> .
+
+epd:id_2019-S-205-499471_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-205-499471_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-205-499471_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2019-S-205-499471_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-205-499471_Duration_VLUhcjCcfriMRVVeLidxGZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-205-499471_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2019-S-205-499471_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true .
+
+epd:id_2019-S-205-499471_Duration_VLUhcjCcfriMRVVeLidxGZ a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2019-S-205-499471_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2019-S-205-499471_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2019-S-205-499471_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2019-S-205-499471_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71356300> .
+
+epd:id_2019-S-205-499471_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71356300> .
+
+epd:id_2019-S-205-499471_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-205-499471_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Aquisição de 8 técnicos para 12 meses para apoio ao Consulado Geral de Portugal em Londres."@pt;
+  epo:hasEstimatedValue epd:id_2019-S-205-499471_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasID epd:id_2019-S-205-499471_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2019-S-205-499471_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasTitle "Aquisição de 8 técnicos para 12 meses"@pt;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2019-S-205-499471_AwardCriterionPrice_RBGYEez98Pij3NLYxwzMz2 .
+
+epd:id_2019-S-205-499471_Lot_kKEXkgEhBpbdu5CJYA2aUT a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-205-499471_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasDescription "Aquisição de 4 recursos humanos para 12 meses para apoio técnico ao Consulado Geral de Portugal em Londres."@pt;
+  epo:hasEstimatedValue epd:id_2019-S-205-499471_MainMonetaryValueLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasID epd:id_2019-S-205-499471_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2019-S-205-499471_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasTitle "Aquisição de 4 RH para 12 meses"@pt;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2019-S-205-499471_AwardCriterionPrice_3uGTM2cqEne5njpKeoEoLF .
+
+epd:id_2019-S-205-499471_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 290400.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-205-499471_MainMonetaryValueLot_kKEXkgEhBpbdu5CJYA2aUT a epo:MonetaryValue;
+  epo:hasAmountValue 145200.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-205-499471_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 435600.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-205-499471_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2019-S-205-499471_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2019-S-205-499471_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2019-S-205-499471_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2019-S-205-499471_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2019-S-205-499471_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2019-S-205-499471_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2019-10-21"^^xsd:date;
+  epo:hasID epd:id_2019-S-205-499471_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20191023";
+  epo:refersToLot epd:id_2019-S-205-499471_Lot_c4Jggv3QHLrvEuoxvHMwcK, epd:id_2019-S-205-499471_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:refersToProcedure epd:id_2019-S-205-499471_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2019-S-205-499471_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 205-499471" .
+
+epd:id_2019-S-205-499471_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKI31>;
+  locn:postCode "W1B 1HR";
+  locn:postName "Londres";
+  locn:thoroughfare "3, Portland Place" .
+
+epd:id_2019-S-205-499471_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/PRT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PT170>;
+  locn:postCode "1399-030";
+  locn:postName "Lisboa";
+  locn:thoroughfare "Palácio das Necessidades, Largo do Rilvas" .
+
+epd:id_2019-S-205-499471_OrganisationIdentifier_5ZAqFrPEQTFNv88ScKSm38 a epo:Identifier;
+  epo:hasIdentifierValue "N/A" .
+
+epd:id_2019-S-205-499471_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "600014576" .
+
+epd:id_2019-S-205-499471_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasID epd:id_2019-S-205-499471_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Secretaria-Geral do Ministério dos Negócios Estrangeiros"@pt;
+  cccev:registeredAddress epd:id_2019-S-205-499471_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-205-499471_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2019-S-205-499471_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2019-S-205-499471_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "441/UMC/2019" .
+
+epd:id_2019-S-205-499471_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71356300> .
+
+epd:id_2019-S-205-499471_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:hasLotAwardCombination "Caso seja adjudicado ao concorrente o Lote n.o 1, não poderá ser adjudicado o Lote n.o 2, a não ser que seja apresentada apenas uma proposta ou as outras propostas sejam excluídas.";
+  epo:hasMaximumNumberOfLotsToBeAwarded 1 .
+
+epd:id_2019-S-205-499471_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-205-499471_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "Aquisição de serviços técnicos de apoio ao consulado geral de Portugal em Londres."@pt;
+  epo:hasEstimatedValue epd:id_2019-S-205-499471_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2019-S-205-499471_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-205-499471_Lot_c4Jggv3QHLrvEuoxvHMwcK,
+    epd:id_2019-S-205-499471_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2019-S-205-499471_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Aquisição de serviços técnicos de apoio ao consulado geral de Portugal em Londres"@pt;
+  epo:isCoveredByGPA false;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-205-499471_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2019-S-205-499471_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG;
+  epo:usesChannel epd:id_2019-S-205-499471_Channel_iRCDPixbNsrvdzVqkxqWso .
+
+epd:id_2019-S-205-499471_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2019-11-25"^^xsd:date .
+
+epd:id_2019-S-205-499471_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-205-499471_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-205-499471_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-205-499471_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  cccev:email "umc@mne.pt";
+  cccev:telephone "+351 213946133" .
+
+epd:id_2019-S-205-499471_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/PRT>;
+  locn:postCode "1399-030";
+  locn:postName "Lisboa";
+  locn:thoroughfare "Palácio das Necessidades, Largo do Rilvas" .
+
+epd:id_2019-S-205-499471_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Ministro dos Negócios Estrangeiros"@pt;
+  epo:hasPrimaryContactPoint epd:id_2019-S-205-499471_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2019-S-205-499471_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2019-S-205-499471_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-205-499471_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2019-S-205-499471_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-205-499471_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-205-499471_Organisation_gqoAAwSV3JaTMsopb9zyKP .

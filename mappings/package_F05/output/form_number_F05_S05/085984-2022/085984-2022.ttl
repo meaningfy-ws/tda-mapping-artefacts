@@ -1,0 +1,171 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-033-085984_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://eu.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=323900&B=ENERGINET"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-033-085984_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://eu.eu-supply.com/ctm/Company/CompanyInformation/Index/228008"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-033-085984_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-033-085984_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-033-085984_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Procurement - R"@en;
+  epo:hasInternetAddress "https://eu.eu-supply.com/ctm/supplier/publictenders?B=ENERGINET"^^xsd:anyURI;
+  cccev:email "indkob@energinet.dk";
+  cccev:telephone "+45 70102244" .
+
+epd:id_2022-S-033-085984_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK> .
+
+epd:id_2022-S-033-085984_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-033-085984_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-033-085984_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Options to prolong the Contract 2 x 1 year."@en .
+
+epd:id_2022-S-033-085984_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2022-S-033-085984_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-033-085984_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/66132000>, <http://data.europa.eu/cpv/cpv/72200000> .
+
+epd:id_2022-S-033-085984_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-033-085984_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "Please note that this following the competitive dialogue procedure. The Tender Documents may as a result undergo changes as part of the dialogue process."@en;
+  epo:hasDescription "The Object of the Procurement is stated in the tender document “the descriptive document” section 2."@en;
+  epo:hasEstimatedValue epd:id_2022-S-033-085984_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2022-S-033-085984_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-033-085984_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 50000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/DKK> .
+
+epd:id_2022-S-033-085984_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-033-085984_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2022-S-033-085984_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2022-S-033-085984_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2022-S-033-085984_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2022-S-033-085984_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2022-02-11"^^xsd:date;
+  epo:hasID epd:id_2022-S-033-085984_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220216";
+  epo:refersToLot epd:id_2022-S-033-085984_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2022-S-033-085984_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2022-S-033-085984_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 033-085984" .
+
+epd:id_2022-S-033-085984_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK>;
+  locn:postCode "7000";
+  locn:postName "Fredericia";
+  locn:thoroughfare "Tonne Kjærsvej 65" .
+
+epd:id_2022-S-033-085984_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "39314959" .
+
+epd:id_2022-S-033-085984_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2022-S-033-085984_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Energinet Systemansvar"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2022-S-033-085984_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-033-085984_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "22/00680" .
+
+epd:id_2022-S-033-085984_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/66100000> .
+
+epd:id_2022-S-033-085984_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2022-S-033-085984_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-033-085984_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription "The Contracting Authority wants to establish a contract concerning services related to the procurement of countertrade energy in the intraday market for Energinet.   The services will include:  1. Receiving (notification of) the requested countertrade volumes from Energinet 2. Netting of countertrade requests in case one adjacent TSO needs upward regulation and another adjacent TSO needs downward regulation in the same bidding zone (BZ), and set-tling the netted volumes at the DA-price, plus invoicing requesting TSOs   3. Procurement (sale) of countertrade energy on the intraday market, preferably including invoicing of and settlement directly with requesting TSOs   4. Data logging, data submission, data reporting  5. Secure operation  6. Performance in a REMIT compliant setup  7. Backup support 24/7/365"@en;
+  epo:hasID epd:id_2022-S-033-085984_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/comp-dial>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-033-085984_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2022-S-033-085984_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Procurement of countertrade energy services"@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-033-085984_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2022-S-033-085984_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb, epd:id_2022-S-033-085984_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2022-S-033-085984_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-033-085984_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-033-085984_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-033-085984_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  locn:postCode "2500";
+  locn:postName "Valby";
+  locn:thoroughfare "Carl Jacobsen Vej 35" .
+
+epd:id_2022-S-033-085984_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.kfst.dk"^^xsd:anyURI;
+  cccev:email "kfst@kfst.dk";
+  cccev:telephone "+45 41715000" .
+
+epd:id_2022-S-033-085984_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Konkurrence- og Forbrugerstyrelsen"@en;
+  epo:hasPrimaryContactPoint epd:id_2022-S-033-085984_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2022-S-033-085984_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2022-S-033-085984_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-033-085984_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2022-S-033-085984_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasInternetAddress "https://naevneneshus.dk/start-din-klage/klagenaevnet-for-udbud/"^^xsd:anyURI;
+  cccev:email "klfu@naevneneshus.dk";
+  cccev:telephone "+45 72405708" .
+
+epd:id_2022-S-033-085984_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  locn:postCode "8800";
+  locn:postName "Viborg";
+  locn:thoroughfare "Nævnenes Hus, Toldboden 2" .
+
+epd:id_2022-S-033-085984_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Klagenævntet for Udbud"@en;
+  epo:hasPrimaryContactPoint epd:id_2022-S-033-085984_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2022-S-033-085984_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-033-085984_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-033-085984_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-033-085984_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "http://eu.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=323900&B=ENERGINET"^^xsd:anyURI .
+
+epd:id_2022-S-033-085984_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-033-085984_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-033-085984_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

@@ -1,0 +1,158 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-067-174009_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA30460"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-067-174009_AwardCriterion_97fG5roZ9xxsBW4G4JCeEu a epo:AwardCriterion;
+  cccev:description "Price 40 %"@en .
+
+epd:id_2021-S-067-174009_AwardCriterion_nF5mLYwaayYGQ3jCBkmNPF a epo:AwardCriterion;
+  cccev:description "Quality 60 %"@en .
+
+epd:id_2021-S-067-174009_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA30460"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-067-174009_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-067-174009_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-067-174009_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Audrey Ashforth"@en;
+  epo:hasInternetAddress "https://www.msipdundee.com"^^xsd:anyURI;
+  cccev:email "finance@msipdundee.com";
+  cccev:telephone "+44 7890251123" .
+
+epd:id_2021-S-067-174009_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Dundee — Michelin Scotland Innovation Parc."@en .
+
+epd:id_2021-S-067-174009_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKM71>;
+  locn:address epd:id_2021-S-067-174009_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-067-174009_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-067-174009_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-067-174009_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-067-174009_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasEPayment true .
+
+epd:id_2021-S-067-174009_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 84.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-067-174009_Fund_RgULVPVVYP9pkvK789PCUZ a epo:Fund;
+  epo:hasDescription "FCH JU JIVE2 Dundee Hydrogen Bus Deployment Project."@en .
+
+epd:id_2021-S-067-174009_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/09120000>, <http://data.europa.eu/cpv/cpv/24111600>,
+    <http://data.europa.eu/cpv/cpv/63121110> .
+
+epd:id_2021-S-067-174009_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-067-174009_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Economic operators may be excluded from this competition if they are in any of the situations referred to in Regulation 40 of the Concession Contracts (Scotland) Regulations 2016."@en;
+  epo:hasDescription "The principal objective of this procurement is to appoint a single contractor to provide the following works to Michelin Scotland Innovation Parc in relation to a concession agreement for the production and delivery of green hydrogen as laid out below:— design, manufacture, installation, commissioning, operation and maintenance over a period to be determined, but estimated to be in the region of 7 years:— electrolysis or an equivalent clean technology as the means of green hydrogen generation,— gas compression and storage, optimising use of on-site generation of renewable energy,— dispensing and payment services,— the station is to be designed to have sufficient generation capacity to supply the requirements of the proposed Dundee Hydrogen Bus Deployment Project, whilst retaining sufficient surplus capacity to accommodate an additional requirement from a range of vehicles/clients (estimated capacity of c.500 kg),— future scalability of refuelling to meet demand and connection types should be considered,— the electrolysis is expected to utilise the output of the two on-site wind turbines and potential solar array,— the hydrogen refuelling station is to be part-funded through a combination of Public Sector capital grants from Dundee City Council and Transport Scotland, and a capital contribution from the successful bidder,— the supply of hydrogen for the buses within the Dundee Hydrogen Bus Deployment Project will be at an agreed price per kgFurther description is presented in the call for applications document."@en;
+  epo:hasEstimatedValue epd:id_2021-S-067-174009_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-067-174009_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isFundedBy epd:id_2021-S-067-174009_Fund_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2021-S-067-174009_AwardCriterion_97fG5roZ9xxsBW4G4JCeEu,
+    epd:id_2021-S-067-174009_AwardCriterion_nF5mLYwaayYGQ3jCBkmNPF .
+
+epd:id_2021-S-067-174009_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 8000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
+
+epd:id_2021-S-067-174009_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 8000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
+
+epd:id_2021-S-067-174009_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-067-174009_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-067-174009_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2021-S-067-174009_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2021-04-02"^^xsd:date;
+  epo:hasID epd:id_2021-S-067-174009_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210407";
+  epo:refersToLot epd:id_2021-S-067-174009_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2021-S-067-174009_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-067-174009_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 067-174009" .
+
+epd:id_2021-S-067-174009_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKM71>;
+  locn:postCode "DD4 8UQ";
+  locn:postName "Dundee";
+  locn:thoroughfare "Baldovie Road" .
+
+epd:id_2021-S-067-174009_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "SC631736" .
+
+epd:id_2021-S-067-174009_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2021-S-067-174009_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Michelin Scotland Innovation Parc Ltd (MSIP Ltd)"@en;
+  epo:hasMainActivityDescription "Property";
+  cccev:registeredAddress epd:id_2021-S-067-174009_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-067-174009_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "MSIP_HRS1" .
+
+epd:id_2021-S-067-174009_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45223720> .
+
+epd:id_2021-S-067-174009_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-067-174009_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "This is a call for applications to participate in a procurement.To register your interest in this notice and obtain any additional information please visit the Public Contracts Scotland Web Site at https://www.publiccontractsscotland.gov.uk/Search/Search_Switch.aspx?ID=635283The buyer has indicated that it will accept electronic responses to this notice via the Postbox facility. A user guide is available at https://www.publiccontractsscotland.gov.uk/sitehelp/help_guides.aspxSuppliers are advised to allow adequate time for uploading documents and to dispatch the electronic response well in advance of the closing time to avoid any last minute problems.Note: to register your interest in this notice and obtain any additional information please visit the Public Contracts Scotland Web Site at https://www.publiccontractsscotland.gov.uk/Search/Search_Switch.aspx?ID=649748The buyer has indicated that it will accept electronic responses to this notice via the Postbox facility. A user guide is available at https://www.publiccontractsscotland.gov.uk/sitehelp/help_guides.aspx.Suppliers are advised to allow adequate time for uploading documents and to dispatch the electronic response well in advance of the closing time to avoid any last minute problems.A sub-contract clause has been included in this contract. For more information see: http://www.publiccontractsscotland.gov.uk/info/InfoCentre.aspx?ID=2363Community benefits are included in this requirement. For more information see: http://www.publiccontractsscotland.gov.uk/info/InfoCentre.aspx?ID=2361A summary of the expected community benefits has been provided as follows:Community Benefits must be considered for all procurement processes at or above 4 million GBP in value. It is the intention to seekCommunity benefits as part of this tender process.(SC Ref:649748)"@en;
+  epo:hasDescription "Michelin Scotland Innovation Parc Ltd is joint venture between Michelin, Scottish Enterprise and Dundee City Council. It was formed to drive growth and diversity in the Scottish economy focused on sustainable mobility and low carbon energy.The Dundee Hydrogen Bus Deployment Project is being delivered to enable the growth in hydrogen mobility in the region, commencing with hydrogen buses and the hydrogen refuelling infrastructure.Michelin Scotland Innovation Parc is seeking to procure a specialist company to:— design, build, commission, maintain and operate a hydrogen refuelling station on the Parc,— to generate and supply green hydrogen for a minimum of 12 hydrogen fuel cell electric buses and any additional clients within the period of the contract,— to provide a capital contribution for the installation and operations to enable hydrogen supply by early 2022."@en;
+  epo:hasEstimatedValue epd:id_2021-S-067-174009_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2021-S-067-174009_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-067-174009_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-067-174009_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Concession Notice for the Hydrogen Refueling Station at Michelin Scotland Innovation Parc"@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-067-174009_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-067-174009_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2021-S-067-174009_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-067-174009_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-067-174009_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-067-174009_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.scotcourts.gov.uk/the-courts/court-locations/edinburgh-sheriff-court-and-justice-of-the-peace-court"^^xsd:anyURI;
+  cccev:telephone "+44 1312252525" .
+
+epd:id_2021-S-067-174009_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postCode "EH1 1LB";
+  locn:postName "Edinburgh";
+  locn:thoroughfare "Sheriff Court House, 27 Chambers Street" .
+
+epd:id_2021-S-067-174009_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Edinburgh Sheriff Court"@en;
+  epo:hasPrimaryContactPoint epd:id_2021-S-067-174009_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2021-S-067-174009_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-067-174009_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-067-174009_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-067-174009_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA30460"^^xsd:anyURI .

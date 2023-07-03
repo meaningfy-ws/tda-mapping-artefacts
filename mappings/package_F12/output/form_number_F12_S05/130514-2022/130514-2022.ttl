@@ -1,0 +1,205 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-050-130514_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.bezirk-oberbayern.de/Der-Bezirk-Oberbayern/Verwaltung/Ausschreibungen/Planungswettbewerbe-nach-78-VgV-/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-050-130514_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-050-130514_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:playedBy epd:id_2022-S-050-130514_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2022-S-050-130514_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF a cccev:ContactPoint;
+  epo:hasContactName "Zentrale Vergabestelle"@de;
+  epo:hasFax "+49 08921980511303";
+  epo:hasInternetAddress "www.bezirk-oberbayern.de"^^xsd:anyURI;
+  cccev:email "vergabe@bezirk-oberbayern.de";
+  cccev:telephone "+49 89219811303" .
+
+epd:id_2022-S-050-130514_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF a org:Organization;
+  epo:hasID epd:id_2022-S-050-130514_OrganisationIdentifier_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:hasLegalName "Zentrale Vergabestelle des Bezirks Oberbayern"@de;
+  cccev:registeredAddress epd:id_2022-S-050-130514_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2022-S-050-130514_BuyerOrganisationGroup_Vx4nE2MhH2AK3p6fvMzsYF a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  epo:hasMember epd:id_2022-S-050-130514_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2022-S-050-130514_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-050-130514_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-050-130514_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2022-S-050-130514_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-050-130514_Channel_G9uAqcYuooZwAU3Pwzv6eq a cccev:Channel;
+  epo:hasURL "https://www.bezirk-oberbayern.de/Der-Bezirk-Oberbayern/Verwaltung/Ausschreibungen/Planungswettbewerbe-nach-78-VgV-/"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2022-S-050-130514_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Martina Taubenberger - Zentrale Vergabestelle Bezirk Oberbayern"@de;
+  epo:hasFax "+49 08921980511303";
+  epo:hasInternetAddress "www.bezirk-oberbayern.de"^^xsd:anyURI;
+  cccev:email "vergabe@bezirk-oberbayern.de";
+  cccev:telephone "+49 89219811303" .
+
+epd:id_2022-S-050-130514_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2022-S-050-130514_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-050-130514_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2022-S-050-130514_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71222000> .
+
+epd:id_2022-S-050-130514_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-050-130514_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Auf einer ca.2,5 ha großen Fläche für Gemeinbedarf, das ca. 4 km nordwestlich der Stadtmitte Ingolstadt in einem Neubaugebiet liegt, sollen die Neubauten und die dazugehörigen Sport- und Freiflächen der beiden Schulen situiert werden. Für die Johann-Nepomuk-von-Kurz-Schule sind 8.000 m2 und für die Mittelschule 17.000 m2 vorgesehen.Die Johann-Nepomuk-von-Kurz-Schule des Bezirks Oberbayern ist eine Förderschule mit dem Förderschwerpunkt körperliche und motorische Entwicklung. Sie beinhaltet eine schulvorbereitende Einrichtung für 3- bis 6-jährige Kinder, eine Grundschulstufe von Klasse 1, 1A und 2 (3 Schuljahre), eine Grundschulstufe von Klasse 3 bis 4, eine Mittelstufe mit den Klassen 5 und 6 und die Oberstufe mit den Klassen 7 bis 9. Außerdem ist eine Heilpädagogische Tagesstätte integriert, die die Kinder am Nachmittag betreut. Das Raumprogramm beinhaltet rund 8.561 m² Nutzfläche 1-7. Gebäudeintegriert sind eine Turnhalle und ein Therapiebecken zu planen. Die Freianlagen beinhalten ein kleines Rasenspielfeld, einen Spielplatz sowie die erforderlichen Pausen- und Erschließungsflächen (PKW, Fahrräder, Vorfahrt).Die Mittelschule Mitte-West Friedrichshofen der Stadt Ingolstadt wird eine der 5 zukunftsfähigen Mittelschulstandorte der Stadt sein. Die Schule umfasst ein Raumprogramm von 30 Klassen mit insgesamt 550 bis 696 Schülern, davon 349 Schüler im gebundenen und offenen Ganztag. Sie hat einen M-Zweig und macht Angebote zur Inklusion. Das Raumprogramm soll im Lernhauskonzept umgesetzt werden. Das Raumprogramm beinhaltet rund 5.894 m² Nutzfläche 1-6. Die Sportanlagen umfassen eine Ballspielhalle, ein großes Rasenspielfeld, Allwetterplatz, Laufbahn, Kugelstoßanlage. Außerdem sind die erforderlichen Pausen- und Erschließungsflächen (PKW, Fahrräder) zu planen.Die Auslober beabsichtigen, soweit und sobald die Wettbewerbsaufgabe umgesetzt wird, unter Würdigung der Empfehlungen des Preisgerichts, einem der Preisträger, die für die Umsetzung des Wettbewerbsentwurfs notwendigen weiteren Planungsleistungen übertragen. Diese sind: Leistungsbild Gebäude nach HOAI §§ 33-35, Leistungsphase 2-5 und Leistungsbild Freianlagen nach HOAI §§ 38- 40, Leistungsphase 2-5.Beide Auslober beabsichtigen ein Preisträgerteam mit der gesamten Planungsleistung aller Gebäude und Freianlagen zu beauftragen. Eine Beauftragung von unterschiedlichen Preisträgerteams möchten sich die Auslober dennoch vorbehalten, falls Teilentwürfe von unterschiedlichen Preisträgern kompatibel sein sollten und dies inhaltlich sinnvoll wäre.Die Auslober beabsichtigen 4 Verträge zu schließen: einen Vertrag Gebäude Johann-Nepomuk-von-Kurz-Schule mit dem Bezirk Oberbayern, einen Vertrag Gebäude Mittelschule Mitte-West mit der Stadt Ingolstadt, einen Vertrag Freianlagen Johann-Nepomuk-von-Kurz Schule, einen Vertrag Freianlagen Mittelschule sowie zusätzlich ggf. einen Vertrag Freianlagen Gemeinsame Flächen mit beiden Kooperationspartnern. (Weitere Angaben zur Beauftragung unter dem Link unter Punkt I.3)Voraussichtlicher Bearbeitungszeitraum 1.Phase 06.05.2022 bis 01.07.2022, 2.Phase KW32 bis 28.11.2022Kolloquium 1.Phase (Videokonferenz) 25.05.2022, 2.Phase (Videokonferenz) 30.09.2022Preisgericht 1.Phase 15.07.2022, 2.Phase 13.01.2023"@de;
+  epo:hasPurpose epd:id_2022-S-050-130514_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-050-130514_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.regierung.oberbayern.bayern.de/behoerde/mittelinstanz/vergabekammer/"^^xsd:anyURI;
+  cccev:email "vergabekammer.suedbayern@reg-ob.bayern.de" .
+
+epd:id_2022-S-050-130514_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "80538";
+  locn:postName "München";
+  locn:thoroughfare "Maximilianstrasse 39" .
+
+epd:id_2022-S-050-130514_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs a org:Organization;
+  epo:hasLegalName "Vergabekammer Südbayern an der Regierung von Oberbayern"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-050-130514_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs;
+  cccev:registeredAddress epd:id_2022-S-050-130514_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2022-S-050-130514_Mediator_eMEmZdeMkSWP9DfmobsFLs a epo:Mediator;
+  epo:playedBy epd:id_2022-S-050-130514_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2022-S-050-130514_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-050-130514_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2022-S-050-130514_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2022-S-050-130514_Mediator_eMEmZdeMkSWP9DfmobsFLs,
+    epd:id_2022-S-050-130514_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2022-S-050-130514_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2022-S-050-130514_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2022-S-050-130514_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2022-03-08"^^xsd:date;
+  epo:hasID epd:id_2022-S-050-130514_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220311";
+  epo:refersToLot epd:id_2022-S-050-130514_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2022-S-050-130514_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2022-S-050-130514_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 050-130514" .
+
+epd:id_2022-S-050-130514_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE212>;
+  locn:postCode "80538";
+  locn:postName "München";
+  locn:thoroughfare "Prinzregentenstrasse 14" .
+
+epd:id_2022-S-050-130514_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE212>;
+  locn:postCode "80538";
+  locn:postName "München";
+  locn:thoroughfare "Prinzregentenstrasse 14" .
+
+epd:id_2022-S-050-130514_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "DE212" .
+
+epd:id_2022-S-050-130514_OrganisationIdentifier_Vx4nE2MhH2AK3p6fvMzsYF a epo:Identifier;
+  epo:hasIdentifierValue "DE212" .
+
+epd:id_2022-S-050-130514_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasID epd:id_2022-S-050-130514_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Zentrale Vergabestelle des Bezirks Oberbayern"@de;
+  cccev:registeredAddress epd:id_2022-S-050-130514_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-050-130514_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2022_0115-6-001" .
+
+epd:id_2022-S-050-130514_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71221000> .
+
+epd:id_2022-S-050-130514_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "Bieterfragen sind ausschließlich elektronisch über die unter Ziffer I.3) angegebene Vergabeplattform zu stellen. Rückfragen, die nicht spätestens 6 Kalendertage vor Ablauf der Angebotsfrist eingehen, werden nicht mehr beantwortet.Es ist zu beachten, dass die gesamte Kommunikation während des Vergabeverfahrens ausschließlich über die unter Ziffer I.3) angegebene Vergabeplattform geführt wird. Da in diesem Zusammenhang Fristen gesetzt werden können, die im Falle der Nichteinhaltung den Ausschluss bedingen, obliegt es dem Bieter, sich stets tagesaktuell darüber zu informieren, ob entsprechende Mitteilungen für ihn auf der Plattform hinterlegt sind. Dies umfasst auch die Prüfung von SPAM-Mail-Ordnern. Die Versäumung derart bekanntgegebener Fristen geht zu Lasten des Bieters.Zulassungsbereich: Mitgliedstaaten des Europäischen Wirtschaftsraums (EWR) sowie Staaten der Vertragsparteien des WTO-Übereinkommens über das öffentliche Beschaffungswesen (GPA), Teilnahmeberechtigt sind im Zulassungsbereich ansässige Natürliche Personen, die gemäß Rechtsvorschrift ihres Heimatstaates zur Führung der Berufsbezeichnung Architektin/Architekt bzw. Landschaftsarchitektin/Landschaftsarchitekt befugt sind. Ist die Berufsbezeichnung im jeweiligen Heimatstaat nicht geregelt, so erfüllt die fachlichen Anforderungen als Architekt bzw. Landschaftsarchitekt, wer über ein Diplom, Prüfungszeugnis oder einen sonstigen Befähigungsnachweis verfügt, dessen Anerkennung nach Richtlinie 2005/36/EG (Abschnitt 8. Architekt, Art.46-49) bzw. Dienstleistungsrichtlinie 2013/55/EU gewährleistet ist.Juristische Personen, sofern deren satzungsgemäßer Geschäftszweck auf Planungsleistungen ausgerichtet ist, die der Wettbewerbsaufgabe entsprechen. Die bevollmächtigte Vertreterin/der bevollmächtigte Vertreter der juristischen Person oder die verantwortliche Verfasserin/der verantwortliche Verfasser der Wettbewerbsarbeit müssen die an die natürliche Person gestellte Anforderungen erfüllen, Bewerbergemeinschaften, die in ihrer Gesamtheit die fachlichen Anforderungen und die sonstigen Zulassungsvoraussetzungen erfüllen, die an natürliche oder juristische Personen gestellt werden. Bewerbergemeinschaften haben in der Verfassererklärung eine bevollmächtigte Vertreterin oder einen bevollmächtigten Vertreter zu benennen.Partnerschaften gemäß PartGGMehrfachbewerbungen bzw. Mehrfachteilnahme natürlicher oder juristischer Personen oder von Mitgliedern einer Bewerbergemeinschaft haben das Ausscheiden aller Beteiligter zur Folge.Die Teilnehmer dürfen keine anderen als die in der Bewerbung genannten Personen am Wettbewerb beteiligen, weder als Mitverfasser noch als freie Mitarbeitende.Die Voraussetzungen für die Teilnahme müssen am Tag des Bewerbungsendes erfüllt sein.Die Teilnahmehindernisse sind in §4(2) RPW aufgeführt. Die Feststellung, ob Teilnahmehindernisse vorliegen, obliegt den Bewerbern.Ausgeschlossen von der Teilnahme am Wettbewerb sind zudem Personen, die infolge ihrer Beteiligung an der Auslobung oder Durchführung des Wettbewerbs bevorzugt sein könnten oder Einfluss auf die Entscheidung des Preisgerichts nehmen könnten. Dies gilt insbesondere für Mitglieder des Preisgerichts, deren Ehepartner, Verwandte und Verschwägerte ersten und zweiten Grades sowie für ständige Geschäfts- oder Projektpartner und für die unmittelbaren Vorgesetzten und Mitarbeiter der ausgeschlossenen Personen.Der Teilnahmeantrag besteht aus dem Bewerbungsformblatt inkl. 3 Anlagen, insgesamt 6 Seiten, sämtliche Vergabeunterlagen sind auf der unter.I.3) genannten Adresse eingestellt.Die Formulare sind auf den eigenen Rechner herunterzuladen, dort lokal auszufüllen und auf der unter.I.3) genannten Adresse hochzuladen. Sie müssen bis zum angegebenen Termin dort eingegangen sein. Nicht fristgerecht eingereichte Teilnahmeanträge oder formlose Anträge werden im weiteren Verfahren nicht berücksichtigt. Es werden die im Teilnahmeantrag gemachten Angaben gewertet, es werden keine Angaben nachgefordert. "@de;
+  epo:hasID epd:id_2022-S-050-130514_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-050-130514_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2022-S-050-130514_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "nicht offener zweiphasiger Realisierungswettbewerb Schulcampus Ingolstadt Friedrichshofen Neubauten der Johann-Nepomuk-von-Kurz Schule des Bezirks Oberbayern und der Mittelschule Mitte West der Stadt "@de;
+  epo:isDesignContest true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-050-130514_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2022-S-050-130514_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2022-S-050-130514_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR;
+  epo:usesChannel epd:id_2022-S-050-130514_Channel_G9uAqcYuooZwAU3Pwzv6eq .
+
+epd:id_2022-S-050-130514_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-050-130514_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2022-S-050-130514_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-050-130514_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "80538";
+  locn:postName "München";
+  locn:thoroughfare "Maximilianstraße 39" .
+
+epd:id_2022-S-050-130514_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.regierung.oberbayern.bayern.de/behoerde/mittelinstanz/vergabekammer/"^^xsd:anyURI;
+  cccev:email "vergabekammer.suedbayern@reg-ob.bayern.de" .
+
+epd:id_2022-S-050-130514_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer Südbayern an der Regierung von Oberbayern"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-050-130514_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2022-S-050-130514_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2022-S-050-130514_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-050-130514_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2022-S-050-130514_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Genaue Angaben zu den Fristen für die Einlegung von Rechtsbehelfen:Ein Nachprüfungsantrag ist unzulässig, soweit mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind (§160 Abs.3 Satz 1 Nr.4 GWB). Ein Nachprüfungsantrag ist zudem unzulässig, wenn der Zuschlag erfolgt ist, bevor die Vergabekammer den Auftraggeber über den Antrag auf Nachprüfung informiert hat (§168 Abs.2 Satz 1,169 Abs.1 GWB). Die Zuschlagserteilung ist möglich 15 Kalendertage nach Absendung der Bieterinformation nach §134 Abs.1 GWB. Wird die Information auf elektronischem Weg oder per Fax versendet, verkürzt sich die Frist auf 10 Kalendertage (§134 Abs.2 GWB). Die Frist beginnt am Tag nach der Absendung der Information durch den Auftraggeber; auf den Tag des Zugangs beim betroffenen Bieter kommt es nicht an. Die Zulässigkeit eines Nachprüfungsantrags setzt ferner voraus, dass die geltend gemachten Vergabeverstöße 10 Kalendertage nach Kenntnis gerügt wurden (§160 Abs.3 Satz 1 Nr.1 GWB). Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, müssen spätestens bis zum Ablauf der in der Bekanntmachung genannten Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden (§160 Abs.3 Satz 1 Nr.2 GWB). Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, müssen bis spätestens bis zum Ablauf der Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden (§160 Abs.3 Satz 1 Nr.3 GWB). " .
+
+epd:id_2022-S-050-130514_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.regierung.oberbayern.bayern.de/behoerde/mittelinstanz/vergabekammer/"^^xsd:anyURI;
+  cccev:email "vergabekammer.suedbayern@reg-ob.bayern.de" .
+
+epd:id_2022-S-050-130514_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "80538";
+  locn:postName "München";
+  locn:thoroughfare "Maximilianstraße 39" .
+
+epd:id_2022-S-050-130514_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Vergabekammer Südbayern an der Regierung von Oberbayern"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-050-130514_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2022-S-050-130514_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2022-S-050-130514_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-050-130514_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2022-S-050-130514_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.bezirk-oberbayern.de/Der-Bezirk-Oberbayern/Verwaltung/Ausschreibungen/Planungswettbewerbe-nach-78-VgV-/"^^xsd:anyURI .
+
+epd:id_2022-S-050-130514_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-050-130514_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2022-S-050-130514_Organisation_VX8RygdBbvDo5gNDhjcsTj .

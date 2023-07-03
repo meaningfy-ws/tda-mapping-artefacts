@@ -1,0 +1,135 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-115-262744_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.publiccontractsscotland.gov.uk"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-115-262744_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA12102"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-115-262744_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-115-262744_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-115-262744_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasInternetAddress "http://riverclydehomes.org.uk"^^xsd:anyURI;
+  cccev:email "procurement@riverclydehomes.org.uk";
+  cccev:telephone "+44 8000132196" .
+
+epd:id_2018-S-115-262744_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKM83> .
+
+epd:id_2018-S-115-262744_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-115-262744_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-115-262744_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-115-262744_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2018-S-115-262744_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 240.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-115-262744_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/09323000>, <http://data.europa.eu/cpv/cpv/65320000> .
+
+epd:id_2018-S-115-262744_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-115-262744_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+                  River Clyde Homes are looking to procure an experienced and competent contractor to undertake the operation and maintenance and metering and billing of the district heating system located in the Broomhill Area of Greenock.
+                  Further detail is contained in the ESPD instruction document.
+               """@en;
+  epo:hasPurpose epd:id_2018-S-115-262744_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-115-262744_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-115-262744_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2018-S-115-262744_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2018-S-115-262744_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2018-06-15"^^xsd:date;
+  epo:hasID epd:id_2018-S-115-262744_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20180619";
+  epo:refersToLot epd:id_2018-S-115-262744_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2018-S-115-262744_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2018-S-115-262744_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 115-262744" .
+
+epd:id_2018-S-115-262744_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKM83>;
+  locn:postCode "PA15 4JT";
+  locn:postName "Greenock";
+  locn:thoroughfare "Roxburgh House, 102-112 Roxburgh Street" .
+
+epd:id_2018-S-115-262744_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "River Clyde Homes"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/hc-am>;
+  cccev:registeredAddress epd:id_2018-S-115-262744_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-115-262744_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "RCH417" .
+
+epd:id_2018-S-115-262744_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09323000> .
+
+epd:id_2018-S-115-262744_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-115-262744_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               All ESPD's must be submitted electronically via the Public Contracts Scotland (PCS) electronic tender post box. Any response not submitted via the Post Box will not be considered. Any queries relating to the contract must be raised via the “Question & Answer” function of the PCS website.
+               An “ESPD Instructions” document is attached to the notice. All bidders should ensure that they read and understand this document before completing the ESPD.
+               Note: to register your interest in this notice and obtain any additional information please visit the public contracts Scotland Web Site at: https://www.publiccontractsscotland.gov.uk/Search/Search_Switch.aspx?ID=546383
+               The buyer has indicated that it will accept electronic responses to this notice via the postbox facility. A user guide is available at: https://www.publiccontractsscotland.gov.uk/sitehelp/help_guides.aspx
+               Suppliers are advised to allow adequate time for uploading documents and to dispatch the electronic response well in advance of the closing time to avoid any last minute problems.
+               Community benefits are included in this requirement. For more information see: http://www.publiccontractsscotland.gov.uk/info/InfoCentre.aspx?ID=2361
+               A summary of the expected community benefits has been provided as follows:
+               At tender stage bidders will require to set out what community benefits they will bring to the Inverclyde area in the event of a successful bid. Responses may address targeted recruitment & training; equal opportunities; supply-chain initiatives; environmental initiatives, community consultation; contributions to education; the promotion of social enterprises; and resources for community initiatives. These benefits must be specific to this contract and not part of a wider Corporate Social Responsibility (CSR) programme.
+               (SC Ref:546383)
+            """@en;
+  epo:hasDescription """
+               River Clyde Homes are looking to procure an experienced and competent contractor to undertake the operation & maintenance, metering & billing of the district heating system located in the Broomhill Area of Greenock.
+            """@en;
+  epo:hasID epd:id_2018-S-115-262744_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-115-262744_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-115-262744_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Broomhill Biomass District Heating System, Operation & Maintenance, Metering & Billling
+            """@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-115-262744_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2018-S-115-262744_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2018-S-115-262744_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-115-262744_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-115-262744_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-115-262744_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasInternetAddress "http://riverclydehomes.org.uk"^^xsd:anyURI;
+  cccev:telephone "+44 8000132196" .
+
+epd:id_2018-S-115-262744_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postCode "PA15 4JT";
+  locn:postName "Greenock";
+  locn:thoroughfare "Roxburgh House, 102-112 Roxburgh Street" .
+
+epd:id_2018-S-115-262744_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "River Clyde Homes"@en;
+  epo:hasPrimaryContactPoint epd:id_2018-S-115-262744_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2018-S-115-262744_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-115-262744_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-115-262744_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-115-262744_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "https://www.publiccontractsscotland.gov.uk"^^xsd:anyURI .

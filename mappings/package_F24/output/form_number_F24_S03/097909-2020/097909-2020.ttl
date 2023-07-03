@@ -1,0 +1,178 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-041-097909_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://achat.maregionsud.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2020-S-041-097909_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://achat.maregionsud.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2020-S-041-097909_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2020-S-041-097909_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2020-S-041-097909_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasFax "+33 491575064";
+  epo:hasInternetAddress "http://www.maregionsud.fr"^^xsd:anyURI;
+  cccev:email "servicedesmarches@regionpaca.fr";
+  cccev:telephone "+33 491575057" .
+
+epd:id_2020-S-041-097909_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL> .
+
+epd:id_2020-S-041-097909_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-041-097909_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-041-097909_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2020-S-041-097909_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2020-S-041-097909_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-041-097909_Fund_RgULVPVVYP9pkvK789PCUZ a epo:Fund;
+  epo:hasDescription "La concession est susceptible de bénéficier d'un cofinancement européen"@fr .
+
+epd:id_2020-S-041-097909_LotIdentifier_RgULVPVVYP9pkvK789PCUZ a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2020-S-041-097909_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45213320>, <http://data.europa.eu/cpv/cpv/60200000> .
+
+epd:id_2020-S-041-097909_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-041-097909_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Le contrat comportera des options relatives à la gestion des gares régionales que la Région se réserve le cas échéant le droit de lever en cours d'exécution du contrat. Le concessionnaire devra se soumettre aux conditions et aux modalités de reprise de personnels prévues par les articles L. 2121-20 et suivants du code des transports et le décret nº 2018-1242 du 26.12.2018."@fr;
+  epo:hasDescription "Le contrat porte notamment sur les prestations de base suivantes (liste non exhaustive) à réaliser par le concessionnaire dans le respect de la réglementation en vigueur:— exploitation de trains régionaux dans la Région Provence-Alpes-Côte d'Azur, autour de Nice, sur les axes suivants du réseau ferroviaire: les Arcs-Draguignan — Nice — Vintimille — Cannes — Grasse — Nice — Breil — Tende,— conception, construction et exploitation d'un atelier de maintenance sur le site de Nice-Saint-Roch mis à la disposition du concessionnaire et exploitation du site de maintenance de Cannes — La Bocca mis à la disposition du concessionnaire,— garde du matériel roulant et réalisation de la maintenance du matériel roulant,— exploitation d'un système de billettique, vente de titres de transport et encaissement des recettes pour le compte de la Région et reversement à cette dernière.Le contrat portera aussi sur la réalisation de prestations commerciales accessoires en gare et à bord des trains."@fr;
+  epo:hasEstimatedValue epd:id_2020-S-041-097909_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasID epd:id_2020-S-041-097909_LotIdentifier_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2020-S-041-097909_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasTitle "Concession de service public d'exploitation de trains urbains et interurbains: axes ferroviaires Azur: les Arcs-Draguignan — Nice — Vintimille; Cannes — Grasse; Nice — Breil — Tende"@fr;
+  epo:isFundedBy epd:id_2020-S-041-097909_Fund_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds true .
+
+epd:id_2020-S-041-097909_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 1500000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-041-097909_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM a cccev:ContactPoint;
+  epo:hasFax "+33 484354460";
+  epo:hasInternetAddress "http://www.paca.pref.gouv.fr"^^xsd:anyURI;
+  cccev:email "catherine.pietri@paca.pref.gouv.fr";
+  cccev:telephone "+33 484354554" .
+
+epd:id_2020-S-041-097909_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13282";
+  locn:postName "Marseille";
+  locn:thoroughfare "place Félix-Baret, CS 80001" .
+
+epd:id_2020-S-041-097909_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM a org:Organization;
+  epo:hasLegalName "Comité consultatif interrégional de règlement amiable des litiges (Cciral): préfecture de la Région Provence-Alpes-Côte d'Azur — secrétariat général pour les affaires régionales"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-041-097909_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM;
+  cccev:registeredAddress epd:id_2020-S-041-097909_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2020-S-041-097909_Mediator_PMKvGTWSa3gLdxRfJtvToM a epo:Mediator;
+  epo:playedBy epd:id_2020-S-041-097909_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2020-S-041-097909_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 1500000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-041-097909_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2020-S-041-097909_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2020-S-041-097909_Mediator_PMKvGTWSa3gLdxRfJtvToM,
+    epd:id_2020-S-041-097909_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2020-S-041-097909_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2020-02-24"^^xsd:date;
+  epo:hasID epd:id_2020-S-041-097909_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20200227";
+  epo:refersToLot epd:id_2020-S-041-097909_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2020-S-041-097909_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2020-S-041-097909_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 041-097909" .
+
+epd:id_2020-S-041-097909_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL>;
+  locn:postCode "13481";
+  locn:postName "Marseille";
+  locn:thoroughfare "Hôtel de Région, 27 place Jules Guesde" .
+
+epd:id_2020-S-041-097909_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "23130002100012" .
+
+epd:id_2020-S-041-097909_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2020-S-041-097909_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Région Provence-Alpes-Côte d'Azur"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2020-S-041-097909_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2020-S-041-097909_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2020-087" .
+
+epd:id_2020-S-041-097909_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60200000> .
+
+epd:id_2020-S-041-097909_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk a epo:ProcedureTerm;
+  epo:hasMaximumLotSubmissionAllowed 1 .
+
+epd:id_2020-S-041-097909_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-041-097909_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Les dépôts de plis doivent être impérativement remis par voie dématérialisée. Pour retrouver cet avis intégral, poser des questions à l'acheteur, déposer un pli, allez sur http://achat.maregionsud.fr — Le contrat est un contrat de concession au sens de l'article L. 1121-1 du code de la commande publique. Il s'agit également d'une concession de services ayant pour objet un service public en vertu de l'article L. 1121-3 du code de la commande publique. La durée totale du contrat de concession est décomposée en 2 phases:— une période de mobilisation, courant de la notification du contrat au démarrage de l'exploitation ferroviaire. Cette phase est prévue pour permettre au concessionnaire de se préparer au démarrage de l'exploitation ferroviaire (notamment transfert du matériel roulant, conception et construction d'un atelier de maintenance et reprise du personnel). La durée de cette période est prévisionnellement de 3 ans. Il appartient au concessionnaire de prendre toute mesure qui s'avérerait utile pour permettre le bon fonctionnement de l'exploitation le 15.12.2024 à partir de minuit,— une période d'exploitation dont la durée sera de 10 ans. La durée d'exploitation court du 15.12.2024 à minuit à la fin du service annuel 2034, soit le 2e samedi de décembre 2034 à minuit en application de la Directive 2012/34/UE.Il est prévu une tranche optionnelle correspondant à l'éventuelle prolongation du contrat d'une durée de 2 ans maximum. Les soumissionnaires admis à négocier qui auront remis une offre finale qui n'est pas retenue reçoivent chacun une indemnité forfaitaire de 200 000 EUR versée par la Région. La communication avec les candidats pendant la durée de la consultation se fera exclusivement de manière électronique. À ce titre, il est demandé aux candidats de renseigner une adresse de courrier électronique consulté régulièrement lors du retrait du dossier de consultation des entreprises sur le profil acheteur. Le candidat effectuera lui-même les éventuelles modifications ou mises à jour d'adresse de courrier électronique, sur le profil d'acheteur AWS, dans sa «fiche entreprise». À aucun moment le pouvoir adjudicateur ne pourra être tenu responsable du renseignement d'une adresse courrier électronique erronée ou non consultée régulièrement par le candidat. À ce titre, la Région conseille l'utilisation d'une adresse courrier électronique pouvant être consultée par plusieurs personnes. Compte tenu du nombre de caractères techniquement limité dans le présent avis d'appel public à la concurrence, un règlement d'appel à candidatures est mis à disposition sur le site https://achat.maregionsud.fr — Il est de la responsabilité des candidats de s'y reporter. Les candidatures devront être remises sous format électronique sur la plate-forme https://achat.maregionsud.fr — Les demandes de renseignements des candidats ou de précisions et de compléments de la Région sont effectuées par courrier électronique via la plate-forme https://achat.maregionsud.fr"@fr;
+  epo:hasDescription "Au cours des années 2016, 2017 et 2018, le présent service a représenté une moyenne annuelle de 2 600 000 de train-kilomètres et 309 000 000 de voyageurs kilomètres. En moyenne annuelle sur la même période, il a généré environ 46 400 000 EUR issus de recettes directes du trafic, et 106 000 000 EUR de charges. En 2019, 3 100 000 de train-kilomètres ont été commandés pour environ 46 000 trains, soit plus de 69 allers-retours et 23 % de l'offre Ter de la Région. Au démarrage de la concession le volume d'offre sera d'environ 4 300 000 train-km."@fr;
+  epo:hasEstimatedValue epd:id_2020-S-041-097909_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2020-S-041-097909_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-041-097909_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2020-S-041-097909_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Concession de service public d'exploitation de trains urbains et interurbains: axes Azur: les Arcs-Draguignan — Nice — Vintimille; Cannes — Grasse; Nice — Breil — Tende"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-041-097909_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2020-S-041-097909_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk, epd:id_2020-S-041-097909_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr,
+    epd:id_2020-S-041-097909_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2020-S-041-097909_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-041-097909_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2020-S-041-097909_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2020-S-041-097909_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Les candidats ont la possibilité d'introduire un référé précontractuel depuis le début de la procédure de passation jusqu'à la signature du contrat, dans les conditions de l'article L. 551-1 et suivants dudit code. Une fois le contrat conclu, les candidats ont la possibilité d'introduire un référé contractuel, dans les conditions des articles L. 551-13 et suivants du code." .
+
+epd:id_2020-S-041-097909_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 491811387";
+  epo:hasInternetAddress "http://marseille.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-marseille@juradm.fr";
+  cccev:telephone "+33 491134813" .
+
+epd:id_2020-S-041-097909_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13281";
+  locn:postName "Marseille";
+  locn:thoroughfare "22-24 rue Breteuil" .
+
+epd:id_2020-S-041-097909_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Marseille"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-041-097909_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2020-S-041-097909_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2020-S-041-097909_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-041-097909_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2020-S-041-097909_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://achat.maregionsud.fr"^^xsd:anyURI .

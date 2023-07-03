@@ -1,0 +1,225 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-032-080791_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://fournisseurs.aeroportsdeparis.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-032-080791_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://www.parisaeroport.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-032-080791_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-032-080791_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-032-080791_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Lilya Ben Mahdi"@fr;
+  epo:hasInternetAddress "http://www.parisaeroport.fr"^^xsd:anyURI;
+  cccev:email "lilya.benmahdi@adp.fr";
+  cccev:telephone "+33 637197683" .
+
+epd:id_2021-S-032-080791_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Aérodrome de Toussus-le-Noble."@fr .
+
+epd:id_2021-S-032-080791_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a locn:Address;
+  locn:fullAddress "Saint-Cyr-l'École."@fr .
+
+epd:id_2021-S-032-080791_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:address epd:id_2021-S-032-080791_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-032-080791_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:address epd:id_2021-S-032-080791_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
+
+epd:id_2021-S-032-080791_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-032-080791_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-032-080791_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "— mise en place de la radio relève sur l’ensemble du parc compteur;— maintenance des poteaux d'incendie;— équipement de compteur sur poteaux;— mise en télé relevé de tous les compteurs."@fr .
+
+epd:id_2021-S-032-080791_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-032-080791_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-032-080791_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "— mise en place de la radio relève sur l’ensemble du parc compteur;— maintenance des poteaux d'incendie;— équipement de compteur sur poteaux;— mise en télé relevé de tous les compteurs."@fr .
+
+epd:id_2021-S-032-080791_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true .
+
+epd:id_2021-S-032-080791_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-032-080791_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-032-080791_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-032-080791_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "Marché spécifique nécessitant la réalisation de travaux avec des durées d'amortissement longues."@fr .
+
+epd:id_2021-S-032-080791_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-032-080791_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-032-080791_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/65111000> .
+
+epd:id_2021-S-032-080791_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/65111000> .
+
+epd:id_2021-S-032-080791_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-032-080791_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "La convention a pour objet l'exploitation des Installations de distribution d'eau potable appartenant groupe ADP sur l'aérodrome de Toussus-le-Noble et la distribution d'eau potable sur cet aérodrome.À ce titre, les missions exercées par l'exploitant sont:— la fourniture et la distribution d'eau potable;— l'exploitation des installations, c’est-à-dire sa surveillance, son alimentation en eau potable conforme aux normes sanitaires en vigueur, incluant la fourniture de l'eau;— la gestion des relations avec les usagers du service implantés sur l'aérodrome;— la maintenance et l'entretien des installations;— l'extension des installations, c’est-à-dire la réalisation des extensions nécessaires pour raccorder des nouveaux abonnés ou bâtiments au réseau, le remplacement des portions vétustes ou présentant une anomalie (par exemple un défaut d'étanchéité), et la réalisation des équipements accessoires au réseau, composant les installations. N'est pas compris dans cette mission le développement du réseau dans des zones non encore alimentées de l'aéroport qui ne viseraient pas uniquement à accorder un nouvel abonné ou bâtiment au réseau existant mais à développer substantiellement celui-ci pour permettre l'exploitation de zones non encore aménagées de l'aéroport."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-032-080791_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasID epd:id_2021-S-032-080791_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-032-080791_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle "Lot 1: convention pour l’exploitation du service de distribution d’eau potable de l’aérodrome de Toussus-le-Noble"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-032-080791_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-032-080791_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasDescription "La convention a pour objet l'exploitation des Installations de distribution d'eau potable appartenant groupe ADP sur l'aérodrome de Saint-Cyr et la distribution d'eau potable sur cet aérodrome.À ce titre, les missions exercées par l'exploitant sont:— la fourniture et la distribution d'eau potable;— l'exploitation des installations, c’est-à-dire sa surveillance, son alimentation en eau potable conforme aux normes sanitaires en vigueur, incluant la fourniture de l'eau;— la gestion des relations avec les usagers du service implantés sur l'aérodrome;— la maintenance et l'entretien des installations;— l'extension des Installations, c’est-à-dire la réalisation des extensions nécessaires pour raccorder des nouveaux abonnés ou bâtiments au réseau, le remplacement des portions vétustes ou présentant une anomalie (par exemple un défaut d'étanchéité), et la réalisation des équipements accessoires au réseau, composant les installations. N'est pas compris dans cette mission le développement du réseau dans des zones non encore alimentées de l'aéroport qui ne viseraient pas uniquement à accorder un nouvel abonné ou bâtiment au réseau existant mais à développer substantiellement celui-ci pour permettre l'exploitation de zones non encore aménagées de l'aéroport."@fr;
+  epo:hasID epd:id_2021-S-032-080791_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-032-080791_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle "Lot 2: convention pour l’exploitation du service de distribution d’eau potable de l’aérodrome de Saint-Cyr"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-032-080791_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-032-080791_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75017";
+  locn:postName "Paris";
+  locn:thoroughfare "29-45 avenue de la Porte de Clichy" .
+
+epd:id_2021-S-032-080791_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "Greffe du tribunal de grande instance de Paris"@fr;
+  cccev:registeredAddress epd:id_2021-S-032-080791_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2021-S-032-080791_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2021-S-032-080791_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2021-S-032-080791_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-032-080791_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-032-080791_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-032-080791_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2021-S-032-080791_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-032-080791_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-032-080791_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2021-S-032-080791_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2021-02-11"^^xsd:date;
+  epo:hasID epd:id_2021-S-032-080791_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210216";
+  epo:refersToLot epd:id_2021-S-032-080791_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2021-S-032-080791_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2021-S-032-080791_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-032-080791_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 032-080791" .
+
+epd:id_2021-S-032-080791_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:postCode "93290";
+  locn:postName "Tremblay-en-France";
+  locn:thoroughfare "1 rue de France" .
+
+epd:id_2021-S-032-080791_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Aéroports de Paris"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2021-S-032-080791_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-032-080791_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "SPA017634" .
+
+epd:id_2021-S-032-080791_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/65111000> .
+
+epd:id_2021-S-032-080791_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 2;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2021-S-032-080791_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-032-080791_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Attention: seule la candidature est attendue à ce stade de la consultation.Les candidatures devront être déposées sur le site https://fournisseurs.aeroportsdeparis.fr après avoir renseigné la FRE, fourni le Kbis de moins de trois mois.Une fois sur le site, les candidats peuvent consulter le mode opératoire accessible depuis la page d'accueil.En cas de problème lié à l'utilisation du portail achats vous pouvez contacter le support téléphonique au +33 149754321 (0,34 EUR/min). Le dossier de consultation (susceptible d'être modifié sur des détails) est disponible sur le site https://fournisseurs.aeroportsdeparis.frLa séance d'ouverture des plis n'est pas publique.Après la clôture de la phase candidature, Aéroports de Paris invitera les entreprises admises à présenter une offre à venir télécharger gratuitement le dossier de consultation (pièces administratives, techniques et financières) sur leur espace personnel accessible depuis le portail achats https:// fournisseurs.aeroportsdeparis.fr (page d'accueil > cadre mes consultations).Les candidats désirant transférer leur marché à une structure juridique distincte, devront l'indiquer lors du dépôt de leur candidature. La cession du marché ne pourra être admise que si Aéroports de Paris y consent et dès lors qu'elle ne s'accompagne d'aucune modification substantielle d'un élément du marché. Le cessionnaire reprenant le marché devra disposer, jusqu'au terme de celui-ci, des garanties professionnelles et financières lui permettant de l'exécuter."@fr;
+  epo:hasDescription "Les conventions ont pour objet l'exploitation des Installations de distribution d'eau potable sur les aérodromes de Toussus-le-Noble et Saint-Cyr et la distribution d'eau potable sur ces aérodromes.À ce titre, les missions exercées par l'exploitant sont:— la fourniture et la distribution d'eau potable;— l'exploitation des installations, c’est-à-dire sa surveillance, son alimentation en eau potable conforme aux normes sanitaires en vigueur, incluant la fourniture de l'eau;— la gestion des relations avec les usagers du service implantés sur les aérodromes;— la maintenance et l'entretien des installations;— l'extension des installations, c’est-à-dire la réalisation des extensions nécessaires pour raccorder des nouveaux abonnés ou bâtiments au réseau, le remplacement des portions vétustes ou présentant une anomalie (par exemple un défaut d'étanchéité), et la réalisation des équipements accessoires au réseau, composant les installations."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-032-080791_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2021-S-032-080791_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-032-080791_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-032-080791_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-032-080791_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Convention pour l'exploitation du service de distribution d'eau potable sur les aérodromes d'aviation générale de Toussus-le-Noble et Saint-Cyr"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-032-080791_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-032-080791_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-032-080791_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2021-S-032-080791_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2021-S-032-080791_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-032-080791_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-032-080791_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-032-080791_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-032-080791_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-032-080791_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75017";
+  locn:postName "Paris";
+  locn:thoroughfare "29-45 avenue de la Porte de Clichy" .
+
+epd:id_2021-S-032-080791_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Greffe du tribunal de grande instance de Paris"@fr;
+  cccev:registeredAddress epd:id_2021-S-032-080791_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-032-080791_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-032-080791_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-032-080791_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— référé précontractuel pouvant être exercé depuis le début de la procédure de passation jusqu'à la signature du marché (article 5 de l'ordonnance du 7.5.2009);— référé contractuel prévu par l'article 11 de l'ordonnance du 7.5.2009;— recours en nullité relative (cinq ans);— recours en nullité absolue (30 ans)." .
+
+epd:id_2021-S-032-080791_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75017";
+  locn:postName "Paris";
+  locn:thoroughfare "29-45 avenue de la Porte de Clichy" .
+
+epd:id_2021-S-032-080791_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Greffe du tribunal de grande instance de Paris"@fr;
+  cccev:registeredAddress epd:id_2021-S-032-080791_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-032-080791_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-032-080791_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-032-080791_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://fournisseurs.aeroportsdeparis.fr"^^xsd:anyURI .
+
+epd:id_2021-S-032-080791_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-032-080791_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-032-080791_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

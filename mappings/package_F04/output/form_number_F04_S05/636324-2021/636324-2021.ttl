@@ -1,0 +1,152 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-241-636324_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.deutschebahn.com/bieterportal"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-241-636324_AwardCriterionPrice_nhjAeUgxP9TrFdDRcqi3yA a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "85"@de .
+
+epd:id_2021-S-241-636324_AwardCriterionQuality_QYkCrW7ZYftWpqjiWsgkfi a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Terminplan"@de;
+  cccev:weight "15"@de .
+
+epd:id_2021-S-241-636324_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-241-636324_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-241-636324_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-241-636324_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Dörr, Ilka"@de;
+  epo:hasFax "+49 6926521083";
+  epo:hasInternetAddress "http://www.deutschebahn.com/bieterportal"^^xsd:anyURI;
+  cccev:email "ilka.doerr@deutschebahn.com";
+  cccev:telephone "+49 4039184584" .
+
+epd:id_2021-S-241-636324_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Hamburg"@de .
+
+epd:id_2021-S-241-636324_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE600>;
+  locn:address epd:id_2021-S-241-636324_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-241-636324_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-241-636324_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-241-636324_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-241-636324_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "Dörr, Ilka"@de;
+  epo:hasFax "+49 6926521083";
+  epo:hasInternetAddress "http://www.deutschebahn.com/bieterportal"^^xsd:anyURI;
+  cccev:email "ilka.doerr@deutschebahn.com";
+  cccev:telephone "+49 4039184584" .
+
+epd:id_2021-S-241-636324_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE600>;
+  locn:postCode "20097";
+  locn:postName "Hamburg";
+  locn:thoroughfare "Hammerbrookstraße 44" .
+
+epd:id_2021-S-241-636324_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasLegalName "FE.EI-N - Beschaffung Infrastruktur Region Nord"@de;
+  cccev:registeredAddress epd:id_2021-S-241-636324_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2021-S-241-636324_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-241-636324_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription """5800 m GE; 5150 m BRM; 1304 m PSS; 3200 m TE spülen inkl. SicherungsleistungenBesonderheiten für den AN:a.	Infrastrukturnutzung AKNb.	Infrastrukturnutzung REB Koopsc.	Entsorgungsfahrt durch AN nach REB Koopsd.	Schotterversorgung durch AN über REB Koops"""@de;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-241-636324_AwardCriterionPrice_nhjAeUgxP9TrFdDRcqi3yA,
+    epd:id_2021-S-241-636324_AwardCriterionQuality_QYkCrW7ZYftWpqjiWsgkfi .
+
+epd:id_2021-S-241-636324_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-241-636324_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2021-S-241-636324_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-241-636324_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2021-S-241-636324_Reviewer_K99XaY97dQrtEEJSTmwy9e;
+  epo:hasDispatchDate "2021-12-08"^^xsd:date;
+  epo:hasID epd:id_2021-S-241-636324_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20211213";
+  epo:refersToLot epd:id_2021-S-241-636324_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2021-S-241-636324_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-241-636324_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 241-636324" .
+
+epd:id_2021-S-241-636324_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:postCode "60327";
+  locn:postName "Frankfurt Main";
+  locn:thoroughfare "Adam-Riese-Straße 11-13" .
+
+epd:id_2021-S-241-636324_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "DB Netz AG (Bukr 16)"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2021-S-241-636324_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-241-636324_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-241-636324_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-241-636324_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "21FEI56449" .
+
+epd:id_2021-S-241-636324_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45234100> .
+
+epd:id_2021-S-241-636324_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-241-636324_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """Die interessierten Wirtschaftsteilnehmer müssen dem Auftraggeber mitteilen, dass sie an den Aufträgen interessiert sind; die Aufträge werden ohne spätere Veroeffentlichung eines Aufrufs zum Wettbewerb vergeben.Durch den Wirtschaftsteilnehmer sind als Teilnahmebedingung neben den unter III.1.1 bis III.1.4 genannten Erklärungen/Nachweisen folgende weitere Erklärungen/Nachweise erforderlich:- Erklärung, ob und in wieweit mit dem/den vom AG beauftragten Ingenieurbüro(s) Verbundenheit (gesell-schaftsrechtlich verbunden im Sinne § 18 AktG / verwandtschaftliche Beziehungen zwischen Organen des Bieters und Organen des Ingenieurbüros) oder wirtschaftliche Abhängigkeit besteht. Bei Bietergemeinschaften gilt, dass jedes einzelne Mitglied eine entsprechende Erklärung abzugeben hat.Beauftragte(s) Ingenieurbüro(s):1. Spettmann & Kahr2.3.Der Auftraggeber behält sich vor, Angebote von Bietern auszuschließen, die unter Mitwirkung eines vom Auftraggeber beauftragten Ingenieurbüros erstellt wurden. Gleiches gilt, wenn zwischen Bieter und beauftragtem Ingenieurbüro eine gesellschaftsrechtliche/verwandtschaftliche Verbundenheit oder wirtschaftliche Abhängigkeit besteht.Fragen zu den Vergabeunterlagen oder dem Vergabeverfahren sind so rechtzeitig zu stellen, dass dem Auftraggeber unter Berücksichtigung interner Abstimmungsprozesse eine Beantwortung spätestens sechs Tage vor Ablauf der Frist zur Angebotsabgabe bzw. zur Einreichung der Teilnahmeanträge möglich ist. Der Auftraggeber behält sich vor, nicht rechtzeitig gestellte Fragen gar nicht oder innerhalb von weniger als sechs Tagen vor Ablauf der Frist zur Angebotsabgabe bzw. zur Einreichung der Teilnahmeanträge zu beantworten.Der Auftraggeber behält sich die Anwendung von §§ 123, 124 GWB vor.Bei Durchführung eines Verhandlungsverfahrens behält sich der Auftraggeber die Möglichkeit vor, den Auftrag auf der Grundlage der Erstangebote zu vergeben, ohne in Verhandlungen einzutreten.Corona-Virus: Der Auftraggeber behält sich vor, wegen möglicher Undurchführbarkeit der hier ausgeschriebenen Leistungen wegen Einschränkungen aufgrund der Corona-Epidemie den Zuschlag nicht zu erteilen/das Vergabeverfahren aufzuheben bzw. einzustellen. Hinweise des Auftraggebers zu Corona: 1. Die mit Erlass des BMI vom 23.03.2020, Ziff. II (BW I 7 – 70406/21#1, abrufbar unter https://www.bmi.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/2020/corona/erlass-bauwesen-corona-20200323.pdf?__blob=publicationFile&v=1 herausgegebenen Hinweise zur Handhabung von Bauablaufstörungen werden auf den abzuschließenden Vertrag entsprechend angewendet. Die dortigen Aussagen zum Umgang mit und Nachweis von Höherer Gewalt macht der Auftraggeber sich zu eigen. 2. Angebote müssen weiterhin verbindlich sein und den Vergabeunterlagen entsprechen. Von den Vergabeunterlagen abweichende Angebote oder Angebote mit Vorbehalten, z.B. bei Terminen, müssen ausgeschlossen werden. Von entsprechenden Erklärungen bitten wir daher abzusehen.Corona-Virus: Der Auftraggeber behält sich vor, wegen möglicher Undurchführbarkeit der hier ausgeschriebenen Leistungen wegen Einschränkungen aufgrund der Corona-Epidemie den Zuschlag nicht zu erteilen/das Vergabeverfahren aufzuheben bzw. einzustellen. Hinweise des Auftraggebers zu Corona: 1.	Die mit Erlass des BMI vom 23.03.2020, Ziff. II (BW I 7 – 70406/21#1, abrufbar unter https://www.bmi.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/2020/corona/erlass-bauwesen-corona-20200323.pdf?__blob=publicationFile&v=1 herausgegebenen Hinweise zur Handhabung von Bauablaufstörungen werden auf den abzuschließenden Vertrag entsprechend angewendet. Die dortigen Aussagen zum Umgang mit und Nachweis von Höherer Gewalt macht der Auftraggeber sich zu eigen.2.	Angebote müssen weiterhin verbindlich sein und den Vergabeunterlagen entsprechen. Von den Vergabeunterlagen abweichende Angebote oder Angebote mit Vorbehalten, z. B. bei Terminen, müssen ausgeschlossen werden. Von entsprechenden Erklärungen bitten wir daher abzusehen."""@de;
+  epo:hasDescription "Gleiserneuerung mit teilw. Planumsverbesserung Str.1244 Hmb.Berliner-Tor – Bergedorf km 6,170-11,965 und Sicherungsleistungen"@de;
+  epo:hasID epd:id_2021-S-241-636324_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-241-636324_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-241-636324_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "S-Bahn Berliner Tor -Hmb. Bergedorf, km 6,170 bis 11,965 -  GE mit PSS - Verbundvergabe"@de;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-241-636324_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2021-S-241-636324_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2021-S-241-636324_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2022-01-24"^^xsd:date .
+
+epd:id_2021-S-241-636324_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-241-636324_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2021-S-241-636324_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2021-S-241-636324_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "53123";
+  locn:postName " Bonn";
+  locn:thoroughfare " Villemombler Straße 76" .
+
+epd:id_2021-S-241-636324_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName " Vergabestelle des Bundes beim Bundeskartellamt"@de;
+  cccev:registeredAddress epd:id_2021-S-241-636324_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-241-636324_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-241-636324_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-241-636324_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasSubmissionURL "http://www.deutschebahn.com/bieterportal"^^xsd:anyURI .

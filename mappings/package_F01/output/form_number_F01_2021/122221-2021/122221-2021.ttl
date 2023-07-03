@@ -1,0 +1,153 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-050-122221_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.subreport.de/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-050-122221_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "www.subreport.de"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-050-122221_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-050-122221_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-050-122221_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Eigenbetrieb Heime des Landkreises Lörrach"@de;
+  epo:hasFax "+49 7621/410-1299";
+  epo:hasInternetAddress "www.eigenbetrieb-heime-landkreis-loerrach.de"^^xsd:anyURI;
+  cccev:email "eigenbetrieb.heime@loerrach-landkreis.de";
+  cccev:telephone "+49 7621 / 410-0" .
+
+epd:id_2021-S-050-122221_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Am Sonnenstück 11 in 79418 Schliengen"@de .
+
+epd:id_2021-S-050-122221_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE139>;
+  locn:address epd:id_2021-S-050-122221_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-050-122221_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-050-122221_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-050-122221_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-050-122221_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-050-122221_EAuctionTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 a epo:EAuctionTechniqueUsage .
+
+epd:id_2021-S-050-122221_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-050-122221_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Landschaftsbauarbeiten Erdarbeiten in ebenen und geneigten Flächen ca. 560 m³, — Entwässerungs- und Leitungsarbeiten ca. 500 m, — Asphaltarbeiten ca. 440 m2,— Betonpflasterarbeiten in Groß- und Teilflächen ca. 800 m2,— Mauerwerksarbeiten mit Mauerscheiben ca. 215 m, — Stahlarbeiten ca. 50 m, — Beläge auf Dachflächen ca. 200 m2,— Vegetationsarbeiten Saatarbeiten ca. 2 500 m2."@de;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-050-122221_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J a cccev:ContactPoint;
+  epo:hasFax "+49 7219263985";
+  epo:hasInternetAddress "www.rp.baden-wuerttemberg.de"^^xsd:anyURI;
+  cccev:email "poststelle@rpk.bwl.de";
+  cccev:telephone "+49 7219268730" .
+
+epd:id_2021-S-050-122221_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76137";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Durlacher Allee 100" .
+
+epd:id_2021-S-050-122221_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg im Regierungspräsidium Karlsruhe"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-050-122221_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J;
+  cccev:registeredAddress epd:id_2021-S-050-122221_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2021-S-050-122221_Mediator_2t4SUwdC66NGJuVrEY4e6J a epo:Mediator;
+  epo:playedBy epd:id_2021-S-050-122221_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2021-S-050-122221_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-050-122221_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2021-S-050-122221_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-050-122221_Mediator_2t4SUwdC66NGJuVrEY4e6J,
+    epd:id_2021-S-050-122221_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2021-S-050-122221_Reviewer_kNwzAnsDUkmLUrSJHhyRUY;
+  epo:hasDispatchDate "2021-03-08"^^xsd:date;
+  epo:hasID epd:id_2021-S-050-122221_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210312";
+  epo:refersToLot epd:id_2021-S-050-122221_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-050-122221_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-050-122221_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 050-122221" .
+
+epd:id_2021-S-050-122221_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE139>;
+  locn:postCode "79415";
+  locn:postName "Bad Bellingen";
+  locn:thoroughfare "Schloßstr. 1" .
+
+epd:id_2021-S-050-122221_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Eigenbetrieb Heime";
+  epo:hasLegalName "Eigenbetrieb Heime des Landkreises Lörrach"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/soc-pro>;
+  cccev:registeredAddress epd:id_2021-S-050-122221_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-050-122221_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2021-09-27"^^xsd:date;
+  epo:hasEnd "2022-07-02"^^xsd:date .
+
+epd:id_2021-S-050-122221_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-050-122221_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-050-122221_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45112700> .
+
+epd:id_2021-S-050-122221_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-050-122221_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "3-geschossiges Pflegeheim Massivbauweise Stahlbeton mit WDVS (Mineralwolle) und Putz 1 Wohngruppe a`14 Bewohner 4 Wohngruppen a`15 Bewohner EG liegt teilweise im Hang und wird mit Erdmaterial angeschüttet BGF gesamt 4 620 m2 BRI gesamt 16 589 m3."@de;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-050-122221_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-050-122221_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Neubau „Haus am Sonnenstück“"@de;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-050-122221_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2021-S-050-122221_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62;
+  epo:usesTechnique epd:id_2021-S-050-122221_EAuctionTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2021-S-050-122221_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-04-12"^^xsd:date .
+
+epd:id_2021-S-050-122221_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-050-122221_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-050-122221_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-050-122221_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+49 7219263985";
+  epo:hasInternetAddress "www.rp.baden-wuerttemberg.de"^^xsd:anyURI;
+  cccev:email "poststelle@rpk.bwl.de";
+  cccev:telephone "+49 7219268730" .
+
+epd:id_2021-S-050-122221_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76137";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Durlacher Allee 100" .
+
+epd:id_2021-S-050-122221_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg im Regierungspräsidium Karlsruhe"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-050-122221_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2021-S-050-122221_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-050-122221_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-050-122221_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-050-122221_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasSubmissionURL "https://www.subreport.de/"^^xsd:anyURI .

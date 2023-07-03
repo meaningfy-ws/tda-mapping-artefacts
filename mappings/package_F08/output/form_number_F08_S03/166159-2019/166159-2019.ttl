@@ -1,0 +1,102 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-070-166159_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "http://www.hajduszoboszlo.hu"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2019-S-070-166159_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2019-S-070-166159_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2019-S-070-166159_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "Szabó László"@hu;
+  epo:hasFax "+36 52557301";
+  epo:hasInternetAddress "https://hajduszoboszlo.hu/"^^xsd:anyURI;
+  cccev:email "polgmhiv@hajduszob.hu";
+  cccev:telephone "+36 52557352" .
+
+epd:id_2019-S-070-166159_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj a locn:Address;
+  locn:fullAddress "Hajdúszoboszló közigazgatási területe"@hu .
+
+epd:id_2019-S-070-166159_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU321>;
+  locn:address epd:id_2019-S-070-166159_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2019-S-070-166159_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-070-166159_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2019-S-070-166159_InformationProviderContactPoint_PHAC3pV7Mi9mSueG6pbn8k a
+    cccev:ContactPoint;
+  epo:hasContactName "Béres Csaba"@hu;
+  epo:hasFax "+36 42433719";
+  epo:hasInternetAddress "http://www.nyirber.hu"^^xsd:anyURI;
+  cccev:email "nyirber@gmail.com";
+  cccev:telephone "+36 42433722" .
+
+epd:id_2019-S-070-166159_InformationProviderOrganisationAddress_PHAC3pV7Mi9mSueG6pbn8k
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU323>;
+  locn:postCode "4400";
+  locn:postName "Nyíregyháza";
+  locn:thoroughfare "Hunyadi u. 78/A." .
+
+epd:id_2019-S-070-166159_InformationProviderOrganisation_PHAC3pV7Mi9mSueG6pbn8k a
+    org:Organization;
+  epo:hasLegalName "NYÍRBER Kft"@hu;
+  cccev:registeredAddress epd:id_2019-S-070-166159_InformationProviderOrganisationAddress_PHAC3pV7Mi9mSueG6pbn8k .
+
+epd:id_2019-S-070-166159_LotPurpose_PNm7nZntEXiu4JieackQnj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2019-S-070-166159_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-070-166159_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription "Autóbusszal végzendő, menetrendszerinti helyi tömegközlekedési feladatok ellátása Hajdúszoboszló város közigazgatási területén, közszolgálati iroda működtetése a szolgáltatást igénybe vevő utasok részére a szükséges menetrend, jegyek és bérletek értékesítése és tájékoztatás nyújtás érdekében, közszolgáltatási szerződés keretében."@hu;
+  epo:hasPurpose epd:id_2019-S-070-166159_LotPurpose_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2019-S-070-166159_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-070-166159_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2019-S-070-166159_ProcurementProcedureInformationProvider_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:hasDispatchDate "2019-04-04"^^xsd:date;
+  epo:hasID epd:id_2019-S-070-166159_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20190409";
+  epo:refersToLot epd:id_2019-S-070-166159_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2019-S-070-166159_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2019-S-070-166159_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 070-166159" .
+
+epd:id_2019-S-070-166159_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU321>;
+  locn:postCode "4200";
+  locn:postName "Hajdúszoboszló";
+  locn:thoroughfare "Hősök tere 1." .
+
+epd:id_2019-S-070-166159_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC a epo:Identifier;
+  epo:hasIdentifierValue "AK02881" .
+
+epd:id_2019-S-070-166159_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2019-S-070-166159_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC;
+  epo:hasLegalName "Hajdúszoboszló Város Önkormányzata"@hu;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2019-S-070-166159_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2019-S-070-166159_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2019-S-070-166159_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasAdditionalInformation "Jelen közzétételre a 1370/2007/EK rendelet 7. cikk (2) bekezdése alapján kerül sor."@hu;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-070-166159_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2019-S-070-166159_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle "Hajdúszoboszlón helyi autóbusszal végzett menetrendszerinti személyszállítási közszolgáltató kiválasztása"@hu .
+
+epd:id_2019-S-070-166159_ProcurementProcedureInformationProvider_PHAC3pV7Mi9mSueG6pbn8k
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-070-166159_InformationProviderContactPoint_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:playedBy epd:id_2019-S-070-166159_InformationProviderOrganisation_PHAC3pV7Mi9mSueG6pbn8k .

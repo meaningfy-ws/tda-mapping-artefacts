@@ -1,0 +1,243 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-246-651539_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://www.enbw.com/lieferantenportal"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-246-651539_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-246-651539_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-246-651539_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-246-651539_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "www.enbw.com"^^xsd:anyURI;
+  cccev:email "a.lazareva@enbw.com" .
+
+epd:id_2021-S-246-651539_ContractTermLotLocationAddress_32L5QtPBVpA5CJ4PqGRoL2 a locn:Address;
+  locn:fullAddress "Baltic Sea"@en .
+
+epd:id_2021-S-246-651539_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Baltic Sea"@en .
+
+epd:id_2021-S-246-651539_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a locn:Address;
+  locn:fullAddress "Baltic Sea"@en .
+
+epd:id_2021-S-246-651539_ContractTermLotLocation_32L5QtPBVpA5CJ4PqGRoL2 a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE8>;
+  locn:address epd:id_2021-S-246-651539_ContractTermLotLocationAddress_32L5QtPBVpA5CJ4PqGRoL2 .
+
+epd:id_2021-S-246-651539_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE8>;
+  locn:address epd:id_2021-S-246-651539_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-246-651539_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE8>;
+  locn:address epd:id_2021-S-246-651539_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
+
+epd:id_2021-S-246-651539_ContractTermLot_32L5QtPBVpA5CJ4PqGRoL2 a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-246-651539_Period_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-246-651539_ContractTermLotLocation_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasOptions false .
+
+epd:id_2021-S-246-651539_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-246-651539_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-246-651539_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-246-651539_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-246-651539_Period_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-246-651539_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions false .
+
+epd:id_2021-S-246-651539_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-246-651539_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-246-651539_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "Maximum one frame contract will be concluded per lot.If the combination of several lots leads to the the most economic offer, one frame contract can be made in total."@en .
+
+epd:id_2021-S-246-651539_LotIdentifier_32L5QtPBVpA5CJ4PqGRoL2 a epo:Identifier;
+  epo:hasIdentifierValue "3" .
+
+epd:id_2021-S-246-651539_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-246-651539_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-246-651539_LotPurpose_32L5QtPBVpA5CJ4PqGRoL2 a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60651000> .
+
+epd:id_2021-S-246-651539_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60651000> .
+
+epd:id_2021-S-246-651539_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60651000> .
+
+epd:id_2021-S-246-651539_Lot_32L5QtPBVpA5CJ4PqGRoL2 a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-246-651539_ContractTermLot_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasAdditionalInformation "The highest possible lot value: 5,700,000 Euro.Regarding alternative offers: it is possible to make a combined price offer for every lot combination."@en;
+  epo:hasDescription "For Baltic 2 (B2) there is a need for one Crew transfer vessel (CTV) to transfer the technicians and cargo to and from the offshore windfarms B2 on a daily basis. This CTV is planned to be used all year around.The bidder shall offer one CTV with 18 PAX. This CTV is regarded as optional.Whether it will be charted or not will be decided during the tender.Start of Charter Period: 01.06.2022 - 31.03.2024Option for extension of Charter ->2 years01.04.2024 - 31.03.2026.Base port: Klintholm (~26nm)For the Windfarm Baltic 2"@en;
+  epo:hasEstimatedValue epd:id_2021-S-246-651539_MainMonetaryValueLot_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasID epd:id_2021-S-246-651539_LotIdentifier_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasPurpose epd:id_2021-S-246-651539_LotPurpose_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasTitle "CTV3 (B2), 18 Pax"@en;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-246-651539_MultipleStageProcedureTerm_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-246-651539_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-246-651539_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "The highest possible lot value: 2,500,000 Euro.Regarding alternative offers: it is possible to make a combined price offer for every lot combination."@en;
+  epo:hasDescription "For Baltic 1 (B1) there is a need for one Crew transfer vessel (CTV) to transfer the technicians and cargo to and from the offshore windfarms B1 on a daily basis.The bidder shall offer one CTV with 12 Pax for Baltic 1.Start of Charter Period: 01.06.2022Charter period:01.06.2022 to 30.09.202201.04.2023 to 30.09.2023Option for extension of Charter: 2 years01.04.2024 to 30.09.202401.04.2025 to 30.09.2025- Base port: Barhöft (~23nm)- Windfarm: Baltic 1."@en;
+  epo:hasEstimatedValue epd:id_2021-S-246-651539_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasID epd:id_2021-S-246-651539_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-246-651539_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle "CTV1 (B1), 12 Pax"@en;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-246-651539_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-246-651539_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-246-651539_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasAdditionalInformation "The highest possible los value: 2,500,000 Euro.Regarding alternative offers: it is possible to make a combined price offer for every lot combination."@en;
+  epo:hasDescription "For Baltic 2 (B2) there is a need for one Crew transfer vessel (CTV) to transfer the technicians and cargo to and from the offshore windfarms B2 on a daily basis.The bidder shall offer one CTV1 with 12 Pax for Baltic 2.Start of Charter Period: 01.06.2022Charter period:01.06.2022 to 30.09.202201.04.2023 to 30.09.2023Option for extension of Charter: 2 years01.04.2024 to 30.09.202401.04.2025 to 30.09.2025Base port: Klintholm (~26nm)Windfarm: Baltic 2"@en;
+  epo:hasEstimatedValue epd:id_2021-S-246-651539_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasID epd:id_2021-S-246-651539_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-246-651539_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle "CTV2 (B2), 12 Pax"@en;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-246-651539_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-246-651539_MainMonetaryValueLot_32L5QtPBVpA5CJ4PqGRoL2 a epo:MonetaryValue;
+  epo:hasAmountValue 5200000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-246-651539_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 2300000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-246-651539_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj a epo:MonetaryValue;
+  epo:hasAmountValue 2300000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-246-651539_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 9800000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-246-651539_MultipleStageProcedureTerm_32L5QtPBVpA5CJ4PqGRoL2 a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-246-651539_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-246-651539_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-246-651539_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-246-651539_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-246-651539_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-246-651539_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-12-15"^^xsd:date;
+  epo:hasID epd:id_2021-S-246-651539_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20211220";
+  epo:refersToLot epd:id_2021-S-246-651539_Lot_32L5QtPBVpA5CJ4PqGRoL2, epd:id_2021-S-246-651539_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-246-651539_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2021-S-246-651539_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-246-651539_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 246-651539" .
+
+epd:id_2021-S-246-651539_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE8>;
+  locn:postCode "18445";
+  locn:postName "Barhöft";
+  locn:thoroughfare "Klausdorfer Strasse 1" .
+
+epd:id_2021-S-246-651539_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "EnBW Offshore Services GmbH"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2021-S-246-651539_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-246-651539_Period_32L5QtPBVpA5CJ4PqGRoL2 a epo:Period;
+  epo:hasBeginning "2022-06-01"^^xsd:date;
+  epo:hasEnd "2024-03-30"^^xsd:date .
+
+epd:id_2021-S-246-651539_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2022-06-01"^^xsd:date;
+  epo:hasEnd "2023-09-30"^^xsd:date .
+
+epd:id_2021-S-246-651539_Period_Vxue4SiZ9v6DD9ffmckCQj a epo:Period;
+  epo:hasBeginning "2022-06-01"^^xsd:date;
+  epo:hasEnd "2024-09-30"^^xsd:date .
+
+epd:id_2021-S-246-651539_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "EnBW-2021-0121" .
+
+epd:id_2021-S-246-651539_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60651000> .
+
+epd:id_2021-S-246-651539_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasLotAwardCombination "All 3 lots can be awarded to one bidder, if the bidder submitts the most economic offer for each lot. The bidder has the possibility to submit a combined offer for every lot combintion. If this combination leads to the most economic total  offer, the tendering company has the right to award this combinded offer, even if there is a more economic offer within a single lot.";
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2021-S-246-651539_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-246-651539_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription "EnBW has two offshore windfarms in the Baltic Sea: Baltic 1 (B1) and Baltic 2 (B2). There is a need for 3 crew transfer vessels (CTV) to transfer the technicians and cargo to and from the offshore windfarms B1 and B2 on a daily basis.The bidder shall offer 3 CTVs-  CTV 1(12 Pax for Baltic 1)-  CTV 2 (12 Pax for Baltic 2)-  CTV 3 (18 Pax for Baltic 2) is regarded as optional. Whether it will be charted or not will be decided during the tender."@en;
+  epo:hasEstimatedValue epd:id_2021-S-246-651539_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2021-S-246-651539_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-246-651539_Lot_32L5QtPBVpA5CJ4PqGRoL2,
+    epd:id_2021-S-246-651539_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2021-S-246-651539_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-246-651539_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Crew Transfer Vessels for EnBW wind parks in the Baltic Sea"@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-246-651539_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-246-651539_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-246-651539_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2021-S-246-651539_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2021-S-246-651539_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-246-651539_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-246-651539_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-246-651539_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-246-651539_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-246-651539_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "A review procedure is admissible only if the applicant has recognized the alleged infringement of procurement rules prior to the submission of the request for review and has complained to the contracting authority within 10 calendar days, and has submitted a request for initiation of a review procedure within 15 calendar days after the contracting authority has notified that it is unwilling to redress the complaint (see in particular Act against Restraints of Competition §160 (3) GWB)." .
+
+epd:id_2021-S-246-651539_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+49 03855885160";
+  cccev:telephone "+49 03855885160" .
+
+epd:id_2021-S-246-651539_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "19053";
+  locn:postName "Schwerin";
+  locn:thoroughfare "Johannes-Stelling-Straße 14" .
+
+epd:id_2021-S-246-651539_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Vergabekammern des Landes Mecklenburg-Vorpommern"@en;
+  epo:hasPrimaryContactPoint epd:id_2021-S-246-651539_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-246-651539_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-246-651539_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-246-651539_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-246-651539_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "www.tender24.de"^^xsd:anyURI .

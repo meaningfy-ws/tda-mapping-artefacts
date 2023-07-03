@@ -1,0 +1,220 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-044-096879_AwardCriterionPrice_3adAvBFPyyV3GW2dYQZ2ui a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "50"@de .
+
+epd:id_2018-S-044-096879_AwardCriterionQuality_YGTatnkXXTguWHbmipQF7k a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Produktspezifische Qualität"@de;
+  cccev:weight "5"@de .
+
+epd:id_2018-S-044-096879_AwardCriterionQuality_b25kZHzTsUQZoZPpBYfaFX a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Ersatzteil und Serviceversorgung"@de;
+  cccev:weight "25"@de .
+
+epd:id_2018-S-044-096879_AwardCriterionQuality_e4Hatzbm3nMBXkxhcYzqU4 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Betriebskosten"@de;
+  cccev:weight "5"@de .
+
+epd:id_2018-S-044-096879_AwardCriterionQuality_eDoLkWm4bCwzSaypmba997 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Technischer Wert"@de;
+  cccev:weight "5"@de .
+
+epd:id_2018-S-044-096879_AwardCriterionQuality_gZjMvYnfh7isDk7VRXzH95 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Rentabilität"@de;
+  cccev:weight "10"@de .
+
+epd:id_2018-S-044-096879_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "http://klaiber-bus.de"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-044-096879_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-044-096879_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-044-096879_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasFax "+49 7424-933480";
+  epo:hasInternetAddress "http://klaiber-bus.de"^^xsd:anyURI;
+  cccev:email "info@klaiber-bus.de";
+  cccev:telephone "+49 7424-9334-0" .
+
+epd:id_2018-S-044-096879_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+                  78549 Spaichingen
+               """@de .
+
+epd:id_2018-S-044-096879_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE137>;
+  locn:address epd:id_2018-S-044-096879_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2018-S-044-096879_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2018-S-044-096879_Period_aNssKXiFyYxii2v93ivV4N;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-044-096879_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2018-S-044-096879_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2018-S-044-096879_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34121200> .
+
+epd:id_2018-S-044-096879_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-044-096879_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription """
+                  Niederflurgelenkbus 6 EUR gemäß Förderprogramm des Landes Baden-Württemberg
+               """@de;
+  epo:hasEstimatedValue epd:id_2018-S-044-096879_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2018-S-044-096879_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-044-096879_AwardCriterionPrice_3adAvBFPyyV3GW2dYQZ2ui,
+    epd:id_2018-S-044-096879_AwardCriterionQuality_YGTatnkXXTguWHbmipQF7k, epd:id_2018-S-044-096879_AwardCriterionQuality_b25kZHzTsUQZoZPpBYfaFX,
+    epd:id_2018-S-044-096879_AwardCriterionQuality_e4Hatzbm3nMBXkxhcYzqU4, epd:id_2018-S-044-096879_AwardCriterionQuality_eDoLkWm4bCwzSaypmba997,
+    epd:id_2018-S-044-096879_AwardCriterionQuality_gZjMvYnfh7isDk7VRXzH95 .
+
+epd:id_2018-S-044-096879_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 350000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-044-096879_MediatorContactPoint_QcCdiMK7DbGvuwkYmeWQca a cccev:ContactPoint;
+  epo:hasFax "+49 761-208394200";
+  cccev:telephone "+49 761-20800" .
+
+epd:id_2018-S-044-096879_MediatorOrganisationAddress_QcCdiMK7DbGvuwkYmeWQca a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "79083";
+  locn:postName "Freiburg" .
+
+epd:id_2018-S-044-096879_MediatorOrganisation_QcCdiMK7DbGvuwkYmeWQca a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg bei Regierungspräsidium Freiburg"@de;
+  epo:hasPrimaryContactPoint epd:id_2018-S-044-096879_MediatorContactPoint_QcCdiMK7DbGvuwkYmeWQca;
+  cccev:registeredAddress epd:id_2018-S-044-096879_MediatorOrganisationAddress_QcCdiMK7DbGvuwkYmeWQca .
+
+epd:id_2018-S-044-096879_Mediator_QcCdiMK7DbGvuwkYmeWQca a epo:Mediator;
+  epo:playedBy epd:id_2018-S-044-096879_MediatorOrganisation_QcCdiMK7DbGvuwkYmeWQca .
+
+epd:id_2018-S-044-096879_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 350000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-044-096879_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-044-096879_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2018-S-044-096879_Mediator_QcCdiMK7DbGvuwkYmeWQca,
+    epd:id_2018-S-044-096879_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2018-S-044-096879_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2018-S-044-096879_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2018-S-044-096879_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2018-03-01"^^xsd:date;
+  epo:hasID epd:id_2018-S-044-096879_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20180303";
+  epo:refersToLot epd:id_2018-S-044-096879_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2018-S-044-096879_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2018-S-044-096879_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 044-096879" .
+
+epd:id_2018-S-044-096879_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE137>;
+  locn:postCode "78549";
+  locn:postName "Spaichingen";
+  locn:thoroughfare "Max-Planck-Straße 12" .
+
+epd:id_2018-S-044-096879_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "DE" .
+
+epd:id_2018-S-044-096879_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2018-S-044-096879_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "Klaiber Bus GmbH & Co. KG"@de;
+  epo:hasMainActivityDescription "Öffentlicher Nahverkehr";
+  cccev:registeredAddress epd:id_2018-S-044-096879_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-044-096879_Period_aNssKXiFyYxii2v93ivV4N a epo:Period;
+  epo:hasBeginning "2018-08-01"^^xsd:date;
+  epo:hasEnd "2018-12-15"^^xsd:date .
+
+epd:id_2018-S-044-096879_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34121200> .
+
+epd:id_2018-S-044-096879_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2018-S-044-096879_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-044-096879_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription """
+               Niederflurgelenkbus
+            """@de;
+  epo:hasEstimatedValue epd:id_2018-S-044-096879_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-044-096879_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2018-S-044-096879_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               Niederflurgelenkbus Beschaffung 2018
+            """@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-044-096879_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY,
+    epd:id_2018-S-044-096879_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2018-S-044-096879_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-044-096879_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-044-096879_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-044-096879_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "79083";
+  locn:postName "Freiburg" .
+
+epd:id_2018-S-044-096879_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasFax "+49 761-208394200";
+  cccev:telephone "+49 761-20800" .
+
+epd:id_2018-S-044-096879_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg beim Regierungspräsidium Freiburg"@de;
+  epo:hasPrimaryContactPoint epd:id_2018-S-044-096879_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2018-S-044-096879_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2018-S-044-096879_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-044-096879_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2018-S-044-096879_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+49 761-208394200";
+  cccev:telephone "+49 761-20800" .
+
+epd:id_2018-S-044-096879_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "79083";
+  locn:postName "Freiburg" .
+
+epd:id_2018-S-044-096879_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg bei Regierungspräsidium Freiburg"@de;
+  epo:hasPrimaryContactPoint epd:id_2018-S-044-096879_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2018-S-044-096879_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2018-S-044-096879_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-044-096879_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2018-S-044-096879_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2018-04-30T12:00" .
+
+epd:id_2018-S-044-096879_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-044-096879_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-044-096879_Organisation_W8v6KSqiUn74jPKJmENKoH .

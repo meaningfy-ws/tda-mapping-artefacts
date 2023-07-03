@@ -1,0 +1,190 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-054-120271_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-054-120271_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-054-120271_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-054-120271_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Abt. Einkauf; Marion Schwarz"@de;
+  epo:hasFax "+49 9131823-4477";
+  epo:hasInternetAddress "www.estw.de"^^xsd:anyURI;
+  cccev:email "marion.schwarz@estw.de";
+  cccev:telephone "+49 9131823-4224" .
+
+epd:id_2018-S-054-120271_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE252> .
+
+epd:id_2018-S-054-120271_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE252> .
+
+epd:id_2018-S-054-120271_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-054-120271_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2018-S-054-120271_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-054-120271_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2018-S-054-120271_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2018-S-054-120271_LotIdentifier_aNssKXiFyYxii2v93ivV4N a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2018-S-054-120271_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2018-S-054-120271_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/32235000>, <http://data.europa.eu/cpv/cpv/48600000> .
+
+epd:id_2018-S-054-120271_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/31682230> .
+
+epd:id_2018-S-054-120271_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-054-120271_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription """
+                  Los. 1: Die ESTW Stadtverkehr GmbH führen zur Verbesserung der Betriebslenkung ein ITCS ein. Dies umfasst die Ausstattung von 92 Omnibussen mit Bordrechnern mit Fahrausweisverkaufsfunktion und Kommunikationssystem zur Leitstelle basierend auf öffentlichem Mobilfunk. Zur Abrechnung der Fahrausweisverkäufe wird eine Hintergrundsystem mit Schnittstelle zu Navision eingerichtet. Weiterer Bestandteil des Lieferumfangs ist die Einrichtung eines Fahr- und Dienstplan-Programms mit Soll-Schnittstelle zum ITCS sowie eines Personaldispositionssystems mit Anbindung zum vorhandenen Personalabrechnungssystem (LOGA).
+               """@de;
+  epo:hasID epd:id_2018-S-054-120271_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2018-S-054-120271_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:hasTitle """
+                  ITCS, Fahr- und Dienstplan-Programm, Personaldispositionssystem
+               """@de;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-054-120271_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-054-120271_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasDescription """
+                  Los 2: Zur Verbesserung der Fahrgastinformation wird die ESTW Stadtverkehr GmbH rund 25 dynamische Anzeiger an den Bushaltestellen installieren.
+               """@de;
+  epo:hasID epd:id_2018-S-054-120271_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2018-S-054-120271_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasTitle """
+                  Beschaffung eines Dynamisches Fahrgastinformations System DFI
+               """@de;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-054-120271_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-054-120271_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2018-S-054-120271_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2018-S-054-120271_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2018-S-054-120271_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2018-S-054-120271_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2018-03-15"^^xsd:date;
+  epo:hasID epd:id_2018-S-054-120271_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20180317";
+  epo:refersToLot epd:id_2018-S-054-120271_Lot_aNssKXiFyYxii2v93ivV4N, epd:id_2018-S-054-120271_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:refersToProcedure epd:id_2018-S-054-120271_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2018-S-054-120271_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 054-120271" .
+
+epd:id_2018-S-054-120271_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE252>;
+  locn:postCode "91052";
+  locn:postName "Erlangen";
+  locn:thoroughfare "Äußere Brucker Straße 33, 91052 Erlangen" .
+
+epd:id_2018-S-054-120271_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "Erlanger Stadtwerke Stadtverkehr GmbH"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2018-S-054-120271_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-054-120271_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/48600000> .
+
+epd:id_2018-S-054-120271_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2018-S-054-120271_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-054-120271_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription """
+               Los. 1: Die ESTW Stadtverkehr GmbH führen zur Verbesserung der Betriebslenkung ein ITCS ein. Dies umfasst die Ausstattung von 92 Omnibussen mit Bordrechnern mit Fahrausweisverkaufsfunktion und Kommunikationssystem zur Leitstelle basierend auf öffentlichem Mobilfunk. Zur Abrechnung der Fahrausweisverkäufe wird eine Hintergrundsystem mit Schnittstelle zu Navision eingerichtet. Weiterer Bestandteil des Lieferumfangs ist die Einrichtung eines Fahr- und Dienstplan-Programms mit Soll-Schnittstelle zum ITCS sowie eines Personaldispositionssystems mit Anbindung zum vorhandenen Personalabrechnungssystem (LOGA).
+               Los 2: Zur Verbesserung der Fahrgastinformation wird die ESTW Stadtverkehr GmbH rund 25 dynamische Anzeiger an den Bushaltestellen installieren.
+            """@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-054-120271_Lot_aNssKXiFyYxii2v93ivV4N,
+    epd:id_2018-S-054-120271_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2018-S-054-120271_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               Einführung von Systemen zur Betriebslenkung (ITCS), für das Fahrgeldmanagement, für die Fahr- und Dienstplanung, für die Personaldisposition und die Fahrgastinformation (DFI)
+            """@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-054-120271_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY,
+    epd:id_2018-S-054-120271_ReviewTerm_ZsxuomNURxGbRdavxJPhLN, epd:id_2018-S-054-120271_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2018-S-054-120271_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-054-120271_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-054-120271_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-054-120271_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "91522";
+  locn:postName "Ansbach";
+  locn:thoroughfare "Promenade 27" .
+
+epd:id_2018-S-054-120271_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasFax "+49 981531873";
+  cccev:email "vergabekammer.nordbayern@reg-mfr.bayern.de";
+  cccev:telephone "+49 981531277" .
+
+epd:id_2018-S-054-120271_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Regierung von Mittelfranken, Vergabekammer Nordbayern"@de;
+  epo:hasPrimaryContactPoint epd:id_2018-S-054-120271_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2018-S-054-120271_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2018-S-054-120271_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-054-120271_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2018-S-054-120271_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Gem. § 160 Abs. 3 Nr. 1 bis 4 VergRModG ist ein Antrag auf Einleitung eines Nachprüfungsverfahrens unzulässig, soweit:
+               1. Der Antragsteller den geltend gemachten Verstoß gegen Vergabevorschriften vor Einreichen des Nachprüfungsantrags erkannt und gegenüber dem Auftraggeber nicht innerhalb einer Frist von 10 Kalendertagen gerügt hat; der Ablauf der Frist nach § 134, Abs. 2 bleibt unberührt,
+               2. Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, nicht spätestens bis zum Ablauf der in der Bekanntmachung benannten Frist zur Bewertung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden,
+               3. Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, nicht spätestens bis zum Ablauf der Angebotsfrist gegenüber dem Auftraggeber gerügt werden,
+               4. Mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind.
+            """ .
+
+epd:id_2018-S-054-120271_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+49 981531873";
+  cccev:email "vergabekammer.nordbayern@reg-mfr.bayern.de";
+  cccev:telephone "+49 981531277" .
+
+epd:id_2018-S-054-120271_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "91522";
+  locn:postName "Ansbach";
+  locn:thoroughfare "Promenade 27" .
+
+epd:id_2018-S-054-120271_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Regierung von Mittelfranken, Vergabekammer Nordbayern"@de;
+  epo:hasPrimaryContactPoint epd:id_2018-S-054-120271_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2018-S-054-120271_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2018-S-054-120271_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-054-120271_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2018-S-054-120271_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2018-03-29T12:00" .
+
+epd:id_2018-S-054-120271_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-054-120271_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-054-120271_Organisation_W8v6KSqiUn74jPKJmENKoH .

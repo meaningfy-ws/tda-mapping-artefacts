@@ -1,0 +1,224 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-149-398355_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.eprocurement.gov.cy"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-149-398355_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.eprocurement.gov.cy/epps/cft/prepareViewCfTWS.do?resourceId=4886314"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-149-398355_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-149-398355_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-149-398355_Channel_PECLWCEwQNoZFei2BQMmT6 a cccev:Channel;
+  epo:hasURL "https://www.eprocurement.gov.cy"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2021-S-149-398355_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Aristotelis Savva"@el;
+  epo:hasFax "+357 22498935";
+  epo:hasInternetAddress "https://www.eprocurement.gov.cy/epps/cft/prepareViewCfTWS.do?resourceId=4886314"^^xsd:anyURI;
+  cccev:email "asavva@pwd.mcw.gov.cy";
+  cccev:telephone "+357 22806646" .
+
+epd:id_2021-S-149-398355_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Κάλυψη των Καθορισμένων Περιοχών που βρίσκονται υπό τον αποτελεσματικό έλεγχο της Κυπριακής Δημοκρατίας, σύμφωνα με τις σχετικές Συμβάσεις Παραχώρησης"@el .
+
+epd:id_2021-S-149-398355_ContractTermLotLocationAddress_gBpZPwcpekuQ8tRyYLDbhL a locn:Address;
+  locn:fullAddress "Κάλυψη των Καθορισμένων Περιοχών που βρίσκονται υπό τον αποτελεσματικό έλεγχο της Κυπριακής Δημοκρατίας, σύμφωνα με τις σχετικές Συμβάσεις Παραχώρησης"@el .
+
+epd:id_2021-S-149-398355_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CY000>;
+  locn:address epd:id_2021-S-149-398355_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-149-398355_ContractTermLotLocation_gBpZPwcpekuQ8tRyYLDbhL a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CY000>;
+  locn:address epd:id_2021-S-149-398355_ContractTermLotLocationAddress_gBpZPwcpekuQ8tRyYLDbhL .
+
+epd:id_2021-S-149-398355_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-149-398355_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-149-398355_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-149-398355_ContractTermLot_gBpZPwcpekuQ8tRyYLDbhL a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-149-398355_Duration_kRiiMRBTYMDCGKiwh9Rzt7;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-149-398355_ContractTermLotLocation_gBpZPwcpekuQ8tRyYLDbhL .
+
+epd:id_2021-S-149-398355_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-149-398355_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-149-398355_Duration_kRiiMRBTYMDCGKiwh9Rzt7 a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-149-398355_LotIdentifier_RgULVPVVYP9pkvK789PCUZ a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-149-398355_LotIdentifier_gBpZPwcpekuQ8tRyYLDbhL a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-149-398355_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60100000>, <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2021-S-149-398355_LotPurpose_gBpZPwcpekuQ8tRyYLDbhL a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60100000>, <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2021-S-149-398355_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-149-398355_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Σχετική είναι η Προδημοσίευση σύμφωνα με το Άρθρο 7(2) του Κανονισμού (ΕΚ) αριθ. 1370/2007 - Αρ. Προδημοσίευσης: 2017/S176-361148"@el;
+  epo:hasDescription "Η παροχή Υπηρεσιών Δημόσιων Επιβατικών Μεταφορών με Λεωφορεία για την κάλυψη της Γεωγραφικής Περιοχής Λεμεσού και της Γεωγραφικής Περιοχής Πάφου οι οποίες τελούν υπό τον αποτελεσματικό έλεγχο της Κυπριακής Δημοκρατίας. Αφορά δύο (2) διακριτές Συμβάσεις Παραχώρησης που προκηρύσσονται μέσω της παρούσας διαγωνιστικής διαδικασίας δυνάμει του Κανονισμού (ΕΚ) αρ. 1370/2007."@el;
+  epo:hasEstimatedValue epd:id_2021-S-149-398355_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasID epd:id_2021-S-149-398355_LotIdentifier_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-149-398355_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasTitle "Σύμβαση Παραχώρησης Γεωγραφικής Περιοχής Λεμεσού"@el;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-149-398355_Lot_gBpZPwcpekuQ8tRyYLDbhL a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-149-398355_ContractTermLot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasAdditionalInformation "Σχετική είναι η Προδημοσίευση σύμφωνα με το Άρθρο 7(2) του Κανονισμού (ΕΚ) αριθ. 1370/2007 - Αρ. Προδημοσίευσης: 2017/S 176-361143"@el;
+  epo:hasDescription "Η παροχή Υπηρεσιών Δημόσιων Επιβατικών Μεταφορών με Λεωφορεία για την κάλυψη της Γεωγραφικής Περιοχής Λεμεσού και της Γεωγραφικής Περιοχής Πάφου οι οποίες τελούν υπό τον αποτελεσματικό έλεγχο της Κυπριακής Δημοκρατίας. Αφορά δύο (2) διακριτές Συμβάσεις Παραχώρησης που προκηρύσσονται μέσω της παρούσας διαγωνιστικής διαδικασίας δυνάμει του Κανονισμού (ΕΚ) αρ. 1370/2007."@el;
+  epo:hasEstimatedValue epd:id_2021-S-149-398355_MainMonetaryValueLot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasID epd:id_2021-S-149-398355_LotIdentifier_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasPurpose epd:id_2021-S-149-398355_LotPurpose_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasTitle "Σύμβαση Παραχώρησης Γεωγραφικής Περιοχής Πάφου"@el;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-149-398355_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 270000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-149-398355_MainMonetaryValueLot_gBpZPwcpekuQ8tRyYLDbhL a epo:MonetaryValue;
+  epo:hasAmountValue 150000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-149-398355_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 420000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-149-398355_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-149-398355_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-149-398355_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2021-S-149-398355_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2021-S-149-398355_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2021-07-30"^^xsd:date;
+  epo:hasID epd:id_2021-S-149-398355_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210804";
+  epo:refersToLot epd:id_2021-S-149-398355_Lot_RgULVPVVYP9pkvK789PCUZ, epd:id_2021-S-149-398355_Lot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:refersToProcedure epd:id_2021-S-149-398355_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-149-398355_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 149-398355" .
+
+epd:id_2021-S-149-398355_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CY>;
+  locn:postCode "2048";
+  locn:postName "Λευκωσία";
+  locn:thoroughfare "Λεωφόρος Στροβόλου 165" .
+
+epd:id_2021-S-149-398355_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "1429" .
+
+epd:id_2021-S-149-398355_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasID epd:id_2021-S-149-398355_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Τμήμα Δημοσίων Έργων"@el;
+  epo:hasMainActivityDescription "Ανάπτυξη Υποδομών και Υπηρεσιών για Μεταφορές ";
+  cccev:registeredAddress epd:id_2021-S-149-398355_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-149-398355_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "MTCW/PT Concession Contracts/1/2021" .
+
+epd:id_2021-S-149-398355_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60000000> .
+
+epd:id_2021-S-149-398355_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk a epo:ProcedureTerm;
+  epo:hasMaximumLotSubmissionAllowed 2;
+  epo:hasMaximumNumberOfLotsToBeAwarded 2 .
+
+epd:id_2021-S-149-398355_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-149-398355_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Σχετικές είναι οι Προδημοσιεύσεις σύμφωνα με το Άρθρο 7(2) του Κανονισμού (ΕΚ) αριθ. 1370/2007 - Αρ. Προδημοσίευσης: 2017/S176-361148 και 2017/S 176-361143"@el;
+  epo:hasDescription "Η παροχή Υπηρεσιών Δημόσιων Επιβατικών Μεταφορών με Λεωφορεία για την κάλυψη της Γεωγραφικής Περιοχής Λεμεσού και της Γεωγραφικής Περιοχής Πάφου οι οποίες τελούν υπό τον αποτελεσματικό έλεγχο της Κυπριακής Δημοκρατίας. Αφορά δύο (2) διακριτές Συμβάσεις Παραχώρησης που προκηρύσσονται μέσω της παρούσας διαγωνιστικής διαδικασίας δυνάμει του Κανονισμού (ΕΚ) αρ. 1370/2007."@el;
+  epo:hasEstimatedValue epd:id_2021-S-149-398355_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2021-S-149-398355_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-149-398355_Lot_RgULVPVVYP9pkvK789PCUZ,
+    epd:id_2021-S-149-398355_Lot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasPurpose epd:id_2021-S-149-398355_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Η παροχή Υπηρεσιών Δημόσιων Επιβατικών Μεταφορών με Λεωφορεία για την κάλυψη της Γεωγραφικής Περιοχής Λεμεσού και της Γεωγραφικής Περιοχής Πάφου"@el;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-149-398355_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-149-398355_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk, epd:id_2021-S-149-398355_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr,
+    epd:id_2021-S-149-398355_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv;
+  epo:usesChannel epd:id_2021-S-149-398355_Channel_PECLWCEwQNoZFei2BQMmT6 .
+
+epd:id_2021-S-149-398355_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-149-398355_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-149-398355_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-149-398355_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  locn:postCode "1404";
+  locn:postName "Λευκωσία";
+  locn:thoroughfare "Οδός Χαραλάμπου Μούσκου" .
+
+epd:id_2021-S-149-398355_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+357 22865500";
+  epo:hasInternetAddress "www.supremecourt.gov.cy"^^xsd:anyURI;
+  cccev:email "chief.reg@sc.judicial.gov.cy";
+  cccev:telephone "+357 22865751" .
+
+epd:id_2021-S-149-398355_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Διοικητικό Δικαστήριο"@el;
+  epo:hasPrimaryContactPoint epd:id_2021-S-149-398355_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2021-S-149-398355_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-149-398355_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-149-398355_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-149-398355_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Κάθε Ενδιαφερόμενος Οικονομικός Φορέας του οποίου προσβάλλεται ευθέως ίδιο, ενεστώς έννομο συμφέρον από πράξη ή απόφαση της Αναθέτουσας Αρχής που προηγείται της σύναψης της Σύμβασης, έχει δικαίωμα να προσφύγει στο Διοικητικό Δικαστήριο της Κυπριακής Δημοκρατίας, σύμφωνα με το άρθρο 146 του Συντάγματος, εντός εβδομήντα πέντε (75) ημερών από την ημέρα κατά την οποία ενημερώθηκε γραπτώς για την Απόφαση Ανάθεσης της Σύμβασης." .
+
+epd:id_2021-S-149-398355_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+357 22865500";
+  epo:hasInternetAddress "www.supremecourt.gov.cy"^^xsd:anyURI;
+  cccev:email "chief.reg@sc.judicial.gov.cy";
+  cccev:telephone "+357 22865751" .
+
+epd:id_2021-S-149-398355_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  locn:postCode "1404";
+  locn:postName "Λευκωσία";
+  locn:thoroughfare "Οδός Χαράλαμπου Μούσκου" .
+
+epd:id_2021-S-149-398355_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Διοικητικό Δικαστήριο"@el;
+  epo:hasPrimaryContactPoint epd:id_2021-S-149-398355_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2021-S-149-398355_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-149-398355_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-149-398355_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-149-398355_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "EL", "EN";
+  epo:hasSubmissionURL "https://www.eprocurement.gov.cy"^^xsd:anyURI .

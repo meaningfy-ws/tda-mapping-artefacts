@@ -1,0 +1,136 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-108-263007_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.subreport.de/E82655978"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2020-S-108-263007_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2020-S-108-263007_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2020-S-108-263007_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2020-S-108-263007_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasFax "+49 201 / 826-4000";
+  epo:hasInternetAddress "www.ruhrbahn.de"^^xsd:anyURI;
+  cccev:email "u.theis@ruhrbahn.de";
+  cccev:telephone "+49 201 / 826-2394" .
+
+epd:id_2020-S-108-263007_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Essen"@de .
+
+epd:id_2020-S-108-263007_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
+  locn:address epd:id_2020-S-108-263007_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2020-S-108-263007_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2020-S-108-263007_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-108-263007_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2020-S-108-263007_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true .
+
+epd:id_2020-S-108-263007_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/35125100>, <http://data.europa.eu/cpv/cpv/38550000>,
+    <http://data.europa.eu/cpv/cpv/42961100>, <http://data.europa.eu/cpv/cpv/48810000>,
+    <http://data.europa.eu/cpv/cpv/48813000> .
+
+epd:id_2020-S-108-263007_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-108-263007_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Ausgeschrieben wird die Beschaffung von autark arbeitenden Zähleinrichtungen zum Einbau in Fahrzeuge der Ruhrbahn GmbH:— Fahrzeugausrüstung mit Zählanlagen, die ein- und aussteigende Fahrgäste zählen, bestimmte Nebeninformationen aufzeichnen und die Daten an einen zentralen Server übertragen, inkl. Einbauhalterungen, Verkabelung und Servicesoftware;— Mustereinbau und Unterstützung bei der Inbetriebnahme;— Zentrale Geräteverwaltungs- und Kommunikationssoftware;— Softwarepflege;— Support im Betrieb und bei Wartung, Reparatur, Gerätetausch und weiteren Fahrzeugausrüstungen. Die „Geräteverwaltungs- und Kommunikationssoftware“ stellt die stationäre Gegenstelle der Zählanlagen dar. Sie nimmt die Zähldaten zur Weitergabe ans Hintergrundsystem entgegen und ermöglicht eine zentrale Verwaltung der Geräte und deren Fernwartung.Das AFZS Hintergrundsystem ist nicht Bestandteil der Ausschreibung.Folgender Ausrüstungsumfang bei den Fahrzeugen ist vorgesehen:— 56 ruhrbahneigene Standard KOM-Fahrzeuge mit je 2 Türen (Citaro C2);— 30 Standard KOM-Fahrzeuge mit je 2 Türen von Subunternehmern (Citaro C2);— 89 ruhrbahneigene Gelenk-KOM-Fahrzeuge mit je 3 Türen (Citaro C2);— 6 Gelenk-KOM-Fahrzeuge von Subunternehmern mit je 3 Türen (Citaro C2);— 3 Gelenk-KOM-Fahrzeuge von Subunternehmern mit je 3 Türen (MAN Lion´s City) 68 Niederflur-Tram mit je 6 Türen Bombardier Flexity Classic. Die Straßenbahnfahrzeuge fahren grundsätzlich solo, es finden keine Doppeltraktionen statt. Es werden keine Kleinbusse ausgestattet und es gibt keine Busanhänger.Die Montage in sämtlichen Fahrzeugen ist nicht Bestandteil des Angebots. Vielmehr nimmt der AN zusammen mit dem Werkstattpersonal der Ruhrbahn Mustereinbauten bei 2 Bahnen und 4 Bussen vor und schult dabei die Mitarbeiter der Ruhrbahn, sodass diese die weiteren Einbauten vornehmen können.Die Ausrüstung beginnt 2020 mit den Mustereinbauten und muss bis Ende 2022 abgeschlossen sein. Ab 1.1.2021 hat die Lieferung je Quartal zu erfolgen, so dass etwa 2 Bahnen und 9 Busse pro Monat ausgerüstet werden können.Die Fahrzeuge sind teils mit bestehender Infrastruktur ausgestattet. Einzelheiten sind in den folgenden Kapiteln beschrieben.Der Auftragnehmer unterstützt die Ruhrbahn GmbH über die gesamte Vertragslaufzeit (Servicevertrag) bei der Planung der vom Fahrzeughersteller bei der Neubeschaffung von Fahrzeugen vorzunehmenden Verkabelung."@de;
+  epo:hasPurpose epd:id_2020-S-108-263007_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-108-263007_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2020-S-108-263007_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2020-S-108-263007_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2020-S-108-263007_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2020-S-108-263007_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2020-06-03"^^xsd:date;
+  epo:hasID epd:id_2020-S-108-263007_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20200605";
+  epo:refersToLot epd:id_2020-S-108-263007_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2020-S-108-263007_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2020-S-108-263007_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 108-263007" .
+
+epd:id_2020-S-108-263007_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA13>;
+  locn:postCode "45130";
+  locn:postName "Essen";
+  locn:thoroughfare "Zweigertstr. 34" .
+
+epd:id_2020-S-108-263007_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Ruhrbahn GmbH"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2020-S-108-263007_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2020-S-108-263007_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2020-10-01"^^xsd:date;
+  epo:hasEnd "2022-12-31"^^xsd:date .
+
+epd:id_2020-S-108-263007_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/30144300> .
+
+epd:id_2020-S-108-263007_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-108-263007_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "1. Diese Ausschreibung wird nach den Vorschriften der SektVO durchgeführt.2. Der Auftrag wird in einem Wettbewerblichen Dialog vergeben.3. Die Aufforderung zur Angebotsabgabe, die Formblätter/Eigenerklärungen A-1 bis A-8,A-10, A-12 bis A-20 und das LV als PDF, technische Informationen und die Vertragsbedingungen für die Angebote sind auf dem Portal „subreport ELViS“ unter dem folgenden Link https://www.subreport.de/E82655978 bereitgestellt. Die geforderten Erklärungen und Unterlagen sind auszudrucken, an der dafür vorgesehenen Stelle vollständig auszufüllen und wo gefordert zu unterschreiben, einzuscannen und in Textform ausschließlich auf elektronischem Weg über das Portal Subreport ELViS einzureichen und hochzuladen.Die Vergabestelle behält sich vor, bei fehlenden, unvollständigen oder fehlerhaften unternehmensbezogenen Unterlagen (insb. Eigenerklärungen, Angaben, Bescheinigungen, sonstigen Nachweisen) den Bieter nachzufordern, diese nachzureichen, zu vervollständigen oder zu korrigieren (§§ 51 Abs. 2 SektVO). Die Bewerber haben hierauf jedoch keinen Anspruch. Bei der Angebotsabgabe ist deshalb zu berücksichtigen, dass unvollständige Unterlagen zum Ausschluss führen können. Eine Einreichung der Unterlagen persönlich, per Post, per Fax oder E-Mail ist nicht zulässig. Es sind ausschließlich die Formblätter der Auftraggeberin zu verwenden.4. Der in Ziffer I.1.) genannt Koordinator wird etwaige Informationen über die Nachrichtenfunktion Subreport ELViS oder die in Ziffer I.1 genannte E-Mail anonymisiert an alle Bewerber versenden.Auch wenn der anonyme Zugriff auf die Ausschreibungsunterlagen möglich ist, wird die Registrierung als Bieter über das Portal subreport ELViS empfohlen, da nur so an der Bieterkommunikation teilgenommen werden kann.Nicht bei subreport ELViS angemeldete Bieter müssen sich selbstständig über den aktuellen Stand der Ausschreibung und evtl. Aktualisierungen informieren.Rückfragen sind grundsätzlich auf dem elektronischen Weg über das Portal supreport ELViS zu stellen. Bei Rückfragen zur Nutzung des Portals subreport ELViS wenden Sie sich bitte an die Hotline +49 221 / 98578-50.Fragen, die später als 8 Kalendertage vor Ablauf der Angebotsfrist gestellt werden, muss der Auftraggeber nicht mehr beantworten. Rechtzeitig gestellte Fragen werden bis spätestens 6 Kalendertage vor Ablauf der Angebotsfrist beantwortet.5. Die Unterlagen, Nachweise und Erklärungen zum Angebot sind nur in deutscher Sprache einzureichen. Die Sprache für Verhandlung, Vertrag inkl. Anlagen, Dokumentation, Vertrags-/Projektabwicklung, Planunterlagen / Berichte, Arbeitsunterlagen, Schulung, Schriftverkehr, Servicepersonal usw. ist ausschließlich Deutsch. Der Bieter trägt die alleinige Verantwortung für die korrekte Übersetzung im Falle nicht deutschsprachiger Unterlagen, die der Übersetzung beizulegen sind.6. Eine Erstattung von Kosten/Aufwendungen für die Erstellung der Angebote durch die Auftraggeberin findet nicht statt."@de;
+  epo:hasDescription "Beschaffung von autark arbeitenden Zähleinrichtungen zum Einbau in Fahrzeuge der Ruhrbahn GmbH.Lieferung eines „Automatischen Fahrgastzählsystems“ (AFZ) für Fahrzeuge des ÖPNV in Essen."@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/comp-dial>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-108-263007_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2020-S-108-263007_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Lieferung eines „Automatischen Fahrgastzählsystems“ (AFZ) für Fahrzeuge des ÖPNV in Essen und Mülheim"@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-108-263007_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2020-S-108-263007_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2020-S-108-263007_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2020-S-108-263007_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-108-263007_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2020-S-108-263007_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2020-S-108-263007_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "1) Ein Nachprüfungsantrag ist spätestens 15 Kalendertage nach Eingang der Mitteilung der Auftraggeberin, einer Rüge nicht abhelfen zu wollen, bei der unter VI.4.1. aufgeführten zuständigen Stelle für Nachprüfungsverfahren einzureichen, § 160 Abs. 3 Nr. 4 GWB.2) Rügen sind an die Kontaktstelle unter I.1. zu richten." .
+
+epd:id_2020-S-108-263007_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+49 221 / 147-2889";
+  cccev:email "VKRheinland@bezreg-koeln.nrw.de";
+  cccev:telephone "+49 221 / 147-3045" .
+
+epd:id_2020-S-108-263007_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "50667";
+  locn:postName "Köln";
+  locn:thoroughfare "Zeughausstr. 2 - 10" .
+
+epd:id_2020-S-108-263007_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Vergabekammer Rheinland"@de;
+  epo:hasPrimaryContactPoint epd:id_2020-S-108-263007_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2020-S-108-263007_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2020-S-108-263007_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-108-263007_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2020-S-108-263007_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.subreport.de/E82655978"^^xsd:anyURI .
+
+epd:id_2020-S-108-263007_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2020-S-108-263007_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2020-S-108-263007_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

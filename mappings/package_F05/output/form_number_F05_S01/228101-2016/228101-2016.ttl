@@ -1,0 +1,208 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-127-228101_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "www.scanmarket.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2016-S-127-228101_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-127-228101_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF;
+  epo:playedBy epd:id_2016-S-127-228101_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2016-S-127-228101_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF a cccev:ContactPoint;
+  epo:hasInternetAddress "www.fortum.com"^^xsd:anyURI;
+  cccev:email "procurement.fortum@fortum.com" .
+
+epd:id_2016-S-127-228101_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF a org:Organization;
+  epo:hasID epd:id_2016-S-127-228101_OrganisationIdentifier_gFUcNYVmTUBiATKNrzmurF;
+  epo:hasLegalName "AB Fortum Värme Holding samägt med Stockholms Stad (publ)"@en;
+  cccev:registeredAddress epd:id_2016-S-127-228101_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2016-S-127-228101_BuyerOrganisationGroup_gFUcNYVmTUBiATKNrzmurF a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMember epd:id_2016-S-127-228101_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2016-S-127-228101_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2016-S-127-228101_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-127-228101_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2016-S-127-228101_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2016-S-127-228101_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Paula Varhe"@en;
+  epo:hasInternetAddress "www.fortum.com"^^xsd:anyURI;
+  cccev:email "paula.varhe@fortum.com";
+  cccev:telephone "+358 405705005" .
+
+epd:id_2016-S-127-228101_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+Including, but not limited to: Finland, Sweden, Norway, Estonia, Latvia, Lithuania, Poland, Russia, the Netherlands, Ireland, Belgium, United Kingdom and India.
+"""@en .
+
+epd:id_2016-S-127-228101_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FI>;
+  locn:address epd:id_2016-S-127-228101_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2016-S-127-228101_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-127-228101_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-127-228101_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+Other non-audit related additional services. Scope will be agreed later. Hourly prices will be requested for the non-audit services.
+"""@en .
+
+epd:id_2016-S-127-228101_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-127-228101_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2016-S-127-228101_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2016-S-127-228101_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "Please see II 2.4."@en .
+
+epd:id_2016-S-127-228101_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/79200000> .
+
+epd:id_2016-S-127-228101_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-127-228101_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+This Invitation to Tender consists of following phases:
+1) Request to participate phase:
+If you are interested in tender please send e-mail to: paula.varhe@fortum.com with subject ‘Invitation to Tender 16_FORTUM_007' . By sending the information you also give your consent to receive notifications and decisions from the contracting entity by e-mail. Please include a signed Non-Disclosure Undertaking (NDA) and contact person information (name, e-mail address) to your e-mail that you send to us. NDA document is attached to this notice (Appendix 2). Suppliers who have sent e-mail with contact information and signed NDA will receive an invitation to fill in their request to participate in the tender, including minimum pre-qualification criteria, in Scanmarket e-tool. The request to participate phase deadline is 17.7.2016 at 16:00 EET.
+2) Pre-qualification phase:
+Fortum will evaluate all requests to participate in the tender that have been sent by deadline 17.7.2016, 16:00 EET via Scanmarket. All suppliers meeting minimum pre-qualification criteria will pass the pre-qualification phase. Suppliers who have sent non-complete information or who do not meet the minimum pre-qualification criteria will be disqualified. Fortum reserves the right to ask for clarifications from suppliers before final qualification decision, but is not obliged to ask for such clarifications and thus the supplier is disqualified. All qualified and disqualified suppliers will be informed about the pre-qualification phase result. At this stage the qualified suppliers will receive further information about the tender timetable.
+3) Invitation to Tender Phase:
+All pre-qualified suppliers will receive an Invitation to Tender for the purpose of bidding for the services. The Invitation to Tender will be released in August 2016 in Scanmarket. Deadline for supplier responses is in September 2016.
+Based on the information in the supplier responses to the Invitation to Tender, Fortum will check if suppliers meet Fortum's mandatory/“shall” requirements and their ability to execute the services adequately.
+Only those suppliers who meet all the shall-requirements will be selected further to continue the tender process.
+The suppliers that have been selected will be requested to present their tenders and thereafter have possibility to finalize their tender documentation.
+4) Evaluation phase:
+The final tenders will be evaluated in accordance to the pre-defined evaluation criteria as disclosed in the Invitation to Tender. The evaluation will result in maximum 4 suppliers being selected. All qualified and disqualified suppliers will be informed about the award decision.
+The award decision will, however, be conditional upon a final decision by the Annual General Meetings (“AGM”) of Fortum Oyj and Fortum Värme and the entering into a signed contract. Consequently, although a supplier is being selected in this public procurement procedure only 1 supplier will finally enter into a contract with Fortum Oyj and Fortum Värme regarding the services. The supplier that will sign a contract regarding the services with Fortum is the supplier that the respective AGM selects and appoints. Hence any selection decision in the public procurement will be conditional upon AGM’s final decision.
+"""@en;
+  epo:hasEstimatedValue epd:id_2016-S-127-228101_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2016-S-127-228101_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-127-228101_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-127-228101_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 5600000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-127-228101_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 5600000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-127-228101_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2016-S-127-228101_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-127-228101_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2016-S-127-228101_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2016-S-127-228101_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2016-S-127-228101_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2016-06-30"^^xsd:date;
+  epo:hasID epd:id_2016-S-127-228101_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20160705";
+  epo:refersToLot epd:id_2016-S-127-228101_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2016-S-127-228101_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2016-S-127-228101_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 127-228101" .
+
+epd:id_2016-S-127-228101_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FIN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FI>;
+  locn:postCode "00048";
+  locn:postName "Espoo";
+  locn:thoroughfare "PL 100, Fortum" .
+
+epd:id_2016-S-127-228101_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SWE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FIZ>;
+  locn:postCode "115 77";
+  locn:postName "Stockholm";
+  locn:thoroughfare "Lidingövägen 115" .
+
+epd:id_2016-S-127-228101_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "1463611-4" .
+
+epd:id_2016-S-127-228101_OrganisationIdentifier_gFUcNYVmTUBiATKNrzmurF a epo:Identifier;
+  epo:hasIdentifierValue "556040-6034" .
+
+epd:id_2016-S-127-228101_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2016-S-127-228101_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Fortum Oyj"@en;
+  cccev:registeredAddress epd:id_2016-S-127-228101_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2016-S-127-228101_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79212100> .
+
+epd:id_2016-S-127-228101_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw """
+This Invitation to Tender and the finally awarded contract are governed under the Finnish Law.
+"""@en .
+
+epd:id_2016-S-127-228101_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-127-228101_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription """
+Fortum Oyj, its subsidiary companies and its joint venture AB Fortum Värme Holding samägt med Stockholms stad (hereinafter ‘Fortum Värme’) are publishing a joint Invitation to Tender for auditor services (Fortum Oyj and Fortum Värme are together referred to as ‘Fortum’ in this notice). All Fortum companies part of this procurement are allowed to make call-offs from the finally awarded contract and are listed in Appendix 1A and 1B.
+Subject of the contract is the audit of the financial statements of Fortum Oyj and Fortum Värme and their subsidiary companies as well as the audit of consolidated financial statements of Fortum Oyj and Fortum Värme. Audit shall be carried out by authorized auditors in accordance with generally accepted auditing standards and in accordance with relevant national legislation in the countries where Fortum is established through its companies. The scope of the services is described in Appendix 1C.
+"""@en;
+  epo:hasEstimatedValue epd:id_2016-S-127-228101_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/comp-dial>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-127-228101_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2016-S-127-228101_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Auditing Services.
+"""@en;
+  epo:isCoveredByGPA false;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-127-228101_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2016-S-127-228101_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2016-S-127-228101_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2016-S-127-228101_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2016-S-127-228101_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2016-S-127-228101_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-127-228101_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2016-S-127-228101_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2016-S-127-228101_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+358 295643314";
+  epo:hasInternetAddress "http://www.oikeus.fi/markkinaoikeus"^^xsd:anyURI;
+  cccev:email "markkinaoikeus@oikeus.fi";
+  cccev:telephone "+358 295643300" .
+
+epd:id_2016-S-127-228101_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FIN>;
+  locn:postCode "00520";
+  locn:postName "Helsinki";
+  locn:thoroughfare "Radanrakentajantie 5" .
+
+epd:id_2016-S-127-228101_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Markkinaoikeus"@en;
+  epo:hasPrimaryContactPoint epd:id_2016-S-127-228101_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2016-S-127-228101_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2016-S-127-228101_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-127-228101_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2016-S-127-228101_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "www.scanmarket.com"^^xsd:anyURI .

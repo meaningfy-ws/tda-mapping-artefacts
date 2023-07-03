@@ -1,0 +1,184 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-021-051101_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.terminaliitalia.it/content/terminaliitalia/it/notizie-e-documenti/bandi-e-gare.html"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-021-051101_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "http://www.terminaliitalia.it"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-021-051101_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-021-051101_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-021-051101_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "ufficio Acquisti"@it;
+  epo:hasInternetAddress "http://www.terminaliitalia.it"^^xsd:anyURI;
+  cccev:email "acquisti@pec.terminaliitalia.it";
+  cccev:telephone "+39 3665607462" .
+
+epd:id_2021-S-021-051101_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITH31> .
+
+epd:id_2021-S-021-051101_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-021-051101_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-021-051101_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-021-051101_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true .
+
+epd:id_2021-S-021-051101_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-021-051101_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "ufficio Acquisti"@it;
+  epo:hasInternetAddress "http://www.terminaliitalia.it"^^xsd:anyURI;
+  cccev:email "acquisti@pec.terminaliitalia.it";
+  cccev:telephone "+39 3665607462" .
+
+epd:id_2021-S-021-051101_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITH31>;
+  locn:postCode "37137";
+  locn:postName "Verona";
+  locn:thoroughfare "via Sommacampagna 32" .
+
+epd:id_2021-S-021-051101_InformationProviderOrganisationIdentifier_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:Identifier;
+  epo:hasIdentifierValue "06204310962" .
+
+epd:id_2021-S-021-051101_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasID epd:id_2021-S-021-051101_InformationProviderOrganisationIdentifier_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:hasLegalName "Terminali Italia srl"@it;
+  cccev:registeredAddress epd:id_2021-S-021-051101_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2021-S-021-051101_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-021-051101_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Manifestazione di interesse per la fornitura di trattori di tipo portuale presso i terminal."@it;
+  epo:hasEstimatedValue epd:id_2021-S-021-051101_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-021-051101_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 900000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-021-051101_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 900000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-021-051101_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-021-051101_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-021-051101_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2021-S-021-051101_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2021-S-021-051101_TenderReceiver_dk2esofbDLefiQsKcsKjh3;
+  epo:hasDispatchDate "2021-01-27"^^xsd:date;
+  epo:hasID epd:id_2021-S-021-051101_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210201";
+  epo:refersToLot epd:id_2021-S-021-051101_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2021-S-021-051101_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-021-051101_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 021-051101" .
+
+epd:id_2021-S-021-051101_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITI43>;
+  locn:postCode "00161";
+  locn:postName "Roma";
+  locn:thoroughfare "via della Croce Rossa 1" .
+
+epd:id_2021-S-021-051101_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "06204310962" .
+
+epd:id_2021-S-021-051101_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2021-S-021-051101_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "Terminali Italia srl"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2021-S-021-051101_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-021-051101_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/42410000> .
+
+epd:id_2021-S-021-051101_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-021-051101_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription "Manifestazione di interesse per la fornitura di trattori di tipo portuale presso i terminal."@it;
+  epo:hasEstimatedValue epd:id_2021-S-021-051101_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-021-051101_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-021-051101_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Richiesta di manifestazione di interesse per la fornitura di trattori di tipo portuale per i terminal"@it;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-021-051101_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2021-S-021-051101_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2021-S-021-051101_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-021-051101_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2021-S-021-051101_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2021-S-021-051101_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  cccev:telephone "+39 06328721" .
+
+epd:id_2021-S-021-051101_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "00196";
+  locn:postName "Roma";
+  locn:thoroughfare "via Flaminia 189" .
+
+epd:id_2021-S-021-051101_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Tribunale amministrativo regionale per la Regione Lazio"@it;
+  epo:hasPrimaryContactPoint epd:id_2021-S-021-051101_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2021-S-021-051101_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-021-051101_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-021-051101_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-021-051101_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "IT";
+  epo:hasReceiptExpressionDeadline "2021-02-10T12:00" .
+
+epd:id_2021-S-021-051101_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITH31>;
+  locn:postName "Verona";
+  locn:thoroughfare "via Sommacampagna 32" .
+
+epd:id_2021-S-021-051101_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3
+  a cccev:ContactPoint;
+  epo:hasContactName "ufficio Acquisti"@it;
+  epo:hasInternetAddress "http://www.terminaliitalia.it"^^xsd:anyURI;
+  cccev:email "acquisti@pec.terminaliitalia.it";
+  cccev:telephone "+39 3665607462" .
+
+epd:id_2021-S-021-051101_TenderReceiverOrganisationIdentifier_dk2esofbDLefiQsKcsKjh3
+  a epo:Identifier;
+  epo:hasIdentifierValue "06204310962" .
+
+epd:id_2021-S-021-051101_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 a org:Organization;
+  epo:hasID epd:id_2021-S-021-051101_TenderReceiverOrganisationIdentifier_dk2esofbDLefiQsKcsKjh3;
+  epo:hasLegalName "Terminali Italia srl"@it;
+  epo:hasPrimaryContactPoint epd:id_2021-S-021-051101_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  cccev:registeredAddress epd:id_2021-S-021-051101_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3 .
+
+epd:id_2021-S-021-051101_TenderReceiver_dk2esofbDLefiQsKcsKjh3 a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-021-051101_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  epo:playedBy epd:id_2021-S-021-051101_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 .

@@ -1,0 +1,215 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-023-040145_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://www.grdf.fr/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2017-S-023-040145_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-023-040145_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-023-040145_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-023-040145_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Martial Miquel"@fr;
+  epo:hasInternetAddress "http://www.grdf.fr"^^xsd:anyURI;
+  cccev:email "martial.miquel@grdf.fr";
+  cccev:telephone "+33 171262320" .
+
+epd:id_2017-S-023-040145_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+IDF Est, 1ère couronne.
+"""@fr .
+
+epd:id_2017-S-023-040145_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR108>;
+  locn:address epd:id_2017-S-023-040145_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2017-S-023-040145_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2017-S-023-040145_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-023-040145_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2017-S-023-040145_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-023-040145_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2017-S-023-040145_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2017-S-023-040145_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2017-S-023-040145_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45231221> .
+
+epd:id_2017-S-023-040145_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-023-040145_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+Objet du marché: renouvellement de réseau de distribution de gaz naturel (polyéthylène, acier, fonte). Renouvellement des branchements associés.
+Prestations concernées:
+— études,
+— géo-détection,
+— génie civil,
+— renouvellement de canalisations,
+— branchements,
+— mise en/hors gaz,
+— raccordement au réseau existant,
+— postes de détente,
+— contrôles soudures,
+— essais,
+— séchages,
+— récolement.
+Lieu d'exécution: IDF Est, 1ère couronne.
+Modalité d'exécution: achat d'ouvrage.
+Engagement financier: 10 000 000 EUR.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2017-S-023-040145_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasID epd:id_2017-S-023-040145_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-023-040145_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle """
+Renouvellement de réseau IDF Est, 1ère couronne
+"""@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-023-040145_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 10000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-023-040145_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 10000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-023-040145_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-023-040145_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-023-040145_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2017-S-023-040145_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2017-S-023-040145_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2017-S-023-040145_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2017-01-30"^^xsd:date;
+  epo:hasID epd:id_2017-S-023-040145_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20170202";
+  epo:refersToLot epd:id_2017-S-023-040145_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2017-S-023-040145_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-023-040145_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 023-040145" .
+
+epd:id_2017-S-023-040145_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "75009";
+  locn:postName "Paris";
+  locn:thoroughfare "6 rue Condorcet" .
+
+epd:id_2017-S-023-040145_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "444736511" .
+
+epd:id_2017-S-023-040145_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2017-S-023-040145_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "GRDF"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gas-heat>;
+  cccev:registeredAddress epd:id_2017-S-023-040145_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-023-040145_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2017-08-01"^^xsd:date;
+  epo:hasEnd "2018-08-31"^^xsd:date .
+
+epd:id_2017-S-023-040145_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "GRDF-171-003205" .
+
+epd:id_2017-S-023-040145_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/44161110> .
+
+epd:id_2017-S-023-040145_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 1;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2017-S-023-040145_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-023-040145_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription """
+Objet du marché: renouvellement de réseau de distribution de gaz naturel (polyéthylène, acier, fonte).
+Lieu d'exécution: IDF Est, 1ère couronne.
+Modalité d'exécution: achat d'ouvrage.
+Engagement financier: 10 000 000 EUR.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2017-S-023-040145_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2017-S-023-040145_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-023-040145_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-023-040145_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Renouvellement de réseau IDF Est, 1ère couronne.
+"""@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-023-040145_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-023-040145_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2017-S-023-040145_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2017-S-023-040145_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2017-S-023-040145_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2017-S-023-040145_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-023-040145_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-023-040145_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-023-040145_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-023-040145_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75055";
+  locn:postName "Paris";
+  locn:thoroughfare "4 boulevard du Palais" .
+
+epd:id_2017-S-023-040145_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2017-S-023-040145_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-023-040145_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2017-S-023-040145_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2017-S-023-040145_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-023-040145_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2017-S-023-040145_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Il est possible d'effectuer un référé précontractuel ou un référé contractuel conformément à l'ordonnance n° 2009-515 du 7.5.2009 relative aux procédures de recours applicables aux contrats de la commande publique.
+""" .
+
+epd:id_2017-S-023-040145_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2017-S-023-040145_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75055";
+  locn:postName "Paris";
+  locn:thoroughfare "4 boulevard du Palais" .
+
+epd:id_2017-S-023-040145_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-023-040145_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2017-S-023-040145_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-023-040145_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-023-040145_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-023-040145_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2017-S-023-040145_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-023-040145_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-023-040145_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

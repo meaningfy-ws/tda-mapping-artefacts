@@ -1,0 +1,237 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-037-081599_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2017_L3l_CChLVi&v=1&selected=0"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-037-081599_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.achatpublic.com/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-037-081599_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-037-081599_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-037-081599_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasFax "+33 232747240";
+  epo:hasInternetAddress "http://www.haropaports.com/fr/le-havre"^^xsd:anyURI;
+  cccev:email "gpmhmarches@havre-port.fr";
+  cccev:telephone "+33 232746958" .
+
+epd:id_2018-S-037-081599_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRD22> .
+
+epd:id_2018-S-037-081599_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-037-081599_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-037-081599_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-037-081599_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true .
+
+epd:id_2018-S-037-081599_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 408.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-037-081599_Fund_RgULVPVVYP9pkvK789PCUZ a epo:Fund;
+  epo:hasDescription "programme RTE-T"@fr .
+
+epd:id_2018-S-037-081599_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "M. le chef du service des achats-pôle marchés"@fr;
+  epo:hasFax "+33 232747240";
+  epo:hasInternetAddress "http://www.haropaports.com/fr/le-havre"^^xsd:anyURI;
+  cccev:email "gpmhmarches@havre-port.fr";
+  cccev:telephone "+33 232746958" .
+
+epd:id_2018-S-037-081599_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRD2>;
+  locn:postCode "76067";
+  locn:postName "Le Havre Cedex";
+  locn:thoroughfare "Terre-Plein de la Barre, CS 81413" .
+
+epd:id_2018-S-037-081599_InformationProviderOrganisationIdentifier_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:Identifier;
+  epo:hasIdentifierValue "775 700 198 000 10" .
+
+epd:id_2018-S-037-081599_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasID epd:id_2018-S-037-081599_InformationProviderOrganisationIdentifier_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:hasLegalName "Grand port maritime du Havre"@fr;
+  cccev:registeredAddress epd:id_2018-S-037-081599_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2018-S-037-081599_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/63721200> .
+
+epd:id_2018-S-037-081599_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-037-081599_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation """
+                  Le Grand port maritime du Havre fait partie du réseau des ports de l'axe Seine appelé Haropa (Havre-Rouen-Paris). Il est le 1er port français pour le commerce extérieur et les conteneurs et le 5ème port du range nord européen. Grâce à sa localisation exceptionnelle, à l'entrée de l'Europe du nord, il est aussi un hub pour la desserte des ports de l'Arc Atlantique.
+               """@fr;
+  epo:hasDescription """
+                  Le concessionnaire — opérateur de terminal — sera en charge de concevoir, financer et réaliser un terminal à conteneurs situé sur le bassin Hubert Raoul-Duval, à l'extrême ouest de Port 2000, au droit des futurs postes à quai dits «postes à quai 11 et 12». Le terminal s'appuiera sur un quai maritime d'une longueur de 700 m pouvant offrir une côte d'exploitation théorique max égale à -18 m CMH (Côte marine du Havre) et sera érigé sur un terrain en arrière du quai d'environ 35 ha. Des surfaces complémentaires — sans linéaire de quai supplémentaire — pourront en outre être mises à disposition du concessionnaire, dans la limite de 7 ha. Le Grand port maritime du Havre réalisera le mur de quai et les dragages associés, ainsi que les fondations de rails des portiques. Il réalisera également, en arrière du terminal, le raccordement au réseau de transport terrestre ainsi qu'un point de rejet permettant la réception des eaux pluviales préalablement traitées. Le concessionnaire réalisera quant à lui les terre-pleins en arrière du quai, ainsi que la fourniture et pose des rails des portiques. Il réalisera les bâtiments, les voiries, réseaux et distributions nécessaires à l'exploitation du terminal. Le terrain d'assise des terre-pleins à réaliser par le concessionnaire sera mis à disposition en l'état par le Grand port maritime du Havre à l'issue de ses propres travaux de quai et dragages sans engagement sur l'état altimétrique et qualitatif. Le concessionnaire exploitera, à ses risques et périls, un terminal comprenant un quai maritime d'une longueur de 700 m sur Port 2000 ainsi que les terre-pleins et accessoires associés, en contrepartie de son droit de percevoir un prix pour ses prestations auprès de ses clients. Il sera responsable de l'acquisition, de l'entretien et de la maintenance de l'outillage nécessaire à la manutention des conteneurs sur le terminal. Le terminal exploité par le concessionnaire correspondra, à la date de signature du contrat, à celui réalisé par le concessionnaire au droit des postes à quai 11 et 12, sans préjudice (i) d'un éventuel déplacement du terminal concédé en cours d'exécution de la concession le long du même quai maritime et/ou (ii) de l'ajout éventuel, là encore en cours d'exécution de la concession, d'un linéaire de quai maritime supplémentaire d'une longueur maximale de 350 m, cela dans des conditions qui seraient le cas échéant définies contractuellement et précisées en amont dans les documents de la consultation. Dans l'hypothèse précitée de l'ajout de 350 m de linéaire de quai à exploiter, la valeur estimée totale de la concession mentionnée aux paragraphes II.1.5) et II.2.6) du présent avis serait portée à 2,5 milliards d'EUR. Il est précisé que la durée d'exploitation du terminal sera de 30 ans et qu'il sera prévu 2 années maximum d'études et de conception par le concessionnaire et 2 années maximum de travaux sous maîtrise d'ouvrage du concessionnaire.
+               """@fr;
+  epo:hasEstimatedValue epd:id_2018-S-037-081599_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-037-081599_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isFundedBy epd:id_2018-S-037-081599_Fund_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds true .
+
+epd:id_2018-S-037-081599_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 1700000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-037-081599_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 1700000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-037-081599_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-037-081599_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2018-S-037-081599_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2018-S-037-081599_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2018-S-037-081599_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2018-S-037-081599_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2018-02-20"^^xsd:date;
+  epo:hasID epd:id_2018-S-037-081599_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20180222";
+  epo:refersToLot epd:id_2018-S-037-081599_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2018-S-037-081599_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2018-S-037-081599_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 037-081599" .
+
+epd:id_2018-S-037-081599_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRD22>;
+  locn:postCode "76067";
+  locn:postName "Le Havre Cedex";
+  locn:thoroughfare "Terre-Plein de la Barre, CS 81413" .
+
+epd:id_2018-S-037-081599_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "77570019800010" .
+
+epd:id_2018-S-037-081599_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2018-S-037-081599_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Grand port maritime du Havre"@fr;
+  epo:hasMainActivityDescription "Activités portuaires";
+  cccev:registeredAddress epd:id_2018-S-037-081599_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-037-081599_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "17TCP01" .
+
+epd:id_2018-S-037-081599_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/63721200> .
+
+epd:id_2018-S-037-081599_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-037-081599_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               La présente consultation est également engagée conformément aux articles R. 5312-83 à R. 5312-86 du code des transports, et en application des dispositions de l'ordonnance nº 2016-65 et du décret nº 2016-86 relatifs aux contrats de concession.
+               Conformément à l'article 19-III du décret nº 2016-86, les candidats sont informés que pour justifier de leurs capacités, ils peuvent, y compris s'il s'agit d'un groupement, demander que soient également prises en compte les capacités d'autres opérateurs économiques, quelle que soit la nature juridique des liens qui les unissent. Dans ce cas, les candidats apportent la preuve qu'ils en disposeront pendant toute l'exécution du contrat, au moyen notamment de lettres d'engagement desdits opérateurs économiques. Cet avis est uniquement un avis d'appel public à candidatures. Le dossier de consultation sera adressé aux seuls candidats admis à présenter une offre après examen des candidatures. L'ouverture des plis n'est pas publique.
+            """@fr;
+  epo:hasDescription """
+               Le concessionnaire sera chargé de la conception, du financement et de la réalisation d'un terminal à conteneurs situé à l'extrême ouest de Port 2000. Le concessionnaire exploitera et sera responsable de l'entretien et de la maintenance des aménagements d'un terminal à conteneurs sur Port 2000.
+            """@fr;
+  epo:hasEstimatedValue epd:id_2018-S-037-081599_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2018-S-037-081599_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-037-081599_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-037-081599_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Concession pour la réalisation et l'exploitation d'un terminal à conteneurs sur Port 2000
+            """@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-037-081599_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2018-S-037-081599_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2018-S-037-081599_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2018-S-037-081599_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-037-081599_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2018-S-037-081599_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2018-S-037-081599_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "76600";
+  locn:postName "Rouen";
+  locn:thoroughfare "53 avenue Gustave Flaubert" .
+
+epd:id_2018-S-037-081599_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 232081271";
+  cccev:email "greffe.ta-rouen@juradm.fr";
+  cccev:telephone "+33 232081270" .
+
+epd:id_2018-S-037-081599_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Greffe du tribunal administratif de Rouen"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-037-081599_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2018-S-037-081599_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-037-081599_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-037-081599_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-037-081599_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               — référé pré-contractuel: avant la signature du marché sur le fondement de l'article L. 551-1 du Code de justice administrative (CJA),
+               — référé contractuel: 31 jours à compter de la publication de l'avis d'attribution au JOUE dans les conditions des articles L. 551-13 et suivants et R. 551-13 et suivants du CJA,
+               — recours en contestation de validité du contrat: 2 mois à compter de la publication de l'avis d'attribution.
+            """ .
+
+epd:id_2018-S-037-081599_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasInternetAddress "http://rouen.tribunal-administratif.fr/Le-tribunal-administratif"^^xsd:anyURI .
+
+epd:id_2018-S-037-081599_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "76000";
+  locn:postName "Rouen";
+  locn:thoroughfare "53 avenue Gustave Flaubert" .
+
+epd:id_2018-S-037-081599_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Rouen"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-037-081599_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2018-S-037-081599_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-037-081599_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-037-081599_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-037-081599_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2017_L3l_CChLVi"^^xsd:anyURI .
+
+epd:id_2018-S-037-081599_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRD2>;
+  locn:postCode "76067";
+  locn:postName "Le Havre Cedex";
+  locn:thoroughfare "Terre-Plein de la Barre, CS 81413" .
+
+epd:id_2018-S-037-081599_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.haropaports.com/fr/le-havre"^^xsd:anyURI;
+  cccev:email "gpmhmarches@havre-port.fr" .
+
+epd:id_2018-S-037-081599_TenderReceiverOrganisationIdentifier_Yqz38TfLf2pURgiiembBDo
+  a epo:Identifier;
+  epo:hasIdentifierValue "775 700 198 000 10" .
+
+epd:id_2018-S-037-081599_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasID epd:id_2018-S-037-081599_TenderReceiverOrganisationIdentifier_Yqz38TfLf2pURgiiembBDo;
+  epo:hasLegalName "Ou par voie postale sous double enveloppe fermée, l'enveloppe extérieure portant la mention «concession Port 2000 — ne pas ouvrir» et l'enveloppe intérieure le nom du candidat. Adresse: Grand port maritime du Havre — service des achats-pôle marchés"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-037-081599_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2018-S-037-081599_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2018-S-037-081599_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-037-081599_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2018-S-037-081599_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

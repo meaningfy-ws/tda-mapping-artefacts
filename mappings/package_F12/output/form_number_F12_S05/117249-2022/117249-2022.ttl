@@ -1,0 +1,157 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-045-117249_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://irl.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=208592&B=ETENDERS_SIMPLE"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-045-117249_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "https://irl.eu-supply.com/ctm/Company/CompanyInformation/Index/1193"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-045-117249_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2022-S-045-117249_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-045-117249_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Shaun Paul Murphy"@en;
+  epo:hasFax "+353 0749141793";
+  epo:hasInternetAddress "http://www.donegalcoco.ie"^^xsd:anyURI;
+  cccev:email "smurphy@donegalcoco.ie";
+  cccev:telephone "+353 0749172393" .
+
+epd:id_2022-S-045-117249_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2022-S-045-117249_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-045-117249_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2022-S-045-117249_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/63513000>, <http://data.europa.eu/cpv/cpv/63514000>,
+    <http://data.europa.eu/cpv/cpv/71242000>, <http://data.europa.eu/cpv/cpv/71243000>,
+    <http://data.europa.eu/cpv/cpv/71245000>, <http://data.europa.eu/cpv/cpv/71248000>,
+    <http://data.europa.eu/cpv/cpv/75125000>, <http://data.europa.eu/cpv/cpv/79310000>,
+    <http://data.europa.eu/cpv/cpv/79312000>, <http://data.europa.eu/cpv/cpv/79540000>,
+    <http://data.europa.eu/cpv/cpv/79930000>, <http://data.europa.eu/cpv/cpv/92000000>,
+    <http://data.europa.eu/cpv/cpv/92330000>, <http://data.europa.eu/cpv/cpv/92521000> .
+
+epd:id_2022-S-045-117249_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-045-117249_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Procurement of Visitor Experience & Interpretation Consultant Services for the Fort Dunree Project"@en;
+  epo:hasPurpose epd:id_2022-S-045-117249_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-045-117249_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postName "Dublin 7" .
+
+epd:id_2022-S-045-117249_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs a org:Organization;
+  epo:hasLegalName "High Court of Ireland"@en;
+  cccev:registeredAddress epd:id_2022-S-045-117249_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2022-S-045-117249_Mediator_eMEmZdeMkSWP9DfmobsFLs a epo:Mediator;
+  epo:playedBy epd:id_2022-S-045-117249_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2022-S-045-117249_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-045-117249_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2022-S-045-117249_Mediator_eMEmZdeMkSWP9DfmobsFLs,
+    epd:id_2022-S-045-117249_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2022-S-045-117249_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2022-S-045-117249_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2022-S-045-117249_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2022-02-28"^^xsd:date;
+  epo:hasID epd:id_2022-S-045-117249_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220304";
+  epo:refersToLot epd:id_2022-S-045-117249_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2022-S-045-117249_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2022-S-045-117249_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 045-117249" .
+
+epd:id_2022-S-045-117249_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE>;
+  locn:postCode "Lifford";
+  locn:postName "Co Donegal";
+  locn:thoroughfare "County House" .
+
+epd:id_2022-S-045-117249_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "N/A" .
+
+epd:id_2022-S-045-117249_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2022-S-045-117249_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Donegal County Council"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2022-S-045-117249_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-045-117249_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "Fort Dunree Project" .
+
+epd:id_2022-S-045-117249_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79415200> .
+
+epd:id_2022-S-045-117249_ProcedureTerm_n9YtPUZG9SDZ5m8nAb77dU a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2022-S-045-117249_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasID epd:id_2022-S-045-117249_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-045-117249_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2022-S-045-117249_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Visitor Experience & Interpretation Consultant Services for the Fort Dunree Project"@en;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-045-117249_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2022-S-045-117249_ProcedureTerm_n9YtPUZG9SDZ5m8nAb77dU, epd:id_2022-S-045-117249_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2022-S-045-117249_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-045-117249_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2022-S-045-117249_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-045-117249_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postName "Lifford" .
+
+epd:id_2022-S-045-117249_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Donegal County Council"@en;
+  cccev:registeredAddress epd:id_2022-S-045-117249_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2022-S-045-117249_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-045-117249_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2022-S-045-117249_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  cccev:email "highcourtcentraloffice@courts.ie" .
+
+epd:id_2022-S-045-117249_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postName "Dublin 7";
+  locn:thoroughfare "Four Courts, Inns Quay" .
+
+epd:id_2022-S-045-117249_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "High Court of Ireland"@en;
+  epo:hasPrimaryContactPoint epd:id_2022-S-045-117249_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2022-S-045-117249_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2022-S-045-117249_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-045-117249_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2022-S-045-117249_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "http://irl.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=208592&B=ETENDERS_SIMPLE"^^xsd:anyURI .
+
+epd:id_2022-S-045-117249_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-045-117249_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2022-S-045-117249_Organisation_VX8RygdBbvDo5gNDhjcsTj .

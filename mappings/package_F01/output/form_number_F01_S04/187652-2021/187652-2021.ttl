@@ -1,0 +1,179 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-074-187652_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://contractaciopublica.gencat.cat/ecofin_pscp/AppJava/perfil/BCNAjt/customProf"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-074-187652_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-074-187652_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-074-187652_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Francisca López Vilaplana"@es;
+  epo:hasInternetAddress "https://contractaciopublica.gencat.cat/ecofin_pscp/AppJava/perfil/BCNAjt/customProf"^^xsd:anyURI;
+  cccev:email "flopezvi@bcn.cat" .
+
+epd:id_2021-S-074-187652_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES511> .
+
+epd:id_2021-S-074-187652_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES511> .
+
+epd:id_2021-S-074-187652_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-074-187652_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-074-187652_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-074-187652_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-074-187652_Duration_VLUhcjCcfriMRVVeLidxGZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-074-187652_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2021-S-074-187652_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-074-187652_Duration_VLUhcjCcfriMRVVeLidxGZ a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-074-187652_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-074-187652_FrameworkAgreementTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-074-187652_FrameworkAgreementTerm_KX8MaayAMxqXBuD94Kuz62 a epo:FrameworkAgreementTerm .
+
+epd:id_2021-S-074-187652_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-074-187652_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-074-187652_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/79341000> .
+
+epd:id_2021-S-074-187652_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/79341000> .
+
+epd:id_2021-S-074-187652_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-074-187652_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Campañas multimedia: campañas de publicidad institucional y actuaciones de comunicación que se difundan en todos o en algunos de los medios de comunicación: televisión, prensa, revistas, radio, exteriores y medios digitales, excepto aquellas campañas o acciones de comunicación que se difundan exclusivamente para medios digitales que serán objeto del lote 2."@es;
+  epo:hasEstimatedValue epd:id_2021-S-074-187652_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasID epd:id_2021-S-074-187652_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-074-187652_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasTitle "Campañas multimedia"@es;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-074-187652_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-074-187652_Lot_kKEXkgEhBpbdu5CJYA2aUT a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-074-187652_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasDescription "Campañas digitales: campañas de publicidad institucional y actuaciones de comunicación que se difundan exclusivamente en medios digitales."@es;
+  epo:hasEstimatedValue epd:id_2021-S-074-187652_MainMonetaryValueLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasID epd:id_2021-S-074-187652_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2021-S-074-187652_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasTitle "Campañas digitales"@es;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-074-187652_MultipleStageProcedureTerm_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-074-187652_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 23553718.99;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-074-187652_MainMonetaryValueLot_kKEXkgEhBpbdu5CJYA2aUT a epo:MonetaryValue;
+  epo:hasAmountValue 1239669.44;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-074-187652_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 24793388.43;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-074-187652_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-074-187652_MultipleStageProcedureTerm_kKEXkgEhBpbdu5CJYA2aUT a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-074-187652_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-074-187652_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2021-S-074-187652_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-074-187652_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2021-S-074-187652_Reviewer_kNwzAnsDUkmLUrSJHhyRUY;
+  epo:hasDispatchDate "2021-04-12"^^xsd:date;
+  epo:hasID epd:id_2021-S-074-187652_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210416";
+  epo:refersToLot epd:id_2021-S-074-187652_Lot_c4Jggv3QHLrvEuoxvHMwcK, epd:id_2021-S-074-187652_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:refersToProcedure epd:id_2021-S-074-187652_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-074-187652_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 074-187652" .
+
+epd:id_2021-S-074-187652_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES511>;
+  locn:postCode "08002";
+  locn:postName "Barcelona";
+  locn:thoroughfare "Plaça Sant Miquel, 4" .
+
+epd:id_2021-S-074-187652_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Ajuntament de Barcelona"@es;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-074-187652_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-074-187652_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-074-187652_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-074-187652_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "21001302" .
+
+epd:id_2021-S-074-187652_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79341000> .
+
+epd:id_2021-S-074-187652_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2021-S-074-187652_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-074-187652_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "Acuerdo Marco para la contratación centralizada de servicios de asesoramiento estratégico, planificación, mediación en las negociaciones, gestión de la contratación de espacios en todos los medios convencionales y no convencionales, y secundariamente la ideación y/o la creatividad y/o el diseño y/o la producción y/o la implementación de acciones de comunicación y la designación de las empresas para la utilización común y contratación centralizada por parte del Ayuntamiento de Barcelona, sus organismos autónomos y sociedades municipales y organismos con participación municipal mayoritaria."@es;
+  epo:hasEstimatedValue epd:id_2021-S-074-187652_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2021-S-074-187652_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-074-187652_Lot_c4Jggv3QHLrvEuoxvHMwcK,
+    epd:id_2021-S-074-187652_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2021-S-074-187652_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Acuerdo Marco inserciones publicitarias"@es;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-074-187652_FrameworkAgreementTerm_KX8MaayAMxqXBuD94Kuz62,
+    epd:id_2021-S-074-187652_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG, epd:id_2021-S-074-187652_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62;
+  epo:usesTechnique epd:id_2021-S-074-187652_FrameworkAgreementTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2021-S-074-187652_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-06-01"^^xsd:date .
+
+epd:id_2021-S-074-187652_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-074-187652_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-074-187652_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-074-187652_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postName "Barcelona" .
+
+epd:id_2021-S-074-187652_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Tribunal Catalán de Contratos del Sector Público"@es;
+  cccev:registeredAddress epd:id_2021-S-074-187652_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-074-187652_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-074-187652_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-074-187652_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasSubmissionURL "https://seuelectronica.ajuntament.barcelona.cat/licitacioelectronica"^^xsd:anyURI .

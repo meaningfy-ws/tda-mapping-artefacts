@@ -1,0 +1,229 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-050-092615_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2017-S-050-092615_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-050-092615_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-050-092615_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-050-092615_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "SNCF réseau — DIR achats réseau EFI — entité fournitures In"@fr;
+  epo:hasInternetAddress "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
+  cccev:email "christine.domingues@reseau.sncf.fr";
+  cccev:telephone "+33 482313655" .
+
+epd:id_2017-S-050-092615_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+France entière.
+"""@fr .
+
+epd:id_2017-S-050-092615_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:address epd:id_2017-S-050-092615_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2017-S-050-092615_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-050-092615_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-050-092615_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2017-S-050-092615_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2017-S-050-092615_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 240.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-050-092615_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2017-S-050-092615_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "5 ans nécessaires de recherche et développement, et amortissement des postes d'aiguillage informatique sur 15 ans prévus par SNCF Réseau."@fr .
+
+epd:id_2017-S-050-092615_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasContactName "SNCF Réseau — Dir achats réseau EFI — entité fournitures In"@fr;
+  epo:hasInternetAddress "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
+  cccev:email "christine.domingues@reseau.sncf.fr";
+  cccev:telephone "+33 482313655" .
+
+epd:id_2017-S-050-092615_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "69502";
+  locn:postName "Lyon Cedex 03";
+  locn:thoroughfare "120 boulevard Vivier Merle" .
+
+epd:id_2017-S-050-092615_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasLegalName "SNCF Réseau"@fr;
+  cccev:registeredAddress epd:id_2017-S-050-092615_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2017-S-050-092615_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-050-092615_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation """
+Les 8 candidats les mieux classés après notation de leurs candidatures, seront retenus, sous réserve d'un nombre suffisant de candidatures recevables.
+"""@fr;
+  epo:hasDescription """
+Le présent marché est un partenariat d'innovation portant sur la recherche, le développement et le déploiement de postes d'aiguillage informatiques nouvelle génération, dits « PAI NG3 ». Il est multi-attributaires, et nécessite le respect de niveaux de performance technique (Objectifs d'innovation et objectifs de réalisation) et de gains économiques minimums (Objectif économique) attendus.
+Le partenariat d'innovation se présente sous la forme de quatre Phases successives:
+— Phase R1: Il s'agit de la phase de recherche appliquée. Les titulaires, 5 sous réserve d'un nombre suffisant d'offres recevables, sélectionnés suite à la consultation doivent réaliser une prestation de recherche dont le but est de définir le nouveau processus de déploiement permettant de réduire le coût complet et de travailler sur des solutions innovantes. La Phase R1 court sur 9 mois.
+A l'issue de la Phase R1, SNCF Réseau dispose de trois mois pour analyser et classer les résultats des Titulaires. Suite au classement, SNCF Réseau résilie le Contrat avec le ou les Titulaires n'ayant pas atteint les niveaux de performance technique (Objectifs d'innovation et objectifs de réalisation) et les gains économiques minimums (Objectifs économiques) convenus et en tout état de cause avec le Titulaire classé en cinquième position dans le classement des Titulaires.
+— Phase R2: Il s'agit de la phase de Recherche expérimentale. Les Titulaires, 4 sous réserve d'un nombre suffisant d'offres recevables, sélectionnés doivent réaliser une prestation de recherche dont le but est de démontrer la faisabilité technique de la solution (via une maquette) et de montrer que la solution répond à l'expression de besoins. La Phase R2 court sur 6 mois de recherche expérimentale.
+À l'issue de la Phase R2, SNCF Réseau dispose de six mois pour l'analyse et la négociation contractuelle des phases de développement et de déploiement. Suite au classement, SNCF Réseau résilie le Contrat avec le ou les Titulaires n'ayant pas atteint les niveaux de performance technique (Objectifs d'innovation et objectifs de réalisation) et les gains économiques minimums (Objectifs économiques) convenus et en tout état de cause avec le Titulaire étant classé en quatrième position dans le classement des Titulaires.
+— Phase D: Il s'agit de la phase développement. Les titulaires, 3 sous réserve d'un nombre suffisant d'offres recevables, sélectionnés réalisent une prestation de développement de la solution conformément à l'Expression de besoins. La Phase de développement court sur 36 mois et se termine une fois l'homologation prononcée et la tête de série mise en service. A l'issue de la phase D, si un ou plusieurs Titulaires ne respectent pas les niveaux de performance technique (Objectifs d'innovation et objectifs de réalisation) et les gains économiques minimums (Objectifs économiques) convenus, le Contrat est résilié de plein droit.
+— Phase de déploiement: Il s'agit du déploiement des PAI NG3. Les titulaires, 3 sous réserve d'un nombre suffisant d'offres recevables, sélectionnés à l'issue de la Phase D doivent réaliser le déploiement des PAI NG3. La phase de déploiement court sur une période de 10 ans et à l'issue sur une reconduction potentielle de 5 ans.
+"""@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-050-092615_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-050-092615_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 1150000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-050-092615_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2017-S-050-092615_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-050-092615_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-050-092615_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2017-S-050-092615_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2017-S-050-092615_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2017-03-08"^^xsd:date;
+  epo:hasID epd:id_2017-S-050-092615_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20170311";
+  epo:refersToLot epd:id_2017-S-050-092615_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2017-S-050-092615_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-050-092615_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 050-092615" .
+
+epd:id_2017-S-050-092615_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "69502";
+  locn:postName "Lyon Cedex 03";
+  locn:thoroughfare "120 boulevard Vivier Merle" .
+
+epd:id_2017-S-050-092615_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "SNCF Réseau"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2017-S-050-092615_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-050-092615_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34632000> .
+
+epd:id_2017-S-050-092615_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-050-092615_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+Les qualifications suivantes seront exigées des titulaires lors de l'exécution du contrat selon les conditions qui y sont indiquées. Ces qualifications ne relèvent pas de l'analyse des candidatures, mais sont des exigences liées à l'exécution du contrat. Par anticipation les candidats possédant déjà les qualifications peuvent apporter la preuve des qualifications en complément:
+— 03201-01 — Travaux de génie civil de Signalisation et/ou de Télécommunication sans risque de déstabilisation de la plateforme, travaux n'engageant par les plans P1/P2
+La qualification doit être sans limite de montant et France entière
+— 03001-02 — Travaux de génie civil de Signalisation et/ou de Télécommunication avec risque de déstabilisation de la plateforme, massifs engageant les plans P1/P2, et traversées sous voies par des techniques avec tranchées: sans limite de montant et France entière
+— 03203-01  Travaux de pose de câbles de Signalisation et/ou d'énergie.
+La qualification doit être sans limite de montant et France entière
+— 13100 — Etudes de signalisation pour lignes classique et lignes nouvelles (hors paramétrage des modules enclenchements des postes informatiques)
+La qualification doit être sans limite de montant et France entière
+SNCF Réseau émet cet avis de marché en son nom et pour son compte.
+La présente consultation est effectuée dans le cadre de la procédure négociée avec mise en concurrence, objet du Décret 2016-360 du 25.3.2016 relatif aux marchés publics.
+Dans le cadre de cette procédure, SNCF Réseau, en application de l'article 74 du Décret 2016-360 du 25.3.2016, se réserve la possibilité d'attribuer le marché sur la base des offres initiales sans négociation.
+Il s'agit d'une éventualité qui peut être mise en oeuvre par l'acheteur selon le niveau des offres remises.
+L'entité d'achat développe les consultations en ligne, par voie électronique. Les coordonnées e-mail du représentant habilité à soumissionner à la présente consultation sont à mentionner dans le dossier de candidature.
+Avant tout envoi des documents marchés, le candidat devra au préalable dater et signer l' accord de confidentialité joint à l'avis JOUE. La transmission de l'ensemble des documents marchés est conditionnée au retour de l'accord de confidentialité daté et signé du candidat auprès de Mme Christine Domingues. La transmission de l'ensemble des documents marchés est conditionnée au retour de l'accord de confidentialité signé du candidat auprès de Mme Christine Domingues.
+Transmission des candidatures par voie électronique:
+Les actes de candidatures sont à transmettre à l'adresse indiquée au point I.3: christine.domingues@reseau.sncf.fr.
+Toute candidature envoyée par voie électronique doit être datée et envoyée dans le respect des procédures décrites dans les «Conditions générales de remise des candidatures en ligne sur le site www.sncf.com» par un représentant du candidat dûment habilité. Aucun envoi par e-mail n'est autorisé.
+Le candidat doit être en mesure de justifier des pouvoirs de son représentant sur requête de l'Entité d'Achat.
+Toute candidature électronique ne respectant pas le formalisme pré cité ou envoyée à une autre adresse est rejetée sans être analysée.
+Pour toute difficulté d'ordre technique (notamment au moment de la transmission de la candidature), le candidat doit contacter le support fournisseur à: Supportfournisseursncf@sncf.fr ou 04.26.21.16.01.
+Pour toute autre question le candidat doit contacter l'acheteur (Christine Domingues) au plus tard 10 jours ouvrés avant la DLRC dont les coordonnées sont: christine.domingues@reseau.sncf.fr.
+Après examen des documents, l'Entité d'Achat évalue la capacité du candidat et sélectionne les candidats aptes à présenter une offre selon les règles et critères définis au point III.1.4.
+La candidature ainsi que tout échange d'informations doivent être rédigés en français.
+L'examen des variantes est subordonné à la remise d'une offre de base.
+"""@fr;
+  epo:hasDescription """
+Ce marché est un partenariat d'innovation passé après une procédure négociée avec mise en concurrence préalable conformément à la directive (DE) 2014-25 et son Décret d'application n° 2016-360 du 25.3.2016.
+Il est composé de 4 Phases successives:
+— Phase R1: Recherche appliquée;
+— Phase R2: Recherche expérimentale;
+— Phase D: Développement.
+— Phase de Déploiement.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2017-S-050-092615_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/innovation>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-050-092615_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-050-092615_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Partenariat d'innovation de la recherche, du développement et du déploiement de postes d'aiguillage informatiques nouvelle génération, dits « PAI NG3 ».
+"""@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-050-092615_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-050-092615_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2017-S-050-092615_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2017-S-050-092615_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-050-092615_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-050-092615_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2017-S-050-092615_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2017-S-050-092615_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2017-S-050-092615_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta.paris@juradm.fr";
+  cccev:telephone "+33 144594575" .
+
+epd:id_2017-S-050-092615_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Greffe du tribunal administratif"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-050-092615_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2017-S-050-092615_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2017-S-050-092615_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-050-092615_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2017-S-050-092615_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:telephone "+33 144594400" .
+
+epd:id_2017-S-050-092615_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2017-S-050-092615_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-050-092615_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2017-S-050-092615_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-050-092615_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-050-092615_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-050-092615_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI .

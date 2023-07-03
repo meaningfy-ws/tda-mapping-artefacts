@@ -1,0 +1,235 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-249-459173_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://marchespublics.nc/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-249-459173_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://marchespublics.nc/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-249-459173_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2016-S-249-459173_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2016-S-249-459173_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Christophe Lefevre — directeur et Marie-Pierre Courtot — assistante de direction"@fr;
+  epo:hasInternetAddress "http://www.smtu.nc"^^xsd:anyURI;
+  cccev:email "christophe.lefevre@smtu.nc et marie-pierre.courtot@smtu.nc" .
+
+epd:id_2016-S-249-459173_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+Agglomération du Grand Nouméa.
+"""@fr .
+
+epd:id_2016-S-249-459173_ContractTermLotLocationAddress_gBpZPwcpekuQ8tRyYLDbhL a locn:Address;
+  locn:fullAddress """
+Agglomération du Grand Nouméa.
+"""@fr .
+
+epd:id_2016-S-249-459173_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRZ>;
+  locn:address epd:id_2016-S-249-459173_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2016-S-249-459173_ContractTermLotLocation_gBpZPwcpekuQ8tRyYLDbhL a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRZ>;
+  locn:address epd:id_2016-S-249-459173_ContractTermLotLocationAddress_gBpZPwcpekuQ8tRyYLDbhL .
+
+epd:id_2016-S-249-459173_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-249-459173_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-249-459173_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2016-S-249-459173_ContractTermLot_gBpZPwcpekuQ8tRyYLDbhL a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-249-459173_Duration_kRiiMRBTYMDCGKiwh9Rzt7;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-249-459173_ContractTermLotLocation_gBpZPwcpekuQ8tRyYLDbhL .
+
+epd:id_2016-S-249-459173_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-249-459173_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 96.0;
+  time:unitType time:unitMonth .
+
+epd:id_2016-S-249-459173_Duration_kRiiMRBTYMDCGKiwh9Rzt7 a epo:SpecificDuration;
+  time:numericDuration 96.0;
+  time:unitType time:unitMonth .
+
+epd:id_2016-S-249-459173_LotIdentifier_RgULVPVVYP9pkvK789PCUZ a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2016-S-249-459173_LotIdentifier_gBpZPwcpekuQ8tRyYLDbhL a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2016-S-249-459173_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2016-S-249-459173_LotPurpose_gBpZPwcpekuQ8tRyYLDbhL a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2016-S-249-459173_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-249-459173_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation """
+La durée du/des contrat(s) sera de 96 mois pouvant aller (en cas de variantes proposées par les candidats et retenues par le Smtu) jusqu'à un maximum de 120 mois.
+"""@fr;
+  epo:hasDescription """
+Exploitation de lignes du réseau Tanéo (ligne armature BHNS et lignes suburbaines du Grand Nouméa) correspondant à une estimation kilométrique annuelle de 4 095 000 km.
+Il est précisé que la gestion des parkings relais du projet Néobus fait partie du périmètre du lot 1. En revanche le transport scolaire et les dessertes maritimes sont hors périmètre de ce lot.
+A l'exception des missions relevant de la compétence du SMTU, le délégataire assurera l'exploitation du réseau Tanéo par rapport à son périmètre respectif selon des modalités qui seront précisés dans le dossier de consultation.
+"""@fr;
+  epo:hasID epd:id_2016-S-249-459173_LotIdentifier_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2016-S-249-459173_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasTitle """
+Lot 1: exploitation de lignes du réseau Tanéo (ligne armature BHNS et lignes suburbaines du Grand Nouméa) correspondant à une estimation kilométrique annuelle de 4 095 000 km
+"""@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-249-459173_Lot_gBpZPwcpekuQ8tRyYLDbhL a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-249-459173_ContractTermLot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasAdditionalInformation """
+La durée du/des contrat(s) sera de 96 mois pouvant aller (en cas de variantes proposées par les candidats et retenues par le SMTU) jusqu'à un maximum de 120 mois.
+"""@fr;
+  epo:hasDescription """
+Exploitation de lignes du réseau Tanéo (lignes urbaines du Grand Nouméa — hors BHNS — ) correspondant à une estimation kilométrique annuelle de 4 295 000 km.
+Le transport scolaire et les dessertes maritimes sont hors périmètre de ce lot.
+A l'exception des missions relevant de la compétence du SMTU, le délégataire assurera l'exploitation du réseau Tanéo par rapport à son périmètre respectif selon des modalités qui seront précisés dans le dossier de consultation.
+"""@fr;
+  epo:hasID epd:id_2016-S-249-459173_LotIdentifier_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasPurpose epd:id_2016-S-249-459173_LotPurpose_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasTitle """
+Exploitation de lignes du réseau Tanéo (lignes urbaines du Grand Nouméa — hors BHNS — ) correspondant à une estimation kilométrique annuelle de 4 295 000 km
+"""@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-249-459173_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-249-459173_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2016-S-249-459173_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2016-S-249-459173_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2016-S-249-459173_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2016-S-249-459173_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2016-12-22"^^xsd:date;
+  epo:hasID epd:id_2016-S-249-459173_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20161224";
+  epo:refersToLot epd:id_2016-S-249-459173_Lot_RgULVPVVYP9pkvK789PCUZ, epd:id_2016-S-249-459173_Lot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:refersToProcedure epd:id_2016-S-249-459173_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2016-S-249-459173_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 249-459173" .
+
+epd:id_2016-S-249-459173_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRZ>;
+  locn:postCode "98830";
+  locn:postName "Dumbéa Cedex";
+  locn:thoroughfare "Syndicat mixte des transports urbains du Grand Nouméa (SMTU), bât. A, Central Garden, 26 avenue Paul Émile Victor Koutio, BP 48" .
+
+epd:id_2016-S-249-459173_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasLegalName "SMTU Grand Nouméa"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2016-S-249-459173_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2016-S-249-459173_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "SMTU/DSP/TANEO" .
+
+epd:id_2016-S-249-459173_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2016-S-249-459173_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk a epo:ProcedureTerm;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2016-S-249-459173_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-249-459173_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+Le(S) contrat(s) sera/ont conclu(s) soit avec une entreprise unique soit avec un groupement momentané d'entreprises avec désignation d'un mandataire solidaire. En cas de groupement, l'un des membres du groupement, désigné dans la lettre de candidature comme mandataire, représente et est solidaire de chacun des autres membres du groupement dans les obligations contractuelles de celui-ci à l'égard du SMTU jusqu'à la date à laquelle ces obligations prennent fin.
+Pour justifier de ses capacités et de ses aptitudes, le candidat, y compris s'il s'agit d'un groupement, peut demander que soient également prises en compte les capacités et les aptitudes d'autres opérateurs économiques, quelle que soit la nature juridique des liens qui les unissent (par exemple sous-traitant(s)). Dans ce cas, le candidat apporte la preuve qu'il en disposera pendant toute la durée d'exécution du contrat.
+A l'exception des missions relevant de la compétence du SMTU, le(s) délégataire(s) assurera/ont l'exploitation du réseau Tanéo par rapport à son/leur périmètre(s) respectif(s) selon des modalités qui seront précisés dans le dossier de consultation.
+En cas de délégataires multiples, afin de permettre la meilleure interaction entre eux pour l'exploitation du réseau, les contrats de délégation de service public pourront intégrer des clauses réciproques de coopération et coordination ou de supervision afin d'assurer la meilleure qualité de service à l'usager.
+Le(s) contrat(s) seront à prix forfaitaire par le biais du/desquels le/le(s) exploitant(s) prendra/prendront le risque sur les coûts d'exploitation et le SMTU, dans le cadre de ses prérogatives de fixation des tarifs, conservera l'essentiel du risque sur les recettes moyennant des clauses de bonus/malus sur la qualité du service et d'intéressement ou de pénalisation sur l'atteinte des objectifs de recettes commerciales et/ou l'évolution de la fréquentation et de la fraude.
+Modalités de présentation des candidatures
+le dossier de candidature devra être rédigé en langue française et remis contre récépissé au SMTU à l'adresse indiquée dans le présent avis avant le mardi 21.2.2017 11:00 (Heure de Nouméa — UTC/GMT + 11).
+Si le dossier est envoyé par la poste, il devra être placé sous double enveloppe et adressé à M. le président du SMTU en recommandé avec avis de réception postal et parvenir à destination avant ces mêmes date et heure limites.
+Le dossier de candidature devra être présenté sous enveloppe cachetée. Aucun tampon ou autre inscription que celle liée à l'enregistrement de l'offre ne sera toléré.
+L'enveloppe devra porter la mention:
+— délégation de service public relative au transport public du Grand Nouméa Lot(S) XXX -
+Les candidatures qui parviendraient après la date et l'heure limites fixées ci-dessus ainsi que celles remises sous enveloppe non cachetée, ne seront pas retenues; elles seront renvoyées à leurs auteurs.
+Des renseignements complémentaires peuvent être obtenus sur simple demande par courriel au Directeur du SMTU. Ces demandes devront parvenir au SMTU au plus tard quinze jours calendaires avant la date et l'heure limites indiquées ci-dessus.
+Les coordonnées téléphoniques du SMTU sont les suivantes:
+Tél. +687 46 75 38, fax. +687 46 75 41. Les coordonnées téléphoniques du tribunal administratif de Nouvelle Calédonie sont disponibles à l'adresse suivante: http://nouvelle-caledonie.tribunal-administratif.fr/Informations-pratiques/Acces-et-coordonnees
+"""@fr;
+  epo:hasDescription """
+Délégation de service public (DSP) pour l'exploitation du réseau de transport Tanéo du Grand Nouméa, divisée en deux lots:
+Lot 1: exploitation de lignes du réseau Tanéo (ligne armature de BHNS et lignes suburbaines du Grand Nouméa) correspondant à une estimation kilométrique annuelle de 4 095 000;
+Lot 2: exploitation de lignes du réseau Tanéo (lignes urbaines du Grand Nouméa hors BHNS) correspondant à une estimation kilométrique annuelle de 4 295 000.
+Le(S) délégataire(s) assurera/ont l'exploitation du réseau Tanéo par rapport à son/leur périmètre(s) respectif(s) selon la répartition kilométrique qui sera arrêtée dans le dossier de consultation.
+Il est précisé que la gestion des parkings relais du projet Néobus fait partie du périmètre du lot 1. En revanche le transport scolaire et les dessertes maritimes sont hors périmètre des deux lots.
+"""@fr;
+  epo:hasID epd:id_2016-S-249-459173_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-249-459173_Lot_RgULVPVVYP9pkvK789PCUZ,
+    epd:id_2016-S-249-459173_Lot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasPurpose epd:id_2016-S-249-459173_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+Délégation de service public pour l'exploitation du réseau de transport Tanéo du Grand Nouméa.
+"""@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-249-459173_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2016-S-249-459173_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk, epd:id_2016-S-249-459173_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2016-S-249-459173_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-249-459173_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2016-S-249-459173_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2016-S-249-459173_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NCL>;
+  locn:postCode "98851";
+  locn:postName "Nouméa Cedex";
+  locn:thoroughfare "immeuble Carcopino 3000 — 4e étage 85, avenue du général de Gaulle, BP Q3" .
+
+epd:id_2016-S-249-459173_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://nouvelle-caledonie.tribunal-administratif.fr/Informations-pratiques/Acces-et-coordonnees"^^xsd:anyURI;
+  cccev:email "greffe.ta-noumea@juradm.fr" .
+
+epd:id_2016-S-249-459173_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nouvelle Calédonie"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-249-459173_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2016-S-249-459173_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2016-S-249-459173_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-249-459173_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2016-S-249-459173_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasInternetAddress "http://nouvelle-caledonie.tribunal-administratif.fr/Informations-pratiques/Acces-et-coordonnees"^^xsd:anyURI;
+  cccev:email "greffe.ta-noumea@juradm.fr" .
+
+epd:id_2016-S-249-459173_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NCL>;
+  locn:postCode "98851";
+  locn:postName "Nouméa Cedex";
+  locn:thoroughfare "immeuble Carcopino 3000 — 4e étage, 85 avenue du général de Gaulle, BP Q3" .
+
+epd:id_2016-S-249-459173_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nouvelle Calédonie"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-249-459173_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2016-S-249-459173_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2016-S-249-459173_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-249-459173_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2016-S-249-459173_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2016-S-249-459173_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-249-459173_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2016-S-249-459173_Organisation_jXahEP38X6pEFgd4J9tLvF .

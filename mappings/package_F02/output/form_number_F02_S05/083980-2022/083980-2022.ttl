@@ -1,0 +1,143 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-033-083980_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.dtvp.de/Satellite/notice/CXP4YFKRJ68/documents"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-033-083980_AdditionalBuyer_n3AiVAiqhTocTL76peYHtw a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-033-083980_AdditionalContactPoint_n3AiVAiqhTocTL76peYHtw;
+  epo:playedBy epd:id_2022-S-033-083980_AdditionalOrganisation_n3AiVAiqhTocTL76peYHtw .
+
+epd:id_2022-S-033-083980_AdditionalContactPoint_n3AiVAiqhTocTL76peYHtw a cccev:ContactPoint;
+  epo:hasInternetAddress "www.bbtgruppe.de"^^xsd:anyURI;
+  cccev:email "vergabestelle@zirngibl.de" .
+
+epd:id_2022-S-033-083980_AdditionalOrganisation_n3AiVAiqhTocTL76peYHtw a org:Organization;
+  epo:hasLegalName "Caritas Krankenhaus Bad Mergentheim gGmbH, Krankenhaus u. Heime Main-Tauber GmbH, Hohenloher Krankenhaus gGmbH, Katholisches Klinikum Koblenz Montabaur gGmbH, Theresienkrankenhaus u. St. Hedwig- Klinik gGmbH, Diako Mannheim gGmbH"@de;
+  cccev:registeredAddress epd:id_2022-S-033-083980_OrganisationAddress_n3AiVAiqhTocTL76peYHtw .
+
+epd:id_2022-S-033-083980_BuyerOrganisationGroup_n3AiVAiqhTocTL76peYHtw a epo:OrganisationGroup;
+  epo:hasBuyerLegalTypeDescription "Auftraggebergemeinschaft";
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  epo:hasMember epd:id_2022-S-033-083980_AdditionalOrganisation_n3AiVAiqhTocTL76peYHtw,
+    epd:id_2022-S-033-083980_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-033-083980_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-033-083980_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2022-S-033-083980_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-033-083980_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Zirngibl Rechtsanwälte Partnerschaft mbB"@de;
+  epo:hasInternetAddress "www.bbtgruppe.de"^^xsd:anyURI;
+  cccev:email "vergabestelle@zirngibl.de" .
+
+epd:id_2022-S-033-083980_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEB21> .
+
+epd:id_2022-S-033-083980_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-033-083980_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-033-083980_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2022-S-033-083980_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2022-S-033-083980_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-033-083980_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/72200000> .
+
+epd:id_2022-S-033-083980_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-033-083980_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription "Der Auftraggeber hat es sich zum Ziel gesetzt, in 2022 seinevorhandenen IT-Systeme um eine zukunftsorientierten Portallösung zu ergänzen. Die Portallösung, zusammen mit bereits existierenden IT-Systemen des AG, müssen die MUSS-Kriterien des KHZG-Fördertatbestands 2 (§ 19 Abs. 1 Satz 1 Nr. 2 KHSFV) zwingend erfüllen wie auch nach Möglichkeit die zugehörigen KANN-Kriterien. Für die technische Umsetzung der MUSS-Kriterien soll die ausgeschriebene Portallösung mit den vorhandenen Systemen, insb. den Krankenhausinformationssystemen (folgend KIS genannt) und anderen Fachsystemen, vorzugsweise über die vorhandene IHE Plattform, integriert werden.Lösungen des Bieters in Form von SaaS als auch On-Prem im trägerweit zentralen (redundanten) Rechenzentrum des AGs zu den Bestandteilen Aufnahme-, Behandlungs-, Überleitungs- und Entlassmanagement finden im Rahmen des wettbewerblichen Dialogs zunächst gleichberechtigte Berücksichtigung.Der Auftraggeber behält sich vor, im Ergebnis des Dialogs nur eine Lösung (SaaS oder On-Prem) weiterzuverfolgen."@de;
+  epo:hasPurpose epd:id_2022-S-033-083980_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-033-083980_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-033-083980_AdditionalBuyer_n3AiVAiqhTocTL76peYHtw,
+    epd:id_2022-S-033-083980_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2022-S-033-083980_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2022-S-033-083980_Reviewer_Sc23ScTxybJ3bYD3QjmgGS;
+  epo:hasDispatchDate "2022-02-11"^^xsd:date;
+  epo:hasID epd:id_2022-S-033-083980_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220216";
+  epo:refersToLot epd:id_2022-S-033-083980_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2022-S-033-083980_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2022-S-033-083980_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 033-083980" .
+
+epd:id_2022-S-033-083980_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEB21>;
+  locn:postName "Trier" .
+
+epd:id_2022-S-033-083980_OrganisationAddress_n3AiVAiqhTocTL76peYHtw a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE11B>;
+  locn:postName "Bad Mergentheim, Tauberbischofsheim, Öhringen, Koblenz, Paderborn, Mannheim" .
+
+epd:id_2022-S-033-083980_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasLegalName "Barmherzige Brüder Trier gGmbH"@de;
+  cccev:registeredAddress epd:id_2022-S-033-083980_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-033-083980_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "BBT02/22" .
+
+epd:id_2022-S-033-083980_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/48000000> .
+
+epd:id_2022-S-033-083980_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw "Baden-Württemberg, Rheinland-Pfalz, Nordrhein-Westfalen"@de;
+  epo:isAwardedByCPB true .
+
+epd:id_2022-S-033-083980_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-033-083980_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation "A) Zum Beleg des Nichtvorliegens von Ausschlussgründen haben die Bewerber Eigenerklärungen darüber einzureichen, ob Ausschlussgründe nach § 123 Abs. 1 bis 4 GWB und § 124 Abs. 1 GWB, nach §§ 21 Abs. 1 und Abs. 3 i.V.m. § 23 Abs. 2 und Abs. 3 AEntG, nach §§ 19 Abs. 1 und Abs. 3 i.V.m. § 21 MiLoG und nach § 21 SchwarzArbG vorliegen (s. Formblatt Eignung)B)  Die zur Verfügung gestellten Vergabeunterlagen sind durch die Unternehmen umgehend auf Vollständigkeit, Widerspruchsfreiheit und eventuelle Unklarheiten zu prüfen. Fragen und Anmerkungen sind umgehend und ausschließlich über den Kommunikationsbereich des DTVP zu stellen (durch Hinterlassen von Nachrichten im Projektraum). Die Vergabestelle wird die Fragen und die Antworten darauf in anonymisierter Form allen Bewerbern zur Verfügung stellen (ebenfalls über den Kommunikationsbereich des DTVP). Die Vergabestelle behält sich vor, nur die Fragen zu beantworten, die bis zum 09.03.2022 gestellt wurden;C) Sofern sich Bewerbergemeinschaften bewerben, ist mit dem Teilnahmeantrag eine von allen Mitgliedern der Bewerbergemeinschaft unterzeichnete Bewerbergemeinschaftserklärung vorzulegen, in der ein bevollmächtigter Vertreter benannt wird und die gesamtschuldnerische Haftung der Mitglieder im Auftragsfallerklärt wird. Die unter Ziff. III.1.2) und Ziff. VI.3) genannten Eigenerklärungen sind in diesem Fall von jedem Mitglied der Bewerbergemeinschaft vorzulegen. Die Eignung der Mitglieder einer ordnungsgemäß teilnehmenden Bewerbergemeinschaft (Referenzen, Umsatzzahlen etc.) wird kumulativ berücksichtigt.Bekanntmachungs-ID: CXP4YFKRJ68"@de;
+  epo:hasDescription "Einführung eines digitalen Patientenportals mit digitalem Aufnahme-, Behandlungs-, Überleitungs- und Entlassmanagement"@de;
+  epo:hasID epd:id_2022-S-033-083980_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/comp-dial>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-033-083980_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2022-S-033-083980_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Digitales Patientenportal"@de;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-033-083980_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2022-S-033-083980_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2022-S-033-083980_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2022-S-033-083980_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-033-083980_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2022-S-033-083980_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-033-083980_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postName "Mainz" .
+
+epd:id_2022-S-033-083980_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Vergabekammer Rheinland-Pfalz"@de;
+  cccev:registeredAddress epd:id_2022-S-033-083980_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2022-S-033-083980_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-033-083980_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2022-S-033-083980_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.dtvp.de/Satellite/notice/CXP4YFKRJ68"^^xsd:anyURI .

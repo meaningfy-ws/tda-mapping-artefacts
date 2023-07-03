@@ -1,0 +1,105 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-080-206720_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.megalis.bretagne.bzh"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-080-206720_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "http://www.megalis.bretagne.bzh"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-080-206720_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-080-206720_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-080-206720_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Robelet Fabrice"@fr;
+  epo:hasInternetAddress "http://www.brech.fr"^^xsd:anyURI;
+  cccev:email "finances@brech.fr";
+  cccev:telephone "+33 297577990" .
+
+epd:id_2021-S-080-206720_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-080-206720_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-080-206720_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-080-206720_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2021-S-080-206720_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-080-206720_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Le présent concours de maîtrise d'oeuvre est organisé en vue de l'attribution du marché de maîtrise d'oeuvre pour la construction d'un centre culturel, sis place Kreisker à Brec'H (cf. le programme) d'une surface utile d'environ 800 m2 sur un terrain de 1 096 m2.Ce concours est un concours restreint sur «Avant-projet sommaire (APS)» organisé conformément aux dispositions de l'article L. 2172-1 du code de la commande publique.La partie de l'enveloppe financière prévisionnelle affectée aux travaux est estimée à 2 000 000 EUR (HT).Ce dernier montant ne comprend pas de fondations spéciales ni les équipements mobiliers et informatiques, ni les abords extérieurs (parking, VRD)."@fr;
+  epo:hasPurpose epd:id_2021-S-080-206720_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-080-206720_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-080-206720_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-080-206720_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2021-S-080-206720_Reviewer_gQh8JdpqsE2bYBRikawiBu;
+  epo:hasDispatchDate "2021-04-21"^^xsd:date;
+  epo:hasID epd:id_2021-S-080-206720_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210426";
+  epo:refersToLot epd:id_2021-S-080-206720_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-080-206720_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-080-206720_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 080-206720" .
+
+epd:id_2021-S-080-206720_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "56400";
+  locn:postName "Brech";
+  locn:thoroughfare "9 rue Georges Cadoudal" .
+
+epd:id_2021-S-080-206720_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Commune de Brec'H"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-080-206720_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-080-206720_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021203_2" .
+
+epd:id_2021-S-080-206720_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2021-S-080-206720_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasID epd:id_2021-S-080-206720_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-080-206720_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-080-206720_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Concours de maîtrise d'œuvre en vue de l'attribution du marché de maîtrise d'œuvre pour la construction d'un centre culturel"@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-080-206720_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-080-206720_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-080-206720_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-080-206720_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-080-206720_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-080-206720_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  cccev:email "greffe.ta-rennes@juradm.fr" .
+
+epd:id_2021-S-080-206720_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "35044";
+  locn:postName "Rennes";
+  locn:thoroughfare "3 contour de la Motte, CS 44416" .
+
+epd:id_2021-S-080-206720_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Rennes"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-080-206720_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2021-S-080-206720_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-080-206720_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-080-206720_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-080-206720_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.megalis.bretagne.bzh"^^xsd:anyURI .

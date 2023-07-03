@@ -1,0 +1,121 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-030-077761_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://portaleacquisti.terna.it"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2022-S-030-077761_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://portaleacquisti.terna.it"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-030-077761_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-030-077761_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-030-077761_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "www.terna.it"^^xsd:anyURI;
+  cccev:email "giovanni.loiacono@terna.it";
+  cccev:telephone "+39 3806455311" .
+
+epd:id_2022-S-030-077761_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IT> .
+
+epd:id_2022-S-030-077761_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-030-077761_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-030-077761_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2022-S-030-077761_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2022-S-030-077761_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-030-077761_Fund_HKNfdBmeACvzBZy3TfjLFj a epo:Fund;
+  epo:hasDescription "Il successivo appalto basato sul contratto aggiudicato, potrà rientrare nell’ambito di diversi progetti e/o programmi finanziati da fondi dell'Unione europea."@it .
+
+epd:id_2022-S-030-077761_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-030-077761_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "000037898 - Automatic Failure Detection - Ispezioni eliportate nel campo del visibile tramite uso di intelligenza artificiale"@it;
+  epo:hasEstimatedValue epd:id_2022-S-030-077761_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isFundedBy epd:id_2022-S-030-077761_Fund_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds true .
+
+epd:id_2022-S-030-077761_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 1000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-030-077761_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 1000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-030-077761_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-030-077761_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2022-S-030-077761_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2022-S-030-077761_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2022-S-030-077761_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2022-02-08"^^xsd:date;
+  epo:hasID epd:id_2022-S-030-077761_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220211";
+  epo:refersToLot epd:id_2022-S-030-077761_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2022-S-030-077761_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2022-S-030-077761_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 030-077761" .
+
+epd:id_2022-S-030-077761_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IT>;
+  locn:postCode "00156";
+  locn:postName "Roma";
+  locn:thoroughfare "via Egidio Galbani 70" .
+
+epd:id_2022-S-030-077761_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "TERNA"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2022-S-030-077761_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-030-077761_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/48329000> .
+
+epd:id_2022-S-030-077761_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-030-077761_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription "000037898 - Automatic Failure Detection - Ispezioni eliportate nel campo del visibile tramite uso di intelligenza artificiale"@it;
+  epo:hasEstimatedValue epd:id_2022-S-030-077761_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/innovation>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-030-077761_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2022-S-030-077761_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "000037898 - Automatic Failure Detection - Ispezioni eliportate nel campo del visibile tramite uso di intelligenza artificiale"@it;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-030-077761_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2022-S-030-077761_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2022-S-030-077761_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-030-077761_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-030-077761_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-030-077761_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "Via Flaminia n. 189";
+  locn:postName "Roma" .
+
+epd:id_2022-S-030-077761_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "T.A.R. Lazio"@it;
+  cccev:registeredAddress epd:id_2022-S-030-077761_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-030-077761_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-030-077761_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-030-077761_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "IT";
+  epo:hasSubmissionURL "https://portaleacquisti.terna.it"^^xsd:anyURI .
+
+epd:id_2022-S-030-077761_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-030-077761_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-030-077761_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

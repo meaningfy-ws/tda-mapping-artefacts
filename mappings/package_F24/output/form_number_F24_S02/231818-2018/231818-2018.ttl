@@ -1,0 +1,192 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-101-231818_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://marches-boulognebillancourt.local-trust.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2018-S-101-231818_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://marches-boulognebillancourt.local-trust.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-101-231818_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-101-231818_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-101-231818_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Direction des affaires juridiques et de la commande publique"@fr;
+  epo:hasInternetAddress "http://www.boulognebillancourt.com"^^xsd:anyURI;
+  cccev:email "marches.publics@mairie-boulogne-billancourt.fr";
+  cccev:telephone "+33 155184319" .
+
+epd:id_2018-S-101-231818_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+                  Boulogne-Billancourt.
+               """@fr .
+
+epd:id_2018-S-101-231818_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR105>;
+  locn:address epd:id_2018-S-101-231818_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-101-231818_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-101-231818_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-101-231818_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-101-231818_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2018-S-101-231818_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-101-231818_LotIdentifier_RgULVPVVYP9pkvK789PCUZ a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2018-S-101-231818_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/92130000> .
+
+epd:id_2018-S-101-231818_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-101-231818_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+                  Missions: programmation selon le critère art et essai, billetterie, communication, affichage, gestion du personnel, animations spécifiques et des actions de proximité, ouverture 7 j/7. 2016 : 124 films programmés sur 1595 séances.
+                  Équipement: salle intégrée à un équipement culturel (bibliothèque, musée, espaces d'expositions, espace multimédia, salle de conférences, atelier d'arts plastiques), 1 salle de 154 places dont 6 PMR, 2 projecteurs (1 de 35 mm et 1 numérique Christie CD2210), 1 serveur Dorémi DCP2000, 1 équipement phonique Dolby CP750, 1 hall d'accueil et des sanitaires.
+               """@fr;
+  epo:hasID epd:id_2018-S-101-231818_LotIdentifier_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-101-231818_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasTitle """
+                  Missions: programmation selon le critère art et essai, billetterie, communication, affichage, gestion du personnel, animations spécifiques et des actions de proximité, ouverture 7 j/7. 2016 : 124 films
+               """@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-101-231818_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-101-231818_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2018-S-101-231818_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2018-S-101-231818_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2018-S-101-231818_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2018-S-101-231818_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2018-05-28"^^xsd:date;
+  epo:hasID epd:id_2018-S-101-231818_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20180530";
+  epo:refersToLot epd:id_2018-S-101-231818_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2018-S-101-231818_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2018-S-101-231818_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 101-231818" .
+
+epd:id_2018-S-101-231818_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR105>;
+  locn:postCode "92100";
+  locn:postName "Boulogne-Billancourt";
+  locn:thoroughfare "26 avenue André Morizet" .
+
+epd:id_2018-S-101-231818_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Ville de Boulogne-Billancourt"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2018-S-101-231818_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-101-231818_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "18025" .
+
+epd:id_2018-S-101-231818_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/92130000> .
+
+epd:id_2018-S-101-231818_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk a epo:ProcedureTerm;
+  epo:hasMaximumLotSubmissionAllowed 1 .
+
+epd:id_2018-S-101-231818_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-101-231818_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               Valeur estimée de la DSP: le CA cumulé des années 2012 à 2016 était de 2 305 000 EUR dont 756 000 EUR de subvention.
+               Redevance pour occupation du domaine public.
+               Le montant de la redevance d'occupation du domaine public dû par le délégataire en contrepartie de la mise à disposition des locaux sera fixé par la ville selon la valeur comptable de l'équipement.
+               Conditions de remise des candidatures:
+               Soit par voie électronique, soit adressée par envoi recommandé avec avis de réception postal, par Chronopost ou équivalent ou remises contre récépissé à l'adresse suivante: mairie de Boulogne-Billancourt — direction de la commande publique, des achats — service des marchés et des Contrats — 1er étage — 26 avenue André Morizet — 92104 Boulogne-Billancourt Cedex — (heures d'ouvertures: du lundi au jeudi de 8:30 à 12:00 et de 13:30 à 17:30 et le vendredi jusqu'à 16:45).
+               L'enveloppe ne devra pas porter le nom de l'entreprise, mais mentionner uniquement: «Délégation de service public pour l'exploitation du cinéma de l'espace Landowski — candidatures du 3.7.2018 — ne pas ouvrir».
+               Critères d'admission des candidatures:
+               Les dossiers de candidatures seront examinés conformément aux dispositions des articles 45 de l'ordonnance 2016-65 et 19 à 24 du décret 2016-86 relatifs au contrats de concession. Les critères d'admission des candidatures sont:
+               — les activités actuelles du candidat et les références pour des exploitations similaires,
+               — les capacités économiques et financières du candidat,
+               — les moyens humains et matériels dont dispose le candidat.
+               Les critères de sélection des offres seront précisés dans le règlement de consultation qui sera adressé avec le cahier des charges aux candidats retenus.
+            """@fr;
+  epo:hasDescription """
+               Missions: programmation selon le critère art et essai, billetterie, communication, affichage, gestion du personnel, animations spécifiques et des actions de proximité, ouverture 7 j/7. 2016: 124 films programmés sur 1595 séances.
+               Équipement: salle intégrée à un équipement culturel (bibliothèque, musée, espaces d'expositions, espace multimédia, salle de conférences, atelier d'arts plastiques), 1 salle de 154 places dont 6 PMR, 2 projecteurs (1 de 35 mm et 1 numérique Christie CD2210), 1 serveur Dorémi DCP2000, 1 équipement phonique Dolby CP750, 1 hall d'accueil et des sanitaires.
+            """@fr;
+  epo:hasID epd:id_2018-S-101-231818_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-101-231818_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-101-231818_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Délégation de service public par voie d'affermage pour l'exploitation du cinéma de l'espace Landowski.
+            """@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-101-231818_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2018-S-101-231818_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk, epd:id_2018-S-101-231818_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr,
+    epd:id_2018-S-101-231818_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2018-S-101-231818_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-101-231818_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-101-231818_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-101-231818_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "95027";
+  locn:postName "Cergy-Pontoise Cedex";
+  locn:thoroughfare "2-4 boulevard de l'Hautil, BP 30322" .
+
+epd:id_2018-S-101-231818_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://cergy-pontoise.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-cergy-pontoise@juradm.fr" .
+
+epd:id_2018-S-101-231818_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Greffes du tribunal administratif de Cergy-Pontoise"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-101-231818_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2018-S-101-231818_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-101-231818_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-101-231818_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-101-231818_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               En application de l'article R. 421-1 du code de justice administrative, la contestation d'une décision peut s'exercer par un recours contentieux introduit, devant le tribunal administratif de Cergy-Pontoise, dans un délai de 2 mois suivant la date de notification de la décision. Préalablement à ce recours, cette décision est susceptible de faire l'objet d'un recours gracieux devant l'autorité administrative, ville de Boulogne-Billancourt — direction de la commande publique — 26 avenue André Morizet — 92104 Boulogne-Billancourt Cedex.
+            """ .
+
+epd:id_2018-S-101-231818_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasInternetAddress "http://cergy-pontoise.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-cergy-pontoise@juradm.fr" .
+
+epd:id_2018-S-101-231818_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "95027";
+  locn:postName "Cergy-Pontoise Cedex";
+  locn:thoroughfare "2-4 boulevard de l'Hautil, BP 30322" .
+
+epd:id_2018-S-101-231818_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Cergy-Pontoise"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-101-231818_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2018-S-101-231818_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-101-231818_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-101-231818_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-101-231818_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2018-S-101-231818_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-101-231818_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-101-231818_Organisation_jXahEP38X6pEFgd4J9tLvF .

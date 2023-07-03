@@ -1,0 +1,131 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-084-164132_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "https://www.basf.com/de/de.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-084-164132_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-084-164132_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-084-164132_Channel_K9jP2LezbuXiXfNaXmTtki a cccev:Channel;
+  epo:hasURL "www.futura-solutions.de"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2017-S-084-164132_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Uwe Schütze"@de;
+  epo:hasFax "+49 6216658799";
+  epo:hasInternetAddress "https://www.basf.com/de/de.html"^^xsd:anyURI;
+  cccev:email "uwe.schuetze@basf.com";
+  cccev:telephone "+49 6216058799" .
+
+epd:id_2017-S-084-164132_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+Ludwigshafen/Rhein.
+"""@de .
+
+epd:id_2017-S-084-164132_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEB34>;
+  locn:address epd:id_2017-S-084-164132_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-084-164132_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2017-S-084-164132_Period_aNssKXiFyYxii2v93ivV4N;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-084-164132_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-084-164132_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-084-164132_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-084-164132_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription """
+— Tiefbaumaßnahmen (Aushub, Planums. Schutzschicht PSS, Entwässerung;
+— ca. 4,3 km Oberbauerneuerung, incl.11 Weichen und einer Kreuzung;
+— Neubau eines Bahnsteiges, Erweiterung von zwei weiteren, Bahnsteigausstattung;
+— Neubau von 4 Bahnübergänge. einschl. technischer Sicherung;
+— Maßnahmen an TK Anlagen, Objektschutz;
+— Maßnahmen an elektrischen Energieanlagen (Weichenheizung, Stromversorgung);
+— Hochbauarbeiten;
+— Bau der Oberleitungsanlage.
+"""@de;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-084-164132_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 13500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-084-164132_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-084-164132_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2017-S-084-164132_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2017-S-084-164132_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2017-S-084-164132_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2017-04-27"^^xsd:date;
+  epo:hasID epd:id_2017-S-084-164132_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20170429";
+  epo:refersToLot epd:id_2017-S-084-164132_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2017-S-084-164132_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-084-164132_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 084-164132" .
+
+epd:id_2017-S-084-164132_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEB34>;
+  locn:postCode "67056";
+  locn:postName "Ludwigshafen";
+  locn:thoroughfare "Carl-Bosch-Straße" .
+
+epd:id_2017-S-084-164132_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "BASF SE"@de;
+  epo:hasMainActivityDescription "Chemieunternehmen";
+  cccev:registeredAddress epd:id_2017-S-084-164132_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-084-164132_Period_aNssKXiFyYxii2v93ivV4N a epo:Period;
+  epo:hasBeginning "2018-01-01"^^xsd:date;
+  epo:hasEnd "2018-12-31"^^xsd:date .
+
+epd:id_2017-S-084-164132_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45234100> .
+
+epd:id_2017-S-084-164132_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-084-164132_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription """
+Rückbau und Neubau von Eisenbahnanlagen nach EBO auf einer Länge ca. 3,6 km.
+"""@de;
+  epo:hasEstimatedValue epd:id_2017-S-084-164132_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-084-164132_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2017-S-084-164132_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+Elektrifizierung Personenzugstrecke.
+"""@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-084-164132_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY;
+  epo:usesChannel epd:id_2017-S-084-164132_Channel_K9jP2LezbuXiXfNaXmTtki .
+
+epd:id_2017-S-084-164132_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-084-164132_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-084-164132_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-084-164132_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "55116";
+  locn:postName "Mainz";
+  locn:thoroughfare "Emmeranstraße 39" .
+
+epd:id_2017-S-084-164132_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Ministerium für Wirtschaft, Verkehr, Landwirtschaft und Weinbau Rheinland-Pfalz"@de;
+  cccev:registeredAddress epd:id_2017-S-084-164132_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-084-164132_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-084-164132_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-084-164132_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2017-06-09T23:59" .
+
+epd:id_2017-S-084-164132_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-084-164132_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-084-164132_Organisation_W8v6KSqiUn74jPKJmENKoH .

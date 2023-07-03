@@ -1,0 +1,212 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-134-306650_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.jsw.pl/dla-kontrahentow/przetargi"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-134-306650_AwardCriterionPrice_ViFLHYiizzehBKNxWmyibc a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2018-S-134-306650_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2018-S-134-306650_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://www.jsw.pl/dla-kontrahentow/przetargi"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-134-306650_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-134-306650_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-134-306650_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasFax "+48 327564943";
+  epo:hasInternetAddress "www.jsw.pl"^^xsd:anyURI;
+  cccev:email "przetargi@zwp.jsw.pl";
+  cccev:telephone "+48 327564946" .
+
+epd:id_2018-S-134-306650_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "KWK Budryk, Główna stacja sprężarek na terenie szybu VI"@pl .
+
+epd:id_2018-S-134-306650_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a locn:Address;
+  locn:fullAddress "KWK Budryk, Główna stacja sprężarek na terenie zakładu głównego"@pl .
+
+epd:id_2018-S-134-306650_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL22C>;
+  locn:address epd:id_2018-S-134-306650_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2018-S-134-306650_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL22C>;
+  locn:address epd:id_2018-S-134-306650_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
+
+epd:id_2018-S-134-306650_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-134-306650_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-134-306650_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2018-S-134-306650_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-134-306650_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-134-306650_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions false .
+
+epd:id_2018-S-134-306650_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2018-S-134-306650_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-134-306650_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-134-306650_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a epo:EAuctionTechniqueUsage .
+
+epd:id_2018-S-134-306650_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2018-S-134-306650_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2018-S-134-306650_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/24113200> .
+
+epd:id_2018-S-134-306650_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/24113200> .
+
+epd:id_2018-S-134-306650_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-134-306650_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Dostawa sprężonego powietrza dla JSW S.A. KWK Budryk do Głównej stacji sprężarek na terenie szybu VI."@pl;
+  epo:hasID epd:id_2018-S-134-306650_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-134-306650_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle "Dostawa sprężonego powietrza dla JSW S.A. KWK Budryk do Głównej stacji sprężarek na terenie szybu VI"@pl;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-134-306650_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
+
+epd:id_2018-S-134-306650_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-134-306650_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasDescription "Dostawa sprężonego powietrza dla JSW S.A. KWK Budryk do Głównej stacji sprężarek na terenie zakładu głównego."@pl;
+  epo:hasID epd:id_2018-S-134-306650_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2018-S-134-306650_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle "Dostawa sprężonego powietrza dla JSW S.A. KWK Budryk do Głównej stacji sprężarek na terenie zakładu głównego"@pl;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-134-306650_AwardCriterionPrice_ViFLHYiizzehBKNxWmyibc .
+
+epd:id_2018-S-134-306650_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-134-306650_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2018-S-134-306650_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2018-S-134-306650_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2018-S-134-306650_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2018-S-134-306650_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2018-07-11"^^xsd:date;
+  epo:hasID epd:id_2018-S-134-306650_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20180714";
+  epo:refersToLot epd:id_2018-S-134-306650_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2018-S-134-306650_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2018-S-134-306650_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2018-S-134-306650_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 134-306650" .
+
+epd:id_2018-S-134-306650_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL227>;
+  locn:postCode "44-330";
+  locn:postName "Jastrzębie-Zdrój";
+  locn:thoroughfare "Towarowa 1" .
+
+epd:id_2018-S-134-306650_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Jastrzębska Spółka Węglowa S.A. z siedzibą w Jastrzębiu-Zdroju, Zakład Wsparcia Produkcji"@pl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/solid-fuel>;
+  cccev:registeredAddress epd:id_2018-S-134-306650_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-134-306650_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "48/P/18" .
+
+epd:id_2018-S-134-306650_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/24113200> .
+
+epd:id_2018-S-134-306650_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2018-S-134-306650_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-134-306650_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription "Dostawa sprężonego powietrza dla JSW S.A. KWK Budryk oznaczona we Wspólnym Słowniku Zamówień (CPV) kodem: 24113200."@pl;
+  epo:hasID epd:id_2018-S-134-306650_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-134-306650_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2018-S-134-306650_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2018-S-134-306650_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Dostawa sprężonego powietrza dla JSW S.A. KWK Budryk"@pl;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-134-306650_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2018-S-134-306650_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb, epd:id_2018-S-134-306650_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB,
+    epd:id_2018-S-134-306650_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2018-S-134-306650_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2018-S-134-306650_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-134-306650_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-134-306650_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-134-306650_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17a" .
+
+epd:id_2018-S-134-306650_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+48 224587700";
+  epo:hasInternetAddress "www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2018-S-134-306650_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza przy Prezesie Urzędu Zamówień Publicznych"@pl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-134-306650_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2018-S-134-306650_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-134-306650_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-134-306650_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-134-306650_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Wykonawcom przysługują środki ochrony prawnej określone w Dziale VI Pzp." .
+
+epd:id_2018-S-134-306650_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+48 224587700";
+  epo:hasInternetAddress "www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:telephone "+48 224587840" .
+
+epd:id_2018-S-134-306650_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17a" .
+
+epd:id_2018-S-134-306650_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odowławcza przy Prezesie Urzędu Zamówień Publicznych"@pl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-134-306650_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2018-S-134-306650_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-134-306650_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-134-306650_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-134-306650_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "PL" .
+
+epd:id_2018-S-134-306650_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-134-306650_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-134-306650_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

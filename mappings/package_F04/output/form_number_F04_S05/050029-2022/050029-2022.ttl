@@ -1,0 +1,87 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-020-050029_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-020-050029_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2022-S-020-050029_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2022-S-020-050029_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasFax "+351 211021839";
+  epo:hasInternetAddress "www.infraestruturasdeportugal.pt"^^xsd:anyURI;
+  cccev:email "contratos@infraestruturasdeportugal.pt";
+  cccev:telephone "+351 212879300" .
+
+epd:id_2022-S-020-050029_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PT1> .
+
+epd:id_2022-S-020-050029_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-020-050029_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2022-S-020-050029_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2022-S-020-050029_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-020-050029_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "L. NORTE - TERMINAL DA BOBADELA-TRANSFERÊNCIA DO CONTROLADOR DE OBJETOS - SINALIZAÇÃO"@pt .
+
+epd:id_2022-S-020-050029_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 2400000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-020-050029_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2022-S-020-050029_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2022-S-020-050029_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2022-S-020-050029_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te;
+  epo:hasDispatchDate "2022-01-25"^^xsd:date;
+  epo:hasID epd:id_2022-S-020-050029_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220128";
+  epo:refersToLot epd:id_2022-S-020-050029_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2022-S-020-050029_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2022-S-020-050029_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 020-050029" .
+
+epd:id_2022-S-020-050029_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/PRT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PT>;
+  locn:postCode "2809-013";
+  locn:postName "Almada";
+  locn:thoroughfare "Praça da Portagem, Almada" .
+
+epd:id_2022-S-020-050029_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "503933813" .
+
+epd:id_2022-S-020-050029_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2022-S-020-050029_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "INFRAESTRUTURAS DE PORTUGAL S.A."@pt;
+  epo:hasMainActivityDescription "Infraestruturas Rodo-Ferroviárias";
+  cccev:registeredAddress epd:id_2022-S-020-050029_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2022-S-020-050029_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2022-S-020-050029_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2022-S-020-050029_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45220000> .
+
+epd:id_2022-S-020-050029_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-020-050029_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription "L. NORTE - TERMINAL DA BOBADELA-TRANSFERÊNCIA DO CONTROLADOR DE OBJETOS - SINALIZAÇÃO"@pt;
+  epo:hasEstimatedValue epd:id_2022-S-020-050029_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-020-050029_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2022-S-020-050029_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "L. NORTE - TERMINAL DA BOBADELA-TRANSFERÊNCIA DO CONTROLADOR DE OBJETOS - SINALIZAÇÃO"@pt;
+  epo:isCoveredByGPA false .
+
+epd:id_2022-S-020-050029_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2022-07-31"^^xsd:date .
+
+epd:id_2022-S-020-050029_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-020-050029_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2022-S-020-050029_Organisation_W8v6KSqiUn74jPKJmENKoH .

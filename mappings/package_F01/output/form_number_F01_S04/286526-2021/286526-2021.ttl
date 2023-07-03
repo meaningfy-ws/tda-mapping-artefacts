@@ -1,0 +1,153 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-109-286526_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.canalgestionlanzarote.es/transparencia/perfil-del-contratante/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-109-286526_AwardCriterionPrice_RBGYEez98Pij3NLYxwzMz2 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-109-286526_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.canalgestionlanzarote.es/transparencia/perfil-del-contratante/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-109-286526_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-109-286526_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-109-286526_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.canalgestionlanzarote.es"^^xsd:anyURI;
+  cccev:email "contratacion@canalgestionlanzarote.es";
+  cccev:telephone "+34 928595900" .
+
+epd:id_2021-S-109-286526_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Lanzarote (Canarias, España)."@es .
+
+epd:id_2021-S-109-286526_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES708>;
+  locn:address epd:id_2021-S-109-286526_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-109-286526_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-109-286526_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-109-286526_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-109-286526_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2021-S-109-286526_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-109-286526_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/42955000> .
+
+epd:id_2021-S-109-286526_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-109-286526_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation "No se admitirá la presentación electrónica/telemática de ofertas."@es;
+  epo:hasDescription "Suministro de filtros de cartucho con longitudes 40'' (1 016 mm) y 50\" (1 270 mm), para la protección de membranas de ósmosis inversa de las desaladoras gestionadas por la empresa.Cantidad estimada anual: 11 600 unidades.Incluye el traslado de las unidades a las instalaciones."@es;
+  epo:hasEstimatedValue epd:id_2021-S-109-286526_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-109-286526_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-109-286526_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-109-286526_AwardCriterionPrice_RBGYEez98Pij3NLYxwzMz2 .
+
+epd:id_2021-S-109-286526_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 550000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-109-286526_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 550000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-109-286526_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-109-286526_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-109-286526_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2021-S-109-286526_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-109-286526_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2021-S-109-286526_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2021-S-109-286526_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2021-06-03"^^xsd:date;
+  epo:hasID epd:id_2021-S-109-286526_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210608";
+  epo:refersToLot epd:id_2021-S-109-286526_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-109-286526_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-109-286526_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 109-286526" .
+
+epd:id_2021-S-109-286526_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES708>;
+  locn:postCode "35500";
+  locn:postName "Arrecife";
+  locn:thoroughfare "Carretera Arrecife-Las Caletas, kilómetro 3,5" .
+
+epd:id_2021-S-109-286526_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "A76157551" .
+
+epd:id_2021-S-109-286526_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Administrador único";
+  epo:hasID epd:id_2021-S-109-286526_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Canal Gestión Lanzarote, S. A. U."@es;
+  epo:hasMainActivityDescription "Abastecimiento de Agua";
+  cccev:registeredAddress epd:id_2021-S-109-286526_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-109-286526_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-109-286526_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-109-286526_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "05/2021" .
+
+epd:id_2021-S-109-286526_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/42912100> .
+
+epd:id_2021-S-109-286526_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-109-286526_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "Los pliegos de licitación estarán disponibles en el Perfil del Contratante de Canal Gestión Lanzarote, S. A. U. (www.canalgestionlanzarote.es) y en el Portal de la Contratación Pública de la Comunidad de Madrid (www.madrid.org) una vez se publique el anuncio de licitación. Este anuncio sólo contiene información previa."@es;
+  epo:hasDescription "Adquisición de filtros de cartucho para las plantas desaladoras de agua de mar situadas en las instalaciones gestionadas por Canal Gestión Lanzarote, S. A. U.El contrato incluirá el transporte del producto."@es;
+  epo:hasEstimatedValue epd:id_2021-S-109-286526_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2021-S-109-286526_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-109-286526_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-109-286526_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Suministro de filtros de cartucho para las instalaciones gestionadas por Canal Gestión Lanzarote, S. A. U."@es;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-109-286526_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2021-S-109-286526_ReviewTerm_KjhWjVv578XNpvpTRjZhAs .
+
+epd:id_2021-S-109-286526_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-06-25"^^xsd:date .
+
+epd:id_2021-S-109-286526_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-109-286526_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-109-286526_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-109-286526_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Las reclamaciones que se presenten por infracción de las normas contenidas en el Real Decreto-Ley 03/2020, de 4 de febrero, se tramitarán de conformidad con lo establecido en el capítulo II del título VII del referido texto normativo." .
+
+epd:id_2021-S-109-286526_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postName "Madrid" .
+
+epd:id_2021-S-109-286526_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Tribunal Administrativo de Contratación Pública de la Comunidad de Madrid"@es;
+  cccev:registeredAddress epd:id_2021-S-109-286526_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-109-286526_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-109-286526_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-109-286526_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-109-286526_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-109-286526_Organisation_gqoAAwSV3JaTMsopb9zyKP .

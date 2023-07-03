@@ -1,0 +1,202 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2015-S-253-463673_Notice a epo:Notice;
+  epo:hasID epd:id_2015-S-253-463673_NoticeIdentifier_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2015-S-253-463673_NoticeIdentifier_ENkaVK94Yfx7TfS6UZfS4G a epo:Identifier;
+  epo:hasIdentifierValue "2015/S 253-463673" .
+
+epd:id_2016-S-229-417800_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.vergabe24.de/vergabeunterlagen/54321-Tender-1588a753e37-668727e0331ead2f"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-229-417800_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-229-417800_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2016-S-229-417800_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2016-S-229-417800_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Geschäftsstelle"@de;
+  epo:hasFax "+49 7031663-1962";
+  epo:hasInternetAddress "www.schoenbuchbahn.de"^^xsd:anyURI;
+  cccev:email "schoenbuchbahn@lrabb.de";
+  cccev:telephone "+49 7031663-1887" .
+
+epd:id_2016-S-229-417800_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+Böblingen.
+"""@de .
+
+epd:id_2016-S-229-417800_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE112>;
+  locn:address epd:id_2016-S-229-417800_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2016-S-229-417800_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2016-S-229-417800_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-229-417800_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2016-S-229-417800_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2016-S-229-417800_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45223110> .
+
+epd:id_2016-S-229-417800_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-229-417800_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+265 m2 Profilglas einschalig und WDG Außenfassade
+756 m2 Profilglas zweischalig als wärmedämmende Außenfassade
+678 m2 Profilglas zweischalig als wärmedämmende Innenfassade
+1 200 m2 Trapezlochblech und WDG Außenfassade
+8 Stück Außentüren Alu-Glaselemente
+73 Stück Alu-Fenster mit Außenrollos.
+"""@de;
+  epo:hasPurpose epd:id_2016-S-229-417800_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-229-417800_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
+  epo:hasFax "+49 621-860861-20";
+  epo:hasInternetAddress "www.ghv-guetestelle.de"^^xsd:anyURI;
+  cccev:email "kontakt@ghv-guetestelle.de";
+  cccev:telephone "+49 621-860861-0" .
+
+epd:id_2016-S-229-417800_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "68165";
+  locn:postName "Mannheim";
+  locn:thoroughfare "Friedrichsplatz 6" .
+
+epd:id_2016-S-229-417800_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "Gütestelle Honorar- und Vergaberecht"@de;
+  epo:hasPrimaryContactPoint epd:id_2016-S-229-417800_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU;
+  cccev:registeredAddress epd:id_2016-S-229-417800_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2016-S-229-417800_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2016-S-229-417800_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2016-S-229-417800_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-229-417800_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2016-S-229-417800_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2016-S-229-417800_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2016-S-229-417800_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2016-S-229-417800_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2016-S-229-417800_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2016-11-22"^^xsd:date;
+  epo:hasID epd:id_2016-S-229-417800_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20161126";
+  epo:refersToLot epd:id_2016-S-229-417800_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToPrevious epd:id_2015-S-253-463673_Notice;
+  epo:refersToProcedure epd:id_2016-S-229-417800_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2016-S-229-417800_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 229-417800" .
+
+epd:id_2016-S-229-417800_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE112>;
+  locn:postCode "71034";
+  locn:postName "Böblingen";
+  locn:thoroughfare "Parkstraße 16" .
+
+epd:id_2016-S-229-417800_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Zweckverband Schönbuchbahn"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2016-S-229-417800_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2016-S-229-417800_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2017-05-08"^^xsd:date;
+  epo:hasEnd "2017-11-20"^^xsd:date .
+
+epd:id_2016-S-229-417800_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "B-D/PFA 1/GFVG/08/Fassadenbau" .
+
+epd:id_2016-S-229-417800_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45234180> .
+
+epd:id_2016-S-229-417800_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-229-417800_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription """
+265 m2 Profilglas einschalig und WDG Außenfassade
+756 m2 Profilglas zweischalig als wärmedämmende Außenfassade
+678 m2 Profilglas zweischalig als wärmedämmende Innenfassade
+1 200 m2 Trapezlochblech und WDG Außenfassade
+8 Stück Außentüren Alu-Glaselemente
+73 Stück Alu-Fenster mit Außenrollos.
+"""@de;
+  epo:hasID epd:id_2016-S-229-417800_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-229-417800_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2016-S-229-417800_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Fassadenbauarbeiten.
+"""@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-229-417800_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2016-S-229-417800_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2016-S-229-417800_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2016-S-229-417800_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-229-417800_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2016-S-229-417800_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2016-S-229-417800_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76133";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Karl-Friedrich-Straße 17" .
+
+epd:id_2016-S-229-417800_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+49 721-926-6211";
+  epo:hasInternetAddress "www.rp-karlsruhe.de"^^xsd:anyURI;
+  cccev:email "poststelle@rpk.bwl.de";
+  cccev:telephone "+49 721-926-0" .
+
+epd:id_2016-S-229-417800_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg im Regierungspräsidium Karlsruhe"@de;
+  epo:hasPrimaryContactPoint epd:id_2016-S-229-417800_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2016-S-229-417800_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2016-S-229-417800_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-229-417800_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2016-S-229-417800_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Innerhalb von 15 Kalendertagen nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, kann ein Nachprüfverfahren bei der Vergabekammer beantragt werden (§ 160 Abs. 3 Nr. 4 GWB).
+""" .
+
+epd:id_2016-S-229-417800_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76133";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Karl-Friedrich-Straße 17" .
+
+epd:id_2016-S-229-417800_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg im Regierungspräsidium Karlsruhe"@de;
+  cccev:registeredAddress epd:id_2016-S-229-417800_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2016-S-229-417800_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-229-417800_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2016-S-229-417800_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2016-S-229-417800_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-229-417800_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2016-S-229-417800_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

@@ -1,0 +1,169 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-225-554582_Notice a epo:Notice;
+  epo:hasID epd:id_2020-S-225-554582_NoticeIdentifier_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2020-S-225-554582_NoticeIdentifier_ENkaVK94Yfx7TfS6UZfS4G a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 225-554582" .
+
+epd:id_2021-S-108-285938_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.jsw.pl/dla-kontrahentow"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-108-285938_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-108-285938_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://www.jsw.pl/dla-kontrahentow"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-108-285938_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-108-285938_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-108-285938_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Wioleta Golec"@pl;
+  epo:hasInternetAddress "www.jsw.pl"^^xsd:anyURI;
+  cccev:email "przetargi@zwp.jsw.pl";
+  cccev:telephone "+48 327564945" .
+
+epd:id_2021-S-108-285938_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Główne miejsce lub lokalizacja realizacji: JSW S.A. KWK „Knurów-Szczygłowice” Ruch Szczygłowice"@pl .
+
+epd:id_2021-S-108-285938_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL229>;
+  locn:address epd:id_2021-S-108-285938_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-108-285938_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-108-285938_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-108-285938_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-108-285938_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2021-S-108-285938_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 55.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-108-285938_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a epo:EAuctionTechniqueUsage .
+
+epd:id_2021-S-108-285938_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-108-285938_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Dostawy sprężonego powietrza dla JSW S.A. KWK „Knurów-Szczygłowice” Ruch Szczygłowice. Szczegółowy opis przedmiotu zamówienia zawiera Specyfikacja techniczna, stanowiąca załącznik nr 1 do SWZ."@pl;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-108-285938_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
+
+epd:id_2021-S-108-285938_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-108-285938_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-108-285938_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-108-285938_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-108-285938_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-06-02"^^xsd:date;
+  epo:hasID epd:id_2021-S-108-285938_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210607";
+  epo:refersToLot epd:id_2021-S-108-285938_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToPrevious epd:id_2020-S-225-554582_Notice;
+  epo:refersToProcedure epd:id_2021-S-108-285938_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-108-285938_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 108-285938" .
+
+epd:id_2021-S-108-285938_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL227>;
+  locn:postCode "44-330";
+  locn:postName "Jastrzębie-Zdrój";
+  locn:thoroughfare "Towarowa 1" .
+
+epd:id_2021-S-108-285938_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Jastrzębska Spółka Węglowa S.A. z siedzibą w Jastrzębiu Zdroju, Zakład Wsparcia Produkcji"@pl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/solid-fuel>;
+  cccev:registeredAddress epd:id_2021-S-108-285938_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-108-285938_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "17/P/21" .
+
+epd:id_2021-S-108-285938_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/24113200> .
+
+epd:id_2021-S-108-285938_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-108-285938_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription "Dostawy sprężonego powietrza dla JSW S.A. KWK „Knurów-Szczygłowice” Ruch Szczygłowice. Szczegółowy opis przedmiotu zamówienia zawiera Specyfikacja techniczna, stanowiąca załącznik nr 1 do SWZ."@pl;
+  epo:hasID epd:id_2021-S-108-285938_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-108-285938_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-108-285938_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Dostawy sprężonego powietrza dla JSW S.A. KWK „Knurów-Szczygłowice” Ruch Szczygłowice"@pl;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-108-285938_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-108-285938_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2021-S-108-285938_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-108-285938_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-108-285938_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-108-285938_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-108-285938_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-108-285938_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17a" .
+
+epd:id_2021-S-108-285938_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+48 224587700";
+  epo:hasInternetAddress "www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2021-S-108-285938_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza przy Prezesie Urzędu Zamówień Publicznych"@pl;
+  epo:hasPrimaryContactPoint epd:id_2021-S-108-285938_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-108-285938_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-108-285938_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-108-285938_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-108-285938_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Wykonawcom przysługują środki ochrony prawnej określone w dziale IX Pzp." .
+
+epd:id_2021-S-108-285938_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+48 224587700";
+  epo:hasInternetAddress "www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2021-S-108-285938_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17a" .
+
+epd:id_2021-S-108-285938_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza przy Prezesie Urzędu Zamówień Publicznych"@pl;
+  epo:hasPrimaryContactPoint epd:id_2021-S-108-285938_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-108-285938_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-108-285938_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-108-285938_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-108-285938_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "PL";
+  epo:hasSubmissionURL "https://zakupy.jsw.pl"^^xsd:anyURI .

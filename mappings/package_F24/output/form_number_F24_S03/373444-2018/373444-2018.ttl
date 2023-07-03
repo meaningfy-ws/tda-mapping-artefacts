@@ -1,0 +1,152 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-163-373444_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.annemasse-agglo.fr/partenaires-et-pros/marches-publics"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-163-373444_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.annemasse-agglo.fr/partenaires-et-pros/marches-publics"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-163-373444_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-163-373444_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-163-373444_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Direction de l'achat public"@fr;
+  epo:hasInternetAddress "https://www.annemasse-agglo.fr/"^^xsd:anyURI;
+  cccev:email "commande-publique@annemasse-agglo.fr";
+  cccev:telephone "+33 450878300" .
+
+epd:id_2018-S-163-373444_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK28> .
+
+epd:id_2018-S-163-373444_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-163-373444_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-163-373444_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-163-373444_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2018-S-163-373444_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 180.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-163-373444_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34928400> .
+
+epd:id_2018-S-163-373444_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-163-373444_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Le contrat prendra effet dès notification et prendra fin le 31.8.2033, soit une durée totale approximative de 15 ans (180 mois)"@fr;
+  epo:hasDescription "Mise à disposition, installation, maintenance, entretien et exploitation commerciale de mobilier urbain d'information pour les communes et d'abris voyageurs pour le réseau des transports urbains de l'agglomération annemassienne, publicitaire et non publicitaire"@fr;
+  epo:hasPurpose epd:id_2018-S-163-373444_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-163-373444_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-163-373444_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2018-S-163-373444_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2018-S-163-373444_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2018-S-163-373444_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2018-S-163-373444_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2018-08-24"^^xsd:date;
+  epo:hasID epd:id_2018-S-163-373444_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20180825";
+  epo:refersToLot epd:id_2018-S-163-373444_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2018-S-163-373444_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2018-S-163-373444_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 163-373444" .
+
+epd:id_2018-S-163-373444_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK28>;
+  locn:postCode "74100";
+  locn:postName "Annemasse";
+  locn:thoroughfare "11 avenue Emile Zola" .
+
+epd:id_2018-S-163-373444_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "CA Annemasse Agglo"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2018-S-163-373444_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-163-373444_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34928400> .
+
+epd:id_2018-S-163-373444_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-163-373444_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "La présente procédure est passée conformément aux dispositions applicables à la procédure formalisée prévue par l'ordonnance nº 2016-65 du 29.1.2016 et le décret nº 2016-86 du 1.2.2016 relatifs aux contrats de concession. Conformément aux dispositions de l'article 18 du décret n║ 2016-86 du 1.2.2016, le pouvoir adjudicateur a décidé de recourir à une procédure ouverte conduisant les candidats à devoir remettre en même temps et dans la même enveloppe les éléments relatifs à leur candidature ainsi que leur offre.Les modalités de transmission des offres via le profil d'acheteur ou sur support papier sont précisées au règlement de consultation.Les documents à remettre au titre de l'offre sont précisés au règlement de consultation.Les critères de jugement des offres et les modalités d'application sont définis au règlement de consultation"@fr;
+  epo:hasDescription "Mise à disposition, installation, maintenance, entretien et exploitation commerciale de mobilier urbain d'information pour les communes et d'abris voyageurs pour le réseau des transports urbains de l'agglomération annemassienne, publicitaire et non publicitaire.Les communes d'ambilly, Annemasse et Gaillard et la Communauté d'agglomération Annemasse Les Voirons Agglomération (Annemasse Agglo) ont décidé de mettre en œuvre un groupement de commandes tel que défini par l'article 26 de l'ordonnance du 29.1.2016 relative aux contrats de concession. Annemasse Agglo est coordonnateur du groupement pour la conduite de la procédure de passation du contrat de concession. Chaque membre du groupement est ensuite responsable de la bonne exécution du contrat pour les besoins qui le concerne"@fr;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-163-373444_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-163-373444_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Concession mobilier urbain et abris voyageurs"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-163-373444_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2018-S-163-373444_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2018-S-163-373444_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-163-373444_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-163-373444_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-163-373444_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "38002";
+  locn:postName "Grenoble Cedex";
+  locn:thoroughfare "2 place de Verdun" .
+
+epd:id_2018-S-163-373444_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 476422269";
+  epo:hasInternetAddress "http://grenoble.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-grenoble@juradm.fr";
+  cccev:telephone "+33 476429000" .
+
+epd:id_2018-S-163-373444_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Grenoble"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-163-373444_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2018-S-163-373444_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-163-373444_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-163-373444_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-163-373444_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 476422269";
+  epo:hasInternetAddress "http://grenoble.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-grenoble@juradm.fr";
+  cccev:telephone "+33 476429000" .
+
+epd:id_2018-S-163-373444_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "38002";
+  locn:postName "Grenoble Cedex";
+  locn:thoroughfare "2 place de Verdun" .
+
+epd:id_2018-S-163-373444_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Grenoble"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-163-373444_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2018-S-163-373444_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-163-373444_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-163-373444_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-163-373444_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.annemasse-agglo.fr/partenaires-et-pros/marches-publics"^^xsd:anyURI .
+
+epd:id_2018-S-163-373444_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-163-373444_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-163-373444_Organisation_jXahEP38X6pEFgd4J9tLvF .

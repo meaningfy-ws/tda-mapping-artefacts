@@ -1,0 +1,195 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-001-001020_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://juntadeandalucia.es/temas/contratacion-publica/perfiles-licitaciones/perfiles-contratante/detalle/CEFTA01.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-001-001020_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-001-001020_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-001-001020_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Cecilia Ortiz Carrasco"@es;
+  epo:hasFax "+34 954995230";
+  epo:hasInternetAddress "http://www.juntadeandalucia.es/temas/contratacion-publica/perfiles-licitaciones/perfiles-contratante.html"^^xsd:anyURI;
+  cccev:email "sv.admonycont.cont.ceec@juntadeandalucia.es";
+  cccev:telephone "+34 954995205" .
+
+epd:id_2021-S-001-001020_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES618> .
+
+epd:id_2021-S-001-001020_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-001-001020_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-001-001020_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-001-001020_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-001-001020_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-001-001020_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-001-001020_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Servicio de seguridad y vigilancia, mantenimiento CRA de la sede Consejería Empleo, Formación y Trabajo Autónomo de la Junta de Andalucía, sita en c/ Albert Einstein, 4, 41092 Sevilla (ESPAÑA)."@es;
+  epo:hasEstimatedValue epd:id_2021-S-001-001020_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-001-001020_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-001-001020_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 1197919.2;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-001-001020_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 1197919.2;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-001-001020_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-001-001020_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-001-001020_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2021-S-001-001020_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-001-001020_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2021-S-001-001020_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2021-S-001-001020_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2021-S-001-001020_TenderReceiver_73uj4vyPgHgRhfhM7wvqXG;
+  epo:hasDispatchDate "2020-12-30"^^xsd:date;
+  epo:hasID epd:id_2021-S-001-001020_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210104";
+  epo:refersToLot epd:id_2021-S-001-001020_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-001-001020_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-001-001020_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 001-001020" .
+
+epd:id_2021-S-001-001020_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES61>;
+  locn:postCode "41092";
+  locn:postName "Sevilla";
+  locn:thoroughfare "C/ Elbert Einstein, 4, edificio World Trade Center, Isla de la Cartuja" .
+
+epd:id_2021-S-001-001020_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "S4111001F" .
+
+epd:id_2021-S-001-001020_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2021-S-001-001020_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Junta de Andalucía, Consejería de Empleo, Formación y Trabajo Autónomo"@es;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-001-001020_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-001-001020_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-001-001020_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-001-001020_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "adm/2021/0001" .
+
+epd:id_2021-S-001-001020_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79710000> .
+
+epd:id_2021-S-001-001020_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-001-001020_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "Servicio de seguridad y vigilancia, sede Consejería Empleo, Formación y Trabajo Autónomo de la Junta de Andalucía, sita en c/ Albert Einstein, 4, 41092 Sevilla."@es;
+  epo:hasEstimatedValue epd:id_2021-S-001-001020_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2021-S-001-001020_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-001-001020_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-001-001020_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Servicio de seguridad y vigilancia, sede Consejería Empleo, Formación y Trabajo Autónomo"@es;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-001-001020_ReviewTerm_KjhWjVv578XNpvpTRjZhAs .
+
+epd:id_2021-S-001-001020_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-02-15"^^xsd:date .
+
+epd:id_2021-S-001-001020_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-001-001020_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-001-001020_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-001-001020_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postCode "41092";
+  locn:postName "Sevilla";
+  locn:thoroughfare "C/ Albert Einstein, s/n, edificio World Trade Center, Isla de la Cartuja" .
+
+epd:id_2021-S-001-001020_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  cccev:email "sgt.ceec@juntadeandalucia.es" .
+
+epd:id_2021-S-001-001020_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Servicio de Legislación y Recursos"@es;
+  epo:hasPrimaryContactPoint epd:id_2021-S-001-001020_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2021-S-001-001020_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-001-001020_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-001-001020_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-001-001020_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Capítulo V, título I, libro I, Ley 9/2017, de 8 de noviembre, de Contratos del Sector." .
+
+epd:id_2021-S-001-001020_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+34 955515041";
+  epo:hasInternetAddress "www.juntadeandalucia.es/economiayhacienda/contratacion/tribunal_adm/tribunal.htm"^^xsd:anyURI;
+  cccev:email "tribunaladministrativo.contratos@juntadeandalucia.es";
+  cccev:telephone "+34 671530856" .
+
+epd:id_2021-S-001-001020_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postCode "41071";
+  locn:postName "Sevilla";
+  locn:thoroughfare "C/ Barcelona, 4-6" .
+
+epd:id_2021-S-001-001020_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Tribunal Administrativo de Recursos Contractuales"@es;
+  epo:hasPrimaryContactPoint epd:id_2021-S-001-001020_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2021-S-001-001020_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-001-001020_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-001-001020_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-001-001020_TenderReceiverOrganisationAddress_73uj4vyPgHgRhfhM7wvqXG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES61>;
+  locn:postCode "41092";
+  locn:postName "Sevilla";
+  locn:thoroughfare "C/ Albert Einstein, 4, Isla de la Cartuja" .
+
+epd:id_2021-S-001-001020_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG
+  a cccev:ContactPoint;
+  epo:hasContactName "Cecilia Ortiz Carrasco"@es;
+  epo:hasFax "+34 954995230";
+  epo:hasInternetAddress "https://juntadeandalucia.es/temas/contratacion-publica/perfiles-licitaciones/perfiles-contratante/detalle/CEFTA01.html"^^xsd:anyURI;
+  cccev:email "sv.admonycont.cont.ceec@juntadeandalucia.es";
+  cccev:telephone "+34 954995244" .
+
+epd:id_2021-S-001-001020_TenderReceiverOrganisationIdentifier_73uj4vyPgHgRhfhM7wvqXG
+  a epo:Identifier;
+  epo:hasIdentifierValue "https://sirecftdpriexp.chap.junta-andalucia.es/licitacion-electronica/index.action" .
+
+epd:id_2021-S-001-001020_TenderReceiverOrganisation_73uj4vyPgHgRhfhM7wvqXG a org:Organization;
+  epo:hasID epd:id_2021-S-001-001020_TenderReceiverOrganisationIdentifier_73uj4vyPgHgRhfhM7wvqXG;
+  epo:hasLegalName "Portal del gestor SiREC"@es;
+  epo:hasPrimaryContactPoint epd:id_2021-S-001-001020_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG;
+  cccev:registeredAddress epd:id_2021-S-001-001020_TenderReceiverOrganisationAddress_73uj4vyPgHgRhfhM7wvqXG .
+
+epd:id_2021-S-001-001020_TenderReceiver_73uj4vyPgHgRhfhM7wvqXG a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-001-001020_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG;
+  epo:playedBy epd:id_2021-S-001-001020_TenderReceiverOrganisation_73uj4vyPgHgRhfhM7wvqXG .

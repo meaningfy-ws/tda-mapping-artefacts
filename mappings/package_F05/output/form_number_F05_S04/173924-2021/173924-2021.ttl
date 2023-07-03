@@ -1,0 +1,224 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-067-173924_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://e-sourcing.extra.laposte.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-067-173924_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://e-sourcing.extra.laposte.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-067-173924_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-067-173924_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-067-173924_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Roseline Toutoute-Fauconnier"@fr;
+  epo:hasInternetAddress "https://e-sourcing.extra.laposte.fr"^^xsd:anyURI;
+  cccev:email "roseline.toutoute-fauconnier@laposte.fr";
+  cccev:telephone "+590 590805733" .
+
+epd:id_2021-S-067-173924_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Guadeloupe."@fr .
+
+epd:id_2021-S-067-173924_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a locn:Address;
+  locn:fullAddress "Guadeloupe."@fr .
+
+epd:id_2021-S-067-173924_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:address epd:id_2021-S-067-173924_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-067-173924_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:address epd:id_2021-S-067-173924_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
+
+epd:id_2021-S-067-173924_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-067-173924_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-067-173924_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Les options sont les reconductions telles qu'indiquées à la rubrique II.2.7)."@fr .
+
+epd:id_2021-S-067-173924_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-067-173924_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-067-173924_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Les options sont les reconductions telles qu'indiquées à la rubrique II.2.7)."@fr .
+
+epd:id_2021-S-067-173924_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-067-173924_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-067-173924_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-067-173924_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-067-173924_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2021-S-067-173924_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-067-173924_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-067-173924_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/79710000> .
+
+epd:id_2021-S-067-173924_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/79710000> .
+
+epd:id_2021-S-067-173924_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-067-173924_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Surveillance humaine récurrente et/ou exceptionnelle des sites de Guadeloupe: Abymes PPAL, Morne-à-l'Eau, Moule, Pointe-à-Pitre Bergevin, Pointe-à-Pitre Mutualité.Pour les prestations exceptionnelles: Baillif, Basse-Terre, Bouillante, Capesterre Belle-Eau, Gosier, Deshaies, Lamentin, Pointe Jarry, Port-Louis, Saint-François, Sainte-Anne, Sainte-Rose, Trois-Rivières, Vieux-Habitants.Par surveillance, La Poste entend:— la surveillance générale du site;— la prévention et la lutte contre le vol et l'incendie;— l'assistance et secours à personne;— la prévention des risques techniques;— le contrôle d'accès;— les rondes de sécurité.La Poste appelle récurrente toute surveillance prévue, panifiable, prévisible et répétitive avec une durée supérieure à 30 jours.La surveillance débute dix minutes avant l'arrivée du premier agent et s'achève jusqu'à dix minutes après le départ du dernier.La Poste appelle exceptionnelle toute surveillance particulière non prévue qu'elle peut demander pour l'ensemble des sites du département. La surveillance exceptionnelle fera l'objet d'un devis, les horaires de surveillance seront précisés par un responsable de La Poste.Le site comprend le terrain, les installations et bâtiments occupés ou non par le personnel."@fr;
+  epo:hasID epd:id_2021-S-067-173924_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-067-173924_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle "Guadeloupe"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-067-173924_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-067-173924_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-067-173924_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasDescription "Surveillance humaine récurrente et/ou exceptionnelle des sites de Guadeloupe: Marigot, Galisbay, Grand-Case.Par surveillance, La Poste entend:— la surveillance générale du site;— la prévention et la lutte contre le vol et l'incendie;— l'assistance et secours à personne;— la prévention des risques techniques;— le contrôle d'accès;— les rondes de sécurité.La Poste appelle récurrente toute surveillance prévue, panifiable, prévisible et répétitive avec une durée supérieure à 30 jours.La surveillance débute dix minutes avant l'arrivée du premier agent et s'achève jusqu'à dix minutes après le départ du dernier.La Poste appelle exceptionnelle toute surveillance particulière non prévue qu'elle peut demander pour l'ensemble des sites du département. La surveillance exceptionnelle fera l'objet d'un devis, les horaires de surveillance seront précisés par un responsable de La Poste.Le site comprend le terrain, les installations et bâtiments occupés ou non par le personnel."@fr;
+  epo:hasID epd:id_2021-S-067-173924_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-067-173924_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle "Îles du Nord"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-067-173924_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-067-173924_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
+  cccev:telephone "+33 153292200" .
+
+epd:id_2021-S-067-173924_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75002";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue Saint-Florentin" .
+
+epd:id_2021-S-067-173924_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "Le médiateur des entreprises"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-067-173924_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU;
+  cccev:registeredAddress epd:id_2021-S-067-173924_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2021-S-067-173924_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2021-S-067-173924_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2021-S-067-173924_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-067-173924_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-067-173924_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-067-173924_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-067-173924_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2021-S-067-173924_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-067-173924_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-067-173924_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2021-S-067-173924_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2021-04-02"^^xsd:date;
+  epo:hasID epd:id_2021-S-067-173924_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210407";
+  epo:refersToLot epd:id_2021-S-067-173924_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2021-S-067-173924_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2021-S-067-173924_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-067-173924_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 067-173924" .
+
+epd:id_2021-S-067-173924_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "75015";
+  locn:postName "Paris 15";
+  locn:thoroughfare "9 rue du Colonel Pierre Avia" .
+
+epd:id_2021-S-067-173924_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "La Poste"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/post>;
+  cccev:registeredAddress epd:id_2021-S-067-173924_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-067-173924_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79710000> .
+
+epd:id_2021-S-067-173924_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasMaximumLotSubmissionAllowed 2;
+  epo:hasMaximumNumberOfLotsToBeAwarded 2 .
+
+epd:id_2021-S-067-173924_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-067-173924_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Les documents demandés à la rubrique III.1.1) devront être remis sur la plate-forme Provigis (https://www.provigis.com/).La demande de participation accompagnée des renseignements et documents demandés aux rubriques III.1.2) et III.1.3) (sur questionnaire d'information ou sous format libre) devront être remis sur le portail «Fournisseurs» (https://e-sourcing.extra.laposte.fr/web/login.html).Tous les documents demandés aux rubriques III.1.1) à III.1.3) devront être remis avant la date et l'heure limites mentionnées à la rubrique IV.2.2).Le candidat souhaitant répondre via le DUME le remettra au format PDF et au format XML dans un ZIP.Tous les documents ne pouvant être scannés sont à retourner par courrier recommandé avec accusé de réception ou à déposer contre récépissé à l'adresse du point de contact avant les mêmes dates et heure limites.Conformément aux dispositions de l’article 53 du décret nº 2016-360 du 25.3.2016, le candidat n’est pas tenu de fournir les documents et renseignements demandés dans le cadre du présent avis qui peuvent être obtenus via un système électronique de mise à disposition d’information administré par un organisme officiel ou d’un espace de stockage numérique accessible gratuitement par La Poste et ses filiales.Dans ce cas, le candidat précisera dans le dossier de réponse toutes les informations nécessaires à la consultation de ce système ou de cet espace."@fr;
+  epo:hasDescription "Le marché comprend des prestations de surveillance humaine de sites industriels, administratifs et commerciaux de La Poste, situés dans le département de la Guadeloupe. Le périmètre de chaque site concerné peut inclure notamment les terrains, les installations, les locaux appartenant au groupe La Poste ou loués par celui-ci, occupés ou non par le personnel de La Poste travaillant sur le site.Les prestations récurrentes attendues sont principalement les suivantes:— la surveillance générale des sites;— la prévention et la lutte contre les incivilités;— la prévention et la lutte contre l'incendie;— la prévention et la lutte contre la malveillance et le vol;— la prévention des risques techniques;— l'assistance aux personnes et le secours aux victimes;— le contrôle d'accès des personnes et des véhicules;— les rondes de sécurité;— le suivi et la traçabilité dans l'exécution des prestations par utilisation d'une Main courante informatique (ou MCI), fournie par le prestataire ou par La Poste.Sur demande de La Poste, le prestataire réalisera d'autres prestations:— des prestations de surveillance humaine par un agent de sécurité cynotechnique;— des prestations de surveillance humaine supplémentaires aux prestations récurrentes, rendues nécessaires du fait d'un renforcement momentané de la sécurisation;— des prestations de surveillance humaine incluant tout ou partie des prestations récurrentes et pour une courte durée, sur des sites ne faisant pas l'objet des prestations récurrentes;— des rondes de sécurité sur des sites ne faisant pas l'objet des prestations récurrentes;— des rondes de sécurité supplémentaires sur des sites faisant l'objet des prestations récurrentes;— des prestations de contrôle des personnes sur des sites équipés de Postes d'inspection et filtrage (ou PIF).Sur demande de La Poste et si le prestataire le propose, ce dernier pourra être amené à réaliser des prestations de surveillance humaine dites d'urgence mises en place sous un délai de moins de deux heures."@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-067-173924_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-067-173924_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-067-173924_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Prestations de surveillance humaine de sites industriels, administratifs et commerciaux de La Poste"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-067-173924_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-067-173924_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-067-173924_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2021-S-067-173924_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-067-173924_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-067-173924_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-067-173924_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-067-173924_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-067-173924_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75859";
+  locn:postName "Paris Cedex 17";
+  locn:thoroughfare "parvis du Tribunal de Paris" .
+
+epd:id_2021-S-067-173924_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2021-S-067-173924_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-067-173924_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-067-173924_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-067-173924_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-067-173924_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-067-173924_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2021-S-067-173924_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75859";
+  locn:postName "Paris Cedex 17";
+  locn:thoroughfare "parvis du Tribunal de Paris" .
+
+epd:id_2021-S-067-173924_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-067-173924_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-067-173924_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-067-173924_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-067-173924_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-067-173924_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://e-sourcing.extra.laposte.fr"^^xsd:anyURI .
+
+epd:id_2021-S-067-173924_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-067-173924_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-067-173924_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

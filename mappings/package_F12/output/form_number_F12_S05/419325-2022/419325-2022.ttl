@@ -1,0 +1,116 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-146-419325_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://app.eop.bg/today/195022"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-146-419325_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "https://app.eop.bg/buyer/1199"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-146-419325_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2022-S-146-419325_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-146-419325_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "С. Иванов"@bg;
+  epo:hasFax "+359 29515169";
+  epo:hasInternetAddress "https://www.mod.bg/"^^xsd:anyURI;
+  cccev:email "s.iv.ivanov@mod.bg";
+  cccev:telephone "+359 029220673" .
+
+epd:id_2022-S-146-419325_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2022-S-146-419325_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-146-419325_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2022-S-146-419325_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/18230000> .
+
+epd:id_2022-S-146-419325_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-146-419325_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Целта на конкурса за проект е разработване на дизайнерски модел за ушиване на униформено облекло за зимна връхна горна дреха тип ,,Палто‘‘, съгласно изискванията на Възложителя. Палтото е предназначено да се носи (използва) само от висшия команден състав и командирите на военни формирования/структури, като представително униформено облекло в зимни условия и при ниски температури. То трябва да бъде с класическа кройка, която да придава стилен външен вид и да създава топлинна защита,  удобство и комфорт при носене, като не ограничава движенията на военнослужещия (при ходене, маршировка, отдаване на чест и др.)."@bg;
+  epo:hasPurpose epd:id_2022-S-146-419325_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-146-419325_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-146-419325_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2022-S-146-419325_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2022-S-146-419325_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2022-S-146-419325_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2022-07-27"^^xsd:date;
+  epo:hasID epd:id_2022-S-146-419325_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220801";
+  epo:refersToLot epd:id_2022-S-146-419325_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2022-S-146-419325_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2022-S-146-419325_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 146-419325" .
+
+epd:id_2022-S-146-419325_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1092";
+  locn:postName "София";
+  locn:thoroughfare "ул. \"Дякон Игнатий\" №3" .
+
+epd:id_2022-S-146-419325_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "000695324" .
+
+epd:id_2022-S-146-419325_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasID epd:id_2022-S-146-419325_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Министерство на отбраната"@bg;
+  epo:hasMainActivityDescription "Изработка на дизайн и облекло";
+  cccev:registeredAddress epd:id_2022-S-146-419325_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-146-419325_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79421200> .
+
+epd:id_2022-S-146-419325_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "Критерии за подбор:Възложителя поставя изисквания свързани с технически и професионални способности.За доказване на техническите и професионални способности, участникът следва:Да е изпълнил дейности с предмет идентичен или сходен с този на поръчката за последните три години от датата на подаване на заявлението - чл. 63, ал. 1, т. 1, буква \"б\" от ЗОП.Под ,,сходен предмет“ с този на поръчката се разбира ,,ушиване на облекло‘‘.Съответствието си с посочените изисквания участниците удостоверяват, като попълват информацията от раздел В ,,Технически и професионални способности‘‘ в Част Ⅳ: ,,Критерии за подбор‘‘ в (ЕЕДОП).Минимално изискване:Да има изпълнена поне една услуга, с предмет, идентичен или сходен с този на поръчката за последните три години, считано от датата на подаване на проекта."@bg;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-146-419325_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2022-S-146-419325_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Конкурс за проект за разработване на дизайнерски модел и ушиване на униформено облекло – зимна връхна горна дреха тип ,,Палто‘‘"@bg;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-146-419325_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2022-S-146-419325_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2022-S-146-419325_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2022-S-146-419325_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-146-419325_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2022-S-146-419325_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-146-419325_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Жалби могат да се подават в 10 (десет) дневен срок от настъпване на обстоятелства по чл. 197, ал. 1, т. 1 от ЗОП." .
+
+epd:id_2022-S-146-419325_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "delovodstvo@cpc.bg";
+  cccev:telephone "+359 29356113" .
+
+epd:id_2022-S-146-419325_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. Витоша № 18" .
+
+epd:id_2022-S-146-419325_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2022-S-146-419325_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2022-S-146-419325_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2022-S-146-419325_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-146-419325_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2022-S-146-419325_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "BG";
+  epo:hasSubmissionURL "https://app.eop.bg/today/195022"^^xsd:anyURI .
+
+epd:id_2022-S-146-419325_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-146-419325_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2022-S-146-419325_Organisation_VX8RygdBbvDo5gNDhjcsTj .

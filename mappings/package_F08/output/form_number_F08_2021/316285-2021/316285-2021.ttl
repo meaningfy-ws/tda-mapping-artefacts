@@ -1,0 +1,81 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-119-316285_AccessTerm_4zjJjpytu5bmHbyNSmtsju a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.vigezzina.com/index.php/l-azienda/bandi"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-119-316285_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "www.vigezzina.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-119-316285_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2021-S-119-316285_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2021-S-119-316285_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "ing. Daniele Corti"@it;
+  epo:hasFax "+39 032445242";
+  epo:hasInternetAddress "www.vigezzinacentovalli.com"^^xsd:anyURI;
+  cccev:email "direttore.ssif@vigezzinacentovalli.com";
+  cccev:telephone "+39 0324242055" .
+
+epd:id_2021-S-119-316285_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj a locn:Address;
+  locn:fullAddress "Domodossola (VB) — ITALIA"@it .
+
+epd:id_2021-S-119-316285_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITC14>;
+  locn:address epd:id_2021-S-119-316285_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2021-S-119-316285_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-119-316285_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2021-S-119-316285_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-119-316285_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription "Seconda consultazione preliminare di mercato aperta agli operatori del settore e finalizzata alla predisposizione degli atti di gara di un appalto di fornitura di nuovi veicoli ferroviari.I veicoli ferroviari, le cui caratteristiche e requisiti sono descritti nella documentazione tecnica disponibile sul profilo di committente, sono sinteticamente costituiti da elettrotreni per trasporto viaggiatori, a scartamento metrico e piano ribassato, formati da motrici pilota e motrici intermedie.La Società subalpina ha necessità, attraverso la consultazione di operatori, di acquisire elementi e informazioni necessari alla predisposizione della successiva procedura di selezione."@it .
+
+epd:id_2021-S-119-316285_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-119-316285_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2021-S-119-316285_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ;
+  epo:hasDispatchDate "2021-06-17"^^xsd:date;
+  epo:hasID epd:id_2021-S-119-316285_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210622";
+  epo:refersToLot epd:id_2021-S-119-316285_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2021-S-119-316285_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2021-S-119-316285_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 119-316285" .
+
+epd:id_2021-S-119-316285_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITC14>;
+  locn:postCode "28845";
+  locn:postName "Domodossola";
+  locn:thoroughfare "via Mizzoccola 9" .
+
+epd:id_2021-S-119-316285_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC a epo:Identifier;
+  epo:hasIdentifierValue "76974096D9" .
+
+epd:id_2021-S-119-316285_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasID epd:id_2021-S-119-316285_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC;
+  epo:hasLegalName "Società subalpina di Imprese ferroviarie SpA"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2021-S-119-316285_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2021-S-119-316285_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34620000> .
+
+epd:id_2021-S-119-316285_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasAdditionalInformation "La documentazione relativa alla consultazione preliminare di mercato è disponibile presso il profilo di committente all'indirizzo: http://www.vigezzina.com/index.php/l-azienda/bandi.La consultazione preliminare non è finalizzata all'aggiudicazione di alcun contratto."@it;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-119-316285_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2021-S-119-316285_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle "2o avviso di consultazione preliminare di mercato, ai sensi dell'art. 66 del D.Lgs. n. 50/2016, propedeutica alla predisposizione di un appalto di fornitura di nuovi veicoli ferroviari"@it;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-119-316285_AccessTerm_4zjJjpytu5bmHbyNSmtsju .
+
+epd:id_2021-S-119-316285_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-119-316285_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2021-S-119-316285_Organisation_TigDgN9yDLHn3hDtQD7BVC .

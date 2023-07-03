@@ -1,0 +1,181 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-060-111575_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://www.marches-publics.gouv.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=321525&orgAcronyme=b4n"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2017-S-060-111575_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-060-111575_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2017-S-060-111575_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2017-S-060-111575_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasFax "+33 140197143";
+  epo:hasInternetAddress "http://www.onf.fr/"^^xsd:anyURI;
+  cccev:email "sg-p@onf.fr";
+  cccev:telephone "+33 140197143" .
+
+epd:id_2017-S-060-111575_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR1> .
+
+epd:id_2017-S-060-111575_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-060-111575_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-060-111575_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2017-S-060-111575_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true .
+
+epd:id_2017-S-060-111575_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-060-111575_FrameworkAgreementTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2017-S-060-111575_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw a epo:FrameworkAgreementTerm .
+
+epd:id_2017-S-060-111575_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/44810000> .
+
+epd:id_2017-S-060-111575_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-060-111575_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription """
+Phases du marché
+Le partenariat d'innovation est décomposé en 2 phases:
+— phase 1: fourniture d'un prototype amélioré rouleau encreur en visant:
+i. l'ergonomie du dispositif pour une meilleure prise en main;
+ii. le système de pompage;
+iii. le choix des matériaux pour alléger le poids;
+iv. la possibilité de nettoyer le support par grattoir;
+v. la peinture en phase aqueuse;
+vi. le kit d'entretien portable.
+— phase 2: mise en production industrielle du prototype validé.
+"""@fr;
+  epo:hasPurpose epd:id_2017-S-060-111575_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-060-111575_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-060-111575_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2017-S-060-111575_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2017-S-060-111575_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2017-S-060-111575_Reviewer_Sc23ScTxybJ3bYD3QjmgGS;
+  epo:hasDispatchDate "2017-03-21"^^xsd:date;
+  epo:hasID epd:id_2017-S-060-111575_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasPublicationDate "20170325";
+  epo:refersToLot epd:id_2017-S-060-111575_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2017-S-060-111575_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2017-S-060-111575_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 060-111575" .
+
+epd:id_2017-S-060-111575_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR1>;
+  locn:postCode "75570";
+  locn:postName "Paris Cedex 12";
+  locn:thoroughfare "2 avenue de Saint-Mandé" .
+
+epd:id_2017-S-060-111575_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "Office national des forêts"@fr;
+  epo:hasMainActivityDescription "Gestion des forêts";
+  cccev:registeredAddress epd:id_2017-S-060-111575_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2017-S-060-111575_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2017-9280-002" .
+
+epd:id_2017-S-060-111575_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/44810000> .
+
+epd:id_2017-S-060-111575_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-060-111575_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation """
+Analyse des candidatures
+Le DCE sera envoyé aux 5 meilleurs candidats les mieux classés après analyse des candidatures selon les critères suivants, en fonction des éléments décrits dans le III.1.3:
+— compréhension du projet au regard de la lettre de candidature;
+— capacité industrielle: machinerie / capacité de production annuelle;
+— capacité d'innovation dans le domaine objet du marché.
+Le marché sera attribué au candidat ayant formulé l'offre économiquement la plus avantageuse après analyse des critères suivants:
+Valeur technique de l'offres 60 %;
+Prix 40 %.
+Pour l'appréciation de la valeur technique de l'offre, les sous-critères suivants seront notés:
+— Performance des peintures en phase aqueuse longue durée (30 points);
+— Qualité de l'outil proposé (30 points);
+— Adéquation de l'outil à la peinture (40 points).
+"""@fr;
+  epo:hasDescription """
+Le présent partenariat d'innovation a pour objet d'améliorer et développer la version n° II du rouleau encreur, dont une demande de brevet a d'ores et déjà été déposée par l'ONF auprès de l'INPI en août 2016 en vue d'une fabrication industrielle (brevet intitulé dispositif de marquage d'une écorce de tronc d'arbre). Les prestations, objet du marché, couvrent la fourniture d'un prototype «rouleau encreur» amélioré, son kit d'entretien, la peinture adaptée (avec les durées d'application nécessaires à l'ONF et les couleurs utiles au marquage des bois et sa version avec la présence d'un marqueur) en 50 exemplaires et l'outil qui devra permettre, à terme la mise en production industrielle. Le partenariat d'innovation sera conclu avec un seul attributaire.
+"""@fr;
+  epo:hasID epd:id_2017-S-060-111575_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/innovation>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-060-111575_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2017-S-060-111575_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle """
+Fourniture d'un prototype n° 2 d'un rouleau encreur, de son kit d'entretien et de la peinture adaptée à son fonctionnement.
+"""@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-060-111575_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2017-S-060-111575_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw, epd:id_2017-S-060-111575_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
+  epo:usesTechnique epd:id_2017-S-060-111575_FrameworkAgreementTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2017-S-060-111575_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-060-111575_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2017-S-060-111575_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2017-S-060-111575_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue du Jouy" .
+
+epd:id_2017-S-060-111575_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr/"^^xsd:anyURI .
+
+epd:id_2017-S-060-111575_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "Greffe du tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-060-111575_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2017-S-060-111575_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2017-S-060-111575_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-060-111575_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2017-S-060-111575_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr/"^^xsd:anyURI .
+
+epd:id_2017-S-060-111575_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue du Jouy" .
+
+epd:id_2017-S-060-111575_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-060-111575_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2017-S-060-111575_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2017-S-060-111575_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-060-111575_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2017-S-060-111575_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.marches-publics.gouv.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=321525&orgAcronyme=b4n"^^xsd:anyURI .

@@ -1,0 +1,108 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-134-275100_AccessTerm_4zjJjpytu5bmHbyNSmtsju a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.iacs.es/compra-publica-innovacion-portal-guiasalud/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-134-275100_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "http://contratacionpublica.aragon.es"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-134-275100_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2017-S-134-275100_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2017-S-134-275100_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "Avenida San Juan Bosco, 13, Edificio Ciba"@es;
+  epo:hasFax "+34 976714670";
+  epo:hasInternetAddress "http://www.iacs.es/compra-publica-innovacion-portal-guiasalud/"^^xsd:anyURI;
+  cccev:email "cpmguiasalud.iacs@aragon.es";
+  cccev:telephone "+34 976715056" .
+
+epd:id_2017-S-134-275100_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES243> .
+
+epd:id_2017-S-134-275100_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-134-275100_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2017-S-134-275100_InformationProviderContactPoint_PHAC3pV7Mi9mSueG6pbn8k a
+    cccev:ContactPoint;
+  epo:hasContactName "Instituto Aragonés de Ciencias de la Salud"@es;
+  epo:hasInternetAddress "http://www.iacs.es/compra-publica-innovacion-portal-guiasalud/"^^xsd:anyURI;
+  cccev:email "cpmguiasalud.iacs@aragon.es" .
+
+epd:id_2017-S-134-275100_InformationProviderOrganisationAddress_PHAC3pV7Mi9mSueG6pbn8k
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES243>;
+  locn:postCode "50009";
+  locn:postName "Zaragoza";
+  locn:thoroughfare "av. San Juan Bosco, 13, edificio Ciba" .
+
+epd:id_2017-S-134-275100_InformationProviderOrganisationIdentifier_PHAC3pV7Mi9mSueG6pbn8k
+  a epo:Identifier;
+  epo:hasIdentifierValue "Q5000654C" .
+
+epd:id_2017-S-134-275100_InformationProviderOrganisation_PHAC3pV7Mi9mSueG6pbn8k a
+    org:Organization;
+  epo:hasID epd:id_2017-S-134-275100_InformationProviderOrganisationIdentifier_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:hasLegalName "Instituto Aragonés de Ciencias de la Salud"@es;
+  cccev:registeredAddress epd:id_2017-S-134-275100_InformationProviderOrganisationAddress_PHAC3pV7Mi9mSueG6pbn8k .
+
+epd:id_2017-S-134-275100_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-134-275100_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription """
+                  Consulta Preliminar del Mercado, para la búsqueda de soluciones innovadoras en proyectos relacionados con la evolución y mejora, a través del uso de inteligencia artificial y otras tecnologías, del portal GuíaSalud, organismo del Sistema Nacional de Salud, donde el Instituto Aragonés de Ciencias de la Salud (IACS) ejerce el papel de Secretaría y actúa como órgano de gestión.
+               """@es .
+
+epd:id_2017-S-134-275100_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-134-275100_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2017-S-134-275100_ProcurementProcedureInformationProvider_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:hasDispatchDate "2017-07-13"^^xsd:date;
+  epo:hasID epd:id_2017-S-134-275100_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasPublicationDate "20170715";
+  epo:refersToLot epd:id_2017-S-134-275100_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2017-S-134-275100_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2017-S-134-275100_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 134-275100" .
+
+epd:id_2017-S-134-275100_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES243>;
+  locn:postCode "50009";
+  locn:postName "Zaragoza";
+  locn:thoroughfare "av. San Juan Bosco, 13, Edificio Ciba" .
+
+epd:id_2017-S-134-275100_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC a epo:Identifier;
+  epo:hasIdentifierValue "Q5000654C" .
+
+epd:id_2017-S-134-275100_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2017-S-134-275100_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC;
+  epo:hasLegalName "Instituto Aragonés de Ciencias de la Salud"@es;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2017-S-134-275100_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2017-S-134-275100_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/72000000> .
+
+epd:id_2017-S-134-275100_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasAdditionalInformation """
+               En el sitio web http://www.iacs.es/compra-publica-innovacion-portal-guiasalud/ se encuentra a disposición de los interesados la resolución de la Directora Gerente del Instituto Aragonés de Ciencias de la Salud, que aprueba la convocatoria, así como (tanto en español, idioma oficial como en inglés) la documentación del proceso, así como los anexos y la documentación técnica que puedan necesitar los interesados en participar.
+               El procedimiento de CPM tendrá una duración de 2 meses (hasta 13.9.2017). Las consultas que deseen realizar los interesados se atenderán en español como en inglés.
+            """@es;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-134-275100_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2017-S-134-275100_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle """
+               Consulta Preliminar al Mercado, para búsqueda de soluciones innovadoras en proyectos relacionados con evolución y mejora, a través de inteligencia artificial y otras tecnologías, del portal GuiaSalud.
+            """@es;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-134-275100_AccessTerm_4zjJjpytu5bmHbyNSmtsju .
+
+epd:id_2017-S-134-275100_ProcurementProcedureInformationProvider_PHAC3pV7Mi9mSueG6pbn8k
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-134-275100_InformationProviderContactPoint_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:playedBy epd:id_2017-S-134-275100_InformationProviderOrganisation_PHAC3pV7Mi9mSueG6pbn8k .

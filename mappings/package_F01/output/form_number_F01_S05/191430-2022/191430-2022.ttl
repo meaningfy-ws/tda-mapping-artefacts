@@ -1,0 +1,289 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-072-191430_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-072-191430_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38 a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-072-191430_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38;
+  epo:playedBy epd:id_2022-S-072-191430_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2022-S-072-191430_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38 a cccev:ContactPoint;
+  epo:hasContactName "Anca-Andreea Imparatu"@ro;
+  epo:hasInternetAddress "www.suumc.ro"^^xsd:anyURI;
+  cccev:email "serviciulachizitii@scumc.ro";
+  cccev:telephone "+40 213193072" .
+
+epd:id_2022-S-072-191430_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 a org:Organization;
+  epo:hasID epd:id_2022-S-072-191430_OrganisationIdentifier_5ZAqFrPEQTFNv88ScKSm38;
+  epo:hasLegalName "Spitalul Universitar de Urgenta Militar Central \"Dr. Carol Davila\""@ro;
+  cccev:registeredAddress epd:id_2022-S-072-191430_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2022-S-072-191430_BuyerOrganisationGroup_5ZAqFrPEQTFNv88ScKSm38 a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/defence>;
+  epo:hasMember epd:id_2022-S-072-191430_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2022-S-072-191430_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-072-191430_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "www.cfzb.mapn.ro"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-072-191430_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-072-191430_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-072-191430_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Cristian Constantin"@ro;
+  epo:hasFax "+40 213195851";
+  epo:hasInternetAddress "www.cfzb.mapn.ro"^^xsd:anyURI;
+  cccev:email "achizitii02464@mapn.ro";
+  cccev:telephone "+40 213195842" .
+
+epd:id_2022-S-072-191430_ContractTermLotLocationAddress_RzGc5d5mtrg2C6DV2Pr3XD a locn:Address;
+  locn:fullAddress "La sediul fiecarui asociat/ beneficiar"@ro .
+
+epd:id_2022-S-072-191430_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "La sediul fiecarui asociat/ beneficiar"@ro .
+
+epd:id_2022-S-072-191430_ContractTermLotLocationAddress_kKEXkgEhBpbdu5CJYA2aUT a locn:Address;
+  locn:fullAddress "La sediul fiecarui asociat/ beneficiar"@ro .
+
+epd:id_2022-S-072-191430_ContractTermLotLocation_RzGc5d5mtrg2C6DV2Pr3XD a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/RO>;
+  locn:address epd:id_2022-S-072-191430_ContractTermLotLocationAddress_RzGc5d5mtrg2C6DV2Pr3XD .
+
+epd:id_2022-S-072-191430_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/RO>;
+  locn:address epd:id_2022-S-072-191430_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-072-191430_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/RO>;
+  locn:address epd:id_2022-S-072-191430_ContractTermLotLocationAddress_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2022-S-072-191430_ContractTermLot_RzGc5d5mtrg2C6DV2Pr3XD a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-072-191430_Duration_7vApgAJUSqBgXhJLuVbxWp;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-072-191430_ContractTermLotLocation_RzGc5d5mtrg2C6DV2Pr3XD .
+
+epd:id_2022-S-072-191430_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-072-191430_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-072-191430_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-072-191430_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-072-191430_Duration_VLUhcjCcfriMRVVeLidxGZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-072-191430_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2022-S-072-191430_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2022-S-072-191430_Duration_7vApgAJUSqBgXhJLuVbxWp a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-072-191430_Duration_VLUhcjCcfriMRVVeLidxGZ a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-072-191430_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-072-191430_FrameworkAgreementTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2022-S-072-191430_FrameworkAgreementTerm_KX8MaayAMxqXBuD94Kuz62 a epo:FrameworkAgreementTerm .
+
+epd:id_2022-S-072-191430_LotIdentifier_RzGc5d5mtrg2C6DV2Pr3XD a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2022-S-072-191430_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK a epo:Identifier;
+  epo:hasIdentifierValue "3" .
+
+epd:id_2022-S-072-191430_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2022-S-072-191430_LotPurpose_RzGc5d5mtrg2C6DV2Pr3XD a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34114121> .
+
+epd:id_2022-S-072-191430_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34114121> .
+
+epd:id_2022-S-072-191430_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34114121> .
+
+epd:id_2022-S-072-191430_Lot_RzGc5d5mtrg2C6DV2Pr3XD a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-072-191430_ContractTermLot_RzGc5d5mtrg2C6DV2Pr3XD;
+  epo:hasDescription "Conform caietului de sarcini"@ro;
+  epo:hasEstimatedValue epd:id_2022-S-072-191430_MainMonetaryValueLot_RzGc5d5mtrg2C6DV2Pr3XD;
+  epo:hasID epd:id_2022-S-072-191430_LotIdentifier_RzGc5d5mtrg2C6DV2Pr3XD;
+  epo:hasPurpose epd:id_2022-S-072-191430_LotPurpose_RzGc5d5mtrg2C6DV2Pr3XD;
+  epo:hasTitle "Ambulanta B"@ro;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-072-191430_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-072-191430_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Conform caietului de sarcini"@ro;
+  epo:hasEstimatedValue epd:id_2022-S-072-191430_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasID epd:id_2022-S-072-191430_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2022-S-072-191430_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasTitle "Ambulanta C1"@ro;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-072-191430_Lot_kKEXkgEhBpbdu5CJYA2aUT a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-072-191430_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasDescription "Conform caietului de sarcini"@ro;
+  epo:hasEstimatedValue epd:id_2022-S-072-191430_MainMonetaryValueLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasID epd:id_2022-S-072-191430_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2022-S-072-191430_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasTitle "Ambulanta A2"@ro;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-072-191430_MainMonetaryValueLot_RzGc5d5mtrg2C6DV2Pr3XD a epo:MonetaryValue;
+  epo:hasAmountValue 8483000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/RON> .
+
+epd:id_2022-S-072-191430_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 10104750.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/RON> .
+
+epd:id_2022-S-072-191430_MainMonetaryValueLot_kKEXkgEhBpbdu5CJYA2aUT a epo:MonetaryValue;
+  epo:hasAmountValue 16916690.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/RON> .
+
+epd:id_2022-S-072-191430_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2022-S-072-191430_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2022-S-072-191430_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2022-S-072-191430_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2022-S-072-191430_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2022-S-072-191430_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2022-S-072-191430_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2022-S-072-191430_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2022-04-07"^^xsd:date;
+  epo:hasID epd:id_2022-S-072-191430_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220412";
+  epo:refersToLot epd:id_2022-S-072-191430_Lot_RzGc5d5mtrg2C6DV2Pr3XD, epd:id_2022-S-072-191430_Lot_c4Jggv3QHLrvEuoxvHMwcK,
+    epd:id_2022-S-072-191430_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:refersToProcedure epd:id_2022-S-072-191430_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2022-S-072-191430_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 072-191430" .
+
+epd:id_2022-S-072-191430_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ROU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/RO321>;
+  locn:postCode "010825";
+  locn:postName "Bucuresti";
+  locn:thoroughfare "Strada: Vulcănescu Mircea, nr. 88, Sector: 1, Judet: Bucuresti, Localitate: Bucuresti, Cod postal: 010825" .
+
+epd:id_2022-S-072-191430_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ROU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/RO321>;
+  locn:postCode "060134";
+  locn:postName "Bucuresti";
+  locn:thoroughfare "Strada Caranda Gheorghe, lt. av., Nr. 42, Sector: 6" .
+
+epd:id_2022-S-072-191430_OrganisationIdentifier_5ZAqFrPEQTFNv88ScKSm38 a epo:Identifier;
+  epo:hasIdentifierValue "4364594" .
+
+epd:id_2022-S-072-191430_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "4364675" .
+
+epd:id_2022-S-072-191430_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasID epd:id_2022-S-072-191430_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "MINISTERUL APARARII - UNITATEA MILITARA 02464 BUCURESTI"@ro;
+  cccev:registeredAddress epd:id_2022-S-072-191430_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-072-191430_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2022-S-072-191430_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2022-S-072-191430_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "4364675_2022_PAAPD1343274" .
+
+epd:id_2022-S-072-191430_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34114121> .
+
+epd:id_2022-S-072-191430_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw "În temeiul prevederilor art. 4, alin.(1) lit.c) din Legea 98/ 2016, conform acordului de asociere nr A7800 din 13.12.2021, se asociază:UM 02464 Bucureşti, UM 02482 Bu... detalii pe www.e-licitatie.ro"@ro .
+
+epd:id_2022-S-072-191430_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-072-191430_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "Documentatia va fi descarcata de pe site-ul www.e-licitatie.ro. Toate raspunsurile la solicitarile de clarificari cerute de operatorii economici sau formulate de autoritatea contractanta/ decizii CNSC / contestatii/ note de informare/ masuri de remediere vor fi postate pe site-ul www.e-licitatie.ro la rubrica Documentatii/ clarificari/ decizii, precum si prin publicare de erate. Operatorii economici care intentioneaza sa depuna oferta, au obligatia de a urmari/accesa site-ul www.e-licitatie.ro."@ro;
+  epo:hasDescription "Furnizarea de ambulanțe, conform caietului de sarcini, prin incheierea unui Acord-cadru cu operatorii economici ale caroroferte admisibile se vor pozitiona pe primele 3 locuri in clasamentul intocmit in baza criteriului de atribuire mentionat la punctulII.2.5.din Fisa de date a achizitiei. Contractele subsecvente se vor încheia, începând cu primul, cu operatorii economici semnatari aiacordului cadru, fara reluarea competitiei, de fiecare dintre asociati in parte."@ro;
+  epo:hasID epd:id_2022-S-072-191430_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-072-191430_Lot_RzGc5d5mtrg2C6DV2Pr3XD,
+    epd:id_2022-S-072-191430_Lot_c4Jggv3QHLrvEuoxvHMwcK, epd:id_2022-S-072-191430_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2022-S-072-191430_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Acord cadru pe 48 de luni de furnizare AMBULANTA A2, B si C1"@ro;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-072-191430_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2022-S-072-191430_FrameworkAgreementTerm_KX8MaayAMxqXBuD94Kuz62, epd:id_2022-S-072-191430_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG,
+    epd:id_2022-S-072-191430_ReviewTerm_KjhWjVv578XNpvpTRjZhAs;
+  epo:usesTechnique epd:id_2022-S-072-191430_FrameworkAgreementTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2022-S-072-191430_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2022-04-15"^^xsd:date .
+
+epd:id_2022-S-072-191430_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-072-191430_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-072-191430_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-072-191430_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ROU>;
+  locn:postCode "061352";
+  locn:postName "Bucuresti";
+  locn:thoroughfare "Drumul Taberei 7G, Sector 6" .
+
+epd:id_2022-S-072-191430_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  cccev:email "achizitii02464@mapn.ro";
+  cccev:telephone "+40 213195842" .
+
+epd:id_2022-S-072-191430_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "UM02464 BUCURESTI"@ro;
+  epo:hasPrimaryContactPoint epd:id_2022-S-072-191430_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2022-S-072-191430_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2022-S-072-191430_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-072-191430_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2022-S-072-191430_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Conform prevederilor art. 8 din Legea nr. 101/2016 privind remediile şi căile de atac în materie de atribuire a contractelor de achiziţie publică, a contractelor sectoriale şi a contractelor de concesiune de lucrări şi concesiune de servicii, precum şi pentru organizarea şi funcţionarea Consiliului Naţional de Soluţionare a Contestaţiilor." .
+
+epd:id_2022-S-072-191430_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+40 213104642 / +40 218900745";
+  epo:hasInternetAddress "http://www.cnsc.ro"^^xsd:anyURI;
+  cccev:email "office@cnsc.ro";
+  cccev:telephone "+40 213104641" .
+
+epd:id_2022-S-072-191430_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ROU>;
+  locn:postCode "030084";
+  locn:postName "Bucuresti";
+  locn:thoroughfare "Str. Stavropoleos nr. 6, sector 3" .
+
+epd:id_2022-S-072-191430_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Consiliul National de Solutionare a Contestatiilor"@ro;
+  epo:hasPrimaryContactPoint epd:id_2022-S-072-191430_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2022-S-072-191430_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2022-S-072-191430_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-072-191430_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2022-S-072-191430_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-072-191430_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-072-191430_Organisation_gqoAAwSV3JaTMsopb9zyKP .

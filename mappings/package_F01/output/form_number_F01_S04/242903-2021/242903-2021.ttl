@@ -1,0 +1,166 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-093-242903_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.madrid.org/contratospublicos"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-093-242903_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.madrid.org/contratospublicos"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-093-242903_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-093-242903_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-093-242903_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.madrid.org"^^xsd:anyURI;
+  cccev:email "contratos.cultura@madrid.org" .
+
+epd:id_2021-S-093-242903_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Centro Cultural Paco Rabal, Comunidad de Madrid, c/ Felipe de Diego, 11, 28018 Madrid."@es .
+
+epd:id_2021-S-093-242903_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES300>;
+  locn:address epd:id_2021-S-093-242903_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-093-242903_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-093-242903_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-093-242903_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-093-242903_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-093-242903_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-093-242903_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-093-242903_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "La gestión y explotación de los servicios de cafetería mediante concesión de servicios en el local ubicado a tal efecto en el Centro Cultural Paco Rabal."@es;
+  epo:hasEstimatedValue epd:id_2021-S-093-242903_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-093-242903_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-093-242903_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 109131.21;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-093-242903_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 109131.21;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-093-242903_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-093-242903_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-093-242903_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-093-242903_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2021-S-093-242903_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2021-S-093-242903_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2021-S-093-242903_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2021-05-11"^^xsd:date;
+  epo:hasID epd:id_2021-S-093-242903_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210514";
+  epo:refersToLot epd:id_2021-S-093-242903_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-093-242903_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-093-242903_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 093-242903" .
+
+epd:id_2021-S-093-242903_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES300>;
+  locn:postCode "28014";
+  locn:postName "Madrid";
+  locn:thoroughfare "C/ Alcalá, 31" .
+
+epd:id_2021-S-093-242903_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "S7800001-E" .
+
+epd:id_2021-S-093-242903_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2021-S-093-242903_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Comunidad de Madrid — Consejería de Cultura y Turismo"@es;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-093-242903_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-093-242903_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "C-334A/001-21 (A/CSP-009707/2021)" .
+
+epd:id_2021-S-093-242903_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/55330000> .
+
+epd:id_2021-S-093-242903_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-093-242903_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "La gestión y explotación de los servicios de cafetería mediante concesión de servicios en el local ubicado a tal efecto en el Centro Cultural Paco Rabal."@es;
+  epo:hasEstimatedValue epd:id_2021-S-093-242903_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2021-S-093-242903_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-093-242903_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-093-242903_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Concesión de servicios denominados gestión y explotación del servicio de cafetería del Centro Cultural Paco Rabal de Madrid"@es;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-093-242903_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2021-S-093-242903_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2021-S-093-242903_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-093-242903_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-093-242903_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-093-242903_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postCode "28010";
+  locn:postName "Madrid";
+  locn:thoroughfare "Plaza de Chamberí, 8, 5.ª planta" .
+
+epd:id_2021-S-093-242903_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.madrid.org/es/tacp/"^^xsd:anyURI .
+
+epd:id_2021-S-093-242903_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Tribunal Administrativo de Contratación Pública de la Comunidad de Madrid"@es;
+  epo:hasPrimaryContactPoint epd:id_2021-S-093-242903_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2021-S-093-242903_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-093-242903_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-093-242903_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-093-242903_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.madrid.org/es/tacp/"^^xsd:anyURI .
+
+epd:id_2021-S-093-242903_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postCode "28010";
+  locn:postName "Madrid";
+  locn:thoroughfare "Plaza de Chamberí, 8, 5.ª planta" .
+
+epd:id_2021-S-093-242903_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Tribunal Administrativo de Contratación Pública de la Comunidad de Madrid"@es;
+  epo:hasPrimaryContactPoint epd:id_2021-S-093-242903_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2021-S-093-242903_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-093-242903_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-093-242903_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-093-242903_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "ES";
+  epo:hasReceiptExpressionDeadline "2021-05-31T23:59";
+  epo:hasSubmissionURL "https://gestiona6.madrid.org/nx02_licita"^^xsd:anyURI .
+
+epd:id_2021-S-093-242903_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-093-242903_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-093-242903_Organisation_gqoAAwSV3JaTMsopb9zyKP .

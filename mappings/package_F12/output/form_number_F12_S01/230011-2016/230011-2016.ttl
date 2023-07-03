@@ -1,0 +1,150 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-128-230011_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://ausschreibung.tennet.eu"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-128-230011_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-128-230011_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2016-S-128-230011_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-128-230011_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Herr Alexander Jäger Wettbewerb Campus@TenneT Lehrte"@de;
+  epo:hasFax "+49 5132892044";
+  epo:hasInternetAddress "www.tennet.eu"^^xsd:anyURI;
+  cccev:email "Alexander.Jaeger@tennet.eu";
+  cccev:telephone "+49 5132892636" .
+
+epd:id_2016-S-128-230011_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2016-S-128-230011_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-128-230011_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2016-S-128-230011_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71242000> .
+
+epd:id_2016-S-128-230011_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-128-230011_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+TenneT beabsichtigt die Bündelung seiner räumlich getrennten Standorte Offshore und Onshore in Lehrte. Hierfür ist der Neubau eines Verwaltungsgebäudes (Realisierungswettbewerb) notwendig. Optional soll das vorhandene Verwaltungsgebäude umgebaut werden (Ideenteil). Mit Hilfe des Realisierungswettbewerbs soll die beste städtebauliche und architektonische Lösung für die zu planende und zu realisierende Hochbaumaßnahme und die angrenzenden PKW-Stellplatzflächen gefunden werden. Die Maßnahme umfasst den Neubau mit 230 Büroarbeitsplätzen zzgl. Haustechnik, Konferenzbereich, Kantinenerweiterung und Fitnessbereich. Wesentliche Zielsetzung ist ein, in Planung, Bau und Betrieb wirtschaftliches, energetisch optimiertes Gebäude, das in der architektonischen und funktionalen Umsetzung des Raumprogrammes einen ganzheitlichen Planungsansatz verfolgt. Der Ideenteil soll Ideen liefern für einen optionalen Umbau des Bestandsgebäudes von Zellenbüros in eine Bürolandschaft. mit ca. 170 Büroarbeitsplätzen.
+"""@de;
+  epo:hasPurpose epd:id_2016-S-128-230011_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-128-230011_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "91511";
+  locn:postName "Ansbach" .
+
+epd:id_2016-S-128-230011_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs a org:Organization;
+  epo:hasLegalName "Regierung von Mittelfranken – Vergabekammer Nordbayern"@de;
+  cccev:registeredAddress epd:id_2016-S-128-230011_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2016-S-128-230011_Mediator_eMEmZdeMkSWP9DfmobsFLs a epo:Mediator;
+  epo:playedBy epd:id_2016-S-128-230011_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2016-S-128-230011_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-128-230011_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2016-S-128-230011_Mediator_eMEmZdeMkSWP9DfmobsFLs,
+    epd:id_2016-S-128-230011_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2016-S-128-230011_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2016-S-128-230011_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2016-S-128-230011_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2016-07-01"^^xsd:date;
+  epo:hasID epd:id_2016-S-128-230011_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20160706";
+  epo:refersToLot epd:id_2016-S-128-230011_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2016-S-128-230011_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2016-S-128-230011_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 128-230011" .
+
+epd:id_2016-S-128-230011_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE242>;
+  locn:postCode "95448";
+  locn:postName "Bayreuth";
+  locn:thoroughfare "Bernecker Str. 70" .
+
+epd:id_2016-S-128-230011_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasLegalName "TenneT GmbH & Co. KG"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2016-S-128-230011_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-128-230011_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71221000> .
+
+epd:id_2016-S-128-230011_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-128-230011_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2016-S-128-230011_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+Erweiterung des Verwaltungsgebäudes des Betriebszentrums Lehrte.
+"""@de;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-128-230011_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2016-S-128-230011_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2016-S-128-230011_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2016-S-128-230011_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-128-230011_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2016-S-128-230011_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-128-230011_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "91511";
+  locn:postName "Ansbach" .
+
+epd:id_2016-S-128-230011_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Regierung von Mittelfranken – Vergabekammer Nordbayern"@de;
+  cccev:registeredAddress epd:id_2016-S-128-230011_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2016-S-128-230011_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-128-230011_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2016-S-128-230011_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Auf die Fristregelung des § 160 Abs.3 Nr. 4 des Gesetzes gegen Wettbewerbsbeschränkungen (GWB) wird ausdrücklich hingewiesen. Danach ist ein Antrag auf Einleitung eines Nachprüfungsverfahrens unzulässig, soweit mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind.
+""" .
+
+epd:id_2016-S-128-230011_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+49 981531837";
+  cccev:email "vergabekammer.nordbayern@reg-mfr.bayern.de";
+  cccev:telephone "+49 981531277" .
+
+epd:id_2016-S-128-230011_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "91511";
+  locn:postName "Ansbach";
+  locn:thoroughfare "Promenade 27" .
+
+epd:id_2016-S-128-230011_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Regierung von Mittelfranken – Vergabekammer Nordbayern"@de;
+  epo:hasPrimaryContactPoint epd:id_2016-S-128-230011_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2016-S-128-230011_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-128-230011_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-128-230011_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-128-230011_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2016-S-128-230011_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-128-230011_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2016-S-128-230011_Organisation_VX8RygdBbvDo5gNDhjcsTj .

@@ -1,0 +1,176 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-040-096616_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.lifesugarproject.com/2021/02/22/call-for-tender-sg-r190001/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-040-096616_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "www.lifesugarproject.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-040-096616_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-040-096616_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-040-096616_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Ernesto Cattaneo"@en;
+  epo:hasFax "+39 010564763";
+  epo:hasInternetAddress "www.staraglass.com"^^xsd:anyURI;
+  cccev:email "ernesto.cattaneo@hydragroup.it";
+  cccev:telephone "+39 3456783428" .
+
+epd:id_2021-S-040-096616_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Campus universitario di Savona, via Magliotto"@en .
+
+epd:id_2021-S-040-096616_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITC32>;
+  locn:address epd:id_2021-S-040-096616_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-040-096616_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-040-096616_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-040-096616_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Any suggestion by the designer will be considered."@en .
+
+epd:id_2021-S-040-096616_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-040-096616_Fund_c4Jggv3QHLrvEuoxvHMwcK a epo:Fund;
+  epo:hasDescription "LIFE SUGAR - LIFE19 CCMIT001314"@en .
+
+epd:id_2021-S-040-096616_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-040-096616_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Stara Glass is leading the LIFE SUGAR project (www.lifesugarproject.com) within which we intend to install an experimental steam reforming unit (we define it mock-up, of a successive pilot plant) in the University of Genova campus of Savona, in order to demonstrate the possibility of converting methane and water to hydrogen by an external heat source, representing the hot gas of a glass production factory. For the project we designed the component and its test, and now we need some supplier to:1) build the component on our design and specifications2) install the component in the Savona facility3) after a first test campaign, the catalyst inside the pipe have to be substituted by cutting, emptying, re-filling and re-welding them in place.The complete scope of work is reported in the linked website, where it is also possible to understand better our entire project."@en;
+  epo:hasEstimatedValue epd:id_2021-S-040-096616_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isFundedBy epd:id_2021-S-040-096616_Fund_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds true .
+
+epd:id_2021-S-040-096616_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 25000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-040-096616_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J a cccev:ContactPoint;
+  epo:hasInternetAddress "www.staraglass.com"^^xsd:anyURI;
+  cccev:email "ernesto.cattaneo@hydragropup.it";
+  cccev:telephone "+39 3456783428" .
+
+epd:id_2021-S-040-096616_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "16145";
+  locn:postName "Genova";
+  locn:thoroughfare "Via Nizza" .
+
+epd:id_2021-S-040-096616_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J a org:Organization;
+  epo:hasLegalName "Stara Glass Innovation department"@en;
+  epo:hasPrimaryContactPoint epd:id_2021-S-040-096616_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J;
+  cccev:registeredAddress epd:id_2021-S-040-096616_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2021-S-040-096616_Mediator_2t4SUwdC66NGJuVrEY4e6J a epo:Mediator;
+  epo:playedBy epd:id_2021-S-040-096616_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2021-S-040-096616_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 20000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-040-096616_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-040-096616_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-040-096616_Mediator_2t4SUwdC66NGJuVrEY4e6J,
+    epd:id_2021-S-040-096616_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2021-S-040-096616_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2021-S-040-096616_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2021-02-22"^^xsd:date;
+  epo:hasID epd:id_2021-S-040-096616_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20210226";
+  epo:refersToLot epd:id_2021-S-040-096616_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-040-096616_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-040-096616_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 040-096616" .
+
+epd:id_2021-S-040-096616_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITC33>;
+  locn:postCode "16121";
+  locn:postName "Genova";
+  locn:thoroughfare "Piazza Rossetti, 3a/1" .
+
+epd:id_2021-S-040-096616_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "03599930108" .
+
+epd:id_2021-S-040-096616_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Private company";
+  epo:hasID epd:id_2021-S-040-096616_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Stara Glass S.p.A."@en;
+  epo:hasMainActivityDescription "Glass industry";
+  cccev:registeredAddress epd:id_2021-S-040-096616_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-040-096616_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2021-02-23"^^xsd:date;
+  epo:hasEnd "2021-06-04"^^xsd:date .
+
+epd:id_2021-S-040-096616_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "SUGAR-T1" .
+
+epd:id_2021-S-040-096616_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45351000> .
+
+epd:id_2021-S-040-096616_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-040-096616_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "Stara Glass is leading the LIFE SUGAR project (www.lifesugarproject.com) within which we intend to install an experimental steam reforming unit (we define it mock-up, of a successive pilot plant) in the University of Genova campus of Savona, in order to demonstrate the possibility of converting methane and water to hydrogen by an external heat source, representing the hot gas of a glass production factory. For the project we designed the component and its test, and now we need some supplier to:1) build the component on our design and specifications2) install the component in the Savona facility3) after a first test campaign, the catalyst inside the pipe have to be substituted by cutting, emptying, re-filling and re-welding them in place.The complete scope of work is reported in the linked website, where it is also possible to understand better our entire project."@en;
+  epo:hasEstimatedValue epd:id_2021-S-040-096616_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2021-S-040-096616_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-040-096616_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-040-096616_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Construction and Installation on an Experimental Steam Reformer on our Design"@en;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-040-096616_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2021-S-040-096616_ReviewTerm_KjhWjVv578XNpvpTRjZhAs, epd:id_2021-S-040-096616_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2021-S-040-096616_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-040-096616_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-040-096616_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-040-096616_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "After contract is entered into no Review procedure foreseen." .
+
+epd:id_2021-S-040-096616_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasInternetAddress "www.staraglass.com"^^xsd:anyURI;
+  cccev:email "enesto.cattaneo@hydragropup.it";
+  cccev:telephone "+39 010576391" .
+
+epd:id_2021-S-040-096616_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "16145";
+  locn:postName "Genova";
+  locn:thoroughfare "Via Nizza" .
+
+epd:id_2021-S-040-096616_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Stara Glass S.p.A."@en;
+  epo:hasPrimaryContactPoint epd:id_2021-S-040-096616_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2021-S-040-096616_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-040-096616_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-040-096616_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-040-096616_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "EN", "IT";
+  epo:hasReceiptExpressionDeadline "2021-03-05T16:00" .
+
+epd:id_2021-S-040-096616_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-040-096616_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-040-096616_Organisation_gqoAAwSV3JaTMsopb9zyKP .

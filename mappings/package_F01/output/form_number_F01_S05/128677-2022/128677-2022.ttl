@@ -1,0 +1,179 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-050-128677_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38 a epo:Buyer;
+  epo:hasBuyerProfile "https://vergabe.duesseldorf.de"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-050-128677_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38;
+  epo:playedBy epd:id_2022-S-050-128677_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2022-S-050-128677_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38 a cccev:ContactPoint;
+  epo:hasFax "+49 21317501090";
+  epo:hasInternetAddress "http://www.itk-rheinland.de"^^xsd:anyURI;
+  cccev:email "info@itk-rheinland.de";
+  cccev:telephone "+49 21317500" .
+
+epd:id_2022-S-050-128677_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 a org:Organization;
+  epo:hasLegalName "IT-Kooperation Rheinland, kommunales IT-Rechenzentrum"@de;
+  cccev:registeredAddress epd:id_2022-S-050-128677_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2022-S-050-128677_BuyerOrganisationGroup_5ZAqFrPEQTFNv88ScKSm38 a epo:OrganisationGroup;
+  epo:hasBuyerLegalTypeDescription "öffentlich rechtlicher Zweckverband";
+  epo:hasMainActivityDescription "IT-Rechenzentrum";
+  epo:hasMember epd:id_2022-S-050-128677_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2022-S-050-128677_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-050-128677_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://vergabe.duesseldorf.de"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-050-128677_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-050-128677_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-050-128677_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasFax "+49 211892443";
+  epo:hasInternetAddress "https://www.duesseldorf.de"^^xsd:anyURI;
+  cccev:email "michael.groth@duesseldorf.de";
+  cccev:telephone "+49 2118996867" .
+
+epd:id_2022-S-050-128677_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "IT-Kooperation Rheinland, Hammfelddamm 4c, 41460 Neuss"@de .
+
+epd:id_2022-S-050-128677_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA1D>;
+  locn:address epd:id_2022-S-050-128677_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-050-128677_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA1D> .
+
+epd:id_2022-S-050-128677_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-050-128677_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-050-128677_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-050-128677_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2022-S-050-128677_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2022-S-050-128677_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt a
+    cccev:ContactPoint;
+  epo:hasFax "+49 2118929443";
+  epo:hasInternetAddress "https://www.duesseldorf.de"^^xsd:anyURI;
+  cccev:email "michael.groth@duesseldorf.de";
+  cccev:telephone "+49 2118996867" .
+
+epd:id_2022-S-050-128677_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA1>;
+  locn:postCode "40213";
+  locn:postName "Düsseldorf";
+  locn:thoroughfare "Rathausufer 8" .
+
+epd:id_2022-S-050-128677_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt a
+    org:Organization;
+  epo:hasLegalName "Landeshauptstadt Düsseldorf, Der Oberbürgermeister,Rechtsamt"@de;
+  cccev:registeredAddress epd:id_2022-S-050-128677_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2022-S-050-128677_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2022-S-050-128677_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2022-S-050-128677_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/72267000> .
+
+epd:id_2022-S-050-128677_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/72263000> .
+
+epd:id_2022-S-050-128677_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-050-128677_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "vcivillent GmbHHerr William SchmittCarl-Zeiss-Str. 15D-72770 ReutlingenTel: +49 7121 956-0Email: kundenmanagement@civillent.de"@de;
+  epo:hasID epd:id_2022-S-050-128677_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2022-S-050-128677_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasTitle "Erweiterung/Anpassung Wartungsvertrag Komm.ONE Kommunalmaster Steuern und Abgaben"@de .
+
+epd:id_2022-S-050-128677_Lot_kKEXkgEhBpbdu5CJYA2aUT a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-050-128677_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasDescription "Implementierungsunterstützung für die Aktualisierung der Software Komm.ONE Kommunalmaster Veranlageung auf die Software  Komm.ONE Kommunalmaster Steuern und Abgaben.Auftragnehmer:BTC Business Technology Consulting AGHerr Rainer CaspariEscherweg 5D-26121 OldenburgFon: +49 (0)441/36 12-0Fax: +49 (0)441/36 12-3999E-Mail: office@btc-ag.com"@de;
+  epo:hasID epd:id_2022-S-050-128677_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2022-S-050-128677_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasTitle "Implementierungsunterstützung Software Komm.ONE Kommunalmaster Steuern und Abgaben"@de .
+
+epd:id_2022-S-050-128677_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 789000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-050-128677_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2022-S-050-128677_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2022-S-050-128677_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2022-S-050-128677_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2022-S-050-128677_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt;
+  epo:hasDispatchDate "2022-03-07"^^xsd:date;
+  epo:hasID epd:id_2022-S-050-128677_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220311";
+  epo:refersToLot epd:id_2022-S-050-128677_Lot_c4Jggv3QHLrvEuoxvHMwcK, epd:id_2022-S-050-128677_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:refersToProcedure epd:id_2022-S-050-128677_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2022-S-050-128677_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 050-128677" .
+
+epd:id_2022-S-050-128677_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA1D>;
+  locn:postCode "41460";
+  locn:postName "Neuss";
+  locn:thoroughfare "Hammfelddamm 4c" .
+
+epd:id_2022-S-050-128677_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA1>;
+  locn:postCode "40213";
+  locn:postName "Düsseldorf";
+  locn:thoroughfare "Rathausufer 8" .
+
+epd:id_2022-S-050-128677_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasLegalName "Landeshauptstadt Düsseldorf, Der Oberbürgermeister,Rechtsamt"@de;
+  cccev:registeredAddress epd:id_2022-S-050-128677_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-050-128677_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2022-S-050-128677_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2022-S-050-128677_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/72263000> .
+
+epd:id_2022-S-050-128677_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 1 .
+
+epd:id_2022-S-050-128677_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-050-128677_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "ACHTUNG:Der Termin für den voraussichtlichen Tag der Veröffentlichung (II.3) wird hier benutzt für die Darstellung des voraussichtlichen Vertragsschlusses (Frist 15 Tage gem. § 135 (3) GWB)."@de;
+  epo:hasDescription "Lizenzen, Wartung, Implementierung und zugehörige Dienstleistungen zur Ablösung des Komm.ONE Kommunalmaster."@de;
+  epo:hasEstimatedValue epd:id_2022-S-050-128677_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-050-128677_Lot_c4Jggv3QHLrvEuoxvHMwcK,
+    epd:id_2022-S-050-128677_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2022-S-050-128677_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Lizenzen, Wartung, zugehörige Dienstleistungen Ablösung Komm.ONE Kommunalmaster"@de;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-050-128677_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2022-S-050-128677_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2022-03-23"^^xsd:date .
+
+epd:id_2022-S-050-128677_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-050-128677_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt;
+  epo:playedBy epd:id_2022-S-050-128677_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt .

@@ -1,0 +1,220 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-008-014764_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.had.de/onlinesuche_freeeu.html?SHOWPUB=5645-29"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2020-S-008-014764_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "http://www.ivm-rheinmain.de"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2020-S-008-014764_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2020-S-008-014764_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2020-S-008-014764_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Geschäftsführung"@de;
+  epo:hasFax "+49 69660759-90";
+  epo:hasInternetAddress "http://www.ivm-rheinmain.de"^^xsd:anyURI;
+  cccev:email "info@ivm-rheinmain.de";
+  cccev:telephone "+49 69660759-0" .
+
+epd:id_2020-S-008-014764_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2020-S-008-014764_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-008-014764_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2020-S-008-014764_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasContactName "Vergabe „Zuständigkeitsübergreifendes Verkehrsmanagement“"@de;
+  epo:hasFax "+49 69660759-90";
+  epo:hasInternetAddress "https://www.ivm-rheinmain.de"^^xsd:anyURI;
+  cccev:email "vergabe@ivm-rheinmain.de";
+  cccev:telephone "+49 69660759-0" .
+
+epd:id_2020-S-008-014764_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:postCode "60549";
+  locn:postName "Frankfurt am Main";
+  locn:thoroughfare "Bessie-Coleman-Str. 7" .
+
+epd:id_2020-S-008-014764_InformationProviderOrganisationIdentifier_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:Identifier;
+  epo:hasIdentifierValue "DE297511251" .
+
+epd:id_2020-S-008-014764_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasID epd:id_2020-S-008-014764_InformationProviderOrganisationIdentifier_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:hasLegalName "ivm GmbH (Integriertes Verkehrs- und Mobilitätsmanagement Region Frankfurt RheinMain)"@de;
+  cccev:registeredAddress epd:id_2020-S-008-014764_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2020-S-008-014764_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2020-S-008-014764_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-008-014764_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Für die Region Frankfurt RheinMain soll im Rahmen eines Umweltsensitiven Verkehrsmanagements ein zuständigkeitsübergreifendes, dynamisches Verkehrsmanagement aufgebaut werden. Der zu vergebende Auftrag beinhaltet die Konzeption, Abstimmung und Umsetzung für das zuständigkeitsübergreifende Verkehrsmanagement.Grundlage dafür ist ein abgestimmtes und koordiniertes Strategiemanagement, die Ertüchtigung verkehrstechnischer Infrastruktur sowie die technische Vernetzung von Verkehrsmanagementsystemen über Zuständigkeitsgrenzen hinweg. Darauf aufbauend erfolgt die Entwicklung, die technische Umsetzung und der dauerhafte Betrieb regional abgestimmter Strategien.Im Rahmen des Vorhabens sind durch den Auftragnehmer folgende Inhalte zu bearbeiten:1) Grundlagenermittlung und Analyse:— Analyse vorhandener Zielkonzepte aus den Bereichen Mobilität und Verkehr hinsichtlich für das Vorhaben relevanter Inhalte und Vorgaben,— Abgrenzung und Gliederung des Untersuchungsraumes und des Straßennetztes,— Analyse vorhandener organisatorischer Strukturen,— Ermittlung und Analyse verkehrlicher Probleme, regelmäßiger verkehrlicher Ereignisse und Situationen,— Ermittlung der vorhandenen verkehrstechnischen Grundlagen.2) Entwicklung und Abstimmung zuständigkeitsübergreifender Strategien— Planung/Entwicklung von dynamischen Verkehrsmanagementstrategien für ausgewählte verkehrliche Ereignisse /Situationen,— Abstimmung der entwickelten Strategien mit den Fachbehörden und politischen Gremien der betroffenen Gebietskörperschaften und Akteure,— Darstellung der Wirkung der Strategien und Maßnahmen auf Verkehr und Umwelt,— Ermittlung des Bedarfs und zugehöriger Kosten zur Anpassung, Erweiterung oder Neubau verkehrstechnischer Infrastruktur zur Umsetzung der abgestimmten Strategien und Maßnahmen unter Berücksichtigung der ermittelten Grundlagen,— Dokumentation der Strategien, Vorbereitung vertraglicher Regelungen/Vereinbarungen zur Umsetzung und den operativen Betrieb der abgestimmten Strategien.3) Konzeption eines regionalen Verkehrsmanagements:— Entwicklung möglicher Varianten zur technischen und organisatorischen Vernetzung der verkehrstechnischen Infrastruktur auf regionaler/teilregionaler Ebene zur Umsetzung zuständigkeitsübergreifender dynamischer Strategien,— Abstimmung der Vernetzung mit den Fachbehörden und politischen Gremien der betroffenen Gebietskörperschaften und Akteure,— Ermittlung des Bedarfs und zugehöriger Kosten zur Umsetzung der zuständigkeitsübergreifenden Vernetzung.4) Umsetzung zuständigkeitsübergreifender Strategien:— Ausführungsplanung der erforderlichen Systemtechnik lokal (Maßnahmen/Anlagen vor Ort) und regional (zuständigkeitsübergreifende Vernetzung) unter Berücksichtigung der Bestandsysteme,— Ausschreibung der erforderlichen Systemtechnik lokal (Maßnahmen/Anlagen vor Ort) und regional (zuständigkeitsübergreifende Vernetzung),— Überwachung von Beschaffung, Inbetriebnahme und Testbetrieb der erforderlichen Systemtechnik.5) Betreiber-, Finanzierungs- und Organisationsmodelle:— Entwicklung möglicher Modelle zum langfristigen Betrieb und Finanzierung des zuständigkeitsübergreifendenden Verkehrsmanagements,— Verstetigung der Planungs- und Abstimmungsprozesse,— Abstimmung der Modelle mit den Fachbehörden und politischen Gremien der betroffenen Gebietskörperschaften und Akteure,— Vorbereitung vertraglicher Regelungen/Vereinbarungen zu Betrieb, Organisation und Finanzierung.6) Projekt- und Prozessmanagement:— Organisation, Überwachung, Steuerung und Dokumentation der zu erbringenden Leistungen,— Koordination des Vorhabens mit Behörden, Ämtern und Weiteren,— Beratung und Unterstützung des Auftraggebers,— Moderation der Abstimmungsprozesse mit wesentlichen Schwerpunkten auf dem Ausgleich der bei den beteiligten Akteuren vorhandenen Interessen und Beschlussfassung bei maßgeblichen Meilensteinen im Sinne der Projektziele eine detaillierte Beschreibung ist in der Anlage Projektskizze enthalten."@de;
+  epo:hasPurpose epd:id_2020-S-008-014764_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-008-014764_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs a cccev:ContactPoint;
+  epo:hasFax "+49 6151125816 / +49 6151126834";
+  epo:hasInternetAddress "https://www.ivm-rheinmain.de"^^xsd:anyURI .
+
+epd:id_2020-S-008-014764_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "64283";
+  locn:postName "Darmstadt";
+  locn:thoroughfare "Dienstgebäude: Wilhelminenstraße 1-3; Fristenbriefkasten: Luisenplatz 2" .
+
+epd:id_2020-S-008-014764_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Hessen beim Regierungspräsidium Darmstadt"@de;
+  epo:hasPrimaryContactPoint epd:id_2020-S-008-014764_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs;
+  cccev:registeredAddress epd:id_2020-S-008-014764_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2020-S-008-014764_Mediator_eMEmZdeMkSWP9DfmobsFLs a epo:Mediator;
+  epo:playedBy epd:id_2020-S-008-014764_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2020-S-008-014764_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2020-S-008-014764_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2020-S-008-014764_Mediator_eMEmZdeMkSWP9DfmobsFLs,
+    epd:id_2020-S-008-014764_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2020-S-008-014764_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2020-S-008-014764_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2020-S-008-014764_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2020-01-10"^^xsd:date;
+  epo:hasID epd:id_2020-S-008-014764_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20200113";
+  epo:refersToLot epd:id_2020-S-008-014764_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2020-S-008-014764_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2020-S-008-014764_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 008-014764" .
+
+epd:id_2020-S-008-014764_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:postCode "60549";
+  locn:postName "Frankfurt am Main";
+  locn:thoroughfare "Bessie-Coleman-Str. 7" .
+
+epd:id_2020-S-008-014764_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Regionale Gesellschaft (rein öffentliche Gesellschafter); GmbH";
+  epo:hasLegalName "ivm GmbH (Integriertes Verkehrs- und Mobilitätsmanagement Region Frankfurt RheinMain)"@de;
+  epo:hasMainActivityDescription "Mobilität und Verkehr";
+  cccev:registeredAddress epd:id_2020-S-008-014764_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2020-S-008-014764_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "F40-018-20/2020-01" .
+
+epd:id_2020-S-008-014764_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/73000000> .
+
+epd:id_2020-S-008-014764_ProcedureTerm_n9YtPUZG9SDZ5m8nAb77dU a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2020-S-008-014764_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "Bieterfragen im Rahmen des Teilnahmewettbewerbs sind ausschließlich schriftlich per E-Mail an vergabe@ivm-rheinmain.de unter Angabe der HAD Referenz und unter Bezugnahme auf den jeweiligen Anhang sowie unter Nennung des jeweiligen Abschnitts bzw. des Paragrafen zu richten."@de;
+  epo:hasID epd:id_2020-S-008-014764_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-008-014764_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2020-S-008-014764_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Zuständigkeitsübergreifendes Verkehrsmanagement Region Frankfurt RheinMain; Teil: Konzeption und Umsetzungsbegleitung"@de;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-008-014764_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2020-S-008-014764_ProcedureTerm_n9YtPUZG9SDZ5m8nAb77dU, epd:id_2020-S-008-014764_ReviewTerm_RW9aiajURL5iSUCvDaitUd,
+    epd:id_2020-S-008-014764_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2020-S-008-014764_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-008-014764_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2020-S-008-014764_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2020-S-008-014764_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "64283";
+  locn:postName "Darmstadt";
+  locn:thoroughfare "Dienstgebäude: Wilhelminenstraße 1-3; Fristenbriefkasten: Luisenplatz 2" .
+
+epd:id_2020-S-008-014764_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasFax "+49 6151125816 / +49 6151126834";
+  epo:hasInternetAddress "https://www.ivm-rheinmain.de"^^xsd:anyURI .
+
+epd:id_2020-S-008-014764_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Hessen beim Regierungspräsidium Darmstadt"@de;
+  epo:hasPrimaryContactPoint epd:id_2020-S-008-014764_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2020-S-008-014764_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2020-S-008-014764_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2020-S-008-014764_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2020-S-008-014764_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Ergeht eine Mitteilung des Auftraggebers, der Rüge nicht abhelfen zu wollen, kann der Bieter wegen Nichtbeachtung der Vergabevorschriften ein Nachprüfungsverfahren nur innerhalb von 15 Kalendertagen nach Eingang vor der Vergabekammer beantragen.Nach Ablauf der Frist ist der Antrag unzulässig. (§ 160 Abs. 3 Nr. 4 GWB)." .
+
+epd:id_2020-S-008-014764_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+49 6151125816 / +49 6151126834";
+  epo:hasInternetAddress "https://www.ivm-rheinmain.de"^^xsd:anyURI .
+
+epd:id_2020-S-008-014764_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "64283";
+  locn:postName "Darmstadt";
+  locn:thoroughfare "Dienstgebäude: Wilhelminenstraße 1-3; Fristenbriefkasten: Luisenplatz 2" .
+
+epd:id_2020-S-008-014764_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Hessen beim Regierungspräsidium Darmstadt"@de;
+  epo:hasPrimaryContactPoint epd:id_2020-S-008-014764_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2020-S-008-014764_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2020-S-008-014764_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-008-014764_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2020-S-008-014764_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2020-S-008-014764_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:postCode "60549";
+  locn:postName "Frankfurt am Main";
+  locn:thoroughfare "Bessie-Coleman-Str. 7" .
+
+epd:id_2020-S-008-014764_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasContactName "Vergabe „Zuständigkeitsübergreifendes Verkehrsmanagement“"@de;
+  epo:hasFax "+49 69660759-90";
+  epo:hasInternetAddress "https://www.ivm-rheinmain.de"^^xsd:anyURI;
+  cccev:email "vergabe@ivm-rheinmain.de";
+  cccev:telephone "+49 69660759-0" .
+
+epd:id_2020-S-008-014764_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS
+  a epo:Identifier;
+  epo:hasIdentifierValue "DE297511251" .
+
+epd:id_2020-S-008-014764_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasID epd:id_2020-S-008-014764_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasLegalName "ivm GmbH (Integriertes Verkehrs- und Mobilitätsmanagement Region Frankfurt RheinMain)"@de;
+  epo:hasPrimaryContactPoint epd:id_2020-S-008-014764_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2020-S-008-014764_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2020-S-008-014764_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2020-S-008-014764_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2020-S-008-014764_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

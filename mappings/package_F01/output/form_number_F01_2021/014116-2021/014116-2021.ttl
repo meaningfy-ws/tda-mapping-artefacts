@@ -1,0 +1,235 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-008-014116_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "www.lgmv.de"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-008-014116_AwardCriterionPrice_RBGYEez98Pij3NLYxwzMz2 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "40"@de .
+
+epd:id_2021-S-008-014116_AwardCriterionQuality_YZXD7WV7JGFCGNp9JGA6N4 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Erfahrung und Qualifikation von Bearbeitern"@de;
+  cccev:weight "50"@de .
+
+epd:id_2021-S-008-014116_AwardCriterionQuality_hnx7sMdiDMXApZ44keZgLk a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Qualität des Ablaufplans"@de;
+  cccev:weight "10"@de .
+
+epd:id_2021-S-008-014116_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-008-014116_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-008-014116_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-008-014116_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Marion Meinke"@de;
+  epo:hasFax "+49 3866404-490";
+  epo:hasInternetAddress "http://www.lgmv.de"^^xsd:anyURI;
+  cccev:email "marion.meinke@lgmv.de";
+  cccev:telephone "+49 3866404-189" .
+
+epd:id_2021-S-008-014116_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "19399 Dobbin"@de .
+
+epd:id_2021-S-008-014116_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE80O>;
+  locn:address epd:id_2021-S-008-014116_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-008-014116_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-008-014116_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-008-014116_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-008-014116_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-008-014116_Fund_c4Jggv3QHLrvEuoxvHMwcK a epo:Fund;
+  epo:hasDescription "202118000005"@de .
+
+epd:id_2021-S-008-014116_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt a
+    cccev:ContactPoint;
+  epo:hasContactName "Abteilung Moorschutz, Aussenstelle Greifswald"@de;
+  epo:hasInternetAddress "www.lgmv.de"^^xsd:anyURI;
+  cccev:email "amanda.schulz@lgmv.de";
+  cccev:telephone "+49 3834-832-48" .
+
+epd:id_2021-S-008-014116_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE80N>;
+  locn:postCode "17489";
+  locn:postName "Greifswald";
+  locn:thoroughfare "Walther-Rathenau-Straße 8a" .
+
+epd:id_2021-S-008-014116_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt a
+    org:Organization;
+  epo:hasLegalName "Landgesellschaft Mecklenburg-Vorpommern mbH"@de;
+  cccev:registeredAddress epd:id_2021-S-008-014116_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2021-S-008-014116_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-008-014116_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Es ist zu prüfen inwieweit der historische Flachwassersee wiederhergestellt werden kann, dabei ist auf mehrere Begebenheiten zu achten. Durch das Projektgebiet verläuft einen 220 kV Energiefreileitung. Im angrenzenden Ort Dobbertin befindet sich ein Klärwerk, welches ebenso besondere Beachtung erhalten sollte. Außerdem befindet sich im Randgebiet des zukünftigen Flachsees eine Erdgastrasse. Die vorgesehenen Planungen sollen in einem Plangenehmigungsverfahren münden, was die Änderung des Wasserregimes in der Dobbiner und in der Klädener Plage sowie die teilweise Einbeziehung der Mildenitz rechtlich absichert. Es handelt sich um die Erbringung von Planungsleistungen der Leistungsphasen 1-2, optional der LPH 3-4 auf der Grundlage der HOAI 2013, §41 ff i.V. sowie Besonderer Leistungen (Vermessungsleistung und hydrogeologischen Untersuchungen obligatorisch und Umweltfachlichen Untersuchungen sowie Wasserstandsmonitoring optional)."@de;
+  epo:hasEstimatedValue epd:id_2021-S-008-014116_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isFundedBy epd:id_2021-S-008-014116_Fund_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-008-014116_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2021-S-008-014116_AwardCriterionPrice_RBGYEez98Pij3NLYxwzMz2,
+    epd:id_2021-S-008-014116_AwardCriterionQuality_YZXD7WV7JGFCGNp9JGA6N4, epd:id_2021-S-008-014116_AwardCriterionQuality_hnx7sMdiDMXApZ44keZgLk .
+
+epd:id_2021-S-008-014116_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 150000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-008-014116_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.regierungmv.de/Landesregierung/wm/Das-Ministerium/Vergabekammern/"^^xsd:anyURI;
+  cccev:email "vergabekammer@wm.mv-regierung.de";
+  cccev:telephone "+49 3855813" .
+
+epd:id_2021-S-008-014116_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "19061";
+  locn:postName "Schwerin";
+  locn:thoroughfare "Johannes-Stelling-Str. 14" .
+
+epd:id_2021-S-008-014116_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J a org:Organization;
+  epo:hasLegalName "Vergabekammer beim Ministerium für Wirtschaft, Arbeit und Tourismus"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-008-014116_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J;
+  cccev:registeredAddress epd:id_2021-S-008-014116_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2021-S-008-014116_Mediator_2t4SUwdC66NGJuVrEY4e6J a epo:Mediator;
+  epo:playedBy epd:id_2021-S-008-014116_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2021-S-008-014116_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 780000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-008-014116_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-008-014116_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-008-014116_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-008-014116_Mediator_2t4SUwdC66NGJuVrEY4e6J,
+    epd:id_2021-S-008-014116_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt,
+    epd:id_2021-S-008-014116_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2021-S-008-014116_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2021-S-008-014116_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2021-01-08"^^xsd:date;
+  epo:hasID epd:id_2021-S-008-014116_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210113";
+  epo:refersToLot epd:id_2021-S-008-014116_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-008-014116_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-008-014116_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 008-014116" .
+
+epd:id_2021-S-008-014116_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE80O>;
+  locn:postCode "19067";
+  locn:postName "Leezen";
+  locn:thoroughfare "Lindenallee 2a" .
+
+epd:id_2021-S-008-014116_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Unternehmen mit Landesbeteiligung";
+  epo:hasLegalName "Landgesellschaft Mecklenburg-Vorpommern mbH"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/env-pro>;
+  cccev:registeredAddress epd:id_2021-S-008-014116_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-008-014116_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2021-06-30"^^xsd:date;
+  epo:hasEnd "2022-09-30"^^xsd:date .
+
+epd:id_2021-S-008-014116_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "K265 0015_1" .
+
+epd:id_2021-S-008-014116_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71300000> .
+
+epd:id_2021-S-008-014116_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2021-S-008-014116_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-008-014116_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "Teilnahmeantrag (Bewerbung) in elektronischer Form"@de;
+  epo:hasDescription "Für die Niedermoorgebiete Dobbiner Plage und Klädener Plage (ca. 600 ha Einzugsgebiet, 250 ha Kerngebiet) im Naturpark Nossentiner/Schwinzer Heide soll eine Moorschutz-Studie zur Vorbereitung eines Plangenehmigungsverfahrens erstellt werden. Projektziel ist die Wiedervernässung der Dobbiner Plage bis zur Wiederherstellung des historischen Flachwassersees „Dobbiner See“ bzw. das Erreichen einer Wasserstandsstabilisierung der vermoorten Randbereiche der Dobbiner Plage. Dabei ist zu prüfen, ob die Wiederherstellung des Altlaufes der Mildenitz möglich ist."@de;
+  epo:hasEstimatedValue epd:id_2021-S-008-014116_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2021-S-008-014116_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-008-014116_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-008-014116_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Studie zur Wiedervernässung Dobbiner/Klädener Plage"@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-008-014116_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2021-S-008-014116_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG, epd:id_2021-S-008-014116_ReviewTerm_KjhWjVv578XNpvpTRjZhAs,
+    epd:id_2021-S-008-014116_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2021-S-008-014116_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-008-014116_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt;
+  epo:playedBy epd:id_2021-S-008-014116_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2021-S-008-014116_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "19061";
+  locn:postName "Schwerin";
+  locn:thoroughfare "Johannes-Stelling-Str. 14" .
+
+epd:id_2021-S-008-014116_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.regierungmv.de/Landesregierung/wm/Das-Ministerium/Vergabekammern/"^^xsd:anyURI;
+  cccev:email "vergabekammer@wm.mv-regierung.de";
+  cccev:telephone "+49 3855813" .
+
+epd:id_2021-S-008-014116_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer beim Ministerium für Wirtschaft, Arbeit und Tourismus"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-008-014116_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2021-S-008-014116_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-008-014116_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-008-014116_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-008-014116_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Auf die Unzulässigkeit eines Nachprüfungsantrages nach Ablauf der Frist des § 160 Abs. 3 Nr. 3, 4 GWB (15 Tage nach Eingang des Nichtabhilfebescheides auf eine Rüge) wird hingewiesen." .
+
+epd:id_2021-S-008-014116_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.regierungmv.de/Landesregierung/wm/Das-Ministerium/Vergabekammern/"^^xsd:anyURI;
+  cccev:email "vergabekammer@wm.mv-regierung.de";
+  cccev:telephone "+49 3855813" .
+
+epd:id_2021-S-008-014116_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "19061";
+  locn:postName "Schwerin";
+  locn:thoroughfare "Johannes-Stelling-Str. 14" .
+
+epd:id_2021-S-008-014116_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Vergabekammer beim Ministerium für Wirtschaft, Arbeit und Tourismus"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-008-014116_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2021-S-008-014116_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-008-014116_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-008-014116_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-008-014116_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2021-02-05T12:00" .
+
+epd:id_2021-S-008-014116_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-008-014116_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-008-014116_Organisation_gqoAAwSV3JaTMsopb9zyKP .

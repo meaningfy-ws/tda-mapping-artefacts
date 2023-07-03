@@ -1,0 +1,157 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-169-476558_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.marches-publics.gouv.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-169-476558_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasBuyerProfile "https://www.marches-publics.gouv.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-169-476558_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2022-S-169-476558_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-169-476558_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Marlène LOZANO-PALACIOS"@fr;
+  epo:hasFax "+334 38785060";
+  epo:hasInternetAddress "https://www.cea.fr"^^xsd:anyURI;
+  cccev:email "marlene.lozanopalacios@cea.fr";
+  cccev:telephone "+334 38783721" .
+
+epd:id_2022-S-169-476558_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRF3> .
+
+epd:id_2022-S-169-476558_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-169-476558_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-169-476558_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2022-S-169-476558_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2022-S-169-476558_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-169-476558_Fund_oEYZZQWPrbQFajcRU6KZAY a epo:Fund;
+  epo:hasDescription "Feder"@fr .
+
+epd:id_2022-S-169-476558_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-169-476558_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription """Le présent avis de marché a pour objet  à la mise en place d’un partenariat d’innovation qui a pour objectif final l’acquisition d’un équipement d’impression de systèmes électroniques par fabrication additive « Fully 3D ». Les soumissionnaires retenus à l’issue de la procédure pour les prestations définies dans le présent règlement, seront titulaires d’un partenariat d’innovation mis en place par le CEA.Le partenariat d’innovation objet de la présente consultation comprend plusieurs phases successives relatives au déroulement du processus de recherche et de développement et une phase d’acquisition de l’équipement, qui en est le résultat. Les modalités et le contenu de ces phases seront détaillés dans le document « projet de partenariat d’innovation » qui sera ajouté au dossier de consultation en phase offre. La répartition des droits de propriété intellectuelle sera également détaillée dans ce document. Les phases successives sont décomposées comme suit : - PHASE 1 : Analyse conceptuelle,- PHASE 2 : Intégration des outils sur un plateforme équipement commune (PoC),- PHASE 3 : Production et acquisition de l’équipement.Conformément à l’article R2172-20 du code des marchés publics, sous réserve de disposer d’un nombre d’offres suffisantes et comme précisé ci-dessus, il est décidé de mettre un partenariat d’innovation avec :-	3 Titulaires pour la phase 1,-	2 Titulaires pour la phase 2,-	1 Titulaire pour la phase 3. La sélection du ou des Titulaire(s) au terme de la phase 1 et 2 se fera par rapport à :-	L’atteinte des objectifs fixés par ladite phase ;-	Un classement technico-financier basé sur des critères techniques et financiers qui permettront de juger la bonne exécution desdites phases. Le détail de ces critères et leurs pondérations seront précisées dans le dossier de consultation (phase offre)."""@fr;
+  epo:isFundedBy epd:id_2022-S-169-476558_Fund_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds true .
+
+epd:id_2022-S-169-476558_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-169-476558_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2022-S-169-476558_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2022-S-169-476558_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2022-S-169-476558_Reviewer_Sc23ScTxybJ3bYD3QjmgGS;
+  epo:hasDispatchDate "2022-08-30"^^xsd:date;
+  epo:hasID epd:id_2022-S-169-476558_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220902";
+  epo:refersToLot epd:id_2022-S-169-476558_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2022-S-169-476558_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2022-S-169-476558_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 169-476558" .
+
+epd:id_2022-S-169-476558_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK24>;
+  locn:postCode "38054";
+  locn:postName "Grenoble";
+  locn:thoroughfare "17 Rue des Martyrs" .
+
+epd:id_2022-S-169-476558_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "CEA de Grenoble"@fr;
+  epo:hasMainActivityDescription "Recherche";
+  cccev:registeredAddress epd:id_2022-S-169-476558_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-169-476558_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "B22-03918-ML" .
+
+epd:id_2022-S-169-476558_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/38000000> .
+
+epd:id_2022-S-169-476558_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-169-476558_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasDescription "Partenariat d'Innovation pour le développement et la fourniture d’un équipement d’impression de systèmes électroniques par fabrication additive « Fully 3D »"@fr;
+  epo:hasID epd:id_2022-S-169-476558_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/innovation>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-169-476558_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2022-S-169-476558_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Développement et fourniture d’un équipement d’impression de systèmes électroniques par fabrication additive « Fully 3D »"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-169-476558_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2022-S-169-476558_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2022-S-169-476558_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2022-S-169-476558_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-169-476558_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2022-S-169-476558_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-169-476558_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "38000";
+  locn:postName "Grenoble";
+  locn:thoroughfare "2 Place de Verdun" .
+
+epd:id_2022-S-169-476558_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  epo:hasFax "+334 76422269";
+  epo:hasInternetAddress "http://grenoble.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-grenoble@juradm.fr";
+  cccev:telephone "+334 76429000" .
+
+epd:id_2022-S-169-476558_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "GREFFE TRIBUNAL ADMINISTRATIF DE GRENOBLE"@fr;
+  epo:hasPrimaryContactPoint epd:id_2022-S-169-476558_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2022-S-169-476558_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2022-S-169-476558_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-169-476558_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2022-S-169-476558_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Le référé précontractuel peut être introduit depuis le début de la procédure de passation jusqu’à la signature du marché.Le référé contractuel peut être introduit dans les conditions des articles L.551-13 et suivants du Code de justice administrative. Le recours en contestation de la validité du marché par un tiers peut être intenté dans un délai de deux mois à compter des mesures de publicité appropriées." .
+
+epd:id_2022-S-169-476558_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasFax "+334 76422269";
+  epo:hasInternetAddress "http://grenoble.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-grenoble@juradm.fr";
+  cccev:telephone "+334 76429000" .
+
+epd:id_2022-S-169-476558_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "38000";
+  locn:postName "Grenoble";
+  locn:thoroughfare "2 place de Verdun" .
+
+epd:id_2022-S-169-476558_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "TRIBUNAL ADMINISTRATIF DE GRENOBLE"@fr;
+  epo:hasPrimaryContactPoint epd:id_2022-S-169-476558_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2022-S-169-476558_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2022-S-169-476558_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-169-476558_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2022-S-169-476558_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "EN", "FR";
+  epo:hasSubmissionURL "https://www.marches-publics.gouv.fr"^^xsd:anyURI .

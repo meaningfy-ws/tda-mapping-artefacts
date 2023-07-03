@@ -1,0 +1,217 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-038-090926_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://riigihanked.riik.ee/rhr-web/#/procurement/1649387/general-info"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2020-S-038-090926_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2020-S-038-090926_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2020-S-038-090926_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-038-090926_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Urvika Süda"@et;
+  epo:hasInternetAddress "http://www.omniva.ee"^^xsd:anyURI;
+  cccev:email "hange@omniva.ee";
+  cccev:telephone "+372 5118864" .
+
+epd:id_2020-S-038-090926_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EE> .
+
+epd:id_2020-S-038-090926_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EE> .
+
+epd:id_2020-S-038-090926_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-038-090926_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-038-090926_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2020-S-038-090926_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-038-090926_Duration_Pn7seLvJsSm7d5S9iCwt2c;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-038-090926_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2020-S-038-090926_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2020-S-038-090926_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-038-090926_Duration_Pn7seLvJsSm7d5S9iCwt2c a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-038-090926_LotIdentifier_aNssKXiFyYxii2v93ivV4N a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2020-S-038-090926_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2020-S-038-090926_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/63731000> .
+
+epd:id_2020-S-038-090926_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/63731000> .
+
+epd:id_2020-S-038-090926_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-038-090926_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Lennujaama julgestusteenus Tallinna lennujaamas"@et;
+  epo:hasEstimatedValue epd:id_2020-S-038-090926_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasID epd:id_2020-S-038-090926_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2020-S-038-090926_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:hasTitle "Lennujaama julgestusteenus Tallinnas"@et;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-038-090926_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-038-090926_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-038-090926_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasDescription "Lennujaama julgestusteenus Frankfurti lennujaamas"@et;
+  epo:hasEstimatedValue epd:id_2020-S-038-090926_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasID epd:id_2020-S-038-090926_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2020-S-038-090926_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasTitle "Lennujaama julgestusteenus Frankfurtis"@et;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-038-090926_MultipleStageProcedureTerm_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-038-090926_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-038-090926_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq a epo:MonetaryValue;
+  epo:hasAmountValue 500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-038-090926_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 1070000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-038-090926_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N a epo:MultipleStageProcedureTerm .
+
+epd:id_2020-S-038-090926_MultipleStageProcedureTerm_ig8mEGUXVMgcuxfgHrQXuq a epo:MultipleStageProcedureTerm .
+
+epd:id_2020-S-038-090926_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2020-S-038-090926_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2020-S-038-090926_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2020-S-038-090926_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2020-S-038-090926_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2020-S-038-090926_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2020-S-038-090926_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2020-02-19"^^xsd:date;
+  epo:hasID epd:id_2020-S-038-090926_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20200224";
+  epo:refersToLot epd:id_2020-S-038-090926_Lot_aNssKXiFyYxii2v93ivV4N, epd:id_2020-S-038-090926_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:refersToProcedure epd:id_2020-S-038-090926_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2020-S-038-090926_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 038-090926" .
+
+epd:id_2020-S-038-090926_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/EST>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EE>;
+  locn:postCode "10001";
+  locn:postName "Tallinn";
+  locn:thoroughfare "Pallasti tn 28" .
+
+epd:id_2020-S-038-090926_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "10328799" .
+
+epd:id_2020-S-038-090926_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2020-S-038-090926_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "Aktsiaselts Eesti Post"@et;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/post>;
+  cccev:registeredAddress epd:id_2020-S-038-090926_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-038-090926_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2020-S-038-090926_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2020-S-038-090926_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "219870" .
+
+epd:id_2020-S-038-090926_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/63731000> .
+
+epd:id_2020-S-038-090926_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 1;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2020-S-038-090926_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-038-090926_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription "Kauba- ja postisaadetiste julgestusteenus lennujaamades"@et;
+  epo:hasEstimatedValue epd:id_2020-S-038-090926_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasID epd:id_2020-S-038-090926_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-038-090926_Lot_aNssKXiFyYxii2v93ivV4N,
+    epd:id_2020-S-038-090926_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2020-S-038-090926_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Julgestusteenus lennujaamades"@et;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-038-090926_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2020-S-038-090926_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY, epd:id_2020-S-038-090926_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2020-S-038-090926_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2020-03-11"^^xsd:date .
+
+epd:id_2020-S-038-090926_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-038-090926_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2020-S-038-090926_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-038-090926_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/EST>;
+  locn:postCode "10122";
+  locn:postName "Tallinn";
+  locn:thoroughfare "Endla 13/Lõkke 5" .
+
+epd:id_2020-S-038-090926_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.fin.ee/riigihangete-poliitika"^^xsd:anyURI;
+  cccev:email "vako@fin.ee";
+  cccev:telephone "+372 6113713" .
+
+epd:id_2020-S-038-090926_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Riigihangete vaidlustuskomisjon"@et;
+  epo:hasPrimaryContactPoint epd:id_2020-S-038-090926_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2020-S-038-090926_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2020-S-038-090926_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2020-S-038-090926_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2020-S-038-090926_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.fin.ee/riigihangete-poliitika"^^xsd:anyURI;
+  cccev:email "vako@fin.ee";
+  cccev:telephone "+372 6113713" .
+
+epd:id_2020-S-038-090926_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/EST>;
+  locn:postCode "10122";
+  locn:postName "Tallinn";
+  locn:thoroughfare "Endla 13/Lõkke 5" .
+
+epd:id_2020-S-038-090926_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Riigihangete vaidlustuskomisjon"@et;
+  epo:hasPrimaryContactPoint epd:id_2020-S-038-090926_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2020-S-038-090926_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2020-S-038-090926_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-038-090926_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2020-S-038-090926_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasSubmissionURL "https://riigihanked.riik.ee/rhr-web/#/procurement/1649387/tenders"^^xsd:anyURI .
+
+epd:id_2020-S-038-090926_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2020-S-038-090926_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2020-S-038-090926_Organisation_W8v6KSqiUn74jPKJmENKoH .

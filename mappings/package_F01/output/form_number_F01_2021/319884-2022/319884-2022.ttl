@@ -1,0 +1,180 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-113-319884_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-113-319884_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-113-319884_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-113-319884_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Mr. Kostadin Karakabakov, General manager"@en;
+  epo:hasFax "+389 25511691";
+  epo:hasInternetAddress "http://videolottery.com.mk"^^xsd:anyURI;
+  cccev:email "office@videolottery.mk";
+  cccev:telephone "+389 25511690" .
+
+epd:id_2022-S-113-319884_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/MK> .
+
+epd:id_2022-S-113-319884_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/MK> .
+
+epd:id_2022-S-113-319884_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2022-S-113-319884_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-113-319884_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-113-319884_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2022-S-113-319884_Period_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-113-319884_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2022-S-113-319884_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2022-S-113-319884_EAuctionTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 a epo:EAuctionTechniqueUsage .
+
+epd:id_2022-S-113-319884_FrameworkAgreementTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2022-S-113-319884_FrameworkAgreementTerm_KX8MaayAMxqXBuD94Kuz62 a epo:FrameworkAgreementTerm .
+
+epd:id_2022-S-113-319884_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2022-S-113-319884_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2022-S-113-319884_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/37500000> .
+
+epd:id_2022-S-113-319884_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71520000> .
+
+epd:id_2022-S-113-319884_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-113-319884_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Procurement and installation of inclusive children's equipment for at most 7 recreational amusement parks"@en;
+  epo:hasEstimatedValue epd:id_2022-S-113-319884_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasID epd:id_2022-S-113-319884_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2022-S-113-319884_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasTitle "37500000"@en;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-113-319884_Lot_kKEXkgEhBpbdu5CJYA2aUT a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-113-319884_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasDescription "Building supervision services"@en;
+  epo:hasEstimatedValue epd:id_2022-S-113-319884_MainMonetaryValueLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasID epd:id_2022-S-113-319884_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2022-S-113-319884_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasTitle "Building supervision services"@en;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-113-319884_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 10000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/MKD> .
+
+epd:id_2022-S-113-319884_MainMonetaryValueLot_kKEXkgEhBpbdu5CJYA2aUT a epo:MonetaryValue;
+  epo:hasAmountValue 300000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/MKD> .
+
+epd:id_2022-S-113-319884_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 10300000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/MKD> .
+
+epd:id_2022-S-113-319884_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-113-319884_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2022-S-113-319884_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2022-S-113-319884_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2022-S-113-319884_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2022-06-09"^^xsd:date;
+  epo:hasID epd:id_2022-S-113-319884_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220614";
+  epo:refersToLot epd:id_2022-S-113-319884_Lot_c4Jggv3QHLrvEuoxvHMwcK, epd:id_2022-S-113-319884_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:refersToProcedure epd:id_2022-S-113-319884_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2022-S-113-319884_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 113-319884" .
+
+epd:id_2022-S-113-319884_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/MKD>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/MK>;
+  locn:postCode "1000";
+  locn:postName "Skopje";
+  locn:thoroughfare "bul. Kiro Gligorov 2, kat 2" .
+
+epd:id_2022-S-113-319884_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "4080014541703" .
+
+epd:id_2022-S-113-319884_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Organization of electronic & on-line lottery games";
+  epo:hasID epd:id_2022-S-113-319884_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "National VideoLottery of Macedonia"@en;
+  epo:hasMainActivityDescription "Organization of electronic & on-line lottery games";
+  cccev:registeredAddress epd:id_2022-S-113-319884_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-113-319884_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2022-08-01"^^xsd:date;
+  epo:hasEnd "2022-10-31"^^xsd:date .
+
+epd:id_2022-S-113-319884_Period_kKEXkgEhBpbdu5CJYA2aUT a epo:Period;
+  epo:hasBeginning "2022-08-01"^^xsd:date;
+  epo:hasEnd "2022-10-31"^^xsd:date .
+
+epd:id_2022-S-113-319884_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "05-2986/1" .
+
+epd:id_2022-S-113-319884_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/37500000> .
+
+epd:id_2022-S-113-319884_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2022-S-113-319884_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-113-319884_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "Procurement and installation of inclusive children's equipment for at most 7 (seven) recreational amusement parks"@en;
+  epo:hasEstimatedValue epd:id_2022-S-113-319884_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2022-S-113-319884_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-113-319884_Lot_c4Jggv3QHLrvEuoxvHMwcK,
+    epd:id_2022-S-113-319884_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2022-S-113-319884_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Procurement and installation of inclusive children's equipment for recreational amusement parks"@en;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-113-319884_FrameworkAgreementTerm_KX8MaayAMxqXBuD94Kuz62,
+    epd:id_2022-S-113-319884_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG, epd:id_2022-S-113-319884_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62;
+  epo:usesTechnique epd:id_2022-S-113-319884_EAuctionTechniqueUsage_KX8MaayAMxqXBuD94Kuz62,
+    epd:id_2022-S-113-319884_FrameworkAgreementTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2022-S-113-319884_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-113-319884_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-113-319884_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-113-319884_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/MKD>;
+  locn:postName "Skopje" .
+
+epd:id_2022-S-113-319884_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Public Revenue Bureau"@en;
+  cccev:registeredAddress epd:id_2022-S-113-319884_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2022-S-113-319884_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-113-319884_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2022-S-113-319884_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "MK";
+  epo:hasReceiptExpressionDeadline "2022-07-12T10:00" .
+
+epd:id_2022-S-113-319884_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-113-319884_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-113-319884_Organisation_gqoAAwSV3JaTMsopb9zyKP .

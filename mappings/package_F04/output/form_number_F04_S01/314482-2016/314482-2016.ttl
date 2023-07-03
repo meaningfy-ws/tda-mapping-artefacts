@@ -1,0 +1,114 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-175-314482_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-175-314482_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-175-314482_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-175-314482_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Stéphane Claverie"@fr;
+  epo:hasInternetAddress "http://www.parisaeroport.fr/"^^xsd:anyURI;
+  cccev:email "stephane.claverie@adp.fr" .
+
+epd:id_2016-S-175-314482_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+Aéroport de Roissy Charles de Gaulle pour 2 projets.
+Aéroport d'Orly pour le 3ème projets.
+"""@fr .
+
+epd:id_2016-S-175-314482_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:address epd:id_2016-S-175-314482_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-175-314482_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-175-314482_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-175-314482_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2016-S-175-314482_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-175-314482_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation """
+Il est précisé que pour les projets de liaison des satellites du terminal 1 et Orly 2020, les travaux sont situés en zone réservée sûreté à accès réglementé et que la totalité des travailleurs devront être badges sous réserve d'acceptation des services de la police et de la gendarmerie (casier judiciaire vierge, pas de procédure judiciaire en cours quel qu'en soit le motif).
+"""@fr;
+  epo:hasDescription """
+Projet BBD: le terminal 2B nécessite une réhabilitation en profondeur, afin de le mettre au niveau des standards d'ADP.
+Un bâtiment de liaison R+6 avec le terminal 2D va être créé afin de constituer à terme un terminal unique.
+Projet T1: consiste à créer un nouveau bâtiment entre les satellites 1 et 3 du terminal 1 de sorte de:
+— Centraliser la fonction inspection filtrage,
+— développer les surfaces commerciales,
+— agrandir et mettre aux nouveaux standards les salles d'embarquement.
+Un bâtiment «Nodal» R+5 accolé au satellite 1 va être créé ainsi qu'un bâtiment de liaison R+2 sur pilotis.
+Projet refonte du process départ international: consiste au sein de terminal d'Orly Sud à répondre à trois objectifs induits par les nouvelles réglementations du trafic aérien et les exigences de qualité et de confort des standards ADP
+1. La mise en conformité des systèmes bagages;
+2. Le réaménagement de la zone commerciale internationale;
+3. La restructuration des contrôles sûreté et émigration.
+"""@fr .
+
+epd:id_2016-S-175-314482_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2016-S-175-314482_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2016-S-175-314482_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2016-S-175-314482_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te;
+  epo:hasDispatchDate "2016-09-07"^^xsd:date;
+  epo:hasID epd:id_2016-S-175-314482_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20160910";
+  epo:refersToLot epd:id_2016-S-175-314482_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2016-S-175-314482_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-175-314482_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 175-314482" .
+
+epd:id_2016-S-175-314482_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:postCode "75675";
+  locn:postName "Paris";
+  locn:thoroughfare "291 boulevard Raspail" .
+
+epd:id_2016-S-175-314482_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "Aéroports de Paris"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2016-S-175-314482_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-175-314482_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2016-S-175-314482_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-175-314482_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45210000> .
+
+epd:id_2016-S-175-314482_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-175-314482_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+Le présent avis de pré-information et de demande d'information ne constitue ni une consultation, ni un quelconque engagement d'aéroport de Paris à lancer ultérieurement une consultation sur le même objet. Cela ne constitue pas non plus un engagement d'aéroports de Paris sur la forme de l'éventuelle ou des éventuelles consultations qui seraient lancées, la consultation pouvant être globale ou allotie ou même ne concerner qu'un seul des 3 projets.
+Réciproquement, les réponses à la demande d'information ne constitueront pas des engagements contractuels ou précontractuels de la part de leurs auteurs.
+Aéroports de Paris souhaite obtenir des éléments d'information permettant d'apprécier les risques associés à la conduite de ces projets en concomitance.
+Les entreprises consultées sont informées que ces réponses pourront être utilisées pour préparer d'éventuelles consultations ultérieures.
+"""@fr;
+  epo:hasDescription """
+Le présent avis doit permettre à aéroports de Paris d'obtenir des informations sur les prestataires potentiels qui seront en capacité de réaliser des travaux d'envergure en clos couvert sur Roissy et Orly pour 3 projets majeurs.
+Pour cela, aéroports de Paris a rédigé un document de demande d'informations regroupant:
+1. Une présentation des 3 projets;
+2. Un descriptif des réponses et réflexions attendues.
+Les informations des projets renseignées dans le présent avis sont une synthèse du «document complet» rédigé par aéroports de Paris.
+Afin d'obtenir l'exhaustivité des informations, aéroports de Paris met à disposition le «document complet» sur demande à l'adresse mail ci-dessous: stephane.claverie@adp.fr
+Les opérateurs économiques sont invités à fournir une réponse exhaustive sur la base du «document complet» avant la date du 28.9.2016 à l'adresse suivante: stephane.claverie@adp.fr
+"""@fr;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-175-314482_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2016-S-175-314482_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+Aéroports de Paris — demande d'information pour des travaux d'envergure en clos couvert sur Roissy et Orly pour 3 projets majeurs.
+"""@fr;
+  epo:isCoveredByGPA true .
+
+epd:id_2016-S-175-314482_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2016-10-10"^^xsd:date .
+
+epd:id_2016-S-175-314482_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-175-314482_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-175-314482_Organisation_W8v6KSqiUn74jPKJmENKoH .

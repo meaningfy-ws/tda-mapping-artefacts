@@ -1,0 +1,154 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-050-126826_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.deutsche-evergabe.de/dashboards/dashboard_off/68F67227-E776-40B5-B844-048F3AE20724"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-050-126826_AwardCriterionCost_cC3ziTMBQ3JgrEnVYmznhR a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Preis"@de;
+  cccev:weight "90"@de .
+
+epd:id_2021-S-050-126826_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Betriebshof"@de;
+  cccev:weight "10"@de .
+
+epd:id_2021-S-050-126826_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-050-126826_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-050-126826_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-050-126826_Channel_cW7StLx8qUnGYzx322HBZC a cccev:Channel;
+  epo:hasURL "https://www.deutsche-evergabe.de"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2021-S-050-126826_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasFax "+49 2521930399";
+  epo:hasInternetAddress "www.rvm-online.de"^^xsd:anyURI;
+  cccev:email "klaus.matthies@rvm-online.de";
+  cccev:telephone "+49 2521930320" .
+
+epd:id_2021-S-050-126826_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "In den Vergabeunterlagen aufgeführt."@de .
+
+epd:id_2021-S-050-126826_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA34>;
+  locn:address epd:id_2021-S-050-126826_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-050-126826_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-050-126826_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-050-126826_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Während der Vertragslaufzeit hat der Auftraggeber das Recht am Fahrplan Zu-, Ab- und Umbestellungen vorzunehmen. Zudem kann der Auftraggeber verlangen, dass die auf den vertragsgegenständlichen Linien nach der Leistungsbeschreibung einzusetzenden Fahrzeuge soweit technisch machbar mit weiteren Ausstattungsmerkmalen aus- bzw. nachgerüstet werden. Näheres zum Vorgenannten regeln die Vergabeunterlagen."@de .
+
+epd:id_2021-S-050-126826_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-050-126826_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2021-S-050-126826_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-050-126826_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation ""@de;
+  epo:hasDescription "Die Stadt Gronau verfolgt die Strategie, sich im Bereich der Verkehrsplanung neu zu positionieren und integrierte Mobilitätsangebote vorzusehen. Baustein dieser Strategie ist der innovative Ansatz, den bestehenden StadtBusverkehr durch ein integriertes und innovatives On-Demand-Angebot zu ersetzen. Dieses neue Angebot soll in Form eines öffentlichen Bedarfsverkehrs ohne Fahrplan und festen Linienweg als tagesdurchgängiges Angebot durch die RVM nach Maßgabe des öffentlichen Dienstleistungsauftrags betrieben werden. Es stellt damit für die Menschen und Besucher in Gronau ein Mobilitätsangebot dar, das unabhängig von der Verfügbarkeit eines eigenen Pkw bereitsteht.Der Auftragnehmer wird die Verkehrsleistungen für den App-gesteuerten Linienverkehr der RVM durch den Einsatz von durch die RVM bereitgestellten Taxibussen mit eigenem Fahrpersonal als Subunternehmer erbringen.Die zu erbringende Leistung beginnt ab dem 1.6.2021 und ist zunächst befristet bis zum 6.1.2023. Die Laufzeit des Vertrags verlängert sich automatisch um jeweils ein weiteres Jahr, wenn der Vertrag nicht von einer der Vertragsparteien mit einer Frist von 6 Monaten bis zum Ende des vor dem jeweiligen Vertragsende endenden Kalenderjahres gekündigt wird."@de;
+  epo:hasPurpose epd:id_2021-S-050-126826_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-050-126826_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-050-126826_AwardCriterionCost_cC3ziTMBQ3JgrEnVYmznhR,
+    epd:id_2021-S-050-126826_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J .
+
+epd:id_2021-S-050-126826_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-050-126826_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-050-126826_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-050-126826_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-050-126826_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-03-09"^^xsd:date;
+  epo:hasID epd:id_2021-S-050-126826_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210312";
+  epo:refersToLot epd:id_2021-S-050-126826_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-050-126826_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-050-126826_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 050-126826" .
+
+epd:id_2021-S-050-126826_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA33>;
+  locn:postCode "48155";
+  locn:postName "Münster";
+  locn:thoroughfare "Krögerweg 11" .
+
+epd:id_2021-S-050-126826_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Regionalverkehr Münsterland GmbH"@de;
+  epo:hasMainActivityDescription "Städtische Busdienste";
+  cccev:registeredAddress epd:id_2021-S-050-126826_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-050-126826_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2021-06-01"^^xsd:date;
+  epo:hasEnd "2023-01-06"^^xsd:date .
+
+epd:id_2021-S-050-126826_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "RVM-2021-01" .
+
+epd:id_2021-S-050-126826_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2021-S-050-126826_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-050-126826_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription "Für die sich in den Ausschreibungsunterlagen befindenden Leistungen im Linienverkehr im Stadtgebiet Gronau, führen wir eine EU-weite Ausschreibung durch. Hierzu möchten wir sie bitten, uns ein Angebot zu unterbreiten.Die zu erbringende Leistung beginnt ab dem 1.6.2021 und ist zunächst befristet bis zum 6.1.2023 bzw. dem Fahrplanwechseltermin im Frühjahr 2023."@de;
+  epo:hasID epd:id_2021-S-050-126826_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-050-126826_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-050-126826_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Fahrleistungen im Linienverkehr, On-Demand-Verkehr Gronau"@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-050-126826_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-050-126826_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2021-S-050-126826_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesChannel epd:id_2021-S-050-126826_Channel_cW7StLx8qUnGYzx322HBZC .
+
+epd:id_2021-S-050-126826_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-050-126826_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-050-126826_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-050-126826_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "1) Etwaige Vergabeverstöße muss der Bewerber/Bieter gemäß § 160 Abs. 3 Nr. 1 GWB innerhalb von 10 Tagen nach Kenntnisnahme rügen.2) Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, sind nach § 160 Abs. 3 Nr. 2 GWB spätestens bis zum Ablauf der in der Bekanntmachung benannten Frist zur Abgabe der Bewerbung oder der Angebote gegenüber dem Auftraggeber zu rügen.3) Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, sind nach § 160 Abs. 3 Nr. 3 GWB spätestens bis zum Ablauf der Frist zur Bewerbungs- oder Angebotsabgabe gegenüber dem Auftraggeber zu rügen.4) Ein Vergabenachprüfungsantrag ist nach § 160 Abs. 3 Nr. 4 GWB innerhalb von 15 Kalendertagen nach der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, bei der Vergabekammer einzureichen." .
+
+epd:id_2021-S-050-126826_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+49 2521930399";
+  cccev:email "klaus.matthies@rvm-online.de";
+  cccev:telephone "+49 2521930320" .
+
+epd:id_2021-S-050-126826_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "48155";
+  locn:postName "Münster";
+  locn:thoroughfare "Krögerweg 11" .
+
+epd:id_2021-S-050-126826_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Regionalverkehr Münsterland GmbH"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-050-126826_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-050-126826_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-050-126826_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-050-126826_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-050-126826_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.deutsche-evergabe.de/dashboards/dashboard_off/68F67227-E776-40B5-B844-048F3AE20724"^^xsd:anyURI .

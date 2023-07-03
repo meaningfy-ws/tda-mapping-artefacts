@@ -1,0 +1,172 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-085-221101_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://www.amt-zuessow.de/Amt-Zuessow/Verwaltung/hoch--tiefbau-gebaeude--grundstuecksmanagement/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-085-221101_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.amt-zuessow.de/gemeinden/guetzkow/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-085-221101_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-085-221101_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-085-221101_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Stadt Gützkow über Amt Züssow, Hoch-/Tiefbau/Gebäude-/Grundstücksmanagement, Dorfstraße 6, 17495 Züssow"@de;
+  epo:hasFax "+49 3835564399";
+  epo:hasInternetAddress "https://www.amt-zuessow.de/"^^xsd:anyURI;
+  cccev:email "e.kruse@amt-zuessow.de";
+  cccev:telephone "+49 38355643229" .
+
+epd:id_2021-S-085-221101_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Das Gebiet der Stadt Gützkow mit einer Gesamtfläche von 57,65 km2 mit ca. 3 000 Einwohnern."@de .
+
+epd:id_2021-S-085-221101_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE80N>;
+  locn:address epd:id_2021-S-085-221101_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-085-221101_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-085-221101_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-085-221101_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-085-221101_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-085-221101_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 480.0;
+  time:unitType time:unitDay .
+
+epd:id_2021-S-085-221101_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-085-221101_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Die Stadt Gützkow mit ca. 3 000 Einwohnern ist eine kreisangehörige Stadt im Kreis Vorpommern – Greifswald in Mecklenburg – Vorpommern. Die geographischen Fläche der Stadt Gützkow beträgt 57,65 km3.Die durch den Altkonzessionär bereitgestellten Netzdaten können gegen Abgabe einer Vertraulichkeitsvereinbarung unter vorgenannten Kontaktdaten beim Amt Züssow abgefordert werden."@de;
+  epo:hasDescription "Bereitstellung und Betrieb eines Wasserversorgungsnetzes zur allgemeinen Versorgung unter Nutzung der öffentlichen Verkehrswege der Stadt Gützkow um eine möglichst sichere, preisgünstige, verbraucherfreundliche, effiziente und umweltverträgliche Versorgung der Einwohner und gewerbetreibenden mit Wasser im Gebiet der Stadt Gützkow zu gewährleisten."@de;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-085-221101_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-085-221101_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-085-221101_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2021-S-085-221101_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2021-S-085-221101_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2021-S-085-221101_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2021-04-28"^^xsd:date;
+  epo:hasID epd:id_2021-S-085-221101_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210503";
+  epo:refersToLot epd:id_2021-S-085-221101_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2021-S-085-221101_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-085-221101_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 085-221101" .
+
+epd:id_2021-S-085-221101_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE80N>;
+  locn:postCode "17495";
+  locn:postName "Züssow";
+  locn:thoroughfare "Dorfstraße 6" .
+
+epd:id_2021-S-085-221101_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Stadt Gützkow über Amt Züssow"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-085-221101_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-085-221101_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/65100000> .
+
+epd:id_2021-S-085-221101_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-085-221101_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasDescription "Gegenstand der Konzession ist die Wasserversorgung auf dem Gebiet der Stadt Gützkow. Der bisherige Konzessionsvertrag endet zum 30.4.2023. Unternehmen, die am Abschluss eines Wasserkonzessionsvertrages mit der Stadt Gützkow, beginnend ab 1.5.2023 interessiert sind, werden hiermit aufgefordert, ihr Interesse gegenüber der Stadt Gützkow bis spätestens zum 30.7.2021,12.00 Uhr zu bekunden. Die Interessenbekundungen sind nur schriftlich (d. h. auf dem Postwege oder direkt per Bote/Kurier) und unterschrieben in einem verschlossenen Umschlag mit der Aufschrift „Interessenbekundung Wasserkonzession“ beim Auftraggeber einzureichen. Die Interessenbekundung muss die Unternehmensdaten (v. a. Name, Rechtsform, Anschrift, Ansprechpartner und E-Mail-Adresse) enthalten.Die Stadt Gützkow wird nur diejenigen Unternehmen, die eine Interessenbekundung form- und fristgerecht einreichen, zur Bestätigung ihres Interesses an einer weiteren Teilnahme auffordern."@de;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-085-221101_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-085-221101_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Bekanntmachung über Auslaufen eines Trinkwasserversorgungskonzessionsvertrages der Stadt Gützkow"@de;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-085-221101_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-085-221101_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2021-S-085-221101_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-085-221101_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-085-221101_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-085-221101_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "19053";
+  locn:postName "Schwerin";
+  locn:thoroughfare "Johannes-Stelling-Straße 14" .
+
+epd:id_2021-S-085-221101_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+49 3855884855817";
+  epo:hasInternetAddress "http://www.regierung-mv.de/"^^xsd:anyURI;
+  cccev:email "vergabekammer@wm.mv-regierung.de";
+  cccev:telephone "+49 3855885160" .
+
+epd:id_2021-S-085-221101_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer Mecklenburg-Vorpommern"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-085-221101_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2021-S-085-221101_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-085-221101_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-085-221101_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-085-221101_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+49 3855884855817";
+  epo:hasInternetAddress "http://www.regierung-mv.de/"^^xsd:anyURI;
+  cccev:email "vergabekammer@wm.mv-regierung.de";
+  cccev:telephone "+49 3855885160" .
+
+epd:id_2021-S-085-221101_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "19053";
+  locn:postName "Schwerin";
+  locn:thoroughfare "Johannes-Stelling-Straße 14" .
+
+epd:id_2021-S-085-221101_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Vergabekammer Mecklenburg-Vorpommern"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-085-221101_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2021-S-085-221101_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-085-221101_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-085-221101_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-085-221101_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2021-S-085-221101_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE80N>;
+  locn:postCode "17495";
+  locn:postName "Züssow";
+  locn:thoroughfare "Dorfstraße 6" .
+
+epd:id_2021-S-085-221101_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasContactName "Amt Züssow, Fachbereich Bau- und Grundstücksmanagement"@de;
+  epo:hasFax "+49 3835564399";
+  epo:hasInternetAddress "https://www.amt-zuessow.de/"^^xsd:anyURI;
+  cccev:email "e.kruse@amt-zuessow.de";
+  cccev:telephone "+49 38355643229" .
+
+epd:id_2021-S-085-221101_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Stadt Gützkow über Amt Züssow, Hoch-/Tiefbau/Gebäude-/Grundstücksmanagement"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-085-221101_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2021-S-085-221101_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2021-S-085-221101_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-085-221101_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2021-S-085-221101_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

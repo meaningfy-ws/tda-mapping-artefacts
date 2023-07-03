@@ -1,0 +1,217 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-238-544929_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.eprocurement.gov.cy"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-238-544929_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.eprocurement.gov.cy"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-238-544929_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-238-544929_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-238-544929_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Maria Nicolaou"@el;
+  epo:hasFax "+357 22455799";
+  epo:hasInternetAddress "https://www.eprocurement.gov.cy"^^xsd:anyURI;
+  cccev:email "mail@aglantzia.org.cy";
+  cccev:telephone "+357 22462233" .
+
+epd:id_2018-S-238-544929_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Πολιτιστικό Κέντρο «Το Σκαλί»."@el .
+
+epd:id_2018-S-238-544929_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CY000>;
+  locn:address epd:id_2018-S-238-544929_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-238-544929_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-238-544929_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-238-544929_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-238-544929_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2018-S-238-544929_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-238-544929_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "Μαρία Νικολάου"@el;
+  epo:hasFax "+357 22455799";
+  epo:hasInternetAddress "www.aglantzia.org.cy"^^xsd:anyURI;
+  cccev:email "maria.nicolaou@aglantzia.org.cy";
+  cccev:telephone "+357 22462239" .
+
+epd:id_2018-S-238-544929_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CY>;
+  locn:postCode "2108";
+  locn:postName "Αγλαντζιά";
+  locn:thoroughfare "Αικατερίνης Κορνάρο 8" .
+
+epd:id_2018-S-238-544929_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasLegalName "Δήμος Αγλαντζιάς"@el;
+  cccev:registeredAddress epd:id_2018-S-238-544929_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2018-S-238-544929_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/70330000> .
+
+epd:id_2018-S-238-544929_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-238-544929_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Η διάρκεια εκτέλεσης της σύμβασης είναι για 3 χρόνια, με προαίρεση επέκτασης της συμφωνίας, για ακόμα 1 + 1 χρόνο, κατόπιν κοινής συμφωνίας και των 2 μερών."@el;
+  epo:hasDescription "Το «Σκαλί» είναι ένας πολυχώρος πολιτισμού, με διαχρονική σημαντική συμβολή στα πολιτιστικά δρώμενα του τόπου. Ένα πολυβραβευμένο έργο, που συνδυάζει την καλαισθησία και την αρμονική συνύπαρξη των χρήσεών του, με τον χώρο. Στο αμφιθέατρο έχουν φιλοξενηθεί πολύ σημαντικές εκδηλώσεις (συναυλίες, θεατρικές παραστάσεις κ.λπ.), από καταξιωμένους καλλιτέχνες. Οι υπόλοιποι χώροι (σπηλιές, γκαλερί, ανοικτή πλατεία, μπαράκι, εστιατόριο), έχουν και αυτοί χρησιμοποιηθεί διαχρονικά, για ποικίλες δραστηριότητες. Στο Πολιτιστικό Κέντρο «Το Σκαλί», βρίσκονται και οι εκκλησίες Αγίου Γεωργίου (κτίσμα του 1797) και Παναγίας (κτίσμα του 15ου αιώνα). Ο Δήμος επιθυμεί να αναθέσει τη διαχείριση τού χώρου σε ανάδοχο, με στόχο να αυξηθεί η αξιοποίησή του, μέσω της αύξησης τής χρήσης και της βέλτιστης οικονομικής διαχείρισης."@el;
+  epo:hasEstimatedValue epd:id_2018-S-238-544929_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-238-544929_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-238-544929_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 100000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-238-544929_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 100000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-238-544929_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-238-544929_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2018-S-238-544929_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2018-S-238-544929_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2018-S-238-544929_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2018-S-238-544929_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2018-12-07"^^xsd:date;
+  epo:hasID epd:id_2018-S-238-544929_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20181211";
+  epo:refersToLot epd:id_2018-S-238-544929_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2018-S-238-544929_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2018-S-238-544929_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 238-544929" .
+
+epd:id_2018-S-238-544929_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CY>;
+  locn:postCode "2150";
+  locn:postName "Αγλαντζιά";
+  locn:thoroughfare "Τ.Θ. 20259" .
+
+epd:id_2018-S-238-544929_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "Aikaterinis Kornaro 8, 2108 Aglantzia" .
+
+epd:id_2018-S-238-544929_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasID epd:id_2018-S-238-544929_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Δήμος Αγλαντζιάς"@el;
+  epo:hasMainActivityDescription "Τοπική αυτοδιοίκηση";
+  cccev:registeredAddress epd:id_2018-S-238-544929_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-238-544929_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "50/2018" .
+
+epd:id_2018-S-238-544929_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/70330000> .
+
+epd:id_2018-S-238-544929_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-238-544929_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasDescription "Το «Σκαλί» είναι ένας πολυχώρος πολιτισμού, με διαχρονική σημαντική συμβολή στα πολιτιστικά δρώμενα του τόπου. Ένα πολυβραβευμένο έργο, που συνδυάζει την καλαισθησία και την αρμονική συνύπαρξη των χρήσεών του, με τον χώρο. Στο αμφιθέατρο έχουν φιλοξενηθεί πολύ σημαντικές εκδηλώσεις (συναυλίες, θεατρικές παραστάσεις κ.λπ.), από καταξιωμένους καλλιτέχνες. Οι υπόλοιποι χώροι (σπηλιές, γκαλερί, ανοικτή πλατεία, μπαράκι, εστιατόριο), έχουν και αυτοί χρησιμοποιηθεί διαχρονικά, για ποικίλες δραστηριότητες. Στο Πολιτιστικό Κέντρο «Το Σκαλί», βρίσκονται και οι εκκλησίες Αγίου Γεωργίου (κτίσμα του 1797) και Παναγίας (κτίσμα του 15ου αιώνα). Ο Δήμος επιθυμεί να αναθέσει τη διαχείριση τού χώρου σε ανάδοχο, με στόχο να αυξηθεί η αξιοποίησή του, μέσω της αύξησης τής χρήσης και της βέλτιστης οικονομικής διαχείρισης."@el;
+  epo:hasEstimatedValue epd:id_2018-S-238-544929_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2018-S-238-544929_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-238-544929_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-238-544929_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Διαγωνισμός για την εξεύρεση ανάδοχου, για τη διαχείριση του Πολιτιστικού Κέντρου «Το Σκαλί»."@el;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-238-544929_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2018-S-238-544929_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2018-S-238-544929_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2018-S-238-544929_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-238-544929_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2018-S-238-544929_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2018-S-238-544929_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  locn:postCode "1304";
+  locn:postName "Λευκωσία";
+  locn:thoroughfare "Λεωφόρος Γρίβα Διγενή 81 - 83, 2ος όροφος Τ.Θ. 24820" .
+
+epd:id_2018-S-238-544929_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+357 22445107";
+  epo:hasInternetAddress "http://www.tra.gov.cy"^^xsd:anyURI;
+  cccev:email "tra@aap.gov.cy";
+  cccev:telephone "+357 22445100" .
+
+epd:id_2018-S-238-544929_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Αναθεωρητική Αρχή Προσφορών"@el;
+  epo:hasPrimaryContactPoint epd:id_2018-S-238-544929_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2018-S-238-544929_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-238-544929_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-238-544929_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-238-544929_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "1) κάθε ενδιαφερόμενος οικονομικός φορέας, ο οποίος έχει ή είχε συμφέρον να του ανατεθεί η σύμβαση και ο οποίος υπέστη ή ενδέχεται να υποστεί ζημία, από πράξη ή απόφαση της Αναθέτουσας Αρχής, που προηγείται της σύναψης της σύμβασης και για την οποία εικάζεται, ότι παραβιάζει οποιαδήποτε διάταξη του ισχύοντος δικαίου, έχει δικαίωμα να προσφύγει στην Αναθεωρητική Αρχή Προσφορών, σύμφωνα με τις διατάξεις του Νόμου περί των Διαδικασιών Προσφυγής τον Τομέα της Σύναψης των Δημοσίων Συμβάσεων του 2010 (Ν.104(Ι)/2010)·2) για την άσκηση προσφυγής στην Αναθεωρητική Αρχή Προσφορών, ο ενδιαφερόμενος καταβάλλει τέλος που δεν είναι επιστρεπτέο και κατατίθεται στον Γενικό Κυβερνητικό Λογαριασμό. Περισσότερες σχετικές πληροφορίες, περιλαμβάνονται στην ιστοσελίδα www.tra.gov.cy·3) για τον τρόπο και τη διαδικασία άσκησης προσφυγής, τον τρόπο εξέτασής της και τη διαδικασία έκδοσης των σχετικών αποφάσεων, ισχύουν οι πρόνοιες των άρθρων του Νόμου περί των Διαδικασιών Προσφυγής τον Τομέα της Σύναψης των Δημοσίων Συμβάσεων του 2010 (Ν.104(Ι)/2010)." .
+
+epd:id_2018-S-238-544929_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+357 22445107";
+  epo:hasInternetAddress "http://www.tra.gov.cy"^^xsd:anyURI;
+  cccev:email "tra@aap.gov.cy";
+  cccev:telephone "+357 22445100" .
+
+epd:id_2018-S-238-544929_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  locn:postCode "1304";
+  locn:postName "Λευκωσία";
+  locn:thoroughfare "Λεωφόρος Γρίβα Διγενή 81 - 83, 2ος όροφος Τ.Θ. 24820" .
+
+epd:id_2018-S-238-544929_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Αναθεωρητική Αρχή Προσφορών"@el;
+  epo:hasPrimaryContactPoint epd:id_2018-S-238-544929_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2018-S-238-544929_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-238-544929_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-238-544929_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-238-544929_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "EL" .
+
+epd:id_2018-S-238-544929_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CY>;
+  locn:postCode "2108";
+  locn:postName "Αγλαντζιά";
+  locn:thoroughfare "Αικατερίνης Κορνάρο 8" .
+
+epd:id_2018-S-238-544929_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasContactName "Μαρία Νικολάου"@el;
+  epo:hasFax "+357 22455799";
+  epo:hasInternetAddress "www.aglantzia.org.cy"^^xsd:anyURI;
+  cccev:email "mail@aglantzia.org.cy";
+  cccev:telephone "+357 22462233" .
+
+epd:id_2018-S-238-544929_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Δήμος Αγλαντζιάς"@el;
+  epo:hasPrimaryContactPoint epd:id_2018-S-238-544929_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2018-S-238-544929_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2018-S-238-544929_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-238-544929_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2018-S-238-544929_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

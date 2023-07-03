@@ -1,0 +1,164 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-129-343816_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://sncf.bravosolution.com/web/login.html"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-129-343816_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://sncf.bravosolution.com/web/login.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-129-343816_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-129-343816_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-129-343816_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.sncf.com/"^^xsd:anyURI;
+  cccev:email "frank.fiorello@sncf.fr" .
+
+epd:id_2021-S-129-343816_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2021-S-129-343816_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-129-343816_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-129-343816_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-129-343816_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true .
+
+epd:id_2021-S-129-343816_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 4.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-129-343816_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-129-343816_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2021-S-129-343816_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-129-343816_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Le marché débutera le 1.10.2021 pour une durée de quatre mois fermes.Les quantités globales à livrer sont estimées à 1 350 m3 pour quatre mois.Une période optionnelle de trois mois supplémentaires maximum est prévue pour 1 000 m3.Ces volumes sont donnés à titre indicatifs et n’engagent pas la SNCF."@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-129-343816_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-129-343816_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-129-343816_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-129-343816_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-129-343816_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-129-343816_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-129-343816_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2021-S-129-343816_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2021-07-02"^^xsd:date;
+  epo:hasID epd:id_2021-S-129-343816_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210707";
+  epo:refersToLot epd:id_2021-S-129-343816_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-129-343816_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-129-343816_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 129-343816" .
+
+epd:id_2021-S-129-343816_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postName "Lyon" .
+
+epd:id_2021-S-129-343816_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "552 049 447 76279" .
+
+epd:id_2021-S-129-343816_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2021-S-129-343816_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "SNCF"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2021-S-129-343816_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-129-343816_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021DOS0532422" .
+
+epd:id_2021-S-129-343816_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09134200> .
+
+epd:id_2021-S-129-343816_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-129-343816_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "La société nationale SNCF émet cet avis de marché au nom et pour le compte de SNCF Voyageurs.La présente consultation est effectuée dans le cadre de la procédure avec négociation, objet du code de la commande publique. Dans le cadre de cette procédure, la négociation n'est pas systématique. Il s'agit d'une éventualité qui peut être mise en œuvre par l’acheteur selon le niveau des offres remises.L’entité adjudicatrice développe les consultations en ligne, par voie électronique. Les coordonnées électronique du représentant habilité à soumissionner à la présente consultation sont à mentionner dans le dossier de candidature.Toute candidature envoyée par voie électronique doit être envoyée sur la plate-forme EASI (cf. section I de l’avis) par un représentant du candidat dûment habilité. Aucun envoi par e-mail n'est autorisé. Le candidat doit être en mesure de justifier des pouvoirs de son représentant sur requête de l’entité adjudicatrice.Les documents génériques de capacité et attestations légales génériques devront être déposés sur Provigis (plate-forme de dématérialisation et de conformité). Une invitation est envoyée au fournisseur lors de sa manifestation d’intérêt sur la plate-forme EASI. En cas de non réception de l’invitation, le fournisseur est invité à se rapprocher de l’acheteur dont les coordonnées sont précisées en section I.Toute candidature électronique ne respectant pas le formalisme pré cité ou envoyée à une autre adresse est rejetée sans être analysée.Pour toute difficulté d’ordre technique, le candidat peut se rapprocher du support fournisseurs de la plate-forme (accessible à partir de l’adresse indiquée en section I). Pour toute autre question, le candidat doit contacter l'acheteur dont les coordonnées sont reprises au point I.1) du présent avis.Après examen des documents, l’entité adjudicatrice évalue la capacité du candidat et sélectionne les candidats aptes à présenter une offre.Le marché sera soumis aux dispositions du Cahier des clauses et conditions générales (CCCG) applicables aux marchés de fournitures de la SNCF, disponible sur le site sncf.com: http://www.sncf.com/fr/groupe/fournisseurs/documentsLa candidature ainsi que tout échange d'informations doivent être rédigés en français."@fr;
+  epo:hasDescription "Fourniture et livraison par camion de biodiesel B100 à Granville.Par biodiesel B100, il faut entendre un B100 aux caractéristiques spécifiques «B100+» précisées au cahier des charges à compter du 15.9.2021 et notamment:— une valeur limite maximale de la viscosité à 40º C réduite à 4,5 mm2/s;— une valeur limite maximale de la teneur en eau réduite à 200 ppm.Ce B100, destiné à la station-service de Granville alimentant les engins de traction à moteur de l’axe Paris-Granville."@fr;
+  epo:hasID epd:id_2021-S-129-343816_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-129-343816_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-129-343816_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Fourniture et livraison de biodiesel B100 à Granville"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-129-343816_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-129-343816_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-129-343816_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB,
+    epd:id_2021-S-129-343816_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-129-343816_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-129-343816_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-129-343816_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-129-343816_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-129-343816_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75859";
+  locn:postName "Paris";
+  locn:thoroughfare "parvis du tribunal de Paris" .
+
+epd:id_2021-S-129-343816_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.tribunal-de-paris.justice.fr/75"^^xsd:anyURI;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2021-S-129-343816_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal judiciaire"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-129-343816_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-129-343816_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-129-343816_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-129-343816_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-129-343816_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Les procédures de recours applicables sont:— le référé précontractuel (CPC, articles 1441-1 et 1441-2) qui peut être exercé jusqu’à la signature du marché;— le référé contractuel (CPC, articles 1441-3 et 1441-3-1) qui peut être exercé dans un délai de:—— 31 jours à compter de la publication d’un avis d’attribution au JOUE ou, pour les marchés fondés sur un accord cadre, à compter de la notification de la conclusion du contrat;—— six mois à compter du lendemain du jour de la conclusion du contrat si aucun avis d’attribution n’a été publié ou si aucune notification de la conclusion du contrat n’a été effectuée." .
+
+epd:id_2021-S-129-343816_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.tribunal-de-paris.justice.fr/75"^^xsd:anyURI;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2021-S-129-343816_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75859";
+  locn:postName "Paris";
+  locn:thoroughfare "parvis du tribunal de Paris" .
+
+epd:id_2021-S-129-343816_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal judiciaire"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-129-343816_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-129-343816_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-129-343816_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-129-343816_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-129-343816_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://sncf.bravosolution.com/web/login.html"^^xsd:anyURI .
+
+epd:id_2021-S-129-343816_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-129-343816_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-129-343816_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

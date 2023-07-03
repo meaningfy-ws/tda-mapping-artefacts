@@ -1,0 +1,228 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-160-421538_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://e-licitatie.ro/pub/notices/c-notice/v2/view/100126366"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-160-421538_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "80"@ro .
+
+epd:id_2021-S-160-421538_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Componenta tehnica"@ro;
+  cccev:weight "20"@ro .
+
+epd:id_2021-S-160-421538_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "www.e-licitatie.ro"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-160-421538_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-160-421538_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-160-421538_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Elena-Gabriela PASARICA, Claudia-Ingrid URSULESCU"@ro;
+  epo:hasFax "+40 232405998";
+  epo:hasInternetAddress "www.delgaz-grid.ro"^^xsd:anyURI;
+  cccev:email "mariana.fisca@delgaz-grid.ro";
+  cccev:telephone "+40 232405529" .
+
+epd:id_2021-S-160-421538_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Onesti"@ro .
+
+epd:id_2021-S-160-421538_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/RO211>;
+  locn:address epd:id_2021-S-160-421538_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-160-421538_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-160-421538_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-160-421538_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-160-421538_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-160-421538_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-160-421538_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasContactName "Claudia-Ingrid URSULESCU"@ro;
+  epo:hasFax "+40 232405998";
+  epo:hasInternetAddress "www.delgaz-grid.ro"^^xsd:anyURI;
+  cccev:email "claudia.ursulescu@delgaz-grid.ro";
+  cccev:telephone "+40 232405529" .
+
+epd:id_2021-S-160-421538_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ROU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/RO213>;
+  locn:postCode "700014";
+  locn:postName "NA";
+  locn:thoroughfare "str. Petru Movila, nr. 38" .
+
+epd:id_2021-S-160-421538_InformationProviderOrganisationIdentifier_FxmRFqszG85mxBF5kaCcKe
+  a epo:Identifier;
+  epo:hasIdentifierValue "RO10976687" .
+
+epd:id_2021-S-160-421538_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasID epd:id_2021-S-160-421538_InformationProviderOrganisationIdentifier_FxmRFqszG85mxBF5kaCcKe;
+  epo:hasLegalName "DELGAZ GRID S.A."@ro;
+  cccev:registeredAddress epd:id_2021-S-160-421538_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2021-S-160-421538_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-160-421538_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Obiectul achiziției este realizarea „la cheie” a lucrării „CREŞTEREA CAPACITĂŢII REŢELELOR ELECTRICE DE DISTRIBUŢIE, DIN MUN. ONEŞTI ŞI INTRODUCEREA TENSIUNII DE 110KV ÎN STAŢIA ONEŞTI CENTRU – ELABORARE DOCUMENTAŢIE TEHNICĂ FAZA PTH+CS+PAC, FURNIZARE PRODUSE ŞI EXECUŢIE LUCRĂRI conform Documentatiei descriptive nr. 82735/16.07.2021 si a Documentaţiei SF Nr. 3/2017.Activitatile si cantitatile supuse prezentei achizitii sunt conform Documentatiei descriptive nr. 82735/16.07.2021 si a documentaţiei studiului de fezabilitate SF Nr. 3/2017, care se regeasc atasate Anuntului de participare la Sectiunea VI - Lista de fisiere care compun documentatia de atribuire.Valoarea estimată fără TVA a achiziției: 28,446,688.00 lei;Valoarea estimată fără TVA a Contractului: 28,446,688.00 lei."@ro;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-160-421538_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ,
+    epd:id_2021-S-160-421538_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J .
+
+epd:id_2021-S-160-421538_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 28446688.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/RON> .
+
+epd:id_2021-S-160-421538_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-160-421538_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-160-421538_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2021-S-160-421538_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-160-421538_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2021-S-160-421538_TenderReceiver_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasDispatchDate "2021-08-14"^^xsd:date;
+  epo:hasID epd:id_2021-S-160-421538_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210819";
+  epo:refersToLot epd:id_2021-S-160-421538_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-160-421538_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-160-421538_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 160-421538" .
+
+epd:id_2021-S-160-421538_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ROU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/RO125>;
+  locn:postCode "540554";
+  locn:postName "Targu Mures";
+  locn:thoroughfare "Strada: Pandurilor, nr. 42" .
+
+epd:id_2021-S-160-421538_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "RO10976687" .
+
+epd:id_2021-S-160-421538_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2021-S-160-421538_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "DELGAZ GRID S.A."@ro;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gas-heat>;
+  cccev:registeredAddress epd:id_2021-S-160-421538_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-160-421538_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "482/RO10976687/2021" .
+
+epd:id_2021-S-160-421538_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45232221> .
+
+epd:id_2021-S-160-421538_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-160-421538_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Entitatea contractanta organizeaza procedura de achizitie offline, avand in vedere faptul ca in SEAP nu exista functionalitate disponibila pentru derulare procedura de negociere competitivă online, in conformitate cu art. 74 alin (2) din HGR 394/2016.Pentru completarea DUAE (raspuns) se va utiliza documentul DUAE in format editabil. Documentul DUAE in format editabil se regaseste atasat Anuntului de participare la Sectiunea Lista de fisiere care compun documentatia de atribuire si se va completa cu toate informatiile solicitate in conformitate cu cerintele Documentatiei de atribuire.Avand in vedere faptul ca in SEAP nu exista functionalitate disponibila pentru derulare procedura de negociere competitivă online ci doar offline, DUAE se va descărca si printa de către toti Operatorii Economici, spre a fi completat si depus la adresa Entitatii Contractante din Iasi, Petru Movila, nr. 38, cod postal 700014, conform indicatiilor de la Cap. IV.4.3 Modul de prezentare a ofertei.Pe parcursul derularii procedurii de achizitie, entitatea contractanta va utiliza e-mailul ca modalitate de comunicare cu candidatii/ofertantii. Comunicarile/Solicitarile din partea entitatii contractante vor fi transmise la adresele de e-mail mentionate de candidati/ofertanti in formularele DUAE depuse in Partea II - A: Informatii privind operatorul economic - Persoana sau persoanele de contact.Motivat de termenele impuse Operatorii economici participanti la procedura (candidati/ofertanti) vor fi pregatiti sa raspunda la solicitarile de clarificari adresate pe parcursul procesului de evaluare a candidaturilor/ofertelor, intr-un termen general de 1-3 zile lucratoare, in functie de complexitatea solicitarii.În cazul în care comisia de evaluare solicită unui candidat/ofertant, în condiţiile art. 221 din Lege, clarificări şi, după caz, completări ale documentelor prezentate de acesta în cadrul ofertei sau solicitării de participare, iarcandidatul/ofertantul nu transmite în termenul precizat de comisia de evaluare clarificările/completările solicitate sau clarificările/completările transmise nu sunt concludente, oferta sa va fi considerată inacceptabilă.Toate comunicările legate de această procedură de achiziție trebuie să fie adresate persoanei/persoanelor de contact numai la coordonatele menționate mai sus și în Anunțul de participare. Oricare alte persoane din cadrul Entitatii Contractante nu vor fi contactate în legătură cu această procedură de achiziție în nicio circumstanță. Entitatea Contractantă nu va fi făcută răspunzătoare în cazul în care Ofertantul nu respectă această instrucțiune.La accesarea Documentației de atribuire via: http://sicap-prod.e-licitatie.ro/pub, potențialii Ofertanți sunt invitați să examineze toate documentele și să notificeEntitatii Contractante eventualele conflicte, erori, discrepanțe etc. sau să solicite clarificările care sunt considerate necesare utilizând coordonatele persoanei (persoanelor) de contact menționate mai sus.Entitatea Contractantă consideră că Documentația de atribuire oferă potențialilor Ofertanți suficiente detalii, cu privire la cerințele, criteriile, regulile și alte informații necesare pentru a asigura o informare completă, corectă și explicită cu privire la modul de aplicare a procedurii de atribuire, și, pe această bază, să decidă dacă participa sau nu în cadrul acestei proceduri de atribuire. Cu toate acestea, Operatorii Economici au dreptul de a solicita clarificări sau informații suplimentare în legătură cu Documentația de atribuire, conform instrucțiunilor următoare.Întrebări legate de conținutul Documentației de atribuire: Orice Operator Economic interesat are dreptul de a solicita clarificări sau informații suplimentare cu privire la Documentația de atribuire si implicit cu privire la clauzele contractuale, ce sunt parte a documentatiei de atribuire până la termenul limită mai sus menționat (paragraful I.3) COMUNICARE - Numărul de zile înainte de termenul ... detalii pe www.e-licitatie.ro"@ro;
+  epo:hasDescription "Obiectul achiziției este realizarea „la cheie” a lucrării „CREŞTEREA CAPACITĂŢII REŢELELOR ELECTRICE DE DISTRIBUŢIE, DIN MUN. ONEŞTI ŞI INTRODUCEREA TENSIUNII DE 110 KV ÎN STAŢIA ONEŞTI CENTRU\" – ELABORARE DOCUMENTAŢIE TEHNICĂ FAZA PTH+CS+PAC, FURNIZARE PRODUSE ŞI EXECUŢIE LUCRĂRI, conform Documentatiei descriptive nr. 82735/16.07.2021 si a Documentaţiei SF Nr. 3/2017, constând în:- elaborarea documentațiilor și a studiilor necesare în vederea obținerii Autorizației de Construire și obținerea acesteia;- elaborarea documentațiilor tehnice (proiect tehnic – PTh, caiet de sarcini pentru executarea lucrărilor – CS și DDE - documentația detaliată de execuție inclusiv alte expertize necesare elaborării proiectului tehnic–conform scenariilor tehnico-economice stabilite în documentațiile de proiectare faza SF);- achiziția și livrarea tuturor materialelor și echipamentelor necesare realizării lucrării;- execuția lucrărilor/montaj echipamente;- testare și PIF;- întocmire documentație As Built (documentație tehnică întocmită în concordanță cu situația reală din teren la finalizarea lucrărilor);- întocmire documente necesare completării cărții tehnice a investiției;- durata de îndeplinire a contractului este de maxim 36 luni de la emiterea comenzii de aprovizionare."@ro;
+  epo:hasEstimatedValue epd:id_2021-S-160-421538_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2021-S-160-421538_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-160-421538_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-160-421538_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Creşterea capacităţii reţelelor electrice de distribuţie, din mun. Oneşti şi introducerea tensiunii de 110 kv în Staţia Oneşti Centru"@ro;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-160-421538_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-160-421538_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-160-421538_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-160-421538_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2021-S-160-421538_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2021-S-160-421538_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ROU>;
+  locn:postCode "540554";
+  locn:postName "Targu Mures";
+  locn:thoroughfare "B-dul Pandurilor Nr. 42" .
+
+epd:id_2021-S-160-421538_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "www.delgaz-grid.ro"^^xsd:anyURI;
+  cccev:email "angela.vasile@delgaz-grid.ro";
+  cccev:telephone "+40 365403769" .
+
+epd:id_2021-S-160-421538_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Departament Juridic - DELGAZ GRID S.A."@ro;
+  epo:hasPrimaryContactPoint epd:id_2021-S-160-421538_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-160-421538_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-160-421538_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-160-421538_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-160-421538_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+40 213104642 / +40 218900745";
+  epo:hasInternetAddress "http://www.cnsc.ro"^^xsd:anyURI;
+  cccev:email "office@cnsc.ro";
+  cccev:telephone "+40 213104641" .
+
+epd:id_2021-S-160-421538_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ROU>;
+  locn:postCode "030084";
+  locn:postName "Bucuresti";
+  locn:thoroughfare "Str. Stavropoleos nr. 6, sector 3" .
+
+epd:id_2021-S-160-421538_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Consiliul National de Solutionare a Contestatiilor"@ro;
+  epo:hasPrimaryContactPoint epd:id_2021-S-160-421538_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-160-421538_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-160-421538_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-160-421538_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-160-421538_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "RO" .
+
+epd:id_2021-S-160-421538_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ROU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/RO213>;
+  locn:postCode "700014";
+  locn:postName "NA";
+  locn:thoroughfare "str. Petru Movila, nr. 38" .
+
+epd:id_2021-S-160-421538_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR
+  a cccev:ContactPoint;
+  epo:hasContactName "Claudia-Ingrid URSULESCU"@ro;
+  epo:hasFax "+40 232405998";
+  epo:hasInternetAddress "www.delgaz-grid.ro"^^xsd:anyURI;
+  cccev:email "claudia.ursulescu@delgaz-grid.ro";
+  cccev:telephone "+40 232405529" .
+
+epd:id_2021-S-160-421538_TenderReceiverOrganisationIdentifier_RmPNyhSxpRtChEASKUU5BR
+  a epo:Identifier;
+  epo:hasIdentifierValue "RO10976687" .
+
+epd:id_2021-S-160-421538_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR a org:Organization;
+  epo:hasID epd:id_2021-S-160-421538_TenderReceiverOrganisationIdentifier_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasLegalName "Delgaz Grid. S.A."@ro;
+  epo:hasPrimaryContactPoint epd:id_2021-S-160-421538_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  cccev:registeredAddress epd:id_2021-S-160-421538_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR .
+
+epd:id_2021-S-160-421538_TenderReceiver_RmPNyhSxpRtChEASKUU5BR a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-160-421538_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  epo:playedBy epd:id_2021-S-160-421538_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR .

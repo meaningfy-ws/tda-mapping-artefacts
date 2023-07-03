@@ -1,0 +1,143 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-232-573893_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://procontract.due-north.com/Procurer/ViewMaker209Form1?projectId=4951d453-530d-eb11-8105-005056b64545&projectEventId=4b51d453-530d-eb11-8105-005056b64545"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2020-S-232-573893_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.bristol.gov.uk/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2020-S-232-573893_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2020-S-232-573893_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2020-S-232-573893_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Mr G Rana"@en;
+  epo:hasInternetAddress "https://www.bristol.gov.uk/"^^xsd:anyURI;
+  cccev:email "george.rana@bristol.gov.uk" .
+
+epd:id_2020-S-232-573893_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "West of England Combined Authority area."@en .
+
+epd:id_2020-S-232-573893_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKK>;
+  locn:address epd:id_2020-S-232-573893_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2020-S-232-573893_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-232-573893_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-232-573893_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2020-S-232-573893_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2020-S-232-573893_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-232-573893_DynamicPurchaseSystemTechniqueUsage_KX8MaayAMxqXBuD94Kuz62
+  a epo:DynamicPurchaseSystemTechniqueUsage .
+
+epd:id_2020-S-232-573893_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2020-S-232-573893_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/80400000>, <http://data.europa.eu/cpv/cpv/80500000>,
+    <http://data.europa.eu/cpv/cpv/98200000> .
+
+epd:id_2020-S-232-573893_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-232-573893_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "The project will be targeted at:• people with learning disabilities not currently in receipt of care and support but not engaging in other DWP provision;• long term unemployed people with learning disabilities in receipt of social care including people with complex needs;• unemployed people with learning disabilities aged 50+;• young people with special educational needs as they leave school and college;• young people who have learning disabilities, who are still disengaged from education who are aged 16+ and who are at risk of disengaging from a pathway to employment."@en;
+  epo:hasID epd:id_2020-S-232-573893_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2020-S-232-573893_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasTitle "Additional Services"@en;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-232-573893_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-232-573893_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 10000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
+
+epd:id_2020-S-232-573893_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2020-S-232-573893_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2020-S-232-573893_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2020-S-232-573893_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2020-S-232-573893_Reviewer_kNwzAnsDUkmLUrSJHhyRUY;
+  epo:hasDispatchDate "2020-11-23"^^xsd:date;
+  epo:hasID epd:id_2020-S-232-573893_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20201127";
+  epo:refersToLot epd:id_2020-S-232-573893_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2020-S-232-573893_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2020-S-232-573893_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 232-573893" .
+
+epd:id_2020-S-232-573893_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKK>;
+  locn:postCode "BS1 5TR";
+  locn:postName "Bristol" .
+
+epd:id_2020-S-232-573893_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "Bristol City Council"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2020-S-232-573893_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2020-S-232-573893_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "DN504426" .
+
+epd:id_2020-S-232-573893_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/80400000> .
+
+epd:id_2020-S-232-573893_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:isAwardedByCPB true;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2020-S-232-573893_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-232-573893_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "The aim of the open framework is to offer a unified approach to improving employment outcomes for people with learning disabilities living in the West of England Combined Authority area. Underpinned by the principles of specialist employment support and supported internships and designed to respond to the specific needs of people with learning disabilities from age 16+. ‘WE Work for Everyone’ will improve employment outcomes through a dedicated individualised approach which will comprise intensive specialist support and an education and enterprise infrastructure which will provide the depth and intensity of support many people with a learning disability need to help them work towards, find and retain paid employment."@en;
+  epo:hasEstimatedValue epd:id_2020-S-232-573893_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2020-S-232-573893_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-232-573893_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2020-S-232-573893_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Educational Placements for Learning Disability"@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-232-573893_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2020-S-232-573893_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG, epd:id_2020-S-232-573893_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62;
+  epo:usesTechnique epd:id_2020-S-232-573893_DynamicPurchaseSystemTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2020-S-232-573893_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-232-573893_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2020-S-232-573893_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2020-S-232-573893_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postName "Bristol" .
+
+epd:id_2020-S-232-573893_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Bristol City Council"@en;
+  cccev:registeredAddress epd:id_2020-S-232-573893_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2020-S-232-573893_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-232-573893_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2020-S-232-573893_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasReceiptExpressionDeadline "2021-01-22T12:00";
+  epo:hasSubmissionURL "https://procontract.due-north.com/Procurer/ViewMaker209Form1?projectId=4951d453-530d-eb11-8105-005056b64545&projectEventId=4b51d453-530d-eb11-8105-005056b64545"^^xsd:anyURI .

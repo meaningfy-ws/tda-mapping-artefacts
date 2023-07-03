@@ -1,0 +1,217 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-029-063745_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.marches-publics.info/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-029-063745_AwardCriterionCost_PdhiwFgRo6dt8S8aCpwTR7 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Coût des prestations"@fr;
+  cccev:weight "45"@fr .
+
+epd:id_2018-S-029-063745_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Valeur technique (Process: 25 %, génie civil: 10 %, garanties: 5 %)"@fr;
+  cccev:weight "40"@fr .
+
+epd:id_2018-S-029-063745_AwardCriterionQuality_c875KbKHSSEYdJLphMo2rf a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Exploitation (Coût d'exploitation: 7 %, facilité d'exploitation 8 %)"@fr;
+  cccev:weight "15"@fr .
+
+epd:id_2018-S-029-063745_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://www.marches-publics.info/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-029-063745_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-029-063745_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-029-063745_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasFax "+33 561029585";
+  epo:hasInternetAddress "http://smdea09.fr"^^xsd:anyURI;
+  cccev:email "jl.bedel@smdea.fr";
+  cccev:telephone "+33 561040900" .
+
+epd:id_2018-S-029-063745_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+                  Lieu-dit Les Riverolles 09270 — Mazères.
+               """@fr .
+
+epd:id_2018-S-029-063745_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ21>;
+  locn:address epd:id_2018-S-029-063745_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2018-S-029-063745_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-029-063745_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-029-063745_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2018-S-029-063745_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2018-S-029-063745_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 14.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-029-063745_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/42996900>, <http://data.europa.eu/cpv/cpv/45232421>,
+    <http://data.europa.eu/cpv/cpv/45232422> .
+
+epd:id_2018-S-029-063745_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-029-063745_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+                  La commune de Mazères est équipée d'une station d'épuration (STEP) d'une capacité de 2 700 EH crée en 1992 et modifiée en 2001 pour le traitement des boues. Aujourd'hui, la Step de Mazères a atteint sa capacité nominale de traitement. La solution retenue consiste en la construction d'une nouvelle STEP à Mazères, de capacité 6 300 EH, sur l'emplacement de la STEP existante, sur le terrain situé au nord, terrain directement accolé à la STEP actuelle. Le marché qui sera conclu à l'issue de cette procédure comprend: 
+                  — les études d'exécution, 
+                  — le dossier de permis de construire, 
+                  — les prestations nécessaires à la réalisation des travaux, 
+                  — la mise au point, la mise en régime, l'observation en marche industrielle des nouvelles installations durant les essais de garantie. À titre indicatif, la période de préparation sera de l'ordre de 2 mois. La durée des travaux prévisionnelle est estimée à 12 mois. Les variantes sont uniquement acceptées sur le système de déshydratation des boues.
+               """@fr;
+  epo:hasEstimatedValue epd:id_2018-S-029-063745_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-029-063745_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-029-063745_AwardCriterionCost_PdhiwFgRo6dt8S8aCpwTR7,
+    epd:id_2018-S-029-063745_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH, epd:id_2018-S-029-063745_AwardCriterionQuality_c875KbKHSSEYdJLphMo2rf .
+
+epd:id_2018-S-029-063745_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 3300000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-029-063745_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 3300000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-029-063745_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-029-063745_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2018-S-029-063745_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2018-S-029-063745_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2018-S-029-063745_TenderReceiver_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasDispatchDate "2018-02-08"^^xsd:date;
+  epo:hasID epd:id_2018-S-029-063745_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20180210";
+  epo:refersToLot epd:id_2018-S-029-063745_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2018-S-029-063745_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2018-S-029-063745_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 029-063745" .
+
+epd:id_2018-S-029-063745_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ21>;
+  locn:postCode "09000";
+  locn:postName "Saint-Paul-de-Jarrat";
+  locn:thoroughfare "rue du Bicentenaire" .
+
+epd:id_2018-S-029-063745_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "25090187300019" .
+
+epd:id_2018-S-029-063745_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2018-S-029-063745_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "SMDEA"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2018-S-029-063745_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-029-063745_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "18t-Step Mazere" .
+
+epd:id_2018-S-029-063745_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45232420> .
+
+epd:id_2018-S-029-063745_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-029-063745_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+               Pour retrouver cet avis intégral, accéder au DCE, poser des questions à l'acheteur, déposer un pli, allez sur http://www.marches-publics.info — Pour obtenir tous les renseignements d'ordre administratif et technique qui leur seraient nécessaires au cours de leur étude, les candidats sont invités au plus tard 10 jours avant la date limite de remise des candidatures ou des offres à passer par le module «Correspondre avec l'acheteur» de la plate-forme AWS: https://www.marches-publics.info Une réponse sera alors adressée en temps utile à tous les candidats au plus tard 8 jours avant la date limite de remise des candidatures ou des offres. En cas de dysfonctionnement, vous pouvez contacter le secrétariat du service des marchés publics du SMDEA au +33 5610409 00. Critère et sous-critères: 
+               1 — coût des prestations: 45 %; 
+               2 — valeur technique (Vt): 40 %; 
+               Sous-Critère 1 de la VT: conception générale du Process 25 %; 
+               Sous-Critère 2 de la VT: génie civil et mode de réalisation des travaux, phasage 10 %; 
+               Sous-Critère 3 de la VT: garanties souscrites 5 %; 
+               3 — exploitation: 15 %; 
+               sous-critère 1 de l'exploitation: coût d'exploitation 7 %; 
+               Sous-Critère 2 de l'exploitation: facilité d'exploitation (Instrumentation — manutention — accès sécurité) 8 %.
+            """@fr;
+  epo:hasDescription """
+               La commune de Mazères est équipée d'une station d'épuration (STEP) d'une capacité de 2 700 EH crée en 1992 et modifiée en 2001 pour le traitement des boues. Aujourd'hui, la Step de Mazères a atteint sa capacité nominale de traitement. La solution retenue consiste en la construction d'une nouvelle STEP à Mazères, de capacité 6 300 EH, sur l'emplacement de la STEP existante, sur le terrain situé au nord, terrain directement accolé à la STEP actuelle. Le marché qui sera conclu à l'issue de cette procédure comprend: 
+               — les études d'exécution, 
+               — le dossier de permis de construire, 
+               — les prestations nécessaires à la réalisation des travaux, 
+               — la mise au point, la mise en régime, l'observation en marche industrielle des nouvelles installations durant les essais de garantie. À titre indicatif, la période de préparation sera de l'ordre de 2 mois. La durée des travaux prévisionnelle est estimée à 12 mois. Les variantes sont uniquement acceptées sur le système de déshydratation des boues.
+            """@fr;
+  epo:hasEstimatedValue epd:id_2018-S-029-063745_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2018-S-029-063745_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-029-063745_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-029-063745_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+               Travaux de construction de la station d'épuration des eaux usées de type boues activées d'une capacité de 6 300 EH sur la commune de Mazères (Ariège 09)
+            """@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-029-063745_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2018-S-029-063745_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2018-S-029-063745_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2018-S-029-063745_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-029-063745_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-029-063745_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-029-063745_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Cf. Le greffe du tribunal administratif à l'adresse ci-dessus.
+            """ .
+
+epd:id_2018-S-029-063745_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 562735740";
+  cccev:email "greffe.ta-toulouse@juradm.fr";
+  cccev:telephone "+33 562735757" .
+
+epd:id_2018-S-029-063745_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "31068";
+  locn:postName "Toulouse";
+  locn:thoroughfare "68 rue Raymond IV" .
+
+epd:id_2018-S-029-063745_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Toulouse"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-029-063745_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2018-S-029-063745_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-029-063745_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-029-063745_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-029-063745_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.marches-publics.info/"^^xsd:anyURI .
+
+epd:id_2018-S-029-063745_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ21>;
+  locn:postCode "09000";
+  locn:postName "Saint-Paul-de-Jarrat";
+  locn:thoroughfare "Service des marchés, rue du Bicentenaire" .
+
+epd:id_2018-S-029-063745_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR
+  a cccev:ContactPoint;
+  epo:hasFax "+33 561629585";
+  epo:hasInternetAddress "http://www.marches-publics.info/"^^xsd:anyURI;
+  cccev:email "marches.publics@smdea09.fr";
+  cccev:telephone "+33 561040900" .
+
+epd:id_2018-S-029-063745_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR a org:Organization;
+  epo:hasLegalName "SMDEA: à l'attention de M. le président"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-029-063745_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  cccev:registeredAddress epd:id_2018-S-029-063745_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR .
+
+epd:id_2018-S-029-063745_TenderReceiver_RmPNyhSxpRtChEASKUU5BR a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-029-063745_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  epo:playedBy epd:id_2018-S-029-063745_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR .

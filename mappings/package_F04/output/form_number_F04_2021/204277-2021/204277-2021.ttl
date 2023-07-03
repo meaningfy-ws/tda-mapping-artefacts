@@ -1,0 +1,87 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-079-204277_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-079-204277_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-079-204277_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-079-204277_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasFax "+351 211021839";
+  epo:hasInternetAddress "www.infraestruturasdeportugal.pt"^^xsd:anyURI;
+  cccev:email "contratos@infraestruturasdeportugal.pt";
+  cccev:telephone "+351 212879300" .
+
+epd:id_2021-S-079-204277_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PT1> .
+
+epd:id_2021-S-079-204277_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-079-204277_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-079-204277_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-079-204277_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-079-204277_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Linha da Beira Alta: estação da Pampilhosa: 2.a fase (LN): fiscalização."@pt .
+
+epd:id_2021-S-079-204277_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 980000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-079-204277_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-079-204277_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2021-S-079-204277_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-079-204277_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te;
+  epo:hasDispatchDate "2021-04-20"^^xsd:date;
+  epo:hasID epd:id_2021-S-079-204277_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210423";
+  epo:refersToLot epd:id_2021-S-079-204277_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2021-S-079-204277_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-079-204277_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 079-204277" .
+
+epd:id_2021-S-079-204277_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/PRT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PT>;
+  locn:postCode "2809-013";
+  locn:postName "Almada";
+  locn:thoroughfare "Praça da Portagem, Almada" .
+
+epd:id_2021-S-079-204277_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "503933813" .
+
+epd:id_2021-S-079-204277_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2021-S-079-204277_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "Infraestruturas de Portugal, S. A."@pt;
+  epo:hasMainActivityDescription "Infraestruturas rodo-ferroviárias";
+  cccev:registeredAddress epd:id_2021-S-079-204277_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-079-204277_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-079-204277_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-079-204277_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71300000> .
+
+epd:id_2021-S-079-204277_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-079-204277_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription "Linha da Beira Alta: estação da Pampilhosa: 2.a fase (LN): fiscalização."@pt;
+  epo:hasEstimatedValue epd:id_2021-S-079-204277_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-079-204277_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-079-204277_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Linha da Beira Alta: estação da Pampilhosa: 2.a fase (LN): fiscalização"@pt;
+  epo:isCoveredByGPA false .
+
+epd:id_2021-S-079-204277_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-05-16"^^xsd:date .
+
+epd:id_2021-S-079-204277_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-079-204277_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-079-204277_Organisation_W8v6KSqiUn74jPKJmENKoH .

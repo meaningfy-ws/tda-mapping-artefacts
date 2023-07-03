@@ -1,0 +1,188 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-076-170244_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://www.dropbox.com/s/1c6sb7o2rd8mai3/Information%20zur%20Auftragsbekanntmachung%20-%20Sektorenauftraggeber.pdf?dl=0"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2018-S-076-170244_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-076-170244_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-076-170244_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-076-170244_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Josef Freiler"@de;
+  epo:hasInternetAddress "http://www.kirchschlag-bw.gv.at/"^^xsd:anyURI;
+  cccev:email "josef.freiler@kirchschlag.at";
+  cccev:telephone "+43 6641258060" .
+
+epd:id_2018-S-076-170244_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+                  Venedigstadt
+                  2860 Kirchschlag in der Buckligen Welt
+                  Österreich
+               """@de .
+
+epd:id_2018-S-076-170244_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT122>;
+  locn:address epd:id_2018-S-076-170244_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2018-S-076-170244_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2018-S-076-170244_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-076-170244_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2018-S-076-170244_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2018-S-076-170244_Fund_HKNfdBmeACvzBZy3TfjLFj a epo:Fund;
+  epo:hasDescription "Förderung aus Mitteln des Österreichischen Programms für die Entwicklung des ländlichen Raums 2014-2020 auf Grundlage der VO (EU) 1305/2013 des Rates vom 17.12.2013"@de .
+
+epd:id_2018-S-076-170244_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasContactName "Christian Gremel"@de;
+  epo:hasInternetAddress "https://www.pbeg.at/"^^xsd:anyURI;
+  cccev:email "office@pbeg.at";
+  cccev:telephone "+43 2643701023" .
+
+epd:id_2018-S-076-170244_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT122>;
+  locn:postCode "2813";
+  locn:postName "Lichtenegg";
+  locn:thoroughfare "Ransdorf 20" .
+
+epd:id_2018-S-076-170244_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasLegalName "Projektplanungs- Beratungs- und Entwicklungs GmbH"@de;
+  cccev:registeredAddress epd:id_2018-S-076-170244_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2018-S-076-170244_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/09324000> .
+
+epd:id_2018-S-076-170244_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-076-170244_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+                  Lieferauftrag: Angebot wird für Erwerb benötigt.
+               """@de;
+  epo:hasEstimatedValue epd:id_2018-S-076-170244_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-076-170244_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isFundedBy epd:id_2018-S-076-170244_Fund_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds true .
+
+epd:id_2018-S-076-170244_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 160000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-076-170244_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
+  epo:hasFax "+43 2742900513850" .
+
+epd:id_2018-S-076-170244_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  locn:postCode "3109";
+  locn:postName "St. Pölten";
+  locn:thoroughfare "Landhausplatz 1" .
+
+epd:id_2018-S-076-170244_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "NÖ Schlichtungsstelle für öffentliche Aufträge"@de;
+  epo:hasPrimaryContactPoint epd:id_2018-S-076-170244_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU;
+  cccev:registeredAddress epd:id_2018-S-076-170244_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2018-S-076-170244_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2018-S-076-170244_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2018-S-076-170244_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 160000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-076-170244_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-076-170244_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2018-S-076-170244_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2018-S-076-170244_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2018-S-076-170244_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2018-S-076-170244_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2018-04-17"^^xsd:date;
+  epo:hasID epd:id_2018-S-076-170244_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20180419";
+  epo:refersToLot epd:id_2018-S-076-170244_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2018-S-076-170244_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2018-S-076-170244_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 076-170244" .
+
+epd:id_2018-S-076-170244_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT122>;
+  locn:postCode "2860";
+  locn:postName "Kirchschlag";
+  locn:thoroughfare "Hauptplatz 1" .
+
+epd:id_2018-S-076-170244_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Stadtgemeinde Kirchschlag"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gas-heat>;
+  cccev:registeredAddress epd:id_2018-S-076-170244_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-076-170244_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2018-06-18"^^xsd:date;
+  epo:hasEnd "2018-11-30"^^xsd:date .
+
+epd:id_2018-S-076-170244_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09324000> .
+
+epd:id_2018-S-076-170244_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-076-170244_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription """
+               Biomasse-Heizkessel 500 kW thermisch zur Verfeuerung von Hackgut gem. ÖNORM EN ISO 17225-4
+            """@de;
+  epo:hasEstimatedValue epd:id_2018-S-076-170244_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-076-170244_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-076-170244_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+               Lieferung Heizkessel Fernwärme
+            """@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-076-170244_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2018-S-076-170244_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2018-S-076-170244_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-076-170244_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2018-S-076-170244_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2018-S-076-170244_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+43 27429059015540";
+  cccev:email "post@lvwg.noel.gv.at" .
+
+epd:id_2018-S-076-170244_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  locn:postCode "3109";
+  locn:postName "St. Pölten";
+  locn:thoroughfare "Rennbahnstraße 29" .
+
+epd:id_2018-S-076-170244_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Landesverwaltungsgericht Niederösterreich"@de;
+  epo:hasPrimaryContactPoint epd:id_2018-S-076-170244_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2018-S-076-170244_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-076-170244_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-076-170244_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-076-170244_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2018-S-076-170244_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-076-170244_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-076-170244_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

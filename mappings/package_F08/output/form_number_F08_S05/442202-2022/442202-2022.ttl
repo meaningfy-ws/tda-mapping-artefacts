@@ -1,0 +1,104 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-155-442202_AccessTerm_4zjJjpytu5bmHbyNSmtsju a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=455165"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-155-442202_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=455165"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-155-442202_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2022-S-155-442202_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2022-S-155-442202_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "Sébastien Francq"@fr, "Sébastien Francq"@nl;
+  epo:hasInternetAddress "https://www.mil.be/"^^xsd:anyURI;
+  cccev:email "Sebastien.Francq@mil.be";
+  cccev:telephone "+32 24422806" .
+
+epd:id_2022-S-155-442202_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE> .
+
+epd:id_2022-S-155-442202_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-155-442202_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2022-S-155-442202_InformationProviderContactPoint_PHAC3pV7Mi9mSueG6pbn8k a
+    cccev:ContactPoint;
+  epo:hasContactName "Bureau du projet C-UAS"@fr, "C-UAS Project office"@nl;
+  epo:hasInternetAddress "http://www.mil.be"^^xsd:anyURI;
+  cccev:email "MRSYS-LAM-CUAS@mil.be";
+  cccev:telephone "+32 24417269" .
+
+epd:id_2022-S-155-442202_InformationProviderOrganisationAddress_PHAC3pV7Mi9mSueG6pbn8k
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE100>;
+  locn:postCode "1140";
+  locn:postName "Evere";
+  locn:thoroughfare "Rue d'Evere, 1" .
+
+epd:id_2022-S-155-442202_InformationProviderOrganisation_PHAC3pV7Mi9mSueG6pbn8k a
+    org:Organization;
+  epo:hasLegalName "Bureau du projet C-UAS"@fr, "C-UAS Project office"@nl;
+  cccev:registeredAddress epd:id_2022-S-155-442202_InformationProviderOrganisationAddress_PHAC3pV7Mi9mSueG6pbn8k .
+
+epd:id_2022-S-155-442202_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-155-442202_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription "Consultation du marché Lutte anti-drone (système C-UAS)"@fr, "Marktconsultatie Counter Unmanned Aerial Systems (C-UAS System) "@nl .
+
+epd:id_2022-S-155-442202_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-155-442202_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2022-S-155-442202_ProcurementProcedureInformationProvider_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:hasDispatchDate "2022-08-10"^^xsd:date;
+  epo:hasID epd:id_2022-S-155-442202_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220812";
+  epo:refersToLot epd:id_2022-S-155-442202_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2022-S-155-442202_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2022-S-155-442202_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 155-442202" .
+
+epd:id_2022-S-155-442202_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE100>;
+  locn:postCode "1140";
+  locn:postName "Evere";
+  locn:thoroughfare "Rue d'Evere, 1 - BOX 29" .
+
+epd:id_2022-S-155-442202_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC a epo:Identifier;
+  epo:hasIdentifierValue "0308.357.555_25" .
+
+epd:id_2022-S-155-442202_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasID epd:id_2022-S-155-442202_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC;
+  epo:hasLegalName "MRMP-L/P - Algemene Directie Material Resources - Divisie Overheidsopdrachten - Sectie Land Systems - Ondersectie Programma's"@nl,
+    "MRMP-L/P - Direction Générale Material Resources - Division Marchés Publics - Section Land Systems - Sous-section Programmes"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/defence>;
+  cccev:registeredAddress epd:id_2022-S-155-442202_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2022-S-155-442202_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "MRMP-L/P-23LP201-F52-F08_0" .
+
+epd:id_2022-S-155-442202_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/35730000> .
+
+epd:id_2022-S-155-442202_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasAdditionalInformation "Voir l'Avis relatif à l’établissement d’une demande d’information avant le lancement de la procédure (RFI) publication du 04/08/2022 - Numéro BDA: 2022-530001. Les documents du marché sont disponibles gratuitement en accès direct non restreint et complet, à l'adresse: (URL)https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=454684 "@fr,
+    "Zie de Aankondiging met betrekking tot de opmaak van een informatieaanvraagvoor het opstarten van de procedure(RFI). Bekendmaking van 04/08/2022 - Nummer BDA : 2022-530001. De aanbestedingsstukken zijn rechtstreeks, volledig, onbeperkt en gratis beschikbaar op: (URL)https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=454684"@nl;
+  epo:hasID epd:id_2022-S-155-442202_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-155-442202_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2022-S-155-442202_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle "Consultation du marché Lutte anti-drone (système C-UAS) (Titre exact du marché non définitif)"@fr,
+    "Marktconsultatie Counter Unmanned Aerial Systems (C-UAS System) (Exacte titel van de overheidsopdracht niet definitief)"@nl;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-155-442202_AccessTerm_4zjJjpytu5bmHbyNSmtsju .
+
+epd:id_2022-S-155-442202_ProcurementProcedureInformationProvider_PHAC3pV7Mi9mSueG6pbn8k
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-155-442202_InformationProviderContactPoint_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:playedBy epd:id_2022-S-155-442202_InformationProviderOrganisation_PHAC3pV7Mi9mSueG6pbn8k .

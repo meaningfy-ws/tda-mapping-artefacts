@@ -1,0 +1,174 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-184-329776_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-184-329776_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-184-329776_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-184-329776_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Meixner + Partner GmbH, Gögginger Straße 93, 86169 Augsburg"@de;
+  epo:hasFax "+49 8215010510";
+  epo:hasInternetAddress "http://www.meixner-partner.de"^^xsd:anyURI;
+  cccev:email "VgV@meixner-partner.de";
+  cccev:telephone "+49 8215010522" .
+
+epd:id_2016-S-184-329776_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress """
+83022 Rosenheim.
+"""@de .
+
+epd:id_2016-S-184-329776_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE213>;
+  locn:address epd:id_2016-S-184-329776_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2016-S-184-329776_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-184-329776_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-184-329776_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+Beabsichtigt ist eine stufenweise Beauftragung.
+Stufe 1: LPH 6-7 gem. § 34 HOAI 2013
+Stufe 2: LPH 8 gem. § 34 HOAI 2013
+Stufe 3: LPH 9 gem. § 34 HOAI 2013
+Zuerst wird die Stufe 1 beauftragt. Ein Rechtsanspruch auf Beauftragung der weiteren Stufen und Leistungsphasen besteht nicht.
+"""@de .
+
+epd:id_2016-S-184-329776_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-184-329776_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 93.0;
+  time:unitType time:unitMonth .
+
+epd:id_2016-S-184-329776_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-184-329776_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation """
+Vergabeverhandlung ca. 2/2017
+Auftragsvergabe ca. 4/2017
+Leistungsbeginn LPH6 ca. 9/2017
+Baubeginn Sommer 2018, Fertigstellung LPH8 Ende 2024 vorgesehen
+Kostenrahmen voraussi. ca. 30 000 000 EUR (KG 300+400 brutto)
+Die Maßnahme wird durch die Reg.v.Ob.bay. gefördert
+Die Objektplanung LPH 6-9 wird vom AG der Honorarzone III unten zugeordnet
+Bei > 6 geeign. Bewerbern entscheidet ggf. das Los (siehe VI.3).
+"""@de;
+  epo:hasDescription """
+Leistungen der Objektplanung gem. §§ 33 ff HOAI 2013 in Verbindung mit Anlage 10 HOAI 2013 für LPH 6-9, mit stufenweiser Beauftragung für die Generalsanierung und Erweiterung des Karolinengymnasiums in Rosenheim.
+Die „Besonderen Leistungen“ sind in den Vergabeunterlagen aufgeführt.
+Maßnahmenumfang:
+Die Gesamtmaßnahme umfasst den Abbruch 2-fach-Turnhalle und Schulbaukörper B, einen Erweiterungsbau für Schulnutzung, die Generalsanierung Bestand A, sowie den Neubau einer 3-fach-Turnhalle. Das Projekt wird in 3 BA durchgeführt.
+1. BA: Abbruch 2-fach-Turnhalle, Errichtung Erweiterungsbau mit Lernlandschaften u. nat.wiss.Fachklassen
+2. BA: Generalsanierung Bestand A inkl. denkmalgeschützter ehem. Hauskapelle
+3. BA: Abbruch Bestand B, Neubau 3-fach-Turnhalle
+Die Ausführung der Fachräume ist Teil der Leistung und wird nicht vom AG an externen Fachraumplaner vergeben (siehe hierzu auch die Hinweise unter III.2.2)).
+"""@de;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-184-329776_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-184-329776_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2016-S-184-329776_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2016-S-184-329776_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2016-S-184-329776_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2016-S-184-329776_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2016-09-19"^^xsd:date;
+  epo:hasID epd:id_2016-S-184-329776_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20160923";
+  epo:refersToLot epd:id_2016-S-184-329776_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2016-S-184-329776_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2016-S-184-329776_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 184-329776" .
+
+epd:id_2016-S-184-329776_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE213>;
+  locn:postCode "83022";
+  locn:postName "Rosenheim";
+  locn:thoroughfare "Königstraße 24" .
+
+epd:id_2016-S-184-329776_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Stadt Rosenheim"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2016-S-184-329776_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-184-329776_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2016-S-184-329776_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-184-329776_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation """
+Siehe auch III.2.2)
+Ablauf:
+— Interessensbekundung gem. §53 Abs.1 VgV nur via Email an VgV@meixner-partner.de, bis spätestens zum Schlusstermin (siehe IV.2.2);
+— Nach Ablauf des Schlusstermins werden Sie zur Interessensbestätigung aufgefordert.
+Damit beginnt die Teilnahmefrist, gleichzeitig wird mitgeteilt, wie die Bereitstellung der Beschaffungsunterlagen erfolgt (§ 41 VgV). Rückfragen während der Teilnahmefrist nur via Email an VgV@meixner-partner.de, die Beantwortung wird allen Bietern elektronisch zur Verfügung gestellt.
+— Nach Ablauf der Teilnahmefrist werden die Teilnahmeanträge objektiv geprüft;
+— Geeignete Bieter werden anschließend zum Verhandlungsverfahren und zur Abgabe eines Angebotes aufgefordert.
+Falls die Zahl der Bewerber, die die Bedingungen erfüllen und eine entsprechende Punktzahl erreichen, die aufzufordernde Höchstzahl von 6 überschreitet (durch Punktgleichstand), kann die Auswahl (unter den Bewerbern mit Punktgleichstand) durch Los getroffen werden § 75 (6) VgV.
+"""@de;
+  epo:hasDescription """
+Die Stadt Rosenheim plant die Generalsanierung und Erweiterung des Karolinengymnasiums im laufenden Betrieb ohne provisorische Containerschule.
+Der Bestandsbaukörper des Karolinengymnasiums weist ein deutliches Flächendefizit im Vergleich zum Musterraumprogramm auf. Dieses soll durch die Baumaßnahme ausgeglichen werden. Des Weiteren wird durch die Schule die Umsetzung sogenannter Lernlandschaften in den Unterstufen gewünscht. Als dritte Ursache für die Baumaßnahme kann ein höherer Bedarf an Sportflächen genannt werden. Die bestehende Zweifachturnhalle wird im Zuge des Projektes abgerissen und durch den Neubau einer Dreifachturnhalle ersetzt.
+Es wird darauf hingewiesen, dass dieser Auftrag im Verhandlungsverfahren ohne gesonderte Auftragsbekanntmachung vergeben wird. Der öffentliche Auftraggeber verzichtet auf eine Auftragsbekanntmachung nach § 38 Abs. 4 Nrn. 2 und 3 VgV. Alle interessierten Unternehmen werden hiermit aufgefordert, ihr Interesse mitzuteilen (Interessensbekundung).
+"""@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-184-329776_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2016-S-184-329776_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+Generalsanierung und Erweiterung Karolinengymnasium in Rosenheim – Objektplanung Gebäude und Innenräume §33 ff HOAI, LPH 6-9.
+"""@de;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-184-329776_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2016-S-184-329776_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-184-329776_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-184-329776_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-184-329776_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postName "München" .
+
+epd:id_2016-S-184-329776_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Siehe VI.4.1)."@de;
+  cccev:registeredAddress epd:id_2016-S-184-329776_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2016-S-184-329776_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-184-329776_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2016-S-184-329776_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+49 892176-2847";
+  epo:hasInternetAddress "http://www.regierung.oberbayern.bayern.de"^^xsd:anyURI;
+  cccev:email "vergabekammer.suedbayern@reg-ob.bayern.de";
+  cccev:telephone "+49 892176-2411" .
+
+epd:id_2016-S-184-329776_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "80534";
+  locn:postName "München";
+  locn:thoroughfare "Maximilianstraße 39" .
+
+epd:id_2016-S-184-329776_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Regierung von Oberbayern, Vergabekammer Südbayern"@de;
+  epo:hasPrimaryContactPoint epd:id_2016-S-184-329776_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2016-S-184-329776_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-184-329776_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-184-329776_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-184-329776_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2016-10-27T11:00" .
+
+epd:id_2016-S-184-329776_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-184-329776_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-184-329776_Organisation_gqoAAwSV3JaTMsopb9zyKP .

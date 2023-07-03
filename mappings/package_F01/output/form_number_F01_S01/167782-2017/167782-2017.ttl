@@ -1,0 +1,168 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-086-167782_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-086-167782_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2017-S-086-167782_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-086-167782_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Einkauf"@de;
+  epo:hasFax "+49 3090166-1668";
+  epo:hasInternetAddress "www.bim-berlin.de"^^xsd:anyURI;
+  cccev:email "einkauf@bim-berlin.de";
+  cccev:telephone "+49 3090166-1597" .
+
+epd:id_2017-S-086-167782_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE300> .
+
+epd:id_2017-S-086-167782_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-086-167782_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-086-167782_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+Die Mietzeit verlängert sich jeweils um weitere 12 Monate, wenn nicht ein Vertragspartner sechs Monate vor Ablauf der Mietzeit der Verlängerung widerspricht.
+"""@de .
+
+epd:id_2017-S-086-167782_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-086-167782_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-086-167782_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/55512000>, <http://data.europa.eu/cpv/cpv/55520000>,
+    <http://data.europa.eu/cpv/cpv/55524000> .
+
+epd:id_2017-S-086-167782_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-086-167782_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation """
+Mit dieser Bekanntmachung wird zur Interessenbekundung für die Dienstleistungskonzession aufgerufen.
+"""@de;
+  epo:hasDescription """
+Die BIM Berliner Immobilienmanagement GmbH möchte auf der Liegenschaft Dudenstr. 35 – 37 in 10965 Berlin voraussichtlich zum 1.8.2017 eine Neuvermietung der Mensa mit einer mietvertraglichen Festlaufzeit von zunächst 3 Jahren vornehmen. Am vorgenannten Standort sind insgesamt ca. 2 300 Schüler zu versorgen. Die Kantinenfläche beträgt ca. 194,27 m2, bestehend aus Speisesaal, Küche, Toiletten und Nebenflächen. Küchentechnik ist vorhanden. Die Bewirtschaftung der Mensa soll durch einen externen Mieter/Betreiber/Bewirtschafter erfolgen.
+Es wird eine umsatzabhängige Pacht erhoben. Weiterhin ist eine Betriebs- und Nebenkostenpauschale von 800,- Euro monatlich einzukalkulieren.
+Wir bitten Sie, bis zum 16.5.2017 Ihre Bewerbung bei uns einzureichen. Später bekundetes Interesse an der Mensa können wir im Bewerbungsprozess nicht berücksichtigen.
+"""@de;
+  epo:hasPurpose epd:id_2017-S-086-167782_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-086-167782_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-086-167782_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2017-S-086-167782_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-086-167782_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2017-S-086-167782_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2017-S-086-167782_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2017-S-086-167782_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2017-S-086-167782_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2017-05-02"^^xsd:date;
+  epo:hasID epd:id_2017-S-086-167782_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20170504";
+  epo:refersToLot epd:id_2017-S-086-167782_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2017-S-086-167782_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2017-S-086-167782_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 086-167782" .
+
+epd:id_2017-S-086-167782_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE300>;
+  locn:postCode "10178";
+  locn:postName "Berlin";
+  locn:thoroughfare "Keibelstr. 36" .
+
+epd:id_2017-S-086-167782_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Land Berlin (SILB Sondervermögen Immobilien des Landes Berlin)";
+  epo:hasLegalName "Land Berlin – SILB Sondervermögen Immobilien des Landes Berlin, vertreten durch die BIM Berliner Immobilienmanagement GmbH"@de;
+  epo:hasMainActivityDescription "Immobilienwirtschaft";
+  cccev:registeredAddress epd:id_2017-S-086-167782_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-086-167782_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/55500000> .
+
+epd:id_2017-S-086-167782_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-086-167782_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation """
+Die Vergabe von Dienstleistungskonzessionen fällt unterhalb der Schwellenwerte nicht in den Anwendungsbereich des Teils 4 des GWB, der KonzVgV oder der VOL/A.
+Die vorliegende Bekanntmachung/ Vorinformation erfolgt ausschließlich zur Herstellung der Transparenz.
+Ein förmliches Verfahren nach VOL/A bzw. GWB wird damit nicht eingeleitet.
+Die Teilnehmer werden durch den Auftraggeber festgelegt.
+"""@de;
+  epo:hasDescription """
+Die BIM Berliner Immobilienmanagement GmbH möchte auf der Liegenschaft Dudenstr. 35 – 37 in 10965 Berlin voraussichtlich zum 1.8.2017 eine Neuvermietung der Mensa mit einer mietvertraglichen Festlaufzeit von zunächst 3 Jahren vornehmen. Am vorgenannten Standort sind insgesamt ca. 2 300 Schüler zu versorgen. Die Kantinenfläche beträgt ca. 194,27 m2, bestehend aus Speisesaal, Küche, Toiletten und Nebenflächen. Küchentechnik ist vorhanden. Die Bewirtschaftung der Mensa soll durch einen externen Mieter/Betreiber/Bewirtschafter erfolgen.
+Es wird eine umsatzabhängige Pacht erhoben. Weiterhin ist eine Betriebs- und Nebenkostenpauschale von 800,- Euro monatlich einzukalkulieren.
+Wir bitten Sie, bis zum 16.5.2017 Ihre Bewerbung bei uns einzureichen. Später bekundetes Interesse an der Mensa können wir im Bewerbungsprozess nicht berücksichtigen.
+"""@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-086-167782_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2017-S-086-167782_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+Vergabe einer Dienstleistungskonzession – Mensabewirtschaftung Dudenstr. 35 – 37 in 10965 Berlin (Abschluss eines Mietvertrages).
+"""@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-086-167782_ReviewTerm_KjhWjVv578XNpvpTRjZhAs,
+    epd:id_2017-S-086-167782_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2017-S-086-167782_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-086-167782_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2017-S-086-167782_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-086-167782_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postName "Berlin" .
+
+epd:id_2017-S-086-167782_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "BIM GmbH siehe Pkt. VI.4.1"@de;
+  cccev:registeredAddress epd:id_2017-S-086-167782_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2017-S-086-167782_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-086-167782_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2017-S-086-167782_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Im Zusammenhang mit der Vergabe einer Dienstleistungskonzession unterhalb der Schwellenwerte sind keine vergabespezifischen Rechtsbehelfe vorgesehen.
+Das Vergabenachprüfungsverfahren ist nicht eröffnet, da vorliegend kein öffentlicher Auftrag, sondern eine Dienstleistungskonzession vergeben wird.
+""" .
+
+epd:id_2017-S-086-167782_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+49 30901661668";
+  cccev:telephone "+49 30901661660" .
+
+epd:id_2017-S-086-167782_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "10243";
+  locn:postName "Berlin";
+  locn:thoroughfare "Warschauer Str. 41/24" .
+
+epd:id_2017-S-086-167782_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "BIM Berliner Immobilienmanagement GmbH"@de;
+  epo:hasPrimaryContactPoint epd:id_2017-S-086-167782_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2017-S-086-167782_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2017-S-086-167782_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-086-167782_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2017-S-086-167782_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2017-05-16" .
+
+epd:id_2017-S-086-167782_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-086-167782_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2017-S-086-167782_Organisation_gqoAAwSV3JaTMsopb9zyKP .

@@ -1,0 +1,119 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-115-262742_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.etenders.gov.mt/epps/cft/prepareViewCfTWS.do?resourceId=4617256"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-115-262742_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.etenders.gov.mt/epps"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-115-262742_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-115-262742_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-115-262742_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasFax "+356 25982378";
+  epo:hasInternetAddress "https://www.etenders.gov.mt/epps"^^xsd:anyURI;
+  cccev:email "procurement-educ.meef@gov.mt";
+  cccev:telephone "+356 25982348" .
+
+epd:id_2018-S-115-262742_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/MT00> .
+
+epd:id_2018-S-115-262742_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-115-262742_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-115-262742_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-115-262742_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2018-S-115-262742_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-115-262742_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/15894210>, <http://data.europa.eu/cpv/cpv/55512000>,
+    <http://data.europa.eu/cpv/cpv/55523100>, <http://data.europa.eu/cpv/cpv/55524000> .
+
+epd:id_2018-S-115-262742_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-115-262742_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+                  Concession for tuck shop.
+               """@en;
+  epo:hasPurpose epd:id_2018-S-115-262742_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-115-262742_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-115-262742_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2018-S-115-262742_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2018-S-115-262742_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2018-06-15"^^xsd:date;
+  epo:hasID epd:id_2018-S-115-262742_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20180619";
+  epo:refersToLot epd:id_2018-S-115-262742_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2018-S-115-262742_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2018-S-115-262742_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 115-262742" .
+
+epd:id_2018-S-115-262742_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/MLT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/MT>;
+  locn:postCode "VLT2000";
+  locn:postName "Floriana";
+  locn:thoroughfare "Ministry for Education and Employment, Francesco Buonamici Street" .
+
+epd:id_2018-S-115-262742_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasLegalName "Ministry for Education and Employment"@en;
+  epo:hasMainActivityDescription "Tuck Shop";
+  cccev:registeredAddress epd:id_2018-S-115-262742_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-115-262742_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/55500000> .
+
+epd:id_2018-S-115-262742_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-115-262742_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               Payment options: no payment for documentation.
+            """@en;
+  epo:hasDescription """
+               Concession for tuck shop.
+            """@en;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-115-262742_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-115-262742_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               MEDE/MPU25/2018 Concession for the running of school tuck shop at St. Ignatius College Handaq Middle School for scholastic year 2018 /2019 which maybe extended to scholastic year 2019 /2020.
+            """@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-115-262742_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2018-S-115-262742_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2018-S-115-262742_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-115-262742_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-115-262742_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-115-262742_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  cccev:telephone "+356 21239095" .
+
+epd:id_2018-S-115-262742_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/MLT>;
+  locn:postCode "FRN 1601";
+  locn:postName "Floriana";
+  locn:thoroughfare "Notre Dame Ditch" .
+
+epd:id_2018-S-115-262742_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Public Contracts Review Board"@en;
+  epo:hasPrimaryContactPoint epd:id_2018-S-115-262742_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2018-S-115-262742_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-115-262742_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-115-262742_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-115-262742_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "https://www.etenders.gov.mt/epps/cft/prepareViewCfTWS.do?resourceId=4617256"^^xsd:anyURI .

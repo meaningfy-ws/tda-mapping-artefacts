@@ -1,0 +1,126 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-125-223427_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-125-223427_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-125-223427_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-125-223427_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Sidsel Høgh"@en;
+  epo:hasInternetAddress "www.dsb.dk"^^xsd:anyURI;
+  cccev:email "sithhoe@dsb.dk";
+  cccev:telephone "+45 24689230" .
+
+epd:id_2016-S-125-223427_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+DSB's premises in Telegade, Høje Taastrup.
+"""@en .
+
+epd:id_2016-S-125-223427_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK012>;
+  locn:address epd:id_2016-S-125-223427_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-125-223427_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-125-223427_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-125-223427_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-125-223427_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-125-223427_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation """
+A broad range of skills will be needed. Companies applying for pre-qualification must provide references from previous projects to demonstrate their capabilities. DSB will in particular value actual rolling stock experience. A company can participate alone, but sub supplier arrangements and consortia will be accepted. 1 lead must however be appointed to act as SPOC towards DSB.
+"""@en;
+  epo:hasDescription """
+Phase 2 of Fremtidens Tog will be preparation of the rolling stock tender. Final decisions will be taken on any open questions from the current phase 1,5 and the pre-qualification procedure, tender process, evaluation model, etc. will described. The full tender material will be prepared.
+The advisor's expected tasks will be assistance for developing the tender material, e.g. requirement specification for rolling stock and maintenance services, evaluation model, procurement strategy and description and planning of derived projects.
+Apart from phase 2 this tender comprises the following options:
+— Fremtidens Tog phase 3: Tender process and contract (2018-2019);
+— Fremtidens Tog phase 4: Design, test and acceptance (2019-2023);
+— Fremtidens Tog phase 5: Delivery and implementation (2024-2032);
+— Anskaffelse af lokomotiver (AL) phases 2-5: Tender phase, design, test and approval phase, delivery phase and warranty phase (2017-2023).
+"""@en .
+
+epd:id_2016-S-125-223427_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 275000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/DKK> .
+
+epd:id_2016-S-125-223427_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2016-S-125-223427_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2016-S-125-223427_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2016-S-125-223427_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te;
+  epo:hasDispatchDate "2016-06-27"^^xsd:date;
+  epo:hasID epd:id_2016-S-125-223427_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20160701";
+  epo:refersToLot epd:id_2016-S-125-223427_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2016-S-125-223427_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-125-223427_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 125-223427" .
+
+epd:id_2016-S-125-223427_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK01>;
+  locn:postCode "2630";
+  locn:postName "Taastrup";
+  locn:thoroughfare "Telegade 2" .
+
+epd:id_2016-S-125-223427_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "CVR nr. 25050053" .
+
+epd:id_2016-S-125-223427_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2016-S-125-223427_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "DSB SOV"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2016-S-125-223427_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-125-223427_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2016-S-125-223427_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-125-223427_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79400000> .
+
+epd:id_2016-S-125-223427_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2016-S-125-223427_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-125-223427_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+Contract duration incl. all options will be 15 years.
+Review procedure:
+The procedure will consist of a pre-qualification followed by 2 negotiation rounds. 4 applicants will be pre-qualified to submit offers for the tender. The indicative timetable (may be subject to change) is as follows:
+— September 7: Deadline for submitting pre-qualification requests;
+— October 19: Deadline for submitting 1st offer;
+— November 14: Deadline for submitting 2nd offer;
+— December 12: Deadline for submitting 2nd revised offer;
+— December 22: Contract Award;
+— December 23-January 3: Standstill;
+— January 4: Contract signing.
+Please note that the bidders will be required to provide both a performance guarantee and a professional liability insurance. The specific contents of these documents will be described in the tender material.
+"""@en;
+  epo:hasDescription """
+The Fremtidens Tog programme is currently preparing to tender for new rolling stock for DSB. The rolling stock shall provide a capacity of approximately 30 000 seats being delivered during 2024-2029. The rolling stock will handle traffic on both DSB's regional and intercity lines. It will only operate in Denmark. As a sub-project under Fremtidens Tog — Anskaffelse af lokomotiver (Acquisition of locomotives or AL) — is preparing a procurement of 26 electric locomotives to replace the ME and EA locomotives.
+DSB foresees the need of consultant support for both Fremtidens Tog and AL. Therefore, DSB will later this year invite interested companies to apply for pre-qualification to tender for advisory services as support for the phases 2-5 of Fremtidens Tog and the AL project.
+The pre-qualified companies will bid for Fremtidens Tog phase 2, with the remaining phases 3-5 and the AL project kept as options.
+"""@en;
+  epo:hasEstimatedValue epd:id_2016-S-125-223427_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-125-223427_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2016-S-125-223427_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+Fremtidens Tog — tender for multidisciplinary advisory services.
+"""@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-125-223427_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-125-223427_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2016-08-15"^^xsd:date .
+
+epd:id_2016-S-125-223427_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-125-223427_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-125-223427_Organisation_W8v6KSqiUn74jPKJmENKoH .

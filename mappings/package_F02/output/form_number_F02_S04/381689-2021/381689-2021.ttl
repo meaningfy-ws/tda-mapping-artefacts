@@ -1,0 +1,155 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-110-288094_Notice a epo:Notice;
+  epo:hasID epd:id_2021-S-110-288094_NoticeIdentifier_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2021-S-110-288094_NoticeIdentifier_36ktLAsh4DDGMtAzNZMEnw a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 110-288094" .
+
+epd:id_2021-S-144-381689_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://etendering.ted.europa.eu/cft/cft-display.html?cftId=8665"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-144-381689_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-144-381689_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-144-381689_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-144-381689_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.caricom.org"^^xsd:anyURI;
+  cccev:email "procurement@caricom.org";
+  cccev:telephone "+592 2220104" .
+
+epd:id_2021-S-144-381689_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress "Antigua and Barbuda, Bahamas, Barbados, Belize, Dominica, Dominican Republic, Grenada, Guyana, Haiti, Jamaica, St Lucia, St Vincent and the Grenadines, St Kitts and Nevis, Suriname, Trinidad and Tobago."@en .
+
+epd:id_2021-S-144-381689_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  locn:address epd:id_2021-S-144-381689_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2021-S-144-381689_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-144-381689_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-144-381689_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2021-S-144-381689_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEPayment true .
+
+epd:id_2021-S-144-381689_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-144-381689_Fund_oEYZZQWPrbQFajcRU6KZAY a epo:Fund;
+  epo:hasDescription "Support to Cariforum Member States in furthering the implementation of their economic partnership agreement commitments and in meaningfully reaping the benefits of agreement – CRIS 2018/040 – 087 financed under the 11th European Development Fund."@en .
+
+epd:id_2021-S-144-381689_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/80521000> .
+
+epd:id_2021-S-144-381689_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-144-381689_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasAdditionalInformation "Subsequent to the initial contract resulting from the current tender procedure, new services or works consisting in the repetition of similar services or works, up to the estimated amount of 50 000, may be entrusted to the initial contractor by negotiated procedure without prior publication of a contract notice, provided the new services or works are in conformity with the same basic project."@en;
+  epo:hasDescription "The services of a firm or a team of consultants will be engaged to:(a) deliver training in the area of treaty and legislative drafting to stakeholders of Cariforum States;(b) prepare a Cariforum legislative drafting manual;(c) prepare a legislative drafting training manual to facilitate knowledge transfer;(d) identify in collaboration with the project review committee suitable Cariforum Nationals to undertake postgraduate certification in legislative drafting;(e) sensitise key Cariforum stakeholders on the commitments under the EPA for Cariforum and the EU; and(f) develop a communication and visibility plan for this consultancy."@en;
+  epo:hasEstimatedValue epd:id_2021-S-144-381689_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2021-S-144-381689_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isFundedBy epd:id_2021-S-144-381689_Fund_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds true .
+
+epd:id_2021-S-144-381689_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:MonetaryValue;
+  epo:hasAmountValue 500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-144-381689_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
+  epo:hasAmountValue 500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-144-381689_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-144-381689_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2021-S-144-381689_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2021-S-144-381689_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2021-S-144-381689_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE;
+  epo:hasDispatchDate "2021-07-23"^^xsd:date;
+  epo:hasID epd:id_2021-S-144-381689_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32018R1046>;
+  epo:hasPublicationDate "20210728";
+  epo:refersToLot epd:id_2021-S-144-381689_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToPrevious epd:id_2021-S-110-288094_Notice;
+  epo:refersToProcedure epd:id_2021-S-144-381689_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2021-S-144-381689_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 144-381689" .
+
+epd:id_2021-S-144-381689_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GUY>;
+  locn:postName "Georgetown" .
+
+epd:id_2021-S-144-381689_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-int-org>;
+  epo:hasLegalName "Caribbean Forum for ACP States"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-144-381689_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-144-381689_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "INTPA/BGI/2021/EA-RP/0053" .
+
+epd:id_2021-S-144-381689_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/80521000> .
+
+epd:id_2021-S-144-381689_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-144-381689_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation "Please consult the procurement documents available at the address indicated in section I.3). For any additional information, please refer to the document A5f ‘Additional information about the Contract Notice’."@en;
+  epo:hasDescription "The services of a firm or a team of consultants will be engaged to:(a) deliver training in the area of treaty and legislative drafting to stakeholders of Cariforum States;(b) prepare a Cariforum legislative drafting manual;(c) prepare a legislative drafting training manual to facilitate knowledge transfer;(d) identify in collaboration with the project review committee suitable Cariforum Nationals to undertake postgraduate certification in legislative drafting;(e) sensitise key Cariforum stakeholders on the commitments under the EPA for Cariforum and the EU; and(f) develop a communication and visibility plan for this consultancy."@en;
+  epo:hasEstimatedValue epd:id_2021-S-144-381689_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasID epd:id_2021-S-144-381689_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-144-381689_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2021-S-144-381689_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Consultancy for Capacity Building in Legal Drafting"@en;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-144-381689_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2021-S-144-381689_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2021-S-144-381689_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2021-S-144-381689_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-144-381689_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-144-381689_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-144-381689_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Please consult the procurement documents available at the address indicated in section I.3)." .
+
+epd:id_2021-S-144-381689_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasInternetAddress "http://curia.europa.eu"^^xsd:anyURI;
+  cccev:email "GC.Registry@curia.europa.eu";
+  cccev:telephone "+352 4303-1" .
+
+epd:id_2021-S-144-381689_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/LUX>;
+  locn:postCode "L-2925";
+  locn:postName "Luxembourg";
+  locn:thoroughfare "rue du Fort Niedergrünewald" .
+
+epd:id_2021-S-144-381689_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "General Court of the European Union"@en;
+  epo:hasPrimaryContactPoint epd:id_2021-S-144-381689_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2021-S-144-381689_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2021-S-144-381689_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-144-381689_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2021-S-144-381689_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "EN" .
+
+epd:id_2021-S-144-381689_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-144-381689_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-144-381689_Organisation_bhAnCWhMtKVDKPwFpTfXJN .

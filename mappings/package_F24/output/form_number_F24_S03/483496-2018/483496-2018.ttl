@@ -1,0 +1,178 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-211-483496_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.achatpublic.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-211-483496_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.achatpublic.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-211-483496_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-211-483496_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-211-483496_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "M. Tajan — DGS"@fr;
+  epo:hasFax "+33 231871225";
+  epo:hasInternetAddress "https://mairie.villers.fr"^^xsd:anyURI;
+  cccev:email "dgs@villers.fr";
+  cccev:telephone "+33 231146500" .
+
+epd:id_2018-S-211-483496_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Villers-sur-Mer"@fr .
+
+epd:id_2018-S-211-483496_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRD11>;
+  locn:address epd:id_2018-S-211-483496_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-211-483496_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-211-483496_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-211-483496_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-211-483496_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2018-S-211-483496_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 144.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-211-483496_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/92351200> .
+
+epd:id_2018-S-211-483496_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-211-483496_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Durée DSP= 96 mois (soit 8 ans) compte tenu des investissements demandés au délégataire (embellissement des salles du casino et des parties communes du bâtiment municipal). Les candidats devront en outre remettre une offre optionnelle obligatoire avec une durée de 12 ans intégrant la réalisation d'un programme d'investissements supplémentaires tels que définis dans le dossier de consultation."@fr;
+  epo:hasDescription "(nature et quantité des travaux ou services, ou indication des besoins et exigences)La délégation porte sur l'exploitation d'un casino qui comprend actuellement: 83 machines à sous, 1 table de roulette anglaise, 2 tables de Black Jack, 1 table de roulette anglaise électronique à 6 postes, des espaces de bar et de restauration (une salle de restaurant de 70 m2 permettant l'accueil de 48 places assises).Le Casino est implanté dans un bâtiment appartenant à la commune qui comprend également un cinéma et une salle de panoramique, non intégrés à la délégation. La commune mettra le Casino à disposition du candidat retenu. Le délégataire exploitera le service à ses risques et périls. Outre les travaux d'embellissement intérieur du Casino, le délégataire aura également en charge la réalisation des travaux d'embellissement des parties communes intérieures du bâtiment municipal.Le produit brut des jeux du casino s'est élevé à 6 972 884 EUR sur l'exercice 2016/2017. Le chiffre d'affaires des activités de bar et de restauration s'est élevé au cours du même exercice à 325 020 EUR."@fr;
+  epo:hasEstimatedValue epd:id_2018-S-211-483496_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-211-483496_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-211-483496_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 48000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-211-483496_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 48000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-211-483496_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-211-483496_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2018-S-211-483496_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2018-S-211-483496_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2018-S-211-483496_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2018-S-211-483496_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2018-10-29"^^xsd:date;
+  epo:hasID epd:id_2018-S-211-483496_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20181102";
+  epo:refersToLot epd:id_2018-S-211-483496_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2018-S-211-483496_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2018-S-211-483496_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 211-483496" .
+
+epd:id_2018-S-211-483496_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRD11>;
+  locn:postCode "14640";
+  locn:postName "Villers-sur-Mer";
+  locn:thoroughfare "7 rue du général de Gaulle" .
+
+epd:id_2018-S-211-483496_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "211 407 549 00016" .
+
+epd:id_2018-S-211-483496_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2018-S-211-483496_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Commune de Villers-sur-Mer"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2018-S-211-483496_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-211-483496_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "1-DSP" .
+
+epd:id_2018-S-211-483496_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/92351200> .
+
+epd:id_2018-S-211-483496_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-211-483496_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Procédure de Délégation de service public (DSP) ouverte. Les candidats pourront télécharger gratuitement le dossier de consultation depuis la plateforme de dématérialisation www.achatpublic.com. Toutes les demandes de renseignements complémentaires devront être transmises par voie électronique via cette plateforme.Les candidats devront transmettre simultanément leur candidature et leur offre dans des plis distincts, selon les modalités précisées dans le dossier de consultation, au plus tard le 31.1.2019 (11:00). La remise des candidatures et des offres se fera soit sur support papier à l'adresse de contact de la Commune soit par voie électronique via la plateforme de dématérialisation www.achatpublic.com."@fr;
+  epo:hasDescription "Délégation par voie de concession de l'exploitation du Casino municipal à compter du 1.1.2020 pour une durée de 12 ans, option comprise, conformément aux dispositions des art. L. 1411-1 & s.du CGCT, de l'ordonnance nº 2016-65 du 29.1.2016 et du décret nº 2016-86 du 1.2.2016 relatifs aux contrats de concession."@fr;
+  epo:hasEstimatedValue epd:id_2018-S-211-483496_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2018-S-211-483496_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-211-483496_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-211-483496_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Délégation de service public pour l'exploitation du casino municipal"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-211-483496_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2018-S-211-483496_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2018-S-211-483496_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2018-S-211-483496_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-211-483496_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-211-483496_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-211-483496_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "14000";
+  locn:postName "Caen";
+  locn:thoroughfare "3 rue Arthur le Duc" .
+
+epd:id_2018-S-211-483496_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 231524217";
+  epo:hasInternetAddress "http://caen.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-caen@juradm.fr";
+  cccev:telephone "+33 231707272" .
+
+epd:id_2018-S-211-483496_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Caen"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-211-483496_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2018-S-211-483496_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-211-483496_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-211-483496_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-211-483496_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— avant la signature du contrat, un référé précontractuel (art. L. 551-1 et suivants du code de justice administrative)— après la signature du contrat et dans les délais prévus à l'article R. 551-7 du CJA, un référé contractuel (art. L.  551-13 et suivants du code de justice administrative),— dans les 2 mois suivant l'accomplissement des mesures de publicité, d'un recours de pleine juridiction selon les principes dégagés par le Conseil d'État (CE, 4.4.2014, DPT de Tarn-et-Garonne, nº 358994). Ce recours pourra, le cas échéant, être assorti d'un référé suspension (art. L. 521-1 du code de justice administrative)." .
+
+epd:id_2018-S-211-483496_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 231524217";
+  epo:hasInternetAddress "http://caen.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-caen@juradm.fr";
+  cccev:telephone "+33 231707272" .
+
+epd:id_2018-S-211-483496_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "14000";
+  locn:postName "Caen";
+  locn:thoroughfare "3 rue Arthur le Duc" .
+
+epd:id_2018-S-211-483496_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Caen"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-211-483496_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2018-S-211-483496_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-211-483496_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-211-483496_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-211-483496_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.achatpublic.com"^^xsd:anyURI .
+
+epd:id_2018-S-211-483496_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-211-483496_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-211-483496_Organisation_jXahEP38X6pEFgd4J9tLvF .

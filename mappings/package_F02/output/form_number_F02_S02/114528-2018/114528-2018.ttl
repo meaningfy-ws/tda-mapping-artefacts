@@ -1,0 +1,158 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-052-114528_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://acquisti.stradeanas.it"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-052-114528_AwardCriterionPrice_i3DfK3H4UywvSXp2C2Vary a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "100"@it .
+
+epd:id_2018-S-052-114528_AwardCriterionQuality_iU9jCEAWGn5xUqEcaXsqsJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Prezzo"@it;
+  cccev:weight "100"@it .
+
+epd:id_2018-S-052-114528_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-052-114528_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2018-S-052-114528_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2018-S-052-114528_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasInternetAddress "https://acquisti.stradeanas.it"^^xsd:anyURI;
+  cccev:email "p.gioe@stradeanas.it" .
+
+epd:id_2018-S-052-114528_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress """
+                  Provincia di Ascoli Piceno.
+               """@it .
+
+epd:id_2018-S-052-114528_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITI34>;
+  locn:address epd:id_2018-S-052-114528_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2018-S-052-114528_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-052-114528_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-052-114528_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2018-S-052-114528_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2018-S-052-114528_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 224.0;
+  time:unitType time:unitDay .
+
+epd:id_2018-S-052-114528_Fund_oEYZZQWPrbQFajcRU6KZAY a epo:Fund;
+  epo:hasDescription "Si rimanda ai documenti di gara"@it .
+
+epd:id_2018-S-052-114528_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-052-114528_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription """
+                  S.S. 685 – Lavori di ripristino dei calcestruzzi del fornice della galleria Cesaronica (progetto esecutivo COD.: MS.AN.13.E.17.06; cod. SIL: ANMSSIS17014; cod. CUP: F67H17001460001)
+               """@it;
+  epo:isFundedBy epd:id_2018-S-052-114528_Fund_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2018-S-052-114528_AwardCriterionPrice_i3DfK3H4UywvSXp2C2Vary,
+    epd:id_2018-S-052-114528_AwardCriterionQuality_iU9jCEAWGn5xUqEcaXsqsJ .
+
+epd:id_2018-S-052-114528_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
+  epo:hasAmountValue 19290029.42;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-052-114528_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-052-114528_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2018-S-052-114528_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2018-S-052-114528_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2018-S-052-114528_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE;
+  epo:hasDispatchDate "2018-03-12"^^xsd:date;
+  epo:hasID epd:id_2018-S-052-114528_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasPublicationDate "20180315";
+  epo:refersToLot epd:id_2018-S-052-114528_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2018-S-052-114528_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2018-S-052-114528_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 052-114528" .
+
+epd:id_2018-S-052-114528_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITI43>;
+  locn:postCode "00185";
+  locn:postName "Roma";
+  locn:thoroughfare "Via Monzambano 10" .
+
+epd:id_2018-S-052-114528_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "ANAS S.p.A."@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2018-S-052-114528_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2018-S-052-114528_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45233140> .
+
+epd:id_2018-S-052-114528_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-052-114528_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAcceleratedProcedureJustification """
+               Procedura aperta accelerata ai sensi dell’art. 60, comma 3 del D.Lgs. n. 50/2016, con le deroghe di cui alle ordinanze CDPC n. 388/2016, n. 394/2016 e n. 408/2016.
+               Motivazione: l’appalto in oggetto rientra tra gli interventi di cui al 1o stralcio del programma degli interventi di ripristino e messa in sicurezza della viabilità nelle aree interessate dagli eventi sismici a partire da agosto 2016, di cui all’art. 4, comma 2, lett. c) dell’ordinanza della Presidenza del Consiglio dei Ministri n. 408 del 24 agosto 2016, approvato dal capo del Dipartimento della Protezione Civile in data 13.2.2017 e rimodulato in data 20.3.2017.
+            """@it;
+  epo:hasAdditionalInformation """
+               Si rimanda la punto VI.3 «Informazioni complementari» del bando di gara pubblicato sulla GURI n. 33 del 19.3.2018.
+            """@it;
+  epo:hasDescription """
+               S.S. 685 – Lavori di ripristino dei calcestruzzi del fornice della galleria Cesaronica (progetto esecutivo COD.: MS.AN.13.E.17.06; cod. SIL: ANMSSIS17014; cod. CUP: F67H17001460001) CIG: 7407173088
+            """@it;
+  epo:hasEstimatedValue epd:id_2018-S-052-114528_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-052-114528_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2018-S-052-114528_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle """
+               PSL 06/18
+            """@it;
+  epo:isAccelerated true;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-052-114528_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2018-S-052-114528_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2018-S-052-114528_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2018-S-052-114528_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-052-114528_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2018-S-052-114528_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2018-S-052-114528_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Entro 30 gg. dalla pubblicazione o dalla notifica o dalla conoscenza certa, acquisita tramite altra forma, dell’atto da impugnare.
+            """ .
+
+epd:id_2018-S-052-114528_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postName "Territorialmente competente ai sensi dell'art. 120 D.Lgs. n. 104/2010" .
+
+epd:id_2018-S-052-114528_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Tribunale Amministrativo Regionale territorialmente competente ai sensi dell’art. 120 del D.Lgs. n. 104/2010"@it;
+  cccev:registeredAddress epd:id_2018-S-052-114528_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2018-S-052-114528_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-052-114528_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2018-S-052-114528_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "IT";
+  epo:hasSubmissionURL "https://acquisti.stradeanas.it"^^xsd:anyURI .
+
+epd:id_2018-S-052-114528_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-052-114528_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2018-S-052-114528_Organisation_bhAnCWhMtKVDKPwFpTfXJN .

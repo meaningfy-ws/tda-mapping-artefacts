@@ -1,0 +1,170 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-086-223501_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://irl.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=186500&B=ETENDERS_SIMPLE"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-086-223501_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-086-223501_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF;
+  epo:playedBy epd:id_2021-S-086-223501_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2021-S-086-223501_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.nienetworks.co.uk"^^xsd:anyURI;
+  cccev:email "Paul.Martin@nienetworks.co.uk" .
+
+epd:id_2021-S-086-223501_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF a org:Organization;
+  epo:hasLegalName "Northern Ireland Electricity Networks Limited"@en;
+  cccev:registeredAddress epd:id_2021-S-086-223501_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2021-S-086-223501_BuyerOrganisationGroup_gFUcNYVmTUBiATKNrzmurF a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMember epd:id_2021-S-086-223501_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2021-S-086-223501_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-086-223501_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://irl.eu-supply.com/ctm/Company/CompanyInformation/Index/377"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-086-223501_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-086-223501_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-086-223501_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.esb.ie"^^xsd:anyURI;
+  cccev:email "john.daly3@esb.ie";
+  cccev:telephone "+353 18582818" .
+
+epd:id_2021-S-086-223501_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKN> .
+
+epd:id_2021-S-086-223501_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-086-223501_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-086-223501_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-086-223501_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-086-223501_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-086-223501_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-086-223501_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2021-S-086-223501_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/31321100>, <http://data.europa.eu/cpv/cpv/31682410>,
+    <http://data.europa.eu/cpv/cpv/44212200>, <http://data.europa.eu/cpv/cpv/44212230> .
+
+epd:id_2021-S-086-223501_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-086-223501_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Electricity Supply Board (ESB) proposes procuring a multi-contractor framework agreement for the installation of a North-South 400 kV overhead line. ESB is undertaking the procurement of the framework agreement on behalf of itself for works in the Republic of Ireland (ROI) and on behalf of Northern Ireland Electricity Networks Ltd (NIE Networks) for works in Northern Ireland (NI) and is the contracting entity for the purposes of this Procurement. The individual framework agreement will be a tri-partite agreement between the contractor, ESB and NIE Networks. The successful contractors to this framework agreement should be willing to undertake works in Northern Ireland on behalf of NIE Networks and in the Republic of Ireland on behalf on ESB. Drawdown of call off contracts under the framework agreement will be as either direct award or by mini-competition with eligible contractors.Post-award of the framework agreement, ESB will be the contracting party that is responsible for call-off contracts awarded for works in the Republic of Ireland (ROI) and NIE Networks will be the contracting party responsible for call-off contracts awarded for works in Northern Ireland (NI).The multi-contractor framework agreement will involve the construction of a single circuit 400 kV overhead transmission line supported by circa 401 towers for a distance of circa 140 km from a new NIE Networks substation at Turleenan, Co. Tyrone to the existing ESB substation in Woodland, Co. Meath.Without prejudice to ESB’s rights as set out herein and in the pre-qualification questionnaire, please note that all relevant consents have not yet been received for the entirety of this project and ESB may therefore cancel this procurement process."@en;
+  epo:hasPurpose epd:id_2021-S-086-223501_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-086-223501_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-086-223501_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-086-223501_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-086-223501_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2021-S-086-223501_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-086-223501_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-086-223501_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2021-S-086-223501_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2021-04-29"^^xsd:date;
+  epo:hasID epd:id_2021-S-086-223501_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210504";
+  epo:refersToLot epd:id_2021-S-086-223501_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-086-223501_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-086-223501_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 086-223501" .
+
+epd:id_2021-S-086-223501_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE>;
+  locn:postCode "East Wall Road";
+  locn:postName "Dublin 3";
+  locn:thoroughfare "2 Gateway" .
+
+epd:id_2021-S-086-223501_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKN>;
+  locn:postCode "BT9 5HT";
+  locn:postName "Belfast";
+  locn:thoroughfare "120 Malone Road" .
+
+epd:id_2021-S-086-223501_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "N/A" .
+
+epd:id_2021-S-086-223501_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2021-S-086-223501_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Electricity Supply Board (ESB)"@en;
+  cccev:registeredAddress epd:id_2021-S-086-223501_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-086-223501_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "D20/CON/864" .
+
+epd:id_2021-S-086-223501_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45232210> .
+
+epd:id_2021-S-086-223501_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw "ESB is undertaking the procurement on behalf of itself for works in the Republic of Ireland and on behalf of Northern Ireland Electricity Networks Limited (NIE Networks) for works in Northern Ireland."@en .
+
+epd:id_2021-S-086-223501_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-086-223501_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription "Electricity Supply Board (ESB) proposes procuring a multi-contractor framework agreement for the installation of a North-South 400 kV overhead line. ESB is undertaking the procurement of the framework agreement on behalf of itself for works in the Republic of Ireland (ROI) and on behalf of Northern Ireland Electricity Networks Ltd (NIE Networks) for works in Northern Ireland (NI) and is the contracting entity for the purposes of this Procurement. The successful contractors to this framework agreement should be willing to undertake works in Northern Ireland on behalf of NIE Networks and in the Republic of Ireland on behalf on ESB. The multi-contractor framework agreement will involve the construction of a single circuit 400 kV overhead transmission line supported by circa 401 towers for a distance of circa 140 km from a new NIE Networks substation at Turleenan, Co. Tyrone to the existing ESB substation in Woodland, Co. Meath."@en;
+  epo:hasID epd:id_2021-S-086-223501_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/comp-dial>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-086-223501_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-086-223501_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Overhead Line Construction for North-South 400 kV Interconnector under a Multi-contractor Framework Agreement"@en;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-086-223501_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-086-223501_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-086-223501_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2021-S-086-223501_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-086-223501_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-086-223501_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-086-223501_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-086-223501_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-086-223501_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.courts.ie"^^xsd:anyURI;
+  cccev:telephone "+353 18886000" .
+
+epd:id_2021-S-086-223501_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postName "Dublin 7";
+  locn:thoroughfare "Four Courts, Inns Quay" .
+
+epd:id_2021-S-086-223501_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Chief Registrar"@en;
+  epo:hasPrimaryContactPoint epd:id_2021-S-086-223501_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-086-223501_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-086-223501_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-086-223501_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-086-223501_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "http://irl.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=186500&B=ETENDERS_SIMPLE"^^xsd:anyURI .
+
+epd:id_2021-S-086-223501_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-086-223501_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-086-223501_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

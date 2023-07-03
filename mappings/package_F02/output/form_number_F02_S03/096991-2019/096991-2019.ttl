@@ -1,0 +1,160 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-043-096991_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://tarjouspalvelu.fi/pudasjarvi"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2019-S-043-096991_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-043-096991_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2019-S-043-096991_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2019-S-043-096991_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Jouko Väänänen"@fi;
+  epo:hasInternetAddress "http://www.pudasjarvenvuokratalot.fi/"^^xsd:anyURI;
+  cccev:email "jouko.vaananen@pudasjarvi.fi";
+  cccev:telephone "+358 408288241" .
+
+epd:id_2019-S-043-096991_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress "Pudasjärven kaupungin keskustan alue"@fi .
+
+epd:id_2019-S-043-096991_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FI1D9>;
+  locn:address epd:id_2019-S-043-096991_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2019-S-043-096991_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-043-096991_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-043-096991_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2019-S-043-096991_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2019-S-043-096991_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 15.0;
+  time:unitType time:unitMonth .
+
+epd:id_2019-S-043-096991_InformationProviderContactPoint_TQABXDaYTEjCPjunpz6abq a
+    cccev:ContactPoint;
+  epo:hasContactName "Antti Karjalainen"@fi;
+  epo:hasInternetAddress "https://www.promen.fi"^^xsd:anyURI;
+  cccev:email "antti.karjalainen@promen.fi";
+  cccev:telephone "+358 405884421" .
+
+epd:id_2019-S-043-096991_InformationProviderOrganisationAddress_TQABXDaYTEjCPjunpz6abq
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FIN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FI1D9>;
+  locn:postCode "90570";
+  locn:postName "Oulu";
+  locn:thoroughfare "Biologintie 5-7" .
+
+epd:id_2019-S-043-096991_InformationProviderOrganisation_TQABXDaYTEjCPjunpz6abq a
+    org:Organization;
+  epo:hasLegalName "Rakennuttajatoimisto Promen Oy"@fi;
+  cccev:registeredAddress epd:id_2019-S-043-096991_InformationProviderOrganisationAddress_TQABXDaYTEjCPjunpz6abq .
+
+epd:id_2019-S-043-096991_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45000000>, <http://data.europa.eu/cpv/cpv/45210000>,
+    <http://data.europa.eu/cpv/cpv/45223000>, <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2019-S-043-096991_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-043-096991_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription "Hankkeessa tontille rakennetaan yksi (1) nelikerroksinen asuintalo sekä kaksi (2) kolmikerroksista asuintalo. Asuintalot voivat olla kerros- tai luhtitaloja. Kiinteistöjen pohjakerroksiin sijoitetaan liiketilaa. Talojen välistä kulkee kävelytie, joka johtaa Iijoen rantaan. Talojen väliin sijoitetaan yleinen leikkikenttä, joka olisi kaikkien kaupunkilaisten käytössä. Rakennukset toteutetaan innovatiivisina ja kustannustehokkaina ratkaisuina, joissa käytetään puu-, teräs- ja betonirakenteita mahdollisuuksien mukaan. Rakennusten julkisivut toteutetaan hirsirakenteisina. Rakennushanke tullaan toteuttamaan Kuivaketju10:n periaatteiden mukaisesti ja erityistä huomiota kiinnitetään kosteuden- ja puhtaudenhallintaan rakennusvaiheessa. Rakennukset toteutetaan P1-puhtausluokassa. Hanke toteutetaan KVR-urakkamuodolla, jossa vastuu hankkeen lopullisesta suunnittelusta on urakoitsijalla. Tilaajan tarkoituksena on käyttää hankinnassa tarjouspalkkiota."@fi;
+  epo:hasPurpose epd:id_2019-S-043-096991_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds false .
+
+epd:id_2019-S-043-096991_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
+  epo:hasAmountValue 6950000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-043-096991_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-043-096991_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2019-S-043-096991_ProcurementProcedureInformationProvider_TQABXDaYTEjCPjunpz6abq,
+    epd:id_2019-S-043-096991_Reviewer_Sc23ScTxybJ3bYD3QjmgGS;
+  epo:hasDispatchDate "2019-02-28"^^xsd:date;
+  epo:hasID epd:id_2019-S-043-096991_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20190301";
+  epo:refersToLot epd:id_2019-S-043-096991_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2019-S-043-096991_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2019-S-043-096991_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 043-096991" .
+
+epd:id_2019-S-043-096991_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FIN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FI1D9>;
+  locn:postCode "93100";
+  locn:postName "Pudasjärvi";
+  locn:thoroughfare "Varsitie 7" .
+
+epd:id_2019-S-043-096991_OrganisationIdentifier_bhAnCWhMtKVDKPwFpTfXJN a epo:Identifier;
+  epo:hasIdentifierValue "0233813-6" .
+
+epd:id_2019-S-043-096991_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2019-S-043-096991_OrganisationIdentifier_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:hasLegalName "Pudasjärven Vuokratalot Oy"@fi;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/hc-am>;
+  cccev:registeredAddress epd:id_2019-S-043-096991_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2019-S-043-096991_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45211340> .
+
+epd:id_2019-S-043-096991_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-043-096991_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation "Tilaaja varaa itselleen mahdollisuuden keskeyttää hankinta hankintalain mukaisesti, jos ennakoitu arvo ylittyy, tai ARA tai kaupungin valtuusto eivät myönnä rahoitusta, tai Pudasjärven Vuokratalot Oy:n hallitus ei hyväksy jätettyä tarjousta. Hankkeelle on haettu rahoitusta myös Kuntarahoituksen kautta. Rahoittaja valitaan myöhemmin hankkeen edetessä."@fi;
+  epo:hasDescription "Kolmen (3) ARA-korkotukilainoitetun kerros-/luhtitalon rakentaminen KVR-urakkana, sisältäen suunnittelun Pudasjärven Vuokratalot Oy:n suunnitteluohjeiden mukaisesti. Kerrostalot sijoittuvat Pudasjärven keskustaan osoitteeseen Kauppatie 10. Kerros-/luhtitalojen alustava huoneistoala on yhteensä 2 500 htm2. Alustava asuntojen lukumäärä on 53 kappaletta ja liikehuoneistojen lukumäärä kaksi (2) kappaletta. Tavoitteena on käyttää kerrostalojen rakennusmateriaalina painumatonta hirttä mahdollisimman laajasti kustannustehokkuus huomioiden. Alustavan aikataulun mukaisesti rakennustyöt on tarkoitus aloittaa loppuvuodesta 2019. Kohteen tulee olla valmis kevätkaudella 2021."@fi;
+  epo:hasEstimatedValue epd:id_2019-S-043-096991_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/comp-dial>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-043-096991_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2019-S-043-096991_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Pudasjärven Vuokratalot Oy / Kerrostalojen KVR-urakka"@fi;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-043-096991_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2019-S-043-096991_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2019-S-043-096991_ProcurementProcedureInformationProvider_TQABXDaYTEjCPjunpz6abq
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-043-096991_InformationProviderContactPoint_TQABXDaYTEjCPjunpz6abq;
+  epo:playedBy epd:id_2019-S-043-096991_InformationProviderOrganisation_TQABXDaYTEjCPjunpz6abq .
+
+epd:id_2019-S-043-096991_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasFax "+358 295643314";
+  epo:hasInternetAddress "http://www.oikeus.fi/markkinaoikeus"^^xsd:anyURI;
+  cccev:email "markkinaoikeus@oikeus.fi";
+  cccev:telephone "+358 295643300" .
+
+epd:id_2019-S-043-096991_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FIN>;
+  locn:postCode "00520";
+  locn:postName "Helsinki";
+  locn:thoroughfare "Radanrakentajantie 5" .
+
+epd:id_2019-S-043-096991_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Markkinaoikeus"@fi;
+  epo:hasPrimaryContactPoint epd:id_2019-S-043-096991_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2019-S-043-096991_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2019-S-043-096991_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-043-096991_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2019-S-043-096991_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "FI";
+  epo:hasSubmissionURL "https://tarjouspalvelu.fi/pudasjarvi?id=220790&tpk=f08f42af-2787-4a63-8b7c-915742ebcec0"^^xsd:anyURI .

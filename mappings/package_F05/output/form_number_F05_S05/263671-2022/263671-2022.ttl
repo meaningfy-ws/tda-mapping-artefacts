@@ -1,0 +1,203 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-095-263671_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://riigihanked.riik.ee/rhr-web/#/procurement/4530648/general-info"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-095-263671_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-095-263671_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF;
+  epo:playedBy epd:id_2022-S-095-263671_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2022-S-095-263671_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF a cccev:ContactPoint;
+  epo:hasContactName "EDUARD KARPOVITŠ"@et;
+  epo:hasInternetAddress "http://www.energia.ee"^^xsd:anyURI;
+  cccev:email "solutions@enefit.com";
+  cccev:telephone "+372 56497427" .
+
+epd:id_2022-S-095-263671_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF a org:Organization;
+  epo:hasID epd:id_2022-S-095-263671_OrganisationIdentifier_gFUcNYVmTUBiATKNrzmurF;
+  epo:hasLegalName "Enefit Solutions AS"@et;
+  cccev:registeredAddress epd:id_2022-S-095-263671_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2022-S-095-263671_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2022-S-095-263671_BuyerOrganisationGroup_gFUcNYVmTUBiATKNrzmurF a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMember epd:id_2022-S-095-263671_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2022-S-095-263671_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-095-263671_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-095-263671_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-095-263671_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-095-263671_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "EDUARD KARPOVITŠ"@et;
+  epo:hasInternetAddress "http://www.energia.ee"^^xsd:anyURI;
+  cccev:email "tootmine@energia.ee";
+  cccev:telephone "+372 56497427" .
+
+epd:id_2022-S-095-263671_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Ida-Virumaa"@et .
+
+epd:id_2022-S-095-263671_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EE>;
+  locn:address epd:id_2022-S-095-263671_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2022-S-095-263671_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-095-263671_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-095-263671_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2022-S-095-263671_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2022-S-095-263671_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-095-263671_DynamicPurchaseSystemTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G
+  a epo:DynamicPurchaseSystemTechniqueUsage .
+
+epd:id_2022-S-095-263671_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/24300000> .
+
+epd:id_2022-S-095-263671_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-095-263671_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Hankija ostab järgmisi keemiakaupad ja keemilised reagendid: väävelhape, soolhape, vedel süsihappegaas, tehniline vedel alumiiniumsulfaat , trinaatriumfosfaat, naatriumvesiniksulfit (Sodium bisulfite) 38-40% lahus, hüdrasiinhüdraat jne."@et;
+  epo:hasPurpose epd:id_2022-S-095-263671_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-095-263671_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
+
+epd:id_2022-S-095-263671_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-095-263671_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2022-S-095-263671_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2022-S-095-263671_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2022-S-095-263671_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2022-S-095-263671_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2022-S-095-263671_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2022-05-12"^^xsd:date;
+  epo:hasID epd:id_2022-S-095-263671_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220517";
+  epo:refersToLot epd:id_2022-S-095-263671_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2022-S-095-263671_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2022-S-095-263671_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 095-263671" .
+
+epd:id_2022-S-095-263671_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/EST>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EE>;
+  locn:postCode "40107";
+  locn:postName " Narva-Jõesuu linn";
+  locn:thoroughfare "Keskterritooriumi/1" .
+
+epd:id_2022-S-095-263671_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/EST>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EE>;
+  locn:postCode "41537";
+  locn:postName " Jõhvi vald";
+  locn:thoroughfare "Malmi tn 8" .
+
+epd:id_2022-S-095-263671_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "10579981" .
+
+epd:id_2022-S-095-263671_OrganisationIdentifier_gFUcNYVmTUBiATKNrzmurF a epo:Identifier;
+  epo:hasIdentifierValue "10633284" .
+
+epd:id_2022-S-095-263671_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2022-S-095-263671_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Enefit Power AS"@et;
+  cccev:registeredAddress epd:id_2022-S-095-263671_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-095-263671_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "250219" .
+
+epd:id_2022-S-095-263671_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/24300000> .
+
+epd:id_2022-S-095-263671_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-095-263671_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Dünaamilise hanke korral on kõigil hanke kvalifitseerimistingimusi täitvatel pakkujatel võimalik igal ajal hankesüsteemiga liituda ning pakkumusi esitada endale sobivas piirkonnas tellitavatele asjadele."@et;
+  epo:hasDescription "Hankija ostab järgmisi keemiakaupad ja keemilised reagendid: väävelhape, soolhape, vedel süsihappegaas, tehniline vedel alumiiniumsulfaat , trinaatriumfosfaat, naatriumvesiniksulfit (Sodium bisulfite) 38-40% lahus, hüdrasiinhüdraat jne."@et;
+  epo:hasID epd:id_2022-S-095-263671_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-095-263671_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2022-S-095-263671_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Keemiakaupade ja keemiliste reagentide ostmine"@et;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-095-263671_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2022-S-095-263671_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2022-S-095-263671_DynamicPurchaseSystemTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2022-S-095-263671_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-095-263671_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-095-263671_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-095-263671_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/EST>;
+  locn:postCode "10122";
+  locn:postName "Tallinn";
+  locn:thoroughfare "Endla 13/Lõkke 5" .
+
+epd:id_2022-S-095-263671_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.fin.ee/riigihangete-poliitika"^^xsd:anyURI;
+  cccev:email "vako@fin.ee";
+  cccev:telephone "+372 6113713" .
+
+epd:id_2022-S-095-263671_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Riigihangete vaidlustuskomisjon"@et;
+  epo:hasPrimaryContactPoint epd:id_2022-S-095-263671_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2022-S-095-263671_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2022-S-095-263671_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-095-263671_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2022-S-095-263671_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.fin.ee/riigihangete-poliitika"^^xsd:anyURI;
+  cccev:email "vako@fin.ee";
+  cccev:telephone "+372 6113713" .
+
+epd:id_2022-S-095-263671_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/EST>;
+  locn:postCode "10122";
+  locn:postName "Tallinn";
+  locn:thoroughfare "Endla 13/Lõkke 5" .
+
+epd:id_2022-S-095-263671_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Riigihangete vaidlustuskomisjon"@et;
+  epo:hasPrimaryContactPoint epd:id_2022-S-095-263671_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2022-S-095-263671_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-095-263671_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-095-263671_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-095-263671_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "EN", "ET";
+  epo:hasSubmissionURL "https://riigihanked.riik.ee/rhr-web/#/procurement/4530648/tenders"^^xsd:anyURI .
+
+epd:id_2022-S-095-263671_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-095-263671_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-095-263671_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

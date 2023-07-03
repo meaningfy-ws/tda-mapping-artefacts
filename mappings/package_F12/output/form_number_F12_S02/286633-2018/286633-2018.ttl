@@ -1,0 +1,205 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-125-286633_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "www.karo-architekten.de/wb-leipzig-stoetteritz"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2018-S-125-286633_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-125-286633_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:playedBy epd:id_2018-S-125-286633_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2018-S-125-286633_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF a cccev:ContactPoint;
+  epo:hasContactName "Nicole Rühl"@de;
+  epo:hasFax "+49 3411234881";
+  epo:hasInternetAddress "www.leipzig.de"^^xsd:anyURI;
+  cccev:email "nicole.ruehl@leipzig.de";
+  cccev:telephone "+49 3411234858" .
+
+epd:id_2018-S-125-286633_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF a org:Organization;
+  epo:hasLegalName "Stadt Leipzig, Stadtplanungsamt"@de;
+  cccev:registeredAddress epd:id_2018-S-125-286633_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2018-S-125-286633_BuyerOrganisationGroup_Vx4nE2MhH2AK3p6fvMzsYF a epo:OrganisationGroup;
+  epo:hasMainActivityDescription "Projektentwicklung; Allgemeine Verwaltung";
+  epo:hasMember epd:id_2018-S-125-286633_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2018-S-125-286633_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2018-S-125-286633_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-125-286633_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2018-S-125-286633_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2018-S-125-286633_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Katharina Krause"@de;
+  epo:hasFax "+49 34124431-90";
+  epo:hasInternetAddress "www.wep-projekt.de"^^xsd:anyURI;
+  cccev:email "krause@wep-projekt.de";
+  cccev:telephone "+49 34124431-28" .
+
+epd:id_2018-S-125-286633_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2018-S-125-286633_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-125-286633_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2018-S-125-286633_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasContactName "KARO* architekten, Antje Heuer"@de;
+  epo:hasFax "+49 3419610215";
+  epo:hasInternetAddress "www.karo-architekten.de"^^xsd:anyURI;
+  cccev:email "wb-leipzig-stoetteritz@karo-architekten.de";
+  cccev:telephone "+49 3415641501" .
+
+epd:id_2018-S-125-286633_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DED51>;
+  locn:postCode "04105";
+  locn:postName "Leipzig";
+  locn:thoroughfare "Pfaffendorfer Straße 26 b" .
+
+epd:id_2018-S-125-286633_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasLegalName "KARO* architekten"@de;
+  cccev:registeredAddress epd:id_2018-S-125-286633_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2018-S-125-286633_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71400000> .
+
+epd:id_2018-S-125-286633_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-125-286633_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+                  Gegenstand des Verfahrens ist die städtebauliche und freiraumplanerische Konzeption eines Quartiers im Südosten der Stadt Leipzig. Das Betrachtungsgebiet zwischen Holzhäuser Straße und Kolmstraße befindet sich im Ortsteil Stötteritz und umfasst eine Größe von etwa 12,7 Hektar. Ziel ist es, unter Berücksichtigung städtebaulicher, freiraumplanerischer, verkehrlicher und ökologischer Aspekte ein zeitgemäßes, baulich-kompaktes, durchgrüntes und lebendiges Stadtquartier zu entwickeln. Es soll sich durch Nutzungs-, Nutzer- und Wohnungsmix und eine besondere Qualität der Grün- und Erholungsflächen auszeichnen, welche die Qualifizierung und Einbindung vorhandener Freiflächen einschließt. Geprüft werden sollen dabei insbesondere die brachgefallenen ehemaligen Gewerbeflächen im Gebiet hinsichtlich ihrer Entwicklungsmöglichkeiten.
+                  Das Betrachtungsgebiet ist durch heterogene Bau- und Nutzungsstrukturen gekennzeichnet. Nebeneinander her existieren gründerzeitliche Wohnzeilen, freistehende Büro- und Geschäftshäuser sowie Gewerberiegel, zudem Brachflächen mit hohem Versiegelungsgrad, Pachtgärten, Jugendhilfeprojekt, Straßenbahnwendeschleife und Schwimmhalle. Im südlichen Gebiet befinden sich kleinteiligere Bebauung und stark durchgrünte Bereiche. Das Betrachtungsgebiet umfasst sowohl private als auch städtische Grundstücke.
+                  Im engeren Wettbewerbsgebiet sind drei Teilbereiche mit jeweils bestimmten Themenschwerpunkten auf insgesamt 9,1 Hektar zu konzipieren:
+                  Angestrebt für das neue Stadtquartier wird eine Nutzungsstruktur aus Wohnen unterschiedlicher Wohn- und Eigentumsformen, aus Gemeinbedarfs- und Wohnfolgeeinrichtungen, aus öffentlichen und privaten Freiräumen sowie wohngebietsverträglichen Nutzungen und Anlagen, um die Ziele des wohnungspolitischen Konzepts der Stadt Leipzig umzusetzen.
+                  Im Teilbereich A sollen mindestens 330 Wohnungen im Geschosswohnungsbau mit einem Anteil von ca. 30 % mietpreis- und belegungsgebundenem Wohnraum entstehen. Zudem sollen Nutzungsbereiche im Erdgeschoss für nicht störendes Gewerbe vorgesehen werden. Denkbar sind hier Büroeinheiten für z.B. wohnungsbezogene Dienstleistungen und Freiberufler, Praxen, Café. Zusätzlich soll ein Objekt für Pflege bzw. Betreutes Wohnen mit einer gebäudeintegrierten Kita verortet werden.
+                  Über den Teilbereich B soll wesentlich die Erschließung des Quartiers erfolgen. Zur baulichen Entwicklung der Flächen gehören unter anderem die Anordnung einer 4-zügigen Oberschule mit Dreifeldsporthalle, zugehörigen Freiflächen und Bolzplatz. Auf den stadteigenen Flächen sollen auch die vorhandenen Grünflächen einschließlich des Zaubergartens, einer Einrichtung des gemeinnützigen Columbus Junior e.V., integriert werden.
+                  Im Teilbereich C soll die Einbindung der bestehenden Schwimmhalle und die Option eines Erweiterungsbaus geprüft werden.
+                  Der Wettbewerb richtet sich an Stadtplaner und Architekten in Zusammenarbeit mit Landschaftsarchitekten. Die Zusammenarbeit mit einem Landschaftsarchitekten/-planer ist zwingend erforderlich. Das Verfahren soll als nichtoffener Wettbewerb nach RPW 2013 mit vorgeschaltetem Bewerbungsverfahren durchgeführt werden. Im Rahmen eines vorgeschalteten offenen Bewerbungsverfahrens werden die Teilnahmevoraussetzungen geprüft und anhand von definierten Auswahlkriterien insgesamt 12 Teilnehmer ausgewählt.
+                  Der Wettbewerb wird anonym durchgeführt. Die Wettbewerbssprache ist deutsch.
+                  Ein Auftragsversprechen kann nicht erteilt werden. Der Ideenwettbewerb zielt auf die Lösung einer konzeptionellen Aufgabe, welche als Grundlage einer weiteren Entscheidungsfindung dienen soll.
+               """@de;
+  epo:hasPurpose epd:id_2018-S-125-286633_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-125-286633_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-125-286633_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2018-S-125-286633_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2018-S-125-286633_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2018-S-125-286633_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2018-S-125-286633_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2018-06-28"^^xsd:date;
+  epo:hasID epd:id_2018-S-125-286633_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20180703";
+  epo:refersToLot epd:id_2018-S-125-286633_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2018-S-125-286633_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2018-S-125-286633_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 125-286633" .
+
+epd:id_2018-S-125-286633_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DED51>;
+  locn:postCode "04103";
+  locn:postName "Leipzig";
+  locn:thoroughfare "Deutscher Platz 4" .
+
+epd:id_2018-S-125-286633_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DED51>;
+  locn:postCode "04109";
+  locn:postName "Leipzig";
+  locn:thoroughfare "Martin-Luther-Ring 4-6" .
+
+epd:id_2018-S-125-286633_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasLegalName "Stötteritzpark GmbH & Co. KG"@de;
+  cccev:registeredAddress epd:id_2018-S-125-286633_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2018-S-125-286633_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2018-S-125-286633_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+               VI.3.2) Leistungsumfang
+               Der voraussichtliche Leistungsumfang umfasst im wesentlichen die städtebaulich-freiräumliche Grundkonzeption in den Maßstäben 1:2.500 und 1:1.000 sowie einen ausgewählten Vertiefungsbereich im Maßstab 1:500 mit Perspektive auf insgesamt zwei Blätter DIN A1, sowie Modell, Berechnungen und Erläuterung.
+               VI.3.3) Vorgesehene Termine:
+               Bereitstellung der Auslobungsunterlagen 20.8.2018
+               Rückfragenkolloquium 10.9.2018
+               Abgabe der Wettbewerbspläne: 26.10.2018
+               Abgabe der Modelle: 2.11.2018
+               Preisgericht 20.11.2018
+            """@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-125-286633_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2018-S-125-286633_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+               Nichtoffener städtebaulicher Ideenwettbewerb „Stadtquartier an der Kolmstraße“ in Leipzig-Stötteritz
+            """@de;
+  epo:isDesignContest true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-125-286633_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2018-S-125-286633_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2018-S-125-286633_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-125-286633_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2018-S-125-286633_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2018-S-125-286633_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+49 3419771049";
+  epo:hasInternetAddress "www.ldl.sachsen.de"^^xsd:anyURI;
+  cccev:telephone "+49 3419771040" .
+
+epd:id_2018-S-125-286633_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "04013";
+  locn:postName "Leipzig";
+  locn:thoroughfare "Braustraße 2" .
+
+epd:id_2018-S-125-286633_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Vergabekammer des Freistaates Sachsen bei der Landesdirektion Leipzig"@de;
+  epo:hasPrimaryContactPoint epd:id_2018-S-125-286633_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2018-S-125-286633_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2018-S-125-286633_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-125-286633_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2018-S-125-286633_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2018-S-125-286633_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DED51>;
+  locn:postCode "04105";
+  locn:postName "Leipzig";
+  locn:thoroughfare "Pfaffendorfer Straße 26 b" .
+
+epd:id_2018-S-125-286633_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasContactName "Antje Heuer"@de;
+  epo:hasFax "+49 3419610215";
+  epo:hasInternetAddress "www.karo-architekten.de"^^xsd:anyURI;
+  cccev:email "wb-leipzig-stoetteritz@karo-architekten.de";
+  cccev:telephone "+49 3415641501" .
+
+epd:id_2018-S-125-286633_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasLegalName "KARO* architekten"@de;
+  epo:hasPrimaryContactPoint epd:id_2018-S-125-286633_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2018-S-125-286633_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2018-S-125-286633_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-125-286633_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2018-S-125-286633_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

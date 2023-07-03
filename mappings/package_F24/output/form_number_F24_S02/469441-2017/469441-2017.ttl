@@ -1,0 +1,137 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-225-469441_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.marches-securises.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-225-469441_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.marches-securises.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-225-469441_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-225-469441_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-225-469441_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasFax "+33 251320287";
+  epo:hasInternetAddress "http://www.lsoagglo.fr"^^xsd:anyURI;
+  cccev:email "carmen.perez@lsoagglo.fr";
+  cccev:telephone "+33 251238440" .
+
+epd:id_2017-S-225-469441_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+                  Communauté d'agglomération des Sables d'Olonne, le ressort territorial de l'autorité délégante a été étendu au 1.1.2017 par création d'une communauté d'agglomération.
+               """@fr .
+
+epd:id_2017-S-225-469441_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRG05>;
+  locn:address epd:id_2017-S-225-469441_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-225-469441_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2017-S-225-469441_Period_RgULVPVVYP9pkvK789PCUZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-225-469441_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-225-469441_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-225-469441_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2017-S-225-469441_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-225-469441_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation """
+                  Le réseau actuel: 6 lignes régulières, 4 lignes à vocation scolaire, transport à la demande (lignes virtuelles), 3 lignes péri-urbaines, navettes estivales, agence commerciale.
+               """@fr;
+  epo:hasDescription """
+                  Le contrat concerne les services de mobilité urbaine. L'exploitation s'effectue aux risques et périls du délégataire. Les recettes seront perçues auprès des usagers par le délégataire, soit pour son compte propre, soit pour le compte de l'autorité délégante, suivant des tarifs qui seront fixés dans la convention. Une contribution financière forfaitaire sera par ailleurs versée par l'autorité délégante en contrepartie des sujétions tarifaires et de service public imposées au délégataire. Le délégataire réalise et finance les investissements (véhicules et dépôt), mais il sera demandé aux candidats d'étudier en option l'acquisition et le financement des matériels roulant.
+               """@fr;
+  epo:hasPurpose epd:id_2017-S-225-469441_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-225-469441_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-225-469441_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-225-469441_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2017-S-225-469441_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-225-469441_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2017-11-20"^^xsd:date;
+  epo:hasID epd:id_2017-S-225-469441_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20171123";
+  epo:refersToLot epd:id_2017-S-225-469441_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2017-S-225-469441_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-225-469441_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 225-469441" .
+
+epd:id_2017-S-225-469441_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRG05>;
+  locn:postCode "85100";
+  locn:postName "Les Sables-d'Olonne";
+  locn:thoroughfare "3 avenue Carnot" .
+
+epd:id_2017-S-225-469441_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "CA Les Sables-d'Olonne Agglomération"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-225-469441_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-225-469441_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;
+  epo:hasBeginning "2019-01-01"^^xsd:date;
+  epo:hasEnd "2024-12-31"^^xsd:date .
+
+epd:id_2017-S-225-469441_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2017-S-225-469441_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-225-469441_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               Les candidats transmettront un dossier de candidature comportant l'ensemble des éléments listés à la rubrique Iii.1 du présent avis. Les dossiers de candidature doivent parvenir par voie postale sous pli recommandé avec avis de réception ou remises contre récépissé, sous double enveloppe fermée, avant la date et l'heure limite. L'enveloppe intérieure portera la mention «Ne pas ouvrir-candidature pour la DSP Mobilité Urbaine». La transmission des plis par voie électronique n'est pas autorisée. Les candidats seront agréés par la commission de délégation de service public à partir des critères suivants:
+               — garanties professionnelles et financières,
+               — respect de l'obligation d'emploi des travailleurs handicapés prévue à l'article L. 5212-1 et suivants du code du travail,
+               — aptitude à assurer la continuité du service public et l'égalité des usagers devant le service public.
+               Le dossier de consultation, exposant notamment les critères d'attribution du contrat, sera adressé aux candidats agréés, qui seront invités à remettre une offre. La commission de DSP sera appelée à donner son avis sur les offres remises. Sur la base de cet avis, le président engagera des négociations, à l'issue desquelles il proposera au conseil communautaire le choix d'un candidat sur la base des critères d'attribution, ainsi que l'approbation du contrat.
+            """@fr;
+  epo:hasDescription """
+               Le contrat portera sur le réseau des mobilités dans le ressort territorial de la Communauté d'agglomération des Sables d'Olonne, à savoir: le réseau actuel (lignes régulières, lignes à vocation scolaires, navettes etc.), y compris l'intégration des scolaires de Vairé, l'ile d'Olonne et Olonne-sur-Mer; la coordination des mobilités actives avec le réseau: un service \"Vélo\" qui pourra être de type location longue durée et une politique de stationnement vélo pertinente (rabattement), la marche à pied avec des cheminements piétons efficaces permettant la complémentarité des modes, la coordination du covoiturage, de l'autopartage, sur la base d'initiatives existantes localement ou à mettre en place et renforcer; la prise en compte du Passeur dans l'offre globale de mobilité de l'agglomération; en option, le transport scolaire sur les autres communes rétro-littorales, Saint-Mathurin et Sainte-Foy, LSOA récupérant les marchés en cours auprès de la Région (échéance 2022).
+            """@fr;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-225-469441_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-225-469441_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Délégation de la gestion du service public de la mobilité urbaine des Sables d'Olonne.
+            """@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-225-469441_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-225-469441_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-225-469441_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-225-469441_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-225-469441_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-225-469441_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 240994658";
+  epo:hasInternetAddress "http://www.nantes.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-nantes@juradm.fr";
+  cccev:telephone "+33 24094600" .
+
+epd:id_2017-S-225-469441_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "44041";
+  locn:postName "Nantes Cedex";
+  locn:thoroughfare "6 allée de l'Ile-Gloriette, BP 24111" .
+
+epd:id_2017-S-225-469441_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nantes"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-225-469441_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2017-S-225-469441_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-225-469441_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-225-469441_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-225-469441_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2017-S-225-469441_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-225-469441_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-225-469441_Organisation_jXahEP38X6pEFgd4J9tLvF .

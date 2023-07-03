@@ -1,0 +1,99 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-035-087858_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://sua.provincia.crotone.it"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-035-087858_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "https://sua.provincia.crotone.it"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-035-087858_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-035-087858_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-035-087858_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "centrale unica di committenza della Provincia di Crotone — dott. ssa Monica Lombardo — sua@pec.provincia.crotone.it — Comune di Cirò, ufficio Tecnico — arch. Luigi Critelli — critelli@comune.ciro.kr.it"@it;
+  epo:hasInternetAddress "https://www.comune.ciro.kr.it"^^xsd:anyURI;
+  cccev:email "sua@pec.provincia.crotone.it";
+  cccev:telephone "+39 0962952626" .
+
+epd:id_2021-S-035-087858_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-035-087858_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-035-087858_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-035-087858_Fund_k5UiCNjVxapva2MShsi99p a epo:Fund;
+  epo:hasDescription "Affidamento dei servizi di piano di fattibilità tecnica ed economica, definitiva ed esecutiva, coordinamento della sicurezza in fase di progettazione e di esecuzione, direzione lavori, contabilità dei lavori finalizzati al restauro e valorizzazione del Castello di Cirò — 2o lotto funzionale."@it .
+
+epd:id_2021-S-035-087858_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-035-087858_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Affidamento dei servizi di piano di fattibilità tecnica ed economica, definitiva ed esecutiva, coordinamento della sicurezza in fase di progettazione e di esecuzione, direzione lavori, contabilità dei lavori finalizzati al restauro e valorizzazione del Castello di Cirò — 2o lotto funzionale."@it;
+  epo:isFundedBy epd:id_2021-S-035-087858_Fund_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds true .
+
+epd:id_2021-S-035-087858_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-035-087858_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-035-087858_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2021-S-035-087858_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2021-S-035-087858_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2021-02-15"^^xsd:date;
+  epo:hasID epd:id_2021-S-035-087858_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210219";
+  epo:refersToLot epd:id_2021-S-035-087858_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-035-087858_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-035-087858_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 035-087858" .
+
+epd:id_2021-S-035-087858_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITF62>;
+  locn:postCode "88813";
+  locn:postName "Cirò";
+  locn:thoroughfare "corso Luigi Lilio" .
+
+epd:id_2021-S-035-087858_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Comune di Cirò"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-035-087858_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-035-087858_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71230000> .
+
+epd:id_2021-S-035-087858_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-035-087858_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-035-087858_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Servizi di piano di fattibilità tecnica ed economica, definitiva ed esecutiva, coordinamento della sicurezza in fase di progettazione e di esecuzione, direzione lavori, contabilità dei lavori"@it;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-035-087858_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-035-087858_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-035-087858_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-035-087858_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-035-087858_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-035-087858_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postName "Catanzaro" .
+
+epd:id_2021-S-035-087858_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "TAR Calabria"@it;
+  cccev:registeredAddress epd:id_2021-S-035-087858_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-035-087858_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-035-087858_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-035-087858_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "IT";
+  epo:hasSubmissionURL "https://sua.provincia.crotone.it"^^xsd:anyURI .
+
+epd:id_2021-S-035-087858_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-035-087858_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-035-087858_Organisation_VX8RygdBbvDo5gNDhjcsTj .

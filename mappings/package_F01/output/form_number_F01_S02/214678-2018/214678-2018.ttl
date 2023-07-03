@@ -1,0 +1,320 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-095-214678_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=308916"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-095-214678_AwardCriterionPrice_7N7DvbGKbCK2WHX2h7dU4c a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2018-S-095-214678_AwardCriterionPrice_QsHhEb8qeRoGKduZGovcmd a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2018-S-095-214678_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=308916"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-095-214678_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2018-S-095-214678_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2018-S-095-214678_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Mr Benoît Rouard"@fr;
+  epo:hasFax "+32 43674568";
+  epo:hasInternetAddress "http://www.sofico.org/fr"^^xsd:anyURI;
+  cccev:email "benoit.rouard@sofico.org";
+  cccev:telephone "+32 42316713" .
+
+epd:id_2018-S-095-214678_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress """
+                  District autoroutier d’Houffalize.
+               """@fr .
+
+epd:id_2018-S-095-214678_ContractTermLotLocationAddress_kKEXkgEhBpbdu5CJYA2aUT a locn:Address;
+  locn:fullAddress """
+                  District autoroutier de Longlier.
+               """@fr .
+
+epd:id_2018-S-095-214678_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE34>;
+  locn:address epd:id_2018-S-095-214678_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2018-S-095-214678_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE34>;
+  locn:address epd:id_2018-S-095-214678_ContractTermLotLocationAddress_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2018-S-095-214678_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-095-214678_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-095-214678_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2018-S-095-214678_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-095-214678_Duration_VLUhcjCcfriMRVVeLidxGZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-095-214678_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2018-S-095-214678_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2018-S-095-214678_Duration_VLUhcjCcfriMRVVeLidxGZ a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-095-214678_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-095-214678_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt a
+    cccev:ContactPoint;
+  epo:hasContactName "Mr Christophe Homel"@fr;
+  epo:hasFax "+32 63589222";
+  epo:hasInternetAddress "http://www.wallonie.be"^^xsd:anyURI;
+  cccev:email "christophe.homel@spw.wallonie.be";
+  cccev:telephone "+32 63589220" .
+
+epd:id_2018-S-095-214678_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE341>;
+  locn:postCode "6700";
+  locn:postName "Arlon";
+  locn:thoroughfare "Place Didier 45" .
+
+epd:id_2018-S-095-214678_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt a
+    org:Organization;
+  epo:hasLegalName "RW-SPW-DGO1-DRL — Direction des routes du Luxembourg"@fr;
+  cccev:registeredAddress epd:id_2018-S-095-214678_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2018-S-095-214678_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2018-S-095-214678_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2018-S-095-214678_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/77310000> .
+
+epd:id_2018-S-095-214678_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/77310000> .
+
+epd:id_2018-S-095-214678_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-095-214678_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation """
+                  Le pouvoir adjudicateur n’est tenu au paiement d’aucune indemnité à l’adjudicataire s’il exerce son droit de mettre fin au marché dans les conditions précitées.
+               """@fr;
+  epo:hasDescription """
+                  Les services régis par la présente entreprise comprennent:
+                  1) des fauchages de talus en mode «fauchage tardif» et les fauchages de terre-pleins.
+                  Le mode «fauchage tardif» consiste en:
+                  — une hauteur de coupe de l’herbe qui est fixée à 8 cm. En aucun cas la surface du sol ne sera mise à nu lors des opérations,
+                  — un fauchage de printemps (entre fin mai et mi-juillet, selon les régions et les circonstances), sur une largeur de travail de 2,50 m,
+                  — un fauchage d’automne qui sera réalisé sur toute la surface (terre-pleins et talus) entre le 1er septembre et le 31 octobre.
+                  2) des prestations diverses d’entretien de plantations;
+                  3) le dégagement de la signalisation existante;
+                  4) des prestations en régie;
+                  5) l’évacuation éventuelle des déchets;
+                  6) la signalisation du chantier.
+               """@fr;
+  epo:hasID epd:id_2018-S-095-214678_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2018-S-095-214678_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasTitle """
+                  Lot D21: district autoroutier d’Houffalize
+               """@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-095-214678_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-095-214678_AwardCriterionPrice_QsHhEb8qeRoGKduZGovcmd .
+
+epd:id_2018-S-095-214678_Lot_kKEXkgEhBpbdu5CJYA2aUT a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-095-214678_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasAdditionalInformation """
+                  Le pouvoir adjudicateur n’est tenu au paiement d’aucune indemnité à l’adjudicataire s’il exerce son droit de mettre fin au marché dans les conditions précitées.
+               """@fr;
+  epo:hasDescription """
+                  Les services régis par la présente entreprise comprennent:
+                  1) des fauchages de talus en mode «fauchage tardif» et les fauchages de terre-pleins.
+                  Le mode «fauchage tardif» consiste en:
+                  — une hauteur de coupe de l’herbe qui est fixée à 8 cm. En aucun cas la surface du sol ne sera mise à nu lors des opérations,
+                  — un fauchage de printemps (entre fin mai et mi-juillet, selon les régions et les circonstances), sur une largeur de travail de 2,50 m,
+                  — un fauchage d’automne qui sera réalisé sur toute la surface (terre-pleins et talus) entre le 1er septembre et le 31 octobre.
+                  2) des prestations diverses d’entretien de plantations;
+                  3) le dégagement de la signalisation existante;
+                  4) des prestations en régie;
+                  5) l’évacuation éventuelle des déchets;
+                  6) la signalisation du chantier.
+               """@fr;
+  epo:hasID epd:id_2018-S-095-214678_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2018-S-095-214678_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasTitle """
+                  Lot D22: district autoroutier de Longlier
+               """@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-095-214678_MultipleStageProcedureTerm_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-095-214678_AwardCriterionPrice_7N7DvbGKbCK2WHX2h7dU4c .
+
+epd:id_2018-S-095-214678_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J a cccev:ContactPoint;
+  epo:hasInternetAddress "www.le-mediateur.be"^^xsd:anyURI;
+  cccev:email "courrier@le-mediateur.be" .
+
+epd:id_2018-S-095-214678_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "5000";
+  locn:postName "Namur";
+  locn:thoroughfare "Rue Lucien Namèche 54" .
+
+epd:id_2018-S-095-214678_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J a org:Organization;
+  epo:hasLegalName "Le médiateur de la Wallonie et de la fédération Wallonie-Bruxelles"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-095-214678_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J;
+  cccev:registeredAddress epd:id_2018-S-095-214678_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2018-S-095-214678_Mediator_2t4SUwdC66NGJuVrEY4e6J a epo:Mediator;
+  epo:playedBy epd:id_2018-S-095-214678_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2018-S-095-214678_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-095-214678_MultipleStageProcedureTerm_kKEXkgEhBpbdu5CJYA2aUT a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-095-214678_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2018-S-095-214678_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2018-S-095-214678_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2018-S-095-214678_Mediator_2t4SUwdC66NGJuVrEY4e6J,
+    epd:id_2018-S-095-214678_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt,
+    epd:id_2018-S-095-214678_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2018-S-095-214678_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2018-S-095-214678_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2018-05-18"^^xsd:date;
+  epo:hasID epd:id_2018-S-095-214678_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20180519";
+  epo:refersToLot epd:id_2018-S-095-214678_Lot_c4Jggv3QHLrvEuoxvHMwcK, epd:id_2018-S-095-214678_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:refersToProcedure epd:id_2018-S-095-214678_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2018-S-095-214678_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 095-214678" .
+
+epd:id_2018-S-095-214678_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE332>;
+  locn:postCode "4031";
+  locn:postName "Angleur";
+  locn:thoroughfare "Rue du Canal de l'Ourthe 9, bte 3" .
+
+epd:id_2018-S-095-214678_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "0316.381.138_513921" .
+
+epd:id_2018-S-095-214678_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Sofico";
+  epo:hasID epd:id_2018-S-095-214678_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Sofico"@fr;
+  epo:hasMainActivityDescription "Société wallonne de financement complémentaire des infrastructures";
+  cccev:registeredAddress epd:id_2018-S-095-214678_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2018-S-095-214678_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2018-S-095-214678_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2018-S-095-214678_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "SWP-DO132-O1.03.02-16G45-F01_0" .
+
+epd:id_2018-S-095-214678_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/77310000> .
+
+epd:id_2018-S-095-214678_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2018-S-095-214678_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-095-214678_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation """
+               Dans le cadre du présent marché, le pouvoir adjudicateur entend lutter contre le dumping social et la fraude sociale.
+               Le présent marché est un marché sujet à commande.
+               Le détail des services sont repris dans les clauses techniques et le métré annexés au présent cahier spécial des charges.
+            """@fr;
+  epo:hasDescription """
+               Les services régis par la présente entreprise comprennent:
+               1) des fauchages de talus en mode «fauchage tardif» et les fauchages de terre-pleins.
+               Le mode «fauchage tardif» consiste en:
+               — une hauteur de coupe de l’herbe qui est fixée à 8 cm. En aucun cas la surface du sol ne sera mise à nu lors des opérations,
+               — un fauchage de printemps (entre fin mai et mi-juillet, selon les régions et les circonstances), sur une largeur de travail de 2,50 m,
+               — un fauchage d’automne qui sera réalisé sur toute la surface (terre-pleins et talus) entre le 1er septembre et le 31 octobre.
+               2) des prestations diverses d’entretien de plantations;
+               3) le dégagement de la signalisation existante;
+               4) des prestations en régie;
+               5) l’évacuation éventuelle des déchets;
+               6) la signalisation du chantier.
+            """@fr;
+  epo:hasID epd:id_2018-S-095-214678_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-095-214678_Lot_c4Jggv3QHLrvEuoxvHMwcK,
+    epd:id_2018-S-095-214678_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2018-S-095-214678_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+               D132-21/22 Bail entretien des plantations
+            """@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-095-214678_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2018-S-095-214678_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG, epd:id_2018-S-095-214678_ReviewTerm_KjhWjVv578XNpvpTRjZhAs .
+
+epd:id_2018-S-095-214678_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2018-07-02"^^xsd:date .
+
+epd:id_2018-S-095-214678_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-095-214678_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt;
+  epo:playedBy epd:id_2018-S-095-214678_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2018-S-095-214678_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "4031";
+  locn:postName "Angleur";
+  locn:thoroughfare "Rue du Canal de l'Ourthe 9, bte 3" .
+
+epd:id_2018-S-095-214678_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  epo:hasFax "+32 43674568";
+  epo:hasInternetAddress "http://www.sofico.org/fr"^^xsd:anyURI;
+  cccev:email "benoit.rouard@sofico.org";
+  cccev:telephone "+32 42316713" .
+
+epd:id_2018-S-095-214678_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Sofico"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-095-214678_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2018-S-095-214678_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2018-S-095-214678_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-095-214678_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2018-S-095-214678_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               — demande de suspension en extrême urgence: requête introduite le plus rapidement possible; le délai pour le recours en suspension est de 15 jours à dater de la publication, de la communication ou de la prise de connaissance de l'acte selon le canal par lequel le réclamant a été informé de la décision (avis d'attribution, lettre d'information ou aucun des 2 =_ date de prise de connaissance),
+               — demande d'annulation: 60 jours à partir de la connaissance de la décision.
+               NB: le président du tribunal de première instance de l'arrondissement judiciaire concerné peut également statuer au provisoire (article 584 du code judiciaire). Ce tribunal est seul compétent pour les contestations au fond portant sur un droit civil (ex: octroi de dommages-intérêts…). Le président doit être saisi le plus rapidement possible et le tribunal, dans un délai de 5 ans (article 2262 bis du code civil).
+            """ .
+
+epd:id_2018-S-095-214678_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.raadvst-consetat.be"^^xsd:anyURI;
+  cccev:email "info@conseildetat.be" .
+
+epd:id_2018-S-095-214678_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Bruxelles";
+  locn:thoroughfare "Rue de la Science 33" .
+
+epd:id_2018-S-095-214678_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Conseil d'État"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-095-214678_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2018-S-095-214678_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2018-S-095-214678_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-095-214678_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2018-S-095-214678_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-095-214678_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2018-S-095-214678_Organisation_gqoAAwSV3JaTMsopb9zyKP .

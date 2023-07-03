@@ -1,0 +1,217 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-133-352856_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "www.tk.de"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-133-352856_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38 a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-133-352856_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38;
+  epo:playedBy epd:id_2021-S-133-352856_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2021-S-133-352856_AdditionalBuyer_G5d2cHtENT5evP5M23SuxS a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-133-352856_AdditionalContactPoint_G5d2cHtENT5evP5M23SuxS;
+  epo:playedBy epd:id_2021-S-133-352856_AdditionalOrganisation_G5d2cHtENT5evP5M23SuxS .
+
+epd:id_2021-S-133-352856_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38 a cccev:ContactPoint;
+  epo:hasContactName "Barmer"@de;
+  epo:hasInternetAddress "www.barmer.de"^^xsd:anyURI;
+  cccev:email "patrick.hasenberg@barmer.de" .
+
+epd:id_2021-S-133-352856_AdditionalContactPoint_G5d2cHtENT5evP5M23SuxS a cccev:ContactPoint;
+  epo:hasContactName "HEK"@de;
+  epo:hasInternetAddress "www.hek.de"^^xsd:anyURI;
+  cccev:email "katrin.matznick@hek.de" .
+
+epd:id_2021-S-133-352856_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 a org:Organization;
+  epo:hasLegalName "Barmer"@de;
+  cccev:registeredAddress epd:id_2021-S-133-352856_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2021-S-133-352856_AdditionalOrganisation_G5d2cHtENT5evP5M23SuxS a org:Organization;
+  epo:hasLegalName "Hanseatische Krankenkasse"@de;
+  cccev:registeredAddress epd:id_2021-S-133-352856_OrganisationAddress_G5d2cHtENT5evP5M23SuxS .
+
+epd:id_2021-S-133-352856_BuyerOrganisationGroup_5ZAqFrPEQTFNv88ScKSm38 a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  epo:hasMember epd:id_2021-S-133-352856_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2021-S-133-352856_AdditionalOrganisation_G5d2cHtENT5evP5M23SuxS, epd:id_2021-S-133-352856_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-133-352856_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-133-352856_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-133-352856_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-133-352856_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Techniker Krankenkasse"@de;
+  epo:hasFax "+49 40690989003";
+  epo:hasInternetAddress "www.tk.de"^^xsd:anyURI;
+  cccev:email "lars.schindler@tk.de";
+  cccev:telephone "+49 406909-3813" .
+
+epd:id_2021-S-133-352856_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Deutschland"@de .
+
+epd:id_2021-S-133-352856_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE6>;
+  locn:address epd:id_2021-S-133-352856_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-133-352856_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-133-352856_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-133-352856_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-133-352856_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-133-352856_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-133-352856_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt a
+    cccev:ContactPoint;
+  epo:hasContactName "Techniker Krankenkasse"@de;
+  epo:hasFax "+49 40690989003";
+  epo:hasInternetAddress "www.tk.de"^^xsd:anyURI;
+  cccev:email "hilfsmittel-vertrag@tk.de";
+  cccev:telephone "+49 406909-3813" .
+
+epd:id_2021-S-133-352856_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE600>;
+  locn:postCode "22305";
+  locn:postName "Hamburg";
+  locn:thoroughfare "Bramfelder Str. 140" .
+
+epd:id_2021-S-133-352856_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt a
+    org:Organization;
+  epo:hasLegalName "Techniker Krankenkasse"@de;
+  cccev:registeredAddress epd:id_2021-S-133-352856_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2021-S-133-352856_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-133-352856_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation "Nach Vertragsschluss können Leistungserbringer, deren Verbände oder sonstigen Zusammenschlüsse während der gesamten Vertragsdauer zu den gleichen Bedingungen als Vertragspartner jederzeit beitreten, soweit sie bzw. die (Verbands-)mitglieder - nicht aufgrund bestehender Verträge bereits zur Versorgung der Versicherten gemäß § 128 Absatz 1 SGB V berechtigt sind."@de;
+  epo:hasDescription "Die TK, die Barmer und die HEK kooperieren im Rahmen einer Vertragspartnerschaft und beabsichtigen einen Vertrag nach § 127 Abs. 1 SGB V über die über die Versorgung mit Sicherheitsprodukten der Produktgruppen 03 und 21 einschließlich aller damit im Zusammenhang stehenden Dienst- und Serviceleistungen in häuslicher Umgebung sowie in Alten- und Pflegeheimen zu schließen.Die Techniker Krankenkasse ist in diesem Rahmen alleiniger Ansprechpartner und bevollmächtigt, alle Rechtsgeschäfte, -erklärungen und -handlungen, die zur Durchführung zum Abschluss von Verträgen nach § 127 Abs. 1 SGB V erforderlich sind, abzugeben und entgegenzunehmen.Interessierte Leistungserbringer, deren Gemeinschaften oder Verbände können die Vertragsunterlagen per E-Mail anfordern sowie Angebote und Ergänzungen einreichen an:Hilfsmittel-Vertrag@tk.deBetreff „Bekanntmachung SP 2021“Leistungserbringer können nur Vertragspartner sein, wenn sie die Voraussetzung für eine ausreichende, zweckmäßige und funktionsgerechte Herstellung, Abgabe und Anpassung der Hilfsmittel gemäß § 126 Absatz 1 Satz 2 SGB V erfüllen. Der Nachweis der Erfüllung dieser Voraussetzungen ist durch die Vorlage eines Zertifikats nach einer geeigneten, unabhängigen Stelle (Präqualifizierungsstelle) zu führen (vgl. § 126 Absatz 1 a Satz 2 SGB V).Es handelt sich um einen Vertrag, der keinen Anspruch auf die Durchführung einer bestimmten Anzahl von Versorgungen der gesetzlich Versicherten bzw. keine bestimmte Abgabemenge begründet.Es handelt sich nicht um einen Auftrag nach § 103 Absatz 1 GWB."@de;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-133-352856_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-133-352856_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-133-352856_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-133-352856_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2021-S-133-352856_AdditionalBuyer_G5d2cHtENT5evP5M23SuxS, epd:id_2021-S-133-352856_Buyer_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2021-S-133-352856_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt,
+    epd:id_2021-S-133-352856_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2021-S-133-352856_TenderReceiver_73uj4vyPgHgRhfhM7wvqXG;
+  epo:hasDispatchDate "2021-07-08"^^xsd:date;
+  epo:hasID epd:id_2021-S-133-352856_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20210713";
+  epo:refersToLot epd:id_2021-S-133-352856_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-133-352856_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-133-352856_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 133-352856" .
+
+epd:id_2021-S-133-352856_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE600>;
+  locn:postCode "42285";
+  locn:postName "Wuppertal";
+  locn:thoroughfare "Lichtscheider Str. 89" .
+
+epd:id_2021-S-133-352856_OrganisationAddress_G5d2cHtENT5evP5M23SuxS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE600>;
+  locn:postCode "22041";
+  locn:postName "Hamburg";
+  locn:thoroughfare "Wandsbeker Zollstraße 86-90" .
+
+epd:id_2021-S-133-352856_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE600>;
+  locn:postCode "22305";
+  locn:postName "Hamburg";
+  locn:thoroughfare "Bramfelder Str. 140" .
+
+epd:id_2021-S-133-352856_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasLegalName "Techniker Krankenkasse"@de;
+  cccev:registeredAddress epd:id_2021-S-133-352856_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-133-352856_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/33190000> .
+
+epd:id_2021-S-133-352856_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw "Deutschland."@de .
+
+epd:id_2021-S-133-352856_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-133-352856_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "Mit dieser Vorinformation wird eine Vertragsabsicht gemäß § 127 Absatz 1 Satz 5 SGB V bekannt gemacht. Es handelt sich bei dem vorgesehenen Vertrag nicht um einen öffentlichen Auftrag im Sinne von § 103 Absatz 1 des Gesetzes gegeben Wettbewerbsbeschränkungen (GWB), da keinem Wirtschaftsteilnehmer ein exklusiver Status eingeräumt wird. Der 4. Teil des GWB sowie die Vergabeverordnung finden keine Anwendung. Es handelt sich auch nicht um einen Aufruf zum Wettbewerb im Sinne des Vergaberechts (siehe Kopfzeile der Vorinformation).Ein Vertragsbeitritt ist (je nach Vertragstyp) ebenfalls nach Vertragsabschluss jederzeit möglich, soweit noch keine Vertragsbeziehung über die gleiche Leistung besteht.Für die Bekanntmachung wird das DE Standardformular 1 – Vorinformation genutzt, weil für die zu Grunde liegende Bekanntmachung kein Standardformular der EU zur Verfügung steht.Hiermit ist keine freiwillige Unterwerfung unter die Vorgaben des Vergaberechts verbunden. Eine weitere Bekanntmachung der Vertragsabsicht auf einem anderen Standardformular erfolgt nicht.Das Verfahren unterliegt nicht der Nachprüfung durch die Vergabekammern nach § 155 ff. GWB. Eine Begrenzung des Kreises von geeigneten Wirtschaftsteilnehmern, mit denen der Vertrag geschlossen wird, erfolgt nicht.Die Auftragsmenge für jeden Leistungserbringer kann nicht bestimmt werden, da sie sich auf eine unbestimmte Zahl an potenziellen Leistungsanbietern verteilt.Bei dem unter Ziffer IV.1.1) genannten Verhandlungsverfahren handelt es sich nicht um ein Verhandlungsverfahren im Sinne des § 119 Absatz 5 GWB, da keine Auswahl der Verhandlungspartner stattfindet."@de;
+  epo:hasDescription "Die TK, die Barmer und die HEK kooperieren im Rahmen einer Vertragspartnerschaft und beabsichtigen einen Vertrag nach § 127 Abs. 1 SGB V über die über die Versorgung mit Sicherheitsprodukten der Produktgruppen 03 und 21 einschließlich aller damit im Zusammenhang stehenden Dienst- und Serviceleistungen in häuslicher Umgebung sowie in Alten- und Pflegeheimen zu schließen.Die Techniker Krankenkasse ist in diesem Rahmen alleiniger Ansprechpartner und bevollmächtigt, alle Rechtsgeschäfte, -erklärungen und -handlungen, die zur Durchführung zum Abschluss von Verträgen nach § 127 Abs. 1 SGB V erforderlich sind, abzugeben und entgegenzunehmen.Interessierte Leistungserbringer, deren Gemeinschaften oder Verbände können die Vertragsunterlagen per E-Mail anfordern sowie Angebote und Ergänzungen einreichen an:Hilfsmittel-Vertrag@tk.deBetreff „Bekanntmachung SP 2021“."@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-133-352856_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-133-352856_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Bekanntmachung Vertragsabsicht Sicherheitsprodukte PG 03 und 21"@de;
+  epo:isCoveredByGPA false;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-133-352856_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2021-S-133-352856_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG, epd:id_2021-S-133-352856_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2021-S-133-352856_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-133-352856_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt;
+  epo:playedBy epd:id_2021-S-133-352856_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2021-S-133-352856_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postName "Hamburg" .
+
+epd:id_2021-S-133-352856_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Bundesamt für soziale Sicherung"@de;
+  cccev:registeredAddress epd:id_2021-S-133-352856_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-133-352856_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-133-352856_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-133-352856_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2021-08-31" .
+
+epd:id_2021-S-133-352856_TenderReceiverOrganisationAddress_73uj4vyPgHgRhfhM7wvqXG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE600>;
+  locn:postCode "22305";
+  locn:postName "Hamburg";
+  locn:thoroughfare "Bramfelder Str. 140" .
+
+epd:id_2021-S-133-352856_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG
+  a cccev:ContactPoint;
+  epo:hasContactName "Techniker Krankenkasse"@de;
+  epo:hasFax "+49 40690989003";
+  epo:hasInternetAddress "www.tk.de"^^xsd:anyURI;
+  cccev:email "hilfsmittel-vertrag@tk.de";
+  cccev:telephone "+49 406909-3813" .
+
+epd:id_2021-S-133-352856_TenderReceiverOrganisation_73uj4vyPgHgRhfhM7wvqXG a org:Organization;
+  epo:hasLegalName "Techniker Krankenkasse"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-133-352856_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG;
+  cccev:registeredAddress epd:id_2021-S-133-352856_TenderReceiverOrganisationAddress_73uj4vyPgHgRhfhM7wvqXG .
+
+epd:id_2021-S-133-352856_TenderReceiver_73uj4vyPgHgRhfhM7wvqXG a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-133-352856_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG;
+  epo:playedBy epd:id_2021-S-133-352856_TenderReceiverOrganisation_73uj4vyPgHgRhfhM7wvqXG .

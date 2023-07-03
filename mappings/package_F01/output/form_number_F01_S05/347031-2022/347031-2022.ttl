@@ -1,0 +1,150 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-122-347031_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://inlecom.eu/group/tenders/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-122-347031_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-122-347031_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-122-347031_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-122-347031_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasInternetAddress "www.inlecom.eu"^^xsd:anyURI;
+  cccev:email "angelaosullivan@inlecomsystems.com" .
+
+epd:id_2022-S-122-347031_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "As a minimum the firm should be able to work in all the countries listed, either directly of by using a listed Agent of Record"@en .
+
+epd:id_2022-S-122-347031_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE>;
+  locn:address epd:id_2022-S-122-347031_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-122-347031_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2022-S-122-347031_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-122-347031_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-122-347031_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2022-S-122-347031_DynamicPurchaseSystemTechniqueUsage_KX8MaayAMxqXBuD94Kuz62
+  a epo:DynamicPurchaseSystemTechniqueUsage .
+
+epd:id_2022-S-122-347031_FrameworkAgreementTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2022-S-122-347031_FrameworkAgreementTerm_KX8MaayAMxqXBuD94Kuz62 a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "H2020 and Horizon Europe Projects that Inlecom are involved in currently extend beyond four years from the commencement date of the framework agreement. Inlecom will be open to working directly with the Agents of Record, subject to mutual agreement."@en .
+
+epd:id_2022-S-122-347031_Fund_c4Jggv3QHLrvEuoxvHMwcK a epo:Fund;
+  epo:hasDescription "The procurement is related to H2020 and Horizon Europe projects listed in the Description of Procurement and the url - https://inlecom.eu/group/tenders/"@en .
+
+epd:id_2022-S-122-347031_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-122-347031_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation "It is important to refer to the additional information section of the document \"Patent Quote request Letter\" available at the url - https://inlecom.eu/group/tenders/"@en;
+  epo:hasDescription """To ensure a fair and equitable quotation process, we are asking each patent attorney to quote based on the following assumptions :•	Filing regions for each patent = Belgium, Canada, France, Germany, Greece, Italy, Netherlands, Spain, United Kingdom, USA•	Cradle to grave costs for each patent up to and including formal granting/issuance, including all associated costs such as any required first round and subsequent prosecutions, patent office office-actions, etc.The contract includes 10 projects listed below,Name of European funded project - ICT related patent application area - expected maximum number of patents 1.	PROBONO, ICT systems and methods in the area of in the area of energy efficient buildings 4-62.	DT4GS, ICT systems and methods in the area of Digital Twins and green shipping, 33.	5G-Timber, ICT systems and methods in the area of 5G and timber industry 3-44.	CISUTAC, ICT systems and methods in the area of Circular textiles economy, 35.	ETERNAL ICT systems and methods in the area of green manufacturing for pharmaceutical products,26.	DIVINE, ICT systems and methods in the area of Data economy in the field of agriculture, 27.	URBANE, ICT systems and methods in the area of green urban logistics, 28.	RENEW, ICT systems and methods in the area of Inland Waterways/ environmentally sustainable transport infrastructures, 39.	SynAIR-G, ICT systems and methods in the area of Multi-sensing and Green iInterventions for disrupting indoor Air Pollutants, 210.	A14CCAM, ICT systems and methods in the area of AI driven solutions for connected and automated mobility/transportation, 2 """@en;
+  epo:hasEstimatedValue epd:id_2022-S-122-347031_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isFundedBy epd:id_2022-S-122-347031_Fund_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-122-347031_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds true .
+
+epd:id_2022-S-122-347031_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-122-347031_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-122-347031_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2022-S-122-347031_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-122-347031_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2022-S-122-347031_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2022-S-122-347031_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2022-S-122-347031_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2022-06-23"^^xsd:date;
+  epo:hasID epd:id_2022-S-122-347031_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220628";
+  epo:refersToLot epd:id_2022-S-122-347031_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2022-S-122-347031_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2022-S-122-347031_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 122-347031" .
+
+epd:id_2022-S-122-347031_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE>;
+  locn:postCode "1000";
+  locn:postName "Brussels" .
+
+epd:id_2022-S-122-347031_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Private company working in various H2020 projects";
+  epo:hasLegalName "Inlecom Group BV and related companies"@en;
+  epo:hasMainActivityDescription "Research and Innovation Consultancy working in EU Grant Funded Projects";
+  cccev:registeredAddress epd:id_2022-S-122-347031_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-122-347031_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2022-08-08"^^xsd:date;
+  epo:hasEnd "2027-12-31"^^xsd:date .
+
+epd:id_2022-S-122-347031_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79100000> .
+
+epd:id_2022-S-122-347031_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-122-347031_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "Interested parties must email their interest to angelaosullivan@inlecomsystems.com immediately in order to be included in further communication relating to additional information, attachments, including clarifications and changes.Completed quotations using the templates provided at https://inlecom.eu/group/tenders/ should be sent by email by the closing date of the competition.This competition will be promoted through this call and by direct email to up to a maximum of 10 other firms of lawyers across EU countries, US and UK.The contracting company will not be responsible for any costs, charges or expenses incurred by candidates, participants or tenderers.The establishment of a framework agreement will be subject to the approval of the majority of Inlecom Management team representing all Inlecom entities with knowledge of the projects concerned.If for any reason it is not possible to conclude the framework agreement with the designated successful tenderer emerging from this competitive process; or if having concluded the framework agreement Inlecom team considers that the successful tenderer has not met, or cannot meet its obligations; Inlecom reserves the right to admit the next highest scoring tenderer to the framework on the basis of the same terms at any time during the tender validity period. This shall be without prejudice to the right of Inlecom to cancel this competitive process and/or initiate a new contract award procedure at its sole discretion.At the absolute discretion, Inlecom Group may elect to terminate this procurement process, the framework agreement or any contract awarded under the framework agreement at any time.Without prejudice to the principle of equal treatment, Inlecom Group is not obliged to engage in a clarification process in respect of the tender responses/quotations with incomplete or missing information. Therefore, the tenderers/candidates are advised to ensure that they return fully the completed tender/quotation template in order to avoid risk of elimination from the competition at the evaluation/application stage"@en;
+  epo:hasDescription "Inlecom has, as coordinator and partner, won a number of EU Funded Horizon 2020 and Horizon Europe projects where each project has a requirement to file patents in various regions (e.g. EU, USA, Canada jurisdictions).Inlecom requires external patent attorney expertise for the preparation, filing and prosecution of these patents deriving from these projects. Legal work in respect of preparing, filing and prosecuting patents. Opening date for applications 09:00 CET 01:07:2022, closing date for applications 16:00 CET 29:07:2022. Applicants who register interest will be sent an invitation to optionally join a tender walk through and Q&A session if applicants feel additional context and information would be useful prior to finalising their quotation, to be held on 20:07:2022 09:00-11:00CET.  Applicants should download and read all documentation and return completed quotations to angelaosullivan@inlecomsystems.com by the closing date stated."@en;
+  epo:hasEstimatedValue epd:id_2022-S-122-347031_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-122-347031_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2022-S-122-347031_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Legal work in respect of preparing, filing and prosecuting patents"@en;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-122-347031_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2022-S-122-347031_FrameworkAgreementTerm_KX8MaayAMxqXBuD94Kuz62, epd:id_2022-S-122-347031_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62;
+  epo:usesTechnique epd:id_2022-S-122-347031_DynamicPurchaseSystemTechniqueUsage_KX8MaayAMxqXBuD94Kuz62,
+    epd:id_2022-S-122-347031_FrameworkAgreementTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2022-S-122-347031_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-122-347031_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-122-347031_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-122-347031_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  cccev:email "angelaosullivan@inlecomsystems.com" .
+
+epd:id_2022-S-122-347031_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postName "BRUSSELS" .
+
+epd:id_2022-S-122-347031_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "INLECOM GROUP BV "@en;
+  epo:hasPrimaryContactPoint epd:id_2022-S-122-347031_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2022-S-122-347031_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2022-S-122-347031_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-122-347031_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2022-S-122-347031_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasReceiptExpressionDeadline "2022-07-25T16:00" .
+
+epd:id_2022-S-122-347031_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-122-347031_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-122-347031_Organisation_gqoAAwSV3JaTMsopb9zyKP .

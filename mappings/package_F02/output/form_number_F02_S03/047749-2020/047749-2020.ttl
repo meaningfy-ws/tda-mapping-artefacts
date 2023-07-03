@@ -1,0 +1,166 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-022-047749_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.esercito.difesa.it/comunicazione/Bandi-di-gara-Esercito/Pagine/elenco.aspx?TipoBando=*&Ente=Comando%20Logistico%20Esercito%20-%20Direzione%20di%20Intendenza%20Roma&Cig=*&CigM=*&Ricerca=*&anno=*"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2020-S-022-047749_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2020-S-022-047749_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasBuyerProfile "www.esercito.difesa.it/comunicazione/Bandi-di-gara-Esercito/Pagine/elenco.aspx?TipoBando=*&Ente=Comando%20Logistico%20Esercito%20-%20Direzione%20di%20Intendenza%20Roma&Cig=*&CigM=*&Ricerca=*&anno=*"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2020-S-022-047749_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2020-S-022-047749_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2020-S-022-047749_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Ten. col. Ciro Urselli – caservamm@comlog.esercito.difesa.it"@it;
+  epo:hasInternetAddress "http://www.esercito.difesa.it"^^xsd:anyURI;
+  cccev:email "comlog@postacert.difesa.it";
+  cccev:telephone "+39 0650233405" .
+
+epd:id_2020-S-022-047749_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress "Il materiale dovrà essere consegnato presso il Policlinico militare Celio di Roma."@it .
+
+epd:id_2020-S-022-047749_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITI43>;
+  locn:address epd:id_2020-S-022-047749_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2020-S-022-047749_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-022-047749_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-022-047749_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2020-S-022-047749_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2020-S-022-047749_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitDay .
+
+epd:id_2020-S-022-047749_EAuctionTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw a epo:EAuctionTechniqueUsage .
+
+epd:id_2020-S-022-047749_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/33182100> .
+
+epd:id_2020-S-022-047749_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-022-047749_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription "Vedi II.1.1)."@it;
+  epo:hasEstimatedValue epd:id_2020-S-022-047749_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2020-S-022-047749_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2020-S-022-047749_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog .
+
+epd:id_2020-S-022-047749_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:MonetaryValue;
+  epo:hasAmountValue 405279.15;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-022-047749_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
+  epo:hasAmountValue 405279.15;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-022-047749_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2020-S-022-047749_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2020-S-022-047749_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2020-S-022-047749_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2020-S-022-047749_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2020-S-022-047749_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE;
+  epo:hasDispatchDate "2020-01-29"^^xsd:date;
+  epo:hasID epd:id_2020-S-022-047749_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20200131";
+  epo:refersToLot epd:id_2020-S-022-047749_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2020-S-022-047749_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2020-S-022-047749_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 022-047749" .
+
+epd:id_2020-S-022-047749_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITI43>;
+  locn:postCode "00162";
+  locn:postName "Roma";
+  locn:thoroughfare "Via Nomentana 274" .
+
+epd:id_2020-S-022-047749_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasLegalName "Ministero della difesa – Comando logistico dell'esercito – Direzione di intendenza"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/defence>;
+  cccev:registeredAddress epd:id_2020-S-022-047749_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2020-S-022-047749_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/33182100> .
+
+epd:id_2020-S-022-047749_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-022-047749_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation "Tutte le regole per la partecipazione alla presente procedura e ogni altra prescrizione riguardante il procedimento di gara, sono contenute nella documentazione di gara presente ai link indicati al punto I.3) del presente bando."@it;
+  epo:hasDescription "Vedi II.1.1)."@it;
+  epo:hasEstimatedValue epd:id_2020-S-022-047749_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-022-047749_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2020-S-022-047749_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Fornitura di n. 290 defibrillatori semiautomatici, comprensivi dei relativi accessori e dotazioni, destinati a vari impianti sportivi di Forza armata – CIG: 81867331CB"@it;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-022-047749_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2020-S-022-047749_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
+  epo:usesTechnique epd:id_2020-S-022-047749_EAuctionTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2020-S-022-047749_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-022-047749_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2020-S-022-047749_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2020-S-022-047749_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "00162";
+  locn:postName "Roma";
+  locn:thoroughfare "Via Nomentana 274" .
+
+epd:id_2020-S-022-047749_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  cccev:telephone "+39 0650233405" .
+
+epd:id_2020-S-022-047749_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "Ministero della difesa – Comando logistico dell'esercito – Direzione di intendenza"@it;
+  epo:hasPrimaryContactPoint epd:id_2020-S-022-047749_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2020-S-022-047749_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2020-S-022-047749_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2020-S-022-047749_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2020-S-022-047749_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "00196";
+  locn:postName "Roma";
+  locn:thoroughfare "Via Flaminia 189" .
+
+epd:id_2020-S-022-047749_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Tribunale amministrativo regionale del Lazio"@it;
+  cccev:registeredAddress epd:id_2020-S-022-047749_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2020-S-022-047749_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-022-047749_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2020-S-022-047749_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "IT" .
+
+epd:id_2020-S-022-047749_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2020-S-022-047749_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2020-S-022-047749_Organisation_bhAnCWhMtKVDKPwFpTfXJN .

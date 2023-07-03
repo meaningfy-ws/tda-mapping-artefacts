@@ -1,0 +1,194 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-219-538514_Notice a epo:Notice;
+  epo:hasID epd:id_2019-S-219-538514_NoticeIdentifier_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2019-S-219-538514_NoticeIdentifier_ENkaVK94Yfx7TfS6UZfS4G a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 219-538514" .
+
+epd:id_2020-S-012-025093_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.ibinder.com/External/EnquiryLink.aspx?id=acfrmbtfqv"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2020-S-012-025093_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2020-S-012-025093_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2020-S-012-025093_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2020-S-012-025093_Channel_cW7StLx8qUnGYzx322HBZC a cccev:Channel;
+  epo:hasURL "https://www.ibinder.com/External/EnquiryLink.aspx?id=acfrmbtfqv"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2020-S-012-025093_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Inge H. Jensen"@en;
+  epo:hasInternetAddress "www.aarhusvand.dk"^^xsd:anyURI;
+  cccev:email "ihj@aarhusvand.dk";
+  cccev:telephone "+45 89471136" .
+
+epd:id_2020-S-012-025093_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "8000 Aarhus C."@en .
+
+epd:id_2020-S-012-025093_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK042>;
+  locn:address epd:id_2020-S-012-025093_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2020-S-012-025093_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-012-025093_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-012-025093_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2020-S-012-025093_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2020-S-012-025093_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 96.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-012-025093_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasContactName "Torben Naldal"@en;
+  epo:hasInternetAddress "www.cowi.com"^^xsd:anyURI;
+  cccev:email "tnpn@cowi.com";
+  cccev:telephone "+45 25544303" .
+
+epd:id_2020-S-012-025093_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK042>;
+  locn:postCode "8000";
+  locn:postName "Aarhus C";
+  locn:thoroughfare "Jens Chr. Skous Vej 9" .
+
+epd:id_2020-S-012-025093_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasLegalName "COWI A/S"@en;
+  cccev:registeredAddress epd:id_2020-S-012-025093_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2020-S-012-025093_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71300000>, <http://data.europa.eu/cpv/cpv/71800000>,
+    <http://data.europa.eu/cpv/cpv/73000000>, <http://data.europa.eu/cpv/cpv/73200000>,
+    <http://data.europa.eu/cpv/cpv/90000000>, <http://data.europa.eu/cpv/cpv/90400000> .
+
+epd:id_2020-S-012-025093_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-012-025093_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "The realisation of Aarhus ReWater is expected to run until mid-2028 when the resource plant is expected to be finished. Aarhus ReWater will be built in Aarhus on a site of around 12 hectares (land reclamation) near Tangkrogen and Marselisborg marina. The final location of the resource plant has not yet been determined. Three possible locations have previously been discussed; however, a recent political decision reduced the number to 2. The 2 alternative locations will be evaluated during the 1st planning phase comprising the EIA study.The plant is expected to be expanded on an ongoing basis and to be fully expanded in 2060, when its capacity is expected to be up to 600 000 PE, corresponding to the expected population in 2060, based on the latest forecast as well as business and industry development.The project's total financial framework is expected to be 1 700 000 000-2 000 000 000 DKK, which will include all expenses related to the project. The location of Aarhus ReWater on reclaimed land in the transition area between land and sea, city and harbour, marina and event area, calls for an adaptation of the plant that goes beyond its mere utility value and incorporates the surroundings – the requirements and possibilities of the citizens — into the area.This calls for a process consortium that can assist in realising the project.Since existing solutions in the market cannot fulfil Aarhus Vand’s vision and high ambitions for Aarhus ReWater, Aarhus Vand wants to build the world’s most resource-efficient wastewater resource recovery facility (WRRF) through an innovation partnership. Aarhus Vand A/S wants to tender turnkey contracts according to a model that ensures room for innovation and development — and selection of the optimal technologies — in the initial design phase, until project and budget details are finalised in the project planning phase prior to execution and that allows a more flexible team formation. Furthermore, Aarhus Vand wants to be able to influence team formation, thereby ensuring that a strong process consortium and a strong turnkey contractor are chosen before the 2 parties are brought together in a turnkey contractor team.After an initial innovation phase, the process consortium is to transfer to the 2 turnkey contractor teams implementing the RRP (waste water plant – 600 000 PE). Accordingly, this tender procedure concerns a flexible agreement including consultancy services in connection with Aarhus ReWater.Process consortium is used here to designate the consultant or team of consultants associated with the project. The term expresses the fact that the process consortium is expected to possess the wide and professional depth of competencies needed to contribute to the realisation of future resource facilities – Aarhus ReWater – through innovative solutions. The term thus does not express a requirement or expectation for a particular legal structure."@en;
+  epo:hasPurpose epd:id_2020-S-012-025093_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-012-025093_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-012-025093_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2020-S-012-025093_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2020-S-012-025093_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2020-S-012-025093_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2020-S-012-025093_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2020-S-012-025093_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2020-S-012-025093_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2020-01-15"^^xsd:date;
+  epo:hasID epd:id_2020-S-012-025093_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20200117";
+  epo:refersToLot epd:id_2020-S-012-025093_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToPrevious epd:id_2019-S-219-538514_Notice;
+  epo:refersToProcedure epd:id_2020-S-012-025093_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2020-S-012-025093_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 012-025093" .
+
+epd:id_2020-S-012-025093_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK042>;
+  locn:postCode "8260";
+  locn:postName "Viby J";
+  locn:thoroughfare "Gunnar Clausens Vej 34" .
+
+epd:id_2020-S-012-025093_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Aarhus Vand A/S"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2020-S-012-025093_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2020-S-012-025093_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2020-S-012-025093_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-012-025093_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Reference is made to the contract documents, including in particular the pre-qualification conditions including information on the pre-qualification procedure.Re. I.3) Request for pre-qualification must be uploaded via iBinder, https://www.ibinder.com/External/EnquiryLink.aspx?id=acfrmbtfqvAny questions in the pre-qualification phase must be sent by means of the iBinder question/answer module.Re. III.1.2) and III.1.3) The electronic European Single Procurement Document (ESPD) may be accessed by upload of the contract documents' XML file to iBinder, https://www.ibinder.com/External/EnquiryLink.aspx?id=acfrmbtfqvIt is noted that references may be uploaded as separate documents.Re. IV.1.1) the tender procedure is conducted as a tender procedure including negotiations, however, subject to award of the contract on the basis of the preliminary tender. Reference is otherwise made to the contract documents for a detailed description of the negotiation procedure. Participants in the tender procedure will receive no remuneration."@en;
+  epo:hasDescription "In connection with the realisation of Aarhus ReWater, Aarhus Vand is in need of a process consortium to assist with the design of the process plant for the resource recovery plant (RRP).The service to be provided by the process consortium includes the design of the design basis and the subsequent design of the total process plant (RRP). Focus is on creating a state-of-the-art resource facility with a high degree of flexibility and modularity. The RRP is to be realised through 2 turnkey contractors. The process consortium is therefor to be transfer to the 2 turnkey contractor teams implementing the RRP (waste water plant — 600 000 PE)."@en;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/innovation>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-012-025093_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2020-S-012-025093_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Aarhus ReWater — Process Consortium"@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-012-025093_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2020-S-012-025093_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2020-S-012-025093_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesChannel epd:id_2020-S-012-025093_Channel_cW7StLx8qUnGYzx322HBZC .
+
+epd:id_2020-S-012-025093_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-012-025093_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2020-S-012-025093_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2020-S-012-025093_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  locn:postCode "2500";
+  locn:postName "Valby";
+  locn:thoroughfare "Carl Jakobsens Vej 35" .
+
+epd:id_2020-S-012-025093_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "www.kfst.dk"^^xsd:anyURI;
+  cccev:email "kfst@kfst.dk";
+  cccev:telephone "+45 41715000" .
+
+epd:id_2020-S-012-025093_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "The Danish Competition and Consumer Authority (Konkurrence- og Forbrugerstyrelsen)"@en;
+  epo:hasPrimaryContactPoint epd:id_2020-S-012-025093_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2020-S-012-025093_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2020-S-012-025093_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2020-S-012-025093_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2020-S-012-025093_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "According to the Danish Act of the Complaints Board for Public Procurement (lov om Klagenævnet for Udbud), complaints about not obtaining pre-qualification must be submitted to the Complaints Board for Public Procurement within 20 calendar days calculated from the day after the day on which the client has sent notification to the affected applicants about who has been pre-qualified, see s. 2(1) of the Act, if the notification has included a brief account of the relevant reasons for the decision.Other complaints must be submitted to the Complaints Board for Public Procurement within 45 calendar days calculated from the day after the client's publication of a notice in the Official Journal of the European Union on the conclusion of a contract." .
+
+epd:id_2020-S-012-025093_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasInternetAddress "https://erhvervsstyrelsen.dk/klagenaevnet-for-udbud"^^xsd:anyURI;
+  cccev:email "klfu@naevneneshus.dk";
+  cccev:telephone "+45 72405708" .
+
+epd:id_2020-S-012-025093_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  locn:postCode "8800";
+  locn:postName "Viborg";
+  locn:thoroughfare "Nævnenes Hus, Toldboden 2" .
+
+epd:id_2020-S-012-025093_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Complaints Board for Public Procurement (Klagenævnet for Udbud)"@en;
+  epo:hasPrimaryContactPoint epd:id_2020-S-012-025093_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2020-S-012-025093_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2020-S-012-025093_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-012-025093_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2020-S-012-025093_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "DA", "EN";
+  epo:hasSubmissionURL "https://www.ibinder.com/External/EnquiryLink.aspx?id=acfrmbtfqv"^^xsd:anyURI .
+
+epd:id_2020-S-012-025093_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2020-S-012-025093_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2020-S-012-025093_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

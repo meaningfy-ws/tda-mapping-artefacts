@@ -1,0 +1,93 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-025-057369_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://app.eop.bg/buyer/1213"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-025-057369_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-025-057369_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-025-057369_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Мая Йорданова Матейкова-Георгиева"@bg;
+  epo:hasInternetAddress "https://www.rail-infra.bg"^^xsd:anyURI;
+  cccev:email "m.mateikova@rail-infra.bg";
+  cccev:telephone "+359 29322458" .
+
+epd:id_2021-S-025-057369_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Участък Лозарево—Прилеп"@bg .
+
+epd:id_2021-S-025-057369_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG341>;
+  locn:address epd:id_2021-S-025-057369_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-025-057369_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-025-057369_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-025-057369_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-025-057369_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-025-057369_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Доизграждане на частично изградено тунелно съоръжение."@bg .
+
+epd:id_2021-S-025-057369_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 37945616.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/BGN> .
+
+epd:id_2021-S-025-057369_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-025-057369_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2021-S-025-057369_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-025-057369_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs;
+  epo:hasDispatchDate "2021-02-01"^^xsd:date;
+  epo:hasID epd:id_2021-S-025-057369_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210205";
+  epo:refersToLot epd:id_2021-S-025-057369_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-025-057369_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-025-057369_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 025-057369" .
+
+epd:id_2021-S-025-057369_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1233";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Княгиня Мария Луиза“ № 110" .
+
+epd:id_2021-S-025-057369_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "130823243" .
+
+epd:id_2021-S-025-057369_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2021-S-025-057369_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "„Национална компания „Железопътна инфраструктура“ ДП"@bg;
+  epo:hasMainActivityDescription "поддържане на жп инфраструктура";
+  cccev:registeredAddress epd:id_2021-S-025-057369_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-025-057369_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-025-057369_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-025-057369_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45221242> .
+
+epd:id_2021-S-025-057369_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-025-057369_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "Дейности по изготвяне на работен проект и доизграждане на жп тунел."@bg;
+  epo:hasEstimatedValue epd:id_2021-S-025-057369_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-025-057369_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-025-057369_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Доизграждане на жп тунел № 1 в участъка Лозарево—Прилеп по III жп линия — част от проект „Удвояване и електрификация на железопътната линия Карнобат—Синдел“."@bg;
+  epo:isCoveredByGPA false .
+
+epd:id_2021-S-025-057369_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-03-08"^^xsd:date .
+
+epd:id_2021-S-025-057369_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-025-057369_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-025-057369_Organisation_gqoAAwSV3JaTMsopb9zyKP .

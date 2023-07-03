@@ -1,0 +1,175 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-047-118069_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://contrataciondelestado.es/wps/portal/plataforma"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-047-118069_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://contrataciondelestado.es/wps/portal/plataforma"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-047-118069_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-047-118069_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-047-118069_Channel_iRCDPixbNsrvdzVqkxqWso a cccev:Channel;
+  epo:hasURL "https://contrataciondelestado.es/wps/portal/plataforma"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2021-S-047-118069_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Jefe de la Unidad Técnica de Contratación"@es;
+  epo:hasFax "+34 914801307";
+  epo:hasInternetAddress "https://contrataciondelestado.es/wps/portal/plataforma"^^xsd:anyURI;
+  cccev:email "mscontratacion@madrid.es";
+  cccev:telephone "+34 914801320" .
+
+epd:id_2021-S-047-118069_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES300> .
+
+epd:id_2021-S-047-118069_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-047-118069_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-047-118069_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-047-118069_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true .
+
+epd:id_2021-S-047-118069_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-047-118069_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-047-118069_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Servicio de transporte de materiales, montaje de eventos y traslado de mobiliario y enseres, para el Organismo Autónomo Madrid Salud (subcontratación con Centros Especiales de Empleo de iniciativa social, Disposición Adicional 4.a de la LCSP)."@es;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-047-118069_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 425524.7;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-047-118069_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-047-118069_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2021-S-047-118069_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-047-118069_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2021-S-047-118069_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2021-S-047-118069_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2021-S-047-118069_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2021-03-04"^^xsd:date;
+  epo:hasID epd:id_2021-S-047-118069_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210309";
+  epo:refersToLot epd:id_2021-S-047-118069_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-047-118069_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-047-118069_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 047-118069" .
+
+epd:id_2021-S-047-118069_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES300>;
+  locn:postCode "28007";
+  locn:postName "Madrid";
+  locn:thoroughfare "Avenida del Mediterráneo, 62" .
+
+epd:id_2021-S-047-118069_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "P2800062H" .
+
+epd:id_2021-S-047-118069_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2021-S-047-118069_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Organismo Autónomo Madrid Salud"@es;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2021-S-047-118069_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-047-118069_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-047-118069_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-047-118069_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "300/2021/00133" .
+
+epd:id_2021-S-047-118069_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/63110000> .
+
+epd:id_2021-S-047-118069_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-047-118069_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "Las ofertas, obligatoriamente, deberán ser presentadas en formato electrónico a través de la Plataforma de Contratación del Sector Público (PLACSP)."@es;
+  epo:hasDescription "Servicio de transporte de materiales, montaje de eventos y traslado de mobiliario y enseres, para el Organismo Autónomo Madrid Salud (subcontratación con Centros Especiales de Empleo de iniciativa social, Disposición Adicional 4.a de la LCSP)."@es;
+  epo:hasEstimatedValue epd:id_2021-S-047-118069_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2021-S-047-118069_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-047-118069_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-047-118069_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Servicio de transporte de materiales, montaje de eventos y traslado de mobiliario y enseres, para el Organismo Autónomo Madrid Salud (subcontratación con Centros Especiales de Empleo, DA 4.a de la LCSP)"@es;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-047-118069_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2021-S-047-118069_ReviewTerm_KjhWjVv578XNpvpTRjZhAs, epd:id_2021-S-047-118069_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62;
+  epo:usesChannel epd:id_2021-S-047-118069_Channel_iRCDPixbNsrvdzVqkxqWso .
+
+epd:id_2021-S-047-118069_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-04-12"^^xsd:date .
+
+epd:id_2021-S-047-118069_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-047-118069_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-047-118069_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-047-118069_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postCode "28007";
+  locn:postName "Madrid";
+  locn:thoroughfare "Avenida del Mediterráneo, 62, 8.ª planta" .
+
+epd:id_2021-S-047-118069_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  epo:hasFax "+34 914801307";
+  cccev:email "mscontratacion@madrid.es";
+  cccev:telephone "+34 914801320" .
+
+epd:id_2021-S-047-118069_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Unidad Técnica de Contratación"@es;
+  epo:hasPrimaryContactPoint epd:id_2021-S-047-118069_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2021-S-047-118069_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-047-118069_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-047-118069_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-047-118069_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "En el plazo de dos meses contados desde el día siguiente al de la publicación del anuncio o desde la notificación de la resolución de adjudicación, recurso contencioso-administrativo ante los juzgados de lo contencioso-administrativo de Madrid. Sin perjuicio de ello podrá potestativamente, de conformidad con lo establecido en el artículo 44 de la LCSP (Ley 9/2017), interponer en el plazo de quince días hábiles contados a partir del siguiente a aquel en que se publique el anuncio o se notifique la resolución de adjudicación, recurso especial en materia de contratación ante el mismo órgano que haya dictado el acuerdo que se notifica, en los términos previstos en el artículo 51.3 de la LCSP. La dirección del registro del Organismo Autónomo de Madrid Salud es avenida del Mediterráneo, 62, Madrid." .
+
+epd:id_2021-S-047-118069_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+34 914801307";
+  cccev:email "msgerencia@madrid.es";
+  cccev:telephone "+34 914801320" .
+
+epd:id_2021-S-047-118069_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postCode "28007";
+  locn:postName "Madrid";
+  locn:thoroughfare "Avenida del Mediterráneo, 62" .
+
+epd:id_2021-S-047-118069_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Gerente del Organismo Autónomo Madrid Salud"@es;
+  epo:hasPrimaryContactPoint epd:id_2021-S-047-118069_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2021-S-047-118069_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-047-118069_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-047-118069_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-047-118069_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasSubmissionURL "https://contrataciondelestado.es/wps/portal/plataforma"^^xsd:anyURI .
+
+epd:id_2021-S-047-118069_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-047-118069_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-047-118069_Organisation_gqoAAwSV3JaTMsopb9zyKP .

@@ -1,0 +1,79 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-026-046228_AccessTerm_4zjJjpytu5bmHbyNSmtsju a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://contractaciopublica.gencat.cat/ecofin_pscp/AppJava/perfil/BCNAjt/customProf"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-026-046228_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "www.bcn.cat"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-026-046228_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2017-S-026-046228_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2017-S-026-046228_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasInternetAddress "www.bcn.cat"^^xsd:anyURI;
+  cccev:email "egarciam@bcn.cat";
+  cccev:telephone "+93 4027460" .
+
+epd:id_2017-S-026-046228_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES51> .
+
+epd:id_2017-S-026-046228_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-026-046228_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2017-S-026-046228_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-026-046228_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription """
+Acuerdo marco de gestión de la cuenta del servicio de viajes del Ayuntamiento de Barcelona.
+La vigencia del contrato es de 2 años, más 2 posibles prórrogas anuales.
+El gasto anual estimado es de 1 237 641,78, siendo el VEC 5 940 680,54 EUR.
+"""@es .
+
+epd:id_2017-S-026-046228_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-026-046228_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2017-S-026-046228_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ;
+  epo:hasDispatchDate "2017-02-02"^^xsd:date;
+  epo:hasID epd:id_2017-S-026-046228_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasPublicationDate "20170207";
+  epo:refersToLot epd:id_2017-S-026-046228_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2017-S-026-046228_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2017-S-026-046228_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 026-046228" .
+
+epd:id_2017-S-026-046228_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES511>;
+  locn:postCode "08002";
+  locn:postName "Barcelona";
+  locn:thoroughfare "Plaza Sant Miquel, 4-5, entresuelo" .
+
+epd:id_2017-S-026-046228_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasLegalName "Ayuntamiento de Barcelona"@es;
+  epo:hasMainActivityDescription "servicios generales de las administraciones públicas";
+  cccev:registeredAddress epd:id_2017-S-026-046228_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2017-S-026-046228_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "17000670 (Exp 214/17)" .
+
+epd:id_2017-S-026-046228_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/63516000> .
+
+epd:id_2017-S-026-046228_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasID epd:id_2017-S-026-046228_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-026-046228_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2017-S-026-046228_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle """
+Acuerdo marco de gestión de la cuenta de servicio de viales del Ayuntamiento de Barcelona.
+"""@es;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-026-046228_AccessTerm_4zjJjpytu5bmHbyNSmtsju .
+
+epd:id_2017-S-026-046228_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-026-046228_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2017-S-026-046228_Organisation_TigDgN9yDLHn3hDtQD7BVC .

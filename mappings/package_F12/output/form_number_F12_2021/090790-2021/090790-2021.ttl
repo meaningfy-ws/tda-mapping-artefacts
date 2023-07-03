@@ -1,0 +1,183 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-036-090790_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.zaps.si/index.php?m_id=natecaji_aktualni"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-036-090790_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-036-090790_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-036-090790_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-036-090790_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "natecaji@zaps.si"@sl;
+  epo:hasInternetAddress "http://www.zaps.si"^^xsd:anyURI;
+  cccev:email "natecaji@zaps.si";
+  cccev:telephone "+386 12420672" .
+
+epd:id_2021-S-036-090790_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-036-090790_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-036-090790_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-036-090790_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasContactName "natecaji@zaps.si"@sl;
+  epo:hasInternetAddress "http://www.zaps.si"^^xsd:anyURI;
+  cccev:email "natecaji@zaps.si";
+  cccev:telephone "+386 12420672" .
+
+epd:id_2021-S-036-090790_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SI>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Vegova ulica 8" .
+
+epd:id_2021-S-036-090790_InformationProviderOrganisationIdentifier_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:Identifier;
+  epo:hasIdentifierValue "1913433000" .
+
+epd:id_2021-S-036-090790_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasID epd:id_2021-S-036-090790_InformationProviderOrganisationIdentifier_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:hasLegalName "Zbornica za arhitekturo in prostor Slovenije"@sl;
+  cccev:registeredAddress epd:id_2021-S-036-090790_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2021-S-036-090790_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2021-S-036-090790_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-036-090790_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Javni, projektni natečaj za izbiro strokovno najprimernejše rešitve za: ureditev glavnega trga v Vipavi."@sl;
+  epo:hasPurpose epd:id_2021-S-036-090790_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-036-090790_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-036-090790_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-036-090790_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2021-S-036-090790_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2021-S-036-090790_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2021-S-036-090790_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2021-02-17"^^xsd:date;
+  epo:hasID epd:id_2021-S-036-090790_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210222";
+  epo:refersToLot epd:id_2021-S-036-090790_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-036-090790_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-036-090790_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 036-090790" .
+
+epd:id_2021-S-036-090790_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SI>;
+  locn:postCode "5271";
+  locn:postName "Vipava";
+  locn:thoroughfare "Glavni trg 15" .
+
+epd:id_2021-S-036-090790_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "5879922000" .
+
+epd:id_2021-S-036-090790_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2021-S-036-090790_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Občina Vipava"@sl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-036-090790_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-036-090790_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "430-10/2020" .
+
+epd:id_2021-S-036-090790_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2021-S-036-090790_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "Organizirani ogled lokacije in posvet četrtek 11.3.2021 ob 14:00.Rok za postavljanje vsebinskih vprašanj 19.3.2021.Rok za odgovore na vsebinska vprašanja 26.3.2021.Rok za postavljanje formalnih vprašanj (8 dni pred rokom za oddajo natečajnih elaboratov) 12.4.2021.Rok za odgovore na formalna vprašanja (6 dni pred rokom za oddajo natečajnih elaboratov) 14.4.2021.Oddaja natečajno ponudbene dokumentacije torek 20.4.2021 do 16:00 ure.Odločitev o izidu natečaja z zaključnim poročilom predvidoma 21.5.2021.Razstava natečajnih elaboratov predvidoma konec junija 2021.Rok za sprejemanje ponudnikovih vprašanj: 12.4.2021 23:59:00."@sl;
+  epo:hasID epd:id_2021-S-036-090790_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-036-090790_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-036-090790_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Javni natečaj za ureditev glavnega trga v Vipavi"@sl;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-036-090790_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-036-090790_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-036-090790_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-036-090790_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2021-S-036-090790_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2021-S-036-090790_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  locn:postCode "5271";
+  locn:postName "Vipava";
+  locn:thoroughfare "Glavni trg 15" .
+
+epd:id_2021-S-036-090790_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Občina Vipava"@sl;
+  cccev:registeredAddress epd:id_2021-S-036-090790_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-036-090790_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-036-090790_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-036-090790_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Slovenska cesta 54" .
+
+epd:id_2021-S-036-090790_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Državna revizijska komisija za revizijo postopkov oddaje javnih naročil"@sl;
+  cccev:registeredAddress epd:id_2021-S-036-090790_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-036-090790_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-036-090790_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-036-090790_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "SL" .
+
+epd:id_2021-S-036-090790_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SI>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Vegova ulica 8" .
+
+epd:id_2021-S-036-090790_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasContactName "natecaji@zaps.si"@sl;
+  epo:hasInternetAddress "http://www.zaps.si"^^xsd:anyURI;
+  cccev:email "natecaji@zaps.si";
+  cccev:telephone "+386 12420672" .
+
+epd:id_2021-S-036-090790_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS
+  a epo:Identifier;
+  epo:hasIdentifierValue "1913433000" .
+
+epd:id_2021-S-036-090790_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasID epd:id_2021-S-036-090790_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasLegalName "Zbornica za arhitekturo in prostor Slovenije"@sl;
+  epo:hasPrimaryContactPoint epd:id_2021-S-036-090790_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2021-S-036-090790_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2021-S-036-090790_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-036-090790_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2021-S-036-090790_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

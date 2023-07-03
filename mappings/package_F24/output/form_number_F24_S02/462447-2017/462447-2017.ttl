@@ -1,0 +1,263 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-222-462447_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://alm.marches-securises.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2017-S-222-462447_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://alm.marches-securises.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-222-462447_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-222-462447_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-222-462447_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "M. Sorin — Direction transports et mobilités"@fr;
+  epo:hasInternetAddress "http://www.agglo.angers.fr"^^xsd:anyURI;
+  cccev:email "olivier.sorin@angersloiremetropole.fr";
+  cccev:telephone "+33 241215533" .
+
+epd:id_2017-S-222-462447_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+                  Angers et son agglomération. Extension du périmètre (intégration de la commune nouvelle Loire-Authion) au 1.1.2018.
+               """@fr .
+
+epd:id_2017-S-222-462447_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRG02>;
+  locn:address epd:id_2017-S-222-462447_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-222-462447_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2017-S-222-462447_Period_RgULVPVVYP9pkvK789PCUZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-222-462447_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-222-462447_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-222-462447_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "Mme Chich-Bourgine (renseignements juridiques)"@fr;
+  epo:hasInternetAddress "http://www.agglo.angers.fr"^^xsd:anyURI;
+  cccev:email "elisabeth.chich-bourgine@angersloiremetropole.fr";
+  cccev:telephone "+33 241055209" .
+
+epd:id_2017-S-222-462447_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRG02>;
+  locn:postCode "49020";
+  locn:postName "Angers Cedex 02";
+  locn:thoroughfare "BP 80011" .
+
+epd:id_2017-S-222-462447_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasLegalName "Angers Loire Métropole — Direction des affaires juridiques"@fr;
+  cccev:registeredAddress epd:id_2017-S-222-462447_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2017-S-222-462447_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60000000> .
+
+epd:id_2017-S-222-462447_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-222-462447_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+                  Services relevant du périmètre contractuel de base:
+                  1) Exploitation des services:
+                  — lignes régulières urbaines (bus et tramway) de transport de voyageurs, avec intégration 2e ligne du tramway fin 2022
+                  — préexploitation 2e ligne de tramway
+                  — services suburbains en partie partagés avec CD 49
+                  — services réguliers scolaires internes au périmètre de transport urbain (services affrétés)
+                  — services spéciaux et occasionnels
+                  — services à la demande d'Irigo Taxi et autres services TAD ou mobilité innovante (court-voiturage...)
+                  — exploitation d'un service de TAD (collectif) dédié aux personnes en situation de handicap et sur réservation.
+                  2) Entretien et maintenance des biens mis à la disposition (matériel roulant, bus, tramway, équipements, dépôts, agence clientèle)
+                  3) Commercialisation, information et communication des services
+                  4) Gestion des ressources humaines.
+                  Objectifs du délégataire dans ce contrat:
+                  — accompagner la maitrise du développement urbain en optimisant l'offre de transport (lien avec mise en service 2e ligne de tramway);
+                  — étudier les évolutions du réseau de transport à l'horizon de la mise en service 2e ligne de tramway dans une vision multimodale et mettre en œuvre ces évolutions sur la durée du contrat;
+                  — améliorer la fréquentation et les recettes en ciblant notamment les non usagers actuels
+                  — poursuivre la modération des frais de fonctionnement et gestion des ressources humaines (responsabilisation, maintien d'un climat social apaisé, de conditions de travail satisfaisantes et qualité de service);
+                  — accompagner la mutation du parc bus (choix de la technologie -gaz/électrique- dans les mois à venir)
+                  — entretenir la ligne A et pré-exploiter la 2e ligne de tramway;
+                  — finaliser la mise en accessibilité commerciale du réseau (conserver le même niveau de qualité de service des transports urbains);
+                  — améliorer la qualité de service et mieux contrôler les services affrétés;
+                  — améliorer le service Irigo Handicap Transport
+                  Biens composant le réseau Irigo au 1.10.2017: — agence clientèle place Lorraine et les 52 distributeurs automatiques de titres — dépôt principal de bus et siège administratif — centre technique de tramway / dépôt bus — ligne de tramway A et ses parkings-relais et, à partir de 2020, la 2e ligne de tramway (constituant le réseau ABC de tramway) — 732 abris voyageurs et 695 poteaux d'arrêt — équipements de stationnement vélo (30 abris vélo collectifs ouverts et 174 box vélos fermés individuels) 132 arrêts de bus sont équipés d'informations en temps réel. — matériel roulant: 108 bus standards, 69 bus articulés, 17 rames de tramway (35 à partir de 2022), 15 minibus de 9 places, 2 véhicules Kangoo aménagés PMR, parc de véhicules de service et d'entretien, — équipements informatiques, logiciels (MAINTA, INEO, Hastus...). Le système d'aide à l'exploitation devra faire l'objet d'une mise à niveau importante (création 2e ligne tramway et extension périmètre des transports).
+               """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-222-462447_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-222-462447_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-222-462447_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 347000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-222-462447_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM a cccev:ContactPoint;
+  epo:hasInternetAddress "http://nantes.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-nantes@juradm.fr";
+  cccev:telephone "+33 240994600" .
+
+epd:id_2017-S-222-462447_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "44041";
+  locn:postName "Nantes Cedex";
+  locn:thoroughfare "6 allée de l'Île Gloriette — BP 24111" .
+
+epd:id_2017-S-222-462447_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nantes"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-222-462447_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM;
+  cccev:registeredAddress epd:id_2017-S-222-462447_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2017-S-222-462447_Mediator_PMKvGTWSa3gLdxRfJtvToM a epo:Mediator;
+  epo:playedBy epd:id_2017-S-222-462447_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2017-S-222-462447_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 347000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-222-462447_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-222-462447_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-222-462447_Mediator_PMKvGTWSa3gLdxRfJtvToM,
+    epd:id_2017-S-222-462447_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2017-S-222-462447_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2017-S-222-462447_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-222-462447_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2017-11-14"^^xsd:date;
+  epo:hasID epd:id_2017-S-222-462447_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20171118";
+  epo:refersToLot epd:id_2017-S-222-462447_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2017-S-222-462447_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-222-462447_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 222-462447" .
+
+epd:id_2017-S-222-462447_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRG02>;
+  locn:postCode "49020";
+  locn:postName "Angers Cedex 02";
+  locn:thoroughfare "BP 80011" .
+
+epd:id_2017-S-222-462447_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Angers Loire Mėtropole"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-222-462447_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-222-462447_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;
+  epo:hasBeginning "2019-07-01"^^xsd:date;
+  epo:hasEnd "2025-06-30"^^xsd:date .
+
+epd:id_2017-S-222-462447_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "DSP Transports" .
+
+epd:id_2017-S-222-462447_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60000000> .
+
+epd:id_2017-S-222-462447_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-222-462447_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               Les candidatures doivent être envoyées à l'adresse suivante: Angers Loire Métropole — Direction des Affaires Juridiques (Mme Bossard, porte 206b — 2e étage de l'hôtel de ville) — BP 80011 — 49020, Angers Cedex 02, F.
+               Modalités de présentation des candidatures: Les candidatures doivent parvenir sous enveloppe fermée à l'adresse mentionnée ci-dessus: soit par remise directe contre récépissé, soit par voie postale en recommandé avec avis de réception. L'enveloppe comportera obligatoirement la mention suivante: « Délégation de service public Transports — ne pas ouvrir en dehors de la commission »; et portera le cachet du candidat. Les critères de sélection des candidatures (L1411-5 du CGCT) examinées par la Commission des délégations de service public sont les suivants: garanties professionnelles et financières; aptitude à assurer la continuité du service public et l'égalité des usagers devant le service public. Procédure restreinte: les candidats sélectionnés par la Commission des délégations de service public recevront le document-programme et le règlement de la consultation dans lequel figureront les modalités de présentation des offres (date limite de remise, documents à fournir...) et les critères de sélection des offres.
+            """@fr;
+  epo:hasDescription """
+               DSP en application des art. L1411-1 et suivants du CGCT et soumise à directive concessions. Le délégataire assure l'exploitation à ses risques et périls et se rémunère sur les usagers. Une contribution est versée par le délégant en compensation des contraintes spécifiques de service public imposées au délégataire. Le délégant exigera la création d'une société dédiée et la solidarité de la société mère pour l'exécution de la DSP. Le délégataire assure le rôle de service public propre tant aux transports collectifs urbains et suburbains qu'aux services de transport de personnes en situation de handicap, notamment en terme de desserte des zones peu denses, d'horaires de service et de poursuite et d'amplification de la mise en œuvre des services commerciaux accessibles du réseau. Les biens sont mis à disposition par le délégant moyennant le versement par le délégataire d'une redevance. Tarifs fixés afin d'assurer l'équilibre financier du service délégué.
+            """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-222-462447_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2017-S-222-462447_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-222-462447_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-222-462447_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Délégation de service public transports urbains, suburbains de voyageurs et de voyageurs en situation de handicap.
+            """@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-222-462447_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-222-462447_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2017-S-222-462447_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-222-462447_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-222-462447_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2017-S-222-462447_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2017-S-222-462447_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "44041";
+  locn:postName "Nantes Cedex";
+  locn:thoroughfare "BP 24111" .
+
+epd:id_2017-S-222-462447_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://nantes.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-nantes@juradm.fr";
+  cccev:telephone "+33 240994600" .
+
+epd:id_2017-S-222-462447_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nantes"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-222-462447_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2017-S-222-462447_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-222-462447_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-222-462447_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-222-462447_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Référé précontractuel à introduire avant la conclusion du contrat dans les conditions prévues aux articles L551-1 et suivants du CJA. Référé contractuel à compter de la signature du contrat conformément aux articles L551-13 et suivants du CJA dans les délais mentionnés à l'article R551-7 du CJA. Recours en contestation de la validité du contrat dans un délai de 2 mois à compter des mesures de publicité appropriées (conseil d'État 4.4.2014, département Tarn-et-Garonne, req 358994).
+            """ .
+
+epd:id_2017-S-222-462447_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasInternetAddress "http://nantes.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-nantes@juradm.fr";
+  cccev:telephone "+33 240994600" .
+
+epd:id_2017-S-222-462447_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "44041";
+  locn:postName "Nantes Cedex";
+  locn:thoroughfare "6 allée de l'Île Gloriette — BP 24111" .
+
+epd:id_2017-S-222-462447_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nantes"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-222-462447_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2017-S-222-462447_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-222-462447_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-222-462447_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-222-462447_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2017-S-222-462447_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRG02>;
+  locn:postCode "49020";
+  locn:postName "Angers Cedex 02";
+  locn:thoroughfare "BP 80011" .
+
+epd:id_2017-S-222-462447_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasContactName "Direction des affaires juridiques — Mme Bossard (2e etage) — Hôtel de ville — BP 80011 — 49020 Angers Cedex 02"@fr;
+  epo:hasInternetAddress "http://www.agglo.angers.fr"^^xsd:anyURI;
+  cccev:email "isabelle.bossard@angersloiremetropole.fr";
+  cccev:telephone "+33 241055205" .
+
+epd:id_2017-S-222-462447_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Angers Loire Métropole"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-222-462447_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2017-S-222-462447_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2017-S-222-462447_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-222-462447_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2017-S-222-462447_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

@@ -1,0 +1,189 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-134-275448_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://marches-publics.orleans.fr/accueil.htm"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-134-275448_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://marches-publics.orleans.fr/accueil.htm"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-134-275448_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-134-275448_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-134-275448_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.orleans-metropole.fr"^^xsd:anyURI;
+  cccev:email "marches.publics@orleans-metropole.fr";
+  cccev:telephone "+33 238784030" .
+
+epd:id_2017-S-134-275448_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR246> .
+
+epd:id_2017-S-134-275448_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-134-275448_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-134-275448_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-134-275448_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-134-275448_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 72.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-134-275448_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60140000>, <http://data.europa.eu/cpv/cpv/60210000>,
+    <http://data.europa.eu/cpv/cpv/60600000>, <http://data.europa.eu/cpv/cpv/63712400> .
+
+epd:id_2017-S-134-275448_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-134-275448_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+                  La présente consultation porte sur une délégation de service public par voie de concession de l'exploitation des services de mobilité. Phase candidature.
+               """@fr;
+  epo:hasPurpose epd:id_2017-S-134-275448_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-134-275448_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-134-275448_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-134-275448_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2017-S-134-275448_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2017-S-134-275448_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-134-275448_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2017-07-12"^^xsd:date;
+  epo:hasID epd:id_2017-S-134-275448_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20170715";
+  epo:refersToLot epd:id_2017-S-134-275448_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2017-S-134-275448_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-134-275448_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 134-275448" .
+
+epd:id_2017-S-134-275448_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR246>;
+  locn:postCode "45058";
+  locn:postName "Orléans";
+  locn:thoroughfare "espace Saint-Marc, 5 place du 6 Juin 1944, CS 95801" .
+
+epd:id_2017-S-134-275448_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "24450046800040" .
+
+epd:id_2017-S-134-275448_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2017-S-134-275448_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Orléans Métropole"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-134-275448_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-134-275448_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "Dsp Transport" .
+
+epd:id_2017-S-134-275448_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2017-S-134-275448_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-134-275448_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               Pour retrouver cet avis intégral, poser des questions à l'acheteur, déposer un pli, allez sur http://marches-publics.orleans.fr/accueil.htm
+               => Durée: 6 ans à compter du 1.1.2019.
+               => Accès au dossier de la consultation, renseignements complémentaires et modalités de remise des offres par voie électronique:
+               http://www.orleans-metropole.fr/135/marchespublics.htm
+               => La transmission des offres et questions, par mail, n'est pas autorisée.
+               => Négociation: le pouvoir adjudicateur se réserve la possibilité de négocier avec les candidats (conditions fixées dans le règlement de la consultation).
+            """@fr;
+  epo:hasDescription """
+               La présente consultation porte sur une délégation de service public par voie de concession de l'exploitation des services de mobilité. Phase candidature.
+            """@fr;
+  epo:hasID epd:id_2017-S-134-275448_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-134-275448_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-134-275448_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Concession pour l'exploitation des services de mobilité d'Orléans Métropole.
+            """@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-134-275448_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-134-275448_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-134-275448_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-134-275448_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-134-275448_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-134-275448_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "45057";
+  locn:postName "Orléans";
+  locn:thoroughfare "28 rue de la Bretonnerie" .
+
+epd:id_2017-S-134-275448_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 238538516";
+  epo:hasInternetAddress "http://orleans.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-orleans@juradm.fr";
+  cccev:telephone "+33 238775900" .
+
+epd:id_2017-S-134-275448_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif d'Orléans"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-134-275448_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2017-S-134-275448_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-134-275448_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-134-275448_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-134-275448_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 238538516";
+  epo:hasInternetAddress "http://orleans.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-orleans@juradm.fr";
+  cccev:telephone "+33 238775900" .
+
+epd:id_2017-S-134-275448_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "45057";
+  locn:postName "Orléans";
+  locn:thoroughfare "28 rue de la Bretonnerie" .
+
+epd:id_2017-S-134-275448_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif d'Orléans"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-134-275448_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2017-S-134-275448_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-134-275448_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-134-275448_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-134-275448_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://marches-publics.orleans.fr/accueil.htm"^^xsd:anyURI .
+
+epd:id_2017-S-134-275448_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR246>;
+  locn:postCode "45040";
+  locn:postName "Orléans";
+  locn:thoroughfare "DCPA — service des marchés publics, place de l'Étape" .
+
+epd:id_2017-S-134-275448_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://marches-publics.orleans.fr/accueil.htm"^^xsd:anyURI;
+  cccev:email "marches.publics@orleans-metropole.fr" .
+
+epd:id_2017-S-134-275448_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Direction de la commande publique et des achats: Orléans Métropole — centre municipal"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-134-275448_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2017-S-134-275448_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2017-S-134-275448_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-134-275448_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2017-S-134-275448_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

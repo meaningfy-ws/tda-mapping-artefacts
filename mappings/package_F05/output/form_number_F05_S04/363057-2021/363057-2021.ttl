@@ -1,0 +1,346 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-136-363057_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://portail-achat.enedis.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-136-363057_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://portail-achats.enedis.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-136-363057_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-136-363057_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-136-363057_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "PFA de Paris Lille immeuble Jean Monnet 11 place des Vosges 92400 Courbevoie"@fr;
+  epo:hasInternetAddress "http://www.enedis.fr"^^xsd:anyURI;
+  cccev:email "christian.dubrey@enedis.fr";
+  cccev:telephone "+33 699098635" .
+
+epd:id_2021-S-136-363057_ContractTermLotLocationAddress_32L5QtPBVpA5CJ4PqGRoL2 a locn:Address;
+  locn:fullAddress "Le lot est défini par les communes de la 1re couronne du territoire de la direction régionale Île-de-France Ouest: zone de Nanterre — Montmagny et Arcueil."@fr .
+
+epd:id_2021-S-136-363057_ContractTermLotLocationAddress_8SnxRM7z7L8aATWrQVC4hf a locn:Address;
+  locn:fullAddress "Le lot est défini par les communes de la 2e couronne du territoire de la direction régionale Île-de-France Ouest: zone de Magnanville — Saint-Ouen — Maurepas et carrières."@fr .
+
+epd:id_2021-S-136-363057_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Le lot est défini par les communes de la 1re couronne du territoire de la direction régionale Île-de-France Ouest: zone de Nanterre — Montmagny et Arcueil."@fr .
+
+epd:id_2021-S-136-363057_ContractTermLotLocationAddress_JUnbusR5A38KBrkcqQEZ8g a locn:Address;
+  locn:fullAddress "Le lot est défini par toutes les communes de la direction régionale Île-de-France Ouest."@fr .
+
+epd:id_2021-S-136-363057_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a locn:Address;
+  locn:fullAddress "Le lot est défini par les communes de la 2e couronne du territoire de la direction régionale Île-de-France Ouest: zone de Magnanville — Saint-Ouen — Maurepas et carrières."@fr .
+
+epd:id_2021-S-136-363057_ContractTermLotLocation_32L5QtPBVpA5CJ4PqGRoL2 a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:address epd:id_2021-S-136-363057_ContractTermLotLocationAddress_32L5QtPBVpA5CJ4PqGRoL2 .
+
+epd:id_2021-S-136-363057_ContractTermLotLocation_8SnxRM7z7L8aATWrQVC4hf a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:address epd:id_2021-S-136-363057_ContractTermLotLocationAddress_8SnxRM7z7L8aATWrQVC4hf .
+
+epd:id_2021-S-136-363057_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:address epd:id_2021-S-136-363057_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-136-363057_ContractTermLotLocation_JUnbusR5A38KBrkcqQEZ8g a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:address epd:id_2021-S-136-363057_ContractTermLotLocationAddress_JUnbusR5A38KBrkcqQEZ8g .
+
+epd:id_2021-S-136-363057_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:address epd:id_2021-S-136-363057_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
+
+epd:id_2021-S-136-363057_ContractTermLot_32L5QtPBVpA5CJ4PqGRoL2 a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-136-363057_Duration_E3KeCeWkZTz2DBvWCgwLic;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-136-363057_ContractTermLotLocation_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "La durée du marché mentionnée à la rubrique II.2.7) comprend deux options de durée de douze mois chacune. Le marché est d'une durée ferme de 24 mois prorogeable deux fois douze mois."@fr .
+
+epd:id_2021-S-136-363057_ContractTermLot_8SnxRM7z7L8aATWrQVC4hf a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-136-363057_Duration_9CGgccuzyF7ofcnSL9oj2g;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-136-363057_ContractTermLotLocation_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "La durée du marché mentionnée à la rubrique II.2.7) comprend deux options de durée de douze mois chacune. Le marché est d'une durée ferme de 24 mois prorogeable deux fois douze mois."@fr .
+
+epd:id_2021-S-136-363057_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-136-363057_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-136-363057_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "La durée du marché mentionnée à la rubrique II.2.7) comprend deux options de durée de douze mois chacune. Le marché est d'une durée ferme de 24 mois prorogeable deux fois douze mois."@fr .
+
+epd:id_2021-S-136-363057_ContractTermLot_JUnbusR5A38KBrkcqQEZ8g a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-136-363057_Duration_ZVt2gHHbyCfyLALywU23QT;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-136-363057_ContractTermLotLocation_JUnbusR5A38KBrkcqQEZ8g;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "La durée du marché mentionnée à la rubrique II.2.7) comprend deux options de durée de douze mois chacune. Le marché est d'une durée ferme de 24 mois prorogeable deux fois douze mois."@fr .
+
+epd:id_2021-S-136-363057_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-136-363057_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-136-363057_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "La durée du marché mentionnée à la rubrique II.2.7) comprend deux options de durée de douze mois chacune. Le marché est d'une durée ferme de 24 mois prorogeable deux fois douze mois."@fr .
+
+epd:id_2021-S-136-363057_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-136-363057_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-136-363057_Duration_9CGgccuzyF7ofcnSL9oj2g a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-136-363057_Duration_E3KeCeWkZTz2DBvWCgwLic a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-136-363057_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-136-363057_Duration_ZVt2gHHbyCfyLALywU23QT a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-136-363057_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-136-363057_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2021-S-136-363057_LotIdentifier_32L5QtPBVpA5CJ4PqGRoL2 a epo:Identifier;
+  epo:hasIdentifierValue "3" .
+
+epd:id_2021-S-136-363057_LotIdentifier_8SnxRM7z7L8aATWrQVC4hf a epo:Identifier;
+  epo:hasIdentifierValue "4" .
+
+epd:id_2021-S-136-363057_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-136-363057_LotIdentifier_JUnbusR5A38KBrkcqQEZ8g a epo:Identifier;
+  epo:hasIdentifierValue "5" .
+
+epd:id_2021-S-136-363057_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-136-363057_LotPurpose_32L5QtPBVpA5CJ4PqGRoL2 a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45231400> .
+
+epd:id_2021-S-136-363057_LotPurpose_8SnxRM7z7L8aATWrQVC4hf a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45231400> .
+
+epd:id_2021-S-136-363057_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45231400> .
+
+epd:id_2021-S-136-363057_LotPurpose_JUnbusR5A38KBrkcqQEZ8g a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45231400> .
+
+epd:id_2021-S-136-363057_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45231400> .
+
+epd:id_2021-S-136-363057_Lot_32L5QtPBVpA5CJ4PqGRoL2 a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-136-363057_ContractTermLot_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasAdditionalInformation "Le montant indiqué au II.2.6) du lot 3 constitue la valeur haute de l'estimation du montant du lot 3, sur la durée maximale du marché [option(s) de durée comprise(s)].Le montant du lot est en effet estimé entre 1 728 000 EUR et 3 600 000 EUR."@fr;
+  epo:hasDescription "Les travaux portent sur:— le changement du meuble HTA afin qu’il soit nouvelle génération et motorisé;— la mise en place du coffret OMT;— la construction de la ligne téléphonique.Il est indispensable que les prestataires du lot OMT possèdent la compétence EQP pour réaliser la prestation OMT dans son intégralité."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-136-363057_MainMonetaryValueLot_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasID epd:id_2021-S-136-363057_LotIdentifier_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasPurpose epd:id_2021-S-136-363057_LotPurpose_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasTitle "Mise en place OMT et Télécommunication – 1re couronne"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-136-363057_Lot_8SnxRM7z7L8aATWrQVC4hf a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-136-363057_ContractTermLot_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasAdditionalInformation "Le montant indiqué au II.2.6) du lot 4 constitue la valeur haute de l'estimation du montant du lot 4, sur la durée maximale du marché [option(s) de durée comprise(s)].Le montant du lot est en effet estimé entre 1 728 000 EUR et 3 600 000 EUR."@fr;
+  epo:hasDescription "Les travaux portent sur:— le changement du meuble HTA afin qu’il soit nouvelle génération et motorisé;— la mise en place du coffret OMT;— la construction de la ligne téléphonique.Il est indispensable que les prestataires du lot OMT possèdent la compétence EQP pour réaliser la prestation OMT dans son intégralité."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-136-363057_MainMonetaryValueLot_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasID epd:id_2021-S-136-363057_LotIdentifier_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasPurpose epd:id_2021-S-136-363057_LotPurpose_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasTitle "Mise en place OMT et Télécommunication – 2e couronne"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-136-363057_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-136-363057_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "Le montant indiqué au II.2.6) du lot 1 constitue la valeur haute de l'estimation du montant du lot 1, sur la durée maximale du marché (option(s) de durée comprise(s).Le montant du lot est en effet estimé entre 11 751 000 EUR et 24 481 250 EUR."@fr;
+  epo:hasDescription "Les travaux portent sur— la réalisation d’étude de faisabilité travaux suivant la typologie du matériel HTA et BT;— la conception de postes neufs ou à rénover;— poste en immeuble, poste de coupure HTA, poste préfabriqués, armoire de coupure HTA;— présentation liste matériel;— le renforcement et le renouvellement d'ouvrages de génie civil, huisseries et serrureries de postes décidés par l’entreprise;— la réalisation de ce type d'ouvrages est planifiée;— le renouvellement d’équipements HTA (cellules), BT (TIPI, TUR ou TIV) et télécommandes (ITI, PASA, EMIS...);— équipement électrique complet de poste neuf intégré à l’immeuble avec ou sans télécommandes (ITI, PASA, EMIS...).Et pour les postes préfabriqués:— livraison du transformateur et raccordement BT et HTA;— mise en place de la boucle fond de fouille et ceinture équipotentielle si livraison poste préfabriqué par l’entreprise au marché;— mesure de valeur de terre.Le Génie civil GC) est réalisé en amont de la création du poste, et n’est pas l’objet du présent avis de marché.Enedis peut avoir recours à une entreprise de GC pour réparer des anomalies a posteriori de la réception d’un poste.Par conséquent, les activités au sein de ce lot sont très majoritairement des prestations d’équipement de poste mais peuvent comprendre aussi des travaux ponctuels de Génie civil (GC)."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-136-363057_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasID epd:id_2021-S-136-363057_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-136-363057_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle "Équipements de poste et génie civil – 1re couronne"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-136-363057_Lot_JUnbusR5A38KBrkcqQEZ8g a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-136-363057_ContractTermLot_JUnbusR5A38KBrkcqQEZ8g;
+  epo:hasAdditionalInformation "Le montant indiqué au II.2.6) du lot 5 constitue la valeur haute de l'estimation du montant du lot 5, sur la durée maximale du marché [option(s) de durée comprise(s)].Le montant du lot est en effet estimé entre 960 000 EUR et 2 000 000 EUR."@fr;
+  epo:hasDescription "La compétence requise est celle du génie civil de postes HTA/BT qui consiste en la construction de génie civil traditionnel."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-136-363057_MainMonetaryValueLot_JUnbusR5A38KBrkcqQEZ8g;
+  epo:hasID epd:id_2021-S-136-363057_LotIdentifier_JUnbusR5A38KBrkcqQEZ8g;
+  epo:hasPurpose epd:id_2021-S-136-363057_LotPurpose_JUnbusR5A38KBrkcqQEZ8g;
+  epo:hasTitle "Génie civil et serrurerie"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-136-363057_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-136-363057_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasAdditionalInformation "Le montant indiqué au II.2.6 du lot 2 constitue la valeur haute de l'estimation du montant du lot 2, sur la durée maximale du marché (option(s) de durée comprise(s).Le montant du lot est en effet estimé entre 7 833 000 EUR et 16 318 750 EUR."@fr;
+  epo:hasDescription """Les travaux portent sur:— la réalisation d’étude de faisabilité travaux suivant la typologie du matériel HTA et BT;
+— la conception de postes neufs ou à rénover;
+— poste en immeuble, poste de coupure HTA, poste préfabriqués, armoire de coupure HTA;
+— présentation liste matériel;
+— le renforcement et le renouvellement d'ouvrages de génie civil, huisseries et serrureries de postes décidés par l’entreprise;
+— la réalisation de ce type d'ouvrages est planifiée;
+— le renouvellement d’équipements HTA (cellules), BT (TIPI, TUR ou TIV) et télécommandes (ITI, PASA, EMIS...);
+— équipement électrique complet de poste neuf intégré à l’immeuble avec ou sans télécommandes (ITI, PASA, EMIS...).
+Et pour les postes préfabriqués:
+— livraison du transformateur et raccordement BT et HTA;
+— mise en place de la boucle fond de fouille et ceinture équipotentielle si livraison poste préfabriqué par l’entreprise au marché;
+— mesure de valeur de terre.
+Le Génie civil GC) est réalisé en amont de la création du poste, et n’est pas l’objet du présent avis de marché.
+Enedis peut avoir recours à une entreprise de GC pour réparer des anomalies a posteriori de la réception d’un poste.
+Par conséquent, les activités au sein de ce lot sont très majoritairement des prestations d’équipement de poste mais peuvent comprendre aussi des travaux ponctuels de Génie civil (GC)."""@fr;
+  epo:hasEstimatedValue epd:id_2021-S-136-363057_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasID epd:id_2021-S-136-363057_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-136-363057_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle "Équipements de poste et génie civil – 2e Couronne"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-136-363057_MainMonetaryValueLot_32L5QtPBVpA5CJ4PqGRoL2 a epo:MonetaryValue;
+  epo:hasAmountValue 3600000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-136-363057_MainMonetaryValueLot_8SnxRM7z7L8aATWrQVC4hf a epo:MonetaryValue;
+  epo:hasAmountValue 3600000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-136-363057_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 24481250.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-136-363057_MainMonetaryValueLot_JUnbusR5A38KBrkcqQEZ8g a epo:MonetaryValue;
+  epo:hasAmountValue 2000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-136-363057_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj a epo:MonetaryValue;
+  epo:hasAmountValue 16318750.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-136-363057_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 50000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-136-363057_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-136-363057_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-136-363057_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-136-363057_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-136-363057_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-07-13"^^xsd:date;
+  epo:hasID epd:id_2021-S-136-363057_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210716";
+  epo:refersToLot epd:id_2021-S-136-363057_Lot_32L5QtPBVpA5CJ4PqGRoL2, epd:id_2021-S-136-363057_Lot_8SnxRM7z7L8aATWrQVC4hf,
+    epd:id_2021-S-136-363057_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2021-S-136-363057_Lot_JUnbusR5A38KBrkcqQEZ8g,
+    epd:id_2021-S-136-363057_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2021-S-136-363057_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-136-363057_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 136-363057" .
+
+epd:id_2021-S-136-363057_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "92079";
+  locn:postName "Paris La Défense";
+  locn:thoroughfare "Tour Enedis 34 place des Corolles" .
+
+epd:id_2021-S-136-363057_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Enedis"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2021-S-136-363057_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-136-363057_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "231910" .
+
+epd:id_2021-S-136-363057_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45231400> .
+
+epd:id_2021-S-136-363057_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2021-S-136-363057_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-136-363057_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Les candidats sont invités à manifester leur intérêt, prendre connaissance de documents, et fournir l'ensemble des informations demandées dans le présent avis via le portail achats d'Enedis, en respectant la date et heure limites précisée au IV.2.2. En cas de manquement, l'entité adjudicatrice se réserve le droit de rejeter la demande de participation. Les candidats sont invités à s'enregistrer au préalable, si ce n'est pas déjà le cas, dans le portail achat. Afin de se porter candidat, se connecter sur le portail achat https://portail-achats.enedis.frEt rechercher la demande d'information RFI 102730 afin de compléter le questionnaire et y déposer les documents requis.Pour tout renseignement relatif au portail achats, contacter le centre support et assistance Ivalua: du lundi au vendredi de 08h00 à 18h00 CET (heures françaises) tél. +33 184770026 ou par courrier électronique: support-edf@ivalua.comLa consultation sera lancée via le portail achat: https://portail-achats.enedis.fr/."@fr;
+  epo:hasDescription "Le marché concerne:— la réalisation des travaux d’équipement de poste DP (Distribution publique) électricité et génie civil associé;— la réalisation de travaux de mise en place d’OMT (Organe de manœuvre télécommandé), dans les postes DP;— la réalisation de travaux de constructions de lignes téléphoniques de télécommande de meuble HTA;— la réalisation des travaux de génie civil et serrurerie sur le territoire de la direction régionale IDF Ouest."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-136-363057_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2021-S-136-363057_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-136-363057_Lot_32L5QtPBVpA5CJ4PqGRoL2,
+    epd:id_2021-S-136-363057_Lot_8SnxRM7z7L8aATWrQVC4hf, epd:id_2021-S-136-363057_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-136-363057_Lot_JUnbusR5A38KBrkcqQEZ8g, epd:id_2021-S-136-363057_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-136-363057_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Marché de travaux d’équipement de postes DP — Mise en place d’OMT — génie civil — serrurerie — DR IDF Ouest"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-136-363057_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-136-363057_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-136-363057_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2021-S-136-363057_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-136-363057_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-136-363057_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-136-363057_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-136-363057_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-136-363057_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "92020";
+  locn:postName "Nanterre";
+  locn:thoroughfare "179-191 avenue Joliot Curie" .
+
+epd:id_2021-S-136-363057_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.cours-appel.justice.fr/versailles/tribunal-judiciaire-de-nanterre"^^xsd:anyURI;
+  cccev:telephone "+33 140971010" .
+
+epd:id_2021-S-136-363057_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal judiciaire de Nanterre"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-136-363057_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-136-363057_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-136-363057_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-136-363057_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-136-363057_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.cours-appel.justice.fr/versailles/tribunal-judiciaire-de-nanterre"^^xsd:anyURI;
+  cccev:telephone "+33 140971010" .
+
+epd:id_2021-S-136-363057_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "92020";
+  locn:postName "Nanterre";
+  locn:thoroughfare "179-191 avenue Joliot Curie" .
+
+epd:id_2021-S-136-363057_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal judiciaire de Nanterre"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-136-363057_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-136-363057_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-136-363057_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-136-363057_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-136-363057_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://portail-achat.enedis.fr"^^xsd:anyURI .

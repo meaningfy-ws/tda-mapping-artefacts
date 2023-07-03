@@ -1,0 +1,242 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-184-416263_Notice a epo:Notice;
+  epo:hasID epd:id_2018-S-184-416263_NoticeIdentifier_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2018-S-184-416263_NoticeIdentifier_36ktLAsh4DDGMtAzNZMEnw a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 184-416263" .
+
+epd:id_2019-S-010-018943_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.nepo.org"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-010-018943_AwardCriterionCost_LZXPc54dghndgUKmLLkWYh a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Price"@en;
+  cccev:weight "20"@en .
+
+epd:id_2019-S-010-018943_AwardCriterionQuality_aDam54DqENHigUj4DJyHNL a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Quality"@en;
+  cccev:weight "80"@en .
+
+epd:id_2019-S-010-018943_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasBuyerProfile "www.nepo.org"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2019-S-010-018943_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2019-S-010-018943_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2019-S-010-018943_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Adam Smith"@en;
+  epo:hasInternetAddress "www.nepo.org"^^xsd:anyURI;
+  cccev:email "Adam.Smith@nepo.org";
+  cccev:telephone "+44 7545070254" .
+
+epd:id_2019-S-010-018943_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UK> .
+
+epd:id_2019-S-010-018943_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-010-018943_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-010-018943_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2019-S-010-018943_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2019-S-010-018943_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 96.0;
+  time:unitType time:unitMonth .
+
+epd:id_2019-S-010-018943_FrameworkAgreementTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2019-S-010-018943_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "The Framework Contract is anticipated to exceed 48 months in duration. This is due to the commercial and contractual complexity of the Framework Contract combined with the cost of administrating the procurement for NEPO, Contracting Authorities, Tenderers and impacted Supply Chains."@en .
+
+epd:id_2019-S-010-018943_Fund_oEYZZQWPrbQFajcRU6KZAY a epo:Fund;
+  epo:hasDescription "It is anticipated that this Framework Contract may be utilised by Contracting Authorities, as part of a Call-Off Contract, for externally funded projects including European Funding bodies. Contracting Authorities are wholly responsible for the Call-Off Contract meeting the requirements of the applicable funding body."@en .
+
+epd:id_2019-S-010-018943_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/66171000>, <http://data.europa.eu/cpv/cpv/70333000>,
+    <http://data.europa.eu/cpv/cpv/71311000>, <http://data.europa.eu/cpv/cpv/71311200>,
+    <http://data.europa.eu/cpv/cpv/71311210>, <http://data.europa.eu/cpv/cpv/71311300>,
+    <http://data.europa.eu/cpv/cpv/71312000>, <http://data.europa.eu/cpv/cpv/71315200>,
+    <http://data.europa.eu/cpv/cpv/71315210>, <http://data.europa.eu/cpv/cpv/71530000>,
+    <http://data.europa.eu/cpv/cpv/71800000>, <http://data.europa.eu/cpv/cpv/72000000>,
+    <http://data.europa.eu/cpv/cpv/72220000>, <http://data.europa.eu/cpv/cpv/72221000>,
+    <http://data.europa.eu/cpv/cpv/72224000>, <http://data.europa.eu/cpv/cpv/73000000>,
+    <http://data.europa.eu/cpv/cpv/73220000>, <http://data.europa.eu/cpv/cpv/79210000>,
+    <http://data.europa.eu/cpv/cpv/79341100>, <http://data.europa.eu/cpv/cpv/79400000>,
+    <http://data.europa.eu/cpv/cpv/79410000>, <http://data.europa.eu/cpv/cpv/79411000>,
+    <http://data.europa.eu/cpv/cpv/79413000>, <http://data.europa.eu/cpv/cpv/79416200>,
+    <http://data.europa.eu/cpv/cpv/79418000>, <http://data.europa.eu/cpv/cpv/79419000>,
+    <http://data.europa.eu/cpv/cpv/79993000>, <http://data.europa.eu/cpv/cpv/80000000>,
+    <http://data.europa.eu/cpv/cpv/85000000>, <http://data.europa.eu/cpv/cpv/85100000>,
+    <http://data.europa.eu/cpv/cpv/90713000>, <http://data.europa.eu/cpv/cpv/92000000>,
+    <http://data.europa.eu/cpv/cpv/98000000> .
+
+epd:id_2019-S-010-018943_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-010-018943_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription "NEPO are using a 2-stage competitive procedure with Negotiation for the procurement of this framework contract. The first stage is a selection questionnaire which will be used to shortlist suppliers. Shortlisted suppliers will then be Invited to Tender. The selection questionnaire document also contains an ITT overview that sets out the high-level requirements of the framework contract. This document will allow suppliers to determine if they are interested in this opportunity and consider whether they have the required capability and capacity to deliver the framework contract.The framework contract will be a sole supplier and single lot solution. Those suppliers shortlisted from selection questionnaire and Invited to Tender will be evaluated in accordance with the award criteria contained within the Invitation to Tender documents. NEPO may also wish to enter into negotiations with tenderers inline with the requirements of the competition with negotiation procedure. NEPO also reserve the right not to enter into negotiations and award the framework contract on the basis of initial tender.The most economically advantageous tenderer will be awarded the Framework Contract. NEPO does not give any guarantee and/or warrant the actual value of the services (if any) which will be placed with the successful supplier by any Contracting Authority using the framework contract pursuant to this process and accepts no liability thereof. In accordance with the framework contract, each Contracting Authority will enter into a call-off contract. The call-off contract is to be entered into by both the Contracting Authority and successful supplier and will be based on the terms and conditions of the framework contract. Contracting Authorities may have entered into a longer term call-off contract under NEPRO2 with an expiry date no later than the 30.11.2021. Any associated work order contracts are to end before or coterminous with the call-off contract.The opportunity can be accessed via the NEPO eTender system. Suppliers wishing to be considered for this framework contract must register their expression of interest and submit the selection questionnaire and tender response through the NEPO eTender System. If not already registered, suppliers should register on the NEPO eTender system at https://procontract.due-north.com/RegisterSelection questionnaire and tender responses must be submitted using the link above. Selection questionnaire and tender responses submitted via postal or email methods will not be accepted. If you require time-critical assistance on submitting your selection questionnaire and/or Tender response please contact the System Support Team on 0330 0050352. For not time-critical issues, such as passwords, general account queries and location of information etc, please contact Proactics Supplier Support Helpdesk Ticketing System (http://proactis.kayako.com/) and select ProContract V3 support. You will then need to login or submit a ticket to register your issue. Alternatively, you can email ProContractSuppliers@proactics.comThis will automatically log a support ticket on the Proactics Supplier Support Helpdesk."@en;
+  epo:hasEstimatedValue epd:id_2019-S-010-018943_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2019-S-010-018943_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isFundedBy epd:id_2019-S-010-018943_Fund_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2019-S-010-018943_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2019-S-010-018943_AwardCriterionCost_LZXPc54dghndgUKmLLkWYh,
+    epd:id_2019-S-010-018943_AwardCriterionQuality_aDam54DqENHigUj4DJyHNL .
+
+epd:id_2019-S-010-018943_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:MonetaryValue;
+  epo:hasAmountValue 4500000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
+
+epd:id_2019-S-010-018943_MediatorContactPoint_4Z4veE2PHRh5zv62ATRwnh a cccev:ContactPoint;
+  epo:hasInternetAddress "www.nepo.org"^^xsd:anyURI;
+  cccev:email "adam.smith@nepo.org";
+  cccev:telephone "+44 7545070254" .
+
+epd:id_2019-S-010-018943_MediatorOrganisationAddress_4Z4veE2PHRh5zv62ATRwnh a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postCode "NE1 3AF";
+  locn:postName "Newcastle upon Tyne";
+  locn:thoroughfare "Guildhall, Quayside" .
+
+epd:id_2019-S-010-018943_MediatorOrganisation_4Z4veE2PHRh5zv62ATRwnh a org:Organization;
+  epo:hasLegalName "NEPO"@en;
+  epo:hasPrimaryContactPoint epd:id_2019-S-010-018943_MediatorContactPoint_4Z4veE2PHRh5zv62ATRwnh;
+  cccev:registeredAddress epd:id_2019-S-010-018943_MediatorOrganisationAddress_4Z4veE2PHRh5zv62ATRwnh .
+
+epd:id_2019-S-010-018943_Mediator_4Z4veE2PHRh5zv62ATRwnh a epo:Mediator;
+  epo:playedBy epd:id_2019-S-010-018943_MediatorOrganisation_4Z4veE2PHRh5zv62ATRwnh .
+
+epd:id_2019-S-010-018943_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
+  epo:hasAmountValue 4500000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
+
+epd:id_2019-S-010-018943_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
+
+epd:id_2019-S-010-018943_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-010-018943_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2019-S-010-018943_Mediator_4Z4veE2PHRh5zv62ATRwnh,
+    epd:id_2019-S-010-018943_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2019-S-010-018943_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2019-S-010-018943_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2019-S-010-018943_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE;
+  epo:hasDispatchDate "2019-01-10"^^xsd:date;
+  epo:hasID epd:id_2019-S-010-018943_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20190115";
+  epo:refersToLot epd:id_2019-S-010-018943_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToPrevious epd:id_2018-S-184-416263_Notice;
+  epo:refersToProcedure epd:id_2019-S-010-018943_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2019-S-010-018943_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 010-018943" .
+
+epd:id_2019-S-010-018943_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKC>;
+  locn:postCode "NE1 3AF";
+  locn:postName "Newcastle upon Tyne";
+  locn:thoroughfare "Guildhall, Quayside" .
+
+epd:id_2019-S-010-018943_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Association of North East Councils Limited trading as NEPO"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2019-S-010-018943_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2019-S-010-018943_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "NEPO503" .
+
+epd:id_2019-S-010-018943_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79000000> .
+
+epd:id_2019-S-010-018943_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2019-S-010-018943_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-010-018943_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation "NEPO is a Central Purchasing Body as defined in the Public Contract Regulations 2015 (PCR15). This means that NEPO may provide central purchasing activity on behalf of Contracting Authorities.The agreement will be available for use by all NEPO Members. A list of member organisations is available in the About section of the NEPO website at: www.nepo.orgThis agreement will also be made available to all current and future NEPO Associate Members. Current Associate Members are listed in the Associate Member section of the NEPO website at: www.nepo.org/associate-membership/listNEPO intends to make the resulting agreement available for use by all Contracting Authorities throughout all administrative regions of the UK (as defined by the Public Contracts Regulations 2015) including but not limited to Government Departments and their Agencies, Non-Departmental Public Bodies, Central Government, NHS Bodies, Local Authorities, Emergency Services, Coastguard Emergency Services, Educational Establishments, Registered Social Landlords and Registered Charities who have a need to purchase services.Please see the following websites for further details:http://www.direct.gov.uk/en/Dl1/Directories/Localcouncils/index.htmhttps://www.gov.uk/government/organisations/department-for-educationhttps://www.gov.uk/check-a-university-is-officially-recognised/recognised-bodieshttp://www.schoolswebdirectory.co.uk/localauthorities.phphttp://www.ukschoolsdirectory.nethttps://www.gov.uk/find-school-in-englandhttps://education.gov.scot/ParentZonehttp://hwb.wales.gov.uk/https://www.education-ni.gov.uk/https://www.gov.uk/government/publications/open-academies-and-academy-projects-in-developmenthttp://unistats.direct.gov.uk/institutions/http://www.hefce.ac.uk/workprovide/unicoll/heis/http://www.hefce.ac.uk/workprovide/unicoll/fecs/http://www.nhs.uk/ServiceDirectories/Pages/AcuteTrustListing.aspxhttp://www.wales.nhs.uk/nhswalesaboutus/structurehttp://www.scottishambulance.com/TheService/organised.aspxhttp://www.hscni.net/index.php?link=trustshttp://www.scottishambulance.com/AboutUs/HowWeOrganised.aspxhttp://www.direct.gov.uk/en/Dl1/Directories/A-ZOfCentralGovernment/index.htmhttps://www.gov.uk/government/organisationshttp://www.northernireland.gov.uk/gov.htmhttp://www.nidirect.gov.uk/local-councils-in-northern-irelandhttp://www.scotland.gov.uk/Publications/2012/02/2421/1https://www.communities-ni.gov.uk/contacthttps://www.finance-ni.gov.uk/articles/list-public-bodies-which-ni-public-procurement-policy-applieshttps://www.ons.gov.uk/https://www.police.uk/forces/http://www.police-information.co.uk/index.htmlhttp://www.psni.police.uk/index.htmhttp://www.scotland.police.uk/https://www.gov.uk/government/organisations/maritime-and-coastguard-agencyhttp://www.fireservice.co.uk/information/ukfrshttp://www.gov.scot/Topics/archive/law-order/Police/PoliceServiceofScotlandhttp://www.fire.org.uk/fire-brigades.htmlhttp://www.nifrs.org/areas-districts/http://www.firescotland.gov.uk/your-area.aspxhttps://www.gov.uk/government/publications/current-registered-providers-of-social-housinghttp://directory.scottishhousingregulator.gov.uk/pages/default.aspxhttps://gov.wales/topics/housing-and-regeneration/publications/registered-social-landlords-in-wales/?lang=enhttps://www.nidirect.gov.uk/contacts/housing-associationshttp://www.charity-commission.gov.uk/About_us/Regulation/Registering_charities_index.aspxhttp://www.oscr.org.uk/https://idea.org.uk/ http://apps.charitycommission.gov.uk/Showcharity/RegisterOfCharities/registerhomepage.aspxhttp://www.sell2wales.gov.uk/Search/search_Auth.aspxhttp://www.communities.gov.uk/newsroom/factsandfigures/housingplanning1/facts/socialhousing/?id=1822644A complete list of permissible users is shown on the NEPO website below:https://www.nepo.org/associate-membership/permissible-usersFurther information can be found at: www.nepo.org"@en;
+  epo:hasDescription "NEPO seeks to establish a Framework Contract for Specialist Professional Services (“NEPRO3”). NEPRO3 will operate as a neutral vendor managed service for the delivery of specialist professional services and consultancy only. The neutral vendor managed service will not provide specialist professional services or consultancy in its own right and must maintain neutrality at all times when selecting suitable specialist professional service providers to deliver services under the framework contract. NEPO seeks to establish a single provider solution to manage a perpetual supply chain, capable of delivering the full spectrum of specialist professional services and consultancy requirements. The scope of services covered under NEPRO3 will not include temporary or permanent recruitment. Full details can be found within the procurement documentation.NEPRO3 replaces the existing specialist professional services (NEPRO2) framework contract, expiring 30.11.2019."@en;
+  epo:hasEstimatedValue epd:id_2019-S-010-018943_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasID epd:id_2019-S-010-018943_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-010-018943_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2019-S-010-018943_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Neutral Vendor Managed Service for Specialist Professional Services (“NEPRO3”)"@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-010-018943_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2019-S-010-018943_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw, epd:id_2019-S-010-018943_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c,
+    epd:id_2019-S-010-018943_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
+  epo:usesTechnique epd:id_2019-S-010-018943_FrameworkAgreementTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2019-S-010-018943_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-010-018943_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2019-S-010-018943_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2019-S-010-018943_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postCode "NE1 3AF";
+  locn:postName "Newcastle upon Tyne";
+  locn:thoroughfare "Guildhall, Quayside" .
+
+epd:id_2019-S-010-018943_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "www.nepo.org"^^xsd:anyURI;
+  cccev:email "adam.smith@nepo.org";
+  cccev:telephone "+44 7545070254" .
+
+epd:id_2019-S-010-018943_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "NEPO"@en;
+  epo:hasPrimaryContactPoint epd:id_2019-S-010-018943_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2019-S-010-018943_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2019-S-010-018943_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2019-S-010-018943_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2019-S-010-018943_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasInternetAddress "www.nepo.org"^^xsd:anyURI;
+  cccev:email "adam.smith@nepo.org";
+  cccev:telephone "+44 7545070254" .
+
+epd:id_2019-S-010-018943_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postCode "NE1 3AF";
+  locn:postName "Newcastle upon Tyne";
+  locn:thoroughfare "Guildhall, Quayside" .
+
+epd:id_2019-S-010-018943_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "NEPO"@en;
+  epo:hasPrimaryContactPoint epd:id_2019-S-010-018943_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2019-S-010-018943_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2019-S-010-018943_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-010-018943_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2019-S-010-018943_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "www.nepo.org"^^xsd:anyURI .
+
+epd:id_2019-S-010-018943_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-010-018943_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2019-S-010-018943_Organisation_bhAnCWhMtKVDKPwFpTfXJN .

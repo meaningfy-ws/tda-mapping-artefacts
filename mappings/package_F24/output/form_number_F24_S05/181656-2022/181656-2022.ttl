@@ -1,0 +1,158 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-068-181656_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.deutsche-evergabe.de/dashboards/dashboard_off/e4d2ae74-9036-4ba3-ba22-702b72825129"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-068-181656_AwardCriterion_nF5mLYwaayYGQ3jCBkmNPF a epo:AwardCriterion;
+  cccev:description "Preis(100)"@de .
+
+epd:id_2022-S-068-181656_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-068-181656_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2022-S-068-181656_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-068-181656_Channel_PECLWCEwQNoZFei2BQMmT6 a cccev:Channel;
+  epo:hasURL "https://www.deutsche-evergabe.de"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2022-S-068-181656_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasFax "+49 7441920999900";
+  epo:hasInternetAddress "https://www.landkreis-freudenstadt.de/"^^xsd:anyURI;
+  cccev:email "burkhardt@kreis-fds.de";
+  cccev:telephone "+49 74419200" .
+
+epd:id_2022-S-068-181656_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "in den Vergabeunterlagen aufgeführt"@de .
+
+epd:id_2022-S-068-181656_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE12C>;
+  locn:address epd:id_2022-S-068-181656_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2022-S-068-181656_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2022-S-068-181656_Period_RgULVPVVYP9pkvK789PCUZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-068-181656_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2022-S-068-181656_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2022-S-068-181656_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasFax "+49 4037097199";
+  epo:hasInternetAddress "www.ebnerstolz.de"^^xsd:anyURI;
+  cccev:email "christoph.germer@ebnerstolz.de";
+  cccev:telephone "+49 4037097230" .
+
+epd:id_2022-S-068-181656_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE600>;
+  locn:postCode "20459";
+  locn:postName "Hamburg";
+  locn:thoroughfare "Ludwig Erhard Straße 1" .
+
+epd:id_2022-S-068-181656_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasLegalName "ebnerstolz"@de;
+  cccev:registeredAddress epd:id_2022-S-068-181656_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2022-S-068-181656_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/79820000> .
+
+epd:id_2022-S-068-181656_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-068-181656_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation ""@de;
+  epo:hasDescription "Ausgeschrieben wird der Betrieb einer Schilderprägerstelle im Gebäude des Landkreises Freudenstadt in Freudenstadt. Der Auftrag ist Werkstätten für Menschen mit Behinderungen und Unternehmen vorbehalten, deren Hauptzweck die soziale und berufliche Integration von Menschen mit Behinderungen oder von benachteiligten Personen ist (§ 118 GWB)"@de;
+  epo:hasPurpose epd:id_2022-S-068-181656_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-068-181656_AwardCriterion_nF5mLYwaayYGQ3jCBkmNPF .
+
+epd:id_2022-S-068-181656_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-068-181656_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2022-S-068-181656_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2022-S-068-181656_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2022-04-01"^^xsd:date;
+  epo:hasID epd:id_2022-S-068-181656_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20220406";
+  epo:refersToLot epd:id_2022-S-068-181656_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2022-S-068-181656_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2022-S-068-181656_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 068-181656" .
+
+epd:id_2022-S-068-181656_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE12C>;
+  locn:postCode "72250";
+  locn:postName "Freudenstadt";
+  locn:thoroughfare "Herrenfelder Straße 14" .
+
+epd:id_2022-S-068-181656_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasLegalName "Landkreis Freudenstadt"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2022-S-068-181656_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-068-181656_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;
+  epo:hasBeginning "2022-07-01"^^xsd:date;
+  epo:hasEnd "2027-06-30"^^xsd:date .
+
+epd:id_2022-S-068-181656_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "1013044-2022/24732" .
+
+epd:id_2022-S-068-181656_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79820000> .
+
+epd:id_2022-S-068-181656_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-068-181656_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasDescription "Ausgeschrieben wird der Betrieb einer Schilderprägerstelle im Gebäude des Landkreises Freudenstadt in Freudenstadt. Der Auftrag ist Werkstätten für Menschen mit Behinderungen und Unternehmen vorbehalten, deren Hauptzweck die soziale und berufliche Integration von Menschen mit Behinderungen oder von benachteiligten Personen ist (§ 118 GWB)"@de;
+  epo:hasID epd:id_2022-S-068-181656_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-068-181656_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2022-S-068-181656_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Freiwillige Ausschreibung einer Dienstleistungskonzession für den Betrieb einer Schilderprägerstelle"@de;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-068-181656_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2022-S-068-181656_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2022-S-068-181656_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv;
+  epo:usesChannel epd:id_2022-S-068-181656_Channel_PECLWCEwQNoZFei2BQMmT6 .
+
+epd:id_2022-S-068-181656_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-068-181656_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2022-S-068-181656_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2022-S-068-181656_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Bei der Bekanntmachung handelt es sich um eine freiwillige Ausschreibung des Landkreises Freudenstadt, da der Schwellenwert für die verpflichtende Ausschreibung nicht erreicht wird. Es sind daher keine vergaberechtlichen Rechtsbehelfe gegeben. In den Vergabeunterlagen ist die Vergabekammer Baden-Württemberg als Beschwerdestelle genannt. Das erfolgte ausschließlich deshalb, weil die entsprechenden Formulare die Benennung einer Beschwerdestelle zwingend vorsehen. Durch die Benennung der Vergabekammer wird weder deren Zuständigkeit begründet, noch das Vergabenachprüfungsverfahren ermöglicht." .
+
+epd:id_2022-S-068-181656_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  cccev:email "vergabekammer@rpk.bwl.de";
+  cccev:telephone "+49 7219268730" .
+
+epd:id_2022-S-068-181656_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76137";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Durlacher Allee 100" .
+
+epd:id_2022-S-068-181656_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-068-181656_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2022-S-068-181656_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2022-S-068-181656_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-068-181656_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2022-S-068-181656_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.deutsche-evergabe.de/dashboards/dashboard_off/e4d2ae74-9036-4ba3-ba22-702b72825129"^^xsd:anyURI .

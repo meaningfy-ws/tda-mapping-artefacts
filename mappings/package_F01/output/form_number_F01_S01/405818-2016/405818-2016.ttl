@@ -1,0 +1,170 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-223-405818_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.boamp.fr/demat/consultation/CONS-16-162030"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-223-405818_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-223-405818_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-223-405818_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasFax "+33 325328871";
+  epo:hasInternetAddress "http://www.boamp.fr/demat/consultation/CONS-16-162030"^^xsd:anyURI;
+  cccev:email "contact@hmib.fr";
+  cccev:telephone "+33 325328897" .
+
+epd:id_2016-S-223-405818_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress """
+Zone d'activité Plein Est — 52000 Chaumont — France.
+"""@fr .
+
+epd:id_2016-S-223-405818_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR214>;
+  locn:address epd:id_2016-S-223-405818_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2016-S-223-405818_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-223-405818_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-223-405818_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2016-S-223-405818_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2016-S-223-405818_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 18.0;
+  time:unitType time:unitMonth .
+
+epd:id_2016-S-223-405818_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/70110000> .
+
+epd:id_2016-S-223-405818_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-223-405818_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription """
+Conception et réalisation d'un bâtiment industriel principalement à usage de forge.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2016-S-223-405818_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2016-S-223-405818_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-223-405818_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 35000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-223-405818_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 35000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-223-405818_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-223-405818_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2016-S-223-405818_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2016-S-223-405818_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2016-S-223-405818_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2016-S-223-405818_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2016-11-16"^^xsd:date;
+  epo:hasID epd:id_2016-S-223-405818_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20161118";
+  epo:refersToLot epd:id_2016-S-223-405818_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2016-S-223-405818_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2016-S-223-405818_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 223-405818" .
+
+epd:id_2016-S-223-405818_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR214>;
+  locn:postCode "52000";
+  locn:postName "Chaumont";
+  locn:thoroughfare "1 rue du Commandant Hugueny" .
+
+epd:id_2016-S-223-405818_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Société d'économie mixte locale";
+  epo:hasLegalName "SEM Haute-Marne IMMO-BAIL"@fr;
+  epo:hasMainActivityDescription "Construction de locaux destinés à la vente ou à la location";
+  cccev:registeredAddress epd:id_2016-S-223-405818_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-223-405818_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/70110000> .
+
+epd:id_2016-S-223-405818_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-223-405818_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription """
+Conception et réalisation d'un bâtiment industriel, principalement à usage de forge.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2016-S-223-405818_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-223-405818_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2016-S-223-405818_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+Conception et réalisation d'un bâtiment industriel.
+"""@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-223-405818_ReviewTerm_KjhWjVv578XNpvpTRjZhAs,
+    epd:id_2016-S-223-405818_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2016-S-223-405818_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-223-405818_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-223-405818_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-223-405818_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "54035";
+  locn:postName "Nancy Cedex";
+  locn:thoroughfare "Cité judiciaire — rue du Général Fabvier" .
+
+epd:id_2016-S-223-405818_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  cccev:telephone "+33 383908500" .
+
+epd:id_2016-S-223-405818_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Nancy"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-223-405818_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2016-S-223-405818_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2016-S-223-405818_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-223-405818_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2016-S-223-405818_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+— exercice du référé précontractuel: le juge ne peut statuer sur les demandes de référé précontractuel avant le 16e jour suivant la date d'envoi de la décision d'attribution du contrat aux opérateurs économiques ayant présenté une candidature ou une offre. Ce délai est ramené au 11e jour lorsque le pouvoir adjudicateur ou l'entité adjudicatrice justifie que la décision d'attribution du contrat a été notifiée par voie électronique à l'ensemble des opérateurs économiques intéressés (article 1441-2 du code de procédure civile),
+— exercice d'un référé contractuel: la juridiction peut être saisie d'un référé contractuel au plus tard le 31e jour suivant la publication au Journal officiel de l'Union européenne d'un avis d'attribution du contrat, établi conformément au modèle fixé par le règlement de la Commission européenne établissant les formulaires standard pour la publication d'avis en matière de marchés publics et de contrats de concession, ou, pour les marchés fondés sur un accord-cadre ou un système d'acquisition dynamique, suivant la notification de la conclusion du contrat. Le délai ne court que si cette notification mentionne le nom du titulaire et les motifs ayant conduit au choix de son offre (article 1441-3 du code de procédure civile).
+""" .
+
+epd:id_2016-S-223-405818_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  cccev:telephone "+33 383908500" .
+
+epd:id_2016-S-223-405818_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "54035";
+  locn:postName "Nancy Cedex";
+  locn:thoroughfare "Cité judiciaire — rue du Général Fabvier" .
+
+epd:id_2016-S-223-405818_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Nancy"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-223-405818_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2016-S-223-405818_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-223-405818_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-223-405818_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-223-405818_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasReceiptExpressionDeadline "2016-12-22T12:00";
+  epo:hasSubmissionURL "http://www.boamp.fr/demat/consultation/CONS-16-162030"^^xsd:anyURI .
+
+epd:id_2016-S-223-405818_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-223-405818_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-223-405818_Organisation_gqoAAwSV3JaTMsopb9zyKP .

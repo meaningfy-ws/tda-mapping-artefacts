@@ -1,0 +1,197 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-175-314607_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://MBcon.menoldbezler.de/public_links/ObDMp1ihtAq5favDYj-q-g"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-175-314607_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-175-314607_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2016-S-175-314607_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2016-S-175-314607_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Herrn Lothar Laier"@de;
+  epo:hasInternetAddress "http://www.rechbergklinik.de/de/"^^xsd:anyURI;
+  cccev:email "lothar.laier@kliniken-lk.de" .
+
+epd:id_2016-S-175-314607_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+75015 Bretten.
+"""@de .
+
+epd:id_2016-S-175-314607_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE123>;
+  locn:address epd:id_2016-S-175-314607_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2016-S-175-314607_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-175-314607_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2016-S-175-314607_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2016-S-175-314607_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasFax "+49 71186040-550";
+  epo:hasInternetAddress "http://www.menoldbezler.de"^^xsd:anyURI;
+  cccev:email "aerztehaus-bretten@menoldbezler.de";
+  cccev:telephone "+49 7118604000" .
+
+epd:id_2016-S-175-314607_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE111>;
+  locn:postCode "70469";
+  locn:postName "Stuttgart";
+  locn:thoroughfare "Rheinstahlstraße 3" .
+
+epd:id_2016-S-175-314607_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasLegalName "Menold Bezler Rechtsanwälte Partnerschaft mbB"@de;
+  cccev:registeredAddress epd:id_2016-S-175-314607_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2016-S-175-314607_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/85100000> .
+
+epd:id_2016-S-175-314607_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-175-314607_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+S. Ziffer II.1.4.
+Weitere Angaben enthalten das Bewerbermemorandum und die Teilnahmeformulare. In der Aufforderung zur Angebotsabgabe wird eine elektronische Adresse mitgeteilt, unter der die Vergabeunterlagen unentgeltlich, uneingeschränkt, vollständig und direkt abgerufen werden können.
+"""@de;
+  epo:hasPurpose epd:id_2016-S-175-314607_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-175-314607_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-175-314607_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2016-S-175-314607_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2016-S-175-314607_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2016-S-175-314607_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2016-S-175-314607_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2016-09-06"^^xsd:date;
+  epo:hasID epd:id_2016-S-175-314607_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20160910";
+  epo:refersToLot epd:id_2016-S-175-314607_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2016-S-175-314607_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2016-S-175-314607_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 175-314607" .
+
+epd:id_2016-S-175-314607_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE123>;
+  locn:postCode "75015";
+  locn:postName "Bretten";
+  locn:thoroughfare "Virchhowstraße 15" .
+
+epd:id_2016-S-175-314607_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Kliniken des Landkreises Karlsruhe in privater Rechtsform";
+  epo:hasLegalName "Kliniken des Landkreises Karlsruhe gGmbH"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2016-S-175-314607_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2016-S-175-314607_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45210000> .
+
+epd:id_2016-S-175-314607_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-175-314607_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+Bitte beachten Sie: die Zahl der Bewerber, die zur Abgabe eines Angebots aufgefordert werden, ist grundsätzlich auf maximal 5 Bewerber beschränkt.
+Die Eignungsprüfung und Bewerberauswahl erfolgen in einem dreistufigen Verfahren gemäß den Vorgaben Ziffer 5.3 auf Seite 7 ff. des Bewerbermemorandums.
+Insbesondere für den Fall, dass mehr als 5 Bewerber grundsätzlich geeignet erscheinen, wird auf der dritten Stufe anhand der Anzahl der Referenzen, die den Mindestanforderungen an Referenzen gemäß Ziffer III.1.3) genügen, beurteilt, wer unter den als grundsätzlich geeignet eingestuften Bewerbern im Vergleich zu den Mitbewerbern besonders geeignet erscheint. Hierbei werden die 5 Bewerber mit der höchsten Anzahl geeigneter Referenzen als besonders geeignet angesehen und daher am weiteren Verfahren beteiligt. Weitere Einzelheiten zu der Bewertung auf Stufe 3 enthalten die Bewerbungsunterlagen.
+"""@de;
+  epo:hasDescription """
+Die Kliniken des Landkreises Karlsruhe gGmbH beabsichtigt, einen privaten Investor mit der Planung, dem Neubau und dem Betrieb bzw. der langfristigen Vermietung eines Fachärztezentrums einschließlich Tiefgarage auf dem Areal der Rechbergklinik in Bretten im Wege einer Konzession zu beauftragen. Der Investor soll die Leistungen auf eigenes wirtschaftliches Risiko auf Basis eines Erbpachtvertrags mit einer Laufzeit von 60 Jahren erbringen. Zugunsten der Kliniken des Landkreises Karlsruhe gGmbH bestehen zwei Verlängerungsoptionen von jeweils 5 Jahren. Auf dem Grundstück befindet sich ein Bestandsgebäude. Der Investor hat zu prüfen und zu entscheiden, ob er das Gebäude in den Neubau des Ärztehauses integriert oder rückbaut. Das Bestandsgebäude wurde 2003 in Betrieb genommen und hat 2 Ebenen. Im Erdgeschoss befindet sich ein Labor und die Endoskopie. Im OG befindet sich eine Intensivstation. Jedes Geschoss hat eine Nutzfläche von rd. 350 m².
+"""@de;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-175-314607_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2016-S-175-314607_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+Verfahren zur Vergabe einer Konzession für Planung, Errichtung, Betrieb und Vermietung eines Ärztehauses in Bretten.
+"""@de;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-175-314607_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2016-S-175-314607_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2016-S-175-314607_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-175-314607_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2016-S-175-314607_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2016-S-175-314607_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76131";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Kapellenstraße 17" .
+
+epd:id_2016-S-175-314607_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+49 7219263985";
+  epo:hasInternetAddress "https://rp.baden-wuerttemberg.de/rpk/Abt1/Ref15/Seiten/default.aspx"^^xsd:anyURI .
+
+epd:id_2016-S-175-314607_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg beim Regierungspräsidium Karlsruhe"@de;
+  epo:hasPrimaryContactPoint epd:id_2016-S-175-314607_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2016-S-175-314607_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2016-S-175-314607_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-175-314607_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2016-S-175-314607_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+49 7219263985";
+  epo:hasInternetAddress "https://rp.baden-wuerttemberg.de/rpk/Abt1/Ref15/Seiten/default.aspx"^^xsd:anyURI;
+  cccev:telephone "+49 7219264049" .
+
+epd:id_2016-S-175-314607_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76131";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Kappellenstraße 17" .
+
+epd:id_2016-S-175-314607_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg beim Regierungspräsidium Karlsruhe"@de;
+  epo:hasPrimaryContactPoint epd:id_2016-S-175-314607_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2016-S-175-314607_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2016-S-175-314607_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-175-314607_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2016-S-175-314607_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2016-S-175-314607_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE111>;
+  locn:postCode "70469";
+  locn:postName "Stuttgart";
+  locn:thoroughfare "Rheinstahlstraße 3" .
+
+epd:id_2016-S-175-314607_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasFax "+49 71186040-550";
+  epo:hasInternetAddress "http://www.menoldbezler.de"^^xsd:anyURI;
+  cccev:email "aerztehaus-bretten@menoldbezler.de";
+  cccev:telephone "+49 7118604000" .
+
+epd:id_2016-S-175-314607_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Menold Bezler Rechtsanwälte Partnerschaft mbB"@de;
+  epo:hasPrimaryContactPoint epd:id_2016-S-175-314607_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2016-S-175-314607_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2016-S-175-314607_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-175-314607_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2016-S-175-314607_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

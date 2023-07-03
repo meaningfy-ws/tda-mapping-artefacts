@@ -1,0 +1,84 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-087-194897_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "https://www.mytenders.co.uk/search/Search_AuthProfile.aspx?ID=AA42469"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-087-194897_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2018-S-087-194897_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2018-S-087-194897_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasInternetAddress "www.solveo-energie.com"^^xsd:anyURI;
+  cccev:email "khoumagueli@solveo-energie.com" .
+
+epd:id_2018-S-087-194897_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj a locn:Address;
+  locn:fullAddress """
+                  Guinea (Conakry).
+               """@en .
+
+epd:id_2018-S-087-194897_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  locn:address epd:id_2018-S-087-194897_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2018-S-087-194897_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-087-194897_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2018-S-087-194897_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-087-194897_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription """
+                  This notice has been published in order to invite applicants to take part in a call for tender for the design, construction, and operation and maintenance of a PV power plant.
+                  The project site is located in Guinea Conakry.
+                  The PV power plant is to be built under turnkey contract with lump sum or fixed price, procurement and construction (“EPC”) contract combined with a long-term operation and maintenance (“O&M”) contract. The project’s size will be around 40 MWac.
+                  To obtain the Request for Expression of Interest (RfEoI), please write an email to khoumagueli@solveo-energie.com All the details of the procurement process and additional information will be communicated.
+                  The deadline for submission of Expression of interest (“EoI”) is 22.6.2018.
+               """@en .
+
+epd:id_2018-S-087-194897_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-087-194897_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2018-S-087-194897_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ;
+  epo:hasDispatchDate "2018-05-04"^^xsd:date;
+  epo:hasID epd:id_2018-S-087-194897_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasPublicationDate "20180505";
+  epo:refersToLot epd:id_2018-S-087-194897_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2018-S-087-194897_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2018-S-087-194897_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 087-194897" .
+
+epd:id_2018-S-087-194897_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ23>;
+  locn:postName "Fenouillet";
+  locn:thoroughfare "15 bis route de Lacourtensourt" .
+
+epd:id_2018-S-087-194897_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Private company";
+  epo:hasLegalName "Solveo Energie"@en;
+  epo:hasMainActivityDescription "Energy";
+  cccev:registeredAddress epd:id_2018-S-087-194897_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2018-S-087-194897_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09300000> .
+
+epd:id_2018-S-087-194897_ProcedureTerm_AMEokiDjGuTvrfRF5KkTBZ a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2018-S-087-194897_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasAdditionalInformation """
+               Note: To register your interest in this notice and obtain any additional information please visit the myTenders Web Site at https://www.mytenders.co.uk/Search/Search_Switch.aspx?ID=211858
+               (MT Ref:211858).
+            """@en;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-087-194897_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2018-S-087-194897_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle """
+               Notice for EPC and O&M services for 40MW solar Project
+            """@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-087-194897_ProcedureTerm_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2018-S-087-194897_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-087-194897_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2018-S-087-194897_Organisation_TigDgN9yDLHn3hDtQD7BVC .

@@ -1,0 +1,160 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-048-121445_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://deauville-marches.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-048-121445_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "http://www.deauville-marches.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-048-121445_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-048-121445_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-048-121445_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Ville de Deauville"@fr;
+  epo:hasInternetAddress "http://www.deauville.fr"^^xsd:anyURI;
+  cccev:email "f.heudron@deauville.fr";
+  cccev:telephone "+33 231140202" .
+
+epd:id_2021-S-048-121445_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-048-121445_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-048-121445_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-048-121445_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2021-S-048-121445_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-048-121445_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Concours de maîtrise d'œuvre pour la construction de logements — rue du Stade, 14800 Deauville.Une équipe de maîtrise d'œuvre composée d'un architecte, bureaux d'études techniques, économiste de la construction, etc. est souhaitée. Un projet novateur est attendu, avec une attention particulière en terme d'environnement."@fr;
+  epo:hasPurpose epd:id_2021-S-048-121445_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-048-121445_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-048-121445_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-048-121445_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2021-S-048-121445_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2021-S-048-121445_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2021-S-048-121445_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2021-03-05"^^xsd:date;
+  epo:hasID epd:id_2021-S-048-121445_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210310";
+  epo:refersToLot epd:id_2021-S-048-121445_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-048-121445_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-048-121445_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 048-121445" .
+
+epd:id_2021-S-048-121445_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRD11>;
+  locn:postCode "14801";
+  locn:postName "Deauville Cedex";
+  locn:thoroughfare "20 rue Robert Fossorier, BP 31600" .
+
+epd:id_2021-S-048-121445_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Ville de Deauville"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-048-121445_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-048-121445_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2020FH16" .
+
+epd:id_2021-S-048-121445_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2021-S-048-121445_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasID epd:id_2021-S-048-121445_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-048-121445_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-048-121445_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Concours de maîtrise d'œuvre pour la construction de logements — rue du Stade — 14800 Deauville"@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-048-121445_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-048-121445_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-048-121445_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-048-121445_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-048-121445_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-048-121445_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "14050";
+  locn:postName "Caen";
+  locn:thoroughfare "3-5 rue Arthur Leduc" .
+
+epd:id_2021-S-048-121445_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  cccev:email "greffe.te-caen@juradm.fr";
+  cccev:telephone "+33 231707272" .
+
+epd:id_2021-S-048-121445_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Caen"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-048-121445_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2021-S-048-121445_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-048-121445_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-048-121445_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-048-121445_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  cccev:email "greffe.te-caen@juradm.fr";
+  cccev:telephone "+33 231707272" .
+
+epd:id_2021-S-048-121445_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "14050";
+  locn:postName "Caen";
+  locn:thoroughfare "3-5 rue Arthur Leduc" .
+
+epd:id_2021-S-048-121445_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Caen"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-048-121445_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2021-S-048-121445_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-048-121445_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-048-121445_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-048-121445_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://deauville-marches.fr"^^xsd:anyURI .
+
+epd:id_2021-S-048-121445_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRD11>;
+  locn:postCode "14801";
+  locn:postName "Deauville Cedex";
+  locn:thoroughfare "20 rue Robert Fossorier, BP 31600" .
+
+epd:id_2021-S-048-121445_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.deauville.fr"^^xsd:anyURI;
+  cccev:email "f.heudron@deauville.fr";
+  cccev:telephone "+33 231140202" .
+
+epd:id_2021-S-048-121445_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasLegalName "Ville de Deauville"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-048-121445_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2021-S-048-121445_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2021-S-048-121445_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-048-121445_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2021-S-048-121445_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

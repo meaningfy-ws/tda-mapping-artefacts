@@ -1,0 +1,130 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-105-277930_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://e-nabavki.gov.mk/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-105-277930_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-105-277930_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-105-277930_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-105-277930_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Haqim Ramadani"@en;
+  epo:hasInternetAddress "http://www.brvenica.gov.mk/"^^xsd:anyURI;
+  cccev:email "haqim_r@yahoo.com";
+  cccev:telephone "+49 72273873" .
+
+epd:id_2021-S-105-277930_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/MK> .
+
+epd:id_2021-S-105-277930_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-105-277930_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-105-277930_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-105-277930_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true .
+
+epd:id_2021-S-105-277930_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 180.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-105-277930_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60000000> .
+
+epd:id_2021-S-105-277930_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-105-277930_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription "Announcement for awarding a concession for waste collection on the entire territory of the municipality of Brvenica."@en;
+  epo:hasEstimatedValue epd:id_2021-S-105-277930_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-105-277930_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-105-277930_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 8559172.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/MKD> .
+
+epd:id_2021-S-105-277930_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 8559172.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/MKD> .
+
+epd:id_2021-S-105-277930_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-105-277930_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-105-277930_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2021-S-105-277930_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2021-S-105-277930_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2021-05-28"^^xsd:date;
+  epo:hasID epd:id_2021-S-105-277930_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210602";
+  epo:refersToLot epd:id_2021-S-105-277930_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2021-S-105-277930_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-105-277930_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 105-277930" .
+
+epd:id_2021-S-105-277930_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/MKD>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/MK>;
+  locn:postCode "1000";
+  locn:postName "Tetovo";
+  locn:thoroughfare "1000" .
+
+epd:id_2021-S-105-277930_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Municipality of Brvenica"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/env-pro>;
+  cccev:registeredAddress epd:id_2021-S-105-277930_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-105-277930_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "0001/2021" .
+
+epd:id_2021-S-105-277930_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60000000> .
+
+epd:id_2021-S-105-277930_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-105-277930_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasDescription "Announcement for awarding a concession for waste collection on the entire territory of the municipality of Brvenica."@en;
+  epo:hasEstimatedValue epd:id_2021-S-105-277930_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2021-S-105-277930_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-105-277930_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-105-277930_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Announcement for Awarding a Concession for Waste Collection on the Entire Territory of the Municipality of Brvenica"@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-105-277930_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-105-277930_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2021-S-105-277930_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-105-277930_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-105-277930_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-105-277930_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasInternetAddress "https://dkzjn.gov.mk/"^^xsd:anyURI;
+  cccev:email "dkzjn@gs.gov.mk";
+  cccev:telephone "+389 23251251" .
+
+epd:id_2021-S-105-277930_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/MKD>;
+  locn:postCode "1000";
+  locn:postName "Skopje";
+  locn:thoroughfare "bul.Ilinden 63A" .
+
+epd:id_2021-S-105-277930_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "State Commission for Public Procurement Appeals"@en;
+  epo:hasPrimaryContactPoint epd:id_2021-S-105-277930_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2021-S-105-277930_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-105-277930_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-105-277930_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-105-277930_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "MK" .
+
+epd:id_2021-S-105-277930_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-105-277930_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-105-277930_Organisation_jXahEP38X6pEFgd4J9tLvF .

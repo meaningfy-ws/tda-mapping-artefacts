@@ -1,0 +1,168 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-030-070939_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://marches.maximilien.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-030-070939_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-030-070939_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-030-070939_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.theatre-chaillot.fr"^^xsd:anyURI;
+  cccev:email "marchespublics@theatre-chaillot.fr" .
+
+epd:id_2021-S-030-070939_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Conception-réalisation de travaux de rénovation énergétique et de mise en conformité de la salle Jean Vilar de 1189 places, dont 24 places PMR, et un plateau d'une profondeur permanente de 18 m."@fr .
+
+epd:id_2021-S-030-070939_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:address epd:id_2021-S-030-070939_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-030-070939_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-030-070939_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-030-070939_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-030-070939_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-030-070939_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-030-070939_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45216110>, <http://data.europa.eu/cpv/cpv/45300000>,
+    <http://data.europa.eu/cpv/cpv/45320000> .
+
+epd:id_2021-S-030-070939_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-030-070939_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation "Le montant de 25 000 000 EUR HT renseigné à la rubrique II.1.5) du présent avis ne comprend pas les coûts liés à l'exploitation-maintenance.Offre économiquement la plus avantageuse appréciée en fonction des critères énoncés dans le cahier des charges (règlement de la consultation, lettre d'invitation ou document descriptif). Une enchère électronique ne sera pas effectuée."@fr;
+  epo:hasDescription "Ce projet comprend:— la rénovation et la mise en conformité des équipements techniques bâtiment,— la restructuration de la salle, de la cage de scène et de ses équipements scénographiques,— la création d'un nouveau studio de répétition (l'aménagement se fera ultérieurement à la livraison des travaux),— la rénovation de différents espaces connexes au fonctionnement de la salle Jean Vilar et plus largement à l'exploitation du théâtre.Interventions dans le volume de la salle Jean Vilar:— modification du volume de la cage de scène, dépose et remplacement de tout le dispositif scénographique,— création d'une tribune fixe selon l'objectif de 1 200 places,— création d'un studio de répétition en sous-face des gradins (l'aménagement se fera ultérieurement à la livraison des travaux), — aménagements des accès à la salle,— aménagements des locaux dédiés aux différentes régies.Interventions connexes à la salle:— remplacement et travaux aux niveaux des combles et autres locaux techniques, pour la rénovation des équipements techniques (CVC, CFO/CFA, plomberie),— interventions dans les différents espaces et zones connexes pour mise en conformité de l'ensemble des réseaux (fluides et électricité) dépendants des équipement techniques remplacés,— réfection complète des loges,— modification des espaces d'arrière-scène (stockages et espaces techniciens).La réhabilitation de cet ensemble vise l'exemplarité des constructions publiques en matière de performance énergétique et environnementale avec des engagements de performance."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-030-070939_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-030-070939_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-030-070939_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 30000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-030-070939_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 30000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-030-070939_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-030-070939_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2021-S-030-070939_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-030-070939_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2021-S-030-070939_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2021-S-030-070939_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2021-S-030-070939_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2021-02-09"^^xsd:date;
+  epo:hasID epd:id_2021-S-030-070939_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210212";
+  epo:refersToLot epd:id_2021-S-030-070939_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-030-070939_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-030-070939_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 030-070939" .
+
+epd:id_2021-S-030-070939_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "75016";
+  locn:postName "Paris" .
+
+epd:id_2021-S-030-070939_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Personne morale de droit public (établissement public industriel et commercial de l'État)";
+  epo:hasLegalName "Théâtre national de Chaillot"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rcr>;
+  cccev:registeredAddress epd:id_2021-S-030-070939_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-030-070939_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-030-070939_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-030-070939_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021 BAT" .
+
+epd:id_2021-S-030-070939_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45300000> .
+
+epd:id_2021-S-030-070939_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-030-070939_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "Le présent avis ne vaut pas appel à la concurrence, mais a pour objet de sensibiliser les opérateurs économiques qui souhaiteraient se porter candidat, de manière à réduire les délais minimaux de réception des candidatures et des offres.La procédure avec négociation (3o de l'article R. 2124-3 du code de la commande publique) sera mise en place avec quatre candidats."@fr;
+  epo:hasDescription "Marché de conception-réalisation-rénovation énergétique et mise en conformité de la salle Jean Vilar – Chaillot – Théâtre national de la danse. Le marché comprend des engagements de performance sur les aspects énergétiques, ainsi que sur les aspects environnementaux, techniques, et d'exploitation."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-030-070939_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2021-S-030-070939_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-030-070939_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-030-070939_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Conception-réalisation-rénovation énergétique et mise en conformité de la salle Jean Vilar – Chaillot – Théâtre national de la danse"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-030-070939_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2021-S-030-070939_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-04-05"^^xsd:date .
+
+epd:id_2021-S-030-070939_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-030-070939_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-030-070939_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-030-070939_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2021-S-030-070939_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2021-S-030-070939_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-030-070939_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2021-S-030-070939_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-030-070939_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-030-070939_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-030-070939_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2021-S-030-070939_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2021-S-030-070939_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-030-070939_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2021-S-030-070939_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-030-070939_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-030-070939_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-030-070939_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasSubmissionURL "https://marches.maximilien.fr"^^xsd:anyURI .
+
+epd:id_2021-S-030-070939_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-030-070939_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-030-070939_Organisation_gqoAAwSV3JaTMsopb9zyKP .

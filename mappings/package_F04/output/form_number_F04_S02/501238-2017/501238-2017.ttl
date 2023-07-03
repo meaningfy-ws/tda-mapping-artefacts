@@ -1,0 +1,107 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-241-501238_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "https://www.evn.bg/Za-nas/BuyersProfile/000_QualitySystems/20-elmont.aspx?listnode=/Za-nas/BuyersProfile/000_QualitySystems"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-241-501238_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-241-501238_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-241-501238_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Генчо Генчев Павлов"@bg;
+  epo:hasFax "+359 24471390";
+  epo:hasInternetAddress "www.evn.bg"^^xsd:anyURI;
+  cccev:email "gentscho.pavlov@cms-rrh.com";
+  cccev:telephone "+359 24471352" .
+
+epd:id_2017-S-241-501238_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+                  Лицензионната територия на възложителя „Електроразпределение Юг\" ЕАД
+               """@bg .
+
+epd:id_2017-S-241-501238_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG34>;
+  locn:address epd:id_2017-S-241-501238_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-241-501238_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-241-501238_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-241-501238_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-241-501238_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45311000> .
+
+epd:id_2017-S-241-501238_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-241-501238_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription """
+                  Извършване на електроинсталационни и електромонтажни работи, както и на свързаните с тях строителни и демонтажни работи на лицензионната територия на „Електроразпределение Юг\" ЕАД.
+               """@bg;
+  epo:hasPurpose epd:id_2017-S-241-501238_LotPurpose_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-241-501238_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 90000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/BGN> .
+
+epd:id_2017-S-241-501238_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2017-S-241-501238_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2017-S-241-501238_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2017-S-241-501238_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te;
+  epo:hasDispatchDate "2017-12-12"^^xsd:date;
+  epo:hasID epd:id_2017-S-241-501238_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20171215";
+  epo:refersToLot epd:id_2017-S-241-501238_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2017-S-241-501238_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-241-501238_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 241-501238" .
+
+epd:id_2017-S-241-501238_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG421>;
+  locn:postCode "4000";
+  locn:postName "Пловдив";
+  locn:thoroughfare "Ул. „Христо Г. Данов” № 37" .
+
+epd:id_2017-S-241-501238_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "115552190" .
+
+epd:id_2017-S-241-501238_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2017-S-241-501238_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "„Електроразпределение Юг” ЕАД"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2017-S-241-501238_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-241-501238_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2017-S-241-501238_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-241-501238_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45311000> .
+
+epd:id_2017-S-241-501238_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-241-501238_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+               Обществената поръчка ще бъде възложена в рамките на квалификационна система № С-17-ЕР-МР-С-20, вписана в регистъра на обществените поръчки под № 00143-2017-0040, референтен номер на обявлението в Официален вестник на ЕС 2017/S 175-359234, чрез процедура по договаряне с предварителна покана за участие. Покани за предоставяне на оферти ще бъдат изпратени само на включените в квалификационната система участници. Прогнозната дата за стартиране на изпращането на поканите е 22 януари 2018 г.
+            """@bg;
+  epo:hasDescription """
+               Извършване на електроинсталационни и електромонтажни работи, както и свързаните с тях стрoителни и демонтажни работи на лицензионната територия на „Електроразпределение Юг\" ЕАД.
+            """@bg;
+  epo:hasEstimatedValue epd:id_2017-S-241-501238_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-241-501238_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2017-S-241-501238_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               Извършване на електроинсталационни и електромонтажни работи, както и на свързаните с тях строителни и демонтажни работи на лицензионната територия на „Електроразпределение Юг\" ЕАД
+            """@bg;
+  epo:isCoveredByGPA false .
+
+epd:id_2017-S-241-501238_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2018-01-22"^^xsd:date .
+
+epd:id_2017-S-241-501238_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-241-501238_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-241-501238_Organisation_W8v6KSqiUn74jPKJmENKoH .

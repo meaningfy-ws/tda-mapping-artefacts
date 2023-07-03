@@ -1,0 +1,251 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-170-415430_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "www.mottramassociates.co.uk"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2019-S-170-415430_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "www.mottramassociates.co.uk"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2019-S-170-415430_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-170-415430_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-170-415430_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Tony Barkwith"@en;
+  epo:hasInternetAddress "www.mottramassociates.co.uk"^^xsd:anyURI;
+  cccev:email "tony.barkwith@mottramassociates.co.uk";
+  cccev:telephone "+44 1513280500" .
+
+epd:id_2019-S-170-415430_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Whipps Cross University Hospital, Whipps Cross Road, Leytonstone, London, E11 1NR.Mile End Hospital, Bancroft Road, London E1 4DG.Newham University Hospital, Glen Road, Plaistow, London, E13 8SL."@en .
+
+epd:id_2019-S-170-415430_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKI41>;
+  locn:address epd:id_2019-S-170-415430_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2019-S-170-415430_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2019-S-170-415430_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-170-415430_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2019-S-170-415430_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2019-S-170-415430_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt a
+    cccev:ContactPoint;
+  epo:hasContactName "Tony Barkwith"@en;
+  epo:hasInternetAddress "www.mottramassociates.co.uk"^^xsd:anyURI;
+  cccev:email "administration@mottramassociates.co.uk";
+  cccev:telephone "+44 1513280500" .
+
+epd:id_2019-S-170-415430_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKD74>;
+  locn:postCode "CH62 0AW";
+  locn:postName "Wirral";
+  locn:thoroughfare "78 Eastham Village Road" .
+
+epd:id_2019-S-170-415430_InformationProviderOrganisationIdentifier_GsdtayWioy84inXsY2sGzt
+  a epo:Identifier;
+  epo:hasIdentifierValue "4723939" .
+
+epd:id_2019-S-170-415430_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt a
+    org:Organization;
+  epo:hasID epd:id_2019-S-170-415430_InformationProviderOrganisationIdentifier_GsdtayWioy84inXsY2sGzt;
+  epo:hasLegalName "Mottram Associates Ltd"@en;
+  cccev:registeredAddress epd:id_2019-S-170-415430_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2019-S-170-415430_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/50750000> .
+
+epd:id_2019-S-170-415430_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-170-415430_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "The tender is for the provision of a fully comprehensive lift maintenance and reactive call out and repair service at Whipps Cross University Hospital, Mile End Hospital and Newham University Hospitals.The contractor should provide evidence with their tender of their ability to deliver high quality lift maintenance to Barts Health NHS Trust and any value added services they provide i.e. data pens / PDAs, smart phones, web based systems with real time information.The contractor should provide evidence with their tender of their technical ability to maintain Barts Health NHS Trust’s lift equipment, including stock of spare parts, obtaining replacement parts and ability to offer alternative solutions.The contractor shall provide information of how the contract will be managed including the location of the office, management team, supervisory team, technical support and number of engineers to be appointed to the contract including training of personnel."@en;
+  epo:hasEstimatedValue epd:id_2019-S-170-415430_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2019-S-170-415430_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2019-S-170-415430_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false .
+
+epd:id_2019-S-170-415430_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 158000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
+
+epd:id_2019-S-170-415430_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J a cccev:ContactPoint;
+  cccev:telephone "+44 2034165000" .
+
+epd:id_2019-S-170-415430_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postCode "E1 8PR";
+  locn:postName "London";
+  locn:thoroughfare "9 Prescot Street, Aldgate" .
+
+epd:id_2019-S-170-415430_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J a org:Organization;
+  epo:hasLegalName "Barts Health NHS Trust"@en;
+  epo:hasPrimaryContactPoint epd:id_2019-S-170-415430_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J;
+  cccev:registeredAddress epd:id_2019-S-170-415430_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2019-S-170-415430_Mediator_2t4SUwdC66NGJuVrEY4e6J a epo:Mediator;
+  epo:playedBy epd:id_2019-S-170-415430_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2019-S-170-415430_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 158000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
+
+epd:id_2019-S-170-415430_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2019-S-170-415430_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2019-S-170-415430_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2019-S-170-415430_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2019-S-170-415430_Mediator_2t4SUwdC66NGJuVrEY4e6J,
+    epd:id_2019-S-170-415430_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt,
+    epd:id_2019-S-170-415430_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2019-S-170-415430_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2019-S-170-415430_TenderReceiver_73uj4vyPgHgRhfhM7wvqXG;
+  epo:hasDispatchDate "2019-09-02"^^xsd:date;
+  epo:hasID epd:id_2019-S-170-415430_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20190904";
+  epo:refersToLot epd:id_2019-S-170-415430_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2019-S-170-415430_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2019-S-170-415430_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 170-415430" .
+
+epd:id_2019-S-170-415430_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKI41>;
+  locn:postCode "E1 8PR";
+  locn:postName "London";
+  locn:thoroughfare "Treasury and Payments Department, 9 Prescott Street" .
+
+epd:id_2019-S-170-415430_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasLegalName "Barts Health NHS Trust"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2019-S-170-415430_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-170-415430_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2019-11-01"^^xsd:date;
+  epo:hasEnd "2022-10-31"^^xsd:date .
+
+epd:id_2019-S-170-415430_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2019-S-170-415430_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2019-S-170-415430_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "LJ/TB/MOTPM1020/Barts" .
+
+epd:id_2019-S-170-415430_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/50750000> .
+
+epd:id_2019-S-170-415430_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2019-S-170-415430_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-170-415430_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "The tender is for the provision of a fully comprehensive lift maintenance and reactive call out and repair service at Whipps Cross University Hospital, Mile End Hospital and Newham University Hospital. The Contract will run for an initial period of 1 year and then for a further 2 years subject to the contractor providing the required high level of maintenance and call out coverage during the first year period to the full satisfaction of Barts Health NHS Trust."@en;
+  epo:hasEstimatedValue epd:id_2019-S-170-415430_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2019-S-170-415430_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-170-415430_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2019-S-170-415430_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Barts Health NHS Trust — Lift Maintenance Procurement"@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-170-415430_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2019-S-170-415430_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG, epd:id_2019-S-170-415430_ReviewTerm_KjhWjVv578XNpvpTRjZhAs,
+    epd:id_2019-S-170-415430_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2019-S-170-415430_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2019-10-01"^^xsd:date .
+
+epd:id_2019-S-170-415430_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-170-415430_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt;
+  epo:playedBy epd:id_2019-S-170-415430_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2019-S-170-415430_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postCode "CH62 0AW";
+  locn:postName "Wirral";
+  locn:thoroughfare "78 Eastham Village Road" .
+
+epd:id_2019-S-170-415430_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  cccev:email "administration@mottramassociates.co.uk";
+  cccev:telephone "+44 1513280500" .
+
+epd:id_2019-S-170-415430_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Mottram Associates Ltd"@en;
+  epo:hasPrimaryContactPoint epd:id_2019-S-170-415430_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2019-S-170-415430_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2019-S-170-415430_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2019-S-170-415430_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2019-S-170-415430_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "The review procedure will be undertaken by the Procurement team of Barts Health NHS Trust." .
+
+epd:id_2019-S-170-415430_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  cccev:telephone "+44 2034165000" .
+
+epd:id_2019-S-170-415430_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postCode "E1 8PR";
+  locn:postName "London";
+  locn:thoroughfare "9 Prescot Street, Aldgate" .
+
+epd:id_2019-S-170-415430_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Barts Health NHS Trust"@en;
+  epo:hasPrimaryContactPoint epd:id_2019-S-170-415430_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2019-S-170-415430_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2019-S-170-415430_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-170-415430_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2019-S-170-415430_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasSubmissionURL "www.mottramassociates.co.uk"^^xsd:anyURI .
+
+epd:id_2019-S-170-415430_TenderReceiverOrganisationAddress_73uj4vyPgHgRhfhM7wvqXG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKD74>;
+  locn:postCode "CH62 0AW";
+  locn:postName "Wirral";
+  locn:thoroughfare "78 Eastham Village Road" .
+
+epd:id_2019-S-170-415430_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG
+  a cccev:ContactPoint;
+  epo:hasContactName "Tony Barkwith"@en;
+  epo:hasInternetAddress "www.mottramassociates.co.uk"^^xsd:anyURI;
+  cccev:email "administration@mottramassociates.co.uk";
+  cccev:telephone "+44 1513280500" .
+
+epd:id_2019-S-170-415430_TenderReceiverOrganisationIdentifier_73uj4vyPgHgRhfhM7wvqXG
+  a epo:Identifier;
+  epo:hasIdentifierValue "4723939" .
+
+epd:id_2019-S-170-415430_TenderReceiverOrganisation_73uj4vyPgHgRhfhM7wvqXG a org:Organization;
+  epo:hasID epd:id_2019-S-170-415430_TenderReceiverOrganisationIdentifier_73uj4vyPgHgRhfhM7wvqXG;
+  epo:hasLegalName "Mottram Associates Ltd"@en;
+  epo:hasPrimaryContactPoint epd:id_2019-S-170-415430_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG;
+  cccev:registeredAddress epd:id_2019-S-170-415430_TenderReceiverOrganisationAddress_73uj4vyPgHgRhfhM7wvqXG .
+
+epd:id_2019-S-170-415430_TenderReceiver_73uj4vyPgHgRhfhM7wvqXG a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-170-415430_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG;
+  epo:playedBy epd:id_2019-S-170-415430_TenderReceiverOrganisation_73uj4vyPgHgRhfhM7wvqXG .

@@ -1,0 +1,99 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-128-339663_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.eprocurement.gov.cy/epps"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-128-339663_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-128-339663_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-128-339663_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Σπυρούλα Δαυίδ"@el;
+  epo:hasFax "+357 22503330";
+  epo:hasInternetAddress "https://www.eprocurement.gov.cy/epps"^^xsd:anyURI;
+  cccev:email "hfc@hfc.com.cy";
+  cccev:telephone "+357 22503333" .
+
+epd:id_2021-S-128-339663_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Γραφεία του Ο.Χ.Σ.Λεύκωνος 2 και ΠροδρόμουΣτρόβολος2064"@el .
+
+epd:id_2021-S-128-339663_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CY>;
+  locn:address epd:id_2021-S-128-339663_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-128-339663_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-128-339663_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-128-339663_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-128-339663_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-128-339663_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription """Αντικείμενο της σύμβασης είναι η παροχή υπηρεσιών υποστήριξης στη γραμματεία του Διοικητικού Συμβουλίου και της Διεύθυνσης του Οργανισμού Χρηματοδοτήσεως Στέγης, για την συγγραφή των πρακτικών των συνεδριάσεων. Οι υπηρεσίες αφορούν στην καταγραφή πρακτικών συνεδριών του Δoιηκητικού Συμβουλίου της Διεύθυνσης και των επιτροπών τους.
+Η εκτέλεση της σύμβασης πρέπει να γίνεται με χρήση «ολοκληρωμένου συστήματος στενοτύπισης», που έχει τη δυνατότητα μετατροπής προφορικού λόγου στην ελληνική γλώσσα."""@el .
+
+epd:id_2021-S-128-339663_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 15000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-128-339663_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-128-339663_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2021-S-128-339663_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-128-339663_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs;
+  epo:hasDispatchDate "2021-07-01"^^xsd:date;
+  epo:hasID epd:id_2021-S-128-339663_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210706";
+  epo:refersToLot epd:id_2021-S-128-339663_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-128-339663_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-128-339663_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 128-339663" .
+
+epd:id_2021-S-128-339663_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CY>;
+  locn:postCode "1687";
+  locn:postName "Λευκωσία";
+  locn:thoroughfare "Τ.Θ. 23898" .
+
+epd:id_2021-S-128-339663_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "1384" .
+
+epd:id_2021-S-128-339663_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2021-S-128-339663_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Οργανισμός Χρηματοδοτήσεως Στέγης"@el;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/econ-aff>;
+  cccev:registeredAddress epd:id_2021-S-128-339663_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-128-339663_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-128-339663_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-128-339663_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79550000> .
+
+epd:id_2021-S-128-339663_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2021-S-128-339663_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-128-339663_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "Αντικείμενο της σύμβασης είναι η παροχή υπηρεσιών υποστήριξης στη γραμματεία του Διοικητικού Συμβουλίου και της Διεύθυνσης του Οργανισμού Χρηματοδοτήσεως Στέγης, για την συγγραφή των πρακτικών των συνεδριάσεων. Οι υπηρεσίες αφορούν στην καταγραφή πρακτικών συνεδριών του Δoιηκητικού Συμβουλίου της Διεύθυνσης και των επιτροπών τους.Η εκτέλεση της σύμβασης πρέπει να γίνεται με χρήση «ολοκληρωμένου συστήματος στενοτύπισης», που έχει τη δυνατότητα μετατροπής προφορικού λόγου στην ελληνική γλώσσα."@el;
+  epo:hasEstimatedValue epd:id_2021-S-128-339663_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-128-339663_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-128-339663_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Υπηρεσίες στενοτύπισης."@el;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-128-339663_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-128-339663_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-07-02"^^xsd:date .
+
+epd:id_2021-S-128-339663_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-128-339663_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-128-339663_Organisation_gqoAAwSV3JaTMsopb9zyKP .

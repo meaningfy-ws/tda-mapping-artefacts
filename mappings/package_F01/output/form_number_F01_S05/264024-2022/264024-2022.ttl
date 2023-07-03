@@ -1,0 +1,118 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-096-264024_AwardCriterionPrice_RBGYEez98Pij3NLYxwzMz2 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2022-S-096-264024_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-096-264024_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-096-264024_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-096-264024_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasFax "+49 6525/79-24260";
+  epo:hasInternetAddress "http://www.suedeifelwerke.de"^^xsd:anyURI;
+  cccev:email "sew@irrel.de";
+  cccev:telephone "+49 6525/79-24211" .
+
+epd:id_2022-S-096-264024_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "D-54675 Mettendorf"@de .
+
+epd:id_2022-S-096-264024_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
+  locn:address epd:id_2022-S-096-264024_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-096-264024_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2022-S-096-264024_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-096-264024_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-096-264024_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2022-S-096-264024_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/03451000> .
+
+epd:id_2022-S-096-264024_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-096-264024_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Durchführung von Pflanzarbeiten"@de;
+  epo:hasPurpose epd:id_2022-S-096-264024_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-096-264024_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-096-264024_AwardCriterionPrice_RBGYEez98Pij3NLYxwzMz2 .
+
+epd:id_2022-S-096-264024_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2022-S-096-264024_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2022-S-096-264024_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2022-S-096-264024_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2022-S-096-264024_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2022-S-096-264024_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2022-S-096-264024_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2022-05-13"^^xsd:date;
+  epo:hasID epd:id_2022-S-096-264024_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220518";
+  epo:refersToLot epd:id_2022-S-096-264024_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2022-S-096-264024_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2022-S-096-264024_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 096-264024" .
+
+epd:id_2022-S-096-264024_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEB23>;
+  locn:postCode "54666";
+  locn:postName "Irrel";
+  locn:thoroughfare "Auf Omesen 4" .
+
+epd:id_2022-S-096-264024_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Südeifelwerke AöR"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/env-pro>;
+  cccev:registeredAddress epd:id_2022-S-096-264024_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-096-264024_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2022-11-01"^^xsd:date;
+  epo:hasEnd "2022-11-30"^^xsd:date .
+
+epd:id_2022-S-096-264024_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2022-S-096-264024_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2022-S-096-264024_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45112700> .
+
+epd:id_2022-S-096-264024_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-096-264024_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "Durchführung von Pflanzarbeiten"@de;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-096-264024_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2022-S-096-264024_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Kläranlage Mettendorf"@de;
+  epo:isCoveredByGPA false .
+
+epd:id_2022-S-096-264024_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2022-06-30"^^xsd:date .
+
+epd:id_2022-S-096-264024_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-096-264024_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-096-264024_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-096-264024_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "54634";
+  locn:postName "Bitburg";
+  locn:thoroughfare "Trierer Straße 1" .
+
+epd:id_2022-S-096-264024_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Kreisveraltung des Eifelkreises Bitburg-Prüm"@de;
+  cccev:registeredAddress epd:id_2022-S-096-264024_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2022-S-096-264024_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-096-264024_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2022-S-096-264024_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-096-264024_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-096-264024_Organisation_gqoAAwSV3JaTMsopb9zyKP .

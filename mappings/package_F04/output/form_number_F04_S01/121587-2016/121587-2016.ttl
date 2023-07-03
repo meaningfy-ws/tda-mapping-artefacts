@@ -1,0 +1,246 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-070-121587_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://kozbeszerzesidokumentumok.npp.hu"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-070-121587_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "http://www.atomeromu.hu"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-070-121587_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-070-121587_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-070-121587_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Szél István, logisztikai csoportvezető"@hu;
+  epo:hasFax "+36 75508517";
+  epo:hasInternetAddress "http://www.atomeromu.hu"^^xsd:anyURI;
+  cccev:email "kozbeszerzes@npp.hu";
+  cccev:telephone "+36 75508042" .
+
+epd:id_2016-S-070-121587_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+MVM Paksi Atomerőmű Zrt. székhelye: 7030 Paks, hrsz. 8803/17.
+"""@hu .
+
+epd:id_2016-S-070-121587_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU233>;
+  locn:address epd:id_2016-S-070-121587_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-070-121587_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2016-S-070-121587_Period_aNssKXiFyYxii2v93ivV4N;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-070-121587_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-070-121587_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEPayment true .
+
+epd:id_2016-S-070-121587_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "Bakó Györgyi, közbeszerzési főszakértő"@hu;
+  epo:hasFax "+36 75508517";
+  epo:hasInternetAddress "http://www.atomeromu.hu"^^xsd:anyURI;
+  cccev:email "kozbeszerzes@npp.hu";
+  cccev:telephone "+36 75506750" .
+
+epd:id_2016-S-070-121587_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU233>;
+  locn:postCode "7031";
+  locn:postName "Paks";
+  locn:thoroughfare "Pf. 71." .
+
+epd:id_2016-S-070-121587_InformationProviderOrganisationIdentifier_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:Identifier;
+  epo:hasIdentifierValue "AK06068" .
+
+epd:id_2016-S-070-121587_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasID epd:id_2016-S-070-121587_InformationProviderOrganisationIdentifier_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:hasLegalName "MVM Paksi Atomerőmű Zártkörűen Működő Részvénytársaság"@hu;
+  cccev:registeredAddress epd:id_2016-S-070-121587_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2016-S-070-121587_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/32412000>, <http://data.europa.eu/cpv/cpv/45314000>,
+    <http://data.europa.eu/cpv/cpv/51311000>, <http://data.europa.eu/cpv/cpv/71240000>,
+    <http://data.europa.eu/cpv/cpv/71320000>, <http://data.europa.eu/cpv/cpv/80590000> .
+
+epd:id_2016-S-070-121587_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-070-121587_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription """
+Tetra szabványra épülő digitális rádiórendszer kiépítése.
+Projektfeladatok:
+— 2, önállóan is működő, önmagában is redundáns, 4 vivős bázisállomás kiépítése központi infrastruktúrával, adatkapcsolatokkal melyek redundáns, integrált működésre is alkalmasak,
+— rádiótechnikai, földrengés állósági statikai, kiviteli, megvalósulási tervek elkészítése, engedélyeztetések,
+— 2 távközlési konténer és egy 12 méter magas földrengésálló torony kialakítása, betáplálások, adatkapcsolatok kiépítése,
+— diszpécser, manager és kommunikációt rögzítő rendszerek kialakítása kliensekkel,
+— rádió terminálok szállítása (kb. 800 db),
+— üzemeltetési eszközök, kiegészítők szállítása,
+— oktatási anyagok elkészítése, oktatások lebonyolítása rendszer üzemeltetői, programozói, felhasználói szinteken (rádió terminál, diszpécser terminálok, visszahallgató kliensek),
+— meglévő beltéri erősítő (27 db) rendszerek átalakítása és új, földrengésálló rendszerek kiépítése távfelügyelettel.
+"""@hu;
+  epo:hasPurpose epd:id_2016-S-070-121587_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-070-121587_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-070-121587_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2016-S-070-121587_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2016-S-070-121587_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2016-S-070-121587_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2016-S-070-121587_TenderReceiver_dk2esofbDLefiQsKcsKjh3;
+  epo:hasDispatchDate "2016-04-07"^^xsd:date;
+  epo:hasID epd:id_2016-S-070-121587_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20160409";
+  epo:refersToLot epd:id_2016-S-070-121587_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2016-S-070-121587_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-070-121587_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 070-121587" .
+
+epd:id_2016-S-070-121587_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU233>;
+  locn:postCode "7031";
+  locn:postName "Paks";
+  locn:thoroughfare "Pf . 71." .
+
+epd:id_2016-S-070-121587_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "AK06068" .
+
+epd:id_2016-S-070-121587_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2016-S-070-121587_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "MVM Paksi Atomerőmű Zártkörűen Működő Részvénytársaság"@hu;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2016-S-070-121587_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-070-121587_Period_aNssKXiFyYxii2v93ivV4N a epo:Period;
+  epo:hasBeginning "2016-12-16"^^xsd:date;
+  epo:hasEnd "2018-12-31"^^xsd:date .
+
+epd:id_2016-S-070-121587_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/32418000> .
+
+epd:id_2016-S-070-121587_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-070-121587_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+1. Az érdekelt szervezetnek a meghatározott határidőig, cégszerűen aláírt szándéknyilatkozatot kell benyújtania magyar nyelven, mely tartalmazza:
+— az érdekelt szervezet nevét, székhelyét, elérhetőségét,
+— a kapcsolattartó személy nevét, beosztását,
+— a közbeszerzési eljárás pontos megnevezését.
+Amennyiben a szándéknyilatkozat nem tartalmaz minden információt, ajánlatkérő nem kötelezett a hiányzó adatok beszerzésére, illetve a közvetlen részvételi felhívás megküldésére. A szándéknyilatkozat benyújtható telefaxon, postán, vagy e-mail mellékletként.
+A szándéknyilatkozatot benyújtó szervezet felelőssége meggyőződni arról, hogy a benyújtott szándéknyilatkozat megérkezett-e határidőig az ajánlatkérőhöz.
+Gyorspostával történő feladás esetén fel kell tüntetni: 7030 Paks, hrsz. 8803/17, 6-os számú főút, Déli Bejáró, F1 porta.
+2. A közbeszerzési dokumentumok a részvételi felhívás megküldését (tervezett határidő: IV.2.5) pont szerint) követően érhetők el az I.3) pontban jelzett címen.
+"""@hu;
+  epo:hasDescription """
+Vállalkozási szerződés / Motorola SmartZone rádiórendszer rekonstrukció.
+"""@hu;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-070-121587_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2016-S-070-121587_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+Motorola SmartZone rádiórendszer rekonstrukció.
+"""@hu;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-070-121587_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2016-S-070-121587_ReviewTerm_ZsxuomNURxGbRdavxJPhLN, epd:id_2016-S-070-121587_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2016-S-070-121587_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-070-121587_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2016-S-070-121587_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2016-S-070-121587_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó u. 5." .
+
+epd:id_2016-S-070-121587_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  epo:hasInternetAddress "http://www.kozbeszerzes.hu"^^xsd:anyURI;
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828594" .
+
+epd:id_2016-S-070-121587_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2016-S-070-121587_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2016-S-070-121587_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2016-S-070-121587_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-070-121587_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2016-S-070-121587_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+A Kbt. 148. § szerint.
+""" .
+
+epd:id_2016-S-070-121587_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  epo:hasInternetAddress "http://www.kozbeszerzes.hu"^^xsd:anyURI;
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828594" .
+
+epd:id_2016-S-070-121587_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó u. 5." .
+
+epd:id_2016-S-070-121587_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2016-S-070-121587_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2016-S-070-121587_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2016-S-070-121587_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-070-121587_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2016-S-070-121587_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "HU";
+  epo:hasReceiptExpressionDeadline "2016-04-26T23:59" .
+
+epd:id_2016-S-070-121587_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU233>;
+  locn:postCode "7031";
+  locn:postName "Paks";
+  locn:thoroughfare "Pf. 71." .
+
+epd:id_2016-S-070-121587_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3
+  a cccev:ContactPoint;
+  epo:hasContactName "Szél István, logisztikai csoportvezető"@hu;
+  epo:hasFax "+36 75508517";
+  epo:hasInternetAddress "http://www.atomeromu.hu"^^xsd:anyURI;
+  cccev:email "kozbeszerzes@npp.hu";
+  cccev:telephone "+36 75508042" .
+
+epd:id_2016-S-070-121587_TenderReceiverOrganisationIdentifier_dk2esofbDLefiQsKcsKjh3
+  a epo:Identifier;
+  epo:hasIdentifierValue "AK06068" .
+
+epd:id_2016-S-070-121587_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 a org:Organization;
+  epo:hasID epd:id_2016-S-070-121587_TenderReceiverOrganisationIdentifier_dk2esofbDLefiQsKcsKjh3;
+  epo:hasLegalName "MVM Paksi Atomerőmű Zártkörűen Működő Részvénytársaság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2016-S-070-121587_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  cccev:registeredAddress epd:id_2016-S-070-121587_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3 .
+
+epd:id_2016-S-070-121587_TenderReceiver_dk2esofbDLefiQsKcsKjh3 a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-070-121587_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  epo:playedBy epd:id_2016-S-070-121587_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 .

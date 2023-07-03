@@ -1,0 +1,93 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-031-078310_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "https://app.eop.bg/buyer/26628"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-031-078310_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-031-078310_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-031-078310_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Руска Чолакова"@bg;
+  epo:hasFax "+359 29800494";
+  epo:hasInternetAddress "www.bdz.bg"^^xsd:anyURI;
+  cccev:email "rcholakova@bdz.bg";
+  cccev:telephone "+359 889055710" .
+
+epd:id_2021-S-031-078310_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Стационарни обекти на ниво ниско и средно напрежение, описани в приложение № 1 към техническата спецификация на възложителя от документацията за участие."@bg .
+
+epd:id_2021-S-031-078310_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG>;
+  locn:address epd:id_2021-S-031-078310_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-031-078310_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-031-078310_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-031-078310_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2021-S-031-078310_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/09310000> .
+
+epd:id_2021-S-031-078310_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-031-078310_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Доставка чрез покупка на 11 200 МWh нетна активна електрическа енергия и координатор на балансираща група за обектите на „БДЖ — Пътнически превози“ ЕООД, присъединени на нива средно и ниско напрежение, посочени неизчерпателно в списък на стационарните обекти на ниво ниско и средно напрежение — приложение № 1 към техническата спецификация, за избор на доставчик на електрическа енергия и координатор на балансираща група за обектите на „БДЖ — Пътнически превози“ ЕООД, присъединени на нива средно и ниско напрежение, за период от 1 година с възможност за подновяване от документацията за участие."@bg;
+  epo:hasPurpose epd:id_2021-S-031-078310_LotPurpose_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-031-078310_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-031-078310_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2021-S-031-078310_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-031-078310_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te;
+  epo:hasDispatchDate "2021-02-10"^^xsd:date;
+  epo:hasID epd:id_2021-S-031-078310_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210215";
+  epo:refersToLot epd:id_2021-S-031-078310_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2021-S-031-078310_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-031-078310_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 031-078310" .
+
+epd:id_2021-S-031-078310_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "ул. „Иван Вазов“ № 3" .
+
+epd:id_2021-S-031-078310_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "175405647" .
+
+epd:id_2021-S-031-078310_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2021-S-031-078310_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "„БДЖ — Пътнически превози“ — съкратено БДЖ — ПП ЕООД"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2021-S-031-078310_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-031-078310_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-031-078310_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-031-078310_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09310000> .
+
+epd:id_2021-S-031-078310_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-031-078310_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation "1. Продължава от раздел II.1.1):...за период от 1 година с възможност за подновяване.2. С настоящото обявление се цели съкращаване на сроковете за получаване на оферти на основание чл. 23, ал. 9 от ЗОП."@bg;
+  epo:hasDescription "Доставката, предмет на обществената поръчка, следва да се извършва съгласно техническа спецификация за избор на доставчик на електрическа енергия и координатор на балансираща група за обектите на „БДЖ — Пътнически превози“ ЕООД, присъединени на нива средно и ниско напрежение, за период от 1 година с възможност за подновяване на възложителя от документацията за участие.Прогнозното количество нетна активна електрическа енергия за обектите на „БДЖ — Пътнически превози“ ЕООД, присъединени на нива средно и ниско напрежение, за едногодишен период е 11 200 MWh.Възложителят предвижда възможност за подновяване на действието на договора по смисъла на чл. 21, ал. 1 от ЗОП във връзка с чл. 6 от ППЗОП до сключване на нов договор за обществена поръчка със същия предмет, но не повече от 1 година, при същите условия и нов обем от 11 200 MWh."@bg;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-031-078310_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-031-078310_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Избор на доставчик на електрическа енергия и координатор на балансираща група за обектите на „БДЖ — Пътнически превози“ ЕООД, присъединени на нива средно и ниско напрежение... Продълж. в раздел VI „Доп. инф.“"@bg;
+  epo:isCoveredByGPA false .
+
+epd:id_2021-S-031-078310_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-03-18"^^xsd:date .
+
+epd:id_2021-S-031-078310_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-031-078310_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-031-078310_Organisation_W8v6KSqiUn74jPKJmENKoH .

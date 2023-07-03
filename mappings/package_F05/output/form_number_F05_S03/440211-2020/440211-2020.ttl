@@ -1,0 +1,280 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-182-440211_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://ekr.gov.hu/portal/kozbeszerzes/eljarasok/EKR000774402020/reszletek"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2020-S-182-440211_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2020-S-182-440211_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF;
+  epo:playedBy epd:id_2020-S-182-440211_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2020-S-182-440211_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF a cccev:ContactPoint;
+  epo:hasContactName "Zsákainé Daku Andrea"@hu;
+  epo:hasFax "+36 52411221";
+  epo:hasInternetAddress "http://www.eon.hu"^^xsd:anyURI;
+  cccev:email "andrea.daku.zsakaine@eon-hungaria.com";
+  cccev:telephone "+36 302442993" .
+
+epd:id_2020-S-182-440211_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF a org:Organization;
+  epo:hasID epd:id_2020-S-182-440211_OrganisationIdentifier_gFUcNYVmTUBiATKNrzmurF;
+  epo:hasLegalName "E.ON Tiszántúli Áramhálózati Zrt."@hu;
+  cccev:registeredAddress epd:id_2020-S-182-440211_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2020-S-182-440211_AwardCriterionPrice_ViFLHYiizzehBKNxWmyibc a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2020-S-182-440211_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2020-S-182-440211_BuyerOrganisationGroup_gFUcNYVmTUBiATKNrzmurF a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMember epd:id_2020-S-182-440211_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2020-S-182-440211_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2020-S-182-440211_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2020-S-182-440211_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2020-S-182-440211_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2020-S-182-440211_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Zsákainé Daku Andrea"@hu;
+  epo:hasFax "+36 52411221";
+  epo:hasInternetAddress "http://www.eon.hu"^^xsd:anyURI;
+  cccev:email "andrea.daku.zsakaine@eon-hungaria.com";
+  cccev:telephone "+36 302442993" .
+
+epd:id_2020-S-182-440211_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Az E.ON szolgáltatási területe"@hu .
+
+epd:id_2020-S-182-440211_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a locn:Address;
+  locn:fullAddress "Az EON szolgáltatási területe"@hu .
+
+epd:id_2020-S-182-440211_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU1>;
+  locn:address epd:id_2020-S-182-440211_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2020-S-182-440211_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU1>;
+  locn:address epd:id_2020-S-182-440211_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
+
+epd:id_2020-S-182-440211_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-182-440211_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-182-440211_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2020-S-182-440211_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-182-440211_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-182-440211_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions false .
+
+epd:id_2020-S-182-440211_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2020-S-182-440211_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-182-440211_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-182-440211_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a epo:EAuctionTechniqueUsage .
+
+epd:id_2020-S-182-440211_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2020-S-182-440211_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2020-S-182-440211_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2020-S-182-440211_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2020-S-182-440211_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/44212222> .
+
+epd:id_2020-S-182-440211_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/44212222> .
+
+epd:id_2020-S-182-440211_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-182-440211_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Rácsos acéloszlopok nagyfeszültségű szabadvezetékekhez.A rácsos szerkezetű nagyfeszültségű acéloszlopokra vonatkozó részletes feltételek az ajánlattételi dokumentációban (a szerződéstervezetben és a közbeszerzési műszaki leírásban) kerültek rögzítésre.Mennyiség: 2400 tonnaE.ON Gazdasági Szolgáltató Kft. részére: 1400 tonnaE.ON Tiszántúli Áramhálózati Zrt. részére: 1000 tonna"@hu;
+  epo:hasEstimatedValue epd:id_2020-S-182-440211_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasID epd:id_2020-S-182-440211_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2020-S-182-440211_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle "Rácsos szerkezetű nagyfeszültségű acéloszlopok"@hu;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-182-440211_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2020-S-182-440211_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
+
+epd:id_2020-S-182-440211_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-182-440211_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasDescription "Rácsos acéloszlopok középfeszültségű szabadvezetékekhez.A rácsos szerkezetű középfeszültségű acéloszlopokra vonatkozó részletes feltételek az ajánlattételi dokumentációban (a szerződéstervezetben és a közbeszerzési műszaki leírásban) kerültek rögzítésre.Mennyiség: 280 tonnaE.ON Gazdasági Szolgáltató Kft. részére: 210 tonnaE.ON Tiszántúli Áramhálózati Zrt. részére: 70 tonna"@hu;
+  epo:hasEstimatedValue epd:id_2020-S-182-440211_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasID epd:id_2020-S-182-440211_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2020-S-182-440211_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle "Rácsos szerkezetű középfeszültségű acéloszlopok"@hu;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-182-440211_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2020-S-182-440211_AwardCriterionPrice_ViFLHYiizzehBKNxWmyibc .
+
+epd:id_2020-S-182-440211_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 5520000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-182-440211_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj a epo:MonetaryValue;
+  epo:hasAmountValue 878000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-182-440211_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 6398000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-182-440211_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2020-S-182-440211_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:MultipleStageProcedureTerm .
+
+epd:id_2020-S-182-440211_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2020-S-182-440211_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2020-S-182-440211_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2020-S-182-440211_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2020-S-182-440211_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2020-S-182-440211_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2020-S-182-440211_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2020-09-14"^^xsd:date;
+  epo:hasID epd:id_2020-S-182-440211_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20200918";
+  epo:refersToLot epd:id_2020-S-182-440211_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2020-S-182-440211_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2020-S-182-440211_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2020-S-182-440211_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 182-440211" .
+
+epd:id_2020-S-182-440211_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU221>;
+  locn:postCode "9027";
+  locn:postName "Győr";
+  locn:thoroughfare "Kandó Kálmán utca 11–13." .
+
+epd:id_2020-S-182-440211_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU321>;
+  locn:postCode "4024";
+  locn:postName "Debrecen";
+  locn:thoroughfare "Kossuth utca 41." .
+
+epd:id_2020-S-182-440211_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "EKRSZ_56494433" .
+
+epd:id_2020-S-182-440211_OrganisationIdentifier_gFUcNYVmTUBiATKNrzmurF a epo:Identifier;
+  epo:hasIdentifierValue "EKRSZ_53237534" .
+
+epd:id_2020-S-182-440211_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2020-S-182-440211_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "E.ON Gazdasági Szolgáltató Kft."@hu;
+  cccev:registeredAddress epd:id_2020-S-182-440211_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2020-S-182-440211_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "EKR000774402020" .
+
+epd:id_2020-S-182-440211_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/44212222> .
+
+epd:id_2020-S-182-440211_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 2;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2020-S-182-440211_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-182-440211_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "1) AK alkalmazza a 424/2017. (XII. 19.) K.r. 26. § (2) bek. rendelkezéseit.2) A 424/2017. (XII. 19.) K.r. 15. § (2) bek. alapján az ajánlatok felbontását az ajánlattételi határidő lejártát követően, kettő órával később kezdi meg az EKR.3) AK az ajánlatok bírálatát a Kbt. 67. §, a 69. § bekezdése rendelkezéseinek együttes alkalmazásával folytatja le.4) Ajánlattevőnek ajánlatában nyilatkoznia kell:— a Kbt. 65. § (7) bek. szerint (nemleges tartalommal is),— a Kbt. 66. § (2) bek.-ben foglaltakra (eredeti aláírt példányban),— a Kbt. 66. § (6) bek. a) és b) pontja szerint (nemleges tartalommal is)Ajánlattevőnek ajánlatában csatolnia szükséges továbbá: - az ESPD-t (kitöltve); - a Kbt. 66. § (5) bek. szerinti felolvasólapot;— az ajánlattevő, illetve az alvállalkozó vagy az alkalmasság igazolásában részt vevő más szervezet nevében az ajánlatban aláíró (cégjegyzésre jogosult) cégképviselők aláírási címpéldányát vagy ügyvéd által ellenjegyzett aláírás-mintáját vagy ezekkel egyenértékű dokumentumát (papíralapú dokumentum egyszerű elektronikus másolatának benyújtása esetén).5) AK a nyertes ajánlattevőnek a Kbt. 35. § (8) bek. tekintettel nem teszi lehetővé gazdálkodó szervezet létrehozását.6) AK alkalmazhatja a Kbt. 75. § (2) bek. e) pontját.7) Az ajánlatkérő hiánypótlást biztosít a Kbt.71.§-ában foglaltak szerint. Ajánlatkérő alkalmazza a Kbt.71.§ (6) bekezdésében foglaltakat.8) Közös ajánlattétel esetén a közös ajánlattételről szóló megállapodást az ajánlathoz csatolni kell, a vezető AT megjelölésével [Kbt. 35. § (6) bek.], nyilatkozattal, hogy a tagok egyetemleges felelősséget vállalnak a szerződés teljesítéséért. Az okiratnak tartalmaznia kell a meghatalmazást, miszerint a közös ajánlattevők képviseletére jogosult gazdasági szereplő az EKR-ben elektronikus úton teendő nyilatkozatok megtételekor a közös ajánlattevők képviseletében eljárhat.9) AK tájékoztatja az AT-ket, hogy a műszaki-szakmai alkalmasság vonatkozásában arra, hogy jelen felhívás a szerződés teljesítésére vonatkozó alkalmassági feltételeket a Korm. rendelet. 28.§ (3) bekezdése alapján meghatározott minősítési szempontokhoz képest szigorúbban határozza meg az alábbiak tekintetében.: III.1.3) pontok.10) Ajánlatkérő a beérkezett ajánlatok értékelése során a Kbt.76.§ (2) bekezdés a) pontja alapján a legalacsonyabb ár módszerét alkalmazza. Az ajánlatkérő igényeinek csak konkrétan meghatározott minőségi és műszaki követelményeknek megfelelő termék felel meg, így a gazdaságilag legelőnyösebb ajánlat kiválasztását további minőségi jellemzők nem, csak a legalacsonyabb ár értékelése szolgálja.11) A IV.2.6) pontban az ajánlati kötöttség időtartama az ajánlatok bontásától számított 30 nap.12) Az AF-ben nem szabályozott kérdések vonatkozásában a közb. dok.-mok előírásai, valamint a Kbt., illetve a vonatkozó magyar jogszabályok előírásai szerint kell eljárni. Az órában meghatározott időpontok a magyarországi pontos idő szerint értendők.13) A részenként megkötött keretmegállapodásokból a beszerzéseket az Ajánlatkérő a Kbt. 105.§ (1) bekezdés a) pontja alapján, tehát Ajánlatkérő általi közvetlen megrendelés útján kívánja megvalósítani.14) Az ajánlatkérő az ajánlatok elkészítéséhez a felhívást kiegészítő közbeszerzési dokumentumokat bocsát rendelkezésre. A kiegészítő dokumentumokat bármely érdekelt gazdasági szereplő térítésmentesen átveheti. A kiegészítő dokumentumokat elektronikus úton a hirdetmény I.3 pontjában meghatározott internetes címen lehet elérni regisztráció ellenében.15) Felelős akkreditált közbeszerzési szaktanácsadó: dr. Tasnádi Gábor, lajstromszáma:00149."@hu;
+  epo:hasDescription "Áruszállítási keretmegállapodás nagyfeszültségű és középfeszültségű rácsos acéloszlopok gyártása és szállítása tárgybanI. rész esetében: NAF vasoszlop: 2400 tonnaII. rész esetében: KÖF vasoszlop: 280 tonna"@hu;
+  epo:hasEstimatedValue epd:id_2020-S-182-440211_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2020-S-182-440211_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-182-440211_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2020-S-182-440211_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2020-S-182-440211_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Rácsos szerkezetű NAF és KÖF acéloszlopok"@hu;
+  epo:isCoveredByGPA false;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-182-440211_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2020-S-182-440211_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2020-S-182-440211_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2020-S-182-440211_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2020-S-182-440211_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2020-S-182-440211_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G,
+    epd:id_2020-S-182-440211_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2020-S-182-440211_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-182-440211_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2020-S-182-440211_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2020-S-182-440211_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó u. 5." .
+
+epd:id_2020-S-182-440211_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828592" .
+
+epd:id_2020-S-182-440211_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Közbeszerzési Hatóság Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2020-S-182-440211_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2020-S-182-440211_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2020-S-182-440211_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2020-S-182-440211_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2020-S-182-440211_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "A jogorvoslati kérelmek benyújtásának határidejére vonatkozó pontos információ: A Kbt. 148.§ (2)-(7) bekezdése szerint." .
+
+epd:id_2020-S-182-440211_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828592" .
+
+epd:id_2020-S-182-440211_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó u. 5." .
+
+epd:id_2020-S-182-440211_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Közbeszerzési Hatóság Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2020-S-182-440211_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2020-S-182-440211_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2020-S-182-440211_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-182-440211_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2020-S-182-440211_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "HU";
+  epo:hasSubmissionURL "https://ekr.gov.hu/portal/kozbeszerzes/eljarasok/EKR000774402020/reszletek"^^xsd:anyURI .
+
+epd:id_2020-S-182-440211_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2020-S-182-440211_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2020-S-182-440211_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

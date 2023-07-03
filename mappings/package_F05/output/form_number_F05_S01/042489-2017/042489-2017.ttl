@@ -1,0 +1,187 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-024-042489_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "www.mytenders.org"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2017-S-024-042489_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://www.mytenders.org/search/Search_AuthProfile.aspx?ID=AA39569"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-024-042489_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-024-042489_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-024-042489_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "www.energyforgood.org.uk"^^xsd:anyURI;
+  cccev:email "andy.blake@energyforgood.org.uk";
+  cccev:telephone "+44 7851751820" .
+
+epd:id_2017-S-024-042489_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UK> .
+
+epd:id_2017-S-024-042489_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UK> .
+
+epd:id_2017-S-024-042489_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-024-042489_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-024-042489_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2017-S-024-042489_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-024-042489_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-024-042489_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions false .
+
+epd:id_2017-S-024-042489_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-024-042489_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-024-042489_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-024-042489_DynamicPurchaseSystemTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G
+  a epo:DynamicPurchaseSystemTechniqueUsage .
+
+epd:id_2017-S-024-042489_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2017-S-024-042489_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2017-S-024-042489_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/31682000> .
+
+epd:id_2017-S-024-042489_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/09123000> .
+
+epd:id_2017-S-024-042489_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-024-042489_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+Electricity supply contracts.
+"""@en;
+  epo:hasID epd:id_2017-S-024-042489_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-024-042489_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle """
+Electricity Supply
+"""@en;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-024-042489_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-024-042489_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasDescription """
+Natural Gas Supply Contracts.
+"""@en;
+  epo:hasID epd:id_2017-S-024-042489_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2017-S-024-042489_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle """
+Natural Gas
+"""@en;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-024-042489_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 500000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
+
+epd:id_2017-S-024-042489_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-024-042489_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-024-042489_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2017-S-024-042489_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2017-02-01"^^xsd:date;
+  epo:hasID epd:id_2017-S-024-042489_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20170203";
+  epo:refersToLot epd:id_2017-S-024-042489_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2017-S-024-042489_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2017-S-024-042489_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-024-042489_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 024-042489" .
+
+epd:id_2017-S-024-042489_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UK>;
+  locn:postCode "KT5 8SU";
+  locn:postName "Surbiton";
+  locn:thoroughfare "28 King Charles Crescent" .
+
+epd:id_2017-S-024-042489_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Energy for Good Limited"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2017-S-024-042489_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-024-042489_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71314000> .
+
+epd:id_2017-S-024-042489_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:isAwardedByCPB true;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2017-S-024-042489_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-024-042489_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+Note: To register your interest in this notice and obtain any additional information please visit the myTenders Web Site at http://www.myTenders.org/Search/Search_Switch.aspx?ID=192811
+The buyer has indicated that it will accept electronic responses to this notice via the Postbox facility. A user guide is available at http://www.myTenders.org/sitehelp/help_guides.aspx
+Suppliers are advised to allow adequate time for uploading documents and to dispatch the electronic response well in advance of the closing time to avoid any last minute problems.
+(MT Ref: 192811).
+"""@en;
+  epo:hasDescription """
+To supply electricity and natural gas.
+"""@en;
+  epo:hasEstimatedValue epd:id_2017-S-024-042489_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-024-042489_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2017-S-024-042489_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2017-S-024-042489_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Energy for Good Dynamic Purchasing System.
+"""@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-024-042489_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-024-042489_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb, epd:id_2017-S-024-042489_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB,
+    epd:id_2017-S-024-042489_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2017-S-024-042489_DynamicPurchaseSystemTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-024-042489_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-024-042489_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-024-042489_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-024-042489_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Evaluation of submissions will be 30 days from issue of this notice.
+""" .
+
+epd:id_2017-S-024-042489_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  cccev:telephone "+44 7851751820" .
+
+epd:id_2017-S-024-042489_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postCode "KT5 8SU";
+  locn:postName "Surbiton";
+  locn:thoroughfare "28 King Charles Crescent" .
+
+epd:id_2017-S-024-042489_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Energy for Good Limited"@en;
+  epo:hasPrimaryContactPoint epd:id_2017-S-024-042489_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2017-S-024-042489_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-024-042489_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-024-042489_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-024-042489_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "www.mytenders.org"^^xsd:anyURI .

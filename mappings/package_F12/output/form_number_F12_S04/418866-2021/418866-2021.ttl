@@ -1,0 +1,113 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-158-418866_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://app.eop.bg/today/155251"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-158-418866_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "https://app.eop.bg/buyer/14928"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-158-418866_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-158-418866_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-158-418866_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Янка Здравкова"@bg;
+  epo:hasFax "+359 66809371";
+  epo:hasInternetAddress "https://gabrovo.bg/bg"^^xsd:anyURI;
+  cccev:email "poruchki@gabrovo.bg";
+  cccev:telephone "+359 66818382" .
+
+epd:id_2021-S-158-418866_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-158-418866_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-158-418866_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-158-418866_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71210000> .
+
+epd:id_2021-S-158-418866_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-158-418866_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Целта на конкурса е изготвяне на идеен проект за паметник – мемориал, увековечаващ личността и делото на Васил Левски. Със средствата на синтеза на архитектурата и монументалното изобразително изкуство следва да се постигне въздействащо пространствено решение, удачно вписано в прилежащата градска среда.В резултат от класирането на участниците ще се възложи обществена поръчка за изпълнението на избрания проект по реда на чл. 182, ал. 1, във връзка с чл. 79, ал. 1, т. 9 от ЗОП (пряко договаряне). Изборът на идейния проект в съответствие с условията, описани в настоящата конкурсна документация, ще служи за основа, определяща изискванията към обема и съдържанието на бъдещия инвестиционен проект, включваща всичките му необходими части, както и условията за неговото материализиране."@bg;
+  epo:hasPurpose epd:id_2021-S-158-418866_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-158-418866_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-158-418866_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-158-418866_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2021-S-158-418866_Reviewer_gQh8JdpqsE2bYBRikawiBu;
+  epo:hasDispatchDate "2021-08-12"^^xsd:date;
+  epo:hasID epd:id_2021-S-158-418866_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210817";
+  epo:refersToLot epd:id_2021-S-158-418866_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-158-418866_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-158-418866_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 158-418866" .
+
+epd:id_2021-S-158-418866_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG322>;
+  locn:postCode "5300";
+  locn:postName "гр. Габрово";
+  locn:thoroughfare "пл. ВЪЗРАЖДАНЕ № 3" .
+
+epd:id_2021-S-158-418866_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "000215630" .
+
+epd:id_2021-S-158-418866_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2021-S-158-418866_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "ОБЩИНА ГАБРОВО"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-158-418866_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-158-418866_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71210000> .
+
+epd:id_2021-S-158-418866_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "Критерии за подбор - технически и професонални способностиУчастниците следва да:1 са изпълнили проект. или изгр. на мин. 1 паметник/мемор. композ./монум. худ. пластика за посл.3 год., сч. от подаване на заявлението за уч.2. разполагат с екип за изп. на ид. проект от най-малко 1 скулптор с обр.-квал. ст. „бакалавър” или екв., спец. „Скулптура” или екв. и поне 1 архитект с пълна проект. правосп. съгл. чл. 230 от ЗУТ и чл. 10 от ЗКАИИП. респ. призн. проф. кв. по ЗППК или екв. за чужд.лицаПри необх. от уч. на др. спец.в обл. на инвест.проект. /ландшафт-архитекти, стр. инж., ел. инж. или др. членове на КИИП/, същите трябва да притежават пълна проект. правосп.Уч. декларира в част ІV, б. „В“от ЕЕДОП информ. за обст. по т.1 и 2. В сл. на чл.67, ал. 5 и чл. 112, ал. 1, т. 2 от ЗОП, възл. изисква от уч. да предст.съотв. документи.*В случай, че в резултат на класирането участникът е класиран и му бъде поръчана следващата фаза по реализацията на паметника, трябва да разполага с екип за изпълнение на поръчката, в състав от най-малко по един проектант, с пълна проектантска правоспособност, съгласно чл. 230 от ЗУТ и чл. 10 от Закона за камарите на архитектите и инженерите в инвестиционното проектиране, респ. призната професионална квалификация по реда на Закона за признаване на професионални квалификации или еквивалентна за чуждестранни лица, за части: „Геодезическа“, „Паркоустройство и благоустройство“, „Електро“, както и други - в съответствие със задачите, определени с идейното решение."@bg;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-158-418866_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-158-418866_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "ОТКРИТ КОНКУРС ЗА ИДЕЕН ПРОЕКТ НА ОБЕКТ: ПАМЕТНИК НА ВАСИЛ ЛЕВСКИ В ГРАД ГАБРОВО"@bg;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-158-418866_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-158-418866_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2021-S-158-418866_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-158-418866_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-158-418866_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-158-418866_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-158-418866_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Съгласно чл. 197, ал. 1, т. 1 от ЗОП, жалба може да се подава в 10-дневен срок от изтичането на срока по чл. 100, ал. 3 - срещу решението за откриване на процедурата." .
+
+epd:id_2021-S-158-418866_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "delovodstvo@cpc.bg";
+  cccev:telephone "+359 29356113" .
+
+epd:id_2021-S-158-418866_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. Витоша № 18" .
+
+epd:id_2021-S-158-418866_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2021-S-158-418866_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2021-S-158-418866_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-158-418866_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-158-418866_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-158-418866_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "BG";
+  epo:hasSubmissionURL "https://app.eop.bg/today/155251"^^xsd:anyURI .

@@ -1,0 +1,307 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-121-245858_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.ville-bagneresdebigorre.e-marchespublics.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-121-245858_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.ville-bagneresdebigorre.e-marchespublics.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-121-245858_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-121-245858_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-121-245858_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Commune de Bagnères-de-Bigorre — service marchés publics"@fr;
+  epo:hasFax "+33 562910293";
+  epo:hasInternetAddress "http://www.ville-bagneresdebigorre.fr"^^xsd:anyURI;
+  cccev:email "marchespublics@haute-bigorre.fr";
+  cccev:telephone "+33 562950805" .
+
+epd:id_2017-S-121-245858_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+                  Commune de Bagnères-de-Bigorre 65200 (y compris la station de La Mongie).
+               """@fr .
+
+epd:id_2017-S-121-245858_ContractTermLotLocationAddress_gBpZPwcpekuQ8tRyYLDbhL a locn:Address;
+  locn:fullAddress """
+                  Commune de Bagnères-de-Bigorre 65200 (y compris la station de La Mongie).
+               """@fr .
+
+epd:id_2017-S-121-245858_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR626>;
+  locn:address epd:id_2017-S-121-245858_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-121-245858_ContractTermLotLocation_gBpZPwcpekuQ8tRyYLDbhL a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR626>;
+  locn:address epd:id_2017-S-121-245858_ContractTermLotLocationAddress_gBpZPwcpekuQ8tRyYLDbhL .
+
+epd:id_2017-S-121-245858_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-121-245858_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-121-245858_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-121-245858_ContractTermLot_gBpZPwcpekuQ8tRyYLDbhL a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-121-245858_Duration_kRiiMRBTYMDCGKiwh9Rzt7;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-121-245858_ContractTermLotLocation_gBpZPwcpekuQ8tRyYLDbhL .
+
+epd:id_2017-S-121-245858_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-121-245858_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 84.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-121-245858_Duration_kRiiMRBTYMDCGKiwh9Rzt7 a epo:SpecificDuration;
+  time:numericDuration 84.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-121-245858_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "Renseignements techniques: Services techniques"@fr;
+  epo:hasFax "+33 562950162";
+  epo:hasInternetAddress "http://www.ville-bagneresdebigorre.fr"^^xsd:anyURI;
+  cccev:email "services.techniques@ville-bagneresdebigorre.fr";
+  cccev:telephone "+33 562958760" .
+
+epd:id_2017-S-121-245858_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR626>;
+  locn:postCode "65201";
+  locn:postName "Bagnères-de-Bigorre";
+  locn:thoroughfare "Hôtel de Ville, 28 Place des Vignaux, BP 80156" .
+
+epd:id_2017-S-121-245858_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasLegalName "Commune de Bagnères-de-Bigorre"@fr;
+  cccev:registeredAddress epd:id_2017-S-121-245858_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2017-S-121-245858_LotIdentifier_RgULVPVVYP9pkvK789PCUZ a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2017-S-121-245858_LotIdentifier_gBpZPwcpekuQ8tRyYLDbhL a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2017-S-121-245858_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/65111000> .
+
+epd:id_2017-S-121-245858_LotPurpose_gBpZPwcpekuQ8tRyYLDbhL a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/90480000> .
+
+epd:id_2017-S-121-245858_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-121-245858_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation """
+                  Le présent contrat est une délégation de service public soumise aux dispositions des articles L. 1411-1 et suivants du Code général des collectivités territoriales (CGCT) et R. 1411-1 et suivants du CGCT et une concession soumise à l'ordonnance n° 2016-65 du 29.1.2016 relative aux contrats de concession et au décret n° 2016-86 du 1.2.2016 relatif aux contrats de concession.
+               """@fr;
+  epo:hasDescription """
+                  Lot n° 1: la gestion du service public d'alimentation en eau potable correspondant aux spécifications suivantes:
+                  À titre estimatif: 647 147 m3 environ dont 583 702 m3 pour la commune de Bagnères-de-Bigorre et 63 445 m3 pour la station de La Mongie.
+                  Pour 5 017 abonnés (4 740 pour la commune de Bagnères-de-Bigorre et 277 pour la station de La Mongie.
+                  — exploitation et entretien des ouvrages de production et de distribution d'eau potable,
+                  — surveillance et connaissance des installations,
+                  — gestion des relations avec les abonnés, facturation.,
+                  — Renouvellement des équipements,
+                  — achat d'eau en gros.
+                  — réalisation d'investissements:
+                  Renouvellement: de l'ordre de 71 000 EUR par an.
+               """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-121-245858_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasID epd:id_2017-S-121-245858_LotIdentifier_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-121-245858_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasTitle """
+                  La gestion du service public d'alimentation en eau potable
+               """@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-121-245858_Lot_gBpZPwcpekuQ8tRyYLDbhL a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-121-245858_ContractTermLot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasAdditionalInformation """
+                  Le présent contrat est une délégation de service public soumise aux dispositions des articles L. 1411-1 et suivants du Code général des collectivités territoriales (CGCT) et R. 1411-1 et suivants du CGCT et une concession soumise à l'ordonnance n° 2016-65 du 29.1.2016 relative aux contrats de concession et au décret n° 2016-86 du 1.2.2016 relatif aux contrats de concession.
+               """@fr;
+  epo:hasDescription """
+                  La gestion du service public de l'assainissement collectif correspondant aux spécifications suivantes:
+                  À titre estimatif: 578 220 m3 environ dont 515 835 m3 pour la commune de Bagnères-de-Bigorre et 62 385 m3 pour la station de La Mongie.
+                  Pour 4 549 abonnés (4 278 pour la commune de Bagnères-de-Bigorre et 271 pour la station de La Mongie
+                  — exploitation et entretien des ouvrages de collecte et de traitement des eaux usées et des eaux pluviales,
+                  — surveillance et connaissance des installations,
+                  — gestion des relations avec les abonnés,
+                  — renouvellement des équipements,
+                  — traitement des sous-produits de l'épuration,
+                  — la réalisation d'investissements.
+                  Renouvellement: de l'ordre de 45 000 EUR par an.
+               """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-121-245858_MainMonetaryValueLot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasID epd:id_2017-S-121-245858_LotIdentifier_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasPurpose epd:id_2017-S-121-245858_LotPurpose_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasTitle """
+                  La gestion du service public de l'assainissement collectif
+               """@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-121-245858_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 4250000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-121-245858_MainMonetaryValueLot_gBpZPwcpekuQ8tRyYLDbhL a epo:MonetaryValue;
+  epo:hasAmountValue 4200000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-121-245858_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM a cccev:ContactPoint;
+  cccev:email "claire.gachet@direccte.gouv.fr";
+  cccev:telephone "+33 556692718" .
+
+epd:id_2017-S-121-245858_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "33063";
+  locn:postName "Bordeaux Cedex";
+  locn:thoroughfare "103 bis rue Belleville, BP 952" .
+
+epd:id_2017-S-121-245858_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM a org:Organization;
+  epo:hasLegalName "CCIRA de Bordeaux"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-121-245858_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM;
+  cccev:registeredAddress epd:id_2017-S-121-245858_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2017-S-121-245858_Mediator_PMKvGTWSa3gLdxRfJtvToM a epo:Mediator;
+  epo:playedBy epd:id_2017-S-121-245858_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2017-S-121-245858_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 8450000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-121-245858_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-121-245858_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-121-245858_Mediator_PMKvGTWSa3gLdxRfJtvToM,
+    epd:id_2017-S-121-245858_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2017-S-121-245858_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2017-S-121-245858_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-121-245858_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2017-06-23"^^xsd:date;
+  epo:hasID epd:id_2017-S-121-245858_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20170628";
+  epo:refersToLot epd:id_2017-S-121-245858_Lot_RgULVPVVYP9pkvK789PCUZ, epd:id_2017-S-121-245858_Lot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:refersToProcedure epd:id_2017-S-121-245858_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-121-245858_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 121-245858" .
+
+epd:id_2017-S-121-245858_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR626>;
+  locn:postCode "65201";
+  locn:postName "Bagnères-de-Bigorre";
+  locn:thoroughfare "Hôtel de Ville, 28 place des Vignaux, BP 156" .
+
+epd:id_2017-S-121-245858_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "21650059500014" .
+
+epd:id_2017-S-121-245858_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Autorité régionale ou locale";
+  epo:hasID epd:id_2017-S-121-245858_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Mairie de Bagnères-de-Bigorre"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-121-245858_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-121-245858_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "17-AF011" .
+
+epd:id_2017-S-121-245858_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/65111000> .
+
+epd:id_2017-S-121-245858_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk a epo:ProcedureTerm;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2017-S-121-245858_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-121-245858_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               Choix de la procédure fermée. Cette procédure se fera en 2 temps. Dans un premier temps, les candidats doivent transmettre uniquement leur candidature. La Commune de Bagnères-de-Bigorre procédera à l'examen des candidatures afin de déterminer les candidats admis à déposer une offre. Dans un second temps, les candidats retenus auront accès au DCE et pourront déposer une offre. Les candidats doivent prendre connaissance du document intitulé «RC — phase candidature» comportant les informations complémentaires au présent avis notamment les informations sur l'appréciation des capacités techniques, économiques et financières des candidats, sur les missions attendues du délégataire, sur les modalités de présentation et de transmission des candidatures, sur les modalités pour obtenir des renseignements complémentaires. Ce document peut être obtenu gratuitement sur demande au point de contact mentionné à l'article I.1) du présent avis.
+            """@fr;
+  epo:hasDescription """
+               Délégation de service public relative à la gestion du service public d'eau potable et d'assainissement de la commune de Bagnères-de-Bigorre 65200.
+            """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-121-245858_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2017-S-121-245858_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-121-245858_Lot_RgULVPVVYP9pkvK789PCUZ,
+    epd:id_2017-S-121-245858_Lot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasPurpose epd:id_2017-S-121-245858_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Délégation de service public (DSP) relative à la gestion du service public d'eau potable et du service d'assainissement de la commune de Bagnères-de-Bigorre 65200.
+            """@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-121-245858_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-121-245858_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk, epd:id_2017-S-121-245858_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr,
+    epd:id_2017-S-121-245858_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-121-245858_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-121-245858_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2017-S-121-245858_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2017-S-121-245858_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "64010";
+  locn:postName "Pau Cedex";
+  locn:thoroughfare "Villa Noulibos, 50 cours Lyautey, BP 543" .
+
+epd:id_2017-S-121-245858_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 559024993";
+  cccev:email "greffe.ta-pau@juradm.fr";
+  cccev:telephone "+33 559849440" .
+
+epd:id_2017-S-121-245858_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de PAU"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-121-245858_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2017-S-121-245858_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-121-245858_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-121-245858_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-121-245858_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               La présente procédure de DSP pourra faire l'objet:
+               — d'un référé précontractuel prévu aux articles L. 551-1 à L. 551-12 et R. 551-1 à R. 551-6 du Code de justice administrative (CJA) et pouvant être exercé avant la signature du contrat,
+               — d'un référé contractuel prévu aux articles L. 551-13 à L. 551-23 du CJA et R. 551-7 à R. 551-10, et pouvant être exercé dans les délais prévus à l'article R. 551-7 du CJA,
+               — d'un recours de pleine juridiction en contestation de la validité du contrat ou de certaines de ses clauses non réglementaires qui en sont divisibles assorti le cas échéant de conclusions indemnitaires et pouvant être exercé par tout tiers dans un délai de 2 mois à compter de l'accomplissement des mesures de publicité appropriées.
+               Les requérants peuvent éventuellement assortir leur recours d'une demande tendant, sur le fondement de l'article L. 521-1 du CJA, à la suspension de l'exécution du contrat. Les actes détachables du contrat ne peuvent être contestés qu'à l'occasion de ce recours.
+               Le requérant est recevable à former un recours pour excès de pouvoir contre les clauses réglementaires du contrat dans un délai de 2 mois à compter de sa publicité. Les requérants peuvent éventuellement assortir leur recours d'une demande tendant, sur le fondement de l'article L. 521-1 du CJA, à la suspension de l'exécution du contrat. Les personnes lésées par le contrat ou sa passation, peuvent introduire un recours en indemnisation après avoir effectué, le plus souvent, une demande préalable auprès de la personne publique. Au-delà d'un délai de 4 ans à compter du 1er janvier de l'année qui suit celle où la créance sur la personne publique est née, le requérant s'expose à l'opposition de la prescription quadriennale.
+            """ .
+
+epd:id_2017-S-121-245858_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 559024993";
+  cccev:email "greffe.th-pau@juradm.fr";
+  cccev:telephone "+33 559849440" .
+
+epd:id_2017-S-121-245858_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "64010";
+  locn:postName "Pau";
+  locn:thoroughfare "Villa Noulibos, 50 cours Lyautey, BP 543" .
+
+epd:id_2017-S-121-245858_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de PAU"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-121-245858_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2017-S-121-245858_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-121-245858_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-121-245858_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-121-245858_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.ville-bagneresdebigorre.e-marchespublics.com"^^xsd:anyURI .
+
+epd:id_2017-S-121-245858_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-121-245858_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-121-245858_Organisation_jXahEP38X6pEFgd4J9tLvF .

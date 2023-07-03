@@ -1,0 +1,90 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-250-461603_AccessTerm_4zjJjpytu5bmHbyNSmtsju a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.atac.roma.it"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-250-461603_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "www.atac.roma.it"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-250-461603_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2016-S-250-461603_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2016-S-250-461603_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "stefania.paoletti@atac.roma.it; francesco.galli@atac.roma.it"@it;
+  epo:hasFax "+39 646953964";
+  epo:hasInternetAddress "http://www.atac.roma.it"^^xsd:anyURI;
+  cccev:email "francesco.galli@atac.roma.it";
+  cccev:telephone "+39 646954655/4347" .
+
+epd:id_2016-S-250-461603_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj a locn:Address;
+  locn:fullAddress """
+Il territorio di Roma Capitale e Provincia di Roma.
+"""@it .
+
+epd:id_2016-S-250-461603_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  locn:address epd:id_2016-S-250-461603_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2016-S-250-461603_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-250-461603_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2016-S-250-461603_LotPurpose_PNm7nZntEXiu4JieackQnj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/64226000>, <http://data.europa.eu/cpv/cpv/72232000> .
+
+epd:id_2016-S-250-461603_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-250-461603_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription """
+ATAC SpA intende rivolgersi al mercato per individuare i soggetti che — tramite l'affidabilità delle proprie reti (punti di pagamento e piattaforme informatiche) sia in termini di sicurezza delle transazioni che di correttezza amministrativa — possano assicurare l'estensione dei servizi di pagamento nel modo più capillare possibile. Il presente Avviso è quindi finalizzato esclusivamente all'acquisizione di manifestazioni di interesse da parte di imprese in grado di offrire il servizio di pagamento e riscossione delle sanzioni dei Verbali di Accertamento di Violazione (V.A.V.) e Ordinanze Ingiuntive (O.I.), relativi a sanzioni amministrative pecuniarie di cui alla L.R. n. 52/82, tramite strumenti ed applicazioni telematici ed interattivi. ATAC si riserva, a seguito della presente procedura, di sottoscrivere, con gli operatori interessati in possesso dei requisiti richiesti, Contratti di Adesione aventi per oggetto il servizio di cui sopra.
+"""@it;
+  epo:hasPurpose epd:id_2016-S-250-461603_LotPurpose_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2016-S-250-461603_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-250-461603_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2016-S-250-461603_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ;
+  epo:hasDispatchDate "2016-12-23"^^xsd:date;
+  epo:hasID epd:id_2016-S-250-461603_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasPublicationDate "20161228";
+  epo:refersToLot epd:id_2016-S-250-461603_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2016-S-250-461603_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2016-S-250-461603_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 250-461603" .
+
+epd:id_2016-S-250-461603_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "00176";
+  locn:postName "Roma";
+  locn:thoroughfare "Via Prenestina 45" .
+
+epd:id_2016-S-250-461603_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasLegalName "ATAC SpA — Azienda per la mobilità di Roma Capitale"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2016-S-250-461603_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2016-S-250-461603_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "Avviso n. 128/2017" .
+
+epd:id_2016-S-250-461603_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79940000> .
+
+epd:id_2016-S-250-461603_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasAdditionalInformation """
+La documentazione tecnica relativa alla presente procedura è pubblicata, unitamente al presente avviso, sul sito www.atac.roma.it , sezione «gare e albo fornitori». Ogni società interessata, al fine di dimostrare la propria idoneità allo svolgimento delle attività oggetto del presente Avviso, potrà allegare documentazione tecnica, illustrativa e finanziaria, del modello di servizio che intende offrire. Il presente avviso di manifestazione di interesse rimane valido fino al 31.12.2018 a partire dalla data di invio all'Ufficio delle Pubblicazioni dell'Unione Europea; ATAC si riserva di effettuare le prime determinazioni sulla base delle manifestazioni di interesse pervenute entro il 31.1.2017. Gli operatori risultati idonei sia nell'ambito del possesso dei requisiti di ordine generale che speciale, successivamente al giusto esito delle opportune verifiche tecniche saranno chiamati alla stipula di una Convenzione, con durata fino al 3.12.2019 indipendentemente dalla data di sottoscrizione.
+"""@it;
+  epo:hasID epd:id_2016-S-250-461603_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-250-461603_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2016-S-250-461603_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle """
+Avviso di manifestazione di interesse finalizzato all'acquisizione di imprese in grado di offrire il servizio di pagamento e riscossione delle sanzioni dei Verbali di Accertamento di Violazione.
+"""@it;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-250-461603_AccessTerm_4zjJjpytu5bmHbyNSmtsju .
+
+epd:id_2016-S-250-461603_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-250-461603_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2016-S-250-461603_Organisation_TigDgN9yDLHn3hDtQD7BVC .

@@ -1,0 +1,191 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-013-030875_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.eprocurement.gov.cy"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-013-030875_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-013-030875_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2022-S-013-030875_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-013-030875_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "κα Μυρτώ Ιωάννου"@el;
+  epo:hasFax "+357 22315709";
+  epo:hasInternetAddress "https://www.eprocurement.gov.cy/epps/cft/prepareViewCfTWS.do?resourceId=5154292"^^xsd:anyURI;
+  cccev:email "mioannou@dfmr.moa.gov.cy";
+  cccev:telephone "+357 22807822" .
+
+epd:id_2022-S-013-030875_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CY000> .
+
+epd:id_2022-S-013-030875_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2022-S-013-030875_Period_RgULVPVVYP9pkvK789PCUZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-013-030875_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2022-S-013-030875_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2022-S-013-030875_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/77700000> .
+
+epd:id_2022-S-013-030875_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-013-030875_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription "ΔΙΑΓΩΝΙΣΜΟΣ ΓΙΑ ΠΑΡΑΧΩΡΗΣΗ ΚΥΠΡΙΑΚΗΣ ΠΟΣΟΣΤΩΣΗΣ ΕΡΥΘΡΟΥ ΤΟΝΟΥ ΣΕ ΣΚΑΦΗ ΠΟΥ ΑΛΙΕΥΟΥΝ ΜΕ ΚΥΚΛΩΤΙΚΑ ΔΙΚΤΥΑ ΕΡΥΘΡΟΥ ΤΟΝΟΥ ΓΡΙ ΓΡΙ (ΑΡ. ΔΙΑΓΩΝΙΣΜΟΥ: 02/2022)."@el;
+  epo:hasEstimatedValue epd:id_2022-S-013-030875_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2022-S-013-030875_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-013-030875_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 2000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-013-030875_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 2000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-013-030875_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-013-030875_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2022-S-013-030875_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2022-S-013-030875_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2022-S-013-030875_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2022-S-013-030875_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2022-01-14"^^xsd:date;
+  epo:hasID epd:id_2022-S-013-030875_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20220119";
+  epo:refersToLot epd:id_2022-S-013-030875_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2022-S-013-030875_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2022-S-013-030875_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 013-030875" .
+
+epd:id_2022-S-013-030875_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CY>;
+  locn:postCode "1416";
+  locn:postName "Λευκωσία";
+  locn:thoroughfare "Βηθλεέμ 101" .
+
+epd:id_2022-S-013-030875_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "1442" .
+
+epd:id_2022-S-013-030875_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasID epd:id_2022-S-013-030875_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Τμήμα Αλιείας και Θαλασσίων Ερευνών"@el;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/env-pro>;
+  cccev:registeredAddress epd:id_2022-S-013-030875_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-013-030875_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;
+  epo:hasBeginning "2023-01-01"^^xsd:date;
+  epo:hasEnd "2032-12-31"^^xsd:date .
+
+epd:id_2022-S-013-030875_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "02/2022" .
+
+epd:id_2022-S-013-030875_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/77700000> .
+
+epd:id_2022-S-013-030875_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-013-030875_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasDescription "ΔΙΑΓΩΝΙΣΜΟΣ ΓΙΑ ΠΑΡΑΧΩΡΗΣΗ ΚΥΠΡΙΑΚΗΣ ΠΟΣΟΣΤΩΣΗΣ ΕΡΥΘΡΟΥ ΤΟΝΟΥ ΣΕ ΣΚΑΦΗ ΠΟΥ ΑΛΙΕΥΟΥΝ ΜΕ ΚΥΚΛΩΤΙΚΑ ΔΙΚΤΥΑ ΕΡΥΘΡΟΥ ΤΟΝΟΥ ΓΡΙ ΓΡΙ (ΑΡ. ΔΙΑΓΩΝΙΣΜΟΥ: 02/2022)."@el;
+  epo:hasEstimatedValue epd:id_2022-S-013-030875_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2022-S-013-030875_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-013-030875_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2022-S-013-030875_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "ΔΙΑΓΩΝΙΣΜΟΣ ΓΙΑ ΠΑΡΑΧΩΡΗΣΗ ΚΥΠΡΙΑΚΗΣ ΠΟΣΟΣΤΩΣΗΣ ΕΡΥΘΡΟΥ ΤΟΝΟΥ ΣΕ ΣΚΑΦΗ ΠΟΥ ΑΛΙΕΥΟΥΝ ΜΕ ΚΥΚΛΩΤΙΚΑ ΔΙΚΤΥΑ ΕΡΥΘΡΟΥ ΤΟΝΟΥ ΓΡΙ ΓΡΙ (ΑΡ. ΔΙΑΓΩΝΙΣΜΟΥ: 02/2022)."@el;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-013-030875_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2022-S-013-030875_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2022-S-013-030875_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2022-S-013-030875_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-013-030875_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2022-S-013-030875_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-013-030875_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  locn:postCode "1304";
+  locn:postName "Λευκωσία";
+  locn:thoroughfare "Λεωφόρος Γρίβα Διγενή 81-83, 2ος όροφος Τ.Κ. 24820" .
+
+epd:id_2022-S-013-030875_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+357 22445107";
+  epo:hasInternetAddress "http://www.tra.gov.cy"^^xsd:anyURI;
+  cccev:email "tra@aap.gov.cy";
+  cccev:telephone "+357 22445100" .
+
+epd:id_2022-S-013-030875_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Αναθεωρητική Αρχή Προσφορών"@el;
+  epo:hasPrimaryContactPoint epd:id_2022-S-013-030875_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2022-S-013-030875_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2022-S-013-030875_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-013-030875_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2022-S-013-030875_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "1. Κάθε Ενδιαφερόμενος Οικονομικός Φορέας, ο οποίος έχει ή είχε συμφέρον να του ανατεθεί η Σύμβαση και ο οποίος υπέστη ή ενδέχεται να υποστεί ζημία από πράξη ή απόφαση της Αναθέτουσας Αρχής που προηγείται της σύναψης της Σύμβασης και για την οποία εικάζεται ότι παραβιάζει οποιαδήποτε διάταξη του ισχύοντος δικαίου, έχει δικαίωμα να προσφύγει στην Αναθεωρητική Αρχή Προσφορών, σύμφωνα με τις διατάξεις του Νόμου περί των Διαδικασιών Προσφυγής τον Τομέα της Σύναψης των Δημοσίων Συμβάσεων του 2010 (Ν.104(Ι)/2010).. 2. Για την άσκηση προσφυγής στην Αναθεωρητική Αρχή Προσφορών, ο ενδιαφερόμενος καταβάλλει τέλος που δεν είναι επιστρεπτέο και κατατίθεται στο Γενικό Κυβερνητικό Λογαριασμό. Περισσότερες σχετικές πληροφορίες περιλαμβάνονται στην ιστοσελίδα www.tra.gov.cy.. 3. Για τον τρόπο και τη διαδικασία άσκησης προσφυγής, τον τρόπο εξέτασής της και τη διαδικασία έκδοσης των σχετικών αποφάσεων, ισχύουν οι πρόνοιες των άρθρων του Νόμου περί των Διαδικασιών Προσφυγής τον Τομέα της Σύναψης των Δημοσίων Συμβάσεων του 2010 (Ν.104(Ι)/2010)." .
+
+epd:id_2022-S-013-030875_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+357 22445107";
+  epo:hasInternetAddress "http://www.tra.gov.cy"^^xsd:anyURI;
+  cccev:email "tra@aap.gov.cy";
+  cccev:telephone "+357 22445100" .
+
+epd:id_2022-S-013-030875_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  locn:postCode "1304";
+  locn:postName "Λευκωσία";
+  locn:thoroughfare "Λεωφόρος Γρίβα Διγενή 81-83, 2ος όροφος Τ.Κ. 24820" .
+
+epd:id_2022-S-013-030875_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Αναθεωρητική Αρχή Προσφορών"@el;
+  epo:hasPrimaryContactPoint epd:id_2022-S-013-030875_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2022-S-013-030875_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2022-S-013-030875_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-013-030875_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2022-S-013-030875_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "EL", "EN" .
+
+epd:id_2022-S-013-030875_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CYP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CY>;
+  locn:postCode "2033 Βιομηχ.Στροβ";
+  locn:postName "Λευκωσία";
+  locn:thoroughfare "Βηθλεέμ 101" .
+
+epd:id_2022-S-013-030875_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasContactName "κα Μυρτώ Ιωάννου"@el;
+  epo:hasFax "+357 22315709";
+  epo:hasInternetAddress "www.moa.gov.cy/dfmr"^^xsd:anyURI;
+  cccev:email "mioannou@dfmr.moa.gov.cy";
+  cccev:telephone "+357 22807822" .
+
+epd:id_2022-S-013-030875_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Τμήμα Αλιείας και Θαλασσίων Ερευνών Κιβώτιο Προσφορών"@el;
+  epo:hasPrimaryContactPoint epd:id_2022-S-013-030875_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2022-S-013-030875_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2022-S-013-030875_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-013-030875_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2022-S-013-030875_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

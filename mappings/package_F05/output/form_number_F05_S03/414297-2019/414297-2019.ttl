@@ -1,0 +1,177 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-169-414297_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "WWW.ROMAGNACQUE.IT"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-169-414297_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2019-S-169-414297_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-169-414297_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2019-S-169-414297_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2019-S-169-414297_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Ing. Simone Montalti presso Romagna Acque Società delle Fonti S.p.A."@it;
+  epo:hasFax "+39 543-38417";
+  epo:hasInternetAddress "www.romagnacque.it"^^xsd:anyURI;
+  cccev:email "gare@PEC.ROMAGNACQUE.IT";
+  cccev:telephone "+39 543-38411" .
+
+epd:id_2019-S-169-414297_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Regione Emilia-Romagna – Provincia di Forlì – Cesena – Provincia di Rimini – Provincia di Ravenna."@it .
+
+epd:id_2019-S-169-414297_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITH5>;
+  locn:address epd:id_2019-S-169-414297_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2019-S-169-414297_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-169-414297_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-169-414297_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2019-S-169-414297_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2019-S-169-414297_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2019-S-169-414297_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-169-414297_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "Per ulteriori informazioni si rinvia alle «norme di partecipazione», pubblicato su www.romagnacque.it e sulla piattaforma telematica di Romagna Acque (http://appalti.romagnacque.it/PortaleAppalti) che forma parte integrante del presente bando."@it;
+  epo:hasDescription "Servizio di trasporto, smaltimento di fanghi/sabbie prodotti dai processi di chiarificazione dell'acqua, pulizia di vasche, serbatoi, condutture liquidi e solidi prodotti dagli impianti di potabilizzazione presso le Unità Operative di Romagna Acque – Società delle Fonti S.p.A.Per ulteriori informazioni preliminari sull'oggetto del contratto si rinvia al documento «norme di partecipazione»,pubblicato su www.romagnacque.it nonchè sulla piattaforma telematica «Portale Appalti» di Romagna Acque(http://appalti.romagnacque.it/PortaleAppalti) che forma parte integrante del presente bando."@it;
+  epo:hasEstimatedValue epd:id_2019-S-169-414297_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2019-S-169-414297_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
+
+epd:id_2019-S-169-414297_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 994180.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-169-414297_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
+  epo:hasFax "+39 54338417";
+  epo:hasInternetAddress "www.romagnacque.it"^^xsd:anyURI;
+  cccev:email "procedura1@pec.romagnacque.it";
+  cccev:telephone "+39 54338411" .
+
+epd:id_2019-S-169-414297_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "47121";
+  locn:postName "Forlì";
+  locn:thoroughfare "Piazza Orsi Mangelli 10" .
+
+epd:id_2019-S-169-414297_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "Responsabile Unico del Procedimento: ing. Simone Montalti presso Romagna Acque Società delle Fonti S.p.A."@it;
+  epo:hasPrimaryContactPoint epd:id_2019-S-169-414297_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU;
+  cccev:registeredAddress epd:id_2019-S-169-414297_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2019-S-169-414297_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2019-S-169-414297_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2019-S-169-414297_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 994180.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-169-414297_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-169-414297_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2019-S-169-414297_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2019-S-169-414297_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2019-S-169-414297_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2019-S-169-414297_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2019-09-02"^^xsd:date;
+  epo:hasID epd:id_2019-S-169-414297_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20190903";
+  epo:refersToLot epd:id_2019-S-169-414297_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2019-S-169-414297_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2019-S-169-414297_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 169-414297" .
+
+epd:id_2019-S-169-414297_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITH58>;
+  locn:postCode "47122";
+  locn:postName "Forlì";
+  locn:thoroughfare "Piazza Orsi Mangelli 10" .
+
+epd:id_2019-S-169-414297_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Romagna Acque — Società delle Fonti S.p.A."@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2019-S-169-414297_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2019-S-169-414297_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "NESSUNA" .
+
+epd:id_2019-S-169-414297_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/90513900> .
+
+epd:id_2019-S-169-414297_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-169-414297_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "La procedura è disciplinata oltre che dal presente bando anche dalle «norme di partecipazione» disponibili sulla piattaforma telematica «Portale Appalti» di Romagna Acque Società delle Fonti S.p.A. (link: http://appalti.romagnacque.it/PortaleAppalti) che formano parte integrante del presente bando e che sono ottenibili su richiesta all’area lavori, affidamenti e patrimonio — piazza Orsi Mangelli 10, 47112 Forlì (FC).In particolare le condizioni di partecipazione, la disciplina dei requisiti di ordine generale, di idoneità professionale e di capacità economico-finanziaria e tecnica nonché le modalità di presentazione dell'offerta sono puntualmente riportate nelle «norme di partecipazione». Le «norme di partecipazione»contengono altresì specifiche in ordine alla partecipazione ed alle modalità di comprova dei requisiti da parte di raggruppamenti temporanei di operatori, consorzi e Gruppi Europei di Interesse Economico (GEIE).Le eventuali rettifiche al bando e alle «norme di partecipazione» (e relativi allegati) sono pubblicate esclusivamente sulla piattaforma telematica «Portale Appalti» di Romagna Acque Società delle Fonti S.p.A. (link: http://appalti.romagnacque.it/PortaleAppalti), al pari delle eventuali informazioni complementari e chiarimenti sul bando di gara e sulle «norme di partecipazione» (e relativi allegati).Romagna acque si riserva la facoltà di aggiudicare la procedura anche in caso di unica offerta purché valida e conveniente.È fatta salva l’insindacabile facoltà di Romagna Acque di interrompere la procedura e di non procedere all'aggiudicazione. Romagna Acque si riserva espressamente inoltre la facoltà di non procedere alla stipulazione del contratto.La domanda di partecipazione, l'offerta e le dichiarazioni richieste dal presente bando e dalla norme di partecipazione possono essere effettuate compilando i moduli predisposti dall'ente aggiudicatone e disponibil sulla piattaforma telematica «Portale Appalti» di Romagna Acque Società delle Fonti S.p.A. (link: http://appalti.romagnacque.it/PortaleAppalti)"@it;
+  epo:hasDescription "Servizio di trasporto, smaltimento di fanghi/sabbie prodotti dai processi di chiarificazione dell'acqua, pulizia di vasche, serbatoi, condutture liquidi e solidi prodotti dagli impianti di potabilizzazione presso le Unità Operative di Romagna Acque – Società delle Fonti S.p.A.Per ulteriori informazioni preliminari sull'oggetto del contratto si rinvia al documento «norme di partecipazione»,pubblicato su www.romagnacque.it nonchè sulla piattaforma telematica «Portale Appalti» di Romagna Acque (http://appalti.romagnacque.it/PortaleAppalti) che forma parte integrante del presente bando."@it;
+  epo:hasEstimatedValue epd:id_2019-S-169-414297_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2019-S-169-414297_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-169-414297_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2019-S-169-414297_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Servizio di trasporto e smaltimento di rifiuti prodotti dagli impianti di potabilizzazione di Romagna Acque Società delle Fonti S.p.A. per l’anno 2020 – CIG: 8015367A16"@it;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-169-414297_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2019-S-169-414297_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2019-S-169-414297_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2019-S-169-414297_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-169-414297_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2019-S-169-414297_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2019-S-169-414297_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postName "Forlì" .
+
+epd:id_2019-S-169-414297_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "i punti di contatto sopraindicati"@it;
+  cccev:registeredAddress epd:id_2019-S-169-414297_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2019-S-169-414297_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2019-S-169-414297_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2019-S-169-414297_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Trova applicazione quanto previsto dall’art. 120 del codice del processo amministrativo, di cui all’allegato 1 al D.Lgs. 2.7.2010, n. 104." .
+
+epd:id_2019-S-169-414297_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "40123";
+  locn:postName "Bologna";
+  locn:thoroughfare "Via D'Azeglio 54" .
+
+epd:id_2019-S-169-414297_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunale Amministrativo Regionale — Sede di Bologna"@it;
+  cccev:registeredAddress epd:id_2019-S-169-414297_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2019-S-169-414297_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-169-414297_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2019-S-169-414297_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "IT";
+  epo:hasSubmissionURL "http://appalti.romagnacque.it/PortaleAppalti/"^^xsd:anyURI .

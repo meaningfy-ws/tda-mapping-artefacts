@@ -1,0 +1,176 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-071-181828_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://my.hidrive.com/share/pmhkelmaam"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-071-181828_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-071-181828_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:playedBy epd:id_2021-S-071-181828_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2021-S-071-181828_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF a cccev:ContactPoint;
+  epo:hasContactName "Verfahrenskoordination: Jahn, Mack & Partner, architektur und stadtplanung mbB, Wilhelm-Kabus-Straße 74, 10829 Berlin"@de;
+  epo:hasFax "+49 3085757729";
+  epo:hasInternetAddress "https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/"^^xsd:anyURI;
+  cccev:email "Muellerstrasse@jahn-mack.de";
+  cccev:telephone "+49 30857577138" .
+
+epd:id_2021-S-071-181828_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF a org:Organization;
+  epo:hasLegalName "Land Berlin, vertreten durch das Bezirksamt Mitte von Berlin, Abt. Stadtentwicklung, Bauen, Wirtschaft und Ordnung, Stadtentwicklungsamt, Fachbereich Stadtplanung"@de;
+  cccev:registeredAddress epd:id_2021-S-071-181828_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2021-S-071-181828_BuyerOrganisationGroup_Vx4nE2MhH2AK3p6fvMzsYF a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasMainActivityDescription "Hochbau";
+  epo:hasMember epd:id_2021-S-071-181828_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2021-S-071-181828_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-071-181828_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-071-181828_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-071-181828_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-071-181828_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Verfahrenskoordination: Jahn, Mack & Partner, architektur und stadtplanung mbB, Wilhelm-Kabus-Straße 74, 10829 Berlin"@de;
+  epo:hasFax "+49 3085757729";
+  epo:hasInternetAddress "https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/jugendamt/"^^xsd:anyURI;
+  cccev:email "Muellerstrasse@jahn-mack.de";
+  cccev:telephone "+49 30857577138" .
+
+epd:id_2021-S-071-181828_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-071-181828_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-071-181828_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-071-181828_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71222000> .
+
+epd:id_2021-S-071-181828_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-071-181828_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Gegenstand des Wettbewerbs ist der Entwurf für den Neubau einer Kindertagesstätte und die Planung von Freianlagen auf dem Grundstück Triftstraße 12 in Berliner Stadtteil Wedding.Zur Sicherstellung einer regionalen bedarfsgerechten Versorgung sollen am Standort nach Fertigstellung des Neubaus 142 Kinder im Alter von 8 Wochen bis zur Einschulung betreut werden, davon 45 Plätze für Kinder unter 3 Jahren und 97 Plätze für Kinder ab 3 Jahren. Das Raumprogramm für den Neubau sieht eine Nutzfläche von ca. 997 m2 vor, 590 m2 davon als pädagogische Fläche. Darüber hinaus sind auf dem ca. 1 500 m2 großen Grundstück die Freiflächen zu planen. Um ausreichend Spiel- und Bewegungsfläche im Außenbereich anbieten zu können, ist auch die Nutzung der Dachterrasse als pädagogischer Außenspielbereich vorzusehen.Der Wettbewerb wird als einstufiger, nicht offener Realisierungswettbewerb entsprechend § 3 (1) und § 3 (3) RPW 2013 mit vorgeschaltetem Bewerbungsverfahren mit Teams aus Architekt*innen und Landschaftsarchitekt*innen durchgeführt.Aufgrund der Corona-Pandemie wird der Auslober zum gegebenen Zeitpunkt prüfen, ob ein digitales Preisgericht notwendig ist und durchgeführt werden kann. In diesem Fall werden die Bewertungen des Preisgerichts unter Zuhilfenahme von digitalen Mitteln erfolgen und die Preisgerichtssitzung würde per Videokonferenz erfolgen. Möglich wäre auch ein hybrides Preisgericht mit einer Mindestpräsenz der Fach- und Sachpreisrichter*innen vor Ort.Es ist vorgesehen, nach Abschluss des Verfahrens die/den erste*n Preisträger*in (Büro/Bewerbergemeinschaft) mit der weiteren Planung in den LPH 2-8 zu beauftragen. Sofern beabsichtigt ist, einzelne Leistungsphasen an Nachunternehmer*innen zu vergeben, so sind diese namentlich und verbindlich zu benennen. Ein Rechtsanspruch auf die Beauftragung aller LPH besteht nicht.Vorgesehener, unverbindlicher Terminplan des Wettbewerbsverfahrens:— Ausgabe der Unterlagen: Mitte Mai 2021,— Beantwortung Rückfragen: Mitte Juni 2021,— Abgabe Planunterlagen: Mitte Juli 2021, Abgabe Modell: eine Woche später— Sitzung des Preisgerichts: Mitte August 2021."@de;
+  epo:hasPurpose epd:id_2021-S-071-181828_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-071-181828_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-071-181828_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2021-S-071-181828_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-071-181828_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2021-S-071-181828_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2021-S-071-181828_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2021-S-071-181828_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2021-04-08"^^xsd:date;
+  epo:hasID epd:id_2021-S-071-181828_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210413";
+  epo:refersToLot epd:id_2021-S-071-181828_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-071-181828_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-071-181828_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 071-181828" .
+
+epd:id_2021-S-071-181828_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE3>;
+  locn:postCode "10178";
+  locn:postName "Berlin";
+  locn:thoroughfare "Karl-Marx-Allee 31" .
+
+epd:id_2021-S-071-181828_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE3>;
+  locn:postCode "13353";
+  locn:postName "Berlin";
+  locn:thoroughfare "Müllerstraße 146" .
+
+epd:id_2021-S-071-181828_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasLegalName "Land Berlin, vertreten durch Bezirksamt Mitte von Berlin, Abt. Jugend, Familie und Bürgerdienste, Jugendamt"@de;
+  cccev:registeredAddress epd:id_2021-S-071-181828_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-071-181828_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71221000> .
+
+epd:id_2021-S-071-181828_ProcedureTerm_n9YtPUZG9SDZ5m8nAb77dU a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2021-S-071-181828_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "Für die Teilnahme am Wettbewerb wird die Qualifikation der/des Architekt*in und Landschaftsarchitekt*in vorausgesetzt. Die Teilnahme am Wettbewerb ist nur in Verbindung (zwingende Zusammenarbeit) von Architekt*innen und Landschaftsarchitekt*innen möglich.Das Preisgericht gibt eine schriftliche Empfehlung für die weitere Bearbeitung der Wettbewerbsaufgabe. Der Auftraggeber verhandelt unter Würdigung der Empfehlungen des Preisgerichts zunächst mit dem 1. Preisträger über die Auftragsvergabe. Sollten der Beauftragung des 1. Preisträgers wichtige Gründe entgegenstehen, bspw. wenn trotz Verhandlungen das Honorarangebot nicht akzeptabel ist, zentrale vertragliche Regelungen nicht akzeptiert werden, der Kostenrahmen nicht eingehalten wird o. Ä., werden alle Preisträger*innen zu Verhandlungen aufgefordert. Die detaillierten Wertungskriterien werden den Preisträger*innen rechtzeitig zur Verfügung gestellt.Im Falle einer Beauftragung ist die Erfüllung der in der Bekanntmachung genannten Teilnahmevoraussetzungen sowie die folgenden Eignungskriterien nachzuweisen bzw. zu bestätigen:— bei Bildung einer Bewerbergemeinschaft eine Bewerbergemeinschaftserklärung mit Benennung sämtlicher Mitglieder sowie mit Benennung der bevollmächtigten Vertreter*innen, welche die Bewerbergemeinschaft rechtsverbindlich vertreten,— beabsichtigt die/der Bewerber*in, Teile des Auftrags im Wege der Unterauftragsvergabe an Dritte zu vergeben, so hat er die vorgesehenen Unterauftragnehmer*innen sowie den Umfang zu benennen und eine entsprechende Verpflichtungserklärung dieser Unternehmen einzureichen,— Erklärung der Bewerber*innen, dass im Auftragsfall der Nachweis einer Berufshaftpflichtversicherung mit folgendem Inhalt vorgelegt wird: mindestens 2 Mio. EUR für Personenschäden und mindestens 1 Mio. EUR für sonstige Schäden. Die Ersatzleistung der Versicherung muss mindestens das 2-fache der Deckungssumme pro Jahr betragen. Das Versicherungsunternehmen muss in einem EU-Mitgliedsstaat oder EWR-Vertragsstaat zugelassen sein. Die Versicherung muss mindestens für die Vertragsdauer abgeschlossen sein. Im Falle einer Bewerbergemeinschaft ist von jedem Mitglied der Bewerbergemeinschaft eine Versicherung zu den o. g. Bedingungen nachzuweisen."@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-071-181828_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-071-181828_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Neubau einer Kindertagesstätte „Kita Triftstraße“, Stadtteil Wedding, Berlin Mitte"@de;
+  epo:isDesignContest true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-071-181828_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-071-181828_ProcedureTerm_n9YtPUZG9SDZ5m8nAb77dU, epd:id_2021-S-071-181828_ReviewTerm_RW9aiajURL5iSUCvDaitUd,
+    epd:id_2021-S-071-181828_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-071-181828_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-071-181828_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-071-181828_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-071-181828_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "10825";
+  locn:postName "Berlin";
+  locn:thoroughfare "Martin-Luther-Str. 105" .
+
+epd:id_2021-S-071-181828_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasFax "+49 3090137613";
+  epo:hasInternetAddress "http://www.berlin.de/sen/wirtschaft/wirtschaft/wirtschaftsrecht/vergabekammer"^^xsd:anyURI;
+  cccev:email "vergabenkammer@senweb.berlin.de";
+  cccev:telephone "+49 3090138316" .
+
+epd:id_2021-S-071-181828_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Berlin"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-071-181828_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2021-S-071-181828_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-071-181828_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-071-181828_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-071-181828_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Ein Nachprüfungsantrag ist unzulässig, soweit:— der Antragsteller den gerügten Verstoß nicht unverzüglich nach Kenntniserlangung gerügt hat,— Verstöße gegen Vergabevorschriften, die auf Grund dieser Bekanntmachung erkennbar sind, nicht spätestens bis Ablauf der in der Bekanntmachung benannten Frist zur Bewerbung gegenüber dem Auftraggeber gerügt hat,— Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, nicht spätestens bis zum Ablauf der Frist zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden,— mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind (§ 160 Abs. III Satz 1 Nr. 4 GWB)." .
+
+epd:id_2021-S-071-181828_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+49 3090137613";
+  epo:hasInternetAddress "http://www.berlin.de/sen/wirtschaft/wirtschaft/wirtschaftsrecht/vergabekammer"^^xsd:anyURI;
+  cccev:email "vergabenkammer@senweb.berlin.de";
+  cccev:telephone "+49 3090138316" .
+
+epd:id_2021-S-071-181828_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "10825";
+  locn:postName "Berlin";
+  locn:thoroughfare "Martin-Luther-Str. 105" .
+
+epd:id_2021-S-071-181828_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Berlin"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-071-181828_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2021-S-071-181828_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-071-181828_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-071-181828_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-071-181828_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2021-S-071-181828_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-071-181828_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-071-181828_Organisation_VX8RygdBbvDo5gNDhjcsTj .

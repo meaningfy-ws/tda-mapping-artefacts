@@ -1,0 +1,178 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-028-070025_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://riigihanked.riik.ee/rhr-web/#/procurement/2889032/general-info"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-028-070025_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-028-070025_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:playedBy epd:id_2021-S-028-070025_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2021-S-028-070025_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF a cccev:ContactPoint;
+  epo:hasContactName "Alo Pikk"@et;
+  epo:hasInternetAddress "http://www.muinsuskaitseamet.ee"^^xsd:anyURI;
+  cccev:email "info@muinsuskaitseamet.ee";
+  cccev:telephone "+372 56609773" .
+
+epd:id_2021-S-028-070025_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF a org:Organization;
+  epo:hasID epd:id_2021-S-028-070025_OrganisationIdentifier_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:hasLegalName "Muinsuskaitseamet"@et;
+  cccev:registeredAddress epd:id_2021-S-028-070025_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2021-S-028-070025_BuyerOrganisationGroup_Vx4nE2MhH2AK3p6fvMzsYF a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasMainActivityDescription "Ehitiste haldamine";
+  epo:hasMember epd:id_2021-S-028-070025_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2021-S-028-070025_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-028-070025_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-028-070025_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-028-070025_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-028-070025_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Alo Pikk"@et;
+  epo:hasInternetAddress "http://www.rkas.ee"^^xsd:anyURI;
+  cccev:email "info@rkas.ee";
+  cccev:telephone "+372 56609773" .
+
+epd:id_2021-S-028-070025_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-028-070025_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-028-070025_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-028-070025_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71240000> .
+
+epd:id_2021-S-028-070025_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-028-070025_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Ideekonkursiga selgitatakse välja konkursi võitja ning temaga sõlmitakse tema pakutud kavandi ja RHS § 49 lõike 6 alusel hankeleping, mille alusel projekteeritakse Põhja-Eesti muuseumide pärandihoidla.Konkursil esitatud kavandi autori(te)le kuuluvad kehtiva autoriõiguse seaduse kohaselt kavandi isiklikud ja varalised autoriõigused, samuti kavandite omandiõigus. Auhinnatud ja/või ergutuspreemiaga premeeritud kavandite omandiõigus, samuti varalised autoriõigused (välja arvatud õigus teostamiseks) lähevad hankijale üle pärast auhindade ja/või ergutuspreemiate väljamaksmist."@et;
+  epo:hasPurpose epd:id_2021-S-028-070025_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-028-070025_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-028-070025_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2021-S-028-070025_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-028-070025_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2021-S-028-070025_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2021-S-028-070025_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2021-S-028-070025_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2021-02-05"^^xsd:date;
+  epo:hasID epd:id_2021-S-028-070025_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210210";
+  epo:refersToLot epd:id_2021-S-028-070025_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-028-070025_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-028-070025_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 028-070025" .
+
+epd:id_2021-S-028-070025_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/EST>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EE>;
+  locn:postCode "10115";
+  locn:postName "Tallinn";
+  locn:thoroughfare "Tartu mnt 85" .
+
+epd:id_2021-S-028-070025_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/EST>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EE>;
+  locn:postCode "10123";
+  locn:postName "Tallinn";
+  locn:thoroughfare "Pikk tn 2" .
+
+epd:id_2021-S-028-070025_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "10788733" .
+
+epd:id_2021-S-028-070025_OrganisationIdentifier_Vx4nE2MhH2AK3p6fvMzsYF a epo:Identifier;
+  epo:hasIdentifierValue "70000958" .
+
+epd:id_2021-S-028-070025_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasID epd:id_2021-S-028-070025_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Riigi Kinnisvara Aktsiaselts"@et;
+  cccev:registeredAddress epd:id_2021-S-028-070025_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-028-070025_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "232756" .
+
+epd:id_2021-S-028-070025_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71240000> .
+
+epd:id_2021-S-028-070025_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "Konkursil osalemiseks ja konkursiga seotud informatsiooni saamiseks tuleb huvitatud isikutel ennast riigihangete registris https://riigihanked.riik.ee registreerida. Ideekonkursi osalemisdokumendid koos kavandiga tuleb esitada läbi riigihangete registri ja dubleerivalt tuleb ideekavand tuua konkursi korraldaja aadressil dokumentide esitamiseks määratud ajal.Riigihange ei ole jaotatud osadeks, kuna tegemist on arhitektuurse terviklahendusega, mida ei ole võimalik ega otstarbekas esteetilistel põhjustel osadeks jagada. Hangitakse terviklikku ideed ja nägemust."@et;
+  epo:hasID epd:id_2021-S-028-070025_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-028-070025_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-028-070025_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Põhja-Eesti muuseumide pärandihoidla arhitektuurivõistlus"@et;
+  epo:isDesignContest true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-028-070025_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-028-070025_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-028-070025_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-028-070025_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-028-070025_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-028-070025_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/EST>;
+  locn:postCode "10122";
+  locn:postName "Tallinn";
+  locn:thoroughfare "Endla 13/Lõkke 5" .
+
+epd:id_2021-S-028-070025_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.fin.ee/riigihangete-poliitika"^^xsd:anyURI;
+  cccev:email "vako@fin.ee";
+  cccev:telephone "+372 6113713" .
+
+epd:id_2021-S-028-070025_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Riigihangete vaidlustuskomisjon"@et;
+  epo:hasPrimaryContactPoint epd:id_2021-S-028-070025_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2021-S-028-070025_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-028-070025_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-028-070025_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-028-070025_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.fin.ee/riigihangete-poliitika"^^xsd:anyURI;
+  cccev:email "vako@fin.ee";
+  cccev:telephone "+372 6113713" .
+
+epd:id_2021-S-028-070025_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/EST>;
+  locn:postCode "10122";
+  locn:postName "Tallinn";
+  locn:thoroughfare "Endla 13/Lõkke 5" .
+
+epd:id_2021-S-028-070025_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Riigihangete vaidlustuskomisjon"@et;
+  epo:hasPrimaryContactPoint epd:id_2021-S-028-070025_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2021-S-028-070025_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-028-070025_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-028-070025_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-028-070025_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "ET";
+  epo:hasSubmissionURL "https://riigihanked.riik.ee/rhr-web/#/procurement/2889032/tenders"^^xsd:anyURI .
+
+epd:id_2021-S-028-070025_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-028-070025_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-028-070025_Organisation_VX8RygdBbvDo5gNDhjcsTj .

@@ -1,0 +1,193 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-125-286367_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "https://sncf.bravosolution.com/web/login.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-125-286367_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-125-286367_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-125-286367_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Christian Fenoll, acheteur projets"@fr;
+  epo:hasInternetAddress "http://www.sncf.com/"^^xsd:anyURI;
+  cccev:email "christian.fenoll@reseau.sncf.fr";
+  cccev:telephone "+33 171299063" .
+
+epd:id_2018-S-125-286367_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+                  Gare de Paris Saint-Lazare
+               """@fr .
+
+epd:id_2018-S-125-286367_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:address epd:id_2018-S-125-286367_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2018-S-125-286367_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-125-286367_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-125-286367_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2018-S-125-286367_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2018-S-125-286367_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 57.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-125-286367_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "Thierry Doideau, directeur d'opération"@fr;
+  epo:hasInternetAddress "http://www.sncf.com/"^^xsd:anyURI;
+  cccev:email "thierry.doideau@reseau.sncf.fr";
+  cccev:telephone "+33 171299018" .
+
+epd:id_2018-S-125-286367_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR106>;
+  locn:postCode "92112";
+  locn:postName "La Plaine Saint-Denis Cedex";
+  locn:thoroughfare "1/7 place aux Étoiles — Immeuble Cap Lendit" .
+
+epd:id_2018-S-125-286367_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasLegalName "SNCF Réseau — Direction générale IDF — Direction des projets franciliens"@fr;
+  cccev:registeredAddress epd:id_2018-S-125-286367_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2018-S-125-286367_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45213316>, <http://data.europa.eu/cpv/cpv/45221113> .
+
+epd:id_2018-S-125-286367_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-125-286367_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation """
+                  Les offres doivent être exprimées en euros. Les prix sont révisables mensuellement.
+                  Paiement net par virement à échéance fixé à 60 jours de l'émission de la facture, émis après acceptation qualitative et quantitative des fournitures, prestations ou travaux et vérifications de la facture.
+                  Retenue de garantie 2 % du marché ou garantie à 1re demande
+                  Financement: SNCF Réseau et SNCF mobilité
+               """@fr;
+  epo:hasDescription """
+                  Construction, mise en place, puis dépose en fin de chantier d'une passerelle technique pour réaliser les approvisionnements et les évacuations des zones de travail sous les halles lors de leur rénovation.
+                  Ces travaux de rénovation nécessitent des circulations et du stockage sur une passerelle technique extérieure aux halles et constituée de 2 ouvrages reliés à niveau:
+                  1) la passerelle technique principale reliant une base vie (hors marché) côté rue de Rome au quai 27 en longeant la totalité du tympan nord de la gare: cette passerelle permet de cheminer à un niveau constant situé environ 9,50 m au-dessus des quais;
+                  2) la passerelle technique de liaison à la rue de Londres, qui constitue un ouvrage de raccordement: cette passerelle enjambe les voies 26 et 27 par l’intermédiaire de portiques fondés dans les quais 25/26 et 27. Elle est en rampe à 6 % depuis la rue de Londres (soit environ 3 m de dénivelée entre la rue de Londres et la passerelle technique principale).
+                  Au droit de la rue de Londres, le franchissement des voies ferrées sous le pont de l’Europe se fait en biais. Le portique support de la passerelle technique de liaison a donc une portée importante afin de franchir
+                  Les voies 26 et 27 (environ 24 m). Ce portique est constitué d’une poutre PRS (Profilé reconstitué soudé) de 2,12 m de haut pour reporter les charges sur les poteaux situés sur quais.
+                  Les travaux d’assemblage de la passerelle technique nécessitent des interventions lourdes depuis la rue de Rome, la rue de Londres et les voies ferrées:
+                  — réalisation des fondations et matage des poteaux de portique depuis les voies par trains travaux et engins adaptés (pelles rail-route, foreuses micropieux de petit gabarit). Les pelles rail-route permettent de réaliser les travaux de terrassement, de pose de semelles préfabriquées, de grutage des poteaux et des poutres de masse inférieure à 3,5 t.
+                  Méthode préconisée: manutentionner des demi-tronçons de tablier depuis la rue de Rome et la rue de Londres, lors de week-end d’ITC pour monter rapidement des tronçons complets de
+                  passerelle. Cette méthodologie nécessite des acheminements multiples depuis la rue de Rome avec mobilisation d’une grue automotrice de nuit. Le même principe est applicable côté rue de Londres pour réaliser le retour de la passerelle technique surplombant les voies 26 et 27.
+                  Dès que les 2 premières trames d’ossature métallique seront assemblées, la couverture par plancher bois sera réalisée afin de créer une plateforme d’assemblage/lançage au-dessus des voies. Cette couverture sera étanchée provisoirement, la protection d’étanchéité finale étant réalisée après réalisation de la totalité de la couverture bois de la passerelle technique. La 1re couche d’asphalte protectrice serait réalisée à l’avancement de la pose de l’étanchéité.
+                  La 2e couche d’asphalte armée par grille de verre constitue la couche de roulement et serait réalisée après couverture complète de la passerelle.
+                  Structure de la passerelle technique:
+                  — portiques constitués de poteaux en profilés double HEB 340 et de poutres en profilés double HEB 600,
+                  — de poutres principales et secondaires en profilé HEB600,
+                  — d’un plancher bois en madriers + panneaux de type CTBX (contre-plaqué bois pour extérieur) sur lequel on dispose un revêtement d’étanchéité bicouche mixte associa dimensionnement de la passerelle technique: Largeur = 12 m - Longueur totale en moyenne = 230 m - Surface 2725 m2 - Tonnage de la charpente = 706 t.
+               """@fr;
+  epo:hasPurpose epd:id_2018-S-125-286367_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-125-286367_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-125-286367_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2018-S-125-286367_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2018-S-125-286367_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2018-S-125-286367_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2018-06-29"^^xsd:date;
+  epo:hasID epd:id_2018-S-125-286367_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20180703";
+  epo:refersToLot epd:id_2018-S-125-286367_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2018-S-125-286367_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2018-S-125-286367_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 125-286367" .
+
+epd:id_2018-S-125-286367_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR106>;
+  locn:postCode "93212";
+  locn:postName "La Plaine Saint-Denis Cedex";
+  locn:thoroughfare "1/7 place aux Étoiles — Immeuble Cap Lendit" .
+
+epd:id_2018-S-125-286367_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "SNCF Réseau — Direction des achats réseau — Direction achats projets"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2018-S-125-286367_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-125-286367_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "GHV-PSL 4" .
+
+epd:id_2018-S-125-286367_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45223000> .
+
+epd:id_2018-S-125-286367_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-125-286367_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+               SNCF Réseau émet cet avis périodique indicatif en son nom et pour son compte.
+               Le présent avis périodique indicatif a pour objet d'informer les entreprises de la procédure négociée avec mise en concurrence préalable, objet du décret 2016-360 du 25.3.2016 relatif aux marchés publics, qui sera en principe lancée en novembre 2018.
+               Les opérateurs intéressés doivent faire part à l'entité adjudicatrice de leur intérêt pour le marché.
+               Le marché sera passé sans publication ultérieure d'une mise en concurrence.
+               Une réunion de présentation du projet sera organisée semaine 30 à 31 de 2018 pour les candidats ayant manifestés leur intérêt pour le 17.7.2018 à 12:00 au plus tard.
+               À la suite de cette réunion, une demande de confirmation d'intérêt sera transmise aux participants qui devront alors remettre leur candidature définitive pour pouvoir participer à la consultation.
+               Après examen des documents, l'entité d'achat évalue la capacité du candidat et sélectionne les candidats aptes à présenter une offre selon les règles et critères définis au point III.1.4.
+               En cas de rejet de leurs candidatures, les candidats en sont informés par écrit.
+               À l'issue de la phase d'appel à candidatures, le dossier de consultation des entreprises (DCE) est transmis aux candidats retenus.
+               Le marché sera soumis aux dispositions du Cahier des clauses et conditions générales (CCCG) applicables aux marchés de travaux de la SNCF, disponible sur le site http://www.sncf.com (Entreprises et Collectivités-Fournisseurs-Documentation).
+            """@fr;
+  epo:hasDescription """
+               Construction d'une passerelle technique filante pour l’acheminement et l’évacuation des matériaux.
+               Cette passerelle métallique sera mise en place au niveau du tympan nord de la gare et couvrira le plateau de voies sur toute sa largeur.
+               Cet ouvrage provisoire nécessaire aux travaux de rénovation de la Grande Halle Voyageurs, qui se feront sur un plancher étanche les isolant des voies et quais (échafaudage primaire), sera déposé en fin de chantier.
+               Une barrière de sécurité sera implantée longitudinalement sur la passerelle afin de délimiter la zone dédiée au personnel de celle prévue pour la manutention.
+               La passerelle technique est connectée à niveau de la rue de Londres.
+            """@fr;
+  epo:hasID epd:id_2018-S-125-286367_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-125-286367_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2018-S-125-286367_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               Rénovation de la Grande Halle Voyageurs de la Gare de Paris Saint-Lazare: passerelle technique
+            """@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-125-286367_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2018-S-125-286367_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-125-286367_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2018-S-125-286367_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2018-S-125-286367_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta.paris@juradm.fr";
+  cccev:telephone "+33 144594575" .
+
+epd:id_2018-S-125-286367_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2018-S-125-286367_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Tribunal administratif"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-125-286367_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2018-S-125-286367_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2018-S-125-286367_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-125-286367_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2018-S-125-286367_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasReceiptExpressionDeadline "2018-07-17T12:00" .
+
+epd:id_2018-S-125-286367_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-125-286367_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-125-286367_Organisation_W8v6KSqiUn74jPKJmENKoH .

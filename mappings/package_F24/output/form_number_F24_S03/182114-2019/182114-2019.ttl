@@ -1,0 +1,164 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-076-182114_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-076-182114_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2019-S-076-182114_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2019-S-076-182114_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Fina Toscas"@es;
+  epo:hasInternetAddress "www.contractacio_eixample@bcn.cat"^^xsd:anyURI;
+  cccev:email "contractacio_eixample@bcn.cat";
+  cccev:telephone "+34 932916221 / 932916240" .
+
+epd:id_2019-S-076-182114_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "C/ Urgell, 145 de Bacelona."@es .
+
+epd:id_2019-S-076-182114_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES511>;
+  locn:address epd:id_2019-S-076-182114_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2019-S-076-182114_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-076-182114_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-076-182114_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2019-S-076-182114_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true .
+
+epd:id_2019-S-076-182114_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 30.0;
+  time:unitType time:unitMonth .
+
+epd:id_2019-S-076-182114_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-076-182114_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Contrato: concesión de servicios.Tramitación: ordinaria.Procedimiento de adjudicación: restringido."@es;
+  epo:hasDescription "Contrato de concesión de servicios que tiene por objeto la Gestión y explotación del centro cívico Urgell y casal infantil Urgell."@es;
+  epo:hasEstimatedValue epd:id_2019-S-076-182114_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2019-S-076-182114_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 3201375.2;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-076-182114_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 3201375.2;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-076-182114_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-076-182114_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2019-S-076-182114_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2019-S-076-182114_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2019-S-076-182114_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2019-04-12"^^xsd:date;
+  epo:hasID epd:id_2019-S-076-182114_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20190417";
+  epo:refersToLot epd:id_2019-S-076-182114_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2019-S-076-182114_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2019-S-076-182114_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 076-182114" .
+
+epd:id_2019-S-076-182114_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES511>;
+  locn:postCode "08009";
+  locn:postName "Barcelona";
+  locn:thoroughfare "C/ Aragó, 311, 2ª planta" .
+
+epd:id_2019-S-076-182114_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "P0801900B" .
+
+epd:id_2019-S-076-182114_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasID epd:id_2019-S-076-182114_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Ajuntament de Barcelona, Districte de l'Eixample"@es;
+  epo:hasMainActivityDescription "Administración pública";
+  cccev:registeredAddress epd:id_2019-S-076-182114_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2019-S-076-182114_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "19C00006" .
+
+epd:id_2019-S-076-182114_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/92000000> .
+
+epd:id_2019-S-076-182114_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-076-182114_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasDescription "Gestión y explotación del centro cívico Urgell y casal infantil Urgell del distrito del Eixample durante el período 2019-2021, con medidas de contratación pública sostenible."@es;
+  epo:hasEstimatedValue epd:id_2019-S-076-182114_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2019-S-076-182114_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-076-182114_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2019-S-076-182114_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Gestión y explotación centro cívico Urgell y casal infantil Urgell"@es;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-076-182114_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr,
+    epd:id_2019-S-076-182114_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2019-S-076-182114_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-076-182114_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2019-S-076-182114_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2019-S-076-182114_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Recurso extraordinario de revisión.Ver cláusula 31 del Pliego de Cláusulas Administrativas Particulares (PCAP)." .
+
+epd:id_2019-S-076-182114_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  cccev:email "contractacio_eixample@bcn.cat";
+  cccev:telephone "+34 932916240" .
+
+epd:id_2019-S-076-182114_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postCode "08009";
+  locn:postName "Barcelona";
+  locn:thoroughfare "C/ Aragó, 311" .
+
+epd:id_2019-S-076-182114_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Órgano de Contratación"@es;
+  epo:hasPrimaryContactPoint epd:id_2019-S-076-182114_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2019-S-076-182114_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2019-S-076-182114_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-076-182114_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2019-S-076-182114_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "CA", "ES" .
+
+epd:id_2019-S-076-182114_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES>;
+  locn:postCode "08009";
+  locn:postName "Barcelona";
+  locn:thoroughfare "C/ Aragó, 328" .
+
+epd:id_2019-S-076-182114_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasContactName "Fina Toscas"@es;
+  epo:hasInternetAddress "www.contractacio_eixample@bcn.cat"^^xsd:anyURI;
+  cccev:email "contractacio_eixample@bcn.cat";
+  cccev:telephone "+34 932916221" .
+
+epd:id_2019-S-076-182114_TenderReceiverOrganisationIdentifier_Yqz38TfLf2pURgiiembBDo
+  a epo:Identifier;
+  epo:hasIdentifierValue "P0801900B" .
+
+epd:id_2019-S-076-182114_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasID epd:id_2019-S-076-182114_TenderReceiverOrganisationIdentifier_Yqz38TfLf2pURgiiembBDo;
+  epo:hasLegalName "Registre OAC districte de l'Eixample"@es;
+  epo:hasPrimaryContactPoint epd:id_2019-S-076-182114_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2019-S-076-182114_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2019-S-076-182114_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-076-182114_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2019-S-076-182114_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

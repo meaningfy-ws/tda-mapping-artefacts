@@ -1,0 +1,196 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-179-320830_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.marches-publics.info/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-179-320830_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "http://www.marches-publics.info/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-179-320830_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2016-S-179-320830_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-179-320830_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.marches-publics.info/"^^xsd:anyURI;
+  cccev:email "maire@saulce.com" .
+
+epd:id_2016-S-179-320830_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2016-S-179-320830_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-179-320830_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2016-S-179-320830_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.marches-publics.info/"^^xsd:anyURI;
+  cccev:email "marjolaine.henry@groupe-amome.com";
+  cccev:telephone "+33 626090765" .
+
+epd:id_2016-S-179-320830_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:postCode "69512";
+  locn:postName "Vaulx-en-Velin";
+  locn:thoroughfare "36 rue Rabelais — BP 168" .
+
+epd:id_2016-S-179-320830_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasLegalName "Amome Conseils: Marjolaine Henry"@fr;
+  cccev:registeredAddress epd:id_2016-S-179-320830_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2016-S-179-320830_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2016-S-179-320830_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-179-320830_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+La présente consultation a pour objet d'attribuer un marché de maîtrise d'œuvre dont les missions sont définies par la loi MOP:
+— mission de base, complétée des missions EFA (Études de Faisabilité des Approvisionnements en énergie), EXE, et éventuellement OPC.
+Le rendu des projets remis par les candidats admis à concourir est d'un niveau esquisse + (Esq+).
+La présente consultation est organisée selon les règles du concours restreint de maîtrise d'œuvre telles que prévues à l'article 8 de l'ordonnance n° 2015-899 du 23.7.2015, du 6° du I de l'article 30 et des articles 33, 34, 36, 88, 89 et 90 du décret n° 2016-360 du 25.3.2016 relatif aux marchés publics.
+Le lauréat du concours se verra attribuer un marché public de service en application de l'article 30-I-6° du décret n° 2016-360 du 25.3.2016.
+"""@fr;
+  epo:hasPurpose epd:id_2016-S-179-320830_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-179-320830_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-179-320830_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2016-S-179-320830_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2016-S-179-320830_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2016-S-179-320830_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2016-S-179-320830_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2016-09-12"^^xsd:date;
+  epo:hasID epd:id_2016-S-179-320830_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20160916";
+  epo:refersToLot epd:id_2016-S-179-320830_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2016-S-179-320830_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2016-S-179-320830_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 179-320830" .
+
+epd:id_2016-S-179-320830_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR713>;
+  locn:postCode "26270";
+  locn:postName "Saulce-sur-Rhône";
+  locn:thoroughfare "12 rue du Dauphiné" .
+
+epd:id_2016-S-179-320830_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "21260337700012" .
+
+epd:id_2016-S-179-320830_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2016-S-179-320830_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Commune de Saulce-sur-Rhône"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2016-S-179-320830_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-179-320830_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71240000> .
+
+epd:id_2016-S-179-320830_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+Retrouvez cet avis intégral, l'accès au guichet de dépôt sur http://www.marches-publics.info
+Le règlement de la consultation (RC) et la fiche de références sont à télécharger sur www.marches-publics.info
+Les candidats doivent utiliser les formulaires DC1 (lettre de candidature) et DC2 (déclaration du candidat) ou le document unique de marché européen (DUME) pour présenter leur candidature.
+Conformément à la législation française, l'ouverture des offres n'est pas publique.
+Le pouvoir adjudicateur préconise la transmission des documents par voie papier mais accepte les plis adressés par voie électronique à l'adresse suivante: www.marches-publics.info
+Le choix du mode de transmission est irréversible. Les candidats doivent appliquer le même mode de transmission à tous les documents transmis au pouvoir adjudicateur.
+Dépôt par porteur: secrétariat de mairie.
+"""@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-179-320830_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2016-S-179-320830_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+Concours de maîtrise d'œuvre — construction d'un groupe scolaire de 8 classes et d'une cantine scolaire.
+"""@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-179-320830_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2016-S-179-320830_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2016-S-179-320830_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-179-320830_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2016-S-179-320830_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2016-S-179-320830_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69433";
+  locn:postName "Lyon";
+  locn:thoroughfare "184 rue Duguesclin" .
+
+epd:id_2016-S-179-320830_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasFax "+33 478141065";
+  cccev:email "greffe.ta-lyon@juradm.fr";
+  cccev:telephone "+33 478141010" .
+
+epd:id_2016-S-179-320830_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-179-320830_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2016-S-179-320830_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2016-S-179-320830_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-179-320830_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2016-S-179-320830_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+33 478141065";
+  cccev:email "greffe.ta-lyon@juradm.fr";
+  cccev:telephone "+33 478141010" .
+
+epd:id_2016-S-179-320830_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69433";
+  locn:postName "Lyon";
+  locn:thoroughfare "184 rue Duguesclin" .
+
+epd:id_2016-S-179-320830_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-179-320830_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2016-S-179-320830_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-179-320830_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-179-320830_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-179-320830_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.marches-publics.info/"^^xsd:anyURI .
+
+epd:id_2016-S-179-320830_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR713>;
+  locn:postCode "26270";
+  locn:postName "Saulce-sur-Rhône";
+  locn:thoroughfare "12 avenue du Dauphiné" .
+
+epd:id_2016-S-179-320830_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasFax "+33 475630582";
+  epo:hasInternetAddress "http://www.marches-publics.info/"^^xsd:anyURI;
+  cccev:email "marjolaine.henry@groupe-amome.com";
+  cccev:telephone "+33 475630020" .
+
+epd:id_2016-S-179-320830_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasLegalName "Mairie de Saulce-sur-Rhône"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-179-320830_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2016-S-179-320830_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2016-S-179-320830_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-179-320830_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2016-S-179-320830_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

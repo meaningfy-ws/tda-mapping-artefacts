@@ -1,0 +1,257 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-087-208706_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://www.grdf.fr/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2020-S-087-208706_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "https://ibuy.ivalua.com/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2020-S-087-208706_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2020-S-087-208706_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-087-208706_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Daniel Bouchakri"@fr;
+  epo:hasInternetAddress "http://www.grdf.fr/"^^xsd:anyURI;
+  cccev:email "djamel-daniel.bouchakri@grdf.fr";
+  cccev:telephone "+33 171263497" .
+
+epd:id_2020-S-087-208706_ContractTermLotLocationAddress_XLFriwAStnrth86dKcVteo a locn:Address;
+  locn:fullAddress "Zone de couverture: Pyrénées Orientales"@fr .
+
+epd:id_2020-S-087-208706_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Zone de couverture: Ales, Gard Nord."@fr .
+
+epd:id_2020-S-087-208706_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq a locn:Address;
+  locn:fullAddress "Zone de couverture: Ales, Gard Nord"@fr .
+
+epd:id_2020-S-087-208706_ContractTermLotLocation_XLFriwAStnrth86dKcVteo a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ15>;
+  locn:address epd:id_2020-S-087-208706_ContractTermLotLocationAddress_XLFriwAStnrth86dKcVteo .
+
+epd:id_2020-S-087-208706_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ12>;
+  locn:address epd:id_2020-S-087-208706_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2020-S-087-208706_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ12>;
+  locn:address epd:id_2020-S-087-208706_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2020-S-087-208706_ContractTermLot_XLFriwAStnrth86dKcVteo a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-087-208706_Duration_8dSjdKSw7dFzBaGvfmRU6v;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-087-208706_ContractTermLotLocation_XLFriwAStnrth86dKcVteo .
+
+epd:id_2020-S-087-208706_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-087-208706_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-087-208706_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2020-S-087-208706_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-087-208706_Duration_Pn7seLvJsSm7d5S9iCwt2c;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-087-208706_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2020-S-087-208706_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasEInvoicing true .
+
+epd:id_2020-S-087-208706_Duration_8dSjdKSw7dFzBaGvfmRU6v a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-087-208706_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-087-208706_Duration_Pn7seLvJsSm7d5S9iCwt2c a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-087-208706_LotIdentifier_XLFriwAStnrth86dKcVteo a epo:Identifier;
+  epo:hasIdentifierValue "3" .
+
+epd:id_2020-S-087-208706_LotIdentifier_aNssKXiFyYxii2v93ivV4N a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2020-S-087-208706_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2020-S-087-208706_LotPurpose_XLFriwAStnrth86dKcVteo a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45112500> .
+
+epd:id_2020-S-087-208706_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45112500> .
+
+epd:id_2020-S-087-208706_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45112500> .
+
+epd:id_2020-S-087-208706_Lot_XLFriwAStnrth86dKcVteo a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-087-208706_ContractTermLot_XLFriwAStnrth86dKcVteo;
+  epo:hasAdditionalInformation "VOIR L'APPEL A CANDIDATURE No GRDF-203 004152 SUR LE PROFIL ACHETEUR DE GRDF"@fr;
+  epo:hasDescription "— Terrassement ponctuel— Création, modification, suppression branchement gaz,— Intervention de sécurité en astreinte,— Construction d’extension de réseau gaz PE et branchements associés (y compris en lotissement),— Renouvellement de réseau et branchements associés par du PE en tranchée ouverte ou en tubage,— Renouvellement ponctuel ou groupé de branchements seuls (sans réseau),— Déplacement de réseau gaz et branchements associés par du PE,— Renouvellement de PDR— Création/Renouvellement de vannes PETravaux pouvant être demandés à l’Entreprise— Percement en charge de prise de branchement sur le lot 1— Raccordement réseau PE en ligne jusqu’au diamètre 63mm sur le lot 1— Pose de réseau et branchement en acier de faible longueur lié au chantier confié,— Prestations de soudures réalisées sur les réseaux gaz acier (prise de branchement, soudures bout à bout sur Acier <= DN100, ...)— Reprise d’installations intérieures y compris conduite d’immeuble— Remplacement des compteurs— Mise hors et en gaz CICM— Remise en service des clients particuliers— Branchement optimisé en option éventuelle avec un délai d’acquisition des compétences techniques sur les lots 2 et 3,— Raccordement réseau PE en ligne jusqu’au diamètre 63mm en option éventuelle avec un délai d’acquisition des compétences techniques sur les lots 2 et 3.Remarques sur les Interventions de Sécurité (IS):Dans le respect du CCTP TRAV 2011 01, le délai d’intervention est de 1h00 pour les communes de Perpignan, Carcassonne, Narbonne, Béziers, Montpellier, Ales et Nîmes. Il est porté à 2h00 pour l’ensemble des autres communes.Remarques pour les lots SI PE:Au niveau des ouvrages collectifs, le marché se limite à la reprise de la Conduite d’Immeuble.Si la conduite montante ou les branchements particuliers sont également à renouveler, l’ensemble des travaux relatifs à l’ouvrage collectif sont réalisés dans le cadre du marché « Renouvellement de CICM »."@fr;
+  epo:hasEstimatedValue epd:id_2020-S-087-208706_MainMonetaryValueLot_XLFriwAStnrth86dKcVteo;
+  epo:hasID epd:id_2020-S-087-208706_LotIdentifier_XLFriwAStnrth86dKcVteo;
+  epo:hasPurpose epd:id_2020-S-087-208706_LotPurpose_XLFriwAStnrth86dKcVteo;
+  epo:hasTitle "TPG/IS/Brt +TG + SI PE"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-087-208706_MultipleStageProcedureTerm_XLFriwAStnrth86dKcVteo;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-087-208706_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-087-208706_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation "Voir dossier APPEL A CANDIDATURE No GRDF-203 004152 sur le profil acheteur de GRDF"@fr;
+  epo:hasDescription "— terrassement ponctuel;— création, modification, suppression branchement gaz;— intervention de sécurité en astreinte;— construction d’extension de réseau gaz PE et branchements associés (y compris en lotissement);— renouvellement de réseau et branchements associés par du PE en tranchée ouverte ou en tubage;— renouvellement ponctuel ou groupé de branchements seuls (sans réseau);— déplacement de réseau gaz et branchements associés par du PE;— renouvellement de PDR;— création/renouvellement de vannes PE;— branchement optimisé.Travaux pouvant être demandés à l’entreprise:— percement en charge de prise de branchement sur le lot 1;— raccordement réseau PE en ligne jusqu'au diamètre 63 mm sur le lot 1;— pose de réseau et branchement en acier de faible longueur lié au chantier confié;— prestations de soudures réalisées sur les réseaux gaz acier (prise de branchement, soudures bout à bout sur Acier — DN100...);— reprise d’installations intérieures y compris conduite d’immeuble;— remplacement des compteurs;— mise hors et en gaz CICM;— remise en service des clients particuliers;— branchement optimisé en option éventuelle avec un délai d’acquisition des compétences techniques sur les lots 2 et 3;— raccordement réseau PE en ligne jusqu'au diamètre 63 mm en option éventuelle avec un délai d’acquisition des compétences techniques sur les lots 2 et 3.Remarques sur les Interventions de sécurité (IS):Dans le respect du CCTP TRAV 2011 01, le délai d’intervention est de 01h00 pour les communes de Perpignan, Carcassonne, Narbonne, Béziers, Montpellier, Ales et Nîmes. Il est porté à 02h00 pour l’ensemble des autres communes.Remarques pour les lots SI PE:Au niveau des ouvrages collectifs, le marché se limite à la reprise de la conduite d’immeuble.Si la conduite montante ou les branchements particuliers sont également à renouveler, l’ensemble des travaux relatifs à l’ouvrage collectif sont réalisés dans le cadre du marché «renouvellement de CICM»."@fr;
+  epo:hasEstimatedValue epd:id_2020-S-087-208706_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasID epd:id_2020-S-087-208706_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2020-S-087-208706_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:hasTitle "TPG/IS/BRT + branchement optimisé +TG + SI PE"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-087-208706_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-087-208706_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-087-208706_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasAdditionalInformation "Voir le dossier APPEL A CANDIDATURE No GRDF-203 004152 sur le profil acheteur de GRDF"@fr;
+  epo:hasDescription "— Terrassement ponctuel— Création, modification, suppression branchement gaz,— Intervention de sécurité en astreinte,— Construction d’extension de réseau gaz PE et branchements associés (y compris en lotissement),— Renouvellement de réseau et branchements associés par du PE en tranchée ouverte ou en tubage,— Renouvellement ponctuel ou groupé de branchements seuls (sans réseau),— Déplacement de réseau gaz et branchements associés par du PE,— Renouvellement de PDR— Création/Renouvellement de vannes PETravaux pouvant être demandés à l’Entreprise— Percement en charge de prise de branchement sur le lot 1— Raccordement réseau PE en ligne jusqu’au diamètre 63mm sur le lot 1— Pose de réseau et branchement en acier de faible longueur lié au chantier confié,— Prestations de soudures réalisées sur les réseaux gaz acier (prise de branchement, soudures bout à bout sur Acier <= DN100, ...)— Reprise d’installations intérieures y compris conduite d’immeuble— Remplacement des compteurs— Mise hors et en gaz CICM— Remise en service des clients particuliers— Branchement optimisé en option éventuelle avec un délai d’acquisition des compétences techniques sur les lots 2 et 3,— Raccordement réseau PE en ligne jusqu’au diamètre 63mm en option éventuelle avec un délai d’acquisition des compétences techniques sur les lots 2 et 3.Remarques sur l’IS:Dans le respect du CCTP TRAV 2011 01, le délai d’intervention est de 1h00 pour les communes de Perpignan, Carcassonne, Narbonne, Béziers, Montpellier, Ales et Nîmes. Il est porté à 2h00 pour l’ensemble des autres communes.Remarques pour les lots SI PE:Au niveau des ouvrages collectifs, le marché se limite à la reprise de la Conduite d’Immeuble.Si la conduite montante ou les branchements particuliers sont également à renouveler, l’ensemble des travaux relatifs à l’ouvrage collectif sont réalisés dans le cadre du marché « Renouvellement de CICM »."@fr;
+  epo:hasEstimatedValue epd:id_2020-S-087-208706_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasID epd:id_2020-S-087-208706_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2020-S-087-208706_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasTitle "TPG/IS/Brt +TG + SI PE"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-087-208706_MultipleStageProcedureTerm_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-087-208706_MainMonetaryValueLot_XLFriwAStnrth86dKcVteo a epo:MonetaryValue;
+  epo:hasAmountValue 1000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-087-208706_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 460000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-087-208706_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq a epo:MonetaryValue;
+  epo:hasAmountValue 1200000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-087-208706_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 2660000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-087-208706_MultipleStageProcedureTerm_XLFriwAStnrth86dKcVteo a epo:MultipleStageProcedureTerm .
+
+epd:id_2020-S-087-208706_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N a epo:MultipleStageProcedureTerm .
+
+epd:id_2020-S-087-208706_MultipleStageProcedureTerm_ig8mEGUXVMgcuxfgHrQXuq a epo:MultipleStageProcedureTerm .
+
+epd:id_2020-S-087-208706_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2020-S-087-208706_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2020-S-087-208706_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2020-S-087-208706_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2020-S-087-208706_Reviewer_K99XaY97dQrtEEJSTmwy9e;
+  epo:hasDispatchDate "2020-04-30"^^xsd:date;
+  epo:hasID epd:id_2020-S-087-208706_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20200505";
+  epo:refersToLot epd:id_2020-S-087-208706_Lot_XLFriwAStnrth86dKcVteo, epd:id_2020-S-087-208706_Lot_aNssKXiFyYxii2v93ivV4N,
+    epd:id_2020-S-087-208706_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:refersToProcedure epd:id_2020-S-087-208706_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2020-S-087-208706_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 087-208706" .
+
+epd:id_2020-S-087-208706_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "75009";
+  locn:postName "Paris";
+  locn:thoroughfare "6 rue Condorcet" .
+
+epd:id_2020-S-087-208706_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "444786511" .
+
+epd:id_2020-S-087-208706_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2020-S-087-208706_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "GRDF"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gas-heat>;
+  cccev:registeredAddress epd:id_2020-S-087-208706_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-087-208706_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "GRDF-203 004152" .
+
+epd:id_2020-S-087-208706_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45112500> .
+
+epd:id_2020-S-087-208706_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 3;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2020-S-087-208706_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-087-208706_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation "Voir le réglement de la consultation - APPEL A CANDIDATURE No GRDF-203 004152 sur le profil acheteur de GRDF."@fr;
+  epo:hasDescription "— terrassement ponctuel;— création, modification, suppression branchement gaz;— intervention de sécurité en astreinte;— construction d’extension de réseau gaz PE et branchements associés (y compris en lotissement);— renouvellement de réseau et branchements associés par du PE en tranchée ouverte ou en tubage;— renouvellement ponctuel ou groupé de branchements seuls (sans réseau);— déplacement de réseau gaz et branchements associés par du PE;— renouvellement de PDR;— création/renouvellement de vannes PE;— branchement optimisé sur le lot 1.Travaux pouvant être demandés à l’entreprise:— percement en charge de prise de branchement sur le lot 1;— raccordement réseau PE en ligne jusqu'au diamètre 63 mm sur le lot 1;— pose de réseau et branchement en acier de faible longueur lié au chantier confié;— prestations de soudures réalisées sur les réseaux gaz acier (prise de branchement, soudures bout à bout sur acier — DN100...);— reprise d’installations intérieures y compris conduite d’imm"@fr;
+  epo:hasEstimatedValue epd:id_2020-S-087-208706_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasID epd:id_2020-S-087-208706_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-087-208706_Lot_XLFriwAStnrth86dKcVteo,
+    epd:id_2020-S-087-208706_Lot_aNssKXiFyYxii2v93ivV4N, epd:id_2020-S-087-208706_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2020-S-087-208706_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "TPG/IS/BRT, TG, SI PE"@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-087-208706_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2020-S-087-208706_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY, epd:id_2020-S-087-208706_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2020-S-087-208706_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-087-208706_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2020-S-087-208706_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-087-208706_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75055";
+  locn:postName "Paris";
+  locn:thoroughfare "4, boulevard du palais" .
+
+epd:id_2020-S-087-208706_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2020-S-087-208706_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Paris (TGI de PARIS)"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-087-208706_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2020-S-087-208706_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2020-S-087-208706_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2020-S-087-208706_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2020-S-087-208706_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2020-S-087-208706_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75055";
+  locn:postName "PARIS";
+  locn:thoroughfare "4, boulevard du palais" .
+
+epd:id_2020-S-087-208706_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de PARIS"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-087-208706_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2020-S-087-208706_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2020-S-087-208706_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-087-208706_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2020-S-087-208706_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasReceiptExpressionDeadline "2020-06-11T15:00";
+  epo:hasSubmissionURL "https://ibuy.ivalua.com/"^^xsd:anyURI .

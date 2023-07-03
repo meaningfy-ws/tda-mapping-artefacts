@@ -1,0 +1,173 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-074-197173_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://ktn.vergabeportal.at/Detail/124032"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-074-197173_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-074-197173_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2022-S-074-197173_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-074-197173_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.kaerntner-linien.at"^^xsd:anyURI;
+  cccev:email "sekretariat@vkgmbh.at";
+  cccev:telephone "+43 46354618-0" .
+
+epd:id_2022-S-074-197173_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Politische Bezirke: Völkermarkt und Klagenfurt-Land"@de .
+
+epd:id_2022-S-074-197173_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT213>;
+  locn:address epd:id_2022-S-074-197173_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2022-S-074-197173_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-074-197173_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-074-197173_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2022-S-074-197173_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEOrdering true .
+
+epd:id_2022-S-074-197173_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-074-197173_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "Mag. Mag. (FH) Gudrun Kartnig"@de;
+  epo:hasInternetAddress "https://www.kartnig-consulting.com/"^^xsd:anyURI;
+  cccev:email "office@kartnig-consulting.at" .
+
+epd:id_2022-S-074-197173_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT>;
+  locn:postCode "9020";
+  locn:postName "Klagenfurt" .
+
+epd:id_2022-S-074-197173_InformationProviderOrganisationIdentifier_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:Identifier;
+  epo:hasIdentifierValue "9110029488930" .
+
+epd:id_2022-S-074-197173_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasID epd:id_2022-S-074-197173_InformationProviderOrganisationIdentifier_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:hasLegalName "KARTNIG CONSULTING"@de;
+  cccev:registeredAddress epd:id_2022-S-074-197173_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2022-S-074-197173_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2022-S-074-197173_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-074-197173_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription "Vergabe eines öffentlichen Dienstleistungsauftrages im Sinne der VO (EG) 1370/2007 idgF für die Verkehrsregion SÜDKÄRNTEN in Form einer Dienstleistungskonzession. Die Personenbeförderung erfolgt im durchgängigen Betrieb für mindestens 8 Jahre mit der Option auf Verlängerung auf weitere 2 Jahre. Voraussichtlicher Beginn: 18.12.2022.Es soll ein ausschließliches Recht zur Nutzung der Verkehrsleistungen in der Region eingeräumt werden.Erfolgt die Personenbeförderung im Kraftfahrlinienverkehr, ist eine behördliche Genehmigung gemäß § 23 Kraftfahrliniengesetz erforderlich. Hauptzielgruppe sind die erwerbs- und ausbildungspendelnden Einwohner in den ausschreibungsrelevanten Siedlungskernen der Verkehrsregion (Anlage 1). Weitere Information in den Teilnahmeunterlagen."@de;
+  epo:hasEstimatedValue epd:id_2022-S-074-197173_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2022-S-074-197173_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-074-197173_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 46800000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-074-197173_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  locn:postName "Klagenfurt" .
+
+epd:id_2022-S-074-197173_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM a org:Organization;
+  epo:hasLegalName "Ombudsstelle für Vergabewesen"@de;
+  cccev:registeredAddress epd:id_2022-S-074-197173_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2022-S-074-197173_Mediator_PMKvGTWSa3gLdxRfJtvToM a epo:Mediator;
+  epo:playedBy epd:id_2022-S-074-197173_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2022-S-074-197173_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 46800000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-074-197173_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-074-197173_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2022-S-074-197173_Mediator_PMKvGTWSa3gLdxRfJtvToM,
+    epd:id_2022-S-074-197173_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2022-S-074-197173_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2022-04-09"^^xsd:date;
+  epo:hasID epd:id_2022-S-074-197173_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20220414";
+  epo:refersToLot epd:id_2022-S-074-197173_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2022-S-074-197173_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2022-S-074-197173_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 074-197173" .
+
+epd:id_2022-S-074-197173_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT211>;
+  locn:postCode "9020";
+  locn:postName "Klagenfurt am Wörthersee";
+  locn:thoroughfare "Bahnhofplatz 5" .
+
+epd:id_2022-S-074-197173_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "9110016211756" .
+
+epd:id_2022-S-074-197173_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Verkehrsverbundorganisationsgesellschaft";
+  epo:hasID epd:id_2022-S-074-197173_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Verkehrsverbund Kärnten GesmbH"@de;
+  epo:hasMainActivityDescription "Organisation eines Verkehrsverbundes";
+  cccev:registeredAddress epd:id_2022-S-074-197173_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-074-197173_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "0" .
+
+epd:id_2022-S-074-197173_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2022-S-074-197173_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-074-197173_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation ""@de;
+  epo:hasDescription "Die Verkehrsverbund Kärnten GmbH beabsichtigt die Vergabe eines öffentlichen Dienstleistungsauftrages im Sinne der VO (EG) 1370/2007 idgF für die Verkehrsregion SÜDKÄRNTEN. Dieser öffentliche Dienstleistungsauftrag wird als Dienstleistungskonzessionsvertrag ausgestaltet. Die Personenbeförderung erfolgt im Wesentlichen im Kraftfahrlinienverkehr, im durchgängigen Betrieb für mindestens 8 Jahre mit der Option auf eine Verlängerung für weitere 2 Jahre.Hauptzielgruppe sind die erwerbs- und ausbildungspendelnden Einwohner in den ausschreibungsrelevanten Siedlungskernen der Ver¬kehrsregion. Die Siedlungskerne sind in der Siedlungskernkarte (Anlage 1) abgebildet. Nähere Information: siehe Teilnahmeunterlagen."@de;
+  epo:hasEstimatedValue epd:id_2022-S-074-197173_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2022-S-074-197173_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-074-197173_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2022-S-074-197173_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Vergabe einer Dienstleistungskonzession für die Verkehrsregion SÜDKÄRNTEN"@de;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-074-197173_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2022-S-074-197173_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2022-S-074-197173_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2022-S-074-197173_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-074-197173_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2022-S-074-197173_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2022-S-074-197173_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "" .
+
+epd:id_2022-S-074-197173_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  locn:postCode "9020";
+  locn:postName "Klagenfurt" .
+
+epd:id_2022-S-074-197173_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Landesverwaltungsgericht Kärnten"@de;
+  cccev:registeredAddress epd:id_2022-S-074-197173_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2022-S-074-197173_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-074-197173_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2022-S-074-197173_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://ktn.vergabeportal.at/Detail/124032"^^xsd:anyURI .

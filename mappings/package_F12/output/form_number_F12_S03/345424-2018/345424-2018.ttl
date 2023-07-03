@@ -1,0 +1,241 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-150-345424_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://bip.malopolska.pl/umwm/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-150-345424_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF a epo:Buyer;
+  epo:hasBuyerProfile "http://bip.malopolska.pl/umwm/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-150-345424_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:playedBy epd:id_2018-S-150-345424_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2018-S-150-345424_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF a cccev:ContactPoint;
+  epo:hasContactName "Anna Hamala, Urząd Marszałkowski Województwa Małopolskiego, Departament Inwestycji Strategicznych, ul. Basztowa 22, 31-156 Kraków"@pl;
+  epo:hasFax "+48 126160321";
+  epo:hasInternetAddress "http://www.malopolska.pl"^^xsd:anyURI;
+  cccev:email "inwestycjestrategiczne@umwm.pl";
+  cccev:telephone "+48 126160334" .
+
+epd:id_2018-S-150-345424_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF a org:Organization;
+  epo:hasLegalName "Gmina Miejska Kraków"@pl;
+  cccev:registeredAddress epd:id_2018-S-150-345424_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2018-S-150-345424_BuyerOrganisationGroup_Vx4nE2MhH2AK3p6fvMzsYF a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  epo:hasMember epd:id_2018-S-150-345424_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2018-S-150-345424_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2018-S-150-345424_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "http://bip.malopolska.pl/umwm/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-150-345424_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2018-S-150-345424_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2018-S-150-345424_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Anna Hamala, Urząd Marszałkowski Województwa Małopolskiego, Departament Inwestycji Strategicznych, ul. Basztowa 22, 31-156 Kraków"@pl;
+  epo:hasFax "+48 126160321";
+  epo:hasInternetAddress "http://www.malopolska.pl"^^xsd:anyURI;
+  cccev:email "inwestycjestrategiczne@umwm.pl";
+  cccev:telephone "+48 126160334" .
+
+epd:id_2018-S-150-345424_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2018-S-150-345424_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-150-345424_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2018-S-150-345424_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasContactName "Rafał Zawisza"@pl;
+  epo:hasInternetAddress "http://www.malopolska.pl"^^xsd:anyURI;
+  cccev:email "konkurs-cm2018@sarp.krakow.pl";
+  cccev:telephone "+48 662840715" .
+
+epd:id_2018-S-150-345424_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL21>;
+  locn:postCode "30-011";
+  locn:postName "Kraków";
+  locn:thoroughfare "Pl. Szczepański 6" .
+
+epd:id_2018-S-150-345424_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasLegalName "Stowarzyszenie Architektów Polskich Oddział Kraków"@pl;
+  cccev:registeredAddress epd:id_2018-S-150-345424_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2018-S-150-345424_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71248000>, <http://data.europa.eu/cpv/cpv/71313200>,
+    <http://data.europa.eu/cpv/cpv/71320000>, <http://data.europa.eu/cpv/cpv/71420000> .
+
+epd:id_2018-S-150-345424_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-150-345424_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Konkurs jest jednoetapowy, przeprowadzany na następujących zasadach: a) w zakresie opracowania koncepcji nowego budynku/budynków Centrum Muzyki wraz z przyległym terenem i wewnętrznym układem komunikacyjnym na dz. nr 173/15 i 173/16 (zwanego dalej CM) jest konkursem realizacyjnym, b) w zakresie Parku Miejskiego na dz. nr 173/18, 173/19, 173/20 (zwanego dalej Parkiem Miejskim) jest konkursem studialnym.Przedmiotem Konkursu jest wykonanie koncepcji: budynku lub zespołu budynków Centrum Muzyki w Krakowie na terenie wyznaczonym dla inwestycji obejmującym działki gruntowe o numerach ewidencyjnych: 173/15 i 173/16 obr. 17 Kraków Śródmieście wraz z zagospodarowaniem terenu o łącznej powierzchni: 2,929 ha. Organizator spodziewa się, że planowana powierzchnia użytkowa budynku/ budynków wyniesie do 28 tys m2, dodatkowo dopuszcza 5 % zmiany zakładanej powierzchni użytkowej oraz Parku Miejskiego w Krakowie na terenie wyznaczonym dla inwestycji tj. obejmującym działki gruntowe o numerach ewidencyjnych: 173/18, 173/19, 173/20 obr. 17 Kraków Śródmieście; o powierzchni łącznej: 5,3239 ha. 2.1.1. Celem Konkursu jest wybór najlepszego rozwiązania urbanistycznego, architektonicznego, funkcjonalnego i akustycznego (patrz: kryteria oceny) dla nowego kompleksu budynków / dla budynku Centrum Muzyki w Krakowie wraz z przyległym terenem i wewnętrznym układem komunikacyjnym oraz koncepcji programowo-przestrzennej Parku Miejskiego oraz, w efekcie, udzielenie zamówienia publicznego w trybie zamówienia z wolnej ręki. 2.1.2. Centrum Muzyki zlokalizowane będzie na działkach gruntowych o numerach ewidencyjnych nr 173/15 i 173/16 obr. 17 Kraków Śródmieście. Park Miejski zlokalizowany będzie na działkach gruntowych o numerach ewidencyjnych: 173/18, 173/19, 173/20 obr. 17 Kraków Śródmieście. Obszar objęty przedmiotem Konkursu zlokalizowany jest na terenach powojskowych, częściowo objętych ochroną konserwatorską, w bezpośrednim sąsiedztwie projektowanej zabudowy Akademii Muzycznej w Krakowie (która usytuowana będzie na wschód od terenu wyznaczonego dla Centrum Muzyki i Parku Miejskiego) oraz reprezentacyjnych bulwarów wiślanych – będących przestrzenią publiczną (usytuowanych na południe od terenu wyznaczonego dla Centrum Muzyki i Parku Miejskiego). W 2017 r. rozstrzygnięty został konkurs (realizacyjny) na kompleks nowych budynków dydaktycznych Akademii Muzycznej w Krakowie. Usytuowane one będą na działkach gruntowych o numerach ewidencyjnych: 173/17 i 173/21 obr. 17 Kraków Śródmieście. Budynek / budynki Centrum Muzyki wraz z kompleksem dydaktycznym Akademii Muzycznej, Parkiem Miejskim oraz uzupełniającą infrastrukturą rekreacyjną i usługową stworzyć powinny unikatową, spójną urbanistycznie i architektonicznie część miasta, swoisty landmark, który stanie się rozpoznawalny na „muzycznej mapie miasta”."@pl;
+  epo:hasPurpose epd:id_2018-S-150-345424_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-150-345424_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs a cccev:ContactPoint;
+  epo:hasFax "+48 224587800";
+  epo:hasInternetAddress "http://uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2018-S-150-345424_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17a" .
+
+epd:id_2018-S-150-345424_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza"@pl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-150-345424_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs;
+  cccev:registeredAddress epd:id_2018-S-150-345424_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2018-S-150-345424_Mediator_eMEmZdeMkSWP9DfmobsFLs a epo:Mediator;
+  epo:playedBy epd:id_2018-S-150-345424_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2018-S-150-345424_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-150-345424_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2018-S-150-345424_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2018-S-150-345424_Mediator_eMEmZdeMkSWP9DfmobsFLs,
+    epd:id_2018-S-150-345424_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2018-S-150-345424_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2018-S-150-345424_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2018-S-150-345424_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2018-08-03"^^xsd:date;
+  epo:hasID epd:id_2018-S-150-345424_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20180807";
+  epo:refersToLot epd:id_2018-S-150-345424_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2018-S-150-345424_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2018-S-150-345424_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 150-345424" .
+
+epd:id_2018-S-150-345424_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL21>;
+  locn:postCode "31-156";
+  locn:postName "Kraków";
+  locn:thoroughfare "ul. Basztowa 22" .
+
+epd:id_2018-S-150-345424_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL21>;
+  locn:postCode "31-004";
+  locn:postName "Kraków";
+  locn:thoroughfare "Pl. Wszystkich Świętych 3-4" .
+
+epd:id_2018-S-150-345424_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasLegalName "Województwo Małopolskie"@pl;
+  cccev:registeredAddress epd:id_2018-S-150-345424_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2018-S-150-345424_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "IS.I.272.13.2018" .
+
+epd:id_2018-S-150-345424_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71220000> .
+
+epd:id_2018-S-150-345424_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "Każdy uczestnik ubiegający się o dopuszczenie do udziału w Konkursie nie może podlegać wykluczeniu na podstawie art. 24 ust. 1, oraz ust. 5 pkt. 1, 5,6 i 8 ustawy PZP (zgodnie z oświadczeniem zawartym w Jednolitym Europejskim Dokumencie Zamówienia – JEDZ).Organizator wymaga, aby uczestnik Konkursu wykazał, że: – dysponuje co najmniej 1 osobą – Projektantem głównym, posiadającą uprawnienia do projektowania w specjalności architektonicznej bez ograniczeń i jest członkiem właściwej izby samorządu zawodowego oraz posiadającym doświadczenie w opracowaniu, w okresie ostatnich 15 lat co najmniej jednej usługi polegającej na wykonaniu lub uczestnictwie w wykonaniu (jako członek zespołu autorskiego) wielobranżowej dokumentacji projektowej, dla budowy budynku użyteczności publicznej w rozumieniu § 3 pkt 6 Rozporządzenia Ministra Infrastruktury z dnia 12.4.2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (t.j. – Dz. U. z 2015 r., poz. 1422, z późn. zm.), który posiada pozwolenie na użytkowanie, w którym mieści się sala koncertowa, operowa, teatralna lub widowiskowa przeznaczona dla wydarzeń muzycznych o pojemności stałej widowni nie mniej niż 600 miejsc; – dysponuje co najmniej 1 osobą – akustykiem, posiadającym doświadczenie w opracowaniu, w okresie ostatnich 15 lat:co najmniej jednej usługi polegającej na wykonaniu lub uczestnictwie w wykonaniu (jako członek zespołu autorskiego), w ramach wielobranżowej dokumentacji projektowej, projektu akustyki dla co najmniej jednej sali koncertowej o pojemności widowni nie mniej niż 1.000 miejsc, mieszczącej się w zrealizowanym tj. posiadającym pozwolenie na użytkowanie obiekcie oraz co najmniej jednej usługi polegającej na wykonaniu lub uczestnictwie w wykonaniu (jako członek zespołu autorskiego) w ramach wielobranżowej dokumentacji projektowej, projektu akustyki dla co najmniej jednej sali koncertowej o pojemności widowni nie mniejszej niż 600 miejsc, mieszczącej się w obiekcie, który posiada pozwolenie na budowę; dysponuje co najmniej 1 osobą – architektem krajobrazu, z tytułem minimum mgr inż. architekta krajobrazu z doświadczeniem, w przeciągu ostatnich 10 lat, w opracowaniu (jako członek zespołu autorskiego) co najmniej jednej dokumentacji projektowej w zakresie zieleni urządzonej i małej architektury jako elementu zagospodarowania terenu, sporządzonej dla publicznie dostępnego terenu zieleni urządzonej o powierzchni nie mniejszej niż 0,5 ha.; posiada doświadczenie w należytym wykonaniu co najmniej jednej usługi odpowiadającej przedmiotowi konkursu tj. wykonaniem lub uczestnictwem w wykonaniu (jako członek zespołu autorskiego) wielobranżowej dokumentacji projektowej budowlanej i wykonawczej dla budowy co najmniej 1 (jednego) budynku użyteczności publicznej w rozumieniu § 3 pkt 6 Rozporządzenia Ministra Infrastruktury z dnia 12.4.2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (t.j. – Dz. U. z 2015 r., poz. 1422, z późn. zm.) o powierzchni użytkowej nie mniejszej niż 15.000 m2, który w ciągu dziesięciu ostatnich lat uzyskał pozwolenie na użytkowanie.Termin składania wniosków o dopuszczenie do udziału w Konkursie upływa w dniu 3.9.2018 r. Wniosek o dopuszczenie do udziału w Konkursie składany jest w formie papierowej na adres: Urząd Marszałkowski Województwa Małopolskiego ul. Basztowa 22, 31-156 Kraków, Dziennik Podawczy, natomiast JEDZ w postaci elektronicznej opatrzonej kwalifikowanym podpisem elektronicznym należy przesłać przed upływem terminu składania wniosków na adres email: inwestycjestrategiczne@umwm.plTermin składania prac Konkursowych upływa w dniu 19.11.2018 r. Prace Konkursowe składane są na adres: Stowarzyszenie Architektów Polskich Oddział Kraków, Plac Szczepański 6; 31-011 Kraków"@pl;
+  epo:hasID epd:id_2018-S-150-345424_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-150-345424_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2018-S-150-345424_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Konkurs urbanistyczno-architektoniczny jednoetapowy na opracowanie koncepcji urbanistyczno-architektonicznej Centrum Muzyki i Parku Miejskiego w Krakowie"@pl;
+  epo:isDesignContest true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-150-345424_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2018-S-150-345424_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2018-S-150-345424_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2018-S-150-345424_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-150-345424_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2018-S-150-345424_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2018-S-150-345424_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17a" .
+
+epd:id_2018-S-150-345424_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasFax "+48 224587800";
+  epo:hasInternetAddress "https://www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2018-S-150-345424_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza"@pl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-150-345424_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2018-S-150-345424_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2018-S-150-345424_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-150-345424_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2018-S-150-345424_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Uczestnikowi Konkursu, a także innemu podmiotowi, jeżeli ma lub miał interes w uzyskaniu zamówienia oraz poniósł lub może ponieść szkodę w wyniku naruszenia przez Organizatora przepisów ustawy, przysługują środki ochrony prawnej określone w dziale VI ustawy. Od niezgodnej z przepisami ustawy czynności Organizatora podjętej w postępowaniu o udzielenie zamówienia lub zaniechania czynności, do której Organizator jest zobowiązany na podstawie ustawy, przysługuje odwołanie. 6.3.3 Odwołanie powinno wskazywać czynność lub zaniechanie czynności Organizatora, której zarzuca się niezgodność z przepisami ustawy PZP, zawierać zwięzłe przedstawienie zarzutów, określać żądanie oraz wskazywać okoliczności faktyczne i prawne uzasadniające wniesienie odwołania. Odwołanie wnosi się do Prezesa Krajowej Izby Odwoławczej w formie pisemnej lub w postaci elektronicznej, podpisane bezpiecznym podpisem elektronicznym weryfikowanym przy pomocy ważnego kwalifikowanego certyfikatu lub równoważnego środka, spełniającego wymagania dla tego rodzaju podpisu. Odwołujący przesyła kopię odwołania Organizatorowi przed upływem terminu do wniesienia odwołania w taki sposób, aby mógł on zapoznać się z jego treścią przed upływem tego terminu. Domniemywa się, iż Organizator mógł zapoznać się z treścią odwołania przed upływem terminu do jego wniesienia, jeżeli przesłanie jego kopii nastąpiło przed upływem terminu do jego wniesienia przy użyciu środków komunikacji elektronicznej. Odwołanie wnosi się w terminach określonych w art. 182 ustawy Pzp.Na orzeczenie KIO stronom oraz uczestnikom postępowania odwoławczego przysługuje skarga do sądu. Skargę wnosi się do sądu okręgowego właściwego dla siedziby Organizatora, za pośrednictwem Prezesa Krajowej Izby Odwoławczej w terminie 7 dni od dnia doręczenia orzeczenia Krajowej Izby Odwoławczej, przesyłając jednocześnie jej odpis przeciwnikowi skargi. Złożenie skargi w placówce pocztowej operatora wyznaczonego w rozumieniu ustawy z dnia 23.11.2012 r. – Prawo pocztowe (Dz. U. poz. 1529) jest równoznaczne z jej wniesieniem." .
+
+epd:id_2018-S-150-345424_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+48 224587800";
+  epo:hasInternetAddress "http://uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2018-S-150-345424_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17a" .
+
+epd:id_2018-S-150-345424_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza"@pl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-150-345424_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2018-S-150-345424_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2018-S-150-345424_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-150-345424_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2018-S-150-345424_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "PL" .
+
+epd:id_2018-S-150-345424_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL21>;
+  locn:postCode "31-156";
+  locn:postName "Kraków";
+  locn:thoroughfare "ul. Basztowa 22" .
+
+epd:id_2018-S-150-345424_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasContactName "Anna Hamala, Urząd Marszałkowski Województwa Małopolskiego, Departament Inwestycji Strategicznych"@pl;
+  epo:hasFax "+48 126160321";
+  epo:hasInternetAddress "http://www.malopolska.pl"^^xsd:anyURI;
+  cccev:email "inwestycjestrategiczne@umwm.pl";
+  cccev:telephone "+48 126160334" .
+
+epd:id_2018-S-150-345424_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasLegalName "Urząd Marszałkowski Województwa Małopolskiego, Dziennik Podawczy"@pl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-150-345424_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2018-S-150-345424_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2018-S-150-345424_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-150-345424_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2018-S-150-345424_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

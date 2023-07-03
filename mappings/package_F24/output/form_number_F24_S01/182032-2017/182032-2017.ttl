@@ -1,0 +1,240 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-092-182032_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.marchespublics.hyeres.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-092-182032_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.marchespublics.hyeres.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-092-182032_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-092-182032_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-092-182032_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasFax "+33 494007981";
+  epo:hasInternetAddress "http://www.hyeres.fr"^^xsd:anyURI;
+  cccev:email "marches.publics@mairie-hyeres.com";
+  cccev:telephone "+33 494007832" .
+
+epd:id_2017-S-092-182032_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+Hyères les Palmiers 83400 — Hyères.
+"""@fr .
+
+epd:id_2017-S-092-182032_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR825>;
+  locn:address epd:id_2017-S-092-182032_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-092-182032_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-092-182032_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-092-182032_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-092-182032_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-092-182032_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 180.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-092-182032_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34926000>, <http://data.europa.eu/cpv/cpv/63712400> .
+
+epd:id_2017-S-092-182032_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-092-182032_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+Objet du contrat: réalisation d'investissements, exploitation et gestion de parcs en ouvrage: parc aérien Gambetta (443 pl, 3 niveaux), parcs souterrains Clémenceau (417 pl, 4 niveaux) et Casino (435 pl, 3 niveaux). Missions confiées au délégataire porteront notamment sur:
+— l'exploitation et la gestion de l'ensemble des 3 parcs,
+— la réalisation d'investissements de modernisation et d'amélioration du confort des usagers (cf. Détail au RC de la candidature),
+— le versement d'un droit d'entrée d'environ 1,700 000 d'EUR HT lié aux travaux de confortement de la dalle de surface du parking Clémenceau,
+— le maintien en parfait état de fonctionnement des biens et équipements mis à disposition,
+— la gestion et la formation du personnel,
+— la relation contractuelle et commerciale avec les usagers,
+— la communication nécessaire à la promotion du service.
+Le délégataire devra se rémunérer directement auprès des usagers, suivant les tarifs fixés dans le contrat.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2017-S-092-182032_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-092-182032_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-092-182032_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 22000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-092-182032_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM a cccev:ContactPoint;
+  epo:hasFax "+33 494427989";
+  epo:hasInternetAddress "http://toulon.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-toulon@juradm.fr";
+  cccev:telephone "+33 494427930" .
+
+epd:id_2017-S-092-182032_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "83041";
+  locn:postName "Toulon";
+  locn:thoroughfare "5 rue Racine" .
+
+epd:id_2017-S-092-182032_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Toulon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-092-182032_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM;
+  cccev:registeredAddress epd:id_2017-S-092-182032_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2017-S-092-182032_Mediator_PMKvGTWSa3gLdxRfJtvToM a epo:Mediator;
+  epo:playedBy epd:id_2017-S-092-182032_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2017-S-092-182032_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 22000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-092-182032_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-092-182032_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-092-182032_Mediator_PMKvGTWSa3gLdxRfJtvToM,
+    epd:id_2017-S-092-182032_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2017-S-092-182032_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2017-S-092-182032_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-092-182032_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2017-05-11"^^xsd:date;
+  epo:hasID epd:id_2017-S-092-182032_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20170513";
+  epo:refersToLot epd:id_2017-S-092-182032_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2017-S-092-182032_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-092-182032_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 092-182032" .
+
+epd:id_2017-S-092-182032_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR825>;
+  locn:postCode "83412";
+  locn:postName "Hyères";
+  locn:thoroughfare "12 avenue Joseph Clotis" .
+
+epd:id_2017-S-092-182032_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "21830069700016" .
+
+epd:id_2017-S-092-182032_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2017-S-092-182032_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Commune d'Hyères-les-Palmiers"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-092-182032_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-092-182032_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "D02/17" .
+
+epd:id_2017-S-092-182032_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/98351000> .
+
+epd:id_2017-S-092-182032_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-092-182032_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+Pour retrouver cet avis intégral, poser des questions à l'acheteur, allez sur http://www.marchespublics.hyeres.fr
+Procédure régie par l'ordonnance concession no 2016-65 du 29.1.2016 et le décret d'application no 2016-86 du 1.2.2016, par les articles L.1411-1 et s. et R.1411-1 et s. du code général des collectivités territoriales.
+Date d'entrée en vigueur du contrat prévue pour le 1.1.2018; une période préparatoire sera organisée.
+Candidats sélectionnés au regard de leurs garanties professionnelles et financières, de leur aptitude à assurer l'égalité des usagers devant le service public ainsi que la continuité de celui-ci et de leur respect de l'obligation d'emploi des travailleurs handicapés (L 5212-1 à 4 du code du travail). Langue française, monnaie EUR.
+Modalités de dépôt du dossier de candidature: cf. règlement de la consultation de la candidature disponible sur le profil acheteur.
+"""@fr;
+  epo:hasDescription """
+Objet du contrat: réalisation d'investissements, exploitation et gestion de parcs en ouvrage: parc aérien Gambetta (443 pl, 3 niveaux), parcs souterrains Clémenceau (417 pl, 4 niveaux) et Casino (435 pl, 3 niveaux). Missions confiées au délégataire porteront notamment sur:
+— l'exploitation et la gestion de l'ensemble des 3 parcs,
+— la réalisation d'investissements de modernisation et d'amélioration du confort des usagers (cf. Détail au RC de la candidature),
+— le versement d'un droit d'entrée d'environ 1,700 000 d'EUR HT lié aux travaux de confortement de la dalle de surface du parking Clémenceau,
+— le maintien en parfait état de fonctionnement des biens et équipements mis à disposition,
+— la gestion et la formation du personnel,
+— la relation contractuelle et commerciale avec les usagers,
+— la communication nécessaire à la promotion du service.
+Le délégataire devra se rémunérer directement auprès des usagers, suivant les tarifs fixés dans le contrat.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2017-S-092-182032_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2017-S-092-182032_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-092-182032_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-092-182032_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+Commerce — délégation de service public pour la gestion et l'exploitation des parcs en ouvrage Gambetta, Clémenceau et casino de la Commune d'Hyères.
+"""@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-092-182032_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-092-182032_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-092-182032_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-092-182032_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-092-182032_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-092-182032_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "83041";
+  locn:postName "Toulon";
+  locn:thoroughfare "5 rue Racine" .
+
+epd:id_2017-S-092-182032_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 494427989";
+  epo:hasInternetAddress "http://toulon.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-toulon@juradm.fr";
+  cccev:telephone "+33 494427930" .
+
+epd:id_2017-S-092-182032_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Toulon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-092-182032_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2017-S-092-182032_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-092-182032_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-092-182032_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-092-182032_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 494427989";
+  epo:hasInternetAddress "http://toulon.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-toulon@juradm.fr";
+  cccev:telephone "+33 494427930" .
+
+epd:id_2017-S-092-182032_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "83041";
+  locn:postName "Toulon";
+  locn:thoroughfare "5 rue Racine" .
+
+epd:id_2017-S-092-182032_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Toulon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-092-182032_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2017-S-092-182032_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-092-182032_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-092-182032_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-092-182032_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2017-S-092-182032_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR825>;
+  locn:postCode "83400";
+  locn:postName "Hyères";
+  locn:thoroughfare "12 avenue Joseph Clotis — hôtel de Ville, 3ème étage, [Pli cacheté en Rar avec indication de l'objet, et la mention ne pas ouvrir]" .
+
+epd:id_2017-S-092-182032_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.marchespublics.hyeres.fr"^^xsd:anyURI;
+  cccev:email "marches.publics@mairie-hyeres.com" .
+
+epd:id_2017-S-092-182032_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Commune de Hyères-les-Palmiers: service de la commande publique"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-092-182032_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2017-S-092-182032_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2017-S-092-182032_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-092-182032_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2017-S-092-182032_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

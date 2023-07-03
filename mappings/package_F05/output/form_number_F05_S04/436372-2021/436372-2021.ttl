@@ -1,0 +1,123 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-166-436372_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://tendsign.com/doc.aspx?UniqueId=affqpjjhxs&GoTo=Docs"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-166-436372_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-166-436372_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-166-436372_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-166-436372_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Roger Larsson"@sv;
+  epo:hasInternetAddress "http://www.uppsalavatten.se"^^xsd:anyURI;
+  cccev:email "roger.larsson@uppsalavatten.se" .
+
+epd:id_2021-S-166-436372_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Uppsala"@sv .
+
+epd:id_2021-S-166-436372_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SE121>;
+  locn:address epd:id_2021-S-166-436372_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-166-436372_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-166-436372_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-166-436372_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-166-436372_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-166-436372_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/32420000>, <http://data.europa.eu/cpv/cpv/32422000>,
+    <http://data.europa.eu/cpv/cpv/48210000>, <http://data.europa.eu/cpv/cpv/48820000>,
+    <http://data.europa.eu/cpv/cpv/72200000>, <http://data.europa.eu/cpv/cpv/72212210>,
+    <http://data.europa.eu/cpv/cpv/72220000>, <http://data.europa.eu/cpv/cpv/72700000> .
+
+epd:id_2021-S-166-436372_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-166-436372_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Datacenter för dricksvattenverken i Gränby och Bäcklösa samt Kungsängsverket och biogasanläggningen."@sv;
+  epo:hasPurpose epd:id_2021-S-166-436372_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-166-436372_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-166-436372_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-166-436372_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-166-436372_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-166-436372_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-166-436372_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-08-24"^^xsd:date;
+  epo:hasID epd:id_2021-S-166-436372_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210827";
+  epo:refersToLot epd:id_2021-S-166-436372_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-166-436372_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-166-436372_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 166-436372" .
+
+epd:id_2021-S-166-436372_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SWE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SE121>;
+  locn:postCode "754 50";
+  locn:postName "UPPSALA";
+  locn:thoroughfare "Uppsala Business Park" .
+
+epd:id_2021-S-166-436372_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "556025-0051" .
+
+epd:id_2021-S-166-436372_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2021-S-166-436372_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Uppsala Vatten och Avfall AB"@sv;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2021-S-166-436372_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-166-436372_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2021-12-01"^^xsd:date;
+  epo:hasEnd "2022-11-30"^^xsd:date .
+
+epd:id_2021-S-166-436372_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "UVA-2021-00672" .
+
+epd:id_2021-S-166-436372_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/72222300> .
+
+epd:id_2021-S-166-436372_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-166-436372_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Mercell annons: https://opic.com/id/affqpjjhxs"@sv;
+  epo:hasDescription "Datacenter för dricksvattenverken i Gränby och Bäcklösa samt Kungsängsverket och biogasanläggningen."@sv;
+  epo:hasID epd:id_2021-S-166-436372_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/comp-dial>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-166-436372_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-166-436372_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Datacenter dricksvattenverken, Kungsängsverket och biogasen"@sv;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-166-436372_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-166-436372_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-166-436372_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-166-436372_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-166-436372_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-166-436372_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SWE>;
+  locn:postName "Uppsala" .
+
+epd:id_2021-S-166-436372_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Förvaltningsrätten"@sv;
+  cccev:registeredAddress epd:id_2021-S-166-436372_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-166-436372_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-166-436372_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-166-436372_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "SV";
+  epo:hasSubmissionURL "https://tendsign.com/doc.aspx?UniqueId=affqpjjhxs&GoTo=Tender"^^xsd:anyURI .

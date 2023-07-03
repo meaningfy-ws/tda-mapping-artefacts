@@ -1,0 +1,200 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-027-067842_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://ezak.brno.cz"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-027-067842_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://ezak.brno.cz"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-027-067842_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-027-067842_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-027-067842_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "MT Legal, s.r.o, advokátní kancelář, Jakubská 121/1, 602 00 Brno"@cs;
+  epo:hasInternetAddress "https://www.brno.cz/"^^xsd:anyURI;
+  cccev:email "vz@mt-legal.com";
+  cccev:telephone "+420 542210351" .
+
+epd:id_2021-S-027-067842_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Stávající areál společnosti Veletrhy Brno, a.s., katastrálním území Pisárky (západní část)."@cs .
+
+epd:id_2021-S-027-067842_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CZ064>;
+  locn:address epd:id_2021-S-027-067842_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-027-067842_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-027-067842_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-027-067842_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-027-067842_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEPayment true .
+
+epd:id_2021-S-027-067842_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 180.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-027-067842_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "Veronika Ichová, Dis."@cs;
+  epo:hasInternetAddress "www.brno.cz"^^xsd:anyURI;
+  cccev:email "vz@mt-legal.com";
+  cccev:telephone "+420 542210351" .
+
+epd:id_2021-S-027-067842_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CZ064>;
+  locn:postCode "602 00";
+  locn:postName "Brno";
+  locn:thoroughfare "Jakubská 121/1" .
+
+epd:id_2021-S-027-067842_InformationProviderOrganisationIdentifier_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:Identifier;
+  epo:hasIdentifierValue "28305043" .
+
+epd:id_2021-S-027-067842_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasID epd:id_2021-S-027-067842_InformationProviderOrganisationIdentifier_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:hasLegalName "MT Legal, s.r.o., advokátní kancelář"@cs;
+  cccev:registeredAddress epd:id_2021-S-027-067842_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2021-S-027-067842_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/79950000>, <http://data.europa.eu/cpv/cpv/79952100>,
+    <http://data.europa.eu/cpv/cpv/92610000>, <http://data.europa.eu/cpv/cpv/98351000> .
+
+epd:id_2021-S-027-067842_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-027-067842_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Předpokládaná hodnota koncese činí 3 406 000 000 až 4 552 000 000 CZK bez DPH. 180 měsíců je předpokládaná doba trvání koncese (uvedené bude předmětem jednání s účastníky)."@cs;
+  epo:hasDescription "Předmětem veřejné zakázky, která je koncesí, je provozování plánované Multifunkční sportovní a kulturní haly v Brně (dále jen „hala\") na pozemcích, které jsou v době zahájení koncesního řízení součástí areálu vlastněného společností Veletrhy Brno, a.s. Hala má sloužit především k účelům sportovním (využitelná například pro lední hokej, sledge hokej, florbal, házená, basketbal, volejbal, tenis, malý fotbal, futsal, box, ostatní úpolové sporty aj.), kulturním (koncertní či divadelní představení aj.) a vzdělávacím (pořádání konferencí)."@cs;
+  epo:hasEstimatedValue epd:id_2021-S-027-067842_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-027-067842_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-027-067842_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 4552000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/CZK> .
+
+epd:id_2021-S-027-067842_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 4552000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/CZK> .
+
+epd:id_2021-S-027-067842_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-027-067842_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-027-067842_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2021-S-027-067842_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2021-S-027-067842_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2021-S-027-067842_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2021-02-04"^^xsd:date;
+  epo:hasID epd:id_2021-S-027-067842_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210209";
+  epo:refersToLot epd:id_2021-S-027-067842_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2021-S-027-067842_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-027-067842_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 027-067842" .
+
+epd:id_2021-S-027-067842_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CZ064>;
+  locn:postCode "602 00";
+  locn:postName "Brno";
+  locn:thoroughfare "Dominikánské nám. 196/1" .
+
+epd:id_2021-S-027-067842_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "44992785" .
+
+epd:id_2021-S-027-067842_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2021-S-027-067842_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Statutární město Brno"@cs;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-027-067842_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-027-067842_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79993000> .
+
+epd:id_2021-S-027-067842_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-027-067842_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Zakázka je zadávána dvěma zadavateli společně. Prvním zadavatelem je Statutární město Brno, se sídlem Dominikánské nám. 196/1, Brno-město, 602 00 Brno, IČO: 44992785, druhým zadavatelem je společnost Arena Brno, a.s., se sídlem Výstaviště 405/1, Pisárky, 603 00 Brno, IČO: 90133267."@cs;
+  epo:hasDescription "Předmětem veřejné zakázky, která je koncesí, je provozování plánované Multifunkční sportovní a kulturní haly v Brně (dále jen „hala\") na pozemcích, které jsou v době zahájení koncesního řízení součástí areálu vlastněného společností Veletrhy Brno, a.s. Hala má sloužit především k účelům sportovním (využitelná například pro lední hokej, sledge hokej, florbal, házená, basketbal, volejbal, tenis, malý fotbal, futsal, box, ostatní úpolové sporty aj.), kulturním (koncertní či divadelní představení aj.) a vzdělávacím (pořádání konferencí)."@cs;
+  epo:hasEstimatedValue epd:id_2021-S-027-067842_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-027-067842_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-027-067842_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Provozovatel Multifunkční sportovní a kulturní haly v Brně"@cs;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-027-067842_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-027-067842_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2021-S-027-067842_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2021-S-027-067842_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-027-067842_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2021-S-027-067842_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2021-S-027-067842_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
+  locn:postCode "604 55";
+  locn:postName "Brno";
+  locn:thoroughfare "tř. Kpt. Jaroše 7" .
+
+epd:id_2021-S-027-067842_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+420 542167112";
+  epo:hasInternetAddress "https://www.uohs.cz/"^^xsd:anyURI;
+  cccev:email "posta@uohs.cz";
+  cccev:telephone "+420 542167111" .
+
+epd:id_2021-S-027-067842_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Úřad pro ochranu hospodářské soutěže"@cs;
+  epo:hasPrimaryContactPoint epd:id_2021-S-027-067842_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2021-S-027-067842_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-027-067842_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-027-067842_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-027-067842_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Podmínkou pro podání návrhu k ÚOHS je podání námitek k Zadavateli, které je nutné doručit do 15 dnů ode dne, kdy se stěžovatel dozvěděl o domnělém porušení zákona Zadavatelem, nejpozději však do uzavření smlouvy nebo do chvíle, kdy se soutěž o návrh považuje po výběru návrhu za ukončenou.Námitky proti úkonům oznamovaným v dokumentech, které je Zadavatel povinen podle zákona uveřejnit či odeslat stěžovateli, musí být doručeny Zadavateli do 15 dnů od jejich uveřejnění či doručení stěžovateli.Pokud je v zadávacím řízení stanovena lhůta pro podání žádostí o účast, musí být námitky proti podmínkám vztahujícím se ke kvalifikaci dodavatele doručeny Zadavateli nejpozději do skončení této lhůty.Pokud je v zadávacím řízení stanovena lhůta pro podání nabídek, musí být námitky proti zadávací dokumentaci doručeny Zadavateli nejpozději do skončení této lhůty, v případě jednacího řízení s uveřejněním musí být námitky proti zadávací dokumentaci doručeny Zadavateli nejpozději do skončení lhůty pro podání předběžných nabídek.Námitky proti dobrovolnému oznámení o záměru uzavřít smlouvu podle § 212 odst. 2 zákona musí být doručeny Zadavateli do 30 dnů od uveřejnění tohoto oznámení.Zadavatel je povinen námitky vyřídit do 15 dnů. Návrh je nutné doručit ÚOHS i Zadavateli do 10 dnů ode dne, v němž stěžovatel obdržel rozhodnutí, kterým Zadavatel námitky odmítl nebo do 25 dnů od odeslání námitek, pokud Zadavatel o námitkách nerozhodl.Po uzavření smlouvy na veřejnou zakázku či rámcové dohody lze podat pouze návrh na uložení zákazu plnění smlouvy, a to i bez předchozího podání námitek. Návrh na uložení zákazu plnění smlouvy doručí navrhovatel ÚOHS a ve stejnopisu Zadavateli do 1 měsíce ode dne, kdy Zadavatel uveřejnil oznámení o uzavření smlouvy způsobem podle § 212 odst. 2 zákona s uvedením důvodu pro zadání veřejné zakázky bez uveřejnění oznámení o zahájení zadávacího řízení, předběžného oznámení nebo výzvy k podání nabídek ve zjednodušeném podlimitním řízení, nejpozději však do 6 měsíců od uzavření této smlouvy. Návrh na uložení zákazu plnění smlouvy podle § 254 odstavce 1 písm. d) zákona doručí navrhovatel ÚOHS a ve stejnopisu Zadavateli do 1 měsíce ode dne, kdy Zadavatel uveřejnil oznámení o uzavření smlouvy na základě rámcové dohody podle § 137 zákona nebo oznámení o uzavření smlouvy v dynamickém nákupním systému podle § 142 zákona, nejpozději však do 6 měsíců od uzavření této smlouvy.Ve lhůtě pro doručení návrhu je navrhovatel povinen složit na účet ÚOHS kauci ve výši 1 % z nabídkové ceny navrhovatele za celou dobu plnění veřejné zakázky nebo za dobu prvních čtyř let plnění v případě smluv na dobu neurčitou, nejméně však ve výši 50 000 českých korun (CZK), nejvýše ve výši 10 000 000 CZK. V případě, že navrhovatel nemůže stanovit celkovou nabídkovou cenu, je povinen složit kauci ve výši 100 000 CZK. V případě návrhu na uložení zákazu plnění smlouvy je navrhovatel povinen složit kauci ve výši 200 000 CZK. Jde-li o řízení o přezkoumání postupu pro zadávání koncesí, je navrhovatel povinen ve lhůtě pro doručení návrhu složit na účet ÚOHS kauci ve výši 1 % z předpokládané hodnoty koncese uveřejněné ve Věstníku veřejných zakázek nebo na profilu Zadavatele, nejméně však ve výši 50 000 CZK, nejvýše ve výši 10 000 000 CZK. V případě, že Zadavatel neuveřejní ve Věstníku veřejných zakázek nebo na profilu Zadavatele předpokládanou hodnotu koncese, je navrhovatel povinen složit kauci ve výši 100 000 CZK. V případě návrhu na uložení zákazu plnění koncesní smlouvy je navrhovatel povinen složit kauci ve výši 200 000 CZK." .
+
+epd:id_2021-S-027-067842_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+420 542167112";
+  epo:hasInternetAddress "https://www.uohs.cz/"^^xsd:anyURI;
+  cccev:email "posta@uohs.cz";
+  cccev:telephone "+420 542167111" .
+
+epd:id_2021-S-027-067842_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
+  locn:postCode "604 55";
+  locn:postName "Brno";
+  locn:thoroughfare "tř. Kpt. Jaroše 7" .
+
+epd:id_2021-S-027-067842_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Úřad pro ochranu hospodářské soutěže"@cs;
+  epo:hasPrimaryContactPoint epd:id_2021-S-027-067842_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2021-S-027-067842_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-027-067842_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-027-067842_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-027-067842_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "CS", "SK";
+  epo:hasSubmissionURL "https://ezak.brno.cz"^^xsd:anyURI .
+
+epd:id_2021-S-027-067842_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-027-067842_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-027-067842_Organisation_jXahEP38X6pEFgd4J9tLvF .

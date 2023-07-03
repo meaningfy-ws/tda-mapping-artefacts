@@ -1,0 +1,213 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-152-373055_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://portail-achats.enedis.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2020-S-152-373055_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "http://portail-achats.enedis.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2020-S-152-373055_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2020-S-152-373055_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-152-373055_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Enedis — PFA de Paris — Mohammed Bouabdallah"@fr;
+  epo:hasInternetAddress "http://www.enedis.fr"^^xsd:anyURI;
+  cccev:email "mohammed.bouabdallah@enedis.fr";
+  cccev:telephone "+33 181976559" .
+
+epd:id_2020-S-152-373055_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Le lot est défini par les communes de la 1re Couronne Nord de Paris."@fr .
+
+epd:id_2020-S-152-373055_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq a locn:Address;
+  locn:fullAddress "Le lot est défini par les communes de la 1re Couronne Sud Est de Paris."@fr .
+
+epd:id_2020-S-152-373055_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR106>;
+  locn:address epd:id_2020-S-152-373055_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2020-S-152-373055_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR107>;
+  locn:address epd:id_2020-S-152-373055_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2020-S-152-373055_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-152-373055_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-152-373055_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "La durée du marché mentionnée à la rubrique II.2.7) comprend l'option de durée (24 mois fermes + douze mois en option)."@fr .
+
+epd:id_2020-S-152-373055_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-152-373055_Duration_Pn7seLvJsSm7d5S9iCwt2c;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-152-373055_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "La durée du marché mentionnée à la rubrique II.2.7) comprend l'option de durée (24 mois fermes + douze mois en option)."@fr .
+
+epd:id_2020-S-152-373055_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2020-S-152-373055_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-152-373055_Duration_Pn7seLvJsSm7d5S9iCwt2c a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-152-373055_FrameworkAgreementTechniqueUsage_42ewgEwxZiroeKCXpa2kAY a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2020-S-152-373055_FrameworkAgreementTerm_42ewgEwxZiroeKCXpa2kAY a epo:FrameworkAgreementTerm .
+
+epd:id_2020-S-152-373055_LotIdentifier_aNssKXiFyYxii2v93ivV4N a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2020-S-152-373055_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2020-S-152-373055_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45232200> .
+
+epd:id_2020-S-152-373055_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45232200> .
+
+epd:id_2020-S-152-373055_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-152-373055_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation "Le montant indiqué au II.2.6) du lot 1 Nord constitue la valeur haute de l'estimation du montant du lot 1 Nord sur la durée maximale du marché (option de durée comprise).Le montant du lot est en effet estimé entre 3 600 000 EUR et 5 625 000 EUR HT."@fr;
+  epo:hasDescription "Les travaux portent sur la création, la réparation, la modification et la suppression des branchements électriques, tant en souterrain, qu'en aéro-souterrain, qu'en aérien ou en dérivation individuelle."@fr;
+  epo:hasEstimatedValue epd:id_2020-S-152-373055_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasID epd:id_2020-S-152-373055_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2020-S-152-373055_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:hasTitle "1re Couronne Nord"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-152-373055_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-152-373055_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasAdditionalInformation "Le montant indiqué au II.2.6) du lot 2 Sud constitue la valeur haute de l'estimation du montant du lot 2 Sud sur la durée maximale du marché (option de durée comprise).Le montant du lot est en effet estimé entre 3 600 000 EUR et 5 625 000 EUR HT."@fr;
+  epo:hasDescription "Les travaux portent sur la création, la réparation, la modification et la suppression des branchements électriques, tant en souterrain, qu'en aéro-souterrain, qu'en aérien ou en dérivation individuelle."@fr;
+  epo:hasEstimatedValue epd:id_2020-S-152-373055_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasID epd:id_2020-S-152-373055_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2020-S-152-373055_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasTitle "1re Couronne Sud"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-152-373055_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 5940000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-152-373055_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq a epo:MonetaryValue;
+  epo:hasAmountValue 5625000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-152-373055_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 12375000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-152-373055_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2020-S-152-373055_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2020-S-152-373055_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2020-S-152-373055_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2020-S-152-373055_Reviewer_K99XaY97dQrtEEJSTmwy9e;
+  epo:hasDispatchDate "2020-08-04"^^xsd:date;
+  epo:hasID epd:id_2020-S-152-373055_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20200807";
+  epo:refersToLot epd:id_2020-S-152-373055_Lot_aNssKXiFyYxii2v93ivV4N, epd:id_2020-S-152-373055_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:refersToProcedure epd:id_2020-S-152-373055_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2020-S-152-373055_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 152-373055" .
+
+epd:id_2020-S-152-373055_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "92079";
+  locn:postName "Paris La Défense";
+  locn:thoroughfare "34 place des Corolles" .
+
+epd:id_2020-S-152-373055_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "Enedis"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2020-S-152-373055_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-152-373055_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45231400> .
+
+epd:id_2020-S-152-373055_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2020-S-152-373055_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-152-373055_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation "Les candidats sont invités à manifester leur intérêt, prendre connaissance de documents, et fournir l'ensemble des informations demandées dans le présent avis via le portail achats d'Enedis, en respectant la date et heure limites précisée au IV.2.2). En cas de manquement, l'entité adjudicatrice se réserve le droit de rejeter la demande de participation. Les candidats sont invités à s'enregistrer au préalable, si ce n'est pas déjà le cas, dans le portail achat. Afin de se porter candidat, se connecter sur le portail achat https://portail-achats.enedis.fr et rechercher la demande d'information RFx089294 afin de compléter le questionnaire et y déposer les documents requis. Pour tout renseignement relatif au portail achats, contacter le centre support et assistance Ivalua: du lundi au vendredi de 08h00 à 18h00 CET (heures françaises). Tél.: +33 184770026 ou par courrier électronique: support-edf@ivalua.com.La consultation sera lancée via le portail achat: https://portail-achats.enedis.fr/."@fr;
+  epo:hasDescription "Les travaux portent sur la création, la réparation, la modification et la suppression des branchements électriques, tant en souterrain, qu'en aéro-souterrain, qu'en aérien ou en dérivation individuelle sur la DR IDF Est."@fr;
+  epo:hasEstimatedValue epd:id_2020-S-152-373055_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-152-373055_Lot_aNssKXiFyYxii2v93ivV4N,
+    epd:id_2020-S-152-373055_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2020-S-152-373055_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Marché TG de branchements individuels programmés sur le territoire de la DR IDF Est — 1re couronne"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-152-373055_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2020-S-152-373055_FrameworkAgreementTerm_42ewgEwxZiroeKCXpa2kAY, epd:id_2020-S-152-373055_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY,
+    epd:id_2020-S-152-373055_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY;
+  epo:usesTechnique epd:id_2020-S-152-373055_FrameworkAgreementTechniqueUsage_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2020-S-152-373055_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-152-373055_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2020-S-152-373055_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-152-373055_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postName "Nanterre";
+  locn:thoroughfare "179-191 avenue Joliot-Curie" .
+
+epd:id_2020-S-152-373055_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.tgi-nanterre.justice.fr"^^xsd:anyURI;
+  cccev:telephone "+33 140971010" .
+
+epd:id_2020-S-152-373055_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Tribunal judiciaire de Nanterre"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-152-373055_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2020-S-152-373055_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2020-S-152-373055_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2020-S-152-373055_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2020-S-152-373055_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.tgi-nanterre.justice.fr"^^xsd:anyURI;
+  cccev:telephone "+33 140971010" .
+
+epd:id_2020-S-152-373055_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "92020";
+  locn:postName "Nanterre" .
+
+epd:id_2020-S-152-373055_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Tribunal judiciaire de Nanterre"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-152-373055_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2020-S-152-373055_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2020-S-152-373055_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-152-373055_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2020-S-152-373055_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasReceiptExpressionDeadline "2020-08-31T14:00";
+  epo:hasSubmissionURL "https://portail-achats.enedis.fr"^^xsd:anyURI .

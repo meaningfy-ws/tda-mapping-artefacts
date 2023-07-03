@@ -1,0 +1,220 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-089-239677_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://lyceefrancais.at/marches-publics/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-089-239677_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38 a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-089-239677_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38;
+  epo:playedBy epd:id_2022-S-089-239677_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2022-S-089-239677_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38 a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.aefe.fr"^^xsd:anyURI;
+  cccev:email "cedric.bocquel@diplomatie.gouv.fr" .
+
+epd:id_2022-S-089-239677_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 a org:Organization;
+  epo:hasLegalName "aefe"@fr;
+  cccev:registeredAddress epd:id_2022-S-089-239677_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2022-S-089-239677_AwardCriterionPrice_RBGYEez98Pij3NLYxwzMz2 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "70%"@fr .
+
+epd:id_2022-S-089-239677_AwardCriterionQuality_YZXD7WV7JGFCGNp9JGA6N4 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Consommation électrique"@fr;
+  cccev:weight "20%"@fr .
+
+epd:id_2022-S-089-239677_AwardCriterionQuality_hnx7sMdiDMXApZ44keZgLk a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Délai de livraison"@fr;
+  cccev:weight "10%"@fr .
+
+epd:id_2022-S-089-239677_BuyerOrganisationGroup_5ZAqFrPEQTFNv88ScKSm38 a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/education>;
+  epo:hasMember epd:id_2022-S-089-239677_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2022-S-089-239677_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-089-239677_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-089-239677_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-089-239677_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-089-239677_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Intendance"@fr;
+  epo:hasInternetAddress "https://lyceefrancais.at/"^^xsd:anyURI;
+  cccev:email "comptabilite@lyceefrancais.at";
+  cccev:telephone "+43 3172241113" .
+
+epd:id_2022-S-089-239677_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "37a, rue du Liechtenstein 1090 Vienne "@fr .
+
+epd:id_2022-S-089-239677_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT130>;
+  locn:address epd:id_2022-S-089-239677_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-089-239677_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-089-239677_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-089-239677_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-089-239677_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true .
+
+epd:id_2022-S-089-239677_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-089-239677_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/30121100>, <http://data.europa.eu/cpv/cpv/30121200>,
+    <http://data.europa.eu/cpv/cpv/50313200> .
+
+epd:id_2022-S-089-239677_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-089-239677_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation "procédure retenue : appel d'offre ouvert"@fr;
+  epo:hasDescription "livraison, installation, location et maintenance d'imprimantes et de photocopieuses numériques neuves qui assurent la fonction d'imprimante, de scanner et de fax (multifonction), y compris les logiciels nécessaires, y compris les licences de logiciels"@fr;
+  epo:hasEstimatedValue epd:id_2022-S-089-239677_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2022-S-089-239677_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-089-239677_AwardCriterionPrice_RBGYEez98Pij3NLYxwzMz2,
+    epd:id_2022-S-089-239677_AwardCriterionQuality_YZXD7WV7JGFCGNp9JGA6N4, epd:id_2022-S-089-239677_AwardCriterionQuality_hnx7sMdiDMXApZ44keZgLk .
+
+epd:id_2022-S-089-239677_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 600000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-089-239677_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.aefe.fr/"^^xsd:anyURI;
+  cccev:telephone "+33 153693090" .
+
+epd:id_2022-S-089-239677_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75014";
+  locn:postName "Paris";
+  locn:thoroughfare "23 place de Catalogne" .
+
+epd:id_2022-S-089-239677_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J a org:Organization;
+  epo:hasLegalName "aefe"@fr;
+  epo:hasPrimaryContactPoint epd:id_2022-S-089-239677_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J;
+  cccev:registeredAddress epd:id_2022-S-089-239677_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2022-S-089-239677_Mediator_2t4SUwdC66NGJuVrEY4e6J a epo:Mediator;
+  epo:playedBy epd:id_2022-S-089-239677_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2022-S-089-239677_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 600000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-089-239677_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-089-239677_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2022-S-089-239677_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2022-S-089-239677_Mediator_2t4SUwdC66NGJuVrEY4e6J,
+    epd:id_2022-S-089-239677_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2022-S-089-239677_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2022-S-089-239677_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2022-05-03"^^xsd:date;
+  epo:hasID epd:id_2022-S-089-239677_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220506";
+  epo:refersToLot epd:id_2022-S-089-239677_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2022-S-089-239677_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2022-S-089-239677_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 089-239677" .
+
+epd:id_2022-S-089-239677_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75014";
+  locn:postName "Paris";
+  locn:thoroughfare "23 place de Catalogne" .
+
+epd:id_2022-S-089-239677_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT130>;
+  locn:postCode "1090A";
+  locn:postName "Vienne";
+  locn:thoroughfare "37a, rue du Liechtenstein" .
+
+epd:id_2022-S-089-239677_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "18000608200192" .
+
+epd:id_2022-S-089-239677_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasID epd:id_2022-S-089-239677_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "lycée français de Vienne"@fr;
+  cccev:registeredAddress epd:id_2022-S-089-239677_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-089-239677_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "202203" .
+
+epd:id_2022-S-089-239677_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/30121100> .
+
+epd:id_2022-S-089-239677_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw "France"@fr .
+
+epd:id_2022-S-089-239677_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-089-239677_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "appel d'offre ouvert"@fr;
+  epo:hasDescription "appel d'offre ouvert Location et maintenance photocopieurs et/ou imprimantes"@fr;
+  epo:hasEstimatedValue epd:id_2022-S-089-239677_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2022-S-089-239677_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-089-239677_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2022-S-089-239677_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "appel d'offre ouvert - marché photocopieurs et imprimantes"@fr;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-089-239677_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2022-S-089-239677_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG, epd:id_2022-S-089-239677_ReviewTerm_KjhWjVv578XNpvpTRjZhAs,
+    epd:id_2022-S-089-239677_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2022-S-089-239677_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-089-239677_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-089-239677_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-089-239677_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "pour une éventuelle procédure de recours, l'article L551-1 du Code de justice administrative 2020 (version consolidée au 1er janvier 2020) est applicable" .
+
+epd:id_2022-S-089-239677_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2022-S-089-239677_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2022-S-089-239677_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2022-S-089-239677_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2022-S-089-239677_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2022-S-089-239677_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-089-239677_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2022-S-089-239677_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "DE", "FR";
+  epo:hasReceiptExpressionDeadline "2022-06-05T23:59";
+  epo:hasSubmissionURL "https://cloud.lyceefrancais.at/index.php/s/iKN5nMKADAbN4xP"^^xsd:anyURI .
+
+epd:id_2022-S-089-239677_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-089-239677_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-089-239677_Organisation_gqoAAwSV3JaTMsopb9zyKP .

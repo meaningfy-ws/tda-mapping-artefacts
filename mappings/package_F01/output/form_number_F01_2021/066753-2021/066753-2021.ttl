@@ -1,0 +1,157 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-027-066753_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-027-066753_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-027-066753_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-027-066753_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasFax "+49 581-9463930";
+  epo:hasInternetAddress "https://waldmaerker.de/index.htm"^^xsd:anyURI;
+  cccev:email "office@waldmaerker.de";
+  cccev:telephone "+49 581-9463919" .
+
+epd:id_2021-S-027-066753_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Durchführung einer forstlichen Bodenschutzkalkung im Zuständigkeitsbereich des Forstamtes Uelzen der Landwirtschaftskammer Niedersachsen in den Bezirksförstereien Bodenteich, Boecke, Polau und Reinstorf Nord in den Landkreisen Uelzen und Lüneburg."@de .
+
+epd:id_2021-S-027-066753_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE935>;
+  locn:address epd:id_2021-S-027-066753_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-027-066753_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-027-066753_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-027-066753_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-027-066753_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-027-066753_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt a
+    cccev:ContactPoint;
+  epo:hasFax "+49 581-94639-30";
+  epo:hasInternetAddress "www.lwk-niedersachsen.de"^^xsd:anyURI;
+  cccev:email "martin.groffmann@lwk-niedersachsen.de";
+  cccev:telephone "+49 581-94639-14" .
+
+epd:id_2021-S-027-066753_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE93A>;
+  locn:postCode "29525";
+  locn:postName "Uelzen";
+  locn:thoroughfare "Wendlandstr. 10" .
+
+epd:id_2021-S-027-066753_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt a
+    org:Organization;
+  epo:hasLegalName "Landwirtschaftskammer Niedersachsen Forstamt Uelzen"@de;
+  cccev:registeredAddress epd:id_2021-S-027-066753_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2021-S-027-066753_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60440000>, <http://data.europa.eu/cpv/cpv/77200000> .
+
+epd:id_2021-S-027-066753_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-027-066753_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Durchführung einer forstlichen Bodenschutzkalkung mit Luftfahrzeugen in den Landkreisen Uelzen und Lüneburg im Zuständigkeitsbereich des LwK Forstamtes Uelzen auf ca. 750 ha. Die Leistung umfasst die Beschaffung und Anlieferung von kohlensaurem Magnesiumkalk einschließlich der Zwischenlagerung und Umschlag, ihre Ausbringung mit geeigneter Technik in gleichmäßiger Verteilung und geforderter Ausbringungsmenge gemäß Leistungsbeschreibung."@de;
+  epo:hasPurpose epd:id_2021-S-027-066753_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-027-066753_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-027-066753_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2021-S-027-066753_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-027-066753_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt,
+    epd:id_2021-S-027-066753_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2021-S-027-066753_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2021-02-04"^^xsd:date;
+  epo:hasID epd:id_2021-S-027-066753_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210209";
+  epo:refersToLot epd:id_2021-S-027-066753_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-027-066753_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-027-066753_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 027-066753" .
+
+epd:id_2021-S-027-066753_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE93A>;
+  locn:postCode "29525";
+  locn:postName "Uelzen";
+  locn:thoroughfare "Wendlandstr. 10" .
+
+epd:id_2021-S-027-066753_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Forstwirtschaftliche Vereinigung";
+  epo:hasLegalName "Forstwirtschaftliche Vereinigung Lüneburg GmBH"@de;
+  epo:hasMainActivityDescription "Forstwirtschaft";
+  cccev:registeredAddress epd:id_2021-S-027-066753_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-027-066753_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2021-07-26"^^xsd:date;
+  epo:hasEnd "2021-10-16"^^xsd:date .
+
+epd:id_2021-S-027-066753_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-027-066753_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-027-066753_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "4/20202/00015" .
+
+epd:id_2021-S-027-066753_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/77200000> .
+
+epd:id_2021-S-027-066753_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-027-066753_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "Bekanntmachungs-ID: CXQ6YD1YTQ6"@de;
+  epo:hasDescription "Durchführung einer forstlichen Bodenschutzkalkung mit Luftfahrzeugen im Zuständigkeitsbereich der Forstwirtschaftlichen Vereinigung Lüneburg GmbH auf Flächen in Bezirksförstereien des Forstamtes Uelzen der Landwirtschaftskammer Niedersachsen."@de;
+  epo:hasID epd:id_2021-S-027-066753_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-027-066753_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-027-066753_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Durchführung einer Bodenschutzkalkung mit Luftfahrzeugen"@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-027-066753_ReviewTerm_KjhWjVv578XNpvpTRjZhAs,
+    epd:id_2021-S-027-066753_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2021-S-027-066753_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-05-17"^^xsd:date .
+
+epd:id_2021-S-027-066753_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-027-066753_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt;
+  epo:playedBy epd:id_2021-S-027-066753_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2021-S-027-066753_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Ein Nachprüfungsantrag ist unzulässig, soweit mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind (§ 160 Abs. 3 Satz 1 Nr. 4 GWB). Ein Nachprüfungsantrag ist zudem unzulässig, wenn der Zuschlag erfolgt ist, bevor die Vergabekammer den Auftraggeber über den Antrag auf Nachprüfung informiert hat (§§ 168 Abs. 2 Satz 1, 169 Abs.1GWB). Die Zuschlagserteilung ist möglich 15 Kalendertage nach Absendung der Bieterinformation nach § 134 Abs. 1 GWB. Wird die Information auf elektronischem Weg oder per Fax versendet, verkürzt sich die Frist auf 10 Kalendertage (§ 134 Abs. 2 GWB). Die Frist beginnt am Tag nach der Absendung der Information durch den Auftraggeber; auf den Tag des Zugangs beim betroffenen Bieter und Bewerber kommt es nicht an. Die Zulässigkeit eines Nachprüfungsantrags setzt ferner voraus, dass die geltend gemachten Vergabeverstöße 10 Kalendertage nach Kenntnis gerügt wurden (§ 160 Abs. 3 Satz 1 Nr. 1 GWB). Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, müssen spätestens bis zum Ablauf der in der Bekanntmachung benannten Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden (§ 160 Abs. 3 Satz 1 Nr. 2 GWB). Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, müssen spätestens bis zum Ablauf der Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden (§ 160 Abs. 3 Satz 1 Nr. 3 GWB)." .
+
+epd:id_2021-S-027-066753_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+49 413115-2943";
+  cccev:telephone "+49 413115-1334" .
+
+epd:id_2021-S-027-066753_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "21339";
+  locn:postName "Lüneburg";
+  locn:thoroughfare "Auf der Hude 2" .
+
+epd:id_2021-S-027-066753_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Vergabekammer Niedersachsen beim Nds. Ministerium für Wirtschaft, Arbeit und Verkehr"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-027-066753_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2021-S-027-066753_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-027-066753_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-027-066753_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-027-066753_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasSubmissionURL "https://vergabe.niedersachsen.de/Satellite/notice/CXQ6YD1YTQ6"^^xsd:anyURI .
+
+epd:id_2021-S-027-066753_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-027-066753_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-027-066753_Organisation_gqoAAwSV3JaTMsopb9zyKP .

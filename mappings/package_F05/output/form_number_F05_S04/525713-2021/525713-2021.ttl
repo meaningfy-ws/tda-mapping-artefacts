@@ -1,0 +1,160 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-201-525713_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://kelag.vemap.com/home/bekannt/anzeigen.html?annID=395"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-201-525713_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-201-525713_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://kelag.vemap.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-201-525713_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-201-525713_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-201-525713_Channel_cW7StLx8qUnGYzx322HBZC a cccev:Channel;
+  epo:hasURL "http://kelag.vemap.com"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2021-S-201-525713_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Katja Fratschko"@de;
+  epo:hasFax "+43 463525951331";
+  epo:hasInternetAddress "http://www.kelag.at"^^xsd:anyURI;
+  cccev:email "katja.fratschko@kelag.at";
+  cccev:telephone "+43 4635251331" .
+
+epd:id_2021-S-201-525713_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Österreich"@de .
+
+epd:id_2021-S-201-525713_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT>;
+  locn:address epd:id_2021-S-201-525713_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-201-525713_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-201-525713_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-201-525713_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-201-525713_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-201-525713_DynamicPurchaseSystemTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G
+  a epo:DynamicPurchaseSystemTechniqueUsage .
+
+epd:id_2021-S-201-525713_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-201-525713_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Dynamisches Beschaffungssystem für Druck, Lieferung bzw. Postaufgabe von diversen Druckerzeugnissen für den KELAG-Konzern."@de;
+  epo:hasEstimatedValue epd:id_2021-S-201-525713_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-201-525713_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-201-525713_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
+
+epd:id_2021-S-201-525713_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 1100000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-201-525713_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 1100000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-201-525713_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-201-525713_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-201-525713_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-201-525713_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-201-525713_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-10-11"^^xsd:date;
+  epo:hasID epd:id_2021-S-201-525713_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20211015";
+  epo:refersToLot epd:id_2021-S-201-525713_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-201-525713_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-201-525713_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 201-525713" .
+
+epd:id_2021-S-201-525713_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT>;
+  locn:postCode "9010";
+  locn:postName "Klagenfurt";
+  locn:thoroughfare "Arnulfplatz 2, Postfach 176" .
+
+epd:id_2021-S-201-525713_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "KELAG-Kärntner Elektrizitäts-Aktiengesellschaft"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2021-S-201-525713_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-201-525713_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2021-10-12"^^xsd:date;
+  epo:hasEnd "2026-12-31"^^xsd:date .
+
+epd:id_2021-S-201-525713_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021-70" .
+
+epd:id_2021-S-201-525713_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/22900000> .
+
+epd:id_2021-S-201-525713_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2021-S-201-525713_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-201-525713_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription "Dynamisches Beschaffungssystem für den Druck, die Lieferung und Postaufgabe von diversen Druckerzeugnissen für den KELAG-Konzern."@de;
+  epo:hasEstimatedValue epd:id_2021-S-201-525713_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2021-S-201-525713_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-201-525713_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-201-525713_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Dynamisches Beschaffungssystem - Druckdienstleistungen"@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-201-525713_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-201-525713_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb, epd:id_2021-S-201-525713_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesChannel epd:id_2021-S-201-525713_Channel_cW7StLx8qUnGYzx322HBZC;
+  epo:usesTechnique epd:id_2021-S-201-525713_DynamicPurchaseSystemTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-201-525713_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-201-525713_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-201-525713_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-201-525713_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+43 4635435029";
+  epo:hasInternetAddress "http://www.lvwg.ktn.gv.at/"^^xsd:anyURI;
+  cccev:email "post.lvwg@ktn.gv.at";
+  cccev:telephone "+43 46354350" .
+
+epd:id_2021-S-201-525713_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  locn:postCode "9020";
+  locn:postName "Klagenfurt am Wörthersee";
+  locn:thoroughfare "Fromillerstraße 20" .
+
+epd:id_2021-S-201-525713_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Landesverwaltungsgericht Kärnten"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-201-525713_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-201-525713_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-201-525713_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-201-525713_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-201-525713_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "http://kelag.vemap.com"^^xsd:anyURI .

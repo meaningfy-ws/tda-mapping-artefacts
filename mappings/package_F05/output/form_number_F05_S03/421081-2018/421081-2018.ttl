@@ -1,0 +1,172 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-186-421081_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.marches-publics.info"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-186-421081_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "40"@fr .
+
+epd:id_2018-S-186-421081_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Valeur technique de l'offre"@fr;
+  cccev:weight "60"@fr .
+
+epd:id_2018-S-186-421081_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://www.marches-publics.info"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-186-421081_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-186-421081_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-186-421081_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasFax "+33 478531284";
+  epo:hasInternetAddress "http://www.sytral.fr"^^xsd:anyURI;
+  cccev:email "unitemarches@sytral.fr";
+  cccev:telephone "+33 472845800" .
+
+epd:id_2018-S-186-421081_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Communes de Lyon, d'Oullins et de Saint-Genis-Laval"@fr .
+
+epd:id_2018-S-186-421081_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK26>;
+  locn:address epd:id_2018-S-186-421081_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2018-S-186-421081_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-186-421081_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-186-421081_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "— l'acheteur se réserve la possibilité de conclure un ou des marchés publics négociés sans publicité ni mise en concurrence préalables pour la réalisation de prestations similaires avec le titulaire en application de l'article 30.I.7 du décret no 2016-360 du 25.3.2016."@fr .
+
+epd:id_2018-S-186-421081_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2018-S-186-421081_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 44.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-186-421081_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasFax "+33 478531284";
+  epo:hasInternetAddress "https://www.marches-publics.info"^^xsd:anyURI;
+  cccev:email "unitemarches@sytral.fr";
+  cccev:telephone "+33 472845800" .
+
+epd:id_2018-S-186-421081_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK26>;
+  locn:postCode "69487";
+  locn:postName "Lyon";
+  locn:thoroughfare "21 boulevard Vivier Merle, CS 63815" .
+
+epd:id_2018-S-186-421081_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasLegalName "Sytral: service des marchés"@fr;
+  cccev:registeredAddress epd:id_2018-S-186-421081_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2018-S-186-421081_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/31200000>, <http://data.europa.eu/cpv/cpv/42511000>,
+    <http://data.europa.eu/cpv/cpv/42521000>, <http://data.europa.eu/cpv/cpv/45311000> .
+
+epd:id_2018-S-186-421081_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-186-421081_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "— la présente consultation concerne les travaux de mise en œuvre des équipements de désenfumage associés à ce prolongement,— marché public ordinaire,— les prestations à réaliser dans le cadre de ce marché sont principalement:—— les prestations de désenfumage des nouveaux ouvrages tunnel, puits et stations, y compris les écrans de cantonnement mobiles de la station Oullins Centre,—— les modifications des installations de désenfumage existantes au niveau de la station Gare d'Oullins, de son arrière-gare et du puits Orsel,—— le renouvellement du système de commande contrôle désenfumage de Jean Macé à Gare d'Oullins."@fr;
+  epo:hasPurpose epd:id_2018-S-186-421081_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-186-421081_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ,
+    epd:id_2018-S-186-421081_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J .
+
+epd:id_2018-S-186-421081_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-186-421081_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2018-S-186-421081_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2018-S-186-421081_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2018-09-24"^^xsd:date;
+  epo:hasID epd:id_2018-S-186-421081_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20180927";
+  epo:refersToLot epd:id_2018-S-186-421081_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2018-S-186-421081_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2018-S-186-421081_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 186-421081" .
+
+epd:id_2018-S-186-421081_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK26>;
+  locn:postCode "69487";
+  locn:postName "Lyon";
+  locn:thoroughfare "21 boulevard Vivier Merle, CS 63815" .
+
+epd:id_2018-S-186-421081_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "25690099400011" .
+
+epd:id_2018-S-186-421081_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2018-S-186-421081_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Sytral"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2018-S-186-421081_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-186-421081_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "18s0201" .
+
+epd:id_2018-S-186-421081_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45331210> .
+
+epd:id_2018-S-186-421081_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-186-421081_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Les dépôts de plis doivent être impérativement remis par voie dématérialisée. Cette consultation bénéficie du service DUME. Pour retrouver cet avis intégral, accéder au DCE, poser des questions à l'acheteur, déposer un pli, allez sur https://www.marches-publics.info— le marché public pourra être attribué sur la base des offres initiales sans négociation,— le RC candidature apporte toutes les informations complémentaires au présent avis,— les informations relatives au paragraphe «Niveau(x) spécifique(s) minimal/minimaux exigé(s)» de l'article III.1.3 «Capacité technique et professionnelle» de cet avis sont les suivantes: —— seuil minimal exigé de capacité technique: capacité à fournir les services de 2 encadrants disposant de plus de 5 ans d'expérience en tant que chargé d'affaires désenfumage ou responsable d'études/responsable technique désenfumage sur des chantiers similaires, et susceptibles d'être mis en poste sur le présent chantier MBHLS. Cette capacité pourra être attestée par la fourniture de l'indication des titres d'études et professionnels du candidat ou des cadres de l'entreprise, et notamment des chargés d'affaire de même nature que celle du marché public (CV comportant: qualifications, expérience professionnelle, responsabilité sur chantier en cours),—— seuil minimal exigé de capacité professionnelle 1:——— capacité à réaliser des travaux d'installation d'équipements de désenfumage pour des ERP de 1re catégorie ainsi que pour des installations de transport sous exploitation (métro, tramway, ferroviaire) pour un montant de travaux supérieur à 5 000 000 EUR HT. Cette capacité pourra être attestée par la fourniture d'une sélection de références ou par tout moyen.—— seuil minimal exigé de capacité professionnelle 2:——— qualification qualifelec E3 classe supérieure ou égale à 3 mention AUT ou tout moyen de preuve équivalent,——— qualification qualifelec Cf1 classe supérieure ou égale à 3 mention FO ou tout moyen de preuve équivalent,— selon les dispositions de l'article 49 du décret no 2016-360 du 25.3.2016 relatif aux marchés publics, l'acheteur accepte que les candidats présentent leur candidature sous la forme d'un Document unique de marché européen (DUME) établi conformément au modèle fixé par le règlement d'exécution 2016/7 de la Commission européenne du 5.1.2016 établissant le formulaire type pour le document unique de marché européen en lieu et place de l'ensemble des documents et renseignements justifiant de leurs capacités. Dans ce cas, il est précisé que l'acheteur n'autorise pas les candidats à se limiter à indiquer dans le document unique de marché européen qu'ils disposent de l'aptitude et des capacités requises sans fournir d'informations particulières sur celles-ci. Le DUME devra obligatoirement être rédigé en français. Les candidats pourront présenter leur candidature sous la forme d'un DUME en suivant les instructions figurant en annexe du règlement de la consultation."@fr;
+  epo:hasDescription "— la présente consultation concerne les travaux de mise en œuvre des équipements de désenfumage associés à ce prolongement,— marché public ordinaire,— les prestations à réaliser dans le cadre de ce marché sont principalement:—— les prestations de désenfumage des nouveaux ouvrages tunnel, puits et stations, y compris les écrans de cantonnement mobiles de la station Oullins Centre,—— les modifications des installations de désenfumage existantes au niveau de la station Gare d'Oullins, de son arrière-gare et du puits Orsel,—— le renouvellement du système de commande contrôle désenfumage de Jean Macé à Gare d'Oullins."@fr;
+  epo:hasID epd:id_2018-S-186-421081_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-186-421081_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-186-421081_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Prolongement de la ligne B du métro aux hôpitaux Lyon Sud — lot désenfumage"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-186-421081_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2018-S-186-421081_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2018-S-186-421081_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2018-S-186-421081_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-186-421081_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2018-S-186-421081_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2018-S-186-421081_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Cf. Le greffe du tribunal administratif à l'adresse ci-dessus" .
+
+epd:id_2018-S-186-421081_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 478141065";
+  epo:hasInternetAddress "http://lyon.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-lyon@juradm.fr";
+  cccev:telephone "+33 478141010" .
+
+epd:id_2018-S-186-421081_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69433";
+  locn:postName "Lyon";
+  locn:thoroughfare "184 rue Duguesclin" .
+
+epd:id_2018-S-186-421081_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-186-421081_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2018-S-186-421081_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-186-421081_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-186-421081_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-186-421081_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.marches-publics.info"^^xsd:anyURI .

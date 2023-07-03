@@ -1,0 +1,214 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-120-274572_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://eu.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=214430&B=KA"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-120-274572_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-120-274572_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-120-274572_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-120-274572_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Nanna Eram Jensen"@en;
+  epo:hasInternetAddress "http://www.dsb.dk"^^xsd:anyURI;
+  cccev:email "naej@dsb.dk" .
+
+epd:id_2018-S-120-274572_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+                  Denmark
+               """@en .
+
+epd:id_2018-S-120-274572_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK>;
+  locn:address epd:id_2018-S-120-274572_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2018-S-120-274572_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-120-274572_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-120-274572_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+                  The Supply Agreement contains options for extension for further 4 years (2 times 2 years). The Maintenance Agreement contains options for extension for further 10 years (2 times 5 years).
+               """@en .
+
+epd:id_2018-S-120-274572_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2018-S-120-274572_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 408.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-120-274572_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2018-S-120-274572_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2018-S-120-274572_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34620000>, <http://data.europa.eu/cpv/cpv/34622000>,
+    <http://data.europa.eu/cpv/cpv/34622200>, <http://data.europa.eu/cpv/cpv/34630000>,
+    <http://data.europa.eu/cpv/cpv/34631000>, <http://data.europa.eu/cpv/cpv/50220000>,
+    <http://data.europa.eu/cpv/cpv/50222000> .
+
+epd:id_2018-S-120-274572_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-120-274572_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+                  The SA covers electric trainsets and interconnected deliverables (e.g. documentation, training incl. simulator solution, related IT systems and services). The SA has a minimum committed purchase of 100 trainsets and the possibility to acquire further trainsets and interconnected deliverables. The trainsets shall be self propelled electric trainsets for passenger transport in regional and fast services on the infrastructure in Denmark. It shall be possible to operate the trainsets coupled in multiple operation. It is expected that the trains will be required to provide levelled access from 550 mm platforms and provide functionality to support short travel times such as high operational speed, good acceleration and fast passenger exchange.
+                  The SA is expected to have a duration of 8 years with an option for extension for up to 4 years. Due to uncertainty regarding the infrastructure and operational needs and requirements, DSB needs to be able to acquire further trainsets until 2032 if the option is exercised. From an operational and economical perspective DSB needs to have a uniform fleet to minimize complexity in regard to e.g. maintenance, training, spare parts, documentation and to assure flexibility in the operation of the fleet. In the view of DSB, these grounds satisfy the conditions for a contract period of up to 12 years, see the utilities directive art. 51(1). If the option is exercised, the last purchase order shall be placed before expiration of the 12 years, however delivery may take place and guarantees etc. may be valid after the expiration of the 12 years. Preliminary takeover (PTO) of the first trainset is expected to take place 42 months after contract signature. However, the delivery time and rate of delivery depend on a variety of circumstances, e.g. Banedanmark’s projects concerning the railway infrastructure, and delays in these projects may influence the needed time and rate of delivery and these may be changed during the negotiations.
+                  The MA is expected to have a duration of 30 years from PTO of the first trainset. However, the MA shall commence at contract signature. The maintenance shall be carried out in workshops (incl. handover points) provided by DSB, which the supplier shall furnish with machinery, special tools and other equipment needed to maintain the trainsets. The maintenance services shall consist of management and execution of preventive and corrective maintenance incl. planning, onsite fault finding, technical support, provision of spare parts, documentation and training. The other Supplier Services will consist of design authority services, extended engineering support, configuration and documentation management, obsolescence management, IT services and product platform evolution services incl. future modifications of the trainsets.
+                  The exact content of the deliverables under the agreements is subject to negotiation, see Tender Conditions clauses 7 and 9.
+                  DSB has an option to extend the MA for up to 10 years (in total approx. 44 years from contract signature) because the trainsets have a life expectancy of 30 years or more and it is necessary for DSB to have the same supplier throughout the agreement. Furthermore, a great deal of knowledge and experience will be gathered throughout the contract period. The need to minimize the technical and logistical difficulties that a change of supplier will result in also sustains the need for a contract period of the said length. In the view of DSB, the MA is not a framework agreement in itself, but in DSB’s view these grounds in any event satisfy the conditions for a contract period of the said length, see the utilities directive art. 51(1).
+                  The MA may be terminated for convenience after 15, 20 or 25 years. Please note that the MA is expected to contain fallback provisions requiring the supplier to recommence the delivery of maintenance services that may expire or be terminated, e.g. if the transfer to another service provider fails.
+               """@en;
+  epo:hasEstimatedValue epd:id_2018-S-120-274572_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-120-274572_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-120-274572_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-120-274572_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 50000000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/DKK> .
+
+epd:id_2018-S-120-274572_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 50000000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/DKK> .
+
+epd:id_2018-S-120-274572_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-120-274572_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-120-274572_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2018-S-120-274572_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2018-S-120-274572_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2018-S-120-274572_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2018-S-120-274572_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2018-06-22"^^xsd:date;
+  epo:hasID epd:id_2018-S-120-274572_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20180626";
+  epo:refersToLot epd:id_2018-S-120-274572_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2018-S-120-274572_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2018-S-120-274572_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 120-274572" .
+
+epd:id_2018-S-120-274572_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK>;
+  locn:postCode "2360";
+  locn:postName "Taastrup";
+  locn:thoroughfare "Telegade 2" .
+
+epd:id_2018-S-120-274572_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "25050053" .
+
+epd:id_2018-S-120-274572_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2018-S-120-274572_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "DSB"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2018-S-120-274572_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-120-274572_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34600000> .
+
+epd:id_2018-S-120-274572_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-120-274572_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+               1) Re the European Single Procurement Document (ESPD):
+               The applicant shall complete and submit an ESPD which serves as preliminary evidence of fulfilment of the conditions for participation, incl. absence of the grounds for exclusion. DSB reserves the right, at any time during the tender procedure, to request an applicant/tenderer to provide documentary proof, see section 151 of the Danish Public Procurement Act (Act no 1564 of 15 December 2015), cf. executive order no. 1624 of 15 December 2015 section 11, if required to ensure the proper execution of the procedure. Before awarding the agreements, the tenderer to whom DSB intends to award the agreements must provide documentation concerning the information in the ESPD, see section 153 of the Danish Public Procurement Act. DSB has prepared the ESPD for the applicants to fill out, see the tender material.
+               2) The amount in sections II.1.5) and II.2.6) is a rough estimate (incl. all options) stated solely for the purpose of giving interested parties an impression of the scope of the contract.
+               3) The duration in section II.2.7) is the expected duration of the SA and the MA, however not incl. an exercise of the options for extension by 10 years of the MA.
+               4) An economic operator may only submit one application to participate. \"Economic operator\" shall be defined as a single economic operator or a group of economic operators (a consortium). In addition, two or more economic operators who are part of the same legal group may not submit more than one application to participate, unless the economic operators can demonstrate that their participation in the tender process is and continuously will be autonomous and independent. \"The same legal group\" shall be defined as entities covered by directive 2013/34/EU art. 22(1). The same applies if an economic operator participates in more than one prequalification application, e.g. alone and in a consortium, alone and as a supporting entity or in a consortium and as a supporting entity. DSB will, where appropriate, request additional information from such applicants to verify that their participation in the tender process is and continuously will be autonomous and independent. If this cannot be verified, DSB may not take either of the applications into consideration. The same principle applies if the situation arises during the tender procedure.
+               5) Questions concerning the application for participation may be submitted at the “QnA” section in EU Supply where answers will also be made available.
+               6) During the negotiation process (at the earliest after receiving INDO2) DSB reserves the right to shortlist, i.e. to reduce the number of tenderers, to two tenderers, based on the initial evaluation of the INDO2 (or later INDOs) in accordance with the award criteria, see the Tender Conditions clause 7.2.1.
+               7) The signing of the agreements is subject to political approval, incl. final approval of the funding of the project from the Finance Committee of the Danish Parliament.
+               8) DSB has conducted a preliminary market consultations in order to prepare the procurement. A report summarizing DSB's findings is available at https://www.dsb.dk/om-dsb/virksomheden/rapporter-og-regnskab/fremtidens-tog/
+               9) Reference is made to the Tender Conditions clause 10 regarding changes to the composition of the tenderer.
+               10) Please see the Tender Conditions clause 9 re requirement categorization of the tender material. It is emphasized that all requirements that are not Mandatory Requirements may in principle be subject to negotiation and may be changed or withdrawn according to DSB’s decision. Thus, DSB encourages all economic operators who can comply with the Mandatory Requirements (and fulfil the minimum requirements for participation, see sections III.1.2) and III.1.3)) to apply for prequalification, even if the economic operator cannot comply with all Key Requirements. Please also see the Tender Conditions clause 7 re expected topics for negotiations.
+            """@en;
+  epo:hasDescription """
+               DSB seeks to acquire electric trainsets and a variety of interconnected deliverables. The purpose of the acquisition is to enable DSB to carry out its passenger transport operations. Furthermore, DSB intends to acquire full service maintenance including management and performance of maintenance and all related technical support services and delivery of spare parts for the electric trainsets and other supplier services.
+               Thus, the procurement consists of a framework agreement for acquisition of electric trainsets and other deliverables (Supply Agreement, “SA”) and maintenance services as a Full Service Agreement (FSA) and other Supplier Services for the electric trainsets (Maintenance Agreement, “MA”). The 2 agreements are interconnected and the tender procedure for the agreements is the same. Award will take place for both agreements to the same tenderer in accordance with the common award criteria, see section II.2.5.
+            """@en;
+  epo:hasEstimatedValue epd:id_2018-S-120-274572_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-120-274572_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-120-274572_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+               New Trains — Supply and Maintenance of Electric Trainsets
+            """@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-120-274572_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2018-S-120-274572_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2018-S-120-274572_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB,
+    epd:id_2018-S-120-274572_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2018-S-120-274572_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2018-S-120-274572_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-120-274572_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-120-274572_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-120-274572_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  locn:postCode "2500";
+  locn:postName "Valby";
+  locn:thoroughfare "Carl Jacobsens Vej 35" .
+
+epd:id_2018-S-120-274572_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.kfst.dk"^^xsd:anyURI;
+  cccev:email "kfst@kfst.dk";
+  cccev:telephone "+45 41715000" .
+
+epd:id_2018-S-120-274572_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Konkurrence- og Forbrugerstyrelsen (The Danish Competition and Consumer Authority)"@en;
+  epo:hasPrimaryContactPoint epd:id_2018-S-120-274572_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2018-S-120-274572_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-120-274572_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-120-274572_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-120-274572_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               As a consequence of the Danish Act no. 492 of 12.5.2010 with subsequent amendments regarding enforcement of the rules for procurement etc., complaints regarding a candidate not being prequalified must be filed with the Complaints Board for Public Procurement within 20 calendar days starting the day after the contracting authority has sent notification to the candidates involved, if the notification includes a short account of the relevant reasons for the decision.
+               Complaints regarding other decisions related to the tender must be filed with The Complaints Board for Public Procurement within 6 months after the Contracting Authority has sent notification to the candidates/ tenderers involved that the Contracting Authority has entered into the framework agreement if the notification included a short account of the relevant reasons for the decision. The complainant must inform the contracting authority of the complaint in writing at the latest simultaneously with the lodging of the complaint to the Complaints Board for Public Procurement. The complainant shall state whether the complaint has been lodged in the stand-still period. If the complaint has not been lodged in the standstill period, the complainant must also state whether the complainant has requested that the complaint be granted suspensive effect.
+            """ .
+
+epd:id_2018-S-120-274572_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasInternetAddress "https://erhvervsstyrelsen.dk/klagevejledning-0"^^xsd:anyURI;
+  cccev:email "klfu@naevneneshus.dk";
+  cccev:telephone "+45 72405600" .
+
+epd:id_2018-S-120-274572_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  locn:postCode "8800";
+  locn:postName "Viborg";
+  locn:thoroughfare "Nævnenes Hus, Toldboden 2" .
+
+epd:id_2018-S-120-274572_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Klagenævnet for Udbud (The Complaints Board for Public Procurement)"@en;
+  epo:hasPrimaryContactPoint epd:id_2018-S-120-274572_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2018-S-120-274572_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-120-274572_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-120-274572_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-120-274572_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "http://eu.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=214430&B=KA"^^xsd:anyURI .
+
+epd:id_2018-S-120-274572_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-120-274572_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-120-274572_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

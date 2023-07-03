@@ -1,0 +1,184 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-062-143272_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.eprocurement.gov.gr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-062-143272_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-062-143272_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-062-143272_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-062-143272_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Μαρία Βασιλάκη"@el;
+  epo:hasFax "+030 2681083629";
+  epo:hasInternetAddress "www.nskoufas.gr"^^xsd:anyURI;
+  cccev:email "vasilaki@nskoufas.gr";
+  cccev:telephone "+030 2681083214" .
+
+epd:id_2019-S-062-143272_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Δήμος Νικολάου Σκουφά."@el .
+
+epd:id_2019-S-062-143272_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL541>;
+  locn:address epd:id_2019-S-062-143272_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2019-S-062-143272_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-062-143272_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-062-143272_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2019-S-062-143272_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2019-S-062-143272_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2019-S-062-143272_EAuctionTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 a epo:EAuctionTechniqueUsage .
+
+epd:id_2019-S-062-143272_Fund_c4Jggv3QHLrvEuoxvHMwcK a epo:Fund;
+  epo:hasDescription "2018ΣΕ27510033"@el .
+
+epd:id_2019-S-062-143272_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/32441200> .
+
+epd:id_2019-S-062-143272_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-062-143272_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation "Η χρηματοδότηση της σύμβασης πραγματοποιείται, μέσω του Επιχειρησιακού Προγράμματος «Υποδομές Μεταφορών, Περιβάλλον και Αειφόρος Ανάπτυξη 2014 - 2020», με βάση την απόφαση ένταξης με αρ. πρωτ. 2400-22.3.2018 της Ειδικής Γραμματέως Διαχείρισης Τομεακών Ε.Π. Ε.Τ.Π.Α. και Τ.Α., του Υπουργείου Οικονομίας και Ανάπτυξης, και έχει λάβει κωδικό MIS 5001274."@el;
+  epo:hasDescription "Το φυσικό αντικείμενο της πράξης περιλαμβάνει την τηλεμετρία και τον έλεγχο διαρροών τού δικτύου ύδρευσης τού Δήμου, με τα ακόλουθα:— Τοπικούς Σταθμούς Ελέγχου (Τ.Σ.Ε.), που θα τοποθετηθούν σε 41 θέσεις του εξωτερικού δικτύου ύδρευσης Δημοτικών Ενοτήτων τού Δήμου Ν. Σκουφά, απ' όπου θα παρέχεται τοπικός έλεγχος, τηλεχειρισμός και αυτόνομος τοπικός αυτοματισμός. Οι Τ.Σ.Ε. θα αποτελούνται από:1) το απαραίτητο ηλεκτρονικό υλικό και λογισμικό των Τ.Σ.Ε.·2) διάταξη τροφοδοτικού, για την εξασφάλιση της λειτουργίας, σε περίπτωση ανωμαλιών στο δίκτυο τής κύριας τροφοδοσίας και αντικεραυνική προστασία·3) δίκτυα καλωδιώσεων και σωληνώσεων προστασίας τους, για τη σύνδεση με τους υφισταμένους πίνακες και όργανα, και μεταξύ των διαφόρων μερών τού συστήματος·4) αισθητήρια όργανα (παροχόμετρα, μανόμετρα, σταθμήμετρα κ.λπ.). που είτε αντικαθιστούν τον υπάρχοντα εξοπλισμό, μη δυνάμενο να συνδεθεί με τις ηλεκτρονικές διατάξεις αυτοματισμού είτε τοποθετούνται εξ αρχής,— Κεντρικό Σταθμό Ελέγχου (Κ.Σ.Ε.), που θα τοποθετηθεί στον Δήμο Ν. Σκουφά - Τεχνική Υπηρεσία και απ' όπου θα εκτελείται η παρακολούθηση τού συνόλου τού εγκατεστημένου συστήματος τηλεελέγχου / τηλεχειρισμού τού δικτύου ύδρευσης, και θα αποτελείται από:1) το απαραίτητο υλικό και λογισμικό, για τη συγκέντρωση πληροφοριών, τηλεέλεγχο - τηλεχειρισμό και διαχείριση του συστήματος·2) διάταξη τροφοδοτικού, για την εξασφάλιση αδιάλειπτης λειτουργίας·3) εξοπλισμό της αίθουσας ελέγχου (μιμικό διάγραμμα προβολής, εξοπλισμός για τη διαμόρφωση των θέσεων εργασίας κ.λπ.)·4) δίκτυα καλωδιώσεων και σωληνώσεων προστασίας τους, για τη σύνδεση με τους υφισταμένους πίνακες και όργανα, και μεταξύ των διαφόρων μερών τού συστήματος·5) δίκτυο επικοινωνιών, για την τηλεπικοινωνία των Τ.Σ.Ε. με τον Κ.Σ.Ε., αποτελούμενο από το απαραίτητο υλικό και λογισμικό επικοινωνίας.Η προμήθεια θα περιλαμβάνει τον σχεδιασμό, την κατασκευή, τους ελέγχους λειτουργικότητας στο εργοστάσιο, ελέγχους από τρίτους, την παράδοση στον χώρο εγκατάστασης τής προμήθειας, την εκφόρτωση και αποθήκευση στον χώρο αυτόν, τις μετακινήσεις και ανυψώσεις, την κατασκευή, τον έλεγχο, την προμήθεια και τη θέση σε λειτουργία όλου του εξοπλισμού, που έχει περιγραφεί στο κείμενο και στα σχέδια, και στις απαιτούμενες εργασίες διασύνδεσης με την υφιστάμενη εγκατάσταση, όπως προδιαγράφονται στις τεχνικές προδιαγραφές."@el;
+  epo:hasEstimatedValue epd:id_2019-S-062-143272_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2019-S-062-143272_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isFundedBy epd:id_2019-S-062-143272_Fund_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2019-S-062-143272_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds true .
+
+epd:id_2019-S-062-143272_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 1207364.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-062-143272_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 1497131.36;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-062-143272_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2019-S-062-143272_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-062-143272_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2019-S-062-143272_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2019-S-062-143272_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2019-S-062-143272_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2019-S-062-143272_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2019-03-27"^^xsd:date;
+  epo:hasID epd:id_2019-S-062-143272_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20190328";
+  epo:refersToLot epd:id_2019-S-062-143272_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2019-S-062-143272_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2019-S-062-143272_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 062-143272" .
+
+epd:id_2019-S-062-143272_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL541>;
+  locn:postCode "472 00";
+  locn:postName "Άρτα";
+  locn:thoroughfare "Πλατεία Πέτα" .
+
+epd:id_2019-S-062-143272_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "6216" .
+
+epd:id_2019-S-062-143272_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2019-S-062-143272_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Δήμος Νικολάου Σκουφά"@el;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2019-S-062-143272_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-062-143272_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/32441100> .
+
+epd:id_2019-S-062-143272_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-062-143272_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "Ο διαγωνισμός αφορά στο «Τηλεμετρικό σύστημα ελέγχου διαρροών δικτύων ύδρευσης Δήμου Ν. Σκουφά».Το φυσικό αντικείμενο της πράξης περιλαμβάνει:— Τοπικούς Σταθμούς Ελέγχου (Τ.Σ.Ε.), που θα τοποθετηθούν σε 41 θέσεις του εξωτερικού δικτύου ύδρευσης Δημοτικών Ενοτήτων τού Δήμου Ν. Σκουφά, απ' όπου θα παρέχεται τοπικός έλεγχος, τηλεχειρισμός και αυτόνομος τοπικός αυτοματισμός,— Κεντρικό Σταθμό Ελέγχου (Κ.Σ.Ε.), που θα τοποθετηθεί στον Δήμο Ν. Σκουφά - Τεχνική Υπηρεσία και απ' όπου θα εκτελείται η παρακολούθηση τού συνόλου τού εγκατεστημένου συστήματος τηλεελέγχου / τηλεχειρισμού τού δικτύου ύδρευσης, και θα αποτελείται από δίκτυο επικοινωνιών, για την τηλεπικοινωνία των Τ.Σ.Ε. με τον Κ.Σ.Ε., αποτελούμενο από το απαραίτητο υλικό και λογισμικό επικοινωνίας."@el;
+  epo:hasEstimatedValue epd:id_2019-S-062-143272_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-062-143272_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2019-S-062-143272_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Τηλεμετρικό σύστημα ελέγχου διαρροών δικτύων ύδρευσης Δήμου Ν. Σκουφά. "@el;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-062-143272_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2019-S-062-143272_ReviewTerm_KjhWjVv578XNpvpTRjZhAs, epd:id_2019-S-062-143272_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62;
+  epo:usesTechnique epd:id_2019-S-062-143272_EAuctionTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2019-S-062-143272_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-062-143272_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-062-143272_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-062-143272_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "182 33";
+  locn:postName "Αθήνα";
+  locn:thoroughfare "Λεωφόρος Θηβών 196 - 198, Άγ. Ιωάννης Ρέντης" .
+
+epd:id_2019-S-062-143272_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  epo:hasFax "+30 2132141229";
+  epo:hasInternetAddress "http://www.aepp-procurement.gr/"^^xsd:anyURI;
+  cccev:email "aepp@aepp-procurement.gr";
+  cccev:telephone "+30 2132141216" .
+
+epd:id_2019-S-062-143272_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Αρχή Εξέτασης Προδικαστικών Προσφυγών (Α.Ε.Π.Π.)"@el;
+  epo:hasPrimaryContactPoint epd:id_2019-S-062-143272_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2019-S-062-143272_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2019-S-062-143272_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2019-S-062-143272_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2019-S-062-143272_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Όπως αναφέρονται στη διακήρυξη και σύμφωνα με τον Ν. 4412/2016." .
+
+epd:id_2019-S-062-143272_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+030 2681083259";
+  epo:hasInternetAddress "www.skoufas.gr"^^xsd:anyURI;
+  cccev:email "dimos@nskoufas.gr";
+  cccev:telephone "+030 2681360400" .
+
+epd:id_2019-S-062-143272_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "472 00";
+  locn:postName "Πέτα Άρτας";
+  locn:thoroughfare "Πλατεία Πέτα" .
+
+epd:id_2019-S-062-143272_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Δήμος Νικολάου Σκουφά"@el;
+  epo:hasPrimaryContactPoint epd:id_2019-S-062-143272_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2019-S-062-143272_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2019-S-062-143272_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-062-143272_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2019-S-062-143272_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "EL";
+  epo:hasReceiptExpressionDeadline "2019-05-10T11:00" .
+
+epd:id_2019-S-062-143272_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-062-143272_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-062-143272_Organisation_gqoAAwSV3JaTMsopb9zyKP .

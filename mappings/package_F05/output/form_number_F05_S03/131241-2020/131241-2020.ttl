@@ -1,0 +1,175 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-055-131241_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://marchespublics596280.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=19874&orgAcronyme=5C371"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2020-S-055-131241_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2020-S-055-131241_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2020-S-055-131241_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2020-S-055-131241_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Gadaut Stephanie"@fr;
+  epo:hasInternetAddress "http://www.lillemetropole.fr/mel.html"^^xsd:anyURI;
+  cccev:email "marches.services.urbains@lillemetropole.fr";
+  cccev:telephone "+33 320216063" .
+
+epd:id_2020-S-055-131241_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRE11> .
+
+epd:id_2020-S-055-131241_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-055-131241_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-055-131241_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2020-S-055-131241_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2020-S-055-131241_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-055-131241_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2020-S-055-131241_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2020-S-055-131241_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71621000> .
+
+epd:id_2020-S-055-131241_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-055-131241_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Diagnostics de repérage amiante sur le patrimoine des transports."@fr;
+  epo:hasEstimatedValue epd:id_2020-S-055-131241_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2020-S-055-131241_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-055-131241_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 1600000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-055-131241_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 1600000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-055-131241_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2020-S-055-131241_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2020-S-055-131241_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2020-S-055-131241_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2020-S-055-131241_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2020-03-13"^^xsd:date;
+  epo:hasID epd:id_2020-S-055-131241_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20200318";
+  epo:refersToLot epd:id_2020-S-055-131241_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2020-S-055-131241_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2020-S-055-131241_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 055-131241" .
+
+epd:id_2020-S-055-131241_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRE11>;
+  locn:postCode "59800";
+  locn:postName "Lille";
+  locn:thoroughfare "1 rue du Ballon, direction de la commande publique CSP technique services urbains" .
+
+epd:id_2020-S-055-131241_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "245 900 410 00011" .
+
+epd:id_2020-S-055-131241_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2020-S-055-131241_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Métropole européenne de Lille"@fr;
+  epo:hasMainActivityDescription "Eau, assainissement, déchets ménagers, voirie, transports collectifs, aménagement urbain";
+  cccev:registeredAddress epd:id_2020-S-055-131241_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2020-S-055-131241_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2019-TRA033" .
+
+epd:id_2020-S-055-131241_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71621000> .
+
+epd:id_2020-S-055-131241_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-055-131241_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Le détail des documents et renseignements à fournir figure dans le règlement de la consultation téléchargeable sur le profil d'acheteur. Transmission des plis par voie électronique sur le profil d'acheteur dans les conditions fixées au règlement de candidature/la consultation. La prestation de diagnostic et de préleveur correspondant aux lignes de prix DA01, DA02, DA03, DA06, DA07 et DA08 du BPU, ne peuvent être sous-traitées. Les laboratoires d'analyses devront être accrédités suivant les exigences de la norme NF ENISO/CEI 17025 et aux référentiels Cofrac:— LAB GTA 44 (essais concernant la recherche d'amiante dans les matériaux et dans l'air);— LAB REF 26 (mesures d'empoussièrement en fibres d'amiante dans les immeubles bâtis);— LAB REF 28 (mesurages des niveaux d'empoussièrement de fibres d'amiante au poste de travail). L'accord-cadre sera exécuté par l'émission de bons de commandes, dont le montant est estimé à 1 600 000 EUR HT sur la durée de l'accord-cadre. Délibération 19 C 0058 du 5.4.2019."@fr;
+  epo:hasDescription "Diagnostics de repérage amiante sur le patrimoine des transports. Il s'agit d'un accord-cadre à bons de commande conclu avec un (1) seul opérateur économique. Il s'exécutera au fur et à mesure de l'émission des bons de commandes, sans négociation, ni remise en concurrence dans les conditions fixées dans l' accord-cadre, lors de la survenance du besoin. L'accord-cadre sera conclu pour une durée de quatre ans: avec un montant quadriennal minimal de 400 000 EUR HT et un montant quadriennal maximal de 1 600 000 EUR HT. Date prévisionnelle de démarrage des prestations: juin 2020."@fr;
+  epo:hasEstimatedValue epd:id_2020-S-055-131241_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2020-S-055-131241_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-055-131241_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2020-S-055-131241_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Diagnostics de repérage amiante sur le patrimoine des transports"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-055-131241_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2020-S-055-131241_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2020-S-055-131241_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB,
+    epd:id_2020-S-055-131241_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2020-S-055-131241_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2020-S-055-131241_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-055-131241_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2020-S-055-131241_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2020-S-055-131241_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "59000";
+  locn:postName "Lille";
+  locn:thoroughfare "5 rue Geoffroy Saint-Hilaire" .
+
+epd:id_2020-S-055-131241_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 320631347";
+  cccev:email "greffe.ta-lille@juradm.fr";
+  cccev:telephone "+33 320631300" .
+
+epd:id_2020-S-055-131241_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lille"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-055-131241_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2020-S-055-131241_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2020-S-055-131241_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2020-S-055-131241_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2020-S-055-131241_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Avant la conclusion du marché, référé précontractuel dans les conditions fixées aux articles L. 551-1 et suivants du code de justice administrative. Après la conclusion du marché: référé contractuel dans les conditions fixées aux articles L. 551-13 et suivants du code de justice administrative; recours en contestation de validité du contrat dans un délai de deux mois à compter de la publication de l'avis d'attribution dans les conditions fixées par le Conseil d'État dans son arrêt no 358994 du 4.4.2014." .
+
+epd:id_2020-S-055-131241_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 320631347";
+  epo:hasInternetAddress "http://lille.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-lille@juradm.fr";
+  cccev:telephone "+33 320631300" .
+
+epd:id_2020-S-055-131241_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "59000";
+  locn:postName "Lille";
+  locn:thoroughfare "5 rue Geoffroy Saint-Hilaire" .
+
+epd:id_2020-S-055-131241_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lille"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-055-131241_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2020-S-055-131241_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2020-S-055-131241_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-055-131241_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2020-S-055-131241_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://marchespublics596280.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=19874&orgAcronyme=5C371"^^xsd:anyURI .

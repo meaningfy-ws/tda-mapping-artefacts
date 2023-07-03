@@ -1,0 +1,179 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-084-218240_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://cloud.3p.eu/Downloads/1/933/6I/2021"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-084-218240_AwardCriterion_97fG5roZ9xxsBW4G4JCeEu a epo:AwardCriterion;
+  cccev:description "Fiscale optimalisatie"@nl .
+
+epd:id_2021-S-084-218240_AwardCriterion_VWLeeHcWYgeyBshemC93DT a epo:AwardCriterion;
+  cccev:description "Aantrekkelijkheid van het project in functie van centrumversterkende exploitatie"@nl .
+
+epd:id_2021-S-084-218240_AwardCriterion_YgnMQf9JmmEKqCAraaiGTQ a epo:AwardCriterion;
+  cccev:description "Kwaliteit van de parking"@nl .
+
+epd:id_2021-S-084-218240_AwardCriterion_nF5mLYwaayYGQ3jCBkmNPF a epo:AwardCriterion;
+  cccev:description "Variabele concessievergoeding"@nl .
+
+epd:id_2021-S-084-218240_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-084-218240_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-084-218240_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-084-218240_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "mevrouw Kim Van Bellingen"@nl;
+  epo:hasFax "+32 22701266";
+  epo:hasInternetAddress "www.grimbergen.be"^^xsd:anyURI;
+  cccev:email "kim.vanbellingen@grimbergen.be";
+  cccev:telephone "+32 22601245" .
+
+epd:id_2021-S-084-218240_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Parking Prinsenbos, 1850 Grimbergen."@nl .
+
+epd:id_2021-S-084-218240_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE241>;
+  locn:address epd:id_2021-S-084-218240_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-084-218240_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-084-218240_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-084-218240_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-084-218240_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasEInvoicing true .
+
+epd:id_2021-S-084-218240_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 600.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-084-218240_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/63712400> .
+
+epd:id_2021-S-084-218240_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-084-218240_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription "De Concessie heeft betrekking op:— enerzijds de realisatie en exploitatie van een bovengrondse, betalende rotatieparking met bijgaande publieke fietsparking met tenminste 50 gratis fietsstallingen (het is niet de bedoeling dat er bovengronds een commercieel of residentieel project wordt gerealiseerd)— anderzijds de realisatie van 75 ondergrondse parkeerplaatsen ten behoeve van de ConcessiegeverMet de mogelijkheid tot realisatie en exploitatie van bijkomende ondergrondse rotatieparkeerplaatsen en van een andere ondergrondse centrumfunctie.De nieuwe Parking Prinsenbos moet (bovengronds en ondergronds) beschikken over tenminste 110 permanent beschikbare rotatieparkeerplaatsen (24 uur op 24 uur en 7 dagen op 7), al wordt er gestreefd naar meer rotatieparkeerplaatsen. De rotatieparking is betalend.Van de 75 voor de Concessiegever gereserveerde parkeerplaatsen moeten 10 parkeerplaatsen permanent (24 uur op 24 en 7 dagen op 7) gereserveerd zijn, terwijl de 65 overige parkeerplaatsen buiten de kantooruren (van 19:00 tot 7:00) en op zaterdag en zondag door de Concessiehouder kunnen gebruikt worden als rotatieparkeerplaatsen.De Concessiehouder staat in voor het realiseren van een nieuwe permanente ondergrondse constructie. Het plafond van deze ondergrondse constructie moet niet alleen een voldoende draagkracht hebben voor de bovengrondse rotatieparking, maar ook het behoud van bovengrondse evenementen, in het bijzonder een kermis (zie BIJLAGE 12). De Concessiehouder staat ook in voor de heraanleg van de bovengrondse parking, die een betalend karakter zal krijgen, alsook voor de publieke fietsparking.De Concessiehouder stelt de bovengrondse parking geheel (en als dan niet nodig is, gedeeltelijk), ter beschikking van de Concessiegever voor evenementen als kermissen, kerstmarkten, grootschalige events, bv. naar aanleiding van een internationale voetbalwedstrijd, enz. en dit voor een maximum van twintig kalenderdagen op jaarbasis. De Concessiehouder wordt tijdig op de hoogte gesteld door de concessiegever.De frituur op de bovengrondse parking valt buiten de concessie. Deze frituur wordt vóór de werkzaamheden verplaatst naar een door de Concessiegever aangegeven vervanglocatie en na de duur van de werkzaamheden op kosten van de Concessiehouder teruggeplaatst op de huidige locatie. Er worden geen aparte parkeerplaatsen of gunsttarieven voorzien voor de (bezoekers van de) frituur. De concessieovereenkomst betreffende de frituur wordt gevoegd als BIJLAGE 13.De Concessiehouder exploiteert zowel de bovengrondse als de ondergrondse parking conform de voorwaarden gesteld in het Bestek en in de eventuele Concessieovereenkomst. Daarnaast zijn in de ondergrondse constructie andere centrumversterkende activiteiten toegelaten voor zover ze in overeenstemming zijn met de bestemming van woongebied.Ten behoeve van de duurzame en rendabele uitvoering van de Concessie kent de Concessiegever aan de Concessiehouder een recht van opstal toe van 50 jaar in een afzonderlijke overeenkomst teneinde de zware investeringen te kunnen terugverdienen.Dit gezegd zijnde verwacht de Concessiegever niet dat de concessie break-even is. Zij is integendeel bereid om een eenmalige vergoeding te betalen van 1 875 000 EUR voor 75 voor de Concessiegever gereserveerde parkeerplaatsen (zie het tweede gunningscriterium “fiscale optimalisatie”).Daartegenover wordt van de Concessiehouder een jaarlijkse vaste concessievergoeding gevraagd van 100 000 EUR, alsmede een jaarlijkse variabele concessievergoeding (zie het tweede gunningscriterium “fiscale optimalisatie”).Op die wijze ziet de Concessiehouder zich verzekerd van een substantiële prefinanciering en maakt het project voldoende kans in deze “coronatijden”.Bij de beëindiging van de Concessie wordt de Concessiegever – of de door haar aangeduide derde – eigenaar van de volledige Parking Pr [...] (zie opdrachtdocumenten)."@nl;
+  epo:hasPurpose epd:id_2021-S-084-218240_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-084-218240_AwardCriterion_97fG5roZ9xxsBW4G4JCeEu,
+    epd:id_2021-S-084-218240_AwardCriterion_VWLeeHcWYgeyBshemC93DT, epd:id_2021-S-084-218240_AwardCriterion_YgnMQf9JmmEKqCAraaiGTQ,
+    epd:id_2021-S-084-218240_AwardCriterion_nF5mLYwaayYGQ3jCBkmNPF .
+
+epd:id_2021-S-084-218240_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Brussel";
+  locn:thoroughfare "Wetenschapsstraat 33" .
+
+epd:id_2021-S-084-218240_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM a org:Organization;
+  epo:hasLegalName "Raad van State"@nl;
+  cccev:registeredAddress epd:id_2021-S-084-218240_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2021-S-084-218240_Mediator_PMKvGTWSa3gLdxRfJtvToM a epo:Mediator;
+  epo:playedBy epd:id_2021-S-084-218240_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2021-S-084-218240_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-084-218240_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-084-218240_Mediator_PMKvGTWSa3gLdxRfJtvToM,
+    epd:id_2021-S-084-218240_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2021-S-084-218240_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2021-S-084-218240_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2021-04-26"^^xsd:date;
+  epo:hasID epd:id_2021-S-084-218240_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210430";
+  epo:refersToLot epd:id_2021-S-084-218240_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2021-S-084-218240_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-084-218240_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 084-218240" .
+
+epd:id_2021-S-084-218240_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE241>;
+  locn:postCode "1850";
+  locn:postName "Grimbergen";
+  locn:thoroughfare "Prinsenstraat 3" .
+
+epd:id_2021-S-084-218240_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Gemeente Grimbergen"@nl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-084-218240_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-084-218240_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/841" .
+
+epd:id_2021-S-084-218240_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45213312> .
+
+epd:id_2021-S-084-218240_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-084-218240_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "De offertes kunnen alleen elektronisch ingediend worden via de e-Tendering internetsite https://eten.publicprocurement.be/"@nl;
+  epo:hasDescription "Zie II.2.4)"@nl;
+  epo:hasID epd:id_2021-S-084-218240_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-084-218240_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-084-218240_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Concessieopdracht: Realisatie en exploitatie van Parking Prinsenbos"@nl;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-084-218240_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-084-218240_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2021-S-084-218240_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-084-218240_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-084-218240_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-084-218240_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1850";
+  locn:postName "Grimbergen";
+  locn:thoroughfare "Prinsenstraat 3" .
+
+epd:id_2021-S-084-218240_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+32 22701266";
+  epo:hasInternetAddress "www.grimbergen.be"^^xsd:anyURI;
+  cccev:email "gemeentebestuur@grimbergen.be";
+  cccev:telephone "+32 22601211" .
+
+epd:id_2021-S-084-218240_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Gemeente Grimbergen"@nl;
+  epo:hasPrimaryContactPoint epd:id_2021-S-084-218240_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2021-S-084-218240_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-084-218240_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-084-218240_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-084-218240_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Brussel";
+  locn:thoroughfare "Wetenschapsstraat 33" .
+
+epd:id_2021-S-084-218240_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Raad van State"@nl;
+  cccev:registeredAddress epd:id_2021-S-084-218240_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-084-218240_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-084-218240_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-084-218240_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "NL";
+  epo:hasSubmissionURL "https://eten.publicprocurement.be"^^xsd:anyURI .

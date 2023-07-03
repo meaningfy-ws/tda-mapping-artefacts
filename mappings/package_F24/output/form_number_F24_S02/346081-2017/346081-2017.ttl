@@ -1,0 +1,181 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-168-346081_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.badkoenigshofen.rhoen-saale.net/Stadt--Stadtteile/Bad-Koenigshofen---Aktuell/Ausschreibungen/IBV-Zukunftsprog-Frankentherme-KOeN"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-168-346081_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-168-346081_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-168-346081_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-168-346081_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Geschäftsleitung der Stadt Bad Königshofen, Marktplatz 2, 97631 Bad Königshofen, Frau Elisa Sperl"@de;
+  epo:hasInternetAddress "www.badkoenigshofen.de"^^xsd:anyURI;
+  cccev:email "elisa.sperl@bad-koenigshofen.de" .
+
+epd:id_2017-S-168-346081_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+                  Bad Königshofen i. GR.
+               """@de .
+
+epd:id_2017-S-168-346081_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE266>;
+  locn:address epd:id_2017-S-168-346081_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-168-346081_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-168-346081_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-168-346081_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-168-346081_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "Herr Alexander Arnold"@de;
+  epo:hasInternetAddress "www.projectm.de"^^xsd:anyURI;
+  cccev:email "Alexander.Arnold@projectm.de" .
+
+epd:id_2017-S-168-346081_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE212>;
+  locn:postCode "81241";
+  locn:postName "München";
+  locn:thoroughfare "Landsberger Straße 392" .
+
+epd:id_2017-S-168-346081_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasLegalName "Project M GmbH"@de;
+  cccev:registeredAddress epd:id_2017-S-168-346081_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2017-S-168-346081_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45212420>, <http://data.europa.eu/cpv/cpv/45262690>,
+    <http://data.europa.eu/cpv/cpv/71240000>, <http://data.europa.eu/cpv/cpv/85140000>,
+    <http://data.europa.eu/cpv/cpv/92000000>, <http://data.europa.eu/cpv/cpv/98330000>,
+    <http://data.europa.eu/cpv/cpv/98334000> .
+
+epd:id_2017-S-168-346081_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-168-346081_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation """
+                  Es wird gemäß dem RdSchr. d. Bundesministeriums der Finanzen v. 24.9.2012 – II A 3 – H 1005/07/0002 – 2012/ 0864353 – ausdrücklich darauf hingewiesen, dass es sich bei dem bekannt gemachten Interessenbekundungsverfahren nicht um die Vergabe eines öffentlichen Auftrages handelt und die Interessenten nicht an ihre Interessenbekundungen gebunden sind.
+               """@de;
+  epo:hasDescription """
+                  Gegenstand der Beschaffung ist eine Konzession für die Modernisierung und den weiteren Betrieb die FrankenTherme Bad Königshofen, Am Kurzentrum 1, 97631 Bad Königshofen i. Gr. Die Interessenten sollen die Planung, den Bau, den Betrieb und die Finanzierung der Maßnahme übernehmen.
+                  Die Konzession ist zeitlich auf 25 Jahre beschränkt. Modernisierung bedeutet die umfassende bauliche Weiterentwicklung der FrankenTherme seit der Generalsanierung im Jahr 2000 zu einer multifunktionalen, generationenübergreifenden und barrierefreien Einrichtung mit Thermen-, Sauna-, Kurmittel- und Therapieabteilung, Naturheilwassersee sowie Gastronomie- und Veranstaltungsbereich, Bowlingbahn und Tourist-Information auf dem bestehenden Grundstück.
+                  Die Franken Therme befindet sich in einem regelmäßig gewarteten und betriebsfähigen Zustand. Sie entspricht jedoch bezüglich Ausstattung und Räumlichkeiten der Kurmittelabteilung nicht mehr den heutigen Anforderungen. Zudem sind eine energetische Sanierung sowie eine Sanierung der Badewassertechnik notwendig.
+                  Das Grundstück der FrankenTherme befindet sich im Eigentum der Stadt Bad Königshofen. Der Interessent soll für die Dauer der Konzession ein Erbbaurecht (mit Heimfallrecht) erhalten. Die Baumaßnahmen sollen im 1. Quartal des Jahres 2018 beginnen und sind bis spätestens 30.11.2019 abzuschließen.
+                  Die Franken Therme ist – ohne den auf ca. 150 m' Fläche genutzten und an die Kurbetriebs GmbH zu vermietenden Bereich der Tourist-Information – nach dem Abschluss der Baumaßnahmen gemäß der erteilten Konzession zu betreiben. Der Betrieb hat ganzjährig zu erfolgen.
+                  Während der Bauzeit gewährleistet der Interessent einen lückenlosen Weiterbetrieb der Tourist-Information und erhält deren räumlich zentralen Standort im Foyer der Therme mit guter Zugänglichkeit und Sichtbarkeit. Die bisherigen Flächen für Front- und Back-Office bleiben erhalten oder werden ausgebaut.
+                  Der Interessent erhält weder einen Baukostenzuschuss noch ein Betriebsführungsentgelt, sondern hat sich auf eigenes wirtschaftliches Risiko (u. a. Eintritte, Erlöse aus Gastronomie und Veranstaltungen, Bowlingbahn, Kurmittel- und Therapieabteilung) zu refinanzieren. Der Interessent muss für das ihm gewährte Erbbaurecht einen marktüblichen Erbbauzins zahlen.
+               """@de;
+  epo:hasPurpose epd:id_2017-S-168-346081_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-168-346081_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-168-346081_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-168-346081_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2017-S-168-346081_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-168-346081_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2017-08-30"^^xsd:date;
+  epo:hasID epd:id_2017-S-168-346081_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20170902";
+  epo:refersToLot epd:id_2017-S-168-346081_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2017-S-168-346081_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-168-346081_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 168-346081" .
+
+epd:id_2017-S-168-346081_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE266>;
+  locn:postCode "97631";
+  locn:postName "Bad Königshofen im Grabfeld";
+  locn:thoroughfare "Marktplatz 2" .
+
+epd:id_2017-S-168-346081_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Bad Königshofen im Grabfeld, vertreten durch den 1. Bürgermeister, Herrn Thomas Helbling"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-168-346081_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-168-346081_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45200000> .
+
+epd:id_2017-S-168-346081_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-168-346081_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               1. Ziel des lnteressenbekundungsverfahrens ist es, einen umfassenden Marktüberblick zu erlangen. Das Verfahren dient der Feststellung, ob es Interessenten für die Übernahme der Aufgaben gibt, welche Preisvorstellungen zu diesen Leistungen existieren und welche Vorstellungen der Markt zur Art der Aufgabenerfüllung entwickelt.
+               2. Das vorliegende lnteressenbekundungsverfahren grenzt sich klar zu einem ggf. nachfolgenden Vergabeverfahren ab und ersetzt dieses nicht.
+               3. Kosten werden im lnteressenbekundungsverfahren nicht erstattet.
+               4. Die Interessenbekundungen sollen jeweils die Art der Aufgabenerfüllung darlegen und eine Preisschätzung und deren maßgebliche Faktoren angeben, zu dem die Interessenten bereit wären, die Aufgabe zu erfüllen.
+               5. Interessentengemeinschaften haben eine Interessentengemeinschaftserklärung abzugeben.
+               6. Sofern Interessenten Nachunternehmer einzusetzen beabsichtigen können sie dies im Rahmen einer Nachunternehmererklärung angeben.
+               7. Die Interessentenbekundungen sollen auf den Formularen zu erfolgen, die unter folgender Internetadresse zum Abruf bereit stehen: http://www.badkoenigshofen.rhoen-saale.net/Stadt--Stadtteile/Bad-Koenigshofen---Aktuell/Ausschreibungen/IBV-Zukunftsprog-Frankentherme-KOeN
+               8. Soweit Nachweise vorzulegen sind (Versicherungsbestätigung, Handelsregisterauszug), reichen hierfür Ablichtungen. Eine Beglaubigung / Beurkundung ist nicht erforderlich.
+               9. Die Stadt Bad Königshofen verfährt entsprechend dem 4. Teil des GWB, der VgV und der VOB/A (Abschnitt 2).
+            """@de;
+  epo:hasDescription """
+               Gegenstand des Interessenbekundungsverfahrens gemäß § 7 Abs. 2 BHO ist eine Baukonzession betreffend die FrankenTherme Bad Königshofen, Am Kurzentrum 1, 97631 Bad Königshofen i. Gr.
+            """@de;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-168-346081_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-168-346081_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Baukonzession.
+            """@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-168-346081_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-168-346081_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-168-346081_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-168-346081_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2017-S-168-346081_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2017-S-168-346081_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postName "Ansbach" .
+
+epd:id_2017-S-168-346081_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Regierung von Mittelfranken, Vergabekammer Nordbayern"@de;
+  cccev:registeredAddress epd:id_2017-S-168-346081_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-168-346081_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-168-346081_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-168-346081_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2017-S-168-346081_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE212>;
+  locn:postCode "81241";
+  locn:postName "München";
+  locn:thoroughfare "Landsberger Straße 392" .
+
+epd:id_2017-S-168-346081_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasContactName "Herr Alexander Arnold"@de;
+  epo:hasInternetAddress "www.projectm.de"^^xsd:anyURI;
+  cccev:email "Alexander.Arnold@projectm.de" .
+
+epd:id_2017-S-168-346081_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Project M GmbH"@de;
+  epo:hasPrimaryContactPoint epd:id_2017-S-168-346081_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2017-S-168-346081_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2017-S-168-346081_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-168-346081_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2017-S-168-346081_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

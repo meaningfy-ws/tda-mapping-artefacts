@@ -1,0 +1,199 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-132-270550_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.zaps.si/index.php?m_id=natecaji_aktualni"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-132-270550_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-132-270550_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-132-270550_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-132-270550_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasFax "+386 12420680";
+  epo:hasInternetAddress "http://www.zaps.si"^^xsd:anyURI;
+  cccev:email "natecaji@zaps.si";
+  cccev:telephone "+386 12420672" .
+
+epd:id_2017-S-132-270550_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2017-S-132-270550_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-132-270550_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2017-S-132-270550_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasFax "+386 12420680";
+  epo:hasInternetAddress "http://www.zaps.si"^^xsd:anyURI;
+  cccev:email "natecaji@zaps.si";
+  cccev:telephone "+386 12420672" .
+
+epd:id_2017-S-132-270550_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SI>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Vegova ulica 8" .
+
+epd:id_2017-S-132-270550_InformationProviderOrganisationIdentifier_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:Identifier;
+  epo:hasIdentifierValue "1913433000" .
+
+epd:id_2017-S-132-270550_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasID epd:id_2017-S-132-270550_InformationProviderOrganisationIdentifier_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:hasLegalName "ZAPS"@sl;
+  cccev:registeredAddress epd:id_2017-S-132-270550_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2017-S-132-270550_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2017-S-132-270550_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-132-270550_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+                  Javni, projektni, odprti, anonimni, enostopenjski arhitekturno krajinski natečaj za izbiro strokovno najprimernejše rešitve in izbiro izdelovalca projektne dokumentacije za namen reševanja prostorske problematike Zavoda za prestajanje kazni zapora Ig na obstoječi lokaciji tega zavoda.
+               """@sl;
+  epo:hasPurpose epd:id_2017-S-132-270550_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-132-270550_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-132-270550_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2017-S-132-270550_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2017-S-132-270550_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2017-S-132-270550_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2017-S-132-270550_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2017-07-10"^^xsd:date;
+  epo:hasID epd:id_2017-S-132-270550_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20170713";
+  epo:refersToLot epd:id_2017-S-132-270550_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2017-S-132-270550_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2017-S-132-270550_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 132-270550" .
+
+epd:id_2017-S-132-270550_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SI>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Župančičeva ulica 3" .
+
+epd:id_2017-S-132-270550_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "2399237000" .
+
+epd:id_2017-S-132-270550_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasID epd:id_2017-S-132-270550_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Ministrstvo za pravosodje"@sl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-132-270550_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-132-270550_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "4300-19/2017" .
+
+epd:id_2017-S-132-270550_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2017-S-132-270550_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+               1. Natečajni roki
+               Organizirani ogled lokacije 20.7. in 10.8.2017 ob 9.00 uri.
+               1. Rok za postavljanje vprašanj (priporočeno vsebinska) 23.8.2017.
+               1. Rok za odgovore na vprašanja 30.8.2017.
+               2. Rok za postavljanje vprašanj (priporočeno formalna, 8 dni pred rokom za oddajo natečajnih elaboratov) 27.9.2017.
+               2. Rok za odgovore na vprašanja (6 dni pred rokom za oddajo natečajnih elaboratov) 29.9.2017.
+               Oddaja natečajno ponudbene dokumentacije:
+               1. faza Oddaja natečajno ponudbene dokumentacije brez makete 6.10.2017 do 16:00 ure.
+               2. faza Oddaja makete 13.10.2017 do 12:00 ure.
+               Odločitev o izzidu natečaja z zaključnim poročilom predvidoma 10.11.2017.
+               Razstava natečajnih elaboratov predvidoma januar 2018.
+               Rok za sprejemanje ponudnikovih vprašanj: 27.9.2017, 0:00.
+            """@sl;
+  epo:hasID epd:id_2017-S-132-270550_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-132-270550_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2017-S-132-270550_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+               Natečaj za namen reševanja prostorske problematike Zavoda za prestajanje kazni zapora Ig na obstoječi lokaciji tega zavoda.
+            """@sl;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-132-270550_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2017-S-132-270550_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2017-S-132-270550_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-132-270550_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2017-S-132-270550_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2017-S-132-270550_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Župančičeva ulica 3" .
+
+epd:id_2017-S-132-270550_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Ministrstvo za pravosodje"@sl;
+  cccev:registeredAddress epd:id_2017-S-132-270550_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2017-S-132-270550_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-132-270550_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2017-S-132-270550_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Slovenska cesta 54" .
+
+epd:id_2017-S-132-270550_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Državna revizijska komisija"@sl;
+  cccev:registeredAddress epd:id_2017-S-132-270550_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-132-270550_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-132-270550_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-132-270550_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "SL" .
+
+epd:id_2017-S-132-270550_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SI>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Vegova ulica 8" .
+
+epd:id_2017-S-132-270550_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasFax "+386 12420680";
+  epo:hasInternetAddress "http://www.zaps.si"^^xsd:anyURI;
+  cccev:email "natecaji@zaps.si";
+  cccev:telephone "+386 12420672" .
+
+epd:id_2017-S-132-270550_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS
+  a epo:Identifier;
+  epo:hasIdentifierValue "1913433000" .
+
+epd:id_2017-S-132-270550_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasID epd:id_2017-S-132-270550_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasLegalName "ZAPS"@sl;
+  epo:hasPrimaryContactPoint epd:id_2017-S-132-270550_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2017-S-132-270550_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2017-S-132-270550_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-132-270550_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2017-S-132-270550_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

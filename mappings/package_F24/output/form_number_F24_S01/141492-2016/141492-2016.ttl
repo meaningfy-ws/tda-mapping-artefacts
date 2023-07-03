@@ -1,0 +1,225 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-080-141492_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.achatpublic.com/sdm/ent/gen/index.jsp"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-080-141492_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.achatpublic.com/sdm/ent/gen/index.jsp"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-080-141492_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2016-S-080-141492_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2016-S-080-141492_Channel_PECLWCEwQNoZFei2BQMmT6 a cccev:Channel;
+  epo:hasURL "https://www.achatpublic.com/sdm/ent/gen/index.jsp"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2016-S-080-141492_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "M. le maire"@fr;
+  epo:hasFax "+33 478649088";
+  epo:hasInternetAddress "http://www.mairie-saintdidieraumontdor.fr"^^xsd:anyURI;
+  cccev:email "mgbarra@stdidier.com";
+  cccev:telephone "+33 478358525" .
+
+epd:id_2016-S-080-141492_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+Saint-Didier-au-Mont-d'Or.
+"""@fr .
+
+epd:id_2016-S-080-141492_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:address epd:id_2016-S-080-141492_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2016-S-080-141492_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2016-S-080-141492_Period_RgULVPVVYP9pkvK789PCUZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-080-141492_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2016-S-080-141492_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2016-S-080-141492_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "Mme Marie Géraldine Barra"@fr;
+  epo:hasFax "+33 478649088";
+  epo:hasInternetAddress "https://www.mairie-saintdidieraumontdor.fr"^^xsd:anyURI;
+  cccev:email "mgbarra@stdidier.com" .
+
+epd:id_2016-S-080-141492_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:postCode "69370";
+  locn:postName "Saint-Didier-au-Mont-d'Or";
+  locn:thoroughfare "34 avenue de la République" .
+
+epd:id_2016-S-080-141492_InformationProviderOrganisationIdentifier_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:Identifier;
+  epo:hasIdentifierValue "216 901 942" .
+
+epd:id_2016-S-080-141492_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasID epd:id_2016-S-080-141492_InformationProviderOrganisationIdentifier_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:hasLegalName "Commune de Saint-Didier-au-Mont-d'Or"@fr;
+  cccev:registeredAddress epd:id_2016-S-080-141492_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2016-S-080-141492_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/85311300>, <http://data.europa.eu/cpv/cpv/85312000>,
+    <http://data.europa.eu/cpv/cpv/85312110> .
+
+epd:id_2016-S-080-141492_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-080-141492_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation """
+Les candidats remettront un dossier permettant à la collectivité d'apprécier leurs garanties professionnelles et financières, leur respect de l'obligation d'emploi des travailleurs handicapés prévue aux articles L. 5212-1 et suivants du code du travail et leur aptitude à assurer l'exécution et la continuité du service public et l'égalité des usagers devant le service public.
+"""@fr;
+  epo:hasDescription """
+Le délégataire est chargé de la gestion et de l'exploitation des structures petite enfance et enfance. Il est chargé de gérer les 3 établissements d'accueil du jeune enfant (La Lyre, la Doriane et le jardin d'enfants), le relais d'assistantes maternelles intercommunal, l'ALSH (point jeune, accueil extra et périscolaire, nouvelles activités périscolaires), éventuellement une permanence d'accueil repérée pour les familles. Il devra veiller à la santé, à la sécurité, à l'épanouissement et au bien être des enfants et adolescents, favoriser la mixité sociale au sein des structures, ainsi que l'accueil d'enfants en situation de handicap, instaurer une relation directe et privilégiée avec les familles, favoriser la conciliation entre vie privée et vie professionnelle des parents, développer les actions de soutien à la parentalité, développer les échanges entre les structures et les associations de la commune.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2016-S-080-141492_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2016-S-080-141492_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-080-141492_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 6250000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-080-141492_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 6250000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-080-141492_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-080-141492_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2016-S-080-141492_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2016-S-080-141492_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2016-S-080-141492_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2016-04-19"^^xsd:date;
+  epo:hasID epd:id_2016-S-080-141492_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20160423";
+  epo:refersToLot epd:id_2016-S-080-141492_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2016-S-080-141492_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2016-S-080-141492_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 080-141492" .
+
+epd:id_2016-S-080-141492_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:postCode "69370";
+  locn:postName "Saint-Didier-au-Mont-d'Or";
+  locn:thoroughfare "34 avenue de la République" .
+
+epd:id_2016-S-080-141492_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "216 901 942" .
+
+epd:id_2016-S-080-141492_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2016-S-080-141492_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Commune de Saint-Didier-au-Mont-d'Or"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2016-S-080-141492_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2016-S-080-141492_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;
+  epo:hasBeginning "2017-01-01"^^xsd:date;
+  epo:hasEnd "2021-12-31"^^xsd:date .
+
+epd:id_2016-S-080-141492_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "Concession relative à la gestion du service public secteur petite enfance et enfance" .
+
+epd:id_2016-S-080-141492_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/85300000> .
+
+epd:id_2016-S-080-141492_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-080-141492_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+Le contrat de concession est passé selon une procédure restreinte,sans limitation du nombre de candidat.les mentions figurant sur l'enveloppe en cas de transmission par voie postale sont«contrat de concession relatif à la gestion du service public secteur petite enfance et enfance» «Ne pas ouvrir».des modifications de détail et/ou des compléments d'information pourront être apportés au dossier de consultation10 jours avant la date limite de remise des candidatures.le présent avis vaut règlement de la consultation pour la sélection des candidatures.les candidats sélectionnés se verront transmettre la lettre d'invitation à soumissionner,le cahier des charges accompagné de ses annexes et le règlement de la consultation pour la phase de sélection des offres.les candidatures sont transmises soit par voie postale,soit par voie électronique à l'adresse:https://www.achatpublic.com/sdm/ent/gen/index.jsp.Pas de transmission par mail.
+"""@fr;
+  epo:hasDescription """
+La Commune dispose: 1 établissement d'accueil du jeune enfant(30 berceaux pour des enfants de 2 mois 1/2 à l'acquisition de la marche) 1 établissement d'accueil du jeune enfant(18 places pour des enfants de l'acquisition de la marche à 4 ans) 1 jardin d'enfants (12 places pour des enfants âgés entre 2 et 4 ans) 1 relais d'assistantes maternelles 1 accueil périscolaire: matin (30 places à l'école du Bourg, 28 places à l'école de Saint-Fortunat), Mercredi midi (24 places à l'école du Bourg, 28 à l'école de Saint-Fortunat), Le soir( 60 places à l'école du Bourg, 28 à l'école de St-Fortunat) -1 accueil extrascolaire (mercredis après midi, petites et grandes vacances: soit 12 places à la Doriane pour les enfants âgés de 3 et 4 ans et 64 places au centre de loisirs pour les 4-12 ans -1 point jeunes accueillant 24 jeunes(12 à 17 ans, une fois par semaine, hors vacances scolaires (vendredi soir/samedi après-midi).
+"""@fr;
+  epo:hasEstimatedValue epd:id_2016-S-080-141492_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2016-S-080-141492_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-080-141492_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2016-S-080-141492_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+Contrat de concession relatif à la gestion du service public secteur petite enfance et enfance.
+"""@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-080-141492_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2016-S-080-141492_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2016-S-080-141492_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv;
+  epo:usesChannel epd:id_2016-S-080-141492_Channel_PECLWCEwQNoZFei2BQMmT6 .
+
+epd:id_2016-S-080-141492_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-080-141492_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2016-S-080-141492_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2016-S-080-141492_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+— requête en référé précontractuel conformément aux dispositions de l'article L.551-1 du code de justice administrative à compter de la date de notification du rejet de la candidature ou de l'offre jusqu'à la date de signature du contrat.
+— référé contractuel en application de l'article L.551-13 du code de justice administrative
+— recours en contestation de validité du contrat issu de la jurisprudence «Tarn-et-Garonne du Conseil d'etat du 4.4.2014, no358994» qui peut être exercé par les tiers au contrat, sans considération de leur qualité, dans un délai de 2 mois à compter des mesures de publicités appropriées.
+""" .
+
+epd:id_2016-S-080-141492_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 478141065";
+  epo:hasInternetAddress "http://lyon.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-lyon@juradm.fr";
+  cccev:telephone "+33 478141010" .
+
+epd:id_2016-S-080-141492_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69003";
+  locn:postName "Lyon";
+  locn:thoroughfare "184 rue Duguesclin" .
+
+epd:id_2016-S-080-141492_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-080-141492_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2016-S-080-141492_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2016-S-080-141492_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-080-141492_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2016-S-080-141492_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2016_rBFh2KBuSo"^^xsd:anyURI .
+
+epd:id_2016-S-080-141492_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:postCode "69370";
+  locn:postName "Saint-Didier-au-Mont-d'Or";
+  locn:thoroughfare "34 avenue de la République" .
+
+epd:id_2016-S-080-141492_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.mairie-saintdidieraumontdor.fr"^^xsd:anyURI;
+  cccev:email "mgbarra@stdidier.com" .
+
+epd:id_2016-S-080-141492_TenderReceiverOrganisationIdentifier_Yqz38TfLf2pURgiiembBDo
+  a epo:Identifier;
+  epo:hasIdentifierValue "216 901 942" .
+
+epd:id_2016-S-080-141492_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasID epd:id_2016-S-080-141492_TenderReceiverOrganisationIdentifier_Yqz38TfLf2pURgiiembBDo;
+  epo:hasLegalName "Commune de Saint-Didier-au-Mont-d'Or"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-080-141492_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2016-S-080-141492_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2016-S-080-141492_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-080-141492_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2016-S-080-141492_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

@@ -1,0 +1,202 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-113-258122_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "www.vergabe.rib.de"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2018-S-113-258122_AwardCriterionPrice_3adAvBFPyyV3GW2dYQZ2ui a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2018-S-113-258122_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-113-258122_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-113-258122_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-113-258122_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Abteilung FAS-EV"@de;
+  epo:hasInternetAddress "www.fraport.de"^^xsd:anyURI;
+  cccev:email "ausschreibung@fraport-ausbau-sued.de" .
+
+epd:id_2018-S-113-258122_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+                  Frankfurt am Main Flughafen
+               """@de .
+
+epd:id_2018-S-113-258122_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:address epd:id_2018-S-113-258122_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2018-S-113-258122_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-113-258122_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-113-258122_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+                  Option auf Verlängerung mit 2x jeweils 12 Monate
+               """@de .
+
+epd:id_2018-S-113-258122_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2018-S-113-258122_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 72.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-113-258122_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-113-258122_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription """
+                  Sachverständigenprüfung von technischen Anlagen zur Inbetriebnahme der Gebäude im Terminal 3. Das Bauvorhaben Terminal 3 umfasst in Bezug auf die Sachverständigenabnahmen das Terminal – Hauptgebäude, die Piers H und J, sowie die Gebäude PTS (Personentransportsystem), Werkstatt und PWK (Personen- und Warenkontrolle) mit einer Gesamt – Grundfläche (1 Geschoss) von ca. 115 000 m2. Für diese Gebäude sind die technischen Anlagen gemäß technischer Prüfverordnung Hessen zur ersten Inbetriebnahme zu prüfen. Darüber hinaus sollen die RLT – Anlagen (ohne Hygieneprüfung), die Wandhydranten, die allgemeine Stromversorgung, die Fördertechnik (Aufzüge, Fahrtreppen, Fahrsteige) und die allgemeine Gebäudeautomation geprüft werden. Die Einbindung erfolgt zum Start der Ausführungsphase mit einer Prüfung der Planung, sowie baubegleitenden Begehungen.
+                  Leistungsbeginn: 1. Quartal 2019.
+                  Leistungsende: 4. Quartal 2024.
+               """@de;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-113-258122_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-113-258122_AwardCriterionPrice_3adAvBFPyyV3GW2dYQZ2ui .
+
+epd:id_2018-S-113-258122_MediatorOrganisationAddress_QcCdiMK7DbGvuwkYmeWQca a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "64283";
+  locn:postName "Darmstadt";
+  locn:thoroughfare "Dienstgebäude: Wilhelminenstraße 1-3" .
+
+epd:id_2018-S-113-258122_MediatorOrganisation_QcCdiMK7DbGvuwkYmeWQca a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Hessen beim Regierungspräsidium Darmstadt"@de;
+  cccev:registeredAddress epd:id_2018-S-113-258122_MediatorOrganisationAddress_QcCdiMK7DbGvuwkYmeWQca .
+
+epd:id_2018-S-113-258122_Mediator_QcCdiMK7DbGvuwkYmeWQca a epo:Mediator;
+  epo:playedBy epd:id_2018-S-113-258122_MediatorOrganisation_QcCdiMK7DbGvuwkYmeWQca .
+
+epd:id_2018-S-113-258122_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-113-258122_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-113-258122_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2018-S-113-258122_Mediator_QcCdiMK7DbGvuwkYmeWQca,
+    epd:id_2018-S-113-258122_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2018-S-113-258122_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2018-S-113-258122_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2018-S-113-258122_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2018-06-13"^^xsd:date;
+  epo:hasID epd:id_2018-S-113-258122_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20180615";
+  epo:refersToLot epd:id_2018-S-113-258122_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2018-S-113-258122_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2018-S-113-258122_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 113-258122" .
+
+epd:id_2018-S-113-258122_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:postCode "60547";
+  locn:postName "Frankfurt am Main";
+  locn:thoroughfare "Gebäude 555, Raum 5326" .
+
+epd:id_2018-S-113-258122_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "Fraport Ausbau Süd GmbH, im Namen und im Auftrag der Fraport AG"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2018-S-113-258122_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-113-258122_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "EU-P0579-18FAS" .
+
+epd:id_2018-S-113-258122_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71319000> .
+
+epd:id_2018-S-113-258122_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-113-258122_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+               I. Ablauf des Verfahrens
+               1. Phase – Interessenbekundung:
+               Interessenten müssen ihr Interesse über die Vergabeplattform www.vergabe.rib.de bekunden.
+               Die Interessenbekundung als Bewerber-/ Bietergemeinschaft ist bereits in dieser 1. Phase möglich, aber nicht zwingend. In diesem Fall sind die Mitglieder sowie das vertretungsberechtigte Mitglied mit der Interessensbekundung zu benennen (siehe auch nachstehend zur 2. Phase – Interessensbestätigung). Die Einreichung eines Teilnahmeantrags/ einer Interessensbestätigung ist in dieser Phase nicht erforderlich.
+               Es erfolgt keine gesonderte Auftragsbekanntmachung mehr (§ 36 Abs. 4 SektVO). Lediglich die Unternehmen, die form- und fristgerecht eine Interessenbekundung übermittelt haben, werden am weiteren Verfahren beteiligt (§36 Abs. 5 SektVO).
+               Der Interessent trägt das Risiko der fristgerechten Übermittlung der Interessenbekundung.
+               2. Phase – Interessensbestätigung:
+               Nur diejenigen Unternehmen, die form- und fristgerecht ihr Interesse über die Vergabeplattform bekundet haben, werden zur Abgabe eines Teilnahmeantrages (Interessensbestätigung) aufgefordert werden. Weitere/sonstige Unternehmen sind nicht zur Teilnahme am Verfahren berechtigt. Soweit noch keine Interessensbekundung als Bewerber-/ Bietergemeinschaft in der 1. Phase erfolgt ist, kann eine Bewerber-/ Bietergemeinschaft auch noch nach Aufforderung zur Interessensbestätigung bis zur Abgabe der Teilnahmeanträge zulässig gebildet werden. In diesem Fall darf jedoch eine Bewerber-/Bietergemeinschaft nur noch zwischen Unternehmen gebildet werden, die auch ihr Interesse zuvor in der 1. Phase bekundet haben. Die Aufforderung zur Interessensbestätigung beinhaltet alle notwendigen Informationen zur Erstellung des Teilnahmeantrages:
+               — „Ergänzungen zur Aufforderung zur Interessensbestätigung Teil A“,
+               — „Ergänzungen zur Aufforderung zur Interessensbestätigung Teil B“ (Formblätter Teilnahmeantrag),
+               — die informatorischen Vergabeunterlagen.
+               Aufgrund der Veröffentlichung einer regelmäßigen nicht verbindlichen Bekanntmachung werden die Dokumente mit der Aufforderung zur Interessensbestätigung elektronisch zur Verfügung gestellt oder eine Internetadresse angegeben, unter der die elektronischen Dokumente abgerufen werden können.
+               Es wird ausdrücklich darauf hingewiesen, dass entgegen § 41 Abs. 1 SektVO die informatorischen Vergabeunterlagen nicht vollständig sind und daher nicht zur Angebotsabgabe verwendet werden können. Der mit dieser Vorgehensweise bewirkte Schutz der Vertraulichkeit der Informationen ist notwendig, um die Sicherheitsinteressen im Sinne des § 107 Abs. 2 GWB, die u. a. für die Auftraggeberin in § 8 Abs. 1 LuftSiG konkretisiert werden, zu wahren.
+               3. Phase – Angebotsphase:
+               Gemäß § 41 Abs. 4 SektVO und auf Grundlage von § 107 Abs. 2 Nr. 1 GWB erhalten nur diejenigen Bewerber, die vom AG nach Abschluss der Interessensbestätigung/ des Teilnahmewettbewerbes zur Angebotsabgabe aufgefordert werden, die für die Abgabe eines ersten verbindlichen Angebotes zu verwendenden vollständigen finalen Vergabeunterlagen. Die zur Angebotsabgabe zu verwendenden Vergabeunterlagen werden nebst allen Unterlagen dann digital über die Plattform www.vergabe.rib.de zur Verfügung gestellt.
+               Es ist beabsichtigt, die Anzahl der Bieter / Bietergemeinschaften in einer oder mehreren Verhandlungsrunden durch Ausscheiden der weniger wirtschaftlichen Angebote stufenweise zu reduzieren. Die Auftraggeberin behält sich jedoch gleichwohl vor, den Zuschlag bereits auf Grundlage der ersten verbindlichen Angebote ohne weitere Verhandlungen und ohne die Einholung weiterer Angebote zu erteilen.
+               II. Es wird darauf hingewiesen, dass die Kommunikation im Vergabeverfahren grundsätzlich elektronisch erfolgt. Die Auftraggeberin behält sich jedoch vor, im Einzelfall andere Kommunikationswege vorzugeben.
+            """@de;
+  epo:hasDescription """
+               Sachverständigen Prüfung LPH 8
+            """@de;
+  epo:hasID epd:id_2018-S-113-258122_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-113-258122_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2018-S-113-258122_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               Sachverständigenprüfung LPH 8
+            """@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-113-258122_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2018-S-113-258122_ReviewTerm_ZsxuomNURxGbRdavxJPhLN, epd:id_2018-S-113-258122_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2018-S-113-258122_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-113-258122_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-113-258122_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-113-258122_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "64283";
+  locn:postName "Darmstadt";
+  locn:thoroughfare "Dienstgebäude: Wilhelminenstraße 1-3" .
+
+epd:id_2018-S-113-258122_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Hessen beim Regierungspräsidium Darmstadt"@de;
+  cccev:registeredAddress epd:id_2018-S-113-258122_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2018-S-113-258122_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-113-258122_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2018-S-113-258122_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Einlegung von Rechtsbehelfen:
+               Gemäß §160 Abs. 3 GWB ist ein Nachprüfungsantrag unzulässig, soweit:
+               1) der Antragsteller den geltend gemachten Verstoß gegen Vergabevorschriften vor Einreichen des Nachprüfungsantrags erkannt und gegenüber dem Auftraggeber nicht innerhalb einer Frist von 10 Kalendertagen gerügt hat; der Ablauf der Frist nach § 134 Absatz 2 bleibt unberührt;
+               2) Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, nicht spätestens bis zum Ablauf der in der Bekanntmachung benannten Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden;
+               3) Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, nicht spätestens bis zum Ablauf der Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden;
+               4) mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind.
+               Satz 1 gilt nicht bei einem Antrag auf Feststellung der Unwirksamkeit des Vertrags nach § 135 Absatz 1 Nummer 2. § 134 Absatz 1 Satz 2 bleibt unberührt.
+            """ .
+
+epd:id_2018-S-113-258122_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "64283";
+  locn:postName "Darmstadt";
+  locn:thoroughfare "Dienstgebäude: Wilhelminenstraße 1-3" .
+
+epd:id_2018-S-113-258122_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Hessen beim Regierungspräsidium Darmstadt"@de;
+  cccev:registeredAddress epd:id_2018-S-113-258122_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2018-S-113-258122_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-113-258122_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2018-S-113-258122_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2018-07-19T12:00" .
+
+epd:id_2018-S-113-258122_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-113-258122_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-113-258122_Organisation_W8v6KSqiUn74jPKJmENKoH .

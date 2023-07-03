@@ -1,0 +1,238 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-039-085714_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.marches-publics.gouv.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=367115&orgAcronyme=f2h"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-039-085714_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "http://www.marches-publics.gouv.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-039-085714_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2018-S-039-085714_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2018-S-039-085714_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Service achats marchés"@fr;
+  epo:hasInternetAddress "http://www.unimes.fr/fr/index.html"^^xsd:anyURI;
+  cccev:email "marchespublics@unimes.fr";
+  cccev:telephone "+33 466364573" .
+
+epd:id_2018-S-039-085714_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2018-S-039-085714_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-039-085714_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2018-S-039-085714_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasContactName "Service achats marchés"@fr;
+  epo:hasInternetAddress "http://www.unimes.fr"^^xsd:anyURI;
+  cccev:email "marchespublics@unimes.fr" .
+
+epd:id_2018-S-039-085714_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ12>;
+  locn:postCode "30900";
+  locn:postName "Nîmes";
+  locn:thoroughfare "rue du Docteur Georges Salan" .
+
+epd:id_2018-S-039-085714_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasLegalName "Université de Nîmes"@fr;
+  cccev:registeredAddress epd:id_2018-S-039-085714_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2018-S-039-085714_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2018-S-039-085714_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-039-085714_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+                  Concours restreint de maîtrise d'œuvre sur Esquisse + (intégrant une phase de négociation avec les candidats invités à concourir) relatif à la construction d'un bâtiment d'environ 2 000 m2 (SU) pour la création d'un pôle étudiant, d'une cafétéria et d'une salle multisports pour l'université de Nîmes. L'opération consiste à la construction d'un bâtiment de 2 000 m2 (SU) comprenant notamment un pôle étudiant, une cafétéria et une salle multisports. La part de l'enveloppe financière prévisionnelle hors TVA affectée aux travaux par le Maître de l'Ouvrage est de 2 770 000 EUR HT valeur février 2018. Les missions qui seront confiées au maître d'œuvre entrent dans le champ d'application des textes suivants: loi nº 85-704 du 12.7.1985 (dite Loi MOP), décret nº 93-1268 du 29.11.1993 et arrêté du 21.12.1993. sur cette base, il est envisagé de confier au maître d'œuvre, les missions suivantes: 
+                  — missions de base: ESQ, APS, APD, PRO, ACT, EXE (calendrier prévisionnel d'exécution des travaux et la totalité des études de synthèse), VISA, DET, AOR. À noter que les missions de base intègrent également les obligations relatives à la Coordination des systèmes de sécurité incendie (CSSI) au sens de la norme NFS 61932. À ce titre, le maître d'œuvre assure la fonction de coordonnateur SSI, 
+                  — autres éléments de mission: ordonnancement pilotage coordination (OPC).
+               """@fr;
+  epo:hasPurpose epd:id_2018-S-039-085714_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-039-085714_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs a cccev:ContactPoint;
+  epo:hasFax "+33 484354460";
+  epo:hasInternetAddress "http://www.paca.pref.gouv.fr"^^xsd:anyURI;
+  cccev:email "catherine.pietri@paca.pref.gouv.fr";
+  cccev:telephone "+33 484354554" .
+
+epd:id_2018-S-039-085714_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13282";
+  locn:postName "Marseille Cedex 06";
+  locn:thoroughfare "place Félix-Baret, CS 80001" .
+
+epd:id_2018-S-039-085714_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs a org:Organization;
+  epo:hasLegalName "Comité consultatif inter-régional de règlement amiable des litiges (CCIRAL) préfecture de la région Provence-Alpes-Côte d'Azur — secrétariat général pour les affaires régionales"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-039-085714_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs;
+  cccev:registeredAddress epd:id_2018-S-039-085714_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2018-S-039-085714_Mediator_eMEmZdeMkSWP9DfmobsFLs a epo:Mediator;
+  epo:playedBy epd:id_2018-S-039-085714_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2018-S-039-085714_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-039-085714_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2018-S-039-085714_Mediator_eMEmZdeMkSWP9DfmobsFLs,
+    epd:id_2018-S-039-085714_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2018-S-039-085714_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2018-S-039-085714_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2018-S-039-085714_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2018-02-22"^^xsd:date;
+  epo:hasID epd:id_2018-S-039-085714_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20180224";
+  epo:refersToLot epd:id_2018-S-039-085714_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2018-S-039-085714_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2018-S-039-085714_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 039-085714" .
+
+epd:id_2018-S-039-085714_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ12>;
+  locn:postCode "30021";
+  locn:postName "Nîmes Cedex 1";
+  locn:thoroughfare "rue du Docteur Georges Salan, CS13019" .
+
+epd:id_2018-S-039-085714_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "Université de Nîmes"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/education>;
+  cccev:registeredAddress epd:id_2018-S-039-085714_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2018-S-039-085714_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2018-02PINEDE" .
+
+epd:id_2018-S-039-085714_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2018-S-039-085714_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+               — le dossier de consultation (phase 1 candidature) est composé des pièces suivantes: 
+               —— l'avis d'appel public à la concurrence envoyé à la publication,
+               —— le règlement de concours, 
+               —— le Cahier des clauses particulières (CCP) et son annexe 1, 
+               —— le programme fonctionnel,
+               —— analyse historique du site. 
+               — les candidatures et les offres seront entièrement rédigées en langue française ainsi que tous les documents de présentation associés, 
+               — les candidatures qui ne peuvent être admises en application de l'article 55 du décret nº 2016-360 du 25.3.2016 sont éliminées par l'université après avis du jury, 
+               — la composition du jury est énoncé dans le règlement de concours, 
+               — la procédure d'achat du présent avis est couverte par l'accord sur les marchés publics de l'OMC,
+               — pour information, une visite sera organisée par la suite, uniquement avec les candidats invités à concourir à la phase 2, 
+               — possibilité de confier au titulaire du marché la réalisation de prestations similaires après passation d'un ou de plusieurs marchés négociés en application de l'article 30 I 7o du décret nº 2016-360 du 25.3.2016. 
+               Modalités essentielles de financement et de paiement et / ou références aux textes qui les réglementent: 
+               — unité monétaire utilisée, l'euro, 
+               — origine du financement: État, région, département, Nîmes Métropole, ville de Nîmes, crous, Université de Nîmes,
+               — les prix seront révisables,
+               — les comptes seront réglés sous la forme d'acomptes et d'un solde, 
+               — le délai global de paiement du règlement des comptes sera fixé à 30 jours, 
+               — le pouvoir adjudicateur agit pour le compte d'autre(s) pouvoir(s) adjudicateur(s): crous de Montpellier.
+            """@fr;
+  epo:hasID epd:id_2018-S-039-085714_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-039-085714_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2018-S-039-085714_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+               Concours pour l'attribution d'un marché de maîtrise d'œuvre pour: La construction d'un bâtiment d'environ 2 000 m2 pour la création d'un pôle étudiant, d'une cafétéria et d'une salle multisports
+            """@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-039-085714_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2018-S-039-085714_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2018-S-039-085714_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2018-S-039-085714_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-039-085714_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2018-S-039-085714_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2018-S-039-085714_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "30941";
+  locn:postName "Nîmes Cedex 09";
+  locn:thoroughfare "16 avenue Feuchères, CS 88010" .
+
+epd:id_2018-S-039-085714_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasFax "+33 466362786";
+  epo:hasInternetAddress "http://nimes.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-nimes@juradm.fr";
+  cccev:telephone "+33 466273700" .
+
+epd:id_2018-S-039-085714_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nîmes"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-039-085714_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2018-S-039-085714_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2018-S-039-085714_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-039-085714_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2018-S-039-085714_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               — référé précontractuel: depuis le début de la procédure de passation jusqu'à la signature du contrat (article L. 551-1 du code de justice administrative), 
+               — référé contractuel: 31 jours à compter de la date de publication de l'avis d'attribution du marché (article L. 551-13 à L. 551-23 et R. 551-7 à R. 551-10 du code de justice administrative), 
+               — recours pour excès de pouvoir: dans un délai de 2 mois à compter de la notification de la décision de rejet (articles R. 421-1 à R. 421-3 du code de justice administrative), 
+               — recours de plein contentieux: dans un délai de 2 mois à compter de l'accomplissement des mesures de publicité concernant l'attribution du marché.
+            """ .
+
+epd:id_2018-S-039-085714_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+33 466362786";
+  epo:hasInternetAddress "http://nimes.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-nimes@juradm.fr";
+  cccev:telephone "+33 466273700" .
+
+epd:id_2018-S-039-085714_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "30941";
+  locn:postName "Nîmes Cedex 09";
+  locn:thoroughfare "16 avenue Feuchères, CS 88010" .
+
+epd:id_2018-S-039-085714_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nîmes"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-039-085714_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2018-S-039-085714_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2018-S-039-085714_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-039-085714_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2018-S-039-085714_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.marches-publics.gouv.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=367115&orgAcronyme=f2h"^^xsd:anyURI .
+
+epd:id_2018-S-039-085714_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ12>;
+  locn:postCode "30900";
+  locn:postName "Nîmes";
+  locn:thoroughfare "rue du Docteur Georges Salan" .
+
+epd:id_2018-S-039-085714_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasContactName "Service achats marchés, bureau D124 (dépôt en LRAR ou contre récépissé) ouverture du lundi au vendredi de 9:00 à 12:00 et de 14:00 à 16:30"@fr;
+  epo:hasInternetAddress "http://www.unimes.fr"^^xsd:anyURI;
+  cccev:email "marchespublics@unimes.fr" .
+
+epd:id_2018-S-039-085714_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasLegalName "université de Nîmes"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-039-085714_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2018-S-039-085714_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2018-S-039-085714_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-039-085714_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2018-S-039-085714_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

@@ -1,0 +1,148 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-136-279649_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://pmp.b2g.etat.lu/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=14386&orgAcronyme=t5y"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2017-S-136-279649_AwardCriterionPrice_3adAvBFPyyV3GW2dYQZ2ui a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2017-S-136-279649_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-136-279649_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-136-279649_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-136-279649_Channel_K9jP2LezbuXiXfNaXmTtki a cccev:Channel;
+  epo:hasURL "https://pmp.b2g.etat.lu/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=14386&orgAcronyme=t5y"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2017-S-136-279649_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Service gestion infrastructure"@fr;
+  epo:hasInternetAddress "http://www.cfl.lu"^^xsd:anyURI;
+  cccev:email "gi.planificationressources@cfl.lu";
+  cccev:telephone "+352 49905730" .
+
+epd:id_2017-S-136-279649_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/LU> .
+
+epd:id_2017-S-136-279649_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-136-279649_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-136-279649_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-136-279649_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "Service ingénierie infrastructure; division voie"@fr;
+  epo:hasInternetAddress "http://www.cfl.lu"^^xsd:anyURI;
+  cccev:email "roland.hoffmann@cfl.lu";
+  cccev:telephone "+352 49904505" .
+
+epd:id_2017-S-136-279649_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/LUX>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/LU>;
+  locn:postCode "L-101";
+  locn:postName "Luxembourg";
+  locn:thoroughfare "9, place de la Gare" .
+
+epd:id_2017-S-136-279649_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasLegalName "Société nationale des chemins de fer luxembourgeois"@fr;
+  cccev:registeredAddress epd:id_2017-S-136-279649_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2017-S-136-279649_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45234000> .
+
+epd:id_2017-S-136-279649_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-136-279649_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription """
+                  
+                     Dans le cadre du projet, il est prévu de réaliser les travaux suivants: travaux de voie: renouvellement d'appareils de voie mise en œuvre de ballast en pierre naturelles.
+                  
+               """@fr;
+  epo:hasPurpose epd:id_2017-S-136-279649_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-136-279649_AwardCriterionPrice_3adAvBFPyyV3GW2dYQZ2ui .
+
+epd:id_2017-S-136-279649_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-136-279649_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2017-S-136-279649_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2017-S-136-279649_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2017-S-136-279649_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2017-07-17"^^xsd:date;
+  epo:hasID epd:id_2017-S-136-279649_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20170719";
+  epo:refersToLot epd:id_2017-S-136-279649_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2017-S-136-279649_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-136-279649_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 136-279649" .
+
+epd:id_2017-S-136-279649_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/LUX>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/LU>;
+  locn:postCode "1018";
+  locn:postName "Luxembourg";
+  locn:thoroughfare "9, place de la Gare" .
+
+epd:id_2017-S-136-279649_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "Société nationale des chemins de fer luxembourgeois"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2017-S-136-279649_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-136-279649_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45234000> .
+
+epd:id_2017-S-136-279649_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-136-279649_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+               
+                  Avis additionnel à l'avis 2016/S 117-209334 du 18.6.2016 Procédure restreinte. Prix non révisables. Règlement par acomptes et décomptes. Délai de paiement de 60 jours calendriers. Le présent avis périodique indicatif tient lieu de moyen de mise en concurrence et de ce fait aucun avis de mise en concurrence par spécialité ne sera publié ultérieurement. Données indiquées à titre indicatif et en aucun cas opposables aux CFL. Pour les sociétés figurant déjà sur la liste des entreprises agréées par les CFL une simple lettre de candidature suffira pour être pris en considération lors des appels d'offres relatifs au projet faisant l'objet de la présente publication. Toute autre entreprise intéressée à participer aux soumissions afférentes, devra fournir les informations demandées sous les points III.1.2. à III.2.3. de la section III.
+               
+            """@fr;
+  epo:hasDescription """
+               
+                  Travaux de voie: renouvellement d'appareils de voie — mise en œuvre de ballast en pierre naturelles.
+               
+            """@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-136-279649_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2017-S-136-279649_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               
+                  Gare de Luxembourg. Travaux de voie en vue du renouvellement d'appareils de voie avec mise en œuvre de ballast en pierre naturelles.
+               
+            """@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-136-279649_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2017-S-136-279649_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY;
+  epo:usesChannel epd:id_2017-S-136-279649_Channel_K9jP2LezbuXiXfNaXmTtki .
+
+epd:id_2017-S-136-279649_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-136-279649_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2017-S-136-279649_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2017-S-136-279649_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/LUX>;
+  locn:postName "Luxembourg" .
+
+epd:id_2017-S-136-279649_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Tribunal administratif"@fr;
+  cccev:registeredAddress epd:id_2017-S-136-279649_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-136-279649_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-136-279649_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-136-279649_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "DE", "FR";
+  epo:hasReceiptExpressionDeadline "2017-08-18T10:00" .
+
+epd:id_2017-S-136-279649_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-136-279649_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-136-279649_Organisation_W8v6KSqiUn74jPKJmENKoH .

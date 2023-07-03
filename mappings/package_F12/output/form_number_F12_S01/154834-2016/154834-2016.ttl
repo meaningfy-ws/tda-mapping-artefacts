@@ -1,0 +1,222 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-088-154834_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://samarbejde.aarhuskommune.dk"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2016-S-088-154834_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-088-154834_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:playedBy epd:id_2016-S-088-154834_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2016-S-088-154834_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF a cccev:ContactPoint;
+  epo:hasContactName "Susanne Egelund"@da;
+  epo:hasInternetAddress "http://www.aarhus.dk"^^xsd:anyURI;
+  cccev:email "sue@aarhus.dk";
+  cccev:telephone "+45 89402755" .
+
+epd:id_2016-S-088-154834_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF a org:Organization;
+  epo:hasLegalName "Aarhus Kommune"@da;
+  cccev:registeredAddress epd:id_2016-S-088-154834_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2016-S-088-154834_BuyerOrganisationGroup_Vx4nE2MhH2AK3p6fvMzsYF a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  epo:hasMember epd:id_2016-S-088-154834_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2016-S-088-154834_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-088-154834_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-088-154834_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2016-S-088-154834_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-088-154834_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Anders Eklund"@da;
+  epo:hasInternetAddress "http://www.rm.dk"^^xsd:anyURI;
+  cccev:email "Anders.Eklund@stab.rm.dk";
+  cccev:telephone "+45 78410452" .
+
+epd:id_2016-S-088-154834_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2016-S-088-154834_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-088-154834_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2016-S-088-154834_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasContactName "Niels Christian Toppenberg"@da;
+  epo:hasInternetAddress "http://www.bascon.dk"^^xsd:anyURI;
+  cccev:email "nct@bascon.dk";
+  cccev:telephone "+45 40306019" .
+
+epd:id_2016-S-088-154834_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK042>;
+  locn:postCode "8000";
+  locn:postName "Aarhus";
+  locn:thoroughfare "Aaboulevarden 21" .
+
+epd:id_2016-S-088-154834_InformationProviderOrganisationIdentifier_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:Identifier;
+  epo:hasIdentifierValue "66006913" .
+
+epd:id_2016-S-088-154834_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasID epd:id_2016-S-088-154834_InformationProviderOrganisationIdentifier_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:hasLegalName "Bascon A/S"@da;
+  cccev:registeredAddress epd:id_2016-S-088-154834_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2016-S-088-154834_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-088-154834_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+Partnerskabet bag SPARK indbyder tværfaglige teams til at søge om prækvalifikation til projektkonkurrence for SPARK-projektet på MarselisborgCentret i Aarhus.
+SPARK har til formål at skabe et nyt, levende byrum der imødekommer behovet for udendørs rehabiliteringsaktiviteter, helstøbt klimatilpasningsindsats og for rekreative områder. Disse behov forenes ved anlæg af en ny offentlig park, med potentiale til at øge den sociale inklusion ved at skabe møder mellem brugere, ansatte, og beboere i bydelen.
+SPARK skal medvirke til at udviske grænsen mellem at være bruger og besøgende, og skabe rum for nye fællesskaber.
+Bedømmelseskomiteen vil udvælge 1-3 vindere af projektkonkurrencen. Et efterfølgende udbud (2. fase) gennemføres efter proceduren Udbud med forhandling uden forudgående udbudsbekendtgørelse, og med deltagelse af vinder(e) af projektkonkurrencen. Supplerende beskrivelse af projektet, herunder også en uddybende beskrivelse af udbuddet kan rekvireres ved Bascon, jf. pkt. VI.3(2).
+"""@da;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-088-154834_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-088-154834_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2016-S-088-154834_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2016-S-088-154834_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2016-S-088-154834_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2016-S-088-154834_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2016-S-088-154834_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2016-05-03"^^xsd:date;
+  epo:hasID epd:id_2016-S-088-154834_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20160506";
+  epo:refersToLot epd:id_2016-S-088-154834_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2016-S-088-154834_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2016-S-088-154834_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 088-154834" .
+
+epd:id_2016-S-088-154834_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK042>;
+  locn:postCode "8800";
+  locn:postName "Viborg";
+  locn:thoroughfare "Skottenborg 26" .
+
+epd:id_2016-S-088-154834_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK042>;
+  locn:postCode "8000 ";
+  locn:postName "Aarhus C";
+  locn:thoroughfare "Rådhuspladsen 2" .
+
+epd:id_2016-S-088-154834_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasLegalName "Region Midtjylland"@da;
+  cccev:registeredAddress epd:id_2016-S-088-154834_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-088-154834_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71240000> .
+
+epd:id_2016-S-088-154834_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+1. Projektets anlægssum til håndværkerudgift, forventes at være på 25 — 35 000 000 DKK ekskl. moms
+2. Supplerende beskrivelse af projektet, herunder også en uddybende beskrivelse af udbuddet jf. punkt II.2.4), samt ESPD til brug for ansøgningen kan rekvireres ved Bascon A/S, Att: Niels Christian Toppenberg. E-mail: nct@bascon.dk
+3. Ansøgningsmaterialet afleveres / indsendes i 3 stk. fysisk eksemplarer samt 1 stk. digitalt (PDF-format) på USB-nøgle til Bascon A/S, att.: Niels Christian Toppenberg, på adressen Åboulevarden 21, 8000 Aarhus C. Materialet mærkes »Ansøgning SPARK«
+4. Konkurrencen forventes udskrevet august 2016. Afleveringsfristen forventes at være ultimo september 2016. Bedømmelsen finder sted i oktober — november 2016. En eventuel forhandlingsfase (fase 2) forventes at blive gennemført i november 2016 til februar 2017.
+5. Ansøgninger om prækval. kan være på dansk eller engelsk, mens konkurrence- og kontraktsprog vil være dansk.
+"""@da;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-088-154834_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2016-S-088-154834_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+SPARK — Projektkonkurrence om sundhed, park, aktiviteter, rehabilitering og klimatilpasning på MarselisborgCenteret i Aarhus.
+"""@da;
+  epo:isDesignContest true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-088-154834_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2016-S-088-154834_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2016-S-088-154834_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2016-S-088-154834_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-088-154834_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2016-S-088-154834_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2016-S-088-154834_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  locn:postCode "2500";
+  locn:postName "Valby";
+  locn:thoroughfare "Carl Jacobsens Vej 35" .
+
+epd:id_2016-S-088-154834_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www-kfst.dk"^^xsd:anyURI;
+  cccev:telephone "+45 41715000" .
+
+epd:id_2016-S-088-154834_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Konkurrence- og Forbrugerstyrelsen"@da;
+  epo:hasPrimaryContactPoint epd:id_2016-S-088-154834_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2016-S-088-154834_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2016-S-088-154834_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-088-154834_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2016-S-088-154834_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Klager over prækvalifikationen skal indgives inden 20 kalenderdage, regnet fra dagen efter den dag, hvor ordregiver har afsendt underretning til ansøgerne.
+Klager over udbud, skal indgives inden 45 kalenderdage efter at ordregiver har offentliggjort en bekendtgørelse i Den Europæiske Unions Tidende, om at ordregiveren har indgået en kontrakt. Fristen regnes for dagen efter den dag hvor bekendtgørelsen blev offentliggjort. Senest samtidigt med, at en klage indgives til Klagenævnet for Udbud, skal klageren skriftligt underrette ordregiveren om, at klager indgives til Klagenævnet for Udbud, og hvorvidt klagen er indgivet i standstill-perioden. I tilfælde hvor klagen ikke er indgivet i standstill-perioden, skal klageren tillige angive, hvorvidt der begæres opsættende virkning af klagen. Klagen vedlægges et klagegebyr på 10 000 DKK.
+""" .
+
+epd:id_2016-S-088-154834_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  locn:postCode "2100";
+  locn:postName "København Ø";
+  locn:thoroughfare "Dahlerups Pakhus, Langelinie Allé 17" .
+
+epd:id_2016-S-088-154834_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Klagenævnet for Udbud"@da;
+  cccev:registeredAddress epd:id_2016-S-088-154834_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-088-154834_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-088-154834_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-088-154834_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "DA" .
+
+epd:id_2016-S-088-154834_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK042>;
+  locn:postCode "8000";
+  locn:postName "Aarhus";
+  locn:thoroughfare "Aaboulevarden 21" .
+
+epd:id_2016-S-088-154834_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasContactName "Niels Christian Toppenberg"@da;
+  epo:hasInternetAddress "http://www.bascon.dk"^^xsd:anyURI;
+  cccev:email "nct@bascon.dk";
+  cccev:telephone "+45 40306019" .
+
+epd:id_2016-S-088-154834_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS
+  a epo:Identifier;
+  epo:hasIdentifierValue "66006913" .
+
+epd:id_2016-S-088-154834_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasID epd:id_2016-S-088-154834_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasLegalName "Bascon A/S"@da;
+  epo:hasPrimaryContactPoint epd:id_2016-S-088-154834_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2016-S-088-154834_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2016-S-088-154834_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-088-154834_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2016-S-088-154834_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

@@ -1,0 +1,92 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-065-168752_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-065-168752_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-065-168752_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-065-168752_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "M. Arnaud Louette"@fr;
+  epo:hasFax "+32 71549696";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "arnaud.louettte@ores.be";
+  cccev:telephone "+32 64232316" .
+
+epd:id_2021-S-065-168752_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Région de Namur, Avenue Albert Ier, 19 à 5000 Namur."@fr .
+
+epd:id_2021-S-065-168752_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:address epd:id_2021-S-065-168752_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-065-168752_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-065-168752_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-065-168752_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-065-168752_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-065-168752_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Marché de travaux de pose de câbles et de gaines pour fibres optiques dans la région de Namur (DHUY) sur base du système de qualification WQPOSWA (dossier spécifique)."@fr .
+
+epd:id_2021-S-065-168752_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-065-168752_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2021-S-065-168752_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-065-168752_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te;
+  epo:hasDispatchDate "2021-03-30"^^xsd:date;
+  epo:hasID epd:id_2021-S-065-168752_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210402";
+  epo:refersToLot epd:id_2021-S-065-168752_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2021-S-065-168752_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-065-168752_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 065-168752" .
+
+epd:id_2021-S-065-168752_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:postCode "6041";
+  locn:postName "Gosselies";
+  locn:thoroughfare "Avenue Jean Mermoz 14" .
+
+epd:id_2021-S-065-168752_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "BE 0543 696 579" .
+
+epd:id_2021-S-065-168752_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2021-S-065-168752_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "Intercommunale ORES Assets SC"@fr;
+  epo:hasMainActivityDescription "Électricité et gaz";
+  cccev:registeredAddress epd:id_2021-S-065-168752_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-065-168752_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-065-168752_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-065-168752_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "WTPOSSPEC006" .
+
+epd:id_2021-S-065-168752_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45231000> .
+
+epd:id_2021-S-065-168752_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-065-168752_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation "Vu l'existence d'un système de qualification WQPOSWA, seuls les candidats qualifiés à la date du présent API recevront l'invitation à présenter une offre pour le présent marché.Les offres doivent être introduites électroniquement sur le site de e-Tendering https://eten.publicprocurement.be/"@fr;
+  epo:hasDescription "Voir II.2.4)."@fr;
+  epo:hasID epd:id_2021-S-065-168752_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-065-168752_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-065-168752_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Marché de travaux de pose de câbles et de gaines pour fibres optiques dans la région de Namur (DHUY) sur base du système de qualification WQPOSWA (dossier spécifique)"@fr;
+  epo:isCoveredByGPA true .
+
+epd:id_2021-S-065-168752_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-03-31"^^xsd:date .
+
+epd:id_2021-S-065-168752_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-065-168752_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-065-168752_Organisation_W8v6KSqiUn74jPKJmENKoH .

@@ -1,0 +1,100 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-172-309475_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "https://pha.edf.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-172-309475_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2016-S-172-309475_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2016-S-172-309475_Channel_D7Go8W7kJWfGkiJTdrkDRx a cccev:Channel;
+  epo:hasURL "https://pha.edf.com/"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2016-S-172-309475_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "Alina Pricop"@fr;
+  epo:hasFax "+33 450102526";
+  epo:hasInternetAddress "www.hydrostadium.com"^^xsd:anyURI;
+  cccev:email "alina.pricop@hydrostadium.fr";
+  cccev:telephone "+33 450105344" .
+
+epd:id_2016-S-172-309475_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj a locn:Address;
+  locn:fullAddress """
+L'usine du Bens, située dans le département de la Savoie (73) sur la commune d'Arvillard (73).
+"""@fr .
+
+epd:id_2016-S-172-309475_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR717>;
+  locn:address epd:id_2016-S-172-309475_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2016-S-172-309475_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-172-309475_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2016-S-172-309475_LotPurpose_PNm7nZntEXiu4JieackQnj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45442000>, <http://data.europa.eu/cpv/cpv/45442120>,
+    <http://data.europa.eu/cpv/cpv/45442121>, <http://data.europa.eu/cpv/cpv/45442180>,
+    <http://data.europa.eu/cpv/cpv/45442190>, <http://data.europa.eu/cpv/cpv/45442200>,
+    <http://data.europa.eu/cpv/cpv/45442300> .
+
+epd:id_2016-S-172-309475_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-172-309475_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription """
+Le futur marché a pour objet la remise en peinture d'une conduite forcée (CF), de son collecteur et d'un tronçon blindé souterrain. Les principaux travaux et fournitures prévus sont:
+— aménagement et sécurisation des accès et milieu forestier de moyenne montagne,
+— accès à l'intérieur de la CF: excavation,
+— démoussage de la CF,
+— décapage des revêtements: Intérieur et extérieur existants sur la CF; intérieur sur le collecteur; intérieur sur le tronçon blindé, en contexte amiante,
+— application d'un revêtement anticorrosion (épaisseur de 450 à 500 µm, 2 ou 3 couches: primaire époxy, finition polyuréthane; durée de garantie moyenne de 9 ans). Surfaces à traiter: intérieur de la CF (environ 2 000 ml en diamètre 900 mm), intérieur du tronçon blindé et du collecteur; extérieur de la CF: environ 470 ml en diamètre 900 mm,
+— travaux mécaniques: ouverture/fermeture trous d'homme, remplacement joint de dilatation, découpe et soudure de la CF.
+"""@fr;
+  epo:hasPurpose epd:id_2016-S-172-309475_LotPurpose_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2016-S-172-309475_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-172-309475_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2016-S-172-309475_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ;
+  epo:hasDispatchDate "2016-09-02"^^xsd:date;
+  epo:hasID epd:id_2016-S-172-309475_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasPublicationDate "20160907";
+  epo:refersToLot epd:id_2016-S-172-309475_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2016-S-172-309475_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2016-S-172-309475_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 172-309475" .
+
+epd:id_2016-S-172-309475_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR718>;
+  locn:postCode "74000";
+  locn:postName "Annecy";
+  locn:thoroughfare "22 avenue des Vieux Moulins" .
+
+epd:id_2016-S-172-309475_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasLegalName "Hydrostadium"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2016-S-172-309475_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2016-S-172-309475_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45442100> .
+
+epd:id_2016-S-172-309475_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasAdditionalInformation """
+L'objectif du présent avis est de faire connaitre l'intention d'Hydrostadium de passer un marché de travaux de peinture sur la conduite forcée du Bens (73 — France).
+Compte tenu du diamètre de la conduite, nous souhaitons que les phases de décapage et peinture soient réalisées de manière mécanisée/robotisée. Pour ce faire, les fournisseurs disposant de ces moyens sont invités à se manifester et proposer leurs méthodologies de réalisation des travaux.
+Le marché sera passé selon une procédure négociée, sans publication préalable d'un avis d'appel à la concurrence.
+De plus amples informations peuvent être obtenues aux cordonnées ci-dessus ou auprès de Mme. Milène Jammaron au +33 (0)4.50.10.85.86 /milene.jammaron@hydrostadium.fr
+"""@fr;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-172-309475_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2016-S-172-309475_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle """
+73 Le Bens — peinture conduite forcée.
+"""@fr;
+  epo:usesChannel epd:id_2016-S-172-309475_Channel_D7Go8W7kJWfGkiJTdrkDRx .
+
+epd:id_2016-S-172-309475_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-172-309475_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2016-S-172-309475_Organisation_TigDgN9yDLHn3hDtQD7BVC .

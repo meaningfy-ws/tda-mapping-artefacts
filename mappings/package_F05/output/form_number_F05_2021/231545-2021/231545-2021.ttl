@@ -1,0 +1,188 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-089-231545_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.aiguesdebarcelona.cat/proveedores"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-089-231545_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://www.aiguesdebarcelona.cat/proveedores"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-089-231545_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-089-231545_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-089-231545_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.aiguesdebarcelona.cat"^^xsd:anyURI;
+  cccev:email "contractacioab@aiguesdebarcelona.cat" .
+
+epd:id_2021-S-089-231545_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Descritos en la prescripción 1 del Pliego de Prescripciones Técnicas."@es .
+
+epd:id_2021-S-089-231545_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES511>;
+  locn:address epd:id_2021-S-089-231545_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-089-231545_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-089-231545_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-089-231545_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-089-231545_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-089-231545_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-089-231545_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-089-231545_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Servicio de limpieza industrial de equipos e instalaciones de Aigües de Barcelona."@es;
+  epo:hasEstimatedValue epd:id_2021-S-089-231545_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-089-231545_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-089-231545_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 385000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-089-231545_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 1386000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-089-231545_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-089-231545_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-089-231545_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-089-231545_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-089-231545_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-089-231545_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2021-S-089-231545_TenderReceiver_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasDispatchDate "2021-05-04"^^xsd:date;
+  epo:hasID epd:id_2021-S-089-231545_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210507";
+  epo:refersToLot epd:id_2021-S-089-231545_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-089-231545_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-089-231545_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 089-231545" .
+
+epd:id_2021-S-089-231545_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES511>;
+  locn:postCode "08028";
+  locn:postName "Barcelona";
+  locn:thoroughfare "C/ General Batet, 1-7" .
+
+epd:id_2021-S-089-231545_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "A66098435" .
+
+epd:id_2021-S-089-231545_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2021-S-089-231545_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Aigües de Barcelona, Empresa Metropolitana de Gestió del Cicle Integral de l'Aigua, S. A."@es;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2021-S-089-231545_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-089-231545_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "AB/SAN-ABAST/2021/04" .
+
+epd:id_2021-S-089-231545_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/90910000> .
+
+epd:id_2021-S-089-231545_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-089-231545_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Si cinco días antes de la fecha prevista para la celebración del acto público de apertura del sobre número 3 continuara la crisis sanitaria provocada por la COVID-19 y la declaración del estado de alarma o de cualquier otra medida adoptada por las autoridades competentes, que pudiera dificultar la libre circulación o el encuentro en un mismo espacio de un número determinado de personas, Aigües de Barcelona podrá acordar sustituir la celebración presencial de dicho acto por una celebración remota en streaming.En todo caso, de adoptarse esta opción, ello será objeto de publicación en el Perfil de Proveedores de AB y comunicado individualmente a cada uno de los licitadores admitidos en la dirección de correo electrónica facilitada al efecto."@es;
+  epo:hasDescription "Servicio de limpieza industrial de equipos e instalaciones de Aigües de Barcelona."@es;
+  epo:hasEstimatedValue epd:id_2021-S-089-231545_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2021-S-089-231545_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-089-231545_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-089-231545_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Servicio de limpieza industrial de equipos e instalaciones de Aigües de Barcelona"@es;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-089-231545_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-089-231545_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-089-231545_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-089-231545_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-089-231545_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-089-231545_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postCode "08028";
+  locn:postName "Barcelona";
+  locn:thoroughfare "C/ General Batet, 1-7" .
+
+epd:id_2021-S-089-231545_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.aiguesdebarcelona.cat/proveedores"^^xsd:anyURI .
+
+epd:id_2021-S-089-231545_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Aigües de Barcelona, Empresa Metropolitana de Gestió del Cicle Integral de l'Aigua, S. A."@es;
+  epo:hasPrimaryContactPoint epd:id_2021-S-089-231545_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-089-231545_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-089-231545_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-089-231545_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-089-231545_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  cccev:telephone "+34 935676300" .
+
+epd:id_2021-S-089-231545_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postCode "08003";
+  locn:postName "Barcelona";
+  locn:thoroughfare "Via Laietana, 14" .
+
+epd:id_2021-S-089-231545_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal Català de Contractes del Sector Públic"@es;
+  epo:hasPrimaryContactPoint epd:id_2021-S-089-231545_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-089-231545_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-089-231545_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-089-231545_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-089-231545_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "CA", "ES" .
+
+epd:id_2021-S-089-231545_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES511>;
+  locn:postCode "08028";
+  locn:postName "Barcelona";
+  locn:thoroughfare "Avenida Albert Bastardas, 10-14, edificio Collblanc (Saneamiento)" .
+
+epd:id_2021-S-089-231545_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.aiguesdebarcelona.cat"^^xsd:anyURI;
+  cccev:email "contractacioab@aiguesdebarcelona.cat" .
+
+epd:id_2021-S-089-231545_TenderReceiverOrganisationIdentifier_RmPNyhSxpRtChEASKUU5BR
+  a epo:Identifier;
+  epo:hasIdentifierValue "A66098435" .
+
+epd:id_2021-S-089-231545_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR a org:Organization;
+  epo:hasID epd:id_2021-S-089-231545_TenderReceiverOrganisationIdentifier_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasLegalName "Aigües de Barcelona, Empresa Metropolitana de Gestió del Cicle Integral de l'Aigua, S. A."@es;
+  epo:hasPrimaryContactPoint epd:id_2021-S-089-231545_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  cccev:registeredAddress epd:id_2021-S-089-231545_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR .
+
+epd:id_2021-S-089-231545_TenderReceiver_RmPNyhSxpRtChEASKUU5BR a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-089-231545_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  epo:playedBy epd:id_2021-S-089-231545_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR .

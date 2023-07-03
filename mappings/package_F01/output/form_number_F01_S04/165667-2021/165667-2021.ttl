@@ -1,0 +1,134 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-065-165667_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.gov.pl/web/fundusze-regiony/informacja-o-zamowieniach-publicznych"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-065-165667_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-065-165667_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-065-165667_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Karolina Kuśmierz"@pl;
+  epo:hasFax "+48 222738922";
+  epo:hasInternetAddress "https://zamowienia.mfipr.gov.pl"^^xsd:anyURI;
+  cccev:email "zamowienia@mfipr.gov.pl" .
+
+epd:id_2021-S-065-165667_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL> .
+
+epd:id_2021-S-065-165667_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-065-165667_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-065-165667_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-065-165667_Fund_c4Jggv3QHLrvEuoxvHMwcK a epo:Fund;
+  epo:hasDescription "POPT.01.02.00-00-0348/20"@pl .
+
+epd:id_2021-S-065-165667_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-065-165667_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Usługa ochrony fizycznej budynku przy ul. Wspólnej 2/4, 00-926 Warszawa"@pl;
+  epo:isFundedBy epd:id_2021-S-065-165667_Fund_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds true .
+
+epd:id_2021-S-065-165667_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-065-165667_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2021-S-065-165667_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-065-165667_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2021-S-065-165667_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2021-S-065-165667_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2021-S-065-165667_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2021-03-31"^^xsd:date;
+  epo:hasID epd:id_2021-S-065-165667_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210402";
+  epo:refersToLot epd:id_2021-S-065-165667_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-065-165667_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-065-165667_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 065-165667" .
+
+epd:id_2021-S-065-165667_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL911>;
+  locn:postCode "00-926";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Wspólna 2/4" .
+
+epd:id_2021-S-065-165667_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasLegalName "Ministerstwo Funduszy i Polityki Regionalnej"@pl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/econ-aff>;
+  cccev:registeredAddress epd:id_2021-S-065-165667_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-065-165667_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-065-165667_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-065-165667_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79710000> .
+
+epd:id_2021-S-065-165667_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-065-165667_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "Usługa ochrony fizycznej budynku przy ul. Wspólnej 2/4, 00-926 Warszawa"@pl;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-065-165667_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-065-165667_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Ochrona obiektu"@pl;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-065-165667_ReviewTerm_KjhWjVv578XNpvpTRjZhAs .
+
+epd:id_2021-S-065-165667_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-04-16"^^xsd:date .
+
+epd:id_2021-S-065-165667_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-065-165667_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-065-165667_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-065-165667_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17A" .
+
+epd:id_2021-S-065-165667_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  cccev:email "odwolania@uzp.gov.pl" .
+
+epd:id_2021-S-065-165667_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza, Urząd Zamówień Publicznych"@pl;
+  epo:hasPrimaryContactPoint epd:id_2021-S-065-165667_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2021-S-065-165667_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-065-165667_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-065-165667_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-065-165667_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Każdemu Wykonawcy, a także innemu podmiotowi, jeżeli ma lub miał interes w uzyskaniu zamówienia oraz poniósł lub może ponieść szkodę w wyniku naruszenia przez zamawiającego przepisów ustawy przysługują środki ochrony prawnej przewidziane w dziale IX ustawy jak dla postępowań powyżej progów unijnych, o których mowa w art. 3 ust. 1 ustawy w odniesieniu do usług.Środki ochrony prawnej wobec ogłoszenia wszczynającego postępowanie o udzielenie zamówienia oraz dokumentów zamówienia przysługują również organizacjom wpisanym na listę, o której mowa w art. 469 pkt 15 ustawy, oraz Rzecznikowi Małych i Średnich Przedsiębiorców." .
+
+epd:id_2021-S-065-165667_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+48 224587800";
+  cccev:email "odwolania@uzp.gov.pl" .
+
+epd:id_2021-S-065-165667_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17A" .
+
+epd:id_2021-S-065-165667_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza"@pl;
+  epo:hasPrimaryContactPoint epd:id_2021-S-065-165667_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2021-S-065-165667_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-065-165667_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-065-165667_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-065-165667_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-065-165667_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-065-165667_Organisation_gqoAAwSV3JaTMsopb9zyKP .

@@ -1,0 +1,189 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-074-190239_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.klekoon.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-074-190239_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.klekoon.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-074-190239_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-074-190239_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-074-190239_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Fontbonne Bernard"@fr;
+  epo:hasInternetAddress "http://www.siemly.fr"^^xsd:anyURI;
+  cccev:email "contact@siemly.fr";
+  cccev:telephone "+33 478484241" .
+
+epd:id_2021-S-074-190239_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Territoire syndical: 46 communes situées dans le département du Rhône et 29 communes dans le département de la Loire."@fr .
+
+epd:id_2021-S-074-190239_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:address epd:id_2021-S-074-190239_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-074-190239_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-074-190239_Period_RgULVPVVYP9pkvK789PCUZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-074-190239_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-074-190239_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-074-190239_LotIdentifier_RgULVPVVYP9pkvK789PCUZ a epo:Identifier;
+  epo:hasIdentifierValue "unique" .
+
+epd:id_2021-S-074-190239_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/65111000> .
+
+epd:id_2021-S-074-190239_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-074-190239_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Option: il est demandé aux candidats de répondre sur l'option concernant la mise en place de la relève à distance, dont le cahier des charges est annexé au dossier de consultation.La valeur estimée des recettes du concessionnaire sur la durée du contrat est de l'ordre de 69 500 000 EUR HT (option obligatoire incluse)."@fr;
+  epo:hasDescription "Le Siemly dispose de la compétence eau potable et assure à ce titre la gestion du service.Le service eau potable représente (RAD 2019) 35 176 abonnés, 5 722 662 m3 d'eau produits, 3 680 092 m3 d'eau consommés autorisés, 2 156 km de canalisations de distribution hors branchements, 8 puits de pompage, 59 réservoirs d'un volume total de37 915 m3, 24 stations de pompage, 37 373 compteurs.Le concessionnaire, exploitant à ses risques et périls le service de production, traitement et distribution de l'eau potable, sera directement rémunéré par les abonnés. Il percevra gratuitement, pour le compte du Siemly, une part du prix qu'il lui reversera dans les délais fixés par le contrat.Nature et étendue des prestations concédées:— exploiter à ses risques et périls le service de production, traitement, transport et distribution de l'eau potable sur le territoire du Siemly avec une obligation de résultat quant au respect du principe de continuité du service public;— assurer l'entretien, la maintenance et le gros entretien des ouvrages et équipements ainsi que le renouvellement des équipements, branchements et compteurs;— assurer une surveillance permanente et systématique du service et un service d'astreinte pouvant intervenir 7 jours/7, 24 heures/24 et 365 jours/365 dans un délai rapide, notamment en cas d'urgence;— assurer la gestion de la clientèle et la facturation des abonnés du service, gérer les impayés et les situations particulières des abonnés (précarité, difficulté de paiement…);— mettre à jour les plans, l'inventaire des ouvrages et équipements et le fichier des abonnés;— renseigner le Système d'information géographique (SIG) en tenant compte des nouvelles réglementations éventuelles et mettre à jour ce SIG après chaque intervention sur site;— mettre en place une plateforme Internet afin que le syndicat puisse avoir accès aux différents documents du service;— établir les rapports annuels techniques et financiers et les adresser au Syndicat dans les délais réglementaires.Le détail des prestations à assurer est défini dans le cahier des charges du dossier de consultation."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-074-190239_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasID epd:id_2021-S-074-190239_LotIdentifier_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-074-190239_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-074-190239_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 69500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-074-190239_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM a cccev:ContactPoint;
+  epo:hasFax "+33 478141065";
+  epo:hasInternetAddress "http://lyon.tribunal.administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-lyon@juradm.fr";
+  cccev:telephone "+33 478741010" .
+
+epd:id_2021-S-074-190239_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69003";
+  locn:postName "Lyon";
+  locn:thoroughfare "palais des juridictions administratives — 184 rue Duguesclin" .
+
+epd:id_2021-S-074-190239_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM a org:Organization;
+  epo:hasLegalName "Greffe du tribunal administratif de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-074-190239_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM;
+  cccev:registeredAddress epd:id_2021-S-074-190239_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2021-S-074-190239_Mediator_PMKvGTWSa3gLdxRfJtvToM a epo:Mediator;
+  epo:playedBy epd:id_2021-S-074-190239_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2021-S-074-190239_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 69500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-074-190239_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-074-190239_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-074-190239_Mediator_PMKvGTWSa3gLdxRfJtvToM,
+    epd:id_2021-S-074-190239_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2021-S-074-190239_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2021-S-074-190239_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2021-04-12"^^xsd:date;
+  epo:hasID epd:id_2021-S-074-190239_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210416";
+  epo:refersToLot epd:id_2021-S-074-190239_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2021-S-074-190239_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-074-190239_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 074-190239" .
+
+epd:id_2021-S-074-190239_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "69590";
+  locn:postName "Saint-Symphorien-sur-Coise";
+  locn:thoroughfare "180 rue de Sainte-Étienne" .
+
+epd:id_2021-S-074-190239_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasLegalName "Syndicat mixte des eaux des monts du lyonnais"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2021-S-074-190239_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-074-190239_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;
+  epo:hasBeginning "2023-01-01"^^xsd:date;
+  epo:hasEnd "2034-12-31"^^xsd:date .
+
+epd:id_2021-S-074-190239_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/65111000> .
+
+epd:id_2021-S-074-190239_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk a epo:ProcedureTerm;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2021-S-074-190239_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-074-190239_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Procédure: procédure ouverte de concession de service public en application des articles L. 1120-1 et L. 1121-1 à 1121-4 du code de la commande publique (ordonnance 2018-1074 du 26.11.2018), des articles R. 3121-1 à 3121-6, articles R. 3122-1 à R. 3122-18, articles R. 3123-1 à R. 3123-21, articles R. 3124-1 à 3124-6 et articles R. 3125-1 à R. 125-6 (décret 2018-1075 du 3.12.2018).Les modalités de remise des candidatures et des offres sont définies dans le règlement de consultation.Les variantes sont admises pourvu qu'elles respectent les prescriptions qui seront fixées par le règlement de la consultation.Une visite des installations est prévue. La date et les modalités de cette visite sont précisées dans le règlement de la consultation.Les offres seront examinées par la commission ad hoc, au regard des critères qui seront précisés dans le règlement de la consultation.Au terme de l'analyse des offres, la commission émettra un avis sur celles-ci. Les négociations pourront ensuite être engagées avec un ou plusieurs candidat(s).Au terme de la phase de négociations, l'assemblée délibérante du Siemly délibèrera, sur proposition de la personne habilitée à mener les négociations, afin de désigner le concessionnaire du service de production, de traitement et de distribution d'eau potable.Critères de sélection des candidatures: les candidatures seront sélectionnées en fonction des critères suivants:— garanties techniques, professionnelles et financières des candidats;— aptitude à assurer l'égalité des usagers devant le service public et aptitude à assurer la continuité du service public;— respect de l'obligation d'emploi des travailleurs handicapés prévue aux articles L. 5212-1 à L. 5212-4 du code du travail.Critères de sélection des offres: les critères de sélection des offres sont définis dans le règlement de la consultation."@fr;
+  epo:hasDescription "Le Siemly dispose de la compétence eau potable et assure à ce titre la gestion du service.Le service eau potable représente (RAD 2019) 35 176 abonnés, 5 722 662 m3 d'eau produits, 3 680 092 m3 d'eau consommés autorisés, 2 156 km de canalisations de distribution hors branchements, huit puits de pompage, 59 réservoirs d'un volume total de37 915 m3, 24 stations de pompage, 37 373 compteurs.Le concessionnaire, exploitant à ses risques et périls le service de production, traitement et distribution de l'eau potable, sera directement rémunéré par les abonnés. Il percevra gratuitement, pour le compte du Siemly, une part du prix qu'il lui reversera dans les délais fixés par le contrat."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-074-190239_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-074-190239_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-074-190239_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Concession de service public de production, de traitement et de distribution d'eau potable"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-074-190239_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-074-190239_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk, epd:id_2021-S-074-190239_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2021-S-074-190239_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-074-190239_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-074-190239_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-074-190239_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69003";
+  locn:postName "Lyon";
+  locn:thoroughfare "palais des juridictions administratives — 184 rue Duguesclin" .
+
+epd:id_2021-S-074-190239_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 478141065";
+  epo:hasInternetAddress "http://lyon.tribunal.administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-lyon@juradm.fr";
+  cccev:telephone "+33 478141010" .
+
+epd:id_2021-S-074-190239_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-074-190239_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2021-S-074-190239_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-074-190239_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-074-190239_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-074-190239_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 478141065";
+  epo:hasInternetAddress "http://lyon.tribunal.administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-lyon@juradm.fr";
+  cccev:telephone "+33 478141010" .
+
+epd:id_2021-S-074-190239_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69003";
+  locn:postName "Lyon";
+  locn:thoroughfare "palais des juridictions administratives — 184 rue Duguesclin" .
+
+epd:id_2021-S-074-190239_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-074-190239_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2021-S-074-190239_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-074-190239_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-074-190239_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-074-190239_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.klekoon.com"^^xsd:anyURI .

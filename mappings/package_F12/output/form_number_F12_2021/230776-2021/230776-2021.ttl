@@ -1,0 +1,102 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-089-230776_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.acingov.pt"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-089-230776_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-089-230776_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-089-230776_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-089-230776_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasInternetAddress "http://uminho.pt"^^xsd:anyURI;
+  cccev:email "sec-reitor@reitoria.uminho.pt" .
+
+epd:id_2021-S-089-230776_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-089-230776_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-089-230776_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-089-230776_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-089-230776_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Programa base apresentado de forma a proporcionar a compreensão clara das soluções propostas, com base nas indicações expressas no programa preliminar, incluindo peças escritas e desenhadas e outros elementos informativos necessários para o perfeito esclarecimento do programa base, no todo ou em qualquer das suas partes, nomeadamente as que porventura se justifiquem para definir as alternativas de solução propostas pelo projetista e avaliar a sua viabilidade, em função das condições de espaço, técnicas, de custos e de prazos."@pt;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-089-230776_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-089-230776_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-089-230776_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2021-S-089-230776_Reviewer_gQh8JdpqsE2bYBRikawiBu;
+  epo:hasDispatchDate "2021-05-03"^^xsd:date;
+  epo:hasID epd:id_2021-S-089-230776_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210507";
+  epo:refersToLot epd:id_2021-S-089-230776_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-089-230776_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-089-230776_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 089-230776" .
+
+epd:id_2021-S-089-230776_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/PRT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PT11>;
+  locn:postCode "4704-553";
+  locn:postName "Braga";
+  locn:thoroughfare "Largo do Paço" .
+
+epd:id_2021-S-089-230776_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "502011378" .
+
+epd:id_2021-S-089-230776_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2021-S-089-230776_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Universidade do Minho"@pt;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/education>;
+  cccev:registeredAddress epd:id_2021-S-089-230776_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-089-230776_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "EMED/2021/394 - UMDCc" .
+
+epd:id_2021-S-089-230776_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71240000> .
+
+epd:id_2021-S-089-230776_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasID epd:id_2021-S-089-230776_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-089-230776_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-089-230776_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "UMDCc: UMinho Digital Clinical Centre: concurso de conceção"@pt;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-089-230776_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-089-230776_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-089-230776_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-089-230776_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-089-230776_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-089-230776_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  cccev:email "sec-reitor@reitoria.uminho.pt" .
+
+epd:id_2021-S-089-230776_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/PRT>;
+  locn:postCode "4704-553";
+  locn:postName "Braga";
+  locn:thoroughfare "Largo do Paço" .
+
+epd:id_2021-S-089-230776_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Reitor da Universidade do Minho"@pt;
+  epo:hasPrimaryContactPoint epd:id_2021-S-089-230776_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2021-S-089-230776_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-089-230776_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-089-230776_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-089-230776_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "PT";
+  epo:hasSubmissionURL "https://www.acingov.pt"^^xsd:anyURI .

@@ -1,0 +1,186 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-117-288386_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://telt.achatpublic.com/accueil/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-117-288386_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "50"@fr .
+
+epd:id_2019-S-117-288386_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Valeur technique"@fr;
+  cccev:weight "50"@fr .
+
+epd:id_2019-S-117-288386_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://telt.achatpublic.com/accueil/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2019-S-117-288386_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2019-S-117-288386_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2019-S-117-288386_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Fonction contrats"@fr;
+  epo:hasFax "+33 479685683";
+  epo:hasInternetAddress "www.telt-sas.com"^^xsd:anyURI;
+  cccev:email "fonction.contrats@telt-sas.com" .
+
+epd:id_2019-S-117-288386_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITC1> .
+
+epd:id_2019-S-117-288386_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-117-288386_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-117-288386_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2019-S-117-288386_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2019-S-117-288386_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2019-S-117-288386_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2019-S-117-288386_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2019-S-117-288386_Fund_HKNfdBmeACvzBZy3TfjLFj a epo:Fund;
+  epo:hasDescription "Nouvelle liaison ferroviaire Lyon-Turin TEN-T (réseaux transeuropéens): projet no 2014-EU-TM-0401-M."@fr .
+
+epd:id_2019-S-117-288386_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45120000> .
+
+epd:id_2019-S-117-288386_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-117-288386_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Les activités demandées au titulaire seront principalement:— la réalisation de forages géotechniques et environnementaux jusqu'à 120 m, carotté, accompagnés d’essais in situ et en laboratoire, de suivi géologique, hydrogéologique, hydraulique et géotechnique et la rédaction de rapports d’interprétation,— l'exécution des regards exploratoires poussés à la profondeur de 1 m du sol,— le prélèvement, à la carothèque TELT de Susa (TO), d'échantillons sur les sondages déjà disponibles pour être échantillonnés et envoyés au laboratoire pour des tests."@fr;
+  epo:hasPurpose epd:id_2019-S-117-288386_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isFundedBy epd:id_2019-S-117-288386_Fund_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2019-S-117-288386_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2019-S-117-288386_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ,
+    epd:id_2019-S-117-288386_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J .
+
+epd:id_2019-S-117-288386_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 442999.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-117-288386_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2019-S-117-288386_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-117-288386_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2019-S-117-288386_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2019-S-117-288386_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2019-S-117-288386_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2019-S-117-288386_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2019-06-19"^^xsd:date;
+  epo:hasID epd:id_2019-S-117-288386_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20190620";
+  epo:refersToLot epd:id_2019-S-117-288386_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2019-S-117-288386_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2019-S-117-288386_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 117-288386" .
+
+epd:id_2019-S-117-288386_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK27>;
+  locn:postCode "73375";
+  locn:postName "Le Bourget du Lac";
+  locn:thoroughfare "Savoie Technolac, bâtiment Homère, 13 allée du Lac de Constance, CS 90281" .
+
+epd:id_2019-S-117-288386_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Tunnel Euralpin Lyon Turin SAS"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2019-S-117-288386_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2019-S-117-288386_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71900000> .
+
+epd:id_2019-S-117-288386_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-117-288386_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Il est précisé que la langue de référence pour la passation du présent marché public est le français. Une traduction de cet avis de marché en langue italienne est à considérer comme une traduction de courtoisie.La date indiquée dans le IV.2.7) est indicative.Le présent marché est soumis:— à la loi italienne nº 191/2009 relative aux lots constructifs, concernant les modalités de financement de l'ouvrage par l'État italien; ces dispositions s'appliqueront conformément au droit communautaire,— aux règles relatives à la lutte contre les infiltrations mafieuses qui sont convenues entre les gouvernements français et italien au travers du règlement des contrats validés par la CIG (Commission intergouvernementale), publié par décret nº 2017-432 du 5.4.2017 et applicable depuis le 9.4.2018, et de ses modifications.À ce titre, les codes CUP et CIG sont les suivants:— CUP: C11J05000030001,— CIG: ZBB281A931.Le titulaire du présent marché public s'engage à respecter le code éthique appliqué au sein de TELT (librement téléchargeable à l'adresse suivante: http://www.telt-sas.com/fr/statut-code-ethique-accords), et à le faire respecter par ses salariés, cotraitants et sous-traitants.En application de l'article R. 2185-1 du code de la commande publique, il est rappelé aux soumissionnaires que la procédure peut être déclarée sans suite, à tout moment de la procédure et jusqu'à la signature du marché, et qu'ils ne disposent d'aucun droit à la signature du marché ni au remboursement des frais découlant de la participation à la procédure. Cette faculté de renoncement à la conclusion du marché de la part de l'entité adjudicatrice peut survenir indifféremment pour des motifs économiques, juridiques ou techniques, ou résulter d'un choix des 2 États."@fr;
+  epo:hasDescription "Dans le cadre du projet de nouvelle liaison ferroviaire Lyon-Turin, la société TELT est le promoteur public responsable des travaux de réalisation et de la gestion de la future infrastructure.Le marché a pour objet la réalisation de reconnaissances environnementales pour la détermination des teneurs de fond naturelle, d’échantillonnages, d’essais de laboratoire ainsi que la rédaction des rapports relatifs à la construction de la nouvelle ligne Lyon-Turin, côté Italie.En particulier, les prestations auront lieu sur les chantiers suivants:— tunnel de base,— tunnel d’interconnexion,— la plaine de Suse et Bussoleno."@fr;
+  epo:hasEstimatedValue epd:id_2019-S-117-288386_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-117-288386_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2019-S-117-288386_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Prestations de réalisation de reconnaissances environnementales et analyses afférentes pour la construction de la nouvelle ligne Lyon-Turin, côté Italie"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-117-288386_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2019-S-117-288386_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2019-S-117-288386_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB,
+    epd:id_2019-S-117-288386_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2019-S-117-288386_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2019-S-117-288386_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-117-288386_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2019-S-117-288386_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2019-S-117-288386_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "38022";
+  locn:postName "Grenoble";
+  locn:thoroughfare "BP 1135" .
+
+epd:id_2019-S-117-288386_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 476422269";
+  epo:hasInternetAddress "http://grenoble.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-grenoble@juradm.fr";
+  cccev:telephone "+33 476420000" .
+
+epd:id_2019-S-117-288386_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Grenoble"@fr;
+  epo:hasPrimaryContactPoint epd:id_2019-S-117-288386_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2019-S-117-288386_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2019-S-117-288386_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2019-S-117-288386_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2019-S-117-288386_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Les procédures de recours applicables sont:— le référé précontractuel article L. 551-5 du CJA qui peut être exercé jusqu'à la signature du marché public,— le référé contractuel article 551-13 du CJA qui peut être exercé dans un délai de 31 jours à compter de la publication d'un avis d'attribution au JOUE ou 6 mois à compter du lendemain du jour de la conclusion du marché public si aucun avis d'attribution n'a pas été publié,— le recours en contestation de validité du contrat ou de certaines de ses clauses de publicité devant le juge du plein contentieux dans un délai de 2 mois suivant les mesures de publicité adéquates." .
+
+epd:id_2019-S-117-288386_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 476422269";
+  epo:hasInternetAddress "http://grenoble.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-grenoble@juradm.fr";
+  cccev:telephone "+33 476420000" .
+
+epd:id_2019-S-117-288386_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "38022";
+  locn:postName "Grenoble";
+  locn:thoroughfare "BP 1135" .
+
+epd:id_2019-S-117-288386_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Grenoble"@fr;
+  epo:hasPrimaryContactPoint epd:id_2019-S-117-288386_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2019-S-117-288386_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2019-S-117-288386_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-117-288386_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2019-S-117-288386_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR", "IT";
+  epo:hasSubmissionURL "https://telt.achatpublic.com/accueil/"^^xsd:anyURI .
+
+epd:id_2019-S-117-288386_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-117-288386_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2019-S-117-288386_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

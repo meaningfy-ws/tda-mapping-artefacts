@@ -1,0 +1,138 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-190-340712_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-190-340712_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-190-340712_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-190-340712_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Bau-, Grün- und Bäderbetrieb – Herr Walter Mirschberger"@de;
+  epo:hasFax "+49 9191714-294";
+  epo:hasInternetAddress "http://www.forchheim.de"^^xsd:anyURI;
+  cccev:email "walter.mirschberger@forchheim.de";
+  cccev:telephone "+49 9191714-300" .
+
+epd:id_2016-S-190-340712_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress """
+Forchheim.
+"""@de .
+
+epd:id_2016-S-190-340712_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE248>;
+  locn:address epd:id_2016-S-190-340712_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2016-S-190-340712_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2016-S-190-340712_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-190-340712_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2016-S-190-340712_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEPayment true .
+
+epd:id_2016-S-190-340712_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-190-340712_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription """
+Tägliche Unterhaltsreinigung im Königsbad Forchheim (ca. 360 000 m2 Reinigungsfläche/Jahr).
+"""@de;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-190-340712_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-190-340712_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2016-S-190-340712_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-190-340712_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2016-S-190-340712_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2016-S-190-340712_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2016-S-190-340712_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2016-09-27"^^xsd:date;
+  epo:hasID epd:id_2016-S-190-340712_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20161001";
+  epo:refersToLot epd:id_2016-S-190-340712_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2016-S-190-340712_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2016-S-190-340712_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 190-340712" .
+
+epd:id_2016-S-190-340712_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE248>;
+  locn:postCode "91301";
+  locn:postName "Forchheim";
+  locn:thoroughfare "Birkenfelderstraße 6" .
+
+epd:id_2016-S-190-340712_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Stadt Forchheim"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2016-S-190-340712_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-190-340712_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2017-09-15"^^xsd:date;
+  epo:hasEnd "2022-09-15"^^xsd:date .
+
+epd:id_2016-S-190-340712_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/90911200> .
+
+epd:id_2016-S-190-340712_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-190-340712_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation """
+Diese Vorinformation dient dem Aufruf zum Wettbewerb. Interessierte Unternehmen müssen dem Auftraggeber formlos postalisch oder per Fax mitteilen, dass sie an diesem Auftrag interessiert sind. Der Auftrag wird ohne spätere Veröffentlichung vergeben.
+Alle Bieter müssen vor Abgabe ihres Angebots einen Objektbesichtigungstermin wahrnehmen (Termine sind vorgesehen für den 12.1.2017). Bieter ohne Teilnahme werden ausgeschlossen. Im Rahmen des Teilnahmewettbewerbs ist die Objektbesichtigung noch nicht erforderlich.
+In den Vergabeunterlagen werden im Sinne von Leistungs- und Funktionsanforderungen Unter- und Obergrenzen für die durchschnittlichen Leistungswerte der Unterhaltsreinigung pro Raumgruppe definiert. Liegt der kalkulierte Wert für mind. eine Raumgruppe außerhalb der Grenzwerte, wird das Angebot von der Wertung ausgeschlossen.
+"""@de;
+  epo:hasDescription """
+Tägliche Unterhaltsreinigung in einem Schwimmbad.
+"""@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-190-340712_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2016-S-190-340712_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+Gebäudereinigung im Königsbad Forchheim.
+"""@de;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-190-340712_ReviewTerm_KjhWjVv578XNpvpTRjZhAs,
+    epd:id_2016-S-190-340712_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2016-S-190-340712_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-190-340712_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-190-340712_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-190-340712_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Gemäß § 160 Abs. 3 Nr. 1 GWB ist ein Nachprüfungsantrag unzulässig, soweit der Antragsteller den geltend gemachten Verstoß gegen Vergabevorschriften vor Einreichen des Nachprüfungsantrags erkannt und gegenüber dem Auftraggeber nicht innerhalb einer Frist von 10 Kalendertagen gerügt hat.
+Gemäß § 160 Abs. 3 Nr. 2 GWB ist ein Nachprüfungsantrag unzulässig, soweit Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, nicht spätestens bis zum Ablauf der in der Bekanntmachung benannten Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden.
+Gemäß § 160 Abs. 3 Nr. 3 GWB ist ein Nachprüfungsantrag unzulässig, soweit Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, nicht spätestens bis zum Ablauf der Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden.
+Gemäß § 160 Abs. 3 Nr. 4 GWB ist ein Nachprüfungsantrag unzulässig, soweit mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind.
+""" .
+
+epd:id_2016-S-190-340712_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+49 98153-1837";
+  cccev:email "vergabekammer.nordbayern@reg-mfr.bayern.de";
+  cccev:telephone "+49 98152-1277" .
+
+epd:id_2016-S-190-340712_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "91511";
+  locn:postName "Ansbach";
+  locn:thoroughfare "Postfach 606" .
+
+epd:id_2016-S-190-340712_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Regierung von Mittelfranken – Vergabekammer Nordbayern"@de;
+  epo:hasPrimaryContactPoint epd:id_2016-S-190-340712_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2016-S-190-340712_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-190-340712_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-190-340712_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-190-340712_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2016-11-03T10:00" .
+
+epd:id_2016-S-190-340712_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-190-340712_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-190-340712_Organisation_gqoAAwSV3JaTMsopb9zyKP .

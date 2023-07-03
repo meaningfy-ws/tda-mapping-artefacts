@@ -1,0 +1,124 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-101-245756_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.marches-securises.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-101-245756_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.marches-securises.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2019-S-101-245756_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2019-S-101-245756_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2019-S-101-245756_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.neolia.fr"^^xsd:anyURI;
+  cccev:email "efhlor@neolia.fr";
+  cccev:telephone "+33 381991616" .
+
+epd:id_2019-S-101-245756_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRC21> .
+
+epd:id_2019-S-101-245756_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-101-245756_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-101-245756_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2019-S-101-245756_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2019-S-101-245756_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 180.0;
+  time:unitType time:unitMonth .
+
+epd:id_2019-S-101-245756_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/09323000>, <http://data.europa.eu/cpv/cpv/45232140>,
+    <http://data.europa.eu/cpv/cpv/45251250>, <http://data.europa.eu/cpv/cpv/50720000> .
+
+epd:id_2019-S-101-245756_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-101-245756_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription "Les besoins énergétiques en matière de puissance pour les bâtiments qui sont raccordés au réseau de chaleur, sont estimés entre 4,3 et 3,6 MW selon les prospects d'évolution. En tenant compte des pertes réseau, la puissance biomasse totale est estimée à 900 kW. La valeur estimée du contrat est évaluée entre 7 000 000 EUR HT et 9 000 000 EUR HT sur toute sa durée."@fr;
+  epo:hasPurpose epd:id_2019-S-101-245756_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2019-S-101-245756_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-101-245756_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2019-S-101-245756_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2019-S-101-245756_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2019-S-101-245756_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2019-05-22"^^xsd:date;
+  epo:hasID epd:id_2019-S-101-245756_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20190527";
+  epo:refersToLot epd:id_2019-S-101-245756_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2019-S-101-245756_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2019-S-101-245756_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 101-245756" .
+
+epd:id_2019-S-101-245756_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRC21>;
+  locn:postCode "25205";
+  locn:postName "Montbéliard";
+  locn:thoroughfare "34 rue la Combe aux Biches — CS 75267" .
+
+epd:id_2019-S-101-245756_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Entreprise sociale de l'habitat";
+  epo:hasLegalName "Néolia"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/hc-am>;
+  cccev:registeredAddress epd:id_2019-S-101-245756_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2019-S-101-245756_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09323000> .
+
+epd:id_2019-S-101-245756_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-101-245756_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasDescription "Le concessionnaire sera chargé de la construction et de l'exploitation d'une chaufferie biomasse, d'une nouvelle cogénération en remplacement de l'existante et du réseau rattaché, ainsi que, le cas échéant, l'extension de ce dernier, afin de couvrir les besoins de chauffage et de production d'eau chaude sanitaire des bâtiments mentionnés dans le projet de contrat. La présente consultation comporte une prestation supplémentaire éventuelle obligatoire relative à l'exploitation des réseaux secondaires."@fr;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-101-245756_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2019-S-101-245756_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Contrat de concession en vue de la création d'une chaufferie biomasse et de l'exploitation du réseau de chaleur du quartier de Champvallon à Béthoncourt (25)"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-101-245756_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2019-S-101-245756_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2019-S-101-245756_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-101-245756_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2019-S-101-245756_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2019-S-101-245756_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "54035";
+  locn:postName "Nancy";
+  locn:thoroughfare "rue Général Fabvier" .
+
+epd:id_2019-S-101-245756_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Nancy"@fr;
+  cccev:registeredAddress epd:id_2019-S-101-245756_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2019-S-101-245756_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2019-S-101-245756_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2019-S-101-245756_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "54035";
+  locn:postName "Nancy";
+  locn:thoroughfare "rue Général Fabvier" .
+
+epd:id_2019-S-101-245756_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Nancy"@fr;
+  cccev:registeredAddress epd:id_2019-S-101-245756_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2019-S-101-245756_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-101-245756_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2019-S-101-245756_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.marches-securises.fr"^^xsd:anyURI .

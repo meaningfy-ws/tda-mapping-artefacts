@@ -1,0 +1,254 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-015-024456_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.marches-publics.info"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-015-024456_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "60"@fr .
+
+epd:id_2017-S-015-024456_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Valeur technique"@fr;
+  cccev:weight "40"@fr .
+
+epd:id_2017-S-015-024456_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://www.marches-publics.info"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-015-024456_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-015-024456_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-015-024456_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasFax "+33 478531284";
+  epo:hasInternetAddress "https://www.marches-publics.info"^^xsd:anyURI;
+  cccev:email "unitemarches@sytral.fr";
+  cccev:telephone "+33 472845800" .
+
+epd:id_2017-S-015-024456_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+Centre de maintenance tramway de Meyzieu 69330 — Meyzieu.
+"""@fr .
+
+epd:id_2017-S-015-024456_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:address epd:id_2017-S-015-024456_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2017-S-015-024456_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-015-024456_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-015-024456_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+Les candidats sont informés que l'acheteur se réserve la possibilité de conclure un ou des marchés négociés sans publicité ni mise en concurrence préalables pour la réalisation de prestations similaires en application de l'article 30.i.7 du décret nº 2016-360 du 25.3.2016 relatif aux marchés publics.
+"""@fr .
+
+epd:id_2017-S-015-024456_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-015-024456_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 22.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-015-024456_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasFax "+33 478531284";
+  epo:hasInternetAddress "https://www.marches-publics.info"^^xsd:anyURI;
+  cccev:email "unitemarches@sytral.fr";
+  cccev:telephone "+33 472845800" .
+
+epd:id_2017-S-015-024456_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:postCode "69487";
+  locn:postName "Lyon";
+  locn:thoroughfare "21 boulevard Vivier-Merle, CS 63815" .
+
+epd:id_2017-S-015-024456_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasLegalName "Sytral"@fr;
+  cccev:registeredAddress epd:id_2017-S-015-024456_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2017-S-015-024456_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/44114210>, <http://data.europa.eu/cpv/cpv/45112600>,
+    <http://data.europa.eu/cpv/cpv/45262210>, <http://data.europa.eu/cpv/cpv/45262310> .
+
+epd:id_2017-S-015-024456_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-015-024456_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+Pour répondre à de multiples besoins, le Sytral a décidé d'augmenter la capacité des lignes de tramway de Lyon notamment en faisant l'acquisition de nouvelles rames.
+Afin de permettre leur remisage et leur maintenance, il est nécessaire d'étendre le remisage du centre de maintenance de Meyzieu.
+Ce marché comprend les travaux de gros œuvre, fondations superficielles et profondes nécessaires d'une part à la création d'une structure de protection construite au-dessus des 16 nouvelles places de remisages créées pour des rames de tramway de 43 m et d'autre part à la création de 2 passerelles construites pour permettre la liaison piétonne entre les 2 zones de remisages séparées par un bassin de rétention d'eau de pluie.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2017-S-015-024456_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-015-024456_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-015-024456_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN,
+    epd:id_2017-S-015-024456_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH .
+
+epd:id_2017-S-015-024456_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 910000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-015-024456_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 910000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-015-024456_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-015-024456_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-015-024456_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2017-S-015-024456_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2017-S-015-024456_TenderReceiver_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasDispatchDate "2017-01-18"^^xsd:date;
+  epo:hasID epd:id_2017-S-015-024456_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20170121";
+  epo:refersToLot epd:id_2017-S-015-024456_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2017-S-015-024456_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-015-024456_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 015-024456" .
+
+epd:id_2017-S-015-024456_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:postCode "69487";
+  locn:postName "Lyon";
+  locn:thoroughfare "21 boulevard Vivier-Merle, CS 63815" .
+
+epd:id_2017-S-015-024456_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "25690099400011" .
+
+epd:id_2017-S-015-024456_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2017-S-015-024456_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Sytral"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2017-S-015-024456_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-015-024456_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "16s0223" .
+
+epd:id_2017-S-015-024456_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45223220> .
+
+epd:id_2017-S-015-024456_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-015-024456_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+Retrouvez cet avis intégral, l'accès au dossier et le guichet de dépôt sur https://www.marches-publics.info
+Dans le cadre de la présente consultation l'acheteur prévoit une Prestation supplémentaire éventuelle (PSE) comme suit:
+— on entend par prestation supplémentaire éventuelle (PSE) une prestation que l'acheteur se réserve le droit de commander ou non lors de la signature du contrat.
+— dans le cadre de la présente consultation, la prestation supplémentaire éventuelle est imposée.
+Les spécifications techniques que doit respecter cette PSE sont fixées dans un paragraphe dédié du CCTP constituant pièce du marché.
+PSE obligatoire:
+Plus-value en cas de réalisation des travaux suivants:
+— les fondations en semelles superficielles et les fondations spéciales (micropieux) pour l'écran de protection de la Ligne aérienne de contact (LAC) côté est du bassin,
+— les terrassements et les remblaiements pour les travaux de fondations de l'écran de protection de la LAC côté est du bassin.
+La réponse à la Prestation supplémentaire éventuelle (PSE) est obligatoire.
+L'absence de prix dans l'acte d'engagement pour la PSE entraînera l'irrégularité de l'offre.
+Le calendrier prévisionnel d'exécution de la PSE est le suivant: inclus dans le délai global d'exécution.
+Les candidatures sont remises dans le respect des conditions du RC candidatures. L'acheteur les examine, désigne les candidats admis et leur adresse le DCE.
+Les offres seront remises dans les conditions du RC offres. L'acheteur pourra engager des négociations avec tous les soumissionnaires. La négociation pourra faire l'objet de phases successives à l'issue desquelles certains des candidats seront éliminés.
+Au terme des négociations, après classement des offres, l'offre économiquement la plus avantageuse est choisie en application des critères énoncés dans la consultation.
+Le marché pourra être attribué sur la base des offres initiales sans négociation.
+Les candidatures peuvent être transmises par voie électronique, par lettre recommandée avec accusé de réception ou déposées contre récépissé dans les conditions précisées au RC candidature.
+À noter que les candidats qui auront été admis à soumissionner devront respecter le même mode de transmission des pièces de leur offre que celui choisi pour la candidature.
+Seules les entreprises retenues au stade de la candidature auront accès au DCE. Le DCE sera transmis gratuitement.
+Ce marché concerne la réalisation des travaux suivants:
+Pour l'offre de base:
+Les fondations en semelles superficielles et les fondations spéciales (pieux) pour:
+— l'extension des remisages,
+— le remisage neuf,
+— les écrans de protection de la Ligne aérienne de contact (LAC) sur certaines parties des remisages, (hors côté est du bassin),
+— les passerelles piétonnes.
+Les terrassements et remblaiements pour les travaux de fondations décrits ci-dessus.
+Pour la Prestations supplémentaire éventuelle (PSE):
+PSE: les fondations en semelles superficielles et les fondations spéciales (micropieux) pour l'écran de protection de la Ligne aérienne de contact (LAC) côté est du bassin.
+Les terrassements et les remblaiements pour les travaux de fondations de l'écran de protection de la LAC côté est du bassin.
+Une partie des travaux est réalisée sur ou à proximité d'infrastructures existantes et nécessitera des consignations locales.
+Les travaux de raccordement sur les équipements existants seront réalisés de nuit pour limiter l'impact sur l'exploitation et la maintenance.
+"""@fr;
+  epo:hasDescription """
+Pour répondre à de multiples besoins, le Sytral a décidé d'augmenter la capacité des lignes de tramway de Lyon notamment en faisant l'acquisition de nouvelles rames.
+Afin de permettre leur remisage et leur maintenance, il est nécessaire d'étendre le remisage du centre de maintenance de Meyzieu.
+Ce marché comprend les travaux de gros œuvre, fondations superficielles et profondes nécessaires d'une part à la création d'une structure de protection construite au-dessus des 16 nouvelles places de remisages créées pour des rames de tramway de 43 m et d'autre part à la création de 2 passerelles construites pour permettre la liaison piétonne entre les 2 zones de remisages séparées par un bassin de rétention d'eau de pluie.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2017-S-015-024456_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2017-S-015-024456_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-015-024456_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-015-024456_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Travaux de gros œuvre, de renforcement de sols, fondations superficielles et profondes pour l'extension du remisage du centre de maintenance de Meyzieu.
+"""@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-015-024456_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-015-024456_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2017-S-015-024456_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-015-024456_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-015-024456_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2017-S-015-024456_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2017-S-015-024456_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Cf. Le greffe du Tribunal administratif à l'adresse ci-dessus.
+""" .
+
+epd:id_2017-S-015-024456_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 478141065";
+  epo:hasInternetAddress "http://lyon.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-lyon@juradm.fr";
+  cccev:telephone "+33 478141010" .
+
+epd:id_2017-S-015-024456_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69433";
+  locn:postName "Lyon";
+  locn:thoroughfare "184 rue Duguesclin" .
+
+epd:id_2017-S-015-024456_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-015-024456_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2017-S-015-024456_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-015-024456_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-015-024456_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-015-024456_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.marches-publics.info"^^xsd:anyURI .
+
+epd:id_2017-S-015-024456_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:postCode "69487";
+  locn:postName "Lyon";
+  locn:thoroughfare "21 boulevard Vivier-Merle, CS 63815" .
+
+epd:id_2017-S-015-024456_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR
+  a cccev:ContactPoint;
+  epo:hasFax "+33 478531284";
+  epo:hasInternetAddress "https://www.marches-publics.info"^^xsd:anyURI;
+  cccev:email "unitemarches@sytral.fr";
+  cccev:telephone "+33 472845800" .
+
+epd:id_2017-S-015-024456_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR a org:Organization;
+  epo:hasLegalName "Sytral"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-015-024456_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  cccev:registeredAddress epd:id_2017-S-015-024456_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR .
+
+epd:id_2017-S-015-024456_TenderReceiver_RmPNyhSxpRtChEASKUU5BR a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-015-024456_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  epo:playedBy epd:id_2017-S-015-024456_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR .

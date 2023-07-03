@@ -1,0 +1,164 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-041-075264_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.klekoon.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-041-075264_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF a epo:Buyer;
+  epo:hasBuyerProfile "http://klekoon.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-041-075264_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:playedBy epd:id_2017-S-041-075264_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2017-S-041-075264_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF a cccev:ContactPoint;
+  epo:hasInternetAddress "http://klekoon.com"^^xsd:anyURI;
+  cccev:email "valerie.pascal@epdaduglandier.fr" .
+
+epd:id_2017-S-041-075264_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF a org:Organization;
+  epo:hasLegalName "EPDA du Glandier"@fr;
+  cccev:registeredAddress epd:id_2017-S-041-075264_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2017-S-041-075264_BuyerOrganisationGroup_Vx4nE2MhH2AK3p6fvMzsYF a epo:OrganisationGroup;
+  epo:hasBuyerLegalTypeDescription "Établissement public départemental autonome";
+  epo:hasMainActivityDescription "Médico-social";
+  epo:hasMember epd:id_2017-S-041-075264_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2017-S-041-075264_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-041-075264_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "http://klekoon.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-041-075264_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-041-075264_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-041-075264_Channel_G9uAqcYuooZwAU3Pwzv6eq a cccev:Channel;
+  epo:hasURL "http://www.klekoon.com"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2017-S-041-075264_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasInternetAddress "http://klekoon.com"^^xsd:anyURI;
+  cccev:email "valerie.pascal@epdaduglandier.fr" .
+
+epd:id_2017-S-041-075264_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2017-S-041-075264_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-041-075264_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2017-S-041-075264_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71500000> .
+
+epd:id_2017-S-041-075264_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-041-075264_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+Lot n° 1 MOE construction d'un foyer d'accueil et de soins de 42 places; lot n° 2 MOE construction d'un foyer de vie de 38 places; lot n° 3 MOE construction d'un foyer de vie de 15 places et d'un foyer d'hébergement de 20 places; lot n° 4 MOE construction d'un établissement et service d'aide par le travail de 43 places.
+"""@fr;
+  epo:hasPurpose epd:id_2017-S-041-075264_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-041-075264_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-041-075264_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2017-S-041-075264_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2017-S-041-075264_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2017-S-041-075264_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2017-S-041-075264_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2017-02-24"^^xsd:date;
+  epo:hasID epd:id_2017-S-041-075264_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20170228";
+  epo:refersToLot epd:id_2017-S-041-075264_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2017-S-041-075264_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2017-S-041-075264_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 041-075264" .
+
+epd:id_2017-S-041-075264_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "19230";
+  locn:postName "Beyssac";
+  locn:thoroughfare "Le Glandier" .
+
+epd:id_2017-S-041-075264_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "19230";
+  locn:postName "Beyssac";
+  locn:thoroughfare "Le Glandier" .
+
+epd:id_2017-S-041-075264_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasLegalName "EPDA du Glandier"@fr;
+  cccev:registeredAddress epd:id_2017-S-041-075264_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-041-075264_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2017-01" .
+
+epd:id_2017-S-041-075264_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71500000> .
+
+epd:id_2017-S-041-075264_ProcedureTerm_n9YtPUZG9SDZ5m8nAb77dU a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw """
+France.
+"""@fr .
+
+epd:id_2017-S-041-075264_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+Voir règlement de concours.
+"""@fr;
+  epo:hasID epd:id_2017-S-041-075264_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-041-075264_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2017-S-041-075264_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+Concours restreint de maitrise d'œuvre avec remise de prestations de niveau esquisse pour l'opération de restructuration de l'EPDA du Glandier.
+"""@fr;
+  epo:isDesignContest true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-041-075264_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2017-S-041-075264_ProcedureTerm_n9YtPUZG9SDZ5m8nAb77dU, epd:id_2017-S-041-075264_ReviewTerm_RW9aiajURL5iSUCvDaitUd,
+    epd:id_2017-S-041-075264_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR;
+  epo:usesChannel epd:id_2017-S-041-075264_Channel_G9uAqcYuooZwAU3Pwzv6eq .
+
+epd:id_2017-S-041-075264_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-041-075264_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-041-075264_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-041-075264_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Voir règlement de concours.
+""" .
+
+epd:id_2017-S-041-075264_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  cccev:email "greffe.ta-limoges@juradm.fr";
+  cccev:telephone "+33 555339155" .
+
+epd:id_2017-S-041-075264_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "87000";
+  locn:postName "Limoges";
+  locn:thoroughfare "1 cours Vergniaud" .
+
+epd:id_2017-S-041-075264_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Limoges"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-041-075264_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2017-S-041-075264_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-041-075264_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-041-075264_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-041-075264_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.klekoon.com"^^xsd:anyURI .
+
+epd:id_2017-S-041-075264_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-041-075264_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-041-075264_Organisation_VX8RygdBbvDo5gNDhjcsTj .

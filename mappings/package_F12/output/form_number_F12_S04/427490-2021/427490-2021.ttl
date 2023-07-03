@@ -1,0 +1,184 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-162-427490_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.tenderarena.cz/profily/IPRPraha"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-162-427490_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-162-427490_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:playedBy epd:id_2021-S-162-427490_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2021-S-162-427490_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF a cccev:ContactPoint;
+  epo:hasContactName "Mgr. Kamila Kulhánková"@cs;
+  epo:hasFax "+420 255000110";
+  epo:hasInternetAddress "https://www.praha.eu/"^^xsd:anyURI;
+  cccev:email "kamila.kulhankova@havelpartners.cz";
+  cccev:telephone "+420 734437881" .
+
+epd:id_2021-S-162-427490_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF a org:Organization;
+  epo:hasID epd:id_2021-S-162-427490_OrganisationIdentifier_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:hasLegalName "hlavní město Praha"@cs;
+  cccev:registeredAddress epd:id_2021-S-162-427490_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2021-S-162-427490_BuyerOrganisationGroup_Vx4nE2MhH2AK3p6fvMzsYF a epo:OrganisationGroup;
+  epo:hasBuyerLegalTypeDescription "územní rozvoj";
+  epo:hasMainActivityDescription "územní rozvoj";
+  epo:hasMember epd:id_2021-S-162-427490_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2021-S-162-427490_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-162-427490_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "https://www.tenderarena.cz/profily/IPRPraha"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-162-427490_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-162-427490_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-162-427490_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Mgr. Kamila Kulhánková"@cs;
+  epo:hasFax "+420 255000110";
+  epo:hasInternetAddress "https://www.iprpraha.cz/"^^xsd:anyURI;
+  cccev:email "kamila.kulhankova@havelpartners.cz";
+  cccev:telephone "+420 734437881" .
+
+epd:id_2021-S-162-427490_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-162-427490_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-162-427490_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-162-427490_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71000000>, <http://data.europa.eu/cpv/cpv/71200000>,
+    <http://data.europa.eu/cpv/cpv/71221000>, <http://data.europa.eu/cpv/cpv/71242000>,
+    <http://data.europa.eu/cpv/cpv/71320000> .
+
+epd:id_2021-S-162-427490_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-162-427490_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Předmětem Soutěže je zpracování architektonického návrhu pro účely budoucí výstavby koncertního sálu v rámci soudobého hudebního centra, které by splňovalo světové standardy (akustické, kapacitní, dispoziční, technické, architektonické a urbanistické) a zároveň potvrzovalo pověst Prahy, která je kulturní metropolí a symbol české hudební tradice. Budova Vltavské filharmonie v Praze by měla mimo jiné mít celkem tři sály: hlavní - koncertní pro cca 1 800 diváků, malý sál pro komorní hudbu s kapacitou cca 700 míst a multifunkční pro ostatní žánry a typy akcí s kapacitou až 500 míst."@cs;
+  epo:hasPurpose epd:id_2021-S-162-427490_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-162-427490_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-162-427490_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2021-S-162-427490_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-162-427490_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2021-S-162-427490_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2021-S-162-427490_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2021-S-162-427490_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2021-08-18"^^xsd:date;
+  epo:hasID epd:id_2021-S-162-427490_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210823";
+  epo:refersToLot epd:id_2021-S-162-427490_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-162-427490_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-162-427490_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 162-427490" .
+
+epd:id_2021-S-162-427490_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CZ010>;
+  locn:postCode "128 00";
+  locn:postName "Praha";
+  locn:thoroughfare "Vyšehradská 57/2077, 128 00 Praha 2 - Nové Město" .
+
+epd:id_2021-S-162-427490_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CZ010>;
+  locn:postCode "11001";
+  locn:postName "Praha";
+  locn:thoroughfare "Mariánské náměstí 2/2, 110 01 Praha 1" .
+
+epd:id_2021-S-162-427490_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "70883858" .
+
+epd:id_2021-S-162-427490_OrganisationIdentifier_Vx4nE2MhH2AK3p6fvMzsYF a epo:Identifier;
+  epo:hasIdentifierValue "00064581" .
+
+epd:id_2021-S-162-427490_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasID epd:id_2021-S-162-427490_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Institut plánování a rozvoje hlavního města Prahy, příspěvková organizace"@cs;
+  cccev:registeredAddress epd:id_2021-S-162-427490_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-162-427490_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2021-S-162-427490_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "Tato Soutěž o návrh se podle předmětu řešení vyhlašuje jako architektonická. Podle okruhu účastníků se Soutěž o návrh vyhlašuje jako mezinárodní užší. Podle počtu vyhlášených fází se Soutěž o návrh vyhlašuje jako jednofázová. Podle záměru řešení se Soutěž o návrh vyhlašuje jako projektová. Soutěžní návrhy budou posuzovány (přezkoušeny) a hodnoceny anonymně.Účelem a posláním Soutěže je nalézt a ocenit nejvhodnější řešení předmětu Soutěže, které splní požadavky Zadavatele obsažené v těchto Soutěžních podmínkách a v jejích přílohách a vybrat účastníky, s nimiž bude v Zadávacím řízení navazujícím na Soutěž v souladu s ustanovením § 143 odst. 2 a § 65 ZZVZ Zadavatel jednat o zadání Následné zakázky. Soutěž o návrh se vyhlašuje a bude probíhat v českém a anglickém jazyce.Datum odeslání výzvy k účasti vybraným zájemcům v bodě IV.2.3) tohoto formuláře je uvedeno dle předpokládaného dne uveřejnění tohoto oznámení soutěže v Úředním věstníku EU a Věstníku veřejných zakázek. V případě, že oznámení soutěže o návrh bude uveřejněno později než 20.8.2021, bude rovněž výzva k účasti vybraným zájemcům odeslána později, nejdříve ke dni uveřejnění oznámení soutěže o návrh v příslušném věstníku.Hlavní město Praha, se sídlem Mariánské náměstí 2/2, 110 01 Praha 1, Česká republika, IČO: 000 64 581, zastoupené odborem hospodaření s majetkem hlavního města Prahy a Institut plánování a rozvoje hlavního města Prahy, příspěvková organizace, se sídlem Vyšehradská 57, 128 00 Praha 2, Česká republika, IČO: 708 83 858 uzavřely dne 10. 12. 2020 smlouvu o společném zadávání veřejných zakázek v rámci projektu Vltavská filharmonie, na jejímž základě zastupuje výše uvedené Zadavatele v této Soutěži Institut plánování a rozvoje hlavního města Prahy, příspěvková organizace."@cs;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-162-427490_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-162-427490_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Vltavská Filharmonie"@cs;
+  epo:isDesignContest true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-162-427490_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-162-427490_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2021-S-162-427490_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-162-427490_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-162-427490_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-162-427490_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-162-427490_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
+  locn:postCode "604 55";
+  locn:postName "Brno";
+  locn:thoroughfare "tř. Kpt. Jaroše 7" .
+
+epd:id_2021-S-162-427490_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasFax "+420 542167112";
+  epo:hasInternetAddress "https://www.uohs.cz/"^^xsd:anyURI;
+  cccev:email "posta@uohs.cz";
+  cccev:telephone "+420 542167111" .
+
+epd:id_2021-S-162-427490_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Úřad pro ochranu hospodářské soutěže"@cs;
+  epo:hasPrimaryContactPoint epd:id_2021-S-162-427490_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2021-S-162-427490_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-162-427490_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-162-427490_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-162-427490_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Podmínkou pro podání návrhu k ÚOHS je podání námitek k Zadavateli, které je nutné doručit do 15 dnů ode dne, kdy se stěžovatel dozvěděl o domnělém porušení zákona Zadavatelem, nejpozději však do uzavření smlouvy nebo do chvíle, kdy se soutěž o návrh považuje po výběru návrhu za ukončenou. Námitky proti úkonům oznamovaným v dokumentech, které je Zadavatel povinen podle zákona uveřejnit či odeslat stěžovateli, musí být doručeny Zadavateli do 15 dnů od jejich uveřejnění či doručení stěžovateli.Pokud je v zadávacím řízení stanovena lhůta pro podání žádostí o účast, musí být námitky proti podmínkám vzta-hujícím se ke kvalifikaci dodavatele doručeny Zadavateli nejpozději do skončení této lhůty.Pokud je v zadávacím řízení stanovena lhůta pro podání nabídek, musí být námitky proti zadávací dokumentaci doručeny Zadavateli nejpozději do skončení této lhůty, v případě jednacího řízení s uveřejněním musí být námitky proti zadávací dokumentaci doručeny Zadavateli nejpozději do skončení lhůty pro podání předběžných nabídek.Námitky proti dobrovolnému oznámení o záměru uzavřít smlouvu podle § 212 odst. 2 zákona musí být doručeny Zadavateli do 30 dnů od uveřejnění tohoto oznámení. Zadavatel je povinen námitky vyřídit do 15 dnů. Návrh je nutné doručit ÚOHS i Zadavateli do 10 dnů ode dne, v němž stěžovatel obdržel rozhodnutí, kterým Zadavatel námitky odmítnul nebo do 25 dnů od odeslání námitek, pokud Zadavatel o námitkách nerozhodl. Po uzavření smlouvy na veřejnou zakázku či rámcové dohody lze podat pouze návrh na uložení zákazu plnění smlouvy, a to i bez předchozího podání námitek. Návrh na uložení zákazu plnění smlouvy doručí navrhovatel ÚOHS a ve stejnopisu Zadavateli do 1 měsíce ode dne, kdy Zadavatel uveřejnil oznámení o uzavření smlouvy způsobem podle § 212 odst. 2 zákona s uvedením důvodu pro zadání veřejné zakázky bez uveřejnění oznámení o zahájení zadávacího řízení, předběžného oznámení nebo výzvy k podání nabídek ve zjednodušeném podlimitním řízení, nejpozději však do 6 měsíců od uzavření této smlouvy. Návrh na uložení zákazu plnění smlouvy podle § 254 odstavce 1 písm. d) zákona doručí navrhovatel ÚOHS a ve stejnopisu Zadavateli do 1 měsíce ode dne, kdy Zadavatel uveřejnil oznámení o uzavření smlouvy na základě rámcové dohody podle § 137 zákona nebo oznámení o uzavření smlouvy v dynamickém nákupním systému podle § 142 zákona, nejpozději však do 6 měsíců od uzavření této smlouvy.Ve lhůtě pro doručení návrhu je navrhovatel povinen složit na účet ÚOHS kauci ve výši 1 % z nabídkové ceny navrhovatele za celou dobu plnění veřejné zakázky nebo za dobu prvních čtyř let plnění v případě smluv na dobu neurčitou, nejméně však ve výši 50 000 Kč, nejvýše ve výši 10 000 000 Kč. V případě, že navrhovatel nemůže stanovit celkovou nabídkovou cenu, je povinen složit kauci ve výši 100 000 Kč. V případě návrhu na uložení zákazu plnění smlouvy je navrhovatel povinen složit kauci ve výši 200 000 Kč. Jde-li o řízení o přezkoumání postupu pro zadávání koncesí, je navrhovatel povinen ve lhůtě pro doručení návrhu složit na účet ÚOHS kauci ve výši 1 % z předpokládané hodnoty koncese uveřejněné ve Věstníku veřejných zakázek nebo na profilu Zadavatele, nejméně však ve výši 50 000 Kč, nejvýše ve výši 10 000 000 Kč. V případě, že Zadavatel neuveřejní ve Věstníku veřejných zakázek nebo na profilu Zadavatele předpokládanou hodnotu koncese, je navrhovatel povinen složit kauci ve výši 100 000 Kč. V případě návrhu na uložení zákazu plnění koncesní smlouvy je navrhovatel povinen složit kauci ve výši 200 000 Kč." .
+
+epd:id_2021-S-162-427490_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+420 542167112";
+  epo:hasInternetAddress "https://www.uohs.cz/"^^xsd:anyURI;
+  cccev:email "posta@uohs.cz";
+  cccev:telephone "+420 542167111" .
+
+epd:id_2021-S-162-427490_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
+  locn:postCode "604 55";
+  locn:postName "Brno";
+  locn:thoroughfare "tř. Kpt. Jaroše 7" .
+
+epd:id_2021-S-162-427490_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Úřad pro ochranu hospodářské soutěže"@cs;
+  epo:hasPrimaryContactPoint epd:id_2021-S-162-427490_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2021-S-162-427490_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-162-427490_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-162-427490_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-162-427490_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "CS", "EN";
+  epo:hasSubmissionURL "https://www.tenderarena.cz/profily/IPRPraha"^^xsd:anyURI .
+
+epd:id_2021-S-162-427490_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-162-427490_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-162-427490_Organisation_VX8RygdBbvDo5gNDhjcsTj .

@@ -1,0 +1,210 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-117-330763_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://www.subreport.de/E38612531"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2022-S-117-330763_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-117-330763_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2022-S-117-330763_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-117-330763_Channel_Zfp5YfoNfJomE833qJVsZY a cccev:Channel;
+  epo:hasURL "https://www.subreport.de/E38612531"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2022-S-117-330763_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "VP/S- Ines Müller"@de;
+  epo:hasInternetAddress "www.dfs.de"^^xsd:anyURI;
+  cccev:email "ines.mueller@dfs.de";
+  cccev:telephone "+49 6103/707-4667" .
+
+epd:id_2022-S-117-330763_ContractTermLotLocationAddress_hwn2ViGxdekSZaFD46S6bD a locn:Address;
+  locn:fullAddress "bundesweit"@de .
+
+epd:id_2022-S-117-330763_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress "bundesweit"@de .
+
+epd:id_2022-S-117-330763_ContractTermLotLocation_hwn2ViGxdekSZaFD46S6bD a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
+  locn:address epd:id_2022-S-117-330763_ContractTermLotLocationAddress_hwn2ViGxdekSZaFD46S6bD .
+
+epd:id_2022-S-117-330763_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
+  locn:address epd:id_2022-S-117-330763_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2022-S-117-330763_ContractTermLot_hwn2ViGxdekSZaFD46S6bD a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-117-330763_Duration_9Bbq5bTgQzHtMfNVxrW3c6;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-117-330763_ContractTermLotLocation_hwn2ViGxdekSZaFD46S6bD;
+  epo:hasOptions false .
+
+epd:id_2022-S-117-330763_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-117-330763_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-117-330763_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2022-S-117-330763_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2022-S-117-330763_Duration_9Bbq5bTgQzHtMfNVxrW3c6 a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-117-330763_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-117-330763_FrameworkAgreementTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2022-S-117-330763_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "Die Laufzeit der Rahmenvereinbarung beträgt fünf Jahre, um die die während der Gesamtprojektlaufzeit erforderlichen Planungsleistungen auf zwei Wettbewerbe und Vertragszeiträume aufzuteilen.Damit können zu erwartende Synergieeffekte bei der Planung der sensiblen Infrastruktur für den Luftverkehr realisiert werden. Durch den Bedarf an Standardisierung beinhaltet die Planung der Navigationsanlagen ein hohes Maß an Wiederholungsleistungen. Durch die damit verbundene wachsende Erfahrung erhöht sich die Qualität der Planung und insbesondere die Qualität der gebauten Anlagen erfahrungsgemäß wesentlich: es erfolgt zunehmend eine Verkürzung der Planungszeit und eine Optimierung des Bauablaufes und Verminderung des Steuerungsaufwands."@de .
+
+epd:id_2022-S-117-330763_LotIdentifier_hwn2ViGxdekSZaFD46S6bD a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2022-S-117-330763_LotIdentifier_oEYZZQWPrbQFajcRU6KZAY a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2022-S-117-330763_LotPurpose_hwn2ViGxdekSZaFD46S6bD a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2022-S-117-330763_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2022-S-117-330763_Lot_hwn2ViGxdekSZaFD46S6bD a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-117-330763_ContractTermLot_hwn2ViGxdekSZaFD46S6bD;
+  epo:hasDescription "Rahmenvereinbarung über die Generalplanerleistung für die Neuerrichtung von 14 (maximal 19) Stand-alone DME-Anlagen nach Abbruch und Entsorgung des Altbestandes.-Der Altbestand soll zurück gebaut, entsorgt und durch eine Stand-alone DME-Anlage, in der Regel an gleicher Stelle, ersetzt werden.-Beschreibung des Altbestandes:Eine VOR-Anlage (Drehfunkfeuer) besteht aus einem Technikgebäude, sowie einem Antennenträger. Je nach Art des Drehfunkfeuers gibt es 2 Arten der Ausführung:- Bei der CVOR misst der Antennenträger 10 m im Durchmesser und wird direkt auf dem Dach des Technikgebäudes montiert.- Bei der DVOR besteht der Antennenträger aus einem Stahltraggerüst, genannt Gegengewicht, mit einem Durchmesser von 30 m, wobei das Technikgebäude unter dem Stahltraggerüst steht.-Die bestehenden und somit abzubrechenden Gebäude sind teils in Containerbauweise, teils als Festbauten ausgeführt.-Die neu zu errichtende Stand-alone DME-Anlage besteht aus einem Technikgebäude, welches als Containerbauwerk errichtet werden soll und einem schlanken Antennenmast.-Das Technikgebäude für die neuen Anlagen, wird in Containerbauweise, mit einer Größe von 4 x 12 x 3,5 m (B x L x H) erstellt.Die Ausführungsplanung für den Container besteht bereits. Die Angebotseinholung und Vergabe der Container-Fertigung, -Lieferung und -Montage erfolgt durch die DFS. Die Fachplanung für das Technikgebäude soll in den Leistungsphasen 1-5 und 8 koordiniert und in die Gesamtplanung integriert werden. Im Technikgebäude sind die Komponenten der Navigationstechnik installiert, sowie die versorgungstechnischen Systeme wie Klimaanlagen, Anlagen der Stromversorgung (Stark- und Schwachstrom), Gebäudetechnik etc.-Die Verkabelung zwischen dem Gebäude und dem Antennenmast wird in einer horizontalen verlaufenden Kabeltrasse geführt.-In vielen Fällen befindet sich das Baugrundstück im Außenbereich § 35 BauGB.-In der Regel wird ein Landschaftspflegerischer Begleitplan erforderlich.-In Ausnahmefällen kann eine Verlagerung des Standortes als zielführender angesehen werden.In dem Fall muss der Altbestand abgebrochen und entsorgt und der Neubau an anderer Stelle geplant und ausgeführt werden.-Die Leistung soll als Generalplanerleistung vergeben werden. Der Generalplaner übernimmt unten aufgeführte Planungsleistungen, die für die Realisierung der Neubauten erforderlich sind. Er hat die Leistungen gemäß den Leistungsbildern der HOAI 2021 zu erbringen. Er beauftragt, integriert und koordiniert alle einzelnen Planer- und Beratungsleistungen sowie sonstige Leistungen, die für den Planungs- und Umsetzungsprozess erforderlich sind.-Folgende Leistungen werden Bestandteil der Generalplanung sein:-1. Objektplanung - Freianlagen und Ingenieurbauwerke, in Anlehnung an § 39, §43 Gruppe 7 der HOAI 2021, Leistungsphasen 1-8, optional Leistungsphase 9 und zusätzliche Leistungen.-2. Tragwerksplanung in Anlehnung an §51 der HOAI 2021, Leistungsphase 1-6.-3. Fachplanung - Technische Ausrüstung in Anlehnung an §55 der HOAI 2021, Leistungsphasen 3 und 5-8, optional Leistungsphase 9.-4. Landschaftsplanung - Landschaftspflegerischer Begleitplan, in Anlehnung an §26 der HOAI 2021, Leistungsphasen 1-4.-5. Planung und Überwachung des Abbruchs der Altanlagen in den Leistungsphasen 1-8, optional Leistungsphase 9.-"@de;
+  epo:hasID epd:id_2022-S-117-330763_LotIdentifier_hwn2ViGxdekSZaFD46S6bD;
+  epo:hasPurpose epd:id_2022-S-117-330763_LotPurpose_hwn2ViGxdekSZaFD46S6bD;
+  epo:hasTitle "Rahmenvereinbarung Generalplanerleistung für die Neuerrichtung von 14 (maximal 19) Stand-alone DME-Anlagen nach Abbruch und Entsorgung des Altbestandes."@de;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-117-330763_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-117-330763_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription "Rahmenvereinbarung über die Generalplanerleistungen für die Erneuerung von 7 (maximal 9) DVORDME-Anlagen.-Der Altbestand soll zurückgebaut, entsorgt und durch einen DVOR-Neubau, in der Regel an gleicher Stelle, ersetzt werden.-Eine VOR-Anlage (Drehfunkfeuer) besteht aus einem Technikgebäude, sowie einem Antennenträger. Je nach Art des Drehfunkfeuers gibt es 2 Arten der Ausführung:- Bei der CVOR misst der Antennenträger 10 m im Durchmesser und wird direkt auf dem Dach des Technikgebäudes montiert.- Bei der DVOR besteht der Antennenträger aus einem Stahltraggerüst, genannt Gegengewicht, mit einem Durchmesser von 30 m, mit sehr hoher Anforderung an die Maßhaltigkeit, über die einschlägigen DIN Normen und Richtlinien hinaus, mit komplexer Geometrie, vielen Anschlüssen und unterschiedlichen Winkeln, wobei das Technikgebäude unter dem Stahltraggerüst steht.-Das Technikgebäude für die neuen Anlagen, wird in Containerbauweise, mit einer Größe von 4 x 12 x 3,5 m (B x L x H) erstellt.Die Ausführungsplanung für den Container besteht bereits. Die Angebotseinholung und Vergabe der Container-Fertigung, -Lieferung und -Montage erfolgt durch die DFS.Die Fachplanung für das Technikgebäude soll in den Leistungsphasen 1-5 und 8 koordiniert und in die Gesamtplanung integriert werden.Im Technikgebäude sind die Komponenten der Navigationstechnik installiert, sowie die versorgungstechnischen Systeme wie Klimaanlagen, Anlagen der Stromversorgung (Stark- und Schwachstrom), Gebäudetechnik etc.Die Verkabelung zwischen dem Gebäude und den Antennen wird in horizontal und vertikal verlaufenden Kabeltrassen geführt.Die bestehenden und somit abzubrechenden Gebäude sind teils in Containerbauweise, teils als Festbauten ausgeführt.-In vielen Fällen befindet sich das Baugrundstück im Außenbereich § 35 BauGB.-In der Regel wird ein Landschaftspflegerischer Begleitplan erforderlich.-In Ausnahmefällen kann eine Verlagerung des Standortes als zielführender angesehen werden.In dem Fall muss der Altbestand abgebrochen und entsorgt und der Neubau an anderer Stelle geplant und ausgeführt werden.-Die Leistung soll als Generalplanerleistung vergeben werden. Der Generalplaner übernimmt unten aufgeführte Planungsleistungen, die für die Realisierung der Neubauten und Rückbauten erforderlich sind. Er hat die Leistungen gemäß den Leistungsbildern der HOAI 2021 zu erbringen.Er beauftragt, integriert und koordiniert alle einzelnen Planer- und Beratungsleistungen sowie sonstige Leistungen, die für den Planungs- und Umsetzungsprozess erforderlich sind.-Folgende Leistungen werden Bestandteil der Generalplanung sein:-1. Objektplanung - Freianlagen und Ingenieurbauwerke, in Anlehnung an §39, §43 Gruppe 7 der HOAI 2021, Leistungsphasen 1-8, optional Leistungsphase 9 und zusätzliche Leistungen.-2. Tragwerksplanung in Anlehnung an §51 der HOAI 2021, Leistungsphase 1-6.-3. Fachplanung - Technische Ausrüstung in Anlehnung an §55 der HOAI 2021, Leistungsphasen 3 und 5-8, optional Leistungsphase 9.-4. Landschaftsplanung - Landschaftspflegerischer Begleitplan, in Anlehnung an §26 der HOAI 2021, Leistungsphasen 1-4.-5. Planung und Überwachung des Abbruchs der Altanlagen in den Leistungsphasen 1-8, optional Leistungsphase 9.-"@de;
+  epo:hasID epd:id_2022-S-117-330763_LotIdentifier_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2022-S-117-330763_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasTitle "Rahmenvereinbarung über die Generalplanerleistungen für die Neuerrichtung von 7 (maximal 9) DVORDME-Anlagen nach Abbruch und Entsorgung."@de;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-117-330763_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-117-330763_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2022-S-117-330763_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2022-S-117-330763_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2022-S-117-330763_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2022-S-117-330763_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE;
+  epo:hasDispatchDate "2022-06-15"^^xsd:date;
+  epo:hasID epd:id_2022-S-117-330763_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220620";
+  epo:refersToLot epd:id_2022-S-117-330763_Lot_hwn2ViGxdekSZaFD46S6bD, epd:id_2022-S-117-330763_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2022-S-117-330763_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2022-S-117-330763_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 117-330763" .
+
+epd:id_2022-S-117-330763_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE71C>;
+  locn:postCode "63225";
+  locn:postName "Langen";
+  locn:thoroughfare "Am DFS-Campus 10" .
+
+epd:id_2022-S-117-330763_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "DFS Deutsche Flugsicherung GmbH"@de;
+  epo:hasMainActivityDescription "Verkehrswesen - Flugsicherung";
+  cccev:registeredAddress epd:id_2022-S-117-330763_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-117-330763_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "10865" .
+
+epd:id_2022-S-117-330763_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2022-S-117-330763_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 2;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2022-S-117-330763_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-117-330763_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation "1. Eignungsleihe (§ 47 VgV): Plant ein Bewerber die Eignungsleihe, so sind die gemäß Ziffern III.1.1, III.1.2 und III.1.3 geforderten Angaben / Informationen / Unterlagen auch von den „anderen“ Unternehmen im Sinne des § 47 Abs. I VgV einzureichen. Zusätzlich ist eine unterzeichnete Verpflichtungserklärung der anderen Unternehmen einzureichen, die eine verbindliche Aussage über die Bereitstellung der erforderlichen Mittel / Ressourcen zur Erfüllung im Auftragsfall beinhaltet.2. Bewerbergemeinschaften: Bewerbergemeinschaften müssen mit Ihrem Teilnahmeantrag eine von allen Mitgliedern unterzeichnete Erklärung der gesamtschuldnerischen Haftung abgeben.3. Die Korrespondenz im Rahmen des Vergabeverfahrens erfolgt ausschließlich in deutscher Sprache und ausschließlich über das System Elvis.4. Ebenfalls sind die Teilnahmeanträge und späteren Angebote ausschließlich nur elektronisch via: https://www.subreport.de/E38612531 einzureichen.5. Für die Erstellung der Teilnahmeanträge und der späteren Angebote erhält der Bewerber / Bieter keine Kostenerstattung.Folgende Phasen sind für das Vergabeverfahren vorgesehen:- Eingang und Bewertung der Teilnahmeanträge- Festlegung des potentiellen Bieterkreises- Aufforderung zur Angebotsabgabe- Eingang und Bewertung der Angebote- Verhandlung- BAFO- Abschließende Bewertung der Angebote- Zuschlagsentscheidung6. Bei technischen Problemen mit dem System Subreport ELViS ist die Systemhotline (Tel. 0221/985780) zu kontaktieren. Teilnahmeanträge und Angebote sind zwingend über die Abgabefunktion des Systems ELViS einzureichen."@de;
+  epo:hasDescription "Rahmenvereinbarung über Generalplanerleistungen für zwei Arten von bodengestützten Flugsicherungs-Navigationsanlagen: gerichtete Drehfunkfeuer (DVORDME-Anlagen) und Entfernungsmesseinrichtungen (Stand-alone DME-Anlagen).-Die DFS Deutsche Flugsicherung (nachstehend DFS genannt) ist ein privatrechtlich organisiertes Unternehmen, das zu 100 Prozent dem Bund gehört. Im Rahmen ihres gesetzlichen Auftrags stellt die DFS eine bodengestützte Navigationsinfrastruktur bereit, welche die in der Flugsicherungsausrüstungsverordnung (FSAV) geforderte Flugzeugausrüstung unterstützt.-Die DFS betreibt derzeit an rund 55 Standorten eigene Drehfunkfeuer (CVOR/DVOR-Systeme) teils in Kombination mit Entfernungsmesseinrichtungen (DME-Systeme). Im Zeitraum bis 2032 ist die technische Erneuerung von ca. 39 dieser Standorte geplant. Während der fünfjährigen Vertragslaufzeit ist die technische Erneuerung von ca. 26 Standorten geplant. Das Erneuerungsprojekt für vorgenannte Anlagen, hat die Bezeichnung „Erneuerung VOR/DME-Systeme“.Die Beschaffung ist in 2 Lose aufgeteilt:-Los 1:Rahmenvereinbarung Generalplanerleistungen für die Neuerrichtung von 7 (maximal 9) DVORDME-Anlagen nach Abbruch und Entsorgung des Altbestandes.-Los 2:Rahmenvereinbarung Generalplanerleistung für die Neuerrichtung von 14 (maximal 19) Stand-alone DME-Anlagen nach Abbruch und Entsorgung des Altbestandes.-Nähere Beschreibung der ausgeschriebenen Leistungen – siehe Ziffer II.2.4."@de;
+  epo:hasID epd:id_2022-S-117-330763_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-117-330763_Lot_hwn2ViGxdekSZaFD46S6bD,
+    epd:id_2022-S-117-330763_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2022-S-117-330763_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Rahmenvereinbarung Generalplanerleistungen für Flugsicherungs-Navigationsanlagen (DVORDME- und Stand-alone DME-Anlagen)."@de;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-117-330763_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2022-S-117-330763_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw, epd:id_2022-S-117-330763_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c,
+    epd:id_2022-S-117-330763_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
+  epo:usesChannel epd:id_2022-S-117-330763_Channel_Zfp5YfoNfJomE833qJVsZY;
+  epo:usesTechnique epd:id_2022-S-117-330763_FrameworkAgreementTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2022-S-117-330763_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-117-330763_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2022-S-117-330763_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-117-330763_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "53123";
+  locn:postName "Bonn";
+  locn:thoroughfare "Villemombler Str. 76" .
+
+epd:id_2022-S-117-330763_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "www.bundeskartellamt.de"^^xsd:anyURI;
+  cccev:telephone "+49 228/9499-0" .
+
+epd:id_2022-S-117-330763_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer des Bundes"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-117-330763_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2022-S-117-330763_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2022-S-117-330763_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-117-330763_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2022-S-117-330763_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasInternetAddress "www.bundeskartellamt.de"^^xsd:anyURI;
+  cccev:telephone "+49 228/9499-0" .
+
+epd:id_2022-S-117-330763_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "53123";
+  locn:postName "Bonn";
+  locn:thoroughfare "Villemombler Str. 76" .
+
+epd:id_2022-S-117-330763_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Vergabekammer des Bundes"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-117-330763_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2022-S-117-330763_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2022-S-117-330763_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-117-330763_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2022-S-117-330763_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.subreport.de/E38612531"^^xsd:anyURI .
+
+epd:id_2022-S-117-330763_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-117-330763_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2022-S-117-330763_Organisation_bhAnCWhMtKVDKPwFpTfXJN .

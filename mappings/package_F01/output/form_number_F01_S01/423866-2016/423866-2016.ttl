@@ -1,0 +1,172 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-233-423866_AwardCriterionPrice_QsHhEb8qeRoGKduZGovcmd a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2016-S-233-423866_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-233-423866_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-233-423866_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-233-423866_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Abfallwirtschaftsgesellschaft mbH (AWG)"@de;
+  epo:hasFax "+49 4241801100";
+  epo:hasInternetAddress "www.awg-bassum.de"^^xsd:anyURI;
+  cccev:email "info@awg-bassum.de";
+  cccev:telephone "+49 42418010" .
+
+epd:id_2016-S-233-423866_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress """
+Bassum.
+"""@de .
+
+epd:id_2016-S-233-423866_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE922>;
+  locn:address epd:id_2016-S-233-423866_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2016-S-233-423866_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2016-S-233-423866_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-233-423866_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2016-S-233-423866_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2016-S-233-423866_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt a
+    cccev:ContactPoint;
+  epo:hasContactName "Umtec, Prof. Biener l Sasse l Konertz, Partnerschaft Beratender Ingenieure und Geologen mbB"@de;
+  epo:hasFax "+49 42120759999";
+  epo:hasInternetAddress "www.umtec-partner.de"^^xsd:anyURI;
+  cccev:email "becker@umtec-partner.de";
+  cccev:telephone "+49 42120759290" .
+
+epd:id_2016-S-233-423866_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE501>;
+  locn:postCode "28357";
+  locn:postName "Bremen";
+  locn:thoroughfare "Haferwende 7" .
+
+epd:id_2016-S-233-423866_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt a
+    org:Organization;
+  epo:hasLegalName "Umtec, Prof. Biener l Sasse l Konertz, Partnerschaft Beratender Ingenieure und Geologen mbB"@de;
+  cccev:registeredAddress epd:id_2016-S-233-423866_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2016-S-233-423866_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45222110> .
+
+epd:id_2016-S-233-423866_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-233-423866_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription """
+Profilierung des Deponiealtkörpers (Deponieklasse II) im Massenausgleich sowie Profilierung im Bereich eines neuen Deponieabschnittes mit Umlagerung von insgesamt ca. 200 000 m3 Boden, Bauschutt, Abfällen etc.. Durchführung von Arbeiten im kontaminierten Bereich.
+"""@de;
+  epo:hasPurpose epd:id_2016-S-233-423866_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2016-S-233-423866_AwardCriterionPrice_QsHhEb8qeRoGKduZGovcmd .
+
+epd:id_2016-S-233-423866_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2016-S-233-423866_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2016-S-233-423866_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2016-S-233-423866_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt,
+    epd:id_2016-S-233-423866_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2016-S-233-423866_TenderReceiver_73uj4vyPgHgRhfhM7wvqXG;
+  epo:hasDispatchDate "2016-11-30"^^xsd:date;
+  epo:hasID epd:id_2016-S-233-423866_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20161202";
+  epo:refersToLot epd:id_2016-S-233-423866_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2016-S-233-423866_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2016-S-233-423866_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 233-423866" .
+
+epd:id_2016-S-233-423866_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE922>;
+  locn:postCode "27209";
+  locn:postName "Bassum";
+  locn:thoroughfare "Klövenhausen 20" .
+
+epd:id_2016-S-233-423866_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "Abfallwirtschaftsgesellschaft mbH (AWG)"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/env-pro>;
+  cccev:registeredAddress epd:id_2016-S-233-423866_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-233-423866_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2017-04-07"^^xsd:date;
+  epo:hasEnd "2017-11-17"^^xsd:date .
+
+epd:id_2016-S-233-423866_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2016-S-233-423866_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2016-S-233-423866_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45220000> .
+
+epd:id_2016-S-233-423866_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-233-423866_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription """
+Profilierung des Deponiealtkörpers (Deponieklasse II) im Massenausgleich sowie Profilierung im Bereich eines neuen Deponieabschnittes mit Umlagerung von insgesamt ca. 200 000 m3 Boden, Bauschutt, Abfällen etc.. Durchführung von Arbeiten im kontaminierten Bereich.
+"""@de;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-233-423866_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2016-S-233-423866_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+Deponie Bassum, Erweiterung und Teilstilllegung, Projektphase 1: Profilierung.
+"""@de;
+  epo:isCoveredByGPA true .
+
+epd:id_2016-S-233-423866_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2017-01-20"^^xsd:date .
+
+epd:id_2016-S-233-423866_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-233-423866_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt;
+  epo:playedBy epd:id_2016-S-233-423866_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2016-S-233-423866_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "21339";
+  locn:postName "Lüneburg" .
+
+epd:id_2016-S-233-423866_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Vergabekammer beim Niedersächsischen Ministerium für Wirtschaft, Arbeit und Verkehr"@de;
+  cccev:registeredAddress epd:id_2016-S-233-423866_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-233-423866_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-233-423866_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-233-423866_TenderReceiverOrganisationAddress_73uj4vyPgHgRhfhM7wvqXG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE922>;
+  locn:postCode "27209";
+  locn:postName "Bassum";
+  locn:thoroughfare "Klövenhausen 20" .
+
+epd:id_2016-S-233-423866_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG
+  a cccev:ContactPoint;
+  epo:hasContactName "Abfallwirtschaftsgesellschaft mbH (AWG)"@de;
+  epo:hasFax "+49 4241801100";
+  epo:hasInternetAddress "www.awg-bassum.de"^^xsd:anyURI;
+  cccev:email "info@awg-bassum.de";
+  cccev:telephone "+49 42418010" .
+
+epd:id_2016-S-233-423866_TenderReceiverOrganisation_73uj4vyPgHgRhfhM7wvqXG a org:Organization;
+  epo:hasLegalName "Abfallwirtschaftsgesellschaft mbH (AWG)"@de;
+  epo:hasPrimaryContactPoint epd:id_2016-S-233-423866_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG;
+  cccev:registeredAddress epd:id_2016-S-233-423866_TenderReceiverOrganisationAddress_73uj4vyPgHgRhfhM7wvqXG .
+
+epd:id_2016-S-233-423866_TenderReceiver_73uj4vyPgHgRhfhM7wvqXG a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-233-423866_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG;
+  epo:playedBy epd:id_2016-S-233-423866_TenderReceiverOrganisation_73uj4vyPgHgRhfhM7wvqXG .

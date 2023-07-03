@@ -1,0 +1,214 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-187-383606_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "http://www.marches-publics.info/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-187-383606_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-187-383606_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-187-383606_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Céline Rama"@fr;
+  epo:hasFax "+33 492443019";
+  epo:hasInternetAddress "http://www.savines-le-lac.fr"^^xsd:anyURI;
+  cccev:email "dgs.savineslelac@orange.fr";
+  cccev:telephone "+33 492442003" .
+
+epd:id_2017-S-187-383606_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+                  Communes de Savines-le-Lac et Réallon.
+               """@fr .
+
+epd:id_2017-S-187-383606_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq a locn:Address;
+  locn:fullAddress """
+                  Commune de Savines-le-Lac.
+               """@fr .
+
+epd:id_2017-S-187-383606_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL02>;
+  locn:address epd:id_2017-S-187-383606_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-187-383606_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL02>;
+  locn:address epd:id_2017-S-187-383606_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2017-S-187-383606_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2017-S-187-383606_Period_aNssKXiFyYxii2v93ivV4N;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-187-383606_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-187-383606_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2017-S-187-383606_Period_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-187-383606_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2017-S-187-383606_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-187-383606_LotIdentifier_aNssKXiFyYxii2v93ivV4N a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2017-S-187-383606_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2017-S-187-383606_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45232411> .
+
+epd:id_2017-S-187-383606_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45232154> .
+
+epd:id_2017-S-187-383606_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-187-383606_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription """
+                  Les travaux comprennent:
+                  — la réhabilitation de la conduite d'adduction: Ø200 mm sur 11 420 ml,
+                  — la réhabilitation des conduites de distribution: Ø100 mm, Ø125 mm et Ø200 mm sur 4 940 ml,
+                  — l'extension des réseaux d'assainissement: Ø315 mm sur 225 ml, Ø200 mm sur 4 070 ml,
+                  — la fourniture et pose de 3 postes de relevage des eaux usées,
+                  — la pose en encorbellement sous le pont de Savines-le-Lac des conduites d'eau (Ø160 mm calorifugé sur 970 ml) et d'assainissement (Ø75 mm sur 2 050 ml dont 970 ml calorifugés).
+               """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-187-383606_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasID epd:id_2017-S-187-383606_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2017-S-187-383606_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:hasTitle """
+                  Réhabilitation des réseaux d'eau potable — extension des réseaux d'eaux usées
+               """@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-187-383606_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-187-383606_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasDescription """
+                  Les travaux comprennent:
+                  — la construction d'un réservoir d'eau potable de 200 m3 et équipements associés (chambre des vannes, chloration) sur le secteur Raffarts/Chérines,
+                  — la construction d'un réservoir d'eau potable de 500 m3 (chambre des vannes, chloration) sur le secteur des Arnauds,
+                  — la démolition des ouvrages de génie civil non conservés (réservoirs, brise charges...),
+                  — la sécurisation du captage sur la commune de Réallon,
+                  — la constitution des études associées (permis de construire, de démolition..).
+               """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-187-383606_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasID epd:id_2017-S-187-383606_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2017-S-187-383606_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasTitle """
+                  Réservoirs d'eau potable
+               """@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-187-383606_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 5146000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-187-383606_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq a epo:MonetaryValue;
+  epo:hasAmountValue 998000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-187-383606_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 6144000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-187-383606_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2017-S-187-383606_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2017-S-187-383606_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2017-S-187-383606_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2017-S-187-383606_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2017-S-187-383606_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2017-09-27"^^xsd:date;
+  epo:hasID epd:id_2017-S-187-383606_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20170929";
+  epo:refersToLot epd:id_2017-S-187-383606_Lot_aNssKXiFyYxii2v93ivV4N, epd:id_2017-S-187-383606_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:refersToProcedure epd:id_2017-S-187-383606_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-187-383606_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 187-383606" .
+
+epd:id_2017-S-187-383606_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL02>;
+  locn:postCode "05160";
+  locn:postName "Savines-le-Lac";
+  locn:thoroughfare "place de l'Église " .
+
+epd:id_2017-S-187-383606_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "Ville de Savines-le-Lac"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2017-S-187-383606_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-187-383606_Period_aNssKXiFyYxii2v93ivV4N a epo:Period;
+  epo:hasBeginning "2017-12-20"^^xsd:date;
+  epo:hasEnd "2020-12-31"^^xsd:date .
+
+epd:id_2017-S-187-383606_Period_ig8mEGUXVMgcuxfgHrQXuq a epo:Period;
+  epo:hasBeginning "2017-12-20"^^xsd:date;
+  epo:hasEnd "2020-12-31"^^xsd:date .
+
+epd:id_2017-S-187-383606_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2017-S-187-383606_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-187-383606_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45232150> .
+
+epd:id_2017-S-187-383606_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 2;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2017-S-187-383606_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-187-383606_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+               Date limite de remise des candidatures et offres: 24.11.2017 à 12:00.
+            """@fr;
+  epo:hasDescription """
+               Les travaux comprennent:
+               — la réhabilitation de la conduite d'adduction: Ø200 mm sur 11 420 ml,
+               — la réhabilitation des conduites de distribution: Ø100 mm, Ø125 mm et Ø200 mm sur 4 940 ml,
+               — l'Extension des réseaux d'assainissement: Ø315 mm sur 225 ml, Ø200 mm sur 4 070 ml,
+               — la fourniture et pose de 3 postes de relevage des eaux usées,
+               — la pose en encorbellement sous le pont de Savines-le-Lac des conduites d'eau (Ø160 mm calorifugé sur 970 ml) et d'assainissement (Ø75 mm sur 2 050 ml dont 970 ml calorifugés),
+               — la construction de deux réservoirs d'eau potable (200 m3 et 500 m3).
+            """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-187-383606_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-187-383606_Lot_aNssKXiFyYxii2v93ivV4N,
+    epd:id_2017-S-187-383606_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2017-S-187-383606_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               Réhabilitation des ouvrages d'eau potable — extension des réseaux d'assainissement — rive droite de la Durance et pont de Savines-le-Lac.
+            """@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-187-383606_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-187-383606_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2017-11-06"^^xsd:date .
+
+epd:id_2017-S-187-383606_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-187-383606_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-187-383606_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-187-383606_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  cccev:email "greffe.ta-marseille@juradm.fr";
+  cccev:telephone "+33 491134813" .
+
+epd:id_2017-S-187-383606_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13281";
+  locn:postName "Marseille";
+  locn:thoroughfare "22-24 rue Breteuil" .
+
+epd:id_2017-S-187-383606_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Tribunal administratif"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-187-383606_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2017-S-187-383606_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-187-383606_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-187-383606_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-187-383606_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-187-383606_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-187-383606_Organisation_W8v6KSqiUn74jPKJmENKoH .

@@ -1,0 +1,101 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-163-400604_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.bartshealth.nhs.uk"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2019-S-163-400604_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-163-400604_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-163-400604_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Ms Natasha Mapani"@en;
+  epo:hasInternetAddress "http://www.bartshealth.nhs.uk"^^xsd:anyURI;
+  cccev:email "Natasha.Mapani@bartshealth.nhs.uk";
+  cccev:telephone "+44 2037096566" .
+
+epd:id_2019-S-163-400604_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "The Royal London Hospital maternity is a busy tertiary unit with level 3 Neonatal Unit and surgical provision."@en .
+
+epd:id_2019-S-163-400604_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKI4>;
+  locn:address epd:id_2019-S-163-400604_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2019-S-163-400604_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-163-400604_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2019-S-163-400604_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2019-S-163-400604_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-163-400604_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "The main aim of the Obstetric Ultrasound department is to offer a high quality screening service to all pregnant women in line with national screening standards, meeting all key performance indicators. Where high risk pregnancies are identified the service aims to work in partnership with women to support informed decision making, swift diagnosis, prompt and effective management to optimize outcomes for current and future pregnancies.Scanning in the department is clinically driven, with a commitment to meaningful audit, governance and research in order to shape future practice. Professional development and involvement in monthly MDT is encouraged and supported. Ability to demonstrate commitment to the trust core values of being caring and compassionate would be expected.Over the last 5 years, the Obstetric Ultrasound Department at The Royal London Hospital has greatly expanded thanks to an increased number of referrals, the promotion of research within the unit and the introduction of new screening services (routine third trimester scan) as a tool to improve perinatal outcomes.We are committed to continue providing our women high quality screening services while promoting audit and research in the department in order to further improve effectiveness and shape future practice."@en;
+  epo:hasEstimatedValue epd:id_2019-S-163-400604_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2019-S-163-400604_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2019-S-163-400604_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 252000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
+
+epd:id_2019-S-163-400604_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 252000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
+
+epd:id_2019-S-163-400604_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2019-S-163-400604_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2019-S-163-400604_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2019-S-163-400604_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2019-S-163-400604_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs;
+  epo:hasDispatchDate "2019-08-21"^^xsd:date;
+  epo:hasID epd:id_2019-S-163-400604_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20190826";
+  epo:refersToLot epd:id_2019-S-163-400604_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2019-S-163-400604_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2019-S-163-400604_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 163-400604" .
+
+epd:id_2019-S-163-400604_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKI4>;
+  locn:postCode "E1 8PR";
+  locn:postName "Aldgate";
+  locn:thoroughfare "2nd Floor, 9 Prescot Street" .
+
+epd:id_2019-S-163-400604_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "Barts Health NHS Trust"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2019-S-163-400604_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-163-400604_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2019-S-163-400604_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2019-S-163-400604_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "DN403598" .
+
+epd:id_2019-S-163-400604_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/85150000> .
+
+epd:id_2019-S-163-400604_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-163-400604_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "— to enable the Barts Health NHS Trust to procure a service provider that will be able to provide personnel that is expected to be proficient in carrying out the full range of obstetric ultrasound examinations,— to ensure that the mothers and their attending family members are made feeling comfortable and relaxed and that they understand the purposes and limitation of any ultrasound examinations,— to communicate findings clearly and handle any situations where an anomaly is found with compassion and professionalism,— to actively taking part to research and clinical audit on going in the Department,— to provide full time clinical scanning services that span between the hours of 09:00 am and 18.20 am from Monday to Friday."@en;
+  epo:hasEstimatedValue epd:id_2019-S-163-400604_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasID epd:id_2019-S-163-400604_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-163-400604_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2019-S-163-400604_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "For the Provision of Fetal Scanning Services"@en;
+  epo:isCoveredByGPA false .
+
+epd:id_2019-S-163-400604_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2019-09-24"^^xsd:date .
+
+epd:id_2019-S-163-400604_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-163-400604_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-163-400604_Organisation_gqoAAwSV3JaTMsopb9zyKP .

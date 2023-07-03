@@ -1,0 +1,230 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-150-310397_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.avio28.com/pk/zop/z-sam17.html"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-150-310397_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38 a epo:Buyer;
+  epo:hasBuyerProfile "www.avio28.com/pk/zop/z-sam17.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-150-310397_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38;
+  epo:playedBy epd:id_2017-S-150-310397_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2017-S-150-310397_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38 a cccev:ContactPoint;
+  epo:hasContactName "Румяна Янкова- Иванова"@bg;
+  epo:hasFax "+359 29459201";
+  epo:hasInternetAddress "www.avio28.com"^^xsd:anyURI;
+  cccev:email "avio28@avio28.com";
+  cccev:telephone "+359 29425035" .
+
+epd:id_2017-S-150-310397_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 a org:Organization;
+  epo:hasID epd:id_2017-S-150-310397_OrganisationIdentifier_5ZAqFrPEQTFNv88ScKSm38;
+  epo:hasLegalName "Държавно предприятие „Ръководство на въздушното движение“"@bg;
+  cccev:registeredAddress epd:id_2017-S-150-310397_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2017-S-150-310397_AwardCriterionPrice_QsHhEb8qeRoGKduZGovcmd a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2017-S-150-310397_BuyerOrganisationGroup_5ZAqFrPEQTFNv88ScKSm38 a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  epo:hasMember epd:id_2017-S-150-310397_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2017-S-150-310397_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-150-310397_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "www.avio28.com/pk/zop/z-sam17.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-150-310397_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2017-S-150-310397_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-150-310397_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Румяна Янкова-Иванова"@bg;
+  epo:hasFax "+359 29459201";
+  epo:hasInternetAddress "www.avio28.com"^^xsd:anyURI;
+  cccev:email "avio28@avio28.com";
+  cccev:telephone "+359 29425035" .
+
+epd:id_2017-S-150-310397_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress """
+                  Република България, гр. София, Летище София.
+               """@bg .
+
+epd:id_2017-S-150-310397_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:address epd:id_2017-S-150-310397_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2017-S-150-310397_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-150-310397_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-150-310397_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2017-S-150-310397_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-150-310397_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 18.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-150-310397_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/66514140>, <http://data.europa.eu/cpv/cpv/66514200>,
+    <http://data.europa.eu/cpv/cpv/66515200> .
+
+epd:id_2017-S-150-310397_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-150-310397_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation """
+                  Прогнозната стойност на настоящата поръчка е 240 000 EUR за срок от 12 месеца. При необходимост Възложителят си запазва правото да възложи повторение на услугата на първоначалния изпълнител при същия обхват за срок до 6 месеца. Общата стойност на възможното повторно възлагане е включена в първоначално посочената обща прогнозна стойност на поръчката в т. II.1.5).
+               """@bg;
+  epo:hasDescription """
+                  Република България, гр. София, Летище София.
+               """@bg;
+  epo:hasPurpose epd:id_2017-S-150-310397_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-150-310397_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-150-310397_AwardCriterionPrice_QsHhEb8qeRoGKduZGovcmd .
+
+epd:id_2017-S-150-310397_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 360000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-150-310397_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2017-S-150-310397_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2017-S-150-310397_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2017-S-150-310397_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2017-S-150-310397_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2017-S-150-310397_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2017-S-150-310397_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2017-S-150-310397_TenderReceiver_73uj4vyPgHgRhfhM7wvqXG;
+  epo:hasDispatchDate "2017-08-04"^^xsd:date;
+  epo:hasID epd:id_2017-S-150-310397_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20170808";
+  epo:refersToLot epd:id_2017-S-150-310397_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2017-S-150-310397_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2017-S-150-310397_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 150-310397" .
+
+epd:id_2017-S-150-310397_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1540";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Брюксел“ № 1" .
+
+epd:id_2017-S-150-310397_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1540";
+  locn:postName "София";
+  locn:thoroughfare "Летище София" .
+
+epd:id_2017-S-150-310397_OrganisationIdentifier_5ZAqFrPEQTFNv88ScKSm38 a epo:Identifier;
+  epo:hasIdentifierValue "000697179" .
+
+epd:id_2017-S-150-310397_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "129009105" .
+
+epd:id_2017-S-150-310397_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasID epd:id_2017-S-150-310397_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Авиоотряд 28"@bg;
+  cccev:registeredAddress epd:id_2017-S-150-310397_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-150-310397_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2017-S-150-310397_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2017-S-150-310397_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/66514140> .
+
+epd:id_2017-S-150-310397_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-150-310397_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation """
+               В самолет Фалкон–2000 е монтирана лаборатория за облитане на радио и светотехнически средства (лаборатория).
+               Лабораторията е собственост на Държавно предприятие „Ръководство на въздушното движение“ (ДП РВД).
+               Поради факта, че лабораторията е неделима от самолета, възложители на обществената поръчка са генералния директор на Авиоотряд 28 и генералния директор на ДП „РВД“.
+            """@bg;
+  epo:hasDescription """
+               Авиационна застраховка на 4 бр. въздухоплавателни средства — самолет Airbus A-319-112, самолет Фалкон-2000, хеликоптер Ми-8ПС и хеликоптер Ми-8T, която включва: -застраховка „Каско“ — загуба или щета, нанесена на въздухоплавателните средства; -отговорност спрямо трети страни, произтичаща от използването на самолета (хеликоптера); -отговорност спрямо пътниците, багаж, карго и поща;отговорност спрямо трети страни за всички авиационни дейности; застраховка „Военни рискове“; застраховка на резервни части и сродно оборудване.
+            """@bg;
+  epo:hasEstimatedValue epd:id_2017-S-150-310397_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-150-310397_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2017-S-150-310397_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+               Застраховка „Каско“ с разновидности и „Отговорности“ на въздухоплавателните средства в Авиоотряд 28.
+            """@bg;
+  epo:isCoveredByGPA false;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-150-310397_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2017-S-150-310397_ReviewTerm_KjhWjVv578XNpvpTRjZhAs .
+
+epd:id_2017-S-150-310397_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2017-11-15"^^xsd:date .
+
+epd:id_2017-S-150-310397_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-150-310397_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2017-S-150-310397_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-150-310397_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Съгласно Закона за обществени поръчки.
+            """ .
+
+epd:id_2017-S-150-310397_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "cpcadmin@cpc.bg";
+  cccev:telephone "+359 29884070" .
+
+epd:id_2017-S-150-310397_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Витоша“ № 18" .
+
+epd:id_2017-S-150-310397_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-150-310397_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2017-S-150-310397_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2017-S-150-310397_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-150-310397_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2017-S-150-310397_TenderReceiverOrganisationAddress_73uj4vyPgHgRhfhM7wvqXG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1540";
+  locn:postName "София";
+  locn:thoroughfare "Летище София" .
+
+epd:id_2017-S-150-310397_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG
+  a cccev:ContactPoint;
+  epo:hasContactName "Румяна Янкова- Иванова"@bg;
+  epo:hasFax "+359 29459201";
+  epo:hasInternetAddress "www.avio28.com"^^xsd:anyURI;
+  cccev:email "avio28@avio28.com";
+  cccev:telephone "+359 29425035" .
+
+epd:id_2017-S-150-310397_TenderReceiverOrganisationIdentifier_73uj4vyPgHgRhfhM7wvqXG
+  a epo:Identifier;
+  epo:hasIdentifierValue "129009105" .
+
+epd:id_2017-S-150-310397_TenderReceiverOrganisation_73uj4vyPgHgRhfhM7wvqXG a org:Organization;
+  epo:hasID epd:id_2017-S-150-310397_TenderReceiverOrganisationIdentifier_73uj4vyPgHgRhfhM7wvqXG;
+  epo:hasLegalName "Авиоотряд 28"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-150-310397_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG;
+  cccev:registeredAddress epd:id_2017-S-150-310397_TenderReceiverOrganisationAddress_73uj4vyPgHgRhfhM7wvqXG .
+
+epd:id_2017-S-150-310397_TenderReceiver_73uj4vyPgHgRhfhM7wvqXG a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-150-310397_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG;
+  epo:playedBy epd:id_2017-S-150-310397_TenderReceiverOrganisation_73uj4vyPgHgRhfhM7wvqXG .

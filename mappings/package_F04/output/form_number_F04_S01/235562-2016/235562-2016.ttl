@@ -1,0 +1,165 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-131-235562_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.pleiade.it/enav/sourcing/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-131-235562_AwardCriterionPrice_3adAvBFPyyV3GW2dYQZ2ui a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "30"@it .
+
+epd:id_2016-S-131-235562_AwardCriterionQuality_eDoLkWm4bCwzSaypmba997 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Tecnico"@it;
+  cccev:weight "70"@it .
+
+epd:id_2016-S-131-235562_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "http://www.enav.it"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-131-235562_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-131-235562_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-131-235562_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasFax "+39 0681662642";
+  epo:hasInternetAddress "http://www.enav.it"^^xsd:anyURI;
+  cccev:email "giovanni.vasta@enav.it";
+  cccev:telephone "+39 0681661" .
+
+epd:id_2016-S-131-235562_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+Palermo.
+"""@it .
+
+epd:id_2016-S-131-235562_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITG12>;
+  locn:address epd:id_2016-S-131-235562_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-131-235562_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-131-235562_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-131-235562_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+Sono presenti quattro opzioni contrattuali, il cui valore economico è compreso nel valore stimato. Ulteriori informazioni sono contenute nel disciplinare di partecipazione pubblicato sul «Profilo di committente».
+"""@it .
+
+epd:id_2016-S-131-235562_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2016-S-131-235562_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitDay .
+
+epd:id_2016-S-131-235562_Fund_aNssKXiFyYxii2v93ivV4N a epo:Fund;
+  epo:hasDescription "E71F04000000007."@it .
+
+epd:id_2016-S-131-235562_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-131-235562_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation """
+I candidati potranno accedere al sistema telematico degli acquisti di ENAV all'indirizzo https://www.pleiade.it/enav/sourcing/ e cliccando sul nome della gara potranno visualizzare il dettaglio della procedura. I candidati al fine della partecipazione alla gara dovranno inserire nel sistema telematico degli acquisti di ENAV la documentazione indicata nel disciplinare di partecipazione.
+"""@it;
+  epo:hasDescription """
+Il sistema richiesto sarà composto dalla fornitura di un Radar in banda X e dalla fornitura del sensore LIDAR (LIght Detection and Ranging), che dovranno essere integrati con il sistema esistente LLWAS (Low Level Wind shear Alert System). Ulteriori informazioni sono contenute nel disciplinare di partecipazione pubblicato sul «Profilo di committente», consultabile elettronicamente mediante l'indirizzo http://www.enav.it/ — sezione Bandi di gara — Forniture — Bandi aperti.
+La presente procedura presenta carattere di urgenza essendo necessario, per ragioni tecnico-operative, l'avvio dell'esecuzione del progetto nei termini più rapidi possibile.
+"""@it;
+  epo:hasEstimatedValue epd:id_2016-S-131-235562_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:isFundedBy epd:id_2016-S-131-235562_Fund_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2016-S-131-235562_AwardCriterionPrice_3adAvBFPyyV3GW2dYQZ2ui,
+    epd:id_2016-S-131-235562_AwardCriterionQuality_eDoLkWm4bCwzSaypmba997 .
+
+epd:id_2016-S-131-235562_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 2450000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-131-235562_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 2450000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-131-235562_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-131-235562_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2016-S-131-235562_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2016-S-131-235562_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2016-S-131-235562_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2016-07-06"^^xsd:date;
+  epo:hasID epd:id_2016-S-131-235562_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20160709";
+  epo:refersToLot epd:id_2016-S-131-235562_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2016-S-131-235562_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-131-235562_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 131-235562" .
+
+epd:id_2016-S-131-235562_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "00138";
+  locn:postName "Roma";
+  locn:thoroughfare "Via Salaria 716" .
+
+epd:id_2016-S-131-235562_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "ENAV SpA"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2016-S-131-235562_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-131-235562_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/38127000> .
+
+epd:id_2016-S-131-235562_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-131-235562_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+La procedura prevederà la pubblicazione di un avviso periodico indicativo con valore di indizione di gara, una fase di prequalifica dei concorrenti che si candideranno per l'invito a presentare offerta, e successivamente una lettera d'invito per i candidati selezionati a presentare le rispettive offerte.
+La procedura sarà gestita interamente in via telematica e pertanto ciascun candidato deve poter disporre di un personal computer dotato di accesso alla rete Internet e di un indirizzo di posta elettronica certificata, le cui specifiche tecniche sono evidenziate all'interno dell'area informativa nel sito https://www.pleiade.it/enav/sourcing/ nel documento denominato «Regolamento e-Procurement».
+"""@it;
+  epo:hasDescription """
+Il sistema richiesto ha lo scopo di rilevare il fenomeno del Wind Shear in ambito aeroportuale.
+"""@it;
+  epo:hasEstimatedValue epd:id_2016-S-131-235562_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-131-235562_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2016-S-131-235562_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+Sistema integrato per il rilevamento del fenomeno del Wind Shear presso l'aeroporto di Palermo Punta Raisi.
+"""@it;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-131-235562_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2016-S-131-235562_ReviewTerm_ZsxuomNURxGbRdavxJPhLN, epd:id_2016-S-131-235562_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2016-S-131-235562_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-131-235562_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-131-235562_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-131-235562_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Avverso il presente bando di gara è proponibile ricorso innanzi al TAR Lazio ed è proponibile ricorso straordinario innanzi al Presidente della Repubblica.
+""" .
+
+epd:id_2016-S-131-235562_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postName "Roma" .
+
+epd:id_2016-S-131-235562_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "TAR Lazio — Tribunale Amministrativo Regionale per il Lazio"@it;
+  cccev:registeredAddress epd:id_2016-S-131-235562_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2016-S-131-235562_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-131-235562_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2016-S-131-235562_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "IT";
+  epo:hasReceiptExpressionDeadline "2016-07-28T12:00" .
+
+epd:id_2016-S-131-235562_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-131-235562_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-131-235562_Organisation_W8v6KSqiUn74jPKJmENKoH .

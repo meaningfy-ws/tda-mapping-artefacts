@@ -1,0 +1,109 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-009-013744_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "www.izsvenezie.it"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-009-013744_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2017-S-009-013744_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2017-S-009-013744_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "Davide Violato"@it;
+  epo:hasFax "+39 0498084339";
+  epo:hasInternetAddress "www.izsvenezie.it"^^xsd:anyURI;
+  cccev:email "dviolato@izsvenezie.it";
+  cccev:telephone "+39 0498084232" .
+
+epd:id_2017-S-009-013744_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location .
+
+epd:id_2017-S-009-013744_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-009-013744_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2017-S-009-013744_InformationProviderContactPoint_PHAC3pV7Mi9mSueG6pbn8k a
+    cccev:ContactPoint;
+  epo:hasContactName "Davide Violato"@it;
+  epo:hasFax "+39 0498084339";
+  epo:hasInternetAddress "http://www.izsvenezie.it/amministrazione/bandi-e-gare/forniture-di-beni-e-servizi/avvisi/"^^xsd:anyURI;
+  cccev:email "dviolato@izsvenezie.it";
+  cccev:telephone "+39 0498084232" .
+
+epd:id_2017-S-009-013744_InformationProviderOrganisationAddress_PHAC3pV7Mi9mSueG6pbn8k
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "35020";
+  locn:postName "Legnaro";
+  locn:thoroughfare "V.le dell'Università 10" .
+
+epd:id_2017-S-009-013744_InformationProviderOrganisationIdentifier_PHAC3pV7Mi9mSueG6pbn8k
+  a epo:Identifier;
+  epo:hasIdentifierValue "izs_vene" .
+
+epd:id_2017-S-009-013744_InformationProviderOrganisation_PHAC3pV7Mi9mSueG6pbn8k a
+    org:Organization;
+  epo:hasID epd:id_2017-S-009-013744_InformationProviderOrganisationIdentifier_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:hasLegalName "Istituto Zooprofilattico Sperimentale delle Venezie (IZSVe)"@it;
+  cccev:registeredAddress epd:id_2017-S-009-013744_InformationProviderOrganisationAddress_PHAC3pV7Mi9mSueG6pbn8k .
+
+epd:id_2017-S-009-013744_LotPurpose_PNm7nZntEXiu4JieackQnj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/09134000>, <http://data.europa.eu/cpv/cpv/33696500>,
+    <http://data.europa.eu/cpv/cpv/38432000>, <http://data.europa.eu/cpv/cpv/38437000>,
+    <http://data.europa.eu/cpv/cpv/50430000>, <http://data.europa.eu/cpv/cpv/64210000>,
+    <http://data.europa.eu/cpv/cpv/65300000>, <http://data.europa.eu/cpv/cpv/66510000>,
+    <http://data.europa.eu/cpv/cpv/85320000>, <http://data.europa.eu/cpv/cpv/98310000> .
+
+epd:id_2017-S-009-013744_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-009-013744_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription """
+Avviso di preinformazione relativo all'anno 2017.
+"""@it;
+  epo:hasPurpose epd:id_2017-S-009-013744_LotPurpose_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2017-S-009-013744_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-009-013744_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2017-S-009-013744_ProcurementProcedureInformationProvider_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:hasDispatchDate "2017-01-11"^^xsd:date;
+  epo:hasID epd:id_2017-S-009-013744_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasPublicationDate "20170113";
+  epo:refersToLot epd:id_2017-S-009-013744_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2017-S-009-013744_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2017-S-009-013744_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 009-013744" .
+
+epd:id_2017-S-009-013744_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "35020";
+  locn:postName "Legnaro (PD)";
+  locn:thoroughfare "Viale dell'Università 10" .
+
+epd:id_2017-S-009-013744_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC a epo:Identifier;
+  epo:hasIdentifierValue "izs_vene" .
+
+epd:id_2017-S-009-013744_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasBuyerLegalTypeDescription "ente sanitario di diritto pubblico";
+  epo:hasID epd:id_2017-S-009-013744_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC;
+  epo:hasLegalName "Istituto Zooprofilattico Sperimentale delle Venezie"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2017-S-009-013744_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2017-S-009-013744_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/38000000> .
+
+epd:id_2017-S-009-013744_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasAdditionalInformation """
+La presente stazione appaltante rende noto ai sensi dell'art. 70, comma 1, seconda e terza parte del D.Lgs. n. 50/2016 che è stato pubblicato l'Avviso di Preinformazione relativo all'anno 2017 sul profilo del committente dell'Amministrazione aggiudicatrice all'indirizzo http://www.izsvenezie.it/amministrazione/bandi-e-gare/forniture-di-beni-e-servizi/avvisi/
+"""@it;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-009-013744_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2017-S-009-013744_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle """
+Avviso di preinformazione relativo all'anno 2017.
+"""@it .
+
+epd:id_2017-S-009-013744_ProcurementProcedureInformationProvider_PHAC3pV7Mi9mSueG6pbn8k
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-009-013744_InformationProviderContactPoint_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:playedBy epd:id_2017-S-009-013744_InformationProviderOrganisation_PHAC3pV7Mi9mSueG6pbn8k .

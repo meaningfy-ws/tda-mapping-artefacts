@@ -1,0 +1,103 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-013-029216_AdditionalBuyer_Lb7cRT6hA6Ej7aEP2r8N4Z a epo:Buyer;
+  epo:hasBuyerProfile "https://upphandling.polisen.se/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-013-029216_AdditionalContactPoint_Lb7cRT6hA6Ej7aEP2r8N4Z;
+  epo:playedBy epd:id_2021-S-013-029216_AdditionalOrganisation_Lb7cRT6hA6Ej7aEP2r8N4Z .
+
+epd:id_2021-S-013-029216_AdditionalContactPoint_Lb7cRT6hA6Ej7aEP2r8N4Z a cccev:ContactPoint;
+  epo:hasInternetAddress "www.polisen.se/aktuellt/upphandlingar/"^^xsd:anyURI;
+  cccev:email "hanifa.hadziegric@polisen.se";
+  cccev:telephone "+46 105639691" .
+
+epd:id_2021-S-013-029216_AdditionalOrganisation_Lb7cRT6hA6Ej7aEP2r8N4Z a org:Organization;
+  epo:hasID epd:id_2021-S-013-029216_OrganisationIdentifier_Lb7cRT6hA6Ej7aEP2r8N4Z;
+  epo:hasLegalName "Polismyndigheten"@en;
+  cccev:registeredAddress epd:id_2021-S-013-029216_OrganisationAddress_Lb7cRT6hA6Ej7aEP2r8N4Z .
+
+epd:id_2021-S-013-029216_BuyerOrganisationGroup_Lb7cRT6hA6Ej7aEP2r8N4Z a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/pub-os>;
+  epo:hasMember epd:id_2021-S-013-029216_AdditionalOrganisation_Lb7cRT6hA6Ej7aEP2r8N4Z,
+    epd:id_2021-S-013-029216_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2021-S-013-029216_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "https://upphandling.polisen.se/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-013-029216_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2021-S-013-029216_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2021-S-013-029216_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "Hanifa Hadziegric"@en;
+  epo:hasInternetAddress "www.polisen.se/aktuellt/upphandlingar/"^^xsd:anyURI;
+  cccev:email "hanifa.hadziegric@polisen.se";
+  cccev:telephone "+46 105639691" .
+
+epd:id_2021-S-013-029216_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SE> .
+
+epd:id_2021-S-013-029216_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-013-029216_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2021-S-013-029216_LotPurpose_PNm7nZntEXiu4JieackQnj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/35331300> .
+
+epd:id_2021-S-013-029216_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-013-029216_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription "Distraction hand grenades."@en;
+  epo:hasPurpose epd:id_2021-S-013-029216_LotPurpose_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2021-S-013-029216_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-013-029216_AdditionalBuyer_Lb7cRT6hA6Ej7aEP2r8N4Z,
+    epd:id_2021-S-013-029216_Buyer_4zjJjpytu5bmHbyNSmtsju;
+  epo:hasDispatchDate "2021-01-15"^^xsd:date;
+  epo:hasID epd:id_2021-S-013-029216_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32009L0081>;
+  epo:hasPublicationDate "20210120";
+  epo:refersToLot epd:id_2021-S-013-029216_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2021-S-013-029216_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2021-S-013-029216_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 013-029216" .
+
+epd:id_2021-S-013-029216_OrganisationAddress_Lb7cRT6hA6Ej7aEP2r8N4Z a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SWE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SE>;
+  locn:postCode "10226";
+  locn:postName "Stockholm" .
+
+epd:id_2021-S-013-029216_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SWE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SE>;
+  locn:postCode "10226";
+  locn:postName "Stockholm" .
+
+epd:id_2021-S-013-029216_OrganisationIdentifier_Lb7cRT6hA6Ej7aEP2r8N4Z a epo:Identifier;
+  epo:hasIdentifierValue "202100-0076" .
+
+epd:id_2021-S-013-029216_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC a epo:Identifier;
+  epo:hasIdentifierValue "202100-0076" .
+
+epd:id_2021-S-013-029216_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasID epd:id_2021-S-013-029216_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC;
+  epo:hasLegalName "Polismyndigheten"@en;
+  cccev:registeredAddress epd:id_2021-S-013-029216_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2021-S-013-029216_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "A351.176/2020" .
+
+epd:id_2021-S-013-029216_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/39225500> .
+
+epd:id_2021-S-013-029216_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasID epd:id_2021-S-013-029216_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-013-029216_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2021-S-013-029216_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle "Distraktionshandgranater"@en;
+  epo:isJointProcurement true .

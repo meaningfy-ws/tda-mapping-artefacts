@@ -1,0 +1,179 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-177-363310_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://marchespublics596280.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-177-363310_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-177-363310_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-177-363310_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-177-363310_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.ville-ronchin.info"^^xsd:anyURI;
+  cccev:email "marchespublics@ville-ronchin.fr" .
+
+epd:id_2017-S-177-363310_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2017-S-177-363310_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-177-363310_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-177-363310_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-177-363310_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-177-363310_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-177-363310_LotIdentifier_RgULVPVVYP9pkvK789PCUZ a epo:Identifier;
+  epo:hasIdentifierValue "Unique" .
+
+epd:id_2017-S-177-363310_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/92610000> .
+
+epd:id_2017-S-177-363310_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-177-363310_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+                  La collectivité souhaite déléguer, à titre exclusif, la totalité de la gestion de l'équipement. La gestion du service est assurée par le concessionnaire à ses risques et périls (transfert d'une part du risque d'exploitation), conformément aux règles de l'art, dans le respect de la règlementation, dans le souci d'assurer la conservation du patrimoine ainsi que la continuité du service dans les conditions fixées au sein du projet de contrat (remis avec le dossier de consultation des entreprises — DCE), les droits et la sécurité des usagers et des tiers. Toutes les missions confiées au délégataire sont précisées dans le DCE.
+               """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-177-363310_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasID epd:id_2017-S-177-363310_LotIdentifier_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-177-363310_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasTitle """
+                  Concession de service public pour la gestion et l'exploitation du golf Lille Métropole de Ronchin
+               """@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-177-363310_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 8500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-177-363310_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM a cccev:ContactPoint;
+  epo:hasFax "+33 359542445";
+  epo:hasInternetAddress "http://lille.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-lille@juradm.fr";
+  cccev:telephone "+33 359542342" .
+
+epd:id_2017-S-177-363310_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "59000";
+  locn:postName "Lille";
+  locn:thoroughfare "5 rue Geoffroy Saint-Hilaire" .
+
+epd:id_2017-S-177-363310_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lille"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-177-363310_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM;
+  cccev:registeredAddress epd:id_2017-S-177-363310_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2017-S-177-363310_Mediator_PMKvGTWSa3gLdxRfJtvToM a epo:Mediator;
+  epo:playedBy epd:id_2017-S-177-363310_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2017-S-177-363310_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-177-363310_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-177-363310_Mediator_PMKvGTWSa3gLdxRfJtvToM,
+    epd:id_2017-S-177-363310_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2017-S-177-363310_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-177-363310_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2017-09-12"^^xsd:date;
+  epo:hasID epd:id_2017-S-177-363310_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20170915";
+  epo:refersToLot epd:id_2017-S-177-363310_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2017-S-177-363310_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-177-363310_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 177-363310" .
+
+epd:id_2017-S-177-363310_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postName "Ronchin";
+  locn:thoroughfare "Marché publié pour le SIVU du Camp français, 650 avenue Jean Jaurès" .
+
+epd:id_2017-S-177-363310_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasLegalName "Commune de Ronchin"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-177-363310_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-177-363310_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/02" .
+
+epd:id_2017-S-177-363310_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/92610000> .
+
+epd:id_2017-S-177-363310_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk a epo:ProcedureTerm;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2017-S-177-363310_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-177-363310_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               La présente procédure est soumise aux dispositions des articles L. 1411-1 et suivants du CGCT et R. 1411-1 et suivants du CGCT, ainsi qu'à l'ordonnance n° 2016-65 du 29.1.2016 et au décret n° 2016-86 du 1.2.2016 relatif aux contrats de concession.
+               Il a été décidé de recourir à une procédure ouverte, en application de l'arrêt du Conseil d'État du 15.12.2006, société Corsica ferries (requête n° 298618) dont les termes ont été confirmés — implicitement mais nécessairement — par l'article 18 du décret susvisé.
+            """@fr;
+  epo:hasDescription """
+               Le golf se compose d'un parcours de 18 trous (par 72 / 6.193 mètres), d'un parcours étalonné «Slope 131», d'un parcours académique 9 trous (par 36 / 1.700 mètres), d'une zone d'entrainement (practice de 32 postes dont 11 couverts, putting green, pitching green, bunker d'entrainement), d'un espace modulaire de 90 m2, d'un club-house de 300 m2 et de locaux d'exploitation (stockage du matériel, vestiaires, etc.).
+               La description des ouvrages concédés figure dans le DCE.
+            """@fr;
+  epo:hasID epd:id_2017-S-177-363310_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-177-363310_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-177-363310_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Concession de service public pour la gestion et l'exploitation du golf Lille Métropole de Ronchin.
+            """@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-177-363310_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-177-363310_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk, epd:id_2017-S-177-363310_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr,
+    epd:id_2017-S-177-363310_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-177-363310_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-177-363310_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-177-363310_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-177-363310_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               — référé précontractuel avant la signature du contrat (article L. 551-1 et suivants du code de justice administrative),
+               — le cas échéant référé contractuel après signature du contrat (articles L. 551-13 et suivants du code de justice administrative),
+               — recours en validité du contrat par les tiers au contrat dans un délai de 2 mois à compter des mesures de publicité appropriées.
+            """ .
+
+epd:id_2017-S-177-363310_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 359542445";
+  epo:hasInternetAddress "http://lille.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-lille@juradm.fr";
+  cccev:telephone "+33 359542342" .
+
+epd:id_2017-S-177-363310_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "59000";
+  locn:postName "Lille";
+  locn:thoroughfare "5 rue Geoffroy Saint-Hilaire" .
+
+epd:id_2017-S-177-363310_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lille"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-177-363310_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2017-S-177-363310_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-177-363310_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-177-363310_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-177-363310_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://marchespublics596280.fr"^^xsd:anyURI .
+
+epd:id_2017-S-177-363310_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-177-363310_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-177-363310_Organisation_jXahEP38X6pEFgd4J9tLvF .

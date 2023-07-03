@@ -1,0 +1,186 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-221-583655_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "www.vergabe.rib.de"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-221-583655_AwardCriterionPrice_nhjAeUgxP9TrFdDRcqi3yA a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-221-583655_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-221-583655_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-221-583655_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-221-583655_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Fraport Ausbau Süd GmbH, Abteilung FAS-EV"@de;
+  epo:hasInternetAddress "www.fraport.de"^^xsd:anyURI;
+  cccev:email "ausschreibung@fraport-ausbau-sued.de" .
+
+epd:id_2021-S-221-583655_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Frankfurt am Main Flughafen"@de .
+
+epd:id_2021-S-221-583655_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:address epd:id_2021-S-221-583655_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-221-583655_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-221-583655_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-221-583655_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-221-583655_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-221-583655_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 23.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-221-583655_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "Abteilung FAS-EV"@de;
+  epo:hasInternetAddress "www.fraport.de"^^xsd:anyURI;
+  cccev:email "ausschreibung@fraport-ausbau-sued.de" .
+
+epd:id_2021-S-221-583655_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:postCode "60547";
+  locn:postName "Frankfurt" .
+
+epd:id_2021-S-221-583655_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasLegalName "Fraport Ausbau Süd GmbH"@de;
+  cccev:registeredAddress epd:id_2021-S-221-583655_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2021-S-221-583655_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/44221200> .
+
+epd:id_2021-S-221-583655_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-221-583655_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Gegenstand dieser Ausschreibung sind folgende Leistungen:- Rücklaufschleusen ca.10 Stk.Leistungsbeginn: 2. Quartal 2023Beginn Montage/Ausführung: 3. Quartal 2023Leistungsende (inkl. nachlaufender Restleistungen und Abnahme): 1. Quartal 2025"@de;
+  epo:hasPurpose epd:id_2021-S-221-583655_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-221-583655_AwardCriterionPrice_nhjAeUgxP9TrFdDRcqi3yA .
+
+epd:id_2021-S-221-583655_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-221-583655_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-221-583655_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2021-S-221-583655_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2021-S-221-583655_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2021-S-221-583655_TenderReceiver_dk2esofbDLefiQsKcsKjh3;
+  epo:hasDispatchDate "2021-11-10"^^xsd:date;
+  epo:hasID epd:id_2021-S-221-583655_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20211115";
+  epo:refersToLot epd:id_2021-S-221-583655_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2021-S-221-583655_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-221-583655_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 221-583655" .
+
+epd:id_2021-S-221-583655_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:postCode "60547";
+  locn:postName "Frankfurt" .
+
+epd:id_2021-S-221-583655_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "Fraport AG"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2021-S-221-583655_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-221-583655_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "EU-V0618-21FAS" .
+
+epd:id_2021-S-221-583655_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45000000> .
+
+epd:id_2021-S-221-583655_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-221-583655_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation "I. Ablauf des Verfahrens1. Phase - Interessenbekundung (IBK):Interessenten müssen ihr Interesse über die Vergabeplattform www.vergabe.rib.de bekunden.Die Interessenbekundung als Bewerber-/ Bietergemeinschaft (Bew.-/Bi.gem.) ist bereits in dieser 1. Phase möglich, aber nicht zwingend. In diesem Fall sind die Mitglieder sowie das vertretungsberechtigte Mitglied mit der IBK zu benennen (s. auch 2. Phase). Die Einreichung eines Teilnahmeantrags/ einer Interessensbestätigung ist in dieser Phase nicht erforderlich.Es erfolgt keine gesonderte Auftragsbekanntmachung mehr (§ 36 Abs. 4 SektVO). Lediglich die Unternehmen, die form- u. fristgerecht eine Interessenbekundung übermittelt haben, werden am weiteren Verfahren beteiligt (§36 Abs. 5 SektVO).Der Interessent trägt das Risiko der fristgerechten Übermittlung der Interessenbekundung.2. Phase - Interessensbestätigung:Nur diejenigen Unternehmen, die form- und fristgerecht ihr Interesse über die Vergabeplattform bekundet haben, werden zur Abgabe eines Teilnahmeantrags (Interessensbestätigung) aufgefordert werden. Weitere/ sonstige Unternehmen sind nicht zur Teilnahme am Verfahren berechtigt. Soweit noch keine IBK als Bew.-/Bi.gem. in der 1. Phase erfolgt ist, kann eine Bew.-/Bi.gem. auch noch nach der Aufforderung zur Interessenbestätigung (AzIB) bis zur Abgabe der Teilnahmeanträge zulässig gebildet werden. In diesem Fall darf jedoch eine Bew.-/Bi.gem. nur noch zwischen Unternehmen gebildet werden, die auch ihr Interesse zuvor in der 1. Phase bekundet haben. Mit der AzIB werden auch alle weiteren notwendigen Informationen/ Dokumente zur Verfügung gestellt:- „Formblätter zur Interessensbestätigung“,- die informatorischen Vergabeunterlagen.Im Rahmen der AzIB werden diese elektronisch über die Vergabeplattform zur Verfügung gestellt oder eine Internetadresse angegeben, unter der die elektronischen Dokumente abgerufen werden können.Es wird ausdrücklich darauf hingewiesen, dass entgegen § 41 Abs. 1 SektVO die informatorischen Vergabeunterlagen nicht vollständig sind und daher nicht zur Angebotsabgabe verwendet werden können. Der mit dieser Vorgehensweise bewirkte Schutz der Vertraulichkeit der Informationen ist notwendig, um die Sicherheitsinteressen im Sinne des § 107 Abs. 2 GWB, die u. a. für die Auftraggeberin (AG) in § 8 Abs. 1 LuftSiG konkretisiert werden, zu wahren.3. Phase - Angebotsphase:Gemäß § 41 Abs. 4 SektVO und auf Grundlage von § 107 Abs. 2 Nr. 1 GWB erhalten nur diejenigen Bewerber, die von der AG nach Abschluss der Interessensbestätigung/ des Teilnahmewettbewerbes zur Angebotsabgabe aufgefordert werden, die für die Abgabe eines ersten verbindlichen Angebotes zu verwendenden vollständigen finalen Vergabeunterlagen. Die zur Angebotsabgabe zu verwendenden Vergabeunterlagen werden nebst allen Unterlagen dann digital über die Vergabeplattform www.vergabe.rib.de zur Verfügung gestellt.Es ist beabsichtigt, die Anzahl der Bieter/ Bietergemienschaften in einer oder mehreren Verhandlungsrunden durch Ausscheiden der weniger wirtschaftlichen Angebote stufenweise zu reduzieren.Die AG behält sich jedoch gleichwohl vor, den Zuschlag bereits auf Grundlage der ersten verbindlichen Angebote ohne weitere Verhandlungen und ohne die Einholung weiterer Angebote zu erteilen.II.Es wird darauf hingewiesen, dass die Kommunikation im Vergabeverfahren grundsätzlich elektronisch erfolgt. Die AG weist darauf hin, dass die Versendung der Vorabinformation gem. §134 GWB und des Zuschlagsschreibens per Telefax erfolgen. Die AG behält sich darüber hinaus vor, im Einzelfall andere Kommunikationswege vorzugeben."@de;
+  epo:hasDescription "Im Rahmen des Neubaus des Terminal 3 der Fraport AG am Frankfurter Flughafen werden unter anderem ein Terminalgebäude und die Piergebäude H + J sowie das Pier G und das Parkhaus errichtet.Gegenstand der vorliegenden Ausschreibung sind folgende Leistungen:RücklaufschleusenWeitere Angaben unter II.2.4"@de;
+  epo:hasID epd:id_2021-S-221-583655_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-221-583655_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-221-583655_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "VE0051.1.2.1 Rücklaufschleusen Terminal"@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-221-583655_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2021-S-221-583655_ReviewTerm_ZsxuomNURxGbRdavxJPhLN, epd:id_2021-S-221-583655_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2021-S-221-583655_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-221-583655_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2021-S-221-583655_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2021-S-221-583655_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "64283";
+  locn:postName "Darmstadt";
+  locn:thoroughfare "Dienstgebäude: Wilhelminenstraße 1-3" .
+
+epd:id_2021-S-221-583655_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Hessen beim Regierungspräsidium Darmstadt"@de;
+  cccev:registeredAddress epd:id_2021-S-221-583655_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2021-S-221-583655_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-221-583655_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2021-S-221-583655_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Einlegung von Rechtsbehelfen:Gemäß §160 Abs. 3 GWB ist ein Nachprüfungsantrag unzulässig, soweit1. der Antragsteller den geltend gemachten Verstoß gegen Vergabevorschriften vor Einreichen des Nachprüfungsantrags erkannt und gegenüber dem Auftraggeber nicht innerhalb einer Frist von zehn Kalendertagen gerügt hat; der Ablauf der Frist nach § 134 Absatz 2 bleibt unberührt,2. Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, nicht spätestens bis zum Ablauf der in der Bekanntmachung benannten Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden,3. Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, nicht spätestens bis zum Ablauf der Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden,4. mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind.Satz 1 gilt nicht bei einem Antrag auf Feststellung der Unwirksamkeit des Vertrags nach § 135 Absatz 1 Nummer 2. § 134 Absatz 1 Satz 2 bleibt unberührt." .
+
+epd:id_2021-S-221-583655_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "64283";
+  locn:postName "Darmstadt";
+  locn:thoroughfare "Dienstgebäude: Wilhelminenstraße 1-3" .
+
+epd:id_2021-S-221-583655_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Hessen beim Regierungspräsidium Darmstadt"@de;
+  cccev:registeredAddress epd:id_2021-S-221-583655_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-221-583655_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-221-583655_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-221-583655_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2021-12-14T23:59";
+  epo:hasSubmissionURL "www.vergabe.rib.de"^^xsd:anyURI .
+
+epd:id_2021-S-221-583655_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:postCode "60547";
+  locn:postName "Frankfurt" .
+
+epd:id_2021-S-221-583655_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3
+  a cccev:ContactPoint;
+  epo:hasContactName "Abteilung FAS-EV"@de;
+  epo:hasInternetAddress "www.fraport.de"^^xsd:anyURI;
+  cccev:email "ausschreibung@fraport-ausbau-sued.de" .
+
+epd:id_2021-S-221-583655_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 a org:Organization;
+  epo:hasLegalName "Fraport Ausbau Süd GmbH"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-221-583655_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  cccev:registeredAddress epd:id_2021-S-221-583655_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3 .
+
+epd:id_2021-S-221-583655_TenderReceiver_dk2esofbDLefiQsKcsKjh3 a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-221-583655_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  epo:playedBy epd:id_2021-S-221-583655_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 .

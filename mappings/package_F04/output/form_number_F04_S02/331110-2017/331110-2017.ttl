@@ -1,0 +1,168 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-160-331110_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://marches.bordeaux-port.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-160-331110_AwardCriterionCost_QUXGoMoxezRsWJWnGUj6oe a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Prix de reprise"@fr;
+  cccev:weight "40 %"@fr .
+
+epd:id_2017-S-160-331110_AwardCriterionQuality_eDoLkWm4bCwzSaypmba997 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Délai"@fr;
+  cccev:weight "40 %"@fr .
+
+epd:id_2017-S-160-331110_AwardCriterionQuality_gZjMvYnfh7isDk7VRXzH95 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Quantité des pavés prise"@fr;
+  cccev:weight "20 %"@fr .
+
+epd:id_2017-S-160-331110_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "https://marches.bordeaux-port.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-160-331110_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-160-331110_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-160-331110_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "postoffice@bordeaux-port.fr"@fr;
+  epo:hasFax "+33 556905897";
+  epo:hasInternetAddress "http://www.bordeaux-port.fr"^^xsd:anyURI;
+  cccev:email "postoffice@bordeaux-port.fr";
+  cccev:telephone "+33 556905800" .
+
+epd:id_2017-S-160-331110_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+                  Bassins à Flots — Bordeaux.
+               """@fr .
+
+epd:id_2017-S-160-331110_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRI12>;
+  locn:address epd:id_2017-S-160-331110_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-160-331110_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-160-331110_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-160-331110_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2017-S-160-331110_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/44113130> .
+
+epd:id_2017-S-160-331110_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-160-331110_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation """
+                  Le cessionnaire précisera dans son offre la quantité sur laquelle il souhaite se positionner (minima 1 000 mètres carrés soit env. 3,8 t). Pour toute autre précision sur les modalités, se référer au dossier de présentation.
+                  Cette consultation ne fera pas l'objet d'une mise en concurrence ultérieure.
+               """@fr;
+  epo:hasDescription """
+                  Dans le cadre de la réorganisation et de l'amélioration de ses terminaux, le Grand Port Maritime de Bordeaux souhaite se séparer de ses stocks de pavés de quais.
+                  Ce projet vise à sortir ces pavés des actifs du GPMB son stock de pavés. Ce stock est estimé à un équivalent de 13 000 m2 composé principalement de pavés dit Napoléon 25 x 25cm (env.380 kg/m2).
+                  Ces pavés sont entreposés en tas partiellement criblé sur le Pôle Naval des Bassins à Flots rue des Étrangers à Bordeaux.
+               """@fr;
+  epo:hasPurpose epd:id_2017-S-160-331110_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-160-331110_AwardCriterionCost_QUXGoMoxezRsWJWnGUj6oe,
+    epd:id_2017-S-160-331110_AwardCriterionQuality_eDoLkWm4bCwzSaypmba997, epd:id_2017-S-160-331110_AwardCriterionQuality_gZjMvYnfh7isDk7VRXzH95 .
+
+epd:id_2017-S-160-331110_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-160-331110_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2017-S-160-331110_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2017-S-160-331110_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2017-S-160-331110_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2017-08-21"^^xsd:date;
+  epo:hasID epd:id_2017-S-160-331110_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20170823";
+  epo:refersToLot epd:id_2017-S-160-331110_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2017-S-160-331110_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-160-331110_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 160-331110" .
+
+epd:id_2017-S-160-331110_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRI12>;
+  locn:postCode "33082";
+  locn:postName "Bordeaux Cedex";
+  locn:thoroughfare "152 quai de Bacalan — CS 41320" .
+
+epd:id_2017-S-160-331110_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "Grand Port Maritime de Bordeaux"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/port>;
+  cccev:registeredAddress epd:id_2017-S-160-331110_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-160-331110_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "AMI012017" .
+
+epd:id_2017-S-160-331110_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/44113130> .
+
+epd:id_2017-S-160-331110_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-160-331110_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription """
+               Cession et évacuation de pavés.
+            """@fr;
+  epo:hasID epd:id_2017-S-160-331110_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-160-331110_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2017-S-160-331110_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               Appel à manifestation d'intérêt — cession et évacuation des pavés du Pôle Naval.
+            """@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-160-331110_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2017-S-160-331110_ReviewTerm_ZsxuomNURxGbRdavxJPhLN, epd:id_2017-S-160-331110_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2017-S-160-331110_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-160-331110_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-160-331110_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-160-331110_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Soit d'un référé précontractuel avant la signature du marché (articles L.551-1 à 12 du Code de justice administrative);
+               Soit d'un référé contractuel après la signature du marché, dans les 31 jours qui suivent la publication de l'avis d'attribution du contrat, ou, à défaut d'un tel avis, dans les 6 mois qui suivent la date de conclusion de celui-ci (articles L.551-13 à 23 du même code);
+               Soit d'un recours pour excès de pouvoir dans un délai de 2 mois à compter de la présente décision (articles R.421-1 à 7 du même code);
+               Soit d'un recours de pleine juridiction dans les 2 mois qui suivent la présente décision.
+            """ .
+
+epd:id_2017-S-160-331110_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.ta-bordeaux.juradm.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-bordeaux@juradm.fr";
+  cccev:telephone "+33 556993800" .
+
+epd:id_2017-S-160-331110_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "33000";
+  locn:postName "Bordeaux";
+  locn:thoroughfare "9 rue Tatet" .
+
+epd:id_2017-S-160-331110_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Bordeaux"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-160-331110_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2017-S-160-331110_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-160-331110_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-160-331110_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-160-331110_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasReceiptExpressionDeadline "2017-09-28";
+  epo:hasSubmissionURL "https://marches.bordeaux-port.fr"^^xsd:anyURI .
+
+epd:id_2017-S-160-331110_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-160-331110_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-160-331110_Organisation_W8v6KSqiUn74jPKJmENKoH .

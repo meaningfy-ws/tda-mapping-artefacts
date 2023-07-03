@@ -1,0 +1,213 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-142-378880_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://atac.i-faber.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-142-378880_AwardCriterionPrice_ViFLHYiizzehBKNxWmyibc a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-142-378880_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-142-378880_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-142-378880_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-142-378880_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-142-378880_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Federico Marchioni"@it;
+  epo:hasFax "+39 0646954032";
+  epo:hasInternetAddress "http://www.atac.roma.it/"^^xsd:anyURI;
+  cccev:email "federico.marchioni@atac.roma.it";
+  cccev:telephone "+39 0646954625" .
+
+epd:id_2021-S-142-378880_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Luogo principale di consegna della fornitura: ATAC SpA — si rimanda al capitolato speciale e relativi allegati."@it .
+
+epd:id_2021-S-142-378880_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a locn:Address;
+  locn:fullAddress "Luogo principale di consegna della fornitura: ATAC SpA – si rimanda al capitolato speciale e relativi allegati."@it .
+
+epd:id_2021-S-142-378880_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITI43>;
+  locn:address epd:id_2021-S-142-378880_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-142-378880_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITI43>;
+  locn:address epd:id_2021-S-142-378880_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
+
+epd:id_2021-S-142-378880_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-142-378880_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-142-378880_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-142-378880_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-142-378880_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-142-378880_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions false .
+
+epd:id_2021-S-142-378880_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2021-S-142-378880_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 1095.0;
+  time:unitType time:unitDay .
+
+epd:id_2021-S-142-378880_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 1095.0;
+  time:unitType time:unitDay .
+
+epd:id_2021-S-142-378880_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-142-378880_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-142-378880_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/24961000> .
+
+epd:id_2021-S-142-378880_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/24961000> .
+
+epd:id_2021-S-142-378880_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-142-378880_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "Vedi VI.3)."@it;
+  epo:hasDescription "L’accordo quadro prevede complessivamente la fornitura di liquido refrigerante, anticongelante e protettivo per circuiti di raffreddamento motori endotermici degli autobus della flotta aziendale meglio dettagliato nel capitolato speciale e relativi allegati. L’importo massimo presunto posto a base di gara per la durata dell’intero accordo quadro è fissato in 688 800,00 EUR (euro seicentoottantottomilaottocento/00), oltre IVA, soggetto al ribasso percentuale di gara. I costi della sicurezza sono pari a 0 EUR per assenza di rischi interferenziali. Il primo contratto applicativo, della durata di 12 (dodici) mesi, riguarda la fornitura di liquido refrigerante, anticongelante e protettivo per circuiti di raffreddamento motori endotermici degli autobus della flotta aziendale, meglio dettagliato nel capitolato speciale e relativi allegati, per un importo massimo presunto pari a 206 640,00 EUR (euro duecentoseimilaseicentoquaranta/00) oltre IVA, soggetto al ribasso percentuale di gara. I costi della sicurezza sono pari a 0 EUR per assenza di rischi interferenziali."@it;
+  epo:hasEstimatedValue epd:id_2021-S-142-378880_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasID epd:id_2021-S-142-378880_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-142-378880_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle "Glicole SAP 170581"@it;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-142-378880_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
+
+epd:id_2021-S-142-378880_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-142-378880_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasAdditionalInformation "Vedi VI.3)."@it;
+  epo:hasDescription "L’accordo quadro prevede complessivamente la fornitura di liquido refrigerante, anticongelante e protettivo per circuiti di raffreddamento motori endotermici degli autobus della flotta aziendale meglio dettagliato nel capitolato speciale e relativi allegati. L’importo massimo presunto posto a base di gara per la durata dell’intero accordo quadro è fissato in 1 701 000,00 EUR (euro unmilionesettecentounomila/00), oltre IVA, soggetto al ribasso percentuale di gara. I costi della sicurezza sono pari a 0 EUR per assenza di rischi interferenziali. Il primo contratto applicativo, della durata di 12 (dodici) mesi, riguarda la fornitura di liquido refrigerante, anticongelante e protettivo per circuiti di raffreddamento motori endotermici degli autobus della flotta aziendale, meglio dettagliato nel Capitolato Speciale e relativi allegati, per un importo massimo presunto pari a 567 000,00 EUR (euro cinquecentosessantasettemila/00) oltre IVA, soggetto al ribasso percentuale di gara. I costi della sicurezza sono pari a 0 EUR per assenza di rischi interferenziali."@it;
+  epo:hasEstimatedValue epd:id_2021-S-142-378880_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasID epd:id_2021-S-142-378880_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-142-378880_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle "Glicole SAP 153607"@it;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-142-378880_AwardCriterionPrice_ViFLHYiizzehBKNxWmyibc .
+
+epd:id_2021-S-142-378880_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 688800.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-142-378880_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj a epo:MonetaryValue;
+  epo:hasAmountValue 1701000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-142-378880_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 2389800.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-142-378880_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-142-378880_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-142-378880_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-142-378880_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-142-378880_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2021-S-142-378880_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2021-07-21"^^xsd:date;
+  epo:hasID epd:id_2021-S-142-378880_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210726";
+  epo:refersToLot epd:id_2021-S-142-378880_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2021-S-142-378880_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2021-S-142-378880_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-142-378880_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 142-378880" .
+
+epd:id_2021-S-142-378880_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITI43>;
+  locn:postCode "00176";
+  locn:postName "Roma";
+  locn:thoroughfare "via Prenestina 45" .
+
+epd:id_2021-S-142-378880_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "ATAC SpA Azienda per la Mobilità"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2021-S-142-378880_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-142-378880_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/24961000> .
+
+epd:id_2021-S-142-378880_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasMaximumLotSubmissionAllowed 2;
+  epo:hasMaximumNumberOfLotsToBeAwarded 2 .
+
+epd:id_2021-S-142-378880_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-142-378880_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "1) provv. D.G. 31 del 5.7.2021; 2) ATAC SpA si configura fra i soggetti ex art. 3, lett. e) del D.Lgs. 50/2016 e s.m.i. e il presente appalto rientra oggettivamente nell’ambito di applicazione dei cc.dd. settori speciali;3) per partecipare ciascun concorrente deve iscriversi/registrarsi al portale Acquisti ATAC SpA, sito Internet: https://atac.i-faber.com;4) soggetti ammessi e modalità di partecipazione: si rinvia a quanto disposto all’art. 2 del DGNC e alle «Istruzioni operative», pubblicate sul sito www.atac.roma.it, unitamente al presente bando;5) i concorrenti devono comunicare esclusivamente tramite l’area Comunicazioni del predetto Portale; per le modalità si rinvia all’art. 21.1 del DGNC;6) la procedura di gara è disciplinata dal presente bando e dai seguenti documenti ad esso complementari: disciplinare di gara e norme contrattuali (DGNC), Modd. G; DGUE; A, Q1-RTI, Q2-RTI, «Istruzioni operative»;7) l'esecuzione dell'appalto è disciplinata dal contratto, oltre che dal capitolato speciale e dagli allegati in esso citati;8) entro il termine perentorio di cui al punto IV.2.2), con le modalità specificate negli artt. 5 e 6 del DGNC, devono essere presentate sia la documentazione amministrativa (art. 8 del DGNC) che l’offerta economica digitale, sottoscritte con firma digitale; le offerte non sottoscritte con firma digitale, ai sensi del combinato disposto dell’art. 52, co. 8, lettera a) e dell’art. 83, co. 9 del D.Lgs. 50/2016 e s.m.i., verranno escluse; ATAC SpA si riserva di aggiudicare l’appalto anche in presenza di una sola offerta, purché ammessa e valida e salvo il disposto dell’art. 95, co. 12 del D.Lgs. 50/2016 e s.m.i.;8 bis) i criteri di aggiudicazione dell’accordo quadro sono disciplinati nell’art. 5 del capitolato speciale;9) non sono ammesse offerte che comportino un aumento dell'importo indicato al punto II.1.5);10) ai fini dell’aggiudicazione si rinvia agli artt. 10 e 12 del DGNC e all'eventuale verifica di congruità;11) ATAC SpA si riserva di pubblicare eventuali rettifiche del presente bando secondo le modalità di cui all’art. 22 del DGNC;12) ATAC SpA ha facoltà di applicare il disposto dell'art. 110 del D.Lgs. 50/2016 e s.m.i., qualora si verifichino le circostanze richiamate dalla norma;13) i pagamenti relativi a prestazioni eseguite dal subappaltatore devono essere effettuati dall’aggiudicatario, salvo quanto disposto all’art. 105, co. 13 del D.Lgs. 50/2016 e s.m.i.;14) la stipulazione del contratto avrà luogo entro 60 giorni, ai sensi di quanto consentito all'art. 32, co. 8 e 9 del D.Lgs. n. 50/2016 e s.m.i.;15) ai sensi dell’art. 216, co. 11 del D.Lgs. 50/2016 e s.m.i., le spese per la pubblicazione dell’avviso e del bando sono rimborsate alla stazione appaltante dagli aggiudicatari entro 60 giorni dall'aggiudicazione; per l’appalto di che trattasi l’importo massimo stimato è pari a 20 000,00 EUR oltre IVA;16) incompletezza, irregolarità o mancanza delle dichiarazioni richieste; le casistiche e le modalità di attivazione del soccorso istruttorio sono riportate agli artt. 10.4.1 e 10.5 del DGNC; 17) i concorrenti e le stazioni appaltanti accettano e devono rispettare le clausole e le condizioni contenute nel protocollo di legalità e nel protocollo di integrità di cui agli artt. 26 e 27 del DGNC; 18) tutela dei dati personali: si rinvia all’art. 20 del DGNC; 19) accesso agli atti: si rinvia all’art. 23 del DGNC; 20) tracciabilità dei flussi finanziari: si rinvia all’art. 25 del DGNC Criteri di aggiudicazione: l’aggiudicazione di ogni lotto avverrà, in base al criterio del minor prezzo ai sensi dell’art. 95, comma 4, lett. b) del D.Lgs. 50/2016 e s.m.i., determinato mediante il più alto ribasso unico percentuale offerto dai partecipanti alla gara, rispetto all’importo a base di gara."@it;
+  epo:hasDescription "Bando n. 122-2021 procedura aperta ai sensi del combinato disposto degli artt. 60 e 122 del D.Lgs. 50/2016 e s.m.i., nell’ambito di applicazione dei settori speciali ai sensi degli artt. 114 e 118 del D.Lgs. 50/2016 e s.m.i., per la conclusione di accordo quadro ex art. 54 del D.Lgs. 50 / 2016 e s.m.i., della durata di tre anni in base ai quali affidare a un unico operatore la fornitura di liquido refrigerante, anticongelante e protettivo per circuiti di raffreddamento motori endotermici degli autobus della flotta aziendale, articolato in due lotti."@it;
+  epo:hasEstimatedValue epd:id_2021-S-142-378880_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-142-378880_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-142-378880_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-142-378880_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Bando n. 122-2021 procedura aperta per la conclusione di un accordo quadro per la fornitura di liquido refrigerante, anticongelante e protettivo durata tre anni articolati in due lotti"@it;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-142-378880_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-142-378880_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb, epd:id_2021-S-142-378880_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-142-378880_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-142-378880_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-142-378880_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-142-378880_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "00176";
+  locn:postName "Roma";
+  locn:thoroughfare "via Prenestina 45" .
+
+epd:id_2021-S-142-378880_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+39 0646953927";
+  cccev:email "protocollo@cert2.atac.roma.it";
+  cccev:telephone "+39 0646953365" .
+
+epd:id_2021-S-142-378880_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "ATAC SpA Privacy e accesso agli atti"@it;
+  epo:hasPrimaryContactPoint epd:id_2021-S-142-378880_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-142-378880_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-142-378880_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-142-378880_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-142-378880_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "00196";
+  locn:postName "Roma";
+  locn:thoroughfare "via Flaminia 189" .
+
+epd:id_2021-S-142-378880_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "TAR Lazio (tribunale amministrativo della Regione Lazio)"@it;
+  cccev:registeredAddress epd:id_2021-S-142-378880_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-142-378880_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-142-378880_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-142-378880_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "IT" .
+
+epd:id_2021-S-142-378880_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-142-378880_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-142-378880_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

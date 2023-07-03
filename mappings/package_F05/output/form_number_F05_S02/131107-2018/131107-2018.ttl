@@ -1,0 +1,318 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-059-131107_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://www.marches-securises.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2018-S-059-131107_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://www.marches-securises.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-059-131107_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-059-131107_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-059-131107_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Service achats et marchés publics"@fr;
+  epo:hasFax "+33 489981482";
+  epo:hasInternetAddress "http://eaudazur.com"^^xsd:anyURI;
+  cccev:email "marchespublic@eaudazur.com";
+  cccev:telephone "+33 489981481" .
+
+epd:id_2018-S-059-131107_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+                  Territoire de la régie Eau d'Azur.
+               """@fr .
+
+epd:id_2018-S-059-131107_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a locn:Address;
+  locn:fullAddress """
+                  Territoire de la régie Eau d'Azur.
+               """@fr .
+
+epd:id_2018-S-059-131107_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL03>;
+  locn:address epd:id_2018-S-059-131107_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2018-S-059-131107_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL03>;
+  locn:address epd:id_2018-S-059-131107_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
+
+epd:id_2018-S-059-131107_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-059-131107_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-059-131107_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+                  L'accord-cadre pourra faire l'objet de reconductions (durée de l'accord-carde de 1 an renouvelable 3 fois) dans les conditions indiquées au présent avis.
+               """@fr .
+
+epd:id_2018-S-059-131107_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-059-131107_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-059-131107_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+                  L'accord-cadre pourra faire l'objet de reconductions (durée de l'accord-carde de 1 an renouvelable 3 fois) dans les conditions indiquées au présent avis.
+               """@fr .
+
+epd:id_2018-S-059-131107_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2018-S-059-131107_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-059-131107_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-059-131107_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2018-S-059-131107_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2018-S-059-131107_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasContactName "Service achats et marchés publics"@fr;
+  epo:hasFax "+33 489981482";
+  epo:hasInternetAddress "http://www.e-marches06.fr"^^xsd:anyURI;
+  cccev:email "marchespublics@eaudazur.com";
+  cccev:telephone "+33 489981481" .
+
+epd:id_2018-S-059-131107_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL03>;
+  locn:postCode "06203";
+  locn:postName "Nice Cedex 3";
+  locn:thoroughfare "Crystal Palace, 369/371 promenade des Anglais — CS 53135" .
+
+epd:id_2018-S-059-131107_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasLegalName "Régie Eau d'Azur"@fr;
+  cccev:registeredAddress epd:id_2018-S-059-131107_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2018-S-059-131107_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2018-S-059-131107_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2018-S-059-131107_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71241000>, <http://data.europa.eu/cpv/cpv/71335000>,
+    <http://data.europa.eu/cpv/cpv/79311000> .
+
+epd:id_2018-S-059-131107_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71241000>, <http://data.europa.eu/cpv/cpv/79311000> .
+
+epd:id_2018-S-059-131107_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-059-131107_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation """
+                  La valeur maximale de 360 000 EUR HT sur la durée de l'accord-cadre ne constitue qu'une estimation, la valeur réelle étant fonction des opérations que la régie Eau d'Azur pourra lancer pendant la durée de l'accord-cadre. L'accord-cadre est passé sans montant minimum, ni maximum.
+               """@fr;
+  epo:hasDescription """
+                  Études à caractère général (identification des solutions, 1ers chiffrages…) dans le domaine des ouvrages et réseaux d'eau potable et missions d'AMO. Accord-cadre à marchés subséquents sans minimum ni maximum, d'une durée de 1 an renouvelable 3 fois (soit une durée maximale de 4 ans).
+               """@fr;
+  epo:hasEstimatedValue epd:id_2018-S-059-131107_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasID epd:id_2018-S-059-131107_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-059-131107_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle """
+                  Études à caractère général dans le domaine des ouvrages et réseaux d'eau potable et missions d'AMO
+               """@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-059-131107_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-059-131107_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-059-131107_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasAdditionalInformation """
+                  La valeur maximale de 60 000 EUR HT sur la durée de l'accord-cadre ne constitue qu'une estimation, la valeur réelle étant fonction des opérations que la régie Eau d'Azur pourra lancer pendant la durée de l'accord-cadre. L'accord-cadre est passé sans montant minimum, ni maximum.
+               """@fr;
+  epo:hasDescription """
+                  Études environnementales (inventaires naturalistes: botanique, mammologie et chirologie, ornithologie, ichtyofaune, herpétologie, entomologie, malacologie, et études associées). Accord-cadre à marchés subséquents sans montant minimum ni maximum, d'une durée de 1 an renouvelable 3 fois, soit une durée maximale de 4 ans.
+               """@fr;
+  epo:hasEstimatedValue epd:id_2018-S-059-131107_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasID epd:id_2018-S-059-131107_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2018-S-059-131107_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle """
+                  Études environnementales
+               """@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-059-131107_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-059-131107_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 360000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-059-131107_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj a epo:MonetaryValue;
+  epo:hasAmountValue 60000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-059-131107_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
+  epo:hasFax "+33 484354460";
+  epo:hasInternetAddress "http://www.economie.gouv.fr/"^^xsd:anyURI;
+  cccev:email "catherine.pietri@paca.pref.gouv.fr";
+  cccev:telephone "+33 484354554" .
+
+epd:id_2018-S-059-131107_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13282";
+  locn:postName "Marseille Cedex 6";
+  locn:thoroughfare "place Félix Barret, CS 80001" .
+
+epd:id_2018-S-059-131107_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "Comité consultatif interrégional de règlement amiable"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-059-131107_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU;
+  cccev:registeredAddress epd:id_2018-S-059-131107_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2018-S-059-131107_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2018-S-059-131107_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2018-S-059-131107_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-059-131107_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-059-131107_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-059-131107_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2018-S-059-131107_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2018-S-059-131107_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2018-S-059-131107_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2018-S-059-131107_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2018-S-059-131107_TenderReceiver_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasDispatchDate "2018-03-22"^^xsd:date;
+  epo:hasID epd:id_2018-S-059-131107_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20180324";
+  epo:refersToLot epd:id_2018-S-059-131107_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2018-S-059-131107_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2018-S-059-131107_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2018-S-059-131107_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 059-131107" .
+
+epd:id_2018-S-059-131107_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL03>;
+  locn:postCode "06203";
+  locn:postName "Nice Cedex 3";
+  locn:thoroughfare "Crystal Palace, 369/371 promenade des Anglais — CS 53135" .
+
+epd:id_2018-S-059-131107_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Régie Eau d'Azur"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2018-S-059-131107_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-059-131107_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79311000> .
+
+epd:id_2018-S-059-131107_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasMaximumLotSubmissionAllowed 2;
+  epo:hasMaximumNumberOfLotsToBeAwarded 2 .
+
+epd:id_2018-S-059-131107_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-059-131107_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+               Les candidats choisissent librement entre:
+               — la transmission de leur candidature sous forme dématérialisée,
+               — la transmission de leur candidature sur support papier et sur support physique électronique (clé USB ou CD ROM). L'adresse d'envoi des plis électroniques est: http://www.e-marches06.fr — l'adresse d'envoi des plis papier est: régie Eau d'Azur, Le Crystal Palace, CS 53135, 4ème étage, 369/371 promenade des Anglais, 06203 Nice Cedex 3, candidature relative à la consultation «prestations d'assistance à maîtrise d'ouvrage — ouvrages et réseaux de la régie Eau d'Azur», lot nº xx. Les opérateurs économiques sont informés que la consultation se déroule en 2 phases:
+               — 1ère phase: remise des candidatures. Les documents attendus, ainsi que la date et l'heure limites de remise des candidatures sont fixés dans le présent avis,
+               — 2ème phase: remise des offres. L'intégralité du dossier de consultation sera transmis aux candidats dont la candidature aura été retenue. L'estimation du montant de l'accord-cadre fournie au présent avis n'est qu'indicative. Elle pourra varier en fonction des projets réellement engagés par la régie Eau d'Azur. Pour rappel l'accord-cadre est passé sans minimum et sans maximum.
+            """@fr;
+  epo:hasDescription """
+               L'Accord-cadre a pour objet la réalisation d'études préalables — identification des solutions techniques, 1ers chiffrages… — (que la maÎtrise d'œuvre soit assurée ou pas par REA) dans tous les domaines techniques rencontrés par la régie: réseaux, modélisation, installations de pompage, conception et réhabilitation d'ouvrages, production électrique, énergies renouvelables, hydrogéologie, traitement de sous-produits (lot 1) et d'études à caractère environnemental — notamment inventaires naturalistes: botanique, mammologie et chirologie, ornithologie, ichtyofaune, herpétologie, entomologie, malacologie et études associées — (lot 2). Ces prestations feront l'objet d'un accord-cadre à marchés subséquents, sans montant minimum ni maximum, à prix unitaires et forfaitaires. L'accord-cadre sera d'une durée de 1 an renouvelable 3 fois sans que la durée globale puisse excéder 4 ans.
+            """@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-059-131107_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2018-S-059-131107_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2018-S-059-131107_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+               Prestations d'assistance à maîtrise d'ouvrage — ouvrages et réseaux de la régie Eau d'Azur
+            """@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-059-131107_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2018-S-059-131107_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2018-S-059-131107_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2018-S-059-131107_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2018-S-059-131107_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2018-S-059-131107_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-059-131107_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2018-S-059-131107_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2018-S-059-131107_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "06359";
+  locn:postName "Nice Cedex 4";
+  locn:thoroughfare "33 boulevard Franck Pilatte" .
+
+epd:id_2018-S-059-131107_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 493557831";
+  epo:hasInternetAddress "http://nice.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-nice@juradm.fr";
+  cccev:telephone "+33 492041313" .
+
+epd:id_2018-S-059-131107_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Greffe du tribunal administratif de Nice"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-059-131107_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2018-S-059-131107_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-059-131107_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-059-131107_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-059-131107_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 493557831";
+  epo:hasInternetAddress "http://nice.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-nice@juradm.fr";
+  cccev:telephone "+33 492041313" .
+
+epd:id_2018-S-059-131107_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "06359";
+  locn:postName "Nice Cedex 4";
+  locn:thoroughfare "33 boulevard Franck Pilatte" .
+
+epd:id_2018-S-059-131107_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nice"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-059-131107_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2018-S-059-131107_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-059-131107_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-059-131107_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-059-131107_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.marches-securises.fr"^^xsd:anyURI .
+
+epd:id_2018-S-059-131107_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL03>;
+  locn:postCode "06203";
+  locn:postName "Nice Cedex 3";
+  locn:thoroughfare "Crystal Palace, 369/371 promenade des Anglais — CS 53135" .
+
+epd:id_2018-S-059-131107_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR
+  a cccev:ContactPoint;
+  epo:hasContactName "Service achats et marchés publics"@fr;
+  epo:hasFax "+33 489981482";
+  epo:hasInternetAddress "http://www.e-marches06.fr"^^xsd:anyURI;
+  cccev:email "marchespublics@eaudazur.com";
+  cccev:telephone "+33 489981481" .
+
+epd:id_2018-S-059-131107_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR a org:Organization;
+  epo:hasLegalName "Régie Eau d'Azur"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-059-131107_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  cccev:registeredAddress epd:id_2018-S-059-131107_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR .
+
+epd:id_2018-S-059-131107_TenderReceiver_RmPNyhSxpRtChEASKUU5BR a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-059-131107_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  epo:playedBy epd:id_2018-S-059-131107_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR .

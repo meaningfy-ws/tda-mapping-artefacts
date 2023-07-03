@@ -1,0 +1,168 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-030-077741_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.promitheus.gov.gr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-030-077741_AwardCriterionPrice_nhjAeUgxP9TrFdDRcqi3yA a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2022-S-030-077741_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-030-077741_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2022-S-030-077741_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2022-S-030-077741_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Πατάτσης Γεώργιος"@el;
+  epo:hasFax "+30 2752099461";
+  epo:hasInternetAddress "www.deyan.gr"^^xsd:anyURI;
+  cccev:email "deyanafpliou@yahoo.gr";
+  cccev:telephone "+30 2752028976" .
+
+epd:id_2022-S-030-077741_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Δήμος Ναυπλιέων"@el .
+
+epd:id_2022-S-030-077741_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL651>;
+  locn:address epd:id_2022-S-030-077741_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2022-S-030-077741_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-030-077741_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-030-077741_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2022-S-030-077741_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2022-S-030-077741_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 180.0;
+  time:unitType time:unitDay .
+
+epd:id_2022-S-030-077741_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-030-077741_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Αντικείμενο της σύμβασης είναι η προμήθεια, εγκατάσταση και θέση σε λειτουργία μονάδας φίλτρανσης επεξεργασίας νερού των πηγών της Λέρνης Αργολίδας, δυναμικότητας 780m3/h η οποία θα εγκατασταθεί σε χώρο ιδιοκτησίας της ΔΕΥΑΝ, με σκοπό την αντιμετώπιση των αναγκών ύδρευσης του Δήμου."@el;
+  epo:hasEstimatedValue epd:id_2022-S-030-077741_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-030-077741_AwardCriterionPrice_nhjAeUgxP9TrFdDRcqi3yA .
+
+epd:id_2022-S-030-077741_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 550000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-030-077741_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 550000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-030-077741_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-030-077741_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2022-S-030-077741_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2022-S-030-077741_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2022-S-030-077741_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2022-S-030-077741_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2022-02-08"^^xsd:date;
+  epo:hasID epd:id_2022-S-030-077741_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220211";
+  epo:refersToLot epd:id_2022-S-030-077741_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2022-S-030-077741_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2022-S-030-077741_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 030-077741" .
+
+epd:id_2022-S-030-077741_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL651>;
+  locn:postCode "21100";
+  locn:postName "ΝΑΥΠΛΙΟ";
+  locn:thoroughfare "25ης ΜΑΡΤΙΟΥ 2" .
+
+epd:id_2022-S-030-077741_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ ΝΑΥΠΛΙΕΩΝ (Δ.Ε.Υ.Α.Ν)"@el;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2022-S-030-077741_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2022-S-030-077741_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/42912300> .
+
+epd:id_2022-S-030-077741_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-030-077741_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription "Το αντικείμενο της σύμβασης αφορά την προμήθεια, εγκατάσταση και θέση σε λειτουργία μονάδα φίλτρανσης επεξεργασίας νερού των πηγών της Λέρνης Αργολίδας, η οποία θα εγκατασταθεί σε χώρο δεξαμενών της Δ.Ε.Υ.Α.Ν., με σκοπό την αντιμετώπιση των αναγκών ύδρευσης του Δήμου."@el;
+  epo:hasEstimatedValue epd:id_2022-S-030-077741_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-030-077741_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2022-S-030-077741_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "ΠΡΟΜΗΘΕΙΑ ΣΥΣΤΗΜΑΤΟΣ ΕΠΕΞΕΡΓΑΣΙΑΣ ΝΕΡΟΥ ΑΠΟ ΤΙΣ ΠΗΓΕΣ ΛΕΡΝΗΣ & ΑΜΥΜΩΝΗΣ ΤΩΝ ΜΥΛΩΝ ΠΟΥ ΥΔΡΕΥΟΥΝ ΤΑ Δ.Ε. ΑΣΙΝΗΣ – Ν. ΤΙΡΥΝΘΑΣ ΚΑΙ ΤΗΣ Τ.Κ. ΑΡΓΟΛΙΚΟΥ"@el;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-030-077741_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2022-S-030-077741_ReviewTerm_ZsxuomNURxGbRdavxJPhLN, epd:id_2022-S-030-077741_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2022-S-030-077741_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-030-077741_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2022-S-030-077741_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2022-S-030-077741_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "21100";
+  locn:postName "ΝΑΥΠΛΙΟ";
+  locn:thoroughfare "25ης Μαρτίου 2" .
+
+epd:id_2022-S-030-077741_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasFax "+30 2752099461";
+  epo:hasInternetAddress "www.deyan.gr"^^xsd:anyURI;
+  cccev:email "deyanafpliou@yahoo.gr";
+  cccev:telephone "+30 2752024167" .
+
+epd:id_2022-S-030-077741_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ ΝAΥΠΛΙΕΩΝ (Δ.Ε.Υ.Α.Ν.)"@el;
+  epo:hasPrimaryContactPoint epd:id_2022-S-030-077741_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2022-S-030-077741_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2022-S-030-077741_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-030-077741_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2022-S-030-077741_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Κάθε ενδιαφερόμενος, ο οποίος έχει ή είχε συμφέρον να του ανατεθεί η συγκεκριμένη σύμβαση και έχει ή είχε υποστεί ή ενδέχεται να υποστεί ζημία από εκτελεστή πράξη ή παράλειψη της αναθέτουσας αρχής κατά παράβαση της νομοθεσίας της Ευρωπαϊκής Ένωσης ή της εσωτερικής νομοθεσίας, δικαιούται να ασκήσει προδικαστική προσφυγή ενώπιον της ΑΕΠΠ κατά της σχετικής πράξης ή παράλειψης της αναθέτουσας αρχής, προσδιορίζοντας ειδικώς τις νομικές και πραγματικές αιτιάσεις που δικαιολογούν το αίτημά του. Σε περίπτωση προσφυγής κατά πράξης της αναθέτουσας αρχής  η προθεσμία για την άσκηση της προδικαστικής προσφυγής είναι:(α) δέκα (10) ημέρες από την κοινοποίηση της προσβαλλόμενης πράξης στον ενδιαφερόμενο οικονομικό φορέα αν η πράξη κοινοποιήθηκε με ηλεκτρονικά μέσα ή τηλεομοιοτυπία ή (β) δεκαπέντε (15) ημέρες από την κοινοποίηση της προσβαλλόμενης πράξης σε αυτόν αν χρησιμοποιήθηκαν άλλα μέσα επικοινωνίας, άλλως  (γ) δέκα (10) ημέρες από την πλήρη, πραγματική ή τεκμαιρόμενη, γνώση της πράξης που βλάπτει τα συμφέροντα του ενδιαφερόμενου οικονομικού φορέα. Σε περίπτωση παράλειψης, η προθεσμία για την άσκηση της προδικαστικής προσφυγής είναι δεκαπέντε (15) ημέρες από την επομένη της συντέλεσης της προσβαλλόμενης παράλειψης .Η προδικαστική προσφυγή κατατίθεται ηλεκτρονικά  μέσω της λειτουργικότητας «Επικοινωνία» του ΕΣΗΔΗΣ στον ηλεκτρονικό τόπο του διαγωνισμού, επιλέγοντας κατά περίπτωση την ένδειξη «Προδικαστική Προσφυγή» και επισυνάπτοντας το σχετικό έγγραφο σε μορφή ηλεκτρονικού αρχείου Portable Document Format (PDF), το οποίο φέρει εγκεκριμένη προηγμένη ηλεκτρονική υπογραφή ή προηγμένη ηλεκτρονική υπογραφή με χρήση εγκεκριμένων πιστοποιητικών Για το παραδεκτό της άσκησης της προδικαστικής προσφυγής κατατίθεται παράβολο από τον προσφεύγοντα υπέρ του Δημοσίου, κατά τα ειδικά οριζόμενα στο άρθρο 363 του ν. 4412/2016 στο άρθρο 19 παρ. 1.1 και στο άρθρο 7  της με αριθμ. 56902/215 Υ.Α. Το παράβολο επιστρέφεται στον προσφεύγοντα, σε περίπτωση ολικής ή μερικής αποδοχής της προσφυγής του ή σε περίπτωση που, πριν την έκδοση της απόφασης της ΑΕΠΠ επί της προσφυγής, η αναθέτουσα αρχή ανακαλεί την προσβαλλόμενη πράξη ή προβαίνει στην οφειλόμενη ενέργεια. Η προθεσμία για την άσκηση της προδικαστικής προσφυγής και η άσκησή της κωλύουν τη σύναψη της σύμβασης επί ποινή ακυρότητας, κατά τα οριζόμενα στο άρθρο 364 του ν. 4412/2016. Κατά τα λοιπά, η άσκηση της προδικαστικής προσφυγής δεν κωλύει την πρόοδο της διαγωνιστικής διαδικασίας, εκτός αν ζητηθούν προσωρινά μέτρα προστασίας κατά το άρθρο 366 του ν.4412/2016." .
+
+epd:id_2022-S-030-077741_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+30 2132141229";
+  epo:hasInternetAddress "http://www.aepp-procurement.gr/"^^xsd:anyURI;
+  cccev:email "aepp@aepp-procurement.gr";
+  cccev:telephone "+30 2132141216" .
+
+epd:id_2022-S-030-077741_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "18233";
+  locn:postName "Αγ.Ιωάννης Ρέντης";
+  locn:thoroughfare "Λεωφ.Θηβών 196-198" .
+
+epd:id_2022-S-030-077741_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Αρχή Εξέτασης Προδικαστικών Προσφυγών (Α.Ε.Π.Π.)"@el;
+  epo:hasPrimaryContactPoint epd:id_2022-S-030-077741_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2022-S-030-077741_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2022-S-030-077741_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-030-077741_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2022-S-030-077741_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "EL";
+  epo:hasReceiptExpressionDeadline "2022-03-24T14:00" .
+
+epd:id_2022-S-030-077741_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-030-077741_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2022-S-030-077741_Organisation_W8v6KSqiUn74jPKJmENKoH .

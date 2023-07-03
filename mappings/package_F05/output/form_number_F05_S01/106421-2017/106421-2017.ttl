@@ -1,0 +1,219 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-057-106421_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.marches-securises.fr/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-057-106421_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://www.marches-securises.fr/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-057-106421_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-057-106421_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-057-106421_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasFax "+33 389902577";
+  epo:hasInternetAddress "http://www.euroairport.com"^^xsd:anyURI;
+  cccev:email "sma@euroairport.com";
+  cccev:telephone "+33 389903111" .
+
+epd:id_2017-S-057-106421_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+Site de l'aéroport de Bâle-Mulhouse.
+"""@fr .
+
+epd:id_2017-S-057-106421_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR422>;
+  locn:address epd:id_2017-S-057-106421_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2017-S-057-106421_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-057-106421_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-057-106421_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2017-S-057-106421_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2017-S-057-106421_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-057-106421_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2017-S-057-106421_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2017-S-057-106421_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.euroairport.com"^^xsd:anyURI;
+  cccev:email "fbranswyck@euroairport.com";
+  cccev:telephone "+33 389902553" .
+
+epd:id_2017-S-057-106421_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR422>;
+  locn:postCode "68304";
+  locn:postName "Saint-Louis Cedex";
+  locn:thoroughfare "Établissement public franco-suisse, BP 60120" .
+
+epd:id_2017-S-057-106421_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasLegalName "Aéroport de Bâle-Mulhouse"@fr;
+  cccev:registeredAddress epd:id_2017-S-057-106421_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2017-S-057-106421_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/09123000> .
+
+epd:id_2017-S-057-106421_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-057-106421_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation """
+Accord-cadre avec plusieurs opérateurs. Le nombre d'opérateurs n'est pas limité.
+Démarrage prévisionnel du 1er marché subséquent: 1.4.2018.
+"""@fr;
+  epo:hasDescription """
+L'accord-cadre concerne des marchés subséquents séparés, relatifs aux:
+— réseau 1: fourniture de gaz à partir du réseau de l'entreprise locale de distribution (ci-après «ELD») Veolia eau regiongaz,
+— réseau 2: fourniture de gaz à partir du réseau de distribution GRDF.
+Les candidats peuvent postuler à l'accord-cadre même s'ils ne sont pas en capacité de répondre à l'ensemble des prestations concernées lors de la sélection des candidats.
+"""@fr;
+  epo:hasPurpose epd:id_2017-S-057-106421_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-057-106421_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-057-106421_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2017-S-057-106421_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-057-106421_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-057-106421_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2017-S-057-106421_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2017-S-057-106421_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2017-S-057-106421_TenderReceiver_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasDispatchDate "2017-03-17"^^xsd:date;
+  epo:hasID epd:id_2017-S-057-106421_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20170322";
+  epo:refersToLot epd:id_2017-S-057-106421_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2017-S-057-106421_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-057-106421_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 057-106421" .
+
+epd:id_2017-S-057-106421_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR422>;
+  locn:postCode "68304";
+  locn:postName "Saint-Louis Cedex";
+  locn:thoroughfare "Établissement public franco-suisse, BP 60120" .
+
+epd:id_2017-S-057-106421_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Aéroport de Bâle-Mulhouse"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2017-S-057-106421_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-057-106421_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09123000> .
+
+epd:id_2017-S-057-106421_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-057-106421_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+Les offres et demandes de participation doivent être transmises selon les modalités figurant dans l'article 5 du RC. Le dossier de consultation est disponible à l'adresse suivante: https://www.marches-securises.fr/
+Langues: les candidatures et offres peuvent être remises en français ou allemand. Le marché définitif sera toutefois établi en français.
+Les concurrents peuvent obtenir une traduction de courtoisie des pièces écrites principales en langue allemande dans un délai indicatif de 5 jours (seule la version française faisant foi). Les demandes sont à adresser à ddoppler@euroairport.com avant le 7.4.2017.
+"""@fr;
+  epo:hasDescription """
+Fourniture de gaz naturel estimée à 55 GWH par an, répartie sur 10 points de livraisons incluant le fonctionnement d'une cogénération.
+"""@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-057-106421_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-057-106421_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Accord-cadre pour la fourniture de gaz naturel.
+"""@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-057-106421_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-057-106421_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2017-S-057-106421_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2017-S-057-106421_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-057-106421_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-057-106421_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2017-S-057-106421_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2017-S-057-106421_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "67000";
+  locn:postName "Strasbourg";
+  locn:thoroughfare "31 avenue de la Paix" .
+
+epd:id_2017-S-057-106421_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 388364466";
+  cccev:email "greffe.ta-strasbourg@juradm.fr";
+  cccev:telephone "+33 388212323" .
+
+epd:id_2017-S-057-106421_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Strasbourg"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-057-106421_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2017-S-057-106421_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2017-S-057-106421_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-057-106421_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2017-S-057-106421_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 388364466";
+  cccev:email "greffe.ta-strasbourg@juradm.fr";
+  cccev:telephone "+33 388212323" .
+
+epd:id_2017-S-057-106421_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "67000";
+  locn:postName "Strasbourg";
+  locn:thoroughfare "31 avenue de la Paix" .
+
+epd:id_2017-S-057-106421_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Strasbourg"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-057-106421_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2017-S-057-106421_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-057-106421_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-057-106421_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-057-106421_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "DE", "FR" .
+
+epd:id_2017-S-057-106421_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR422>;
+  locn:postCode "68304";
+  locn:postName "Saint-Louis Cedex";
+  locn:thoroughfare "zone de Fret Express, bâtiment Catering, BP 60120" .
+
+epd:id_2017-S-057-106421_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR
+  a cccev:ContactPoint;
+  epo:hasContactName "Service marchés-achats — MD LEROY"@fr;
+  epo:hasInternetAddress "http://www.euroairport.com"^^xsd:anyURI;
+  cccev:email "sma@euroairport.com" .
+
+epd:id_2017-S-057-106421_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR a org:Organization;
+  epo:hasLegalName "Aéroport de Bâle-Mulhouse"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-057-106421_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  cccev:registeredAddress epd:id_2017-S-057-106421_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR .
+
+epd:id_2017-S-057-106421_TenderReceiver_RmPNyhSxpRtChEASKUU5BR a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-057-106421_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  epo:playedBy epd:id_2017-S-057-106421_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR .

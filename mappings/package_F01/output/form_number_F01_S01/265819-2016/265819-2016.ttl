@@ -1,0 +1,108 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-147-265819_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-147-265819_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-147-265819_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-147-265819_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Mrs Lucy Chandler"@en;
+  epo:hasInternetAddress "www.iwight.com"^^xsd:anyURI;
+  cccev:email "lucy.chandler@iow.gov.uk";
+  cccev:telephone "+44 1983821000" .
+
+epd:id_2016-S-147-265819_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress """
+Isle of Wight.
+"""@en .
+
+epd:id_2016-S-147-265819_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKJ34>;
+  locn:address epd:id_2016-S-147-265819_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2016-S-147-265819_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-147-265819_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2016-S-147-265819_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-147-265819_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/85141200>, <http://data.europa.eu/cpv/cpv/85141220>,
+    <http://data.europa.eu/cpv/cpv/85323000> .
+
+epd:id_2016-S-147-265819_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-147-265819_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation """
+Note: When you log on to the portal for the 1st time, you will be prompted to change your password. Please note if your company has already been registered, your application will be rejected to avoid duplication. The contract will be for an initial 3 year term with the option to extend for a further period of up to 2 years 1 year at a time, at the sole discretion of the Council.
+"""@en;
+  epo:hasDescription """
+This notice is being used to engage any interested organisations that wish to help inform and shape the Authority's 0-19 School Nurse and Health Visitor service prior to this service being tendered under the Public Contracts Regulations 2015. It is intended that the contract for Health Visiting and School Nursing Services will commence on 1.4.2017. We wish to encourage all interested organisations to register on the South East Business Portal. This can be done by following the link: https://procontract.due-north.com/register The process is free, simple and instructions on how to do this are on the Portal. Once confirmed, you will receive a username and password via email. Once registered, we would welcome any feedback you have regarding our forthcoming contract opportunity which can be submitted using the form which can be downloaded from the portal. Please complete and upload to the portal by 14:00, 25.8.2016 when the market consultation period will close.
+"""@en;
+  epo:hasPurpose epd:id_2016-S-147-265819_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-147-265819_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2016-S-147-265819_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2016-S-147-265819_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2016-S-147-265819_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2016-S-147-265819_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2016-S-147-265819_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs;
+  epo:hasDispatchDate "2016-07-28"^^xsd:date;
+  epo:hasID epd:id_2016-S-147-265819_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20160802";
+  epo:refersToLot epd:id_2016-S-147-265819_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2016-S-147-265819_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2016-S-147-265819_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 147-265819" .
+
+epd:id_2016-S-147-265819_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKJ34>;
+  locn:postCode "PO30 1UD";
+  locn:postName "Newport";
+  locn:thoroughfare "County Hall, High Street" .
+
+epd:id_2016-S-147-265819_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Isle of Wight Council"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2016-S-147-265819_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-147-265819_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2016-S-147-265819_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2016-S-147-265819_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "PH/1609/T01" .
+
+epd:id_2016-S-147-265819_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/85141200> .
+
+epd:id_2016-S-147-265819_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-147-265819_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation """
+TUPE may apply. The Isle of Wight is a Vanguard site. In January 2015, the NHS invited individual organisations and partnerships to apply to be ‘vanguard’ sites for the new care models programme. The Isle of Wight was chosen as an integrated primary and acute care system and we are working towards joining up GP, hospital, community and Mental Health Services. This is being delivered through the My Life a Full Life (MLAFL) (Isle of Wight) programme. The Isle of Wight covers a registered GP population of 140 000 and 17 GP practices. The MLAFL team is a partnership consisting of Isle of Wight CCG, Isle of Wight NHS Trust, Isle of Wight Council and the GP collaborative One Wight Health. The Vanguard will develop person-centred, coordinated health and social care services for the island. This will support better outcomes for people. Any values indicated are estimated and are given for the total contract period including any extension options. Dates given are indicative may change.
+"""@en;
+  epo:hasDescription """
+The contract will be for Health Visiting and School Nursing Services (0-19 Children's Service) excluding Early Help Services. From October 2015 the Isle of Wight Council's (The Authority's) public health commissioning responsibility for children was extended to an age range of 0-19 years of age. This includes the Healthy Child Programme and the National Child Measurement Programme. It also includes the commissioning of Health Visiting and School Nursing Services using the 0-19 national service specification with local requirements added where needed. The Authority is looking to engage the market in identifying options for the future commissioning and subsequent provision of these services. Please note that the Authority already has an Early Help Service for 0-19s. It is expected that any provider will work in collaboration with this existing service to provide 0 -19 services that meets population demand and need.
+"""@en;
+  epo:hasID epd:id_2016-S-147-265819_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-147-265819_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2016-S-147-265819_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+Health Visiting and School Nursing Services (0-19 Children's Service).
+"""@en;
+  epo:isCoveredByGPA true .
+
+epd:id_2016-S-147-265819_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2016-09-15"^^xsd:date .
+
+epd:id_2016-S-147-265819_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-147-265819_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-147-265819_Organisation_gqoAAwSV3JaTMsopb9zyKP .

@@ -1,0 +1,250 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-144-260263_Notice a epo:Notice;
+  epo:hasID epd:id_2016-S-144-260263_NoticeIdentifier_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2016-S-144-260263_NoticeIdentifier_ENkaVK94Yfx7TfS6UZfS4G a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 144-260263" .
+
+epd:id_2018-S-065-145625_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.marches-publics.gouv.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-065-145625_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-065-145625_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF;
+  epo:playedBy epd:id_2018-S-065-145625_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2018-S-065-145625_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.enav.it/sites/public/it/Home.html"^^xsd:anyURI;
+  cccev:email "comunicazione@enav.it" .
+
+epd:id_2018-S-065-145625_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF a org:Organization;
+  epo:hasLegalName "ente Nazionale Assistenza al Volo (ENAV S.P.A)"@fr;
+  cccev:registeredAddress epd:id_2018-S-065-145625_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2018-S-065-145625_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "35 %"@fr .
+
+epd:id_2018-S-065-145625_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Valeur technique"@fr;
+  cccev:weight "65 %"@fr .
+
+epd:id_2018-S-065-145625_BuyerOrganisationGroup_gFUcNYVmTUBiATKNrzmurF a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  epo:hasMember epd:id_2018-S-065-145625_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2018-S-065-145625_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-065-145625_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://www.marches-publics.gouv.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-065-145625_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-065-145625_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-065-145625_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasFax "+33 562145294";
+  epo:hasInternetAddress "http://www.marches-publics.gouv.fr"^^xsd:anyURI;
+  cccev:email "sabine.rospide@aviation-civile.gouv.fr";
+  cccev:telephone "+33 562145200" .
+
+epd:id_2018-S-065-145625_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+                  Dans les locaux du titulaire, de la Dsna et de l'enav.
+               """@fr .
+
+epd:id_2018-S-065-145625_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:address epd:id_2018-S-065-145625_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2018-S-065-145625_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-065-145625_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-065-145625_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2018-S-065-145625_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2018-S-065-145625_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-065-145625_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2018-S-065-145625_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2018-S-065-145625_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/72212121> .
+
+epd:id_2018-S-065-145625_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-065-145625_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+                  Se reporter à l'article Ii.1.4 du présent avis.
+               """@fr;
+  epo:hasEstimatedValue epd:id_2018-S-065-145625_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-065-145625_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-065-145625_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-065-145625_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN,
+    epd:id_2018-S-065-145625_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH .
+
+epd:id_2018-S-065-145625_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 20000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-065-145625_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-065-145625_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-065-145625_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2018-S-065-145625_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2018-S-065-145625_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2018-S-065-145625_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2018-S-065-145625_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2018-04-03"^^xsd:date;
+  epo:hasID epd:id_2018-S-065-145625_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20180404";
+  epo:refersToLot epd:id_2018-S-065-145625_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToPrevious epd:id_2016-S-144-260263_Notice;
+  epo:refersToProcedure epd:id_2018-S-065-145625_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2018-S-065-145625_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 065-145625" .
+
+epd:id_2018-S-065-145625_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ23>;
+  locn:postCode "31035";
+  locn:postName "Toulouse";
+  locn:thoroughfare "1 avenue du Docteur Maurice Grynfogel — CS 53584" .
+
+epd:id_2018-S-065-145625_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITI43>;
+  locn:postName "Rome";
+  locn:thoroughfare "via Salaria 716, 00138, Rome" .
+
+epd:id_2018-S-065-145625_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "DSNA"@fr;
+  cccev:registeredAddress epd:id_2018-S-065-145625_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-065-145625_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "ACF_MS-18721" .
+
+epd:id_2018-S-065-145625_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/72262000> .
+
+epd:id_2018-S-065-145625_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw """
+               Législations française et italienne selon le cas (se reporter au 9o de l'article VI-3 «informations complémentaires» du présent avis).
+            """@fr .
+
+epd:id_2018-S-065-145625_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-065-145625_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+               1o) En complément des informations requises à l'appui de sa capacité technique (article III 1.3), le candidat est invité à se reporter au RAPC (Règlement d'appel public à la candidature du présent projet d'accord-cadre);
+               2o) En complément à l'article II 2-5, la sélection des offres s'effectuera selon les critères de notation suivants:
+               — valeur technique de l'offre (pondération: 65 %),
+               — prix des prestations (pondération: 35 %).
+               Notas:
+               — le détail du système de notation des critères et sous-critères de la valeur technique figure au RAPC,
+               — toute offre dont la note avant pondération relative au critère de la valeur technique sera inférieure à 325/650 sera considérée comme inappropriée et automatiquement rejetée conformément à l'article 59 I et III du décret no 2016-360 du 25.3.2016 relatif aux marchés publics.
+               3o) En complément à l'article IV 2-6 du présent avis, il est précisé que le délai minimal de 210 jours pendant lequel le soumissionnaire est tenu de maintenir son offre concerne son offre finale,
+               4o) Le RAPC et le mémoire technique (sous forme d'une version provisoire du CCTP) sont disponibles sur la plate-forme des marchés à l'adresse suivante: http://www.marches-publics.gouv.fr/ (référence Acf_Ms-18721). Les soumissionnaires ne sont pas obligés de s'authentifier sur le site. Mais ils sont fortement incités à le faire notamment en indiquant une adresse électronique permettant de façon certaine une correspondance électronique notamment pour l'envoi d'éventuels compléments, précisions ou rectifications;
+               5o) Le dossier de consultation des entreprises (DCE) ne sera communiqué qu'aux candidats retenus;
+               6o) En application de l'article 74 du décret no 2016-360 du 25.3.2016 relatif aux marchés publics, l'entité adjudicatrice pourra attribuer l'accord-cadre sur la base des offres initiales sans négociation;
+               7o) Dans le cadre des négociations, et conformément aux dispositions de l'article 59 I et III du décret no 2016-360 du 25 mars 2016 relatif aux marchés publics, toute offre inappropriée est éliminée. A chaque tour de négociation, les offres sont évaluées en fonction des critères prévus. L'Entité adjudicatrice se réserve le droit d'éliminer un ou plusieurs candidats au fur et à mesure des tours de négociation;
+               8o) Dans le cadre de la présente procédure conjointe regroupant deux acheteurs (DSNA et Enav), les candidats sont informés de l'application de la législation selon les modalités suivantes:
+               — dans le cadre de l'exécution de l'accord-cadre à marchés subséquents et de marchés subséquents conjoints: application de la législation française,
+               — dans le cadre de l'exécution de marchés subséquents DSNA: application de la législation française,
+               — dans le cadre de l'exécution de marchés subséquent ENAV: application de la législation italienne.
+               9o) Dans le cadre de la présente procédure, l'attention des candidats est attirée sur la mise en oeuvre d'une clause relative au conflit d'intérêt. Les détails de cette clause sont indiqués dans le RAPC.
+            """@fr;
+  epo:hasDescription """
+               Ce projet d'accord-cadre passé conjointement entre la DSNA et ENAV vise à couvrir:
+               — la réalisation, la fourniture et la maintenance d'outils informatiques d'aide au contrôle aérien basés sur le serveur Erato, et les services, études et fournitures associés,
+               — la fourniture et l'installation du matériel nécessaire à la mise à jour de configurations existantes ou le déploiement de nouvelles configurations,
+               — le support aux utilisateurs sur les produits développés.
+               Nota:
+               Les coordonnées de l'ENAV sont les suivantes:
+               Ente Nazionale Assistenza al Volo (ENAV S.P.A),
+               Via Salaria 716,
+               00138 Rome — Italie
+            """@fr;
+  epo:hasID epd:id_2018-S-065-145625_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-065-145625_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-065-145625_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+               Réalisation, fourniture et maintenance d'outils d'aide au contrôle aérien basés sur le serveur Erato, et services, études et fournitures associées
+            """@fr;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-065-145625_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2018-S-065-145625_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2018-S-065-145625_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2018-S-065-145625_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2018-S-065-145625_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2018-S-065-145625_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-065-145625_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-065-145625_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-065-145625_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "31038";
+  locn:postName "Toulouse";
+  locn:thoroughfare "68 rue Raymond IV, BP 70007" .
+
+epd:id_2018-S-065-145625_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 562735740";
+  cccev:email "greffe.ta-toulouse@juradm.fr";
+  cccev:telephone "+33 562735757" .
+
+epd:id_2018-S-065-145625_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Toulouse"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-065-145625_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2018-S-065-145625_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-065-145625_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-065-145625_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-065-145625_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 562735740";
+  cccev:email "greffe.ta-toulouse@juradm.fr";
+  cccev:telephone "+33 562735757" .
+
+epd:id_2018-S-065-145625_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "31038";
+  locn:postName "Toulouse";
+  locn:thoroughfare "68 rue Raymond IV, BP 70007" .
+
+epd:id_2018-S-065-145625_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Toulouse"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-065-145625_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2018-S-065-145625_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-065-145625_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-065-145625_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-065-145625_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "EN", "FR";
+  epo:hasSubmissionURL "http://www.marches-publics.gouv.fr"^^xsd:anyURI .

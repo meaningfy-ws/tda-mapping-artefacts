@@ -1,0 +1,167 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-053-134692_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://ratp.bravosolution.com/web/login.html"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-053-134692_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://ratp.bravosolution.com/web/login.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-053-134692_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-053-134692_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-053-134692_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Cyrille Beysens-Mang"@fr;
+  epo:hasInternetAddress "www.ratp.fr"^^xsd:anyURI;
+  cccev:email "cyrille.beysens@ratp.fr" .
+
+epd:id_2021-S-053-134692_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR1> .
+
+epd:id_2021-S-053-134692_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-053-134692_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-053-134692_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Des modifications pourront être apportées au marché, conformément aux articles R. 2194-1 à R. 2194-9 du code de la commande publique. La RATP se réserve la possibilité de faire réaliser des prestations similaires par le titulaire du marché dans les conditions énoncées à l'article R. 2122-7 du code de la commande publique."@fr .
+
+epd:id_2021-S-053-134692_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true .
+
+epd:id_2021-S-053-134692_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-053-134692_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-053-134692_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2021-S-053-134692_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-053-134692_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "D44 services — exploitation."@fr;
+  epo:hasDescription "Le marché envisagé est un accord-cadre à commandes avec un montant minimal et un montant maximal.Les prestations incluses dans le périmètre du marché sont décrites ci-dessous:Prestations du montant minimal:— des prestations récurrentes de gestes de proximité en data center en heures ouvrées d’une durée de 36 mois.Prestations du montant maximal:— les prestations du montant minimum;— une prestation d’initialisation d’une durée d'un mois;— des prestations récurrentes de gestes de proximité en data center en heures ouvrées d’une durée maximale complémentaire de 24 mois maximum;— des prestations d'astreinte en data center d’une durée maximale de 60 mois;— des prestations de prise en charge à l'acte lors de prestations d’astreintes en data center pour un maximum de 75 occurrences;— des prestations de déplacements d’équipements entre sites informatiques pour un maximum de 180 équipements sur la durée du marché;— des prestations associées sur site informatique pour un maximum de 140 jours × hommes sur la durée du marché;— une prestation de réversibilité à un tiers ou à la RATP d’une durée de trois mois."@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-053-134692_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-053-134692_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-053-134692_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-053-134692_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-053-134692_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-053-134692_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-053-134692_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2021-S-053-134692_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2021-03-12"^^xsd:date;
+  epo:hasID epd:id_2021-S-053-134692_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210317";
+  epo:refersToLot epd:id_2021-S-053-134692_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-053-134692_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-053-134692_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 053-134692" .
+
+epd:id_2021-S-053-134692_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75599";
+  locn:postName "Paris Cedex 12";
+  locn:thoroughfare "LAC B916, 54 quai de la Rapée" .
+
+epd:id_2021-S-053-134692_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "77566343801906" .
+
+epd:id_2021-S-053-134692_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2021-S-053-134692_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "RATP"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2021-S-053-134692_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-053-134692_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "DHA_2020SIT16250" .
+
+epd:id_2021-S-053-134692_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/72315100> .
+
+epd:id_2021-S-053-134692_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-053-134692_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Conditions de remise des candidatures:Le candidat répond sur: https://ratp.bravosolution.com/web/login.htmlEn cas de difficulté technique/question, appeler la hotline au +33 811906438 ou depuis l'étranger au +33 146095672 ou via ratp@bravosolution.frLe candidat se référera aux prérequis techniques disponibles sur la plate-forme.Il sélectionne la consultation nº DHA_2020SIT16250 puis candidate en ligne, et clique sur le bouton «Publier réponse». L’inscription est gratuite et nécessaire pour répondre et être informé en cas de modification de la consultation. Ce dépôt donne lieu à un AR mentionnant date et heure de réception sur la plate-forme. La candidature qui ne serait pas complètement chargée et publiée en ligne avant la date et heure limites, sera rejetée. Le candidat peut ne pas fournir l'ensemble des documents et renseignements demandés, hormis le DC1 (ou équivalent) qui sera remis sur la plate-forme, à la condition que ceux-ci soient disponibles au moins un mois, accessibles directement et gratuitement par l'acheteur par le biais:— d'un système électronique de mise à disposition d'informations administré par un organisme officiel; ou— d'un espace de stockage numérique, sous réserve de la garantie de confidentialité dudit espace.Le cas échéant, le candidat précisera dans son dossier toutes les informations nécessaires à la consultation de son dossier: si les documents ont déjà été transmis dans une précédente consultation, les éléments doivent demeurer valables. Le candidat indiquera la réf de la consultation pour laquelle les documents ont déjà été transmis.Pour les candidatures retenues, le lien permettant de télécharger le DCE sera précisé dans le courrier électronique d’invitation à présenter une offre. Le candidat veillera à utiliser son compte fournisseur principal sur la plate-forme. À défaut il veillera à mettre à jour ses coordonnées pour recevoir le DCE. Dans le cas contraire, la RATP ne pourra être tenue pour responsable de la non réception d’informations ou documents liés à la procédure en cours.Informations importantes:En cas de dépôts successifs, seule sera retenue la dernière réponse déposée avant la date et heure limites de réception des candidatures/offres.Le candidat peut adresser, dans les délais impartis, une Copie de sauvegarde (CS) de sa candidature/offre sur support physique électronique ou sur support papier, par lettre recommandée avec AR avec obligatoirement la mention Copie de sauvegarde à l'adresse suivante (RATP — département SIT/HAM — LAC NB53, 102 esplanade de la Commune de Paris, 93160 Noisy-le-Grand) ou remise à la RATP contre récépissé, les jours ouvrés, du lundi au vendredi de 9h00 à 16h00 à l'adresse suivante à la même adresse.Les réponses dématérialisées dans lesquelles un virus serait détecté ne feront pas l'objet d'une tentative de restauration. Elles seront réputées n'avoir jamais été reçues et le candidat en sera informé: les CS seront alors examinées.En cas de remise hors délai des CS, celles-ci seront réputées n'avoir jamais été reçues et le candidat en sera informé, les CS seront rejetées et retournées au candidat sans avoir été examinées.Dans le cas où la CS comporterait un ou des support(s) électronique(s) dans le(s)quel(s) un virus serait détecté, la candidature/offre du candidat sera définitivement rejetée.Les candidatures/offres par courrier électronique ne sont pas admises. Les documents transmis au format .exe ne sont pas acceptés.Le marché sera signé électroniquement par les parties prenantes via une plate-forme dédiée gratuite, sans acquisition de matériels.La candidature et l'offre devront être remises en français."@fr;
+  epo:hasDescription "L'accord-cadre à commandes avec un montant minimal et un montant maximal a pour objet de définir les conditions et modalités de réalisation de prestations d'assistance à l'exploitation des centres et salles informatiques de la RATP. Ces prestations sont communément appelées «réalisation des gestes de proximité en data center»."@fr;
+  epo:hasID epd:id_2021-S-053-134692_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-053-134692_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-053-134692_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Gestes de proximité en data center"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-053-134692_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-053-134692_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-053-134692_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-053-134692_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-053-134692_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-053-134692_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-053-134692_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-053-134692_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75599";
+  locn:postName "Paris Cedex 12";
+  locn:thoroughfare "54 quai de la Rapée" .
+
+epd:id_2021-S-053-134692_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 158772123";
+  cccev:email "info.recours@ratp.fr";
+  cccev:telephone "+33 158772001" .
+
+epd:id_2021-S-053-134692_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "RATP, département juridique — unité «Projets et contrats»"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-053-134692_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-053-134692_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-053-134692_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-053-134692_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-053-134692_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2021-S-053-134692_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 4";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2021-S-053-134692_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-053-134692_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-053-134692_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-053-134692_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-053-134692_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-053-134692_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://ratp.bravosolution.com/web/login.html"^^xsd:anyURI .
+
+epd:id_2021-S-053-134692_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-053-134692_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-053-134692_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

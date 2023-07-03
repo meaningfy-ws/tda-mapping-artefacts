@@ -1,0 +1,200 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-013-029073_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://rte-france.bravosolution.com/fr/contact/supplier"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-013-029073_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "https://rte-france.bravosolution.com/fr/contact/supplier"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-013-029073_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-013-029073_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-013-029073_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Olivia Morel"@fr;
+  epo:hasInternetAddress "https://www.rte-france.com/"^^xsd:anyURI;
+  cccev:email "olivia.morel@rte-france.com";
+  cccev:telephone "+33 616365468" .
+
+epd:id_2021-S-013-029073_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Nord-Pas-de-Calais."@fr .
+
+epd:id_2021-S-013-029073_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq a locn:Address;
+  locn:fullAddress "Nord-Pas-de-Calais."@fr .
+
+epd:id_2021-S-013-029073_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRE1>;
+  locn:address epd:id_2021-S-013-029073_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-013-029073_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRE1>;
+  locn:address epd:id_2021-S-013-029073_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2021-S-013-029073_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-013-029073_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-013-029073_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-013-029073_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-013-029073_Duration_Pn7seLvJsSm7d5S9iCwt2c;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-013-029073_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2021-S-013-029073_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-013-029073_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-013-029073_Duration_Pn7seLvJsSm7d5S9iCwt2c a epo:SpecificDuration;
+  time:numericDuration 9.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-013-029073_LotIdentifier_aNssKXiFyYxii2v93ivV4N a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-013-029073_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-013-029073_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71318000> .
+
+epd:id_2021-S-013-029073_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71318000> .
+
+epd:id_2021-S-013-029073_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-013-029073_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Ce lot consiste à mener des opérations de remplacement des matériels HTB de postes aériens et, plus précisément les disjoncteurs, les transformateurs de mesure, les condensateurs de couplage et les sectionneurs."@fr;
+  epo:hasID epd:id_2021-S-013-029073_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-013-029073_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:hasTitle "AOI programme RC5"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-013-029073_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-013-029073_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-013-029073_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasDescription "Ce lot consiste à mener un projet de dépose d’infrastructures et d’ouvrages haute tension dans le poste électrique 45/150 kV de Dechy, poste hors exploitation électrique."@fr;
+  epo:hasID epd:id_2021-S-013-029073_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2021-S-013-029073_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasTitle "AOI programme HC6"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-013-029073_MultipleStageProcedureTerm_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-013-029073_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-013-029073_MultipleStageProcedureTerm_ig8mEGUXVMgcuxfgHrQXuq a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-013-029073_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-013-029073_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-013-029073_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2021-S-013-029073_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2021-S-013-029073_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2021-S-013-029073_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2021-01-15"^^xsd:date;
+  epo:hasID epd:id_2021-S-013-029073_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210120";
+  epo:refersToLot epd:id_2021-S-013-029073_Lot_aNssKXiFyYxii2v93ivV4N, epd:id_2021-S-013-029073_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:refersToProcedure epd:id_2021-S-013-029073_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-013-029073_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 013-029073" .
+
+epd:id_2021-S-013-029073_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRE1>;
+  locn:postCode "59700";
+  locn:postName "Marcq-en-Barœul";
+  locn:thoroughfare "62 rue Louis Delos" .
+
+epd:id_2021-S-013-029073_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "RTE — Réseau de transport d'électricité"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2021-S-013-029073_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-013-029073_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71318000> .
+
+epd:id_2021-S-013-029073_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 2;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2021-S-013-029073_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-013-029073_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription "Le marché a pour objet la mise en place d’un ou plusieurs marchés à titre expérimental pour accompagner le pilotage de deux programmes du centre de la direction ingénierie de Lille.Les équipes en charge du déploiement de ces programmes sont organisées comme suit:— un manageur de projets pilote,— un ou deux équipiers d’études,— un assistant de contrôle.Les compétences et profil(s) recherché(s) pour la mission d’appui opérationnel ingénierie travailleront en lien avec ces équipes."@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-013-029073_Lot_aNssKXiFyYxii2v93ivV4N,
+    epd:id_2021-S-013-029073_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2021-S-013-029073_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Prestations appuis opérationnels ingénierie sur les programmes du Centre développement & ingénierie de Lille"@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-013-029073_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2021-S-013-029073_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY, epd:id_2021-S-013-029073_ReviewTerm_ZsxuomNURxGbRdavxJPhLN,
+    epd:id_2021-S-013-029073_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2021-S-013-029073_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-013-029073_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-013-029073_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-013-029073_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "92020";
+  locn:postName "Nanterre";
+  locn:thoroughfare "179-191 avenue Joliot-Curie" .
+
+epd:id_2021-S-013-029073_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasFax "+33 147243161";
+  cccev:telephone "+33 140971010" .
+
+epd:id_2021-S-013-029073_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Nanterre"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-013-029073_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2021-S-013-029073_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2021-S-013-029073_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-013-029073_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2021-S-013-029073_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— référé précontractuel prévu aux articles 5 et suivants de l’ordonnance nº 2009-515 du 7.5.2009 relative aux procédures de recours applicables aux contrats de la commande publique. Le recours doit être formé avant la conclusion du contrat;— référé contractuel prévu aux articles 11 et suivants de l’ordonnance nº 2009-515 du 7.5.2009 relative aux procédures de recours applicables aux contrats de la commande publique. Le recours doit être formé au plus tard le 31e jour suivant la publication au Journal officiel de l'Union européenne de l’avis d'attribution du contrat ou, pour les marchés fondés sur un accord-cadre ou un système d'acquisition dynamique, suivant la notification de la conclusion du contrat. En l'absence de la publication d'avis ou de la notification, la juridiction peut être saisie jusqu'à l'expiration d'un délai de six mois à compter du lendemain du jour de la conclusion du contrat en vertu de l’article 1441-3 du code de procédure civile." .
+
+epd:id_2021-S-013-029073_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+33 147243161";
+  cccev:telephone "+33 140971010" .
+
+epd:id_2021-S-013-029073_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "92020";
+  locn:postName "Nanterre";
+  locn:thoroughfare "179-191 avenue Joliot-Curie" .
+
+epd:id_2021-S-013-029073_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Nanterre"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-013-029073_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2021-S-013-029073_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-013-029073_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-013-029073_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-013-029073_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasReceiptExpressionDeadline "2021-02-02T14:00" .
+
+epd:id_2021-S-013-029073_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-013-029073_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-013-029073_Organisation_W8v6KSqiUn74jPKJmENKoH .

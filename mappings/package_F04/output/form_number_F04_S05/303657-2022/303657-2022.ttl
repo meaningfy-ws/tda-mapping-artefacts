@@ -1,0 +1,149 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-107-303657_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://kgv.doffin.no/ctm/Supplier/Documents/Folder/167614"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-107-303657_AwardCriterionCost_kzxi3VGw6HDT4rbiPYwGVV a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Costs"@en;
+  cccev:weight "100%."@en .
+
+epd:id_2022-S-107-303657_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "https://kgv.doffin.no/ctm/Company/CompanyInformation/Index/2790"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-107-303657_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2022-S-107-303657_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2022-S-107-303657_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Ida Benedicte Havre"@en;
+  epo:hasInternetAddress "https://www.eviny.no/"^^xsd:anyURI;
+  cccev:email "ida.havre@eviny.no";
+  cccev:telephone "+47 92850908" .
+
+epd:id_2022-S-107-303657_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/NO0A2> .
+
+epd:id_2022-S-107-303657_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-107-303657_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-107-303657_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2022-S-107-303657_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true .
+
+epd:id_2022-S-107-303657_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-107-303657_FrameworkAgreementTechniqueUsage_42ewgEwxZiroeKCXpa2kAY a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2022-S-107-303657_FrameworkAgreementTerm_42ewgEwxZiroeKCXpa2kAY a epo:FrameworkAgreementTerm .
+
+epd:id_2022-S-107-303657_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-107-303657_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "This is a prior information notice so that tenderers can confirm their interest.Eviny Termo will announce a contest for a framework agreement for bio-oil with delivery to their installations.The bio-oil must be quality EN15940 or EN14214, depending on the delivery place. It must be possible to deliver minimum of 120m3/day, and the first delivery must be received by an installation at the latest 24 hours after an order has been placed. Orders will normally be placed with an approx. 1 week deadline. Tenderers must be able to provide a sustainability certificate upon request.Tenderers that would like to participate in the contest must confirm their interest in accordance with point I.3. A company registration certificate must be uploaded, as well as a contact person who will receive an invitation (name, email address, and telephone number). Those who confirm an interest will receive an invitation after the deadline has expired to be qualified for participation in the contest."@en;
+  epo:hasEstimatedValue epd:id_2022-S-107-303657_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-107-303657_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-107-303657_AwardCriterionCost_kzxi3VGw6HDT4rbiPYwGVV .
+
+epd:id_2022-S-107-303657_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 240000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/NOK> .
+
+epd:id_2022-S-107-303657_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 240000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/NOK> .
+
+epd:id_2022-S-107-303657_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N a epo:MultipleStageProcedureTerm .
+
+epd:id_2022-S-107-303657_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-107-303657_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2022-S-107-303657_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2022-S-107-303657_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2022-S-107-303657_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2022-05-30"^^xsd:date;
+  epo:hasID epd:id_2022-S-107-303657_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220603";
+  epo:refersToLot epd:id_2022-S-107-303657_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2022-S-107-303657_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2022-S-107-303657_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 107-303657" .
+
+epd:id_2022-S-107-303657_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NOR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/NO0A2>;
+  locn:postCode "5020";
+  locn:postName "Bergen";
+  locn:thoroughfare "Postboks 7050" .
+
+epd:id_2022-S-107-303657_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "979427697" .
+
+epd:id_2022-S-107-303657_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2022-S-107-303657_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "Eviny Termo  AS"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gas-heat>;
+  cccev:registeredAddress epd:id_2022-S-107-303657_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2022-S-107-303657_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "Eviny-2022-014" .
+
+epd:id_2022-S-107-303657_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09134230> .
+
+epd:id_2022-S-107-303657_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-107-303657_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription "This is a prior information notice so that tenderers can confirm their interest.Eviny Termo will announce a contest for a framework agreement for bio-oil with delivery to their installations.The bio-oil must be quality EN15940 or EN14214, depending on the delivery place. It must be possible to deliver minimum of 120m3/day, and the first delivery must be received by an installation at the latest 24 hours after an order has been placed. Orders will normally be placed with an approx. 1 week deadline. Tenderers must be able to provide a sustainability certificate upon request.Tenderers that would like to participate in the contest must confirm their interest in accordance with point I.3. A company registration certificate must be uploaded, as well as a contact person who will receive an invitation (name, email address, and telephone number). Those who confirm an interest will receive an invitation after the deadline has expired to be qualified for participation in the contest."@en;
+  epo:hasEstimatedValue epd:id_2022-S-107-303657_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasID epd:id_2022-S-107-303657_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-107-303657_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2022-S-107-303657_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Bio-oil for Eviny Termo"@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-107-303657_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2022-S-107-303657_FrameworkAgreementTerm_42ewgEwxZiroeKCXpa2kAY, epd:id_2022-S-107-303657_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY;
+  epo:usesTechnique epd:id_2022-S-107-303657_FrameworkAgreementTechniqueUsage_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2022-S-107-303657_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-107-303657_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2022-S-107-303657_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2022-S-107-303657_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NOR>;
+  locn:postCode "5012";
+  locn:postName "Bergen" .
+
+epd:id_2022-S-107-303657_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Bergen Tingrett"@en;
+  cccev:registeredAddress epd:id_2022-S-107-303657_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2022-S-107-303657_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-107-303657_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2022-S-107-303657_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "NO";
+  epo:hasReceiptExpressionDeadline "2022-07-04T12:00";
+  epo:hasSubmissionURL "https://anskaffelse.bkk.no/Pages/RFxDetails.aspx?RFxId=1171"^^xsd:anyURI .
+
+epd:id_2022-S-107-303657_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-107-303657_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2022-S-107-303657_Organisation_W8v6KSqiUn74jPKJmENKoH .

@@ -1,0 +1,80 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-146-335386_AccessTerm_4zjJjpytu5bmHbyNSmtsju a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=316044"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2018-S-146-335386_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=316044"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-146-335386_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2018-S-146-335386_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2018-S-146-335386_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "Jacqueline Van De Voorde"@nl, "Jacqueline Van de Voorde"@fr;
+  epo:hasInternetAddress "www.belgocontrol.be"^^xsd:anyURI;
+  cccev:email "tendering@belgocontrol.be";
+  cccev:telephone "+32 22062156" .
+
+epd:id_2018-S-146-335386_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE241> .
+
+epd:id_2018-S-146-335386_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-146-335386_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2018-S-146-335386_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-146-335386_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription "Voir l'annexe «Prospection du marché_Infrastructure de surveillance»"@fr,
+    "Zie bijlage 'Marktverkenning_Surveillance Infrastructuur'"@nl .
+
+epd:id_2018-S-146-335386_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-146-335386_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2018-S-146-335386_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ;
+  epo:hasDispatchDate "2018-07-27"^^xsd:date;
+  epo:hasID epd:id_2018-S-146-335386_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20180801";
+  epo:refersToLot epd:id_2018-S-146-335386_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2018-S-146-335386_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2018-S-146-335386_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 146-335386" .
+
+epd:id_2018-S-146-335386_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE241>;
+  locn:postCode "1820";
+  locn:postName "Steenokkerzeel";
+  locn:thoroughfare "Tervuursesteenweg 303" .
+
+epd:id_2018-S-146-335386_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC a epo:Identifier;
+  epo:hasIdentifierValue "0206.048.091_26860" .
+
+epd:id_2018-S-146-335386_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasID epd:id_2018-S-146-335386_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC;
+  epo:hasLegalName "Belgocontrol"@fr, "Belgocontrol"@nl;
+  epo:hasMainActivityDescription "Aviation", "Luchtvaart";
+  cccev:registeredAddress epd:id_2018-S-146-335386_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2018-S-146-335386_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "Belgocontrol-RFI_Surveillance Infrastructure-F08_0" .
+
+epd:id_2018-S-146-335386_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79714000> .
+
+epd:id_2018-S-146-335386_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasID epd:id_2018-S-146-335386_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-146-335386_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2018-S-146-335386_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle "Marktverkenning Surveillance Infrastructuur"@nl, "Prospection du marché infrastructure de surveillance"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-146-335386_AccessTerm_4zjJjpytu5bmHbyNSmtsju .
+
+epd:id_2018-S-146-335386_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-146-335386_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2018-S-146-335386_Organisation_TigDgN9yDLHn3hDtQD7BVC .

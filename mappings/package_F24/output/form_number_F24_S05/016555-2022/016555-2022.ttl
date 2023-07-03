@@ -1,0 +1,157 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-008-016555_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.hradf.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-008-016555_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "www.hradf.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-008-016555_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2022-S-008-016555_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-008-016555_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "κα Στεφανία Λαλογιάννη"@el;
+  epo:hasFax "+30 2103274449";
+  epo:hasInternetAddress "http://www.hradf.com"^^xsd:anyURI;
+  cccev:email "info@hraf.gr";
+  cccev:telephone "+30 2103274400" .
+
+epd:id_2022-S-008-016555_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Ιτέα Φωκίδας"@el .
+
+epd:id_2022-S-008-016555_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL645>;
+  locn:address epd:id_2022-S-008-016555_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2022-S-008-016555_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-008-016555_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-008-016555_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2022-S-008-016555_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2022-S-008-016555_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 480.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-008-016555_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/63723000> .
+
+epd:id_2022-S-008-016555_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-008-016555_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Ο Διαγωνισμός θα διεξαχθεί σε 2 φάσεις: στην Α' Φάση προεπιλογής τα Ενδιαφερόμενα Μέρη καλούνται να υποβάλλουν Εκδήλωση Ενδιαφέροντος και να αξιολογηθούν  με βάση τα κριτήρια προσωπικής κατάστασης και χρηματοοικονομικής επάρκειας όπως τίθενται στην Πρόσκληση Υποβολής Εκδήλωσης Ενδιαφέροντος και στη Β’ Φάση υποβολής δεσμευτικών προσφορών και εξέτασης του κριτηρίου τεχνικής επάρκειας."@el;
+  epo:hasDescription "Το ΤΑΙΠΕΔ («το Ταμείο») έχει αποφασίσει να συνάψει σύμβαση («η Σύμβαση») παραχώρησης υπηρεσιών λειτουργίας λιμένων (υπηρεσίες ελλιμενισμού και άλλες υπηρεσίες) και δικαιώματος χρήσης, λειτουργίας, διαχείρισης και εκμετάλλευσης των κινητών και/ή ακινήτων περιουσιακών στοιχείων εντός της χερσαίας και/ή της θαλάσσιας ζώνης της Μαρίνας Ιτέας, για περίοδο 40 ετών κατ’ ελάχιστο («η Παραχώρηση») με δυνατότητα  για την περαιτέρω παράταση της διάρκειας της Παραχώρησης για επιπλέον δέκα (10) έτη, κατά το μέγιστο.Η Μαρίνα Ιτέας βρίσκεται στον όρμο Ιτέας στο μυχό του Κρισσαίου κόλπου, μεταξύ των άκρων Ιτέας προς τα ΝΑ της πόλης και Τρίπορι προς τα ΝΔ της πρώτης. Η Μαρίνα Ιτέας καταλαμβάνει θαλάσσια έκταση της τάξεως των 26.000 τ.μ. και έχει δυνατότητες ελλιμενισμού εκατόν σαράντα έξι (146) σκαφών μικρού και μεσαίου μεγέθους. Η εγκατάσταση είναι ολοκληρωμένη ως προς τα λιμενικά έργα, αλλά δεν έχουν ολοκληρωθεί όλες οι χερσαίες υποδομές. Η δυναμικότητα της λιμενικής εγκατάστασης ανέρχεται σε εκατόν σαράντα έξι (146) περίπου σκάφη, η έκταση της χερσαίας ζώνης είναι περίπου 24.700 τ.μ. και η θαλάσσια ζώνη 26,000 τ.μ.. Προβλέπονται επίσης εξήντα (60) θέσεις σκαφών στη χερσαία ζώνη. Σήμερα, η Μαρίνα Ιτέας είναι λειτουργική, και φιλοξενεί μικρό αριθμό σκαφών αναψυχής."@el;
+  epo:hasPurpose epd:id_2022-S-008-016555_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-008-016555_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-008-016555_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2022-S-008-016555_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2022-S-008-016555_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2022-S-008-016555_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2022-S-008-016555_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2022-01-07"^^xsd:date;
+  epo:hasID epd:id_2022-S-008-016555_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20220112";
+  epo:refersToLot epd:id_2022-S-008-016555_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2022-S-008-016555_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2022-S-008-016555_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 008-016555" .
+
+epd:id_2022-S-008-016555_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL303>;
+  locn:postCode "105 62";
+  locn:postName "Αθήνα";
+  locn:thoroughfare "Καραγιώργη Σερβίας 6" .
+
+epd:id_2022-S-008-016555_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasLegalName """Ταμείο Αξιοποίησης Ιδιωτικής Περιουσίας του Δημοσίου AE  (ΤΑΙΠΕΔ)	"""@el;
+  epo:hasMainActivityDescription "Οικονομικές Υπηρεσίες/Ανάπτυξη Περιουσιακών Στοιχείων";
+  cccev:registeredAddress epd:id_2022-S-008-016555_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-008-016555_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/63721200> .
+
+epd:id_2022-S-008-016555_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-008-016555_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasDescription "Παραχώρηση υπηρεσιών λειτουργίας λιμένων (υπηρεσίες ελλιμενισμού και άλλες υπηρεσίες) και του δικαιώματος χρήσης, λειτουργίας, διαχείρισης και εκμετάλλευσης των κινητών και/ή ακινήτων περιουσιακών στοιχείων εντός της χερσαίας και/ή της θαλάσσιας ζώνης της Μαρίνας Ιτέας, για περίοδο 40 ετών κατ’ ελάχιστο, με δυνατότητα  για την περαιτέρω παράταση της διάρκειας της Παραχώρησης για επιπλέον δέκα (10) έτη, κατά το μέγιστο."@el;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-008-016555_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2022-S-008-016555_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Πρόσκληση Υποβολής Εκδήλωσης Ενδιαφέροντος για την παραχώρηση υπηρεσιών λειτουργίας λιμένων και του δικαιώματος χρήσης, λειτουργίας, διαχείρισης και εκμετάλλευσης της Μαρίνας Ιτέας"@el;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-008-016555_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2022-S-008-016555_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2022-S-008-016555_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2022-S-008-016555_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-008-016555_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2022-S-008-016555_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-008-016555_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "18233";
+  locn:postName "Aθήνα";
+  locn:thoroughfare "Λεωφόρος Θηβών 196 - 198, κτίριο Κεράνης" .
+
+epd:id_2022-S-008-016555_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+30 2132141229";
+  epo:hasInternetAddress "www.aepp-procurement.gr"^^xsd:anyURI;
+  cccev:email "aepp@aepp-procurement.gr";
+  cccev:telephone "+30 2132141216" .
+
+epd:id_2022-S-008-016555_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Αρχή Εξέτασης Προδικαστικών Προσφυγών (Α.Ε.Π.Π.)"@el;
+  epo:hasPrimaryContactPoint epd:id_2022-S-008-016555_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2022-S-008-016555_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2022-S-008-016555_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-008-016555_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2022-S-008-016555_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """Κάθε ενδιαφερόμενος ο οποίος έχει ή είχε συμφέρον να του ανατεθεί η συγκεκριμένη σύμβαση και έχει ή είχε υποστεί ή ενδέχεται να υποστεί ζημία από εκτελεστή πράξη ή παράλειψη της αναθέτουσας αρχής κατά παράβαση της νομοθεσίας της Ευρωπαϊκής Ένωσης ή της εσωτερικής νομοθεσίας, δικαιούται να ασκήσει προδικαστική προσφυγή ενώπιον της Αρχής Εξέτασης Προδικαστικών Προσφυγών («ΑΕΠΠ») κατά της σχετικής πράξης ή παράλειψης της αναθέτουσας αρχής, προσδιορίζοντας ειδικώς τις νομικές και πραγματικές αιτιάσεις που δικαιολογούν το αίτημά του. Σε περίπτωση προσφυγής κατά πράξης της αναθέτουσας αρχής, η προθεσμία για την άσκηση της προδικαστικής προσφυγής είναι:(α)	δέκα (10) ημέρες από την κοινοποίηση της προσβαλλόμενης πράξης στον ενδιαφερόμενο οικονομικό φορέα αν η πράξη κοινοποιήθηκε με ηλεκτρονικά μέσα ή τηλεομοιοτυπία ή (β)	δεκαπέντε (15) ημέρες από την κοινοποίηση της προσβαλλόμενης πράξης σε αυτόν αν χρησιμοποιήθηκαν άλλα μέσα επικοινωνίας, άλλως  (γ)	δέκα (10) ημέρες από την πλήρη, πραγματική ή τεκμαιρόμενη, γνώση της πράξης που βλάπτει τα συμφέροντα του ενδιαφερόμενου οικονομικού φορέα. Ειδικά για την άσκηση προσφυγής κατά προκήρυξης, η πλήρης γνώση αυτής τεκμαίρεται μετά την πάροδο δεκαπέντε (15) ημερών από τη δημοσίευση στο ΚΗΜΔΗΣ. Σε περίπτωση παράλειψης, η προθεσμία για την άσκηση της προδικαστικής προσφυγής είναι δεκαπέντε (15) ημέρες από την επομένη της συντέλεσης της προσβαλλόμενης παράλειψης.Η προδικαστική προσφυγή, συντάσσεται υποχρεωτικά με τη χρήση του τυποποιημένου εντύπου του Παραρτήματος Ι του π.δ/τος 39/2017 και, κατατίθεται ηλεκτρονικά στην ΑΕΠΠ μέσω ηλεκτρονικού ταχυδρομείου (e-mail) στη διεύθυνση ηλεκτρονικού ταχυδρομείου της ΑΕΠΠ. Ως ημερομηνία υποβολής της προσφυγής θεωρείται η ημερομηνία παραλαβής της από την ΑΕΠΠ μέσω του ηλεκτρονικού ταχυδρομείου. Το αργότερο την επόμενη εργάσιμη ημέρα από την παραλαβή της προσφυγής, η ΑΕΠΠ ειδοποιεί ηλεκτρονικά τον προσφεύγοντα για την παραλαβή της προσφυγής και τον αριθμό πρωτοκόλλου αυτής.Για το παραδεκτό της άσκησης της προδικαστικής προσφυγής κατατίθεται παράβολο από τον προσφεύγοντα υπέρ του Δημοσίου, κατά τα ειδικά οριζόμενα στο άρθρο 363 του ν. 4412/2016. Η επιστροφή του παραβόλου στον προσφεύγοντα γίνεται: α) σε περίπτωση ολικής ή μερικής αποδοχής της προσφυγής του, β) όταν η αναθέτουσα αρχή ανακαλεί την προσβαλλόμενη πράξη ή προβαίνει στην οφειλόμενη ενέργεια πριν από την έκδοση της απόφασης της ΑΕΠΠ επί της προσφυγής, γ) σε περίπτωση παραίτησης του προσφεύγοντα από την προσφυγή του έως και δέκα (10) ημέρες από την κατάθεση της προσφυγής.  Η προθεσμία για την άσκηση της προδικαστικής προσφυγής και η άσκησή της κωλύουν τη σύναψη της σύμβασης επί ποινή ακυρότητας, η οποία διαπιστώνεται με απόφαση της ΑΕΠΠ μετά από άσκηση προσφυγής, σύμφωνα με το άρθρο 368 του ν. 4412/2016 και 20 Π.Δ. 39/2017. Όμως, μόνη η άσκηση της προδικαστικής προσφυγής δεν κωλύει την πρόοδο  Διαγωνισμού, εκτός αν ζητηθούν προσωρινά μέτρα προστασίας σύμφωνα με το άρθρο 366 παρ. 1-2 Ν. 4412/2016 και 15 παρ. 1-4 Π.Δ. 39/2017. Η προηγούμενη παράγραφος δεν εφαρμόζεται στην περίπτωση που, κατά τη διαδικασία σύναψης της παρούσας σύμβασης, υποβληθεί μόνο ένας (1) Φάκελος Εκδήλωσης Ενδιαφέροντος.Η άσκηση της προδικαστικής προσφυγής αποτελεί προϋπόθεση για την άσκηση των ένδικων βοηθημάτων  της αίτησης αναστολής και της αίτησης ακύρωσης του άρθρου 372 του ν. 4412/2016 κατά των εκτελεστών πράξεων ή παραλείψεων της αναθέτουσας αρχής.""" .
+
+epd:id_2022-S-008-016555_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+30 2132141229";
+  epo:hasInternetAddress "www.aepp-procurement.gr"^^xsd:anyURI;
+  cccev:email "aepp@aepp-procurement.gr";
+  cccev:telephone "+30 2132141216" .
+
+epd:id_2022-S-008-016555_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "18233";
+  locn:postName "Αθήνα";
+  locn:thoroughfare "Λεωφόρος Θηβών 196 - 198, κτίριο Κεράνης" .
+
+epd:id_2022-S-008-016555_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Αρχή Εξέτασης Προδικαστικών Προσφυγών (Α.Ε.Π.Π.)"@el;
+  epo:hasPrimaryContactPoint epd:id_2022-S-008-016555_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2022-S-008-016555_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2022-S-008-016555_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-008-016555_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2022-S-008-016555_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "EL" .
+
+epd:id_2022-S-008-016555_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-008-016555_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2022-S-008-016555_Organisation_jXahEP38X6pEFgd4J9tLvF .

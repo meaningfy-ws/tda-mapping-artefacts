@@ -1,0 +1,132 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-093-243463_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://cde6.e-marchespublics.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-093-243463_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasBuyerProfile "http://cde6.e-marchespublics.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-093-243463_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-093-243463_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-093-243463_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.caissedesecolesdu6eme.fr"^^xsd:anyURI;
+  cccev:email "catherine-gohin.cde6@orange.fr";
+  cccev:telephone "+33 140467581" .
+
+epd:id_2021-S-093-243463_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101> .
+
+epd:id_2021-S-093-243463_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-093-243463_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-093-243463_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Goûters tous les jours scolaires (en plus du mercredi) pour les enfants restant aux activités après 16h30, pour les maternelles d'une part, pour les élémentaires d(autre part."@fr .
+
+epd:id_2021-S-093-243463_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-093-243463_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-093-243463_Fund_oEYZZQWPrbQFajcRU6KZAY a epo:Fund;
+  epo:hasDescription "Programme fruits, légumes et produits laitiers à l'école."@fr .
+
+epd:id_2021-S-093-243463_LotIdentifier_oEYZZQWPrbQFajcRU6KZAY a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-093-243463_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/55523100> .
+
+epd:id_2021-S-093-243463_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-093-243463_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription "Fourniture de denrées alimentaires et assistance technique."@fr;
+  epo:hasID epd:id_2021-S-093-243463_LotIdentifier_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2021-S-093-243463_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasTitle "Fourniture de denrées alimentaires destinées à la restauration scolaire des écoles du 6e arrondissement. Assistance technique, menus et approvisionnement"@fr;
+  epo:isFundedBy epd:id_2021-S-093-243463_Fund_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-093-243463_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds true .
+
+epd:id_2021-S-093-243463_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-093-243463_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-093-243463_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2021-S-093-243463_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2021-S-093-243463_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2021-S-093-243463_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE;
+  epo:hasDispatchDate "2021-05-10"^^xsd:date;
+  epo:hasID epd:id_2021-S-093-243463_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210514";
+  epo:refersToLot epd:id_2021-S-093-243463_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2021-S-093-243463_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2021-S-093-243463_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 093-243463" .
+
+epd:id_2021-S-093-243463_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75006";
+  locn:postName "Paris";
+  locn:thoroughfare "78 rue Bonaparte" .
+
+epd:id_2021-S-093-243463_OrganisationIdentifier_bhAnCWhMtKVDKPwFpTfXJN a epo:Identifier;
+  epo:hasIdentifierValue "26750026200014" .
+
+epd:id_2021-S-093-243463_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Organisme de droit public";
+  epo:hasID epd:id_2021-S-093-243463_OrganisationIdentifier_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:hasLegalName "Caisse des Écoles du 6ème arrondissement"@fr;
+  epo:hasMainActivityDescription "Services généraux des administrations publiques";
+  cccev:registeredAddress epd:id_2021-S-093-243463_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-093-243463_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/55523100> .
+
+epd:id_2021-S-093-243463_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c a epo:ProcedureTerm;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2021-S-093-243463_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-093-243463_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasDescription "Fourniture de denrées alimentaires dans un objectif de développement durable destinées à la restauration scolaire des écoles du 6e arrondissement: repas, pique-niques et goûters.Assistance technique comprenant l'élaboration des menus, l'approvisionnement et son suivi dans un objectif de respect de l'environnement."@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-093-243463_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2021-S-093-243463_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Fourniture de denrées alimentaires destinées à la restauration scolaire des écoles du 6e arrondissement, assistance technique: menus et approvisionnement"@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-093-243463_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2021-S-093-243463_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2021-S-093-243463_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2021-S-093-243463_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-093-243463_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-093-243463_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-093-243463_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75004";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2021-S-093-243463_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  cccev:registeredAddress epd:id_2021-S-093-243463_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2021-S-093-243463_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-093-243463_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2021-S-093-243463_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2021-S-093-243463_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-093-243463_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-093-243463_Organisation_bhAnCWhMtKVDKPwFpTfXJN .

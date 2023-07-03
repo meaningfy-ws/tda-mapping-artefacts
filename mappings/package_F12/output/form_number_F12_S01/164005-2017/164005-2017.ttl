@@ -1,0 +1,137 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-084-164005_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://splmpc.achatpublic.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-084-164005_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "http://splmpc.achatpublic.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-084-164005_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-084-164005_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-084-164005_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "SPL Midi-Pyrénées construction, à l’attention de Christophe Roques"@fr;
+  epo:hasFax "+33 561572313";
+  epo:hasInternetAddress "http://www.laregion.fr"^^xsd:anyURI;
+  cccev:email "christophe.roques@cogemip.fr";
+  cccev:telephone "+33 562727108" .
+
+epd:id_2017-S-084-164005_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2017-S-084-164005_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-084-164005_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2017-S-084-164005_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71221000>, <http://data.europa.eu/cpv/cpv/71300000>,
+    <http://data.europa.eu/cpv/cpv/71313000>, <http://data.europa.eu/cpv/cpv/71321100> .
+
+epd:id_2017-S-084-164005_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-084-164005_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+L'ouvrage à concevoir et à réaliser concerne: -la construction d'un nouveau bâtiment de 1300 m2 de SP pour répondre aux besoins en salles de cours en créant un espace polyvalent aisément accessible depuis l'entrée de l'établissement,
+— l'extension de l'atelier de 450 m2 de SP au niveau du bâtiment 11,
+— la restructuration d'environ 2500 m2 de SU afin d'augmenter la capacité d'accueil de l'internat (bât 12), de la demi-pension (bât 13) et de permettre certaines réorganisations fonctionnelles (bât 10 et RDC du bât 12),
+— la reprise des espaces extérieurs dont « la rue principale » et la création de surfaces de préau au cœur de l'établissement.
+Ces travaux se dérouleront en site occupé sans mise en place de bâtiment provisoire et seront décomposés en 2 tranches de travaux.
+La part de l'enveloppe financière affectée aux travaux par le maître de l'ouvrage s'élève à 5 000 000 EUR HT.
+Le présent concours est un concours sur esquisse.
+"""@fr;
+  epo:hasPurpose epd:id_2017-S-084-164005_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-084-164005_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-084-164005_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2017-S-084-164005_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2017-S-084-164005_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2017-S-084-164005_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2017-04-27"^^xsd:date;
+  epo:hasID epd:id_2017-S-084-164005_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20170429";
+  epo:refersToLot epd:id_2017-S-084-164005_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2017-S-084-164005_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2017-S-084-164005_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 084-164005" .
+
+epd:id_2017-S-084-164005_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR62>;
+  locn:postCode "31086";
+  locn:postName "Toulouse Cedex";
+  locn:thoroughfare "Mandataire agissant au nom et pour le compte de la Région Occitanie, 11 avenue Parmentier, Central Parc 2, 4ème étage, BP 22414" .
+
+epd:id_2017-S-084-164005_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "SPL Midi-Pyrénées Construction"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-084-164005_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-084-164005_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "17S0094" .
+
+epd:id_2017-S-084-164005_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71250000> .
+
+epd:id_2017-S-084-164005_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+*L'attributaire du marché se verra confier une mission de base (y compris mission SSI) complétée par la mission métrés quantitatifs (EXE partiel) conformément au décret 93-1268 du 29.11.1993, et de 4 missions complémentaires d'assistance.
+La mission de maîtrise d'œuvre sera décomposée en une tranche ferme et une tranche optionnelle.
+*Le pouvoir adjudicateur met gratuitement à disposition des candidats l'intégralité du dossier de consultation (y compris l'avis de marché) pour la phase candidatures, par voie électronique sur sa plateforme de dématérialisation à l'adresse suivante: http://splmpc.achatpublic.com.
+Ces documents ne seront pas mis à disposition des candidats sur support papier ou sur support physique électronique
+*Autres renseignements: voir le règlement du concours (phase « candidatures ») qui précise de façon plus détaillée les modalités de la procédure de passation au stade des candidatures.
+"""@fr;
+  epo:hasID epd:id_2017-S-084-164005_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-084-164005_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2017-S-084-164005_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+Concours restreint de maîtrise d'œuvre pour l'extension de la capacité d'accueil de l'internat et des ateliers et la création de l'externat au Lycée Eugène Montel à Colomiers (Opération n° 50183).
+"""@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-084-164005_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2017-S-084-164005_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2017-S-084-164005_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2017-S-084-164005_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-084-164005_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-084-164005_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-084-164005_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+— référé précontractuel, recours pouvant être introduit depuis le début de la procédure de passation jusqu'à la signature du marché (articles L. 551-1 et suivants et R. 551-1 et suivants du code de justice administrative),
+— référé contractuel, recours pouvant en principe être introduit après la signature du marché, au plus tard le 31ème jour suivant la publication de l'avis d'attribution au Journal officiel de l'union européenne, ou en l'absence de la publication d'avis jusqu'à l'expiration d'un délai de 6 mois à compter du lendemain du jour de la signature du marché (articles L. 551-13 et suivants et R. 551-7 et suivants du code de justice administrative),
+— recours de pleine juridiction en contestation de la validité du contrat, recours pouvant être introduit dans un délai de 2 mois à compter de l'accomplissement des mesures de publicité appropriées (Conseil d'État, 4.4.2014, Département de Tarn-et-Garonne, no 358994).
+""" .
+
+epd:id_2017-S-084-164005_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+33 562735740";
+  epo:hasInternetAddress "http://toulouse.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-toulouse@juradm.fr";
+  cccev:telephone "+33 562735757" .
+
+epd:id_2017-S-084-164005_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "31086";
+  locn:postName "Toulouse Cedex 07";
+  locn:thoroughfare "68 rue Raymond IV — BP 7007" .
+
+epd:id_2017-S-084-164005_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Toulouse"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-084-164005_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2017-S-084-164005_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-084-164005_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-084-164005_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-084-164005_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://splmpc.achatpublic.com"^^xsd:anyURI .
+
+epd:id_2017-S-084-164005_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-084-164005_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-084-164005_Organisation_VX8RygdBbvDo5gNDhjcsTj .

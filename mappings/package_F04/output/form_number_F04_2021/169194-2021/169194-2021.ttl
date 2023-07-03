@@ -1,0 +1,120 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-065-169194_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "www.vergabe.rib.de"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-065-169194_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-065-169194_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-065-169194_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-065-169194_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Abteilung ZEB-VM"@de;
+  epo:hasFax "+49 69690-60199";
+  epo:hasInternetAddress "www.fraport.de"^^xsd:anyURI;
+  cccev:email "ausschreibung@fraport.de" .
+
+epd:id_2021-S-065-169194_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712> .
+
+epd:id_2021-S-065-169194_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-065-169194_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-065-169194_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-065-169194_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-065-169194_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 47.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-065-169194_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71200000>, <http://data.europa.eu/cpv/cpv/71300000> .
+
+epd:id_2021-S-065-169194_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-065-169194_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Leistungsgegenstand:Leistungen Fachplanung Technische Ausrüstung gemäß HOAI, §§ 53 ff, Anlagengruppe 5,Leistungsphasen (Projektstufen) 1 bis 8, sowie Besondere Leistungen für das Teilprojekt „Ganzheitliche Betrachtung Halle B“, bestehend aus den Maßnahmen:— Ertüchtigung Türen mit technischer Ausstattung (ca. 20 Türen),— Brandmeldezentralenaustausch (Wirkfläche ca. 45 000 m2),— ELA Peripherie prüfen und ertüchtigen (Fläche ca. 2 000 m2 zzgl. Lautsprecher für hohe Halle).Schätzung der Herstellkosten:Kosten für Technische Anlagen:— Fernmelde- und informationstechn. Anlagen (Anlagengruppe 5): 3 740 000 EUR.Aus den einzelnen Maßnahmen des Teilprojektes folgen unterschiedliche Planungs- und Bauzeiten sowie Teilinbetriebnahmen vor Fertigstellung. Darüber hinaus sind weitere Schnittstellenprojekte zu beachten."@de;
+  epo:hasPurpose epd:id_2021-S-065-169194_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-065-169194_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-065-169194_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-065-169194_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2021-S-065-169194_Reviewer_K99XaY97dQrtEEJSTmwy9e;
+  epo:hasDispatchDate "2021-03-31"^^xsd:date;
+  epo:hasID epd:id_2021-S-065-169194_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210402";
+  epo:refersToLot epd:id_2021-S-065-169194_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2021-S-065-169194_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-065-169194_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 065-169194" .
+
+epd:id_2021-S-065-169194_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:postCode "60547";
+  locn:postName "Frankfurt am Main";
+  locn:thoroughfare "Gebäude 700, Raum 2124/2136" .
+
+epd:id_2021-S-065-169194_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "Fraport AG"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2021-S-065-169194_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-065-169194_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "EU-P 0160-21BV1" .
+
+epd:id_2021-S-065-169194_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2021-S-065-169194_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-065-169194_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation "Ablauf des Verfahrens:1. Phase – Interessenbekundung:Interessenten müssen ihr Interesse über die Vergabeplattform www.vergabe.rib.de bekunden.Die Interessenbekundung als Bewerber-/Bietergemeinschaft ist bereits in dieser 1. Phase möglich, aber nicht zwingend. In diesem Fall sind die Mitglieder sowie das vertretungsberechtigte Mitglied mit der Interessensbekundung zu benennen (siehe auch nachstehend zur 2. Phase – Interessensbestätigung). Die Einreichung eines Teilnahmeantrags/einer Interessensbestätigung ist in dieser Phase nicht erforderlich.Es erfolgt keine gesonderte Auftragsbekanntmachung mehr (§ 36 Abs. 4 SektVO). Lediglich die Unternehmen, die form- und fristgerecht eine Interessenbekundung übermittelt haben, werden am weiteren Verfahren beteiligt (§36 Abs. 5 SektVO).2. Phase – Interessensbestätigung:Nur diejenigen Unternehmen, die form- und fristgerecht ihr Interesse über die Vergabeplattform bekundet haben, werden zur Abgabe eines Teilnahmeantrages (Interessensbestätigung) aufgefordert.Soweit noch keine Interessensbekundung als Bewerber-/Bietergemeinschaft in der 1. Phase erfolgt ist, kann eine Bewerber-/Bietergemeinschaft auch noch nach Aufforderung zur Interessensbestätigung bis zur Abgabe der Teilnahmeanträge zulässig gebildet werden. In diesem Fall darf jedoch eine Bewerber-/Bietergemeinschaft nur noch zwischen Unternehmen gebildet werden, die auch ihr Interesse zuvor in der 1. Phase bekundet haben.Mit der „Aufforderung zur Interessensbestätigung“ werden auch alle weiteren notwendigen Informationen/Dokumente zur Erstellung des Teilnahmeantrages zur Verfügung gestelltEs wird ausdrücklich darauf hingewiesen, dass entgegen § 41 Abs. 1 SektVO die informatorischen Vergabeunterlagen nicht vollständig sind und daher nicht zur Angebotsabgabe verwendet werden können. Der mit dieser Vorgehensweise bewirkte Schutz der Vertraulichkeit der Informationen ist notwendig, um die Sicherheitsinteressen im Sinne des § 107 Abs. 2 GWB, die u. a. für die Auftraggeberin in § 8 Abs. 1 LuftSiG konkretisiert werden, zu wahren.3. Phase – Angebotsphase:Gemäß § 41 Abs. 4 SektVO und auf Grundlage von § 107 Abs. 2 Nr. 1 GWB erhalten nur diejenigen Bewerber, die von der AG nach Abschluss der Interessensbestätigung/des Teilnahmewettbewerbes zur Angebotsabgabe aufgefordert werden, die für die Abgabe eines ersten verbindlichen Angebotes zu verwendenden vollständigen finalen Vergabeunterlagen. Die zur Angebotsabgabe zu verwendenden Vergabeunterlagen werden nebst allen Unterlagen dann digital über die Plattform www.vergabe.rib.de zur Verfügung gestellt.Es ist beabsichtigt, die Anzahl der Bieter/Bietergemeinschaften in einer oder mehreren Verhandlungsrunden durch Ausscheiden der weniger wirtschaftlichen Angebote stufenweise zu reduzieren. Die Auftraggeberin behält sich jedoch gleichwohl vor, den Zuschlag bereits auf Grundlage der ersten verbindlichen Angebote ohne weitere Verhandlungen und ohne die Einholung weiterer Angebote zu erteilen."@de;
+  epo:hasDescription "Hauptaufgabe der Gesamtmaßnahme ist die Verlagerung und Modernisierung der Sicherheitskontrollstellen (SiKo) sowie eine technische Sanierung des Bestandes. Die Umsetzung der Gesamtmaßnahme erfolgt unter Aufrechterhaltung des Betriebes im T1. Strukturierung, Organisation und Durchführung der Gesamtmaßn. verantwortet Fraport-intern ein Gesamtprojektmanagement (Projekthaus). Die Gesamtmaßn. wird mit agilen Managementmethoden und einem Lean Construction Management umgesetzt.Gegenstand sind Leistungen der Fachplanung Techn. Ausrüstung, Teilprojekt „Ganzheitliche Betrachtung Halle B“, in dem die Ertüchtigung des Brandbekämpfungsabschnitts der Halle B (Ebenen 02 und 03) auf die aktuellen bauordnungsrechtlichen Anforderungen sowie der Austausch der Brandmeldezentrale inkl. Errichtung einer GA-Kopfstation erfolgt.— Beginn: ca. 3. Quartal 2021,— Ende: ca. 3. Quartal 2025."@de;
+  epo:hasID epd:id_2021-S-065-169194_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-065-169194_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-065-169194_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "EU-P 0160-21BV1 Fachplanung Technische Ausrüstung innerhalb der Terminalanlagen T1 am Flughafen Frankfurt am Main"@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-065-169194_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2021-S-065-169194_ReviewTerm_ZsxuomNURxGbRdavxJPhLN, epd:id_2021-S-065-169194_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2021-S-065-169194_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-065-169194_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-065-169194_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-065-169194_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Gemäß §160 Abs. 3 GWB ist ein Nachprüfungsantrag unzulässig, soweit:1) der Antragsteller den geltend gemachten Verstoß gegen Vergabevorschriften vor Einreichen des Nachprüfungsantrags erkannt und gegenüber der Auftraggeberin nicht innerhalb einer Frist von zehn Kalendertagen gerügt hat; der Ablauf der Frist nach § 134 Absatz 2 bleibt unberührt,2) Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, nicht spätestens bis zum Ablauf der in der Bekanntmachung benannten Frist zur Bewerbung oder zur Angebotsabgabe gegenüber der Auftraggeberin gerügt werden,3) Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, nicht spätestens bis zum Ablauf der Frist zur Bewerbung oder zur Angebotsabgabe gegenüber der Auftraggeberin gerügt werden,4) mehr als 15 Kalendertage nach Eingang der Mitteilung der Auftraggeberin, einer Rüge nicht abhelfen zu wollen, vergangen sind.Satz 1 gilt nicht bei einem Antrag auf Feststellung der Unwirksamkeit des Vertrags nach § 135 Absatz 1 Nummer 2. § 134 Absatz 1 Satz 2 bleibt unberührt." .
+
+epd:id_2021-S-065-169194_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+49 6151125816 / +49 6151126834" .
+
+epd:id_2021-S-065-169194_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "64283";
+  locn:postName "Darmstadt";
+  locn:thoroughfare "Dienstgebäude: Wilhelminenstraße 1-3; Fristenbriefkasten: Luisenplatz 2" .
+
+epd:id_2021-S-065-169194_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Hessen beim Regierungspräsidium Darmstadt"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-065-169194_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2021-S-065-169194_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-065-169194_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-065-169194_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-065-169194_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2021-05-05T14:00";
+  epo:hasSubmissionURL "www.vergabe.rib.de"^^xsd:anyURI .

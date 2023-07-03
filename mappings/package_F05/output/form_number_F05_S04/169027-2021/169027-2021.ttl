@@ -1,0 +1,171 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-065-169027_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://sncf.bravosolution.com/web/login.html"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-065-169027_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://sncf.bravosolution.com/web/login.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-065-169027_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-065-169027_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-065-169027_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Isabelle Marrocco"@fr;
+  epo:hasInternetAddress "http://www.sncf.com/"^^xsd:anyURI;
+  cccev:email "isabelle.marrocco@sncf.fr" .
+
+epd:id_2021-S-065-169027_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10> .
+
+epd:id_2021-S-065-169027_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-065-169027_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-065-169027_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "L'examen des variantes est subordonné à la remise d'une offre de base conforme aux prescriptions du cahier des charges."@fr .
+
+epd:id_2021-S-065-169027_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true .
+
+epd:id_2021-S-065-169027_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-065-169027_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "— Accord cadre de fournitures pour l'acquisition de 4 survolteurs (conception, fabrication, fourniture, travaux, installation, essais, mise en service),— Accord cadre pour le maintien des conditions opérationnelles de niveau 3 et plus, d'une durée ferme de 10ans, et optionnelle de 2 fois 10 ans (durée de vie des survolteurs)."@fr .
+
+epd:id_2021-S-065-169027_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-065-169027_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Fourniture de quatre survolteurs de type Statcom (étude et conception, réalisation, fourniture, travaux, installation, essais, la mise en service) et contrat de maintenance (préventive et curative, formation en français du personnel SNCF)."@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-065-169027_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-065-169027_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-065-169027_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-065-169027_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-065-169027_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-065-169027_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-065-169027_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2021-S-065-169027_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2021-03-30"^^xsd:date;
+  epo:hasID epd:id_2021-S-065-169027_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210402";
+  epo:refersToLot epd:id_2021-S-065-169027_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-065-169027_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-065-169027_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 065-169027" .
+
+epd:id_2021-S-065-169027_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "69502";
+  locn:postName "Lyon Cedex 03";
+  locn:thoroughfare "120 boulevard Vivier Merle" .
+
+epd:id_2021-S-065-169027_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "412 280 737 20375" .
+
+epd:id_2021-S-065-169027_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2021-S-065-169027_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "SNCF Réseau"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2021-S-065-169027_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-065-169027_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2021-11-01"^^xsd:date;
+  epo:hasEnd "2032-10-31"^^xsd:date .
+
+epd:id_2021-S-065-169027_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2020DOS1127599 - Survolteurs Défense et Riquet" .
+
+epd:id_2021-S-065-169027_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/31100000> .
+
+epd:id_2021-S-065-169027_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-065-169027_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "La société nationale SNCF Réseau émet cet avis de marché en son nom et pour son compte.L’entité adjudicatrice développe les consultations en ligne, par voie électronique. Les coordonnées électronique du représentant habilité à soumissionner à la présente consultation sont à mentionner dans le dossier de candidature.Toute candidature envoyée par voie électronique doit être envoyée sur la plateforme EASI (cf. section I de l’avis) par un représentant du candidat dûment habilité. Aucun envoi par e-mail n'est autorisé. Le candidat doit être en mesure de justifier des pouvoirs de son représentant sur requête de l’entité adjudicatrice.Les documents génériques de capacité et attestations légales génériques devront être déposés sur Provigis (plate-forme de dématérialisation et de conformité). Une invitation est envoyée au fournisseur lors de sa manifestation d’intérêt sur la plate-forme EASI. En cas de non réception de l’invitation, le fournisseur est invité à se rapprocher de l’acheteur dont les coordonnées sont précisées en section I.Toute candidature électronique ne respectant pas le formalisme pré cité ou envoyée à une autre adresse est rejetée sans être analysée.Pour toute difficulté d’ordre technique, le candidat peut se rapprocher du support fournisseurs de la plate-forme (accessible à partir de l’adresse indiquée en section I). Pour toute autre question, le candidat doit contacter l'acheteur dont les coordonnées sont reprises au point I.1) du présent avis.Après examen des documents, l’entité adjudicatrice évalue la capacité du candidat et sélectionne les candidats aptes à présenter une offre.Le marché sera soumis aux dispositions du Cahier des clauses et conditions générales (CCCG) applicables aux marchés de fourniture de la SNCF, disponible sur le site sncf.com: http://www.sncf.com/fr/groupe/fournisseurs/documentsLa candidature ainsi que tout échange d'informations doivent être rédigés en français."@fr;
+  epo:hasDescription "Fourniture de quatre survolteurs de types Statcom (HVB) et contrat de maintien en conditions opérationnelles."@fr;
+  epo:hasID epd:id_2021-S-065-169027_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-065-169027_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-065-169027_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Marché pour la fourniture de survolteurs et le maintien en conditions opérationnelles"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-065-169027_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-065-169027_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-065-169027_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB,
+    epd:id_2021-S-065-169027_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-065-169027_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-065-169027_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-065-169027_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-065-169027_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-065-169027_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "93558";
+  locn:postName "Montreuil";
+  locn:thoroughfare "7 rue Catherine Puig" .
+
+epd:id_2021-S-065-169027_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 149202099";
+  epo:hasInternetAddress "http://montreuil.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-montreuil@juradm.fr";
+  cccev:telephone "+33 149202000" .
+
+epd:id_2021-S-065-169027_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-065-169027_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-065-169027_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-065-169027_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-065-169027_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-065-169027_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Les procédures de recours applicables sont:— le référé précontractuel (CJA, articles L. 551-5 et s.) qui peut être exercé jusqu’à la signature du marché;— le référé contractuel (CJA, articles L. 551-13 et s.) qui peut être exercé dans un délai de:—— 31 jours à compter de la publication d’un avis d’attribution au JOUE ou, pour les marchés fondés sur un accord cadre, à compter de la notification de la conclusion du contrat;—— six mois à compter du lendemain du jour de la conclusion du contrat si aucun avis d’attribution n’a été publié ou si aucune notification de la conclusion du contrat n’a été effectuée;— le recours en contestation de validité du contrat ou de certaines de ses clauses (dans un délai de deux mois à compter de l’accomplissement des mesures de publicité appropriées)." .
+
+epd:id_2021-S-065-169027_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 149202099";
+  epo:hasInternetAddress "http://montreuil.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:telephone "+33 149202000" .
+
+epd:id_2021-S-065-169027_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "93558";
+  locn:postName "7 rue Catherine Puig" .
+
+epd:id_2021-S-065-169027_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Montreuil"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-065-169027_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-065-169027_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-065-169027_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-065-169027_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-065-169027_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://sncf.bravosolution.com/web/login.html"^^xsd:anyURI .
+
+epd:id_2021-S-065-169027_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-065-169027_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-065-169027_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

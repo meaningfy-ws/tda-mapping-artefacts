@@ -1,0 +1,218 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-135-276196_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.arte.tv/sites/corporate/particuliers-professionnels/#appels-doffres"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-135-276196_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.arte.tv/sites/corporate/particuliers-professionnels/#appels-doffres"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-135-276196_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2017-S-135-276196_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-135-276196_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Secteur Appels d'offres – Bereich Ausschreibungen"@de, "Secteur appels d'offres — Bereich Ausschreibungen"@fr;
+  epo:hasFax "+33 388142040";
+  epo:hasInternetAddress "www.arte.tv"^^xsd:anyURI;
+  cccev:email "appelsdoffres@arte.tv";
+  cccev:telephone "+33 388142222" .
+
+epd:id_2017-S-135-276196_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress """
+                  4 quai du Chanoine Winterer, 67080 Strasbourg Cedex, France.
+               """@fr,
+    """
+                  4 quai du Chanoine Winterer.
+                  67080 Strasbourg Cedex.
+               """@de .
+
+epd:id_2017-S-135-276196_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRF11>;
+  locn:address epd:id_2017-S-135-276196_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2017-S-135-276196_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-135-276196_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2017-S-135-276196_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2017-S-135-276196_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-135-276196_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription """
+                  Das neue Playout-Grafik-System muss die Packaging-Gestaltung mit folgenden Elementen ermöglichen:
+                  — 3D-Objekte;
+                  — Schrifteinblendungen;
+                  — Überblendungen;
+                  — HiRes-Videofiles;
+                  — Karten mit/ohne Verknüpfungen, Full-Screen-Animationen z.B. für Wetterberichte oder „Alerte Enlèvement“-Hinweise (vorgeschriebene TV-Hinweise auf Kindesentführungen in Frankreich);
+                  — Audio-Files.
+                  Außerdem erfüllt das System die folgenden Anforderungen:
+                  — Übernahme dynamischer Metadaten von unterschiedlichen Quellen wie URLs, Datenbanken, Files, Streams etc.;
+                  — eine in das proprietäre Datenaustauschsystem von ARTE (APIOS) integrierbare Anwenderschnittstelle, welche sowohl die Erzeugung der für Packaging-Szenarien notwendigen Metadaten als auch die Eingabe der Filedaten in das Datenbanksystem zur Nutzung der Grafikelemente erlaubt;
+                  — eine Schnittstelle für den Echtzeit-Preview der Grafiken zusammen mit dem zugehörigem Background-Videomaterial auf nicht dezidierten Office-PCs;
+                  das System verfügt über mindestens vier voneinander unabhängige, in Echtzeit arbeitende Rendering-Engines, die jeweils mindestens einen Video-Eingang für DVE-Effekte sowie Fill/Key-Ausgänge und 8 Audio-/Stereo-Kanäle als AES-Ausgänge und/oder Embedded für die Haupt-und Havariesendewege des deutschen und des französischen Programms besitzen. Die „Back-Office“-Funktionen müssen redundant mit hohem Verfügbarkeitsgrad vorhanden sein.
+                  Es ist vorgesehen, die gewählte Lösung zur Steuerung und Übernahme der Metadaten an die vorhandene Sendeautomation (Marina, Pebble Beach Systems) anzubinden.
+               """@de,
+    """
+                  Le nouveau système d'habillage de diffusion devra proposer un outil de création des scénarios graphiques gérant:
+                  — des objets 3D,
+                  — du scripting,
+                  — des transitions logiques,
+                  — des fichiers vidéos Hi-Res,
+                  — une cartographie connectée ou hors connexion, animation plein écran, telle que la météo ou les alertes enlèvement,
+                  — des fichiers audios.
+                  Par ailleurs, le système devra pouvoir:
+                  — récupérer des métadonnées dynamiques depuis des sources aussi différentes que des URL, bases de données, fichiers, flux,…
+                  — proposer une interface utilisateur intégrable dans le trafic chaine propre à ARTE (APIOS), permettant d'une part l'édition des métadonnées nécessaires dans les scenarios d'habillage et d'autre part le renseignement du trafic pour permettre l'exploitation de ces éléments graphiques,
+                  — proposer une interface permettant la prévisualisation du rendu en temps réel des graphiques avec la vidéo background associée sur des postes bureautiques non dédiés.
+                  Le système sera composé d'au moins quatre moteurs de rendu indépendants en temps réel, équipés d'au moins une entrée vidéo pour les effets DVE et de sorties Fill/Key, 8 audio stéréo en sortie AES et/ou Embedded, pour les voies françaises et allemandes, principales et secours. Le «back office» devra être redondé avec une forte disponibilité.
+                  La solution retenue sera interconnectée avec le système d'automation de diffusion Pebble Beach System Marina, pour le pilotage et les métadonnées.
+               """@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-135-276196_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-135-276196_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2017-S-135-276196_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2017-S-135-276196_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2017-S-135-276196_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2017-S-135-276196_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2017-07-13"^^xsd:date;
+  epo:hasID epd:id_2017-S-135-276196_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20170718";
+  epo:refersToLot epd:id_2017-S-135-276196_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2017-S-135-276196_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2017-S-135-276196_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 135-276196" .
+
+epd:id_2017-S-135-276196_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRF11>;
+  locn:postCode "67080";
+  locn:postName "Strasbourg Cedex";
+  locn:thoroughfare "4 Quai du Chanoine Winterer" .
+
+epd:id_2017-S-135-276196_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Europäische Wirtschaftliche Interessenvereinigung (EWIV)",
+    "Groupement européen d'intérêt économique (GEIE)";
+  epo:hasLegalName "ARTE GEIE"@de, "ARTE GEIE"@fr;
+  epo:hasMainActivityDescription "Audiovisuel", "Fernsehsender";
+  cccev:registeredAddress epd:id_2017-S-135-276196_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-135-276196_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/32210000> .
+
+epd:id_2017-S-135-276196_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-135-276196_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation """
+               Diese Vorinformation gilt als Aufforderung zur Interessensbekundung.
+               Interessensbekundungen können spätestens bis zum vorstehend angegebenen Schlusstermin formlos per E-Mail übermittelt werden an: appelsdoffres@arte.tv
+               Während der Interessensbestätigungsphase möchte ARTE GEIE die tatsächlich am Markt verfügbaren Funktionsumfänge im Rahmen von Test unter Realbedingungen prüfen. Nach Abschluss dieser Testphase (voraussichtlich im Dezember 2017) wird ARTE die Bewerber zur Bestätigung ihres Interesses auffordern.
+               Die einzelnen Tests werden über einen Zeitraum von 5 Tagen in den Räumlichkeiten von ARTE GEIE in Straßburg durchgeführt. Die Kosten dieser Präsentationen werden von ARTE GEIE nicht erstattet.
+               Der Auftrag wird voraussichtlich im Juni 2018 erteilt werden. Die Lieferung des neuen Systems soll voraussichtlich Anfang Oktober 2018 erfolgen; der Wechsel auf das neue System ist für Anfang 2019 geplant. Die Zeitspanne zwischen Lieferung und dem Wechsel ist für Schulungen und Set-up vorgesehen. Die Wartung des Systems ist ebenfalls Gegenstand dieses Vergabeverfahrens.
+            """@de,
+    """
+               Le présent avis de préinformation constitue un appel à manifestation d'intérêt.
+               Les manifestations d'intérêt seront adressées par simple envoi d'émail à appelsdoffres@arte.tv avant la date annoncée ci-avant.
+               Durant la phase de manifestation d'intérêt, ARTE GEIE souhaite analyser, dans le cadre de tests sous conditions réelles, les fonctionnalités actuellement disponibles sur le marché. À l'issue de la phase de tests, prévisionnellement en décembre 2017, ARTE invitera les candidats à confirmer leur intérêt.
+               Les tests individuels se dérouleront sur une période de 5 jours dans les locaux d'ARTE GEIE à Strasbourg. Il est précisé qu'ARTE ne remboursera aucun frais liés à cette présentation.
+               La notification du marché est prévisionnellement fixée à juin 2018. La livraison du nouveau système interviendra prévisionnellement début octobre 2018 et la bascule vers le nouveau système est prévue pour début 2019. La période entre la livraison et la bascule est dédiée à une phase de formation et de set-up. Le présent marché portera également sur la maintenance du système.
+            """@fr;
+  epo:hasDescription """
+               ARTE souhaite renouveler son système d'habillage de diffusion, afin de mettre en place une solution proposant une très forte évolution des capacités graphiques et des workflows de fabrication des éléments.
+               L'architecture actuelle, basée sur une solution Pixel Power, comprend:
+               — 4 Clarity 3000 pour les voies française et allemande principales et secours, ainsi que 2 machines de spare,
+               — 1 Clarity 3000 double canal pour les prévisualisations des éléments graphiques au service conducteur et chef de chaîne,
+               — 1 poste de préparation graphique.
+            """@fr,
+    """
+               ARTE sucht zur Erneuerung seines Playout-Grafik-Systems nach einer Lösung mit stark verbesserten Grafikfähigkeiten und Workflows für die Produktion der Grafikelemente.
+               Die derzeit vorhandene Architektur setzt auf einer Pixel-Power-Lösung auf und umfasst:
+               — 4 Clarity 3000 für die Haupt- und Havariesendewege des deutschen und französischen Programms sowie 2 Maschinen als Backup;
+               — 1 Clarity 3000 Zweikanal-System für den Preview der Grafikelemente durch Ablaufredakteur und technischen Sendeleiter;
+               — 1 Grafik-Arbeitsplatz.
+            """@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-135-276196_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2017-S-135-276196_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+               Erneuerung des Playout-Grafik-Systems von ARTE GEIE.
+            """@de,
+    """
+               Renouvellement du système d'habillage de la diffusion d'ARTE GEIE.
+            """@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-135-276196_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2017-S-135-276196_ReviewTerm_KjhWjVv578XNpvpTRjZhAs, epd:id_2017-S-135-276196_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2017-S-135-276196_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-135-276196_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2017-S-135-276196_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-135-276196_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "67000";
+  locn:postName "Nancy";
+  locn:thoroughfare "Rue Général Fabvier" .
+
+epd:id_2017-S-135-276196_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  epo:hasFax "+33 383274984";
+  cccev:telephone "+33 383908500" .
+
+epd:id_2017-S-135-276196_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Tribunal de Grande Instance"@de, "Tribunal de grande instance"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-135-276196_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2017-S-135-276196_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2017-S-135-276196_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-135-276196_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2017-S-135-276196_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Rechtsmittelverfahren können auf folgender Grundlage eingeleitet werden:
+               — entweder unter Berufung auf Art. 2 der frz. Verordnung Nr. 2009-515 vom 7.5.2009 über Rechtsmittelverfahren, die im Rahmen der öffentlichen Auftragsvergabe vor dem Vertragsabschluss einzuleiten sind („référé précontractuel“),
+               — oder unter Berufung auf Art. 11 der o. g. Verordnung spätestens am 31. Tag nach der Veröffentlichung der Bekanntmachung über vergebene Aufträge bzw. falls eine solche Bekanntmachung nicht vorliegt, innerhalb von sechs Monaten nach dem Tag der Zuschlagserteilung („référé contractuel“). Service auprès duquel des renseignements peuvent être obtenus sur l'introduction de recours.
+            """ .
+
+epd:id_2017-S-135-276196_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+33 383274984";
+  cccev:telephone "+33 383908500" .
+
+epd:id_2017-S-135-276196_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "54035";
+  locn:postName "Nancy";
+  locn:thoroughfare "Rue Général Fabvier" .
+
+epd:id_2017-S-135-276196_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Tribunal de Grande Instance"@de, "Tribunal de grande instance"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-135-276196_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2017-S-135-276196_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2017-S-135-276196_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-135-276196_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2017-S-135-276196_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "DE", "FR";
+  epo:hasReceiptExpressionDeadline "2017-09-01T12:00" .
+
+epd:id_2017-S-135-276196_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-135-276196_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2017-S-135-276196_Organisation_gqoAAwSV3JaTMsopb9zyKP .

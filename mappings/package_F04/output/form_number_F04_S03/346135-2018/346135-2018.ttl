@@ -1,0 +1,151 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-150-346135_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://kgv.doffin.no/ctm/Supplier/Documents/Folder/162348"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-150-346135_AwardCriterionCost_kzxi3VGw6HDT4rbiPYwGVV a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Price"@en;
+  cccev:weight "100 %"@en .
+
+epd:id_2018-S-150-346135_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "https://kgv.doffin.no/ctm/Company/CompanyInformation/Index/59083"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-150-346135_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-150-346135_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-150-346135_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Elisabeth Børde"@en;
+  epo:hasInternetAddress "https://www.lillehammer.kommune.no/"^^xsd:anyURI;
+  cccev:email "elisabeth.borde@lillehammer.kommune.no";
+  cccev:telephone "+47 61050500" .
+
+epd:id_2018-S-150-346135_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Lillehammer"@en .
+
+epd:id_2018-S-150-346135_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  locn:address epd:id_2018-S-150-346135_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2018-S-150-346135_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-150-346135_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-150-346135_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2018-S-150-346135_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2018-S-150-346135_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 10.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-150-346135_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-150-346135_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "The contract work mainly includes:— Water pipeline Ø600mm, ductile cast iron, length approx. 830 m,— Water pipeline Ø200mm, PVC, length approx. 70 m,— Water pipeline Ø150mm, ductile cast iron, length approx. 260 m,— Joint sewage pipeline Ø800mm, concrete, length approx. 530 m,— Joint sewage pipeline Ø600mm, concrete, length approx. 260 m,— Joint sewage pipeline Ø400mm, concrete, length approx. 270 m,— Surface water pipeline Ø600/500/300mm, concrete, length approx. 160 m,— 7 water manholes, cast on site,— 5 prefabricated water manholes,— 4 intake and outlet manholes for pump stations, cast on site,— 15 prefabricated sewage manholes,— 2 prefabricated surface water manholes,— Ground work, including piling,— Various terrain work.The length of the contract work, see point II.2.7, has not yet been finally decided, the length is subject to change in the final notice."@en;
+  epo:hasEstimatedValue epd:id_2018-S-150-346135_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-150-346135_AwardCriterionCost_kzxi3VGw6HDT4rbiPYwGVV .
+
+epd:id_2018-S-150-346135_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 55000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/NOK> .
+
+epd:id_2018-S-150-346135_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 55000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/NOK> .
+
+epd:id_2018-S-150-346135_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2018-S-150-346135_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2018-S-150-346135_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2018-S-150-346135_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2018-S-150-346135_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2018-S-150-346135_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2018-08-03"^^xsd:date;
+  epo:hasID epd:id_2018-S-150-346135_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20180807";
+  epo:refersToLot epd:id_2018-S-150-346135_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2018-S-150-346135_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2018-S-150-346135_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 150-346135" .
+
+epd:id_2018-S-150-346135_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NOR>;
+  locn:postCode "2626";
+  locn:postName "Lillehammer";
+  locn:thoroughfare "Storgata 51, Postboks 986" .
+
+epd:id_2018-S-150-346135_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "945 578 564" .
+
+epd:id_2018-S-150-346135_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2018-S-150-346135_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "Lillehammer kommune, Vann og avløp"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2018-S-150-346135_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-150-346135_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2018-S-150-346135_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2018-S-150-346135_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "18/6397" .
+
+epd:id_2018-S-150-346135_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45231300> .
+
+epd:id_2018-S-150-346135_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-150-346135_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription "Lillehammer municipality shall lay a new main pipeline installations along the beach zone by Mjøsa between PK2 and PK3 in order to increase security. The pipeline installations consist of an approx. 1.3 km pipeline ditch. Parts of this must be founded on friction piles. The new pipeline installations are to be established in a parallel line to the existing pipeline installations."@en;
+  epo:hasEstimatedValue epd:id_2018-S-150-346135_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasID epd:id_2018-S-150-346135_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-150-346135_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2018-S-150-346135_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "New main pipeline installations PK2-PK3"@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-150-346135_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2018-S-150-346135_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2018-S-150-346135_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2018-09-20"^^xsd:date .
+
+epd:id_2018-S-150-346135_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-150-346135_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-150-346135_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-150-346135_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.kofa.no/"^^xsd:anyURI;
+  cccev:email "post@kofa.no";
+  cccev:telephone "+47 55193000" .
+
+epd:id_2018-S-150-346135_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NOR>;
+  locn:postCode "5805";
+  locn:postName "Bergen";
+  locn:thoroughfare "Postboks 511 Sentrum" .
+
+epd:id_2018-S-150-346135_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Klagenemnda for offentlig anskaffelser — KOFA"@en;
+  epo:hasPrimaryContactPoint epd:id_2018-S-150-346135_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2018-S-150-346135_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2018-S-150-346135_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-150-346135_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2018-S-150-346135_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm .
+
+epd:id_2018-S-150-346135_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-150-346135_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-150-346135_Organisation_W8v6KSqiUn74jPKJmENKoH .

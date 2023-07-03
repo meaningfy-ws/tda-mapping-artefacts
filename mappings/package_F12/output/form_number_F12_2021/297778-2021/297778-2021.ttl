@@ -1,0 +1,175 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-113-297778_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://contractaciopublica.gencat.cat/perfil/upf"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-113-297778_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF a epo:Buyer;
+  epo:hasBuyerProfile "https://contractaciopublica.gencat.cat/perfil/upf"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-113-297778_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:playedBy epd:id_2021-S-113-297778_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2021-S-113-297778_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF a cccev:ContactPoint;
+  epo:hasContactName "Unidad de Contratación Administrativa"@es;
+  epo:hasFax "+34 935422869";
+  epo:hasInternetAddress "http://www.upf.edu"^^xsd:anyURI;
+  cccev:email "licitacions@upf.edu";
+  cccev:telephone "+34 935422000" .
+
+epd:id_2021-S-113-297778_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF a org:Organization;
+  epo:hasID epd:id_2021-S-113-297778_OrganisationIdentifier_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:hasLegalName "Consejo Superior de Investigaciones Científicas"@es;
+  cccev:registeredAddress epd:id_2021-S-113-297778_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2021-S-113-297778_BuyerOrganisationGroup_Vx4nE2MhH2AK3p6fvMzsYF a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/education>;
+  epo:hasMember epd:id_2021-S-113-297778_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2021-S-113-297778_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-113-297778_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "https://contractaciopublica.gencat.cat/perfil/upf"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-113-297778_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-113-297778_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-113-297778_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Unidad de Contratación Administrativa"@es;
+  epo:hasFax "+34 935422869";
+  epo:hasInternetAddress "http://www.upf.edu"^^xsd:anyURI;
+  cccev:email "licitacions@upf.edu";
+  cccev:telephone "+34 935422000" .
+
+epd:id_2021-S-113-297778_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-113-297778_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-113-297778_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-113-297778_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-113-297778_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Concurso de proyectos, en dos fases, para los servicios de arquitectura de la redacción del proyecto básico y la dirección de las obras de construcción del conjunto arquitectónico formado por dos edificios dedicados a la investigación para la Universitat Pompeu Fabra y el IBE-CSIC, y la urbanización del entorno al complejo urbanístico de la nueva Ciudadela del Conocimiento, situada en los terrenos del antiguo Mercat del Peix, para el período 2022 a 2025, de acuerdo con el Pliego de Prescripciones Técnicas."@es;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-113-297778_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-113-297778_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2021-S-113-297778_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-113-297778_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2021-S-113-297778_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2021-S-113-297778_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2021-S-113-297778_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2021-06-09"^^xsd:date;
+  epo:hasID epd:id_2021-S-113-297778_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210614";
+  epo:refersToLot epd:id_2021-S-113-297778_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-113-297778_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-113-297778_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 113-297778" .
+
+epd:id_2021-S-113-297778_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES511>;
+  locn:postCode "08002";
+  locn:postName "Barcelona";
+  locn:thoroughfare "Plaça de la Mercè, 10-12" .
+
+epd:id_2021-S-113-297778_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES300>;
+  locn:postCode "28006";
+  locn:postName "Madrid";
+  locn:thoroughfare "C/ Serrano, 117" .
+
+epd:id_2021-S-113-297778_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "Q5850017D" .
+
+epd:id_2021-S-113-297778_OrganisationIdentifier_Vx4nE2MhH2AK3p6fvMzsYF a epo:Identifier;
+  epo:hasIdentifierValue "Q2818002D" .
+
+epd:id_2021-S-113-297778_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasID epd:id_2021-S-113-297778_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Universitat Pompeu Fabra"@es;
+  cccev:registeredAddress epd:id_2021-S-113-297778_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-113-297778_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "UPF-2021-0027" .
+
+epd:id_2021-S-113-297778_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71220000> .
+
+epd:id_2021-S-113-297778_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "Presentación de la oferta de la primera fase por medios telemáticos. La segunda fase se realizará en soporte papel para garantizar el secreto de los participantes en el proceso de valoración de las propuestas y dado que se presentaran muestras físicas."@es;
+  epo:hasID epd:id_2021-S-113-297778_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-113-297778_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-113-297778_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Concurso de proyectos para los servicios de arquitectura entorno al complejo urbanístico de la nueva Ciudadela del Conocimiento, en los terrenos del antiguo Mercat del Peix"@es;
+  epo:isDesignContest true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-113-297778_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-113-297778_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2021-S-113-297778_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-113-297778_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-113-297778_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-113-297778_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-113-297778_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postName "Barcelona" .
+
+epd:id_2021-S-113-297778_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  cccev:email "licitacions@upf.edu" .
+
+epd:id_2021-S-113-297778_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Universitat Pompeu Fabra"@es;
+  epo:hasPrimaryContactPoint epd:id_2021-S-113-297778_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2021-S-113-297778_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-113-297778_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-113-297778_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-113-297778_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Quince días desde la fecha de publicación en el DOUE." .
+
+epd:id_2021-S-113-297778_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasInternetAddress "https://contractacio.gencat.cat/ca/contacte/tccsp/trec/"^^xsd:anyURI;
+  cccev:telephone "+34 933162000" .
+
+epd:id_2021-S-113-297778_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  locn:postCode "08038";
+  locn:postName "Barcelona";
+  locn:thoroughfare "Carrer del Foc, 57" .
+
+epd:id_2021-S-113-297778_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal Catalán de Contratos del Sector Público"@es;
+  epo:hasPrimaryContactPoint epd:id_2021-S-113-297778_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2021-S-113-297778_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-113-297778_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-113-297778_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-113-297778_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "CA", "ES" .
+
+epd:id_2021-S-113-297778_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-113-297778_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-113-297778_Organisation_VX8RygdBbvDo5gNDhjcsTj .

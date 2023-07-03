@@ -1,0 +1,81 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-132-300603_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.raiwayfornitori.rai.it/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-132-300603_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2018-S-132-300603_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2018-S-132-300603_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "RaiWay/AD/HP/BRT"@it;
+  epo:hasInternetAddress "http://www.raiway.it"^^xsd:anyURI;
+  cccev:email "rwacquistitecnici@postacertificata.rai.it";
+  cccev:telephone "+39 0633173670" .
+
+epd:id_2018-S-132-300603_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IT> .
+
+epd:id_2018-S-132-300603_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-132-300603_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2018-S-132-300603_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2018-S-132-300603_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-132-300603_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "La fornitura oggetto del servizio si compone di:— 4 segmenti spaziali, su transponder predefiniti ed al momento utilizzati per il trasporto di MUX RaiWay, con capacità satellitare a bordo del satellite Eutelsat 5 West A,— 1 segmento spaziale aggiuntivo con capacità satellitare a bordo del satellite Eutelsat 5 West A, per il quale richiedere un «diritto di primo rifiuto»,— 1 stazione terrena trasmittente (da qui in avanti chiamata stazione di uplink) costituita da 1 stazione principale e 1 di riserva,— 1 servizio di gestione delle risorse satellitari e di monitoraggio continuo del livello di servizio fornito.Il servizio dovrà essere fornito dal 1.1.2020 e terminerà il 31.12.2023."@it .
+
+epd:id_2018-S-132-300603_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2018-S-132-300603_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2018-S-132-300603_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2018-S-132-300603_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs;
+  epo:hasDispatchDate "2018-07-09"^^xsd:date;
+  epo:hasID epd:id_2018-S-132-300603_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20180712";
+  epo:refersToLot epd:id_2018-S-132-300603_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2018-S-132-300603_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2018-S-132-300603_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 132-300603" .
+
+epd:id_2018-S-132-300603_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IT>;
+  locn:postCode "00195";
+  locn:postName "Roma";
+  locn:thoroughfare "Via Teulada 66" .
+
+epd:id_2018-S-132-300603_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Impresa pubblica";
+  epo:hasLegalName "Rai Way S.p.A"@it;
+  epo:hasMainActivityDescription "Broadcasting e telecomunicazioni";
+  cccev:registeredAddress epd:id_2018-S-132-300603_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2018-S-132-300603_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2018-S-132-300603_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2018-S-132-300603_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/64228100> .
+
+epd:id_2018-S-132-300603_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-132-300603_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "La documentazione con le specifiche tecniche ed i requisiti di disponibilità dei collegamenti richiesti è consultabile nella sezione «AVVISI» sul sito (http://www.raiwayfornitori.rai.it), ove vengono anche indicate le modalità per rispondere alla ricerca di mercato.La ricerca di mercato è mirata ad identificare il valore del servizio richiesto ed i soggetti potenzialmente interessati a presentare offerta per la fornitura di un servizio di noleggio di transponder satellitari in posizione orbitale 5oW.Termine di scadenza per la indagine di mercato: 31.7.2018 ore 13:00 al fine di fornire riscontro alla presente indagine si richiede l’invio di una e-mail via pec all’indirizzo: (rwacquistitecnici@postacertificata.rai.it).Eventuali richieste di chiarimento dovranno pervenire entro e non oltre il 23.7.2018.Resta comunque inteso che Rai Way, con la pubblicazione della presente indagine di mercato, non assume alcun impegno verso gli operatori che daranno riscontro alla stessa aderendo alla presente indagine, non potendo gli stessi vantare alcun affidamento riguardo a qualsivoglia aggiudicazione o negozio giuridico, restando libera Rai Way di non procedere ad alcun affidamento."@it;
+  epo:hasDescription "Indagine di mercato, mirata ad identificare potenziali operatori economici che possano presentare un’offerta, con indicazione anche del prezzo stimabile, finalizzato all’individuazione dell’eventuale possibile importo da porre a base di confronto concorrenziale o come base di negoziazione, per la fornitura di un servizio di noleggio di transponder satellitari in posizione orbitale 5oW per servizi di distribuzione televisiva in tecnologia DVB‐S/S2 su territorio italiano."@it;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-132-300603_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2018-S-132-300603_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Indagine di mercato — fornitura di un servizio di noleggio di transponder satellitari in posizione orbitale 5oW per servizi di distribuzione televisiva in tecnologia DVB‐S/S2."@it;
+  epo:isCoveredByGPA true .
+
+epd:id_2018-S-132-300603_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2018-09-09"^^xsd:date .
+
+epd:id_2018-S-132-300603_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-132-300603_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2018-S-132-300603_Organisation_gqoAAwSV3JaTMsopb9zyKP .

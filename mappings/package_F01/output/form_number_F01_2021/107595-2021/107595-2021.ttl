@@ -1,0 +1,221 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-043-107595_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.messinaservizibenecomune.it"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-043-107595_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "www.messinaservizibenecomune.it"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-043-107595_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-043-107595_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-043-107595_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "RUP — ing. Benedetto Alberti"@it;
+  epo:hasInternetAddress "www.messinaservizibenecomune.it"^^xsd:anyURI;
+  cccev:email "benedetto.alberti@messinaservizi.it";
+  cccev:telephone "+39 0906783558" .
+
+epd:id_2021-S-043-107595_ContractTermLotLocationAddress_RzGc5d5mtrg2C6DV2Pr3XD a locn:Address;
+  locn:fullAddress "Territorio comunale di Messina."@it .
+
+epd:id_2021-S-043-107595_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Territorio comunale di Messina."@it .
+
+epd:id_2021-S-043-107595_ContractTermLotLocationAddress_kKEXkgEhBpbdu5CJYA2aUT a locn:Address;
+  locn:fullAddress "Territorio comunale di Messina."@it .
+
+epd:id_2021-S-043-107595_ContractTermLotLocation_RzGc5d5mtrg2C6DV2Pr3XD a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITG13>;
+  locn:address epd:id_2021-S-043-107595_ContractTermLotLocationAddress_RzGc5d5mtrg2C6DV2Pr3XD .
+
+epd:id_2021-S-043-107595_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITG13>;
+  locn:address epd:id_2021-S-043-107595_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-043-107595_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITG13>;
+  locn:address epd:id_2021-S-043-107595_ContractTermLotLocationAddress_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2021-S-043-107595_ContractTermLot_RzGc5d5mtrg2C6DV2Pr3XD a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-043-107595_Duration_7vApgAJUSqBgXhJLuVbxWp;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-043-107595_ContractTermLotLocation_RzGc5d5mtrg2C6DV2Pr3XD .
+
+epd:id_2021-S-043-107595_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-043-107595_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-043-107595_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-043-107595_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-043-107595_Duration_VLUhcjCcfriMRVVeLidxGZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-043-107595_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2021-S-043-107595_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true .
+
+epd:id_2021-S-043-107595_Duration_7vApgAJUSqBgXhJLuVbxWp a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-043-107595_Duration_VLUhcjCcfriMRVVeLidxGZ a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-043-107595_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-043-107595_LotIdentifier_RzGc5d5mtrg2C6DV2Pr3XD a epo:Identifier;
+  epo:hasIdentifierValue "3" .
+
+epd:id_2021-S-043-107595_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-043-107595_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-043-107595_LotPurpose_RzGc5d5mtrg2C6DV2Pr3XD a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/77340000> .
+
+epd:id_2021-S-043-107595_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/77340000> .
+
+epd:id_2021-S-043-107595_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/77340000> .
+
+epd:id_2021-S-043-107595_Lot_RzGc5d5mtrg2C6DV2Pr3XD a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-043-107595_ContractTermLot_RzGc5d5mtrg2C6DV2Pr3XD;
+  epo:hasDescription "Operazioni di potatura dell'alberatura di alto, medio, basso fusto delle palme e alla sagomatura delle siepi nei cimiteri nelle ville, nelle scuole e negli impianti sportivi comunali insistenti all'interno del territorio del Comune di Messina. Zona Sud."@it;
+  epo:hasID epd:id_2021-S-043-107595_LotIdentifier_RzGc5d5mtrg2C6DV2Pr3XD;
+  epo:hasPurpose epd:id_2021-S-043-107595_LotPurpose_RzGc5d5mtrg2C6DV2Pr3XD;
+  epo:hasTitle "Servizio di manutenzione del verde pubblico del Comune di Messina — operazioni di potatura dell'alberatura nel territorio comunale di Messina — Sud"@it;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-043-107595_MultipleStageProcedureTerm_RzGc5d5mtrg2C6DV2Pr3XD;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-043-107595_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-043-107595_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Operazioni di potatura dell'alberatura di alto, medio, basso fusto delle palme e alla sagomatura delle siepi nei cimiteri nelle ville, nelle scuole e negli impianti sportivi comunali insistenti all'interno del territorio del Comune di Messina. Zona Nord."@it;
+  epo:hasEstimatedValue epd:id_2021-S-043-107595_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasID epd:id_2021-S-043-107595_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-043-107595_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasTitle "Servizio di manutenzione del verde pubblico del Comune di Messina — operazioni di potatura dell'alberatura nel territorio comunale di Messina — nord"@it;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-043-107595_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-043-107595_Lot_kKEXkgEhBpbdu5CJYA2aUT a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-043-107595_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasDescription "Operazioni di potatura dell'alberatura di alto, medio, basso fusto delle palme e alla sagomatura delle siepi nei cimiteri, nelle ville, nelle scuole e negli impianti sportivi comunali insistenti all'interno del territorio del Comune di Messina. Zona Centro."@it;
+  epo:hasEstimatedValue epd:id_2021-S-043-107595_MainMonetaryValueLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasID epd:id_2021-S-043-107595_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2021-S-043-107595_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasTitle "Servizio di manutenzione del verde pubblico del Comune di Messina — operazioni di potatura dell'alberatura nel territorio comunale di Messina — Centro"@it;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-043-107595_MultipleStageProcedureTerm_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-043-107595_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 200000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-043-107595_MainMonetaryValueLot_kKEXkgEhBpbdu5CJYA2aUT a epo:MonetaryValue;
+  epo:hasAmountValue 200000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-043-107595_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 600000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-043-107595_MultipleStageProcedureTerm_RzGc5d5mtrg2C6DV2Pr3XD a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-043-107595_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-043-107595_MultipleStageProcedureTerm_kKEXkgEhBpbdu5CJYA2aUT a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-043-107595_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-043-107595_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2021-S-043-107595_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-043-107595_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2021-S-043-107595_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2021-S-043-107595_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2021-02-26"^^xsd:date;
+  epo:hasID epd:id_2021-S-043-107595_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210303";
+  epo:refersToLot epd:id_2021-S-043-107595_Lot_RzGc5d5mtrg2C6DV2Pr3XD, epd:id_2021-S-043-107595_Lot_c4Jggv3QHLrvEuoxvHMwcK,
+    epd:id_2021-S-043-107595_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:refersToProcedure epd:id_2021-S-043-107595_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-043-107595_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 043-107595" .
+
+epd:id_2021-S-043-107595_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITG13>;
+  locn:postCode "98121";
+  locn:postName "Messina";
+  locn:thoroughfare "via Gagini 21-29" .
+
+epd:id_2021-S-043-107595_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Messinaservizi Bene Comune SpA"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/env-pro>;
+  cccev:registeredAddress epd:id_2021-S-043-107595_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-043-107595_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-043-107595_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-043-107595_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/77340000> .
+
+epd:id_2021-S-043-107595_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 3;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2021-S-043-107595_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-043-107595_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription "Operazioni di potatura dell'alberatura di alto, medio, basso fusto delle palme e alla sagomatura delle siepi nei cimiteri, nelle ville, nelle scuole e negli impianti sportivi comunali insistenti all'interno del territorio del Comune di Messina."@it;
+  epo:hasEstimatedValue epd:id_2021-S-043-107595_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-043-107595_Lot_RzGc5d5mtrg2C6DV2Pr3XD,
+    epd:id_2021-S-043-107595_Lot_c4Jggv3QHLrvEuoxvHMwcK, epd:id_2021-S-043-107595_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2021-S-043-107595_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Servizio di manutenzione del verde pubblico del Comune di Messina — operazioni di potatura dell'alberatura nel territorio comunale di Messina"@it;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-043-107595_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2021-S-043-107595_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG, epd:id_2021-S-043-107595_ReviewTerm_KjhWjVv578XNpvpTRjZhAs .
+
+epd:id_2021-S-043-107595_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-03-09"^^xsd:date .
+
+epd:id_2021-S-043-107595_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-043-107595_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-043-107595_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-043-107595_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Vedi bando di gara." .
+
+epd:id_2021-S-043-107595_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postName "Messina" .
+
+epd:id_2021-S-043-107595_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Foro di Messina"@it;
+  cccev:registeredAddress epd:id_2021-S-043-107595_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-043-107595_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-043-107595_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-043-107595_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-043-107595_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-043-107595_Organisation_gqoAAwSV3JaTMsopb9zyKP .

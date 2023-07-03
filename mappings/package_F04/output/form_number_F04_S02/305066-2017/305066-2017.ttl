@@ -1,0 +1,168 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-147-305066_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.vik-pernik.eu/order.html"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-147-305066_AwardCriterionPrice_3adAvBFPyyV3GW2dYQZ2ui a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "60"@bg .
+
+epd:id_2017-S-147-305066_AwardCriterionQuality_eDoLkWm4bCwzSaypmba997 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Предложено време за отчет на измервателните уреди"@bg;
+  cccev:weight "40"@bg .
+
+epd:id_2017-S-147-305066_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "http://www.vik-pernik.eu/order.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-147-305066_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-147-305066_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-147-305066_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Десислава Йорданова"@bg;
+  epo:hasFax "+359 076649831";
+  epo:hasInternetAddress "http://www.vik-pernik.eu/"^^xsd:anyURI;
+  cccev:email "vik_pernik@abv.bg";
+  cccev:telephone "+359 076649817" .
+
+epd:id_2017-S-147-305066_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+                  „ВиК“ ООД Перник и на територията на Област Перник.
+               """@bg .
+
+epd:id_2017-S-147-305066_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG414>;
+  locn:address epd:id_2017-S-147-305066_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-147-305066_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-147-305066_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-147-305066_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-147-305066_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2017-S-147-305066_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-147-305066_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/09310000> .
+
+epd:id_2017-S-147-305066_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-147-305066_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription """
+                  Прогнозно количество електрическа енергия 15 000 MWh.
+               """@bg;
+  epo:hasPurpose epd:id_2017-S-147-305066_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-147-305066_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-147-305066_AwardCriterionPrice_3adAvBFPyyV3GW2dYQZ2ui,
+    epd:id_2017-S-147-305066_AwardCriterionQuality_eDoLkWm4bCwzSaypmba997 .
+
+epd:id_2017-S-147-305066_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 2601597.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/BGN> .
+
+epd:id_2017-S-147-305066_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N a epo:MultipleStageProcedureTerm .
+
+epd:id_2017-S-147-305066_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2017-S-147-305066_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2017-S-147-305066_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2017-S-147-305066_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2017-S-147-305066_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2017-S-147-305066_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2017-08-01"^^xsd:date;
+  epo:hasID epd:id_2017-S-147-305066_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20170803";
+  epo:refersToLot epd:id_2017-S-147-305066_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2017-S-147-305066_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-147-305066_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 147-305066" .
+
+epd:id_2017-S-147-305066_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG414>;
+  locn:postCode "2300";
+  locn:postName "Перник";
+  locn:thoroughfare "ул. „Средец“ № 11" .
+
+epd:id_2017-S-147-305066_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "823073638" .
+
+epd:id_2017-S-147-305066_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2017-S-147-305066_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "„ВиК“ ООД Перник"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2017-S-147-305066_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-147-305066_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2017-S-147-305066_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-147-305066_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09310000> .
+
+epd:id_2017-S-147-305066_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-147-305066_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription """
+               Избор на доставчик на електрическа енергия и координатор на балансираща група за „ВиК“ ООД-Перник и прилежащите му обекти.
+            """@bg;
+  epo:hasEstimatedValue epd:id_2017-S-147-305066_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-147-305066_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2017-S-147-305066_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               Доставка на нетна активна електрическа енергия и координатор на балансираща група на обектите на „Водоснабдяване и канализация“ ООД-гр. Перник.
+            """@bg;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-147-305066_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2017-S-147-305066_ReviewTerm_ZsxuomNURxGbRdavxJPhLN .
+
+epd:id_2017-S-147-305066_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2017-09-07"^^xsd:date .
+
+epd:id_2017-S-147-305066_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-147-305066_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-147-305066_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-147-305066_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Комисия за защита на конкуренцията съгласно чл. 197 от ЗОП.
+            """ .
+
+epd:id_2017-S-147-305066_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "cpcadmin@cpc.bg";
+  cccev:telephone "+359 29884070" .
+
+epd:id_2017-S-147-305066_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Витоша“ № 18" .
+
+epd:id_2017-S-147-305066_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-147-305066_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2017-S-147-305066_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-147-305066_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-147-305066_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-147-305066_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-147-305066_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-147-305066_Organisation_W8v6KSqiUn74jPKJmENKoH .

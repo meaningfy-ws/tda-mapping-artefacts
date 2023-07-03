@@ -1,0 +1,210 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-218-574108_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://ice.amministrazionetrasparente.it/tabellaBandi"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-218-574108_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.ice.it"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-218-574108_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-218-574108_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-218-574108_Channel_iRCDPixbNsrvdzVqkxqWso a cccev:Channel;
+  epo:hasURL "https://www.acquistinretepa.it"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2021-S-218-574108_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Ufficio Patrimonio, Acquisti e S.G."@it;
+  epo:hasFax "+39 0689280344";
+  epo:hasInternetAddress "http://www.ice.it"^^xsd:anyURI;
+  cccev:email "contratti.sg@ice.it";
+  cccev:telephone "+39 0659929273" .
+
+epd:id_2021-S-218-574108_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Italia sede di Roma e Milano"@it .
+
+epd:id_2021-S-218-574108_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITC4C>;
+  locn:address epd:id_2021-S-218-574108_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2021-S-218-574108_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-218-574108_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-218-574108_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "L'appalto decorre dalla data di sottoscrizione dell'Accordo Quadro con una durata di 24 mesi e con possibilità di proroga ex art. 106 comma 11 del D. Lgs. 50/2016 e s.m.i."@it .
+
+epd:id_2021-S-218-574108_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-218-574108_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-218-574108_FrameworkAgreementTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-218-574108_FrameworkAgreementTerm_KX8MaayAMxqXBuD94Kuz62 a epo:FrameworkAgreementTerm .
+
+epd:id_2021-S-218-574108_Fund_c4Jggv3QHLrvEuoxvHMwcK a epo:Fund;
+  epo:hasDescription "CUP N. D16G17002280006 ICE - AGENZIA PER LA PROMOZIONE ALL'ESTERO E L'INTERNAZIONALIZZAZIONE DELLE IMPRESE ALL'ESTERO - PES - PIANO EXPORT SUD II *SERVIZI ALLE IMPRESE* 4 ANNI."@it .
+
+epd:id_2021-S-218-574108_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-218-574108_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation "La gara sarà esperita tramite l'utilizzo della piattaforma di e-procurement Gare in ASP (Application Service Provider) della CONSIP."@it;
+  epo:hasDescription "Procedura aperta ai fini della stipula di un Accordo-Quadro con Agenzia del Lavoro per l’affidamento dell’incarico di somministrazione di lavoro a tempo determinato entro il limite massimo di n. 23 unità da inquadrare nell’area II F2 e n. 13 unità da inquadrare nell’area III F1 CCNL Funzioni Centrali per la durata di 24 mesi."@it;
+  epo:hasEstimatedValue epd:id_2021-S-218-574108_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isFundedBy epd:id_2021-S-218-574108_Fund_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds true .
+
+epd:id_2021-S-218-574108_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 3350000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-218-574108_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J a cccev:ContactPoint;
+  epo:hasFax "+39 0636723274";
+  epo:hasInternetAddress "www.anticorruzione.it"^^xsd:anyURI;
+  cccev:telephone "+39 06367231" .
+
+epd:id_2021-S-218-574108_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "00187";
+  locn:postName "Roma";
+  locn:thoroughfare "c/o Galleria Sciarra - Via M. Minghetti, 10" .
+
+epd:id_2021-S-218-574108_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J a org:Organization;
+  epo:hasLegalName "Autorità Nazionale Anticorruzione"@it;
+  epo:hasPrimaryContactPoint epd:id_2021-S-218-574108_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J;
+  cccev:registeredAddress epd:id_2021-S-218-574108_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2021-S-218-574108_Mediator_2t4SUwdC66NGJuVrEY4e6J a epo:Mediator;
+  epo:playedBy epd:id_2021-S-218-574108_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2021-S-218-574108_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 3350000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-218-574108_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-218-574108_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2021-S-218-574108_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2021-S-218-574108_Mediator_2t4SUwdC66NGJuVrEY4e6J,
+    epd:id_2021-S-218-574108_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2021-S-218-574108_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2021-S-218-574108_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2021-S-218-574108_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2021-11-05"^^xsd:date;
+  epo:hasID epd:id_2021-S-218-574108_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20211110";
+  epo:refersToLot epd:id_2021-S-218-574108_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2021-S-218-574108_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-218-574108_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 218-574108" .
+
+epd:id_2021-S-218-574108_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITI43>;
+  locn:postCode "00144";
+  locn:postName "ROMA";
+  locn:thoroughfare "VIA LISZT, N. 21" .
+
+epd:id_2021-S-218-574108_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "I.C.E. - Agenzia per la promozione all'estero e l'internazionalizzazione delle imprese italiane"@it;
+  epo:hasMainActivityDescription "Sviluppo commercio estero";
+  cccev:registeredAddress epd:id_2021-S-218-574108_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-218-574108_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-218-574108_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2021-S-218-574108_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79620000> .
+
+epd:id_2021-S-218-574108_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-218-574108_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "La gara sarà esperita ai sensi dell’art. 60 del D. Lgs n. 50/2016. L’aggiudicazione della gara avverrà ai sensi dell’art. 95, comma 3, D. Lgs. n. 50/2016 e s.m.i., in base al criterio dell’offerta economicamente più vantaggiosa: i criteri saranno indicati nei documenti di gara."@it;
+  epo:hasDescription "Procedura aperta ai fini della Stipula di un Accordo quadro della durata di 24 mesi con Agenzia del Lavoro per la somministrazione di personale a tempo determinato, entro il limite massimo di n. 23 unità da inquadrare nell’area II F2 e n. 13 unità da inquadrare nell’area III F1 CCNL Funzioni Centrali."@it;
+  epo:hasEstimatedValue epd:id_2021-S-218-574108_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-218-574108_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2021-S-218-574108_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "PROCEDURA APERTAPER LA STIPULA DI UN ACCORDO QUADRO DELLA DURATA DI 24 MESI PER L'AFFIDAMENTO DELL'INCARICO DI SOMMINISTRAZIONE DI LAVORO A TEMPO DETERMINATO"@it;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-218-574108_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2021-S-218-574108_FrameworkAgreementTerm_KX8MaayAMxqXBuD94Kuz62, epd:id_2021-S-218-574108_ReviewTerm_KjhWjVv578XNpvpTRjZhAs,
+    epd:id_2021-S-218-574108_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62;
+  epo:usesChannel epd:id_2021-S-218-574108_Channel_iRCDPixbNsrvdzVqkxqWso;
+  epo:usesTechnique epd:id_2021-S-218-574108_FrameworkAgreementTechniqueUsage_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2021-S-218-574108_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-12-13"^^xsd:date .
+
+epd:id_2021-S-218-574108_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-218-574108_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-218-574108_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2021-S-218-574108_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "00196";
+  locn:postName "Roma";
+  locn:thoroughfare "Via Flaminia, n. 179" .
+
+epd:id_2021-S-218-574108_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.giustizia-amministrativa.it"^^xsd:anyURI;
+  cccev:telephone "+39 06328721" .
+
+epd:id_2021-S-218-574108_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "TAR LAZIO"@it;
+  epo:hasPrimaryContactPoint epd:id_2021-S-218-574108_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2021-S-218-574108_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-218-574108_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-218-574108_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2021-S-218-574108_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Contro il presente provvedimento è proponibile ricorso innanzi al TAR Lazio — Sezione di Roma entro 30 giorni dalla piena conoscenza." .
+
+epd:id_2021-S-218-574108_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+39 0632872310";
+  epo:hasInternetAddress "http://www.giustizia-amministrativa.it"^^xsd:anyURI;
+  cccev:telephone "+39 06328721" .
+
+epd:id_2021-S-218-574108_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "00196";
+  locn:postName "Roma";
+  locn:thoroughfare "Via Flaminia, n. 179" .
+
+epd:id_2021-S-218-574108_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "TAR Lazio – sez. di Roma"@it;
+  epo:hasPrimaryContactPoint epd:id_2021-S-218-574108_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2021-S-218-574108_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-218-574108_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-218-574108_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2021-S-218-574108_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasSubmissionURL "https://www.acquistinretepa.it"^^xsd:anyURI .
+
+epd:id_2021-S-218-574108_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-218-574108_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2021-S-218-574108_Organisation_gqoAAwSV3JaTMsopb9zyKP .

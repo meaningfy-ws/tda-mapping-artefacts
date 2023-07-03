@@ -1,0 +1,95 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-107-190691_AccessTerm_4zjJjpytu5bmHbyNSmtsju a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://marchespublics.cg38.fr/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-107-190691_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "https://marchespublics.cg38.fr/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-107-190691_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2016-S-107-190691_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2016-S-107-190691_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "M. le président"@fr;
+  epo:hasInternetAddress "http://www.isere.fr"^^xsd:anyURI;
+  cccev:email "dcj.cmp@isere.fr" .
+
+epd:id_2016-S-107-190691_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR714> .
+
+epd:id_2016-S-107-190691_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-107-190691_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2016-S-107-190691_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-107-190691_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription """
+Le département de l'Isère a décidé de céder les actions qu'il détient dans la société de transport de voyageurs VFD (société anonyme d'économie mixte), par délibération du 25.3.2016. À cet effet, il procède à un appel à candidature afin de mettre en concurrence les acquéreurs potentiels.
+La SEM VFD est un acteur reconnu dans le transport public de voyageurs en Isère et hors du département. Elle a pour objet d'exploiter tout réseau de transport pour le compte de diverses autorités organisatrices de transport public et collectivités locales (lignes départementales et régionales, transports scolaires, navettes aéroport et stations, transport de groupes), et pour son propre compte.
+Son capital social s'élève à 15 078 890 EUR, soit 1 507 889 actions d'une valeur nominale de 10 EUR, dont 81,22 % détenues par le département.
+Des précisions complémentaires sont disponibles sur le site: www.isere.fr.
+"""@fr .
+
+epd:id_2016-S-107-190691_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-107-190691_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2016-S-107-190691_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ;
+  epo:hasDispatchDate "2016-05-31"^^xsd:date;
+  epo:hasID epd:id_2016-S-107-190691_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasPublicationDate "20160604";
+  epo:refersToLot epd:id_2016-S-107-190691_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2016-S-107-190691_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2016-S-107-190691_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 107-190691" .
+
+epd:id_2016-S-107-190691_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR714>;
+  locn:postCode "38022";
+  locn:postName "Grenoble";
+  locn:thoroughfare "7 rue Fantin-Latour" .
+
+epd:id_2016-S-107-190691_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Département de l'Isère"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2016-S-107-190691_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2016-S-107-190691_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "DPM2016" .
+
+epd:id_2016-S-107-190691_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60000000> .
+
+epd:id_2016-S-107-190691_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasAdditionalInformation """
+Le dossier de consultation fixant le cadre général de la procédure est disponible sur le site: https://marchespublics.cg38.fr
+La consultation se déroulera en 5 étapes:
+— sélection des candidats admis à présenter une offre,
+— remise des offres initiales (indicatives; offre 1),
+— négociations,
+— remise des offres fermes (offre 2),
+— attribution par décision du conseil départemental.
+À titre prévisionnel, les offres seront à remettre au 2ème semestre et le département envisage une décision d'attribution d'ici fin 2016.
+Pourront se porter candidats les entreprises ou groupements d'entreprises:
+— dont les capitaux propres consolidés à la date de dépôt de la candidature sont supérieurs ou égaux à la moitié du capital social de la SEM VFD, soit 7 000 000 EUR,
+— ou disposant d'au moins 15 000 000 EUR de chiffre d'affaires annuel.
+La date limite de remise des candidatures est fixée au 24.6.2016 à 17:00. Seuls les candidats sélectionnés sur la base des critères ci-dessus pourront déposer une offre.
+"""@fr;
+  epo:hasID epd:id_2016-S-107-190691_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-107-190691_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2016-S-107-190691_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle """
+Cession des actions détenues par le département de l'Isère dans la société d'économie mixte VFD.
+"""@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-107-190691_AccessTerm_4zjJjpytu5bmHbyNSmtsju .
+
+epd:id_2016-S-107-190691_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-107-190691_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2016-S-107-190691_Organisation_TigDgN9yDLHn3hDtQD7BVC .

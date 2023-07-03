@@ -1,0 +1,258 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-148-307248_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.mavir.hu"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-148-307248_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "http://www.mavir.hu"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-148-307248_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-148-307248_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-148-307248_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Orosz Judit"@hu;
+  epo:hasFax "+36 13041118";
+  epo:hasInternetAddress "http://www.mavir.hu"^^xsd:anyURI;
+  cccev:email "oroszj@mavir.hu";
+  cccev:telephone "+36 13041107" .
+
+epd:id_2017-S-148-307248_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+                  Győr.
+               """@hu .
+
+epd:id_2017-S-148-307248_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU221>;
+  locn:address epd:id_2017-S-148-307248_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-148-307248_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-148-307248_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-148-307248_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-148-307248_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2017-S-148-307248_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 10.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-148-307248_EAuctionTechniqueUsage_42ewgEwxZiroeKCXpa2kAY a epo:EAuctionTechniqueUsage .
+
+epd:id_2017-S-148-307248_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "Kassanin Dusán, osztályvezető"@hu;
+  epo:hasFax "+36 12125649";
+  epo:hasInternetAddress "http://www.mavir.hu"^^xsd:anyURI;
+  cccev:email "kassanin@mavir.hu";
+  cccev:telephone "+36 13041473" .
+
+epd:id_2017-S-148-307248_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU11>;
+  locn:postCode "1031";
+  locn:postName "Budapest";
+  locn:thoroughfare "Anikó u. 4. 3IR-01 szoba" .
+
+epd:id_2017-S-148-307248_InformationProviderOrganisationIdentifier_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:Identifier;
+  epo:hasIdentifierValue "AK04992" .
+
+epd:id_2017-S-148-307248_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasID epd:id_2017-S-148-307248_InformationProviderOrganisationIdentifier_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:hasLegalName "MAVIR Magyar Villamosenergia-ipari Átviteli Rendszerirányító Zárkörűen Működő Részvénytársaság"@hu;
+  cccev:registeredAddress epd:id_2017-S-148-307248_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2017-S-148-307248_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/31170000> .
+
+epd:id_2017-S-148-307248_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-148-307248_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation """
+                  A II.2.6) pontban megadott érték nem a becsült érték, Ajánlatkérő nem kívánja megadni a becsült értéket. Technikai okok miatt szükséges a II.2.6) pont kitöltése.
+               """@hu;
+  epo:hasDescription """
+                  1 db 400/128/18 kV-os, 250/250/75 MVA-es, szabályozós, takarékkapcsolású transzformátor szállítása Győr 400/220/120 kV-os alállomásba.
+               """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-148-307248_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2017-S-148-307248_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-148-307248_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-148-307248_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-148-307248_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-148-307248_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2017-S-148-307248_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2017-S-148-307248_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2017-S-148-307248_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2017-S-148-307248_TenderReceiver_dk2esofbDLefiQsKcsKjh3;
+  epo:hasDispatchDate "2017-08-03"^^xsd:date;
+  epo:hasID epd:id_2017-S-148-307248_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20170804";
+  epo:refersToLot epd:id_2017-S-148-307248_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2017-S-148-307248_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-148-307248_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 148-307248" .
+
+epd:id_2017-S-148-307248_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU110>;
+  locn:postCode "1031";
+  locn:postName "Budapest";
+  locn:thoroughfare "Anikó u. 4." .
+
+epd:id_2017-S-148-307248_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "AK04992" .
+
+epd:id_2017-S-148-307248_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2017-S-148-307248_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "MAVIR – Magyar Villamosenergia-ipari Átviteli Rendszerirányító Zrt."@hu;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2017-S-148-307248_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-148-307248_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2017-0252" .
+
+epd:id_2017-S-148-307248_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/31170000> .
+
+epd:id_2017-S-148-307248_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-148-307248_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+               1) Az érdekelt szervezetnek a IV.2.2) pontban meghatározott határidőig, szándéknyilatkozatot kell benyújtania magyar nyelven, mely tartalmazza:
+               — a közbeszerzési eljárás TED vagy KÉ azonosító számát, pontos megnevezését,
+               — az érdekelt szervezet nevét, székhelyét, elérhetőségét,
+               — az érdekelt szervezet adószámát, cégjegyzék számát,
+               — a kapcsolattartó személy nevét, beosztását, elérhetőségét.
+               Amennyiben a szándéknyilatkozat nem tartalmaz minden információt, az ajánlatkérő nem kötelezett a hiányzó adatok beszerzésére, illetve a közvetlen részvételi felhívás megküldésére.
+               A szándéknyilatkozat benyújtható e-mail mellékletként az oroszj@mavir.hu e-mail címre, vagy telefaxon +36 13041118 faxszámra.
+               A szándéknyilatkozatot benyújtó szervezet felelőssége meggyőződni arról, hogy a benyújtott szándéknyilatkozat megérkezett-e a IV.2.2) pontban meghatározott határidőig az ajánlatkérőhöz.
+               2) A részvételi felhívás és a kapcsolódó közbeszerzési dokumentum az időszakos előzetes tájékoztatóban foglaltak alapján a jelzett időponttól kezdődően (tervezett határidő: IV.2.5) pont szerint) érhetőek el az I.3) pontban jelzett elérési útvonalon (http://www.mavir.hu), melyről a szándéknyilatkozatot benyújtó Gazdasági szereplők egyidejűleg értesítést kapnak a szándéknyilatkozatban megjelölt e-mail címre.
+               A részvételi felhívást és a kapcsolódó közbeszerzési dokumentumokat Részvételre jelentkezőként legalább egy Gazdasági szereplőnek (valamelyik közös ajánlattevőnek, alvállalkozónak) elektronikus úton el kell érnie a részvételi határidő lejártáig illetve az elérést vissza kell igazolni az oroszj@mavir.hu e-mail címre (év/hónap/nap-óra/perc) adattartalommal [Kbt. 57. § (2)].
+               3)Ajánlatkérő opciót nem alkalmaz.
+               4)Ajánlatkérő a változatokra történő ajánlattételt nem teszi lehetővé.
+               5) Ajánlatkérő a Kbt. 75. § (2) bekezdés e) pont szerinti eredménytelenségi indokot nem alkalmazza.
+               6) FAKSZ: Vizhányó Tibor, Lajstromszáma: 00434.
+            """@hu;
+  epo:hasDescription """
+               400/128/18 kV-os transzformátor szállítása Győr 400/220/120 kV-os alállomásba.
+            """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-148-307248_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasID epd:id_2017-S-148-307248_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-148-307248_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2017-S-148-307248_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               Szállítási szerződés 400/128/18 kV-os transzformátor szállítására Győr 400/220/120 kV-os alállomásba.
+            """@hu;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-148-307248_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2017-S-148-307248_ReviewTerm_ZsxuomNURxGbRdavxJPhLN, epd:id_2017-S-148-307248_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY;
+  epo:usesTechnique epd:id_2017-S-148-307248_EAuctionTechniqueUsage_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2017-S-148-307248_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-148-307248_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2017-S-148-307248_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2017-S-148-307248_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó utca 5." .
+
+epd:id_2017-S-148-307248_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828594" .
+
+epd:id_2017-S-148-307248_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Közbeszerzési Hatóság, Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2017-S-148-307248_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2017-S-148-307248_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2017-S-148-307248_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-148-307248_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2017-S-148-307248_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               A Kbt. 148. § rendelkezései szerint.
+            """ .
+
+epd:id_2017-S-148-307248_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828594" .
+
+epd:id_2017-S-148-307248_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó utca 5." .
+
+epd:id_2017-S-148-307248_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Közbeszerzési Hatóság, Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2017-S-148-307248_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2017-S-148-307248_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-148-307248_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-148-307248_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-148-307248_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "HU";
+  epo:hasReceiptExpressionDeadline "2017-08-25T15:00" .
+
+epd:id_2017-S-148-307248_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU11>;
+  locn:postCode "1034";
+  locn:postName "Budapest";
+  locn:thoroughfare " Anikó u. 4. 2IR-26 szoba" .
+
+epd:id_2017-S-148-307248_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3
+  a cccev:ContactPoint;
+  epo:hasContactName "Orosz Judit, főmunkatárs"@hu;
+  epo:hasFax "+36 13041118";
+  epo:hasInternetAddress "http://www.mavir.hu"^^xsd:anyURI;
+  cccev:email "oroszj@mavir.hu";
+  cccev:telephone "+36 13041107" .
+
+epd:id_2017-S-148-307248_TenderReceiverOrganisationIdentifier_dk2esofbDLefiQsKcsKjh3
+  a epo:Identifier;
+  epo:hasIdentifierValue "AK04992" .
+
+epd:id_2017-S-148-307248_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 a org:Organization;
+  epo:hasID epd:id_2017-S-148-307248_TenderReceiverOrganisationIdentifier_dk2esofbDLefiQsKcsKjh3;
+  epo:hasLegalName "MAVIR Magyar Villamosenergia-ipari Átviteli Rendszerirányító Zárkörűen Működő Részvénytársaság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2017-S-148-307248_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  cccev:registeredAddress epd:id_2017-S-148-307248_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3 .
+
+epd:id_2017-S-148-307248_TenderReceiver_dk2esofbDLefiQsKcsKjh3 a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-148-307248_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  epo:playedBy epd:id_2017-S-148-307248_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 .

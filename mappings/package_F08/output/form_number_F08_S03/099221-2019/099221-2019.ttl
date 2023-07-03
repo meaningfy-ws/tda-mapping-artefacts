@@ -1,0 +1,111 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-043-099221_AccessTerm_4zjJjpytu5bmHbyNSmtsju a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.pks-bielsko.pl/viewpage.php?page_id=12"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-043-099221_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "https://www.pks-bielsko.pl/viewpage.php?page_id=12"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2019-S-043-099221_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2019-S-043-099221_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2019-S-043-099221_Channel_D7Go8W7kJWfGkiJTdrkDRx a cccev:Channel;
+  epo:hasURL "https://miniportal.uzp.gov.pl"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2019-S-043-099221_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "Paweł Sadza"@pl;
+  epo:hasInternetAddress "https://www.pks-bielsko.pl"^^xsd:anyURI;
+  cccev:email "przetargi@pks.bielsko.pl" .
+
+epd:id_2019-S-043-099221_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj a locn:Address;
+  locn:fullAddress "Przedmiot zamówienia należy dostarczyć do siedziby Zamawiającego tj. ul. Legionów 54, 43-300 Bielsko-Biała, POLSKA"@pl .
+
+epd:id_2019-S-043-099221_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL225>;
+  locn:address epd:id_2019-S-043-099221_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2019-S-043-099221_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-043-099221_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2019-S-043-099221_InformationProviderContactPoint_PHAC3pV7Mi9mSueG6pbn8k a
+    cccev:ContactPoint;
+  epo:hasContactName "Paweł Sadza"@pl;
+  epo:hasInternetAddress "https://www.pks-bielsko.pl"^^xsd:anyURI;
+  cccev:email "przetargi@pks.bielsko.pl" .
+
+epd:id_2019-S-043-099221_InformationProviderOrganisationAddress_PHAC3pV7Mi9mSueG6pbn8k
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL225>;
+  locn:postCode "43-300";
+  locn:postName "Bielsko-Biała";
+  locn:thoroughfare "Legionów 54" .
+
+epd:id_2019-S-043-099221_InformationProviderOrganisationIdentifier_PHAC3pV7Mi9mSueG6pbn8k
+  a epo:Identifier;
+  epo:hasIdentifierValue "000616681" .
+
+epd:id_2019-S-043-099221_InformationProviderOrganisation_PHAC3pV7Mi9mSueG6pbn8k a
+    org:Organization;
+  epo:hasID epd:id_2019-S-043-099221_InformationProviderOrganisationIdentifier_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:hasLegalName "PKS w Bielsku-Białej Spółka Akcyjna z siedzibą w Czechowicach-Dziedzicach"@pl;
+  cccev:registeredAddress epd:id_2019-S-043-099221_InformationProviderOrganisationAddress_PHAC3pV7Mi9mSueG6pbn8k .
+
+epd:id_2019-S-043-099221_LotPurpose_PNm7nZntEXiu4JieackQnj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34121400> .
+
+epd:id_2019-S-043-099221_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-043-099221_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription "Zakup 26 szt. pojazdów: nowych, miejskich autobusów niskopodłogowych typu maxi na potrzeby związane ze świadczeniem usług z zakresu publicznego transportu zbiorowego na terenie powiatu bielskiego przez Spółkę PKS w Bielsku-Białej S.A. Pojazdy oferujące możliwość przewożenia min. 80-ciu osób, w tym min. 30-tu osób na miejscach siedzących. Pojazdy z niską podłogą, bez stopni, pomiędzy drzwiami przednimi (początek drzwi), a środkowymi (koniec drzwi), wyposażone w drzwi pasażerskie w układzie 2-2-0 / 2-2-1. Silnik pojazdu zasilany CNG, umiejscowiony za tylną osią - jednostka napędowa spełniająca wymagania normy emisji spalin i hałasu EURO6. Szczegółowy opis przedmiotu zamówienia stanowić będzie załącznik do SIWZ."@pl;
+  epo:hasPurpose epd:id_2019-S-043-099221_LotPurpose_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2019-S-043-099221_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-043-099221_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2019-S-043-099221_ProcurementProcedureInformationProvider_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:hasDispatchDate "2019-02-26"^^xsd:date;
+  epo:hasID epd:id_2019-S-043-099221_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20190301";
+  epo:refersToLot epd:id_2019-S-043-099221_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2019-S-043-099221_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2019-S-043-099221_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 043-099221" .
+
+epd:id_2019-S-043-099221_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL225>;
+  locn:postCode "43-502";
+  locn:postName "Czechowice-Dziedzice";
+  locn:thoroughfare "Traugutta 11" .
+
+epd:id_2019-S-043-099221_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC a epo:Identifier;
+  epo:hasIdentifierValue "000616681" .
+
+epd:id_2019-S-043-099221_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasID epd:id_2019-S-043-099221_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC;
+  epo:hasLegalName "PKS w Bielsku-Białej Spółka Akcyjna z siedzibą w Czechowicach-Dziedzicach"@pl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2019-S-043-099221_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2019-S-043-099221_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34121100> .
+
+epd:id_2019-S-043-099221_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-043-099221_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2019-S-043-099221_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle "Zakup taboru autobusowego w ramach projektu pn. „Rozwój nieskoemisjnego transportu publicznego Powiatu Bielskiego - zakup taboru autobusowego”"@pl;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-043-099221_AccessTerm_4zjJjpytu5bmHbyNSmtsju;
+  epo:usesChannel epd:id_2019-S-043-099221_Channel_D7Go8W7kJWfGkiJTdrkDRx .
+
+epd:id_2019-S-043-099221_ProcurementProcedureInformationProvider_PHAC3pV7Mi9mSueG6pbn8k
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-043-099221_InformationProviderContactPoint_PHAC3pV7Mi9mSueG6pbn8k;
+  epo:playedBy epd:id_2019-S-043-099221_InformationProviderOrganisation_PHAC3pV7Mi9mSueG6pbn8k .

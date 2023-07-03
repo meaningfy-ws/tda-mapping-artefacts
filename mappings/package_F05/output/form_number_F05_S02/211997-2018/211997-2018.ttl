@@ -1,0 +1,218 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-093-211997_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://marchepublic.semitag.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-093-211997_AwardCriterionCost_ABQz2KccdqMSZ5dhmJTNPr a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Technique"@fr;
+  cccev:weight "30"@fr .
+
+epd:id_2018-S-093-211997_AwardCriterionCost_DW4sMvCZCPjJ8P6xkyyZYY a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Développement durable"@fr;
+  cccev:weight "10"@fr .
+
+epd:id_2018-S-093-211997_AwardCriterionCost_PdhiwFgRo6dt8S8aCpwTR7 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Prix"@fr;
+  cccev:weight "60"@fr .
+
+epd:id_2018-S-093-211997_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-093-211997_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-093-211997_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-093-211997_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Service achats"@fr;
+  epo:hasFax "+33 476206690";
+  epo:hasInternetAddress "http://marchepublic.semitag.com"^^xsd:anyURI;
+  cccev:email "achats@semitag.fr";
+  cccev:telephone "+33 476206610" .
+
+epd:id_2018-S-093-211997_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+                  Agglomération grenobloise.
+               """@fr .
+
+epd:id_2018-S-093-211997_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK24>;
+  locn:address epd:id_2018-S-093-211997_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2018-S-093-211997_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-093-211997_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-093-211997_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+                  Les prestations, objet de la présente consultation, pourront donner lieu, avec l’attributaire du contrat, à un nouveau contrat pour la réalisation de prestations similaires, en application de l’article 30-I-7o du Décret nº 2016-360 du 25.3.2016.
+                  Les conditions d'exécution de ce nouveau marché seront conformes à celles du présent marché.
+               """@fr .
+
+epd:id_2018-S-093-211997_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2018-S-093-211997_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 66.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-093-211997_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2018-S-093-211997_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2018-S-093-211997_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/50118110>, <http://data.europa.eu/cpv/cpv/50200000> .
+
+epd:id_2018-S-093-211997_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-093-211997_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+                  Le présent accord-cadre a pour objet le dépannage et le remorquage des bus SEMITAG.
+                  Cette prestation sera effectuée:
+                  — soit à la demande de la SEMITAG par l’intermédiaire de son PCC (Poste de commande centralisée),
+                  — soit à la demande de la SEMITAG par l’intermédiaire de ses ateliers de réparation.
+                  Le parc bus de la SEMITAG est réparti sur 2 dépôts, avec les particularités suivantes:
+                  — dépôt d’Eybens: Bus Standard diesel et hybride – Bus articulé diesel,
+                  — dépôt de Sassenage: Bus Standard GNV et diesel – Bus articulé Diesel et GNV.
+                  Compte tenu de l’évolution constante du parc bus de la SEMITAG, la répartition de celui-ci, ainsi que sa composition pourra évoluer en cours de marché, afin d’intégrer les futurs véhicules de la flotte.
+               """@fr;
+  epo:hasEstimatedValue epd:id_2018-S-093-211997_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-093-211997_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-093-211997_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-093-211997_AwardCriterionCost_ABQz2KccdqMSZ5dhmJTNPr,
+    epd:id_2018-S-093-211997_AwardCriterionCost_DW4sMvCZCPjJ8P6xkyyZYY, epd:id_2018-S-093-211997_AwardCriterionCost_PdhiwFgRo6dt8S8aCpwTR7 .
+
+epd:id_2018-S-093-211997_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 489500.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-093-211997_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 489500.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-093-211997_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-093-211997_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-093-211997_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2018-S-093-211997_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2018-S-093-211997_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2018-S-093-211997_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2018-05-14"^^xsd:date;
+  epo:hasID epd:id_2018-S-093-211997_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20180517";
+  epo:refersToLot epd:id_2018-S-093-211997_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2018-S-093-211997_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2018-S-093-211997_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 093-211997" .
+
+epd:id_2018-S-093-211997_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK24>;
+  locn:postCode "38044";
+  locn:postName "Grenoble cedex 9";
+  locn:thoroughfare "CS 70258" .
+
+epd:id_2018-S-093-211997_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "SEMITAG"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2018-S-093-211997_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-093-211997_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/50118300> .
+
+epd:id_2018-S-093-211997_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-093-211997_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+               — La SEMITAG accepte uniquement les candidatures et les offres remises par voie dématérialisée sur la plateforme: https://marchepublic.semitag.com Aucune remise de candidature ou d'offre papier ne pourra être acceptée.
+               La SEMITAG n’exige pas la signature électronique des documents de la part des candidats/soumissionnaires. Aussi le candidat/soumissionnaires ne doit pas nécessairement disposer d’un certificat électronique pour déposer sa candidature offre sur la plateforme de dématérialisation de la SEMITAG.
+               Seul le candidat sélectionné par la commission d’appel d’offres aura l’obligation de signer le marché.
+               — Les candidatures et les offres doivent parvenir sous format électronique en les déposant sur notre plateforme de dématérialisation à l'adresse suivante: https://marchepublic.semitag.com/
+               — il est rappelé aux candidats que cette consultation se déroule en une phase de candidature, et une phase offre. Seuls les candidats dont la candidature aura été agrée par la commission SEMITAG pourront télécharger le DCE sur la plateforme de dématérialisation OMNIKLES: https://marchepublic.semitag.com
+               — les critères de sélection des candidatures sont:
+               —— capacités techniques.
+               —— capacités financières.
+               —— capacités professionnelles.
+               Durée totale du marché 66 mois composée comme suit: durée ferme 27 mois + 1 reconduction 12 mois + possibilité d'un marché à prestations similaires 27 mois.
+               — Le candidat remettra une offre de base conforme aux exigences de la présente consultation, seule la variante obligatoire est autorisée aucune autre variante ne sera acceptée, l'offre des candidats qui ne proposera pas de variante obligatoire ne sera pas retenue,
+               — merci de nous communiquer l'adresse mail à laquelle la SEMITAG peut correspondre tout au long de la procédure,
+               — nous attirons votre attention sur le fait que, les personnes contactées au cours de la procédure, via la plateforme de dématérialisation par la SEMITAG, seront celles qui s’y seront enregistrées lors du retrait du dossier de consultation. Il appartient donc au candidat d’enregistrer directement sur la plateforme le ou les interlocuteurs privilégiés pour ce marché lors du retrait du DCE. La remise des offres réactualisées suite aux négociations se fera exclusivement sur la plateforme de dématérialisation: https://marchepublic.semitag.com/
+               — les questions sont à poser sur la plateforme de dématérialisation à l'adresse: https://marchepublic.semitag.com
+               — un mémoire technique est demandé,
+               — délai de validité des offres: 120 jours.
+            """@fr;
+  epo:hasDescription """
+               Accord-cadre à bons de commande mono attributaire, ayant pour objet la définition et l'organisation des interventions de dépannage et de remorquage des véhicules d’exploitation de la SEMITAG au sein du périmètre des transports urbains de l’agglomération Grenobloise.
+            """@fr;
+  epo:hasEstimatedValue epd:id_2018-S-093-211997_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-093-211997_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-093-211997_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+               Depannage et remorquage bus SEMITAG
+            """@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-093-211997_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2018-S-093-211997_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2018-S-093-211997_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2018-S-093-211997_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2018-S-093-211997_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-093-211997_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-093-211997_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-093-211997_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69433";
+  locn:postName "Lyon cédex 3";
+  locn:thoroughfare "67 rue Servient" .
+
+epd:id_2018-S-093-211997_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  cccev:telephone "+33 472607012" .
+
+epd:id_2018-S-093-211997_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-093-211997_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2018-S-093-211997_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-093-211997_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-093-211997_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-093-211997_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  cccev:telephone "+33 472607012" .
+
+epd:id_2018-S-093-211997_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69433";
+  locn:postName "Lyon cédex 3";
+  locn:thoroughfare "67 rue Servient" .
+
+epd:id_2018-S-093-211997_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-093-211997_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2018-S-093-211997_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-093-211997_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-093-211997_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-093-211997_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://marchepublic.semitag.com/"^^xsd:anyURI .

@@ -1,0 +1,190 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-093-223050_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://enot.publicprocurement.be/changeLanguage.do?language=fr-FR"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2020-S-093-223050_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2020-S-093-223050_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2020-S-093-223050_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-093-223050_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "M. Bernard Delanois"@fr;
+  epo:hasFax "+32 64232301";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "bernard.delanois@ores.be";
+  cccev:telephone "+32 64232307" .
+
+epd:id_2020-S-093-223050_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Plusieurs lieux."@fr .
+
+epd:id_2020-S-093-223050_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:address epd:id_2020-S-093-223050_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2020-S-093-223050_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-093-223050_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-093-223050_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2020-S-093-223050_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2020-S-093-223050_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 180.0;
+  time:unitType time:unitDay .
+
+epd:id_2020-S-093-223050_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "Mme Daniela Russello"@fr;
+  epo:hasFax "+32 64232301";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "daniella.russello@ores.be";
+  cccev:telephone "+32 64232325" .
+
+epd:id_2020-S-093-223050_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:postCode "7110";
+  locn:postName "Strépy-Bracquegnies";
+  locn:thoroughfare "Route du Grand Peuplier 4" .
+
+epd:id_2020-S-093-223050_InformationProviderOrganisationIdentifier_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:Identifier;
+  epo:hasIdentifierValue "BE 0543 696 579" .
+
+epd:id_2020-S-093-223050_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasID epd:id_2020-S-093-223050_InformationProviderOrganisationIdentifier_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:hasLegalName "Intercommunale ORES Assets SC"@fr;
+  cccev:registeredAddress epd:id_2020-S-093-223050_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2020-S-093-223050_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-093-223050_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Marché de fourniture pour l'achat de véhicules utilitaires — fourgon de plus de 3,5 t — catégorie S8."@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-093-223050_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2020-S-093-223050_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2020-S-093-223050_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2020-S-093-223050_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2020-S-093-223050_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2020-S-093-223050_TenderReceiver_dk2esofbDLefiQsKcsKjh3;
+  epo:hasDispatchDate "2020-05-11"^^xsd:date;
+  epo:hasID epd:id_2020-S-093-223050_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20200513";
+  epo:refersToLot epd:id_2020-S-093-223050_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2020-S-093-223050_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2020-S-093-223050_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 093-223050" .
+
+epd:id_2020-S-093-223050_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:postCode "7110";
+  locn:postName "Strépy-Bracquegnies";
+  locn:thoroughfare "Route du Grand Peuplier 4" .
+
+epd:id_2020-S-093-223050_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "BE 0543 696 579" .
+
+epd:id_2020-S-093-223050_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2020-S-093-223050_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "Intercommunale ORES Assets SC"@fr;
+  epo:hasMainActivityDescription "Électricité + production, transport et distribution de gaz et de chaleur";
+  cccev:registeredAddress epd:id_2020-S-093-223050_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-093-223050_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2020-S-093-223050_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2020-S-093-223050_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "WFVUTWA20 - S8" .
+
+epd:id_2020-S-093-223050_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34144700> .
+
+epd:id_2020-S-093-223050_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-093-223050_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation "Vu l'existence d'un système de qualification «WFQVUTWA», seuls les candidats qualifiés recevront l'invitation à présenter une offre pour le présent marché.Remarques sur les critères d'attribution: —"@fr;
+  epo:hasDescription "Voir II.2.4)."@fr;
+  epo:hasID epd:id_2020-S-093-223050_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-093-223050_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2020-S-093-223050_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Marché de fourniture pour l'achat de véhicules utilitaires — fourgon de plus de 3,5 t — catégorie S8"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-093-223050_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2020-S-093-223050_ReviewTerm_ZsxuomNURxGbRdavxJPhLN .
+
+epd:id_2020-S-093-223050_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2020-05-12"^^xsd:date .
+
+epd:id_2020-S-093-223050_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-093-223050_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2020-S-093-223050_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2020-S-093-223050_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— recours en annulation devant le Conseil d’État ou le juge judiciaire: 60 jours à compter de la publication, de la communication ou de la prise de connaissance de l’acte selon le cas;— recours en suspension devant le Conseil d’État, selon la procédure d’extrême urgence, ou devant le juge judiciaire, selon la procédure de référé: quinze jours à compter de la publication, de la communication ou de la prise de connaissance de l’acte selon le cas;— ce délai est réduit à dix jours en cas de publication d’un avis de transparence ex ante volontaire." .
+
+epd:id_2020-S-093-223050_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.raadvst-consetat.be"^^xsd:anyURI;
+  cccev:telephone "+32 22349611" .
+
+epd:id_2020-S-093-223050_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Bruxelles (Etterbeek)";
+  locn:thoroughfare "Rue de la Science 33" .
+
+epd:id_2020-S-093-223050_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Conseil d'État"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-093-223050_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2020-S-093-223050_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2020-S-093-223050_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-093-223050_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2020-S-093-223050_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:postCode "7110";
+  locn:postName "Strépy-Bracquegnies";
+  locn:thoroughfare "Route du Grand Peuplier 4" .
+
+epd:id_2020-S-093-223050_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3
+  a cccev:ContactPoint;
+  epo:hasContactName "Mme Carol Wlodarczyk"@fr;
+  epo:hasFax "+32 64232301";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "carol.wlodarczyk@ores.be";
+  cccev:telephone "+32 64232300" .
+
+epd:id_2020-S-093-223050_TenderReceiverOrganisationIdentifier_dk2esofbDLefiQsKcsKjh3
+  a epo:Identifier;
+  epo:hasIdentifierValue "BE 0543 696 579" .
+
+epd:id_2020-S-093-223050_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 a org:Organization;
+  epo:hasID epd:id_2020-S-093-223050_TenderReceiverOrganisationIdentifier_dk2esofbDLefiQsKcsKjh3;
+  epo:hasLegalName "Intercommunale ORES Assets SC"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-093-223050_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  cccev:registeredAddress epd:id_2020-S-093-223050_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3 .
+
+epd:id_2020-S-093-223050_TenderReceiver_dk2esofbDLefiQsKcsKjh3 a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2020-S-093-223050_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  epo:playedBy epd:id_2020-S-093-223050_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 .

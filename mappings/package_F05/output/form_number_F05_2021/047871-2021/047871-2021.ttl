@@ -1,0 +1,227 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-020-047871_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.promitheus.gov.gr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-020-047871_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-020-047871_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF;
+  epo:playedBy epd:id_2021-S-020-047871_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2021-S-020-047871_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF a cccev:ContactPoint;
+  epo:hasContactName "Δημήτριος Βαντσιούρης"@el;
+  epo:hasFax "+30 239130130";
+  epo:hasInternetAddress "https://dimoschalkidonos.gr/"^^xsd:anyURI;
+  cccev:email "d.vantsiouris@n3.syzefxis.gov.gr";
+  cccev:telephone "+30 2391330162" .
+
+epd:id_2021-S-020-047871_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF a org:Organization;
+  epo:hasLegalName "Δήμος Χαλκηδόνος"@el;
+  cccev:registeredAddress epd:id_2021-S-020-047871_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2021-S-020-047871_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-020-047871_BuyerOrganisationGroup_gFUcNYVmTUBiATKNrzmurF a epo:OrganisationGroup;
+  epo:hasMainActivityDescription "Γενικές δημόσιες υπηρεσίες";
+  epo:hasMember epd:id_2021-S-020-047871_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2021-S-020-047871_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-020-047871_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-020-047871_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-020-047871_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-020-047871_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Δημήτριος Βαντσιούρης"@el;
+  epo:hasFax "+30 239130130";
+  epo:hasInternetAddress "https://dimoschalkidonos.gr/"^^xsd:anyURI;
+  cccev:email "d.vantsiouris@n3.syzefxis.gov.gr";
+  cccev:telephone "+30 2391330162" .
+
+epd:id_2021-S-020-047871_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Δ.Κ. Αδένδρου Δήμου Χαλκηδόνος."@el .
+
+epd:id_2021-S-020-047871_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL522>;
+  locn:address epd:id_2021-S-020-047871_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-020-047871_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-020-047871_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-020-047871_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-020-047871_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-020-047871_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 18.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-020-047871_Fund_HKNfdBmeACvzBZy3TfjLFj a epo:Fund;
+  epo:hasDescription "Το έργο χρηματοδοτείται από Επιχειρησιακό Πρόγραμμα «Υποδομές Μεταφορών, Περιβάλλον και Αειφόρος Ανάπτυξη 2014 - 2020», με συγχρηματοδότηση του Ταμείου Συνοχής [κωδικός Πράξης / MIS (ΟΠΣ): 5003925]."@el .
+
+epd:id_2021-S-020-047871_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasContactName "Δημήτριος Βαντσιούρης"@el;
+  epo:hasFax "+30 239130130";
+  epo:hasInternetAddress "https://dimoschalkidonos.gr/"^^xsd:anyURI;
+  cccev:email "d.vantsiouris@n3.syzefxis.gov.gr";
+  cccev:telephone "+30 2391330162" .
+
+epd:id_2021-S-020-047871_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL522>;
+  locn:postCode "571 00";
+  locn:postName "Κουφάλια";
+  locn:thoroughfare "Εθνικής Αντίστασης 36" .
+
+epd:id_2021-S-020-047871_InformationProviderOrganisationIdentifier_FxmRFqszG85mxBF5kaCcKe
+  a epo:Identifier;
+  epo:hasIdentifierValue "https://dimoschalkidonos.gr/" .
+
+epd:id_2021-S-020-047871_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasID epd:id_2021-S-020-047871_InformationProviderOrganisationIdentifier_FxmRFqszG85mxBF5kaCcKe;
+  epo:hasLegalName "Δήμος Χαλκηδόνος"@el;
+  cccev:registeredAddress epd:id_2021-S-020-047871_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2021-S-020-047871_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-020-047871_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "Κριτήριο για την ανάθεση της σύμβασης είναι η πλέον συμφέρουσα από οικονομικής άποψης προσφορά, μόνο βάσει τιμής (χαμηλότερη τιμή)."@el;
+  epo:hasDescription "Το δημοπρατούμενο έργο περιλαμβάνει την κατασκευή και τη θέση σε λειτουργία του δικτύου αποχέτευσης του οικισμού Αδένδρου, με σύστημα αναρρόφησης (vacuum), το αντίστοιχο αντλιοστάσιο αναρρόφησης και τον καταθλιπτικό αγωγό προς την Εγκατάσταση Επεξεργασίας Λυμάτων."@el;
+  epo:hasEstimatedValue epd:id_2021-S-020-047871_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isFundedBy epd:id_2021-S-020-047871_Fund_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-020-047871_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2021-S-020-047871_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
+
+epd:id_2021-S-020-047871_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 8585708.16;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-020-047871_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 8585708.16;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-020-047871_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-020-047871_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-020-047871_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2021-S-020-047871_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-020-047871_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2021-S-020-047871_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-020-047871_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-01-25"^^xsd:date;
+  epo:hasID epd:id_2021-S-020-047871_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210129";
+  epo:refersToLot epd:id_2021-S-020-047871_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-020-047871_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-020-047871_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 020-047871" .
+
+epd:id_2021-S-020-047871_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL522>;
+  locn:postCode "571 00";
+  locn:postName "Κουφάλια";
+  locn:thoroughfare "Εθνικής Αντίστασης 36" .
+
+epd:id_2021-S-020-047871_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL522>;
+  locn:postCode "571 00";
+  locn:postName "Κουφάλια";
+  locn:thoroughfare "Εθνικής Αντίστασης 36" .
+
+epd:id_2021-S-020-047871_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Δήμος Χαλκηδόνος"@el;
+  cccev:registeredAddress epd:id_2021-S-020-047871_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-020-047871_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45232400> .
+
+epd:id_2021-S-020-047871_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-020-047871_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription "Το δημοπρατούμενο έργο περιλαμβάνει την κατασκευή και τη θέση σε λειτουργία του δικτύου αποχέτευσης του οικισμού Αδένδρου, με σύστημα αναρρόφησης (vacuum), το αντίστοιχο αντλιοστάσιο αναρρόφησης και τον καταθλιπτικό αγωγό προς την Εγκατάσταση Επεξεργασίας Λυμάτων. Συγκεκριμένα, το έργο περιλαμβάνει:— δίκτυο αναρρόφησης κενού (vacuum), για τη συλλογή των λυμάτων του οικισμού του Αδένδρου στην προβλεπόμενη θέση του κεντρικού αντλιοστασίου (Α/Σ Α), και— αντλιοστάσιο (Α/Σ Α) αναρρόφησης και κατάθλιψης των λυμάτων προς την εγκατάσταση επεξεργασίας (Ε.Ε.Λ.) Χαλκηδόνας - Αδένδρου,— δίδυμο καταθλιπτικό αγωγό (ΚΑ-Α) από το αντλιοστάσιο Α/Σ Α μέχρι το φρεάτιο εισόδου της Ε.Ε.Λ..Στο αντικείμενο των έργων περιλαμβάνονται όλα τα προδιαγραφόμενα τεχνικά έργα και βοηθητικά συστήματα, από τα φρεάτια αναρρόφησης των καταναλωτών μέχρι την είσοδο των λυμάτων στην Ε.Ε.Λ.."@el;
+  epo:hasEstimatedValue epd:id_2021-S-020-047871_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-020-047871_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-020-047871_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "«Κατασκευή έργων συλλογής και μεταφοράς λυμάτων Δ.Κ. Αδένδρου»."@el;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-020-047871_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-020-047871_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2021-S-020-047871_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-020-047871_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-020-047871_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2021-S-020-047871_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2021-S-020-047871_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "182 33";
+  locn:postName "Αθήνα";
+  locn:thoroughfare "Λεωφόρος Θηβών 196 - 198, Άγ. Ιωάννης Ρέντης, κτίριο «Κεράνης»" .
+
+epd:id_2021-S-020-047871_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+30 2132141229";
+  epo:hasInternetAddress "http://www.aepp-procurement.gr"^^xsd:anyURI;
+  cccev:email "aepp@aepp-procurement.gr";
+  cccev:telephone "+30 2132141216" .
+
+epd:id_2021-S-020-047871_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Αρχή Εξέτασης Προδικαστικών Προσφυγών (Α.Ε.Π.Π.)"@el;
+  epo:hasPrimaryContactPoint epd:id_2021-S-020-047871_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-020-047871_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-020-047871_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-020-047871_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-020-047871_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Ακριβείς πληροφορίες σχετικά με την (τις) προθεσμία(-ες) για την υποβολή προσφυγών:Ακριβείς πληροφορίες σχετικά με την (τις) προθεσμία(-ες) για την υποβολή προσφυγών:Κάθε ενδιαφερόμενος, ο οποίος έχει ή είχε συμφέρον να του ανατεθεί η συγκεκριμένη σύμβαση και έχει ή είχε υποστεί ή ενδέχεται να υποστεί ζημία από εκτελεστή πράξη ή παράλειψη τής αναθέτουσας αρχής, κατά παράβαση τής νομοθεσίας τής Ευρωπαϊκής Ένωσης ή τής εσωτερικής νομοθεσίας, δικαιούται να ασκήσει προδικαστική προσφυγή, ενώπιον της Α.Ε.Π.Π., κατά της σχετικής πράξης ή παράλειψης της αναθέτουσας αρχής, προσδιορίζοντας ειδικώς τις νομικές και πραγματικές αιτιάσεις, που δικαιολογούν το αίτημά του. Σε περίπτωση προσφυγής κατά πράξης της αναθέτουσας αρχής, η προθεσμία για την άσκηση της προδικαστικής προσφυγής είναι:α) δέκα (10) ημέρες, από την κοινοποίηση τής προσβαλλόμενης πράξης στον ενδιαφερόμενο οικονομικό φορέα, αν η πράξη κοινοποιήθηκε με ηλεκτρονικά μέσα ή τηλεομοιοτυπία ήβ) δεκαπέντε (15) ημέρες, από την κοινοποίηση της προσβαλλόμενης πράξης σε αυτόν, αν χρησιμοποιήθηκαν άλλα μέσα επικοινωνίας, άλλως·γ) δέκα (10) ημέρες, από την πλήρη —πραγματική ή τεκμαιρόμενη— γνώση της πράξης, που βλάπτει τα συμφέροντα του ενδιαφερόμενου οικονομικού φορέα.Σε περίπτωση παράλειψης, η προθεσμία για την άσκηση της προδικαστικής προσφυγής είναι δεκαπέντε (15) ημέρες, από την επομένη της συντέλεσης τής προσβαλλόμενης παράλειψης. Η προδικαστική προσφυγή, με βάση και τα όσα προβλέπονται στο Π.Δ. 39/2017, κατατίθεται ηλεκτρονικά, βάσει του τυποποιημένου εντύπου και μέσω της λειτουργικότητας «Επικοινωνία» του υποσυστήματος προς την Α.Α., επιλέγοντας, κατά περίπτωση, την ένδειξη «Προδικαστική Προσφυγή» και επισυνάπτοντας το σχετικό έγγραφο, σύμφωνα με την παρ. 3 του άρθρου 8 της υπ' αριθ. 117384/26.10.2017 Κ.Υ.Α.. Για το παραδεκτό της άσκησης τής προδικαστικής προσφυγής, κατατίθεται παράβολο από τον προσφεύγοντα υπέρ του Δημοσίου, κατά τα ειδικά οριζόμενα στο άρθρο 363 του ν. 4412/2016, το οποίο επιστρέφεται στον προσφεύγοντα, σε περίπτωση ολικής ή μερικής αποδοχής της προσφυγής του ή σε περίπτωση που, πριν από την έκδοση τής απόφασης τής Α.Ε.Π.Π. επί της προσφυγής, η Α.Α. ανακαλεί την προσβαλλόμενη πράξη ή προβαίνει στην οφειλόμενη ενέργεια.Η προθεσμία για την άσκηση της προδικαστικής προσφυγής και η άσκησή της κωλύουν τη σύναψη τής σύμβασης επί ποινή ακυρότητας, η οποία διαπιστώνεται με απόφαση της Α.Ε.Π.Π. μετά από άσκηση προσφυγής, σύμφωνα με το άρθρο 368 του ν. 4412/2016.Η προηγούμενη παράγραφος δεν εφαρμόζεται στην περίπτωση που, κατά τη διαδικασία σύναψης τής παρούσας σύμβασης, υποβληθεί μόνο μία (1) προσφορά. Κατά τα λοιπά, η άσκηση της προδικαστικής προσφυγής δεν κωλύει την πρόοδο τής διαγωνιστικής διαδικασίας, εκτός αν ζητηθούν προσωρινά μέτρα προστασίας, κατά το άρθρο 366 του Ν.4412/2016." .
+
+epd:id_2021-S-020-047871_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+30 2132141229";
+  epo:hasInternetAddress "http://www.aepp-procurement.gr"^^xsd:anyURI;
+  cccev:email "aepp@aepp-procurement.gr";
+  cccev:telephone "+30 2132141216" .
+
+epd:id_2021-S-020-047871_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "182 33";
+  locn:postName "Αθήνα";
+  locn:thoroughfare "Λεωφόρος Θηβών 196 - 198, Άγ. Ιωάννης Ρέντης, κτίριο «Κεράνης»" .
+
+epd:id_2021-S-020-047871_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Αρχή Εξέτασης Προδικαστικών Προσφυγών (Α.Ε.Π.Π.)"@el;
+  epo:hasPrimaryContactPoint epd:id_2021-S-020-047871_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-020-047871_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-020-047871_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-020-047871_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-020-047871_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "EL";
+  epo:hasSubmissionURL "www.promitheus.gov.gr"^^xsd:anyURI .

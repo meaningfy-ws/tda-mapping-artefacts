@@ -1,0 +1,145 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-248-658140_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://irl.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=204290&B=ETENDERS_SIMPLE"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-248-658140_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://irl.eu-supply.com/ctm/Company/CompanyInformation/Index/200680"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-248-658140_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-248-658140_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-248-658140_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Sarah Toye"@en;
+  epo:hasInternetAddress "www.futurenergyireland.ie"^^xsd:anyURI;
+  cccev:email "Sarah.toye@futurenergyireland.ie";
+  cccev:telephone "+353 876786316" .
+
+epd:id_2021-S-248-658140_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Ireland"@en .
+
+epd:id_2021-S-248-658140_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE>;
+  locn:address epd:id_2021-S-248-658140_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-248-658140_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-248-658140_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-248-658140_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-248-658140_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-248-658140_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-248-658140_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/31121340> .
+
+epd:id_2021-S-248-658140_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-248-658140_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "Please note the timeframe cited in section 11.2.7 is indicative only"@en;
+  epo:hasDescription "The purpose of this pre-qualification questionnaire is to identify suitably qualified technology providers developing long duration storage technologies with the potential to cost effectively solve grid congestion and system integration challenges on a power system with up to 80% renewables (primarily wind energy). The ultimate aim / ambition of this process is the deployment of at least 500MW of 12-100hr storage on the Irish power system by 2030.Please find pre-qualification questionnaire attached with further details on requirements and the various steps within the process."@en;
+  epo:hasEstimatedValue epd:id_2021-S-248-658140_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-248-658140_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-248-658140_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-248-658140_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-248-658140_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-248-658140_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-248-658140_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-248-658140_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2021-S-248-658140_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2021-12-17"^^xsd:date;
+  epo:hasID epd:id_2021-S-248-658140_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20211222";
+  epo:refersToLot epd:id_2021-S-248-658140_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-248-658140_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-248-658140_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 248-658140" .
+
+epd:id_2021-S-248-658140_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE>;
+  locn:postCode "Co.Dublin";
+  locn:postName "Dublin";
+  locn:thoroughfare "25-27, Fitzwilliam Hall, Fitzwilliam Place" .
+
+epd:id_2021-S-248-658140_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "683948" .
+
+epd:id_2021-S-248-658140_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2021-S-248-658140_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "FuturEnergy Ireland Development DAC"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2021-S-248-658140_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-248-658140_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71314000> .
+
+epd:id_2021-S-248-658140_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-248-658140_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Interested parties must register their interest on the E-tenders website (www.etenders.gov.ie) in order to be included on the mailing list for clarifications. All clarifications must be uploaded electronically to the relevant section on E-tenders.The contracting entity is not responsible for any costs, charges or expenses incurred by candidates or tenderers.At its absolute discretion, the contracting entity may elect to terminate this procurement process and any contract awarded under the procurement.Please note that the envisaged maximum number of shortlisted participants cited is indicative only (Ref 11.2.7).Please also note that the estimated timeframe for the procurement process can be viewed in the Pre-Qualification documentation.The contracting entity reserves the right to award to more than one entity.Expression of Interest documents available to download from www.etenders.gov.ie (RFT 204889)"@en;
+  epo:hasDescription "The purpose of this pre-qualification questionnaire is to identify suitably qualified technology providers developing long duration storage technologies with the potential to cost effectively solve grid congestion and system integration challenges on a power system with up to 80% renewables (primarily wind energy). The ultimate aim / ambition of this process is the deployment of at least 500MW of 12-100hr storage on the Irish power system by 2030.Please find pre-qualification questionnaire attached with further details on requirements and the various steps within the process."@en;
+  epo:hasEstimatedValue epd:id_2021-S-248-658140_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/innovation>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-248-658140_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-248-658140_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Expression of interest for an Innovative Partnership Process between FuturEnergy Ireland and Candidate Long Duration Energy Storage Technology Providers"@en;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-248-658140_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-248-658140_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-248-658140_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-248-658140_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-248-658140_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-248-658140_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  cccev:email "highcourtcentraloffice@courts.ie";
+  cccev:telephone "+353 18886000" .
+
+epd:id_2021-S-248-658140_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postCode "7";
+  locn:postName "Dublin";
+  locn:thoroughfare "The Four Courts" .
+
+epd:id_2021-S-248-658140_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "The High Court"@en;
+  epo:hasPrimaryContactPoint epd:id_2021-S-248-658140_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-248-658140_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-248-658140_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-248-658140_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-248-658140_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "http://irl.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=204290&B=ETENDERS_SIMPLE"^^xsd:anyURI .
+
+epd:id_2021-S-248-658140_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-248-658140_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-248-658140_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

@@ -1,0 +1,224 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-181-410940_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://ratp.bravosolution.com/web/login.html"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2018-S-181-410940_AdditionalBuyer_HZ5vLjwSpvz8KQANN3DWSt a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-181-410940_AdditionalContactPoint_HZ5vLjwSpvz8KQANN3DWSt;
+  epo:playedBy epd:id_2018-S-181-410940_AdditionalOrganisation_HZ5vLjwSpvz8KQANN3DWSt .
+
+epd:id_2018-S-181-410940_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-181-410940_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF;
+  epo:playedBy epd:id_2018-S-181-410940_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2018-S-181-410940_AdditionalContactPoint_HZ5vLjwSpvz8KQANN3DWSt a cccev:ContactPoint;
+  epo:hasInternetAddress "www.sncf.com"^^xsd:anyURI;
+  cccev:email "mathieu.riffaud@reseau.sncf.fr" .
+
+epd:id_2018-S-181-410940_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF a cccev:ContactPoint;
+  epo:hasInternetAddress "www.sncf.com"^^xsd:anyURI;
+  cccev:email "fauzia.zerkaoui@sncf.fr" .
+
+epd:id_2018-S-181-410940_AdditionalOrganisation_HZ5vLjwSpvz8KQANN3DWSt a org:Organization;
+  epo:hasID epd:id_2018-S-181-410940_OrganisationIdentifier_HZ5vLjwSpvz8KQANN3DWSt;
+  epo:hasLegalName "SNCF Réseau"@fr;
+  cccev:registeredAddress epd:id_2018-S-181-410940_OrganisationAddress_HZ5vLjwSpvz8KQANN3DWSt .
+
+epd:id_2018-S-181-410940_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF a org:Organization;
+  epo:hasID epd:id_2018-S-181-410940_OrganisationIdentifier_gFUcNYVmTUBiATKNrzmurF;
+  epo:hasLegalName "SNCF Mobilités"@fr;
+  cccev:registeredAddress epd:id_2018-S-181-410940_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2018-S-181-410940_BuyerOrganisationGroup_gFUcNYVmTUBiATKNrzmurF a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  epo:hasMember epd:id_2018-S-181-410940_AdditionalOrganisation_HZ5vLjwSpvz8KQANN3DWSt,
+    epd:id_2018-S-181-410940_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF, epd:id_2018-S-181-410940_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-181-410940_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://ratp.bravosolution.com/web/login.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-181-410940_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-181-410940_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-181-410940_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Natacha Nahmias"@fr;
+  epo:hasInternetAddress "www.ratp.fr"^^xsd:anyURI;
+  cccev:email "NATACHA.NAHMIAS@ratp.fr" .
+
+epd:id_2018-S-181-410940_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Île-de-France"@fr .
+
+epd:id_2018-S-181-410940_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR1>;
+  locn:address epd:id_2018-S-181-410940_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2018-S-181-410940_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-181-410940_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-181-410940_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Des avenants et marchés complémentaires pourront être conclus sans mise en concurrence conformément aux règles et principes juridiques en vigueurLa RATP se réserve la possibilité de confier au titulaire du marché des marchés ou accord-cadre ayant pour objet la réalisation de prestations similaires qui lui sont confiées au titre du présent contrat, par application de l’article 30-I-7o du décret no 2016-360 relatif aux marchés publics."@fr .
+
+epd:id_2018-S-181-410940_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true .
+
+epd:id_2018-S-181-410940_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-181-410940_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2018-S-181-410940_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "L'accord cadre excède la durée de 8 ans puisque les prestations demandées doivent, conformément aux décrets no2006-1279 et no2017-440, couvrir l'intégralité du projet d'acquisition et de mise en service du matériel roulant MING qui excède cette durée."@fr .
+
+epd:id_2018-S-181-410940_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71317000>, <http://data.europa.eu/cpv/cpv/71317210>,
+    <http://data.europa.eu/cpv/cpv/79700000> .
+
+epd:id_2018-S-181-410940_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-181-410940_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "La présente consultation relève de la catégorie d'achats suivante: C23 — sûreté, sécurité"@fr;
+  epo:hasDescription "L'accord-cadre est décomposé en neuf tranches, comme suit:— une tranche ferme comprenant l’évaluation:—— du dossier préliminaire de sécurité et du dossier de sécurité concernant les sous-systèmes STPG (système de transport public guidé) autres que le matériel roulant et le sous-système de transition,—— du dossier de conception de sécurité du matériel et du dossier de sécurité du matériel,—— de l’identification des modifications du sous-système de transition,— 8 tranches optionnelles comprenant l’évaluation:—— d’une note sur la démarche d’identification des modifications sur le sous-système de transition (tranche optionnelle no 1),—— du dossier d’analyse des risques croisés et du dossier de clôture des risques croisé, et éventuels dossiers modificatifs ou complémentaires (tranche optionnelle no 2),—— du dossier justificatif de la Sécurité portant sur la démonstration de la sécurité des sous-systèmes du RFN (autres que le Matériel roulant et sous-système de transition) modifiés significativement — règlement (UE) no 402/2013 (tranche optionnelle no 3),—— du dossier préliminaire de sécurité et du dossier de sécurité sur le STPG modificatifs ou complémentaires (tranche optionnelle no 4),—— du dossier de conception de sécurité du matériel roulant et du dossier de sécurité du matériel roulant modificatifs ou complémentaires, liés notamment à l’intégration de NExTEO à bord du MING (tranche optionnelle no 5),—— du dossier de récolement (tranche optionnelle no 6),—— du dossier d’autorisation des essais sur le réseau STPG (tranche optionnelle no 7),—— de tout autre dossier, démonstration de sécurité ou étude qui sera rendu nécessaire par l’application de la réglementation et de son évolution pendant la durée du projet (tranche optionnelle no 8). Cette tranche fera l'objet d'un minimum commandé de 0 EUR et un maximum de 100 000 EUR HT."@fr;
+  epo:hasPurpose epd:id_2018-S-181-410940_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-181-410940_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-181-410940_AdditionalBuyer_HZ5vLjwSpvz8KQANN3DWSt,
+    epd:id_2018-S-181-410940_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF, epd:id_2018-S-181-410940_Buyer_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2018-S-181-410940_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2018-S-181-410940_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2018-S-181-410940_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2018-S-181-410940_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2018-09-18"^^xsd:date;
+  epo:hasID epd:id_2018-S-181-410940_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20180920";
+  epo:refersToLot epd:id_2018-S-181-410940_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2018-S-181-410940_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2018-S-181-410940_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 181-410940" .
+
+epd:id_2018-S-181-410940_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75599";
+  locn:postName "Paris Cedex 12";
+  locn:thoroughfare "LAC B916 — 54 quai de la Rapée" .
+
+epd:id_2018-S-181-410940_OrganisationAddress_HZ5vLjwSpvz8KQANN3DWSt a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "93210";
+  locn:postName "La Plaine-Saint-Denis";
+  locn:thoroughfare "15-17 rue Jean-Philippe Rameau" .
+
+epd:id_2018-S-181-410940_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postName "La Plaine-Saint-Denis";
+  locn:thoroughfare "9 rue Jean-Philippe Rameau" .
+
+epd:id_2018-S-181-410940_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "77566343801906" .
+
+epd:id_2018-S-181-410940_OrganisationIdentifier_HZ5vLjwSpvz8KQANN3DWSt a epo:Identifier;
+  epo:hasIdentifierValue "412 280 737" .
+
+epd:id_2018-S-181-410940_OrganisationIdentifier_gFUcNYVmTUBiATKNrzmurF a epo:Identifier;
+  epo:hasIdentifierValue "552 049 447" .
+
+epd:id_2018-S-181-410940_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2018-S-181-410940_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "RATP"@fr;
+  cccev:registeredAddress epd:id_2018-S-181-410940_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-181-410940_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "DHA_2018MOP13323" .
+
+epd:id_2018-S-181-410940_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71300000> .
+
+epd:id_2018-S-181-410940_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-181-410940_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "— conditions de remise des candidatures:Le candidat répond sur: https://ratp.bravosolution.com/web/login.htmlEn cas de difficulté technique/question, appeler la hotline au +33 0811906438 ou depuis l'étranger au +33 146095672 ou via ratp@bravosolution.frLe candidat se référera aux pré-requis techniques disponibles sur la plate-forme.Il sélectionne la consultation no DHA_2018MOP13323 puis candidate en ligne, et clique sur le bouton «Publier réponse». L’inscription est gratuite et nécessaire pour répondre et être informé en cas de modification de la consultation. Ce dépôt donne lieu à un AR mentionnant date et heure de réception sur la plateforme. La candidature qui ne serait pas complètement chargée et publiée en ligne avant la date et heure limites, sera rejetée. Le candidat peut ne pas fournir l'ensemble des documents et renseignements demandés, hormis le DC1 (ou équivalent), qui sera remis sur la plateforme, à la condition que ceux-ci soient disponibles au moins 1 mois, accessibles directement et gratuitement par l'acheteur par le biais:— d’un système électronique de mise à disposition d’informations administré par un organisme officiel,Ou— d’un espace de stockage numérique, sous réserve de la garantie de confidentialité dudit espace.Le cas échéant, le candidat précisera dans son dossier toutes les informations nécessaires à la consultation de son dossier: si les documents ont déjà été transmis dans une précédente consultation, les éléments doivent demeurer valables. Le candidat indiquera la réf de la consultation pour laquelle les documents ont déjà été transmis.Pour les candidatures retenues, le lien permettant de télécharger le DCE sera précisé dans le mail d’invitation à présenter une offre.— informations importantes:En cas de dépôts successifs, seule sera retenue la dernière réponse déposée avant la date et heure limites de réception des candidatures/offres.Le candidat peut adresser, dans les délais impartis, une Copie de sauvegarde (CS) de sa candidature/offre sur support physique électronique ou sur support papier,Par lettre recommandée avec AR avec obligatoirement la mention copie de sauvegarde à l’adresse suivante:Département MOP — GS AchatsRéf: DHA_2018MOP1332340 bis rue Roger SalengroBâtiment Le Périastre94724 Fontenay-sous-bois CedexOu remise à la RATP contre récépissé, les jours ouvrés, du lundi au vendredi de 9:00 à 12:00 et de 14:00 à 16:00 à l’adresse susmentionnée.Les réponses dématérialisées dans lesquelles un virus serait détecté ne feront pas l’objet d’une tentative de restauration. Elles seront réputées n’avoir jamais été reçues et le candidat en sera informé: les CS seront alors examinées.En cas de remise hors délai des CS, celles-ci seront réputées n’avoir jamais été reçues et le candidat en sera informé, les CS seront rejetées et retournées au candidat sans avoir été examinées.Dans le cas où la CS comporterait un ou des support(s) électronique(s) dans le(s)quel(s) un virus serait détecté, la candidature/offre du candidat sera définitivement rejetée.Les candidatures / offres par télécopie ou par courriel ne sont pas admises. Les documents transmis au format .exe ne sont pas acceptés.L’attribution du marché entraînera obligatoirement la rematérialisation de l’ensemble des pièces et leur signature manuscrite.La candidature et l’offre devront être remises en français."@fr;
+  epo:hasDescription "Le schéma directeur du RER B Sud prévoit, à l’horizon 2025-2030, la mise en circulation d’un nouveau matériel roulant en remplacement des matériels existants. Ce projet s'inscrit dans le cadre du contrat plan État Région Île-de-France 2015-2020. Il comprend notamment l'adaptation des infrastructures de la ligne B et l'acquisition du MING (Matériel interconnecté nouvelle génération).Le présent avis concerne l’acquisition par la RATP, SNCF Réseau et SNCF Mobilités de prestations d’évaluation de la sécurité des modifications apportées au système mixte de la ligne B du RER. Ces prestations seront réalisées par un seul organisme disposant à la fois de l'accréditation, en tant qu’organisme d’évaluation au sens du règlement (UE) no 402/2013, et de celle, en tant qu’Organisme qualifié accrédité (OQA), prévue à l'article 13 du décret 2017-440.L'accord-cadre est exécuté dans le cadre d’un groupement de commandes entre la RATP (coordonnateur), SNCF Réseau et SNCF Mobilités."@fr;
+  epo:hasID epd:id_2018-S-181-410940_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-181-410940_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-181-410940_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "RER B — Renouvellement du matériel roulant par un Matériel interconnecté nouvelle génération (MING) — mission Organisme qualifié accrédité (OQA) et d'organisme d'évaluation indépendant"@fr;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-181-410940_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2018-S-181-410940_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2018-S-181-410940_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2018-S-181-410940_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2018-S-181-410940_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-181-410940_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-181-410940_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-181-410940_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75599";
+  locn:postName "Paris Cedex 12";
+  locn:thoroughfare "54 quai de la Rapée" .
+
+epd:id_2018-S-181-410940_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 158772123";
+  cccev:email "info.recours@ratp.fr";
+  cccev:telephone "+33 158772001" .
+
+epd:id_2018-S-181-410940_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "RATP Département juridique — unité projets et contrats"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-181-410940_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2018-S-181-410940_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-181-410940_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-181-410940_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-181-410940_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-paris@juradm.fr" .
+
+epd:id_2018-S-181-410940_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 4";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2018-S-181-410940_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-181-410940_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2018-S-181-410940_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-181-410940_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-181-410940_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-181-410940_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://ratp.bravosolution.com/web/login.html"^^xsd:anyURI .
+
+epd:id_2018-S-181-410940_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-181-410940_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-181-410940_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

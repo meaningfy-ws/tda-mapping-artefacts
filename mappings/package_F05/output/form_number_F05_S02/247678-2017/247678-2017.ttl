@@ -1,0 +1,228 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-117-234453_Notice a epo:Notice;
+  epo:hasID epd:id_2017-S-117-234453_NoticeIdentifier_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-117-234453_NoticeIdentifier_ENkaVK94Yfx7TfS6UZfS4G a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 117-234453" .
+
+epd:id_2017-S-122-247678_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://platform.negometrix.com/PublishedTenders.aspx?tenderid=64782"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2017-S-122-247678_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF a epo:Buyer;
+  epo:hasBuyerProfile "https://platform.negometrix.com/PublishedTenders.aspx?tenderid=64782"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-122-247678_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF;
+  epo:playedBy epd:id_2017-S-122-247678_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2017-S-122-247678_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF a cccev:ContactPoint;
+  epo:hasContactName "Andre Knecht"@en;
+  epo:hasInternetAddress "http://www.tennet.eu"^^xsd:anyURI;
+  cccev:email "Andre.Knecht@tennet.eu";
+  cccev:telephone "+31 263733723" .
+
+epd:id_2017-S-122-247678_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF a org:Organization;
+  epo:hasID epd:id_2017-S-122-247678_OrganisationIdentifier_gFUcNYVmTUBiATKNrzmurF;
+  epo:hasLegalName "TenneT TSO GmbH"@en;
+  cccev:registeredAddress epd:id_2017-S-122-247678_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2017-S-122-247678_BuyerOrganisationGroup_gFUcNYVmTUBiATKNrzmurF a epo:OrganisationGroup;
+  epo:hasMainActivityDescription "transmission system operator (electrical power)";
+  epo:hasMember epd:id_2017-S-122-247678_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2017-S-122-247678_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-122-247678_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://platform.negometrix.com/PublishedTenders.aspx?tenderid=64782"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-122-247678_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-122-247678_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-122-247678_Channel_cW7StLx8qUnGYzx322HBZC a cccev:Channel;
+  epo:hasURL "www.negometrix.com"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2017-S-122-247678_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Andre Knecht"@en;
+  epo:hasInternetAddress "http://www.tennet.eu"^^xsd:anyURI;
+  cccev:email "Andre.Knecht@tennet.eu";
+  cccev:telephone "+31 263733723" .
+
+epd:id_2017-S-122-247678_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+                  TenneT's Extra High Voltage grid.
+               """@en .
+
+epd:id_2017-S-122-247678_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/NL>;
+  locn:address epd:id_2017-S-122-247678_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2017-S-122-247678_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-122-247678_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-122-247678_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+                  Possible options are announced in the tender documents.
+               """@en .
+
+epd:id_2017-S-122-247678_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2017-S-122-247678_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-122-247678_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2017-S-122-247678_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "Standardization, Security, Confidentiality, Initial Costs, Maintenance Costs."@en .
+
+epd:id_2017-S-122-247678_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/31210000> .
+
+epd:id_2017-S-122-247678_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-122-247678_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+                  The Manufacturing and Delivery of High Voltage Substation Automation Equipment, ancillary goods and services in TenneT's Extra High Voltage grid.
+                  Training of TenneT staff to perform engineering tasks is to be offered as option.
+                  Installation, System Integration, On-Site Testing and Commissioning is not in the scope.
+               """@en;
+  epo:hasPurpose epd:id_2017-S-122-247678_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-122-247678_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-122-247678_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2017-S-122-247678_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-122-247678_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2017-S-122-247678_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-122-247678_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2017-S-122-247678_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2017-S-122-247678_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2017-06-27"^^xsd:date;
+  epo:hasID epd:id_2017-S-122-247678_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20170629";
+  epo:refersToLot epd:id_2017-S-122-247678_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToPrevious epd:id_2017-S-117-234453_Notice;
+  epo:refersToProcedure epd:id_2017-S-122-247678_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-122-247678_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 122-247678" .
+
+epd:id_2017-S-122-247678_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NLD>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/NL>;
+  locn:postCode "6812 AR";
+  locn:postName "Arnhem";
+  locn:thoroughfare "Utrechtseweg 310" .
+
+epd:id_2017-S-122-247678_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/NL>;
+  locn:postCode "D-95448";
+  locn:postName "Bayreuth";
+  locn:thoroughfare "Berneckerstr. 70" .
+
+epd:id_2017-S-122-247678_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "09155985" .
+
+epd:id_2017-S-122-247678_OrganisationIdentifier_gFUcNYVmTUBiATKNrzmurF a epo:Identifier;
+  epo:hasIdentifierValue "DE 815073514" .
+
+epd:id_2017-S-122-247678_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2017-S-122-247678_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "TenneT TSO BV"@en;
+  cccev:registeredAddress epd:id_2017-S-122-247678_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-122-247678_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "EU-227 SAE" .
+
+epd:id_2017-S-122-247678_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/31210000> .
+
+epd:id_2017-S-122-247678_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw """
+               The Netherlands.
+            """@en;
+  epo:isAwardedByCPB true .
+
+epd:id_2017-S-122-247678_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-122-247678_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+               Agreements may be used by Authorized companies of TenneT TSO GmbH, TenneT TSO B.V. as well as their legally affiliated companies.
+            """@en;
+  epo:hasDescription """
+               Candidate Tenderers must sign a Non-Disclosure (‘Confidentiality’) Agreement prior to accessing confidential tender information. The NDA's can be uploaded in the Negometrix tender No 64783.
+               Scope: Manufacturing and Delivery of High Voltage Substation Automation Equipment, ancillary goods and services in TenneT's HV grid in Germany.
+               Training of TenneT staff to perform engineering tasks is to be offered as option.
+               Installation, System Integration, On-Site Testing and Commissioning is not in the scope.
+               The tendering process consists of 2 phases:
+               Phase 1: Selection phase;
+               Phase 2: Offer phase with as Call for tender (ITT, RFQ, Initial bid, Negotiation, Best and Final Offer with potential Verification by building a Proof of Concept and optional Factory audit(s), Awarding).
+               Aim: to reach one framework agreement for a period of 3 years, optionally extended by 4 times 1 year (thus potentially 7 years in total).
+            """@en;
+  epo:hasID epd:id_2017-S-122-247678_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-122-247678_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-122-247678_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+               High Voltage Substation Automation Equipment.
+            """@en;
+  epo:isCoveredByGPA false;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-122-247678_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-122-247678_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2017-S-122-247678_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2017-S-122-247678_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2017-S-122-247678_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesChannel epd:id_2017-S-122-247678_Channel_cW7StLx8qUnGYzx322HBZC;
+  epo:usesTechnique epd:id_2017-S-122-247678_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-122-247678_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-122-247678_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-122-247678_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-122-247678_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Candidates will be informed at the earliest possible opportunity about the selection decision or eventually other decisions concerning the selection procedure like exclusion of candidate or revoke of the call for tenders procedure.
+               If candidates object to this (selection) decision, they must make their objections known to TenneT within 10 days of the postmarked date of the (selection) decision by serving an application for interim measures before the competent preliminary injunctions court at Arnhem. If candidates initiate legal proceedings in connection with the(selection) decision after these 10 days, TenneT will adopt the position that those candidates have inadmissible claims. The period of 10 days must therefore be regarded as a time limit.
+               Candidates that institute summary legal proceedings are requested to send a copy of the draft summons via the message module on the Negometrix platform and to ask TenneT to provide the unavailability dates of TenneT and its legal counsel in advance. TenneT has the right to provide a copy of the served summons to stakeholders.
+               Any institution of summary legal proceedings will not oblige TenneT to suspend the call for tenders procedure and TenneT will have the right to continue the call for tenders procedure with the parties it selected.
+               If TenneT has notified the selected candidates of the instituted summary legal proceedings, the selected candidates will be required to intervene in the legal proceedings, on penalty of forfeiture of the right to take further action against any changes to the intended selection.
+            """ .
+
+epd:id_2017-S-122-247678_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  cccev:telephone "+31 0883612000" .
+
+epd:id_2017-S-122-247678_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NLD>;
+  locn:postCode "6811 CD";
+  locn:postName "Arnhem";
+  locn:thoroughfare "Walburgstraat 2-4" .
+
+epd:id_2017-S-122-247678_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Rechtbank Arnhem"@en;
+  epo:hasPrimaryContactPoint epd:id_2017-S-122-247678_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2017-S-122-247678_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-122-247678_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-122-247678_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-122-247678_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "https://platform.negometrix.com/PublishedTenders.aspx?tenderid=64782"^^xsd:anyURI .
+
+epd:id_2017-S-122-247678_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-122-247678_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-122-247678_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

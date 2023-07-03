@@ -1,0 +1,179 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-034-077750_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://access.megawatt.de/t/8f76tjsq"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-034-077750_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-034-077750_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2019-S-034-077750_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2019-S-034-077750_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "MegaWATT Ingenieurgesellschaft mbH"@de;
+  epo:hasInternetAddress "https://immobilien-lig.hamburg.de/"^^xsd:anyURI;
+  cccev:email "vergabe@megawatt.de" .
+
+epd:id_2019-S-034-077750_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Bezirk Hamburg-MitteStadtteil FinkenwerderOrtsteil 141"@de .
+
+epd:id_2019-S-034-077750_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE60>;
+  locn:address epd:id_2019-S-034-077750_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2019-S-034-077750_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-034-077750_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-034-077750_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2019-S-034-077750_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2019-S-034-077750_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 180.0;
+  time:unitType time:unitMonth .
+
+epd:id_2019-S-034-077750_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasFax "+49 3085791899";
+  epo:hasInternetAddress "www.megawatt.de"^^xsd:anyURI;
+  cccev:email "vergabe@megawatt.de";
+  cccev:telephone "+49 308579180" .
+
+epd:id_2019-S-034-077750_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE30>;
+  locn:postCode "10999";
+  locn:postName "Berlin";
+  locn:thoroughfare "Paul-Lincke-Ufer 8 b" .
+
+epd:id_2019-S-034-077750_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasLegalName "MegaWATT Ingenieurgesellschaft mbH"@de;
+  cccev:registeredAddress epd:id_2019-S-034-077750_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2019-S-034-077750_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45232142>, <http://data.europa.eu/cpv/cpv/65400000> .
+
+epd:id_2019-S-034-077750_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-034-077750_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Die Zuschlagskriterien werden nach dem Teilnahmewettbewerb mit der Aufforderung zur Angebotsabgabe bekannt gegeben. Eine noch zu konkretisierende Kurzbeschreibung der beiden Zuschlagskriterien Energiepreise und Nachhaltigkeit findet sich in der Aufforderung zur Abgabe von Teilnahmeanträgen [https://access.megawatt.de/t/8f76tjsq]."@de;
+  epo:hasDescription "1) RahmenbedingungenDer Landesbetrieb Immobilienmanagement und Grundvermögen (LIG) entwickelt in den nächsten Jahren ein neues Stadtquartier auf dem Gebiet des Bebauungsplanes „Finkenwerder 32“. Für das Bebauungsplangebiet ist noch ein Planfeststellungsverfahren für die Oberflächenentwässerung durchzuführen (Zuständigkeit Wasserbehörde BA Mitte). Sollte es zu Verzögerungen bei der wasserrechtlichen Planfeststellung kommen, kann sich dies auch auf den Zeitplan der Konzessionsvergabe für die Wärmeversorgung auswirken.Derzeit wird für die im Rahmen der Konzession zu versorgenden Einfamilienhäuser, Doppelhäuser sowie Reihenhäuser ein Wärmebedarf von insgesamt zwischen 3 800 MWhth bis 4 500 MWhth mit einer thermischen Leistung von 2 bis 2,5 MWth prognostiziert, basierend auf einer erwarteten Gebietsentwicklung von ca. 70 000 m2 (beheizte Bruttogrundfläche - BGF).Nach den Festsetzungen des Bebauungsplanes sind für die Beheizung und Bereitstellung des Warmwassers neu zu errichtende Gebäude im Bebauungsplangebiet an ein Wärmenetz anzuschließen, das überwiegend mit erneuerbaren Energien oder einer Kombination aus KWK und erneuerbaren Energien versorgt wird.Die Leistungsbeschreibung wird gewisse Anforderungen enthalten, die obligatorisch zu berücksichtigten sein werden. Diese sind insbesondere der Standort bzw. das Flächendargebot der Energiezentrale soweit notwendig sowie sonstiger Verfügung stehende Flächen, Primärenergiefaktor nach FW 309-1, Ggf. Einhaltung einer maximalen CO2-Kennziffer. Innerhalb der genannten Rahmenbedingungen bleibt es dem Bieter unbenommen, alternative Konzepte anzubieten. Die Verantwortung der Umsetzbarkeit des gewählten Konzeptes liegt beim Bieter.Die Aufnahme der Wärmeversorgung durch den Konzessionsnehmer (KN) soll nach jetzigem Stand frühestens im 4. Quartal 2021 erfolgen (nach erster Bebauung, anschließend nach Baufortschritt, ggf. mit Provisorien).2) LeistungsprogrammGegenstand der zu vergebenden Konzession ist die Deckung des Raumwärmebedarfs und zur Trinkwassererwärmung auf dem Gebiet des Bebauungsplanes „Finkenwerder 32“ zwischen dem Finkenwerder Norderdeich und dem Finkenwerder Landscheideweg sowie östlich des Norderkirchenwegs und des Bausenhofs bis zum Norderschulweg (Bezirk Hamburg-Mitte, Ortsteil 141). Die Wärmeversorgung von Bestandsgebäuden ist von der Konzession ausgenommen.Im Leistungsumfang des KG sind nach aktuellem Sachstand enthalten: Kampfmittelsondierung und Altlastenfreiheit, -Einräumung Wegenutzungsrecht (Konzessionsvertrag), Ggf. notwendige Eintragung von Dienstbarkeiten. Schnittstellen zu Leistungen des KN sind Gegenstand der Verhandlungen.Im Konzessionsvertrag wird der KN mit der Errichtung und dem Betrieb der für die Versorgung erforderlichen Wärmeversorgungsanlagen (Energiezentrale und Wärmeverteilungsanlagen) betraut. Die Energieerzeugungsanlagen, inklusive aller erforderlichen Nebenanlagen, sowie Wärmeverteilungsanlagen sind entsprechend des im Vergabeverfahren angebotenen und vereinbarten technischen Konzeptes zu bauen und zu betreiben.Im Konzessionsvertrag bzw. dessen Anlagen müssen technische, wirtschaftliche und ökologische Kriterien umgesetzt werden. Der Konzessionsvertrag wird auch Vorgaben für die Wärmelieferungsverträge zwischen den Endkunden und dem Konzessionsnehmer enthalten.Zugleich wird dem Konzessionsnehmer mit dem Konzessionsvertrag das Recht zur Nutzung der öffentlichen Wege gegen Zahlung von Benutzungsgebühren eingeräumt. Die Nutzungsüberlassung des städtischen Grundstückes, auf dem die Energiezentrale errichtet werden soll, wird im Konzessionsvertrag ebenfalls geregelt.Die Vertragslaufzeit endet 15 Jahre nach Aufnahme der Wärmeversorgung. Der KG wird im Konzessionsvertrag des Recht eingeräumt, die im Rahmen der Konzession errichteten Energieerzeugungsanlagen, inklusive aller erforderlichen Nebenanlagen, sowie die Wärmeverteilungsanlagen nach Beendigung des Vertrages gegen Zahlung einer wirtschaftlich angemessenen Vergütung zu erwerben."@de;
+  epo:hasEstimatedValue epd:id_2019-S-034-077750_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2019-S-034-077750_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2019-S-034-077750_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 6500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-034-077750_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 6500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-034-077750_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-034-077750_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2019-S-034-077750_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2019-S-034-077750_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2019-S-034-077750_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2019-S-034-077750_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2019-02-14"^^xsd:date;
+  epo:hasID epd:id_2019-S-034-077750_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20190218";
+  epo:refersToLot epd:id_2019-S-034-077750_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2019-S-034-077750_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2019-S-034-077750_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 034-077750" .
+
+epd:id_2019-S-034-077750_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE60>;
+  locn:postCode "20359";
+  locn:postName "Hamburg";
+  locn:thoroughfare "Millerntorplatz 1" .
+
+epd:id_2019-S-034-077750_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Landesbetrieb Immobilienmanagement und Grundvermögen der Freien und Hansestadt Hamburg";
+  epo:hasLegalName "Freie und Hansestadt Hamburg (FHH), vertreten durch die Landesbetrieb Immobilienmanagement und Grundvermögen (LIG)"@de;
+  epo:hasMainActivityDescription "Immobilienmanagement und Verwaltung Grundvermögen; Projektentwicklung für Quartiere und Stadtteile";
+  cccev:registeredAddress epd:id_2019-S-034-077750_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2019-S-034-077750_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09323000> .
+
+epd:id_2019-S-034-077750_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-034-077750_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Der Teilnahmewettbewerb dient der Feststellung der Eignung und der Vorauswahl von Bewerbern, sollten mehr als 6 Bewerber geeignet sein. Anhand der eingereichten und wertbaren Teilnahmeanträge werden diejenigen geeigneten Unternehmen ausgewählt, die zur Abgabe eines Erstangebots aufgefordert werden (vgl. Abschnitt 1.5.1 der Aufforderung zur Abgabe von Teilnahmeanträgen [https://access.megawatt.de/t/8f76tjsq]). Liegen mehr als 6 geeignete Bewerbungen vor, werden diese nach den in Abschnitt 2.5.3 (ebenda) Matrix dargestellten Kriterien für die Eignungswertung mit Punkten bewertet.Technisches Fachpersonal, Maximal 6 Punkte: Wertung in Bezug auf die Anzahl der entsprechenden Mitarbeiter (Punkteskala zwischen 0 und über 30 Mitarbeitern)Referenzprojekte – installierte Wärmeleistung, je Referenz maximal 7 Punkte, zusammen maximal 14 Punkte: Wertung in Bezug auf die installierte Wärmeleistung (Punkteskala zwischen 0 und über 5 MW thermisch)Referenzprojekte – erneuerbare Energien, je Referenz maximal 5 Punkte, zusammen maximal 10 Punkte: Wertung in Bezug auf den Anteil erneuerbarer Energien (Punkteskala zwischen 0 und über 50 % Anteil)Referenzprojekte – Primärenergiefaktor, je Referenz maximal 5 Punkte, zusammen maximal 10 Punkte: Wertung in Bezug auf den Primärenergiefaktor (Punkteskala zwischen 0,7 und unter 0,4)Es werden nur die ersten 6 Referenzen entsprechend der durch den Bewerber angegebenen Nummerierung der Referenzen in die Wertung berücksichtigt. Es werden darüber hinaus für das jeweilige Kriterium jeweils jene 2 Referenzen herangezogen, die im Referenzdeckblatt bezüglich der relevanten Parameter die höchsten bzw. niedrigsten Werte aufweisen. Aus diesem Grund ist nicht davon auszugehen, dass auch 6 Referenzen abgegebenen werden müssen. So kann die Höchstpunktzahl auch durch eine geringere Anzahl entsprechender Referenzen erreicht werden. Insgesamt können 40 Wertungspunkte erreicht werden. Die Teilnahmeanträge der geeigneten Bewerber werden entsprechend der erreichten Punktzahl in eine Rangfolge gebracht. Die 6 geeigneten Bewerber mit der höchsten Gesamtpunktzahl werden zur Abgabe eines Erstangebots aufgefordert.Kann aufgrund von Gleichstand anhand der Gesamtpunktzahl keine Entscheidung getroffen werden, behält sich die KG vor, alle Bewerber mit Punktegleichstand und damit mehr als 6 Bewerber zur Abgabe eines Erstangebots aufzufordern. Andernfalls entscheidet für die betroffenen Bewerber mit Punktegleichstand, die zur Vervollständigung einer Gesamtzahl von 6 geeigneten Bewerbern benötigt werden, das Los. Die betroffenen Bewerber werden hierbei mit gleicher Wahrscheinlichkeit ausgewählt.Das Verhandlungsverfahren erfolgt nach Abschluss des Teilnahmewettbewerbs. Weitere Informationen zum Verfahren sind in der Aufforderung zur Abgabe von Teilnahmeanträgen enthalten."@de;
+  epo:hasDescription "Vergabe einer Konzession zur Wärmeversorgung von Neubauten im Bebauungsplangebiet „Finkenwerder 32“ in Hamburg-Mitte. Die Anlagen sind nach bestimmten technischen, wirtschaftlichen und ökologischen Kriterien zu errichten und zu betreiben. Es besteht Wahlfreiheit bei unterschiedlichen technischen Alternativen zur Erzeugung entsprechend vorgegebener technisch-wirtschaftlicher Rahmenbedingungen (variantenoffenes Verfahren). Die Konzession wird in einem Verhandlungsverfahren mit Teilnahmewettbewerb vergeben. Weitere Informationen über die Konzession, die Teilnahmebedingungen und den Verfahrensablauf sind dieser Bekanntmachung sowie ergänzend der Aufforderung zur Abgabe von Teilnahmeanträgen und der Konzessionsbeschreibung [https://access.megawatt.de/t/8f76tjsq] zu entnehmen."@de;
+  epo:hasEstimatedValue epd:id_2019-S-034-077750_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-034-077750_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2019-S-034-077750_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Konzession zur Wärmeversorgung des Quartiers Finkenwerder 32"@de;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-034-077750_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2019-S-034-077750_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2019-S-034-077750_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2019-S-034-077750_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-034-077750_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2019-S-034-077750_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2019-S-034-077750_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "20359";
+  locn:postName "Hamburg";
+  locn:thoroughfare "Millerntorplatz 1" .
+
+epd:id_2019-S-034-077750_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Landesbetrieb Immobilienmanagement und Grundvermögen"@de;
+  cccev:registeredAddress epd:id_2019-S-034-077750_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2019-S-034-077750_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2019-S-034-077750_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2019-S-034-077750_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Bei Verstößen gegen Vergabevorschriften kann auf Antrag ein Nachprüfungsverfahren bei der oben genannten Vergabekammer eingeleitet werden. Voraussetzung für die Einlegung eines Nachprüfungsantrags ist das Vorliegen der Anforderungen des § 160 GWB. Danach sind Verstöße gegen Vergabevorschriften, die der Antragsteller im Vergabeverfahren erkannt hat, innerhalb einer Frist von 10 Kalendertagen nach Kenntnis über den Vergaberechtsverstoß gegenüber dem Auftraggeber zu rügen. Verstöße, die aufgrund der Bekanntmachung erkennbar sind, sind spätestens bis zum Ablauf der in der Bekanntmachung benannten Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber zu rügen. Verstöße, die erst in den Vergabeunterlagen erkennbar sind, sind spätestens bis zum Ablauf der Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber zu rügen. Weiterhin dürfen bis zu dem Antrag auf Einleitung eines Nachprüfungsverfahrens nicht mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, der Rüge nicht abhelfen zu wollen, vergangen sein." .
+
+epd:id_2019-S-034-077750_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+49 40428232020";
+  epo:hasInternetAddress "https://www.hamburg.de/behoerdenfinder/hamburg/11354549/"^^xsd:anyURI;
+  cccev:email "vergabekammer@fbhamburg.de";
+  cccev:telephone "+49 40428231491" .
+
+epd:id_2019-S-034-077750_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "20354";
+  locn:postName "Hamburg";
+  locn:thoroughfare "Große Bleichen 27" .
+
+epd:id_2019-S-034-077750_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Vergabekammer bei der Finanzbehörde Hamburg"@de;
+  epo:hasPrimaryContactPoint epd:id_2019-S-034-077750_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2019-S-034-077750_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2019-S-034-077750_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-034-077750_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2019-S-034-077750_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.deutsche-evergabe.de/dashboards/dashboard_off/aed11da5-a3d8-4a39-8589-9b6613efdab3"^^xsd:anyURI .
+
+epd:id_2019-S-034-077750_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-034-077750_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2019-S-034-077750_Organisation_jXahEP38X6pEFgd4J9tLvF .

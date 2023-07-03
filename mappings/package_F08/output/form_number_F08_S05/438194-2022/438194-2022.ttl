@@ -1,0 +1,96 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-153-438194_AccessTerm_4zjJjpytu5bmHbyNSmtsju a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.knf.gov.pl/o_nas/urzad_komisji/zamowienia_publiczne/zam_pub_pow"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-153-438194_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "www.knf.gov.pl"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-153-438194_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2022-S-153-438194_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2022-S-153-438194_Channel_D7Go8W7kJWfGkiJTdrkDRx a cccev:Channel;
+  epo:hasURL "https://miniportal.uzp.gov.pl/"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2022-S-153-438194_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "Katarzyna Rafalska "@pl;
+  epo:hasFax "+48 222625274";
+  epo:hasInternetAddress "www.knf.gov.pl"^^xsd:anyURI;
+  cccev:email "zamowienia@knf.gov.pl";
+  cccev:telephone "+48 222625280" .
+
+epd:id_2022-S-153-438194_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj a locn:Address;
+  locn:fullAddress "Warszawa"@pl .
+
+epd:id_2022-S-153-438194_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL911>;
+  locn:address epd:id_2022-S-153-438194_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2022-S-153-438194_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-153-438194_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2022-S-153-438194_LotPurpose_PNm7nZntEXiu4JieackQnj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/72220000>, <http://data.europa.eu/cpv/cpv/72230000>,
+    <http://data.europa.eu/cpv/cpv/72250000> .
+
+epd:id_2022-S-153-438194_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-153-438194_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription "Zakup usługi wsparcia technicznego eksploatowanego w UKNF Systemu RPU wraz z usługa konsultacji i modyfikacji systemu, w tym:1. Usługi wsparcia technicznego oraz prawa do nowych wersji systemu RPU przez okres 24 miesięcy.2. Usługi konsultacji oraz modyfikacji systemu w liczbie do 1000 roboczogodzin zgodnie z potrzebami Zamawiającego w okresie obowiązywania umowy."@pl;
+  epo:hasPurpose epd:id_2022-S-153-438194_LotPurpose_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2022-S-153-438194_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-153-438194_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2022-S-153-438194_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ;
+  epo:hasDispatchDate "2022-08-05"^^xsd:date;
+  epo:hasID epd:id_2022-S-153-438194_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220810";
+  epo:refersToLot epd:id_2022-S-153-438194_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2022-S-153-438194_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2022-S-153-438194_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 153-438194" .
+
+epd:id_2022-S-153-438194_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL911>;
+  locn:postCode "00-549";
+  locn:postName "Warszawa";
+  locn:thoroughfare "Piękna 20" .
+
+epd:id_2022-S-153-438194_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC a epo:Identifier;
+  epo:hasIdentifierValue "7010902185" .
+
+epd:id_2022-S-153-438194_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasBuyerLegalTypeDescription "państwowa osoba prawna";
+  epo:hasID epd:id_2022-S-153-438194_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC;
+  epo:hasLegalName "Urząd Komisji Nadzoru Finansowego"@pl;
+  epo:hasMainActivityDescription "nadzór nad rynkiem finansowym";
+  cccev:registeredAddress epd:id_2022-S-153-438194_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2022-S-153-438194_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "DZA-DZAZZP.2610.32.2022" .
+
+epd:id_2022-S-153-438194_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/72200000> .
+
+epd:id_2022-S-153-438194_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasAdditionalInformation "Wstępne ogłoszenie informacyjne o numerze: 2022/S 150-428204 na stronie internetowej Zamawiającego zostało opublikowane w dniu 05.08.2022 r. "@pl;
+  epo:hasID epd:id_2022-S-153-438194_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-153-438194_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2022-S-153-438194_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle "Wsparcie techniczne systemu RPU przez okres 24 miesięcy wraz usługą konsultacji i modyfikacji systemu"@pl;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-153-438194_AccessTerm_4zjJjpytu5bmHbyNSmtsju;
+  epo:usesChannel epd:id_2022-S-153-438194_Channel_D7Go8W7kJWfGkiJTdrkDRx .
+
+epd:id_2022-S-153-438194_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-153-438194_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2022-S-153-438194_Organisation_TigDgN9yDLHn3hDtQD7BVC .

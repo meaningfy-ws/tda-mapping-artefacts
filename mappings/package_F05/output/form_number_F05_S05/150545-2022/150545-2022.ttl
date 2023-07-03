@@ -1,0 +1,307 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-057-150545_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://e-sourcing.extra.laposte.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2022-S-057-150545_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-057-150545_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-057-150545_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-057-150545_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "https://e-sourcing.extra.laposte.fr"^^xsd:anyURI;
+  cccev:email "sandrine.farcy@laposte.fr";
+  cccev:telephone "+33 763600953" .
+
+epd:id_2022-S-057-150545_ContractTermLotLocationAddress_32L5QtPBVpA5CJ4PqGRoL2 a locn:Address;
+  locn:fullAddress "77 Seine et Marne - 93 Seine Saint Denis"@fr .
+
+epd:id_2022-S-057-150545_ContractTermLotLocationAddress_8SnxRM7z7L8aATWrQVC4hf a locn:Address;
+  locn:fullAddress "92-Hauts de Seine"@fr .
+
+epd:id_2022-S-057-150545_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "75-PARIS"@fr .
+
+epd:id_2022-S-057-150545_ContractTermLotLocationAddress_JUnbusR5A38KBrkcqQEZ8g a locn:Address;
+  locn:fullAddress "78 Yvelines- 95 Val d'Oise"@fr .
+
+epd:id_2022-S-057-150545_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a locn:Address;
+  locn:fullAddress "91 Essonne-94 Val de Marne"@fr .
+
+epd:id_2022-S-057-150545_ContractTermLotLocation_32L5QtPBVpA5CJ4PqGRoL2 a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR1>;
+  locn:address epd:id_2022-S-057-150545_ContractTermLotLocationAddress_32L5QtPBVpA5CJ4PqGRoL2 .
+
+epd:id_2022-S-057-150545_ContractTermLotLocation_8SnxRM7z7L8aATWrQVC4hf a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR1>;
+  locn:address epd:id_2022-S-057-150545_ContractTermLotLocationAddress_8SnxRM7z7L8aATWrQVC4hf .
+
+epd:id_2022-S-057-150545_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:address epd:id_2022-S-057-150545_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2022-S-057-150545_ContractTermLotLocation_JUnbusR5A38KBrkcqQEZ8g a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR1>;
+  locn:address epd:id_2022-S-057-150545_ContractTermLotLocationAddress_JUnbusR5A38KBrkcqQEZ8g .
+
+epd:id_2022-S-057-150545_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR1>;
+  locn:address epd:id_2022-S-057-150545_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
+
+epd:id_2022-S-057-150545_ContractTermLot_32L5QtPBVpA5CJ4PqGRoL2 a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-057-150545_Duration_E3KeCeWkZTz2DBvWCgwLic;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-057-150545_ContractTermLotLocation_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Les options sont les reconductions du contrat telles qu’indiquées à la rubrique II .2.7."@fr .
+
+epd:id_2022-S-057-150545_ContractTermLot_8SnxRM7z7L8aATWrQVC4hf a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-057-150545_Duration_9CGgccuzyF7ofcnSL9oj2g;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-057-150545_ContractTermLotLocation_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Les options sont les reconductions du contrat telles qu’indiquées à la rubrique II .2.7."@fr .
+
+epd:id_2022-S-057-150545_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-057-150545_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-057-150545_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Les options sont les reconductions telles qu'indiquées à la rubrique II.2.7."@fr .
+
+epd:id_2022-S-057-150545_ContractTermLot_JUnbusR5A38KBrkcqQEZ8g a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-057-150545_Duration_ZVt2gHHbyCfyLALywU23QT;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-057-150545_ContractTermLotLocation_JUnbusR5A38KBrkcqQEZ8g;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Le marché sera conclu pour une période ferme de 12 mois, renouvelable par tacite reconduction par périodes successives de 12 mois et dans la limite de 4 fois ."@fr .
+
+epd:id_2022-S-057-150545_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-057-150545_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-057-150545_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Les options sont les reconductions du contrat telles qu’indiquées à la rubrique II .2.7."@fr .
+
+epd:id_2022-S-057-150545_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2022-S-057-150545_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-057-150545_Duration_9CGgccuzyF7ofcnSL9oj2g a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-057-150545_Duration_E3KeCeWkZTz2DBvWCgwLic a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-057-150545_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-057-150545_Duration_ZVt2gHHbyCfyLALywU23QT a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-057-150545_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2022-S-057-150545_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2022-S-057-150545_LotIdentifier_32L5QtPBVpA5CJ4PqGRoL2 a epo:Identifier;
+  epo:hasIdentifierValue "3" .
+
+epd:id_2022-S-057-150545_LotIdentifier_8SnxRM7z7L8aATWrQVC4hf a epo:Identifier;
+  epo:hasIdentifierValue "4" .
+
+epd:id_2022-S-057-150545_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1 -" .
+
+epd:id_2022-S-057-150545_LotIdentifier_JUnbusR5A38KBrkcqQEZ8g a epo:Identifier;
+  epo:hasIdentifierValue "5" .
+
+epd:id_2022-S-057-150545_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2022-S-057-150545_LotPurpose_32L5QtPBVpA5CJ4PqGRoL2 a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/90910000> .
+
+epd:id_2022-S-057-150545_LotPurpose_8SnxRM7z7L8aATWrQVC4hf a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/90910000> .
+
+epd:id_2022-S-057-150545_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/90910000> .
+
+epd:id_2022-S-057-150545_LotPurpose_JUnbusR5A38KBrkcqQEZ8g a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/90910000> .
+
+epd:id_2022-S-057-150545_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/90910000> .
+
+epd:id_2022-S-057-150545_Lot_32L5QtPBVpA5CJ4PqGRoL2 a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-057-150545_ContractTermLot_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasAdditionalInformation "Un seul attributaire sera retenu pour ce lot. Si c’est un groupement qui remporte le lot, ils pourront alors se départager les bureaux de Poste du lot remporté."@fr;
+  epo:hasDescription "Nettoyage des Guichets Automatiques Bancaires situés à l'extérieur des sites de La Poste en Seine et Marne (77) et Seine Saint Denis (93).Les prestations récurrentes sont notamment :- Nettoyage du Guichet Automatique Bancaire (façade, éléments plastiques, écran, clavier, lecteur de carte, tabernacle).- Nettoyage et traitement antistatique de l'écran client et de ses protections.- Nettoyage signalétique (bandeau lumineux, surfaces vitrées, éléments de signalétique).- Vérification du fonctionnement du matériel.- Traitement anti-graffitis des éléments.- Enlèvement des autocollants et tags.Le prestataire pourra également être amené à effectuer des prestations sur demande notamment du nettoyage exceptionnel identique aux prestations récurrentes notamment enlèvement des tags, graffitis, autocollants, traitement anti-graffitis..., suite à la constatation de détériorations et nécessitant une remise à niveau de propreté.A titre d’information, sur ce lot le nombre de Guichets Automatiques Bancaires est estimé à environ 210 GAB répartis sur 162 bureaux, des quantités de prestations commandées sur la durée globale du contrat est de 9780.Ces chiffres sont donnés à titre indicatif et ne constitue en aucun cas un engagement de volume pour le(s) futur(s) contrat(s)."@fr;
+  epo:hasID epd:id_2022-S-057-150545_LotIdentifier_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasPurpose epd:id_2022-S-057-150545_LotPurpose_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasTitle "Nettoyage des Guichets Automatiques Bancaires (GAB) situés à l’extérieur des sites de La Branche Grand Public Numérique (BGPN) de La Poste  en Seine et Marne 77 et Seine Saint Denis 93"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-057-150545_MultipleStageProcedureTerm_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-057-150545_Lot_8SnxRM7z7L8aATWrQVC4hf a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-057-150545_ContractTermLot_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasAdditionalInformation "Un seul attributaire sera retenu sur ce lot.  Si c’est un groupement qui remporte le lot, ils pourront alors se départager les bureaux de Poste du lot remporté."@fr;
+  epo:hasDescription "Nettoyage des Guichets Automatiques Bancaires situés à l'extérieur des sites de La Poste des Hauts de Seine 92.Les prestations récurrentes sont notamment :- Nettoyage du Guichet Automatique Bancaire (façade, éléments plastiques, écran, clavier, lecteur de carte, tabernacle).- Nettoyage et traitement antistatique de l'écran client et de ses protections.- Nettoyage signalétique (bandeau lumineux, surfaces vitrées, éléments de signalétique).- Vérification du fonctionnement du matériel.- Traitement anti-graffitis des éléments.- Enlèvement des autocollants et tags.Le prestataire pourra également être amené à effectuer des prestations sur demande notamment du nettoyage exceptionnel identique aux prestations récurrentes notamment enlèvement des tags, graffitis, autocollants, traitement anti-graffitis..., suite à la constatation de détériorations et nécessitant une remise à niveau de propreté.A titre d’information, sur ce lot le nombre de Guichets Automatiques Bancaires est estimé à environ 104 GAB répartis sur 82 bureaux, des quantités de prestations commandées sur la durée globale du contrat est de 1640.Ces chiffres sont donnés à titre indicatif et ne constitue en aucun cas un engagement de volume pour le(s) futur(s) contrat(s)."@fr;
+  epo:hasID epd:id_2022-S-057-150545_LotIdentifier_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasPurpose epd:id_2022-S-057-150545_LotPurpose_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasTitle "Nettoyage des Guichets Automatiques Bancaires (GAB) situés à l’extérieur des sites de La Branche Grand Public Numérique (BGPN) de La Poste  dans les Hauts de Seine 92"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-057-150545_MultipleStageProcedureTerm_8SnxRM7z7L8aATWrQVC4hf;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-057-150545_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-057-150545_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "Un seul attributaire sera retenu sur ce lot.  Si c’est un groupement qui remporte le lot, ils pourront alors se départager les bureaux de Poste du lot remporté."@fr;
+  epo:hasDescription "Nettoyage des Guichets Automatiques Bancaires (GAB) situés à l'extérieur des sites de La Poste à Paris (75):Les prestations récurrentes sont notamment :- Nettoyage du Guichet Automatique Bancaire (façade, éléments plastiques, écran, clavier, lecteur de carte, tabernacle).- Nettoyage et traitement antistatique de l'écran client et de ses protections.- Nettoyage signalétique (bandeau lumineux, surfaces vitrées, éléments de signalétique).- Vérification du fonctionnement du matériel.- Traitement anti-graffitis des éléments.- Enlèvement des autocollants et tags.Le prestataire pourra également être amené à effectuer des prestations sur demande notamment du nettoyage exceptionnel identique aux prestations récurrentes notamment enlèvement des tags, graffitis, autocollants, traitement anti-graffitis..., suite à la constatation de détériorations et nécessitant une remise à niveau de propreté.A titre d’information, sur ce lot le nombre de Guichets Automatiques Bancaires est estimé à environ 219 GAB répartis sur 138 bureaux, et le maximum des quantités de prestations commandées sur la durée globale du contrat est de 9780.Ces chiffres sont donnés à titre indicatif et ne constitue en aucun cas un engagement de volume pour le(s) futur(s) contrat(s)."@fr;
+  epo:hasID epd:id_2022-S-057-150545_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2022-S-057-150545_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle "Nettoyage des Guichets Automatiques Bancaires (GAB) situés à l’extérieur des sites de La Branche Grand Public Numérique (BGPN) de La Poste  à Paris 75"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-057-150545_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-057-150545_Lot_JUnbusR5A38KBrkcqQEZ8g a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-057-150545_ContractTermLot_JUnbusR5A38KBrkcqQEZ8g;
+  epo:hasAdditionalInformation "Un seul attributaire sera retenu pour ce lot. Si c’est un groupement qui remporte le lot, ils pourront alors se départager les bureaux de Poste du lot remporté."@fr;
+  epo:hasDescription "Nettoyage des Guichets Automatiques Bancaires situés à l'extérieur des sites de La Poste des Yvelines (78) et Val d'Oise (95).Les prestations récurrentes sont notamment :- Nettoyage du Guichet Automatique Bancaire (façade, éléments plastiques, écran, clavier, lecteur de carte, tabernacle).- Nettoyage et traitement antistatique de l'écran client et de ses protections.- Nettoyage signalétique (bandeau lumineux, surfaces vitrées, éléments de signalétique).- Vérification du fonctionnement du matériel.- Traitement anti-graffitis des éléments.- Enlèvement des autocollants et tags.Le prestataire pourra également être amené à effectuer des prestations sur demande notamment du nettoyage exceptionnel identique aux prestations récurrentes notamment enlèvement des tags, graffitis, autocollants, traitement anti-graffitis..., suite à la constatation de détériorations et nécessitant une remise à niveau de propreté.A titre d’information, sur ce lot le nombre de Guichets Automatiques Bancaires est estimé à environ 200 GAB répartis sur 174 bureaux, des quantités de prestations commandées sur la durée globale du contrat est de 3480.Ces chiffres sont donnés à titre indicatif et ne constitue en aucun cas un engagement de volume pour le(s) futur(s) contrat(s)."@fr;
+  epo:hasID epd:id_2022-S-057-150545_LotIdentifier_JUnbusR5A38KBrkcqQEZ8g;
+  epo:hasPurpose epd:id_2022-S-057-150545_LotPurpose_JUnbusR5A38KBrkcqQEZ8g;
+  epo:hasTitle "Nettoyage des Guichets Automatiques Bancaires (GAB) situés à l’extérieur des sites de La Branche Grand Public Numérique (BGPN) de La Poste situés des Yvelines 78 et du Val d’Oise 95"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-057-150545_MultipleStageProcedureTerm_JUnbusR5A38KBrkcqQEZ8g;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-057-150545_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-057-150545_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasAdditionalInformation "Un seul attributaire sera retenu sur ce lot.  Si c’est un groupement qui remporte le lot, ils pourront alors se départager les bureaux de Poste du lot remporté."@fr;
+  epo:hasDescription "Nettoyage des Guichets Automatiques Bancaires situés à l'extérieur des sites de La Poste de l'Essonne (91)  et Val de Marne (94):Les prestations récurrentes sont notamment :- Nettoyage du Guichet Automatique Bancaire (façade, éléments plastiques, écran, clavier, lecteur de carte, tabernacle).- Nettoyage et traitement antistatique de l'écran client et de ses protections.- Nettoyage signalétique (bandeau lumineux, surfaces vitrées, éléments de signalétique).- Vérification du fonctionnement du matériel.- Traitement anti-graffitis des éléments.- Enlèvement des autocollants et tags.Le prestataire pourra également être amené à effectuer des prestations sur demande notamment du nettoyage exceptionnel identique aux prestations récurrentes notamment enlèvement des tags, graffitis, autocollants, traitement anti-graffitis..., suite à la constatation de détériorations et nécessitant une remise à niveau de propreté.A titre d’information, sur ce lot le nombre de Guichets Automatiques Bancaires est estimé à environ 201 GAB répartis sur 151 bureaux, des quantités de prestations commandées sur la durée globale du contrat est de 9060.Ces chiffres sont donnés à titre indicatif et ne constitue en aucun cas un engagement de volume pour le(s) futur(s) contrat(s)."@fr;
+  epo:hasID epd:id_2022-S-057-150545_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2022-S-057-150545_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle "Nettoyage des Guichets Automatiques Bancaires (GAB) situés à l’extérieur des sites de La Branche Grand Public Numérique (BGPN) de La Poste  dans l’ Essonne (91) et le Val de Marne (94)"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-057-150545_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-057-150545_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75012";
+  locn:postName "Paris";
+  locn:thoroughfare "98 rue de Richelieu" .
+
+epd:id_2022-S-057-150545_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "Médiateur des entreprises"@fr;
+  cccev:registeredAddress epd:id_2022-S-057-150545_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2022-S-057-150545_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2022-S-057-150545_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2022-S-057-150545_MultipleStageProcedureTerm_32L5QtPBVpA5CJ4PqGRoL2 a epo:MultipleStageProcedureTerm .
+
+epd:id_2022-S-057-150545_MultipleStageProcedureTerm_8SnxRM7z7L8aATWrQVC4hf a epo:MultipleStageProcedureTerm .
+
+epd:id_2022-S-057-150545_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2022-S-057-150545_MultipleStageProcedureTerm_JUnbusR5A38KBrkcqQEZ8g a epo:MultipleStageProcedureTerm .
+
+epd:id_2022-S-057-150545_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:MultipleStageProcedureTerm .
+
+epd:id_2022-S-057-150545_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-057-150545_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2022-S-057-150545_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2022-S-057-150545_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2022-S-057-150545_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2022-S-057-150545_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2022-03-17"^^xsd:date;
+  epo:hasID epd:id_2022-S-057-150545_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220322";
+  epo:refersToLot epd:id_2022-S-057-150545_Lot_32L5QtPBVpA5CJ4PqGRoL2, epd:id_2022-S-057-150545_Lot_8SnxRM7z7L8aATWrQVC4hf,
+    epd:id_2022-S-057-150545_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2022-S-057-150545_Lot_JUnbusR5A38KBrkcqQEZ8g,
+    epd:id_2022-S-057-150545_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2022-S-057-150545_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2022-S-057-150545_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 057-150545" .
+
+epd:id_2022-S-057-150545_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "75015";
+  locn:postName "PARIS";
+  locn:thoroughfare "9 RUE DU COLONEL PIERRE AVIA" .
+
+epd:id_2022-S-057-150545_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "356000000" .
+
+epd:id_2022-S-057-150545_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2022-S-057-150545_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "LA POSTE"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/post>;
+  cccev:registeredAddress epd:id_2022-S-057-150545_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-057-150545_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/90910000> .
+
+epd:id_2022-S-057-150545_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasLotAwardCombination "NON";
+  epo:hasMaximumNumberOfLotsToBeAwarded 5;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2022-S-057-150545_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-057-150545_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """Les documents demandés à la rubrique III.1.1 devront être remis sur la plate-forme Provigis (https://www.provigis.com/).La demande de participation accompagnée des renseignements et documents demandés aux rubriques III.1.2 et III.1.3 (sur questionnaire d'information ou sous format libre) devront être remis sur le Portail Fournisseurs (https://e-sourcing.extra.laposte.fr/web/login.html ).Tous les documents demandés aux rubriques III.1.1 à III.1.3 devront être remis avant la date et l'heure limites mentionnées à la rubrique IV.2.2.Le candidat souhaitant répondre via le DUME le remettra au format pdf et au format xml dans un ZIP.Tous les documents ne pouvant être scannés sont à retourner par courrier recommandé avec accusé de réception ou à déposer contre récépissé à l'adresse du Point de contact avant les mêmes dates et heure limites.Si  le candidat s'appuie sur les capacités d'autres opérateurs économiques (économiques/financières ou techniques/professionnelles), il doit :-	justifier des capacités de ce ou ces opérateurs et-	apporter la preuve qu'il en disposera pour l'exécution du marché.Cette preuve peut être apportée par tout moyen approprié, notamment une attestation sur l'honneur de cet autre opérateur économique confirmant ses capacités et leur mise à disposition du candidat pendant l'exécution du marché.Conformément aux dispositions des articles R.2143-13 du Code de la commande publique, le candidat n'est pas tenu de fournir les documents et renseignements demandés dans le cadre du présent avis qui peuvent être obtenus via un système électronique de mise à disposition d'information administré par un organisme officiel ou d'un espace de stockage numérique accessible gratuitement par La Poste et ses filiales.Dans ce cas, le candidat précisera dans le dossier de réponse toutes les informations nécessaires à la consultation de ce système ou de cet espace."""@fr;
+  epo:hasDescription "La consultation a pour objet les prestations récurrentes et/ou exceptionnelles de prestations de nettoyage des Guichets Automatiques Bancaires pour les sites de la Branche Grand Public Numérique (BGPN) La Poste en Ile de FranceLe marché est composé de 5 lots:- lot 1 : 75 Paris- - lot 2 : 91 Essonne-94 Val de Marne- lot 3 : 77 Seine et Marne -93 Seine Saint Denis-lot 4 : 92 Hauts de Seine- lot 5 : 78 Yvelines-95 Val d’OiseÀ titre d'information, le nombre d’automates pour l'ensemble des lots est estimé à environ 934. Maximum des quantités de prestations commandées pour 934 GAB sur la durée globale du marché : 33740 Ces chiffres sont donnés à titre indicatif et ne constituent en aucun cas un engagement de volume pour le(s) futur(s) contrat(s).Un seul attributaire sera retenu par lot.Chaque lot sera analysé séparemment.Chaque candidat est libre de postuler sur un ou plusieurs lots Conformément aux articles L 2113-12 et L 2113-13 du Code de la commande publique, les lots sont réservés à des Entreprises Adaptées (EA), à des Etablissements et Services d'Aide par le Travail (ESAT) et structures équivalentes ainsi qu'à des structures d'insertion par l'activité économique et structures équivalentes."@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-057-150545_Lot_32L5QtPBVpA5CJ4PqGRoL2,
+    epd:id_2022-S-057-150545_Lot_8SnxRM7z7L8aATWrQVC4hf, epd:id_2022-S-057-150545_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2022-S-057-150545_Lot_JUnbusR5A38KBrkcqQEZ8g, epd:id_2022-S-057-150545_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2022-S-057-150545_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Réalisation de prestations de nettoyage des Guichets Automatiques Bancaires (GAB) des sites de la Branche Grand Public Numérique (BGPN) de la Poste situés en Ile de France"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-057-150545_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2022-S-057-150545_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2022-S-057-150545_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2022-S-057-150545_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2022-S-057-150545_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2022-S-057-150545_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-057-150545_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-057-150545_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-057-150545_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75859";
+  locn:postName "PARIS CEDEX 17";
+  locn:thoroughfare "Parvis du Tribunal de Paris" .
+
+epd:id_2022-S-057-150545_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal Judiciaire PARIS"@fr;
+  cccev:registeredAddress epd:id_2022-S-057-150545_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-057-150545_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-057-150545_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-057-150545_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://e-sourcing.extra.laposte.fr"^^xsd:anyURI .
+
+epd:id_2022-S-057-150545_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-057-150545_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-057-150545_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

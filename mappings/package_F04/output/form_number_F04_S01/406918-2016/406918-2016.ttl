@@ -1,0 +1,103 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-223-406918_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-223-406918_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-223-406918_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-223-406918_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Petra Jabroer"@en;
+  epo:hasInternetAddress "http://www.eurailgroup.org"^^xsd:anyURI;
+  cccev:email "pact@eurailgroup.org";
+  cccev:telephone "+31 307516513" .
+
+epd:id_2016-S-223-406918_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/NL> .
+
+epd:id_2016-S-223-406918_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-223-406918_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-223-406918_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2016-S-223-406918_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/72000000>, <http://data.europa.eu/cpv/cpv/72200000>,
+    <http://data.europa.eu/cpv/cpv/72212500>, <http://data.europa.eu/cpv/cpv/72230000> .
+
+epd:id_2016-S-223-406918_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-223-406918_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription """
+Not yet known at this stage (Market Consultation).
+"""@en;
+  epo:hasPurpose epd:id_2016-S-223-406918_LotPurpose_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-223-406918_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2016-S-223-406918_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2016-S-223-406918_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2016-S-223-406918_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te;
+  epo:hasDispatchDate "2016-11-16"^^xsd:date;
+  epo:hasID epd:id_2016-S-223-406918_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20161118";
+  epo:refersToLot epd:id_2016-S-223-406918_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2016-S-223-406918_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-223-406918_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 223-406918" .
+
+epd:id_2016-S-223-406918_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NLD>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/NL>;
+  locn:postCode "3500 GC";
+  locn:postName "Utrecht";
+  locn:thoroughfare "Postbus 2112" .
+
+epd:id_2016-S-223-406918_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "82297264" .
+
+epd:id_2016-S-223-406918_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2016-S-223-406918_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "Eurail Group G.I.E."@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2016-S-223-406918_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-223-406918_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2016-S-223-406918_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-223-406918_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2016 PACT" .
+
+epd:id_2016-S-223-406918_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/72212520> .
+
+epd:id_2016-S-223-406918_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-223-406918_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+Pact@eurailgroup,org.
+"""@en;
+  epo:hasDescription """
+Developing a travel app with personal and social features is an important intention for Eurail Group G.I.E. This Market Consultation aims at investigating what potential solutions currently exist in the market for this project. The three key requirements for this mobile app are:
+— Enhance the travel experience of Eurail/Interrail Pass customers with relevant social app features.
+— Integration with other IT projects to create one face to customers.
+— Offer content offline & online to ensure the best user-experience.
+According to its Mission Statement, Eurail Group aims to be a ‘Tourism-oriented Provider of a Lifetime Experience’. With the PACT (Personal App for Connecting Travellers) Project, Eurail Group intends to help bring this mission to life and develop an ‘all-in-one travel companion’ app which adds value to current and potential Eurail & Interrail customers. Having socialisation as a key component of the app will also allow customers to connect with...
+"""@en;
+  epo:hasID epd:id_2016-S-223-406918_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-223-406918_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2016-S-223-406918_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+Mobile App for connecting and supporting Eurail and Interrail travellers (Market Consultation by Eurail Group G.I.E.).
+"""@en;
+  epo:isCoveredByGPA true .
+
+epd:id_2016-S-223-406918_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2016-11-17"^^xsd:date .
+
+epd:id_2016-S-223-406918_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-223-406918_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-223-406918_Organisation_W8v6KSqiUn74jPKJmENKoH .

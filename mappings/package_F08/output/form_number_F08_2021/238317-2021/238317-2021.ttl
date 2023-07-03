@@ -1,0 +1,72 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-092-238317_AccessTerm_4zjJjpytu5bmHbyNSmtsju a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://start.toscana.it/tendering/tenders/008952-2021/view/detail/1"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-092-238317_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "https://start.toscana.it/tendering/tenders/006700-2021/view/detail/1"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-092-238317_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2021-S-092-238317_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2021-S-092-238317_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "Estar UOC Servizi e infrastrutture informatiche"@it;
+  epo:hasFax "+39 0564485947";
+  epo:hasInternetAddress "http://www.estar.toscana.it"^^xsd:anyURI;
+  cccev:email "m.orlandini@estar.toscana.it" .
+
+epd:id_2021-S-092-238317_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITI1> .
+
+epd:id_2021-S-092-238317_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-092-238317_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2021-S-092-238317_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-092-238317_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription "Si comunica che Estar ha pubblicato la 2o consultazione preliminare di mercato avente ad oggetto la «procedura di gara in unico lotto per l’acquisizione in full risk di dispositivi di comunicazione satellitare e relativo traffico voce/dati per le aziende del servizio sanitario toscano» sulla piattaforma telematica Start, al seguente link: https://start.toscana.it/tendering/tenders/008952-2021/view/detail/1"@it .
+
+epd:id_2021-S-092-238317_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-092-238317_Buyer_4zjJjpytu5bmHbyNSmtsju;
+  epo:hasDispatchDate "2021-05-07"^^xsd:date;
+  epo:hasID epd:id_2021-S-092-238317_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210512";
+  epo:refersToLot epd:id_2021-S-092-238317_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2021-S-092-238317_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2021-S-092-238317_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 092-238317" .
+
+epd:id_2021-S-092-238317_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITI1>;
+  locn:postCode "50135";
+  locn:postName "Firenze";
+  locn:thoroughfare "via di San Salvi 12" .
+
+epd:id_2021-S-092-238317_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Estar, ente per i servizi tecnico-amministrativi regionali"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2021-S-092-238317_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2021-S-092-238317_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/32400000> .
+
+epd:id_2021-S-092-238317_ProcedureTerm_AMEokiDjGuTvrfRF5KkTBZ a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2021-S-092-238317_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasAdditionalInformation "Data di spedizione del presente avviso: 7.5.2021."@it;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-092-238317_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2021-S-092-238317_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle "2o Consultazione preliminare di mercato — gara unico lotto per acquisizione full risk di dispositivi di comunicazione satellitare e traffico voce/dati per le aziende della sanità toscana"@it;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-092-238317_AccessTerm_4zjJjpytu5bmHbyNSmtsju,
+    epd:id_2021-S-092-238317_ProcedureTerm_AMEokiDjGuTvrfRF5KkTBZ .

@@ -1,0 +1,105 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-125-283880_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-125-283880_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2018-S-125-283880_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2018-S-125-283880_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Daphne Lewsley"@en;
+  epo:hasInternetAddress "www.swbh.nhs.uk"^^xsd:anyURI;
+  cccev:email "daphne.lewsley@nhs.net";
+  cccev:telephone "+44 1215075882" .
+
+epd:id_2018-S-125-283880_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress """
+                  Cranford Street, Smethwick, Birmingham B66 2RT
+               """@en .
+
+epd:id_2018-S-125-283880_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UK>;
+  locn:address epd:id_2018-S-125-283880_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2018-S-125-283880_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-125-283880_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2018-S-125-283880_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2018-S-125-283880_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45200000> .
+
+epd:id_2018-S-125-283880_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-125-283880_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation """
+                  Please contact Daphne Lewsley on 0121 507 5882 by 3rd July to receive more information(which will require completion of a confidentiality agreement) and to set up a call or meeting with the Trust on 4.7.2019 or 5.7.2019.
+               """@en;
+  epo:hasDescription """
+                  Sandwell and West Birmingham Hospitals NHS Trust wishes to explore with experienced acute hospital construction contractors whether there is a possibility of completing the construction of The Midland Metropolitan Hospital through a new PF2 contract.
+               """@en;
+  epo:hasPurpose epd:id_2018-S-125-283880_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2018-S-125-283880_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2018-S-125-283880_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2018-S-125-283880_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2018-S-125-283880_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs;
+  epo:hasDispatchDate "2018-06-29"^^xsd:date;
+  epo:hasID epd:id_2018-S-125-283880_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20180703";
+  epo:refersToLot epd:id_2018-S-125-283880_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2018-S-125-283880_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2018-S-125-283880_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 125-283880" .
+
+epd:id_2018-S-125-283880_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UK>;
+  locn:postCode "B18 7QH";
+  locn:postName "Birmingham";
+  locn:thoroughfare "Old Management Block, City Hospital, Dudley Road" .
+
+epd:id_2018-S-125-283880_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "Sandwell and West Birmingham Hospitals NHS Trust – Midlands Metropolitan Hospital"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2018-S-125-283880_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2018-S-125-283880_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2018-S-125-283880_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2018-S-125-283880_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "MMHMT" .
+
+epd:id_2018-S-125-283880_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45000000> .
+
+epd:id_2018-S-125-283880_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-125-283880_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation """
+               Please note that this is not a call for competition — Please contact Daphne Lewsley on 0121 507 5882 by 3rd July to receive more information(which will require completion of a confidentiality agreement) and to set up a call or meeting with the Trust on 4.7.2019 or 5.7.2019.
+            """@en;
+  epo:hasDescription """
+               Sandwell & West Birmingham Hospitals NHS Trust wishes to explore with experienced acute hospital construction contractors whether there is a possibility of completing the construction of The Midland Metropolitan Hospital through a new PF2 contract.
+               Please contact Daphne Lewsley on 0121 507 5882 by 3rd July to receive more information(which will require completion of a confidentiality agreement) and to set up a call or meeting with the Trust on 4.7.2019 or 5.7.2019.
+            """@en;
+  epo:hasID epd:id_2018-S-125-283880_ProcedureIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-125-283880_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2018-S-125-283880_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+               SWBH Market Testing — Midland Metropolitan Hospital
+            """@en;
+  epo:isCoveredByGPA false .
+
+epd:id_2018-S-125-283880_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2018-08-31"^^xsd:date .
+
+epd:id_2018-S-125-283880_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-125-283880_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2018-S-125-283880_Organisation_gqoAAwSV3JaTMsopb9zyKP .

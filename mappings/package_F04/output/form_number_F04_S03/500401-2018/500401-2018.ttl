@@ -1,0 +1,143 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-218-500401_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://pirkimai.eviesiejipirkimai.lt/app/rfq/publicpurchase_docs.asp?PID=428274"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-218-500401_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "https://pirkimai.eviesiejipirkimai.lt/ctm/Company/CompanyInformation/Index/4670"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-218-500401_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-218-500401_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-218-500401_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Rimutė Sabaliauskaitė"@lt;
+  epo:hasFax "+370 52693534";
+  epo:hasInternetAddress "http://www.litrail.lt"^^xsd:anyURI;
+  cccev:email "r.sabaliauskaite@litrail.lt";
+  cccev:telephone "+370 52693708" .
+
+epd:id_2018-S-218-500401_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "LIETUVA."@lt .
+
+epd:id_2018-S-218-500401_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/LT>;
+  locn:address epd:id_2018-S-218-500401_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2018-S-218-500401_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-218-500401_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-218-500401_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2018-S-218-500401_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true .
+
+epd:id_2018-S-218-500401_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-218-500401_DynamicPurchaseSystemTechniqueUsage_42ewgEwxZiroeKCXpa2kAY
+  a epo:DynamicPurchaseSystemTechniqueUsage .
+
+epd:id_2018-S-218-500401_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71320000> .
+
+epd:id_2018-S-218-500401_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-218-500401_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation "Perkantysis subjektas pirmąjį kvietimą teikti pasiūlymus dėl konkretaus pirkimo DPS pagrindu išsiųs tik įvertinęs paraiškas, gautas per 30 (trisdešimt) kalendorinių dienų nuo skelbimo išsiuntimo iš Viešųjų pirkimų tarnybos dienos."@lt;
+  epo:hasDescription "Pirkimo objektas – geležinkelio kelių ir priklausinių projektavimo paslaugos, kurios apima:1.1) projektinių pasiūlymų rengimo paslaugas;1.2) techninės (projektavimo) užduoties rengimo bei prisijungimo sąlygoms ir specialiesiems reikalavimams gauti reikalingų dokumentų rengimo paslaugas;1.3) techninio projekto rengimo ir statinio projekto vykdymo priežiūros paslaugas (kai projektavimas vykdomas dviem etapais);1.4) darbo projekto rengimo paslaugas (kai projektavimas vykdomas dviem etapais);1.5) techninio darbo projekto rengimo ir statinio projekto vykdymo priežiūros paslaugas (kai projektavimas vykdomas vienu etapu)."@lt;
+  epo:hasEstimatedValue epd:id_2018-S-218-500401_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2018-S-218-500401_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-218-500401_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 3000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-218-500401_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 3000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-218-500401_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-218-500401_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2018-S-218-500401_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2018-S-218-500401_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2018-S-218-500401_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2018-11-12"^^xsd:date;
+  epo:hasID epd:id_2018-S-218-500401_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20181113";
+  epo:refersToLot epd:id_2018-S-218-500401_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2018-S-218-500401_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2018-S-218-500401_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 218-500401" .
+
+epd:id_2018-S-218-500401_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/LTU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/LT>;
+  locn:postCode "LT-03603";
+  locn:postName "Vilnius";
+  locn:thoroughfare "Mindaugo g. 12" .
+
+epd:id_2018-S-218-500401_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "110053842" .
+
+epd:id_2018-S-218-500401_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2018-S-218-500401_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "AB „Lietuvos geležinkeliai“"@lt;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2018-S-218-500401_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-218-500401_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71320000> .
+
+epd:id_2018-S-218-500401_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-218-500401_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription "Pirkimo objektas – geležinkelio kelių ir priklausinių projektavimo paslaugos, kurios apima:1.1) projektinių pasiūlymų rengimo paslaugas;1.2) techninės (projektavimo) užduoties rengimo bei prisijungimo sąlygoms ir specialiesiems reikalavimams gauti reikalingų dokumentų rengimo paslaugas;1.3) techninio projekto rengimo ir statinio projekto vykdymo priežiūros paslaugas (kai projektavimas vykdomas dviem etapais);1.4) darbo projekto rengimo paslaugas (kai projektavimas vykdomas dviem etapais);1.5) techninio darbo projekto rengimo ir statinio projekto vykdymo priežiūros paslaugas (kai projektavimas vykdomas vienu etapu)."@lt;
+  epo:hasEstimatedValue epd:id_2018-S-218-500401_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-218-500401_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2018-S-218-500401_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "2018/PCSR-2-16 Geležinkelio kelių ir priklausinių projektavimo ir projekto vykdymo priežiūros paslaugų pirkimas"@lt;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-218-500401_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2018-S-218-500401_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY;
+  epo:usesTechnique epd:id_2018-S-218-500401_DynamicPurchaseSystemTechniqueUsage_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2018-S-218-500401_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-218-500401_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-218-500401_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2018-S-218-500401_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/LTU>;
+  locn:postName "Vilnius" .
+
+epd:id_2018-S-218-500401_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Vilniaus apygardos teismas"@lt;
+  cccev:registeredAddress epd:id_2018-S-218-500401_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2018-S-218-500401_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-218-500401_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2018-S-218-500401_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "LT";
+  epo:hasReceiptExpressionDeadline "2021-11-15T10:00";
+  epo:hasSubmissionURL "https://pirkimai.eviesiejipirkimai.lt/app/rfq/rwlentrance_s.asp?PID=428274&B=PPO"^^xsd:anyURI .
+
+epd:id_2018-S-218-500401_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-218-500401_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2018-S-218-500401_Organisation_W8v6KSqiUn74jPKJmENKoH .

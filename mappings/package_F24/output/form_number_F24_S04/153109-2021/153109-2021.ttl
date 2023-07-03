@@ -1,0 +1,163 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-060-153109_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://echange.adp.fr/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-060-153109_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-060-153109_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-060-153109_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-060-153109_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Monsieur Olivier Beau"@fr;
+  epo:hasInternetAddress "www.parisaeroport.fr"^^xsd:anyURI;
+  cccev:email "olivier.beau@adp.fr" .
+
+epd:id_2021-S-060-153109_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Ensemble des locaux appartenant à Aéroports de Paris en région parisienne."@fr .
+
+epd:id_2021-S-060-153109_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:address epd:id_2021-S-060-153109_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-060-153109_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-060-153109_Period_RgULVPVVYP9pkvK789PCUZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-060-153109_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-060-153109_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-060-153109_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/55321000>, <http://data.europa.eu/cpv/cpv/55322000>,
+    <http://data.europa.eu/cpv/cpv/55330000>, <http://data.europa.eu/cpv/cpv/55400000> .
+
+epd:id_2021-S-060-153109_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-060-153109_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "L'avis au JOUE est utilisé en tant que publicité permettant à Aéroports de Paris d'informer et susciter la concurrence la plus large possible. Toute référence au terme «concession» dans le présent avis est imposée par le formulaire mais n'implique ni que la présente procédure est soumise au code de la commande publique ni qu'elle donne lieu à l'attribution d'une concession ou d'un marché."@fr;
+  epo:hasDescription "Aéroports de Paris est à la recherche d'un partenaire industriel capable notamment de co-financer le plan de développement d'une société commune, d'apporter à la société commune une centrale d'achats et des prestations de services performantes, de participer aux négociations avec les marques. En outre, le partenaire industriel choisi aura une part active dans le pilotage de la société commune au travers des organes de gouvernance et opérationnels.Le partenaire industriel, coassocié d'Aéroports de Paris ou d'une de ses filiales au capital de la société commune, devra contribuer à son développement, à l'optimisation de sa rentabilité et au déploiement d'une offre de service de grande qualité, cohérente avec les objectifs fixés par Aéroports de Paris. Pour ce faire, le partenaire industriel:— contribuera à la mise en place par la société commune d'un portefeuille d'enseignes, répondant pleinement aux objectifs financiers et de qualité fixés à la société commune;— mettra à disposition de la société commune sa centrale d'achat au savoir-faire démontré et assurera les principales prestations de services;— apportera son expertise en matière d'exploitation d'espaces de restauration, pour en assurer un haut niveau de qualité des opérations ainsi qu'une productivité optimisée;— contribuera à la politique et aux besoins de financement du développement de la société commune;— participera pleinement aux organes de gouvernance et de pilotage opérationnels, disposant ainsi des moyens adaptés aux contributions importantes attendues."@fr;
+  epo:hasPurpose epd:id_2021-S-060-153109_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-060-153109_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75017";
+  locn:postName "Paris";
+  locn:thoroughfare "2945 avenue de la Porte de Clichy" .
+
+epd:id_2021-S-060-153109_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM a org:Organization;
+  epo:hasLegalName "Greffe du tribunal judiciaire de Paris"@fr;
+  cccev:registeredAddress epd:id_2021-S-060-153109_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2021-S-060-153109_Mediator_PMKvGTWSa3gLdxRfJtvToM a epo:Mediator;
+  epo:playedBy epd:id_2021-S-060-153109_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2021-S-060-153109_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 1800000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-060-153109_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-060-153109_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-060-153109_Mediator_PMKvGTWSa3gLdxRfJtvToM,
+    epd:id_2021-S-060-153109_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2021-S-060-153109_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2021-S-060-153109_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2021-S-060-153109_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2021-03-22"^^xsd:date;
+  epo:hasID epd:id_2021-S-060-153109_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210326";
+  epo:refersToLot epd:id_2021-S-060-153109_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2021-S-060-153109_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-060-153109_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 060-153109" .
+
+epd:id_2021-S-060-153109_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:postCode "93290";
+  locn:postName "Tremblay-en-France";
+  locn:thoroughfare "1 rue de France" .
+
+epd:id_2021-S-060-153109_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasLegalName "Aéroports de Paris"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2021-S-060-153109_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-060-153109_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;
+  epo:hasBeginning "2022-01-01"^^xsd:date;
+  epo:hasEnd "2033-01-31"^^xsd:date .
+
+epd:id_2021-S-060-153109_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/55300000> .
+
+epd:id_2021-S-060-153109_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-060-153109_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "À l'exception des candidatures et des offres qui seront adressées par les candidats sur la plateforme d'échange d'Aéroports de Paris, l'ensemble des communication et des échanges à intervenir avec les candidats devra à l'adresse suivante: olivier.beau@adp.fr et binushi.sampath@adp.frLes modalités d'obtention d'informations complémentaires figurent dans les documents de consultation qui seront adressés aux candidats suivant la réception d'un engagement de confidentialité dûment complété et signé."@fr;
+  epo:hasDescription "Le partenaire industriel choisi devra prendre une participation à hauteur de 50 % dans la société détenue par la filiale à 100 % d'Aéroports de Paris en charge des activités de restauration.Cette société commune sera en charge de concevoir, aménager et exploiter l'ensemble des points de vente de restauration (un peu plus de 100 points de vente en vision cible) présents dans les aéroports appartenant à Aéroports de Paris en région parisienne.L'activité de distribution automatique de boissons chaudes, froides et de denrées est exclue du périmètre d'activité du partenaire industriel."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-060-153109_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-060-153109_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-060-153109_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Prise de participation dans une société commune ayant pour objet social l'exploitation des points de restauration d'Aéroports de Paris"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-060-153109_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-060-153109_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2021-S-060-153109_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2021-S-060-153109_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-060-153109_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-060-153109_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-060-153109_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75017";
+  locn:postName "Paris";
+  locn:thoroughfare "2945 avenue de la Porte de Clichy" .
+
+epd:id_2021-S-060-153109_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Greffe du tribunal judiciaire de Paris"@fr;
+  cccev:registeredAddress epd:id_2021-S-060-153109_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-060-153109_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-060-153109_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-060-153109_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Modalités et délais d'introduction des recours de droit commun." .
+
+epd:id_2021-S-060-153109_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75017";
+  locn:postName "Paris";
+  locn:thoroughfare "2945 avenue de la Porte de Clichy" .
+
+epd:id_2021-S-060-153109_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal judiciaire de Paris"@fr;
+  cccev:registeredAddress epd:id_2021-S-060-153109_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-060-153109_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-060-153109_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-060-153109_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://echange.adp.fr/"^^xsd:anyURI .
+
+epd:id_2021-S-060-153109_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-060-153109_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-060-153109_Organisation_jXahEP38X6pEFgd4J9tLvF .

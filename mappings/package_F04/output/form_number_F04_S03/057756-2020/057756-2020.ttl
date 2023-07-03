@@ -1,0 +1,173 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-025-057756_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://zamowienia.psgaz.pl"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2020-S-025-057756_AwardCriterionPrice_nhjAeUgxP9TrFdDRcqi3yA a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2020-S-025-057756_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2020-S-025-057756_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2020-S-025-057756_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-025-057756_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Julia Wiśniewska"@pl;
+  epo:hasInternetAddress "https://www.psgaz.pl/"^^xsd:anyURI;
+  cccev:email "przetargi.poznan@psgaz.pl";
+  cccev:telephone "+48 618545100" .
+
+epd:id_2020-S-025-057756_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Miejsce złożenia i odbioru Projektu – siedziba Oddziału Zakładu Gazowniczego Zamawiającego w Poznaniu, Dział Inwestycji i Remontów, Sekcja Inwestycji i Remontów w Poznaniu, ul. Za Groblą 8, Poznań"@pl .
+
+epd:id_2020-S-025-057756_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL415>;
+  locn:address epd:id_2020-S-025-057756_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2020-S-025-057756_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-025-057756_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2020-S-025-057756_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2020-S-025-057756_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71248000> .
+
+epd:id_2020-S-025-057756_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-025-057756_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Przedmiotem zamówienia jest wykonanie projektu budowlanego pełniącego jednocześnie funkcję dokumentacji wykonawczej na przebudowę gazociągu ś/c na ternie miejscowości Kliny, Mielno, Debogóra, Wierzonka wraz z uzyskaniem wszelkich wymaganych opinii, pozwoleń i decyzji, w tym pozyskanie decyzji pozwolenia na budowę z klauzulą ostateczności, wykonanie przedmiarów robót, kosztorysów inwestorskich (Projekt) oraz sprawowanie nadzoru autorskiego."@pl;
+  epo:hasPurpose epd:id_2020-S-025-057756_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2020-S-025-057756_AwardCriterionPrice_nhjAeUgxP9TrFdDRcqi3yA .
+
+epd:id_2020-S-025-057756_MediatorOrganisationAddress_QcCdiMK7DbGvuwkYmeWQca a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postName "n/d" .
+
+epd:id_2020-S-025-057756_MediatorOrganisation_QcCdiMK7DbGvuwkYmeWQca a org:Organization;
+  epo:hasLegalName "n/d"@pl;
+  cccev:registeredAddress epd:id_2020-S-025-057756_MediatorOrganisationAddress_QcCdiMK7DbGvuwkYmeWQca .
+
+epd:id_2020-S-025-057756_Mediator_QcCdiMK7DbGvuwkYmeWQca a epo:Mediator;
+  epo:playedBy epd:id_2020-S-025-057756_MediatorOrganisation_QcCdiMK7DbGvuwkYmeWQca .
+
+epd:id_2020-S-025-057756_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2020-S-025-057756_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2020-S-025-057756_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2020-S-025-057756_Mediator_QcCdiMK7DbGvuwkYmeWQca,
+    epd:id_2020-S-025-057756_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2020-S-025-057756_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2020-S-025-057756_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2020-S-025-057756_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2020-01-31"^^xsd:date;
+  epo:hasID epd:id_2020-S-025-057756_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20200205";
+  epo:refersToLot epd:id_2020-S-025-057756_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2020-S-025-057756_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2020-S-025-057756_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 025-057756" .
+
+epd:id_2020-S-025-057756_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL217>;
+  locn:postCode "33-100";
+  locn:postName "Tarnów";
+  locn:thoroughfare "ul. Wojciecha Bandrowskiego 16" .
+
+epd:id_2020-S-025-057756_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "Polska Spółka Gazownictwa Sp. z o.o."@pl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gas-heat>;
+  cccev:registeredAddress epd:id_2020-S-025-057756_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-025-057756_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2020-S-025-057756_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2020-S-025-057756_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71320000> .
+
+epd:id_2020-S-025-057756_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-025-057756_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription "Przedmiotem Zamówienia jest wykonanie projektu budowlanego pełniącego jednocześnie funkcję dokumentacji wykonawczej na przebudowę gazociągu ś/c na ternie miejscowości Kliny, Mielno, Debogóra, Wierzonka wraz z uzyskaniem wszelkich wymaganych opinii, pozwoleń i decyzji, w tym pozyskanie decyzji pozwolenia na budowę z klauzulą ostateczności, wykonanie przedmiarów robót, kosztorysów inwestorskich (Projekt) oraz sprawowanie nadzoru autorskiego."@pl;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-025-057756_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2020-S-025-057756_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Wykonanie dokumentacji projektowej przebudowy gazociągu ś/c na terenie miejscowości Kliny, Mielno, Debogóra, Wierzonka – zamówienie sektorowe"@pl;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-025-057756_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2020-S-025-057756_ReviewTerm_ZsxuomNURxGbRdavxJPhLN .
+
+epd:id_2020-S-025-057756_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2020-03-24"^^xsd:date .
+
+epd:id_2020-S-025-057756_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-025-057756_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2020-S-025-057756_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2020-S-025-057756_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17a" .
+
+epd:id_2020-S-025-057756_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasFax "+48 224587800";
+  epo:hasInternetAddress "https://www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2020-S-025-057756_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza"@pl;
+  epo:hasPrimaryContactPoint epd:id_2020-S-025-057756_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2020-S-025-057756_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2020-S-025-057756_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2020-S-025-057756_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2020-S-025-057756_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "1. Wobec czynności podjętych przez Zamawiającego w toku postępowania Wykonawca może składać środki ochrony prawnej, według zasad określonych w art. 179 i następne ustawy.2. Środki ochrony prawnej wobec ogłoszenia o zamówieniu oraz SIWZ przysługują również organizacjom wpisanym na listę, o której mowa w art. 154 pkt 5 ustawy.3. Odwołanie wnosi się do Prezesa Izby w formie pisemnej w postaci papierowej albo w postaci elektronicznej, opatrzone odpowiednio własnoręcznym podpisem albo kwalifikowanym podpisem elektronicznym. 4. Na orzeczenie Izby stronom oraz uczestnikom postępowania odwoławczego przysługuje skarga do Sądu. Skargę wnosi się do Sądu Okręgowego właściwego dla siedziby Zamawiającego. Skargę wnosi się za pośrednictwem Prezesa Krajowej Izby Odwoławczej w terminie 7 dni od dnia doręczenia orzeczenia Krajowej Izby Odwoławczej, przesyłając jednocześnie jej odpis przeciwnikowi skargi. Złożenie skargi w placówce pocztowej operatora wyznaczonego w rozumieniu ustawy z dnia 23.11.2012 r. – Prawo pocztowe jest równoznaczne z jej wniesieniem." .
+
+epd:id_2020-S-025-057756_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+48 224587800";
+  epo:hasInternetAddress "https://www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2020-S-025-057756_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17a" .
+
+epd:id_2020-S-025-057756_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza"@pl;
+  epo:hasPrimaryContactPoint epd:id_2020-S-025-057756_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2020-S-025-057756_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2020-S-025-057756_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-025-057756_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2020-S-025-057756_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2020-S-025-057756_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2020-S-025-057756_Organisation_W8v6KSqiUn74jPKJmENKoH .

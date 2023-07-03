@@ -1,0 +1,168 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-230-526686_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://marches.maximilien.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2018-S-230-526686_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://marches.maximilien.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-230-526686_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-230-526686_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-230-526686_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.paris.fr/concessions"^^xsd:anyURI;
+  cccev:email "DFA-chaletportejaune@paris.fr";
+  cccev:telephone "+33 142763733" .
+
+epd:id_2018-S-230-526686_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Avenue de Nogent, Bois de Vincennes 75012 Paris"@fr .
+
+epd:id_2018-S-230-526686_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:address epd:id_2018-S-230-526686_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-230-526686_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-230-526686_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-230-526686_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-230-526686_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2018-S-230-526686_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 144.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-230-526686_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/55300000> .
+
+epd:id_2018-S-230-526686_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-230-526686_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "La date indicative de démarrage du contrat est le 1.1.2020."@fr;
+  epo:hasDescription "Dans le cadre d'une concession de travaux et dans le respect des contraintes liées au site, le concessionnaire rénovera et exploitera un établissement à usage de café-restaurant et d'activités de réception.Le concessionnaire devra s'engager à réaliser le programme de travaux suivants, estimé à minima à 320 000 EUR (valeur 2019) hors travaux de Gros entretien renouvellement (GER) et hors autres investissements nécessaires sur la durée du contrat:— clos couvert: remplacement des garde-corps de l'escalier; amélioration de la performance thermique des bâtiments,— aménagements extérieurs: rénovation des surfaces minérales.Modification des mobiliers extérieurs pour mise en cohérence avec l'esthétique du Bois de Vincennes; mise aux normes d'accessibilité aux Personnes à mobilité réduite (PMR); reprise des compositions paysagères: restauration des vues sur le lac et des masses végétales en bosquets; dépose des cabanons de stockage en structure légère; remplacement et mise aux normes du local poubelle— pont d'accès à la concession: reprise générale; restauration paysagère des garde-corps; Reprise et dissimulation des réseaux en galerie.La ville de Paris ne participera pas au financement des investissements et n'assumera pas la maîtrise d'ouvrage. Le concessionnaire assumera seul la direction technique, le financement des travaux ainsi que le risque d'exploitation. Il aura également à sa charge toutes les dépenses de fonctionnement, d'entretien, de réparation ou de construction liées aux biens objet du futur contrat. À l'issue du contrat, l'intégralité des ouvrages et aménagements réalisés par le concessionnaire deviendra propriété de la ville de Paris, sans que le concessionnaire puisse prétendre à une quelconque indemnité."@fr;
+  epo:hasEstimatedValue epd:id_2018-S-230-526686_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-230-526686_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-230-526686_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 45000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-230-526686_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 45000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-230-526686_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-230-526686_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2018-S-230-526686_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2018-S-230-526686_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2018-S-230-526686_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2018-S-230-526686_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2018-11-26"^^xsd:date;
+  epo:hasID epd:id_2018-S-230-526686_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20181129";
+  epo:refersToLot epd:id_2018-S-230-526686_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2018-S-230-526686_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2018-S-230-526686_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 230-526686" .
+
+epd:id_2018-S-230-526686_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75013";
+  locn:postName "Paris";
+  locn:thoroughfare "7 avenue de la Porte d'Ivry" .
+
+epd:id_2018-S-230-526686_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Ville de Paris"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2018-S-230-526686_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-230-526686_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2018V12D2DSP-R7018" .
+
+epd:id_2018-S-230-526686_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45000000> .
+
+epd:id_2018-S-230-526686_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-230-526686_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Concession de travaux conclue en application des articles L. 1410-1 à L. 1410-3 et R. 1410-1 et R. 1410-2 du code général des collectivités territoriales et de l'ordonnance no 2016-65 du 29.1.2016 et du décret no 2016-86 du 1.2.2016.Procédure restreinte: 1re phase: candidatures. Dossiers de candidatures: les plis devront comporter toutes les informations et pièces visées à la section III).Transmission des plis par voie postale en recommandé avec avis de réception ou remis contre récépissé à l'adresse spécifiée au I.1) du présent avis, les jours ouvrés de 9:30 à 12:00 et de 14:00 à 16:00 (cf. Date et heure limite au IV.2.2). Les dossiers devront être parvenus à l'adresse indiquée avant la date et heure limites. Les dossiers arrivés en retard ne seront pas examinés. Mention sur le pli cacheté: candidature pour la rénovation et l'exploitation du Chalet de la Porte Jaune et ne pas ouvrir. Les candidats pourront se présenter soit seuls, soit en groupement d'entreprises.En cas de groupement, chaque membre doit fournir l'ensemble des informations et pièces demandées (sauf la lettre de candidature valant le cas échéant habilitation du mandataire). Pour les documents demandés au III.1.1)4) Le candidat établi hors de France fournit les certificats ou documents équivalents délivrés par l'autorité administrative ou judiciaire compétente de son pays d'origine ou d'établissement attestant de l'absence de cas d'exclusion. Le cas échéant, les candidats joignent une traduction en français des documents remis dans une autre langue.Si le candidat s'appuie sur d'autres opérateurs économiques pour justifier de ses capacités pour la présentation de sa candidature, il doit les mentionner dans sa lettre de candidature et produire, pour chacun d'eux, les mêmes documents que ceux exigés de lui pour justifier de ses capacités, ainsi qu'un engagement écrit de chacun d'eux qu'il disposera de leurs capacités pour l'exécution du contrat.Les candidats qui produisent une candidature incomplète ou contenant de faux renseignements ou documents ne sont pas admis à participer à la suite de la procédure. Seront déclarées irrecevables et éliminées les candidatures présentées par un candidat qui ne peut participer à la procédure (articles 39 et 42 de l'ordonnance du 29.1.2016) ou qui ne possède pas les capacités ou aptitudes exigées aux points III.1.2) et III.1.3). Les candidats sélectionnés recevront une invitation à soumissionner indiquant l'adresse d'accès au dossier de consultation.2e phase: offres. L'envoi de l'invitation à soumissionner est prévu au plus tôt à partir du 13.2.2019 (date indicative). Le dossier de consultation indiquera les conditions d'établissement et le délai de réception des offres. Au vu de l'avis de la commission prévue à l'article L. 1411-5 du CGCT, l'autorité concédante pourra organiser une négociation avec un ou plusieurs soumissionnaires ayant remis une offre. Au terme des négociations, le choix du concessionnaire sera effectué en application des critères définis dans le dossier de consultation et soumis au vote du conseil de Paris. Il sera demandé au candidat ou au groupement d'entreprises retenu de constituer, en tant qu'actionnaires, une société dédiée à l'exécution du contrat. Aucune indemnisation ne sera versée aux candidats, quelle que soit la suite donnée à leur proposition. Le montant estimé indiqué au II.2.6) de la concession est exprimé en euros HT constants, valeur 2019 et correspond au chiffre d'affaires hors taxes estimé total du concessionnaire sur la durée du contrat, au titre de l'exécution de la concession. Ce chiffre d'affaires inclut ainsi l'ensemble des produits, sur une durée de 12 ans, liés à l'exploitation de la concession (bâtiments et espaces extérieurs)."@fr;
+  epo:hasDescription "Située dans le Bois de Vincennes, site classé, avenue de Nogent, sur une emprise d'environ 8 000 m2 correspondant à la superficie de l'île qu'elle occupe sur le lac des minimes, la concession comprend 3 bâtiments:— le Chalet (618 m2) avec un sous-sol (250 m2) un rez-de-chaussée (188 m2) et un étage (180 m2),— le Belvédère (1 020 m2) avec 700 m2 de salons modulables et des sanitaires au sous-sol (120 m2),— la fermette (318 m2) avec un salon de 200 m2.Au titre du plan local d'urbanisme, l'emprise de la concession est inscrite en zone naturelle et forestière, en zone de secteur de taille et de capacité d'accueil limitée, et en périmètre d'espace boisé classé (EBC)."@fr;
+  epo:hasEstimatedValue epd:id_2018-S-230-526686_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2018-S-230-526686_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-230-526686_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-230-526686_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Concession de travaux relative à la rénovation et l'exploitation du Chalet de la Porte Jaune, situé avenue de Nogent dans le Bois de Vincennes (Paris 12e)"@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-230-526686_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2018-S-230-526686_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2018-S-230-526686_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2018-S-230-526686_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-230-526686_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-230-526686_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-230-526686_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75004";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2018-S-230-526686_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2018-S-230-526686_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-230-526686_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2018-S-230-526686_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-230-526686_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-230-526686_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-230-526686_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Précisions concernant les délais d'introduction de recours: avant la conclusion du contrat, la présente consultation, peut faire l'objet d'un référé précontractuel dans les conditions des articles L. 551-1 et suivants du code de justice administrative. À compter de sa signature, la présente consultation peut faire l'objet d'un référé contractuel dans les conditions des articles L. 551-13 et suivants du code de justice administrative. Le tribunal administratif peut être saisi d'un recours en contestation de la validité du contrat dans un délai de 2 mois à compter de l'accomplissement des mesures de publicité appropriées, dans les conditions définies par le Conseil d'État dans sa décision no 358994 département de Tarn-et-Garonne du 4.4.2014." .
+
+epd:id_2018-S-230-526686_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2018-S-230-526686_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75004";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2018-S-230-526686_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-230-526686_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2018-S-230-526686_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-230-526686_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-230-526686_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-230-526686_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2018-S-230-526686_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-230-526686_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-230-526686_Organisation_jXahEP38X6pEFgd4J9tLvF .

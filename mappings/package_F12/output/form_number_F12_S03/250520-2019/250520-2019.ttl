@@ -1,0 +1,102 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-103-250520_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.regional-air.ro"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-103-250520_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-103-250520_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2019-S-103-250520_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2019-S-103-250520_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "George Halichia"@ro;
+  epo:hasInternetAddress "www.regional-air.ro"^^xsd:anyURI;
+  cccev:email "george.halichia@regional-air.ro";
+  cccev:telephone "+40 751201662" .
+
+epd:id_2019-S-103-250520_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2019-S-103-250520_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-103-250520_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2019-S-103-250520_Fund_k5UiCNjVxapva2MShsi99p a epo:Fund;
+  epo:hasDescription "Action no– 2015-EU-TM-0266-W - \"Synchronised Performance Based Navigation Implementation Cohesion Europe\" - Grant Agreement number INEA/CEF/TRAN/M2015/1125723"@ro .
+
+epd:id_2019-S-103-250520_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-103-250520_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "S.C. Regional Air Services S.R.L., având sediul social în Tuzla, Aerodrom Tuzla, judeţul Constanţa, înregistrată la Registrul Comerţului Constanţa sub numărul J13/2523/1998, având cod de identificare fiscală RO 11196680, e-mail office@regional-air.ro, reprezentată prin domnul Adrian-Ştefan Vasilache, Director General, organizează concurs de soluţii pentru achiziţia de „Servicii de proiectare proceduri de zbor instrumental” pentru Aeroportul Tuzla, detinut in proprietate."@ro;
+  epo:isFundedBy epd:id_2019-S-103-250520_Fund_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds true .
+
+epd:id_2019-S-103-250520_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-103-250520_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2019-S-103-250520_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2019-S-103-250520_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2019-S-103-250520_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2019-05-27"^^xsd:date;
+  epo:hasID epd:id_2019-S-103-250520_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20190529";
+  epo:refersToLot epd:id_2019-S-103-250520_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2019-S-103-250520_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2019-S-103-250520_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 103-250520" .
+
+epd:id_2019-S-103-250520_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ROU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/RO223>;
+  locn:postCode "907295";
+  locn:postName "Tuzla";
+  locn:thoroughfare "Aerodrom Tuzla, Comuna Tuzla, Constanța" .
+
+epd:id_2019-S-103-250520_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "RO 11196680" .
+
+epd:id_2019-S-103-250520_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasID epd:id_2019-S-103-250520_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "S.C. Regional Air Services S.R.L."@ro;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2019-S-103-250520_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2019-S-103-250520_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79930000> .
+
+epd:id_2019-S-103-250520_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "Serviciile ce vor fi contractate sunt următoarele: proiectarea/revizia si furnizarea draftului hartilor aeronautice OACI pentru Aeroportul Tuzla: VOR CAT A, B RWY 16 (revizie)/RNAV (GNSS) RWY 04/22 (lines of Minima shall be designed: LNAV, LNAV/VNAV and LPV)/PinS RWY16/34/MSA/Circling.Procedurile de zbor instrumental menționate vor fi proiectate în conformitate cu cerințele legislației naționale și OACI în vigoare, legislația natională fiind prioritară.(a) Organizația de proiectare trebuie să se asigure că procedurile de zbor instrumental pe care le proiectează îndeplinesc cerințele și criteriile prevăzute în reglementările și standardele aplicabile ale aeroportului unde vor fi implementate, ale aeroporturilor afectate, precum și ale operatorilor aerieni,(b) Organizația de proiectare trebuie să implementeze proceduri documentate pentru controlul activităților de proiectare a procedurilor de zbor instrumental, inclusiv al activităților de verificare și validare a etapelor de proiectare,(c) Organizația de proiectare trebuie să proiecteze procedurile de zbor instrumental ce vor fi implementate în FIR București utilizând standardele de proiectare cuprinse în:— Document OACI 8168 „Proceduri de navigație aeriană-Operarea aeronavelor”, volumul 2, ediția în vigoare,— Document OACI 9613 „Manualul OACI de navigație bazată pe cerințe de performanță PBN”, ediția în vigoare,— Document OACI 8697 „Manualul pentru hărți aeronautice”, ediția în vigoare,— Document OACI 9368 „Manualul pentru construcția procedurilor de zbor instrumental, ediția în vigoare,— Document OACI 9905 „Manualul OACI RNP AR”, ediția în vigoare,— Document OACI 9274 Manualul pentru utilizarea modelului de rîsc asupra coliziunii pentru operațiunile ILS, ediția în vigoare,— Document OACI 9371 Manualul OACI pentru proceduri de așteptare, ediția în vigoare,— Document OACI 9643 Manualul OACI pentru operare simultană pe piste paralele sau aproape paralele, ediția în vigoare,— Alte documente OACI aplicabile,(d) Organizația de proiectare trebuie să păstreze și să actualizeze documentația referitoare la standardele de proiectare și reglementările utilizate în proiectarea procedurilor de zbor instrumental,(e) Pentru atribuirea contractului, prestatorul trebuie să facă dovadă îndeplinirii cerințelor precizate în reglementarea natională RACR-CPPZI, această fiind o condiție necesară privind acceptarea de către AACR a activității prestatorului.Prestatorul va prezența AACR toate documentele referitoare la organizația de proiectare, în conformitate cu cerințele RACR-CPPZI sau solicitate suplimentar de către AACR.Prestatorul se obligă să se adapteze oricăror modificări ulterioare ale RACR-CPPZI.Organizația de proiectare proceduri de zbor instrumental trebuie să procure datele necesare proiectării, să le valideze în ceea ce privește acuratețea, rezoluția, integritatea, elipsoidul de referință și data efectivă pentru a le putea utiliza în documentația de proiectare (Doc. 9906, vol. 1, art. 7.2).Organizațiile de proiectare și organizațiile care furnizează informații aeronautice și date aeronautice trebuie să se asigure că informațiile aeronautice și datele aeronautice utilizate în proiectarea procedurilor de zbor instrumental sunt actuale, complete și adecvate scopului."@ro;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-103-250520_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2019-S-103-250520_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Achiziționarea serviciilor de proiectare proceduri de zbor instrumental la Aeroportul Tuzla"@ro;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-103-250520_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2019-S-103-250520_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2019-S-103-250520_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-103-250520_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2019-S-103-250520_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2019-S-103-250520_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ROU>;
+  locn:postName "Tuzla";
+  locn:thoroughfare "Aerodrom Tuzla, Comuna Tuzla, Constanța" .
+
+epd:id_2019-S-103-250520_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "S.C. Regional Air Services S.R.L."@ro;
+  cccev:registeredAddress epd:id_2019-S-103-250520_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2019-S-103-250520_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-103-250520_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2019-S-103-250520_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "EN", "RO" .
+
+epd:id_2019-S-103-250520_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-103-250520_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2019-S-103-250520_Organisation_VX8RygdBbvDo5gNDhjcsTj .

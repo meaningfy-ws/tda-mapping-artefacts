@@ -1,0 +1,201 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-124-302300_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.klekoon.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-124-302300_AdditionalBuyer_n3AiVAiqhTocTL76peYHtw a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-124-302300_AdditionalContactPoint_n3AiVAiqhTocTL76peYHtw;
+  epo:playedBy epd:id_2019-S-124-302300_AdditionalOrganisation_n3AiVAiqhTocTL76peYHtw .
+
+epd:id_2019-S-124-302300_AdditionalContactPoint_n3AiVAiqhTocTL76peYHtw a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.les-pavillons-sous-bois.fr/"^^xsd:anyURI;
+  cccev:email "ccas.psb@laposte.net" .
+
+epd:id_2019-S-124-302300_AdditionalOrganisation_n3AiVAiqhTocTL76peYHtw a org:Organization;
+  epo:hasLegalName "Centre communal d'action sociale des Pavillons-sous-Bois"@fr;
+  cccev:registeredAddress epd:id_2019-S-124-302300_OrganisationAddress_n3AiVAiqhTocTL76peYHtw .
+
+epd:id_2019-S-124-302300_BuyerOrganisationGroup_n3AiVAiqhTocTL76peYHtw a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  epo:hasMember epd:id_2019-S-124-302300_AdditionalOrganisation_n3AiVAiqhTocTL76peYHtw,
+    epd:id_2019-S-124-302300_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2019-S-124-302300_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasBuyerProfile "http://www.klekoon.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2019-S-124-302300_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2019-S-124-302300_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2019-S-124-302300_Channel_Zfp5YfoNfJomE833qJVsZY a cccev:Channel;
+  epo:hasURL "http://www.klekoon.com"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2019-S-124-302300_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.klekoon.com"^^xsd:anyURI;
+  cccev:email "service.juridique@lespavillonssousbois.fr";
+  cccev:telephone "+33 172591912" .
+
+epd:id_2019-S-124-302300_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress "Mairie des Pavillons-sous-Bois."@fr .
+
+epd:id_2019-S-124-302300_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR106>;
+  locn:address epd:id_2019-S-124-302300_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2019-S-124-302300_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-124-302300_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-124-302300_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2019-S-124-302300_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2019-S-124-302300_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 3.0;
+  time:unitType time:unitMonth .
+
+epd:id_2019-S-124-302300_LotIdentifier_oEYZZQWPrbQFajcRU6KZAY a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2019-S-124-302300_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/30192400> .
+
+epd:id_2019-S-124-302300_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-124-302300_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasAdditionalInformation "Les copies de sauvegarde devront être transmises par la poste en recommandé avec Ar, ou remises contre récépissé à: service juridique et marchés publics, Hôtel de Ville des Pavillons-sous-Bois — 93320. Les dossiers «copie de sauvegarde» dont l'avis de réception postal serait délivré après la date et l'heure limites fixées sur la page de garde ne seront pas retenus."@fr;
+  epo:hasDescription "Le présent accord-cadre mono-attributaire à bons de commande a pour objet l'achat de papier reprographie. Le présent accord-cadre est destiné aux services de la commune, aux écoles, aux centres de loisirs, crèches, relais d'assistantes maternelles, halte-jeux, bibliothèque municipale, et au CCAS de la commune des Pavillons-sous-Bois."@fr;
+  epo:hasID epd:id_2019-S-124-302300_LotIdentifier_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2019-S-124-302300_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasTitle "Papier reprographie"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2019-S-124-302300_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds false .
+
+epd:id_2019-S-124-302300_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
+
+epd:id_2019-S-124-302300_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-124-302300_AdditionalBuyer_n3AiVAiqhTocTL76peYHtw,
+    epd:id_2019-S-124-302300_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2019-S-124-302300_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2019-S-124-302300_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2019-S-124-302300_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2019-S-124-302300_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE;
+  epo:hasDispatchDate "2019-06-26"^^xsd:date;
+  epo:hasID epd:id_2019-S-124-302300_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20190701";
+  epo:refersToLot epd:id_2019-S-124-302300_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2019-S-124-302300_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2019-S-124-302300_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 124-302300" .
+
+epd:id_2019-S-124-302300_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR106>;
+  locn:postCode "93320";
+  locn:postName "Les Pavillons-sous-Bois";
+  locn:thoroughfare "place Charles de Gaulle" .
+
+epd:id_2019-S-124-302300_OrganisationAddress_n3AiVAiqhTocTL76peYHtw a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR106>;
+  locn:postCode "93320";
+  locn:postName "Les Pavillons-sous-Bois";
+  locn:thoroughfare "1 allée de Berlin" .
+
+epd:id_2019-S-124-302300_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasLegalName "Ville de Pavillons-sous-Bois"@fr;
+  cccev:registeredAddress epd:id_2019-S-124-302300_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2019-S-124-302300_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/30192400> .
+
+epd:id_2019-S-124-302300_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw "Française."@fr;
+  epo:hasMaximumNumberOfLotsToBeAwarded 1;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2019-S-124-302300_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-124-302300_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation "Les signataires doivent être habilités à engager la société. La remise des candidatures et des offres par voie dématérialisée sont soumises aux dispositions des articles L. 2132-2 et R. 2132-2 à 14 du CCP. Le présent accord-cadre fait l'objet d'une procédure de passation des marchés dématérialisée. Les offres devront impérativement être remises sur le portail des marchés publics de la ville des Pavillons-Sous-Bois, à l'adresse suivante: http:// www.klekoon.comTout soumissionnaire peut accompagner sa candidature et son offre d'une copie de sauvegarde des fichiers transmis, cette copie étant envoyée sur support physique électronique ou sur support papier. Il est toutefois conseillé de la transmettre sur support électronique (CD-ROM, DVD-ROM, Clé USB). Cette copie de sauvegarde doit obligatoirement être envoyée dans un pli clos, cacheté et scellé comportant la mention lisible de «copie de sauvegarde» et reçu dans le délai imparti pour la remise des candidatures et des offres."@fr;
+  epo:hasDescription "La consultation est lancée selon un appel d'offre ouvert soumis aux dispositions des articles L. 2124-1 et suivants du CPP. Ce marché fait l'objet d'une relance à la suite d'une 1re procédure d'appel d'offre déclarée infructueuse pour absence d'offres. Il s'agit d'un accord-cadre à bons de commande mono-attributaire conformément aux articles L. 2125-1 et R. 2162-2 à 5 du CPP. Le présent marché est composé d'un lot sans montant minimum ni montant maximum, en raison des difficultés prévisionnelles liées à la nature de ces besoins et du caractère aléatoire de ces derniers. Les soumissionnaires auront la possibilité de télécharger le Dossier de consultation des entreprises (DCE) dans son intégralité via le site dont l'adresse internet est http://www.klekoon.comPour tout renseignement complémentaire en vue de répondre à la présente consultation, les candidats doivent poser leurs questions uniquement sur la plate-forme Klekoon à l'adresse suivante: www.klekoon.com"@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-124-302300_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2019-S-124-302300_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Accord-cadre relatif à l'acquisition de papier reprographie"@fr;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-124-302300_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2019-S-124-302300_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2019-S-124-302300_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf,
+    epd:id_2019-S-124-302300_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
+  epo:usesChannel epd:id_2019-S-124-302300_Channel_Zfp5YfoNfJomE833qJVsZY .
+
+epd:id_2019-S-124-302300_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-124-302300_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2019-S-124-302300_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2019-S-124-302300_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "93100";
+  locn:postName "Montreuil";
+  locn:thoroughfare "7 rue Catherine Puig" .
+
+epd:id_2019-S-124-302300_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  epo:hasFax "+33 149492099";
+  cccev:telephone "+33 149202000" .
+
+epd:id_2019-S-124-302300_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Montreuil"@fr;
+  epo:hasPrimaryContactPoint epd:id_2019-S-124-302300_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2019-S-124-302300_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2019-S-124-302300_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2019-S-124-302300_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2019-S-124-302300_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— recours gracieux ou hiérarchique dans les 2 mois suivant la notification de la décision contestée,— référé précontractuel exercé avant la signature du contrat sur le fondement de l'article L. 551-1 du Code de justice administrative (CJA),— référé contractuel exercé jusqu'au 31e jour suivant la publication d'un avis d'attribution du contrat. En l'absence d'un tel avis, le délai de saisine expire à l'issue d'un délai de 6 mois à compter du lendemain du jour de la conclusion du contrat sur le fondement de l'article R. 551-7 du CJA,— recours de pleine juridiction exercé par tout concurrent évincé de la conclusion du contrat contestant la validité du contrat. Délai: 2 mois à compter des mesures de publicité appropriées,— recours juridictionnel en annulation (actes administratifs détachables du contrat): 2 mois suivant leur publication ou leur notification en application de l'article R. 421-1 du CJA." .
+
+epd:id_2019-S-124-302300_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasFax "+33 149492099";
+  cccev:telephone "+33 149202000" .
+
+epd:id_2019-S-124-302300_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "93100";
+  locn:postName "Montreuil";
+  locn:thoroughfare "7 rue Catherine Puig" .
+
+epd:id_2019-S-124-302300_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Montreuil"@fr;
+  epo:hasPrimaryContactPoint epd:id_2019-S-124-302300_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2019-S-124-302300_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2019-S-124-302300_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-124-302300_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2019-S-124-302300_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.klekoon.com"^^xsd:anyURI .
+
+epd:id_2019-S-124-302300_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-124-302300_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2019-S-124-302300_Organisation_bhAnCWhMtKVDKPwFpTfXJN .

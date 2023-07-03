@@ -1,0 +1,448 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-127-259424_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://electool.com/sourcingtool"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-127-259424_AdditionalBuyer_CpEekzFtAswXMVZciW4heM a epo:Buyer;
+  epo:hasBuyerProfile "http://www.elmu.hu"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-127-259424_AdditionalContactPoint_CpEekzFtAswXMVZciW4heM;
+  epo:playedBy epd:id_2017-S-127-259424_AdditionalOrganisation_CpEekzFtAswXMVZciW4heM .
+
+epd:id_2017-S-127-259424_AdditionalContactPoint_CpEekzFtAswXMVZciW4heM a cccev:ContactPoint;
+  epo:hasContactName "dr. Pessek Szilvia"@hu;
+  epo:hasFax "+36 12382867";
+  epo:hasInternetAddress "http://www.elmu.hu"^^xsd:anyURI;
+  cccev:email "kozbeszerzes@elmu.hu";
+  cccev:telephone "+36 12381948" .
+
+epd:id_2017-S-127-259424_AdditionalOrganisation_CpEekzFtAswXMVZciW4heM a org:Organization;
+  epo:hasLegalName "ÉMÁSZ Hálózati Kft."@hu;
+  cccev:registeredAddress epd:id_2017-S-127-259424_OrganisationAddress_CpEekzFtAswXMVZciW4heM .
+
+epd:id_2017-S-127-259424_BuyerOrganisationGroup_CpEekzFtAswXMVZciW4heM a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMember epd:id_2017-S-127-259424_AdditionalOrganisation_CpEekzFtAswXMVZciW4heM,
+    epd:id_2017-S-127-259424_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-127-259424_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "http://www.elmu.hu"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-127-259424_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-127-259424_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-127-259424_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "dr. Pessek Szilvia"@hu;
+  epo:hasFax "+36 12382867";
+  epo:hasInternetAddress "http://www.elmu.hu"^^xsd:anyURI;
+  cccev:email "kozbeszerzes@elmu.hu";
+  cccev:telephone "+36 12381948" .
+
+epd:id_2017-S-127-259424_ContractTermLotLocationAddress_GpRFjLQwEv6oYXEcifYvcT a locn:Address;
+  locn:fullAddress """
+                  ÉMÁSZ Hálózati Kft., 132/22 kV-os Szécsény alállomása.
+               """@hu .
+
+epd:id_2017-S-127-259424_ContractTermLotLocationAddress_Skxdjr2pmT23HW6hZfG6Nj a locn:Address;
+  locn:fullAddress """
+                  ÉMÁSZ Hálózati Kft., 132/35/22 kV-os Borsodnádasd alállomása.
+               """@hu .
+
+epd:id_2017-S-127-259424_ContractTermLotLocationAddress_XLFriwAStnrth86dKcVteo a locn:Address;
+  locn:fullAddress """
+                  ELMŰ Hálózati Kft., 132/11 kV-os Újpest alállomása.
+               """@hu .
+
+epd:id_2017-S-127-259424_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+                  ELMŰ Hálózati Kft, 132/22 kV-os Újhartyán alállomása.
+               """@hu .
+
+epd:id_2017-S-127-259424_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq a locn:Address;
+  locn:fullAddress """
+                  ELMŰ Hálózati Kft., 132/22 kV-os Pomázi alállomása.
+               """@hu .
+
+epd:id_2017-S-127-259424_ContractTermLotLocation_GpRFjLQwEv6oYXEcifYvcT a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU31>;
+  locn:address epd:id_2017-S-127-259424_ContractTermLotLocationAddress_GpRFjLQwEv6oYXEcifYvcT .
+
+epd:id_2017-S-127-259424_ContractTermLotLocation_Skxdjr2pmT23HW6hZfG6Nj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU31>;
+  locn:address epd:id_2017-S-127-259424_ContractTermLotLocationAddress_Skxdjr2pmT23HW6hZfG6Nj .
+
+epd:id_2017-S-127-259424_ContractTermLotLocation_XLFriwAStnrth86dKcVteo a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU101>;
+  locn:address epd:id_2017-S-127-259424_ContractTermLotLocationAddress_XLFriwAStnrth86dKcVteo .
+
+epd:id_2017-S-127-259424_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU10>;
+  locn:address epd:id_2017-S-127-259424_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-127-259424_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU10>;
+  locn:address epd:id_2017-S-127-259424_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2017-S-127-259424_ContractTermLot_GpRFjLQwEv6oYXEcifYvcT a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-127-259424_Duration_JwJstaS4U6WfeS8KZpVgnR;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-127-259424_ContractTermLotLocation_GpRFjLQwEv6oYXEcifYvcT .
+
+epd:id_2017-S-127-259424_ContractTermLot_Skxdjr2pmT23HW6hZfG6Nj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-127-259424_Duration_dZyrbNXS6VBEn8JDop3Pmz;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-127-259424_ContractTermLotLocation_Skxdjr2pmT23HW6hZfG6Nj .
+
+epd:id_2017-S-127-259424_ContractTermLot_XLFriwAStnrth86dKcVteo a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-127-259424_Duration_8dSjdKSw7dFzBaGvfmRU6v;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-127-259424_ContractTermLotLocation_XLFriwAStnrth86dKcVteo .
+
+epd:id_2017-S-127-259424_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-127-259424_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-127-259424_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-127-259424_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-127-259424_Duration_Pn7seLvJsSm7d5S9iCwt2c;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-127-259424_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2017-S-127-259424_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-127-259424_Duration_8dSjdKSw7dFzBaGvfmRU6v a epo:SpecificDuration;
+  time:numericDuration 21.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-127-259424_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 14.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-127-259424_Duration_JwJstaS4U6WfeS8KZpVgnR a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-127-259424_Duration_Pn7seLvJsSm7d5S9iCwt2c a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-127-259424_Duration_dZyrbNXS6VBEn8JDop3Pmz a epo:SpecificDuration;
+  time:numericDuration 21.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-127-259424_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "dr. Pessek Szilvia"@hu;
+  epo:hasFax "+36 12382867";
+  epo:hasInternetAddress "http://www.elmu.hu"^^xsd:anyURI;
+  cccev:email "kozbeszerzes@elmu.hu";
+  cccev:telephone "+36 12381948" .
+
+epd:id_2017-S-127-259424_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU101>;
+  locn:postCode "1132";
+  locn:postName "Budapest";
+  locn:thoroughfare "Váci út 72-74." .
+
+epd:id_2017-S-127-259424_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasLegalName "ELMŰ Nyrt., Beszerzési Igazgatóság"@hu;
+  cccev:registeredAddress epd:id_2017-S-127-259424_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2017-S-127-259424_LotIdentifier_GpRFjLQwEv6oYXEcifYvcT a epo:Identifier;
+  epo:hasIdentifierValue "4" .
+
+epd:id_2017-S-127-259424_LotIdentifier_Skxdjr2pmT23HW6hZfG6Nj a epo:Identifier;
+  epo:hasIdentifierValue "5" .
+
+epd:id_2017-S-127-259424_LotIdentifier_XLFriwAStnrth86dKcVteo a epo:Identifier;
+  epo:hasIdentifierValue "3" .
+
+epd:id_2017-S-127-259424_LotIdentifier_aNssKXiFyYxii2v93ivV4N a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2017-S-127-259424_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2017-S-127-259424_LotPurpose_GpRFjLQwEv6oYXEcifYvcT a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45200000>, <http://data.europa.eu/cpv/cpv/45213250>,
+    <http://data.europa.eu/cpv/cpv/45232220>, <http://data.europa.eu/cpv/cpv/45315400>,
+    <http://data.europa.eu/cpv/cpv/45315500>, <http://data.europa.eu/cpv/cpv/45315600> .
+
+epd:id_2017-S-127-259424_LotPurpose_Skxdjr2pmT23HW6hZfG6Nj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45200000>, <http://data.europa.eu/cpv/cpv/45213250>,
+    <http://data.europa.eu/cpv/cpv/45232220>, <http://data.europa.eu/cpv/cpv/45315400>,
+    <http://data.europa.eu/cpv/cpv/45315500>, <http://data.europa.eu/cpv/cpv/45315600> .
+
+epd:id_2017-S-127-259424_LotPurpose_XLFriwAStnrth86dKcVteo a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45200000>, <http://data.europa.eu/cpv/cpv/45213250>,
+    <http://data.europa.eu/cpv/cpv/45232220>, <http://data.europa.eu/cpv/cpv/45315500>,
+    <http://data.europa.eu/cpv/cpv/45315600> .
+
+epd:id_2017-S-127-259424_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45200000>, <http://data.europa.eu/cpv/cpv/45213250>,
+    <http://data.europa.eu/cpv/cpv/45232220>, <http://data.europa.eu/cpv/cpv/45315400>,
+    <http://data.europa.eu/cpv/cpv/45315500>, <http://data.europa.eu/cpv/cpv/45315600> .
+
+epd:id_2017-S-127-259424_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45200000>, <http://data.europa.eu/cpv/cpv/45213250>,
+    <http://data.europa.eu/cpv/cpv/45232220>, <http://data.europa.eu/cpv/cpv/45315400>,
+    <http://data.europa.eu/cpv/cpv/45315500>, <http://data.europa.eu/cpv/cpv/45315600> .
+
+epd:id_2017-S-127-259424_Lot_GpRFjLQwEv6oYXEcifYvcT a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-127-259424_ContractTermLot_GpRFjLQwEv6oYXEcifYvcT;
+  epo:hasAdditionalInformation """
+                  A szerződés időtartama naptári napokban kerül megadásra, melyre a hirdetmény nem biztosít lehetőséget, ezért a II.2.7) pontban a hónapok száma kerekítve került megadásra. Részletes információk a részvételi dokumentumokban találhatóak.
+                  Ajánlatkérő a becsült érték vagy nagyságrend összegét nem kívánja megadni, a II.2.6) pontban az 1 HUF érték a hirdetménykezelő rendszer miatt került rögzítésre.
+               """@hu;
+  epo:hasDescription """
+                  A Szécsény alállomás alábbiak szerinti építészeti és villamos technológiai létesítési munkái: 1 db szabadtér létesítési + 1 db kapcsoló- és vezénylőépület villamos installációs, épületgépészeti és belsőépítészeti létesítési munkái, 1 db komplett nagyfeszültségű technológia; 1 db komplett középfeszültségű technológia, 1 db komplett védelmi rendszer, 1 db komplett irányítástechnika, 1 db komplett távközlés. Továbbá a meglévő 1 db 22 kV-os kapcsolóállomás kapcsoló-berendezésének teljes körű bontása.
+               """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-127-259424_MainMonetaryValueLot_GpRFjLQwEv6oYXEcifYvcT;
+  epo:hasID epd:id_2017-S-127-259424_LotIdentifier_GpRFjLQwEv6oYXEcifYvcT;
+  epo:hasPurpose epd:id_2017-S-127-259424_LotPurpose_GpRFjLQwEv6oYXEcifYvcT;
+  epo:hasTitle """
+                  ÉMÁSZ Hálózati Kft., Szécsény 132/22 kV-os alállomás létesítése
+               """@hu;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-127-259424_Lot_Skxdjr2pmT23HW6hZfG6Nj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-127-259424_ContractTermLot_Skxdjr2pmT23HW6hZfG6Nj;
+  epo:hasAdditionalInformation """
+                  A szerződés időtartama naptári napokban kerül megadásra, melyre a hirdetmény nem biztosít lehetőséget, ezért a II.2.7) pontban a hónapok száma kerekítve került megadásra. Részletes információk a részvételi dokumentumokban találhatóak.
+                  Ajánlatkérő a becsült érték vagy nagyságrend összegét nem kívánja megadni, a II.2.6) pontban az 1 HUF érték a hirdetménykezelő rendszer miatt került rögzítésre.
+               """@hu;
+  epo:hasDescription """
+                  A Borsodnádasd alállomás alábbiak szerinti építészeti és villamos technológiai rekonstrukciós munkái: a szabadtéren 2 db 120 kV-os trafómező, 5 db 132 kV-os távvezetéki mező, 1 db 132 kV-os sínáthidaló mező, 2 db 132 kV-os gyűjtősínrendszer komplett rekonstrukciója (primer és szekunder + építészet); az épületben a 22 kV-os kapcsoló-berendezés + 1 db komplett védelmi rendszer, 1 db komplett irányítástechnika, 1 db komplett segédüzemi rendszer, 1 db komplett távközlés komplett rekonstrukciója (primer és szekunder + építészet). Az építészeti munka tartalmazza az 1 db szabadtér vonatkozó munkái mellett az 1 db kapcsoló és vezénylőépület teljes bontását majd új épület kivitelezését.
+               """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-127-259424_MainMonetaryValueLot_Skxdjr2pmT23HW6hZfG6Nj;
+  epo:hasID epd:id_2017-S-127-259424_LotIdentifier_Skxdjr2pmT23HW6hZfG6Nj;
+  epo:hasPurpose epd:id_2017-S-127-259424_LotPurpose_Skxdjr2pmT23HW6hZfG6Nj;
+  epo:hasTitle """
+                  ÉMÁSZ Hálózati Kft., Borsodnádasd 132/35/22 kV-os alállomás rekonstrukciója
+               """@hu;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-127-259424_Lot_XLFriwAStnrth86dKcVteo a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-127-259424_ContractTermLot_XLFriwAStnrth86dKcVteo;
+  epo:hasAdditionalInformation """
+                  A szerződés időtartama naptári napokban kerül megadásra, melyre a hirdetmény nem biztosít lehetőséget, ezért a II.2.7) pontban a hónapok száma kerekítve került megadásra. Részletes információk a részvételi dokumentumokban találhatóak.
+                  Ajánlatkérő a becsült érték vagy nagyságrend összegét nem kívánja megadni, a II.2.6) pontban az 1 HUF érték a hirdetménykezelő rendszer miatt került rögzítésre.
+               """@hu;
+  epo:hasDescription """
+                  Az Újpest alállomás alábbiak szerinti építészeti és villamos technológiai rekonstrukciós munkái: az épületben lévő 1 db komplett 10 kV-os technológia rekonstrukciója a hozzá tartozó 1 db komplett védelmi rendszer, 1 db komplett irányítástechnika, 1 db komplett távközlés rekonstrukciójával együtt ütemezetten, ideiglenes üzemállapotokkal. Továbbá az épület 1 db pinceszint külső vízszigetelés elkészítése és a padozat átalakítása mélyítéssel, 1 db vezénylő helyiségben a kijelölt falak bontása/építése, 1 db kábelakna bontása, és az 1 db épület vonatkozó villamos installációs, épületgépészeti és belsőépítészeti munkái több ütemben. Az 1 db szabadtéren az 1 db nagykapu felújítása, és készülékszállító utak elkészítése, továbbá 1 db közterület térkövezése.
+               """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-127-259424_MainMonetaryValueLot_XLFriwAStnrth86dKcVteo;
+  epo:hasID epd:id_2017-S-127-259424_LotIdentifier_XLFriwAStnrth86dKcVteo;
+  epo:hasPurpose epd:id_2017-S-127-259424_LotPurpose_XLFriwAStnrth86dKcVteo;
+  epo:hasTitle """
+                  ELMŰ Hálózati Kft., Újpest 132/11 kV-os alállomás rekonstrukciója
+               """@hu;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-127-259424_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-127-259424_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation """
+                  A szerződés időtartama naptári napokban kerül megadásra, melyre a hirdetmény nem biztosít lehetőséget, ezért a II.2.7) pontban a hónapok száma kerekítve került megadásra. Részletes információk a részvételi dokumentumokban találhatóak.
+                  Ajánlatkérő a becsült érték vagy nagyságrend összegét nem kívánja megadni, a II.2.6) pontban az 1 HUF érték a hirdetménykezelő rendszer miatt került rögzítésre.
+               """@hu;
+  epo:hasDescription """
+                  Az Újhartyán alállomás alábbiak szerinti építészeti és villamos technológiai létesítési munkák: 1 db szabadtér létesítési + 1 db kapcsoló- és vezénylőépület komplett szerkezeti, villamos installációs, épületgépészeti és belsőépítészeti létesítési munkái, 1 db komplett nagyfeszültségű technológia; 1 db komplett középfeszültségű technológia, 1 db komplett segédüzemi rendszer, 1 db komplett védelmi rendszer, 1 db komplett irányítástechnika, 1 db komplett távközlés.
+               """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-127-259424_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasID epd:id_2017-S-127-259424_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2017-S-127-259424_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:hasTitle """
+                  ELMŰ Hálózati Kft., Újhartyán 132/22 kV-os alállomás létesítése
+               """@hu;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-127-259424_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-127-259424_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasAdditionalInformation """
+                  A szerződés időtartama naptári napokban kerül megadásra, melyre a hirdetmény nem biztosít lehetőséget, ezért a II.2.7) pontban a hónapok száma kerekítve került megadásra. Részletes információk a részvételi dokumentumokban találhatóak.
+                  Ajánlatkérő a becsült érték vagy nagyságrend összegét nem kívánja megadni, a II.2.6) pontban az 1 HUF érték a hirdetménykezelő rendszer miatt került rögzítésre.
+               """@hu;
+  epo:hasDescription """
+                  A Pomáz alállomás alábbiak szerinti építészeti és villamos technológiai rekonstrukciós munkái: 1 db szabadtér rekonstrukció beleértve a 3 db 132 kV-os trafómező, 3 db 132 kV-os távvezetéki mező, 1 db 132 kV-os üzemen kívüli mező; 120 kV-os gyűjtősínek rekonstrukcióját; épületben az 1 db 22 kV-os komplett kapcsoló-berendezés, 1 db komplett védelmi rendszer, 1 db komplett irányítástechnika, 1 db komplett távközlés rekonstrukcióját ütemezetten, ideiglenes üzemállapotokkal. Továbbá az 1 db kapcsoló- és vezénylőépület villamos installációs, épületgépészeti és belsőépítészeti rekonstrukciós munkái.
+               """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-127-259424_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasID epd:id_2017-S-127-259424_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2017-S-127-259424_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasTitle """
+                  ELMŰ Hálózati Kft., Pomáz 132/22 kV-os alállomás rekonstrukciója
+               """@hu;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-127-259424_MainMonetaryValueLot_GpRFjLQwEv6oYXEcifYvcT a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-127-259424_MainMonetaryValueLot_Skxdjr2pmT23HW6hZfG6Nj a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-127-259424_MainMonetaryValueLot_XLFriwAStnrth86dKcVteo a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-127-259424_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-127-259424_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-127-259424_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-127-259424_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-127-259424_AdditionalBuyer_CpEekzFtAswXMVZciW4heM,
+    epd:id_2017-S-127-259424_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2017-S-127-259424_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2017-S-127-259424_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2017-S-127-259424_TenderReceiver_dk2esofbDLefiQsKcsKjh3;
+  epo:hasDispatchDate "2017-07-04"^^xsd:date;
+  epo:hasID epd:id_2017-S-127-259424_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20170706";
+  epo:refersToLot epd:id_2017-S-127-259424_Lot_GpRFjLQwEv6oYXEcifYvcT, epd:id_2017-S-127-259424_Lot_Skxdjr2pmT23HW6hZfG6Nj,
+    epd:id_2017-S-127-259424_Lot_XLFriwAStnrth86dKcVteo, epd:id_2017-S-127-259424_Lot_aNssKXiFyYxii2v93ivV4N,
+    epd:id_2017-S-127-259424_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:refersToProcedure epd:id_2017-S-127-259424_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-127-259424_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 127-259424" .
+
+epd:id_2017-S-127-259424_OrganisationAddress_CpEekzFtAswXMVZciW4heM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU31>;
+  locn:postCode "3525";
+  locn:postName "Miskolc";
+  locn:thoroughfare "Dózsa György út 13." .
+
+epd:id_2017-S-127-259424_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU101>;
+  locn:postCode "1132";
+  locn:postName "Budapest";
+  locn:thoroughfare "Váci út 72–74." .
+
+epd:id_2017-S-127-259424_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "AK15890" .
+
+epd:id_2017-S-127-259424_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2017-S-127-259424_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "ELMÜ Hálózati Kft."@hu;
+  cccev:registeredAddress epd:id_2017-S-127-259424_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-127-259424_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45232220> .
+
+epd:id_2017-S-127-259424_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 5;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2017-S-127-259424_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-127-259424_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+               1) Az érdekelt szervezetnek a meghatározott határidőig szándéknyilatkozatot kell benyújtania magyar nyelven, mely tartalmazza:
+               — az érdekelt szervezet nevét, székhelyét,
+               — a kapcsolattartó személy nevét, beosztását, elérhetőségét (e-mail, telefonszám),
+               — adószámát,
+               — cégjegyzékszámát,
+               — a közbeszerzési eljárás pontos megnevezését.
+               Amennyiben a szándéknyilatkozat nem tartalmaz minden, a gazdasági szereplő egyértelmű beazonosításához szükséges információt, ajánlatkérő nem kötelezett a hiányzó adatok beszerzésére, és a közvetlen részvételi felhívást a rendelkezésére álló adatok alapján küldi meg. A szándéknyilatkozat benyújtható e-mail mellékletként (kozbeszerzes@elmu.hu) vagy telefaxon (+36 1 238 2867).
+               A szándéknyilatkozatot benyújtó szervezet felelőssége meggyőződni arról, hogy a benyújtott szándéknyilatkozat megérkezett-e határidőig az ajánlatkérőhöz, aki az előírt határidőben szándéknyilatkozatot benyújtó gazdasági szereplőket hívja fel szándéknyilatkozatuk megerősítésére a közvetlen részvételi felhívás megküldésével.
+               2) Ajánlatkérő a részvételi felhívást és a kapcsolódó közbeszerzési dokumentumokat egyidejűleg és közvetlenül küldi meg a szándéknyilatkozatukat az előírt határidőben benyújtó gazdasági szereplőknek a szándéknyilatkozatban megadott e-mail címre, továbbá a részvételi felhívás és a kapcsolódó közbeszerzési dokumentumok az időszakos előzetes tájékoztatóban foglaltak alapján a jelzett időponttól kezdődően (tervezett határidő: IV.2.5. pont szerint) érhetők el az I.3 pontban jelzett elérési útvonalon (https://electool.com/sourcingtool) azon gazdasági szereplők számára, akik szándéknyilatkozatukat az előírt határidőben benyújtották.
+               A részvételi felhívást és a kapcsolódó közbeszerzési dokumentumokat részvételre jelentkezőnként legalább egy gazdasági szereplőnek (valamelyik közös ajánlattevőnek, alvállalkozónak) elektronikus úton el kell érnie a részvételi határidő lejártáig, illetve az elérést vissza kell igazolni az Ajánlatkérő nevében eljáró szervezet kozbeszerzes@elmu.hu e-mail címére, (év/hónap/nap/óra/perc) adattartalommal [Kbt. 57. § (2) bekezdés].
+               3) Ajánlatkérő opciót nem alkalmaz.
+               4) Ajánlatkérő a változatokra történő ajánlattételt nem teszi lehetővé.
+               5) FAKSZ: Darida Éva (00380).
+            """@hu;
+  epo:hasDescription """
+               Nagy/középfeszültségű alállomások építészeti és villamos technológiai rekonstrukciója/létesítése az ELMŰ Hálózati Kft. és az ÉMÁSZ Hálózati Kft. ellátási területén – II.
+            """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-127-259424_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-127-259424_Lot_GpRFjLQwEv6oYXEcifYvcT,
+    epd:id_2017-S-127-259424_Lot_Skxdjr2pmT23HW6hZfG6Nj, epd:id_2017-S-127-259424_Lot_XLFriwAStnrth86dKcVteo,
+    epd:id_2017-S-127-259424_Lot_aNssKXiFyYxii2v93ivV4N, epd:id_2017-S-127-259424_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2017-S-127-259424_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               Nagy/középfeszültségű alállomások építészeti és villamos technológiai rekonstrukciója/létesítése az ELMŰ Hálózati Kft. és az ÉMÁSZ Hálózati Kft. ellátási területén – II.
+            """@hu;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-127-259424_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2017-S-127-259424_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY, epd:id_2017-S-127-259424_ReviewTerm_ZsxuomNURxGbRdavxJPhLN,
+    epd:id_2017-S-127-259424_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2017-S-127-259424_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-127-259424_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2017-S-127-259424_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2017-S-127-259424_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               A jogorvoslati kérelmek benyújtására a Kbt. 148. §-ban foglaltak az irányadók.
+            """ .
+
+epd:id_2017-S-127-259424_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828594" .
+
+epd:id_2017-S-127-259424_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó utca 5." .
+
+epd:id_2017-S-127-259424_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2017-S-127-259424_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2017-S-127-259424_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-127-259424_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-127-259424_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-127-259424_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "HU";
+  epo:hasReceiptExpressionDeadline "2017-07-31T13:00" .
+
+epd:id_2017-S-127-259424_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU101>;
+  locn:postCode "1132";
+  locn:postName "Budapest";
+  locn:thoroughfare "Váci út 72-74. 504. szoba" .
+
+epd:id_2017-S-127-259424_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3
+  a cccev:ContactPoint;
+  epo:hasContactName "dr. Pessek Szilvia"@hu;
+  epo:hasFax "+36 12382867";
+  epo:hasInternetAddress "http://www.elmu.hu"^^xsd:anyURI;
+  cccev:email "kozbeszerzes@elmu.hu";
+  cccev:telephone "+36 12381948" .
+
+epd:id_2017-S-127-259424_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 a org:Organization;
+  epo:hasLegalName "ELMŰ Nyrt., Beszerzési Igazgatóság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2017-S-127-259424_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  cccev:registeredAddress epd:id_2017-S-127-259424_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3 .
+
+epd:id_2017-S-127-259424_TenderReceiver_dk2esofbDLefiQsKcsKjh3 a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-127-259424_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  epo:playedBy epd:id_2017-S-127-259424_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 .

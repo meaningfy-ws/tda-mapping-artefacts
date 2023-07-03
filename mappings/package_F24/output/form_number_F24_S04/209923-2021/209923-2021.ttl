@@ -1,0 +1,180 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-081-209923_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.achatpublic.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-081-209923_AwardCriterion_97fG5roZ9xxsBW4G4JCeEu a epo:AwardCriterion;
+  cccev:description "Valeur économique de l'offre au regard du mémoire explicatif"@fr .
+
+epd:id_2021-S-081-209923_AwardCriterion_nF5mLYwaayYGQ3jCBkmNPF a epo:AwardCriterion;
+  cccev:description "Qualité du service rendu aux usagers au regard du mémoire explicatif"@fr .
+
+epd:id_2021-S-081-209923_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.achatpublic.com/sdm/ent/gen/index.jsp"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-081-209923_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-081-209923_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-081-209923_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Mme Florence Lemoine — secrétaire générale ou Mme Virginie Dardard — service «Urbanisme»"@fr;
+  epo:hasInternetAddress "http://www.mairie-septeuil.fr"^^xsd:anyURI;
+  cccev:email "mairie@septeuil.fr";
+  cccev:telephone "+33 130934054" .
+
+epd:id_2021-S-081-209923_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Commune de Septeuil."@fr .
+
+epd:id_2021-S-081-209923_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR103>;
+  locn:address epd:id_2021-S-081-209923_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-081-209923_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-081-209923_Period_RgULVPVVYP9pkvK789PCUZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-081-209923_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-081-209923_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-081-209923_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "M. Jérémie Ribeyre"@fr;
+  epo:hasInternetAddress "http://www.mairie-septeuil.fr"^^xsd:anyURI;
+  cccev:email "Jribeyre@collectivitesconseils.fr";
+  cccev:telephone "+33 662624884" .
+
+epd:id_2021-S-081-209923_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR103>;
+  locn:postCode "75016";
+  locn:postName "Paris";
+  locn:thoroughfare "69 avenue du Maine" .
+
+epd:id_2021-S-081-209923_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasLegalName "Collectivités Conseils — AMO"@fr;
+  cccev:registeredAddress epd:id_2021-S-081-209923_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2021-S-081-209923_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/65111000> .
+
+epd:id_2021-S-081-209923_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-081-209923_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription "La consultation lancée par la ville de Septeuil a pour objet de confier, par contrat de concession de service public, l'exploitation du service public d'eau potable (le fonctionnement, l'entretien et la surveillance des réseaux et ouvrages d'eau potable)."@fr;
+  epo:hasPurpose epd:id_2021-S-081-209923_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-081-209923_AwardCriterion_97fG5roZ9xxsBW4G4JCeEu,
+    epd:id_2021-S-081-209923_AwardCriterion_nF5mLYwaayYGQ3jCBkmNPF .
+
+epd:id_2021-S-081-209923_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-081-209923_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-081-209923_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2021-S-081-209923_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2021-S-081-209923_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2021-04-22"^^xsd:date;
+  epo:hasID epd:id_2021-S-081-209923_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210427";
+  epo:refersToLot epd:id_2021-S-081-209923_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2021-S-081-209923_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-081-209923_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 081-209923" .
+
+epd:id_2021-S-081-209923_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR103>;
+  locn:postCode "78790";
+  locn:postName "Septeuil";
+  locn:thoroughfare "6 place Louis Fouché" .
+
+epd:id_2021-S-081-209923_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "78591" .
+
+epd:id_2021-S-081-209923_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasID epd:id_2021-S-081-209923_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Commune de Septeuil"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2021-S-081-209923_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-081-209923_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;
+  epo:hasBeginning "2022-01-01"^^xsd:date;
+  epo:hasEnd "2031-12-31"^^xsd:date .
+
+epd:id_2021-S-081-209923_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021-01" .
+
+epd:id_2021-S-081-209923_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/65111000> .
+
+epd:id_2021-S-081-209923_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-081-209923_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Une visite de site obligatoire est organisée le jeudi 6.5.2021. RV à la mairie, place Louis Fouché à 9h15. Durée de validité des offres: 240 jours."@fr;
+  epo:hasDescription "La consultation lancée par la ville de Septeuil a pour objet de confier, par contrat de concession de service public, l'exploitation du service public d'eau potable (le bon fonctionnement, l'entretien et la surveillance des réseaux et ouvrages d'eau potable). La gestion du service porte également sur l'exploitation des ouvrages et installations de production et de distribution d'eau potable, le renouvellement des équipements, à l'exception du génie civil et des canalisations, la facturation et la gestion des relations avec les usagers. Le contrat de concession débutera à partir du 1.1.2022 (ou à sa date de transmission en préfecture si elle est postérieure), pour s'achever le 31.12.2031, soit une durée de dix ans."@fr;
+  epo:hasID epd:id_2021-S-081-209923_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-081-209923_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-081-209923_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Concession de service d'eau potable pour la Commune de Septeuil"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-081-209923_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-081-209923_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2021-S-081-209923_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2021-S-081-209923_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-081-209923_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2021-S-081-209923_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2021-S-081-209923_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "78011";
+  locn:postName "Versailles";
+  locn:thoroughfare "56 avenue de Saint-Cloud" .
+
+epd:id_2021-S-081-209923_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Versailles"@fr;
+  cccev:registeredAddress epd:id_2021-S-081-209923_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-081-209923_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-081-209923_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-081-209923_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Le référé contractuel peut être exercé dans un délai de:— 31 jours, à compter de la publication d'un avis d'attribution du contrat au Journal officiel de l'Union européenne (JOUE);— six mois, à compter du lendemain du jour de la conclusion du contrat, si aucun avis d'attribution n'a été publié ou si aucune notification de la conclusion du contrat n'a été effectuée." .
+
+epd:id_2021-S-081-209923_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.ta-versailles.juradm.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-versailles@juradm.fr";
+  cccev:telephone "+33 139205400" .
+
+epd:id_2021-S-081-209923_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "78011";
+  locn:postName "Versailles";
+  locn:thoroughfare "56 avenue de Saint-Cloud" .
+
+epd:id_2021-S-081-209923_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Versailles"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-081-209923_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2021-S-081-209923_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-081-209923_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-081-209923_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-081-209923_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.achatpublic.com"^^xsd:anyURI .

@@ -1,0 +1,252 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-245-448211_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://toursplus.achatpublic.com/sdm/ent/gen/index.do"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2016-S-245-448211_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://toursplus.achatpublic.com/sdm/ent/gen/index.do"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-245-448211_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2016-S-245-448211_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2016-S-245-448211_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "M. le président"@fr;
+  epo:hasFax "+33 247283446";
+  epo:hasInternetAddress "https://toursplus.achatpublic.com/sdm/ent/gen/index.do"^^xsd:anyURI;
+  cccev:email "commandepublique@agglo-tours.fr";
+  cccev:telephone "+33 247801111" .
+
+epd:id_2016-S-245-448211_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR244> .
+
+epd:id_2016-S-245-448211_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-245-448211_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-245-448211_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2016-S-245-448211_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-245-448211_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 84.0;
+  time:unitType time:unitMonth .
+
+epd:id_2016-S-245-448211_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "Service commande publique — bureau 160"@fr;
+  epo:hasFax "+33 47283446";
+  epo:hasInternetAddress "https://toursplus.achatpublic.com/sdm/ent/gen/index.do"^^xsd:anyURI;
+  cccev:email "commandepublique@agglo-tours.fr";
+  cccev:telephone "+33 47801218" .
+
+epd:id_2016-S-245-448211_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR244>;
+  locn:postCode "37206";
+  locn:postName "Tours Cedex 3";
+  locn:thoroughfare "60 avenue Marcel Dassault" .
+
+epd:id_2016-S-245-448211_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasLegalName "Communauté d'agglomération Tour(s) Plus"@fr;
+  cccev:registeredAddress epd:id_2016-S-245-448211_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2016-S-245-448211_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60112000>, <http://data.europa.eu/cpv/cpv/60140000>,
+    <http://data.europa.eu/cpv/cpv/60150000>, <http://data.europa.eu/cpv/cpv/60210000> .
+
+epd:id_2016-S-245-448211_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-245-448211_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation """
+Suite du II.2.4)
+— les charges d'exploitation ont atteint 58 417 000 EUR HT et les produits se sont élevés à 21 201 000 EUR.
+— un centre de maintenance et un dépôt bus.
+En 2015, le service de transport des personnes à mobilité réduite était exploité au moyen de 19 véhicules adaptés, le délégataire mobilisant 23 salariés pour parcourir 820 000 km et assurer 78 000 transports.
+"""@fr;
+  epo:hasDescription """
+Le service délégué inclura les lignes urbaines de tramway et de bus, les lignes non urbaines de bus, des services à la mobilité complémentaires à l'offre de transport, parmi lesquels l'exploitation des parkings relais, et l'exploitation des parkings vélos, le service «calèche», d'éventuels modes actuellement non exploités et susceptibles d'être mis en œuvre ultérieurement, des services de transport à la demande, et, si Tour(S)Plus le décide, le service de transport pour les personnes à mobilité réduite.
+En 2015, hors service de transport des personnes à mobilité réduite, le réseau présentait les caractéristiques suivantes:
+— le parc de véhicules de transport propriété de Tour(S) Plus était composé de 21 rames de tramways et 163 autobus: 70 articulés, 89 standards, 4 minibus électriques,
+— les moyens humains comprennent 692 personnes dont 486 conducteurs,
+— le réseau a parcouru 10 356 000 kilomètres et transporté 35 527 000 voyageurs.
+(suite au II.2.14).
+"""@fr;
+  epo:hasEstimatedValue epd:id_2016-S-245-448211_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2016-S-245-448211_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-245-448211_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 420000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-245-448211_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 420000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-245-448211_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-245-448211_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2016-S-245-448211_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2016-S-245-448211_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2016-S-245-448211_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2016-S-245-448211_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2016-12-16"^^xsd:date;
+  epo:hasID epd:id_2016-S-245-448211_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20161220";
+  epo:refersToLot epd:id_2016-S-245-448211_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2016-S-245-448211_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2016-S-245-448211_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 245-448211" .
+
+epd:id_2016-S-245-448211_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR244>;
+  locn:postCode "37206";
+  locn:postName "Tours Cedex 3";
+  locn:thoroughfare "60 avenue Marcel Dassault — CS 30651" .
+
+epd:id_2016-S-245-448211_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasLegalName "Communauté d'agglomération Tour(s) Plus"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2016-S-245-448211_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2016-S-245-448211_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "16DSPTRAMBUS01" .
+
+epd:id_2016-S-245-448211_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2016-S-245-448211_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-245-448211_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+Section III: renseignements d'ordre juridique, économique, financier et technique
+III.1) Conditions de participation;
+III.1.1) Habilitation à exercer l'activité professionnelle, y compris exigences relatives à l'inscription au registre du commerce ou de la profession.
+Liste et description succincte des conditions, indication des informations et documents requis:
+— lettre de candidature (DC1, DUME ou équivalent),
+— extrait KBIS de moins de 3 mois,
+— les candidats étrangers mentionneront l'existence éventuelle d'un établissement stable en France ou d'un représentant fiscal en France,
+— pouvoirs de la personne habilitée pour engager le candidat,
+— copie(s) du (des) jugement(s) prononcés si le candidat est en redressement judiciaire,
+— déclaration sur l'honneur attestant que:
+— le candidat ne fait l'objet d'aucune exclusion de la participation à la procédure de passation des contrats de concession prévue aux articles 39 et 42 de l'ordonnance nº 2016-65 du 29.1.2016 relative aux contrats de concession,
+— les renseignements et documents relatifs à ses capacités et aptitudes, exigés en application de l'article 45 de l'ordonnance du 29.1.2016 susvisée et dans les conditions fixées aux articles 20 et 21 du décret nº 2016-86 du 1.1.2016 relatif aux contrats de concession sont exacts,
+— le candidat respecte l'obligation d'emploi des travailleurs handicapés prévue aux articles L. 5212-1 à L. 5212-4 du code du travail ou équivalent pour les candidats étrangers non établis en France,
+— ensemble des documents justifiant que le candidat ne fait l'objet d'aucune exclusion de la participation à la procédure de passation des contrats de concession prévue aux articles 39 et 42 de l'ordonnance du 29.1.2016 susvisée.
+Pour justifier qu'il a satisfait aux obligations prévues au 2° de l'article 39 de l'ordonnance du 29.1.2016, le candidat produit un certificat délivré par les administrations et organismes compétents.
+Procédure de délégation de service public dans le cadre des articles L. 1411-1 et suivants du code général des collectivités territoriales, de l'ordonnance nº 2016-65 du 29 janvier et du décret nº 2016-86 du 1.2.2016 relatifs aux contrats de concession.
+La commission de délégation de service public arrêtera la liste des candidats admis à présenter une offre. Les documents de la consultation seront adressés à l'ensemble de ces candidats.
+Conformément aux dispositions de l'article 7, paragraphe 2, du règlement nº 1370/2007, un avis de préinformation a été publié au JOUE du 19.12.2015.
+Tour(s)Plus versera une indemnisation aux candidats non retenus ayant remis une offre sérieuse, dont le montant sera précisé dans le règlement de consultation qui sera envoyé aux candidats admis à présenter une offre.
+Modalités de remise des candidatures. Remise par voie papier: les candidatures peuvent être transmises par lettre recommandée avec avis de réception ou déposées contre récépissé, sous enveloppe cachetée portant les mentions: appel à candidature — convention de délégation de service public pour l'exploitation de services de transport public de voyageurs de l'agglomération de Tours \"ne pas ouvrir avant la séance d'ouverture des plis\". Les dossiers qui seraient remis ou dont l'avis de réception serait délivré après la date et l'heure limites fixés ci-dessus, ainsi que ceux remis sous enveloppe non cachetée, ne seront pas retenus. Remise par voie électronique: la remise des candidatures pourra s'effectuer via la plateforme https://toursplus.achatpublic.com/sdm/ent/gen/index.do
+"""@fr;
+  epo:hasDescription """
+Délégation par voie de concession du service public de type contribution financière forfaitaire pour l'exploitation de services de transports publics de voyageurs d'une durée de 7 ans à compter du 1.1.2019 (art. L. 1411-1 et s. CGCT, ordonnance nº 2016-65 du 29.1.2016 et décret nº 2016-86 du 1.2.2016 relatifs aux contrats de concession).
+"""@fr;
+  epo:hasEstimatedValue epd:id_2016-S-245-448211_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2016-S-245-448211_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-245-448211_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2016-S-245-448211_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+Convention de délégation de service public pour l'exploitation de services de transport public de voyageurs (bus +tramway) de l'agglomération de Tours.
+"""@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-245-448211_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2016-S-245-448211_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2016-S-245-448211_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2016-S-245-448211_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-245-448211_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2016-S-245-448211_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2016-S-245-448211_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "45057";
+  locn:postName "Orléans Cedex";
+  locn:thoroughfare "28 rue de la Bretonnerie" .
+
+epd:id_2016-S-245-448211_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 238538516";
+  cccev:email "greffe.ta-orleans@juradm.fr";
+  cccev:telephone "+33 238775900" .
+
+epd:id_2016-S-245-448211_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif d'Orléans"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-245-448211_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2016-S-245-448211_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2016-S-245-448211_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-245-448211_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2016-S-245-448211_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Précisions concernant les délais d'introduction de recours:
+Le contrat (ou la procédure de passation) pourra faire l'objet de plusieurs recours:
+— avant la signature du contrat, un référé précontractuel (art. L. 551-1 et suivants du code de justice administrative),
+— après la signature du contrat et dans les délais prévus à l'article R. 551-7 du CJA, un référé contractuel (art. L. 551-13 et suivants du code de justice administrative),
+— dans les 2 mois suivant l'accomplissement des mesures de publicité, d'un recours de pleine juridiction selon les principes dégagés par le Conseil d'État (CE, 4.4.2014, département de Tarn-et-Garonne, nº 358994). Ce recours pourra, le cas échéant, être assorti d'un référé suspension (art. L. 521-1 du code de justice administrative).
+""" .
+
+epd:id_2016-S-245-448211_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 238538516";
+  cccev:email "greffe.ta-orleans@juradm.fr";
+  cccev:telephone "+33 238775900" .
+
+epd:id_2016-S-245-448211_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "45057";
+  locn:postName "Orléans Cedex";
+  locn:thoroughfare "28 rue de la Bretonnerie" .
+
+epd:id_2016-S-245-448211_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif d'Orléans"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-245-448211_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2016-S-245-448211_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2016-S-245-448211_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-245-448211_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2016-S-245-448211_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://toursplus.achatpublic.com/sdm/ent/gen/index.do"^^xsd:anyURI .
+
+epd:id_2016-S-245-448211_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR244>;
+  locn:postCode "37206";
+  locn:postName "Tours Cedex 3";
+  locn:thoroughfare "60 avenue Marcel Dassault" .
+
+epd:id_2016-S-245-448211_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasContactName "Service commande publique — bureau 160"@fr;
+  epo:hasFax "+33 47283446";
+  epo:hasInternetAddress "https://toursplus.achatpublic.com/sdm/ent/gen/index.do"^^xsd:anyURI;
+  cccev:email "commandepublique@agglo-tours.fr";
+  cccev:telephone "+33 47801218" .
+
+epd:id_2016-S-245-448211_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Communauté d'agglomération Tour(S) Plus"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-245-448211_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2016-S-245-448211_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2016-S-245-448211_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-245-448211_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2016-S-245-448211_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

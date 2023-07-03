@@ -1,0 +1,205 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-046-120422_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://ekr.gov.hu/portal/kozbeszerzes/eljarasok/EKR000105352022/reszletek"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-046-120422_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "https://oeny.e-epites.hu/oeny/tpalya/jozsefattilateleptervpalyazat"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-046-120422_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2022-S-046-120422_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-046-120422_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Bálint Patrik Adrián"@hu;
+  epo:hasInternetAddress "http://bfk.hu/"^^xsd:anyURI;
+  cccev:email "balint.patrik@bfk.hu";
+  cccev:telephone "+36 300894305" .
+
+epd:id_2022-S-046-120422_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2022-S-046-120422_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-046-120422_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2022-S-046-120422_Fund_k5UiCNjVxapva2MShsi99p a epo:Fund;
+  epo:hasDescription "(IKOP-3.1.0-15-2019-00019)"@hu .
+
+epd:id_2022-S-046-120422_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasContactName "Bálint Patrik Adrián"@hu;
+  epo:hasInternetAddress "http://bfk.hu/"^^xsd:anyURI;
+  cccev:email "balint.patrik@bfk.hu";
+  cccev:telephone "+36 300894305" .
+
+epd:id_2022-S-046-120422_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU110>;
+  locn:postCode "1027";
+  locn:postName "Budapest";
+  locn:thoroughfare "Horvát utca 14." .
+
+epd:id_2022-S-046-120422_InformationProviderOrganisationIdentifier_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:Identifier;
+  epo:hasIdentifierValue "25416316241" .
+
+epd:id_2022-S-046-120422_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasID epd:id_2022-S-046-120422_InformationProviderOrganisationIdentifier_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:hasLegalName "BFK Budapest Fejlesztési Központ Nonprofit Zártkörűen Működő Részvénytársaság"@hu;
+  cccev:registeredAddress epd:id_2022-S-046-120422_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2022-S-046-120422_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71220000>, <http://data.europa.eu/cpv/cpv/71240000> .
+
+epd:id_2022-S-046-120422_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-046-120422_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "A tervpályázati eljárás (Tervpályázat vagy Tervpályázati Eljárás) lebonyolítója a BFK Budapesti Fejlesztési Központ Nonprofit Zrt. (Kiíró). Az EKR útján történik a hirdetmény feladása, de az eljárás lebonyolítása során a https://oeny.e-epites.hu/oeny/tpalya/jozsefattilateleptervpalyazat weboldalt kell használnia a pályázóknak mind a további információk beszerzésére, mind a pályázat benyújtására vonatkozóan.A https://oeny.e-epites.hu/oeny/tpalya/jozsefattilateleptervpalyazat oldalon rögzített dokumentációban (Dokumentáció) megadott követelmények az irányadók.A tervpályázat megnevezése: Szigetszentmiklós József Attila-telep hév megálló új előtér és parkolóház tervezése tervpályázatAz eljárás fajtája: közösségi értékhatárt meghaladó értékű nyílt építészeti tervpályázat.A H5 és H6-7 hév fejlesztés célja a hévvonalak utasvonzó képességének javítása, közösségi közlekedésben betöltött szerepének funkcióváltása, mint a H5 szentendrei hév és a H6-H7 ráckevei-csepeli hév vonalak korszerűsítése, összekapcsolása és meghosszabbítása a Kálvin térig, valamint - második ütemben - az észak-déli városi-elővárosi gyorsvasút fejlesztése Duna alatti összekötésre és az egész észak-déli városi-elővárosi tengelyre.A szigetszentmiklósi József Attila-telep hév megállóhely megújításának tervezésével párhuzamosan Kiíró annak közvetlen környezetének rendezését és a hozzá kapcsolódó P+R parkolóház tervezését is elindítja jelen tervpályázat keretében.Kiíró jelen Tervpályázat keretében olyan komplex, 21. századi közlekedési csomópontnak és annak városi előterének kialakítására vár javaslatot, ahol különböző közlekedési módok organizált módon épülnek egymásra, a megalkotott beépítési- és környezetalakítás javaslat katalizálni képes a szomszédos városrészek fenntartható módon történő fejlődését, és amely a lehető legmagasabb színvonalon képes kiszolgálni az előírt funkciókat és teljesíteni a tervpályázati kiírásban (Kiírás) és a tervpályázati Kiírás dokumentációjában (Dokumentáció) meghatározott értékelési szempontokat.A Tervpályázat eredményeként kiválasztott nyertes tervezővel Kiíró tervezési szerződést kíván kötni, a tervpályázati eljárásokról szóló 310/2015. (X. 28.) Korm. rendelet (Tervpályázati Rendelet) 9. § (2) bekezdése szerinti, hirdetmény közzététele nélküli tárgyalásos közbeszerzési eljárás lefolytatásának eredményeként.A Tervpályázat tervezési programjának rövid összefoglalója:- Cél, egy egyszerre kapuként és városi alközpontként funkcionáló minőségi zöld városi állomási előtér, amely könnyen megközelíthető és átjárható gyalogosan, kerékpárral és egyéb mikromobilitási eszközökkel, felfűzi mindazon szolgáltatásokat, melyekre napi ingázóként és környékbeli lakosként is igényt tartanak a helyiek, kortárs és minőségi kialakításával méltó kereteket ad az napi szintű utazásoknak, és mindezek mellett hangulatos zöld foltként jelenik meg a városban.- Cél, egy elsősorban ingázási igényeket kielégítő parkolóház, amely monoton funkciója ellenére izgalmas kortárs épületként jelenik meg a városban, gazdagítva annak építészetét, az autók mellett a kerékpárok tárolását is többletszolgáltatásokkal együtt biztosítja, a közterek felé kereskedelmi és vendéglátó egységekkel fordul, és mindezen szolgáltatásokkal ergonomikusan illeszkedik az utasáramláshoz.- Cél, a tervezett parkolóháztól keletre eső, városképileg rendezetlen terület beépítési terve, amely épít az újonnan kialakuló kötöttpályás közlekedési csomópont közelségére, funkcióival és beépítési karakterével erősíti a terület városközponti szerepét és a településképet, és amely vízió mellett Szigetszentmiklós városa hosszú távon elköteleződhet."@hu;
+  epo:hasPurpose epd:id_2022-S-046-120422_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isFundedBy epd:id_2022-S-046-120422_Fund_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds true .
+
+epd:id_2022-S-046-120422_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-046-120422_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2022-S-046-120422_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2022-S-046-120422_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2022-S-046-120422_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2022-S-046-120422_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2022-03-02"^^xsd:date;
+  epo:hasID epd:id_2022-S-046-120422_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220307";
+  epo:refersToLot epd:id_2022-S-046-120422_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2022-S-046-120422_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2022-S-046-120422_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 046-120422" .
+
+epd:id_2022-S-046-120422_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU>;
+  locn:postCode "1027";
+  locn:postName "Budapest";
+  locn:thoroughfare "Horvát Utca 14-26" .
+
+epd:id_2022-S-046-120422_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "25416316241" .
+
+epd:id_2022-S-046-120422_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2022-S-046-120422_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "BFK Budapest Fejlesztési Központ Nonprofit Zártkörűen Működő Részvénytársaság"@hu;
+  epo:hasMainActivityDescription "Mérnöki tevékenység, műszaki tanácsadás";
+  cccev:registeredAddress epd:id_2022-S-046-120422_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-046-120422_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "EKR000105352022" .
+
+epd:id_2022-S-046-120422_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71220000> .
+
+epd:id_2022-S-046-120422_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "A IV.1.9. pont folytatása:4. Gazdasági szempontok (költségek). A Bírálóbiztottsság pozitívan értékeli a következőket:- az épület és megközelítése gazdaságos területhasználatot biztosít;- környezetét ingatlanpiaci szempontból felértékeli;- az építészeti innovatív, ötletgazdag megfogalmazás mellett, az épületet takarékos költségű szerkezeti megoldásokkal és anyagokkal tervezték;- a pályamű takarékos üzemű építészeti és gépészeti megoldásokat tartalmaz, hosszabb felújítási ciklusú anyagokat és berendezéseket alkalmaz;- üzemeltetése és karbantartása energia- és erőforrás-hatékony;- a pályamű kitér arra, hogyan biztosítható az épületek és a környezet üzemeltetési költségeinek alacsonyan tartása;- fenntartásának várható költsége kedvező , az épületegyüttes funkcionális mixe elősegíti az épület fenntartásának finanszírozását;- figyelembe veszi az üzemeltetésnél a karbonsemlegesség szempontjait és a klímavédelmi szempontokat.A IV.3.2) pont részletezése:1. A Bírálóbizottság a beérkezett pályaműveket a IV.1.9) pontban meghatározott szempontok alapján értékeli. Csak a díjazott, illetve a megvételben részesített pályaművek kerülnek meghatározásra, a többi pályaművet a Bírálóbizottság nem rangsorolja.2. A díjak bruttó összegek, melyek mind ÁFÁ-t, mind az egyéb fizetendő adókat tartalmazzák és adóköteles bevételek. Külföldi résztvevő esetén az ÁFA nem kerül kifizetésre, annak összegét a Kiíró közvetlen módon fizeti be a magyar adóhatósághoz, így mellőzhető a külföldi partner bejelentkezése ÁFA alanyként a magyar adóhatóságnál.3. A díjak és megvételi összegek minden esetben megfelelően kiállított számla vagy egyéb számviteli bizonylat ellenében kerülnek kifizetésre.4. A Bírálóbizottság a teljes díjazásra szánt összeg kiosztására tesz javaslatot, kivéve, ha eredménytelennek minősíti a Tervpályázatot. Abban az esetben, ha a Tervpályázatra benyújtott pályaművek hasznosíthatóságát a Bírálóbizottság nem tartja megfelelőnek, a díjazásra és megvételre fordított összeg csökkentését javasolhatja.5. Kiíró a Pályázóknak a pályaművek elkészítésével és benyújtásával kapcsolatos költségeiket nem téríti meg.További információk:1. Kiíró felhívja a figyelmet, hogy a hatályos magyar jogszabályok (266/2013. (VII.11.) Korm. rendelet) alapján, a Tervpályázatot követő hirdetmény nélküli tárgyalásos közbeszerzési eljárás nyomán kötendő tervezési szerződés megkötésének feltétele, hogy a nyertes ajánlattevő rendelkezzen tervezői területre vonatkozó jogosultsággal. A hirdetmény nélküli tárgyalásos eljárás eredményeként megkötött tervezési szerződés szerinti tervezési feladatot kizárólag olyan szaktervező végezheti, aki rendelkezik az építésügyi és az építésüggyel összefüggő szakmagyakorlási tevékenységekről szóló 266/2013. (VII. 11.) Korm. rendelet által rögzített szakmagyakorláshoz szükséges jogosultságokkal.2. Kiíró felhívja a figyelmet az Épített környezet alakításáról és védelméről szóló 1997. évi LXXVIII. törvény (Étv.) 32. § (1) és (11) bekezdéseire, amelyek alapján a tervpályázati terv készítése is építészeti-műszaki dokumentációnak minősül, így az építésügyi és építésüggyel összefüggő szakmagyakorlási tevékenységekről szóló 266/2013 (VII.11) Korm. rendelet értelmében a tervpályázati terv készítése is szakmagyakorlási jogosultsághoz kötött. Jelen Tervpályázat vonatkozásában ezen jogosultság az építészeti tervezési területre (É) vagy azzal egyenértékű vonatkozó szakmagyakorlási jogosultság megléte. Ezen szakembert a Tervpályázat során elkülönítetten benyújtandó nyilatkozatban, jogosultságának bemutatásával meg kell nevezni. A nem Magyarországon letelepedett Pályázónak a letelepedés szerinti ország jogszabályainak megfelelő, az előírt jogosultsággal egyenértékű jogosultsággal kell rendelkezniük. Az Európai Unió egy másik tagállamában letelepedett gazdasági szereplő által benyújtott, a letelepedési helye szerinti, az elismert hivatalos szervezettől származó jegyzék szerinti igazolást is köteles az ajánlatkérő elfogadni.3. Az Ajánlatkérő a pályaművek benyújtásának határidejét a kérdésekre vonatkozó válaszadás alkalmával is meghosszabbíthatja. A Tervpályázat eredményeként Kiíró a tervezési szerződés megkötésére irányuló, hirdetmény nélküli, tárgyalásos közbeszerzési eljárást folytat le a Tervpályázati Rendelet 28. §-ában foglaltakra tekintettel, amelyre Ajánlatkérő tervezetten a BB zárójelentésében szereplő ajánlás alapján hívja meg a kizáró ok alá nem eső és alkalmas (1 db) nyertes Pályázót (figyelembe véve a Tervpályázati Rendelet 25. § (5) bekezdését).4. A Bírálóbizottság a Pályázót a Tervpályázatból kizárja a következő esetekben:- ha beadási határidő után érkezik be a pályaműve (bontás nélkül),- ha a benyújtott pályamű sérti a titkosságot,- ha a Kiírásban és Dokumentációban meghatározott tartalmi követelményeket - figyelembe véve a Dokumentáció 3.3 pontját - nem teljesíti a Pályázó pályaműve,- ha a pályamű szerzőivel szemben a Tervpályázati Rendelet 17. § (3) bekezdése és a 18. § értelmében kizáró ok áll fennA Kiíró felhívja a Pályázók figyelmét, hogy a Tervpályázat során hiánypótlásra nincs lehetőség.Ugyanakkor a Tervpályázati Rendelet 24. § (10) bekezdése alapján a Bírálóbizottság tisztázó kérdéseket tehet fel a Pályázóknak a bírálat során. A Bírálóbizottság kizárhatja a bírálatból a formai követelményeket nem teljesítő pályaművet, amennyiben a formai hiba a pályamű értékelését ellehetetleníti. Amennyiben az elektronikusan és papír alapon benyújtott pályaművek között eltérés van, Kiíró ezt formai hibának tekinti és az elektronikusan beadott pályaművet tekinti a bírálat és értékelés során irányadónak.5. Kiíró helyszíni szemlét tart a Tervpályázat megindítását követően. A helyszíni szemle pontos időpontja, helyszíne és további részletei később, a Tervpályázat honlapján keresztül kerül kihirdetésre. A szemlén a Kiíró képviselője a helyszínnel kapcsolatos tájékoztatást tart, majd az érdeklődők a helyszínt megtekinthetik. A helyszíni szemlén kép- és hanganyag készül, melyet Kiíró a továbbiakban felhasználhat kommunikációs célokra. A helyszínen a tervezést érintő kérdések feltevésére nincs lehetőség. Kérdésekkel csak a tervpályázati honlapon fordulhatnak a Pályázók a Kiíró felé.Folyt. a VI.4.3. pontban"@hu;
+  epo:hasID epd:id_2022-S-046-120422_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-046-120422_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2022-S-046-120422_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "József Attila-telep HÉV megálló tervpályázat"@hu;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-046-120422_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2022-S-046-120422_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2022-S-046-120422_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2022-S-046-120422_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-046-120422_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2022-S-046-120422_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2022-S-046-120422_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó u. 5" .
+
+epd:id_2022-S-046-120422_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828592" .
+
+epd:id_2022-S-046-120422_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Közbeszerzési Hatóság Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2022-S-046-120422_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2022-S-046-120422_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2022-S-046-120422_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-046-120422_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2022-S-046-120422_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "A Kbt. 148. § szerint.VI.3. pont folytatása6. A Kiíró felhívja a Pályázók figyelmét, hogy a hirdetmény nélküli tárgyalásos eljárást követő tervezési szerződés teljesítésébe várhatóan legalább az alábbi szakági tervezők bevonásával (alkalmassági követelményként vagy szerződéses feltételként előírva) és munkájuk koordinálásával kell számolnia azzal, hogy az építészmérnök szakember tekintetében meg kell egyeznie a tervpályázati tervet készítő Pályázó által bevont szakemberrel vagy a tervezési szerződés teljesítésébe azzal egyenértékű szakember bevonása szükséges:- Mérnöki tervezői szakágak: tartószerkezet tervező (T), épületgépészeti tervező (G), építményvillamossági tervező (V)- Település- és környezetrendezéshez, út- és közműépítéshez kapcsolódó szakágak: településtervező (TT), tájépítész tervező (TK, K), közúttervező (KÉ-K), települési közműtervező szakági mérnökök (TV, TE, TH)- Rehabilitációs szakértő.7. A tervpályázati honlapon történő regisztrációt követően a Pályázók a Kiírással, a Dokumentációval és a Tervpályázattal kapcsolatban felmerülő kérdésekkel a Tervpályázati Dokumentáció 2.04. fejezetben megjelölt időpontig, a tervpályázati honlapon keresztül fordulhatnak a Kiíróhoz, magyar nyelven. A határidőben feltett kérdéseket a Kiíró a Tervpályázati Dokumentáció 2.04. fejezetben megjelölt időpontig megválaszolja, és az összes kérdést, valamint az azokra adott válaszokat a honlapon közzéteszi. Ezt követően a kérdésekre adott válaszok a Dokumentáció részét képezik. A Kiíró legfeljebb a kérdésekre adott válaszok időpontjáig - az értékelési szempontok és alkalmassági követelmények kivételével - a Dokumentáció részletes programjának tartalmát módosíthatja, az adatokat kiegészítheti, illetve a tervpályázati eljárás lefolytatásától visszaléphet (ebben az esetben a Kiíró kártérítéssel nem tartozik). A Kiíró a pályaművek benyújtásának határidejét a kérdésekre vonatkozó válaszadás alkalmával is meghosszabbíthatja.8. Pályázó vagy közös pályázó (Pályázó) - azaz a pályamű (valamennyi) szerzője - az a természetes vagy jogi személy, egyéni cég vagy személyes joga szerint jogképes szervezet lehet:a) Akivel szemben a Tervpályázati Rendelet 17. § (3) és 18. § szerinti kizáró és összeférhetetlenségi okok egyike sem áll fenn és erről nyilatkozik,b) aki a Tervpályázat titkosságát megőrzi,c) aki a Tervpályázatban meghirdetett tervezési feladat tekintetében a tervpályázati eljárást követő tervezési szolgáltatás teljesítésére a Kiírásban és Dokumentációban meghatározott feltételek szerint vállalkozik, továbbá ehhez megfelelő szakértelemmel és a tervezési feladat ellátáshoz szükséges, külön jogszabály szerinti - jelen Kiírásban és Dokumentációban meghatározott - jogosultsággal fog rendelkezni és erről nyilatkozik (Tervpályázati Rendelet 23. § (3) bekezdés b.) pont)d) aki azzal, hogy pályázatát benyújtotta, a Kiírás és Dokumentáció feltételeit magára nézve kötelezőnek elfogadta (Tervpályázati Rendelet 17. § (2) bekezdés).e) aki felhatalmazza a Kiírót, hogy a pályaművét és az abban szereplő megoldásokat a Dokumentációban foglaltak szerint részben vagy egészben felhasználhatja9. A Tervpályázaton a Pályázó csak egy pályaművel vehet részt. Az alvállalkozók, eseti szakértők és a szerzők munkatársai (a vonatkozó, a Magyar Építész Kamara által az Etikai-fegyelmi Szabályzatban, valamint a vonatkozó, szakmagyakorlás tekintetében irányadó jogszabályokban meghatározott etikai normák és a Kbt. 36. §- ának betartásával) több pályamű elkészítésében is közreműködhetnek." .
+
+epd:id_2022-S-046-120422_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828592" .
+
+epd:id_2022-S-046-120422_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó u. 5" .
+
+epd:id_2022-S-046-120422_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Közbeszerzési Hatóság Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2022-S-046-120422_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2022-S-046-120422_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2022-S-046-120422_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-046-120422_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2022-S-046-120422_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "HU";
+  epo:hasSubmissionURL "https://ekr.gov.hu/portal/kozbeszerzes/eljarasok/EKR000105352022/reszletek"^^xsd:anyURI .
+
+epd:id_2022-S-046-120422_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU110>;
+  locn:postCode "1027";
+  locn:postName "Budapest";
+  locn:thoroughfare "Horvát utca 14." .
+
+epd:id_2022-S-046-120422_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasContactName "Bálint Patrik Adrián"@hu;
+  epo:hasInternetAddress "http://bfk.hu/"^^xsd:anyURI;
+  cccev:email "balint.patrik@bfk.hu";
+  cccev:telephone "+36 300894305" .
+
+epd:id_2022-S-046-120422_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS
+  a epo:Identifier;
+  epo:hasIdentifierValue "25416316241" .
+
+epd:id_2022-S-046-120422_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasID epd:id_2022-S-046-120422_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasLegalName "BFK Budapest Fejlesztési Központ Nonprofit Zártkörűen Működő Részvénytársaság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2022-S-046-120422_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2022-S-046-120422_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2022-S-046-120422_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-046-120422_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2022-S-046-120422_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

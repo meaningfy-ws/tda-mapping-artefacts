@@ -1,0 +1,195 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-154-320560_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.ladepeche-marchespublics.fr/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-154-320560_AwardCriterion_6GieruC2YJ87VT5GzaUfGb a epo:AwardCriterion;
+  cccev:description "Proposition financière en matière d'investissement et durée du contrat"@fr .
+
+epd:id_2017-S-154-320560_AwardCriterion_HAQqDdZwXzwxvRGyJgrxJ9 a epo:AwardCriterion;
+  cccev:description "Qualité du service en matière d'exploitation"@fr .
+
+epd:id_2017-S-154-320560_AwardCriterion_RH4gDf2k9igVuxbhyzWocc a epo:AwardCriterion;
+  cccev:description "Valeur technique en termes de qualité architecturale  et fonctionnelle"@fr .
+
+epd:id_2017-S-154-320560_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.ladepeche-marchespublics.fr/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-154-320560_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-154-320560_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-154-320560_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasFax "+33 561816116";
+  epo:hasInternetAddress "http://www.mairie-villefranchedelauragais.fr"^^xsd:anyURI;
+  cccev:email "marchespublics@mairie-villefranchedelauragais.fr";
+  cccev:telephone "+33 561816012" .
+
+epd:id_2017-S-154-320560_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ23> .
+
+epd:id_2017-S-154-320560_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-154-320560_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-154-320560_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-154-320560_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.ladepeche-marchespublics.fr/"^^xsd:anyURI;
+  cccev:email "marchespublics@mairie-villefranchedelauragais.fr";
+  cccev:telephone "+33 561816012" .
+
+epd:id_2017-S-154-320560_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ23>;
+  locn:postCode "31290";
+  locn:postName "Villefranche-de-Lauragais";
+  locn:thoroughfare "place Gambetta, Mr Combebiac: dgs@mairie-villefranchedelauragais.fr, Mme Oltra: marchespublics@mairie-villefranchedelauragais.fr" .
+
+epd:id_2017-S-154-320560_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasLegalName "Mairie de Villefranche-de-Lauragais: M. Combebiac et Mme Oltra"@fr;
+  cccev:registeredAddress epd:id_2017-S-154-320560_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2017-S-154-320560_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45215300> .
+
+epd:id_2017-S-154-320560_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-154-320560_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+                  Le délégataire aura la charge de la construction d'un crématorium sis ZAE Camave Iii avec parking, jardin du souvenir, et fourniture des équipements de crématorium qui y sont associés (four(s), filtration(s)); la gestion et l'exploitation, dont l'entretien et la maintenance des équipements dans le cadre d'un contrat de concession.
+                  Le concessionnaire assure la totalité du financement des dépenses qui comprend notamment: les travaux de construction du crématorium et de l'ensemble des équipements; les frais d'études et frais financiers; la remise en état du sol des abords immédiats des ouvrages, après travaux; les impôts et taxes liés à la construction de l'ouvrage et des équipements; les études de sol éventuelles.
+                  Le concessionnaire responsable du service le gèrera conformément au contrat. Le délégataire exploitera le service à ses risques et périls; la rémunération du Délégataire sera liée aux résultats de l'exploitation du service public.
+               """@fr;
+  epo:hasPurpose epd:id_2017-S-154-320560_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-154-320560_AwardCriterion_6GieruC2YJ87VT5GzaUfGb,
+    epd:id_2017-S-154-320560_AwardCriterion_HAQqDdZwXzwxvRGyJgrxJ9, epd:id_2017-S-154-320560_AwardCriterion_RH4gDf2k9igVuxbhyzWocc .
+
+epd:id_2017-S-154-320560_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-154-320560_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-154-320560_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2017-S-154-320560_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-154-320560_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2017-08-10"^^xsd:date;
+  epo:hasID epd:id_2017-S-154-320560_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20170812";
+  epo:refersToLot epd:id_2017-S-154-320560_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2017-S-154-320560_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-154-320560_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 154-320560" .
+
+epd:id_2017-S-154-320560_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ23>;
+  locn:postCode "31290";
+  locn:postName "Villefranche-de-Lauragais";
+  locn:thoroughfare "place Gambetta" .
+
+epd:id_2017-S-154-320560_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "21310582800015" .
+
+epd:id_2017-S-154-320560_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2017-S-154-320560_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Ville de Villefranche-de-Lauragais"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-154-320560_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-154-320560_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017-04-02" .
+
+epd:id_2017-S-154-320560_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45215300> .
+
+epd:id_2017-S-154-320560_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-154-320560_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               Pour retrouver cet avis intégral, accéder au DCE, poser des questions à l'acheteur, déposer un pli, allez sur http://www.ladepeche-marchespublics.fr
+               Conformément à l'article 8 du décret no 2016-86 du 1.2.2016, la valeur estimée du chiffre d'affaires pour la durée du contrat est d'environ 30 000 000 EUR HT.
+               Durée de la concession: entre 30 et 35 ans.
+               Une négociation sera mise en œuvre avec les candidats qui seront auditionnés en automne 2017.
+               Principes de financement:
+               Le délégataire sera rémunéré par les recettes perçues auprès des usagers et les recettes annexes.
+            """@fr;
+  epo:hasDescription """
+               Le délégataire aura la charge de la construction d'un crématorium sis ZAE Camave Iii avec parking, jardin du souvenir, et fourniture des équipements de crématorium qui y sont associés (four(s), filtration(s)); la gestion et l'exploitation, dont l'entretien et la maintenance des équipements dans le cadre d'un contrat de concession.
+               Le concessionnaire assure la totalité du financement des dépenses qui comprend notamment: les travaux de construction du crématorium et de l'ensemble des équipements; les frais d'études et frais financiers; la remise en état du sol des abords immédiats des ouvrages, après travaux; les impôts et taxes liés à la construction de l'ouvrage et des équipements; les études de sol éventuelles.
+               Le concessionnaire responsable du service le gèrera conformément au contrat. Le délégataire exploitera le service à ses risques et périls; la rémunération du Délégataire sera liée aux résultats de l'exploitation du service public.
+            """@fr;
+  epo:hasID epd:id_2017-S-154-320560_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-154-320560_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-154-320560_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Attribution d'une concession de service public après mise en concurrence sous forme de procédure ouverte pour la construction et l'exploitation du crématorium communal.
+            """@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-154-320560_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-154-320560_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-154-320560_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-154-320560_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2017-S-154-320560_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2017-S-154-320560_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 562735740";
+  cccev:email "greffe.ta-toulouse@juradm.fr";
+  cccev:telephone "+33 562735757" .
+
+epd:id_2017-S-154-320560_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "31068";
+  locn:postName "Toulouse";
+  locn:thoroughfare "68  rue Raymond IV" .
+
+epd:id_2017-S-154-320560_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Toulouse"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-154-320560_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2017-S-154-320560_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-154-320560_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-154-320560_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-154-320560_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.ladepeche-marchespublics.fr/"^^xsd:anyURI .
+
+epd:id_2017-S-154-320560_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ23>;
+  locn:postCode "31290";
+  locn:postName "Villefranche-de-Lauragais";
+  locn:thoroughfare "place Gambetta" .
+
+epd:id_2017-S-154-320560_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasFax "+33 561816116";
+  epo:hasInternetAddress "http://www.ladepeche-marchespublics.fr/"^^xsd:anyURI;
+  cccev:email "marchespublics@mairie-villefranchedelauragais.fr";
+  cccev:telephone "+33 561816012" .
+
+epd:id_2017-S-154-320560_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Mairie de Villefranche-de-Lauragais: Mme le maire"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-154-320560_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2017-S-154-320560_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2017-S-154-320560_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-154-320560_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2017-S-154-320560_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

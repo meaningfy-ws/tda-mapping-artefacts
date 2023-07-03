@@ -1,0 +1,141 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-099-262307_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.achatpublic.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-099-262307_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-099-262307_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-099-262307_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-099-262307_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.achatpublic.com"^^xsd:anyURI;
+  cccev:email "armelle.chalaye@annonay.fr" .
+
+epd:id_2021-S-099-262307_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Commune de Saint-Marcel-lès-Annonay (07)."@fr .
+
+epd:id_2021-S-099-262307_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK22>;
+  locn:address epd:id_2021-S-099-262307_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-099-262307_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-099-262307_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-099-262307_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-099-262307_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-099-262307_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-099-262307_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45252126> .
+
+epd:id_2021-S-099-262307_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-099-262307_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Création d'une nouvelle usine de production d'eau potable (à partir d'un débit horaire nominal d'eau brute de 400 m3/h) et de ses composantes associées (eau industrielle, air industriel, installations électriques, bâtiments techniques et administratif, etc.) comprenant les prestations de maîtrise d'œuvre intégrée, ainsi que les travaux de réalisation de l'ouvrage. Pour plus d'informations sur le contenu de la mission et des travaux envisagés, les candidats sont invités à consulter le document intitulé «Règlement de consultation — phase candidature» disponible sur la plate-forme de achatpublic.com"@fr;
+  epo:hasEstimatedValue epd:id_2021-S-099-262307_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-099-262307_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-099-262307_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 5250000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-099-262307_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 5250000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-099-262307_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-099-262307_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-099-262307_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-099-262307_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-05-20"^^xsd:date;
+  epo:hasID epd:id_2021-S-099-262307_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210525";
+  epo:refersToLot epd:id_2021-S-099-262307_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-099-262307_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-099-262307_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 099-262307" .
+
+epd:id_2021-S-099-262307_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK22>;
+  locn:postCode "07430";
+  locn:postName "Davézieux" .
+
+epd:id_2021-S-099-262307_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Annonay Rhône Agglo — Régie eau potable"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2021-S-099-262307_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-099-262307_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "202112" .
+
+epd:id_2021-S-099-262307_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45252126> .
+
+epd:id_2021-S-099-262307_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-099-262307_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "En ce qui concerne la qualité du mandataire, l'entité adjudicatrice impose que le mandataire du groupement soit l'opérateur économique qui détient la compétence en traitement des eaux (études d'exécution et travaux de construction). Cette compétence sera vérifiée au moyen de références fournies par le mandataire.En ce qui concerne les compétences conception et travaux, l'entité adjudicatrice impose que le/les membre(s) chargé(s) des missions de maîtrise d'œuvre intégrée et responsable(s) de la conception et du suivi des travaux soi(en)t identifié(s) et distinct(s) de la ou des entreprise(s) de travaux composant le groupement. Cette exigence sera vérifiée au moyen des titres d'études et professionnels des opérateurs économiques.Plus particulièrement, au sein de l'équipe de maîtrise d'œuvre intégrée, et compte tenu du fait que le projet est soumis au dépôt d'une demande de permis de construire et de démolir, l'entité adjudicatrice exige que le groupement comprenne un architecte en tant que membre du groupement afin de respecter l'article 37 du code de déontologie des architectes et l'article 3 de loi nº 77-2 du 3.1.1977 sur l'architecture.Critères de jugement des offres:1) prix des prestations pondération 30;2) valeur technique pondération 50;3) délai global pondération 10;4) garanties souscrites 10.Prime: à l'issue de la phase de candidature, les candidats sélectionnés remettront une offre qui comportera un mémoire technique et un dossier des pièces graphiques de niveau AVP dont le contenu sera détaillé dans le RC de la phase offre.Chaque soumissionnaire ayant remis une offre dont le contenu sera conforme aux prescriptions du dossier de consultation et ne présentant pas de manquement manifeste au programme recevra une indemnité d'un montant de 30 000,00 EUR HT.La rémunération de l'attributaire du marché tient compte de la prime qu'il a reçue.Une visite sur site obligatoire sera organisée avec les candidats admis à participer à la phase offre. Les informations complémentaires seront fournies dans le RC de la phase offre."@fr;
+  epo:hasDescription "Création d'une nouvelle usine de production d'eau potable (à partir d'un débit horaire nominal d'eau brute de 400 m3/h) et de ses composantes associées (eau industrielle, air industriel, installations électriques, bâtiments techniques et administratif, etc.) comprenant les prestations de maîtrise d'œuvre intégrée, ainsi que les travaux de réalisation de l'ouvrage. Pour plus d'informations sur le contenu de la mission et des travaux envisagés, les candidats sont invités à consulter le document intitulé «Règlement de consultation — phase candidature» disponible sur la plate-forme de achatpublic.com"@fr;
+  epo:hasEstimatedValue epd:id_2021-S-099-262307_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2021-S-099-262307_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-099-262307_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-099-262307_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Marché de conception réalisation pour la construction de la nouvelle usine de production d'eau potable d'Annonay"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-099-262307_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-099-262307_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2021-S-099-262307_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-099-262307_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-099-262307_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-099-262307_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-099-262307_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— référé précontractuel prévu aux articles L. 551-1 à L. 551-12 du Code de justice administrative (CJA), et pouvant être exercé avant la signature du contrat;— référé contractuel prévu aux articles L. 551-13 à L. 551-23 du CJA, et pouvant être exercé dans les délais prévus à l'article R. 551-7 du CJA;— recours de pleine juridiction ouvert aux tiers justifiant d'un intérêt lésé, et pouvant être exercé dans les deux mois suivant la date à laquelle la conclusion du contrat est rendue publique." .
+
+epd:id_2021-S-099-262307_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 487635250";
+  epo:hasInternetAddress "http://lyon.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-lyon@juradm.fr";
+  cccev:telephone "+33 487635000" .
+
+epd:id_2021-S-099-262307_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69433";
+  locn:postName "Lyon Cedex 03";
+  locn:thoroughfare "Palais des juridictions administratives, 184 rue Duguesclin" .
+
+epd:id_2021-S-099-262307_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-099-262307_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-099-262307_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-099-262307_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-099-262307_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-099-262307_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.achatpublic.com"^^xsd:anyURI .

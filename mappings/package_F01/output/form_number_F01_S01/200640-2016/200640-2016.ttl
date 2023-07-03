@@ -1,0 +1,121 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-113-200640_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.subreport.de/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-113-200640_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-113-200640_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-113-200640_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-113-200640_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Evgenija Dobschinskaja"@de;
+  epo:hasInternetAddress "http://www.vgbraubach-loreley.de"^^xsd:anyURI;
+  cccev:email "dobschinskaja@vg-loreley.de";
+  cccev:telephone "+49 6771919234" .
+
+epd:id_2016-S-113-200640_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress """
+56346 St. Goarshausen Heide.
+"""@de .
+
+epd:id_2016-S-113-200640_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEB1A>;
+  locn:address epd:id_2016-S-113-200640_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2016-S-113-200640_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2016-S-113-200640_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-113-200640_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+109 Stck. Baum fällen 25 Stck. Kleingehölz roden 850 m2 Gehölzfläche roden 15 Stck. Baumschutz herstellen, Stangengeviert 300 m Baumschutz herstellen, Zaunelemente 150 m3 Bodenaushub Wurzelbereich 375 m2 Wurzelschutz herstellen 50 Stck. Baumschnittarbeiten, Kronenpflege 30 Stck. Baumschnittarbeiten, Kronenauslichtung.
+"""@de .
+
+epd:id_2016-S-113-200640_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2016-S-113-200640_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-113-200640_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription """
+Die Verbandsgemeindeverwaltung Loreley beabsichtigt die Umgestaltung des Loreley Plateaus. Im Rahmen der Maßnahme werden im Zeitraum von Herbst 2016 Ende bis 2018 auf einer Gesamtfläche von ca. 3 Hektar neue Strukturen für das Erlebnis des kulturhistorischen Platzes geschaffen. Im Rahmen dieses Verfahrens sollen Rodungs-, Baumfäll- und Baumschutzarbeiten vergeben werden.
+"""@de;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-113-200640_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2016-S-113-200640_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2016-S-113-200640_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2016-S-113-200640_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2016-S-113-200640_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2016-S-113-200640_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2016-06-09"^^xsd:date;
+  epo:hasID epd:id_2016-S-113-200640_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20160614";
+  epo:refersToLot epd:id_2016-S-113-200640_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2016-S-113-200640_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2016-S-113-200640_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 113-200640" .
+
+epd:id_2016-S-113-200640_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEB1A>;
+  locn:postCode "56346";
+  locn:postName "St. Goarshausen";
+  locn:thoroughfare "Dolkstr. 3" .
+
+epd:id_2016-S-113-200640_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasLegalName "Verbandsgemeindeverwaltung Loreley"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2016-S-113-200640_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-113-200640_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2016-09-14"^^xsd:date;
+  epo:hasEnd "2016-12-31"^^xsd:date .
+
+epd:id_2016-S-113-200640_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2016-S-113-200640_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2016-S-113-200640_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/77211100> .
+
+epd:id_2016-S-113-200640_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-113-200640_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription """
+Die Verbandsgemeindeverwaltung Loreley (Rheinland-Pfalz, Rhein-Lahn-Kreis) beabsichtigt die Umgestaltung des Loreley Plateaus. Im Rahmen der Maßnahme werden im Zeitraum ab Herbst 2016 bis Ende 2018 auf einer Gesamtfläche von ca. 3 Hektar neue Strukturen für das Erlebnis des Kultur- und Landschaftsparks geschaffen. Im Rahmen der Baumaßnahme werden unter anderem Rodungsarbeiten, Leistungen des Erdbaus, des Tiefbaus, Leistungen des Hochbaus, Leistungen der Freianlagengestaltung sowie Leistungen der Technischen Ausrüstung erforderlich. Mit Realisierung der Maßnahme wird die Loreley der Kristallisationspunkt des Welterbe Oberes Mittelrheintal sein.
+"""@de;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-113-200640_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2016-S-113-200640_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+Neugestaltung des Loreleyplateaus im Welterbe Mittleres Rheintal.
+"""@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-113-200640_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd .
+
+epd:id_2016-S-113-200640_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2016-07-14"^^xsd:date .
+
+epd:id_2016-S-113-200640_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-113-200640_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-113-200640_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-113-200640_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postName "Mainz" .
+
+epd:id_2016-S-113-200640_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Vergabekammer Rheinland-Pfalz, Ministerium für Wirtschaft, Verkehr, Landwirtschaft und Weinbau"@de;
+  cccev:registeredAddress epd:id_2016-S-113-200640_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-113-200640_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-113-200640_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-113-200640_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-113-200640_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-113-200640_Organisation_gqoAAwSV3JaTMsopb9zyKP .

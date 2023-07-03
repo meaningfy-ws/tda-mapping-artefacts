@@ -1,0 +1,192 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-136-279530_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://marches.departement13.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-136-279530_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-136-279530_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-136-279530_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-136-279530_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "DGAET-DMC- service des marchés de construction et de l'environnement"@fr;
+  epo:hasFax "+33 0413312195";
+  epo:hasInternetAddress "https://marches.departement13.fr"^^xsd:anyURI;
+  cccev:email "smce@departement13.fr" .
+
+epd:id_2017-S-136-279530_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2017-S-136-279530_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-136-279530_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2017-S-136-279530_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasContactName "Exclusivement par écrit et au plus tard 10 jours avant la remise des plis, par télécopie au 04 13 31 21 95 ou via la plateforme de dématérialisation http://marches.departement13.fr (référenceE3DMCJA20170606-1 AA) ou par courriel: smce@departement13.fr"@fr;
+  epo:hasFax "+33 0413312195";
+  epo:hasInternetAddress "https://marches.departement13.fr"^^xsd:anyURI;
+  cccev:email "smce@departement13.fr" .
+
+epd:id_2017-S-136-279530_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR824>;
+  locn:postCode "13256";
+  locn:postName "Marseille Cedex 20";
+  locn:thoroughfare "52 avenue de Saint-Just" .
+
+epd:id_2017-S-136-279530_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasLegalName "Conseil départemental des Bouches-du-Rhône"@fr;
+  cccev:registeredAddress epd:id_2017-S-136-279530_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2017-S-136-279530_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71230000> .
+
+epd:id_2017-S-136-279530_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-136-279530_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+                  Concours restreint de concepteurs relatif à la démolition et reconstruction du collège les Amandeirets à Châteauneuf les Martigues -caractéristiques: sur un terrain d'environ 14 000 m2: désamiantage et démolition du collège existant, constitué essentiellement de 4 bâtiments — un bâtiment en R+2, enseignement et pension -un bâtiment en R+1, enseignement -un bâtiment en RDC, enseignement -un bâtiment en R+1, logements. Construction d'un nouveau collège pour 900 élèves. Sur un terrain d'environ 4 300 m2, mis à disposition du département provisoirement par la ville: -construction d'un collège provisoire, permettant de réaliser les travaux en limitant les contraintes de phasage. Adresse du lieu d'exécution: collège les Amandeirets avenue du Maréchal Leclerc, 13220 Châteauneuf les Martigues.
+               """@fr;
+  epo:hasPurpose epd:id_2017-S-136-279530_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-136-279530_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-136-279530_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2017-S-136-279530_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2017-S-136-279530_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2017-S-136-279530_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2017-S-136-279530_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2017-07-17"^^xsd:date;
+  epo:hasID epd:id_2017-S-136-279530_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20170719";
+  epo:refersToLot epd:id_2017-S-136-279530_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2017-S-136-279530_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2017-S-136-279530_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 136-279530" .
+
+epd:id_2017-S-136-279530_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR824>;
+  locn:postCode "13256";
+  locn:postName "Marseille Cedex 20";
+  locn:thoroughfare "52 avenue de Saint-Just" .
+
+epd:id_2017-S-136-279530_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Département des Bouches-du-Rhône"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-136-279530_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-136-279530_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "E3DMCJA20170606-1AA" .
+
+epd:id_2017-S-136-279530_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71230000> .
+
+epd:id_2017-S-136-279530_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+               Le financement du marché public sera effectué sur le budget général de la collectivité en application des règles de la comptabilité publique. Aucune subvention n'est prévue.la part prévisionnelle de l'enveloppe financière affectée aux travaux est de 20 500 000 EUR HT. (soit 24 600 000 EUR TTC).La durée de la mission est d'environ 6 ans (5 ans + 1 année de garantie de parfait achèvement). Le marché peut être consulté et téléchargé gratuitement dans sa totalité sur la plateforme des Marchés Publics du Conseil départemental des Bouches-du-Rhône à l'adresse suivante: https://marches.departement13.fr, sous la référence «E3dmcja20170606-1 aa ». Il s'agit du seul mode d'obtention des documents.
+            """@fr;
+  epo:hasID epd:id_2017-S-136-279530_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-136-279530_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2017-S-136-279530_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+               Concours — collège les Amandeirets Châteauneuf les Martigues référence E3dmcja20170606-1 AA.
+            """@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-136-279530_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2017-S-136-279530_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2017-S-136-279530_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2017-S-136-279530_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-136-279530_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2017-S-136-279530_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2017-S-136-279530_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13256";
+  locn:postName "Marseille Cedex 20";
+  locn:thoroughfare "52 avenue de Saint-Just" .
+
+epd:id_2017-S-136-279530_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasFax "+33 0413311498";
+  cccev:telephone "+33 0413311620" .
+
+epd:id_2017-S-136-279530_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Conseil départemental des Bouches-du-Rhône, service juridique et contentieux"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-136-279530_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2017-S-136-279530_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2017-S-136-279530_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-136-279530_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2017-S-136-279530_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Référé pré-contractuel (art L.551-1 et suivants du code de justice administrative).
+               Référé contractuel (art L. 551-13 et suivants du code de justice administrative).
+               Le recours en contestation de validité du contrat, issu de la jurisprudence «Tarn-et-Garonne» qui peut être exercé par les tiers au contrat, sans considération de leur qualité, dans un délai de 2 mois à compter des mesures de publicité appropriées. En vue de permettre aux candidats et aux tiers l'exercice du recours de plein contentieux reconnu par le Conseil d'état le 16.7.2007 (CE, 16.7.2007, Sté Tropic Travaux Signalisation,no 291545), et complété par l'arrêt du Conseil d'état du 4.4.2014 (CE, 4.4.2014, Département du Tarn-et-Garonne, no 358994), un avis de publicité comportant l'indication du jour de conclusion du contrat, l'identité de l'attributaire et des lieu et horaires où pourra être consulté le contrat, sera publié sur la plateforme de dématérialisation du Conseil départemental des Bouches-du-Rhône à l'adresse suivante: https://marches.cg13.fr.Cet avis sera consultable sous la référence E3dmcja20170606-1 AA.
+            """ .
+
+epd:id_2017-S-136-279530_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+33 0491811387";
+  cccev:telephone "+33 0491134813" .
+
+epd:id_2017-S-136-279530_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13006";
+  locn:postName "Marseille";
+  locn:thoroughfare "22 rue Breteuil" .
+
+epd:id_2017-S-136-279530_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-136-279530_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2017-S-136-279530_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-136-279530_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-136-279530_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-136-279530_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://marches.departement13.fr"^^xsd:anyURI .
+
+epd:id_2017-S-136-279530_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR824>;
+  locn:postCode "13256";
+  locn:postName "Marseille Cedex 20";
+  locn:thoroughfare "52 avenue de Saint-Just" .
+
+epd:id_2017-S-136-279530_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasContactName "Direction juridique et de la commande publique — bât B 6ème étage — bureau B 6039. Les plis papier seront transmis soit en courrier RAR, soit remis directement à la direction juridique et de la commande publique (B 6039) contre récépissé (du lundi au vendredi de 8:30 à 12:00 et de 14:00 à 17:00)"@fr;
+  epo:hasInternetAddress "https://marches.departement13.fr"^^xsd:anyURI;
+  cccev:email "monique.giovacchini@departement13.fr" .
+
+epd:id_2017-S-136-279530_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasLegalName "Conseil départemental des Bouches-du-Rhône"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-136-279530_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2017-S-136-279530_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2017-S-136-279530_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-136-279530_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2017-S-136-279530_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

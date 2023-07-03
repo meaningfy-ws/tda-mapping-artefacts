@@ -1,0 +1,240 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-191-392032_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://sofia-airport.bg/профил-на-купувача/процедури-по-зоп/застраховка-отговорност-на-летище-софия-3"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-191-392032_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF a epo:Buyer;
+  epo:hasBuyerProfile "https://sofia-airport.bg/профил-на-купувача/процедури-по-зоп/застраховка-отговорност-на-летище-софия-3"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-191-392032_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF;
+  epo:playedBy epd:id_2017-S-191-392032_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2017-S-191-392032_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF a cccev:ContactPoint;
+  epo:hasContactName "Владимир Щърбанов"@bg;
+  epo:hasFax "+359 32601123";
+  epo:hasInternetAddress "http://www.plovdivairport.com/bg"^^xsd:anyURI;
+  cccev:email "d.mihailova@sofia-airport.bg";
+  cccev:telephone "+359 32601113" .
+
+epd:id_2017-S-191-392032_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF a org:Organization;
+  epo:hasID epd:id_2017-S-191-392032_OrganisationIdentifier_gFUcNYVmTUBiATKNrzmurF;
+  epo:hasLegalName "„Летище Пловдив“ ЕАД"@bg;
+  cccev:registeredAddress epd:id_2017-S-191-392032_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2017-S-191-392032_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2017-S-191-392032_BuyerOrganisationGroup_gFUcNYVmTUBiATKNrzmurF a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  epo:hasMember epd:id_2017-S-191-392032_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2017-S-191-392032_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-191-392032_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://sofia-airport.bg/профил-на-купувача/процедури-по-зоп/застраховка-отговорност-на-летище-софия-3"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-191-392032_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-191-392032_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-191-392032_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Дарина Попова — Дирекция ЛОП; Гергана Димитрова — отдел Обществени поръчки"@bg;
+  epo:hasFax "+359 2937-2010";
+  epo:hasInternetAddress "www.sofia-airport.bg"^^xsd:anyURI;
+  cccev:email "d.mihailova@sofia-airport.bg";
+  cccev:telephone "+359 2937-2629/ +359 2937-2572" .
+
+epd:id_2017-S-191-392032_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+                  Летище София и Летище Пловдив.
+               """@bg .
+
+epd:id_2017-S-191-392032_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:address epd:id_2017-S-191-392032_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2017-S-191-392032_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-191-392032_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-191-392032_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2017-S-191-392032_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-191-392032_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-191-392032_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasContactName "Дарина Попова — Дирекция ЛОП; Гергана Димитрова — отдел Обществени поръчки;"@bg;
+  epo:hasFax "+359 2937-2010";
+  epo:hasInternetAddress "www.sofia-airport.bg"^^xsd:anyURI;
+  cccev:email "d.mihailova@sofia-airport.bg";
+  cccev:telephone "+359 2937-2629/ +359 2937-2572" .
+
+epd:id_2017-S-191-392032_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1540";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Христофор Колумб“ № 1" .
+
+epd:id_2017-S-191-392032_InformationProviderOrganisationIdentifier_FxmRFqszG85mxBF5kaCcKe
+  a epo:Identifier;
+  epo:hasIdentifierValue "121023551" .
+
+epd:id_2017-S-191-392032_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasID epd:id_2017-S-191-392032_InformationProviderOrganisationIdentifier_FxmRFqszG85mxBF5kaCcKe;
+  epo:hasLegalName "„Летище София“ ЕАД"@bg;
+  cccev:registeredAddress epd:id_2017-S-191-392032_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2017-S-191-392032_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-191-392032_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+                  Застраховка на отговорността на летище София и летище Пловдив за причинени имуществени и неимуществени вреди на трети лица при настъпване на застрахователно събитие или серия от събития, независимо от мястото на събитието. Застраховката покрива отговорността на летище София и летище Пловдив за изпълняваните от тях функции в качеството им на упражняващи правата и осъществяващи дейност като летищни оператори и оператори по наземно обслужване. Поръчката включва и пълна презастраховка на риска.
+               """@bg;
+  epo:hasEstimatedValue epd:id_2017-S-191-392032_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-191-392032_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN .
+
+epd:id_2017-S-191-392032_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 119952.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/USD> .
+
+epd:id_2017-S-191-392032_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-191-392032_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2017-S-191-392032_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-191-392032_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2017-S-191-392032_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2017-S-191-392032_TenderReceiver_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasDispatchDate "2017-10-03"^^xsd:date;
+  epo:hasID epd:id_2017-S-191-392032_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20171005";
+  epo:refersToLot epd:id_2017-S-191-392032_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2017-S-191-392032_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-191-392032_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 191-392032" .
+
+epd:id_2017-S-191-392032_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1540";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Христофор Колумб“ № 1" .
+
+epd:id_2017-S-191-392032_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG421>;
+  locn:postCode "4009";
+  locn:postName "  Крумово";
+  locn:thoroughfare "Област Пловдив, община Родопи" .
+
+epd:id_2017-S-191-392032_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "121023551" .
+
+epd:id_2017-S-191-392032_OrganisationIdentifier_gFUcNYVmTUBiATKNrzmurF a epo:Identifier;
+  epo:hasIdentifierValue "115007069" .
+
+epd:id_2017-S-191-392032_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2017-S-191-392032_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "„Летище София“ ЕАД"@bg;
+  cccev:registeredAddress epd:id_2017-S-191-392032_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-191-392032_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/66510000> .
+
+epd:id_2017-S-191-392032_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-191-392032_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+               Определеният в поле IV.2.2.) срок за подаване на оферти е съкратен на основание чл. 133, ал. 4 от ЗОП. Обстоятелствата, които изискват спешно възлагане, поради което е невъзможно спазването на срока по чл. 133, ал. 1 от ЗОП, са следните: обхват на поръчката включва застраховка на отговорността на летище София и летище Пловдив за причинени имуществени и неимуществени вреди на трети лица при настъпване на застрахователно събитие или серия от събития, независимо от мястото на събитието. Застраховката покрива отговорността на летище София и летище Пловдив за изпълняваните от тях функции в качеството им на упражняващи правата и осъществяващи дейност като летищни оператори и оператори по наземно обслужване. Съкращаването на посоченият срок се налага с оглед необходимостта от осигуряване на непрекъснатост на застрахователното покритие по застраховката, предмет на настоящата поръчка, като възложителят следва да определи изпълнител на поръчката във възможно най-кратък срок. Осигуряването на непрекъснатост на застрахователното покритие има задължителен характер за посочените летища с оглед следните мотиви: 1) прекъсването на застрахователното покритие по тази застраховка би довело до реална опасност за сериозно увреждане на обществения интерес, както и би поставило в конкретна опасност живота и здравето на пътниците, ползващи самолети, излитащи и кацащи на летище София и Пловдив поради липса на застраховка, покриваща обезщетенията за имуществени и неимуществени вреди, вследствие на авиационни инциденти, настъпили на посочените летища; 2) задължението за сключване на застраховката с горепосочения предмет произтича от Директива 96/67/ЕО на Съвета от 15.10.1996 година, относно достъп до пазара на наземни услуги в летищата на Общността, като и на осн. чл. 48 д, ал. 2, т. 5 от ЗГВА; 3) Застраховката се предвижда и за присъщ разход за включените в летищните такси услуги на летищния оператор в член 7, параграф 1, буква „г“ Директива 2009/12/ЕО на Европейския парламент и на Съвета от 11.3.2009 г. относно летищните такси.
+            """@bg;
+  epo:hasDescription """
+               Застраховка „Отговорност на летище София и летище Пловдив за причинени имуществени и неимуществени вреди на трети лица от дейността им като летищни оператори и оператори по наземно обслужване“.
+            """@bg;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-191-392032_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-191-392032_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+                Застраховка „Отговорност на летище София и летище Пловдив за причинени имуществени и неимуществени вреди на трети лица от дейността им като летищни оператори и оператори по наземно обслужване”.
+            """@bg;
+  epo:isCoveredByGPA false;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-191-392032_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-191-392032_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2017-S-191-392032_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-191-392032_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-191-392032_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2017-S-191-392032_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2017-S-191-392032_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Съгласно чл. 197, ал. 1, т. 1 от ЗОП.
+            """ .
+
+epd:id_2017-S-191-392032_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "cpcadmin@cpc.bg";
+  cccev:telephone "+359 29884070" .
+
+epd:id_2017-S-191-392032_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Витоша“ № 18" .
+
+epd:id_2017-S-191-392032_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-191-392032_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2017-S-191-392032_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-191-392032_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-191-392032_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-191-392032_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "BG" .
+
+epd:id_2017-S-191-392032_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1540";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Христофор Колумб“ № 1" .
+
+epd:id_2017-S-191-392032_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR
+  a cccev:ContactPoint;
+  epo:hasContactName "Десислава Димитрова, Отдел Деловодство"@bg;
+  epo:hasFax "+359 2937-2010";
+  epo:hasInternetAddress "www.sofia-airport.bg"^^xsd:anyURI;
+  cccev:email "d.mihailova@sofia-airport.bg";
+  cccev:telephone "+359 2937-2079" .
+
+epd:id_2017-S-191-392032_TenderReceiverOrganisationIdentifier_RmPNyhSxpRtChEASKUU5BR
+  a epo:Identifier;
+  epo:hasIdentifierValue "121023551" .
+
+epd:id_2017-S-191-392032_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR a org:Organization;
+  epo:hasID epd:id_2017-S-191-392032_TenderReceiverOrganisationIdentifier_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasLegalName "„Летище София“ ЕАД"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-191-392032_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  cccev:registeredAddress epd:id_2017-S-191-392032_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR .
+
+epd:id_2017-S-191-392032_TenderReceiver_RmPNyhSxpRtChEASKUU5BR a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-191-392032_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  epo:playedBy epd:id_2017-S-191-392032_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR .

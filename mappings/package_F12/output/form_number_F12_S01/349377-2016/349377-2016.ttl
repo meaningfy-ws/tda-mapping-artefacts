@@ -1,0 +1,236 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-194-349377_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.emarchespublics.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-194-349377_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "http://communay.e-marchespublics.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-194-349377_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2016-S-194-349377_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-194-349377_Channel_G9uAqcYuooZwAU3Pwzv6eq a cccev:Channel;
+  epo:hasURL "http://www.emarchespublics.com"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2016-S-194-349377_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasFax "+33 472498069";
+  epo:hasInternetAddress "http://www.emarchespublics.com"^^xsd:anyURI;
+  cccev:email "jerome.marse@communay.fr";
+  cccev:telephone "+33 472498060" .
+
+epd:id_2016-S-194-349377_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2016-S-194-349377_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-194-349377_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2016-S-194-349377_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasContactName "Direction générale des services"@fr;
+  epo:hasInternetAddress "http://www.emarchespublics.com"^^xsd:anyURI;
+  cccev:email "jerome.marse@communay.fr";
+  cccev:telephone "+33 472498060" .
+
+epd:id_2016-S-194-349377_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:postCode "69360";
+  locn:postName "Communay";
+  locn:thoroughfare "rue du Sillon" .
+
+epd:id_2016-S-194-349377_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasLegalName "Mairie de Communay"@fr;
+  cccev:registeredAddress epd:id_2016-S-194-349377_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2016-S-194-349377_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2016-S-194-349377_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-194-349377_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+Marché de maîtrise d'œuvre pour la construction d'une salle des fêtes et d'un logement à Communay (69360), sur le site de La Plaine, d'une surface utile d'environ 940 mètres carrés. La part de l'enveloppe provisionnelle affectée aux travaux est estimée à 2 000 000 EUR HT. La date de livraison est projetée fin 2018.
+Marché de maîtrise d'œuvre. Mission de base, au sens de la loi MOP, comprenant les études d'exécution (Exe). Les missions qui seront confiées à l'équipe retenue sont les suivantes:
+— Esq: esquisse,
+— Aps: avant projet sommaire,
+— Apd: avant projet détaillé,
+— Pro: études de projet,
+— Exe: études d'exécution,
+— Act: assistance pour la passation de contrats de travaux,
+— Det: direction de l'exécution des contrats de travaux,
+— Visa: validation des études d'exécution,
+— Aor: assistance sur opérations de réception.
+— mission complémentaire: SSI (système de sécurité incendie)
+— option n° 1: mission OPC (ordonnancement et pilotage de chantier).
+"""@fr;
+  epo:hasPurpose epd:id_2016-S-194-349377_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-194-349377_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs a cccev:ContactPoint;
+  epo:hasFax "+33 478928316";
+  cccev:email "laura.leininger@dgfip.finances.gouv.fr";
+  cccev:telephone "+33 472770520" .
+
+epd:id_2016-S-194-349377_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69003";
+  locn:postName "Lyon";
+  locn:thoroughfare "53 boulevard Vivier Merle" .
+
+epd:id_2016-S-194-349377_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs a org:Organization;
+  epo:hasLegalName "Comité consultatif interrégional de règlement amiable des différends ou litiges relatifs aux marchés publics de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-194-349377_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs;
+  cccev:registeredAddress epd:id_2016-S-194-349377_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2016-S-194-349377_Mediator_eMEmZdeMkSWP9DfmobsFLs a epo:Mediator;
+  epo:playedBy epd:id_2016-S-194-349377_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2016-S-194-349377_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-194-349377_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2016-S-194-349377_Mediator_eMEmZdeMkSWP9DfmobsFLs,
+    epd:id_2016-S-194-349377_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2016-S-194-349377_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2016-S-194-349377_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2016-S-194-349377_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2016-10-03"^^xsd:date;
+  epo:hasID epd:id_2016-S-194-349377_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20161007";
+  epo:refersToLot epd:id_2016-S-194-349377_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2016-S-194-349377_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2016-S-194-349377_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 194-349377" .
+
+epd:id_2016-S-194-349377_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:postCode "69360";
+  locn:postName "Communay";
+  locn:thoroughfare "rue du Sillon" .
+
+epd:id_2016-S-194-349377_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "69272" .
+
+epd:id_2016-S-194-349377_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2016-S-194-349377_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Ville de Communay"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2016-S-194-349377_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-194-349377_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "COM-SF-MOE-01" .
+
+epd:id_2016-S-194-349377_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2016-S-194-349377_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+La présente consultation fait l'objet de 2 phases: une phase de remise des candidatures, puis une phase de remise des offres pour les 3 équipes sélectionnées. Seuls le modèle de présentation de l'équipe (compétences et moyens), les modèles relatifs aux 3 références et la note de présentation synthétique du programme sont mis à disposition des candidats. Lors de la seconde phase, le dossier de consultation sera uniquement remis aux 3 équipes retenues. Le marché sera attribué après négociation avec le lauréat désigné par le pouvoir adjudicateur.
+La remise des dossiers est faite soit par dépôt en mairie contre récépissé, soit par lettre recommandée avec AR soit de façon dématérialisée sur la plateforme emarchespublics.com
+"""@fr;
+  epo:hasID epd:id_2016-S-194-349377_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-194-349377_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2016-S-194-349377_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+Communay — mission de maitrise d'œuvre relative à la construction d'une salle des fêtes et d'un logement — site de La Plaine.
+"""@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-194-349377_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2016-S-194-349377_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2016-S-194-349377_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR;
+  epo:usesChannel epd:id_2016-S-194-349377_Channel_G9uAqcYuooZwAU3Pwzv6eq .
+
+epd:id_2016-S-194-349377_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-194-349377_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2016-S-194-349377_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2016-S-194-349377_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69433";
+  locn:postName "Lyon Cedex 03";
+  locn:thoroughfare "184 rue Duguesclin" .
+
+epd:id_2016-S-194-349377_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasFax "+33 478141065";
+  cccev:email "greffe.ta-lyon@juradm.fr";
+  cccev:telephone "+33 478141010" .
+
+epd:id_2016-S-194-349377_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-194-349377_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2016-S-194-349377_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2016-S-194-349377_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-194-349377_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2016-S-194-349377_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+— référé pré-contractuel: avant la conclusion du marché (article L. 551-1 du code de justice administrative),
+— recours pour excès de pouvoir: dans un délai de 2 mois à compter de la notification de la décision de rejet (article R. 421-1 à R. 421-3 du code de justice administrative),
+— recours de plein contentieux: dans un délai de 2 mois à compter de l'accomplissement des mesures de publicité concernant l'attribution du marché.
+""" .
+
+epd:id_2016-S-194-349377_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+33 478141065";
+  cccev:email "greffe.ta-lyon@juradm.fr";
+  cccev:telephone "+33 478141010" .
+
+epd:id_2016-S-194-349377_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69433";
+  locn:postName "Lyon Cedex 03";
+  locn:thoroughfare "184 rue Duguesclin" .
+
+epd:id_2016-S-194-349377_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lyon"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-194-349377_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2016-S-194-349377_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-194-349377_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-194-349377_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-194-349377_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.emarchespublics.com"^^xsd:anyURI .
+
+epd:id_2016-S-194-349377_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:postCode "69360";
+  locn:postName "Communay";
+  locn:thoroughfare "rue du Sillon" .
+
+epd:id_2016-S-194-349377_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.emarchespublics.com"^^xsd:anyURI;
+  cccev:email "jerome.marse@communay.fr" .
+
+epd:id_2016-S-194-349377_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasLegalName "Mairie de Communay"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-194-349377_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2016-S-194-349377_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2016-S-194-349377_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-194-349377_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2016-S-194-349377_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

@@ -1,0 +1,300 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-168-346038_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://ratkynet.com/kozbeszerzes"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-168-346038_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "https://www.gter.hu/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-168-346038_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-168-346038_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-168-346038_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Farkasné Kiss Mária"@hu;
+  epo:hasFax "+36 13042225";
+  epo:hasInternetAddress "https://www.gter.hu/"^^xsd:anyURI;
+  cccev:email "farkas.maria@mvm-gter.hu";
+  cccev:telephone "+36 13042482" .
+
+epd:id_2017-S-168-346038_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+                  MVM GTER Zrt., Bakonyi Gázturbinás Erőmű, Ajka, Gyártelep, Hrsz.: 1961/1.
+               """@hu .
+
+epd:id_2017-S-168-346038_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU120>;
+  locn:address epd:id_2017-S-168-346038_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-168-346038_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2017-S-168-346038_Period_aNssKXiFyYxii2v93ivV4N;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-168-346038_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-168-346038_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEPayment true .
+
+epd:id_2017-S-168-346038_FrameworkAgreementTechniqueUsage_42ewgEwxZiroeKCXpa2kAY a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2017-S-168-346038_FrameworkAgreementTerm_42ewgEwxZiroeKCXpa2kAY a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "A jelen eljárás tárgyát képező hosszú távú karbantartási és felújítási keretmegállapodást (keretszerződést) az ajánlatkérő a magyarországi tercier piacon működő, igény esetén 15 perces felterheléssel induló, villamos energiát termelő Bakonyi Gázturbinás Erőmű termelői működési engedélyének lejártáig, azaz a jelenleg tervezett életciklus végéig, 30.4.2031 hatállyal kívánja megkötni."@hu .
+
+epd:id_2017-S-168-346038_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "Farkasné Kiss Mária"@hu;
+  epo:hasFax "+36 13042225";
+  epo:hasInternetAddress "https://www.gter.hu/"^^xsd:anyURI;
+  cccev:email "farkas.maria@mvm-gter.hu";
+  cccev:telephone "+36 13042482" .
+
+epd:id_2017-S-168-346038_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU120>;
+  locn:postCode "2040";
+  locn:postName "Budaörs";
+  locn:thoroughfare "Pf. 1" .
+
+epd:id_2017-S-168-346038_InformationProviderOrganisationIdentifier_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:Identifier;
+  epo:hasIdentifierValue "AK23004" .
+
+epd:id_2017-S-168-346038_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasID epd:id_2017-S-168-346038_InformationProviderOrganisationIdentifier_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:hasLegalName "MVM GTER Gázturbinás Erőmű Zártkörűen Működő Részvénytársaság (MVM GTER Zrt.)"@hu;
+  cccev:registeredAddress epd:id_2017-S-168-346038_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2017-S-168-346038_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/50532000> .
+
+epd:id_2017-S-168-346038_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-168-346038_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation """
+                  A II.1.5) és a II.2.6) pontban megadott érték nem a becsült érték, ajánlatkérő nem kívánja megadni a becsült értéket. A hirdetményfeladó rendszer kitöltési szabályai miatt kell beírni értéket az adott pontba.
+               """@hu;
+  epo:hasDescription """
+                  Bakonyi Gázturbinás Erőmű 2 db BDAX72-290-ER típusú generátor gépegység és a hozzájuk tartozó berendezések karbantartási és felújítási feladatainak ellátása
+                  Közbeszerzés mennyisége:
+                  Karbantartási terjedelem:
+                  — műszaki/mérnöki segítségnyújtás:
+                  o gyártóművi háttértámogatás biztosítása (hotline 24/7)
+                  — generátor és berendezés egységeinek éves általános ellenőrzése, szükség szerinti karbantartási munkálatok elvégzése („Level 2” vizsgálat);
+                  — vonali/nullponti cellák ellenőrzése;
+                  — álló- és forgórész szigetelés vizsgálatai;
+                  — gerjesztő és feszültség szabályozó berendezés vizsgálata;
+                  — gerjesztés és feszültség szabályozó ellenőrzése.
+                  — eseti javítási és karbantartási tevékenység
+                  o üzem közben jelentkező nem tervezett meghibásodások elhárítása,
+                  o diagnosztikai vizsgálatok eredménye alapján célirányos karbantartási munka elvégzése az üzemképesség fenntartása érdekében,
+                  o időszakosan szükséges ipari robotos diagnosztikai vizsgálat elvégzése
+                  — tartalék alkatrészek szállítása:
+                  o a javításokhoz szükséges alkatrészek szállítása,
+                  o ÜBT (Üzembiztonsági Tartalék) képzéshez jellemzően a hosszú átfutási idővel rendelhető egységek, alkatrészek leszállítása,
+                  o kiszerelt egységek gyári felújítása, majd visszajuttatása a raktári készletre.
+                  Felújítási terjedelem:
+                  — generátor forgórészének felújítása;
+                  — generátor feszültség és gerjesztés szabályzó felújítása, modernizációja;
+                  — generátor védelmek modernizációja.
+                  A karbantartási és a felújítási terjedelem az alábbi berendezésekre, rendszerekre vonatkozik:
+                  — 2 db BDAX72-290-ER típusú generátor gépegység, a segédtengely csatlakozó karimájától tengely másik végén lévő kenőolaj szivattyúig;
+                  — gerjesztő mű;
+                  — feszültség- és gerjesztés-szabályozó;
+                  — generátor védelmei; valamint
+                  — a berendezés saját vezérlése.
+                  A műszaki terjedelem nem tartalmazza:
+                  — a „package”-ekhez tartozó tűz- és gázvédelmi rendszereket,
+                  — a generátorok segédolaj rendszerét.
+               """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-168-346038_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2017-S-168-346038_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-168-346038_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-168-346038_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-168-346038_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-168-346038_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2017-S-168-346038_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2017-S-168-346038_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2017-S-168-346038_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2017-S-168-346038_TenderReceiver_dk2esofbDLefiQsKcsKjh3;
+  epo:hasDispatchDate "2017-08-30"^^xsd:date;
+  epo:hasID epd:id_2017-S-168-346038_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20170902";
+  epo:refersToLot epd:id_2017-S-168-346038_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2017-S-168-346038_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-168-346038_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 168-346038" .
+
+epd:id_2017-S-168-346038_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU120>;
+  locn:postCode "2040";
+  locn:postName "Budaörs";
+  locn:thoroughfare "Kinizsi utca 26." .
+
+epd:id_2017-S-168-346038_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "AK23004" .
+
+epd:id_2017-S-168-346038_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2017-S-168-346038_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "MVM GTER – Gázturbinás Erőmű Zártkörűen Működő Részvénytársaság (MVM GTER Zrt.)"@hu;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2017-S-168-346038_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-168-346038_Period_aNssKXiFyYxii2v93ivV4N a epo:Period;
+  epo:hasBeginning "2018-01-01"^^xsd:date;
+  epo:hasEnd "2031-04-30"^^xsd:date .
+
+epd:id_2017-S-168-346038_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/50532000> .
+
+epd:id_2017-S-168-346038_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-168-346038_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+               1. Az érdekelt szervezetnek a IV.2.2. pontban meghatározott határidőig cégszerűen aláírt
+               szándéknyilatkozatot kell benyújtania magyar nyelven, Ajánlatkérő lehetővé teszi azonban a nyilatkozat angol nyelven történő benyújtását is, amely azt jelenti, hogy a szándéknyilatkozatot angol nyelvű benyújtás esetében angol és magyar nyelven is meg kell küldeni Ajánlatkérő részére.
+               A szándéknyilatkozatnak az alábbi információkat kell tartalmaznia:
+               — az érdekelt szervezet nevét, székhelyét, elérhetőségét,
+               — az érdekelt szervezet cégjegyzékszámát, adószámát,
+               — a kapcsolattartó személy nevét, beosztását, elérhetőségét (e-mail, telefonszám),
+               — a közbeszerzési eljárás pontos megnevezését.
+               Kérjük az érdekelt szervezetet, hogy a szándéknyilatkozatban a fenti adatokat megadni szíveskedjenek, hogy az Ajánlatkérő a 307/2015. (X.27.) Kormányrendelet 8.§ (2) bekezdésében foglaltaknak megfelelően tudjon eljárni a közvetlen részvételi felhívás megküldése során.
+               Ajánlatkérő kijelenti, hogy az eljárás szempontjából a magyar nyelvű dokumentumok az irányadók.
+               Ajánlatkérő a közbeszerzési eljárás során lehetővé teszi az angol nyelv használatát, és valamennyi közbeszerzési dokumentumot elérhetővé tesz mind magyar, mind angol nyelven. A gazdasági szereplő által választott angol nyelvű eljárás az angol nyelv és a hivatalos magyar nyelv egyidejű használatát jelenti.
+               A szándéknyilatkozatot eredeti példányban postai úton kell megküldeni az alábbi címre:
+               Hivatalos név: MVM GTER Gázturbinás Erőmű Zártkörűen Működő Részvénytársaság (MVM GTER Zrt.)
+               Postai cím: 2040 Budaörs, Kinizsi utca 26.
+               Ország: Magyarország
+               Kapcsolattartó személy: Faragó Bernadett – beszerzési szakértő
+               A szándéknyilatkozatot benyújtó szervezet felelőssége meggyőződni arról, hogy a benyújtott szándéknyilatkozat megérkezett-e határidőig az ajánlatkérőhöz, aki az előírt határidőben szándéknyilatkozatot benyújtó gazdasági szereplőket hívja fel szándéknyilatkozatuk megerősítésére a közvetlen részvételi felhívás megküldésével.
+               2. Ajánlatkérő a közvetlen részvételi felhívást egyidejűleg és közvetlenül küldi meg a szándéknyilatkozatukat az előírt határidőben benyújtó gazdasági szereplőknek a szándéknyilatkozatban megadott e-mail címre, továbbá a közvetlen részvételi felhívás és a kapcsolódó közbeszerzési dokumentumok az időszakos előzetes tájékoztatóban foglaltak alapján a jelzett időponttól kezdődően (tervezett határidő: IV.2.5. pont szerint) érhetők el az I.3 pontban jelzett elérési útvonalon azon gazdasági szereplők számára, akik szándéknyilatkozatukat az előírt határidőben benyújtották. A részvételi felhívást és a kapcsolódó közbeszerzési dokumentumokat részvételre jelentkezőnként legalább egy gazdasági szereplőnek (valamelyik közös ajánlattevőnek, alvállalkozónak) elektronikus úton el kell érnie a részvételi határidő lejártáig, illetve az elérést vissza kell igazolni a faragobernadett@mvm-gter.hu e-mail címére, (év/hónap/nap/óra/perc) adattartalommal [Kbt. 57. § (2) bekezdés].
+               3. Az ajánlatkérő a Kbt. 75.§ (2) bekezdés e) pontja szerinti eredménytelenségi okot nem alkalmazza.
+               4. A felelős akkreditált közbeszerzési szaktanácsadó neve: dr. Molnár Beáta, lajstromszáma: 00107.
+            """@hu;
+  epo:hasDescription """
+               Bakonyi Gázturbinás Erőmű 2 db BDAX72-290-ER típusú generátor gépegység és a hozzájuk tartozó berendezések karbantartási és esetleges felújítási feladatainak ellátása:
+               — 2 db BDAX72-290-ER típusú generátor gépegység, a segédtengely csatlakozó karimájától a tengely másik végén lévő kenőolaj szivattyúig;
+               — gerjesztő mű;
+               — feszültség- és gerjesztés-szabályozó;
+               — generátor védelmei; valamint
+               — a berendezés saját vezérlése.
+            """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-168-346038_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-168-346038_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2017-S-168-346038_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               Bakonyi Gázturbinás Erőmű 2 db BDAX72-290-ER típusú generátor gépegység és a hozzájuk tartozó berendezések karbantartási és felújítási feladatainak ellátása.
+            """@hu;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-168-346038_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2017-S-168-346038_FrameworkAgreementTerm_42ewgEwxZiroeKCXpa2kAY, epd:id_2017-S-168-346038_ReviewTerm_ZsxuomNURxGbRdavxJPhLN,
+    epd:id_2017-S-168-346038_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY;
+  epo:usesTechnique epd:id_2017-S-168-346038_FrameworkAgreementTechniqueUsage_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2017-S-168-346038_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-168-346038_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2017-S-168-346038_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2017-S-168-346038_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó utca 5" .
+
+epd:id_2017-S-168-346038_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828594" .
+
+epd:id_2017-S-168-346038_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2017-S-168-346038_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2017-S-168-346038_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2017-S-168-346038_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-168-346038_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2017-S-168-346038_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               A Kbt. 148.§-a szerint.
+            """ .
+
+epd:id_2017-S-168-346038_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828594" .
+
+epd:id_2017-S-168-346038_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó utca 5" .
+
+epd:id_2017-S-168-346038_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2017-S-168-346038_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2017-S-168-346038_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-168-346038_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-168-346038_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-168-346038_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "EN", "HU";
+  epo:hasReceiptExpressionDeadline "2017-09-29T12:00" .
+
+epd:id_2017-S-168-346038_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU120>;
+  locn:postCode "2040";
+  locn:postName "Budaörs";
+  locn:thoroughfare "Kinizsi utca 26." .
+
+epd:id_2017-S-168-346038_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3
+  a cccev:ContactPoint;
+  epo:hasContactName "Farkasné Kiss Mária"@hu;
+  epo:hasFax "+36 13042225";
+  epo:hasInternetAddress "https://www.gter.hu/"^^xsd:anyURI;
+  cccev:email "farkas.maria@mvm-gter.hu";
+  cccev:telephone "+36 13042482" .
+
+epd:id_2017-S-168-346038_TenderReceiverOrganisationIdentifier_dk2esofbDLefiQsKcsKjh3
+  a epo:Identifier;
+  epo:hasIdentifierValue "AK23004" .
+
+epd:id_2017-S-168-346038_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 a org:Organization;
+  epo:hasID epd:id_2017-S-168-346038_TenderReceiverOrganisationIdentifier_dk2esofbDLefiQsKcsKjh3;
+  epo:hasLegalName "MVM GTER Gázturbinás Erőmű Zártkörűen Működő Részvénytársaság (MVM GTER Zrt.)"@hu;
+  epo:hasPrimaryContactPoint epd:id_2017-S-168-346038_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  cccev:registeredAddress epd:id_2017-S-168-346038_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3 .
+
+epd:id_2017-S-168-346038_TenderReceiver_dk2esofbDLefiQsKcsKjh3 a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-168-346038_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  epo:playedBy epd:id_2017-S-168-346038_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 .

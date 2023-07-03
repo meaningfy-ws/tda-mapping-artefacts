@@ -1,0 +1,126 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-034-076710_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.jambon-de-bayonne.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-034-076710_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-034-076710_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-034-076710_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-034-076710_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Florane Gambert"@fr;
+  epo:hasInternetAddress "www.jambon-de-bayonne.fr"^^xsd:anyURI;
+  cccev:email "florane.gambert@bayonne-ham.com";
+  cccev:telephone "+33 785079454" .
+
+epd:id_2019-S-034-076710_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "États-Unis."@fr .
+
+epd:id_2019-S-034-076710_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  locn:address epd:id_2019-S-034-076710_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2019-S-034-076710_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2019-S-034-076710_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-034-076710_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2019-S-034-076710_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2019-S-034-076710_Fund_c4Jggv3QHLrvEuoxvHMwcK a epo:Fund;
+  epo:hasDescription "Appel à projet rentrat dans le cadre d'un programme simple Actions d'information et de promotion concernant les produits agricoles mises en œuvre sur le marché intérieur et dans les pays tiers conformément au règlement UE no1144/2014 (2016/C41/03)"@fr .
+
+epd:id_2019-S-034-076710_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-034-076710_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation "Les règles pour concourir sont disponibles par mail sur simple demande auprès de Florane Gambert-Jouan <florane.gambert@bayonne-ham.com>."@fr;
+  epo:hasDescription "Créer une campagne de communication et de promotion du jambon de Bayonne aux États-Unis d'Amérique: éléments demandés dans un brief d'appels d'offre envoyé par courriel Florane Gambert-Jouan <florane.gambert@bayonne-ham.com>."@fr;
+  epo:hasEstimatedValue epd:id_2019-S-034-076710_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isFundedBy epd:id_2019-S-034-076710_Fund_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds true .
+
+epd:id_2019-S-034-076710_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 1400000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-034-076710_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 1400000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2019-S-034-076710_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-034-076710_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2019-S-034-076710_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2019-S-034-076710_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2019-S-034-076710_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2019-02-13"^^xsd:date;
+  epo:hasID epd:id_2019-S-034-076710_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20190218";
+  epo:refersToLot epd:id_2019-S-034-076710_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2019-S-034-076710_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2019-S-034-076710_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 034-076710" .
+
+epd:id_2019-S-034-076710_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRI15>;
+  locn:postCode "64410";
+  locn:postName "Arzacq-Arraziguet";
+  locn:thoroughfare "Route de Samadet" .
+
+epd:id_2019-S-034-076710_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Consortium européen";
+  epo:hasLegalName "Consortium du Jambon de Bayonne"@fr;
+  epo:hasMainActivityDescription "Agriculture";
+  cccev:registeredAddress epd:id_2019-S-034-076710_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-034-076710_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2020-03-01"^^xsd:date;
+  epo:hasEnd "2022-03-01"^^xsd:date .
+
+epd:id_2019-S-034-076710_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/15131120> .
+
+epd:id_2019-S-034-076710_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-034-076710_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "Les règles pour postuler sont disponibles gratuitement auprès de Florane Gambert-Jouan <florane.gambert@bayonne-ham.com>."@fr;
+  epo:hasDescription "Conception et réalisation d'une campagne de promotion européenne aux États-Unis 2020-2021-2022 pour le Jambon de Bayonne.Les règles pour postule sont disponibles gratuitement auprès de: Florane Gambert-Jouan <florane.gambert@bayonne-ham.com>."@fr;
+  epo:hasEstimatedValue epd:id_2019-S-034-076710_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-034-076710_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2019-S-034-076710_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Campagne européenne de promotion aux USA du Jambon de Bayonne 2020-2021-2022"@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-034-076710_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2019-S-034-076710_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2019-S-034-076710_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-034-076710_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-034-076710_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-034-076710_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "64034";
+  locn:postName "Pau";
+  locn:thoroughfare "5 place de la Libération" .
+
+epd:id_2019-S-034-076710_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Pau"@fr;
+  cccev:registeredAddress epd:id_2019-S-034-076710_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2019-S-034-076710_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-034-076710_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2019-S-034-076710_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "EN", "FR";
+  epo:hasReceiptExpressionDeadline "2019-03-11T00:00" .
+
+epd:id_2019-S-034-076710_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-034-076710_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-034-076710_Organisation_gqoAAwSV3JaTMsopb9zyKP .

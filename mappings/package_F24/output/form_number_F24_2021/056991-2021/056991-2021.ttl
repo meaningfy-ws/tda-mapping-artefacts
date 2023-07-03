@@ -1,0 +1,209 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-023-056991_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://alm.marches-securises.fr/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-023-056991_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://alm.marches-securises.fr/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-023-056991_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-023-056991_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-023-056991_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Direction Europe et internationale — Mme Ganaëlle Guiter"@fr;
+  epo:hasInternetAddress "http://www.angers.fr/"^^xsd:anyURI;
+  cccev:email "ganaelle.guiter@ville.angers.fr";
+  cccev:telephone "+33 241054031" .
+
+epd:id_2021-S-023-056991_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Ville de Bamako (Mali)."@fr .
+
+epd:id_2021-S-023-056991_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  locn:address epd:id_2021-S-023-056991_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-023-056991_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-023-056991_Period_RgULVPVVYP9pkvK789PCUZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-023-056991_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-023-056991_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-023-056991_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "Mme Chich-Bourgine"@fr;
+  epo:hasInternetAddress "http://www.angers.fr/"^^xsd:anyURI;
+  cccev:email "elisabeth.chich-bourgine@ville.angers.fr";
+  cccev:telephone "+33 241055209" .
+
+epd:id_2021-S-023-056991_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRG02>;
+  locn:postCode "49020";
+  locn:postName "Angers Cedex 02";
+  locn:thoroughfare "Hôtel de Ville — boulevard de la Résistance et de la Déportation — BP 80011" .
+
+epd:id_2021-S-023-056991_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasLegalName "Renseignements juridiques: direction des affaires juridiques"@fr;
+  cccev:registeredAddress epd:id_2021-S-023-056991_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2021-S-023-056991_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/55000000> .
+
+epd:id_2021-S-023-056991_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-023-056991_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Biens mis à disposition:— ensemble immobilier de douze chambres, trois studios et un appartement, équipés et meublés destinés à la location;— quatre salles de réunions équipées destinées à la location;— une salle de restauration meublée et équipée;— une cuisine équipée;— un local «Intendance» équipé;— quatre bureaux et un garage;— un appartement de fonction;— un local destiné aux gardiens;— deux véhicules 4 x 4."@fr;
+  epo:hasDescription "Les principales missions que devra assurer le délégataire se répartissent ainsi:— l'animation, la gestion financière et l'administration de la Maison du Partenariat Angers-Bamako, à Bamako comprenant 16 chambres et quatre salles de réunions;— le développement des capacités d'accueil qu'offre le bâtiment, comme support des échanges entre les deux villes, mais aussi comme outil d'animation et de développement social local, pour satisfaire aux objectifs du partenariat Angers-Bamako;— l'animation et le renforcement de la coopération entre partenaires angevins et maliens en faisant de la maison du partenariat un outil de développement au service de la coopération;— l'appui conseil auprès des partenaires angevins et bamakois en facilitant les échanges entre les partenaires des deux villes (associations, établissements scolaires, organismes publics et privés);— l'appui conseil auprès des étudiants et stagiaires angevins effectuant un stage à Bamako;— la participation au rayonnement de la Ville d'Angers auprès des séminaristes et des résidents de la MPAB."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-023-056991_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-023-056991_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-023-056991_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 685000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-023-056991_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 685000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-023-056991_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-023-056991_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-023-056991_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2021-S-023-056991_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2021-S-023-056991_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2021-S-023-056991_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2021-01-29"^^xsd:date;
+  epo:hasID epd:id_2021-S-023-056991_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210203";
+  epo:refersToLot epd:id_2021-S-023-056991_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2021-S-023-056991_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-023-056991_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 023-056991" .
+
+epd:id_2021-S-023-056991_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRG02>;
+  locn:postCode "49020";
+  locn:postName "Angers";
+  locn:thoroughfare "ville d'Angers, boulevard de la Résistance et de la Déportation — BP 80011" .
+
+epd:id_2021-S-023-056991_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Commune d'Angers"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-023-056991_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-023-056991_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;
+  epo:hasBeginning "2022-01-01"^^xsd:date;
+  epo:hasEnd "2025-10-13"^^xsd:date .
+
+epd:id_2021-S-023-056991_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "DSP MPAB" .
+
+epd:id_2021-S-023-056991_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/55000000> .
+
+epd:id_2021-S-023-056991_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-023-056991_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Les candidatures doivent être envoyées à l'adresse suivante: mairie d'Angers — direction des affaires juridiques (Mme Isabelle Bossard, porte 206b) — BP 80011 — Hôtel de Ville — boulevard de la Résistance et de la Déportation — 49020, Angers Cedex 02, F.Modalités de présentation des candidatures: les candidatures doivent parvenir sous enveloppe fermée à l'adresse mentionnée ci-dessus; soit par remise de récépissé, soit par voie postale en recommandé avec avis de réception. L'enveloppe comportera obligatoirement la mention suivante: «Délégation de service public maison du partenariat — ne pas ouvrir» et portera le cachet du candidat.Les critères de sélection des candidatures (article L. 1411-1 du CGCT) examinées par la Commission de délégation de service public sont les suivants: garanties professionnelles et financières; aptitude à assurer la continuité du service public et l'égalité des usagers devant le service public.Procédure restreinte: les candidats sélectionnés par la Commission des délégations de service public recevront le document-programme et le règlement de la consultation dans lequel figureront les modalités de présentation des offres (date limite de la remise, documents à fournir…) et les critères de sélections des offres."@fr;
+  epo:hasDescription "Exploitation et gestion de la Maison du partenariat Angers-Bamako (MPAB) à Bamako au Mali. Délégation de service public en application de l'article L. 1411-1 et suivants du CGCT. Le délégataire assure l'exploitation à ses risques et périls et se rémunère sur les usagers de l'équipement. Des contraintes de service public peuvent être imposées au délégataire. En vertu des articles L. 1224-1 et suivants du code du travail, le délégataire reprend à sa charge à compter du démarrage de la convention de DSP l'ensemble des personnels affectés au service. Les biens sont mis à disposition du délégataire moyennant le versement d'une redevance représentative d'un pourcentage du montant des biens mis à disposition."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-023-056991_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2021-S-023-056991_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-023-056991_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-023-056991_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Délégation de service public «Gestion et exploitation de la maison de partenariat Angers-Bamako» à Bamako au Mali"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-023-056991_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-023-056991_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2021-S-023-056991_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2021-S-023-056991_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-023-056991_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2021-S-023-056991_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2021-S-023-056991_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "44041";
+  locn:postName "Nantes Cedex";
+  locn:thoroughfare "6 allée de l'Île-Gloriette — BP 24111" .
+
+epd:id_2021-S-023-056991_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.nantes.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-nantes@juradm.fr";
+  cccev:telephone "+33 240994600" .
+
+epd:id_2021-S-023-056991_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nantes"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-023-056991_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2021-S-023-056991_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-023-056991_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-023-056991_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-023-056991_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— référé précontractuel à introduire avant la conclusion du contrat dans les conditions prévues aux articles L. 551-1 et suivants du CJA;— référé contractuel à compter de la signature du contrat conformément aux articles L. 551-13 et suivants du CJA dans les délais mentionnés à l'article R. 551-7 du CJA;— recours en contestation de validité du contrat dans un délai de deux mois à compter des mesures de publicités appropriées (Conseil d'état, 4.4.2014, département Tarn-et-Garonne, REQ. 358994)." .
+
+epd:id_2021-S-023-056991_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.nantes.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-nantes@juradm.fr";
+  cccev:telephone "+33 240994600" .
+
+epd:id_2021-S-023-056991_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "44041";
+  locn:postName "Nantes Cedex";
+  locn:thoroughfare "6 allée de l'Île-Gloriette — BP 24111" .
+
+epd:id_2021-S-023-056991_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nantes"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-023-056991_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2021-S-023-056991_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-023-056991_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-023-056991_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-023-056991_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2021-S-023-056991_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRG02>;
+  locn:postCode "49020";
+  locn:postName "Angers";
+  locn:thoroughfare "Hôtel de Ville — boulevard de la Résistance et de la Déportation — BP 80011" .
+
+epd:id_2021-S-023-056991_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasContactName "À l'attention de Mme Bossard (2ème étage, porte 206B)"@fr;
+  epo:hasInternetAddress "http://www.angers.fr/"^^xsd:anyURI;
+  cccev:email "elisabeth.chich-bourgine@ville.angers.fr";
+  cccev:telephone "+33 241055205" .
+
+epd:id_2021-S-023-056991_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Mairie d'Angers — direction des affaires juridiques"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-023-056991_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2021-S-023-056991_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2021-S-023-056991_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-023-056991_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2021-S-023-056991_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

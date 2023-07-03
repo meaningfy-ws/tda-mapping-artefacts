@@ -1,0 +1,183 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-101-202331_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.eguadeloupe.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-101-202331_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "http://www.eguadeloupe.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-101-202331_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-101-202331_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-101-202331_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Robert Landre — direction de la commande publique"@fr;
+  epo:hasFax "+33 590813419";
+  epo:hasInternetAddress "http://www.regionguadeloupe.fr"^^xsd:anyURI;
+  cccev:email "robert.landre@cr-guadeloupe.fr";
+  cccev:telephone "+33 590804041" .
+
+epd:id_2017-S-101-202331_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2017-S-101-202331_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-101-202331_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2017-S-101-202331_Fund_k5UiCNjVxapva2MShsi99p a epo:Fund;
+  epo:hasDescription "Fonds Europe."@fr .
+
+epd:id_2017-S-101-202331_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34115200> .
+
+epd:id_2017-S-101-202331_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-101-202331_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+Le concours porte sur la réalisation d'une esquisse plus préalable à la passation d'un marché négocié de maîtrise d'oeuvre pour la réalisation à Convenance Baie Mahault Guadeloupe, de la maison des organisations professionnelles agricole et de la pêche (MAROPA), structure vouée à regrouper les organismes et syndicats de la filière agricole; elle comprendra un édifice devant accuellir 90 salariés appartenant à une trentaine d'organisations, comportant des ziones de bureau,un espace d'accueil, des parties communes, un espace de stockage, , un espace foire et marchés extérieurs permettant de recevoir des manifestations.l'enveloppe financière affectée aux travaux est de 4 400 000 EUR HT. Les surfaces utiles consacrées aux activités sont: 2 645 de construction ,et 2 689 mètre carrés d'espace extérieurs. La mission de base est confiée au maître d'oeuvre complété de missions complémentaires, quantitatif détaiillé par lot, , de la mission OPC et coordination technique et de synthèse.
+"""@fr;
+  epo:hasPurpose epd:id_2017-S-101-202331_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isFundedBy epd:id_2017-S-101-202331_Fund_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds true .
+
+epd:id_2017-S-101-202331_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs a cccev:ContactPoint;
+  epo:hasFax "+33 0590819670";
+  epo:hasInternetAddress "http://www.guadeloupe.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-basse-terre@juradm.fr";
+  cccev:telephone "+33 0590814538" .
+
+epd:id_2017-S-101-202331_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "97100";
+  locn:postName "Basse-Terre";
+  locn:thoroughfare "6 rue Victor Hugues" .
+
+epd:id_2017-S-101-202331_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs a org:Organization;
+  epo:hasLegalName "Tribunal administratif de la Guadeloupe"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-101-202331_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs;
+  cccev:registeredAddress epd:id_2017-S-101-202331_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2017-S-101-202331_Mediator_eMEmZdeMkSWP9DfmobsFLs a epo:Mediator;
+  epo:playedBy epd:id_2017-S-101-202331_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2017-S-101-202331_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-101-202331_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2017-S-101-202331_Mediator_eMEmZdeMkSWP9DfmobsFLs,
+    epd:id_2017-S-101-202331_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2017-S-101-202331_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2017-S-101-202331_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2017-S-101-202331_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2017-05-24"^^xsd:date;
+  epo:hasID epd:id_2017-S-101-202331_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20170527";
+  epo:refersToLot epd:id_2017-S-101-202331_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2017-S-101-202331_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2017-S-101-202331_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 101-202331" .
+
+epd:id_2017-S-101-202331_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR910>;
+  locn:postCode "97100";
+  locn:postName "Basse-Terre";
+  locn:thoroughfare "Hôtel de Région, avenue Paul Lacave" .
+
+epd:id_2017-S-101-202331_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "23971001500029" .
+
+epd:id_2017-S-101-202331_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2017-S-101-202331_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Région Guadeloupe"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-101-202331_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-101-202331_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "MF220617" .
+
+epd:id_2017-S-101-202331_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34115200> .
+
+epd:id_2017-S-101-202331_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+La procédure est au stade de la sélection des 5 candidats admis à concourir; cette sélection sera effectuée après l'avis du jury.
+Dans une seconde phase les candidats sélectionnés recevront les pièces nécessaires à la remise des prestations qui une fois rendues au maître d'ouvrage, seront examinées de manière anonyme par le jury qui emettra un avis motivé sur le choix et un classement des prestations reçues en vue de la désignation du lauréat.
+D'Ores et déja le programme de l'opération est accessible sur le profil d'acheteur de la collectivité régionale.
+L.
+"""@fr;
+  epo:hasID epd:id_2017-S-101-202331_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-101-202331_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2017-S-101-202331_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+Concours restreint sur esquisse plus en vue de la passation d'un marché de maîtrise d'oeuvre pour la réalisation de la Maison des organisations professionnelles agricoles et de la Pêche.
+"""@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-101-202331_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2017-S-101-202331_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2017-S-101-202331_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-101-202331_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-101-202331_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-101-202331_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "97100";
+  locn:postName "Basse-Terre";
+  locn:thoroughfare "6 rue victor Hugues" .
+
+epd:id_2017-S-101-202331_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasFax "+33 0590819670";
+  epo:hasInternetAddress "http://www.guadeloupe.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-basse-terre@juradm.fr";
+  cccev:telephone "+33 0590814538" .
+
+epd:id_2017-S-101-202331_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Guadeloupe"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-101-202331_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2017-S-101-202331_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2017-S-101-202331_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-101-202331_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2017-S-101-202331_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+33 0590819670";
+  epo:hasInternetAddress "http://www.guadeloupe.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-basse-terre@juradm.fr";
+  cccev:telephone "+33 0590814538" .
+
+epd:id_2017-S-101-202331_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "97100";
+  locn:postName "Basse-Terre";
+  locn:thoroughfare "6 rue Victor Hugues" .
+
+epd:id_2017-S-101-202331_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif de la Guadeloupe"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-101-202331_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2017-S-101-202331_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-101-202331_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-101-202331_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-101-202331_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2017-S-101-202331_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-101-202331_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-101-202331_Organisation_VX8RygdBbvDo5gNDhjcsTj .

@@ -1,0 +1,169 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-123-350966_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.dtvp.de/Satellite/notice/CXP4YK7R2Y3/documents"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-123-350966_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2022-S-123-350966_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-123-350966_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-123-350966_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-123-350966_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "www.wzv-birkenfeld.de"^^xsd:anyURI;
+  cccev:email "geyer@wzv-birkenfeld.de" .
+
+epd:id_2022-S-123-350966_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Kempfeld"@de .
+
+epd:id_2022-S-123-350966_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEB15>;
+  locn:address epd:id_2022-S-123-350966_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2022-S-123-350966_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2022-S-123-350966_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-123-350966_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2022-S-123-350966_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2022-S-123-350966_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasInternetAddress "www.webeler-rechtsanwaelte.de"^^xsd:anyURI;
+  cccev:email "t.frank@webeler-rechtsanwaelte.de";
+  cccev:telephone "+49 261/9886620" .
+
+epd:id_2022-S-123-350966_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEB11>;
+  locn:postCode "56068";
+  locn:postName "Koblenz";
+  locn:thoroughfare "Löhrstraße 99" .
+
+epd:id_2022-S-123-350966_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasLegalName "Webeler Rechtsanwälte"@de;
+  cccev:registeredAddress epd:id_2022-S-123-350966_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2022-S-123-350966_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/42124130>, <http://data.europa.eu/cpv/cpv/45231400>,
+    <http://data.europa.eu/cpv/cpv/45310000>, <http://data.europa.eu/cpv/cpv/48100000> .
+
+epd:id_2022-S-123-350966_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-123-350966_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Der Auftraggeber beabsichtigt die Sanierung der Steinbachtalsperre in Kempfeld-Katzenloch. Unter anderem wird die elektrotechnische Ausrüstung und EMSR-Technik der Gesamtanlage modernisiert. Gegenstand der zu vergebenden Leistungen ist die Modernisierung, Anpassung und Erweiterung der elektrotechnischen Ausrüstung und EMSR-Technik der Gesamtanlage mit Integration bestehender Komponenten. Hiermit sollen die zentrale Steuerung und Überwachung aller relevanten technischen Geräte, Maschinen, Armaturen etc. ermöglicht sowie ein Standard entsprechend dem aktuellen Stand der Technik erreicht werden. Es soll zudem eine Druckluft-Eisfreihalteanlage geliefert, montiert und in Betrieb genommen werden. Die Montage derDüsenrohrleitungen muss ggfs. bis zu ca. 5 Meter unter Wasser bei Einsatzvon Tauchern erfolgen.Die messtechnische Ausrüstung ist in Abstimmung mit dem Wasserzweckverband und den Planern der Verfahrenstechnik festgelegt. Sämtliche Messeinrichtungen sind vom AN der elektrotechnischen Ausrüstung zu liefern und betriebsfertig zu montieren.Die einzelnen Messeinrichtungen sind der nachfolgenden Tabelle zu entnehmen:Bezeichnung Bemerkung/MessbereichTalsperreAußentemperaturmessung PT 100, - 50 °C bis + 50 °CTemperaturmessung Herdmauer Nord PT 100, 0 bis 30 °CFeuchtemessung Herdmauer Nord  kapazitiv, 0 bis 100 % rFTemperaturmessung Herdmauer Süd  PT 100, 0 bis 30 °CFeuchtemessung Herdmauer Süd  kapazitiv, 0 bis 100 % rFKaverneMengenmessung Mindestabgabe  MID, DN 250, 0 bis 65 m³/hAbgabepegel TalsperrenauslaufMengenmessung Talsperrenauslauf Fließgeschwindigkeits- und Füllstandssensor jeweils als Ra-darmessung, 0 bis 200.000 m³/hVorsperreMengenmessung Trockenwetterablauf Fließgeschwindigkeits- und Füllstandssensor jeweils als Ra-darmessung, 0 bis 200.000 m³/hMengenmessung Hochwasserentlastung Fließgeschwindigkeits- und Füllstandssensor jeweils als Radarmessung, 0 bis 200.000 m³/hSonstige Messstellen im Bereich der Talsperre z. B. Füllstandsmessung Talsperre (Bestand) als hydrostatischer Druckaufnehmer 0 bis 40 m, werden weiterverwendet.Weitere Einzelheiten sind der Baubeschreibung zu entnehmen, die Bestandteil der Vergabeunterlagen ist."@de;
+  epo:hasEstimatedValue epd:id_2022-S-123-350966_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2022-S-123-350966_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-123-350966_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
+
+epd:id_2022-S-123-350966_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 531576.76;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-123-350966_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 531576.76;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-123-350966_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-123-350966_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2022-S-123-350966_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2022-S-123-350966_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2022-06-24"^^xsd:date;
+  epo:hasID epd:id_2022-S-123-350966_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220629";
+  epo:refersToLot epd:id_2022-S-123-350966_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2022-S-123-350966_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2022-S-123-350966_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 123-350966" .
+
+epd:id_2022-S-123-350966_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEB15>;
+  locn:postCode "55758";
+  locn:postName "Kempfeld";
+  locn:thoroughfare "Am Steinberg 1" .
+
+epd:id_2022-S-123-350966_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Wasserzweckverband im Landkreis Birkenfeld"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2022-S-123-350966_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-123-350966_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2022-07-01"^^xsd:date;
+  epo:hasEnd "2022-11-30"^^xsd:date .
+
+epd:id_2022-S-123-350966_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "157/22" .
+
+epd:id_2022-S-123-350966_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45000000> .
+
+epd:id_2022-S-123-350966_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-123-350966_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "1. Die Vergabeunterlagen stehen zum Download unter folgender Internetadresse zur Verfügung: www.webeler-rechtsanwaelte.de. Des Weiteren können die Vergabeunterlagen über die Vergabeplattform www.dtvp.de/CXP4YK7R2Y3 bezogen werden. Auskünfte zum Vergabeverfahren werden in Textform erteilt. Fragen zum Vergabeverfahren sind ausschließlich in Textform an die oben zu Ziffer I.3 genannte Kontaktstelle, z.Hd. Frau Tina Frank, t.frank@webeler-rechtsanwaelte.de oder über die Vergabeplattform zu stellen. Für die Kommunikation mit den Bietern werden die von diesen angegebenen Kontaktdaten verwendet. Im Falle des Angebots einer Arbeits-/Bietergemeinschaft erfolgt die Korrespondenz mit dieser ausschließlich über die von ihr angegebenen Kontaktdaten des bevollmächtigten Arbeits-/Bietergemeinschaftsmitglieds.2. Hinsichtlich der erbetenen Auskünfte zur Erfüllung der Teilnahmebedingungen steht ein Angebotsbogen zur Verfügung. Der Angebotsbogen kann ausschließlich elektronisch über die Vergabeplattform bezogen werden. Die Verwendung des Angebotsbogens als Formularvordruck wird für das Angebot empfohlen, maßgeblich bleibt aber der Inhalt der EU-Bekanntmachung. Der eingereichte Angebotsbogen mit Anlagen wird nicht zurückgegeben. Die Angebotsunterlagen inklusive der vorzulegenden Nachweise sind in deutscher Sprache vorzulegen.3. Die Angebote sind mit den geforderten Erklärungen und Nachweisen innerhalb der Angebotsfrist elektronisch - nur - unter  www.dtvp.de/CXP4YK7R2Y3 einzureichen.4. Die Baubeschreibung und die in der Vertraulichkeitserklärung aufgeführten Pläne und Fotos werden den Bietern aus Sicherheitsgründen auf Anfrage und nach Abgabe der Vertraulichkeitserklärung zur Verfügung gestellt.Bekanntmachungs-ID: CXP4YK7R2Y3"@de;
+  epo:hasDescription "Der Auftraggeber beabsichtigt die Sanierung der Steinbachtalsperre in Kempfeld-Katzenloch. Unter anderem wird die elektrotechnische Ausrüstung und EMSR-Technik der Gesamtanlage modernisiert. Gegenstand der zu vergebenden Leistungen ist die Modernisierung, Anpassung und Erweiterung der elektrotechnischen Ausrüstung und EMSR-Technik der Gesamtanlage mit Integration bestehender Komponenten. Hiermit sollen die zentrale Steuerung und Überwachung aller relevanten technischen Geräte, Maschinen, Armaturen etc. ermöglicht sowie ein Standard entsprechend dem aktuellen Stand der Technik erreicht werden. Es soll zudem eine Druckluft-Eisfreihalteanlage geliefert, montiert und in Betrieb genommen werden. Die Montage derDüsenrohrleitungen muss ggfs. bis zu ca. 5 Meter unter Wasser bei Einsatzvon Tauchern erfolgen.Eine Stoffpreisgleitklausel soll vereinbart werden."@de;
+  epo:hasEstimatedValue epd:id_2022-S-123-350966_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2022-S-123-350966_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-123-350966_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2022-S-123-350966_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "WZV - EMSR"@de;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-123-350966_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2022-S-123-350966_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2022-S-123-350966_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2022-S-123-350966_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-123-350966_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2022-S-123-350966_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2022-S-123-350966_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Von Bietern erkannte Verstöße der vergebenden Stelle gegen das geltende Vergaberecht hat der Bieter gegenüber dem Auftraggeber innerhalb einer Frist von 10 Kalendertagen zu rügen. Erklärt die der Auftraggeber, dass er einer Rüge nicht abhelfen will, hat der Bieter binnen einer Frist von 15 Tagen bei der unter VI. 4.1) genannten Stelle einen Nachprüfungsantrag zu stellen." .
+
+epd:id_2022-S-123-350966_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+49 6131/162113";
+  epo:hasInternetAddress "www.mwvlw.rlp.de"^^xsd:anyURI;
+  cccev:email "vergabekammer.rlp@mwvlw.rlp.de";
+  cccev:telephone "+49 6131/162234" .
+
+epd:id_2022-S-123-350966_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "55116";
+  locn:postName "Mainz";
+  locn:thoroughfare "Stiftstr. 9" .
+
+epd:id_2022-S-123-350966_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Vergabekammer Rheinland-Pfalz Ministerium für Wirtschaft, Verkehr, Landwirtschaft und Weinbau"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-123-350966_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2022-S-123-350966_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-123-350966_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-123-350966_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-123-350966_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.dtvp.de/Satellite/notice/CXP4YK7R2Y3"^^xsd:anyURI .

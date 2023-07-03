@@ -1,0 +1,208 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-192-500636_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://marches.montpellier3m.fr/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-192-500636_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-192-500636_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-192-500636_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-192-500636_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "service marchés publics"@fr;
+  epo:hasInternetAddress "http://www.fabregues.fr"^^xsd:anyURI;
+  cccev:email "marchespublics@fabregues.fr";
+  cccev:telephone "+33 467856177" .
+
+epd:id_2021-S-192-500636_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-192-500636_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-192-500636_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-192-500636_Fund_k5UiCNjVxapva2MShsi99p a epo:Fund;
+  epo:hasDescription "le financement du projet se fera sur fond propre de la commune duregroupement, sur subventions et recours à l'emprunt"@fr .
+
+epd:id_2021-S-192-500636_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasContactName "Julie Brachet"@fr;
+  epo:hasInternetAddress "https://marches.montpellier3m.fr/?page=Entreprise.EntrepriseHome"^^xsd:anyURI;
+  cccev:email "julie.brachet@ineco.fr" .
+
+epd:id_2021-S-192-500636_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "34830";
+  locn:postName "Jacou";
+  locn:thoroughfare "14 rue Jean Carrière" .
+
+epd:id_2021-S-192-500636_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasLegalName "ineco"@fr;
+  cccev:registeredAddress epd:id_2021-S-192-500636_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2021-S-192-500636_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71242000> .
+
+epd:id_2021-S-192-500636_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-192-500636_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "le projet prévoit la restructuration et l'extension de l'hôtel de ville de Fabrègues sur environ 577 mètres carrés de surface de plancher. L'Opération comprend un hall d'accueil, 16 bureaux, la création d'une salle de conseil et d'un espace de pause pour les agents avec un accès extérieur. Les études porteront également sur la création d'un parvis, d'un réaménagement de la place du village avec les stationnements attenant jusqu'en phase Aps.La mission de maîtrise d'oeuvre comprendra toutes les études nécessaires afin d'intégrer le référentiel environnemental défini par le maître d'ouvrage intégrant d'éventuelles analyses du cycle de vie afin de limiter l'impact environnemental du bâtiment.  Enfin, le maître d'ouvrage souhaite que le bâtiment intègre une part non négligeable de matériaux biosourcés."@fr;
+  epo:hasPurpose epd:id_2021-S-192-500636_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isFundedBy epd:id_2021-S-192-500636_Fund_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds true .
+
+epd:id_2021-S-192-500636_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs a cccev:ContactPoint;
+  epo:hasFax "+33 484354460";
+  epo:hasInternetAddress "http://www.paca.pref.gouv.fr"^^xsd:anyURI;
+  cccev:email "catherine.pietri@paca.pref.gouv.fr";
+  cccev:telephone "+33 484354554" .
+
+epd:id_2021-S-192-500636_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13282";
+  locn:postName "Marseille Cedex 06";
+  locn:thoroughfare "secrétariat général pour les affaires régionales, Place Félix-Baret CS 80001" .
+
+epd:id_2021-S-192-500636_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs a org:Organization;
+  epo:hasLegalName "comité consultatif Inter-Régional de Règlement Amiable des Litiges Cciral) Préfecture de la région Provence - alpes - côte d'azur"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-192-500636_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs;
+  cccev:registeredAddress epd:id_2021-S-192-500636_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2021-S-192-500636_Mediator_eMEmZdeMkSWP9DfmobsFLs a epo:Mediator;
+  epo:playedBy epd:id_2021-S-192-500636_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2021-S-192-500636_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-192-500636_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-192-500636_Mediator_eMEmZdeMkSWP9DfmobsFLs,
+    epd:id_2021-S-192-500636_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2021-S-192-500636_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2021-S-192-500636_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2021-S-192-500636_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2021-09-29"^^xsd:date;
+  epo:hasID epd:id_2021-S-192-500636_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20211004";
+  epo:refersToLot epd:id_2021-S-192-500636_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-192-500636_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-192-500636_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 192-500636" .
+
+epd:id_2021-S-192-500636_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ13>;
+  locn:postCode "34690";
+  locn:postName "Fabrègues";
+  locn:thoroughfare "8 rue Paul Doumer" .
+
+epd:id_2021-S-192-500636_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "ville de Fabrègues"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-192-500636_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-192-500636_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021_MOE_0003" .
+
+epd:id_2021-S-192-500636_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2021-S-192-500636_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "le dossier de consultation (phase 1 candidature) est composé des pièces suivantes:-l'avis d'appel public à la concurrence envoyé à la publication ;-Le règlement de concours pahse candidature - les modèles de cerfa Dc1 et Dc2- un tableau synthètique de présentation des candidatures à renseigner- un cadre de présentation des photos à renseigner;il est à télécharger sur la plateforme marches.montpellier3m.fr la composition du jury sera énnoncée en cours de consultation"@fr;
+  epo:hasID epd:id_2021-S-192-500636_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-192-500636_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-192-500636_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "mission de maîtrise d'oeuvre pour la réhabilitation et l'extension de l'hôtel de ville de Fabrègues"@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-192-500636_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-192-500636_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2021-S-192-500636_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-192-500636_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-192-500636_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2021-S-192-500636_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2021-S-192-500636_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "34063";
+  locn:postName "Montpellier Cedex 2";
+  locn:thoroughfare "6 rue pitot" .
+
+epd:id_2021-S-192-500636_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://montpellier.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-montpellier@juradm.fr";
+  cccev:telephone "+33 467548156" .
+
+epd:id_2021-S-192-500636_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "tribunal adminsitratif de montpellier"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-192-500636_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2021-S-192-500636_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-192-500636_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-192-500636_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-192-500636_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "- Référé précontractuel : depuis le début de la procédure de passation jusqu'à la signature du contrat (article L551-1 du Code dejustice Administrative) ;- référé contractuel : 31 jours à compter de la date de publication de l'avis d'attribution du marché (article L551-13 à L551-23 et R551-7 à R551-10 du Code de Justice Administrative) ;- recours pour excès de pouvoir : dans un délai de 2 mois à compter de la notification de la décision de rejet (articles R421-1 à R421-3 du Code de Justice Administrative) ;-  Recours de plein contentieux : dans un délai de 2 mois à compter de l'accomplissement des mesures de publicité concernant l'attribution du marché" .
+
+epd:id_2021-S-192-500636_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasInternetAddress "http://montpellier.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-montpellier@juradm.fr";
+  cccev:telephone "+33 467548156" .
+
+epd:id_2021-S-192-500636_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "34063";
+  locn:postName "Montpellier Cedex 2";
+  locn:thoroughfare "6 rue pitot" .
+
+epd:id_2021-S-192-500636_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "tribunal adminsitratif de montpellier"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-192-500636_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2021-S-192-500636_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-192-500636_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-192-500636_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-192-500636_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://marches.montpellier3m.fr/"^^xsd:anyURI .
+
+epd:id_2021-S-192-500636_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "34690";
+  locn:postName "Fabrègues";
+  locn:thoroughfare "8 rue Paul Dourmer" .
+
+epd:id_2021-S-192-500636_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "https://marches.montpellier3m.fr/?page=Entreprise.EntrepriseHome"^^xsd:anyURI;
+  cccev:email "marchespublics@fabregues.fr" .
+
+epd:id_2021-S-192-500636_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasLegalName "mairie de Fabrègues"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-192-500636_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2021-S-192-500636_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2021-S-192-500636_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-192-500636_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2021-S-192-500636_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

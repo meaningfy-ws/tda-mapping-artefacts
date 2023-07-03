@@ -1,0 +1,183 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-096-251885_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://fournisseurs.aeroportsdeparis.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-096-251885_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-096-251885_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-096-251885_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-096-251885_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "www.parisaeroport.fr"^^xsd:anyURI;
+  cccev:email "abilio.costa@adp.fr" .
+
+epd:id_2021-S-096-251885_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Aéroport de Paris Orly — zone Airside et Landside."@fr .
+
+epd:id_2021-S-096-251885_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a locn:Address;
+  locn:fullAddress "Aéroport de Paris Orly — terminaux d'Orly 1, 2, 3 et 4 parkings au contact (périmètre Oryea)."@fr .
+
+epd:id_2021-S-096-251885_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR104>;
+  locn:address epd:id_2021-S-096-251885_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-096-251885_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR104>;
+  locn:address epd:id_2021-S-096-251885_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
+
+epd:id_2021-S-096-251885_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-096-251885_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-096-251885_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Le marché est un marché à tranche(s) conditionnelle(s).— une tranche ferme de 24 (mois) à partir de la date de démarrage des prestations;— tranche conditionnelle 1: tranche conditionnelle de ...12... (mois) à partir de la fin de la tranche ferme;— tranche conditionnelle 2: tranche conditionnelle de ...12... (mois) à partir de la fin de la tranche 1;— tranche conditionnelle 3: tranche conditionnelle de ...12... (mois) à partir de la fin de la tranche 2;— tranche conditionnelle 4: tranche conditionnelle de ...12... (mois) à partir de la fin de la tranche 3;— tranche conditionnelle 5: tranche conditionnelle de ...12... (mois) à partir de la fin de la tranche 4;— tranche conditionnelle 6: tranche conditionnelle de ...12... (mois) à partir de la fin de la tranche 5."@fr .
+
+epd:id_2021-S-096-251885_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-096-251885_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-096-251885_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Le marché est un marché à tranche(s) conditionnelle(s).— une tranche ferme de 24 (mois) à partir de la date de démarrage des prestations;— tranche conditionnelle 1: tranche conditionnelle de ...12... (mois) à partir de la fin de la tranche ferme;— tranche conditionnelle 2: tranche conditionnelle de ...12... (mois) à partir de la fin de la tranche 1;— tranche conditionnelle 3: tranche conditionnelle de ...12... (mois) à partir de la fin de la tranche 2;— tranche conditionnelle 4: tranche conditionnelle de ...12... (mois) à partir de la fin de la tranche 3;— tranche conditionnelle 5: tranche conditionnelle de ...12... (mois) à partir de la fin de la tranche 4;— tranche conditionnelle 6: tranche conditionnelle de ...12... (mois) à partir de la fin de la tranche 5."@fr .
+
+epd:id_2021-S-096-251885_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true .
+
+epd:id_2021-S-096-251885_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-096-251885_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-096-251885_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-096-251885_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "Sans objet"@fr .
+
+epd:id_2021-S-096-251885_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-096-251885_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-096-251885_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/50000000>, <http://data.europa.eu/cpv/cpv/50230000>,
+    <http://data.europa.eu/cpv/cpv/50500000> .
+
+epd:id_2021-S-096-251885_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/50000000>, <http://data.europa.eu/cpv/cpv/50230000>,
+    <http://data.europa.eu/cpv/cpv/50500000> .
+
+epd:id_2021-S-096-251885_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-096-251885_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "Il s'agit d'un marché à bon de commande sans montant mini ou maxi."@fr;
+  epo:hasDescription "Ce marché a donc pour objet les opérations de maintenances (préventives et correctives) et les travaux divers de réparation regroupées sur les équipements du lot 1 suivants:Lot 1:— PARIF (ensemble: barrières, herses, automates, organe de commande, portails, portillons, tourniquet) et Road Blocker PVH;— girafe Pacquet (ensemble: bras de chargement en eau, vannes y compris pollution, surpresseurs et bâche);— compresseur spécifique 300 Bars bouteille d'air pompiers."@fr;
+  epo:hasID epd:id_2021-S-096-251885_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-096-251885_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle "SPA017776L01 — lot 1 — Maintenance équipements électroméca PARIFS-SSLIA"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-096-251885_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-096-251885_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-096-251885_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasAdditionalInformation "Il s'agit d'un marché à bon de commande sans montant mini et maxi."@fr;
+  epo:hasDescription "Ce marché a donc pour objet les opérations de maintenances (préventives et correctives) et les travaux divers de réparation regroupées sur les équipements du lot 2 suivants:Lot 2:— pompes de relevages galeries techniques et parkings;— compresseurs standards;— portes gravitaires parkings;— station de lavage véhicule (haute pression);— divers équipements électromécaniques et mécaniques."@fr;
+  epo:hasID epd:id_2021-S-096-251885_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-096-251885_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle "SPA017776L02 — lot 2 — maintenance équipements électroméca galeries techniques, parking et terminaux de la plate-forme Paris Orly"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-096-251885_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-096-251885_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-096-251885_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-096-251885_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-096-251885_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-096-251885_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-096-251885_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-05-14"^^xsd:date;
+  epo:hasID epd:id_2021-S-096-251885_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210519";
+  epo:refersToLot epd:id_2021-S-096-251885_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2021-S-096-251885_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2021-S-096-251885_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-096-251885_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 096-251885" .
+
+epd:id_2021-S-096-251885_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR108>;
+  locn:postCode "93290";
+  locn:postName "Tremblay-en-France";
+  locn:thoroughfare "1 rue de France" .
+
+epd:id_2021-S-096-251885_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Aéroports de Paris"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2021-S-096-251885_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-096-251885_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "SPA17776" .
+
+epd:id_2021-S-096-251885_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/50000000> .
+
+epd:id_2021-S-096-251885_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2021-S-096-251885_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-096-251885_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Le nombre maximal de candidats admis à présenter une offre est de dix. Dans l'hypothèse où le nombre de candidats serait supérieur à dix, les candidats seront sélectionnés en fonction des critères de sélection indiqués ci-dessus, ainsi que des références professionnelles en adéquation avec l'objet du marché.Les candidatures devront être déposées sur le site https://fournisseurs.aeroportsdeparis.fr — Une fois sur le site, les candidats peuvent consulter le mode opératoire accessible depuis la page d'accueil. En cas de problème lié à l'utilisation du portail achats, vous pouvez contacter le support téléphonique au +33 149754321 (0,34 EUR/min).Après la clôture de la phase candidature, Aéroports de Paris invitera les entreprises admises à présenter une offre et à venir télécharger gratuitement le dossier de consultation (pièces administratives, techniques et financières) sur leur espace personnel accessible depuis le portail achats https://fournisseurs.aeroportsdeparis.fr — (page d'accueil > cadre mes consultations). Les entreprises seront invitées par courrier électronique. Le courrier électronique d'invitation sera émis par l'adresse courriel du nom de domaine: @adp.frÀ titre d'information, le marché ne fait pas l'objet d'une procédure conjointe. Il n'est pas attribué par une centrale d'achat.Les documents du marché sont disponibles gratuitement et sans restriction d'accès, depuis la plate-forme Spartacus, dans l'onglet «Documents».NB: ces documents sont fournis à titre d'information aux entreprises. Aucune offre n'est attendue à ce stade.Seuls les candidats retenus en phase candidature se verront envoyer le DCE et seront admis à remettre une offre. La remise des offres sera prévue en juin 2021.Après examen de ces offres et un premier tour de négociation, Aéroports de Paris pourra engager et conduire des négociations uniquement avec les candidats ayant présenté les offres qu'elle estimera les plus intéressantes."@fr;
+  epo:hasDescription "Le marché regroupe des prestations de maintenances préventives, correctives et curatives qui étaient précédemment réalisées dans le cadre de deux marches distinct MOR16036 (PARIF) MOR15068 (Électroméca).Ce marché a donc pour objet les opérations de maintenance et travaux divers de réparation regroupées en deux lots comprenant les équipements suivants répartis:Lot 1:— PARIF (ensemble: barrières, herses, automates, organe de commande, portails, portillons, tourniquet) et Road Blocker PVH;— girafe Pacquet (ensemble: bras de chargement en eau, vannes y compris pollution, sur-presseurs, et bâche);— compresseur spécifique 300 bars bouteille d'air pompiers.Lot 2:— pompes de relevages galeries techniques et parkings;— compresseurs standards;— portes gravitaires parkings;— station de lavage véhicule (haute pression);— divers équipements électromécaniques et mécaniques."@fr;
+  epo:hasID epd:id_2021-S-096-251885_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-096-251885_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-096-251885_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-096-251885_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Maintenance des équipements électro-mécanique des PARIF, du SSLIA et des Aérogare"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-096-251885_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-096-251885_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-096-251885_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2021-S-096-251885_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-096-251885_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-096-251885_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-096-251885_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-096-251885_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-096-251885_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75017";
+  locn:postName "Paris";
+  locn:thoroughfare "2945 avenue de la Porte de Clichy" .
+
+epd:id_2021-S-096-251885_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Paris"@fr;
+  cccev:registeredAddress epd:id_2021-S-096-251885_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-096-251885_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-096-251885_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-096-251885_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://fournisseurs.aeroportsdeparis.fr"^^xsd:anyURI .

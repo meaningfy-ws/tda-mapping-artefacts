@@ -1,0 +1,171 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-141-290532_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://pmp.b2g.etat.lu/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=14422&orgAcronyme=t5y"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-141-290532_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-141-290532_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-141-290532_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-141-290532_Channel_G9uAqcYuooZwAU3Pwzv6eq a cccev:Channel;
+  epo:hasURL "https://pmp.b2g.etat.lu/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=14422&orgAcronyme=t5y"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2017-S-141-290532_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasInternetAddress "http://snhbm.lu/"^^xsd:anyURI;
+  cccev:email "soumissions@snhbm.lu" .
+
+epd:id_2017-S-141-290532_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2017-S-141-290532_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-141-290532_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2017-S-141-290532_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.deweymuller.com/online/www/function/homepage/DEU/index.html"^^xsd:anyURI;
+  cccev:email "m.francois@deweymuller.com" .
+
+epd:id_2017-S-141-290532_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/LUX>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/LU>;
+  locn:postCode "1331";
+  locn:postName "Luxembourg";
+  locn:thoroughfare "15 B, boulevard Grande-Duchesse Charlotte" .
+
+epd:id_2017-S-141-290532_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasLegalName "Dewey Muller architectes urbanistes"@fr;
+  cccev:registeredAddress epd:id_2017-S-141-290532_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2017-S-141-290532_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2017-S-141-290532_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-141-290532_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+                  La mission porte sur la conception d'un Parkhaus de quartier (env. 200 places de stationnement) et des 3 maisons (env. 230 m2 de SCB chacune) accolées à une des façades de ce Parkhaus. Ces bâtiments se développent autour d'une des placettes du village central à Elmen. À cette mission s'ajoute l'approfondissement du concept paysager existant pour la placette, afin de traiter les interfaces entre espaces publics et privés, et de gérer la topographie. Les équipes devront proposer des projets qui respectent les caractéristiques techniques et fonctionnelles strictes données pour les bâtiments, en particulier pour le Parkhaus. L'objectif est de créer des espaces originaux, développant un identité caractéristique pour ce HUB de mobilité, tout en s'intégrant au tissu villageois du projet Elmen.
+               """@fr;
+  epo:hasPurpose epd:id_2017-S-141-290532_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-141-290532_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-141-290532_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2017-S-141-290532_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2017-S-141-290532_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2017-S-141-290532_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2017-07-21"^^xsd:date;
+  epo:hasID epd:id_2017-S-141-290532_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20170726";
+  epo:refersToLot epd:id_2017-S-141-290532_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2017-S-141-290532_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2017-S-141-290532_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 141-290532" .
+
+epd:id_2017-S-141-290532_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/LUX>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/LU>;
+  locn:postCode "1852";
+  locn:postName "Luxembourg";
+  locn:thoroughfare "2 B, rue Kalchesbruck" .
+
+epd:id_2017-S-141-290532_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Promoteur public";
+  epo:hasLegalName "Société nationale des habitations à bon marché"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/hc-am>;
+  cccev:registeredAddress epd:id_2017-S-141-290532_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-141-290532_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "1701139" .
+
+epd:id_2017-S-141-290532_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2017-S-141-290532_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+               
+                  Profession concernée par le concours ouvert. Ne peuvent participer au présent concours que des bureaux d'architecture qui remplissent les conditions légales pour s'occuper professionnellement de la prestation des services concernés. Dans le cas d'une association momentanée, le mandataire du groupement est à définir parmi les architectes du groupement. 
+               
+               
+                  Sont admises des équipes composées: 
+               
+               
+                  — d'un bureau d'architecture, 
+               
+               
+                  — d'un groupement / association momentané de plusieurs bureaux d'architecture. 
+               
+               
+                  Les conditions d'admission doivent être remplies au moment de l'avis de concours. La zone d'admission comprend les États-membres de l'Espace économique européen (EEE) ainsi que les états étant parties de l'accord de l'OMC relatif aux marchés publics. Sont autorisées à participer, les personnes physiques ayant obtenues, conformément à la législation et la réglementation de leurs pays d'origine, le titre professionnel d'architecte, un diplôme ou certificat de formation professionnelle reconnus comme équivalent conformément à la directive européenne en vigueur. Sont également autorisées à participer, les personnes morales ayant leur siège dans la zone d'admission si les prestations définies dans leurs objectifs commerciaux correspondent aux prestations demandées. Le représentant habilité et l'auteur responsable des prestations doivent remplir les exigences professionnelles susmentionnées. Les équipes composées de personnes physiques et morales sont admises. Il est interdit de participer à plus d'une équipe. Dans ce cas, tous les membres de l'équipe seront exclus de la procédure. Recours à des experts Le recours à des experts en matière de la construction durable, de l'économie, de l'aménagement paysager, de la sociologie, de l'ingénierie et de l'art public etc. est permis. Ces experts ne sont pas assujettis à des conditions quelconques et ne doivent pas obligatoirement être nommés au moment de la candidature. Dossier administratif: en plus des prestations attendues et décrites dans le cahier des charges du concours, les équipes doivent remettre un dossier administratif comportant les documents repris au point 4.11 dossier administratif du cahier des charges. Ce dossier sera remis par les équipes au plus tard le 28 août en mêmes temps que les questions concernant le cahier des charges. DeweyMuller architectes urbanistes en tant que secrétariat technique, procédera à l'examen formel de ces dossiers administratifs. Les équipes dont les dossiers seront incomplets ne seront pas habilitées à concourir. DeweyMuller architectes urbanistes informera par courriel les équipes qui ne pourront pas participer en raison d'un dossier administratif incomplet. Anonymat: le concours ouvert est anonyme. Toute communication entre équipes et pouvoir adjudicateur passera par l'intermédiaire de DeweyMuller architectes urbanistes jusqu'à la phase d'examen des dossiers administratifs et des questions (voir point 4.10 et 4.11 du cahier des charges). À partir de l'envoi des réponses à tous les candidats, toute communication entre équipes et pouvoir adjudicateur passera par l'intermédiaire d'un huissier de justice.
+               
+            """@fr;
+  epo:hasID epd:id_2017-S-141-290532_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-141-290532_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2017-S-141-290532_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+               
+                  Concours portant sur la conception d'un Parkhaus, de 3 maisons unifamiliales et d'une placette formant l'un des HUBs de mobilité du village central à Elmen.
+               
+            """@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-141-290532_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2017-S-141-290532_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR;
+  epo:usesChannel epd:id_2017-S-141-290532_Channel_G9uAqcYuooZwAU3Pwzv6eq .
+
+epd:id_2017-S-141-290532_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-141-290532_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2017-S-141-290532_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2017-S-141-290532_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/LUX>;
+  locn:postName "Luxembourg" .
+
+epd:id_2017-S-141-290532_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif"@fr;
+  cccev:registeredAddress epd:id_2017-S-141-290532_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-141-290532_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-141-290532_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-141-290532_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2017-S-141-290532_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/LUX>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/LU>;
+  locn:postCode "1461";
+  locn:postName "Luxembourg";
+  locn:thoroughfare "65, rue d'Eich" .
+
+epd:id_2017-S-141-290532_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.huissier-luxembourg.com/index.php"^^xsd:anyURI;
+  cccev:email "linda.simoes@huissier-luxembourg.com";
+  cccev:telephone "+352 4413331" .
+
+epd:id_2017-S-141-290532_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasLegalName "Étude Carlos Calvo"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-141-290532_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2017-S-141-290532_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2017-S-141-290532_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-141-290532_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2017-S-141-290532_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

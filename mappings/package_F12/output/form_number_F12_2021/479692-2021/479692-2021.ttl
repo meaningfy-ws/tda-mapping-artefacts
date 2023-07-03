@@ -1,0 +1,171 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-184-479692_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://ville-plaisir.marchespublics.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-184-479692_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "https://ville-plaisir.marchespublics.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-184-479692_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-184-479692_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-184-479692_Channel_G9uAqcYuooZwAU3Pwzv6eq a cccev:Channel;
+  epo:hasURL "https://ville-plaisir.marchespublics.com"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2021-S-184-479692_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasInternetAddress "https://ville-plaisir.e-marches-publics.com"^^xsd:anyURI;
+  cccev:email "commande-publique@ville-plaisir.fr";
+  cccev:telephone "+33 130796200" .
+
+epd:id_2021-S-184-479692_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-184-479692_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-184-479692_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-184-479692_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71000000>, <http://data.europa.eu/cpv/cpv/71240000> .
+
+epd:id_2021-S-184-479692_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-184-479692_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "le Département a délégué sa maîtrise d'ouvrage à la ville de Plaisir pour la construction d'une maison médicale.L'opération comprend, préalablement à la construction, le désamiantage et la démolition du pavillon inoccupé existant sur la parcelle concernée. La Maison Médicale accueillera un pôle médical et infirmier, un pôle dentaire, un pôle paramédical et un pôle kinésithérapie. L'Ensemble des besoins identifiés au programme représente une surface utile de 680 mètres carrés.La présente consultation porte sur un marché public de maîtrise d'oeuvre dans le cadre d'une opération de construction neuve de bâtiment en phases conception et réalisation.Le contexte de l'opération, les objectifs poursuivis, la description du programme d'aménagement et des travaux sont indiqués dans le programme joint au dossier de consultation"@fr;
+  epo:hasPurpose epd:id_2021-S-184-479692_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-184-479692_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs a cccev:ContactPoint;
+  epo:hasFax "+33 182524295";
+  epo:hasInternetAddress "http://telerecours.juradm.fr"^^xsd:anyURI;
+  cccev:email "ccira@paris-idf.gouv.fr";
+  cccev:telephone "+33 182524272" .
+
+epd:id_2021-S-184-479692_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75911";
+  locn:postName "Paris Cedex 15";
+  locn:thoroughfare "5, rue Leblanc" .
+
+epd:id_2021-S-184-479692_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs a org:Organization;
+  epo:hasLegalName "comité Consultatif Interdépartemental de Règlement Amiable des Litiges - préfecture de la Région IDF - préfecture de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-184-479692_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs;
+  cccev:registeredAddress epd:id_2021-S-184-479692_MediatorOrganisationAddress_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2021-S-184-479692_Mediator_eMEmZdeMkSWP9DfmobsFLs a epo:Mediator;
+  epo:playedBy epd:id_2021-S-184-479692_MediatorOrganisation_eMEmZdeMkSWP9DfmobsFLs .
+
+epd:id_2021-S-184-479692_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-184-479692_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-184-479692_Mediator_eMEmZdeMkSWP9DfmobsFLs,
+    epd:id_2021-S-184-479692_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2021-S-184-479692_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2021-S-184-479692_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2021-S-184-479692_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2021-09-17"^^xsd:date;
+  epo:hasID epd:id_2021-S-184-479692_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210922";
+  epo:refersToLot epd:id_2021-S-184-479692_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-184-479692_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-184-479692_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 184-479692" .
+
+epd:id_2021-S-184-479692_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR103>;
+  locn:postCode "78370";
+  locn:postName "Plaisir";
+  locn:thoroughfare "2, rue de la République" .
+
+epd:id_2021-S-184-479692_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Commune";
+  epo:hasLegalName "ville de Plaisir"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-184-479692_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-184-479692_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "21MI030" .
+
+epd:id_2021-S-184-479692_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2021-S-184-479692_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "les conditions de participations, les conditions de remise des candidatures et tous les autres éléments afférents à la remise des candidatures figurentau règlement de concours phase \"Candidature\""@fr;
+  epo:hasID epd:id_2021-S-184-479692_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-184-479692_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-184-479692_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "mission de maitrise D'Oeuvre relative a la construction D'Une maison medicale a plaisir (78)"@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-184-479692_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-184-479692_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2021-S-184-479692_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR;
+  epo:usesChannel epd:id_2021-S-184-479692_Channel_G9uAqcYuooZwAU3Pwzv6eq .
+
+epd:id_2021-S-184-479692_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-184-479692_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-184-479692_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-184-479692_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "78000";
+  locn:postName "Versailles";
+  locn:thoroughfare "56 avenue de Saint-Cloud" .
+
+epd:id_2021-S-184-479692_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://telerecours.juradm.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-versailles@juradm.fr";
+  cccev:telephone "+33 139205400" .
+
+epd:id_2021-S-184-479692_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "tribunal administratif de Versailles"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-184-479692_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2021-S-184-479692_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-184-479692_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-184-479692_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-184-479692_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "1 - recours en référé pré contractuel pouvant être exercé depuis le début de la procédurede passation jusqu'à la signature du marché (art L 551-1 du code de justice administrative)2 - recours pour excès de pouvoir formé contre une décision, dans les deux mois à partir de la notification ou de la publication de la décision attaquée(art. R421-1 Cja) ou à partir d'une décision implicite de rejet (art. R.421-2 Cja) ;3 - recours de pleine juridiction en contestation de la validité du contrat ou de certaines de ses clauses qui en sont divisibles, dans un délai de deuxmois à compter de l'accomplissement des mesures de publicité appropriées, en application de l'arrêt du Conseil d'etat, Assemblée, 4 avril 2014, \"Département du Tarn et Garonne \" no358994.4 - recours en référé contractuel pouvant être exercé dans les conditions prévues à l'article L 551-13 du code de justice administrative" .
+
+epd:id_2021-S-184-479692_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasInternetAddress "http://versailles.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-versailles@juradm.fr";
+  cccev:telephone "+33 139205400" .
+
+epd:id_2021-S-184-479692_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "78000";
+  locn:postName "Versailles";
+  locn:thoroughfare "56 avenue de Saint-Cloud" .
+
+epd:id_2021-S-184-479692_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "tribunal administratif de Versailles"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-184-479692_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2021-S-184-479692_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-184-479692_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-184-479692_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-184-479692_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2021-S-184-479692_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-184-479692_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-184-479692_Organisation_VX8RygdBbvDo5gNDhjcsTj .

@@ -1,0 +1,159 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-043-108855_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.cerema.fr/fr/cerema/directions/cerema-infrastructures-transport-materiaux/appel-projet-innovation-routes-rues-edition-2021"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-043-108855_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-043-108855_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-043-108855_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-043-108855_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Agnès Dussuel"@fr;
+  epo:hasInternetAddress "https://www.cerema.fr"^^xsd:anyURI;
+  cccev:email "agnes.dussuel@cerema.fr";
+  cccev:telephone "+33 699670011" .
+
+epd:id_2021-S-043-108855_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-043-108855_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-043-108855_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-043-108855_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasContactName "Direction des partenariats et de l'innovation (DPI)"@fr;
+  epo:hasInternetAddress "http://www.cerema.fr"^^xsd:anyURI;
+  cccev:email "olivier.ghirardi@cerema.fr";
+  cccev:telephone "+33 160523398" .
+
+epd:id_2021-S-043-108855_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "77171";
+  locn:postName "Sourdun";
+  locn:thoroughfare "110 rue de Paris" .
+
+epd:id_2021-S-043-108855_InformationProviderOrganisationIdentifier_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:Identifier;
+  epo:hasIdentifierValue "13001831000073" .
+
+epd:id_2021-S-043-108855_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasID epd:id_2021-S-043-108855_InformationProviderOrganisationIdentifier_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:hasLegalName "Cerema ITM"@fr;
+  cccev:registeredAddress epd:id_2021-S-043-108855_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2021-S-043-108855_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-043-108855_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Pour 2021, l’appel à projets retient les quatre thèmes suivants:— construction et entretien du patrimoine routes et rues;— préservation et modernisation des ouvrages d’art existants;— usage et gestion optimisés des infrastructures de transport en milieux urbains et interurbains; outils et équipements pour des systèmes de transports intelligents;— préservation de la biodiversité et de la qualité des eaux."@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-043-108855_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-043-108855_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-043-108855_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2021-S-043-108855_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2021-S-043-108855_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2021-02-26"^^xsd:date;
+  epo:hasID epd:id_2021-S-043-108855_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210303";
+  epo:refersToLot epd:id_2021-S-043-108855_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-043-108855_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-043-108855_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 043-108855" .
+
+epd:id_2021-S-043-108855_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK2>;
+  locn:postCode "69674 Bron Cedex";
+  locn:postName "Bron";
+  locn:thoroughfare "Cité des Mobilites, 25 avenue François Mitterrand, CS 92803" .
+
+epd:id_2021-S-043-108855_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "13001831000016" .
+
+epd:id_2021-S-043-108855_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasID epd:id_2021-S-043-108855_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Cerema"@fr;
+  epo:hasMainActivityDescription "Environnement";
+  cccev:registeredAddress epd:id_2021-S-043-108855_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-043-108855_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021 AAP Routes et Rues" .
+
+epd:id_2021-S-043-108855_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/73100000> .
+
+epd:id_2021-S-043-108855_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "Les différentes dispositions encadrant l'appel à projets, les modalités régissant les dossiers de réponses ainsi que les critères d'examen des projets sont précisés dans le document de l'appel à projets disponible aux adresses suivantes:https://www.cerema.fr/fr/cerema/directions/cerema-infrastructures-transport-materiaux/appel-projet-innovation-routes-rues-edition-2021http://www.idrrim.com/actualites-presse/2021-05-06,8254.htmLes candidats présenteront leur offre dans un dossier composé de:A) un engagement signé par un représentant légal de l’organisme candidat ou de chaque organisme partie prenante en cas de projet conjoint;— ce document précise que le signataire, a le pouvoir d’engager juridiquement son entreprise et donne son accord pour la soumission de la proposition dans le cadre de l’appel à projets «Innovation routes et rues»;— il est accompagné d’un extrait du K Bis de l’entreprise;B) un descriptif technique du projet d’innovation comprenant:— une description du projet innovant proposé avec le caractère innovant de la proposition, à savoir les apports attendus par rapport aux techniques existantes; les performances attendues, les critères et les méthodes pour les évaluer ainsi que la durée nécessaire pour juger des résultats; l’intérêt économique de l’innovation évalué quantitativement;— un descriptif de la nature de l’expérimentation, des caractéristiques du ou des sites test: type et taille, localisation régionale, période de l‘année, trafic, durée d’intervention et périodicité du suivi, paramètres d’environnement pouvant influer sur le comportement de l’innovation (en déduire le nombre de sites test) etc.;— une description des acquis de nature à crédibiliser l’innovation (recherches préalables, résultats d’essais de laboratoire ou in-situ, publications, etc.) et établissant la faisabilité de l’expérimentation;— une analyse des risques (qualitative et quantitative si possible) pour le maître d’ouvrage en cas d’échec de l’expérimentation;C) une note de synthèse distincte, sous forme de fichier PDF, destinée à être communiquée à tous les membres du CIRR, comportant les éléments suivants:— un descriptif de l’innovation,— les apports de l’innovation,— son champ d’application,— son intérêt économique,— son intérêt environnemental,— la faisabilité réglementaire du projet.Chaque dossier de proposition ne portera que sur un seul projet d'innovation.Les dossiers seront rédigés en langue française.Ils seront envoyés à l'adresse précisée au point I.3) ci-dessus pour être reçus au plus tard le 6.5..2021 à midi en une exemplaire sous-format papier, accompagné impérativement d'une saisie informatique au format PDF sur clé USB."@fr;
+  epo:hasID epd:id_2021-S-043-108855_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-043-108855_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-043-108855_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Appel à projets d'innovation «Routes et rues» pour l'année 2021"@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-043-108855_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-043-108855_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-043-108855_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-043-108855_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2021-S-043-108855_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2021-S-043-108855_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postName "Lyon" .
+
+epd:id_2021-S-043-108855_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "TA Lyon"@fr;
+  cccev:registeredAddress epd:id_2021-S-043-108855_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-043-108855_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-043-108855_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-043-108855_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2021-S-043-108855_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "77171";
+  locn:postName "Sourdun";
+  locn:thoroughfare "110 rue de Paris" .
+
+epd:id_2021-S-043-108855_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasContactName "M. Olivier Ghirardi"@fr;
+  epo:hasInternetAddress "http://www.cerema.fr"^^xsd:anyURI;
+  cccev:email "olivier.ghirardi@cerema.fr";
+  cccev:telephone "+33 160523398" .
+
+epd:id_2021-S-043-108855_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS
+  a epo:Identifier;
+  epo:hasIdentifierValue "13001831000073" .
+
+epd:id_2021-S-043-108855_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasID epd:id_2021-S-043-108855_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasLegalName "Cerema ITM"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-043-108855_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2021-S-043-108855_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2021-S-043-108855_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-043-108855_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2021-S-043-108855_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

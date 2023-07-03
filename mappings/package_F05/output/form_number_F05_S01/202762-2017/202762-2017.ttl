@@ -1,0 +1,253 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-101-202762_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://achatsconsultation@lyonaeroports.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2017-S-101-202762_AwardCriterionCost_PdhiwFgRo6dt8S8aCpwTR7 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Coût global de la maintenance Préventive et corrective"@fr;
+  cccev:weight "60"@fr .
+
+epd:id_2017-S-101-202762_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Qualité technique de l'offre. Sous critère 1: organisation, moyen humain, ... : Pondération: 30 points et Sous critère 2: Démarrage et fin contrat, reporting, innovation .... Pondération: 10 points"@fr;
+  cccev:weight "40"@fr .
+
+epd:id_2017-S-101-202762_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-101-202762_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-101-202762_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-101-202762_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.aeroportsdelyon.com"^^xsd:anyURI;
+  cccev:email "achatsconsultation@lyonaeroports.com";
+  cccev:telephone "+33 472228752" .
+
+epd:id_2017-S-101-202762_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+Aéroports de Lyon Saint-Exupéry et Lyon Bron.
+"""@fr .
+
+epd:id_2017-S-101-202762_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:address epd:id_2017-S-101-202762_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2017-S-101-202762_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2017-S-101-202762_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-101-202762_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+Astreinte avec intervention sous 04h00 en dehors des heures et des jours ouvrés.
+"""@fr .
+
+epd:id_2017-S-101-202762_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-101-202762_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/50413200> .
+
+epd:id_2017-S-101-202762_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-101-202762_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation """
+Le coût global est une estimation HTVA sur toute la durée du contrat soit un coût estimé annuellement entre 250 000 EUR et 350 000/HTVA.
+Le contrat est conclu par période d'un an reconductible chaque année pendant 5 ans maximum.
+"""@fr;
+  epo:hasDescription """
+Maintenance préventive et corrective des équipements et des systèmes de sécurité incendie sur les sites des Aéroports de Lyon Saint Exupéry et Lyon Bron.
+La maintenance préventive est réalisée principalement en heures de nuits.
+Les interventions pour la maintenance corrective sont a réaliser sous 4 heures en jours ouvrés (08h/17h).
+— Maintenir le système de supervision UAE VISIODEF
+Maintenir, 24 centrales SSI SDI, Cmsi.
+Les quantités estimées sont décrites au point VI.3 Informations complémentaires.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2017-S-101-202762_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-101-202762_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-101-202762_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-101-202762_AwardCriterionCost_PdhiwFgRo6dt8S8aCpwTR7,
+    epd:id_2017-S-101-202762_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH .
+
+epd:id_2017-S-101-202762_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 1500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-101-202762_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
+  cccev:email "correspondantrelationsinterentreprises@lyonaeroports.com" .
+
+epd:id_2017-S-101-202762_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69000";
+  locn:postName "Lyon" .
+
+epd:id_2017-S-101-202762_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "Correspondant relations enterentreprises"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-101-202762_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU;
+  cccev:registeredAddress epd:id_2017-S-101-202762_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2017-S-101-202762_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2017-S-101-202762_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2017-S-101-202762_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 1500000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-101-202762_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2017-S-101-202762_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-101-202762_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-101-202762_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2017-S-101-202762_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2017-S-101-202762_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2017-S-101-202762_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2017-S-101-202762_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2017-05-24"^^xsd:date;
+  epo:hasID epd:id_2017-S-101-202762_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20170527";
+  epo:refersToLot epd:id_2017-S-101-202762_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2017-S-101-202762_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-101-202762_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 101-202762" .
+
+epd:id_2017-S-101-202762_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR716>;
+  locn:postCode "69125";
+  locn:postName "Lyon-Saint-Exupéry";
+  locn:thoroughfare "Aéroports de Lyon, BP 113" .
+
+epd:id_2017-S-101-202762_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Société Aéroports de Lyon"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2017-S-101-202762_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-101-202762_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2018-03-01"^^xsd:date;
+  epo:hasEnd "2023-02-28"^^xsd:date .
+
+epd:id_2017-S-101-202762_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "HA.17.05.400" .
+
+epd:id_2017-S-101-202762_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/50413200> .
+
+epd:id_2017-S-101-202762_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-101-202762_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+Aéroports de Lyon est une société anonyme à Directoire et Conseil de surveillance au capital de 148 000 EUR, soumise à l'ordonnance no 2015-899 du 23.7.2015 et au décret no 2016-360 du 25.3.2016.
+La procédure se déroulera en 2 phases:
+Une phase de sélection des candidatures,
+Une phase de remise des offres et négociations avec les candidats ayant été admis à présenter une offre.
+Les négociations pourront se dérouler en plusieurs phases successives à l'issue desquelles certains candidats pourront être éliminés, par application des critères d'attribution précisés dans le présent avis
+en phase candidature, aucun document de la consultation n'est mis à la disposition des candidats autre que le présent avis. Le présent avis contient toutes les informations nécessaires à la présentation de la candidature.
+la transmission des dossiers de candidature par voie électronique (courriel) n'est pas autorisée.
+les dossiers de candidatures pourront:
+Soit être adressés en recommandé avec avis de réception postal,
+soit être déposés contre récépissé (du lundi au vendredi, sauf jours fériés, de 9:00 à 12:00 et de 14:00 à 17:00),
+à l'adresse ci-dessous:
+Société Aéroports de Lyon
+Département achats — bâtiment M2 — zone moyens généraux
+À l'attention de Mme Florence Comte
+BP 113
+F-69125 Lyon-Saint-Exupéry Aéroport — France
+Outre l'adresse, l'enveloppe contenant la candidature devra porter la mention: Candidature pour la maintenance des systèmes de sécurité incendie sur les sites de Aéroports de Lyon — ne pas ouvrir.
+En cas de groupement, chaque membre devra fournir les documents permettant de juger de sa candidature.
+Si les documents fournis par le candidat ne sont pas rédigés en langue française, ils doivent être accompagnés d'une traduction en français certifiée conforme par un traducteur assermenté.
+les dossiers de candidature seront remis en un exemplaire papier et un exemplaire sous format informatique (clé USB Uniquement).
+Quantité estimée du matériel à maintenir:
+Site de Lyon Saint-Exupéry: Aérogares et autres bâtiments: environ 6150 détecteurs incendie / 90 Zones de sécurité / Galerie Technique: 2 Systèmes de brouillard d'eau appelés Profog.
+Locaux Informatique protégé par 25 bouteilles Système d'extinction Ig55.
+Centrale Thermo-Electrique: un local protégé par 5 bouteilles d 'Extinction Co2 et un local protégé par 6 bouteilles avec de Ig55.
+Désenfumage — 40 skydomes 158 Extracteurs
+Bron: 5 Bâtiments équipés en détection incendie et en désenfumage
+35 ouvrants désenfumages et 5 centrales SSI type 4
+la variante obligatoire portera sur l'intervention à 02h00 en jours ouvrés de 08h à 17h pour la maintenance corrective.
+le nombre de variante libre proposée par les candidats est limité à 2.
+Les candidats doivent obligatoirement répondre à l'offre de base.
+"""@fr;
+  epo:hasDescription """
+Maintenance préventive et corrective des équipements sécurité incendie sur les sites des aéroports de Lyon Saint-Exupéry et de Lyon Bron.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2017-S-101-202762_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2017-S-101-202762_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-101-202762_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-101-202762_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Maintenance des systèmes de sécurité incendie sur les sites de Aéroports de Lyon.
+"""@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-101-202762_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-101-202762_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2017-S-101-202762_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-101-202762_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-101-202762_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-101-202762_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-101-202762_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69433";
+  locn:postName "Lyon Cedex 03";
+  locn:thoroughfare "67 rue Servient" .
+
+epd:id_2017-S-101-202762_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 472607238";
+  cccev:telephone "+33 472607012" .
+
+epd:id_2017-S-101-202762_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-101-202762_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2017-S-101-202762_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2017-S-101-202762_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-101-202762_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2017-S-101-202762_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+— Référé précontractuel, jusqu'à la signature du marché (ordonnance no 2009-515 du 7.5.2009 (art. 5 à 8) et décret no 2009-14 du 27.11.2009, articles 1441-1 et suivants du code de procédure civile),
+— référé contractuel, dans le délai de 31 jours suivant la publication de l'avis d'attribution du marché (ordonnance no 2009-515 du 7.5.2009 (art. 11 à 21), décret no 2009-14 du 27.11.2009, articles 1441-1 et suivants du code de procédure civile),
+— recours au fond en nullité du marché dans le délai de 5 ans (article 2224 du code civil) à compter de la date à laquelle le demandeur a connaissance du marché.
+""" .
+
+epd:id_2017-S-101-202762_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 472607238";
+  cccev:telephone "+33 472607012" .
+
+epd:id_2017-S-101-202762_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "69433";
+  locn:postName "Lyon Cedex 03";
+  locn:thoroughfare "67 rue Servient" .
+
+epd:id_2017-S-101-202762_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-101-202762_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2017-S-101-202762_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-101-202762_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-101-202762_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-101-202762_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2017-S-101-202762_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-101-202762_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-101-202762_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

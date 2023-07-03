@@ -1,0 +1,159 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-212-441191_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=290305"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-212-441191_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=290305"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-212-441191_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-212-441191_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-212-441191_Channel_PECLWCEwQNoZFei2BQMmT6 a cccev:Channel;
+  epo:hasURL "https://enot.publicprocurement.be/enot-war/displayForum.do?forumId=17061"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2017-S-212-441191_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Eric Poelemans"@fr;
+  epo:hasInternetAddress "www.charleroi-airport.com"^^xsd:anyURI;
+  cccev:email "commercialNA@charleroi-airport.com";
+  cccev:telephone "+32 71251993" .
+
+epd:id_2017-S-212-441191_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE322> .
+
+epd:id_2017-S-212-441191_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-212-441191_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-212-441191_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-212-441191_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-212-441191_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-212-441191_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/55000000> .
+
+epd:id_2017-S-212-441191_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-212-441191_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+                  Mise en sous-concession au profit d'un seul opérateur de plusieurs surfaces destinées à l'aménagement, la gestion et l'exploitation de services horeca au profit des utilisateurs de l'aéroport de Charleroi pour une période de 10 années. La mise en exploitation se fera en 2 temps en raison de travaux d'aménagement des terminaux. Une première période d'exploitation sur une superficie d'environ 750 m2 prendra cours le 1.10.2018. Une seconde période d'exploitation sur une superficie complémentaire d'environ 1 650 m2 prendra cours le 1.6.2019. Le contrat de concession prendra fin le 30/09/2028 sans possibilité de tacite reconduction. Les surfaces horeca qui devront être aménagées dans le Terminal 1 (zone publique ou zone piste) sont au nombre de 7. Après le 1.6.2019, elles passeront au nombre de 11. Les surfaces horeca qui devront être aménagées dans le Terminal 2 (zone publique ou zone piste) sont au nombre de 2. L'ensemble des concepts est prédéfini par le concédant.
+               """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-212-441191_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-212-441191_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-212-441191_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 135000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-212-441191_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 135000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-212-441191_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-212-441191_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-212-441191_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2017-S-212-441191_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-212-441191_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2017-11-02"^^xsd:date;
+  epo:hasID epd:id_2017-S-212-441191_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20171104";
+  epo:refersToLot epd:id_2017-S-212-441191_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2017-S-212-441191_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-212-441191_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 212-441191" .
+
+epd:id_2017-S-212-441191_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE322>;
+  locn:postCode "6041";
+  locn:postName "Gosselies";
+  locn:thoroughfare "Rue des Frères Wright 8" .
+
+epd:id_2017-S-212-441191_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasLegalName "Brussels South Charleroi Airport SA"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2017-S-212-441191_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-212-441191_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "BSCA-ERP-0902-F24_0" .
+
+epd:id_2017-S-212-441191_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/55000000> .
+
+epd:id_2017-S-212-441191_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-212-441191_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasDescription """
+               Mise en sous-concession au profit d'un seul opérateur de plusieurs surfaces destinées à l'aménagement, la gestion et l'exploitation de services horeca au profit des utilisateurs de l'aéroport de Charleroi pour une période de 10 années. La mise en exploitation se fera en 2 temps en raison de travaux d'aménagement des terminaux. Une première période d'exploitation sur une superficie d'environ 750 m2 prendra cours le 1.10.2018. Une seconde période d'exploitation sur une superficie complémentaire d'environ 1 650 m2 prendra cours le 1.6.2019. Le contrat de concession prendra fin le 30.9.2028 sans possibilité de tacite reconduction. Les surfaces horeca qui devront être aménagées dans le Terminal 1 (zone publique ou zone piste) sont au nombre de 7. Après le 1.6.2019, elles passeront au nombre de 11. Les surfaces horeca qui devront être aménagées dans le Terminal 2 (zone publique ou zone piste) sont au nombre de 2. L'ensemble des concepts est prédéfini par le concédant.
+            """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-212-441191_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2017-S-212-441191_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-212-441191_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-212-441191_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Marché relatif à la mise en CONCESSION de services HORECA au sein de l'aéroport de Charleroi-Bruxelles-Sud au profit d'un seul opérateur économique sur une superficie exploitable d'environ 2400 m2.
+               
+            """@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-212-441191_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-212-441191_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv;
+  epo:usesChannel epd:id_2017-S-212-441191_Channel_PECLWCEwQNoZFei2BQMmT6 .
+
+epd:id_2017-S-212-441191_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-212-441191_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-212-441191_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-212-441191_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postName "Bruxelles" .
+
+epd:id_2017-S-212-441191_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Conseil d'État"@fr;
+  cccev:registeredAddress epd:id_2017-S-212-441191_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-212-441191_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-212-441191_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-212-441191_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2017-S-212-441191_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE322>;
+  locn:postCode "6041";
+  locn:postName "Charleroi";
+  locn:thoroughfare "Rue des Frères Wright 29 (4ème étage)" .
+
+epd:id_2017-S-212-441191_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasContactName "Eric Poelemans"@fr;
+  epo:hasInternetAddress "http://www.charleroi-airport.com"^^xsd:anyURI;
+  cccev:email "commercialNA@charleroi-airport.com";
+  cccev:telephone "+32 71251993" .
+
+epd:id_2017-S-212-441191_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "BSCA SA"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-212-441191_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2017-S-212-441191_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2017-S-212-441191_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-212-441191_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2017-S-212-441191_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

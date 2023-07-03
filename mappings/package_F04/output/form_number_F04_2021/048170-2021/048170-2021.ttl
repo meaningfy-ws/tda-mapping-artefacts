@@ -1,0 +1,115 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-020-048170_AdditionalBuyer_CpEekzFtAswXMVZciW4heM a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-020-048170_AdditionalContactPoint_CpEekzFtAswXMVZciW4heM;
+  epo:playedBy epd:id_2021-S-020-048170_AdditionalOrganisation_CpEekzFtAswXMVZciW4heM .
+
+epd:id_2021-S-020-048170_AdditionalContactPoint_CpEekzFtAswXMVZciW4heM a cccev:ContactPoint;
+  epo:hasInternetAddress "https://fintraffic.fi/"^^xsd:anyURI;
+  cccev:email "hankinnat@fintraffic.fi" .
+
+epd:id_2021-S-020-048170_AdditionalOrganisation_CpEekzFtAswXMVZciW4heM a org:Organization;
+  epo:hasID epd:id_2021-S-020-048170_OrganisationIdentifier_CpEekzFtAswXMVZciW4heM;
+  epo:hasLegalName "Fint­raf­fic Rai­de Oy"@fi;
+  cccev:registeredAddress epd:id_2021-S-020-048170_OrganisationAddress_CpEekzFtAswXMVZciW4heM .
+
+epd:id_2021-S-020-048170_BuyerOrganisationGroup_CpEekzFtAswXMVZciW4heM a epo:OrganisationGroup;
+  epo:hasMainActivityDescription "Väylävirasto vastaa valtion tieverkon, rautateiden ja vesiväylien kehittämisestä sekä kunnossapidosta";
+  epo:hasMember epd:id_2021-S-020-048170_AdditionalOrganisation_CpEekzFtAswXMVZciW4heM,
+    epd:id_2021-S-020-048170_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-020-048170_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-020-048170_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-020-048170_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-020-048170_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Teemu Poussu"@fi;
+  epo:hasInternetAddress "http://www.vayla.fi"^^xsd:anyURI;
+  cccev:email "teemu.poussu@vayla.fi" .
+
+epd:id_2021-S-020-048170_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FI1> .
+
+epd:id_2021-S-020-048170_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-020-048170_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-020-048170_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-020-048170_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-020-048170_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Hankittavat palvelut sisältävät kunnossapitoalueen 12 radan ja turvalaitteiden kunnossapidon. Hankittavaan palveluun sisältyy mm. ratojen päällysrakenteen, vaihteiden-, radan varusteiden ja laitteiden, alus- ja pohjarakenteen sekä rautatiealueiden, raideliikenteen ohjaus- ja turvalaitejärjestelmien sekä kunnossapito. Hankittavat palvelut kattavat vika- ja vauriopäivystyksen."@fi .
+
+epd:id_2021-S-020-048170_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-020-048170_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2021-S-020-048170_AdditionalBuyer_CpEekzFtAswXMVZciW4heM,
+    epd:id_2021-S-020-048170_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-020-048170_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te;
+  epo:hasDispatchDate "2021-01-26"^^xsd:date;
+  epo:hasID epd:id_2021-S-020-048170_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210129";
+  epo:refersToLot epd:id_2021-S-020-048170_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2021-S-020-048170_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-020-048170_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 020-048170" .
+
+epd:id_2021-S-020-048170_OrganisationAddress_CpEekzFtAswXMVZciW4heM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FIN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FI>;
+  locn:postCode "FI-00240";
+  locn:postName "Helsinki";
+  locn:thoroughfare "Palkkatilanportti 1" .
+
+epd:id_2021-S-020-048170_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FIN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FI>;
+  locn:postCode "FI-00521";
+  locn:postName "Helsinki";
+  locn:thoroughfare "PL 33 (Opastinsilta 12 A)" .
+
+epd:id_2021-S-020-048170_OrganisationIdentifier_CpEekzFtAswXMVZciW4heM a epo:Identifier;
+  epo:hasIdentifierValue "2512095-7" .
+
+epd:id_2021-S-020-048170_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "1010547-1" .
+
+epd:id_2021-S-020-048170_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2021-S-020-048170_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "Väylävirasto"@fi;
+  cccev:registeredAddress epd:id_2021-S-020-048170_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-020-048170_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-020-048170_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-020-048170_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "VÄYLÄ/8520/02.01.02/2020" .
+
+epd:id_2021-S-020-048170_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/50220000> .
+
+epd:id_2021-S-020-048170_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-020-048170_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation "Tämä ilmoitus ei ole tarjouspyyntö, hankintailmoitus tai ennakkoilmoitus, vaan kutsu markkinavuoropuheluun. Tällä ilmoituksella ei pyydetä tarjouksia.Markkinavuoropuhelu järjestetään kirjallisena. Hankintayksikkö ei sitoudu toteuttamaan hankintaa markkinavuoropuhelukutsun tai markkinavuoropuhelun perusteella, eivätkä ilmoittautuneille toimitettavassa aineistossa esitettävät kuvaukset / määritykset sido hankintayksikköä.Markkinavuoropuhelukutsuun vastaaminen tai markkinavuoropuheluun osallistuminen eivät sido yritystä tarjouskilpailuun osallistumiseen, eivätkä myöskään ole edellytyksenä myöhemmin varsinaiseen tarjouskilpailuun osallistumiselle. Vastaaminen tai markkinavuoropuheluun osallistuminen eivät myöskään vaikuta tarjoajan asemaan varsinaisessa tarjouskilpailussa.Markkinavuoropuhelukutsuun vastanneille tai markkinavuoropuheluun osallistuneille ei makseta korvausta osallistumisesta.Hankinnasta kiinnostuneiden yritysten pyydetään ilmoittamaan kiinnostuksensa osallistua hankintaa koskevaan markkinavuoropuheluun sähköpostiosoitteeseen: jussi.seppa@welado.fi 4.2.2021 mennessä.Sähköpostissa tulee ilmoittaa yrityksen yhteishenkilön yhteistiedot. Sähköpostin aihekenttään pyydetään merkitsemään \"Markkinavuoropuhelu: Radan ja turvalaitteiden kunnossapito 2021—2026 kunnossapitoalue 12\"."@fi;
+  epo:hasDescription "Väylävirasto tulee hankkimaan kunnossapitoalueen 12 radan ja turvalaitteiden kunnossapidon alkuvuodesta 2021 käynnistyvällä hankinnalla. Kauko-ohjausjärjestelmän kunnossapidon osalta tilaajana hankinnassa on Fintraffic Raide Oy."@fi;
+  epo:hasID epd:id_2021-S-020-048170_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-020-048170_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-020-048170_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Radan ja turvalaitteiden kunnossapito 2021—026, kunnossapitoalue 12"@fi;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true .
+
+epd:id_2021-S-020-048170_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-03-01"^^xsd:date .
+
+epd:id_2021-S-020-048170_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-020-048170_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-020-048170_Organisation_W8v6KSqiUn74jPKJmENKoH .

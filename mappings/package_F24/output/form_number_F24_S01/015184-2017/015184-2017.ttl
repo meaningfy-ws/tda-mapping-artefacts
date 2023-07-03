@@ -1,0 +1,202 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-010-015184_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.mtitc.government.bg/bg/za-ministerstvoto/koncesii/otkriti-proceduri-za-predostavyane-na-koncesiya"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-010-015184_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.mtitc.government.bg/bg/za-ministerstvoto/koncesii/otkriti-proceduri-za-predostavyane-na-koncesiya"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-010-015184_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-010-015184_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-010-015184_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Daniela Pesheva/Jana Alexieva"@en, "Даниела Пешева/Яна Алексиева"@bg;
+  epo:hasFax "+359 29885149";
+  epo:hasInternetAddress "http://www.mtitc.government.bg"^^xsd:anyURI;
+  cccev:email "dlpesheva@mtitc.government.bg";
+  cccev:telephone "+359 29409-599/29409-538" .
+
+epd:id_2017-S-010-015184_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+Civil airport for public use Plovdiv, city of Plovdiv, the Municipality of Rodopi, the Municipality of Sadovo and the Municipality of Asenovgrad.
+"""@en,
+    """
+Гражданско летище за обществено ползване Пловдив, град Пловдив, община Родопи, община Садово и община Асеновград.
+"""@bg .
+
+epd:id_2017-S-010-015184_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG421>;
+  locn:address epd:id_2017-S-010-015184_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-010-015184_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-010-015184_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-010-015184_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-010-015184_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-010-015184_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 420.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-010-015184_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45235100>, <http://data.europa.eu/cpv/cpv/63112100>,
+    <http://data.europa.eu/cpv/cpv/63733000> .
+
+epd:id_2017-S-010-015184_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-010-015184_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+Main subject  — management of services of public interest and management and maintenance of the civil airport for public use Plovdiv at the risk of the concessionaire, which include maintaining the availability of the services and ensuring the continuity and level of quality of the services provided in accordance with the clauses of the concession agreement, and maintenance of the operation of fitness of the concession's object, against the right of the concessionaire to exploit the services of public interest by receiving revenue from customers or by third parties, and when other economic activities are performed by the concessionaire he has the right to receive revenue from these activities also. 
+Additional subject  — performing under the conditions and procedure set by the concession agreement or by Amendment to the agreement, a partial construction and installation works.
+The procurement documents contain the full description of the procurement.
+"""@en,
+    """
+Основен предмет — управление на услуги от обществен интерес и управление и поддържане на Летище за обществено ползване Пловдив на риск на концесионера, които включват поддържането в наличност на услугите и осигуряването на непрекъснатост и ниво на тяхното качество в съответствие с клаузите на концесионния договор и поддържането в експлоатационна годност на обекта на концесията срещу правото на Концесионера да експлоатира услугата, като получава приходи от потребителите или от трети лица, а когато извършва и други стопански дейности — и правото да получава приходи от тези дейности.
+Допълнителен предмет — извършване при условия и по ред, определени с концесионния договор или с допълнително споразумение към него, на частични строителни и монтажни работи.
+Пълното описание е съгласно Документацията за участие.
+"""@bg;
+  epo:hasEstimatedValue epd:id_2017-S-010-015184_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-010-015184_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-010-015184_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 235222565.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/BGN> .
+
+epd:id_2017-S-010-015184_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 235222565.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/BGN> .
+
+epd:id_2017-S-010-015184_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-010-015184_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-010-015184_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2017-S-010-015184_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-010-015184_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2017-01-11"^^xsd:date;
+  epo:hasID epd:id_2017-S-010-015184_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20170114";
+  epo:refersToLot epd:id_2017-S-010-015184_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2017-S-010-015184_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-010-015184_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 010-015184" .
+
+epd:id_2017-S-010-015184_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1000";
+  locn:postName "Sofia";
+  locn:thoroughfare "ul. „Dyakon Ignatiy“ No. 9" .
+
+epd:id_2017-S-010-015184_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasLegalName "Ministry of transport, information technology and communications"@en,
+    "Министерство на транспорта, информационите технологии и съобщенията"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-010-015184_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-010-015184_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/63731000> .
+
+epd:id_2017-S-010-015184_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-010-015184_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasDescription """
+The object of concession is Civil airport for public use Plovdiv with a concession area of 2 376 517 sq. m and includes:
+1. Land plots and buildings — public state property.
+2. Facilities and equipment.
+3. Attachments to the concession object — adjoining technical infrastructure.
+4. The buildings, facilities and equipment that the Concessionaire will construct and/or install by its own risk and with its own funds under the conditions and procedure set by the concession agreement.
+5. The concession object does not include:
+5.1. the objects — public state property submitted for management of the Bulgarian air traffic services authority — Sofia, situated on the concession area;
+5.2. the objects — private property, situated on the concession area.
+The procurement documents contain the full description of the object.
+"""@en,
+    """
+Обект на концесията е „Гражданско летище за обществено ползване Пловдив“, с концесионна площ 2 376 517 кв. м и включващ:
+1. Поземлени имоти и сгради — публична държавна собственост;
+2. Съоръжения и оборудване;
+3. Принадлежности към обекта на концесия — прилежаща техническа инфраструктура;
+4. Сградите, съоръженията и оборудването, които ще бъдат изградени и/или монтирани от концесионера на негов риск и с негови средства при условия и по ред, определени в концесионния договор.
+5. В обекта на концесията не се включват:
+5.1. обектите — публична държавна собственост, предоставени за управление на Държавно предприятие „Ръководство на въздушното движение“ — София, намиращи се върху концесионната площ;
+5.2. обектите — частна собственост, намиращи се върху концесионната площ.
+Пълното описание на обекта е дадено в Документацията за участие.
+"""@bg;
+  epo:hasEstimatedValue epd:id_2017-S-010-015184_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-010-015184_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-010-015184_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+Granting a concession for service for the object ‘Civil airport for public use Plovdiv’.
+"""@en,
+    """
+Предоставяне на концесия за услуга на обект „Гражданско летище за обществено ползване Пловдив“.
+"""@bg;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-010-015184_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-010-015184_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-010-015184_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-010-015184_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-010-015184_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-010-015184_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "www.cpc.bg"^^xsd:anyURI;
+  cccev:email "cpcadmin@cpc.bg";
+  cccev:telephone "+359 29356113" .
+
+epd:id_2017-S-010-015184_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "Sofia";
+  locn:thoroughfare "18, Vitosha blvd." .
+
+epd:id_2017-S-010-015184_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Commission for Protection of Competition"@en, "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-010-015184_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2017-S-010-015184_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-010-015184_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-010-015184_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-010-015184_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "BG" .
+
+epd:id_2017-S-010-015184_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1000";
+  locn:postName "Sofia";
+  locn:thoroughfare "9, Dyakon Ignatiy str., floor 10, rooms 1003/1011" .
+
+epd:id_2017-S-010-015184_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasContactName "Daniela Pesheva/Jana Alexieva"@en, "Даниела Пешева/Яна Алексиева"@bg;
+  epo:hasFax "+359 29885149";
+  epo:hasInternetAddress "http://www.mtitc.government.bg"^^xsd:anyURI;
+  cccev:email "dlpesheva@mtitc.government.bg";
+  cccev:telephone "+359 29409-599/29409-538" .
+
+epd:id_2017-S-010-015184_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Ministry of transport, information technology and communications"@en,
+    "Министерство на транспорта, информационните технологии и съобщенията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-010-015184_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2017-S-010-015184_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2017-S-010-015184_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-010-015184_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2017-S-010-015184_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

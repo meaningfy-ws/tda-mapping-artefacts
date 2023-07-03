@@ -1,0 +1,198 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-225-410290_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://pkm.conclude.com/stadtwerke"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-225-410290_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-225-410290_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2016-S-225-410290_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-225-410290_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Stadtwerke Filderstadt"@de;
+  epo:hasInternetAddress "http://www.filderstadt.de/,Lde/start/service/Stadtwerke+Filderstadt.html"^^xsd:anyURI;
+  cccev:email "jmeier@filderstadt.de" .
+
+epd:id_2016-S-225-410290_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2016-S-225-410290_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-225-410290_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2016-S-225-410290_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasContactName "Drees & Sommer GmbH Stuttgart"@de;
+  epo:hasInternetAddress "http://www.dreso.com/"^^xsd:anyURI;
+  cccev:email "sandra.gamerdinger@dreso.com" .
+
+epd:id_2016-S-225-410290_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE111>;
+  locn:postCode "70569";
+  locn:postName "Stuttgart";
+  locn:thoroughfare "Obere Waldplätze 13" .
+
+epd:id_2016-S-225-410290_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasLegalName "Drees & Sommer GmbH Stuttgart"@de;
+  cccev:registeredAddress epd:id_2016-S-225-410290_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2016-S-225-410290_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-225-410290_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+Die Stadtwerke Filderstadt planen einen neuen Betriebsstandort. Dieser soll in der Seestraße 15 in Sielmingen entstehen. Auf dem Grundstück ist eine Bestandsimmobilie vorhanden, welche abgebrochen werden muss. Es handelt sich um einen nicht-offenen Planungswettbewerb nach VgV/RPW 2013 mit vorgeschaltetem Präqualifikationsverfahren und nachgeschaltetem Verhandlungsverfahren. Der zu planende Neubau wird voraussichtlich eine BGF von ca. 2 100 m2 haben. Nach aktuellem Stand ist die Realisierung bis 2020 geplant.
+"""@de;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-225-410290_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-225-410290_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2016-S-225-410290_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2016-S-225-410290_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2016-S-225-410290_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2016-11-17"^^xsd:date;
+  epo:hasID epd:id_2016-S-225-410290_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20161122";
+  epo:refersToLot epd:id_2016-S-225-410290_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2016-S-225-410290_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2016-S-225-410290_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 225-410290" .
+
+epd:id_2016-S-225-410290_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE113>;
+  locn:postCode "70794";
+  locn:postName "Filderstadt";
+  locn:thoroughfare "Brühlstraße 41" .
+
+epd:id_2016-S-225-410290_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "Stadtwerke Filderstadt"@de;
+  epo:hasMainActivityDescription "Versorgung";
+  cccev:registeredAddress epd:id_2016-S-225-410290_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-225-410290_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71221000> .
+
+epd:id_2016-S-225-410290_ProcedureTerm_n9YtPUZG9SDZ5m8nAb77dU a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2016-S-225-410290_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+A2.) 1 Referenzprojekt des Büros (allg. Hochbauprojekt – Neubau mit öffentlichem Auftraggeber (Auswahlkriterium mit Wichtung ges. 20 %)
+Mindestkriterien:
+Leistung nach § 34 HOAI.
+Mindestens Honorarzone III nach Einteilung gemäß § 35 HOAI.
+Mindestens selbst erbrachte Leistungsphasen 2-5 nach § 34 HOAI.
+Eröffnung und Inbetriebnahme zwischen 19.12.2006 und 19.12.2016.
+Anrechenbare Kosten gemäß § 4 HOAI ≥ 3 000 000 EUR netto (KGR 300+400).
+Auswahlkriterien:
+Projektbezeichnung (Art des Projekts) (1,6 %).
+Nennung Bauherr / Auftraggeber (Anschrift, Ansprechpartner) (1,6 %).
+Selbsterbrachte LPH 6-8 nach § 34 HOAI (1,6 %).
+Referenzschreiben vorhanden (1,6 %).
+Positive Beurteilung im Referenzschreiben (Kostentreue) (3,5 %).
+Positive Beurteilung im Referenzschreiben (Termintreue) (3,5 %).
+BGF ≥ 1 800 m2 (1,6 %).
+BRI (1,6 %).
+Projektbeschreibung in Wort und Bild (3,4 %).
+Eine Doppelnennung der Referenzen ist nicht möglich.
+weitere Referenzprojekte (Auswahlkriterien) siehe VI.3).
+"""@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-225-410290_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2016-S-225-410290_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+Neubau Stadtwerke Filderstadt.
+"""@de;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-225-410290_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2016-S-225-410290_ProcedureTerm_n9YtPUZG9SDZ5m8nAb77dU, epd:id_2016-S-225-410290_ReviewTerm_RW9aiajURL5iSUCvDaitUd,
+    epd:id_2016-S-225-410290_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2016-S-225-410290_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-225-410290_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2016-S-225-410290_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2016-S-225-410290_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Es gilt die am 18.4.2016 in Kraft getretene Neufassung des GWB (Gesetz gegen Wettbewerbsbeschränkungen). Auf folgende Punkte wird hingewiesen:
+— § 134 Abs. 2 GWB: Informations- und Wartefrist.
+Demnach darf ein Vertrag erst 15 Kalendertage nach Absendung der Information an die nicht berücksichtigten Bieter geschlossen werden. Wird die Information auf elektronischem Weg oder per Fax versendet, verkürzt sich die Frist auf 10 Kalendertage. Die Frist beginnt am Tag nach der Absendung der Information durch den Auftraggeber; auf den Tag des Zugangs beim betroffenen Bieter und Bewerber kommt es nicht an.
+— § 135 Abs. 2 GWB: Unwirksamkeit.
+Die Unwirksamkeit [des öffentlichen Auftrags] kann nur festgestellt werden, wenn sie im Nachprüfungsverfahren innerhalb von 30 Kalendertagen nach der Information der betroffenen Bieter und Bewerber durch den öffentlichen Auftraggeber über den Abschluss des Vertrages, jedoch nicht später als 6 Monate nach Vertragsschluss geltend gemacht worden ist. Hat der Auftraggeber die Auftragsvergabe im Amtsblatt der Europäischen Union bekannt gemacht, endet die Frist zur Geltendmachung der Unwirksamkeit 30 Kalendertage nach Veröffentlichung der Bekanntmachung der Auftragsvergabe im Amtsblatt der Europäischen Union.
+— § 160 Abs. 3 GWB: Einleitung, Antrag.
+Der Antrag ist unzulässig, soweit
+1. Der Antragsteller den geltend gemachten Verstoß gegen Vergabevorschriften vor Einreichung des Nachprüfungsantrags erkannt und gegenüber dem Auftraggeber nicht innerhalb einer Frist von 10 Kalendertagen gerügt hat,
+2. Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, nicht spätestens bis zum Ablauf der Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden,
+3. Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, nicht spätestens bis zum Ablauf der Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden,
+4. Mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind.
+— § 101b Abs. 2 GWB.
+(2) Die Unwirksamkeit (red.: eines Vertragsschlusses) nach Absatz 1 kann nur festgestellt werden, wenn sie im Nachprüfungsverfahren innerhalb von 30 Kalendertagen ab Kenntnis des Verstoßes, jedoch nicht später als 6 Monate nach Vertragsschluss geltend gemacht worden ist. Hat der Auftraggeber die Auftragsvergabe im Amtsblatt der Europäischen Union bekannt gemacht, endet die Frist zur Geltendmachung der Unwirksamkeit 30 Kalendertage nach Veröffentlichung der Bekanntmachung der Auftragsvergabe im Amtsblatt der Europäischen Union.
+— § 107 Einleitung, Antrag.
+(3) Der Nachprüfungsantrag ist unzulässig, soweit:
+1. Der Antragssteller den gerügten Verstoß gegen Vergabevorschriften im Vergabeverfahren erkannt und gegenüber dem Auftraggeber nicht unverzüglich gerügt hat;
+2.Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, nicht spätestens bis Ablauf der in der Bekanntmachung benannten Frist zur Angebotsabgabe oder zur Bewerbung gegenüber dem Auftraggeber gerügt werden;
+3. Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, nicht spätestens bis um Ablauf der in der Bekanntmachung benannten Frist zur Angebotsabgabe oder zur Bewerbung gegenüber dem Auftraggeber gerügt werden;
+4. Mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind.
+""" .
+
+epd:id_2016-S-225-410290_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+49 721926-3985";
+  epo:hasInternetAddress "http://www.rp.baden-wuerttemberg.de"^^xsd:anyURI;
+  cccev:email "vergabekammer@rpk.bwl.de";
+  cccev:telephone "+49 721926-0" .
+
+epd:id_2016-S-225-410290_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76133";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Karl-Freidrich-Straße 17" .
+
+epd:id_2016-S-225-410290_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg beim Regierungspräsidium Karlsruhe"@de;
+  epo:hasPrimaryContactPoint epd:id_2016-S-225-410290_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2016-S-225-410290_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-225-410290_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-225-410290_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-225-410290_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2016-S-225-410290_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE113>;
+  locn:postCode "70794";
+  locn:postName "Filderstadt";
+  locn:thoroughfare "Brühlstraße 41" .
+
+epd:id_2016-S-225-410290_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasContactName "Stadtwerke Filderstadt"@de;
+  epo:hasInternetAddress "http://www.filderstadt.de/,Lde/start/service/Stadtwerke+Filderstadt.html"^^xsd:anyURI;
+  cccev:email "jmeier@filderstadt.de" .
+
+epd:id_2016-S-225-410290_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasLegalName "Stadtwerke Filderstadt"@de;
+  epo:hasPrimaryContactPoint epd:id_2016-S-225-410290_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2016-S-225-410290_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2016-S-225-410290_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-225-410290_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2016-S-225-410290_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

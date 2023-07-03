@@ -1,0 +1,93 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-201-363582_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "http://www.bdz.bg/bg/profile.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-201-363582_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-201-363582_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-201-363582_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "инж. Стефан Костов"@bg;
+  epo:hasFax "+359 29800494";
+  epo:hasInternetAddress "www.bdz.bg"^^xsd:anyURI;
+  cccev:email "st_kostov@bdz.bg";
+  cccev:telephone "+359 886804667" .
+
+epd:id_2016-S-201-363582_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKZZZ> .
+
+epd:id_2016-S-201-363582_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-201-363582_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-201-363582_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-201-363582_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/50220000> .
+
+epd:id_2016-S-201-363582_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-201-363582_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription """
+Извършване на капитален ремонт с модернизация на електрически локомотиви серии 44 /9 броя/ и 45 /21 броя/ съгласно Технически условия за извършване на капитален ремонт ремонт с модернизация на електрически локомотиви серии 44 и 45.
+"""@bg;
+  epo:hasPurpose epd:id_2016-S-201-363582_LotPurpose_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-201-363582_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2016-S-201-363582_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2016-S-201-363582_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2016-S-201-363582_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te;
+  epo:hasDispatchDate "2016-10-13"^^xsd:date;
+  epo:hasID epd:id_2016-S-201-363582_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20161018";
+  epo:refersToLot epd:id_2016-S-201-363582_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2016-S-201-363582_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-201-363582_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 201-363582" .
+
+epd:id_2016-S-201-363582_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1080";
+  locn:postName "София";
+  locn:thoroughfare "ул. „Иван Вазов“ № 3" .
+
+epd:id_2016-S-201-363582_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "175405647" .
+
+epd:id_2016-S-201-363582_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2016-S-201-363582_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "„БДЖ-Пътнически превози“ ЕООД"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2016-S-201-363582_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-201-363582_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2016-S-201-363582_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-201-363582_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/50220000> .
+
+epd:id_2016-S-201-363582_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-201-363582_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasDescription """
+Извършване на капитален ремонт с модернизация на 30 броя електрически локомотиви серии 44 /9 броя/ и 45 /21 броя/ съгласно Технически условия за извършване на капитален ремонт с модернизация на електрически локомотиви серии 44 и 45.
+"""@bg;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-201-363582_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2016-S-201-363582_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+Извършване на капитален ремонт с модернизация на електрически локомотиви серии 44 и 45, собственост на „БДЖ-Пътнически превози“ ЕООД за 3 /три/ годишен период.
+"""@bg;
+  epo:isCoveredByGPA false .
+
+epd:id_2016-S-201-363582_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2016-10-13"^^xsd:date .
+
+epd:id_2016-S-201-363582_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-201-363582_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-201-363582_Organisation_W8v6KSqiUn74jPKJmENKoH .

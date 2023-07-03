@@ -1,0 +1,206 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-114-320445_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://e-propublico.pl/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-114-320445_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "60"@pl .
+
+epd:id_2022-S-114-320445_AwardCriterionQuality_SCcNgmEndqqZvfw98H8z7v a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Długość okresu gwarancji"@pl;
+  cccev:weight "30"@pl .
+
+epd:id_2022-S-114-320445_AwardCriterionQuality_aDam54DqENHigUj4DJyHNL a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Termin dostawy"@pl;
+  cccev:weight "10"@pl .
+
+epd:id_2022-S-114-320445_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-114-320445_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2022-S-114-320445_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-114-320445_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Agnieszka PRZYKŁOTA"@pl;
+  epo:hasFax "+48 261416110";
+  epo:hasInternetAddress "www.10wsk.mil.pl"^^xsd:anyURI;
+  cccev:email "a.przyklota@10wsk.mil.pl";
+  cccev:telephone "+48 261417449" .
+
+epd:id_2022-S-114-320445_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress "siedziba Zamawiającego, Bydgoszcz"@pl .
+
+epd:id_2022-S-114-320445_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL613>;
+  locn:address epd:id_2022-S-114-320445_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2022-S-114-320445_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-114-320445_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-114-320445_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2022-S-114-320445_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true .
+
+epd:id_2022-S-114-320445_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 56.0;
+  time:unitType time:unitDay .
+
+epd:id_2022-S-114-320445_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-114-320445_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasAdditionalInformation "Zamawiający wymaga wniesienia wadium w wysokości 1 300.00 PLN."@pl;
+  epo:hasDescription "Zgodnie z zapisami SWZ i specyfikacją techniczną"@pl;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-114-320445_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog,
+    epd:id_2022-S-114-320445_AwardCriterionQuality_SCcNgmEndqqZvfw98H8z7v, epd:id_2022-S-114-320445_AwardCriterionQuality_aDam54DqENHigUj4DJyHNL .
+
+epd:id_2022-S-114-320445_MediatorContactPoint_4Z4veE2PHRh5zv62ATRwnh a cccev:ContactPoint;
+  epo:hasFax "+48 226958111";
+  epo:hasInternetAddress "http://prokuratoria.gov.pl"^^xsd:anyURI;
+  cccev:email "sp@prokuratoria.gov.pl";
+  cccev:telephone "+48 226958504" .
+
+epd:id_2022-S-114-320445_MediatorOrganisationAddress_4Z4veE2PHRh5zv62ATRwnh a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "00-522";
+  locn:postName "Warszawa";
+  locn:thoroughfare "Krucza 36/Wspólna 6" .
+
+epd:id_2022-S-114-320445_MediatorOrganisation_4Z4veE2PHRh5zv62ATRwnh a org:Organization;
+  epo:hasLegalName "Sąd Polubowny przy Prokuratorii Generalnej Rzeczpospolite Polskiej"@pl;
+  epo:hasPrimaryContactPoint epd:id_2022-S-114-320445_MediatorContactPoint_4Z4veE2PHRh5zv62ATRwnh;
+  cccev:registeredAddress epd:id_2022-S-114-320445_MediatorOrganisationAddress_4Z4veE2PHRh5zv62ATRwnh .
+
+epd:id_2022-S-114-320445_Mediator_4Z4veE2PHRh5zv62ATRwnh a epo:Mediator;
+  epo:playedBy epd:id_2022-S-114-320445_MediatorOrganisation_4Z4veE2PHRh5zv62ATRwnh .
+
+epd:id_2022-S-114-320445_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-114-320445_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2022-S-114-320445_Mediator_4Z4veE2PHRh5zv62ATRwnh,
+    epd:id_2022-S-114-320445_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2022-S-114-320445_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2022-S-114-320445_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2022-S-114-320445_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE;
+  epo:hasDispatchDate "2022-06-10"^^xsd:date;
+  epo:hasID epd:id_2022-S-114-320445_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220615";
+  epo:refersToLot epd:id_2022-S-114-320445_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2022-S-114-320445_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2022-S-114-320445_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 114-320445" .
+
+epd:id_2022-S-114-320445_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL613>;
+  locn:postCode "85-681";
+  locn:postName "Bydgoszcz";
+  locn:thoroughfare "ul. Powstańców Warszawy  5" .
+
+epd:id_2022-S-114-320445_OrganisationIdentifier_bhAnCWhMtKVDKPwFpTfXJN a epo:Identifier;
+  epo:hasIdentifierValue "090538318" .
+
+epd:id_2022-S-114-320445_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Samodzielny Publiczny Zakład Opieki Zdrowotnej ";
+  epo:hasID epd:id_2022-S-114-320445_OrganisationIdentifier_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:hasLegalName "10 Wojskowy Szpital Kliniczny z Polikliniką Samodzielny Publiczny Zakład Opieki Zdrowotnej "@pl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2022-S-114-320445_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-114-320445_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "78/2022" .
+
+epd:id_2022-S-114-320445_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/33162000> .
+
+epd:id_2022-S-114-320445_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-114-320445_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAcceleratedProcedureJustification "aneks do umowy dotacyjnej  MON 15/3300021337/110/DWSZdr/WNiI/PMT/22"@pl;
+  epo:hasAdditionalInformation "Dokumenty wymagane na etapie składania ofert/wniosków:Formularz oferty - załącznik nr 1 do SWZSpecyfikacja techniczna - załącznik nr 2 do SWZJednolity europejski dokument zamówienia - załącznik nr 3 do SWZOświadczenie wykonawcy dotyczące odrębnych przesłanek wykluczenia - załącznik nr 4 do SWZZobowiązanie podmiotu udostępniającego zasoby - załącznik nr 5 do SWZDokumenty składane na wezwanie zamawiającego:Dokument potwierdzający niezaleganie z opłacaniem podatków, opłat lub składek na ubezpieczenie społeczne lub zdrowotneDokument potwierdzający, że nie otwarto likwidacji wykonawcyInformacja z Krajowego Rejestru KarnegoInformacja z odpowiedniego rejestru lub inny równoważny dokumentOdpis lub informacja z KRS lub CEIDGOświadczenie wykonawcy o aktualności informacji zawartych w oświadczeniu o niepodleganiu wykluczeniuOświadczenie wykonawcy w sprawie grupy kapitałowej - załącznik nr 7 do SWZWykaz dostaw - załącznik nr 6 do SWZZaświadczenie właściwego naczelnika urzędu skarbowegoZaświadczenie z ZUS lub KRUSInformacje dodatkowe:O udzielenie zamówienia mogą ubiegać się Wykonawcy, którzy nie podlegają wykluczeniu na podstawie  art. 108 ust. 1 pkt 1-6 i ust. 2 , art. 109 ust. 1 pkt 1, art. 109 ust. 1 pkt 4 ustawy Pzp oraz spełniają warunki udziału w postępowaniu.Zamawiający przewiduje możliwość uzupełnienia przedmiotowych środków dowodowych.Zamówienie realizowane jest w ramach aneksu do umowy Zamawiającego z organem założycielskim w ramach programu PMT 2022. Zamawiający może unieważnić postępowania o udzielenie zamówienia, jeżeli środki, które Zamawiający zamierzał przeznaczyć na sfinansowanie zamówienia, nie zostaną mu przyznane."@pl;
+  epo:hasDescription "Dostawa morcelatora zgodnie z zapisami SWZ i spacyfikacją techniczną"@pl;
+  epo:hasID epd:id_2022-S-114-320445_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-114-320445_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2022-S-114-320445_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Dostawa morcelatora"@pl;
+  epo:isAccelerated true;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-114-320445_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2022-S-114-320445_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2022-S-114-320445_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2022-S-114-320445_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-114-320445_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2022-S-114-320445_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-114-320445_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17A" .
+
+epd:id_2022-S-114-320445_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  epo:hasFax "+48 224587800";
+  epo:hasInternetAddress "http://www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2022-S-114-320445_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza"@pl;
+  epo:hasPrimaryContactPoint epd:id_2022-S-114-320445_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2022-S-114-320445_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2022-S-114-320445_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-114-320445_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2022-S-114-320445_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "1. Odwołanie wnosi się:1) w terminie 10 dni od dnia przekazania informacji o czynności Zamawiającego stanowiącej podstawę jego wniesienia - jeżeli informacja została przekazana przy użyciu środków komunikacji elektronicznej, albo w terminie 15 dni - jeżeli informacja została przekazana w inny sposób;2) odwołanie wobec treści ogłoszenia o zamówieniu lub wobec treści dokumentów zamówienia wnosi się w terminie 10 dni od dnia publikacji ogłoszenia w Dzienniku Urzędowym Unii Europejskiej lub zamieszczenia dokumentów zamówienia na stronie internetowej;3) odwołanie wobec czynności innych niż określone w ust. 1 oraz 2 wnosi się w terminie 10 dni od dnia, w którym powzięto lub przy zachowaniu należytej staranności można było powziąć wiadomość o okolicznościach stanowiących podstawę jego wniesienia.4. Jeżeli Zamawiający nie przesłał wykonawcy zawiadomienia o wyborze oferty najkorzystniejszej - odwołanie wnosi się nie później niż w terminie 30 dni od dnia publikacji w Dzienniku Urzędowym Unii Europejskiej ogłoszenia o udzieleniu zamówienia.5. Jeżeli Zamawiający nie opublikował w Dzienniku Urzędowym Unii Europejskiej ogłoszenia o udzieleniu zamówienia, odwołanie wnosi się w terminie 6 miesięcy od dnia zawarcia umowy." .
+
+epd:id_2022-S-114-320445_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasFax "+48 224587800";
+  epo:hasInternetAddress "http://www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2022-S-114-320445_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17A" .
+
+epd:id_2022-S-114-320445_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza"@pl;
+  epo:hasPrimaryContactPoint epd:id_2022-S-114-320445_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2022-S-114-320445_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2022-S-114-320445_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-114-320445_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2022-S-114-320445_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "PL";
+  epo:hasSubmissionURL "https://e-propublico.pl"^^xsd:anyURI .
+
+epd:id_2022-S-114-320445_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-114-320445_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2022-S-114-320445_Organisation_bhAnCWhMtKVDKPwFpTfXJN .

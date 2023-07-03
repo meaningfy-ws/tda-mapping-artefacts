@@ -1,0 +1,78 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-031-068480_AccessTerm_4zjJjpytu5bmHbyNSmtsju a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=xv5RCf6UL3kQK2TEfXGy%2BA%3D%3D"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-031-068480_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=l9z4W2donac%3D"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-031-068480_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2018-S-031-068480_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2018-S-031-068480_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "Presidencia del Consejo de Administración de la Autoridad Portuaria de Barcelona (Port de Barcelona)"@es;
+  epo:hasFax "+34 933068828";
+  epo:hasInternetAddress "http://www.portdebarcelona.cat"^^xsd:anyURI;
+  cccev:email "sau@portdebarcelona.cat";
+  cccev:telephone "+34 932982100" .
+
+epd:id_2018-S-031-068480_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES511> .
+
+epd:id_2018-S-031-068480_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-031-068480_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2018-S-031-068480_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-031-068480_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription """
+                  Ampliación del Muelle Adosado 2a Fase-B (Superestructura y Pavimentación). (OB-GP-P-0769/2014).
+               """@es .
+
+epd:id_2018-S-031-068480_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-031-068480_Buyer_4zjJjpytu5bmHbyNSmtsju;
+  epo:hasDispatchDate "2018-02-13"^^xsd:date;
+  epo:hasID epd:id_2018-S-031-068480_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasPublicationDate "20180214";
+  epo:refersToLot epd:id_2018-S-031-068480_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2018-S-031-068480_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2018-S-031-068480_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 031-068480" .
+
+epd:id_2018-S-031-068480_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES511>;
+  locn:postCode "08039";
+  locn:postName "Barcelona";
+  locn:thoroughfare "Portal de la Pau, 6" .
+
+epd:id_2018-S-031-068480_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC a epo:Identifier;
+  epo:hasIdentifierValue "Q0867012G" .
+
+epd:id_2018-S-031-068480_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasID epd:id_2018-S-031-068480_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC;
+  epo:hasLegalName "Presidencia del Consejo de Administración de la Autoridad Portuaria de Barcelona (Port de Barcelona)"@es;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/port>;
+  cccev:registeredAddress epd:id_2018-S-031-068480_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2018-S-031-068480_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2018-00010" .
+
+epd:id_2018-S-031-068480_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45241100> .
+
+epd:id_2018-S-031-068480_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasID epd:id_2018-S-031-068480_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-031-068480_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2018-S-031-068480_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle """
+               Ampliación del Muelle Adosado 2a Fase-B (Superestructura y Pavimentación). (OB-GP-P-0769/2014)
+            """@es;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-031-068480_AccessTerm_4zjJjpytu5bmHbyNSmtsju .

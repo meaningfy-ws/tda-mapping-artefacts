@@ -1,0 +1,83 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-083-197783_AccessTerm_4zjJjpytu5bmHbyNSmtsju a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=cUgswLrrxF0SugstABGr5A%3D%3D"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-083-197783_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
+  epo:hasBuyerProfile "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=lfTXbsyXwkoQK2TEfXGy%2BA%3D%3D"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2019-S-083-197783_ContactPoint_TigDgN9yDLHn3hDtQD7BVC;
+  epo:playedBy epd:id_2019-S-083-197783_Organisation_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2019-S-083-197783_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoint;
+  epo:hasContactName "Presidencia de la Autoridad Independiente de Responsabilidad Fiscal"@es;
+  epo:hasInternetAddress "https://contrataciondelestado.es"^^xsd:anyURI;
+  cccev:email "contratacion@airef.es";
+  cccev:telephone "+34 918252085" .
+
+epd:id_2019-S-083-197783_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj a locn:Address;
+  locn:fullAddress "C/ José Abascal, 2, 2a planta. 28003 Madrid."@es .
+
+epd:id_2019-S-083-197783_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES300>;
+  locn:address epd:id_2019-S-083-197783_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2019-S-083-197783_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-083-197783_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2019-S-083-197783_LotPurpose_PNm7nZntEXiu4JieackQnj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/79411000> .
+
+epd:id_2019-S-083-197783_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-083-197783_ContractTermLot_PNm7nZntEXiu4JieackQnj;
+  epo:hasDescription "Desarrollo del proyecto 3 incentivos a la contratación; fase II Spending Review."@es;
+  epo:hasPurpose epd:id_2019-S-083-197783_LotPurpose_PNm7nZntEXiu4JieackQnj .
+
+epd:id_2019-S-083-197783_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-083-197783_Buyer_4zjJjpytu5bmHbyNSmtsju;
+  epo:hasDispatchDate "2019-04-23"^^xsd:date;
+  epo:hasID epd:id_2019-S-083-197783_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20190429";
+  epo:refersToLot epd:id_2019-S-083-197783_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:refersToProcedure epd:id_2019-S-083-197783_Procedure_AMEokiDjGuTvrfRF5KkTBZ .
+
+epd:id_2019-S-083-197783_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 083-197783" .
+
+epd:id_2019-S-083-197783_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ESP>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ES300>;
+  locn:postCode "28003";
+  locn:postName "Madrid";
+  locn:thoroughfare "C/ José Abascal, 2, 2ª planta" .
+
+epd:id_2019-S-083-197783_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC a epo:Identifier;
+  epo:hasIdentifierValue "Q2802159J" .
+
+epd:id_2019-S-083-197783_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2019-S-083-197783_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC;
+  epo:hasLegalName "Presidencia de la Autoridad Independiente de Responsabilidad Fiscal"@es;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/econ-aff>;
+  cccev:registeredAddress epd:id_2019-S-083-197783_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
+
+epd:id_2019-S-083-197783_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;
+  epo:hasIdentifierValue "PA004/2019" .
+
+epd:id_2019-S-083-197783_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79411000> .
+
+epd:id_2019-S-083-197783_Procedure_AMEokiDjGuTvrfRF5KkTBZ a epo:Procedure;
+  epo:hasID epd:id_2019-S-083-197783_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-083-197783_Lot_PNm7nZntEXiu4JieackQnj;
+  epo:hasPurpose epd:id_2019-S-083-197783_ProcedurePurpose_AMEokiDjGuTvrfRF5KkTBZ;
+  epo:hasTitle "Desarrollo del proyecto 3 incentivos a la contratación; fase II Spending Review"@es;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-083-197783_AccessTerm_4zjJjpytu5bmHbyNSmtsju .

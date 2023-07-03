@@ -1,0 +1,153 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-220-457924_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.hradf.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-220-457924_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "www.hradf.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-220-457924_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-220-457924_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-220-457924_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Γιάννης Ζαπάντης"@el;
+  epo:hasFax "+30 2103274448";
+  epo:hasInternetAddress "http://www.hradf.com"^^xsd:anyURI;
+  cccev:email "info@hraf.gr";
+  cccev:telephone "+30 2103274400" .
+
+epd:id_2017-S-220-457924_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL51> .
+
+epd:id_2017-S-220-457924_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-220-457924_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-220-457924_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-220-457924_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-220-457924_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 480.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-220-457924_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45233110>, <http://data.europa.eu/cpv/cpv/45233139>,
+    <http://data.europa.eu/cpv/cpv/63712210>, <http://data.europa.eu/cpv/cpv/63712300> .
+
+epd:id_2017-S-220-457924_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-220-457924_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation """
+                  Ο Διαγωνισμός θα διεξαχθεί σε 2 φάσεις: στη Α Φάση προεπιλογής με βάση τα κριτήρια προσωπικής κατάστασης και χρηματοοικονομικής επάρκειας και στη Β Φάση υποβολής δεσμευτικών προσφορών και εξέτασης του κριτήριου τεχνικής επάρκειας σύμφωνα με την Πρόσκληση Υποβολής Δεσμευτικών Προσφορών. Η ακριβής διάρκεια της σύμβασης θα προσδιορισθεί κατά τη Β Φάση και δε θα υπερβαίνει τα 40 έτη κατ΄ ανώτατο όριο.
+               """@el;
+  epo:hasDescription """
+                  Η υπό ανάθεση Σύμβαση Παραχώρησης αφορά στην χρηματοδότηση, λειτουργία, συντήρηση και εκμετάλλευση της Εγνατίας Οδού και των τριών (3) καθέτων οδικών αξόνων (i) Σιάτιστα — Ιεροπηγή/Κρυσταλλοπηγή, (ii) Χαλάστρα — Εύζωνοι και (iii) Θεσσαλονίκη-Σέρρες-Προμαχώνας (από κοινού ο «Οδικός Άξονας») για χρονική περίοδο έως σαράντα (40) έτη κατ' ανώτατο όριο. Συγκεκριμένα, η εκμετάλλευση περιλαμβάνει το σύνολο των ενεργειών και δράσεων που απαιτούνται για την ορθολογική οικονομική διαχείριση της Εγνατίας Οδού και των τριών καθέτων σε αυτήν αξόνων και, ως εκ τούτου, περιλαμβάνει κυρίως την είσπραξη εσόδων μέσω διοδίων ή/και άλλων πηγών σε αντάλλαγμα για την παροχή υπηρεσιών συντήρησης και λειτουργίας της Εγνατίας Οδού και των τριών καθέτων σε αυτήν αξόνων σε κατάλληλο/αποδεκτό επίπεδο, όπως αυτό θα προσδιορισθεί ειδικότερα στη Σύμβαση Παραχώρησης.
+                  Η Εγνατία Οδός είναι οδικός άξονας, που έχει ήδη κατασκευασθεί και βρίσκεται σε λειτουργία, με πλήρη έλεγχο προσβάσεων και διαχωρισμένο οδόστρωμα, μήκους 658 χιλιομέτρων, εκτεινόμενος από την Ηγουμενίτσα στην Περιφέρεια της Θεσπρωτίας (βορειοδυτική ακτή της Ελλάδας) μέχρι τους Κήπους στην Περιφέρεια του Έβρου (στον συνοριακό σταθμό με την Τουρκία).
+                  Οι τρεις (3) κάθετοι οδικοί άξονες, με συνολικό μήκος 225 χιλιόμετρα, αποτελούν συνδέσεις με πλήρως ελεγχόμενες προσβάσεις της Εγνατίας Οδού με τις γείτονες χώρες. Ειδικότερα: (i) ο οδικός άξονας Σιάτιστα — Ιεροπηγή/Κρυσταλλοπηγή οδηγεί στην Αλβανία, (ii) ο οδικός άξονας Χαλάστρα — Εύζωνοι οδηγεί στην ΠΓΔΜ και (iii) ο οδικός άξονας Θεσσαλονίκη-Σέρρες-Προμαχώνας οδηγεί στη Βουλγαρία.
+                  Περισσότερες πληροφορίες για την Εγνατία Οδό και τους τρείς (3) κάθετους οδικούς άξονες περιλαμβάνονται στην Πρόσκληση.
+                  Σημειώνεται ότι κατά τη διάρκεια του Διαγωνισμού και πάντως πριν από την υποβολή των Δεσμευτικών Προσφορών, το Ταμείο, κατά την απόλυτη διακριτική του ευχέρεια, επιφυλάσσεται του δικαιώματός του να:
+                  (i) εξαιρέσει τον κάθετο οδικό άξονα Χαλάστρα — Εύζωνοι από το αντικείμενο της Σύμβασης Παραχώρησης ή/και
+                  (ii) συμπεριλάβει στο αντικείμενο της Σύμβασης Παραχώρησης και την αναβάθμιση οδικών τμημάτων ορισμένων εκ των Καθέτων Αξόνων συνολικού μήκους 54 χλμ. περίπου, σύμφωνα με τα ειδικότερα προβλεπόμενα στην Πρόσκληση.
+               """@el;
+  epo:hasPurpose epd:id_2017-S-220-457924_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-220-457924_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-220-457924_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-220-457924_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2017-S-220-457924_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-220-457924_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2017-11-14"^^xsd:date;
+  epo:hasID epd:id_2017-S-220-457924_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20171116";
+  epo:refersToLot epd:id_2017-S-220-457924_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2017-S-220-457924_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-220-457924_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 220-457924" .
+
+epd:id_2017-S-220-457924_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL303>;
+  locn:postCode "105 62";
+  locn:postName "Αθήνα";
+  locn:thoroughfare "Κολοκοτρώνη 1 και Σταδίου" .
+
+epd:id_2017-S-220-457924_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "117034801000" .
+
+epd:id_2017-S-220-457924_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Aνώνυμη εταιρεία του Ν 3986/2011 με μοναδικό μέτοχο την Ελληνική Εταιρεία Συμμετοχών και Περιουσίας Α.Ε. (Ν 4389/2016) το μετοχικό κεφάλαιο της οποίας ανήκει στο σύνολό του στο Ελληνικό Δημόσιο";
+  epo:hasID epd:id_2017-S-220-457924_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Ταμείο Αξιοποίησης Ιδιωτικής Περιουσίας Δημοσίου ΑΕ"@el;
+  epo:hasMainActivityDescription "αξιοποίηση ιδιωτικής περιουσίας δημοσίου";
+  cccev:registeredAddress epd:id_2017-S-220-457924_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-220-457924_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "117034801000" .
+
+epd:id_2017-S-220-457924_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/63712200> .
+
+epd:id_2017-S-220-457924_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-220-457924_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasDescription """
+               Η υπό ανάθεση σύμβαση αφορά στην παραχώρηση του δικαιώματος χρηματοδότησης, λειτουργίας, συντήρησης και εκμετάλλευσης του αυτοκινητόδρομου της Εγνατίας Οδού και των τριών (3) καθέτων προς αυτή οδικών αξόνων (i) Σιάτιστα — Ιεροπηγή/Κρυσταλλοπηγή, (ii) Χαλάστρα — Εύζωνοι και (iii) Θεσσαλονίκη-Σέρρες-Προμαχώνας, για χρονική περίοδο έως σαράντα (40) έτη κατ' ανώτατο όριο μέσω σύμβασης παραχώρησης υπηρεσιών (η «Σύμβαση Παραχώρησης»).
+            """@el;
+  epo:hasID epd:id_2017-S-220-457924_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-220-457924_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-220-457924_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Πρόσκληση υποβολής εκδήλωσης ενδιαφέροντος για την ανάθεση σύμβασης παραχώρησης υπηρεσιών για τη χρηματοδότηση, λειτουργία, συντήρηση και εκμετάλλευση της Εγνατίας Οδού και τριών καθέτων οδικών αξόνων.
+            """@el;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-220-457924_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-220-457924_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2017-S-220-457924_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-220-457924_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-220-457924_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-220-457924_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-220-457924_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Κάθε ενδιαφερόμενος, ο οποίος έχει ή είχε συμφέρον να του ανατεθεί η Σύμβαση Παραχώρησης και έχει υποστεί ή ενδέχεται να υποστεί ζημία από παράβαση της νομοθεσίας της Ευρωπαϊκής Ένωσης ή της εσωτερικής νομοθεσίας, δικαιούται να προσφύγει κατά σχετικής πράξης ή παράλειψης του Ταμείου σχετικά με τη διαγωνιστική διαδικασία ενώπιον του Διοικητικού Συμβουλίου αυτού εντός προθεσμίας δέκα (10) ημερολογιακών ημερών αφότου έλαβε πλήρη γνώση της παράνομης πράξης ή παράλειψης και να ζητήσει δικαστική προστασία σύμφωνα με τις προβλέψεις του άρθρου 60 του ν. 4413/2016 και τις κείμενες διατάξεις περί παροχής έννομης προστασίας κατά το στάδιο που προηγείται της σύναψης δημοσίων συμβάσεων.
+            """ .
+
+epd:id_2017-S-220-457924_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+30 2103274448";
+  epo:hasInternetAddress "www.hradf.com"^^xsd:anyURI;
+  cccev:email "info@hraf.gr";
+  cccev:telephone "+30 2103274400" .
+
+epd:id_2017-S-220-457924_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "105 62";
+  locn:postName "Αθήνα";
+  locn:thoroughfare "Κολοκοτρώνη 1 και Σταδίου" .
+
+epd:id_2017-S-220-457924_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Ταμείο Αξιοποίησης Ιδιωτικής Περιουσίας Δημοσίου ΑΕ. — Διοικητικό Συμβούλιο"@el;
+  epo:hasPrimaryContactPoint epd:id_2017-S-220-457924_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2017-S-220-457924_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-220-457924_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-220-457924_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-220-457924_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "EL", "EN" .
+
+epd:id_2017-S-220-457924_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-220-457924_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-220-457924_Organisation_jXahEP38X6pEFgd4J9tLvF .

@@ -1,0 +1,282 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-107-190808_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-107-190808_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-107-190808_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-107-190808_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "dr. Czencz László"@hu;
+  epo:hasFax "+36 17678321";
+  epo:hasInternetAddress "http://www.posta.hu"^^xsd:anyURI;
+  cccev:email "Czencz.Laszlo@posta.hu";
+  cccev:telephone "+36 307722309" .
+
+epd:id_2016-S-107-190808_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+Magyar Posta Zrt. Informatikai Raktár. 1149 Budapest XIV., Egressy út 35–51. (az eszközök leszállításának helye).
+"""@hu .
+
+epd:id_2016-S-107-190808_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq a locn:Address;
+  locn:fullAddress """
+Magyar Posta Zrt. Informatikai Raktár. 1149 Budapest XIV., Egressy út 35–51. (az eszközök leszállításának helye).
+"""@hu .
+
+epd:id_2016-S-107-190808_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU101>;
+  locn:address epd:id_2016-S-107-190808_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-107-190808_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU101>;
+  locn:address epd:id_2016-S-107-190808_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2016-S-107-190808_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-107-190808_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-107-190808_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+150 db nagy teljesítményű multifunkciós eszköz leszállítása, a leszállított eszközök 7 éves határozott időtartamban történő üzemeltetése, továbbá elszámoló rendszer licence biztosítása és elszámolórendszer bevezetése a fix mennyiségből fennmaradó 670 db eszközhöz és az opció keretében leszállított eszközökhöz, valamint ezen rendszer működésének 7 éves határozott időtartamban történő támogatása.
+"""@hu .
+
+epd:id_2016-S-107-190808_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-107-190808_Duration_Pn7seLvJsSm7d5S9iCwt2c;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-107-190808_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+700 db kis teljesítményű A/4-es multifunkciós eszköz leszállítása és ezen eszközök 5 éves határozott időtartamban történő üzemeltetése.
+"""@hu .
+
+epd:id_2016-S-107-190808_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-107-190808_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 84.0;
+  time:unitType time:unitMonth .
+
+epd:id_2016-S-107-190808_Duration_Pn7seLvJsSm7d5S9iCwt2c a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2016-S-107-190808_EAuctionTechniqueUsage_42ewgEwxZiroeKCXpa2kAY a epo:EAuctionTechniqueUsage .
+
+epd:id_2016-S-107-190808_LotIdentifier_aNssKXiFyYxii2v93ivV4N a epo:Identifier;
+  epo:hasIdentifierValue "1." .
+
+epd:id_2016-S-107-190808_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq a epo:Identifier;
+  epo:hasIdentifierValue "2." .
+
+epd:id_2016-S-107-190808_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/30121430>, <http://data.europa.eu/cpv/cpv/50310000> .
+
+epd:id_2016-S-107-190808_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/30121430>, <http://data.europa.eu/cpv/cpv/50310000> .
+
+epd:id_2016-S-107-190808_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-107-190808_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation """
+A II.2.7) pontban meghatározott időtartamot az első eszköz szerződésszerű üzembe helyezését rögzítő jegyzőkönyv aláírásának napjától kell számítani.
+Az üzemeltetési szolgáltatás, az elszámoló rendszer és a jótállási kötelezettségek teljesítésének helyei, valamint a lecserélni kívánt eszközökkel érintett helyszínek a Magyar Posta Zrt. magyarországi telephelyei.
+"""@hu;
+  epo:hasDescription """
+Fix mennyiség: 885 db nagy teljesítményű multifunkciós eszköz leszállítása, a leszállított eszközök 7 éves határozott időtartamban történő üzemeltetése, továbbá a leszállított eszközök közül 215 darab eszközhöz elszámoló rendszer licence biztosítása és elszámolórendszer bevezetése, továbbá ezen rendszer működésének 7 éves határozott időtartamban történő támogatása.
+A szállítandó nagy teljesítményű multifunkciós eszközök a fix mennyiség keretében:
+— 589 db monochrome A4 40 nyomat/perc;
+— 122 db monochrome A3 22 nyomat/perc;
+— 124 db monochrome A3 45 nyomat/perc;
+— 50 db színes A3 45 nyomat/perc finisher.
+"""@hu;
+  epo:hasEstimatedValue epd:id_2016-S-107-190808_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasID epd:id_2016-S-107-190808_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2016-S-107-190808_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:hasTitle """
+1. Ajánlati rész: Nagy teljesítményű multifunkciós eszközök.
+"""@hu;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-107-190808_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-107-190808_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasAdditionalInformation """
+A II.2.7) pontban meghatározott időtartamot az első eszköz szerződésszerű üzembe helyezését rögzítő jegyzőkönyv aláírásának napjától kell számítani.
+Az üzemeltetési szolgáltatás és a jótállási kötelezettségek teljesítésének helyei a Magyar Posta Zrt. magyarországi telephelyei.
+"""@hu;
+  epo:hasDescription """
+Fix mennyiség: 1 000 db kis teljesítményű A/4-es multifunkciós eszköz leszállítása és ezen eszközök 5 éves határozott időtartamban történő üzemeltetése.
+"""@hu;
+  epo:hasEstimatedValue epd:id_2016-S-107-190808_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasID epd:id_2016-S-107-190808_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2016-S-107-190808_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasTitle """
+2. Ajánlati rész: Kis teljesítményű multifunkciós eszközök.
+"""@hu;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-107-190808_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2016-S-107-190808_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2016-S-107-190808_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2016-S-107-190808_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2016-S-107-190808_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2016-S-107-190808_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2016-S-107-190808_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2016-S-107-190808_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2016-S-107-190808_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2016-S-107-190808_TenderReceiver_dk2esofbDLefiQsKcsKjh3;
+  epo:hasDispatchDate "2016-06-02"^^xsd:date;
+  epo:hasID epd:id_2016-S-107-190808_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20160604";
+  epo:refersToLot epd:id_2016-S-107-190808_Lot_aNssKXiFyYxii2v93ivV4N, epd:id_2016-S-107-190808_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:refersToProcedure epd:id_2016-S-107-190808_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-107-190808_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 107-190808" .
+
+epd:id_2016-S-107-190808_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU101>;
+  locn:postCode "1138";
+  locn:postName "Budapest";
+  locn:thoroughfare "Dunavirág u. 2–6." .
+
+epd:id_2016-S-107-190808_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "AK04804" .
+
+epd:id_2016-S-107-190808_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2016-S-107-190808_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "Magyar Posta Zrt. Beszerzési Igazgatóság"@hu;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/post>;
+  cccev:registeredAddress epd:id_2016-S-107-190808_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-107-190808_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2016-S-107-190808_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-107-190808_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/50310000> .
+
+epd:id_2016-S-107-190808_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:hasMaximumLotSubmissionAllowed 2 .
+
+epd:id_2016-S-107-190808_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-107-190808_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+A II.1.5) és II.2.6) pontokban az 1 HUF becsült érték programozási hiba miatt került feltüntetésre. Az ajánlatkérő jelen tájékoztatóban nem ismerteti a közbeszerzés becsült értékét.
+"""@hu;
+  epo:hasDescription """
+1. Ajánlati rész: Nagy teljesítményű multifunkciós eszközök leszállítása, üzemeltetése és elszámolórendszer bevezetése, működésének támogatása.
+2. Ajánlati rész: Kis teljesítményű multifunkciós eszközök leszállítása és üzemeltetése.
+"""@hu;
+  epo:hasEstimatedValue epd:id_2016-S-107-190808_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-107-190808_Lot_aNssKXiFyYxii2v93ivV4N,
+    epd:id_2016-S-107-190808_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2016-S-107-190808_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+Multifunkciós eszközök beszerzése és üzemeltetése.
+"""@hu;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-107-190808_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY,
+    epd:id_2016-S-107-190808_ReviewTerm_ZsxuomNURxGbRdavxJPhLN;
+  epo:usesTechnique epd:id_2016-S-107-190808_EAuctionTechniqueUsage_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2016-S-107-190808_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2016-07-08"^^xsd:date .
+
+epd:id_2016-S-107-190808_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-107-190808_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-107-190808_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-107-190808_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó utca 5." .
+
+epd:id_2016-S-107-190808_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828594" .
+
+epd:id_2016-S-107-190808_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Közbeszerzési Hatóság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2016-S-107-190808_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2016-S-107-190808_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2016-S-107-190808_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-107-190808_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2016-S-107-190808_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+A Kbt. 148. § (3) bekezdés rendelkezései szerint.
+""" .
+
+epd:id_2016-S-107-190808_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828594" .
+
+epd:id_2016-S-107-190808_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó u. 5." .
+
+epd:id_2016-S-107-190808_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2016-S-107-190808_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2016-S-107-190808_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2016-S-107-190808_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-107-190808_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2016-S-107-190808_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU101>;
+  locn:postCode "1138";
+  locn:postName "Budapest";
+  locn:thoroughfare "Dunavirág u. 2–6., Központi Irodaház, III. torony, III. emelet 9. szoba" .
+
+epd:id_2016-S-107-190808_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3
+  a cccev:ContactPoint;
+  epo:hasContactName "dr. Czencz László"@hu;
+  epo:hasFax "+36 17678321";
+  epo:hasInternetAddress "http://www.posta.hu"^^xsd:anyURI;
+  cccev:email "Czencz.Laszlo@posta.hu";
+  cccev:telephone "+36 307722309" .
+
+epd:id_2016-S-107-190808_TenderReceiverOrganisationIdentifier_dk2esofbDLefiQsKcsKjh3
+  a epo:Identifier;
+  epo:hasIdentifierValue "AK04804" .
+
+epd:id_2016-S-107-190808_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 a org:Organization;
+  epo:hasID epd:id_2016-S-107-190808_TenderReceiverOrganisationIdentifier_dk2esofbDLefiQsKcsKjh3;
+  epo:hasLegalName "Magyar Posta Zrt. Beszerzési Igazgatóság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2016-S-107-190808_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  cccev:registeredAddress epd:id_2016-S-107-190808_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3 .
+
+epd:id_2016-S-107-190808_TenderReceiver_dk2esofbDLefiQsKcsKjh3 a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-107-190808_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  epo:playedBy epd:id_2016-S-107-190808_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 .

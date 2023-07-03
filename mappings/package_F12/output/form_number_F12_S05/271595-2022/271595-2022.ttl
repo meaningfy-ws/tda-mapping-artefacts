@@ -1,0 +1,125 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-098-271595_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://www.klekoon.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2022-S-098-271595_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "http://www.klekoon.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-098-271595_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2022-S-098-271595_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-098-271595_Channel_G9uAqcYuooZwAU3Pwzv6eq a cccev:Channel;
+  epo:hasURL "http://www.klekoon.com"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2022-S-098-271595_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Noura RIANE"@fr;
+  epo:hasInternetAddress "http://www.klekoon.com"^^xsd:anyURI;
+  cccev:email "nriane@ehpad-sainghin.fr" .
+
+epd:id_2022-S-098-271595_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2022-S-098-271595_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-098-271595_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2022-S-098-271595_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
+    cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.klekoon.com"^^xsd:anyURI;
+  cccev:email "nriane@ehpad-sainghin.fr" .
+
+epd:id_2022-S-098-271595_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "59184";
+  locn:postName "Sainghin-en-Weppes" .
+
+epd:id_2022-S-098-271595_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y a
+    org:Organization;
+  epo:hasLegalName "ehpad Résidence de la Vigne"@fr;
+  cccev:registeredAddress epd:id_2022-S-098-271595_InformationProviderOrganisationAddress_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2022-S-098-271595_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71200000>, <http://data.europa.eu/cpv/cpv/71300000> .
+
+epd:id_2022-S-098-271595_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-098-271595_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "le titulaire du marché se verra confier une mission de maîtrise d'oeuvre telle que définie dans les pièces du marché, étant précisé que la mission de maitrise d'oeuvre sera une mission de base a&#768; laquelle seront ajoutées des missions complémentaires au sens des articles R. 2431-1 et suivants du Code de la commande publique. Les prestations attendues seront décrites précisément dans les pièces du dossier de consultation \" Phase offre \", remis aux seuls candidats admis a&#768; remettre une offre. "@fr;
+  epo:hasPurpose epd:id_2022-S-098-271595_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-098-271595_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-098-271595_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2022-S-098-271595_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
+    epd:id_2022-S-098-271595_Reviewer_gQh8JdpqsE2bYBRikawiBu;
+  epo:hasDispatchDate "2022-05-16"^^xsd:date;
+  epo:hasID epd:id_2022-S-098-271595_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220520";
+  epo:refersToLot epd:id_2022-S-098-271595_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2022-S-098-271595_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2022-S-098-271595_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 098-271595" .
+
+epd:id_2022-S-098-271595_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "59184";
+  locn:postName "Sainghin-en-Weppes" .
+
+epd:id_2022-S-098-271595_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalTypeDescription "EHPAD";
+  epo:hasLegalName "ehpad Résidence de la vigne"@fr;
+  epo:hasMainActivityDescription "EHPAD";
+  cccev:registeredAddress epd:id_2022-S-098-271595_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2022-S-098-271595_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "22-69110" .
+
+epd:id_2022-S-098-271595_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2022-S-098-271595_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasID epd:id_2022-S-098-271595_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-098-271595_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2022-S-098-271595_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "ehpad de demain des Weppes"@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-098-271595_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2022-S-098-271595_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR;
+  epo:usesChannel epd:id_2022-S-098-271595_Channel_G9uAqcYuooZwAU3Pwzv6eq .
+
+epd:id_2022-S-098-271595_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-098-271595_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y;
+  epo:playedBy epd:id_2022-S-098-271595_InformationProviderOrganisation_ejikeUyHJRYBkbdZUxEu3Y .
+
+epd:id_2022-S-098-271595_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  cccev:email "greffe.ta-lille@juradm.fr" .
+
+epd:id_2022-S-098-271595_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "59014";
+  locn:postName "Lille";
+  locn:thoroughfare "5 rue Geoffroy St Hilaire" .
+
+epd:id_2022-S-098-271595_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "tribunal admnistratif de lille"@fr;
+  epo:hasPrimaryContactPoint epd:id_2022-S-098-271595_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2022-S-098-271595_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2022-S-098-271595_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-098-271595_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2022-S-098-271595_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.klekoon.com"^^xsd:anyURI .

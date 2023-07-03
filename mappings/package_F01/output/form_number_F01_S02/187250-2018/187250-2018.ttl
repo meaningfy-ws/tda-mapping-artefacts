@@ -1,0 +1,252 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-083-187250_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.wolski.med.pl"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-083-187250_AwardCriterionPrice_QsHhEb8qeRoGKduZGovcmd a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "60"@pl .
+
+epd:id_2018-S-083-187250_AwardCriterionQuality_TySXXue7qn8NbkZuJfAeue a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Ocena w zakresie zgodności z programem funkcjonalnym oraz walorów użytkowych i estetycznych."@pl;
+  cccev:weight "40"@pl .
+
+epd:id_2018-S-083-187250_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "www.wolski.med.pl"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-083-187250_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2018-S-083-187250_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2018-S-083-187250_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Sekcja Zamówień Publicznych, pawilon nr 6 wejście K, parter"@pl;
+  epo:hasFax "+48 223894922";
+  epo:hasInternetAddress "www.wolski.med.pl"^^xsd:anyURI;
+  cccev:email "zamowieniapubliczne@wolski.med.pl";
+  cccev:telephone "+48 223894806 / 223894859" .
+
+epd:id_2018-S-083-187250_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL911> .
+
+epd:id_2018-S-083-187250_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-083-187250_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-083-187250_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2018-S-083-187250_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEPayment true .
+
+epd:id_2018-S-083-187250_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 10.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-083-187250_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt a
+    cccev:ContactPoint;
+  epo:hasContactName "Eliza Gajowczyk"@pl;
+  epo:hasFax "+48 2238-94-922";
+  epo:hasInternetAddress "www.wolski.med.pl"^^xsd:anyURI;
+  cccev:email "zamowieniapubliczne@wolski.med.pl";
+  cccev:telephone "+48 2238-94-808" .
+
+epd:id_2018-S-083-187250_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL911>;
+  locn:postCode "01-211";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Kasprzaka 17" .
+
+epd:id_2018-S-083-187250_InformationProviderOrganisationIdentifier_GsdtayWioy84inXsY2sGzt
+  a epo:Identifier;
+  epo:hasIdentifierValue "011035381" .
+
+epd:id_2018-S-083-187250_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt a
+    org:Organization;
+  epo:hasID epd:id_2018-S-083-187250_InformationProviderOrganisationIdentifier_GsdtayWioy84inXsY2sGzt;
+  epo:hasLegalName "Szpital Wolski im. dr Anny Gostyńskiej, Samodzielny Publiczny Zakład Opieki Zdrowotnej"@pl;
+  cccev:registeredAddress epd:id_2018-S-083-187250_InformationProviderOrganisationAddress_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2018-S-083-187250_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-083-187250_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation """
+                  Do oferty Wykonawca będzie zobowiązany dołączyć opracowaną koncepcję. Koncepcja będzie podlegała ocenie w zakresie zgodności z programem funkcjonalnym oraz walorów użytkowych i estetycznych. Oceny dokona zespół złożony z osób będących m.in. przyszłymi użytkownikami przebudowanego obiektu.
+               """@pl;
+  epo:hasDescription """
+                  Przedmiotem zamówienia jest opracowanie kompletnej dokumentacji projektowo-kosztorysowej przebudowy pawilonu nr 10 na potrzeby Rehabilitacji Kardiologicznej i Neurologicznej wraz z zapleczem dydaktycznym, w tym: opracowanie koncepcji, projektu technologii medycznej, projektu budowlanego, wykonawczego we wszystkich branżach: tj. architektura, konstrukcja, instalacje sanitarne w tym instalacja wentylacji mechanicznej, wod-kan, c.o., instalacje elektryczne, niskoprądowe, SSP, gazów medycznych, uzgodnienia z rzeczoznawcami, ekspertyzy, opracowanie kosztorysów inwestorskich, przedmiarowych, STWiOR, projekt aranżacji wnętrz.
+                  Pawilon nr 10 jest obiektem wybudowanym na przełomie XIX i XX wieku, trzykondygnacyjnym, podpiwniczonym o powierzchni całkowitej netto ok. 3 000 m2. Budynek objęty jest ochroną konserwatorską - znajduje się w wykazie zabytków w gminnej ewidencji zabytków m.st. Warszawy. Obecna funkcja szpitalna. Budynek od wielu lat nie remontowany.
+                  Dokumentacja projektowa obejmować będzie przebudowę pomieszczeń na cele Oddziału Dziennej Rehabilitacji Kardiologicznej oraz Oddziału Rehabilitacji Neurologicznej. W budynku planuje się zorganizowanie zaplecza dydaktycznego z salą wykładową oraz pomieszczeń pomocniczych dla obu oddziałów. Projekt budowlany musi być uzgodniony z rzeczoznawcą ds. sanitarno - epidemiologicznych i ppoż. Jeżeli będzie to niezbędne dla realizacji zamówienia Zamawiający wymagać będzie również wykonania ekspertyzy pożarowej wraz z jej zatwierdzeniem w KWPSP oraz niezbędnych ekspertyz technicznych.
+                  Szczegółowy opis przedmiotu zamówienia będzie określony w programie funkcjonalnym załączonym do siwz.
+                  Wykonawca przedstawi koncepcję zawierającą krótką część opisową oraz rysunkową z rzutami poszczególnych kondygnacji zawierającymi niezbędne informacje o wprowadzonych zmianach. Koncepcja opracowana przez Wykonawcę i dołączona do oferty będzie podlegała ocenie w zakresie zgodności z programem funkcjonalnym oraz walorów użytkowych i estetycznych.
+               """@pl;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-083-187250_AwardCriterionPrice_QsHhEb8qeRoGKduZGovcmd,
+    epd:id_2018-S-083-187250_AwardCriterionQuality_TySXXue7qn8NbkZuJfAeue .
+
+epd:id_2018-S-083-187250_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J a cccev:ContactPoint;
+  epo:hasFax "+48 224587800";
+  epo:hasInternetAddress "http://www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2018-S-083-187250_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17A" .
+
+epd:id_2018-S-083-187250_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza"@pl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-083-187250_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J;
+  cccev:registeredAddress epd:id_2018-S-083-187250_MediatorOrganisationAddress_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2018-S-083-187250_Mediator_2t4SUwdC66NGJuVrEY4e6J a epo:Mediator;
+  epo:playedBy epd:id_2018-S-083-187250_MediatorOrganisation_2t4SUwdC66NGJuVrEY4e6J .
+
+epd:id_2018-S-083-187250_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2018-S-083-187250_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2018-S-083-187250_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2018-S-083-187250_Mediator_2t4SUwdC66NGJuVrEY4e6J,
+    epd:id_2018-S-083-187250_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt,
+    epd:id_2018-S-083-187250_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2018-S-083-187250_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2018-S-083-187250_TenderReceiver_73uj4vyPgHgRhfhM7wvqXG;
+  epo:hasDispatchDate "2018-04-27"^^xsd:date;
+  epo:hasID epd:id_2018-S-083-187250_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20180428";
+  epo:refersToLot epd:id_2018-S-083-187250_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2018-S-083-187250_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2018-S-083-187250_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 083-187250" .
+
+epd:id_2018-S-083-187250_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL911>;
+  locn:postCode "01-211";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Kasprzaka 17" .
+
+epd:id_2018-S-083-187250_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "011035381" .
+
+epd:id_2018-S-083-187250_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2018-S-083-187250_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Szpital Wolski im. dr Anny Gostyńskiej, Samodzielny Publiczny Zakład Opieki Zdrowotnej"@pl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2018-S-083-187250_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2018-S-083-187250_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2018-S-083-187250_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2018-S-083-187250_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71220000> .
+
+epd:id_2018-S-083-187250_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-083-187250_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription """
+               Opracowanie kompletnej dokumentacji projektowo-kosztorysowej przebudowy pawilonu nr 10 na potrzeby Rehabilitacji Kardiologicznej i Neurologicznej wraz z zapleczem dydaktycznym, w tym opracowanie koncepcji, projektu technologii medycznej, projektu budowlanego, wykonawczego we wszystkich branżach: tj. architektura, konstrukcja, instalacje sanitarne w tym instalacja wentylacji mechanicznej, wod-kan, c.o., instalacje elektryczne, niskoprądowe, SSP, gazów medycznych, uzgodnienia z rzeczoznawcami, ekspertyzy, opracowanie kosztorysów inwestorskich, przedmiarowych, STWiOR.
+            """@pl;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-083-187250_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2018-S-083-187250_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+               Opracowanie dokumentacji projektowo-kosztorysowej przebudowy pawilonu nr 10 na potrzeby Rehabilitacji Kardiologicznej i Neurologicznej wraz z zapleczem dydaktycznym
+            """@pl;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-083-187250_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2018-S-083-187250_ReviewTerm_KjhWjVv578XNpvpTRjZhAs .
+
+epd:id_2018-S-083-187250_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2018-06-04"^^xsd:date .
+
+epd:id_2018-S-083-187250_ProcurementProcedureInformationProvider_GsdtayWioy84inXsY2sGzt
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-083-187250_InformationProviderContactPoint_GsdtayWioy84inXsY2sGzt;
+  epo:playedBy epd:id_2018-S-083-187250_InformationProviderOrganisation_GsdtayWioy84inXsY2sGzt .
+
+epd:id_2018-S-083-187250_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17A" .
+
+epd:id_2018-S-083-187250_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  epo:hasFax "+48 224587800";
+  epo:hasInternetAddress "http://www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2018-S-083-187250_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Urząd Zamówień Publicznych Departament Odwołań"@pl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-083-187250_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2018-S-083-187250_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2018-S-083-187250_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-083-187250_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2018-S-083-187250_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Termin na składanie odwołań są określone w Dziale VI ustawy Prawo zamówień publicznych.
+            """ .
+
+epd:id_2018-S-083-187250_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+48 224587800";
+  epo:hasInternetAddress "http://www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_2018-S-083-187250_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17A" .
+
+epd:id_2018-S-083-187250_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Krajowa Izba Odwoławcza"@pl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-083-187250_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2018-S-083-187250_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2018-S-083-187250_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-083-187250_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2018-S-083-187250_TenderReceiverOrganisationAddress_73uj4vyPgHgRhfhM7wvqXG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL>;
+  locn:postCode "01-211";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Kasprzaka 17" .
+
+epd:id_2018-S-083-187250_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG
+  a cccev:ContactPoint;
+  epo:hasContactName "Eliza Gajowczyk"@pl;
+  epo:hasFax "+48 223894922";
+  epo:hasInternetAddress "www.wolski.med.pl"^^xsd:anyURI;
+  cccev:email "zamowieniapubliczne@wolski.med.pl";
+  cccev:telephone "+48 223894808" .
+
+epd:id_2018-S-083-187250_TenderReceiverOrganisation_73uj4vyPgHgRhfhM7wvqXG a org:Organization;
+  epo:hasLegalName "Kancelaria Ogólna Szpitala, pawilon nr 2, parter"@pl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-083-187250_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG;
+  cccev:registeredAddress epd:id_2018-S-083-187250_TenderReceiverOrganisationAddress_73uj4vyPgHgRhfhM7wvqXG .
+
+epd:id_2018-S-083-187250_TenderReceiver_73uj4vyPgHgRhfhM7wvqXG a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-083-187250_TenderReceiverOrganisationContactPoint_73uj4vyPgHgRhfhM7wvqXG;
+  epo:playedBy epd:id_2018-S-083-187250_TenderReceiverOrganisation_73uj4vyPgHgRhfhM7wvqXG .

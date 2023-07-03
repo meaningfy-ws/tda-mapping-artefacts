@@ -1,0 +1,203 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-021-035239_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.antagonistikotita.gr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-021-035239_AwardCriterionPrice_QsHhEb8qeRoGKduZGovcmd a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2017-S-021-035239_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-021-035239_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2017-S-021-035239_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-021-035239_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Χρήστος Καρακάσης"@el;
+  epo:hasFax "+30 2107473666";
+  epo:hasInternetAddress "www.antagonistikotita.gr"^^xsd:anyURI;
+  cccev:email "ch.karakasis@mou.gr";
+  cccev:telephone "+30 2107450864" .
+
+epd:id_2017-S-021-035239_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress """
+Μεσογείων 56, ΤΚ: 11527, Αθήνα.
+"""@el .
+
+epd:id_2017-S-021-035239_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  locn:address epd:id_2017-S-021-035239_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2017-S-021-035239_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2017-S-021-035239_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-021-035239_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+Η σύμβαση δύναται να παραταθεί για επιπλέον 3 έτη, χωρίς να είναι δεσμευτικό για την Αναθέτουσα Αρχή. Στην περιγραφόμενη, ανωτέρω, τιμή συμπεριλαμβάνονται και τα δικαιώματα προαίρεσης.
+"""@el .
+
+epd:id_2017-S-021-035239_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEPayment true .
+
+epd:id_2017-S-021-035239_Fund_c4Jggv3QHLrvEuoxvHMwcK a epo:Fund;
+  epo:hasDescription "2016ΣΕ11910001."@el .
+
+epd:id_2017-S-021-035239_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-021-035239_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription """
+Πρόγραμμα Καθαρισμού (5 φορές ανά εβδομάδα):
+Γενική καθαριότητα χώρων της υπηρεσίας 1/μήνα.
+Χώροι γραφείων.
+Σκούπισμα, σφουγγάρισμα δαπέδων.
+Καθάρισμα αποτυπωμάτων χεριών από πόρτες,τοίχους,επίπλων γραφείου, βιβλιοθηκών, άδειασμα καλαθιών, κάδων ανακύκλωσης, αποκομιδή σκουπιδιών.
+Κουζίνες
+επισταμένη καθαριότητα,πλύσιμο σκευών,καθώς και πάγκων εργασίας και νεροχυτών.
+Τουαλέτες
+Σκούπισμα, σφουγγάρισμα δαπέδων,άδειασμα σκουπιδιών,τοποθέτηση σάκων απορριμμάτων στα καλάθια αχρήστων, καθάρισμα καθρεπτών.
+Πλύσιμο, απολύμανση με βακτηριοκτόνο απορρυπαντικό λεκανών, νιπτήρων και πλακιδίων γύρω από νιπτήρες και λεκάνες.
+Πλύσιμο πλακιδίων τοίχων σε όλο το ύψος, 1/εβδομάδα.
+Σφουγγάρια, σφουγγαρίστρες κ.α. αποκλειστικά για το χώρο των τουαλετών.
+Καθαρισμός υαλοπινάκων
+Καθαρισμός όλων των υαλοπινάκων των χώρων γραφείων εσωτερικά και εξωτερικά (όπου είναι προσβάσιμα), 1/μήνα.
+Εξωτερικοί χώροι
+Σκούπισμα,σφουγγάρισμα βεραντών, καθάρισμα φρεατίων από σκουπίδια και φύλλα (έκτακτα όποτε είναι απαραίτητο).
+"""@el;
+  epo:hasEstimatedValue epd:id_2017-S-021-035239_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isFundedBy epd:id_2017-S-021-035239_Fund_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-021-035239_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2017-S-021-035239_AwardCriterionPrice_QsHhEb8qeRoGKduZGovcmd .
+
+epd:id_2017-S-021-035239_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 350000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-021-035239_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 350000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-021-035239_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
+
+epd:id_2017-S-021-035239_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2017-S-021-035239_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2017-S-021-035239_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2017-S-021-035239_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2017-S-021-035239_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2017-S-021-035239_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2017-S-021-035239_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2017-01-27"^^xsd:date;
+  epo:hasID epd:id_2017-S-021-035239_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20170131";
+  epo:refersToLot epd:id_2017-S-021-035239_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2017-S-021-035239_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2017-S-021-035239_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 021-035239" .
+
+epd:id_2017-S-021-035239_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "115 27";
+  locn:postName "Αθήνα";
+  locn:thoroughfare "Μεσογείων 56" .
+
+epd:id_2017-S-021-035239_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasLegalName "Ειδική Υπηρεσία Διαχείρισης «Ανταγωνιστικότητα, Επιχειρηματικότητα και Καινοτομία»"@el;
+  epo:hasMainActivityDescription "ειδική υπηρεσία διαχείρισης επιχειρησιακού προγράμματος, ΕΣΠΑ";
+  cccev:registeredAddress epd:id_2017-S-021-035239_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-021-035239_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2017-06-05"^^xsd:date;
+  epo:hasEnd "2020-06-04"^^xsd:date .
+
+epd:id_2017-S-021-035239_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2017-S-021-035239_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2017-S-021-035239_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/90919200> .
+
+epd:id_2017-S-021-035239_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-021-035239_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription """
+Υπηρεσίες καθαρισμού γραφείων, που στεγάζονται στο κτίριο της οδού Μεσογείων 56, Αθήνα, εμβαδού 2 150 m² περίπου, χώροι γραφείων (ισόγειο έως 6ο όροφο), καθώς και εξωτερικών χώρων-βεράντες.
+Η προσφορά πρέπει να περιλαμβάνει:
+— Προσφερόμενη τιμή/μήνα, μη συμπεριλαμβανομένου ΦΠΑ,
+— αριθμό εργαζομένων,
+— ημέρες και ώρες εργασίας,
+— ύψος του προϋπολογιζόμενου ποσού που αφορά πάσης φύσεως νόμιμες αποδοχές των εργαζομένων,
+— ύψος ασφαλιστικών εισφορών με βάση τα προϋπολογισθέντα ποσά,
+— τετραγωνικά μέτρα καθαρισμού ανά άτομο,
+— αντίγραφο της συλλογικής σύμβασης εργασίας στην οποία υπάγονται οι εργαζόμενοι,
+— εύλογο ποσοστό διοικητικού κόστους,
+— εργολαβικό κέρδος και νόμιμες υπέρ Δημοσίου, ΦΚΑ & τρίτων, κρατήσεις,
+Ανάλογα με τις ώρες εργασίας του κάθε ατόμου απαιτούνται:
+3 άτομα 9:00–17:00
+7 άτομα 17:00-22:00
+Ο ανάδοχος θα πρέπει να διαθέτει:
+— κατάλληλα εργαλεία και μηχανήματα καθαρισμού,
+— πλαστικούς σάκους αποκομιδής αποκομιδής,
+— απορρυπαντικά και απολυμαντικά καθαρισμού πατωμάτων εγκεκριμένα από τον ΕΟΦ.
+"""@el;
+  epo:hasEstimatedValue epd:id_2017-S-021-035239_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-021-035239_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2017-S-021-035239_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+Υπηρεσίες καθαριότητας των γραφείων που στεγάζεται η ΕΥΔ ΕΠΑΝΕΚ.
+"""@el;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-021-035239_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2017-S-021-035239_ReviewTerm_KjhWjVv578XNpvpTRjZhAs .
+
+epd:id_2017-S-021-035239_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2017-03-13"^^xsd:date .
+
+epd:id_2017-S-021-035239_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-021-035239_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2017-S-021-035239_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2017-S-021-035239_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postName "Αθήνα" .
+
+epd:id_2017-S-021-035239_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "ΕΥΔ ΕΠΑνΕΚ"@el;
+  cccev:registeredAddress epd:id_2017-S-021-035239_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2017-S-021-035239_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-021-035239_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2017-S-021-035239_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Ό,τι αναφέρεται στο ν.4412/2016 και ειδικότερα στο «βιβλίο IV Έννομη Προστασία κατά τη Σύναψη Δημοσίων Συμβάσεων».
+""" .
+
+epd:id_2017-S-021-035239_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postName "Αθήνα" .
+
+epd:id_2017-S-021-035239_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Η Αρχή Εξέτασης Προδικαστικών Προσφυγών του αρ. 347 του ν.4412/2016 και το Διοικητικό Εφετείο Αθηνών"@el;
+  cccev:registeredAddress epd:id_2017-S-021-035239_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2017-S-021-035239_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-021-035239_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2017-S-021-035239_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-021-035239_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2017-S-021-035239_Organisation_gqoAAwSV3JaTMsopb9zyKP .

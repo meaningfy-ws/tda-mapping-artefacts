@@ -1,0 +1,165 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-087-196355_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.gaiaose.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-087-196355_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-087-196355_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-087-196355_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-087-196355_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "ΓΑΙΑΟΣΕ Α.Ε."@el;
+  epo:hasFax "+30 2108318558";
+  epo:hasInternetAddress "www.gaiaose.gr"^^xsd:anyURI;
+  cccev:email "gaiaose@gaiaose.gr";
+  cccev:telephone "+30 2108318158" .
+
+epd:id_2018-S-087-196355_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+                  Το γεωτεμάχιο με Α.Κ. 11892 με έκταση περί τα 670 στρέμματα, βρίσκεται στη Δημοτική Κοινότητα Διαβατών της Δημοτικής Ενότητας Εχεδώρου του Δήμου Δέλτα Ν. Θεσσαλονίκης.
+               """@el .
+
+epd:id_2018-S-087-196355_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL>;
+  locn:address epd:id_2018-S-087-196355_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-087-196355_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-087-196355_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-087-196355_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-087-196355_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2018-S-087-196355_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 600.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-087-196355_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/63110000>, <http://data.europa.eu/cpv/cpv/63120000> .
+
+epd:id_2018-S-087-196355_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-087-196355_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+                  Ο Παραχωρησιούχος θα αναλάβει την υλοποίηση του Έργου σύμφωνα με τα ειδικότερα προβλεπόμενα στη Σύμβαση Παραχώρησης. Στο πλαίσιο του Έργου, ο Παραχωρησιούχος θα αναλάβει τη μελέτη, κατασκευή, χρηματοδότηση, λειτουργία, συντήρηση και εκμετάλλευση του Εμπορευματικού Κέντρου. Το Τεχνικό Έργο αφορά στην ανάπτυξη του Εμπορευματικού Κέντρου και των υποδομών αυτού, σύμφωνα με τους περιορισμούς της ισχύουσας νομοθεσίας και ειδικότερα το σύνολο των υποδομών εντός του Ακινήτου, η διαμόρφωση του εσωτερικού οδικού δικτύου, η εγκατάσταση των υποδομών πάσης φύσεων δικτύων και υποστηρικτικών εγκαταστάσεων για την απρόσκοπτη λειτουργία αυτών (υποσταθμοί κ.λπ.), η δημιουργία δικτύου ύδρευσης, αποχέτευσης, συλλογής ομβρίων, δικτύου τηλεπικοινωνιών κ.λπ., καθώς και έργα διαμόρφωσης του περιβάλλοντος χώρου. Ειδικότερα περιλαμβάνεται: (α) η κατασκευή των εσωτερικών έργων υποδομής, όπως οδικών δικτύων, δικτύων αποχέτευσης ομβρίων και ακαθάρτων, δικτύων ηλεκτροφωτισμού και επικοινωνιών, έργων διαμόρφωσης τοπίου· (β) η υλοποίηση εντός του Ακινήτου έργων με σκοπό τη σύνδεση με υφιστάμενα ή προγραμματισμένα δίκτυα συγκοινωνιακής υποδομής διαφορετικών μέσων μεταφοράς· (γ) η δημιουργία χώρων διοίκησης και υποστηρικτικών λειτουργιών, όπως σταθμού εξυπηρέτησης οχημάτων και αυτοκινητιστών, χώρων ανάπτυξης συστημάτων τηλεματικής και πληροφορικής, χώρων στάθμευσης, τελωνείου και υγειονομικών υπηρεσιών. Σε κάθε περίπτωση και ανεξαρτήτως των ανωτέρω, το αντικείμενο του Τεχνικού Έργου θα οριστικοποιηθεί κατά το Στάδιο Β.Ι της Β’ Φάσης του Διαγωνισμού, κατά την οποία θα καθοριστεί ο βασικός σχεδιασμός του Έργου και, επιπροσθέτως, δύναται να διαμορφωθεί το προγραμματικό σχέδιο ανάπτυξης εμπορευματικού κέντρου (master plan), σύμφωνα με όσα προβλέπονται στο άρθρο 4.4 της Πρόσκλησης. Ο Παραχωρησιούχος θα φροντίσει ώστε το Εμπορευματικό Κέντρο να κατασκευαστεί και συντηρηθεί κατά τέτοιο τρόπο ώστε να επιτρέπει την αδιάλειπτη και αποδοτική λειτουργία του καθώς και την απόδοσή του στην Αναθέτουσα Αρχή κατά την πάροδο της διάρκειας της Παραχώρησης, σύμφωνα με τα ειδικότερα οριζόμενα στη Σύμβαση Παραχώρησης. Ο Παραχωρησιούχος βαρύνεται με την υποχρέωση έκδοσης, αναθεώρησης και διατήρησης σε πλήρη ισχύ όλων των απαραίτητων αδειών και εγκρίσεων που απαιτούνται τόσο για την κατασκευή όσο και για την εγκατάσταση και λειτουργία και συντήρηση του Εμπορευματικού Κέντρου, σύμφωνα με την κείμενη νομοθεσία και τα ειδικότερα οριζόμενα στη Σύμβαση Παραχώρησης. Ο Παραχωρησιούχος θα καταρτίσει Κανονισμό Λειτουργίας του Εμπορευματικού Κέντρου, σύμφωνα με τα ειδικότερα οριζόμενα στη Σύμβαση Παραχώρησης. Ο Παραχωρησιούχος, με δαπάνες του, θα έχει την ευθύνη, για την ασφάλιση, συντήρηση, φύλαξη, καθαριότητα και επισκευή (στο μέτρο που απαιτείται) του Εμπορευματικού Κέντρου, σύμφωνα με τα ειδικότερα οριζόμενα στη Σύμβαση Παραχώρησης.
+               """@el;
+  epo:hasEstimatedValue epd:id_2018-S-087-196355_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-087-196355_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-087-196355_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 215000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-087-196355_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 215000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-087-196355_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-087-196355_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2018-S-087-196355_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2018-S-087-196355_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2018-S-087-196355_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2018-S-087-196355_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2018-05-03"^^xsd:date;
+  epo:hasID epd:id_2018-S-087-196355_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20180505";
+  epo:refersToLot epd:id_2018-S-087-196355_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2018-S-087-196355_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2018-S-087-196355_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 087-196355" .
+
+epd:id_2018-S-087-196355_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL>;
+  locn:postCode "104 45";
+  locn:postName "Αθήνα";
+  locn:thoroughfare "Λιοσίων 301" .
+
+epd:id_2018-S-087-196355_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasLegalName "ΓΑΙΑΟΣΕ Ανώνυμη Εταιρεία Διαχείρισης Σιδηροδρομικής Περιουσίας"@el;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2018-S-087-196355_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-087-196355_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "4/2018" .
+
+epd:id_2018-S-087-196355_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45213000> .
+
+epd:id_2018-S-087-196355_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-087-196355_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasDescription """
+               Αντικείμενο της προκήρυξης είναι η διενέργεια διεθνούς διαγωνισμού με ανταγωνιστικό διάλογο για την ανάθεση σύμβασης παραχώρησης του έργου «Μελέτη, κατασκευή, χρηματοδότηση, λειτουργία, συντήρηση και εκμετάλλευση εμπορευματικού κέντρου στον χώρο του πρώην στρατοπέδου Γκόνου στη Θεσσαλονίκη». Σκοπός της παραχώρησης είναι η μελέτη, κατασκευή, χρηματοδότηση, λειτουργία, συντήρηση και εκμετάλλευση εμπορευματικού κέντρου συνδυασμένων μεταφορών, το οποίο θα σχεδιαστεί, υλοποιηθεί και θα λειτουργήσει σύμφωνα με τα διεθνή πρότυπα. το οποίο θα σχεδιαστεί, υλοποιηθεί και θα λειτουργήσει σύμφωνα με τα διεθνή πρότυπα και θα αποτελέσει ενδιάμεσο σταθμό στη διεθνή μεταφορική αλυσίδα.
+            """@el;
+  epo:hasEstimatedValue epd:id_2018-S-087-196355_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2018-S-087-196355_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-087-196355_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-087-196355_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Διαγωνισμός με ανταγωνιστικό διάλογο για την παραχώρηση του έργου «Μελέτη, κατασκευή, χρηματοδότηση, λειτουργία, συντήρηση και εκμετάλλευση εμπορευματικού κέντρου στον χώρο του πρώην στρατοπέδου Γκόνου»
+            """@el;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-087-196355_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2018-S-087-196355_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2018-S-087-196355_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2018-S-087-196355_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-087-196355_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-087-196355_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-087-196355_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postName "Αθήνα" .
+
+epd:id_2018-S-087-196355_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Αρχή Εξέτασης Προδικαστικών Προσφυγών (Α.Ε.Π.Π.)"@el;
+  cccev:registeredAddress epd:id_2018-S-087-196355_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-087-196355_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-087-196355_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2018-S-087-196355_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Σύμφωνα με τις διατάξεις του άρθρου 60 του ν. 4413/2016 και τις διατάξεις του βιβλίου IV του ν. 4412/2016, κάθε ενδιαφερόμενος, ο οποίος έχει ή είχε συμφέρον να του ανατεθεί η συγκεκριμένη σύμβαση και έχει ή είχε υποστεί ή ενδέχεται να υποστεί ζημία από εκτελεστή πράξη ή παράλειψη της Αναθέτουσας Αρχής κατά παράβαση της νομοθεσίας της Ευρωπαϊκής Ένωσης ή της εσωτερικής νομοθεσίας, δικαιούται να ασκήσει προδικαστική προσφυγή ενώπιον της Αρχής Εξέτασης Προδικαστικών Προσφυγών (Α.Ε.Π.Π.) κατά της σχετικής πράξης ή παράλειψης της Αναθέτουσας Αρχής, προσδιορίζοντας ειδικώς τις νομικές και πραγματικές αιτιάσεις που δικαιολογούν το αίτημά του. Σε περίπτωση προσφυγής κατά πράξης της Αναθέτουσας Αρχής, η προθεσμία για την άσκηση της προδικαστικής προσφυγής είναι: 
+               (α) δέκα (10) ημέρες από την κοινοποίηση της προσβαλλόμενης πράξης στον ενδιαφερόμενο οικονομικό φορέα αν η πράξη κοινοποιήθηκε με ηλεκτρονικά μέσα ή τηλεομοιοτυπία, ή 
+               (β) δεκαπέντε (15) ημέρες από την κοινοποίηση της προσβαλλόμενης πράξης σε αυτόν αν χρησιμοποιήθηκαν άλλα μέσα επικοινωνίας, άλλως 
+               (γ) δέκα (10) ημέρες από την πλήρη, πραγματική ή τεκμαιρόμενη, γνώση της πράξης που βλάπτει τα συμφέροντα του ενδιαφερόμενου οικονομικού φορέα. 
+               Σε περίπτωση παράλειψης, η προθεσμία για την άσκηση της προδικαστικής προσφυγής είναι δεκαπέντε (15) ημέρες από την επομένη της συντέλεσης της προσβαλλόμενης παράλειψης.
+               Η προδικαστική προσφυγή, με βάση και τα όσα προβλέπονται στο π.δ. 39/2017, κατατίθεται ηλεκτρονικά στην Α.Ε.Π.Π. μέσω ηλεκτρονικού ταχυδρομείου (e-mail) στη διεύθυνση ηλεκτρονικού ταχυδρομείου της Α.Ε.Π.Π.. Ως ημερομηνία υποβολής της προσφυγής θεωρείται η ημερομηνία παραλαβής της από την Α.Ε.Π.Π. μέσω του ηλεκτρονικού ταχυδρομείου. Το αργότερο την επόμενη εργάσιμη ημέρα από την παραλαβή της προσφυγής, η Α.Ε.Π.Π. ειδοποιεί ηλεκτρονικά τον προσφεύγοντα για την παραλαβή της προσφυγής και τον αριθμό πρωτοκόλλου αυτής. Για το παραδεκτό της άσκησης της προδικαστικής προσφυγής κατατίθεται παράβολο από τον προσφεύγοντα υπέρ του Δημοσίου, κατά τα ειδικά οριζόμενα στο άρθρο 363 του ν. 4412/2016, το οποίο επιστρέφεται στον προσφεύγοντα σε περίπτωση ολικής ή μερικής αποδοχής της προσφυγής του ή σε περίπτωση που πριν την έκδοση της απόφασης της Α.Ε.Π.Π. επί της προσφυγής, η Αναθέτουσα Αρχή ανακαλεί την προσβαλλόμενη πράξη ή προβαίνει στην οφειλόμενη ενέργεια. Η προθεσμία για την άσκηση της προδικαστικής προσφυγής και η άσκησή της κωλύουν τη σύναψη της σύμβασης επί ποινή ακυρότητας, η οποία διαπιστώνεται με απόφαση της Α.Ε.Π.Π. μετά από άσκηση προσφυγής, σύμφωνα με το άρθρο 368 του ν. 4412/2016. Κατά τα λοιπά, η άσκηση της προδικαστικής προσφυγής δεν κωλύει την πρόοδο του Διαγωνισμού, εκτός αν ζητηθούν προσωρινά μέτρα προστασίας κατά το άρθρο 366 του ν.4412/2016. Η Αναθέτουσα Αρχή, σύμφωνα με τη διάταξη της παρ. 2 του άρθρου 9 του π.δ. 39/2017, καλείται: (α) να κοινοποιήσει την προσφυγή το αργότερο εντός πέντε (5) ημερών σε κάθε ενδιαφερόμενο τρίτο ο οποίος μπορεί να θίγεται από αποδοχή της προσφυγής, προκειμένου να ασκήσει το δικαίωμα παρέμβασής του στη διαδικασία εξέτασης της προσφυγής, σύμφωνα με το άρθρο 7 του παρόντος Κανονισμού, και (β) να διαβιβάσει στην Α.Ε.Π.Π., το αργότερο εντός δέκα (10) ημερών από την ημέρα κοινοποίησης, τον πλήρη φάκελο της υπόθεσης, τις απόψεις της επί της προσφυγής και τα αποδεικτικά κοινοποίησης στους ενδιαφερόμενους τρίτους. Η Αναθέτουσα Αρχή μπορεί στις απόψεις της να παραθέσει αρχική ή συμπληρωματική αιτιολογία της προσβαλλόμενης με την προδικαστική προσφυγή πράξης (άρθρο 365 παρ. 1 υποπαρ. β΄ ν. 4412/2016). Η Α.Ε.Π.Π. αποφαίνεται αιτιολογημένα επί της βασιμότητας των προβαλλόμενων πραγματικών και νομικών ισχυρισμών της προσφυγής και των ισχυρισμών της Αναθέτουσας Αρχής και, σε περίπτωση παρέμβασης, των ισχυρισμών του παρεμβαίνοντος και δέχεται (εν όλω ή εν μέρει) ή απορρίπτει την προσφυγή με απόφασή της, η οποία εκδίδεται μέσα σε αποκλειστική προθεσμία είκοσι (20) ημερών από την ημέρα εξέτασης της προσφυγής .
+            """ .
+
+epd:id_2018-S-087-196355_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postName "Αθήνα" .
+
+epd:id_2018-S-087-196355_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Αρχή Εξέτασης Προδικαστικών Προσφυγών (Α.Ε.Π.Π.)"@el;
+  cccev:registeredAddress epd:id_2018-S-087-196355_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-087-196355_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-087-196355_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-087-196355_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "EL" .
+
+epd:id_2018-S-087-196355_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-087-196355_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-087-196355_Organisation_jXahEP38X6pEFgd4J9tLvF .

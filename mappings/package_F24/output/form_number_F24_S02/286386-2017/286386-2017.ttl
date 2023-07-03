@@ -1,0 +1,224 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-139-286386_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.marches-publics.gouv.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-139-286386_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.marches-publics.gouv.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-139-286386_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-139-286386_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-139-286386_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Activité marché publics"@fr;
+  epo:hasFax "+33 491394033";
+  epo:hasInternetAddress "http://www.marseille-port.fr"^^xsd:anyURI;
+  cccev:email "marches-gpmm@marseille-port.fr,";
+  cccev:telephone "+33 491394933" .
+
+epd:id_2017-S-139-286386_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR824> .
+
+epd:id_2017-S-139-286386_ContractTermLotLocation_gBpZPwcpekuQ8tRyYLDbhL a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR824> .
+
+epd:id_2017-S-139-286386_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-139-286386_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-139-286386_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-139-286386_ContractTermLot_gBpZPwcpekuQ8tRyYLDbhL a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-139-286386_Duration_kRiiMRBTYMDCGKiwh9Rzt7;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-139-286386_ContractTermLotLocation_gBpZPwcpekuQ8tRyYLDbhL .
+
+epd:id_2017-S-139-286386_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-139-286386_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-139-286386_Duration_kRiiMRBTYMDCGKiwh9Rzt7 a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-139-286386_LotIdentifier_RgULVPVVYP9pkvK789PCUZ a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2017-S-139-286386_LotIdentifier_gBpZPwcpekuQ8tRyYLDbhL a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2017-S-139-286386_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/63110000> .
+
+epd:id_2017-S-139-286386_LotPurpose_gBpZPwcpekuQ8tRyYLDbhL a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/63110000> .
+
+epd:id_2017-S-139-286386_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-139-286386_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation """
+                  Le projet proposé par le candidat devra prendre en compte tout ou partie des éléments fondamentaux fixés à l'article 2.1 b) du cahier des charges.
+               """@fr;
+  epo:hasDescription """
+                  L'opérateur assure l'exploitation technique et commerciale du terminal.
+                  À ce titre:
+                  a) Il a la responsabilité de toutes les opérations de débarquement, d'embarquement, de manutention et de stockage liées au navire et à la marchandise. Il est tenu de mettre en place les moyens en personnel et les moyens techniques appropriés. Elle en assure la coordination vis-à-vis de ses clients;
+                  b) Il construit les aménagements, outillages et, le cas échéant, les terre-pleins éventuellement nécessaires au maintien et au développement de l'activité selon le principe de répartition des investissements prévus à l'article 4 du présent cahier des charges;
+                  C) Il entretient les terre-pleins, aménagements et outillages;
+                  d) Il assure la responsabilité de l'exploitant au regard de l'ensemble des dispositions législatives et réglementaires en vigueur, notamment de celles relatives aux installations classées, à la gestion de l'eau et à la protection de l'environnement.
+               """@fr;
+  epo:hasID epd:id_2017-S-139-286386_LotIdentifier_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-139-286386_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasTitle """
+                  Lot 1: celui-est constitué des terre-pleins situés au droit des postes à quai 44, 45, 47 et 48 pour une surface cumulée de 45 000 m2. Il comprend les hangars D1 et D2 d'une superficie cumulée de 5 000 m2
+               """@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-139-286386_Lot_gBpZPwcpekuQ8tRyYLDbhL a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-139-286386_ContractTermLot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasAdditionalInformation """
+                  Le projet proposé par le candidat devra prendre en compte tout ou partie des éléments fondamentaux fixés par le GPMM dans l'article 2.1 b) du cahier des charges.
+               """@fr;
+  epo:hasDescription """
+                  L'opérateur assure l'exploitation technique et commerciale du terminal.
+                  À ce titre:
+                  a) Il a la responsabilité de toutes les opérations de débarquement, d'embarquement, de manutention et de stockage liées au navire et à la marchandise. Il est tenu de mettre en place les moyens en personnel et les moyens techniques appropriés. Elle en assure la coordination vis-à-vis de ses clients;
+                  b) Il construit les aménagements, outillages et, le cas échéant, les terre-pleins éventuellement nécessaires au maintien et au développement de l'activité selon le principe de répartition des investissements prévus à l'article 4 du présent cahier des charges;
+                  C) Il entretient les terre-pleins, aménagements et outillages;
+                  d) Il assure la responsabilité de l'exploitant au regard de l'ensemble des dispositions législatives et réglementaires en vigueur, notamment de celles relatives aux installations classées, à la gestion de l'eau et à la protection de l'environnement.
+               """@fr;
+  epo:hasID epd:id_2017-S-139-286386_LotIdentifier_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasPurpose epd:id_2017-S-139-286386_LotPurpose_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasTitle """
+                  Le lot 2 est constitué des terre-pleins situés au droit des postes à quai 41, 42 et 43 pour une surface cumulée de 28 000 m2
+                  
+               """@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-139-286386_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-139-286386_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-139-286386_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2017-S-139-286386_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2017-S-139-286386_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-139-286386_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2017-07-19"^^xsd:date;
+  epo:hasID epd:id_2017-S-139-286386_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20170722";
+  epo:refersToLot epd:id_2017-S-139-286386_Lot_RgULVPVVYP9pkvK789PCUZ, epd:id_2017-S-139-286386_Lot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:refersToProcedure epd:id_2017-S-139-286386_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-139-286386_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 139-286386" .
+
+epd:id_2017-S-139-286386_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR824>;
+  locn:postCode "13226";
+  locn:postName "Marseille";
+  locn:thoroughfare "23 place de la Joliette, CS 81965" .
+
+epd:id_2017-S-139-286386_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
+  epo:hasLegalName "Grand port maritime de Marseille"@fr;
+  epo:hasMainActivityDescription "Activités portuaires";
+  cccev:registeredAddress epd:id_2017-S-139-286386_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-139-286386_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "201706023" .
+
+epd:id_2017-S-139-286386_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/63110000> .
+
+epd:id_2017-S-139-286386_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 2;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2017-S-139-286386_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-139-286386_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               La participation à la présente consultation est autorisée à toute entreprise opérant déjà en propre un terminal portuaire et disposant d'une expérience réelle dans le traitement de marchandises diverses pouvant être opérées sur des navires conventionnels ou rouliers, ou conteneurs/rouliers. On entend par «expérience réelle», le fait d'assurer une exploitation régulière en bénéficiant d'une convention de longue durée auprès d'une autorité publique compétente en matière domaniale et d'y manutentionner au moins 50 000 tonnes de marchandises, ou 7000 unité de charge (remorques ou EVP), et de générer un CA supérieur à 3 000 000 EUR/An.
+               Sur ces activités. Les candidatures autorisées peuvent également être présentées par un groupement solidaire ou conjoint avec mandataire solidaire associant un/des armement(s) et ou/des manutentionnaire(S) et ou un logisticien répondant aux caractéristiques ci-dessus. Les candidats devront présenter la structure capitalistique de la société future titulaire du contrat avec le GPMM qu'ils s'engagent à confirmer ou à créer dans les 3 mois de la désignation du projet lauréat. Le/Les entreprise(s) candidates devront conserver plus de 50 % du capital de la société tout au long de la durée de la Convention de mise à dispositions des infrastructures et des installations associés. En cas de cession partielle l'agrément du GPMM tant sur les capacités techniques et financières devra être préalablement obtenu. En contrepartie des biens mis à disposition du titulaire, ce dernier reversera une redevance au GPMM dans les conditions suivantes: — une redevance domaniale fixe pour la mise à disposition du lot 1 est fixée à 221 000 EUR HT/An.
+               Valeur (1/1/18), (hors toute fourniture d'énergie, demande de raccordement aux réseaux de fluide, et hors redevance associée à une convention d'ITE à mettre en place pour permettre une éventuelle desserte du terminal par voie ferrée, si l'opérateur l'a prévu dans son offre). — une redevance domaniale fixe pour la mise à disposition du lot 2 est fixée à 161 000 EUR HT/An valeur (1/1/18) (hors toute fourniture d'énergie, demande de raccordement aux réseaux de fluide, et hors redevance associée à une convention d'ITE à mettre en place pour permettre une éventuelle desserte du terminal par voie ferrée, si l'opérateur l'a prévu dans son offre).
+               L'opérateur pourra proposer une augmentation de(s) redevance(s) fixe(s) en proposant un pourcentage unique d'augmentation sur le(s) lot(s) sur le(s)quel(s) il aura soumissionné. Cette augmentation sera présentée sous la forme d'un pourcentage. Ce pourcentage sera pris en compte dans les critères définis dans l'article 7 du règlement de la consultation.
+            """@fr;
+  epo:hasDescription """
+               La présente mise en concurrence à pour objet la mise à disposition d'infrastructures et d'équipements associés en vue de l'exploitation d'un terminal affecté à une activité de stockage et de manutention de marchandises dans le Port de Marseille dans la partie Sud du Terminal de Pinède et le choix de son opérateur.
+            """@fr;
+  epo:hasID epd:id_2017-S-139-286386_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-139-286386_Lot_RgULVPVVYP9pkvK789PCUZ,
+    epd:id_2017-S-139-286386_Lot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasPurpose epd:id_2017-S-139-286386_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Processus de mise en concurrence pour le développement d'un terminal marchandise polyvalent dans le Grand port maritime de Marseille — secteur Pinède Sud.
+            """@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-139-286386_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-139-286386_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk, epd:id_2017-S-139-286386_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-139-286386_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-139-286386_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-139-286386_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-139-286386_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13281";
+  locn:postName "Marseille";
+  locn:thoroughfare "22-24 rue Breteuil" .
+
+epd:id_2017-S-139-286386_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 491811387";
+  epo:hasInternetAddress "http://marseille.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-marseille@juradm.fr";
+  cccev:telephone "+33 491134813" .
+
+epd:id_2017-S-139-286386_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Marseille"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-139-286386_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2017-S-139-286386_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-139-286386_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-139-286386_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-139-286386_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 491811387";
+  epo:hasInternetAddress "http://marseille.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-marseille@juradm.fr";
+  cccev:telephone "+33 491134813" .
+
+epd:id_2017-S-139-286386_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13281";
+  locn:postName "Marseille";
+  locn:thoroughfare "22-24 rue Breteuil" .
+
+epd:id_2017-S-139-286386_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Marseille"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-139-286386_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2017-S-139-286386_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-139-286386_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-139-286386_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-139-286386_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.marches-publics.gouv.fr"^^xsd:anyURI .
+
+epd:id_2017-S-139-286386_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-139-286386_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-139-286386_Organisation_jXahEP38X6pEFgd4J9tLvF .

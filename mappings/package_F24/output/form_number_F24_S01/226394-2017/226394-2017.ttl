@@ -1,0 +1,171 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-112-226394_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.paris.fr/concessions"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-112-226394_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.marches.maximilien.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-112-226394_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-112-226394_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-112-226394_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Direction des finances et des achats — service des concessions"@fr;
+  epo:hasInternetAddress "http://www.paris.fr/concessions"^^xsd:anyURI;
+  cccev:email "DFA-plateaudegravelle@paris.fr";
+  cccev:telephone "+33 142763733" .
+
+epd:id_2017-S-112-226394_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+2 route du Pesage 75012.
+"""@fr .
+
+epd:id_2017-S-112-226394_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:address epd:id_2017-S-112-226394_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-112-226394_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-112-226394_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-112-226394_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-112-226394_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-112-226394_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 180.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-112-226394_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/55300000> .
+
+epd:id_2017-S-112-226394_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-112-226394_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """
+Dans le cadre d'une concession de travaux et dans le respect des contraintes liées au site, le concessionnaire rénovera et exploitera un établissement à usage de café-restaurant avec activités de réception ainsi qu'une activité annexe en lien le vélo et la mobilité active (proposition d'une navette de vélos à assistance électrique depuis les transports jusqu'à la concession, location de matériel, conseil, animations...). Le concessionnaire devra s'engager à réaliser le programme de travaux suivants, estimé à minima à 1 500 000.euro valeur 2017: réfection et isolation des couvertures du bâtiment historique, modernisation des menuiseries du bâtiment historique, mise en accessibilité, modernisation de la cuisine, mise aux normes des installations électriques, chauffage et de ventilation, démolition du bâtiment la pergola et construction d'un garage à vélo. La Ville de Paris ne participera pas au financement des investissements et n'assumera pas la maîtrise d'ouvrage.
+"""@fr;
+  epo:hasPurpose epd:id_2017-S-112-226394_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-112-226394_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-112-226394_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-112-226394_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2017-S-112-226394_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2017-S-112-226394_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-112-226394_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2017-06-09"^^xsd:date;
+  epo:hasID epd:id_2017-S-112-226394_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20170614";
+  epo:refersToLot epd:id_2017-S-112-226394_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2017-S-112-226394_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-112-226394_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 112-226394" .
+
+epd:id_2017-S-112-226394_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75004";
+  locn:postName "Paris";
+  locn:thoroughfare "17 boulevard Morland" .
+
+epd:id_2017-S-112-226394_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Ville de Paris"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-112-226394_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-112-226394_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017V34D7DSP-O3821" .
+
+epd:id_2017-S-112-226394_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45000000> .
+
+epd:id_2017-S-112-226394_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-112-226394_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+Concession de travaux conclue en application des articles L.1410-1 à L1410-3 du CGCT, de l'ordonnance no 2016-65 du 29.1.2016 et du décret no 2016-86 du 1.2.2016. Procédure restreinte: seuls seront admis à présenter une offre les candidats qui présentent les garanties professionnelles et financières suffisantes pour exécuter le contrat de concession, qui ne font l'objet d'aucune interdiction de soumissionner prévue aux art 39 et 42 de l'ordonnance no 2016-65 du 2901/2016 et qui ont produit un dossier complet et ne contenant aucune fausse information. 1ère phase: Dossiers de candidatures: les plis devront comporter toutes les informations et pièces visées aux points III.1.1); III.1.2) et III.1.3). Transmission des plis par voie postale en recommandé avec avis de réception ou remis contre récépissé à l'adresse spécifiée au I.1 du présent avis, les jours ouvrés de 9:30 à 12:30 — et de 14:00 à 16:00. (cf. Date et heure limite au IV.2.2). Les dossiers devront être parvenus à l'adresse indiquée avant la date et heure limites. Les dossiers arrivés en retard ne seront pas examinés. Mention sur le pli cacheté: candidature pour la rénovation et l'exploitation du restaurant du plateau de gravelle et ne pas ouvrir. Les candidats pourront se présenter soit seuls, soit en groupement d'entreprises. En cas de groupement, chaque mb doit fournir l'ensemble des informations et pièces demandées (sauf la lettre de candidature valant le cas échéant habilitation du mandataire). Pour les docs demandés au III.1.1)-4, le candidat établi hors de France fournit les certificats ou documents équivalents délivrés par l'autorité administrative ou judiciaire compétente de son pays d'origine ou d'établissement attestant de l'absence de cas d'exclusion. Le cas échéant, les candidats joignent une traduction en français des documents remis dans une autre langue. Si le candidat s'appuie sur d'autres opérateurs économiques pour justifier de ses capacités pour la présentation de sa candidature, il doit les mentionner dans sa lettre de candidature et produire, pour chacun d'eux, les mêmes documents que ceux exigés de lui pour justifier de ses capacités, ainsi qu'un engagement écrit de chacun d'eux qu'il disposera de leurs capacités pour l'exécution du contrat. Les candidats qui produisent une candidature incomplète ou contenant de faux renseignements ou documents ne sont pas admis à participer à la suite de la procédure. Seront déclarées irrecevables et éliminées les candidatures présentées par un candidat qui ne peut participer à la procédure (art 39 et 42 de l'ordonnance du 2901/2016) ou qui ne possède pas les capacités ou aptitudes exigées aux points III.1.2 et III.1.3. Les candidats sélectionnés recevront une invitation à soumissionner indiquant l'adresse d'accès au dossier de consultation. 2e phase: offres. L'envoi de l'invitation à soumissionner est prévu au plus tôt à partir de la mi-octobre 2017 (date indicative). Le dossier de consultation indiquera les conditions d'établissement et le délai de réception des offres. Au vu de l'avis de la commission prévue à l'article L.1411-5 du CGCT, l'autorité concédante organisera une négociation avec un ou plusieurs soumissionnaires ayant remis une offre. Au terme des négociations, le choix du concessionnaire sera effectué en application des critères définis dans le dossier de consultation et soumis au vote du Conseil de Paris. Il sera demandé au candidat ou au groupement d'entreprises retenu de constituer, en tant qu'actionnaires, une société dédiée à l'exécution du contrat. Le dossier Indiquera les conditions d'établissement et le délai de réception des offres. Au vu de l'avis de la commission prévue à l'article L.1411-5 du CGCT, l'autorité concédante organisera une négociation. Le choix du concessionnaire sera effectué en application des critères définis dans le DCE et soumis au vote du Conseil de Paris.
+"""@fr;
+  epo:hasDescription """
+La présente consultation fait suite à la déclaration sans suite de l'affaire 17-6796, au motif d'une erreur de procédure, envoyée pour publication le 23.5.2017 et publié au BOAMP le 25.5.2017 sous le no 17-72238 et au JOUE (017/S 101-202816). Situé dans le bois de Vincennes, la concession comprend: le bâtiment historique, d'une emprise d'environ 433 mètres carrés, qui accueille l'activité de restauration. Un second bâtiment, d'une emprise au sol de 915 mètres carrés, sur rez-de-chaussée et sous-sol, accueille l'activité de réceptions. Un bâtiment annexe la pergola d'une emprise de 98 mètres carrés, sert de cuisine d'été. Dans le cadre d'une concession de travaux et dans le respect des contraintes liées au site, le concessionnaire rénovera et exploitera un établissement à usage de café-restaurant avec activités de réception ainsi qu'une activité annexe en lien le vélo et la mobilité active (proposition d'une navette de vélos à assistance électrique depuis les transports jusqu'à la concession, location de matériel).
+"""@fr;
+  epo:hasID epd:id_2017-S-112-226394_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-112-226394_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-112-226394_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+Concession de travaux relative à la rénovation et à l'exploitation de l'établissement dénommé restaurant du plateau de Gravelle.
+"""@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-112-226394_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-112-226394_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2017-S-112-226394_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-112-226394_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-112-226394_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-112-226394_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-112-226394_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75004";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2017-S-112-226394_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2017-S-112-226394_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-112-226394_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2017-S-112-226394_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-112-226394_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-112-226394_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-112-226394_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Précisions concernant les délais d'introduction de recours: avant la conclusion du contrat, la présente consultation, peut faire l'objet d'un référé précontractuel dans les conditions des articles l.551-1 et suivants du code de justice administrative. À compter de sa signature, la présente consultation peut faire l'objet d'un référé contractuel dans les conditions des articles L.551-13 et suivants du code de justice administrative. Le tribunal administratif peut être saisi d'un recours en contestation de la validité du contrat dans un délai de 2 mois à compter de l'accomplissement des mesures de publicité appropriées, dans les conditions définies par le Conseil d'État dans sa décision no 358994 Département de Tarn-et-Garonne du 4.4.2014.
+""" .
+
+epd:id_2017-S-112-226394_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2017-S-112-226394_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2017-S-112-226394_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-112-226394_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2017-S-112-226394_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-112-226394_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-112-226394_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-112-226394_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2017-S-112-226394_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-112-226394_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-112-226394_Organisation_jXahEP38X6pEFgd4J9tLvF .

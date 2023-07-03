@@ -1,0 +1,220 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-076-147602_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.lametro.marco-web.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-076-147602_AwardCriterionCost_PdhiwFgRo6dt8S8aCpwTR7 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Coût global de loffre"@fr;
+  cccev:weight "50 %"@fr .
+
+epd:id_2017-S-076-147602_AwardCriterionQuality_3X8UzEgv9cM4vo9izsJJUM a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Performance environnementale"@fr;
+  cccev:weight "10 %"@fr .
+
+epd:id_2017-S-076-147602_AwardCriterionQuality_7cq6kvu5iNZHd3BnprHjTf a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Délais"@fr;
+  cccev:weight "5 %"@fr .
+
+epd:id_2017-S-076-147602_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Performance énergétique"@fr;
+  cccev:weight "20 %"@fr .
+
+epd:id_2017-S-076-147602_AwardCriterionQuality_c875KbKHSSEYdJLphMo2rf a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Performance de niveau de qualité de service"@fr;
+  cccev:weight "15 %"@fr .
+
+epd:id_2017-S-076-147602_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://www.lametro.marco-web.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-076-147602_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-076-147602_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-076-147602_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.lametro.fr"^^xsd:anyURI;
+  cccev:email "christophe.laplace@lametro.fr" .
+
+epd:id_2017-S-076-147602_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+Centre bourg — Commune de Gières (38610).
+"""@fr .
+
+epd:id_2017-S-076-147602_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR714>;
+  locn:address epd:id_2017-S-076-147602_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2017-S-076-147602_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-076-147602_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-076-147602_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+Les prestations, objet de la présente consultation, pourront donner lieu à un nouveau marché pour la réalisation de prestations similaires, passé en application de la procédure négociée de l'article 30-i-7° du décret no 2016-360 du 25.3.2016 relatif aux marchés publics, et qui seront exécutées par l'attributaire de ce présent marché.
+"""@fr .
+
+epd:id_2017-S-076-147602_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-076-147602_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 58.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-076-147602_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/09323000>, <http://data.europa.eu/cpv/cpv/45232140>,
+    <http://data.europa.eu/cpv/cpv/45251250>, <http://data.europa.eu/cpv/cpv/71321200> .
+
+epd:id_2017-S-076-147602_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-076-147602_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation """
+La partie de prestations à bons de commande (partie B) correspondra à un accord-cadre sans minimum et avec un montant maximum fixé à 250 000 EUR HT sur la durée du marché public global de performances.
+Les besoins globaux annuels des abonnés (extensions comprises) sont estimés à 2 550 MWh par an. La puissance souscrite est estimée de 1 600 kW.
+"""@fr;
+  epo:hasDescription """
+Le présent marché comprend une partie de prestations à prix global et forfaitaire (missions dénommées Partie A dans les pièces du marché):
+Partie A: la conception, la construction puis l'exploitation-maintenance, dans une démarche d'amélioration continue de la performance, d'une chaufferie et d'un réseau de chaleur bois énergie avec appoint gaz, desservant — pour leurs besoins de chauffage et, pour certains, d'ECS — des bâtiments consommateurs de chauffage du centre bourg de Gières: bâtiments communaux, copropriétés, commerces;
+Le présent marché comprend en outre une partie de prestations sous forme d'accord-cadre à bons de commande avec maximum et un opérateur économique (missions dénommées Partie B dans les pièces du marché):
+Partie B: dans le cadre d'un bordereau de prix unitaires, la conception, la réalisation et l'exploitation-maintenance, durant la durée du marché, d'extensions du réseau de chaleur (dont sous stations au sein des bâtiments futurs abonnés).
+"""@fr;
+  epo:hasPurpose epd:id_2017-S-076-147602_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-076-147602_AwardCriterionCost_PdhiwFgRo6dt8S8aCpwTR7,
+    epd:id_2017-S-076-147602_AwardCriterionQuality_3X8UzEgv9cM4vo9izsJJUM, epd:id_2017-S-076-147602_AwardCriterionQuality_7cq6kvu5iNZHd3BnprHjTf,
+    epd:id_2017-S-076-147602_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH, epd:id_2017-S-076-147602_AwardCriterionQuality_c875KbKHSSEYdJLphMo2rf .
+
+epd:id_2017-S-076-147602_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-076-147602_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-076-147602_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2017-S-076-147602_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2017-S-076-147602_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2017-04-14"^^xsd:date;
+  epo:hasID epd:id_2017-S-076-147602_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20170419";
+  epo:refersToLot epd:id_2017-S-076-147602_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2017-S-076-147602_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-076-147602_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 076-147602" .
+
+epd:id_2017-S-076-147602_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR714>;
+  locn:postCode "38031";
+  locn:postName "Grenoble";
+  locn:thoroughfare "Le Forum — 3 rue Malakoff" .
+
+epd:id_2017-S-076-147602_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Grenoble Alpes Métropole"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gas-heat>;
+  cccev:registeredAddress epd:id_2017-S-076-147602_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-076-147602_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09323000> .
+
+epd:id_2017-S-076-147602_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-076-147602_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+1) Ouvrages à concevoir et construire:
+A) Une chaufferie bois et son réseau de chaleur dans le centre bourg de la Commune de Gières comprenant:
+— une chaufferie — et ses VRD — intégrant un système complet de production de chaleur bois énergie, d'appoint gaz, les pompes réseaux, le pilotage, la régulation et la supervision des installations de production et distribution de chaleur,
+Le site d'implantation de la chaufferie centrale se situe sur une partie d'un parking public, rue Jean-Jaurès,
+— un réseau de chaleur enterré desservant un ensemble de bâtiments publics et privés,
+— les sous stations chez les abonnés.
+Pour la réalisation des études, le rendu des pièces écrites et des plans sera de niveau APD pour les ouvrages, équipements et infrastructures.
+B) Des extensions et raccordements pour d'autres abonnés (prestations à bon de commandes selon BPU)
+2) Exploitation avec objectifs de performances, de la chaufferie centrale, de la ou des chaufferie(s) d'appoint, du réseau et des sous stations comprenant:
+— la fourniture de combustibles P1 avec un prix de l'énergie livré abonnés,
+— la prestation de conduite, surveillance et entretien courant P2,
+— la prestation de gros entretien renouvellement P3.
+Il n'est pas prévu de décomposition en tranches.
+Type de procédure: procédure adaptée.
+L'avis implique: un marché public.
+Prestations divisées en lots:
+Non.
+Il est recouru à un marché public global de performances associant la conception-réalisation et l'exploitation maintenance pour une chaufferie bois/gaz et de son réseau de chaleur. Le marché prévoit des engagements contractuels sur des objectifs de performances énergétiques, environnementales et de qualité de service, justifiant l'association de l'entrepreneur aux études.
+Parmi les conditions d'exécution d'un marché public global figure l'obligation d'identifier une équipe de maîtrise d'œuvre chargée de la conception de l'ouvrage et du suivi de sa réalisation (art. 35 bis, ordonnance no 2015-899 du 23.7.2015 relative aux marchés publics).
+Unité monétaire utilisée: l'EUR.
+L'entité adjudicatrice applique le principe «Dites-le nous une fois».
+Critères de sélection des candidatures:
+— capacités techniques (moyens matériels et humains quantitatifs et qualitatifs),
+— capacités financières (moyens financiers),
+— capacités professionnelles (qualifications — compétences professionnelles).
+Le DCE est disponible gratuitement sur simple demande écrite par fax (04 76 59 40 08) ou courrier ou par téléchargement (lametro.marcoweb.fr — réf dossier 17c28t).
+Les offres peuvent être transmises par lettre recommandée avec accusé de réception ou déposées contre récépissé.
+Dématérialisation des procédures:
+L'entité adjudicatrice préconise la transmission des documents par voie papier mais accepte les plis adressés par voie électronique à l'adresse suivante: lametro.marcoweb.fr (un certificat de signature électronique est exigé).
+La référence du dossier est 17cp28t.
+La visite du site est obligatoire.
+Une visite commune du site est organisée le lundi 24.4.2017 à 14:00 (point de RDV: devant la bibliothèque municipale de la Commune de Gières, rue Jean-Jaurès), en présence du maitre d'ouvrage cf. Les modalités dans le règlement de consultation.
+Pour tous les candidats souhaitant faire une visite des lieux, il conviendra de confirmer leur présence par fax au 04 76 59 40 08.
+Renseignement(s) technique(s):
+Assistant à maitrise d'ouvrage:
+Bureau d'études Kalice, 19 rue du Printemps, 73100 Aix-les-Bains
+Eddie Chinal
+Tél: 06 89 14 62 32
+Grenoble-Alpes Métropole, correspondant: Sylvain Koch-Mathian (+33 0457385081), Le Forum DGASTM-DTE- 3 rue Malakoff, 38031 Grenoble, Cedex 01.
+L'entité adjudicatrice n'agit pas pour le compte d'autres entités adjudicatrices.
+"""@fr;
+  epo:hasDescription """
+Il s'agit d'un marché public global de performances associant conception, réalisation, et exploitation maintenance passé par une entité adjudicatrice selon la procédure adaptée après mise en concurrence, et comprenant une partie de prestations à prix global et forfaitaire et une partie de prestations à bons de commande.
+"""@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-076-147602_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-076-147602_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Conception, réalisation, exploitation et maintenance d'une chaufferie bois/gaz et de son réseau de chaleur sur la Commune de Gières.
+"""@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-076-147602_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-076-147602_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2017-S-076-147602_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-076-147602_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-076-147602_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-076-147602_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-076-147602_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Recours possible devant le tribunal administratif de Grenoble en application des articles L 551-1 à L 551-12 (référé pré-contractuel) avant la signature, et L 551-13 (recours contractuel) du code de justice administrative dans les délais prévus à l'article R 551-7 du code de justice administrative. Dans un délai de 2 mois à compter de la notification du marché, un recours gracieux peut être déposé par écrit devant le président de la collectivité, cette démarche suspendant le délai de recours contentieux. En outre, un recours de pleine juridiction est ouvert aux tiers intéressés, et peut être exercé dans les 2 mois suivant la date à laquelle la conclusion du contrat est rendue publique. Enfin, un recours contre une décision administrative prévu aux articles R. 421-1 à R. 421-7 du CJA, peut être exercé dans les 2 mois suivant la notification ou publication de la décision de l'organisme.
+""" .
+
+epd:id_2017-S-076-147602_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 476422269";
+  cccev:email "greffe.ta-grenoble@juradm.fr";
+  cccev:telephone "+33 476429000" .
+
+epd:id_2017-S-076-147602_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "38022";
+  locn:postName "Grenoble Cedex";
+  locn:thoroughfare "2 place de Verdun, Boîte Postale 1135," .
+
+epd:id_2017-S-076-147602_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Grenoble"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-076-147602_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2017-S-076-147602_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-076-147602_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-076-147602_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-076-147602_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2017-S-076-147602_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-076-147602_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-076-147602_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

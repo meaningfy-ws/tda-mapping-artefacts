@@ -1,0 +1,180 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-036-081133_AwardCriterionCost_UnnapZGb2LALJMk4t4qa8k a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Honorar (freie Bestandteile)"@de;
+  cccev:weight "30"@de .
+
+epd:id_2019-S-036-081133_AwardCriterionQuality_8T25EAnqDqqhgkd8PbFaxy a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Ausstattung Büro"@de;
+  cccev:weight "10"@de .
+
+epd:id_2019-S-036-081133_AwardCriterionQuality_YZXD7WV7JGFCGNp9JGA6N4 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Abwicklung Projekt"@de;
+  cccev:weight "30"@de .
+
+epd:id_2019-S-036-081133_AwardCriterionQuality_hnx7sMdiDMXApZ44keZgLk a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Erfahrung Projektteam"@de;
+  cccev:weight "30"@de .
+
+epd:id_2019-S-036-081133_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-036-081133_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-036-081133_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-036-081133_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Herr Ertugrul Metin"@de;
+  epo:hasInternetAddress "http://bbs-mannheim.de/"^^xsd:anyURI;
+  cccev:email "ertugrul.metin@bbs-mannheim.de" .
+
+epd:id_2019-S-036-081133_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Mannheim"@de .
+
+epd:id_2019-S-036-081133_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE126>;
+  locn:address epd:id_2019-S-036-081133_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2019-S-036-081133_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2019-S-036-081133_Period_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-036-081133_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Leistungsphase 5 bis 8 auf Grund der stufenweisen Beauftragung der Planungsleistungen."@de .
+
+epd:id_2019-S-036-081133_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2019-S-036-081133_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71315000>, <http://data.europa.eu/cpv/cpv/71321000>,
+    <http://data.europa.eu/cpv/cpv/71322000> .
+
+epd:id_2019-S-036-081133_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-036-081133_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasAdditionalInformation "Der Auftrag wird im Verhandlungsverfahren ohne gesonderte Auftragsbekanntmachung vergeben."@de;
+  epo:hasDescription "Planungsleistungen nach HOAI §§55 ff. für das Gewerk Elektro (LPH 1-8, stufenweise ab LPH 5) für den Neubau einer Ganztagesgrundschule in Holz/Holzhybrid Bauweise in Mannheim.Gegenstand der Beschaffung ist der Neubau der 4 zügigen Ganztagesgrundschule inklusive Küche und Mensa sowie der Neubau einer Doppelsporthalle auf dem Areal der ehemaligen Elementary-School auf Franklin.In unmittelbarer Nähe zum Baufeld wird zum Schuljahresbeginn 2019 eine Interimsschule gegründet, die im September 2022 im zu erstellenden Neubau die Nutzung aufnehmen wird. Die Planung und Umsetzung der Interimslösung ist NICHT Teil der Beschaffung.Bauherrin ist die Stadt Mannheim. Die Bauherrin stellt sich einen zeitgemäßen Holzbau vor, der als beispielhaftes Projekt für eine nachhaltige Bauweise die Leistungsfähigkeit des Holzbaus belegt und durch seine beispielgebende Architektur über die Region hinaus Wirkung erzielt. Innovative Konstruktionen und Baulösungen sind dabei zu entwickeln, die Modellcharakter für weitere vergleichbare Projekte bieten können. Dabei soll sich das Gebäude in konstruktiver Holzbauweise oder Holz-Hybridbauweise möglichst kompakt und energieoptimiert mit qualitätsvoller zeitgemäßer Architektur, intelligenter Anordnung und minimierten Errichtungs- und Lebenszykluskosten darstellen. Die zur Verwendung kommenden Bau- und Werkstoffe sollen nachhaltig und mit den Klimaschutzzielen vereinbar sein. Die Verwendung des Baustoffes Holz sowohl für die konstruktiven Bauteile (Holzbauweise) als auch für die Bereiche der Fassade und des Innenausbaus wird seitens des Bauherrn ausdrücklich gewünscht.Die Maßnahme erfolgt voraussichtlich in 2 Bauabschnitten – Ganztageschule mit Außenraumgestaltung (BA 1 auf Baufeld 1) Nutzungsbeginn 09/2022 und Doppelsporthalle (BA 2 auf Baufeld 2) Nutzungsbeginn 04/2024.Die weiteren planerischen technischen Leistungen (Sanitär, Heizung, Lüftung, Aufzugsanlagen, Bauphysik, etc.) sind als eigenständige Fachlose vorgesehen und nicht Gegenstand dieser Beschaffung.Die Grundlage für die Planung, Ausschreibung und Baubetreuung bildet das Lastenheft der BBS, die Standards der Stadt Mannheim und die Ergebnisse des Architekten Wettbewerbs.Die Erschließung des Gebäudekomplexes gehört ebenfalls zum Planungsauftrag."@de;
+  epo:hasPurpose epd:id_2019-S-036-081133_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2019-S-036-081133_AwardCriterionCost_UnnapZGb2LALJMk4t4qa8k,
+    epd:id_2019-S-036-081133_AwardCriterionQuality_8T25EAnqDqqhgkd8PbFaxy, epd:id_2019-S-036-081133_AwardCriterionQuality_YZXD7WV7JGFCGNp9JGA6N4,
+    epd:id_2019-S-036-081133_AwardCriterionQuality_hnx7sMdiDMXApZ44keZgLk .
+
+epd:id_2019-S-036-081133_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-036-081133_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2019-S-036-081133_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2019-S-036-081133_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2019-S-036-081133_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2019-S-036-081133_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2019-02-19"^^xsd:date;
+  epo:hasID epd:id_2019-S-036-081133_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20190220";
+  epo:refersToLot epd:id_2019-S-036-081133_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:refersToProcedure epd:id_2019-S-036-081133_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2019-S-036-081133_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 036-081133" .
+
+epd:id_2019-S-036-081133_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE126>;
+  locn:postCode "68167";
+  locn:postName "Mannheim";
+  locn:thoroughfare "Leoniweg 2" .
+
+epd:id_2019-S-036-081133_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Städtische Gesellschaft";
+  epo:hasLegalName "BBS Bau- und Betriebsservice GmbH"@de;
+  epo:hasMainActivityDescription "Sanierung, Planung, Bau, Finanzierung, Instandhaltung und Bewirtschaftung von kommunalen Zwecken dienenden Bauten der Stadt Mannheim, insbesondere von Schulen";
+  cccev:registeredAddress epd:id_2019-S-036-081133_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-036-081133_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
+  epo:hasBeginning "2019-07-21"^^xsd:date;
+  epo:hasEnd "2024-04-30"^^xsd:date .
+
+epd:id_2019-S-036-081133_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71320000> .
+
+epd:id_2019-S-036-081133_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-036-081133_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasAdditionalInformation "Die Interessensbekundung auf diese Vorinformation kann per E-Mail erfolgen.Die Abwicklung des Verhandlungsverfahren erfolgt ab „Aufforderung zur Interessensbestätigung\" als eVergabe mit der Software des „Deutschen Ausschreibungsblatts\". Die Nutzung der Software ist für den Bieter kosten neutral. Die gesamte Kommunikation ab diesem Zeitpunkt erfolgt ausschließlich über die eVergabe-Software. Das bedeutet, die Unterlagen werden elektronisch bereitgestellt, mögliche Rückfragen und auch die Abgabe der Teilnahmeanträge bzw. Angebote erfolgen nur über die eVergabe Software.Die Information nach GWB bzw. Zuschlagserteilung erfolgt per E-Mail, Fax und/oder Brief."@de;
+  epo:hasDescription "Die Planung, Ausschreibung und Objektüberwachung (LPH 1 – 8) nach HOAI §§ 55 ff. für das Gewerk Elektro für den Neubau einer 4-zügigen Grundschule mit Mensa und Doppelsporthalle auf dem Konversionsgelände Benjamin Franklin in Mannheim. Im Zuge der Maßnahme werden auch die Außenanlagen hergestellt. Die Maßnahme erfolgt voraussichtlich in 2 Bauabschnitten – Ganztageschule (BA 1 auf Baufeld 1) und Doppelsporthalle (BA 2 auf Baufeld 2) mit Außenraumgestaltung."@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-036-081133_Lot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2019-S-036-081133_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Planungsleistungen für das Gewerk Elektro nach HOAI für den Neubau Grundschule FRANKLIN in Mannheim"@de;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-036-081133_ReviewTerm_KjhWjVv578XNpvpTRjZhAs,
+    epd:id_2019-S-036-081133_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 .
+
+epd:id_2019-S-036-081133_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-036-081133_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-036-081133_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2019-S-036-081133_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76137";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Durlacher Allee 100" .
+
+epd:id_2019-S-036-081133_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  epo:hasFax "+49 721-926-3985";
+  cccev:email "vergabekammer@rpk.bwl.de";
+  cccev:telephone "+49 721-926-8730" .
+
+epd:id_2019-S-036-081133_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg im Regierungspräsidium, Referat 15"@de;
+  epo:hasPrimaryContactPoint epd:id_2019-S-036-081133_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2019-S-036-081133_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2019-S-036-081133_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2019-S-036-081133_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2019-S-036-081133_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Für die Einleitung des Verfahrens und die Antragstellung ist § 160 GWB zu beachten. Insbesondere ist ein Nachprüfungsantrag unzulässig, soweit der Antragsteller den geltend gemachten Verstoß gegen Vergabevorschriften vor Einreichen des Nachprüfungsantrags erkannt und gegenüber dem Auftraggeber nicht innerhalb einer Frist von 10 Kalendertagen gerügt hat oder mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind." .
+
+epd:id_2019-S-036-081133_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasFax "+49 721-926-3985";
+  cccev:email "vergabekammer@rpk.bwl.de";
+  cccev:telephone "+49 721-926-8730" .
+
+epd:id_2019-S-036-081133_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76137";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Durlacher Allee 100" .
+
+epd:id_2019-S-036-081133_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg im Regierungspräsidium, Referat 15"@de;
+  epo:hasPrimaryContactPoint epd:id_2019-S-036-081133_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2019-S-036-081133_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2019-S-036-081133_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-036-081133_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2019-S-036-081133_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2019-03-28T14:00";
+  epo:hasSubmissionURL "www.deutsches-ausschreibungsblatt.de"^^xsd:anyURI .
+
+epd:id_2019-S-036-081133_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-036-081133_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2019-S-036-081133_Organisation_gqoAAwSV3JaTMsopb9zyKP .

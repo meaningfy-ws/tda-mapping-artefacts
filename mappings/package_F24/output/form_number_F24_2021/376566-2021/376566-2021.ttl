@@ -1,0 +1,214 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-141-376566_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.apss.tn.it"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-141-376566_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.apss.tn.it"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-141-376566_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-141-376566_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-141-376566_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "dott.ssa Mirta Parnasso"@it;
+  epo:hasInternetAddress "http://www.apss.tn.it"^^xsd:anyURI;
+  cccev:email "spgas-apss@pec.apss.tn.it";
+  cccev:telephone "+39 0461-906311" .
+
+epd:id_2021-S-141-376566_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Presidio ospedaliero S. Chiara di Trento in largo Medaglie d'Oro 9"@it .
+
+epd:id_2021-S-141-376566_ContractTermLotLocationAddress_gBpZPwcpekuQ8tRyYLDbhL a locn:Address;
+  locn:fullAddress "Presidio ospedaliero di Arco (TN) via Capitelli 48"@it .
+
+epd:id_2021-S-141-376566_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITH20>;
+  locn:address epd:id_2021-S-141-376566_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-141-376566_ContractTermLotLocation_gBpZPwcpekuQ8tRyYLDbhL a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITH20>;
+  locn:address epd:id_2021-S-141-376566_ContractTermLotLocationAddress_gBpZPwcpekuQ8tRyYLDbhL .
+
+epd:id_2021-S-141-376566_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-141-376566_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-141-376566_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-141-376566_ContractTermLot_gBpZPwcpekuQ8tRyYLDbhL a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-141-376566_Duration_kRiiMRBTYMDCGKiwh9Rzt7;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-141-376566_ContractTermLotLocation_gBpZPwcpekuQ8tRyYLDbhL .
+
+epd:id_2021-S-141-376566_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-141-376566_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-141-376566_Duration_kRiiMRBTYMDCGKiwh9Rzt7 a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-141-376566_LotIdentifier_RgULVPVVYP9pkvK789PCUZ a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-141-376566_LotIdentifier_gBpZPwcpekuQ8tRyYLDbhL a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-141-376566_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/55410000> .
+
+epd:id_2021-S-141-376566_LotPurpose_gBpZPwcpekuQ8tRyYLDbhL a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/55410000> .
+
+epd:id_2021-S-141-376566_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-141-376566_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Si precisa che il canone annuo posto a base di gara per il lotto 1 è pari a 230 000,00 EUR. Ai sensi dell’art. 23, comma 16 del codice il costo della manodopera per il lotto 1 è stato stimato in 160 000,00 EUR all’anno."@it;
+  epo:hasDescription "Affidamento in concessione del servizio di gestione bar interno del presidio ospedaliero S. Chiara di Trento. Al concessionario APSS non corrisponde alcun compenso per il servizio prestato. Lo stesso concessionario è tenuto a corrispondere ad APSS un canone come da offerta presentata in sede di gara"@it;
+  epo:hasEstimatedValue epd:id_2021-S-141-376566_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasID epd:id_2021-S-141-376566_LotIdentifier_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-141-376566_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasTitle "Servizio di gestione bar interno del presidio ospedaliero S. Chiara di Trento. CIG: 8835350977"@it;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-141-376566_Lot_gBpZPwcpekuQ8tRyYLDbhL a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-141-376566_ContractTermLot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasAdditionalInformation "Il canone annuo posto a base di gara è pari a 200,00 EUR (costo della manodopera pari a 56 029,00 EUR all'anno). La partecipazione ai sensi dell’art. 29 della LP n. 2/2016 è riservata in via esclusiva a laboratori protetti e a operatori economici il cui scopo principale è l'integrazione sociale e professionale delle persone con disabilità o svantaggiate."@it;
+  epo:hasDescription "Affidamento in concessione del servizio di gestione bar interno del presidio ospedaliero di Arco. Al concessionario APSS non corrisponde alcun compenso per il servizio prestato. Lo stesso concessionario è tenuto a corrispondere ad APSS un canone come da offerta presentata in sede di gara."@it;
+  epo:hasEstimatedValue epd:id_2021-S-141-376566_MainMonetaryValueLot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasID epd:id_2021-S-141-376566_LotIdentifier_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasPurpose epd:id_2021-S-141-376566_LotPurpose_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasTitle "Servizio di gestione bar interno del presidio ospedaliero di Arco (affidamento riservato ai sensi dell’art. 29 della legge provinciale 9 marzo 2016 n. 2). CIG: 883538130E"@it;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-141-376566_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 5775500.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-141-376566_MainMonetaryValueLot_gBpZPwcpekuQ8tRyYLDbhL a epo:MonetaryValue;
+  epo:hasAmountValue 575500.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-141-376566_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 6351000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-141-376566_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-141-376566_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-141-376566_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2021-S-141-376566_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2021-S-141-376566_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2021-S-141-376566_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2021-07-19"^^xsd:date;
+  epo:hasID epd:id_2021-S-141-376566_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210723";
+  epo:refersToLot epd:id_2021-S-141-376566_Lot_RgULVPVVYP9pkvK789PCUZ, epd:id_2021-S-141-376566_Lot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:refersToProcedure epd:id_2021-S-141-376566_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-141-376566_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 141-376566" .
+
+epd:id_2021-S-141-376566_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITH20>;
+  locn:postCode "38123";
+  locn:postName "Trento";
+  locn:thoroughfare "viale Verona 190/8" .
+
+epd:id_2021-S-141-376566_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Azienda provinciale per i servizi sanitari (APSS) di Trento"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2021-S-141-376566_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-141-376566_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/55410000> .
+
+epd:id_2021-S-141-376566_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk a epo:ProcedureTerm;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2021-S-141-376566_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-141-376566_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Responsabile del procedimento di gara ai sensi della L.P. n. 23/1992: dott.ssa Mirta Parnasso, collaboratore amministrativo esperto del servizio procedure di gara in ambito sanitario — ufficio gare europee (servizi e forniture).NB: sopralluogo obbligatorio per la partecipazione ad entrambi i lotti di gara.NB: il punto «III.1.5) Informazioni relative alle concessioni riservate» è da intendersi riferito esclusivamente al lotto 2. I valori della concessione, riportati alla sezione II, sono stati stimati ai sensi dell'art. 8, comma 2 della direttiva 2014/23/UE.La concessione è aggiudicata in base al criterio dell'offerta economicamente più vantaggiosa individuata sulla base del miglior rapporto qualità/prezzo.Valutazione delle offerte per ciascun lotto: 70 punti massimi previsti per la valutazione dell'offerta tecnica (elementi di natura quantitativa o tabellare) e 30 punti massimi previsti per l'offerta economica (canone annuo offerto maggiore o quantomeno pari a quello posto a base di gara).Il disciplinare di gara e i suoi allegati, cui si rinvia per quanto riguarda la disciplina di dettaglio della procedura e l'indicazione delle cause di esclusione, sono pubblicati sul profilo di committente dell'Azienda provinciale per i servizi sanitari di Trento al seguente link: https://servizi.apss.tn.it/trasparenza/garesoprasoglia, nonché all'interno dell'ambiente di gara sul sistema SAP-SRM, accessibile al link: https://www.acquistionline.provincia.tn.it/paginaIntermedia (MercurioV7 — ultima versione)."@it;
+  epo:hasDescription "Procedura aperta per l’affidamento in concessione del servizio di gestione bar interno del presidio ospedaliero S. Chiara di Trento e del presidio ospedaliero di arco suddivisa in due lotti. CIG prevalente: 8835350977."@it;
+  epo:hasEstimatedValue epd:id_2021-S-141-376566_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-141-376566_Lot_RgULVPVVYP9pkvK789PCUZ,
+    epd:id_2021-S-141-376566_Lot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasPurpose epd:id_2021-S-141-376566_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Procedura aperta per l’affidamento in concessione del servizio di gestione bar interno del presidio ospedaliero S. Chiara di Trento e del presidio ospedaliero di Arco"@it;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-141-376566_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-141-376566_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk, epd:id_2021-S-141-376566_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr,
+    epd:id_2021-S-141-376566_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2021-S-141-376566_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-141-376566_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-141-376566_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-141-376566_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "38122";
+  locn:postName "Trento";
+  locn:thoroughfare "via Calepina 50" .
+
+epd:id_2021-S-141-376566_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+39 0461262550";
+  epo:hasInternetAddress "http://www.giustizia-amministrativa.it"^^xsd:anyURI;
+  cccev:email "trgatn-segrprotocolloamm@ga-cert.it";
+  cccev:telephone "+39 0461262828" .
+
+epd:id_2021-S-141-376566_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "TRGA — Tribunale regionale di giustizia amministrativa sezione di Trento"@it;
+  epo:hasPrimaryContactPoint epd:id_2021-S-141-376566_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2021-S-141-376566_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-141-376566_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-141-376566_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-141-376566_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Si rinvia agli artt. 29, 119 e 120 del D.Lgs. n. 104 del 2.7.2010 (codice del processo amministrativo)." .
+
+epd:id_2021-S-141-376566_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+39 0461262550";
+  epo:hasInternetAddress "http://www.giustizia-amministrativa.it"^^xsd:anyURI;
+  cccev:email "trgatn-segrprotocolloamm@ga-cert.it";
+  cccev:telephone "+39 0461262828" .
+
+epd:id_2021-S-141-376566_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "38122";
+  locn:postName "Trento";
+  locn:thoroughfare "via Calepina 50" .
+
+epd:id_2021-S-141-376566_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "TRGA — Tribunale regionale di giustizia amministrativa sezione di Trento"@it;
+  epo:hasPrimaryContactPoint epd:id_2021-S-141-376566_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2021-S-141-376566_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-141-376566_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-141-376566_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-141-376566_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "IT";
+  epo:hasSubmissionURL "http://www.appalti.provincia.tn.it/mercurio/"^^xsd:anyURI .
+
+epd:id_2021-S-141-376566_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-141-376566_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-141-376566_Organisation_jXahEP38X6pEFgd4J9tLvF .

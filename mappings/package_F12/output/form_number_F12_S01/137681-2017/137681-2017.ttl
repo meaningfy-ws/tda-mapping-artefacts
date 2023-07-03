@@ -1,0 +1,158 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-072-137681_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://platform.negometrix.com/PublishedTenders.aspx?tenderId=60569&companyId=20779"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-072-137681_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "https://platform.negometrix.com/PublishedTenders.aspx?tenderId=60569&companyId=20779"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-072-137681_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-072-137681_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-072-137681_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Ваня Зоровска"@bg;
+  epo:hasFax "+359 29377558";
+  epo:hasInternetAddress "www.sofia.bg"^^xsd:anyURI;
+  cccev:email "vzorovska@sofia.bg";
+  cccev:telephone "+359 29377246" .
+
+epd:id_2017-S-072-137681_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2017-S-072-137681_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-072-137681_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2017-S-072-137681_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-072-137681_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+Цел на настоящия конкурс е да бъдат получени идейни решения, които да послужат за възлагане на обществена поръчка за избор на изпълнител по реда на чл. 79, ал. 1, т. 9 от ЗОП, на базата на резултатите от класирането на проектите. Изборът на идейния проект, на класираният на първо място участник, който е в съответствие с изискванията, описани в настоящата конкурсна програма, следва да послужи за основа съдържаща изисквания към обема и съдържанието на бъдещия инвестиционен проект, включваща всичките му необходими части.
+"""@bg;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-072-137681_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-072-137681_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2017-S-072-137681_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2017-S-072-137681_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2017-S-072-137681_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2017-04-07"^^xsd:date;
+  epo:hasID epd:id_2017-S-072-137681_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20170412";
+  epo:refersToLot epd:id_2017-S-072-137681_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2017-S-072-137681_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2017-S-072-137681_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 072-137681" .
+
+epd:id_2017-S-072-137681_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "ул. „Московска“ № 33" .
+
+epd:id_2017-S-072-137681_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "000696327" .
+
+epd:id_2017-S-072-137681_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2017-S-072-137681_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Столична община"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-072-137681_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-072-137681_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71220000> .
+
+epd:id_2017-S-072-137681_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+Всеки член на журито прави своята оценка, като посочва броя точки по всеки критерий за всеки проект в оценителна таблица. Броят точки се присъжда съобразно посочения максимален брой точки за критерия. Общата оценка за всеки критерий се формира от средноаритметичната оценка на направените индивидуални оценки от членовете на журито.
+Комплексната оценка на проекта се формира като сума от общите оценки по критерии от А до В, както следва:
+К О = А + Б + В.
+Максималната комплексна оценка е 100 т. Проектът, получил най-висока комплекс¬на оценка, се класира на първо място. По същия принцип се класират и участниците на второ и трето място. Участниците, събрали по-малко от 50 т. като комплексна оценка (половината от максималната), не се класират.
+Участниците в процедурата следва да отговарят на изискванията на чл. 54, ал. 1, т. 1, т. 2, т. 3, т. 4, т. 5, т. 6 и т. 7 от ЗОП и чл. 55, ал. 1, т. 1 и т. 4 от ЗОП.
+Решението на журито не е задължително за възложителя.
+"""@bg;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-072-137681_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2017-S-072-137681_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+„Паметник на инж. Иван Иванов — кмет на София“ на бул. „Драган Цанков“ и бул. „Евлоги и Христо Георгиеви“, пред Метростанция „Стадион Васил Левски“, гр. София.
+"""@bg;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-072-137681_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2017-S-072-137681_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2017-S-072-137681_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2017-S-072-137681_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-072-137681_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2017-S-072-137681_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2017-S-072-137681_ReviewTerm_RW9aiajURL5iSUCvDaitUd a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Съгласно чл. 197, ал. 1, т. 1 от ЗОП.
+""" .
+
+epd:id_2017-S-072-137681_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "cpcadmin@cpc.bg";
+  cccev:telephone "+359 29884070" .
+
+epd:id_2017-S-072-137681_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Витоша“ № 18" .
+
+epd:id_2017-S-072-137681_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-072-137681_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2017-S-072-137681_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-072-137681_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-072-137681_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2017-S-072-137681_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "BG" .
+
+epd:id_2017-S-072-137681_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "ул. „Московска“ № 33" .
+
+epd:id_2017-S-072-137681_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasContactName "фронт офис"@bg;
+  epo:hasFax "+359 29809866";
+  epo:hasInternetAddress "www.sofia.bg"^^xsd:anyURI;
+  cccev:email "vzorovska@sofia.bg";
+  cccev:telephone "+359 29377506" .
+
+epd:id_2017-S-072-137681_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS
+  a epo:Identifier;
+  epo:hasIdentifierValue "000696327" .
+
+epd:id_2017-S-072-137681_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasID epd:id_2017-S-072-137681_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasLegalName "Столична община"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-072-137681_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2017-S-072-137681_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2017-S-072-137681_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-072-137681_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2017-S-072-137681_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

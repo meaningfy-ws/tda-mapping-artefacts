@@ -1,0 +1,210 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-038-099325_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.uvo.gov.sk/vyhladavanie-zakaziek/detail/dokumenty/437177"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-038-099325_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2022-S-038-099325_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://www.uvo.gov.sk/profily/-/profil/pdetail/9015"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-038-099325_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-038-099325_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-038-099325_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Mgr. Michal Rybár"@sk;
+  epo:hasInternetAddress "http://www.posta.sk"^^xsd:anyURI;
+  cccev:email "rybar.michal@slposta.sk";
+  cccev:telephone "+421 259393258" .
+
+epd:id_2022-S-038-099325_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Miesto dodania sú priestory SP, a.s. Bližšia špecifikácia miesta, spôsobu a termínu dodania je uvedená v Čl. III. bod II. návrhu RD, ktorý tvorí prílohu č. 2 súťažných podkladov."@sk .
+
+epd:id_2022-S-038-099325_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SK>;
+  locn:address epd:id_2022-S-038-099325_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2022-S-038-099325_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-038-099325_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-038-099325_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2022-S-038-099325_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2022-S-038-099325_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-038-099325_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a epo:EAuctionTechniqueUsage .
+
+epd:id_2022-S-038-099325_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2022-S-038-099325_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2022-S-038-099325_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasContactName "Mgr. Michal Rybár"@sk;
+  epo:hasInternetAddress "http://www.posta.sk"^^xsd:anyURI;
+  cccev:email "rybar.michal@slposta.sk";
+  cccev:telephone "+421 259393258" .
+
+epd:id_2022-S-038-099325_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SK>;
+  locn:postCode "81420";
+  locn:postName "Bratislava - mestská časť Staré Mesto";
+  locn:thoroughfare "Nám. SNP 35" .
+
+epd:id_2022-S-038-099325_InformationProviderOrganisationIdentifier_FxmRFqszG85mxBF5kaCcKe
+  a epo:Identifier;
+  epo:hasIdentifierValue "36631124" .
+
+epd:id_2022-S-038-099325_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasID epd:id_2022-S-038-099325_InformationProviderOrganisationIdentifier_FxmRFqszG85mxBF5kaCcKe;
+  epo:hasLegalName "Slovenská pošta, a.s."@sk;
+  cccev:registeredAddress epd:id_2022-S-038-099325_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2022-S-038-099325_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/79920000> .
+
+epd:id_2022-S-038-099325_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-038-099325_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "Rámcová dohoda sa uzatvára na 24 mesiacov."@sk;
+  epo:hasDescription "Predmetom zákazky je dodávka podacích a ostatných nálepok pre potreby Slovenskej pošty, a.s. Podrobné vymedzenie predmetu zákazky je uvedené v časti B.1 Opis predmetu zákazky a B.2 Obchodné podmienky dodania predmetu zákazky súťažných podkladov."@sk;
+  epo:hasEstimatedValue epd:id_2022-S-038-099325_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2022-S-038-099325_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-038-099325_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
+
+epd:id_2022-S-038-099325_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 984000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-038-099325_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 984000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-038-099325_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-038-099325_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2022-S-038-099325_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2022-S-038-099325_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2022-S-038-099325_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2022-02-18"^^xsd:date;
+  epo:hasID epd:id_2022-S-038-099325_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220223";
+  epo:refersToLot epd:id_2022-S-038-099325_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2022-S-038-099325_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2022-S-038-099325_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 038-099325" .
+
+epd:id_2022-S-038-099325_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SK>;
+  locn:postCode "97599";
+  locn:postName "Banská Bystrica";
+  locn:thoroughfare "Partizánska cesta 9" .
+
+epd:id_2022-S-038-099325_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "36631124" .
+
+epd:id_2022-S-038-099325_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2022-S-038-099325_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Slovenská pošta, a.s."@sk;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/post>;
+  cccev:registeredAddress epd:id_2022-S-038-099325_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-038-099325_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "002/VS/2022" .
+
+epd:id_2022-S-038-099325_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/30192700> .
+
+epd:id_2022-S-038-099325_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-038-099325_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Vzhľadom na podmienky účasti, technické špecifikácie, kritéria vyhodnotenia ponúk alebo podmienky plnenia zmluvy,predmetné verejné obstarávanie nie je ani zelené verejné obstarávanie, ani obstarávanie inovácii ani obstarávanie zamerané na sociálne aspekty.Súťažné podklady v elektronickej forme sú zverejnené na https://posta.eranet.sk/#/tenders.Všetky požadované doklady a dokumenty uchádzač predkladá ako scan originálov alebo úradne osvedčených kópií.Obstarávateľ bude pri komunikácii s uchádzačmi, resp. záujemcami postupovať v zmysle § 20 zákona o verejnomobstarávaní prostredníctvom komunikačného rozhrania systému IS ERANET umiestneného nahttps://posta.eranet.sk/#/tenders. Uvedený spôsob komunikácie sa týka akejkoľvek komunikácie a podaní medziobstarávateľom a záujemcami, resp. uchádzačmi."@sk;
+  epo:hasDescription "Predmetom zákazky je dodávka podacích a ostatných nálepok pre potreby Slovenskej pošty, a.s. Podrobné vymedzenie predmetu zákazky je uvedené v časti B.1 Opis predmetu zákazky a B.2 Obchodné podmienky dodania predmetu zákazky súťažných podkladov."@sk;
+  epo:hasEstimatedValue epd:id_2022-S-038-099325_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2022-S-038-099325_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-038-099325_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2022-S-038-099325_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "PODACIE  A OSTATNÉ NÁLEPKY"@sk;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-038-099325_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2022-S-038-099325_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2022-S-038-099325_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2022-S-038-099325_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G,
+    epd:id_2022-S-038-099325_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2022-S-038-099325_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-038-099325_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2022-S-038-099325_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2022-S-038-099325_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  locn:postCode "82005";
+  locn:postName "Bratislava";
+  locn:thoroughfare "Ružová dolina 10, P.O.BOX" .
+
+epd:id_2022-S-038-099325_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+421 250264219";
+  epo:hasInternetAddress "http://www.uvo.gov.sk"^^xsd:anyURI;
+  cccev:telephone "+421 250264176" .
+
+epd:id_2022-S-038-099325_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Úrad pre verejné obstarávanie"@sk;
+  epo:hasPrimaryContactPoint epd:id_2022-S-038-099325_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2022-S-038-099325_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2022-S-038-099325_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-038-099325_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2022-S-038-099325_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+421 250264219";
+  epo:hasInternetAddress "http://www.uvo.gov.sk"^^xsd:anyURI;
+  cccev:telephone "+421 250264176" .
+
+epd:id_2022-S-038-099325_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  locn:postCode "82005";
+  locn:postName "Bratislava";
+  locn:thoroughfare "Ružová dolina 10, P.O.BOX" .
+
+epd:id_2022-S-038-099325_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Úrad pre verejné obstarávanie"@sk;
+  epo:hasPrimaryContactPoint epd:id_2022-S-038-099325_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2022-S-038-099325_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-038-099325_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-038-099325_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-038-099325_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "CS", "SK";
+  epo:hasSubmissionURL "https://posta.eranet.sk/#/tenders"^^xsd:anyURI .

@@ -1,0 +1,214 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-133-381012_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://ezamowienia.gov.pl/pl/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-133-381012_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2022-S-133-381012_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://zamowienia.enea.pl"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-133-381012_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-133-381012_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-133-381012_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Karol Szkurat"@pl;
+  epo:hasFax "+48 618845982";
+  epo:hasInternetAddress "http://www.operator.enea.pl/"^^xsd:anyURI;
+  cccev:email "karol.szkurat@operator.enea.pl";
+  cccev:telephone "+48 618843942" .
+
+epd:id_2022-S-133-381012_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL41> .
+
+epd:id_2022-S-133-381012_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2022-S-133-381012_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-133-381012_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2022-S-133-381012_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2022-S-133-381012_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a epo:EAuctionTechniqueUsage .
+
+epd:id_2022-S-133-381012_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-133-381012_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Przedmiotem zamówienia jest dostawa wkładek bezpiecznikowych nn dla potrzeb ENEA Operator Sp. z o.o. Szczegółowe informacje dotyczące zamówienia znajdują się SWZ, zamieszczonej na stronie internetowej Zamawiającego wskazanej w sekcji I.3) Komunikacja – ogłoszenia."@pl;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-133-381012_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
+
+epd:id_2022-S-133-381012_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:telephone "+48 224587840" .
+
+epd:id_2022-S-133-381012_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17a" .
+
+epd:id_2022-S-133-381012_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "Prezes Krajowej Izby Odwoławczej"@pl;
+  epo:hasPrimaryContactPoint epd:id_2022-S-133-381012_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU;
+  cccev:registeredAddress epd:id_2022-S-133-381012_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2022-S-133-381012_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2022-S-133-381012_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2022-S-133-381012_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-133-381012_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2022-S-133-381012_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2022-S-133-381012_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2022-S-133-381012_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2022-S-133-381012_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2022-S-133-381012_TenderReceiver_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasDispatchDate "2022-07-08"^^xsd:date;
+  epo:hasID epd:id_2022-S-133-381012_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220713";
+  epo:refersToLot epd:id_2022-S-133-381012_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2022-S-133-381012_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2022-S-133-381012_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 133-381012" .
+
+epd:id_2022-S-133-381012_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL4>;
+  locn:postCode "60-479";
+  locn:postName "Poznań";
+  locn:thoroughfare "ul. Strzeszyńska 58" .
+
+epd:id_2022-S-133-381012_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "PL" .
+
+epd:id_2022-S-133-381012_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2022-S-133-381012_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "ENEA Operator Sp. z o.o."@pl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2022-S-133-381012_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-133-381012_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2022-08-12"^^xsd:date;
+  epo:hasEnd "2023-09-12"^^xsd:date .
+
+epd:id_2022-S-133-381012_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "RPUZ/P/0648/2021/DI/IM" .
+
+epd:id_2022-S-133-381012_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/31211300> .
+
+epd:id_2022-S-133-381012_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-133-381012_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "1. Szacunkowa wartość przedmiotu zamówienia przekracza 431 000,00 EUR.2. Do oferty Wykonawca powinien dołączyć dokumenty i oświadczenia wskazane w ogłoszeniu oraz SWZ zamieszczonej na stronie internetowej Zamawiającego wskazanej w sekcji I.3) ogłoszenia.3. Edytowalna wersja formularza JEDZ wraz z instrukcją jego wypełnienia znajduje się pod adresem: https://www.uzp.gov.pl/baza-wiedzy/prawo-zamowien-publicznych-regulacje/prawo-krajowe/jednolity-europejski-dokument-zamowienia.3.1. Zamawiający na stronie internetowej wskazanej w sekcji I.3 ogłoszenia również zamieści dokument JEDZ w wersji edytowalnej.4. Ponadto:4.1. w przypadku wspólnego ubiegania się o zamówienie przez Wykonawców, JEDZ wraz z ofertą składa każdy z Wykonawców ubiegających się o zamówienie;4.2. w przypadku Wykonawcy, który powołuje się na zasoby innych podmiotów – Wykonawca składa także JEDZ wraz z ofertą dla tych podmiotów;4.3. w przypadku Wykonawcy, który zamierza powierzyć wykonanie części zamówienia podwykonawcom – Wykonawca składa JEDZ wraz z ofertą także dla tych podmiotów. JEDZ powinien potwierdzać spełnianie warunków udziału w postępowaniu oraz brak podstaw wykluczenia w zakresie, w którym każdy z Wykonawców wykazuje spełnianie warunków udziału w postępowaniu oraz brak podstaw wykluczenia.5. Jeżeli jest to niezbędne do zapewnienia odpowiedniego przebiegu postępowania o udzielenie zamówienia, Zamawiający może na każdym etapie postępowania wezwać Wykonawców do złożenia wszystkich lub niektórych oświadczeń lub dokumentów potwierdzających, że nie podlegają wykluczeniu, spełniają warunki udziału w postępowaniu lub kryteria selekcji, a jeżeli zachodzą uzasadnione podstawy do uznania, że złożone uprzednio oświadczenia lub dokumenty nie są już aktualne, do złożenia aktualnych oświadczeń lub dokumentów.6. Wykonawca składa ofertę za pośrednictwem Formularza do złożenia, zmiany, wycofania oferty lub wniosku dostępnego na ePUAP i udostępnionego również na miniPortalu. Klucz publiczny niezbędny do zaszyfrowania oferty przez Wykonawcę jest dostępny dla Wykonawców na miniPortalu.7. W postępowaniu o udzielenie zamówienia komunikacja pomiędzy Zamawiającym, a Wykonawcami w szczególności składanie oświadczeń, wniosków (innych niż oferty), zawiadomień oraz przekazywanie informacji odbywa się elektronicznie za pośrednictwem poczty elektronicznej. We wszelkiej korespondencji związanej z niniejszym postępowaniem Zamawiający i Wykonawcy posługują się numerem postępowania: RPUZ/P/0648/2022/DI/IMKomunikacja elektroniczna powinna być kierowana do wszystkich osób wskazanych w pkt 1.18 SWZ.8. Przekazywanie dokumentów elektronicznych, oświadczeń lub elektronicznych kopii dokumentów lub oświadczeń składanych przez Wykonawcę odbywa się elektronicznie za pośrednictwem dedykowanego formularza dostępnego na ePUAP oraz udostępnionego przez miniPortal (Formularz do komunikacji). Sposób sporządzenia dokumentów elektronicznych, oświadczeń lub elektronicznych kopii dokumentów lub oświadczeń musi być zgodny z wymaganiami określonymi w rozporządzeniu Prezesa Rady Ministrów z dnia 27 czerwca 2017 r. w sprawie użycia środków komunikacji elektronicznej w postępowaniu o udzielenie zamówienia publicznego oraz udostępniania i przechowywania dokumentów elektronicznych oraz rozporządzeniu Ministra Rozwoju z dnia 26 lipca 2016 r. w sprawie rodzajów dokumentów, jakich może żądać Zamawiający od Wykonawcy w postępowaniu o udzielenie zamówienia.9. Wykonawcy są zobowiązani do postępowania zgodnie z regulaminem miniPortalu10. Wymagany termin realizacji przedmiotu zamówienia został określony w SWZ."@pl;
+  epo:hasDescription "Przedmiotem zamówienia jest dostawa wkładek bezpiecznikowych nn dla potrzeb ENEA Operator Sp. z o.o. Szczegółowe informacje dotyczące zamówienia znajdują się SWZ, zamieszczonej na stronie internetowej Zamawiającego wskazanej w sekcji I.3) Komunikacja – ogłoszenia."@pl;
+  epo:hasID epd:id_2022-S-133-381012_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-133-381012_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2022-S-133-381012_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Dostawa wkładek bezpiecznikowych nn dla potrzeb ENEA Operator Sp. z o.o."@pl;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-133-381012_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2022-S-133-381012_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2022-S-133-381012_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2022-S-133-381012_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2022-S-133-381012_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-133-381012_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-133-381012_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-133-381012_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17a" .
+
+epd:id_2022-S-133-381012_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587840" .
+
+epd:id_2022-S-133-381012_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Prezes Krajowej Izby Odwoławczej"@pl;
+  epo:hasPrimaryContactPoint epd:id_2022-S-133-381012_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2022-S-133-381012_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2022-S-133-381012_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-133-381012_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2022-S-133-381012_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "1. Środki ochrony prawnej określone w niniejszym punkcie przysługują Wykonawcy, a także innemu podmiotowi, jeżeli ma lub miał interes w uzyskaniu danego zamówienia oraz poniósł lub może ponieść szkodę w wyniku naruszenia przez Zamawiającego przepisów ustawy Pzp.2. Odwołanie przysługuje wyłącznie od niezgodnej z przepisami ustawy czynności Zamawiającego podjętej w postępowaniu o udzielenie zamówienia lub zaniechania czynności, do której Zamawiający jest zobowiązany na podstawie ustawy.3. Odwołanie wnosi się do Prezesa Izby w formie pisemnej w postaci papierowej albo w postaci elektronicznej, opatrzone odpowiednio własnoręcznym podpisem albo kwalifikowanym podpisem elektronicznym lub podpisem zaufanym.4. Odwołujący przesyła kopię odwołania zamawiającemu przed upływem terminu do wniesienia odwołania w taki sposób, aby mógł on zapoznać się z jego treścią przed upływem tego terminu. Domniemywa się, iż Zamawiający mógł zapoznać się z treścią odwołania przed upływem terminu do jego wniesienia, jeżeli przesłanie jego kopii nastąpiło przed upływem terminu do jego wniesienia przy użyciu środków komunikacji elektronicznej.5. Odwołanie powinno wskazywać czynność lub zaniechanie czynności Zamawiającego, której zarzuca się niezgodność z przepisami ustawy, zawierać zwięzłe przedstawienie zarzutów, określać żądanie oraz wskazywać okoliczności faktyczne i prawne uzasadniające wniesienie odwołania.6. Odwołanie wnosi się w terminach określonych w art. 515 ustawy Pzp, w szczególności:1) w terminie 10 dni od dnia przesłania informacji o czynności Zamawiającego stanowiącej podstawę jego wniesienia - jeżeli zostały przesłane przy pomocy środków komunikacji elektronicznej albo w terminie 15 dni - jeżeli zostały przesłane w inny sposób;7. Odwołanie wobec treści ogłoszenia o zamówieniu, a jeżeli postępowanie jest prowadzone w trybie przetargu nieograniczonego, także wobec postanowień specyfikacji warunków zamówienia, wnosi się w terminie:1) 10 dni od dnia publikacji ogłoszenia w Dzienniku Urzędowym Unii Europejskiej lub zamieszczenia specyfikacji warunków zamówienia na stronie internetowej8. Odwołanie wobec czynności innych niż określone w pkt. 6 i 7 wnosi się:1) w terminie 10 dni od dnia, w którym powzięto lub przy zachowaniu należytej staranności można było powziąć wiadomość o okolicznościach stanowiących podstawę jego wniesienia.9. W przypadku wniesienia odwołania wobec treści ogłoszenia o zamówieniu lub postanowień specyfikacji istotnych warunków zamówienia Zamawiający może przedłużyć termin składania ofert." .
+
+epd:id_2022-S-133-381012_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.uzp.gov.pl"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587840" .
+
+epd:id_2022-S-133-381012_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  locn:postCode "02-676";
+  locn:postName "Warszawa";
+  locn:thoroughfare "ul. Postępu 17a" .
+
+epd:id_2022-S-133-381012_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Prezes Krajowej Izby Odwoławczej"@pl;
+  epo:hasPrimaryContactPoint epd:id_2022-S-133-381012_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2022-S-133-381012_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-133-381012_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-133-381012_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-133-381012_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "PL";
+  epo:hasSubmissionURL "https://ezamowienia.gov.pl/pl/"^^xsd:anyURI .
+
+epd:id_2022-S-133-381012_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL4>;
+  locn:postCode "60-479";
+  locn:postName "Poznań";
+  locn:thoroughfare "Strzeszyńska 58" .
+
+epd:id_2022-S-133-381012_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR
+  a cccev:ContactPoint;
+  epo:hasContactName "Karol Szkurat"@pl;
+  epo:hasFax "+48 618845982";
+  epo:hasInternetAddress "https://ezamowienia.gov.pl/pl/"^^xsd:anyURI;
+  cccev:email "karol.szkurat@operator.enea.pl";
+  cccev:telephone "+48 618843942" .
+
+epd:id_2022-S-133-381012_TenderReceiverOrganisationIdentifier_RmPNyhSxpRtChEASKUU5BR
+  a epo:Identifier;
+  epo:hasIdentifierValue "PL" .
+
+epd:id_2022-S-133-381012_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR a org:Organization;
+  epo:hasID epd:id_2022-S-133-381012_TenderReceiverOrganisationIdentifier_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasLegalName "Enea Operator Sp. z o.o."@pl;
+  epo:hasPrimaryContactPoint epd:id_2022-S-133-381012_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  cccev:registeredAddress epd:id_2022-S-133-381012_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR .
+
+epd:id_2022-S-133-381012_TenderReceiver_RmPNyhSxpRtChEASKUU5BR a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-133-381012_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  epo:playedBy epd:id_2022-S-133-381012_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR .

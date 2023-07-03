@@ -1,0 +1,142 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-038-095227_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://www.had.de/onlinesuche_freeeu.html?SHOWPUB=263-766"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-038-095227_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasBuyerProfile "https://www.kvvks.de/konzern/lieferanten/ausschreibungen/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-038-095227_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-038-095227_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-038-095227_Channel_Zfp5YfoNfJomE833qJVsZY a cccev:Channel;
+  epo:hasURL "https://www.kvvks.de/konzern/lieferanten/lieferantenportal/"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2021-S-038-095227_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Konzerneinkauf"@de;
+  epo:hasFax "+49 56157452181";
+  epo:hasInternetAddress "https://www.kvvks.de/"^^xsd:anyURI;
+  cccev:email "sven.weidemann@netzplusservice.de";
+  cccev:telephone "+49 56157452423" .
+
+epd:id_2021-S-038-095227_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress "Eisenacher Straße 1234123 Kassel"@de .
+
+epd:id_2021-S-038-095227_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE731>;
+  locn:address epd:id_2021-S-038-095227_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2021-S-038-095227_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-038-095227_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-038-095227_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2021-S-038-095227_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-038-095227_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-038-095227_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-038-095227_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasAdditionalInformation "Bei der Angabe zur Vertragslaufzeit in Ziffer II.2.7) handelt es sich um eine (technisch bedingte) fiktive Angabe. Im Hinblick auf die Vertragslaufzeit gilt Folgendes:Beginn: Unverzüglich nach AuftragserteilungEnde: Der Abschluss der Leistungen ist voraussichtlich vorgesehen für 2023."@de;
+  epo:hasDescription "Der geplante Neubau schließt sich an das vorhandene Verwaltungsgebäude an und soll die derzeit am Standort Wilhelmshöhe untergebrachte Ausbildungs- und Lehrwerkstatt und die derzeit am Standort Königstor angesiedelte kaufmännische Ausbildung inklusive der Juniorfirma, aufnehmen.Im Erdgeschoss ist hauptsächlich im linken abgehenden Flügel, die zentrale Ausbildung der KVV (grün markiert) des gewerblichen Bereichs untergebracht.Im darüber liegenden ersten Obergeschoss befinden sich die zum Ausbildungsbereich zugehörigen Umkleide- und Sanitärräume (blau markiert) sowie einige Schulungsräume und Büroflächen (grün markiert) im abgehenden Flügel sowie im Hauptbau.Die Bruttogeschossfläche des gesamten Gebäudes weist eine Fläche von ca. 6 100 m2 auf.Die reine Nutzfläche der zentralen Ausbildung, sowohl gewerblich als auch kaufmännisch, beträgt im EG/1.OG insgesamt ca. 922 m2. Weiterhin kommt noch ein Schulungsraum als Nutzfläche im 1. OG von ca. 180 m2 als hinzu.Geplante Auftragserteilung 4.Quartal 2021 unter Vorbehalt der Wirtschaftlichkeit, des Gremienbeschlusses und der Neubaubeauftragung; geplanter Baubeginn 2022; geplanter Einzug 2024."@de;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-038-095227_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-038-095227_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2021-S-038-095227_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2021-S-038-095227_Reviewer_Sc23ScTxybJ3bYD3QjmgGS;
+  epo:hasDispatchDate "2021-02-19"^^xsd:date;
+  epo:hasID epd:id_2021-S-038-095227_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210224";
+  epo:refersToLot epd:id_2021-S-038-095227_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2021-S-038-095227_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2021-S-038-095227_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 038-095227" .
+
+epd:id_2021-S-038-095227_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE731>;
+  locn:postCode "34117";
+  locn:postName "Kassel";
+  locn:thoroughfare "Königstor 3-13" .
+
+epd:id_2021-S-038-095227_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Verkehrs- und Versorgungsunternehmen";
+  epo:hasLegalName "Kasseler Verkehrs- und Versorgungs-GmbH"@de;
+  epo:hasMainActivityDescription "Verkehr, Versorgung";
+  cccev:registeredAddress epd:id_2021-S-038-095227_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-038-095227_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "HAD 263/766" .
+
+epd:id_2021-S-038-095227_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/80520000> .
+
+epd:id_2021-S-038-095227_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-038-095227_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation "Die Vergabeunterlagen stehen für Ihr Unternehmen zum Download über die elektronische Vergabeplattform ASTRAS unterhttps://www.kvvks.de/konzern/lieferanten/lieferantenportal sowie als Anlage dieser HAD-Bekanntmachung unterhttps://www.had.de/onlinesuche_freeeu.html?SHOWPUB=263-674 bereit. Die Aufforderung zur Angebotsabgabe, der Angebotsvordruck sowie ggf. weitereAngebotsrelevanten Unterlagen werden erst nach Abschluss des Teilnahmewettbewerbs an die ausgewählten Bieter ausgegeben.1. Für die Teilnahme an Ausschreibungen und Qualifizierungssystemen der KVV ist eine einmalige Registrierung für einen passwortgeschützten Zugang im KVV-Lieferantenportal unter http://www.kvvks.de/einkauf/ausschreibungen/Erforderlich. Die Bewerbungsunterlagen können unter der in Ziffer I.3) genannten Internetadressen abgerufen werden. Die Verwendung der Bewerbungsunterlagen istVerbindlich. Sofern im Laufe des Vergabeverfahrens weitere Informationen oder Präzisierungen seitens des Auftraggebers erforderlich werden sollten, werden dieseZusatzinformationen ebenfalls unter der dort genannten Internetadresse veröffentlicht.Die Bewerber werden darüber unmittelbar benachrichtigt. Eine Registrierung bei der Vergabeplattform erleichtert den Zugang und die Information zu den Bewerberinformationen.2. Fragen zu den Anforderungen dieser Bekanntmachung und den Bewerbungsunterlagen sollen umgehend, spätestens sechs Tage vor Ablauf der Bewerbungsfrist, gestellt werden und werden allen Bewerbern über die Vergabeplattform in anonymisierter Form zur Verfügung gestellt. Die Antworten der Vergabestelle aufBewerberfragen sind bei der Erstellung der Teilnahmeanträge zu beachten.3. Teilnahmeanträge sind elektronisch an die in Ziffer I.3) benannte Stelle über die Vergabeplattform zu übermitteln.4. Es handelt sich um ein mehrstufiges Verhandlungsverfahren im Rahmen eines wettbewerblichen Dialogverfahrens. Die zugelassenen Bieter erhalten die Aufforderung zur Angebotsabgabe nebst weiteren angebotsrelevanten Unterlagen nach der Auswertung der Teilnahmeanträge über das Lieferantenportal derKVV. Während des Dialogverfahrens wird der Auftraggeber den Bieterkreis vor Aufforderung zum letztverbindlichen Angebot voraussichtlich sukzessive reduzieren.5. Der Auftraggeber erstattet den Bewerbern keine Kosten, die durch die Erstellung der Bewerbung und der späteren Angebote entstehen. Es besteht kein Rechtsanspruch auf eine Berücksichtigung beim Versand der Ausschreibungsunterlagen. Mit der Bekanntmachung und der Veröffentlichung des Vorhabens ist keine Verpflichtung zur Vergabe verbunden.6. Der Auftraggeber behält sich vor, das Verfahren aus sachlichen Gründen, z. B. Mangels Wirtschaftlichkeit, aufzuheben. Ersatz- oder Entschädigungsansprüche der Bewerber bzw. Bieter sind – soweit rechtlich zulässig – ausgeschlossen."@de;
+  epo:hasDescription "Wettbewerbliches Dialogverfahren mit vorgeschaltetem Teilnahmewettbewerb nach §18 VgVPlaung und Einrichtung der gewerblichen Lehr- und Ausbildungswerkstatt nach zeitgemäßen Ausstattungsstandards im Hinblick auf die gestiegenen Bedarfsanforderungen einer zukunftsgerichteten Ausbildung.Für nachfolgend aufgeführte Ausbildungszweige und Gesamtpersonalzahlen soll das neue Ausbildungszentrum, Werkstattbereich und Labor konzeptionell beplant und eingerichtet werden.Anforderungen an das Ausbildungszentrum:— Helle, offene Räume,— Flexible Workstations für bis zu 16 Elektroniker,— Flexible Workstations für bis zu 10 Mechaniker,— Gute Einsehbarkeit vom Meisterbüro aus,— Meisterbüro mit Platz für min. 4 Ausbilder (PC-Arbeitsplätze)."@de;
+  epo:hasID epd:id_2021-S-038-095227_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/comp-dial>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-038-095227_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2021-S-038-095227_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Planung und Einrichtung der gewerblichen Lehr- und Ausbildungswerkstatt der zentralen Ausbildung der KVV"@de;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-038-095227_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2021-S-038-095227_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2021-S-038-095227_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
+  epo:usesChannel epd:id_2021-S-038-095227_Channel_Zfp5YfoNfJomE833qJVsZY .
+
+epd:id_2021-S-038-095227_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-038-095227_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-038-095227_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-038-095227_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— § 134 Abs. 2 GWB – Informations- und Wartepflicht: Ein Vertrag darf erst 15 Kalendertage nach Absendung der Information nach § 134 Abs. 1 GWB geschlossen werden. Wird die Information auf elektronischem Weg oder per Fax versendet, verkürzt sich die Frist auf 10 Kalendertage. Die Frist beginnt am Tag nach der Absendung der Information durch den Auftraggeber; auf den Tag des Zugangs beim betroffenen Bieter und Bewerber kommt es nicht an.— Das Vergabeverfahren unterliegt den Vorschriften über das Nachprüfungsverfahren Vor der Vergabekammer (§ 155 ff. GWB). Gemäß § 160 Abs. 3 GWB ist der Antrag unzulässig, soweit:1) der Antragsteller den geltend gemachten Verstoß gegen Vergabevorschriften vor Einreichen des Nachprüfungsantrags erkannt und gegenüber dem Auftraggeber nicht innerhalb einer Frist von 10 Kalendertagen gerügt hat; der Ablauf der Frist nach § 134 Abs. 2 GWB bleibt unberührt,2) Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, nicht spätestens bis zum Ablauf der in der Bekanntmachung benannten Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden,3) Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, nicht spätestens bis zum Ablauf der Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden,4) mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind. Der vorstehende Satz gilt nicht bei einem Antrag auf Feststellung der Unwirksamkeit des Vertrags nach § 135 Abs. 1 Nr. 2 GWB. § 134 Abs. 1 Satz 2 GWB bleibt unberührt." .
+
+epd:id_2021-S-038-095227_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasFax "+49 6151125816 / +49 6151126834";
+  epo:hasInternetAddress "https://www.kvvks.de/"^^xsd:anyURI;
+  cccev:email "vergabekammer@rpda.hessen.de";
+  cccev:telephone "+49 6151126603" .
+
+epd:id_2021-S-038-095227_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "64283";
+  locn:postName "Darmstadt";
+  locn:thoroughfare "Dienstgebäude: Wilhelminenstraße 1-3; Fristenbriefkasten: Luisenplatz 2" .
+
+epd:id_2021-S-038-095227_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Hessen beim Regierungspräsidium Darmstadt"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-038-095227_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2021-S-038-095227_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2021-S-038-095227_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-038-095227_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2021-S-038-095227_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.kvvks.de/konzern/lieferanten/lieferantenportal/"^^xsd:anyURI .

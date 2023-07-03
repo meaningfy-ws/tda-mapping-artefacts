@@ -1,0 +1,227 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-252-637918_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2020_1NV3sbUn1q"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2020-S-252-637918_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.achatpublic.com/sdm/ent/gen/index.jsp"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2020-S-252-637918_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2020-S-252-637918_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2020-S-252-637918_Channel_PECLWCEwQNoZFei2BQMmT6 a cccev:Channel;
+  epo:hasURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2020_1NV3sbUn1q"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2020-S-252-637918_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Service juridique — bureau 14"@fr;
+  epo:hasInternetAddress "http://www.bouclenorddeseine.fr"^^xsd:anyURI;
+  cccev:email "franck.meurgey@bouclenorddeseine.fr";
+  cccev:telephone "+33 170484872" .
+
+epd:id_2020-S-252-637918_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Territoire de la commune de Gennevilliers (92230)."@fr .
+
+epd:id_2020-S-252-637918_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR105>;
+  locn:address epd:id_2020-S-252-637918_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2020-S-252-637918_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2020-S-252-637918_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-252-637918_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2020-S-252-637918_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2020-S-252-637918_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 180.0;
+  time:unitType time:unitMonth .
+
+epd:id_2020-S-252-637918_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "M. Franck Meurgey — service juridique — bureau 14"@fr;
+  epo:hasInternetAddress "http://www.bouclenorddeseine.fr"^^xsd:anyURI;
+  cccev:email "Franck.meurgey@bouclenorddeseine.fr";
+  cccev:telephone "+33 170484872" .
+
+epd:id_2020-S-252-637918_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR105>;
+  locn:postCode "92230";
+  locn:postName "Gennevilliers";
+  locn:thoroughfare "1 bis rue de la Paix" .
+
+epd:id_2020-S-252-637918_InformationProviderOrganisationIdentifier_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:Identifier;
+  epo:hasIdentifierValue "200 057 990 00034" .
+
+epd:id_2020-S-252-637918_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasID epd:id_2020-S-252-637918_InformationProviderOrganisationIdentifier_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:hasLegalName "Établissement public territorial Boucle Nord de Seine"@fr;
+  cccev:registeredAddress epd:id_2020-S-252-637918_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2020-S-252-637918_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45111291>, <http://data.europa.eu/cpv/cpv/45211360>,
+    <http://data.europa.eu/cpv/cpv/70000000>, <http://data.europa.eu/cpv/cpv/70120000> .
+
+epd:id_2020-S-252-637918_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-252-637918_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "La procédure retenue est une procédure ouverte avec négociation, dans le respect des dispositions de l'article R. 300-9 du code de l'urbanisme et des articles L. 3121-1 et L. 3124-1 du code de la commande publique."@fr;
+  epo:hasDescription "Concession d'aménagement pour la réalisation de la ZAC des Agnettes à Gennevilliers (articles L. 300-4 et suivants et R. 300-4 et suivants du code de l'urbanisme). Le concessionnaire assume un risque économique lié à l'aménagement. Le traité de concession d'aménagement sera rendu exécutoire dans les conditions prévues par la législation et la réglementation en vigueur. Le traité de concession d'aménagement prendra effet à compter de la date de réception, par le concessionnaire, de cette notification. Sa durée est fixée à quinze ans à compter de sa date de prise d'effet. les missions à la charge du concessionnaire sont très précisément définies à l'article 2 du projet de traité de concession d'aménagement."@fr;
+  epo:hasEstimatedValue epd:id_2020-S-252-637918_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2020-S-252-637918_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-252-637918_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 57000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-252-637918_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM a cccev:ContactPoint;
+  epo:hasFax "+33 145554702";
+  cccev:telephone "+33 144426375" .
+
+epd:id_2020-S-252-637918_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75007";
+  locn:postName "Paris Cedex 07";
+  locn:thoroughfare "Préfecture de région Île-de-France — 29 rue Barbet de Jouy" .
+
+epd:id_2020-S-252-637918_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM a org:Organization;
+  epo:hasLegalName "Comité consultatif interrégional de règlement amiable des litiges"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-252-637918_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM;
+  cccev:registeredAddress epd:id_2020-S-252-637918_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2020-S-252-637918_Mediator_PMKvGTWSa3gLdxRfJtvToM a epo:Mediator;
+  epo:playedBy epd:id_2020-S-252-637918_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2020-S-252-637918_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 57000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-252-637918_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2020-S-252-637918_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2020-S-252-637918_Mediator_PMKvGTWSa3gLdxRfJtvToM,
+    epd:id_2020-S-252-637918_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2020-S-252-637918_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2020-S-252-637918_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2020-12-23"^^xsd:date;
+  epo:hasID epd:id_2020-S-252-637918_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20201228";
+  epo:refersToLot epd:id_2020-S-252-637918_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2020-S-252-637918_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2020-S-252-637918_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 252-637918" .
+
+epd:id_2020-S-252-637918_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR105>;
+  locn:postCode "92230";
+  locn:postName "Gennevilliers";
+  locn:thoroughfare "1 bis rue de la Paix" .
+
+epd:id_2020-S-252-637918_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "200 057 990 00034" .
+
+epd:id_2020-S-252-637918_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasID epd:id_2020-S-252-637918_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Boucle Nord de Seine"@fr;
+  epo:hasMainActivityDescription "Établissement public territorial Boucle Nord de Seine";
+  cccev:registeredAddress epd:id_2020-S-252-637918_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2020-S-252-637918_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "EP-CA 2001" .
+
+epd:id_2020-S-252-637918_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45211360> .
+
+epd:id_2020-S-252-637918_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-252-637918_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Le périmètre du projet, d'environ 22 ha, est situé dans le quartier des Agnettes, en bordure ouest de Gennevilliers, à la limite avec la commune d'Asnières-sur-Seine. Il est longé par la ligne 13 du métro et sera d'ici 2030 à proximité d'une gare de la ligne 15 du grand Paris Arc Express. Situé au cœur du secteur résidentiel, où plusieurs opérations d'aménagement sont en cours (écoquartier, centre-ville), le quartier des Agnettes est le dernier grand ensemble de la commune de Gennevilliers à faire l'objet d'un projet de renouvellement urbain (sur 18 ha); le périmètre de ZAC des Agnettes occupe la totalité du périmètre de la convention NPNRU. Le quartier est caractérisé par un urbanisme des années soixante-dix où les constructions de grandes hauteurs implantées dans un espace public diffus et peu qualifié établissent une rupture nette avec les quartiers environnants. Peu dense et composé de grandes parcelles, il offre la possibilité de diversifier les fonctions du quartier, de proposer une nouvelle offre de logements ainsi qu'une nouvelle offre économique, de reconstituer l'offre commerciale, de requalifier l'espace public dans une perspective de développement durable. L'aménagement du périmètre devra en effet permettre:— d'assurer le renouvellement urbain du quartier, en améliorer le fonctionnement dans le cadre plus général du projet et des financements ANRU;— de créer un espace vert structurant relié à la trame verte communale;— de requalifier et de recomposer les espaces publics, renforcer et rendre plus accessible la liaison avec les quartiers environnants;— d'équilibrer le rapport entre espace privé et espace public;— de créer une nouvelle offre foncière par un redécoupage parcellaire;— de prévoir la démolition-reconstruction du groupe scolaire Joliot-Curie avec une salle de sport d'environ 8 100 m2 et la création de l'équipement multifonctionnel, culturel et intergénérationnel;— de diversifier l'offre de logement en réalisant 76 660 m2 de SDP (environ 900 logements);— de maintenir l'offre commerciale de proximité en prévoyant la réalisation de 1 050 m2 de SDP et créer une nouvelle offre économique par le biais de la création d'un centre d'affaire avec 2 400 m2 de SDP. Autres chiffres indicatifs, le programme de la présente consultation prévoit:— commerces/services: 1 050 m2 de SDP;— habitation: 76 660 m2 de SDP;— bureaux: 850 m2 de SDP;— artisanat: 1 624 m2 de SDP;— équipements publics: 12 480 m2 de SDP. Il est également prévu la construction d'un parking silos de 6 500 m2 sous maîtrise d'ouvrage de Gennevilliers Habitat. Le programme prévoit également l'aménagement d'espaces publics et de voiries, dont environ 45 500 m2 de voirie, 3 000 m2 de places puis 16 500 m2 de parcs et jardins. En conséquence du caractère contraignant du nombre de caractères pouvant être saisis, les candidats devront prendre connaissance du règlement de la consultation. Ce document comporte des informations relatives aux éléments devant être remis par les candidats à l'appui de leur dossier de candidature et d'offre et comportant notamment une description de la concession d'aménagement et des conditions de participation à la présente procédure de mise en concurrence. Les pièces à fournir relatives au dossier de candidature et d'offre sont très précisément détaillées dans le règlement de la consultation. La transmission sous support papier des dossiers de candidature et d'offre est interdite. Les modalités précises de remise des candidatures et des offres sont indiquées dans le règlement de la consultation."@fr;
+  epo:hasDescription "Concession d'aménagement pour la réalisation de la ZAC des Agnettes à Gennevilliers (articles L. 300-4 et suivants et R. 300-4 et suivants du code de l'urbanisme). Le projet et le programme de la concession sont précisément décrits dans le DCE."@fr;
+  epo:hasEstimatedValue epd:id_2020-S-252-637918_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2020-S-252-637918_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-252-637918_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2020-S-252-637918_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Concession d'aménagement pour la réalisation de la ZAC des Agnettes à Gennevilliers"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-252-637918_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2020-S-252-637918_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2020-S-252-637918_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv;
+  epo:usesChannel epd:id_2020-S-252-637918_Channel_PECLWCEwQNoZFei2BQMmT6 .
+
+epd:id_2020-S-252-637918_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-252-637918_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2020-S-252-637918_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2020-S-252-637918_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "95027";
+  locn:postName "Cergy-Pontoise Cedex";
+  locn:thoroughfare "2-4 boulevard de l'Hautil — BP 30322" .
+
+epd:id_2020-S-252-637918_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 130173459";
+  epo:hasInternetAddress "http://www.ta-cergy-pontoise.juradm.fr"^^xsd:anyURI;
+  cccev:email "Greffe.ta-cergy-pontoise@juradm.fr";
+  cccev:telephone "+33 130173400" .
+
+epd:id_2020-S-252-637918_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Services du greffe du tribunal administratif de Cergy-Pontoise"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-252-637918_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2020-S-252-637918_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2020-S-252-637918_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2020-S-252-637918_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2020-S-252-637918_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Le tribunal administratif de Cergy-Pontoise peut être saisi des recours suivants:— le référé précontractuel conformément aux articles L. 551-1 à L. 551-12 et R. 551-1 à R. 551-6 du code de justice administrative;— le référé contractuel conformément aux articles L. 551-13 à L. 551-23 et R. 551-7 à R. 551-10 du code de justice administrative;— recours pour excès de pouvoir (article R. 421-1 du code de justice administrative) contre les clauses réglementaires du contrat dans un délai de deux mois à compter de la notification de la décision de rejet;— le recours en contestation de validité du contrat, issu de la jurisprudence «Conseil d'État, Assemblée, 4.4.2014, nº 358994, département de Tarn-et-Garonne», qui peut être exercé par les tiers au contrat, sans considération de leur qualité, dans un délai de deux mois à compter des mesures de publicité appropriées;— recours de pleine juridiction contestant la légalité de l'acte administratif portant approbation du contrat (CE, 23.12.2016, nº 392815), dans un délai de deux mois à compter de la publication de cet acte;— le référé suspension (article L. 521-1 du code de justice administrative), si l'urgence le justifie et qu'il est fait état d'un moyen propre à créer, en l'état de l'instruction, un doute sérieux quant à la légalité de la décision, dès lors qu'un recours pour excès de pouvoir ou qu'un recours de pleine juridiction contestant la validité du contrat a déjà été engagé." .
+
+epd:id_2020-S-252-637918_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 130173459";
+  epo:hasInternetAddress "http://www.ta-cergy-pontoise.juradm.fr"^^xsd:anyURI;
+  cccev:email "Greffe.ta-cergy-pontoise@juradm.fr";
+  cccev:telephone "+33 130173400" .
+
+epd:id_2020-S-252-637918_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "95027";
+  locn:postName "Cergy-Pontoise Cedex";
+  locn:thoroughfare "2-4 boulevard de l'Hautil — BP 30322" .
+
+epd:id_2020-S-252-637918_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Cergy-Pontoise"@fr;
+  epo:hasPrimaryContactPoint epd:id_2020-S-252-637918_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2020-S-252-637918_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2020-S-252-637918_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-252-637918_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2020-S-252-637918_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2020_1NV3sbUn1q"^^xsd:anyURI .

@@ -1,0 +1,450 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-063-161168_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://sncf.bravosolution.com/web/login.html"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-063-161168_AdditionalBuyer_CpEekzFtAswXMVZciW4heM a epo:Buyer;
+  epo:hasBuyerProfile "https://sncf.bravosolution.com/web/login.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-063-161168_AdditionalContactPoint_CpEekzFtAswXMVZciW4heM;
+  epo:playedBy epd:id_2021-S-063-161168_AdditionalOrganisation_CpEekzFtAswXMVZciW4heM .
+
+epd:id_2021-S-063-161168_AdditionalContactPoint_CpEekzFtAswXMVZciW4heM a cccev:ContactPoint;
+  epo:hasContactName "Frédéric Comte"@fr;
+  epo:hasInternetAddress "http://sncf.com"^^xsd:anyURI;
+  cccev:email "frederic.comte@reseau.sncf.fr";
+  cccev:telephone "+33 601335095" .
+
+epd:id_2021-S-063-161168_AdditionalOrganisation_CpEekzFtAswXMVZciW4heM a org:Organization;
+  epo:hasID epd:id_2021-S-063-161168_OrganisationIdentifier_CpEekzFtAswXMVZciW4heM;
+  epo:hasLegalName "SNCF Réseau"@fr;
+  cccev:registeredAddress epd:id_2021-S-063-161168_OrganisationAddress_CpEekzFtAswXMVZciW4heM .
+
+epd:id_2021-S-063-161168_AwardCriterionPrice_E36ZVzpvA5U5LTS4hkUP27 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "100 %"@fr .
+
+epd:id_2021-S-063-161168_AwardCriterionPrice_P2CJYtGGb3EzHatSLQ8d4V a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "100 %"@fr .
+
+epd:id_2021-S-063-161168_AwardCriterionQuality_RVqDFJ7oAk9ruS5syzKTdc a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Prix"@fr;
+  cccev:weight "100 %"@fr .
+
+epd:id_2021-S-063-161168_AwardCriterionQuality_d24fvfWqU43gbko26btaTg a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Prix"@fr;
+  cccev:weight "100 %"@fr .
+
+epd:id_2021-S-063-161168_BuyerOrganisationGroup_CpEekzFtAswXMVZciW4heM a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  epo:hasMember epd:id_2021-S-063-161168_AdditionalOrganisation_CpEekzFtAswXMVZciW4heM,
+    epd:id_2021-S-063-161168_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-063-161168_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "https://sncf.bravosolution.com/web/login.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-063-161168_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-063-161168_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-063-161168_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Frédéric Comte"@fr;
+  epo:hasFax "+33 482313444";
+  epo:hasInternetAddress "http://sncf.com"^^xsd:anyURI;
+  cccev:email "frederic.comte@reseau.sncf.fr";
+  cccev:telephone "+33 601335095" .
+
+epd:id_2021-S-063-161168_ContractTermLotLocation_BMLCpTgGRYEUbAbqouzEA9 a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2021-S-063-161168_ContractTermLotLocation_GpRFjLQwEv6oYXEcifYvcT a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2021-S-063-161168_ContractTermLotLocation_KvoSoeyrdXkZQUPVHnoWqV a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2021-S-063-161168_ContractTermLotLocation_Skxdjr2pmT23HW6hZfG6Nj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2021-S-063-161168_ContractTermLotLocation_VoUbCb2wE5y2UWfbGSm9Yn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2021-S-063-161168_ContractTermLotLocation_XLFriwAStnrth86dKcVteo a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2021-S-063-161168_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2021-S-063-161168_ContractTermLotLocation_ah5R53StjQ4susNtkdm5Jf a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2021-S-063-161168_ContractTermLotLocation_etSNHPqKX2yCVQgnaf6uCY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2021-S-063-161168_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2021-S-063-161168_ContractTermLot_BMLCpTgGRYEUbAbqouzEA9 a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-063-161168_ContractTermLotLocation_BMLCpTgGRYEUbAbqouzEA9;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Le présent contrat est décomposé en:— quantité ferme de composants afin de construire six engins;— une option pour des composants permettant la construction d’une quantité pouvant varier de un à trois engins supplémentaires. La quantité sera déterminée au plus tard 30 mois après la commande des six premiers éléments."@fr .
+
+epd:id_2021-S-063-161168_ContractTermLot_GpRFjLQwEv6oYXEcifYvcT a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-063-161168_ContractTermLotLocation_GpRFjLQwEv6oYXEcifYvcT;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Le présent contrat est décomposé en:— quantité ferme de composants afin de construire six engins;— une option pour des composants permettant la construction d’une quantité pouvant varier de un à trois engins supplémentaires. La quantité sera déterminée au plus tard 30 mois après la commande des six premiers éléments."@fr .
+
+epd:id_2021-S-063-161168_ContractTermLot_KvoSoeyrdXkZQUPVHnoWqV a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-063-161168_ContractTermLotLocation_KvoSoeyrdXkZQUPVHnoWqV;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Le présent contrat est décomposé en:— quantité ferme de composants afin de construire six engins;— une option pour des composants permettant la construction d’une quantité pouvant varier de un à trois engins supplémentaires. La quantité sera déterminée au plus tard 30 mois après la commande des six premiers éléments."@fr .
+
+epd:id_2021-S-063-161168_ContractTermLot_Skxdjr2pmT23HW6hZfG6Nj a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-063-161168_ContractTermLotLocation_Skxdjr2pmT23HW6hZfG6Nj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Le présent contrat est décomposé en:— quantité ferme de composants afin de construire six engins;— une option pour des composants permettant la construction d’une quantité pouvant varier de un à trois engins supplémentaires. La quantité sera déterminée au plus tard 30 mois après la commande des six premiers éléments."@fr .
+
+epd:id_2021-S-063-161168_ContractTermLot_VoUbCb2wE5y2UWfbGSm9Yn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-063-161168_ContractTermLotLocation_VoUbCb2wE5y2UWfbGSm9Yn;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Le présent contrat est décomposé en:— quantité ferme de composants afin de construire six engins;— une option pour des composants permettant la construction d’une quantité pouvant varier de un à trois engins supplémentaires. La quantité sera déterminée au plus tard 30 mois après la commande des six premiers éléments."@fr .
+
+epd:id_2021-S-063-161168_ContractTermLot_XLFriwAStnrth86dKcVteo a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-063-161168_ContractTermLotLocation_XLFriwAStnrth86dKcVteo;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Le présent contrat est décomposé en:— quantité ferme de composants afin de construire six engins;— une option pour des composants permettant la construction d’une quantité pouvant varier de un à trois engins supplémentaires. La quantité sera déterminée au plus tard 30 mois après la commande des six premiers éléments."@fr .
+
+epd:id_2021-S-063-161168_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-063-161168_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Le présent contrat est décomposé en:— quantité ferme de composants afin de construire six engins;— une option pour des composants permettant la construction d’une quantité pouvant varier de un à trois engins supplémentaires. La quantité sera déterminée au plus tard 30 mois après la commande des six premiers éléments."@fr .
+
+epd:id_2021-S-063-161168_ContractTermLot_ah5R53StjQ4susNtkdm5Jf a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-063-161168_ContractTermLotLocation_ah5R53StjQ4susNtkdm5Jf;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Le présent contrat est décomposé en:— quantité ferme de composants afin de construire six engins;— une option pour des composants permettant la construction d’une quantité pouvant varier de un à trois engins supplémentaires. La quantité sera déterminée au plus tard 30 mois après la commande des six premiers éléments."@fr .
+
+epd:id_2021-S-063-161168_ContractTermLot_etSNHPqKX2yCVQgnaf6uCY a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-063-161168_ContractTermLotLocation_etSNHPqKX2yCVQgnaf6uCY;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "— une option pour des composants (power pack + batteries en location pendant dix ans) permettant la construction d’une quantité pouvant varier de un à trois engins supplémentaires. La quantité sera déterminée au plus tard 30 mois après la commande des six premiers éléments;— une option pour l’achat en fin de période de location;— une option pour le recyclage;— une option pour le reconditionnement des batteries.— une option pour ajout d'un élément de puissance supplémentaire (modularité convenue par le titulaire pour aller jusqu'à 110 %). Cette PSE pourra être commandée au plus tard 24 mois après la réception de chaque engin."@fr .
+
+epd:id_2021-S-063-161168_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-063-161168_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Le présent contrat est décomposé en:— quantité ferme de composants afin de construire six engins;— une option pour des composants permettant la construction d’une quantité pouvant varier de un à trois engins supplémentaires. La quantité sera déterminée au plus tard 30 mois après la commande des six premiers éléments."@fr .
+
+epd:id_2021-S-063-161168_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true .
+
+epd:id_2021-S-063-161168_FrameworkAgreementTechniqueUsage_42ewgEwxZiroeKCXpa2kAY a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-063-161168_FrameworkAgreementTerm_42ewgEwxZiroeKCXpa2kAY a epo:FrameworkAgreementTerm .
+
+epd:id_2021-S-063-161168_LotIdentifier_BMLCpTgGRYEUbAbqouzEA9 a epo:Identifier;
+  epo:hasIdentifierValue "10" .
+
+epd:id_2021-S-063-161168_LotIdentifier_GpRFjLQwEv6oYXEcifYvcT a epo:Identifier;
+  epo:hasIdentifierValue "4" .
+
+epd:id_2021-S-063-161168_LotIdentifier_KvoSoeyrdXkZQUPVHnoWqV a epo:Identifier;
+  epo:hasIdentifierValue "8" .
+
+epd:id_2021-S-063-161168_LotIdentifier_Skxdjr2pmT23HW6hZfG6Nj a epo:Identifier;
+  epo:hasIdentifierValue "5" .
+
+epd:id_2021-S-063-161168_LotIdentifier_VoUbCb2wE5y2UWfbGSm9Yn a epo:Identifier;
+  epo:hasIdentifierValue "7" .
+
+epd:id_2021-S-063-161168_LotIdentifier_XLFriwAStnrth86dKcVteo a epo:Identifier;
+  epo:hasIdentifierValue "3" .
+
+epd:id_2021-S-063-161168_LotIdentifier_aNssKXiFyYxii2v93ivV4N a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-063-161168_LotIdentifier_ah5R53StjQ4susNtkdm5Jf a epo:Identifier;
+  epo:hasIdentifierValue "9" .
+
+epd:id_2021-S-063-161168_LotIdentifier_etSNHPqKX2yCVQgnaf6uCY a epo:Identifier;
+  epo:hasIdentifierValue "6" .
+
+epd:id_2021-S-063-161168_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-063-161168_LotPurpose_BMLCpTgGRYEUbAbqouzEA9 a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34630000> .
+
+epd:id_2021-S-063-161168_LotPurpose_GpRFjLQwEv6oYXEcifYvcT a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34630000> .
+
+epd:id_2021-S-063-161168_LotPurpose_KvoSoeyrdXkZQUPVHnoWqV a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34630000> .
+
+epd:id_2021-S-063-161168_LotPurpose_Skxdjr2pmT23HW6hZfG6Nj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34630000> .
+
+epd:id_2021-S-063-161168_LotPurpose_VoUbCb2wE5y2UWfbGSm9Yn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34630000> .
+
+epd:id_2021-S-063-161168_LotPurpose_XLFriwAStnrth86dKcVteo a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34630000> .
+
+epd:id_2021-S-063-161168_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34630000> .
+
+epd:id_2021-S-063-161168_LotPurpose_ah5R53StjQ4susNtkdm5Jf a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34630000> .
+
+epd:id_2021-S-063-161168_LotPurpose_etSNHPqKX2yCVQgnaf6uCY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34630000> .
+
+epd:id_2021-S-063-161168_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34630000> .
+
+epd:id_2021-S-063-161168_Lot_BMLCpTgGRYEUbAbqouzEA9 a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-063-161168_ContractTermLot_BMLCpTgGRYEUbAbqouzEA9;
+  epo:hasAdditionalInformation "Nous informons les candidats potentiels que dans le cadre du présent avis JOUE (appel à candidatures), seul le dossier de candidature est attendu."@fr;
+  epo:hasDescription "Automate wagons pousseurs + WIT."@fr;
+  epo:hasID epd:id_2021-S-063-161168_LotIdentifier_BMLCpTgGRYEUbAbqouzEA9;
+  epo:hasPurpose epd:id_2021-S-063-161168_LotPurpose_BMLCpTgGRYEUbAbqouzEA9;
+  epo:hasTitle "Automate wagons pousseurs + WIT"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-063-161168_Lot_GpRFjLQwEv6oYXEcifYvcT a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-063-161168_ContractTermLot_GpRFjLQwEv6oYXEcifYvcT;
+  epo:hasAdditionalInformation "Nous informons les candidats potentiels que dans le cadre du présent avis JOUE (appel a candidatures), seul le dossier de candidature est attendu."@fr;
+  epo:hasDescription "Châssis mécano soudé wagon."@fr;
+  epo:hasID epd:id_2021-S-063-161168_LotIdentifier_GpRFjLQwEv6oYXEcifYvcT;
+  epo:hasPurpose epd:id_2021-S-063-161168_LotPurpose_GpRFjLQwEv6oYXEcifYvcT;
+  epo:hasTitle "Châssis mécano soudé wagon"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-063-161168_Lot_KvoSoeyrdXkZQUPVHnoWqV a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-063-161168_ContractTermLot_KvoSoeyrdXkZQUPVHnoWqV;
+  epo:hasAdditionalInformation "Nous informons les candidats potentiels que dans le cadre du présent avis JOUE (appel à candidatures), seul le dossier de candidature est attendu."@fr;
+  epo:hasDescription "Nacelle élévatrice sur berceau avec sur écartement."@fr;
+  epo:hasID epd:id_2021-S-063-161168_LotIdentifier_KvoSoeyrdXkZQUPVHnoWqV;
+  epo:hasPurpose epd:id_2021-S-063-161168_LotPurpose_KvoSoeyrdXkZQUPVHnoWqV;
+  epo:hasTitle "Nacelle élévatrice sur berceau avec sur écartement"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-063-161168_Lot_Skxdjr2pmT23HW6hZfG6Nj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-063-161168_ContractTermLot_Skxdjr2pmT23HW6hZfG6Nj;
+  epo:hasAdditionalInformation "Nous informons les candidats potentiels que dans le cadre du présent avis JOUE (appel à candidatures), seul le dossier de candidature est attendu."@fr;
+  epo:hasDescription "Wagon type SGNSS 60' modifié autorisé sur le RFN (CP, support S/E…) avec bogies."@fr;
+  epo:hasID epd:id_2021-S-063-161168_LotIdentifier_Skxdjr2pmT23HW6hZfG6Nj;
+  epo:hasPurpose epd:id_2021-S-063-161168_LotPurpose_Skxdjr2pmT23HW6hZfG6Nj;
+  epo:hasTitle "Wagon type SGNSS 60' modifié autorisé sur le RFN (CP, support S/E…) avec bogies"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-063-161168_Lot_VoUbCb2wE5y2UWfbGSm9Yn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-063-161168_ContractTermLot_VoUbCb2wE5y2UWfbGSm9Yn;
+  epo:hasAdditionalInformation "Nous informons les candidats potentiels que dans le cadre du présent avis JOUE (appel à candidatures), seul le dossier de candidature est attendu."@fr;
+  epo:hasDescription "Cellule de vie équipée + plate-forme fixe sur cellule avec rambardes pilotées."@fr;
+  epo:hasID epd:id_2021-S-063-161168_LotIdentifier_VoUbCb2wE5y2UWfbGSm9Yn;
+  epo:hasPurpose epd:id_2021-S-063-161168_LotPurpose_VoUbCb2wE5y2UWfbGSm9Yn;
+  epo:hasTitle "Cellule de vie équipée + plate-forme fixe sur cellule avec rambardes pilotées"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-063-161168_Lot_XLFriwAStnrth86dKcVteo a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-063-161168_ContractTermLot_XLFriwAStnrth86dKcVteo;
+  epo:hasAdditionalInformation "Nous informons les candidats potentiels que dans le cadre du présent avis JOUE (appel a candidatures), seul le dossier de candidature est attendu."@fr;
+  epo:hasDescription "Kit tuyautage inox wagon avec raccord Vebeo."@fr;
+  epo:hasID epd:id_2021-S-063-161168_LotIdentifier_XLFriwAStnrth86dKcVteo;
+  epo:hasPurpose epd:id_2021-S-063-161168_LotPurpose_XLFriwAStnrth86dKcVteo;
+  epo:hasTitle "Kit tuyautage inox wagon avec raccord Vebeo"@fr;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-063-161168_AwardCriterionPrice_P2CJYtGGb3EzHatSLQ8d4V,
+    epd:id_2021-S-063-161168_AwardCriterionQuality_d24fvfWqU43gbko26btaTg .
+
+epd:id_2021-S-063-161168_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-063-161168_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation "Nous informons les candidats potentiels que dans le cadre du présent avis JOUE (appel à candidatures), seul le dossier de candidature est attendu."@fr;
+  epo:hasDescription "Compresseur 900 l/mn avec traitement d'air."@fr;
+  epo:hasID epd:id_2021-S-063-161168_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-063-161168_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:hasTitle "Compresseur 900 l/mn avec traitement d'air"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-063-161168_Lot_ah5R53StjQ4susNtkdm5Jf a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-063-161168_ContractTermLot_ah5R53StjQ4susNtkdm5Jf;
+  epo:hasAdditionalInformation "Nous informons les candidats potentiels que dans le cadre du présent avis JOUE (appel à candidatures), seul le dossier de candidature est attendu."@fr;
+  epo:hasDescription "Confection armoires pneumatique et pupitre + boîtiers phares."@fr;
+  epo:hasID epd:id_2021-S-063-161168_LotIdentifier_ah5R53StjQ4susNtkdm5Jf;
+  epo:hasPurpose epd:id_2021-S-063-161168_LotPurpose_ah5R53StjQ4susNtkdm5Jf;
+  epo:hasTitle "Confection armoires pneumatique et pupitre + boîtiers phares"@fr;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-063-161168_AwardCriterionPrice_E36ZVzpvA5U5LTS4hkUP27,
+    epd:id_2021-S-063-161168_AwardCriterionQuality_RVqDFJ7oAk9ruS5syzKTdc .
+
+epd:id_2021-S-063-161168_Lot_etSNHPqKX2yCVQgnaf6uCY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-063-161168_ContractTermLot_etSNHPqKX2yCVQgnaf6uCY;
+  epo:hasAdditionalInformation "Nous informons les candidats potentiels que dans le cadre du présent avis JOUE (appel à candidatures), seul le dossier de candidature est attendu."@fr;
+  epo:hasDescription "Power pack + batterie lithiumQuantité ferme de composants afin de construire six engins, soit:— un power pack + batteries avec maintenance pendant dix ans;— cinq power pack + batteries en location pendant dix ans;— une option pour des composants (power pack + batteries en location pendant dix ans) permettant la construction d’une quantité pouvant varier de un à trois engins supplémentaires. La quantité sera déterminée au plus tard 30 mois après la commande des six premiers éléments;— une option pour l’achat en fin de période de location;— une option pour le recyclage;— une option pour le reconditionnement des batteries;— une option pour ajout d'un élément de puissance supplémentaire (modularité convenue par le titulaire pour aller jusqu'à 110 %). Cette PSE pourra être commandée au plus tard 24 mois après la réception de chaque engin."@fr;
+  epo:hasID epd:id_2021-S-063-161168_LotIdentifier_etSNHPqKX2yCVQgnaf6uCY;
+  epo:hasPurpose epd:id_2021-S-063-161168_LotPurpose_etSNHPqKX2yCVQgnaf6uCY;
+  epo:hasTitle "Power pack + batterie lithium"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-063-161168_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-063-161168_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasAdditionalInformation "Nous informons les candidats potentiels que dans le cadre du présent avis JOUE (appel à candidatures), seul le dossier de candidature est attendu."@fr;
+  epo:hasDescription "Kit 8 sablières ventilées."@fr;
+  epo:hasID epd:id_2021-S-063-161168_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2021-S-063-161168_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasTitle "Kit 8 sablières ventilées"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-063-161168_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-063-161168_AdditionalBuyer_CpEekzFtAswXMVZciW4heM,
+    epd:id_2021-S-063-161168_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-063-161168_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2021-S-063-161168_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2021-S-063-161168_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2021-S-063-161168_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2021-03-26"^^xsd:date;
+  epo:hasID epd:id_2021-S-063-161168_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210331";
+  epo:refersToLot epd:id_2021-S-063-161168_Lot_BMLCpTgGRYEUbAbqouzEA9, epd:id_2021-S-063-161168_Lot_GpRFjLQwEv6oYXEcifYvcT,
+    epd:id_2021-S-063-161168_Lot_KvoSoeyrdXkZQUPVHnoWqV, epd:id_2021-S-063-161168_Lot_Skxdjr2pmT23HW6hZfG6Nj,
+    epd:id_2021-S-063-161168_Lot_VoUbCb2wE5y2UWfbGSm9Yn, epd:id_2021-S-063-161168_Lot_XLFriwAStnrth86dKcVteo,
+    epd:id_2021-S-063-161168_Lot_aNssKXiFyYxii2v93ivV4N, epd:id_2021-S-063-161168_Lot_ah5R53StjQ4susNtkdm5Jf,
+    epd:id_2021-S-063-161168_Lot_etSNHPqKX2yCVQgnaf6uCY, epd:id_2021-S-063-161168_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:refersToProcedure epd:id_2021-S-063-161168_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-063-161168_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 063-161168" .
+
+epd:id_2021-S-063-161168_OrganisationAddress_CpEekzFtAswXMVZciW4heM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "93418";
+  locn:postName "La Plaine Saint-Denis Cedex";
+  locn:thoroughfare "15-17 rue Jean-Philippe Rameau, CS 80001" .
+
+epd:id_2021-S-063-161168_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "93418";
+  locn:postName "La Plaine Saint-Denis Cedex";
+  locn:thoroughfare "15-17 rue Jean-Philippe Rameau, CS 80001" .
+
+epd:id_2021-S-063-161168_OrganisationIdentifier_CpEekzFtAswXMVZciW4heM a epo:Identifier;
+  epo:hasIdentifierValue "412 280 737 20375" .
+
+epd:id_2021-S-063-161168_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "412 280 737 20375" .
+
+epd:id_2021-S-063-161168_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2021-S-063-161168_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "SNCF Réseau"@fr;
+  cccev:registeredAddress epd:id_2021-S-063-161168_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-063-161168_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2019DOS1221153" .
+
+epd:id_2021-S-063-161168_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34630000> .
+
+epd:id_2021-S-063-161168_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2021-S-063-161168_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-063-161168_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation "SNCF Réseau, émet cet avis de marché en son nom et pour son compte.La présente consultation est effectuée dans le cadre de la procédure négociée avec mise en concurrence. Dans le cadre de cette procédure, la négociation n'est pas systématique. Il s'agit d'une éventualité qui peut être mise en œuvre par l’acheteur selon le niveau des offres remises.L’entité adjudicatrice développe les consultations en ligne, par voie électronique. Les coordonnées courrier électronique du représentant habilité à soumissionner à la présente consultation sont à mentionner dans le dossier de candidature.Toute candidature envoyée par voie électronique doit être envoyée sur la plate-forme EASI (cf. section I de l’avis) par un représentant du candidat dûment habilité. Aucun envoi par courrier électronique n'est autorisé. Le candidat doit être en mesure de justifier des pouvoirs de son représentant sur requête de l’entité adjudicatrice.Les documents génériques de capacité et attestations légales génériques devront être déposés sur Provigis (plate-forme de dématérialisation et de conformité). Une invitation est envoyée au fournisseur lors de sa manifestation d’intérêt sur la plate-forme EASI. En cas de non-réception de l’invitation, le fournisseur est invité à se rapprocher de l’acheteur dont les coordonnées sont précisées en section I.Toute candidature électronique ne respectant pas le formalisme précité ou envoyée à une autre adresse est rejetée sans être analysée.Pour toute difficulté d’ordre technique, le candidat peut se rapprocher du support fournisseurs de la plate-forme (accessible à partir de l’adresse indiquée en section I). Pour toute autre question, le candidat doit contacter l'acheteur dont les coordonnées sont reprises au point I.1) du présent avis.Après examen des documents, l’entité adjudicatrice évalue la capacité du candidat et sélectionne les candidats aptes à présenter une offre.Le marché sera soumis aux dispositions du Cahier des clauses et conditions générales (CCCG) applicables aux marchés de fournitures de la SNCF, disponible sur le site sncf.com: http://www.sncf.com/fr/groupe/fournisseurs/documentsLa candidature ainsi que tout échange d'informations doivent être rédigés en français."@fr;
+  epo:hasDescription "Composants pour la fabrication de neuf wagons inspecteurs de tunnels & neuf wagons pousseurs électriques."@fr;
+  epo:hasID epd:id_2021-S-063-161168_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-063-161168_Lot_BMLCpTgGRYEUbAbqouzEA9,
+    epd:id_2021-S-063-161168_Lot_GpRFjLQwEv6oYXEcifYvcT, epd:id_2021-S-063-161168_Lot_KvoSoeyrdXkZQUPVHnoWqV,
+    epd:id_2021-S-063-161168_Lot_Skxdjr2pmT23HW6hZfG6Nj, epd:id_2021-S-063-161168_Lot_VoUbCb2wE5y2UWfbGSm9Yn,
+    epd:id_2021-S-063-161168_Lot_XLFriwAStnrth86dKcVteo, epd:id_2021-S-063-161168_Lot_aNssKXiFyYxii2v93ivV4N,
+    epd:id_2021-S-063-161168_Lot_ah5R53StjQ4susNtkdm5Jf, epd:id_2021-S-063-161168_Lot_etSNHPqKX2yCVQgnaf6uCY,
+    epd:id_2021-S-063-161168_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2021-S-063-161168_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Composants pour la fabrication de wagons inspecteurs de tunnels & wagons pousseurs électriques"@fr;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-063-161168_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2021-S-063-161168_FrameworkAgreementTerm_42ewgEwxZiroeKCXpa2kAY, epd:id_2021-S-063-161168_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY,
+    epd:id_2021-S-063-161168_ReviewTerm_ZsxuomNURxGbRdavxJPhLN, epd:id_2021-S-063-161168_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY;
+  epo:usesTechnique epd:id_2021-S-063-161168_FrameworkAgreementTechniqueUsage_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2021-S-063-161168_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-063-161168_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-063-161168_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-063-161168_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "93558";
+  locn:postName "Montreuil";
+  locn:thoroughfare "7 rue Catherine Puig" .
+
+epd:id_2021-S-063-161168_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasFax "+33 149202099";
+  epo:hasInternetAddress "http://montreuil.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-montreuil@juradm.fr";
+  cccev:telephone "+33 149202000" .
+
+epd:id_2021-S-063-161168_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-063-161168_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2021-S-063-161168_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2021-S-063-161168_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-063-161168_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2021-S-063-161168_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Les procédures de recours applicables sont:— le référé précontractuel (CJA, articles L. 551-5 et s.) qui peut être exercé jusqu'à la signature du marché;— le référé contractuel (CJA, articles L. 551-13 et s.) qui peut être exercé dans un délai de:—— 31 jours à compter de la publication d’un avis d’attribution au JOUE ou, pour les marchés fondés sur un accord-cadre, à compter de la notification de la conclusion du contrat;—— six mois à compter du lendemain du jour de la conclusion du contrat si aucun avis d’attribution n’a été publié ou si aucune notification de la conclusion du contrat n’a été effectuée;— le recours en contestation de validité du contrat ou de certaines de ses clauses (dans un délai de deux mois à compter de l’accomplissement des mesures de publicité appropriées)." .
+
+epd:id_2021-S-063-161168_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+33 149202099";
+  epo:hasInternetAddress "http://montreuil.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-montreuil@juradm.fr";
+  cccev:telephone "+33 149202099" .
+
+epd:id_2021-S-063-161168_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "93558";
+  locn:postName "Montreuil";
+  locn:thoroughfare "7 rue Catherine Puig" .
+
+epd:id_2021-S-063-161168_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Montreuil"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-063-161168_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2021-S-063-161168_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-063-161168_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-063-161168_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-063-161168_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasReceiptExpressionDeadline "2021-04-19T10:00";
+  epo:hasSubmissionURL "https://sncf.bravosolution.com/web/login.html"^^xsd:anyURI .
+
+epd:id_2021-S-063-161168_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-063-161168_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-063-161168_Organisation_W8v6KSqiUn74jPKJmENKoH .

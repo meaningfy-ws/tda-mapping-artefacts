@@ -1,0 +1,194 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-126-334815_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2021_kschaRtYFR"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-126-334815_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2021_kschaRtYFR"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-126-334815_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-126-334815_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-126-334815_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Mr. Laurent Probst, directeur général — DGA-FR /FAC/commande publique-(Mme Croiset Emilie)"@fr;
+  epo:hasFax "+33 145503338";
+  epo:hasInternetAddress "https://www.iledefrance-mobilites.fr"^^xsd:anyURI;
+  cccev:email "emilie.croiset@iledefrance-mobilites.fr";
+  cccev:telephone "+33 182538056" .
+
+epd:id_2021-S-126-334815_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Île-de-France."@fr .
+
+epd:id_2021-S-126-334815_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:address epd:id_2021-S-126-334815_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-126-334815_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-126-334815_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-126-334815_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-126-334815_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-126-334815_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 45.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-126-334815_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/32270000>, <http://data.europa.eu/cpv/cpv/32323500>,
+    <http://data.europa.eu/cpv/cpv/45310000>, <http://data.europa.eu/cpv/cpv/45315100> .
+
+epd:id_2021-S-126-334815_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-126-334815_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "CPV supplémentaire 45315600 Installations basse tension."@fr;
+  epo:hasDescription "La présente consultation a pour objet la fourniture, le développement et l'installation des systèmes de courants faibles (réseau Multi-services, vidéosurveillance, gestion technique centralisée) déployés sur l'ensemble de la ligne T Zen 4."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-126-334815_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-126-334815_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-126-334815_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 1830000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-126-334815_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
+  epo:hasFax "+33 182524295";
+  cccev:email "ccira@paris-idf.gouv.fr";
+  cccev:telephone "+33 182524272" .
+
+epd:id_2021-S-126-334815_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75911";
+  locn:postName "Paris";
+  locn:thoroughfare "5 rue Leblanc" .
+
+epd:id_2021-S-126-334815_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "Comité consultatif interdépartemental de règlement amiable des différends ou litiges"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-126-334815_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU;
+  cccev:registeredAddress epd:id_2021-S-126-334815_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2021-S-126-334815_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2021-S-126-334815_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2021-S-126-334815_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 1830000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-126-334815_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-126-334815_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-126-334815_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2021-S-126-334815_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-126-334815_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-126-334815_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-06-29"^^xsd:date;
+  epo:hasID epd:id_2021-S-126-334815_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210702";
+  epo:refersToLot epd:id_2021-S-126-334815_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-126-334815_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-126-334815_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 126-334815" .
+
+epd:id_2021-S-126-334815_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "75009";
+  locn:postName "Paris";
+  locn:thoroughfare "39 bis — 41 rue de Châteaudun" .
+
+epd:id_2021-S-126-334815_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "28750007800020" .
+
+epd:id_2021-S-126-334815_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2021-S-126-334815_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Île de France mobilités"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2021-S-126-334815_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-126-334815_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021-023" .
+
+epd:id_2021-S-126-334815_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45310000> .
+
+epd:id_2021-S-126-334815_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-126-334815_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Il s'agit d'un marché de prestations de fournitures entrant dans le champ des Techniques de l'information et de la communication (TIC) passé selon le cadre du CCAG-TIC de 2021 issu de l'arrêté du 30.3.2021 portant approbation du cahier des clauses administratives générales des marchés publics de techniques de l'information et de la communication NOR: ECOM2106875A.Il s'agit d'un marché de travaux à prix unitaires. Le montant maximal du marché sera le montant renseigné dans l'acte d'engagement, tel que découlant du détail quantitatif estimatif. Les quantités pourront varier dans la limite de ce montant. Le marché prend effet à compter de la date de notification, qui vaut ordre de commencer les prestations et prend fin à la réception définitive de l'ensemble des prestations. Au terme de cette réception par l'acheteur débuteront les délais légaux de garanties. La durée prévisionnelle du marché est de 45 mois y compris période de préparation de deux mois et la période de garantie d'une durée de douze mois à compter de la réception complète.Compétences souhaitées: — mise en œuvre d'infrastructure réseaux; — développements, fourniture et mise en œuvre de systèmes de gestion technique centralisée; — fourniture, installation et mise en service d'infrastructure vidéo.Conformément à l'article R. 2161-23 du code de la commande publique, l'acheteur se réserve le droit de procéder à des négociations écrites ou orales avec l'ensemble des soumissionnaires classés à l'issue de la remise des offres, et/ou d'attribuer le marché public sur la base des offres initiales sans négociation.Cette consultation ne comporte aucune des conditions particulières d'exécution visées par l'article L. 2112-2 du code de la commande publique, à l'exception des modalités suivantes:le candidat s'engage également à réaliser une action favorisant l'accueil de jeunes en stage dans l'entreprise dans le cadre de l'exécution du présent marché, notamment via un stage, un contrat d'apprentissage, un contrat d'alternance ou par la formation professionnelle. Il doit prévoir un stage d'une durée minimum de deux mois par tranche de 700 000 EUR du marché. Les modalités d'application de cette clause sont précisées au CCAP du marché.Conformément à l'article R. 2142-21 du Code de la commande publique, il est interdit aux candidats de présenter plusieurs offres en agissant à la fois en qualité de candidats individuels et de membres d'un ou plusieurs groupements ou en agissant en qualité de membres de plusieurs groupements sous peine d'élimination des candidatures concernées."@fr;
+  epo:hasDescription "La présente consultation a pour objet la fourniture, le développement et l'installation des systèmes de courants faibles (réseau multiservices, vidéosurveillance, gestion technique centralisée) déployés sur l'ensemble de la ligne T Zen 4."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-126-334815_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2021-S-126-334815_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-126-334815_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-126-334815_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Marché équipements de Courants faibles (CFA)"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-126-334815_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-126-334815_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-126-334815_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-126-334815_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-126-334815_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-126-334815_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2021-S-126-334815_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2021-S-126-334815_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-126-334815_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-126-334815_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-126-334815_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-126-334815_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-126-334815_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2021-S-126-334815_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 Rue de Jouy" .
+
+epd:id_2021-S-126-334815_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-126-334815_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-126-334815_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-126-334815_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-126-334815_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-126-334815_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2021_kschaRtYFR"^^xsd:anyURI .

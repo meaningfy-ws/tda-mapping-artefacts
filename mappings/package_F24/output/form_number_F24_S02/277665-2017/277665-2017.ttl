@@ -1,0 +1,190 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-135-277665_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://marches.maximilien.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2017-S-135-277665_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://marches.maximilien.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-135-277665_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-135-277665_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-135-277665_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Mme la cheffe de la Section du stationnement concédé"@fr;
+  epo:hasFax "+33 143370253";
+  epo:hasInternetAddress "http://www.paris.fr"^^xsd:anyURI;
+  cccev:email "dvd-ssc-mib@paris.fr";
+  cccev:telephone "+33 144672919" .
+
+epd:id_2017-S-135-277665_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress """
+                  Parc de stationnement «Lutèce» implanté sous la place Louis Lépine à Paris 4e.
+               """@fr .
+
+epd:id_2017-S-135-277665_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:address epd:id_2017-S-135-277665_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-135-277665_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2017-S-135-277665_Period_RgULVPVVYP9pkvK789PCUZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-135-277665_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2017-S-135-277665_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2017-S-135-277665_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/63712400> .
+
+epd:id_2017-S-135-277665_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-135-277665_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation """
+                  Une modernisation importante est prévue et portera sur l'amélioration du confort et de la sécurité des usagers et sur la fonctionnalité globale du parc. Est aussi prévue l'amélioration de l'accessibilité, de la sécurité des risques incendie et le remplacement des équipements obsolètes.
+               """@fr;
+  epo:hasDescription """
+                  À la prise d'effet du contrat, les places seront exploités en horaire et abonnement. Une tarification spécifique sera proposée aux résidents du secteur et aux PMR, le stationnement des véhicules de basse émission et de petit gabarit sera facilité, celui des deux-roues sera assuré dans des zones spécifiques. Le délégataire facilitera l'implantation de sociétés de location de véhicules à temps partagé et de celles proposant tout service visant à favoriser les modes de déplacements propres, il s'engagera à prévoir la réservation d'emplacements pour le service Autolib' et à ne pas s'opposer à l'implantation éventuelle d'un ELU. Seront assurés la surveillance permanente et l'entretien de cet ouvrage, accessible à tous les usagers 24 h/24, 7 j/7. Une attention particulière sera portée au stationnement et à la gestion des deux-roues et à tout projet innovant et répondant à la politique de la Ville en matière de mobilité douce et de lutte contre la pollution.
+               """@fr;
+  epo:hasPurpose epd:id_2017-S-135-277665_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-135-277665_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-135-277665_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-135-277665_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2017-S-135-277665_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2017-S-135-277665_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2017-S-135-277665_TenderReceiver_Yqz38TfLf2pURgiiembBDo;
+  epo:hasDispatchDate "2017-07-13"^^xsd:date;
+  epo:hasID epd:id_2017-S-135-277665_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasPublicationDate "20170718";
+  epo:refersToLot epd:id_2017-S-135-277665_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2017-S-135-277665_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2017-S-135-277665_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 135-277665" .
+
+epd:id_2017-S-135-277665_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75012";
+  locn:postName "Paris";
+  locn:thoroughfare "15 boulevard Carnot" .
+
+epd:id_2017-S-135-277665_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Ville de Paris"@fr;
+  epo:hasMainActivityDescription "Collectivité territoriale";
+  cccev:registeredAddress epd:id_2017-S-135-277665_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-135-277665_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;
+  epo:hasBeginning "2018-12-20"^^xsd:date;
+  epo:hasEnd "2037-11-30"^^xsd:date .
+
+epd:id_2017-S-135-277665_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2017V37D2DSP-R4025" .
+
+epd:id_2017-S-135-277665_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/63712400> .
+
+epd:id_2017-S-135-277665_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-135-277665_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation """
+               Les candidats pourront se présenter seuls ou en groupement, ils devront mentionner l'identification de la société, sa forme juridique, le no d'immatriculation au RCS (ou pièce équivalente pour les sociétés étrangères) ainsi que l'identité des personnes ayant pouvoir d'engager la société. Si le candidat s'appuie sur les capacités d'autres opérateurs économiques pour présenter sa candidature, il doit les mentionner dans sa lettre de candidature et, produire pour chacun d'eux, les mêmes documents que ceux qui sont exigés de lui pour justifier de ses capacités, ainsi qu'un engagement écrit de chacun d'eux justifiant qu'il disposera de leurs capacités pour l'exécution de la concession. La sélection des candidats se fera sur l'examen de leurs capacités financière et technique et leur aptitude à assurer la continuité du service public et l'égalité des usagers devant le service public.
+            """@fr;
+  epo:hasDescription """
+               Délégation de service public, d'une durée de 18 ans, 11 mois et 12 jours pour assurer l'exploitation et la modernisation du parc de stationnement souterrain «Lutèce» d'une capacité d'environ 320 places VL et 8 places motos réparties sur 5 niveaux et destiné aux usagers horaires et aux abonnés.
+            """@fr;
+  epo:hasID epd:id_2017-S-135-277665_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-135-277665_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2017-S-135-277665_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle """
+               Exploitation et modernisation du parc de stationnement souterrain «Lutèce» à Paris 4e.
+            """@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-135-277665_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2017-S-135-277665_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2017-S-135-277665_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-135-277665_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2017-S-135-277665_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2017-S-135-277665_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2017-S-135-277665_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2017-S-135-277665_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-135-277665_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2017-S-135-277665_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-135-277665_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-135-277665_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2017-S-135-277665_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2017-S-135-277665_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2017-S-135-277665_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-135-277665_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2017-S-135-277665_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-135-277665_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-135-277665_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2017-S-135-277665_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2017-S-135-277665_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75012";
+  locn:postName "Paris";
+  locn:thoroughfare "15 boulevard Carnot" .
+
+epd:id_2017-S-135-277665_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo
+  a cccev:ContactPoint;
+  epo:hasContactName "Mairie de Paris — Direction de la voirie et des déplacements — Section du stationnement concédé — bureau 204 — 2e étage"@fr;
+  epo:hasFax "+33 143370253";
+  epo:hasInternetAddress "http://www.paris.fr"^^xsd:anyURI;
+  cccev:email "dvd-ssc-mib@paris.fr";
+  cccev:telephone "+33 144672919" .
+
+epd:id_2017-S-135-277665_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo a org:Organization;
+  epo:hasLegalName "Les candidatures devront être reçues sous pli scellé recommandé AR ou déposées contre récépissé et l'enveloppe portera les mentions: Candidature pour la concession du parc de stationnement Lutèce à Paris 4e «Ne pas ouvrir avant la Commission»"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-135-277665_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  cccev:registeredAddress epd:id_2017-S-135-277665_TenderReceiverOrganisationAddress_Yqz38TfLf2pURgiiembBDo .
+
+epd:id_2017-S-135-277665_TenderReceiver_Yqz38TfLf2pURgiiembBDo a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-135-277665_TenderReceiverOrganisationContactPoint_Yqz38TfLf2pURgiiembBDo;
+  epo:playedBy epd:id_2017-S-135-277665_TenderReceiverOrganisation_Yqz38TfLf2pURgiiembBDo .

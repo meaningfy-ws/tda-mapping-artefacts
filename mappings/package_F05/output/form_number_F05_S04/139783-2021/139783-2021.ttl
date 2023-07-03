@@ -1,0 +1,203 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-055-139783_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://telt.achatpublic.com/accueil/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-055-139783_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://telt.achatpublic.com/accueil/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-055-139783_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-055-139783_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-055-139783_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Fonction «Contrats»"@fr;
+  epo:hasFax "+33 479685683";
+  epo:hasInternetAddress "http://www.telt-sas.com"^^xsd:anyURI;
+  cccev:email "fonction.contrats@telt-sas.com";
+  cccev:telephone "+33 479685650" .
+
+epd:id_2021-S-055-139783_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Les prestations de service se dérouleront en Italie sur les sites (bureaux et chantiers) situés à Turin, Rome, chantier de Chiomonte, Suze/Rosta."@fr .
+
+epd:id_2021-S-055-139783_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITC1>;
+  locn:address epd:id_2021-S-055-139783_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-055-139783_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-055-139783_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-055-139783_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2021-S-055-139783_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-055-139783_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 60.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-055-139783_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-055-139783_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2021-S-055-139783_Fund_HKNfdBmeACvzBZy3TfjLFj a epo:Fund;
+  epo:hasDescription "Tent-T (réseaux transeuropéens): projet no 2014-eu-tm-0401-m."@fr .
+
+epd:id_2021-S-055-139783_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/60100000> .
+
+epd:id_2021-S-055-139783_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-055-139783_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Le présent marché public constitue un accord-cadre mono-attributaire à bons de commande sans montant minimal avec un montant maximal de 400 000 EUR HT. Les missions sont les suivantes:— coordination et gestion des activités liées aux déménagements (1);— déménagement de meubles et déplacement de matériaux d'un endroit à un autre ou au sein du même siège (2);— démontage et assemblage de meubles (3);— fourniture d'emballages et de tout le matériel nécessaire pour réaliser les services cités aux points 1, 2 et 3 (4);— équipements liés à la réalisation des services cités aux points 1, 2, 3 et 4 (5);— transports de tout le matériel nécessaire pour réaliser les services cités aux points 1, 2, 3 et 4 (6).Il s'agit d'un lot unique. Le présent marché public est passé selon une procédure adaptée ouverte, en application des articles L. 2123-1 et des articles R. 2123-1, R. 2123-4 à R. 2123-6 du code de la commande publique."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-055-139783_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-055-139783_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isFundedBy epd:id_2021-S-055-139783_Fund_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds true .
+
+epd:id_2021-S-055-139783_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 250000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-055-139783_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
+  epo:hasFax "+33 476422269";
+  epo:hasInternetAddress "http://grenoble.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-grenoble@juradm.fr";
+  cccev:telephone "+33 476420000" .
+
+epd:id_2021-S-055-139783_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "38000";
+  locn:postName "Grenoble";
+  locn:thoroughfare "2 place de Verdun" .
+
+epd:id_2021-S-055-139783_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Grenoble"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-055-139783_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU;
+  cccev:registeredAddress epd:id_2021-S-055-139783_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2021-S-055-139783_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2021-S-055-139783_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2021-S-055-139783_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 250000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-055-139783_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-055-139783_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-055-139783_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2021-S-055-139783_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-055-139783_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-055-139783_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2021-03-16"^^xsd:date;
+  epo:hasID epd:id_2021-S-055-139783_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210319";
+  epo:refersToLot epd:id_2021-S-055-139783_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-055-139783_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-055-139783_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 055-139783" .
+
+epd:id_2021-S-055-139783_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK27>;
+  locn:postCode "73325";
+  locn:postName "Le Bourget-du-Lac";
+  locn:thoroughfare "Savoie Technolac — bâtiment Homère, 13 allée du Lac de Constance, BP 281" .
+
+epd:id_2021-S-055-139783_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Tunnel Euralpin Lyon Turin SAS"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2021-S-055-139783_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-055-139783_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "MS69" .
+
+epd:id_2021-S-055-139783_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60100000> .
+
+epd:id_2021-S-055-139783_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-055-139783_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "Dans la mesure où le droit applicable à la passation du présent marché public est le droit français, le présent avis de marché rédigé en langue française est le seul avis qui doit être pris en considération en cas de différence avec l'avis publié pour le même marché en langue italienne, qui est à considérer comme une traduction de courtoisie.Le présent marché public est soumis aux règles à la lutte contre les infiltrations mafieuses qui sont convenues entre les gouvernements français et italien au travers du règlement des contrats validé par la CIG (Commission inter-gouvernementale), publié en France par décret no 2017-432 du 5.4.2017 et applicable depuis le 9.4.2018, et de ses modifications.À ce titre, les codes CUP et CIG sont les suivants: CUP: C11j05000030001; Cig: Z4a30a9cbb.Le titulaire s'engage à respecter le code éthique appliqué au sein de TELT (librement téléchargeable à l'adresse suivante: http://www.telt-sas.com/fr/statut-codeethique-accords), et à le faire respecter par ses salariés, cotraitants et sous-traitants.Le présent avis de marché constitue un rappel de l'avis publié au JOUE le 16.3.2021 sous le numéro 2021/S 052-131920, et de ses éventuels avis rectificatifs."@fr;
+  epo:hasDescription "Le présent marché a pour objet le démontage, le montage et la relocalisation des meubles et des matériaux sur les bureaux, bureaux de chantiers et dépôts annexés aux chantiers (relatifs à liaison ferroviaire transalpine Lyon — Turin) de TELT en Italie."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-055-139783_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2021-S-055-139783_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-055-139783_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-055-139783_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Démontage/montage et relocalisation des meubles/matériaux"@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-055-139783_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-055-139783_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-055-139783_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB,
+    epd:id_2021-S-055-139783_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-055-139783_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-055-139783_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-055-139783_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-055-139783_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-055-139783_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "38000";
+  locn:postName "Grenoble";
+  locn:thoroughfare "2 place de Verdun" .
+
+epd:id_2021-S-055-139783_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 476422269";
+  epo:hasInternetAddress "http://grenoble.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-grenoble@juradm.fr";
+  cccev:telephone "+33 476420000" .
+
+epd:id_2021-S-055-139783_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Grenoble"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-055-139783_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-055-139783_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-055-139783_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-055-139783_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-055-139783_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Les procédures de recours applicables sont:— le référé précontractuel (article L. 551-5 du code de justice administrative), qui peut être exercé jusqu'à la signature du contrat;— le référé contractuel (article L. 551-13 du code de justice administrative), qui peut être exercé dans un délai de 31 jours à compter de la publication d'un avis d'attribution au JOUE ou de six mois à compter du lendemain du jour de la conclusion du contrat si aucun avis d'attribution n'a été publié;— le recours en contestation de validité du contrat ou de certaines de ses clauses de publicité devant le juge du plein contentieux, qui peut être exercé dans un délai de deux mois suivant les mesures de publicité adéquates." .
+
+epd:id_2021-S-055-139783_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 476422269";
+  epo:hasInternetAddress "http://grenoble.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-grenoble@juradm.fr";
+  cccev:telephone "+33 476420000" .
+
+epd:id_2021-S-055-139783_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "38000";
+  locn:postName "Grenoble";
+  locn:thoroughfare "2 place de Verdun" .
+
+epd:id_2021-S-055-139783_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Grenoble"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-055-139783_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-055-139783_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-055-139783_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-055-139783_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-055-139783_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR", "IT";
+  epo:hasSubmissionURL "https://telt.achatpublic.com/accueil/"^^xsd:anyURI .

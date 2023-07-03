@@ -1,0 +1,111 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-181-441928_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.e-marchespublics.com/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-181-441928_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-181-441928_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2019-S-181-441928_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2019-S-181-441928_Channel_G9uAqcYuooZwAU3Pwzv6eq a cccev:Channel;
+  epo:hasURL "https://www.e-marchespublics.com/"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2019-S-181-441928_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.e-marchespublics.com"^^xsd:anyURI;
+  cccev:email "cyrille.boyenval@acoba.eu" .
+
+epd:id_2019-S-181-441928_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2019-S-181-441928_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-181-441928_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2019-S-181-441928_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2019-S-181-441928_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-181-441928_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Un concours d'architecture est organisé concernant une mission de maîtrise d'œuvre passée en application des articles L. 2125-1 et L. 2172-1 de l'ordonnance no 2018-1074 du 26.11.2018 et Chap. II-Titre VI Livre Ier du décret no 2018-1075 du 3.12.2018 pour la réhabilitation/extension de l'EHPAD «résidence l'Équaizière» et la création d'une résidence autonomie sur la commune de La Garnache.Le projet consiste en la restructuration 1800 m2 SDO et la construction de 3 400 m2 SDO. Ce concours est organisé sur la remise d'une «Esquisse».Le coût prévisionnel des travaux est fixé à 6 900 000 EUR HT. La mission est une mission de base complétée par des prestations complémentaires indiquées dans le règlement de la consultation."@fr;
+  epo:hasPurpose epd:id_2019-S-181-441928_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2019-S-181-441928_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-181-441928_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2019-S-181-441928_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2019-S-181-441928_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2019-S-181-441928_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
+  epo:hasDispatchDate "2019-09-16"^^xsd:date;
+  epo:hasID epd:id_2019-S-181-441928_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20190919";
+  epo:refersToLot epd:id_2019-S-181-441928_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2019-S-181-441928_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2019-S-181-441928_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 181-441928" .
+
+epd:id_2019-S-181-441928_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRG05>;
+  locn:postCode "85710";
+  locn:postName "La Garnache";
+  locn:thoroughfare "7 rue Jan et Joël Martel" .
+
+epd:id_2019-S-181-441928_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasLegalName "CCAS de la Garnache"@fr;
+  epo:hasMainActivityDescription "Médico sociale";
+  cccev:registeredAddress epd:id_2019-S-181-441928_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2019-S-181-441928_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "MOE" .
+
+epd:id_2019-S-181-441928_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71200000> .
+
+epd:id_2019-S-181-441928_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasID epd:id_2019-S-181-441928_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-181-441928_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2019-S-181-441928_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Marché de maîtrise d'œuvre pour la réhabilitation/extension de l'EHPAD «résidence l'Équaizière» et la création d'une résidence autonomie"@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-181-441928_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2019-S-181-441928_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR;
+  epo:usesChannel epd:id_2019-S-181-441928_Channel_G9uAqcYuooZwAU3Pwzv6eq .
+
+epd:id_2019-S-181-441928_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-181-441928_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2019-S-181-441928_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2019-S-181-441928_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+33 240994658";
+  cccev:telephone "+33 240994600" .
+
+epd:id_2019-S-181-441928_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "44041";
+  locn:postName "Nantes Cedex";
+  locn:thoroughfare "6 allée de l'Île-Gloriette" .
+
+epd:id_2019-S-181-441928_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nantes"@fr;
+  epo:hasPrimaryContactPoint epd:id_2019-S-181-441928_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2019-S-181-441928_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2019-S-181-441928_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-181-441928_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2019-S-181-441928_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.e-marchespublics.com/"^^xsd:anyURI .
+
+epd:id_2019-S-181-441928_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-181-441928_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2019-S-181-441928_Organisation_VX8RygdBbvDo5gNDhjcsTj .

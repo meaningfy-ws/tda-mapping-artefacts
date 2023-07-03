@@ -1,0 +1,146 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-048-121634_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.deutschebahn.com/bieterportal"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-048-121634_AwardCriterionPrice_nhjAeUgxP9TrFdDRcqi3yA a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-048-121634_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-048-121634_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-048-121634_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-048-121634_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Marcus Zeckert"@de;
+  epo:hasFax "+49 6926558536";
+  epo:hasInternetAddress "http://www.deutschebahn.com/bieterportal"^^xsd:anyURI;
+  cccev:email "marcus.zeckert@deutschebahn.com";
+  cccev:telephone "+49 3857503528" .
+
+epd:id_2021-S-048-121634_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Kavelstorf"@de .
+
+epd:id_2021-S-048-121634_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE80K>;
+  locn:address epd:id_2021-S-048-121634_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-048-121634_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-048-121634_Period_aNssKXiFyYxii2v93ivV4N;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-048-121634_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-048-121634_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-048-121634_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "Splinter, Christina"@de;
+  epo:hasFax "+49 3029756822";
+  epo:hasInternetAddress "http://www.deutschebahn.com/bieterportal"^^xsd:anyURI;
+  cccev:email "christina.splinter@deutschebahn.com";
+  cccev:telephone "+49 3029755781" .
+
+epd:id_2021-S-048-121634_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE300>;
+  locn:postCode "10115";
+  locn:postName "Berlin";
+  locn:thoroughfare "Caroline-Michaelis-Str. 5-11" .
+
+epd:id_2021-S-048-121634_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasLegalName "FE.EI-O-B – Beschaffung Infrastruktur Region Ost"@de;
+  cccev:registeredAddress epd:id_2021-S-048-121634_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2021-S-048-121634_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-048-121634_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "— Eingleisiger Aus- und Umbau auf cirka 10 km,— Streckengleisverschwenkung in Teilbereichen,— Bodenverbesserung im Unterbau,— Neuaufbau Oberbau und Gleislage,— Bau einer LSW auf cirka 900 m, h = 4,00 m,— Neubau einer TE auf cirka 4,2 KM mit Auslassbauwerken.Großmengen:— Lagerplätze einrichten – 20 000 m2,— Bettungsstoffe aufnehmen – 40 000 to,— Entsorgung /0 – 15 000 to,— Entsorgung Z 1.1 – 55 000 to,— Entsorgung Z 1.2 – 15 000 to,— Entsorgung Z2 – 5 000 to,— Entsorgung >Z2 – 3 000 to,— Transporte ~ 95 000 to,— Abtransport Oberbaustoffe Schiene – 20 000 m,— Schwellen – 13 000 to,— Schotter – 40 000 to,— Antransport Oberbaustoffe Schiene – 20 000 m,— Schwellen – 16 000 to,— Schotter – 40 000 to,— Bodenverbesserung – 9 000 m3,— Planum, Oberbau herstellen – 45 000 m2,— KTB,— Kabeltrogneubau 11 000 m,— Rettungswegzufahrt und -zuwegung herstellen,— Bahnseitengräben – 20 000 m,— LBP-Maßnahmen – 2 000 m2."@de;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-048-121634_AwardCriterionPrice_nhjAeUgxP9TrFdDRcqi3yA .
+
+epd:id_2021-S-048-121634_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-048-121634_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2021-S-048-121634_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-048-121634_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2021-S-048-121634_Reviewer_K99XaY97dQrtEEJSTmwy9e;
+  epo:hasDispatchDate "2021-03-05"^^xsd:date;
+  epo:hasID epd:id_2021-S-048-121634_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210310";
+  epo:refersToLot epd:id_2021-S-048-121634_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2021-S-048-121634_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-048-121634_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 048-121634" .
+
+epd:id_2021-S-048-121634_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:postCode "60486";
+  locn:postName "Frankfurt am Main";
+  locn:thoroughfare "Theodor-Heuss-Allee 7" .
+
+epd:id_2021-S-048-121634_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "DB Netz AG (Bukr 16)"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2021-S-048-121634_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-048-121634_Period_aNssKXiFyYxii2v93ivV4N a epo:Period;
+  epo:hasBeginning "2021-09-01"^^xsd:date;
+  epo:hasEnd "2023-06-01"^^xsd:date .
+
+epd:id_2021-S-048-121634_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-048-121634_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-048-121634_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45234100> .
+
+epd:id_2021-S-048-121634_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-048-121634_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation "Für die wesentlichen ausgeschriebenen Leistungen liegt keine Baufreigabe in finanzieller Hinsicht und kein Planfeststellungsbeschluss vor.Eine Auftragserteilung ist derzeit nur für den Fall vorgesehen, dass diese Voraussetzungen zum Zuschlagszeitpunkt vorliegen. Liegen diese Voraussetzungen nicht vor, kann dies zur Aufhebung dieses Vergabeverfahrens führen. In diesem Fall hat der Bieter keinen Anspruch auf Ersatz eines ihm dadurch entstehenden Schadens.— Erklärung, ob und in wieweit mit dem/den vom AG beauftragten Ingenieurbüro(s) Verbundenheit (gesell-schaftsrechtlich verbunden im Sinne § 18 AktG / verwandtschaftliche Beziehungen zwischen Organen des Bieters und Organen des Ingenieurbüros) oder wirtschaftliche Abhängigkeit besteht. Bei Bietergemeinschaften gilt, dass jedes einzelne Mitglied eine entsprechende Erklärung abzugeben hat.Beauftragte(s) Ingenieurbüro(s):1. DB Engineering&Consulting GmbH, Schwerin2.3.Der Auftraggeber behält sich vor, Angebote von Bietern auszuschließen, die unter Mitwirkung eines vom Auftraggeber beauftragten Ingenieurbüros erstellt wurden. Gleiches gilt, wenn zwischen Bieter und beauftragtem Ingenieurbüro eine gesellschaftsrechtliche/verwandtschaftliche Verbundenheit oder wirtschaftliche Abhängigkeit besteht.Der Auftraggeber behält sich die Anwendung von §§ 123, 124 GWB vor.Bei Durchführung eines Verhandlungsverfahrens behält sich der Auftraggeber die Möglichkeit vor, den Auftrag auf der Grundlage der Erstangebote zu vergeben, ohne in Verhandlungen einzutreten."@de;
+  epo:hasDescription "— Eingleisiger Aus- und Umbau auf cirka 10 km,— Streckengleisverschwenkung in Teilbereichen,— Bodenverbesserung im Unterbau,— Neuaufbau Oberbau und Gleislage,— Bau einer LSW auf cirka 900 m, h = 4,00 m,— Neubau einer TE auf cirka 4,2 KM mit Auslassbauwerken.Großmengen:— Lagerplätze einrichten – 20 000 m2,— Bettungsstoffe aufnehmen – 40 000 to,— Entsorgung /0 – 15 000 to,— Entsorgung Z 1.1 – 55 000 to,— Entsorgung Z 1.2 – 15 000 to,— Entsorgung Z2 – 5 000 to,— Entsorgung >Z2 – 3 000 to,— Transporte ~ 95 000 to,— Abtransport Oberbaustoffe Schiene – 20 000 m,— Schwellen – 13 000 to,— Schotter – 40 000 to,— Antransport Oberbaustoffe Schiene – 20 000 m,— Schwellen – 16 000 to,— Schotter – 40 000 to,— Bodenverbesserung – 9 000 m3,— Planum, Oberbau herstellen – 45 000 m2,— KTB,— Kabeltrogneubau 11 000 m,— Rettungswegzufahrt und -zuwegung herstellen,— Bahnseitengräben – 20 000 m,— LBP-Maßnahmen – 2 000 m2."@de;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-048-121634_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-048-121634_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "GE Kavelstorf – Rostock Seehafen"@de;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-048-121634_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2021-S-048-121634_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2021-S-048-121634_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-05-14"^^xsd:date .
+
+epd:id_2021-S-048-121634_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-048-121634_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2021-S-048-121634_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2021-S-048-121634_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postName "Villemomblerstr. 76" .
+
+epd:id_2021-S-048-121634_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Vergabekammer des Bundes"@de;
+  cccev:registeredAddress epd:id_2021-S-048-121634_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-048-121634_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-048-121634_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-048-121634_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasSubmissionURL "http://www.deutschebahn.com/bieterportal"^^xsd:anyURI .

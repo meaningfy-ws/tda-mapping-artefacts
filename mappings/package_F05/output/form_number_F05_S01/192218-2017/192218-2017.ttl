@@ -1,0 +1,227 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-097-192218_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://vsds.eranet.sk/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-097-192218_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2017-S-097-192218_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://www.uvo.gov.sk/vyhladavanie-profilov/zakazky/15676"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-097-192218_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-097-192218_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-097-192218_Channel_cW7StLx8qUnGYzx322HBZC a cccev:Channel;
+  epo:hasURL "https://vsds.eranet.sk/"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2017-S-097-192218_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Ivana Keslerová"@sk;
+  epo:hasInternetAddress "https://vsds.sk"^^xsd:anyURI;
+  cccev:email "keslerova_ivana@vsds.sk";
+  cccev:telephone "+421 907853957" .
+
+epd:id_2017-S-097-192218_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+Mlynská 31, 042 91 Košice, Slovensko.
+"""@sk .
+
+epd:id_2017-S-097-192218_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SK04>;
+  locn:address epd:id_2017-S-097-192218_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2017-S-097-192218_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-097-192218_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-097-192218_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2017-S-097-192218_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2017-S-097-192218_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-097-192218_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a epo:EAuctionTechniqueUsage .
+
+epd:id_2017-S-097-192218_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2017-S-097-192218_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2017-S-097-192218_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/44212222> .
+
+epd:id_2017-S-097-192218_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-097-192218_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+Oceľové priehradové stožiare a konzoly pre vedenia do 45 kV – predmetné stožiare slúžia ako nosné, rohové kotevné a koncové podperné body pre vonkajšie elektrické vedenia vysokého napätia (VN).
+"""@sk;
+  epo:hasEstimatedValue epd:id_2017-S-097-192218_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-097-192218_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-097-192218_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN .
+
+epd:id_2017-S-097-192218_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 1200000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-097-192218_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  locn:postCode "821 09";
+  locn:postName "Bratislava";
+  locn:thoroughfare "Ružová dolina 10" .
+
+epd:id_2017-S-097-192218_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "Úrad pre verejné obstarávanie"@sk;
+  cccev:registeredAddress epd:id_2017-S-097-192218_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2017-S-097-192218_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2017-S-097-192218_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2017-S-097-192218_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 1200000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-097-192218_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-097-192218_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-097-192218_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2017-S-097-192218_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2017-S-097-192218_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2017-S-097-192218_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2017-05-17"^^xsd:date;
+  epo:hasID epd:id_2017-S-097-192218_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20170520";
+  epo:refersToLot epd:id_2017-S-097-192218_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2017-S-097-192218_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-097-192218_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 097-192218" .
+
+epd:id_2017-S-097-192218_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SK>;
+  locn:postCode "040 01";
+  locn:postName "Košice-mestská časť Staré Mesto";
+  locn:thoroughfare "Mlynská 31" .
+
+epd:id_2017-S-097-192218_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "36599361" .
+
+epd:id_2017-S-097-192218_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2017-S-097-192218_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Východoslovenská distribučná, a.s."@sk;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2017-S-097-192218_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-097-192218_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "6295" .
+
+epd:id_2017-S-097-192218_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/44212263> .
+
+epd:id_2017-S-097-192218_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-097-192218_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+1. Komunikácia medzi obstarávateľom a záujemcami/uchádzačmi sa uskutočňuje v tomto verejnom obstarávaní elektronickou formou, ktorá zabezpečí trvalé zachytenie ich obsahu prostredníctvom systému ERANET dostupného na https://vsds.eranet.sk Viac ohľadom komunikácie je uvedené v súťažných podkladoch.
+2. Pre záujemcov a uchádzačov bude kontaktná osoba k dispozícii v pracovných dňoch v čase od 9:00 hod. do 14:00 hod. na adrese: Mlynská č. 31, 042 91 Košice.
+3. Komunikačným jazykom v tejto verejnej súťaži je slovenský jazyk.
+4. Ponuka a ďalšie doklady, vyhlásenia, potvrdenia a dokumenty vo verejnom obstarávaní musia byť predložené v slovenskom alebo českom jazyku, pokiaľ nie je určené inak.
+5. Vysvetlenie SP prebieha prostredníctvom systému ERANET. Odporúčaná lehota na vysvetlenie je najneskôr do 9.6.2017. Vysvetlenia budú uverejnené na profile obstarávateľa. Odpoveď na žiadosť o vysvetlenie sa bude považovať za doručenú okamihom uverejnenia na profile obstarávateľa najneskôr však 6 dní pred uplynutím lehoty na predkladanie ponúk, za predpokladu, že o ne požiadali v lehote určenej vyššie. Záujemcovia/uchádzači sú povinní sa oboznámiť s informáciami vo vysvetlení a zohľadniť ich pri predkladaní ponúk. Viac ohľadom komunikácie je uvedené v súťažných podkladoch.
+7. Otváranie časti ponúk „Ostatné“ je neverejné a pri otváraní ponúk komisia postupuje podľa § 52 zákona o verejnom obstarávaní. Otváranie časti ponúk „Kritériá“ je neverejné, údaje podľa § 52 ods. 3 zákona o verejnom obstarávaní komisia nezverejňuje a zápisnica podľa § 52 ods. 4 zákona o verejnom obstarávaní sa neodosiela.
+8. Úspešný uchádzač, jeho subdodávatelia podľa § 11 zákona o verejnom obstarávaní je povinný na účely poskytnutia riadnej súčinnosti potrebnej na uzavretie rámcovej dohody byť zapísaný v registri partnerov verejného sektora, v súlade so zákonom č. 315/2016 Z. z.
+9. Obstarávateľ si vyhradzuje právo možnosti zrušiť použitý postup zadávania zákazky podľa § 57 zákona a ak ponuky budú neregulárne alebo inak neprijateľné, prípadne ak presiahnu finančnú čiastku určenú obstarávateľom na predmet zákazky.
+10. Obstarávateľ si vyhradzuje právo primerane predĺžiť lehotu viazanosti ponúk a o tejto skutočnosti informuje všetkých uchádzačov.
+11. Obstarávateľ odporúča záujemcom priebežne sledovať profil obstarávateľa (odkaz uvedený v bode I. výzvy), na ktorom obstarávateľ bude uverejňovať všetky dôležité informácie a dokumenty v súlade so zákonom v rámci tohto verejného obstarávania.
+12. Hospodársky subjekt môže predbežne nahradiť doklady na preukázanie splnenia podmienok účasti Jednotným európskym dokumentom podľa § 39 zákona. Doklady, preukazujúce splnenie podmienok účasti predkladajú uchádzači obstarávateľovi podľa § 55 ods. 1 zákona v čase a spôsobom určeným obstarávateľom.
+13. Uchádzač pre splnenie požiadaviek na daný predmet zákazky predloží v ponuke (časť Ostatné) nasledovné doklady a dokumenty bližšie uvedené v súťažných podkladoch:
+— certifikát systému riadenia kvality výrobcu,
+— certifikát riadenia výroby výrobcu podľa STN EN 1090-2 trieda prevedenia EXC3.
+14. Rámcová dohoda bude uzavretá s 2 uchádzačmi. Požiadavka 2 uchádzačov má základ v zastupiteľnosti jednotlivých dodávateľov tovaru v prípade výpadku dodávky.
+"""@sk;
+  epo:hasDescription """
+Oceľové priehradové stožiare a konzoly pre vedenia do 45 kV – predmetné stožiare slúžia ako nosné, rohové kotevné a koncové podperné body pre vonkajšie elektrické vedenia vysokého napätia (VN).
+"""@sk;
+  epo:hasEstimatedValue epd:id_2017-S-097-192218_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2017-S-097-192218_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-097-192218_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-097-192218_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Oceľové priehradové stožiare a konzoly pre vedenia do 45 kV.
+"""@sk;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-097-192218_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-097-192218_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2017-S-097-192218_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesChannel epd:id_2017-S-097-192218_Channel_cW7StLx8qUnGYzx322HBZC;
+  epo:usesTechnique epd:id_2017-S-097-192218_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G,
+    epd:id_2017-S-097-192218_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-097-192218_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-097-192218_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-097-192218_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-097-192218_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  locn:postCode "820 05";
+  locn:postName "Bratislava";
+  locn:thoroughfare "Ružová dolina 10, P.O.Box" .
+
+epd:id_2017-S-097-192218_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+421 250264219";
+  epo:hasInternetAddress "http://www.uvo.gov.sk"^^xsd:anyURI;
+  cccev:telephone "+421 250264176" .
+
+epd:id_2017-S-097-192218_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Úrad pre verejné obstarávanie"@sk;
+  epo:hasPrimaryContactPoint epd:id_2017-S-097-192218_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2017-S-097-192218_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2017-S-097-192218_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-097-192218_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2017-S-097-192218_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+421 250264219";
+  epo:hasInternetAddress "http://www.uvo.gov.sk"^^xsd:anyURI;
+  cccev:telephone "+421 250264176" .
+
+epd:id_2017-S-097-192218_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  locn:postCode "820 05";
+  locn:postName "Bratislava";
+  locn:thoroughfare "Ružová dolina 10, P.O.Box" .
+
+epd:id_2017-S-097-192218_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Úrad pre verejné obstarávanie"@sk;
+  epo:hasPrimaryContactPoint epd:id_2017-S-097-192218_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2017-S-097-192218_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-097-192218_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-097-192218_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-097-192218_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "SK";
+  epo:hasSubmissionURL "https://vsds.eranet.sk/"^^xsd:anyURI .

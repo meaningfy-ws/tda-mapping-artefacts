@@ -1,0 +1,186 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-214-390143_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://pha.edf.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2016-S-214-390143_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "www.pha.edf.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-214-390143_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2016-S-214-390143_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2016-S-214-390143_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Direction des achats EDF SA Tour EDF, 20 place de la Défense 8, 92050 Paris La Défense Cedex"@fr;
+  epo:hasInternetAddress "www.edf.fr"^^xsd:anyURI;
+  cccev:email "alexis.palencher@edf.fr";
+  cccev:telephone "+33 277621071" .
+
+epd:id_2016-S-214-390143_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+Centrales nucléaires de production d'électricité (CNPE) du palier 900 MW ainsi que les postes électriques RTE adjacents.
+"""@fr .
+
+epd:id_2016-S-214-390143_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:address epd:id_2016-S-214-390143_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2016-S-214-390143_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-214-390143_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-214-390143_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+Une partie des CNPE 900 MW et postes RTE associés sera en option.
+L'approvisionnement des équipements nécessaires et leur livraison sur chantier est en option; EDF peut assurer ces prestations par ses propres moyens.
+La durée du marché de 10 ans définie au II.2.7 inclue 2 options d'une durée de 1 an chacune.
+"""@fr .
+
+epd:id_2016-S-214-390143_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2016-S-214-390143_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2016-S-214-390143_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2016-S-214-390143_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "Durée 10 ans // Les 2 dernières années du marché sont optionnelles afin de pallier à d'éventuels décalages des plannings d'arrêt de tranches."@fr .
+
+epd:id_2016-S-214-390143_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-214-390143_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation """
+Le marché ne sera pas loti en application des cas dérogatoires a et d de l'art. 32 de l'ordonnance du 23.7.2015 (art. 65.2 de la DE 2014/25/UE du Parlement européen et du Conseil).
+Cependant, des études techniques sont en cours et permettront éventuellement à EDF de scinder ce marché en 2 lots.
+"""@fr;
+  epo:hasDescription """
+Prestation complète d'études et de travaux de renouvellement des postes électriques HTB aériens des centrales nucléaires de production d'électricité (CNPE) d'EDF, incluant la fourniture des équipements et les études d'interchangeabilité.
+"""@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-214-390143_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-214-390143_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2016-S-214-390143_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2016-S-214-390143_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2016-S-214-390143_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2016-S-214-390143_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2016-11-03"^^xsd:date;
+  epo:hasID epd:id_2016-S-214-390143_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20161105";
+  epo:refersToLot epd:id_2016-S-214-390143_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2016-S-214-390143_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2016-S-214-390143_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 214-390143" .
+
+epd:id_2016-S-214-390143_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRZZZ>;
+  locn:postCode "75382";
+  locn:postName "Paris Cedex 08";
+  locn:thoroughfare "22-30 avenue de Wagram" .
+
+epd:id_2016-S-214-390143_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "EDF SA"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2016-S-214-390143_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2016-S-214-390143_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45315400> .
+
+epd:id_2016-S-214-390143_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-214-390143_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+Pour répondre au présent avis de marché, les candidats doivent se manifester sur le portail achats d'EDF — demande d'information n° RFI 032387 — et rattacher les documents justificatifs et informatifs demandés au présent avis de marché.
+Les candidats intéressés, non encore inscrits, s'auto-référenceront depuis la page d'accueil du portail achat sur le site https://pha.edf.com — à l'aide du lien placé dans l'encart: «Nouveau Fournisseur? Se référencer».
+La consultation sera effectuée par e-tender via le portail achats électronique d'EDF (https://pha.edf.com).
+Nous vous demandons de vous enregistrer sur ce site (http://pha.edf.com).
+L'enregistrement est gratuit et il vous prendra moins de 10 minutes et doit être fait suffisamment tôt avant la date de clôture des candidatures.
+Lors de votre enregistrement sur le portail achats, vous allez saisir:
+— les données entreprise,
+— les coordonnées de votre administrateur de compte.
+Nous attirons votre attention sur l'importance du choix de l'administrateur de compte car ce dernier, interlocuteur principal, sera en charge de gérer l'ensemble de vos profils utilisateurs.
+Un seul administrateur de compte est déclaré pour un numéro SIRET.
+Chaque administrateur et chaque utilisateur dispose d'un identifiant et d'un mot de passe.
+Le mot de passe (confidentiel) est attribué par le système, il peut être modifié sur le portail achats autant de fois que l'utilisateur le souhaite.
+Si nécessaire, vous pouvez contacter le +33 184770026 ou support-edf@ivalua.com (prix d'un appel local).
+"""@fr;
+  epo:hasDescription """
+Marché pour les études d'interchangeabilité, d'installation et de requalification des matériels, leur montage sur site en prestation intégrée et la fourniture des équipements.
+"""@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-214-390143_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2016-S-214-390143_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Travaux de renouvellement des postes aériens HTB des centrales de production nucléaire d'électricité d'EDF.
+"""@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-214-390143_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2016-S-214-390143_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2016-S-214-390143_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2016-S-214-390143_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2016-S-214-390143_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-214-390143_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2016-S-214-390143_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2016-S-214-390143_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75055";
+  locn:postName "Paris Cedex 01";
+  locn:thoroughfare "4 bd du Palais" .
+
+epd:id_2016-S-214-390143_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "www.ca-paris.justice.fr"^^xsd:anyURI;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2016-S-214-390143_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Greffe du TGI Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-214-390143_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2016-S-214-390143_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2016-S-214-390143_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-214-390143_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2016-S-214-390143_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasInternetAddress "www.ca-paris.justice.fr"^^xsd:anyURI;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2016-S-214-390143_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75055";
+  locn:postName "Paris Cedex 01";
+  locn:thoroughfare "4 bd du Palais" .
+
+epd:id_2016-S-214-390143_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-214-390143_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2016-S-214-390143_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2016-S-214-390143_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-214-390143_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2016-S-214-390143_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://pha.edf.com"^^xsd:anyURI .
+
+epd:id_2016-S-214-390143_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-214-390143_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2016-S-214-390143_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

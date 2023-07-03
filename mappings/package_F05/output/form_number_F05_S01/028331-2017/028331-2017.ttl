@@ -1,0 +1,307 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-017-028331_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-017-028331_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-017-028331_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-017-028331_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-017-028331_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "SNCF — DAG Achats territoriaux stratégiques"@fr;
+  epo:hasInternetAddress "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
+  cccev:email "aymeric.walle@sncf.fr";
+  cccev:telephone "+33 185587626" .
+
+epd:id_2017-S-017-028331_ContractTermLotLocationAddress_32L5QtPBVpA5CJ4PqGRoL2 a locn:Address;
+  locn:fullAddress """
+Région Nouvelle Aquitaine, Bretagne, Centre-Val de Loire et Pays de la Loire.
+"""@fr .
+
+epd:id_2017-S-017-028331_ContractTermLotLocationAddress_8SnxRM7z7L8aATWrQVC4hf a locn:Address;
+  locn:fullAddress """
+Région Île-de-France.
+"""@fr .
+
+epd:id_2017-S-017-028331_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+Régions Normandie, Haut-de-France et Grand Est.
+"""@fr .
+
+epd:id_2017-S-017-028331_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a locn:Address;
+  locn:fullAddress """
+Régions Bourgogne Franche-Comté, Auvergne-Rhône-Alpes, Occitanie, Provence-Alpes-Côte-d'Azur, et Corse.
+"""@fr .
+
+epd:id_2017-S-017-028331_ContractTermLotLocation_32L5QtPBVpA5CJ4PqGRoL2 a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR51>;
+  locn:address epd:id_2017-S-017-028331_ContractTermLotLocationAddress_32L5QtPBVpA5CJ4PqGRoL2 .
+
+epd:id_2017-S-017-028331_ContractTermLotLocation_8SnxRM7z7L8aATWrQVC4hf a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR1>;
+  locn:address epd:id_2017-S-017-028331_ContractTermLotLocationAddress_8SnxRM7z7L8aATWrQVC4hf .
+
+epd:id_2017-S-017-028331_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR3>;
+  locn:address epd:id_2017-S-017-028331_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2017-S-017-028331_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR43>;
+  locn:address epd:id_2017-S-017-028331_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
+
+epd:id_2017-S-017-028331_ContractTermLot_32L5QtPBVpA5CJ4PqGRoL2 a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-017-028331_Duration_E3KeCeWkZTz2DBvWCgwLic;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-017-028331_ContractTermLotLocation_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasOptions false .
+
+epd:id_2017-S-017-028331_ContractTermLot_8SnxRM7z7L8aATWrQVC4hf a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-017-028331_Duration_9CGgccuzyF7ofcnSL9oj2g;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-017-028331_ContractTermLotLocation_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasOptions false .
+
+epd:id_2017-S-017-028331_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-017-028331_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-017-028331_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2017-S-017-028331_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-017-028331_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-017-028331_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions false .
+
+epd:id_2017-S-017-028331_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true .
+
+epd:id_2017-S-017-028331_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 72.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-017-028331_Duration_9CGgccuzyF7ofcnSL9oj2g a epo:SpecificDuration;
+  time:numericDuration 72.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-017-028331_Duration_E3KeCeWkZTz2DBvWCgwLic a epo:SpecificDuration;
+  time:numericDuration 72.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-017-028331_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 72.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-017-028331_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2017-S-017-028331_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2017-S-017-028331_LotIdentifier_32L5QtPBVpA5CJ4PqGRoL2 a epo:Identifier;
+  epo:hasIdentifierValue "3" .
+
+epd:id_2017-S-017-028331_LotIdentifier_8SnxRM7z7L8aATWrQVC4hf a epo:Identifier;
+  epo:hasIdentifierValue "4" .
+
+epd:id_2017-S-017-028331_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2017-S-017-028331_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2017-S-017-028331_LotPurpose_32L5QtPBVpA5CJ4PqGRoL2 a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/70000000>, <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2017-S-017-028331_LotPurpose_8SnxRM7z7L8aATWrQVC4hf a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/70000000>, <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2017-S-017-028331_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/70000000>, <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2017-S-017-028331_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/70000000>, <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2017-S-017-028331_Lot_32L5QtPBVpA5CJ4PqGRoL2 a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-017-028331_ContractTermLot_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasDescription """
+Missions de gestion des risques, de connaissance des actifs, de réalisation de contrats locatifs, de gestion de contrats locatifs, de gestion de logements, de cession, de régularisation et gestion foncière et autres mutations. Voir les intitulés et descriptifs des missions dans le cahier des charges joint dans les pièces du dossier de consultation annexées au présent avis. Des données concernant le patrimoine du groupe SNCF sont également communiquées à titre indicatif par lot dans le document intitulé annexe patrimoine au JOUE.
+"""@fr;
+  epo:hasID epd:id_2017-S-017-028331_LotIdentifier_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasPurpose epd:id_2017-S-017-028331_LotPurpose_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:hasTitle """
+Ouest et Sud-Ouest
+"""@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-017-028331_Lot_8SnxRM7z7L8aATWrQVC4hf a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-017-028331_ContractTermLot_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasDescription """
+Missions de gestion des risques, de connaissance des actifs, de réalisation de contrats locatifs, de gestion de contrats locatifs, de gestion de logements, de cession, de régularisation et gestion foncière et autres mutations. Voir les intitulés et descriptifs des missions dans le cahier des charges joint dans les pièces du dossier de consultation annexées au présent avis. Des données concernant le patrimoine du groupe SNCF sont également communiquées à titre indicatif par lot dans le document intitulé annexe patrimoine au JOUE.
+"""@fr;
+  epo:hasID epd:id_2017-S-017-028331_LotIdentifier_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasPurpose epd:id_2017-S-017-028331_LotPurpose_8SnxRM7z7L8aATWrQVC4hf;
+  epo:hasTitle """
+Île-de-France
+"""@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-017-028331_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-017-028331_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+Missions de gestion des risques, de connaissance des actifs, de réalisation de contrats locatifs, de gestion de contrats locatifs, de gestion de logements, de cession, de régularisation et gestion foncière et autres mutations. Voir les intitulés et descriptifs des missions dans le cahier des charges joint dans les pièces du dossier de consultation annexées au présent avis. Des données concernant le patrimoine du Groupe SNCF sont également communiquées à titre indicatif par lot dans le document intitulé annexe patrimoine au JOUE.
+"""@fr;
+  epo:hasID epd:id_2017-S-017-028331_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-017-028331_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle """
+Nord et Est
+"""@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-017-028331_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-017-028331_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasDescription """
+Missions de gestion des risques, de connaissance des actifs, de réalisation de contrats locatifs, de gestion de contrats locatifs, de gestion de logements, de cession, de régularisation et gestion foncière et autres mutations. Voir les intitulés et descriptifs des missions dans le cahier des charges joint dans les pièces du dossier de consultation annexées au présent avis. Des données concernant le patrimoine du groupe SNCF sont également communiquées à titre indicatif par lot dans le document intitulé annexe patrimoine au JOUE.
+"""@fr;
+  epo:hasID epd:id_2017-S-017-028331_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2017-S-017-028331_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle """
+Grand Sud et Sud-Est
+"""@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-017-028331_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-017-028331_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-017-028331_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2017-S-017-028331_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2017-S-017-028331_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
+  epo:hasDispatchDate "2017-01-20"^^xsd:date;
+  epo:hasID epd:id_2017-S-017-028331_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20170125";
+  epo:refersToLot epd:id_2017-S-017-028331_Lot_32L5QtPBVpA5CJ4PqGRoL2, epd:id_2017-S-017-028331_Lot_8SnxRM7z7L8aATWrQVC4hf,
+    epd:id_2017-S-017-028331_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2017-S-017-028331_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2017-S-017-028331_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-017-028331_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 017-028331" .
+
+epd:id_2017-S-017-028331_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "93210";
+  locn:postName "Saint-Denis";
+  locn:thoroughfare "4 rue André Campra" .
+
+epd:id_2017-S-017-028331_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "SNCF"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2017-S-017-028331_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-017-028331_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "Perf MOA" .
+
+epd:id_2017-S-017-028331_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/70000000> .
+
+epd:id_2017-S-017-028331_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 4;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2017-S-017-028331_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-017-028331_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+SNCF émet cet avis de marché en son nom et pour son compte.
+La présente consultation est effectuée dans le cadre de la procédure négociée avec mise en concurrence, objet du décret nº 2016-360 du 25.3.2016 relatif aux marchés publics. Dans le cadre de cette procédure, la négociation n'est pas systématique. Il s'agit d'une éventualité qui peut être mise en œuvre par l'acheteur selon le niveau des offres remises.
+Le marché est notamment soumis au cahier des clauses et conditions générales applicables aux marchés de prestations Intellectuelles de la SNCF (GF 1019 V5 du 24.11.2008) consultable sur www.sncf.com/ressources/cccgprestationintellectuelle.pdf
+L'entité d'achat développe les consultations en ligne, par voie électronique. Les coordonnées e-mail du représentant habilité à soumissionner à la présente consultation sont à mentionner dans le dossier de candidature.
+Toute candidature envoyée par voie électronique doit être datée et envoyée dans le respect des procédures décrites dans les «Conditions générales de remise des candidatures en ligne sur le site www.sncf.com» par un représentant du candidat dûment habilité. Aucun envoi par e-mail n'est autorisé. Le candidat doit être en mesure de justifier des pouvoirs de son représentant sur requête de l'entité d'achat.
+Toute candidature électronique ne respectant pas le formalisme pré cité ou envoyée à une autre adresse est rejetée sans être analysée.
+Pour toute difficulté d'ordre technique (notamment au moment de la transmission de la candidature), le candidat doit contacter le support fournisseur à: Supportfournisseursncf@sncf.fr ou 04.26.21.16.01.
+Pour toute autre question le candidat doit contacter l'acheteur dont les coordonnées sont reprises au point I.1 du présent avis.
+Après examen des documents, l'entité d'achat évalue la capacité du candidat et sélectionne les candidats aptes à présenter une offre.
+Le marché sera soumis aux dispositions du Cahier des clauses et conditions générales (CCCG) applicables aux marchés de prestations intellectuelles de la SNCF, disponible sur le site http://www.sncf.com — entreprises et collectivités — fournisseurs — documentation (dans ce document, le terme SNCF désigne indifféremment SNCF, SNCF Mobilités, SNCF Réseau).
+La candidature ainsi que tout échange d'informations doivent être rédigés en français.
+L'examen des variantes est subordonné à la remise d'une offre de base conforme aux prescriptions du cahier des charges.
+L'entité d'achat se réserve le droit de partager le marché entre plusieurs attributaires. Chaque lot ne sera attribué qu'à un seul opérateur économique.
+Le candidat s'engage à mettre en place un réseau de distribution sur tout le territoire français.
+"""@fr;
+  epo:hasDescription """
+Missions de gestion des risques, de connaissance des actifs, de réalisation de contrats locatifs, de gestion de contrats locatifs, de gestion de logements, de cession, de régularisation et gestion foncière et autres mutations.
+"""@fr;
+  epo:hasID epd:id_2017-S-017-028331_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-017-028331_Lot_32L5QtPBVpA5CJ4PqGRoL2,
+    epd:id_2017-S-017-028331_Lot_8SnxRM7z7L8aATWrQVC4hf, epd:id_2017-S-017-028331_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2017-S-017-028331_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2017-S-017-028331_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Gestion du patrimoine foncier et immobilier, et cession d'actifs.
+"""@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-017-028331_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-017-028331_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2017-S-017-028331_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2017-S-017-028331_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2017-S-017-028331_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-017-028331_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-017-028331_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-017-028331_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-017-028331_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2017-S-017-028331_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  cccev:email "greffe.ta.paris@juradm.fr";
+  cccev:telephone "+33 144594575" .
+
+epd:id_2017-S-017-028331_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Greffe du tribunal administratif"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-017-028331_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2017-S-017-028331_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2017-S-017-028331_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-017-028331_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2017-S-017-028331_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:telephone "+33 144594400" .
+
+epd:id_2017-S-017-028331_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2017-S-017-028331_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal administratif"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-017-028331_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2017-S-017-028331_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-017-028331_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-017-028331_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-017-028331_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI .

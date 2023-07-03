@@ -1,0 +1,355 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-238-494845_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://electool.com/sourcingtool/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-238-494845_AdditionalBuyer_CpEekzFtAswXMVZciW4heM a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-238-494845_AdditionalContactPoint_CpEekzFtAswXMVZciW4heM;
+  epo:playedBy epd:id_2017-S-238-494845_AdditionalOrganisation_CpEekzFtAswXMVZciW4heM .
+
+epd:id_2017-S-238-494845_AdditionalContactPoint_CpEekzFtAswXMVZciW4heM a cccev:ContactPoint;
+  epo:hasContactName "Máté Tamás, ELMŰ Nyrt. Beszerzési Igazgatóság"@hu;
+  epo:hasFax "+36 12382867";
+  epo:hasInternetAddress "https://www.emasz.hu"^^xsd:anyURI;
+  cccev:email "kozbeszerzes@elmu.hu";
+  cccev:telephone "+36 12382357" .
+
+epd:id_2017-S-238-494845_AdditionalOrganisation_CpEekzFtAswXMVZciW4heM a org:Organization;
+  epo:hasID epd:id_2017-S-238-494845_OrganisationIdentifier_CpEekzFtAswXMVZciW4heM;
+  epo:hasLegalName "ÉMÁSZ Hálózati Kft."@hu;
+  cccev:registeredAddress epd:id_2017-S-238-494845_OrganisationAddress_CpEekzFtAswXMVZciW4heM .
+
+epd:id_2017-S-238-494845_BuyerOrganisationGroup_CpEekzFtAswXMVZciW4heM a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMember epd:id_2017-S-238-494845_AdditionalOrganisation_CpEekzFtAswXMVZciW4heM,
+    epd:id_2017-S-238-494845_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-238-494845_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-238-494845_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2017-S-238-494845_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-238-494845_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Máté Tamás, ELMŰ Nyrt. Beszerzési Igazgatóság"@hu;
+  epo:hasFax "+36 12382867";
+  epo:hasInternetAddress "https://www.elmu.hu"^^xsd:anyURI;
+  cccev:email "kozbeszerzes@elmu.hu";
+  cccev:telephone "+36 12382357" .
+
+epd:id_2017-S-238-494845_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+                  Az ELMŰ Hálózati Kft. teljes áramszolgáltatási területe (észak-budai, észak-pesti, dél-budai, közép-pesti és dél-pesti régiók).
+               """@hu .
+
+epd:id_2017-S-238-494845_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq a locn:Address;
+  locn:fullAddress """
+                  Az ÉMÁSZ Hálózati Kft. teljes áramszolgáltatási területe (sárospataki, miskolci, egri, gyöngyösi és salgótarjáni régiók).
+               """@hu .
+
+epd:id_2017-S-238-494845_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU110>;
+  locn:address epd:id_2017-S-238-494845_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2017-S-238-494845_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU311>;
+  locn:address epd:id_2017-S-238-494845_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2017-S-238-494845_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-238-494845_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-238-494845_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+                  Ajánlatkérő +40 %-os mértékéig opciós lehívással jogosult élni, amely összeget a II.2.6) pontban megadott becsült érték tartalmazza.
+               """@hu .
+
+epd:id_2017-S-238-494845_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-238-494845_Duration_Pn7seLvJsSm7d5S9iCwt2c;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-238-494845_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+                  Ajánlatkérő +40 %-os mértékéig opciós lehívással jogosult élni, amely összeget a II.2.6) pontban megadott becsült érték tartalmazza.
+               """@hu .
+
+epd:id_2017-S-238-494845_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2017-S-238-494845_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-238-494845_Duration_Pn7seLvJsSm7d5S9iCwt2c a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-238-494845_FrameworkAgreementTechniqueUsage_42ewgEwxZiroeKCXpa2kAY a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2017-S-238-494845_FrameworkAgreementTerm_42ewgEwxZiroeKCXpa2kAY a epo:FrameworkAgreementTerm .
+
+epd:id_2017-S-238-494845_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "Máté Tamás"@hu;
+  epo:hasFax "+36 12382867";
+  epo:hasInternetAddress "https://www.elmu.hu"^^xsd:anyURI;
+  cccev:email "kozbeszerzes@elmu.hu";
+  cccev:telephone "+36 12382357" .
+
+epd:id_2017-S-238-494845_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU110>;
+  locn:postCode "1132";
+  locn:postName "Budapest";
+  locn:thoroughfare "Váci út 72–74. V. emelet 504. szoba" .
+
+epd:id_2017-S-238-494845_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasLegalName "ELMŰ Nyrt. Beszerzési Igazgatóság"@hu;
+  cccev:registeredAddress epd:id_2017-S-238-494845_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2017-S-238-494845_LotIdentifier_aNssKXiFyYxii2v93ivV4N a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2017-S-238-494845_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2017-S-238-494845_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71320000> .
+
+epd:id_2017-S-238-494845_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71320000> .
+
+epd:id_2017-S-238-494845_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-238-494845_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation """
+                  A II.2.6) pontban megadott becsült érték tartalmazza a +40 %-os opciós lehívási lehetőség értékét. A keretmegállapodás résztvevőinek tervezett maximális létszáma részenként: 70.
+               """@hu;
+  epo:hasDescription """
+                  Elosztóhálózat-, valamint csatlakozó és mérőhelytervezés az ELMŰ Hálózati Kft. teljes áramszolgáltatási területén.
+                  A műszaki tervezési feladatok megoldása az alábbi tevékenységeket foglalja magába:
+                  — Megvalósíthatósági tanulmányterv készítése,
+                  — Engedélyezési terv készítése,
+                  — Kiviteli terv készítése,
+                  — Tervezői művezetés.
+                  A beszerzéssel érintett hálózatfajták: szabadvezetékek, kábelek, transzformátorállomások.
+                  A feladatot teljes körűen el kell végezni, bele kell érteni a geodéziai és forgalomtechnikai tervezési feladatokat is.
+               """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-238-494845_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasID epd:id_2017-S-238-494845_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2017-S-238-494845_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:hasTitle """
+                  Elosztóhálózat-, valamint csatlakozó és mérőhelytervezés az ELMŰ Hálózati Kft. teljes áramszolgáltatási területén.
+               """@hu;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-238-494845_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-238-494845_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasAdditionalInformation """
+                  A II.2.6) pontban megadott becsült érték tartalmazza a +40 %-os opciós lehívási lehetőség értékét. A keretmegállapodás résztvevőinek tervezett maximális létszáma részenként: 70.
+               """@hu;
+  epo:hasDescription """
+                  Elosztóhálózat-, valamint csatlakozó és mérőhelytervezés az ÉMÁSZ Hálózati Kft. teljes áramszolgáltatási területén.
+                  A műszaki tervezési feladatok megoldása az alábbi tevékenységeket foglalja magába:
+                  — Megvalósíthatósági tanulmányterv készítése,
+                  — Engedélyezési terv készítése,
+                  — Kiviteli terv készítése,
+                  — Tervezői művezetés.
+                  A beszerzéssel érintett hálózatfajták: szabadvezetékek, kábelek, transzformátorállomások.
+                  A feladatot teljes körűen el kell végezni, bele kell érteni a geodéziai és forgalomtechnikai tervezési feladatokat is.
+               """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-238-494845_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasID epd:id_2017-S-238-494845_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2017-S-238-494845_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasTitle """
+                  Elosztóhálózat-, valamint csatlakozó és mérőhelytervezés az ÉMÁSZ Hálózati Kft. teljes áramszolgáltatási területén.
+               """@hu;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-238-494845_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
+  epo:hasAmountValue 5600000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-238-494845_MainMonetaryValueLot_ig8mEGUXVMgcuxfgHrQXuq a epo:MonetaryValue;
+  epo:hasAmountValue 4480000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-238-494845_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY a epo:MonetaryValue;
+  epo:hasAmountValue 10080000000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/HUF> .
+
+epd:id_2017-S-238-494845_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-238-494845_AdditionalBuyer_CpEekzFtAswXMVZciW4heM,
+    epd:id_2017-S-238-494845_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2017-S-238-494845_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2017-S-238-494845_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2017-S-238-494845_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2017-S-238-494845_TenderReceiver_dk2esofbDLefiQsKcsKjh3;
+  epo:hasDispatchDate "2017-12-07"^^xsd:date;
+  epo:hasID epd:id_2017-S-238-494845_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20171212";
+  epo:refersToLot epd:id_2017-S-238-494845_Lot_aNssKXiFyYxii2v93ivV4N, epd:id_2017-S-238-494845_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:refersToProcedure epd:id_2017-S-238-494845_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2017-S-238-494845_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 238-494845" .
+
+epd:id_2017-S-238-494845_OrganisationAddress_CpEekzFtAswXMVZciW4heM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU311>;
+  locn:postCode "3525";
+  locn:postName "Miskolc";
+  locn:thoroughfare "Dózsa György út 13." .
+
+epd:id_2017-S-238-494845_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU110>;
+  locn:postCode "1132";
+  locn:postName "Budapest";
+  locn:thoroughfare "Váci út 72–74." .
+
+epd:id_2017-S-238-494845_OrganisationIdentifier_CpEekzFtAswXMVZciW4heM a epo:Identifier;
+  epo:hasIdentifierValue "AK16575" .
+
+epd:id_2017-S-238-494845_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH a epo:Identifier;
+  epo:hasIdentifierValue "AK15890" .
+
+epd:id_2017-S-238-494845_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasID epd:id_2017-S-238-494845_OrganisationIdentifier_W8v6KSqiUn74jPKJmENKoH;
+  epo:hasLegalName "ELMŰ Hálózati Kft"@hu;
+  cccev:registeredAddress epd:id_2017-S-238-494845_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2017-S-238-494845_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71320000> .
+
+epd:id_2017-S-238-494845_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2017-S-238-494845_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-238-494845_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+               1) Az érdekelt szervezetnek a IV.2.2) pontban meghatározott határidőig szándéknyilatkozatot kell benyújtania magyar nyelven, mely tartalmazza:
+               — a közbeszerzési eljárás pontos megnevezését,
+               — az érdekelt szervezet nevét, székhelyét, elérhetőségét,
+               — adószámát,
+               — cégjegyzék számát,
+               — a kapcsolattartó személy nevét, beosztását, elérhetőségét.
+               Amennyiben a szándéknyilatkozat nem tartalmaz minden információt, ajánlatkérő nem kötelezett a hiányzó adatok beszerzésére, illetve a közvetlen részvételi felhívás megküldésére. A szándéknyilatkozat benyújtható e-mail mellékletként (kozbeszerzes@elmu.hu), vagy telefaxon (+36 1 238 2867).
+               A szándéknyilatkozatot benyújtó szervezet felelőssége meggyőződni arról, hogy a benyújtott szándéknyilatkozat megérkezett-e határidőig az ajánlatkérőhöz.
+               2) A közbeszerzési dokumentumok a részvételi felhívás megküldését (tervezett határidő: IV.2.5) pont szerint) követően érhetők el az I.3) pontban jelzett címen.
+               3) IV.1.3) pontban ajánlatkérő a keretmegállapodás résztvevőinek tervezett maximális létszámát 70 db-ban határozta meg, de az Ajánlatkérő minden, arra alkalmasnak minősített ajánlattevővel keretmegállapodást kíván kötni.
+               4) A 307/2015 (X.27) Korm. rendeletre hivatkozással Ajánlatkérő fenntartja a jogot, hogy a szerződés időtartama alatt a teljes szerződéses érték nem kerül lehívásra.
+               5) FAKSZ: dr. Egresi Márton, Lajstromszáma: 00563
+            """@hu;
+  epo:hasDescription """
+               Elosztóhálózat-, valamint csatlakozó és mérőhelytervezés az ELMŰ Hálózati Kft. és az ÉMÁSZ Hálózati Kft. teljes áramszolgáltatási területén.
+            """@hu;
+  epo:hasEstimatedValue epd:id_2017-S-238-494845_MonetaryValueProcedure_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-238-494845_Lot_aNssKXiFyYxii2v93ivV4N,
+    epd:id_2017-S-238-494845_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2017-S-238-494845_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+               Elosztóhálózat-, valamint csatlakozó és mérőhelytervezés az ELMŰ Hálózati Kft. és az ÉMÁSZ Hálózati Kft. teljes áramszolgáltatási területén.
+            """@hu;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-238-494845_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2017-S-238-494845_FrameworkAgreementTerm_42ewgEwxZiroeKCXpa2kAY, epd:id_2017-S-238-494845_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY,
+    epd:id_2017-S-238-494845_ReviewTerm_ZsxuomNURxGbRdavxJPhLN, epd:id_2017-S-238-494845_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY;
+  epo:usesTechnique epd:id_2017-S-238-494845_FrameworkAgreementTechniqueUsage_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2017-S-238-494845_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-238-494845_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2017-S-238-494845_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2017-S-238-494845_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó utca 5." .
+
+epd:id_2017-S-238-494845_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828594" .
+
+epd:id_2017-S-238-494845_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2017-S-238-494845_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2017-S-238-494845_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2017-S-238-494845_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-238-494845_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2017-S-238-494845_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               A jogorvoslati kérelmek benyújtására a Kbt. 148. §-ban foglaltak az irányadók.
+            """ .
+
+epd:id_2017-S-238-494845_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+36 18828593";
+  cccev:email "dontobizottsag@kt.hu";
+  cccev:telephone "+36 18828594" .
+
+epd:id_2017-S-238-494845_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  locn:postCode "1026";
+  locn:postName "Budapest";
+  locn:thoroughfare "Riadó utca 5." .
+
+epd:id_2017-S-238-494845_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Közbeszerzési Döntőbizottság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2017-S-238-494845_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2017-S-238-494845_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-238-494845_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-238-494845_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2017-S-238-494845_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "HU";
+  epo:hasReceiptExpressionDeadline "2018-01-10T10:00" .
+
+epd:id_2017-S-238-494845_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/HU110>;
+  locn:postCode "1132";
+  locn:postName "Budapest";
+  locn:thoroughfare "Váci út 72–74. V. emelet 504. szoba" .
+
+epd:id_2017-S-238-494845_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3
+  a cccev:ContactPoint;
+  epo:hasContactName "Máté Tamás"@hu;
+  epo:hasFax "+36 12382867";
+  epo:hasInternetAddress "https://www.elmu.hu"^^xsd:anyURI;
+  cccev:email "kozbeszerzes@elmu.hu";
+  cccev:telephone "+36 12382357" .
+
+epd:id_2017-S-238-494845_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 a org:Organization;
+  epo:hasLegalName "ELMŰ Nyrt., Beszerzési Igazgatóság"@hu;
+  epo:hasPrimaryContactPoint epd:id_2017-S-238-494845_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  cccev:registeredAddress epd:id_2017-S-238-494845_TenderReceiverOrganisationAddress_dk2esofbDLefiQsKcsKjh3 .
+
+epd:id_2017-S-238-494845_TenderReceiver_dk2esofbDLefiQsKcsKjh3 a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-238-494845_TenderReceiverOrganisationContactPoint_dk2esofbDLefiQsKcsKjh3;
+  epo:playedBy epd:id_2017-S-238-494845_TenderReceiverOrganisation_dk2esofbDLefiQsKcsKjh3 .

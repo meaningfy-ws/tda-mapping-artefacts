@@ -1,0 +1,150 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-102-248783_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://www.simap.ch/shabforms/servlet/Search?NOTICE_NR=1077181"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2019-S-102-248783_AwardCriterionCost_LZXPc54dghndgUKmLLkWYh a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Le montant de l'offre en rapport avec le cahier des charges"@fr;
+  cccev:weight "60 %"@fr .
+
+epd:id_2019-S-102-248783_AwardCriterionCost_ZoAopCVjLaT7X7dESZMoSm a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Propriétés du ou des produits proposés pour l’exécution du marché"@fr;
+  cccev:weight "40 %"@fr .
+
+epd:id_2019-S-102-248783_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2019-S-102-248783_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2019-S-102-248783_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2019-S-102-248783_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Claudio Rossier"@fr;
+  epo:hasInternetAddress "https://www.simap.ch"^^xsd:anyURI;
+  cccev:email "claudio.rossier@papon-archi.ch" .
+
+epd:id_2019-S-102-248783_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress "Résidence PlantzetteRue de Plantzette 513960 Sierre"@fr .
+
+epd:id_2019-S-102-248783_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CH0>;
+  locn:address epd:id_2019-S-102-248783_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2019-S-102-248783_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-102-248783_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-102-248783_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2019-S-102-248783_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2019-S-102-248783_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2019-S-102-248783_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-102-248783_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription "Fourniture lustrerie de base — CFC 233 Lustrerie."@fr;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2019-S-102-248783_AwardCriterionCost_LZXPc54dghndgUKmLLkWYh,
+    epd:id_2019-S-102-248783_AwardCriterionCost_ZoAopCVjLaT7X7dESZMoSm .
+
+epd:id_2019-S-102-248783_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-102-248783_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2019-S-102-248783_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2019-S-102-248783_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2019-S-102-248783_TenderReceiver_5gEXzR8qwWo7DYKmgnYdCd;
+  epo:hasDispatchDate "2019-05-24"^^xsd:date;
+  epo:hasID epd:id_2019-S-102-248783_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20190528";
+  epo:refersToLot epd:id_2019-S-102-248783_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2019-S-102-248783_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2019-S-102-248783_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 102-248783" .
+
+epd:id_2019-S-102-248783_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CHE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CH0>;
+  locn:postCode "3960";
+  locn:postName "Sierre";
+  locn:thoroughfare "Avenue du Rothorn 11" .
+
+epd:id_2019-S-102-248783_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Eric Papon & Partenaires SA"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2019-S-102-248783_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2019-S-102-248783_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/31680000> .
+
+epd:id_2019-S-102-248783_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-102-248783_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation "Des offres partielles ne sont pas admises.Négociations: les négociations tant sur le prix que sur les prestations sont interdites pendant et jusqu'à et y compris la décision d'adjudication.Indication des voies de recours: la présente décision peut faire l'objet d'un recours dans les 10 jours dès sa publication auprès de la cour de droit public du tribunal cantonal à Sion.Délai de clôture pour le dépôt des offres/remarques: la date du sceau postal fait foi.Remarques (Délai souhaité pour poser des questions par écrit): toutes les questions doivent être adressées au bureau: DPE Électrotechnique SA Ecoparc de Daval C 1 CH-3960 Sierre — À l'attention de M. Isenring Jonathan à l'adresse courriel: jonathan.isenring@dpe.chPublication de référence nationale: simap du 24.5.2019, doc. 1077181. Délai souhaité pour poser des questions par écrit: 7.6.2019.Dossier disponible à partir du 24.5.2019 jusqu'au 8.7.2019.Conditions à l'obtention du dossier d'appel d'offres: envoi uniquement par courrier électronique.Conditions de paiement: aucun émolument si le dossier est téléchargé."@fr;
+  epo:hasDescription "Fourniture lustrerie de base — CFC 233 Lustrerie."@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-102-248783_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2019-S-102-248783_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Résidence Plantzette, transformation de la clinique Sainte-Claire en EMS"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-102-248783_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2019-S-102-248783_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2019-S-102-248783_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-102-248783_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2019-S-102-248783_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2019-S-102-248783_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CHE>;
+  locn:postCode "9023";
+  locn:postName "St. Gallen";
+  locn:thoroughfare "Postfach" .
+
+epd:id_2019-S-102-248783_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Bundesverwaltungsgericht"@fr;
+  cccev:registeredAddress epd:id_2019-S-102-248783_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2019-S-102-248783_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-102-248783_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2019-S-102-248783_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2019-S-102-248783_TenderReceiverOrganisationAddress_5gEXzR8qwWo7DYKmgnYdCd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CHE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CH0>;
+  locn:postCode "3960";
+  locn:postName "Sierre";
+  locn:thoroughfare "Avenue du Rothorn 11" .
+
+epd:id_2019-S-102-248783_TenderReceiverOrganisationContactPoint_5gEXzR8qwWo7DYKmgnYdCd
+  a cccev:ContactPoint;
+  epo:hasContactName "Claudio Rossier"@fr;
+  epo:hasInternetAddress "https://www.simap.ch"^^xsd:anyURI;
+  cccev:email "claudio.rossier@papon-archi.ch" .
+
+epd:id_2019-S-102-248783_TenderReceiverOrganisation_5gEXzR8qwWo7DYKmgnYdCd a org:Organization;
+  epo:hasLegalName "Eric Papon & Partenaires SA"@fr;
+  epo:hasPrimaryContactPoint epd:id_2019-S-102-248783_TenderReceiverOrganisationContactPoint_5gEXzR8qwWo7DYKmgnYdCd;
+  cccev:registeredAddress epd:id_2019-S-102-248783_TenderReceiverOrganisationAddress_5gEXzR8qwWo7DYKmgnYdCd .
+
+epd:id_2019-S-102-248783_TenderReceiver_5gEXzR8qwWo7DYKmgnYdCd a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-102-248783_TenderReceiverOrganisationContactPoint_5gEXzR8qwWo7DYKmgnYdCd;
+  epo:playedBy epd:id_2019-S-102-248783_TenderReceiverOrganisation_5gEXzR8qwWo7DYKmgnYdCd .

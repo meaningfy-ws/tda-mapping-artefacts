@@ -1,0 +1,212 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-086-194241_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://marches.mrs.aero"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2018-S-086-194241_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "45"@fr .
+
+epd:id_2018-S-086-194241_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Critère de qualité technique"@fr;
+  cccev:weight "45"@fr .
+
+epd:id_2018-S-086-194241_AwardCriterionQuality_c875KbKHSSEYdJLphMo2rf a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Critère développement durable"@fr;
+  cccev:weight "10"@fr .
+
+epd:id_2018-S-086-194241_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://marches.mrs.aero"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-086-194241_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-086-194241_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-086-194241_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasFax "+33 442143559";
+  epo:hasInternetAddress "http://www.mp.aeroport.fr"^^xsd:anyURI;
+  cccev:email "servicemarches@mrs.aero";
+  cccev:telephone "+33 442143558" .
+
+epd:id_2018-S-086-194241_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+                  Aéroport Marseille Provence  — 13700 Marignane.
+               """@fr .
+
+epd:id_2018-S-086-194241_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL04>;
+  locn:address epd:id_2018-S-086-194241_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2018-S-086-194241_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-086-194241_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-086-194241_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2018-S-086-194241_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true .
+
+epd:id_2018-S-086-194241_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-086-194241_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2018-S-086-194241_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2018-S-086-194241_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/66133000> .
+
+epd:id_2018-S-086-194241_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-086-194241_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+                  Achat et gestion des titres restaurant pour l'Aéroport Marseille Provence.
+               """@fr;
+  epo:hasPurpose epd:id_2018-S-086-194241_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-086-194241_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-086-194241_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN,
+    epd:id_2018-S-086-194241_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH, epd:id_2018-S-086-194241_AwardCriterionQuality_c875KbKHSSEYdJLphMo2rf .
+
+epd:id_2018-S-086-194241_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 3600000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-086-194241_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-086-194241_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-086-194241_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2018-S-086-194241_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2018-S-086-194241_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2018-S-086-194241_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2018-S-086-194241_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2018-05-03"^^xsd:date;
+  epo:hasID epd:id_2018-S-086-194241_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20180504";
+  epo:refersToLot epd:id_2018-S-086-194241_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2018-S-086-194241_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2018-S-086-194241_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 086-194241" .
+
+epd:id_2018-S-086-194241_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL04>;
+  locn:postCode "13727";
+  locn:postName "Marignane cedex";
+  locn:thoroughfare "Boite postale 7" .
+
+epd:id_2018-S-086-194241_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Société Aéroport Marseille Provence"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2018-S-086-194241_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-086-194241_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "18A0140000" .
+
+epd:id_2018-S-086-194241_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/66133000> .
+
+epd:id_2018-S-086-194241_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-086-194241_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+               Procédure négociée en 2 étapes:
+               — Étape 1: appel à candidatures et sélection des candidats.
+               — Étape 2: envoi du DCE aux seuls candidats sélectionnés.
+               Le candidat doit indiquer l'adresse e-mail à laquelle sera envoyé le code permettant d'accéder au DCE sur le profil acheteur. L'unité monétaire utilisée est l'euro. Transmission des plis à: Société Aéroport Marseille Provence — service achats marchés — BP7 — 13727 Marignane cedex (adresse de dépôt: Aéroport Marseille Provence — Service achats marchés 13700 Marignane). L'enveloppe comportera la mention « Numéro et intitulé du marché — Ne pas ouvrir » et contiendra les éléments prévus aux points III 1.1 à III 1.3, ainsi qu'une copie complète de la candidature sur support informatique. Horaires d'ouverture: 9h à 12h et 13h à 17h. Tout pli reçu ou déposé après la date et l'heure limites fixées sera renvoyé à son expéditeur sans être décacheté. Transmission électronique: le candidat doit se rendre sur https://marches.mrs.aero pour déposer son dossier de candidature. Veillez à anticiper la transmission et la durée du téléchargement de votre candidature avant l'heure limite de réception des plis, en fonction de la taille de vos éléments et votre débit internet. La remise de pli en 2 temps n'est pas autorisée. Tout pli délivré après la date et l'heure limites fixées est rejeté sans être ouvert. L'éventuelle copie de sauvegarde (support physique électronique ou papier) doit parvenir dans les mêmes délais avec la mention « Copie de sauvegarde et l'intitulé du marché ». Condition et mode de paiement pour obtenir les documents contractuels et additionnels: Les documents sont téléchargeables gratuitement. Date limite d'obtention: jusqu'à la date et heure limite de remise des offres. Date prévue de début du marché: 2.1.2019.
+            """@fr;
+  epo:hasDescription """
+               Achat et gestion de titres restaurant pour l'Aéroport Marseille Provence. Ces titres seront dans un premier temps au format papier, et évolueront en cours de marché à un format titres restaurant dématérialisés (carte de paiement).
+               — Montant minimum annuel 90 000 EUR HT (soit 10 000 Titres restaurant),
+               — montant maximum annuel 600 000 EUR HT (soit 66 000 Titres restaurant).
+            """@fr;
+  epo:hasEstimatedValue epd:id_2018-S-086-194241_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2018-S-086-194241_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-086-194241_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2018-S-086-194241_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+               Achat des titres restaurant pour l'aéroport Marseille Provence
+            """@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-086-194241_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2018-S-086-194241_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2018-S-086-194241_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB,
+    epd:id_2018-S-086-194241_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2018-S-086-194241_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2018-S-086-194241_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-086-194241_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-086-194241_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2018-S-086-194241_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13100";
+  locn:postName "Aix-en-Provence";
+  locn:thoroughfare "40 boulevard Carnot" .
+
+epd:id_2018-S-086-194241_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.aixenprovence.fr/Tribunal-de-grande-instance-d-Aix"^^xsd:anyURI;
+  cccev:email "tgi-aix-en-provence@justice.fr";
+  cccev:telephone "+33 442338300" .
+
+epd:id_2018-S-086-194241_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Greffe du tribunal de grande instance Aix en Provence"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-086-194241_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2018-S-086-194241_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-086-194241_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-086-194241_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2018-S-086-194241_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Précisions concernant les délais d'introduction de recours: Un candidat peut exercer devant le Président du TGI d'Aix-en-Provence, conformément aux articles 5 et 11 de l'ordonnance 2009-515 du 7.5.2009 et 1441-1 à 1441-3 du Code de procédure civile, contre la présente procédure:
+               — Un référé précontractuel depuis le début de la procédure de passation jusqu'à la signature du marché.
+               — Un référé contractuel. Délai de recours: 31 jours à compter de la notification du contrat ou de la publication d'un avis d'attribution.
+            """ .
+
+epd:id_2018-S-086-194241_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.aixenprovence.fr/Tribunal-de-grande-instance-d-Aix"^^xsd:anyURI;
+  cccev:email "tgi-aix-en-provence@justice.fr";
+  cccev:telephone "+33 442338300" .
+
+epd:id_2018-S-086-194241_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13100";
+  locn:postName "Aix-en-Provence";
+  locn:thoroughfare "40 boulevard Carnot" .
+
+epd:id_2018-S-086-194241_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance Aix-en-Provence"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-086-194241_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2018-S-086-194241_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-086-194241_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-086-194241_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2018-S-086-194241_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://marches.mrs.aero"^^xsd:anyURI .
+
+epd:id_2018-S-086-194241_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-086-194241_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2018-S-086-194241_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

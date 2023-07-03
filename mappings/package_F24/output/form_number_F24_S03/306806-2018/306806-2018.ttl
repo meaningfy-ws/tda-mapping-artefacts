@@ -1,0 +1,170 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-134-306806_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://www.parisaeroport.fr/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2018-S-134-306806_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-134-306806_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-134-306806_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-134-306806_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Direction des commerces"@fr;
+  epo:hasInternetAddress "https://www.parisaeroport.fr/"^^xsd:anyURI;
+  cccev:email "olivier.beau@adp.fr";
+  cccev:telephone "+33 174256577" .
+
+epd:id_2018-S-134-306806_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Aéroport Paris — Charles de Gaulle, Terminal 1, bâtiment de jonction, zone réservée (côté piste)"@fr .
+
+epd:id_2018-S-134-306806_ContractTermLotLocationAddress_gBpZPwcpekuQ8tRyYLDbhL a locn:Address;
+  locn:fullAddress "Aéroport Paris — Charles de Gaulle, Terminal 2 Liaison BD, zone réservée (côté piste) et en zone publique (côté ville)"@fr .
+
+epd:id_2018-S-134-306806_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR1>;
+  locn:address epd:id_2018-S-134-306806_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-134-306806_ContractTermLotLocation_gBpZPwcpekuQ8tRyYLDbhL a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR1>;
+  locn:address epd:id_2018-S-134-306806_ContractTermLotLocationAddress_gBpZPwcpekuQ8tRyYLDbhL .
+
+epd:id_2018-S-134-306806_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-134-306806_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-134-306806_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2018-S-134-306806_ContractTermLot_gBpZPwcpekuQ8tRyYLDbhL a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-134-306806_Duration_kRiiMRBTYMDCGKiwh9Rzt7;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-134-306806_ContractTermLotLocation_gBpZPwcpekuQ8tRyYLDbhL .
+
+epd:id_2018-S-134-306806_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2018-S-134-306806_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-134-306806_Duration_kRiiMRBTYMDCGKiwh9Rzt7 a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-134-306806_LotIdentifier_RgULVPVVYP9pkvK789PCUZ a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2018-S-134-306806_LotIdentifier_gBpZPwcpekuQ8tRyYLDbhL a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2018-S-134-306806_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/55000000> .
+
+epd:id_2018-S-134-306806_LotPurpose_gBpZPwcpekuQ8tRyYLDbhL a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/55000000> .
+
+epd:id_2018-S-134-306806_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-134-306806_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "Les offres remises par les candidats pour les lots no 1 et 2 seront jugées séparément."@fr;
+  epo:hasDescription "Exploitation de 3 surfaces de restauration dont un food court en zone réservée du bâtiment de Jonction Terminal 1 sur les segments suivants: Restauration à table de Chef étoilé, un fast casual, et un food court (comprenant 4 offres: asiatique, coffee shop, boulangerie, burger premium)."@fr;
+  epo:hasID epd:id_2018-S-134-306806_LotIdentifier_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2018-S-134-306806_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasTitle "Exploitation de 3 surfaces de restauration en zone réservé du bâtiment de jonction du Terminal 1"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-134-306806_Lot_gBpZPwcpekuQ8tRyYLDbhL a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-134-306806_ContractTermLot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasAdditionalInformation "Les offres remises par les candidats pour les lots no 1 et 2 seront jugées séparément."@fr;
+  epo:hasDescription "Exploitation de 10 surfaces de restauration en zone réservée et en zone publique du Terminal 2 liaison BD sur les segments suivants: restauration à table de Chef étoilé, méditerranéen, asiatique, bar, coffee shop, fast casual, burger premium, boulangerie)."@fr;
+  epo:hasID epd:id_2018-S-134-306806_LotIdentifier_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasPurpose epd:id_2018-S-134-306806_LotPurpose_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasTitle "Exploitation de 10 surfaces de restauration en zone réservée et en zone publique du Terminal 2 Liaison BD"@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-134-306806_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-134-306806_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2018-S-134-306806_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2018-S-134-306806_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2018-S-134-306806_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2018-07-11"^^xsd:date;
+  epo:hasID epd:id_2018-S-134-306806_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20180714";
+  epo:refersToLot epd:id_2018-S-134-306806_Lot_RgULVPVVYP9pkvK789PCUZ, epd:id_2018-S-134-306806_Lot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:refersToProcedure epd:id_2018-S-134-306806_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2018-S-134-306806_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 134-306806" .
+
+epd:id_2018-S-134-306806_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "93290";
+  locn:postName "Tremblay-en-France";
+  locn:thoroughfare "1 rue de France" .
+
+epd:id_2018-S-134-306806_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF a epo:Identifier;
+  epo:hasIdentifierValue "FR10" .
+
+epd:id_2018-S-134-306806_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasID epd:id_2018-S-134-306806_OrganisationIdentifier_jXahEP38X6pEFgd4J9tLvF;
+  epo:hasLegalName "Aéroports de Paris"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2018-S-134-306806_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-134-306806_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/55000000> .
+
+epd:id_2018-S-134-306806_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk a epo:ProcedureTerm;
+  epo:hasLotAwardCombination "Les candidats devront impérativement remettre une offre de base sur le ou les lots correspondant(s) à leur candidature, les candidats ayant fait acte de candidature pour les 2 lots pourront, s'ils le souhaitent, proposer une offre intitulée «variante» combinant les lots 1 et 2.";
+  epo:hasMaximumNumberOfLotsToBeAwarded 2;
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2018-S-134-306806_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-134-306806_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Pour être recevable, les dossiers complets de candidature devront être adressés dans le délai de rigueur visé au IV.2.2) uniquement par courrier électronique aux adresses suivantes:olivier.beau@adp.fr / dorian.ferrer@adp.fr / maxime.carette@adp.frLes informations ou renseignements complémentaires devront être demandés auprès des contacts susvisés."@fr;
+  epo:hasDescription "Exploitation de plusieurs surfaces dédiées à l'activité de restauration avec plusieurs segments sur l'aéroport de Paris-Charles de Gaulle: 3 surfaces de restauration dont un food court au sein du bâtiment de Jonction du Terminal 1 (lot no1) et 10 surfaces de restauration au sein de la liaison BD du Terminal 2 (lot no 2).L'utilisation du présent avis publié au JOUE ne constitue qu'un support de publicité permettant à Aéroports de Paris d'informer les opérateurs économiques du lancement de la consultation afin de susciter une concurrence la plus large possible et de respecter les principes généraux d'égalité de traitement et de transparence.Pour chacun des lots, le contrat prendra la forme d'un bail civil."@fr;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-134-306806_Lot_RgULVPVVYP9pkvK789PCUZ,
+    epd:id_2018-S-134-306806_Lot_gBpZPwcpekuQ8tRyYLDbhL;
+  epo:hasPurpose epd:id_2018-S-134-306806_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Exploitation de plusieurs surfaces de restauration sur l'aéroport de Paris-Charles de Gaulle"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-134-306806_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2018-S-134-306806_ProcedureTerm_ASGTpKiU8XT26Zf8pwgdwk, epd:id_2018-S-134-306806_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr,
+    epd:id_2018-S-134-306806_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2018-S-134-306806_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-134-306806_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-134-306806_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2018-S-134-306806_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— référé précontractuel pouvant être exerce depuis le début de la procédure de passation jusqu'à la signature du marché (article 5 de l'ordonnance du 7.5.2009), — référé contractuel par l'article 11 de l'ordonnance du 7.5.2009. recours en nullité relative (5 ans),— recours en nullité absolue (30 ans)" .
+
+epd:id_2018-S-134-306806_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75001";
+  locn:postName "Paris";
+  locn:thoroughfare "4 boulevard du Palais" .
+
+epd:id_2018-S-134-306806_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal de grand instance de Paris"@fr;
+  cccev:registeredAddress epd:id_2018-S-134-306806_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-134-306806_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-134-306806_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2018-S-134-306806_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2018-S-134-306806_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-134-306806_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2018-S-134-306806_Organisation_jXahEP38X6pEFgd4J9tLvF .

@@ -1,0 +1,176 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-114-281075_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://arras.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2019-S-114-281075_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.arras.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2019-S-114-281075_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2019-S-114-281075_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2019-S-114-281075_Channel_PECLWCEwQNoZFei2BQMmT6 a cccev:Channel;
+  epo:hasURL "http://arras.fr"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2019-S-114-281075_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.arras.fr"^^xsd:anyURI;
+  cccev:email "s-marches@ville-arras.fr";
+  cccev:telephone "+33 321506931" .
+
+epd:id_2019-S-114-281075_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Territoire communal."@fr .
+
+epd:id_2019-S-114-281075_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRE12>;
+  locn:address epd:id_2019-S-114-281075_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2019-S-114-281075_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2019-S-114-281075_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-114-281075_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2019-S-114-281075_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2019-S-114-281075_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitDay .
+
+epd:id_2019-S-114-281075_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG a
+    cccev:ContactPoint;
+  epo:hasContactName "Meryll Hefti, direction de la commande publique et des achats"@fr;
+  epo:hasInternetAddress "http://arras.fr"^^xsd:anyURI;
+  cccev:email "s-marches@ville-arras.fr";
+  cccev:telephone "+33 321506931" .
+
+epd:id_2019-S-114-281075_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRE12>;
+  locn:postCode "62022";
+  locn:postName "Arras";
+  locn:thoroughfare "6 place Guy Mollet, BP 70913" .
+
+epd:id_2019-S-114-281075_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG a
+    org:Organization;
+  epo:hasLegalName "Mairie d'Arras"@fr;
+  cccev:registeredAddress epd:id_2019-S-114-281075_InformationProviderOrganisationAddress_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2019-S-114-281075_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/50111100> .
+
+epd:id_2019-S-114-281075_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-114-281075_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription "Délégation de service public définissant un contrat de concession pour la gestion et l'exploitation d'une fourrière automobile."@fr;
+  epo:hasPurpose epd:id_2019-S-114-281075_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2019-S-114-281075_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2019-S-114-281075_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2019-S-114-281075_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG,
+    epd:id_2019-S-114-281075_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2019-S-114-281075_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2019-06-14"^^xsd:date;
+  epo:hasID epd:id_2019-S-114-281075_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20190617";
+  epo:refersToLot epd:id_2019-S-114-281075_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2019-S-114-281075_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2019-S-114-281075_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 114-281075" .
+
+epd:id_2019-S-114-281075_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRE12>;
+  locn:postCode "62000";
+  locn:postName "Arras";
+  locn:thoroughfare "6 place Guy Mollet" .
+
+epd:id_2019-S-114-281075_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Commune d'Arras"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2019-S-114-281075_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2019-S-114-281075_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "ArrDSP02-2019" .
+
+epd:id_2019-S-114-281075_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/50111100> .
+
+epd:id_2019-S-114-281075_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-114-281075_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Les candidats doivent faire parvenir leur offre jusqu'aux dates et heures prévues, figurant en page de garde du règlement de consultation. Attention: remise obligatoire des offres par voie électronique (Cf. annexe remise des offres sur modalités de transmission)."@fr;
+  epo:hasDescription "Délégation de service public définissant un contrat de concession pour la gestion et l'exploitation d'une fourrière automobile."@fr;
+  epo:hasID epd:id_2019-S-114-281075_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-114-281075_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2019-S-114-281075_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Délégation de service public définissant un contrat de concession"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-114-281075_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2019-S-114-281075_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv;
+  epo:usesChannel epd:id_2019-S-114-281075_Channel_PECLWCEwQNoZFei2BQMmT6 .
+
+epd:id_2019-S-114-281075_ProcurementProcedureInformationProvider_ZnQrQ8JBXyXduMn2pLkzUG
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-114-281075_InformationProviderContactPoint_ZnQrQ8JBXyXduMn2pLkzUG;
+  epo:playedBy epd:id_2019-S-114-281075_InformationProviderOrganisation_ZnQrQ8JBXyXduMn2pLkzUG .
+
+epd:id_2019-S-114-281075_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "59014";
+  locn:postName "Lille";
+  locn:thoroughfare "5 rue Geoffroy Saint-Hilaire" .
+
+epd:id_2019-S-114-281075_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  cccev:email "greffe.ta-lille@juradm.fr" .
+
+epd:id_2019-S-114-281075_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lille"@fr;
+  epo:hasPrimaryContactPoint epd:id_2019-S-114-281075_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2019-S-114-281075_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2019-S-114-281075_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2019-S-114-281075_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2019-S-114-281075_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  cccev:email "greffe.ta-lille@juradm.fr";
+  cccev:telephone "+33 359542342" .
+
+epd:id_2019-S-114-281075_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "59014";
+  locn:postName "Lille";
+  locn:thoroughfare "5 rue Geoffroy Saint-Hilaire" .
+
+epd:id_2019-S-114-281075_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Lille"@fr;
+  epo:hasPrimaryContactPoint epd:id_2019-S-114-281075_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2019-S-114-281075_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2019-S-114-281075_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-114-281075_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2019-S-114-281075_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://marchespublics596280.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=8737&orgAcronyme=62-1328"^^xsd:anyURI .

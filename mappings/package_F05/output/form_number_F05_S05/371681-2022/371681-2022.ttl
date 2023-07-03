@@ -1,0 +1,301 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-130-371681_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.marches-securises.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-130-371681_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://www.marches-securises.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-130-371681_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-130-371681_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-130-371681_Channel_cW7StLx8qUnGYzx322HBZC a cccev:Channel;
+  epo:hasURL "https://www.marches-securises.fr"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2022-S-130-371681_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Service Achat et Marchés publics"@fr;
+  epo:hasFax "+33 489981482";
+  epo:hasInternetAddress "https://www.eaudazur.com"^^xsd:anyURI;
+  cccev:email "marchespublics@eaudazur.com";
+  cccev:telephone "+33 489981481" .
+
+epd:id_2022-S-130-371681_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "périmètre d'eau d'azur et ses extensions éventuelles"@fr .
+
+epd:id_2022-S-130-371681_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a locn:Address;
+  locn:fullAddress "périmètre d'intervention d'eau d'azur et ses extensions éventuelles"@fr .
+
+epd:id_2022-S-130-371681_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL03>;
+  locn:address epd:id_2022-S-130-371681_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2022-S-130-371681_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL03>;
+  locn:address epd:id_2022-S-130-371681_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
+
+epd:id_2022-S-130-371681_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-130-371681_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-130-371681_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "-L'Accord-Cadre peut être modifié, conformément à l'article R2194-1 du Code de la commande publique.-l'accord-cadre est reconductible 3 fois, pour une période de 1 an, soit une durée maximale de 4 ans. Le titulaire de l'accord-cadre ne peut pas refuser la reconduction selon les dispositions de l'article R. 2112-4 du Code de la commande publique"@fr .
+
+epd:id_2022-S-130-371681_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2022-S-130-371681_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-130-371681_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "-L'Accord-Cadre peut être modifié, conformément à l'article R2194-1 du Code de la commande publique;-l'accord-cadre est reconductible 3 fois, pour une période de 1 an, soit une durée maximale de 4 ans. Le titulaire de l'accord-cadre ne peut pas refuser la reconduction selon les dispositions de l'article R. 2112-4 du Code de la commande publique"@fr .
+
+epd:id_2022-S-130-371681_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2022-S-130-371681_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-130-371681_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2022-S-130-371681_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2022-S-130-371681_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:FrameworkAgreementTerm .
+
+epd:id_2022-S-130-371681_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasContactName "Service Achat et Marchés Publics"@fr;
+  epo:hasFax "+33 489981482";
+  epo:hasInternetAddress "http://www.eaudazur.com/"^^xsd:anyURI;
+  cccev:email "marchespublics@eaudazur.com";
+  cccev:telephone "+33 489981481" .
+
+epd:id_2022-S-130-371681_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL03>;
+  locn:postCode "06203";
+  locn:postName "Nice Cedex 3";
+  locn:thoroughfare "crystal Palace - cs53135 369-371 Promenade des Anglais, à l'attention de Service Achats, Marchés Publics" .
+
+epd:id_2022-S-130-371681_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasLegalName "eau D'Azur"@fr;
+  cccev:registeredAddress epd:id_2022-S-130-371681_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2022-S-130-371681_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2022-S-130-371681_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2022-S-130-371681_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34140000> .
+
+epd:id_2022-S-130-371681_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/43310000> .
+
+epd:id_2022-S-130-371681_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-130-371681_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "critères de jugement des offres:1) Prix : Pondération de 60 %L'Analyse des prix portera sur le DQE joint au dossier de consultation. 2) Valeur technique: Pondération de 30 %-Etat du matériel proposé : Sous pondération de 15 %,-Méthodologie d'organisation : Sous pondération de 15 %.3) Critère environnemental: Pondération de 10%"@fr;
+  epo:hasDescription "-Le lot no1 porte sur la location de camions.- Sans montant minimum annuel;- montant maximum annuel: 400 000 EURHT, soit 1 600 000 EURHT sur la durée totale de l'accord-cadre"@fr;
+  epo:hasEstimatedValue epd:id_2022-S-130-371681_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasID epd:id_2022-S-130-371681_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2022-S-130-371681_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle "location de camions"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-130-371681_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-130-371681_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-130-371681_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasAdditionalInformation "critères de jugement des offres:1) Prix : Pondération de 60 %L'Analyse des prix portera sur le DQE joint au dossier de consultation. 2) Valeur technique: Pondération de 30 %-Etat du matériel proposé : Sous pondération de 15 %,-Méthodologie d'organisation : Sous pondération de 15 %.3) Critère environnemental: Pondération de 10%"@fr;
+  epo:hasDescription "-Le lot no2 porte sur la location d'engins et de matériel de travaux publics- sans montant minimum annuel;- montant maximum annuel: 300 000 EURHT, soit 1 200 000 EUR sur la durée totale de l'accord-cadre"@fr;
+  epo:hasEstimatedValue epd:id_2022-S-130-371681_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasID epd:id_2022-S-130-371681_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2022-S-130-371681_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle "location d'engins et de matériel de travaux publics"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-130-371681_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-130-371681_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 989231.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-130-371681_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj a epo:MonetaryValue;
+  epo:hasAmountValue 330597.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-130-371681_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
+  epo:hasFax "+33 484354460";
+  epo:hasInternetAddress "http://www.economie.gouv.fr/"^^xsd:anyURI;
+  cccev:email "catherine.pietri@paca.pref.gouv.fr";
+  cccev:telephone "+33 484354554" .
+
+epd:id_2022-S-130-371681_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "13282";
+  locn:postName "Marseille Cedex 6";
+  locn:thoroughfare "place Félix Barret CS 80001" .
+
+epd:id_2022-S-130-371681_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "comité consultatif interrégional de règlement amiable des litiges"@fr;
+  epo:hasPrimaryContactPoint epd:id_2022-S-130-371681_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU;
+  cccev:registeredAddress epd:id_2022-S-130-371681_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2022-S-130-371681_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2022-S-130-371681_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2022-S-130-371681_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 1319828.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-130-371681_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2022-S-130-371681_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:MultipleStageProcedureTerm .
+
+epd:id_2022-S-130-371681_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-130-371681_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2022-S-130-371681_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2022-S-130-371681_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2022-S-130-371681_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2022-S-130-371681_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2022-S-130-371681_TenderReceiver_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasDispatchDate "2022-07-04"^^xsd:date;
+  epo:hasID epd:id_2022-S-130-371681_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220708";
+  epo:refersToLot epd:id_2022-S-130-371681_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2022-S-130-371681_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2022-S-130-371681_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2022-S-130-371681_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 130-371681" .
+
+epd:id_2022-S-130-371681_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL03>;
+  locn:postCode "06203";
+  locn:postName "Nice Cedex 3";
+  locn:thoroughfare "crystal Palace 369 / 371 Promenade des Anglais - cS 53135" .
+
+epd:id_2022-S-130-371681_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "eau D'Azur"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
+  cccev:registeredAddress epd:id_2022-S-130-371681_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-130-371681_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34140000> .
+
+epd:id_2022-S-130-371681_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasMaximumLotSubmissionAllowed 2;
+  epo:hasMaximumNumberOfLotsToBeAwarded 2 .
+
+epd:id_2022-S-130-371681_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-130-371681_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "il s'agit d'un accord-cadre à bons de commande mono-attributaire (par lot), alloti en 2 lots comme suit:lot no1 - location de camions - sans montant minimum annuel ;- montant maximum annuel 400 000 eur ht, soit 1 600 000 EURHT sur la durée maximale de l'accord-cadre.lot no2 - location d'engins et de matériel de travaux publics- sans montant minimum annuel ;- montant maximum annuel 300 000 eur ht, soit 1 200 000 EURHT sur la durée maximale de l'accord-cadre.conformément aux articles R. 2132-3 et R. 2132-7 du code de la commande publique, la transmission des candidatures des entreprises se fera obligatoirement par voie dématérialisée à l'adresse suivante: http:// www.marches-securises.frLa remise via courrier électronique ou voie postale est donc interdite.les opérateurs économiques sont informés que la consultation se déroulera en 2 phases:-- 1ère phase: Remise des candidatures. Les documents attendus ainsi que la date limite de remise des candidatures sont fixés dans le présent avis et au Règlement d'appel public à candidatures;-- 2ème phase: Remise des offres. Une version provisoire du Dossier de consultation est disponible sur la plateforme de dématérialisation https://www.marches-securises.frLa version définitive du dossier de consultation sera transmise aux candidats dont la candidature aura été retenue.Le présent appel public à la concurrence a pour vocation de sélectionner des candidats admis à remettre une offre dans le cadre de la procédure en objet. Aucune offre n'est donc attendue à ce stade.la valeur estimée totale indiquée au point Ii.1.5) est la valeur estimée sur la durée totale de l'accord-cadre, soit 4 ans.pour chaque lot, l'entité adjudicatrice se réserve la possibilité de négocier en une ou plusieurs phases avec l'ensemble des candidats. Les modalités de déroulement des négociations sont détaillées à l'article 4 du Règlement de la consultation (version provisoire). L'Acheteur peut attribuer l'accord-cadre sur la base des offres initiales.pour chaque lot, l'accord-cadre sera attribué au candidat dont la proposition aura été jugée économiquement la plus avantageuse selon les critères de jugement des offres énoncés au Règlement de la consultation"@fr;
+  epo:hasDescription "location de camions, d'engins et de matériel de travaux publics"@fr;
+  epo:hasEstimatedValue epd:id_2022-S-130-371681_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-130-371681_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2022-S-130-371681_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2022-S-130-371681_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "location de camions, d'engins et de matériel de travaux publics"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-130-371681_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2022-S-130-371681_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2022-S-130-371681_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
+    epd:id_2022-S-130-371681_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesChannel epd:id_2022-S-130-371681_Channel_cW7StLx8qUnGYzx322HBZC;
+  epo:usesTechnique epd:id_2022-S-130-371681_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2022-S-130-371681_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-130-371681_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2022-S-130-371681_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2022-S-130-371681_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "06050";
+  locn:postName "Nice Cedex 1";
+  locn:thoroughfare "18 avenue des Fleurs CS 61039" .
+
+epd:id_2022-S-130-371681_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  epo:hasFax "+33 493557831";
+  epo:hasInternetAddress "http://nice.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-nice@juradm.fr";
+  cccev:telephone "+33 489978600" .
+
+epd:id_2022-S-130-371681_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "greffe Tribunal Administratif de Nice"@fr;
+  epo:hasPrimaryContactPoint epd:id_2022-S-130-371681_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2022-S-130-371681_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2022-S-130-371681_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-130-371681_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2022-S-130-371681_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+33 493557831";
+  epo:hasInternetAddress "http://nice.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-nice@juradm.fr";
+  cccev:telephone "+33 489978600" .
+
+epd:id_2022-S-130-371681_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "06050";
+  locn:postName "Nice Cedex 1";
+  locn:thoroughfare "18 avenue des Fleurs CS 61039" .
+
+epd:id_2022-S-130-371681_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "tribunal Administratif de Nice"@fr;
+  epo:hasPrimaryContactPoint epd:id_2022-S-130-371681_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2022-S-130-371681_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-130-371681_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-130-371681_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-130-371681_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.marches-securises.fr"^^xsd:anyURI .
+
+epd:id_2022-S-130-371681_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRL03>;
+  locn:postCode "06203";
+  locn:postName "Nice Cedex 3";
+  locn:thoroughfare "crystal Palace - cs53135 369-371 Promenade des Anglais. Seulement pour les copies de sauvegarde" .
+
+epd:id_2022-S-130-371681_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR
+  a cccev:ContactPoint;
+  epo:hasContactName "Service Achat et Marchés Publics"@fr;
+  epo:hasFax "+33 489981482";
+  epo:hasInternetAddress "http://www.eaudazur.com/"^^xsd:anyURI;
+  cccev:email "marchespublics@eaudazur.com";
+  cccev:telephone "+33 489981481" .
+
+epd:id_2022-S-130-371681_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR a org:Organization;
+  epo:hasLegalName "eau D'Azur"@fr;
+  epo:hasPrimaryContactPoint epd:id_2022-S-130-371681_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  cccev:registeredAddress epd:id_2022-S-130-371681_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR .
+
+epd:id_2022-S-130-371681_TenderReceiver_RmPNyhSxpRtChEASKUU5BR a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-130-371681_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  epo:playedBy epd:id_2022-S-130-371681_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR .

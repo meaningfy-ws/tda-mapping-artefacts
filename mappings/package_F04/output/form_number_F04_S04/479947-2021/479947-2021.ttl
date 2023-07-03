@@ -1,0 +1,224 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-184-479947_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.subreport.de/E44828397"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-184-479947_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-184-479947_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-184-479947_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-184-479947_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Uwe Kaschdailewitsch"@de;
+  epo:hasFax "+49 7119485680";
+  epo:hasInternetAddress "http://www.stuttgart-airport.com"^^xsd:anyURI;
+  cccev:email "kaschdailewitsch@stuttgart-airport.com";
+  cccev:telephone "+49 7119483597" .
+
+epd:id_2021-S-184-479947_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress "Flughafen Stuttgart"@de .
+
+epd:id_2021-S-184-479947_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq a locn:Address;
+  locn:fullAddress "Flughafen Stuttgart"@de .
+
+epd:id_2021-S-184-479947_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE113>;
+  locn:address epd:id_2021-S-184-479947_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2021-S-184-479947_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE113>;
+  locn:address epd:id_2021-S-184-479947_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2021-S-184-479947_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-184-479947_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-184-479947_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Optional wird die parallele Bereitstellung von Airline eigenen Applikationen (CUSS) gemäß IATA RP 1741 gewünscht. Daher sollte der Bieter in der Lage sein, beide Standards auf den SBDs in beiden Terminals parallel bereitzustellen.Weitere Optionen, siehe Leistungsverzeichnis"@de .
+
+epd:id_2021-S-184-479947_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-184-479947_Duration_Pn7seLvJsSm7d5S9iCwt2c;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-184-479947_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Optional wird die parallele Bereitstellung von Airline eigenen Applikationen (CUSS) gemäß IATA RP 1741 gewünscht. Daher sollte der Bieter in der Lage sein, beide Standards auf den SBDs in beiden Terminals parallel bereitzustellen.Weitere Optionen, siehe Leistungsverzeichnis"@de .
+
+epd:id_2021-S-184-479947_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2021-S-184-479947_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 72.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-184-479947_Duration_Pn7seLvJsSm7d5S9iCwt2c a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-184-479947_LotIdentifier_aNssKXiFyYxii2v93ivV4N a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-184-479947_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-184-479947_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34961100> .
+
+epd:id_2021-S-184-479947_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34961100> .
+
+epd:id_2021-S-184-479947_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-184-479947_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasDescription "Lieferung, Montage und Einrichtung von 12 SBD-Vollautomaten (Kauf), inkl. 1st Level Support (Helpdesk) und 3rd Level Support (Site Administration).2nd Level Support (Field Service) wird durch die FSG erbracht."@de;
+  epo:hasID epd:id_2021-S-184-479947_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-184-479947_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:hasTitle "12 Side-Loader SBD-Vollautomaten für das Terminal 3"@de;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-184-479947_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-184-479947_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-184-479947_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasDescription "Lieferung, Montage und Einrichtung von 9 SBD-Hybridautomaten (Kauf), inkl. 1st Level Support (Helpdesk) und 3rd Level Support (Site Administration). 2nd Level Support (Field Service) wird durch die FSG erbracht."@de;
+  epo:hasID epd:id_2021-S-184-479947_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2021-S-184-479947_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasTitle "9 Hybrid-SBD für das Terminal 1"@de;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-184-479947_MultipleStageProcedureTerm_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-184-479947_MediatorContactPoint_QcCdiMK7DbGvuwkYmeWQca a cccev:ContactPoint;
+  epo:hasFax "+49 7219263985";
+  epo:hasInternetAddress "http://www.rp-karlsruhe.de/servlet/PB/menu/1159131/index.html"^^xsd:anyURI;
+  cccev:telephone "+49 7219268730" .
+
+epd:id_2021-S-184-479947_MediatorOrganisationAddress_QcCdiMK7DbGvuwkYmeWQca a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76137";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Durlacher Allee 100" .
+
+epd:id_2021-S-184-479947_MediatorOrganisation_QcCdiMK7DbGvuwkYmeWQca a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg beim Regierungspräsidium Karlsruhe)"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-184-479947_MediatorContactPoint_QcCdiMK7DbGvuwkYmeWQca;
+  cccev:registeredAddress epd:id_2021-S-184-479947_MediatorOrganisationAddress_QcCdiMK7DbGvuwkYmeWQca .
+
+epd:id_2021-S-184-479947_Mediator_QcCdiMK7DbGvuwkYmeWQca a epo:Mediator;
+  epo:playedBy epd:id_2021-S-184-479947_MediatorOrganisation_QcCdiMK7DbGvuwkYmeWQca .
+
+epd:id_2021-S-184-479947_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-184-479947_MultipleStageProcedureTerm_ig8mEGUXVMgcuxfgHrQXuq a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-184-479947_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-184-479947_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-184-479947_Mediator_QcCdiMK7DbGvuwkYmeWQca,
+    epd:id_2021-S-184-479947_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2021-S-184-479947_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2021-S-184-479947_Reviewer_K99XaY97dQrtEEJSTmwy9e;
+  epo:hasDispatchDate "2021-09-17"^^xsd:date;
+  epo:hasID epd:id_2021-S-184-479947_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210922";
+  epo:refersToLot epd:id_2021-S-184-479947_Lot_aNssKXiFyYxii2v93ivV4N, epd:id_2021-S-184-479947_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:refersToProcedure epd:id_2021-S-184-479947_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-184-479947_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 184-479947" .
+
+epd:id_2021-S-184-479947_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE113>;
+  locn:postCode "70629";
+  locn:postName "Stuttgart";
+  locn:thoroughfare "Flughafenstraße 32" .
+
+epd:id_2021-S-184-479947_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "Flughafen Stuttgart GmbH"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2021-S-184-479947_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-184-479947_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34961000> .
+
+epd:id_2021-S-184-479947_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:hasLotAwardCombination "LOS1: 12 Side-Loader SBD-Vollautomaten für das Terminal 3LOS2: 9 Hybrid-SBD für das Terminal 1";
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2021-S-184-479947_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-184-479947_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """a)	Der Auftraggeber ist ausschließlich Sektorenauftraggeber nach § 100 Abs. 1 Nr. 2 GWB.b)	Sämtliche Dokumente im Vergabeverfahren sind in deutscher Sprache einzureichen; bei fremdsprachigen Dokumenten in deutscher Übersetzung.c)	Hinweise zum VerfahrensablaufIn der 1. Phase der Interessenbekundung haben Unternehmen zunächst nur allgemein ihr Interesse an der Teilnahme am Vergabeverfahren zu bekunden. Der Auftraggeber hat hierfür ein Formblatt erstellt. Das Formblatt kann nach Ziffer I.3 der vorliegenden Bekanntmachung abgerufen werden. Die Interessenbekundungen müssen in Textform über die Vergabeplattform des Auftraggebers bis zum Schlusstermin für deren Eingang nach Ziffer IV.2.2) eingehen. Eine Interessenbekundung als Bewerbergemeinschaft ist möglich. Die Einreichung der Eignungsunterlagen (entsprechend dem Teilnahmeantrag) ist in dieser Phase nicht erforderlich. Ein Unternehmen, das sein Interesse in der 1. Phase nicht bekundet hat, kann im weiteren Verlauf des Vergabeverfahrens nicht berücksichtigt werden.Der Auftraggeber wird in der 2. Phase des Vergabeverfahrens die Unternehmen, die frist- und formgerecht eine Interessenbekundung eingereicht haben, auffordern ihr Interesse zu bestätigen (Interessensbestätigung), in dem die in der entsprechenden Aufforderung aufgeführten Eignungsunterlagen eingereicht werden (Teilnahmeantrag).Eine Bewerbergemeinschaft kann in dieser Phase nur noch mit Unternehmen gebildet werden, die zur Interessenbestätigung aufgefordert wurden. In der Aufforderung zur Interessenbestätigung werden die für die Teilnahme maßgeblichen Informationen mitgeteilt werden.In der 3. Phase werden die erfolgreichen Bewerber zur Angabe eines Angebots aufgefordert. Der Auftraggeber behält sich nach § 15 Abs. 4 SektVO vor, den Auftrag auf der Grundlage der Erstangebote zu vergeben, ohne in Verhandlungen einzutreten. d)	Die in Ziffer II.2.7) und in Ziffer IV.2.5) enthaltenen Zeitangaben stehen unter dem Vorbehalt der Anpassung und Aktualisierung.e)	Anfragen von interessierten Unternehmen müssen bis spätestens 08.10.2021 in schriftlicher Form bei der Kontaktstelle gemäß Ziffer I.1) vorliegen.f)	Der Auftraggeber behält sich vor, bei Unterschreitung der Mindestzahl von drei zulassungsfähigen Bewerbungen das vorliegende Vergabeverfahren einzustellen. Der Auftraggeber behält sich zudem vor, bei einer Unterschreitung der Mindestzahl von drei wertungsfähigen Angeboten das vorliegende Vergabeverfahren einzustellen. Bei einer losweisen Vergabe gelten die voranstehenden Vorbehalte für jedes Los."""@de;
+  epo:hasDescription "Die Flughafen Stuttgart GmbH plant die Anschaffung von 12 Side-Loader SBD-Vollautomaten für das Terminal 3 im Jahr 2022 (LOS1), sowie 9 Hybrid-SBD für das Terminal 1 im Jahr 2023 (LOS2).Der heutige 1-Stopp Prozess wird durch einen 2-Stopp Prozess ersetzt, basierend auf einer bereitgestellten Applikation für alle Nutzer (CUWS) gemäß IATA RP1741.Optional wird die parallele Bereitstellung von Airline eigenen Applikationen (CUSS) gemäß IATA RP1741 gewünscht. Daher sollte der Bieter in der Lage sein, beide Standards auf den SBDs in beiden Terminals (LOS1+2) parallel bereitzustellen.Die Vertragslaufzeit für Terminal 3 beträgt 6 Jahre, plus optional 1-2 Verlängerungsjahre. Die Vertragslaufzeit für Terminal 1 beträgt 4 Jahre, plus optional 1-2 Verlängerungsjahre.Der Auftraggeber führt vorliegend ein Vergabeverfahren mit Interessenbekundung, Interessenbestätigung und Aufforderung zur Abgabe eines Angebots durch.In Ziffer VI.3 b) der vorliegenden Bekanntmachung ist der Ablauf konkretisiert."@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-184-479947_Lot_aNssKXiFyYxii2v93ivV4N,
+    epd:id_2021-S-184-479947_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2021-S-184-479947_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "Erneuerung SBD-Infrastruktur"@de;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-184-479947_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2021-S-184-479947_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY, epd:id_2021-S-184-479947_ReviewTerm_ZsxuomNURxGbRdavxJPhLN,
+    epd:id_2021-S-184-479947_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2021-S-184-479947_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-184-479947_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-184-479947_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-184-479947_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76137";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Durlacher Allee 100" .
+
+epd:id_2021-S-184-479947_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH
+  a cccev:ContactPoint;
+  epo:hasFax "+49 7219263985";
+  epo:hasInternetAddress "http://www.rp-karlsruhe.de/servlet/PB/menu/1159131/index.html"^^xsd:anyURI;
+  cccev:telephone "+49 7219268730" .
+
+epd:id_2021-S-184-479947_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg beim Regierungspräsidium Karlsruhe)"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-184-479947_ReviewProcedureInformationProviderContactPoint_G34c4CecCc2SsTmjP9RsgH;
+  cccev:registeredAddress epd:id_2021-S-184-479947_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2021-S-184-479947_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-184-479947_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2021-S-184-479947_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Auf die Rügeobliegenheiten nach § 160 Abs. 3 GWB wird verwiesen. Ein Nachprüfungsantrag ist nach § 160 Abs. 3 S.1 Nr. 4 GWB insbesondere unzulässig, soweit mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, der Rüge nicht abhelfen zu wollen, vergangen sind." .
+
+epd:id_2021-S-184-479947_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+49 7219263985";
+  epo:hasInternetAddress "http://www.rp-karlsruhe.de/servlet/PB/menu/1159131/index.html"^^xsd:anyURI;
+  cccev:telephone "+49 7219268730" .
+
+epd:id_2021-S-184-479947_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "76137";
+  locn:postName "Karlsruhe";
+  locn:thoroughfare "Durlacher Allee 100" .
+
+epd:id_2021-S-184-479947_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Vergabekammer Baden-Württemberg beim Regierungspräsidium Karlsruhe"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-184-479947_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2021-S-184-479947_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-184-479947_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-184-479947_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-184-479947_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasReceiptExpressionDeadline "2021-10-18T23:59";
+  epo:hasSubmissionURL "http://www.subreport.de/E44828397"^^xsd:anyURI .

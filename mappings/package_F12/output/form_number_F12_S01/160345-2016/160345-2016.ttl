@@ -1,0 +1,191 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-090-160345_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.ssrs.si"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-090-160345_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-090-160345_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:playedBy epd:id_2016-S-090-160345_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2016-S-090-160345_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF a cccev:ContactPoint;
+  epo:hasContactName "Karmen Pintar Oblak"@sl;
+  epo:hasFax "+386 13061410";
+  epo:hasInternetAddress "http://www.jssmol.si"^^xsd:anyURI;
+  cccev:email "karmen.pintar@ljubljana.si";
+  cccev:telephone "+386 13061546" .
+
+epd:id_2016-S-090-160345_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF a org:Organization;
+  epo:hasID epd:id_2016-S-090-160345_OrganisationIdentifier_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:hasLegalName "JSS MOL"@sl;
+  cccev:registeredAddress epd:id_2016-S-090-160345_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2016-S-090-160345_BuyerOrganisationGroup_Vx4nE2MhH2AK3p6fvMzsYF a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/hc-am>;
+  epo:hasMember epd:id_2016-S-090-160345_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2016-S-090-160345_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-090-160345_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-090-160345_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2016-S-090-160345_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-090-160345_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasContactName "Jerneja Zorko"@sl;
+  epo:hasFax "+386 14710503";
+  epo:hasInternetAddress "http://www.ssrs.si"^^xsd:anyURI;
+  cccev:email "jerneja.zorko@ssrs.si";
+  cccev:telephone "+386 14710500" .
+
+epd:id_2016-S-090-160345_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2016-S-090-160345_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-090-160345_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2016-S-090-160345_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71220000> .
+
+epd:id_2016-S-090-160345_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-090-160345_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+Javni, projektni, odprti, anonimni, dvostopenjski, natečaj za urbanistično in krajinsko zasnovo območja ter za najprimernejše krajinske in arhitekturne rešitve stanovanjske soseske in večstanovanjskih objektov z zunanjo ureditvijo na območju Brdo 2, Ljubljana.
+"""@sl;
+  epo:hasPurpose epd:id_2016-S-090-160345_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-090-160345_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-090-160345_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2016-S-090-160345_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2016-S-090-160345_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2016-S-090-160345_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2016-S-090-160345_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2016-S-090-160345_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2016-05-05"^^xsd:date;
+  epo:hasID epd:id_2016-S-090-160345_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20160511";
+  epo:refersToLot epd:id_2016-S-090-160345_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2016-S-090-160345_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2016-S-090-160345_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 090-160345" .
+
+epd:id_2016-S-090-160345_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SI021>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Poljanska cesta 31" .
+
+epd:id_2016-S-090-160345_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SI021>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Zarnikova ulica 3" .
+
+epd:id_2016-S-090-160345_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "5539153000" .
+
+epd:id_2016-S-090-160345_OrganisationIdentifier_Vx4nE2MhH2AK3p6fvMzsYF a epo:Identifier;
+  epo:hasIdentifierValue "1719572000" .
+
+epd:id_2016-S-090-160345_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasID epd:id_2016-S-090-160345_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Stanovanjski sklad RS"@sl;
+  cccev:registeredAddress epd:id_2016-S-090-160345_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-090-160345_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "430-5/2016, 36-801/2016" .
+
+epd:id_2016-S-090-160345_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71220000> .
+
+epd:id_2016-S-090-160345_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasID epd:id_2016-S-090-160345_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-090-160345_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2016-S-090-160345_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+Dvostopenjski urbanistično – arhitekturni natečaj, Brdo 2 v Ljubljani.
+"""@sl;
+  epo:isDesignContest true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-090-160345_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2016-S-090-160345_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2016-S-090-160345_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-090-160345_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2016-S-090-160345_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-090-160345_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Poljanska cesta 31" .
+
+epd:id_2016-S-090-160345_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Stanovanjski sklad RS"@sl;
+  cccev:registeredAddress epd:id_2016-S-090-160345_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2016-S-090-160345_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-090-160345_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2016-S-090-160345_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Slovenska cesta 54" .
+
+epd:id_2016-S-090-160345_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Državna revizijska komisija"@sl;
+  cccev:registeredAddress epd:id_2016-S-090-160345_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-090-160345_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-090-160345_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-090-160345_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "SL" .
+
+epd:id_2016-S-090-160345_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVN>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SI021>;
+  locn:postCode "1000";
+  locn:postName "Ljubljana";
+  locn:thoroughfare "Poljanska cesta 31" .
+
+epd:id_2016-S-090-160345_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.ssrs.si"^^xsd:anyURI;
+  cccev:email "jerneja.zorko@ssrs.si" .
+
+epd:id_2016-S-090-160345_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS
+  a epo:Identifier;
+  epo:hasIdentifierValue "5539153000" .
+
+epd:id_2016-S-090-160345_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasID epd:id_2016-S-090-160345_TenderReceiverOrganisationIdentifier_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasLegalName "Stanovanjski sklad RS"@sl;
+  epo:hasPrimaryContactPoint epd:id_2016-S-090-160345_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2016-S-090-160345_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2016-S-090-160345_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-090-160345_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2016-S-090-160345_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

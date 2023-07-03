@@ -1,0 +1,179 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-251-463218_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://marches-publics.parishabitatoph.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-251-463218_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-251-463218_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2016-S-251-463218_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-251-463218_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasFax "+33 171370014";
+  epo:hasInternetAddress "http://marches-publics.parishabitatoph.fr"^^xsd:anyURI;
+  cccev:email "ld-djmm@parishabitat.fr";
+  cccev:telephone "+33 171370000" .
+
+epd:id_2016-S-251-463218_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2016-S-251-463218_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-251-463218_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2016-S-251-463218_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71221000> .
+
+epd:id_2016-S-251-463218_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-251-463218_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription """
+Attention: les candidatures doivent être intégralement dématérialisées, les candidatures papier seront rejetées.
+Concours restreint sur esquisse en application de l'article 88 du décret 2016-360 du 25.3.2016 relatif à une opération de construction d'une école, d'une crèche, de logements sociaux, de commerces et d'un parc de stationnement.
+Le marché sera conclu avec une équipe composée au minimum de 2 architectes (afin d'assurer une diversité architecturale, il est requis 2 architectes issus de structures juridiques différentes. L'un des architectes sera désigné coordonnateur et sera en charge de la synthèse).
+En outre, l'équipe ainsi composée devra dès le stade candidature obligatoirement justifier de la compétence paysagiste.
+Un architecte n'a pas la possibilité de présenter pour ce marché plusieurs candidatures en agissant en tant que membre de plusieurs groupements.
+"""@fr;
+  epo:hasPurpose epd:id_2016-S-251-463218_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-251-463218_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-251-463218_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2016-S-251-463218_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2016-S-251-463218_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2016-S-251-463218_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2016-S-251-463218_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:hasDispatchDate "2016-12-27"^^xsd:date;
+  epo:hasID epd:id_2016-S-251-463218_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasPublicationDate "20161229";
+  epo:refersToLot epd:id_2016-S-251-463218_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2016-S-251-463218_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2016-S-251-463218_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 251-463218" .
+
+epd:id_2016-S-251-463218_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75253";
+  locn:postName "Paris";
+  locn:thoroughfare "21 bis rue Claude Bernard" .
+
+epd:id_2016-S-251-463218_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj a epo:Identifier;
+  epo:hasIdentifierValue "34481082500366" .
+
+epd:id_2016-S-251-463218_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasID epd:id_2016-S-251-463218_OrganisationIdentifier_VX8RygdBbvDo5gNDhjcsTj;
+  epo:hasLegalName "Paris Habitat — OPH"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/hc-am>;
+  cccev:registeredAddress epd:id_2016-S-251-463218_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-251-463218_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2016/224" .
+
+epd:id_2016-S-251-463218_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71221000> .
+
+epd:id_2016-S-251-463218_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation """
+Retrouvez cet avis intégral, l'accès au dossier et le guichet de dépôt sur http://marches-publics.parishabitatoph.fr
+Les dépôts de plis doivent être impérativement remis par voie dématérialisée.
+Le règlement de candidature, joint au dossier de candidature, détaille les modalités de participation au concours restreint.
+Pour la réalisation de cette opération, la ville de de Paris a transféré la maîtrise d'ouvrage de la réalisation de l'école en application de l'article 2-II de la loi du 12.7.1985 dite loi MOP.
+"""@fr;
+  epo:hasID epd:id_2016-S-251-463218_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-251-463218_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2016-S-251-463218_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle """
+Concours de maîtrise d'œuvre relatif à une opération de construction d'une école, d'une crèche, de logements sociaux, de commerces et d'un parc de stationnement au 56-58 rue Erlanger à Paris 16ème.
+"""@fr;
+  epo:isDesignContest true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-251-463218_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2016-S-251-463218_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2016-S-251-463218_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-251-463218_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2016-S-251-463218_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2016-S-251-463218_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2016-S-251-463218_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2016-S-251-463218_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Greffe du tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-251-463218_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2016-S-251-463218_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2016-S-251-463218_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-251-463218_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2016-S-251-463218_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2016-S-251-463218_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2016-S-251-463218_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-251-463218_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2016-S-251-463218_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-251-463218_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-251-463218_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2016-S-251-463218_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://marches-publics.parishabitatoph.fr"^^xsd:anyURI .
+
+epd:id_2016-S-251-463218_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75253";
+  locn:postName "Paris";
+  locn:thoroughfare "Soit par voie postale: Paris Habitat OPH —  à l'attention du service marchés — 21 bis rue Claude Bernard — 75253 Paris Cedex 05. Soit dépôt sur place: Paris Habitat OPH — service courrier —  à l'attention du service marchés — 26 rue Broca — 75005 Paris. Du lundi au vendredi sauf jours fériés, de 9:00 à 16:00, après présentation du récépissé annexé au dossier de candidature" .
+
+epd:id_2016-S-251-463218_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://marches-publics.parishabitatoph.fr"^^xsd:anyURI;
+  cccev:email "ld-djmm@parishabitat.fr" .
+
+epd:id_2016-S-251-463218_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS a org:Organization;
+  epo:hasLegalName "Paris Habitat — OPH"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-251-463218_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  cccev:registeredAddress epd:id_2016-S-251-463218_TenderReceiverOrganisationAddress_RNo9iYHMYRFzLbNCW4tnmS .
+
+epd:id_2016-S-251-463218_TenderReceiver_RNo9iYHMYRFzLbNCW4tnmS a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-251-463218_TenderReceiverOrganisationContactPoint_RNo9iYHMYRFzLbNCW4tnmS;
+  epo:playedBy epd:id_2016-S-251-463218_TenderReceiverOrganisation_RNo9iYHMYRFzLbNCW4tnmS .

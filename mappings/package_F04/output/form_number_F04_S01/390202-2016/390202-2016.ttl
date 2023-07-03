@@ -1,0 +1,211 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-214-390202_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasBuyerProfile "http://www.publiccontractsscotland.gov.uk/authority/authority_buyerprofile.aspx"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-214-390202_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-214-390202_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-214-390202_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasContactName "Robert Freel"@en;
+  epo:hasFax "+44 1413333224";
+  epo:hasInternetAddress "http://www.spt.co.uk/"^^xsd:anyURI;
+  cccev:email "procurement@spt.co.uk";
+  cccev:telephone "+44 1413333786" .
+
+epd:id_2016-S-214-390202_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N a locn:Address;
+  locn:fullAddress """
+Glasgow.
+"""@en .
+
+epd:id_2016-S-214-390202_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq a locn:Address;
+  locn:fullAddress """
+Glasgow.
+"""@en .
+
+epd:id_2016-S-214-390202_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKM34>;
+  locn:address epd:id_2016-S-214-390202_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
+
+epd:id_2016-S-214-390202_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKM34>;
+  locn:address epd:id_2016-S-214-390202_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq .
+
+epd:id_2016-S-214-390202_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-214-390202_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N;
+  epo:hasOptions true .
+
+epd:id_2016-S-214-390202_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-214-390202_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasOptions true .
+
+epd:id_2016-S-214-390202_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2016-S-214-390202_LotIdentifier_aNssKXiFyYxii2v93ivV4N a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2016-S-214-390202_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2016-S-214-390202_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/79341000>, <http://data.europa.eu/cpv/cpv/79341200> .
+
+epd:id_2016-S-214-390202_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/79341000>, <http://data.europa.eu/cpv/cpv/79341200> .
+
+epd:id_2016-S-214-390202_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-214-390202_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation """
+SPT will require space for its own advertising.
+"""@en;
+  epo:hasDescription """
+LOT 1
+SPT seeks to appoint a forward looking and innovative Supplier with the required and proven experience to manage, exploit and develop the full range of advertising and promotional opportunities available from SPT's wide-ranging activities and existing infrastructure which includes static and digital modes.
+The successful Contractor's prime objective will be to maximise revenues from the core advertising estate (Subway and Bus Stations ) highlighting, developing and exploiting new revenue streams and generating new opportunities within these areas as well as examining all other modes eg. ticketing,vinyl wrapping etc. etc..
+"""@en;
+  epo:hasID epd:id_2016-S-214-390202_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2016-S-214-390202_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:hasTitle """
+Management, Development, Selling & Maintenance of SPT Advertising Space and Infrastructure
+"""@en;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-214-390202_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-214-390202_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-214-390202_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasAdditionalInformation """
+1) This is a new opportunity to install and develop further advertising infrastructure.
+2) No contract duration has been set and tenderers will be requested to put forward differing options with a final decision being made prior to award of contract.
+"""@en;
+  epo:hasDescription """
+The contracting authority has identified an initial two sites capable of displaying large format advertising and can potentially offer an indicative pipeline of six or more future sites to be brought forward during the duration of the awarded contract.
+The maximum duration of the contract wil be determined on the basis of the time that the successful tenderer could reasonably be expected to install and recoup on the investment made in operating the contract together with a return on investment to SPT taking account of the initial two sites and future opportunities.
+"""@en;
+  epo:hasID epd:id_2016-S-214-390202_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2016-S-214-390202_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasTitle """
+Large Format Advertising: Supply, Install, Management, Development, Selling and Maintenance of SPT Advertising Space and Infrastructure
+"""@en;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-214-390202_MultipleStageProcedureTerm_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-214-390202_MultipleStageProcedureTerm_aNssKXiFyYxii2v93ivV4N a epo:MultipleStageProcedureTerm .
+
+epd:id_2016-S-214-390202_MultipleStageProcedureTerm_ig8mEGUXVMgcuxfgHrQXuq a epo:MultipleStageProcedureTerm .
+
+epd:id_2016-S-214-390202_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2016-S-214-390202_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2016-S-214-390202_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2016-S-214-390202_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te,
+    epd:id_2016-S-214-390202_Reviewer_K99XaY97dQrtEEJSTmwy9e, epd:id_2016-S-214-390202_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc;
+  epo:hasDispatchDate "2016-11-03"^^xsd:date;
+  epo:hasID epd:id_2016-S-214-390202_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasPublicationDate "20161105";
+  epo:refersToLot epd:id_2016-S-214-390202_Lot_aNssKXiFyYxii2v93ivV4N, epd:id_2016-S-214-390202_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:refersToProcedure epd:id_2016-S-214-390202_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-214-390202_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 214-390202" .
+
+epd:id_2016-S-214-390202_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKM34>;
+  locn:postCode "G2 5JF";
+  locn:postName "Glasgow";
+  locn:thoroughfare "131, St Vincent Street" .
+
+epd:id_2016-S-214-390202_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "SPT"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2016-S-214-390202_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-214-390202_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2016-S-214-390202_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-214-390202_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "16-176" .
+
+epd:id_2016-S-214-390202_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79340000> .
+
+epd:id_2016-S-214-390202_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcedureTerm;
+  epo:hasLotAwardCombination """
+Lot 1 and Lot 2.
+""";
+  epo:isSubmissionForAllLotsAllowed true .
+
+epd:id_2016-S-214-390202_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-214-390202_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation """
+1) The current Lot 1 Expires on 31st March 2017 and will not be awarded until the expiry of the current contract.
+2) Lot 2 may be awarded earlier than March 2017. However the award of this lot will be at the discretion of SPT and no guarantees that an award will be made can be be provided.
+3) Financial Security
+The contracting authority reserves the right to require deposits, guarantees, bonds and or other forms of appropriate security.
+Social Value
+4) The successful service provider will be required to participate actively in the service related economic, social and environmental regeneration of the locality of and surrounding the place of delivery of the contract
+5) A percentage of advertising space will require to be made available to SPT
+NOTE: To register your interest in this notice and obtain any additional information please visit the Public Contracts Scotland Web Site at http://www.publiccontractsscotland.gov.uk/Search/Search_Switch.aspx?ID=464259.
+(SC Ref:464259).
+"""@en;
+  epo:hasDescription """
+SPT is seeking a renew its current Management, Development, Selling & Maintenance of SPT Advertising Space and Infrastructure contract (Lot 1) within the Glasgow subway (15 subway stations), Bus Stations and any other advertising channel or mode identified during the contract.
+In addition a further Lot (Lot 2) will be included for the Supply, Installation, Management, Development, Selling and Maintenance of SPT Advertising Space and Infrastructure for an initial two large format advertising sites on SPT property with the potential for further sites during the duration of the awarded contract.
+A further call for competition will be made on reduced timescales, however companies can express an interest in this notice by emailing procurement@spt.co.uk.
+SPT may engage with suppliers expressing an interest to establish further market information prior to issuing a tender.
+"""@en;
+  epo:hasID epd:id_2016-S-214-390202_ProcedureIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-214-390202_Lot_aNssKXiFyYxii2v93ivV4N,
+    epd:id_2016-S-214-390202_Lot_ig8mEGUXVMgcuxfgHrQXuq;
+  epo:hasPurpose epd:id_2016-S-214-390202_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle """
+Management, Development, Selling & Maintenance of SPT Advertising Space and Infrastructure.
+"""@en;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-214-390202_ProcedureTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2016-S-214-390202_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2016-12-19"^^xsd:date .
+
+epd:id_2016-S-214-390202_ProcurementProcedureInformationProvider_2JUQgAXcEbcWw7oMsNA5te
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-214-390202_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-214-390202_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2016-S-214-390202_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e a cccev:ContactPoint;
+  epo:hasFax "+44 1413333224";
+  epo:hasInternetAddress "http://www.spt.co.uk"^^xsd:anyURI;
+  cccev:telephone "+44 1413333786" .
+
+epd:id_2016-S-214-390202_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postCode "G2 5JF";
+  locn:postName "Glasgow";
+  locn:thoroughfare "131, St Vincent Street" .
+
+epd:id_2016-S-214-390202_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Strathclyde Partnership for Transport"@en;
+  epo:hasPrimaryContactPoint epd:id_2016-S-214-390202_ReviewerContactPoint_K99XaY97dQrtEEJSTmwy9e;
+  cccev:registeredAddress epd:id_2016-S-214-390202_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2016-S-214-390202_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-214-390202_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2016-S-214-390202_TenderReceiver_8jgG59Lrd2BYKnmHsDSzDc a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-214-390202_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2016-S-214-390202_Organisation_W8v6KSqiUn74jPKJmENKoH .

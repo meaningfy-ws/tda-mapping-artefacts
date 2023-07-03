@@ -1,0 +1,172 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-126-334361_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://sodiac.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2021_OFp4UckexE"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-126-334361_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-126-334361_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF;
+  epo:playedBy epd:id_2021-S-126-334361_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2021-S-126-334361_AdditionalContactPoint_Vx4nE2MhH2AK3p6fvMzsYF a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.cinor.re"^^xsd:anyURI;
+  cccev:email "Achat.marche@cinor.re" .
+
+epd:id_2021-S-126-334361_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF a org:Organization;
+  epo:hasLegalName "CINOR"@fr;
+  cccev:registeredAddress epd:id_2021-S-126-334361_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF .
+
+epd:id_2021-S-126-334361_BuyerOrganisationGroup_Vx4nE2MhH2AK3p6fvMzsYF a epo:OrganisationGroup;
+  epo:hasBuyerLegalTypeDescription "Société d'économie mixte locale";
+  epo:hasMainActivityDescription "Société d'économie mixte locale";
+  epo:hasMember epd:id_2021-S-126-334361_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2021-S-126-334361_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-126-334361_Buyer_57fXPDDcVS8FkRK2gHRQMN a epo:Buyer;
+  epo:hasBuyerProfile "https://www.achatpublic.com/sdm/ent/gen/index.jsp"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-126-334361_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-126-334361_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-126-334361_ContactPoint_VX8RygdBbvDo5gNDhjcsTj a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.sodiac.fr"^^xsd:anyURI;
+  cccev:email "Contact-achat@sodiac.fr" .
+
+epd:id_2021-S-126-334361_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Location .
+
+epd:id_2021-S-126-334361_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-126-334361_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
+
+epd:id_2021-S-126-334361_Fund_k5UiCNjVxapva2MShsi99p a epo:Fund;
+  epo:hasDescription "Le programme est financé en partie par l'Ademe."@fr .
+
+epd:id_2021-S-126-334361_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71230000> .
+
+epd:id_2021-S-126-334361_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-126-334361_ContractTermLot_k5UiCNjVxapva2MShsi99p;
+  epo:hasDescription "Le présent concours restreint a pour objet la mise en compétition de maître d'œuvre sur Esquisse pour la modernisation de la station de transit de la Jamaïque, sur une parcelle de 11 800 m2 et située sur la commune de Saint-Denis. La mission de maîtrise d'œuvre sera une mission de base de type construction neuve de bâtiment avec visa des études d'exécution (ESQ, APS, APD, PRO, ACT, VISA, DET, AOR). La mission intègre la réalisation des études d'exécution pour la basse tension. La mission intègre également une mission complémentaire portant sur la réalisation du dossier ICPE et son suivi avec les instances règlementaires, une mission de mise en sécurité des installations existantes le montant prévisionnel affecté aux travaux est estimé 8 596 000 EUR HT (hors frais d'honoraires et frais annexes). Le montant estimé du marché de maîtrise d'œuvre est 418 000 EUR HT. La durée d'exécution du marché de maîtrise d'œuvre est fixée à 53 mois."@fr;
+  epo:hasPurpose epd:id_2021-S-126-334361_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isFundedBy epd:id_2021-S-126-334361_Fund_k5UiCNjVxapva2MShsi99p;
+  epo:isUsingEUFunds true .
+
+epd:id_2021-S-126-334361_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-126-334361_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF,
+    epd:id_2021-S-126-334361_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-126-334361_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
+    epd:id_2021-S-126-334361_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
+    epd:id_2021-S-126-334361_Reviewer_gQh8JdpqsE2bYBRikawiBu;
+  epo:hasDispatchDate "2021-06-29"^^xsd:date;
+  epo:hasID epd:id_2021-S-126-334361_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210702";
+  epo:refersToLot epd:id_2021-S-126-334361_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:refersToProcedure epd:id_2021-S-126-334361_Procedure_n9YtPUZG9SDZ5m8nAb77dU .
+
+epd:id_2021-S-126-334361_NoticeIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 126-334361" .
+
+epd:id_2021-S-126-334361_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRY40>;
+  locn:postCode "97404";
+  locn:postName "Saint-Denis Cedex";
+  locn:thoroughfare "121 boulevard Jean Jaurès — CS 81091" .
+
+epd:id_2021-S-126-334361_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRY40>;
+  locn:postCode "97495";
+  locn:postName "Sainte-Clotilde Cedex";
+  locn:thoroughfare "3 rue de la Solidarité, CS 61025" .
+
+epd:id_2021-S-126-334361_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
+  epo:hasLegalName "Sodiac"@fr;
+  cccev:registeredAddress epd:id_2021-S-126-334361_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-126-334361_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU a epo:Identifier;
+  epo:hasIdentifierValue "21MAN02" .
+
+epd:id_2021-S-126-334361_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2021-S-126-334361_ProcedureTerm_n9YtPUZG9SDZ5m8nAb77dU a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw "Il est précisé que la Sodiac est le mandataire agissant pour le compte de la CINOR"@fr .
+
+epd:id_2021-S-126-334361_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
+  epo:hasAdditionalInformation "La présente consultation est un concours restreint. À ce stade de la procédure (phase candidature), les opérateurs économiques sont invités à remettre uniquement les pièces de candidature listées à l'article 3 du règlement de consultation. Les candidats n'ont pas à remettre les pièces de prestations à ce stade de la procédure. Seuls les opérateurs économiques admis en phase candidature seront invités ultérieurement à participer au concours et à remettre le dossier des prestations. L'intégralité des informations permettant de répondre à la présente consultation est détaillée au sein du règlement de la consultation, joint au Dossier de consultation des entreprises (DCE). Le DCE est remis uniquement pour information à ce stade de la procédure (phase candidatures). Conditions d'obtention des renseignements complémentaires: à ce stade (phase de réception des candidatures uniquement), aucun renseignement complémentaire ne sera fourni aux candidats sur le DCE. Au vu de ces procès-verbaux et de l'avis du jury, le pouvoir adjudicateur choisit le ou les lauréats, avec lesquels il engagera des négociations en vue de conclure un marché négocié sans publicité ni mise en concurrence conformément aux dispositions de l'article R. 2122-6 du code de la commande publique, lui permettant de négocier avec le ou les lauréats, après le dépôt de l'offre, les conditions techniques, administratives et financières du marché de maîtrise d'œuvre, à l'exclusion de toute remise de nouvelles prestations. Les membres du jury auront tous voix délibérative, à l'exception des personnes ci-après qui auront voix consultative: le président pourra inviter à participer aux séances du jury, avec voix consultative: le comptable public et un représentant de la direction générale de la concurrence, de la consommation et de la répression des fraudes; des personnalités ou agents du maître d'ouvrage en raison de leur compétence dans la matière qui fait l'objet du marché. Le marché comprendra une clause sociale d'insertion dont les modalités et le volume horaire d'insertion sont précisés dans les documents de la consultation. À titre purement indicatif, la personne publique pourrait engager une consultation des candidats admis à présenter une offre vers le mois de septembre 2021. Le présent concours fait l'objet d'une nouvelle consultation. La précédente procédure a été déclarée sans suite en raison d'une nouvelle définition du besoin du maître d'ouvrage. En cas d'attribution du marché à un groupement conjoint, le mandataire sera rendu solidaire, pour l'exécution du marché, de chacun des membres du groupement pour ses obligations contractuelles à l'égard du pouvoir adjudicateur conformément au décret nº 2018-57 du 31.1.2018, les soumissionnaires à un lot ou marché public d'une valeur supérieure à 500 000 EUR HT, doivent présenter dans leur offre un plan de sous-traitance prévoyant le montant et les modalités de participation des petites et moyennes entreprises locales, sauf exceptions prévues par le décret."@fr;
+  epo:hasID epd:id_2021-S-126-334361_ProcedureIdentifier_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-126-334361_Lot_k5UiCNjVxapva2MShsi99p;
+  epo:hasPurpose epd:id_2021-S-126-334361_ProcedurePurpose_n9YtPUZG9SDZ5m8nAb77dU;
+  epo:hasTitle "Concours de maîtrise d'œuvre pour la modernisation de la station de transit de la Jamaïque"@fr;
+  epo:isDesignContest true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-126-334361_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
+    epd:id_2021-S-126-334361_ProcedureTerm_n9YtPUZG9SDZ5m8nAb77dU, epd:id_2021-S-126-334361_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-126-334361_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-126-334361_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;
+  epo:playedBy epd:id_2021-S-126-334361_Organisation_VX8RygdBbvDo5gNDhjcsTj .
+
+epd:id_2021-S-126-334361_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "97404";
+  locn:postName "Saint-Denis Cedex";
+  locn:thoroughfare "27 rue Félix Guyon, CS 61107" .
+
+epd:id_2021-S-126-334361_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A
+  a cccev:ContactPoint;
+  epo:hasFax "+262 924362";
+  epo:hasInternetAddress "http://La-reunion.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "Greffe.ta-reunion@juradm.fr";
+  cccev:telephone "+262 924360" .
+
+epd:id_2021-S-126-334361_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de la Réunion"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-126-334361_ReviewProcedureInformationProviderContactPoint_VeBi6Ziihr6uYRaern8K6A;
+  cccev:registeredAddress epd:id_2021-S-126-334361_ReviewProcedureInformationProviderAddress_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-126-334361_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-126-334361_ReviewProcedureInformationProviderOrganisation_VeBi6Ziihr6uYRaern8K6A .
+
+epd:id_2021-S-126-334361_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu a cccev:ContactPoint;
+  epo:hasFax "+262 924362";
+  epo:hasInternetAddress "http://La-reunion.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "Greffe.ta-reunion@juradm.fr";
+  cccev:telephone "+262 924360" .
+
+epd:id_2021-S-126-334361_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "97404";
+  locn:postName "Saint-Denis Cedex";
+  locn:thoroughfare "27 rue Félix Guyon, CS 61107" .
+
+epd:id_2021-S-126-334361_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu a org:Organization;
+  epo:hasLegalName "Tribunal administratif de la Réunion"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-126-334361_ReviewerContactPoint_gQh8JdpqsE2bYBRikawiBu;
+  cccev:registeredAddress epd:id_2021-S-126-334361_ReviewerOrganisationAddress_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-126-334361_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-126-334361_ReviewerOrganisation_gQh8JdpqsE2bYBRikawiBu .
+
+epd:id_2021-S-126-334361_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://sodiac.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2021_OFp4UckexE"^^xsd:anyURI .

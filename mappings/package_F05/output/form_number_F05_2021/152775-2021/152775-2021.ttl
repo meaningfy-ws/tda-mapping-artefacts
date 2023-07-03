@@ -1,0 +1,131 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-060-152775_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://geasar.acquistitelematici.it"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-060-152775_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://geasar.acquistitelematici.it"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-060-152775_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-060-152775_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-060-152775_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Francesco Concu"@it;
+  epo:hasFax "+39 0789563401";
+  epo:hasInternetAddress "www.geasar.it"^^xsd:anyURI;
+  cccev:email "francesco.concu@geasar.it";
+  cccev:telephone "+39 0789563422" .
+
+epd:id_2021-S-060-152775_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Olbia — aeroporto Costa Smeralda"@it .
+
+epd:id_2021-S-060-152775_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITG2>;
+  locn:address epd:id_2021-S-060-152775_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2021-S-060-152775_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-060-152775_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-060-152775_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Fornitura e posa in opera opzionale di no 4 stazioni di lettura ATR posizionate a monte della macchina radiogena."@it .
+
+epd:id_2021-S-060-152775_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true .
+
+epd:id_2021-S-060-152775_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-060-152775_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-060-152775_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "L'appalto prevede le seguenti attività:— fornitura e posa in opera, previa progettazione costruttiva, di un impianto BHS (Baggage Handling System),— completa rimozione ed il completo smaltimento della porzione dell’impianto BHS attualmente installato presso l’aeroporto di Olbia, di cui si prevede la dismissione,— servizio di manutenzione ordinaria e straordinaria,— addestramento del personale della committente alle attività di manutenzione e controllo dell’impianto."@it;
+  epo:hasEstimatedValue epd:id_2021-S-060-152775_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-060-152775_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-060-152775_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 4071829.26;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-060-152775_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 4071829.26;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-060-152775_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-060-152775_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-060-152775_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-060-152775_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-060-152775_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2021-S-060-152775_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2021-03-23"^^xsd:date;
+  epo:hasID epd:id_2021-S-060-152775_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210326";
+  epo:refersToLot epd:id_2021-S-060-152775_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2021-S-060-152775_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-060-152775_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 060-152775" .
+
+epd:id_2021-S-060-152775_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITG2>;
+  locn:postCode "07026";
+  locn:postName "Olbia";
+  locn:thoroughfare "aeroporto Costa Smeralda" .
+
+epd:id_2021-S-060-152775_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Geasar SpA"@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2021-S-060-152775_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-060-152775_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34961100> .
+
+epd:id_2021-S-060-152775_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-060-152775_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "La presente procedura viene gestita interamente per via telematica attraverso il portale: https://geasar.acquistitelematici.itLe relative offerte pertanto dovranno essere formulate dagli operatori e ricevute dalla stazione appaltante esclusivamente per mezzo del predetto sistema. Per le modalità di presentazione dell’offerta, si invitano le imprese a consultare il documento denominato «Istruzioni per la partecipazione ad una procedura di gara telematica», che costituisce parte integrante della documentazione allegata al presente bando. Per la partecipazione alla gara telematica, qualora l’impresa non fosse già registrata, la stessa sarà tenuta a creare uno specifico account sul portale: https://geasar.acquistitelematici.it, seguendo le modalità di registrazione riportate nella «Guida alla registrazione preliminare», consultabile online nella sezione «Manuali-guide» del predetto portale.Eventuali quesiti potranno essere inoltrati utilizzando il portale: https://geasar.acquistitelematici.it, fino al 30.4.2021. Le risposte ai quesiti di interesse generale verranno pubblicate sul suddetto portale e costituiranno interpretazione autentica del bando di gara.Tutte le comunicazioni relative alla procedura di gara, comprese quelle previste dall’art. 76 del D.Lgs. 50/2016, saranno trasmesse per via telematica attraverso il portale: https://geasar.acquistitelematici.itAi sensi e per gli effetti delle vigenti normative in materia di diritto alla protezione dei dati personali (regolamento europeo 2016/679 «GDPR» — e D.Lgs. n. 196/03 e s.m.i.), Geasar SpA, in qualità di titolare del trattamento, informa che i dati forniti dalle imprese offerenti saranno oggetto di trattamento esclusivamente per le attività connesse alla gara e per l’eventuale successiva stipula e gestione dei contratti conseguenti all’aggiudicazione dell’appalto.I compiti di responsabile del procedimento per la fase di esperimento della gara verranno svolte dall’ing. Silvio Pes, tel. 0789563403, E-mail: silvio.pes@geasar.it"@it;
+  epo:hasDescription "Fornitura e posa in opera di un Impianto BHS per l’adeguamento agli apparati di controllo EDS Standard 3 nell’aeroporto Olbia Costa Smeralda."@it;
+  epo:hasEstimatedValue epd:id_2021-S-060-152775_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-060-152775_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-060-152775_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Fornitura e posa in opera di un impianto BHS per l’adeguamento agli apparati di controllo EDS Standard 3 nell’aeroporto Costa Smeralda di Olbia"@it;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-060-152775_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-060-152775_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2021-S-060-152775_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-060-152775_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-060-152775_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-060-152775_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-060-152775_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "I ricorsi avverso il bando di gara dovranno essere notificati alla Società Appaltante nel termine di trenta giorni dalla data di pubblicazione sulla GURI.I ricorsi avverso l’aggiudicazione o le eventuali esclusioni dalla gara, devono essere notificate alla società appaltante, entro trenta giorni dalla ricezione delle relative comunicazioni di cui all’art. 76, comma 5 del D.Lgs. n. 50/2066." .
+
+epd:id_2021-S-060-152775_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postName "Cagliari";
+  locn:thoroughfare "via Sassari 17" .
+
+epd:id_2021-S-060-152775_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Tribunale amministrativo regionale per la Sardegna"@it;
+  cccev:registeredAddress epd:id_2021-S-060-152775_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-060-152775_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-060-152775_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-060-152775_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "IT" .
+
+epd:id_2021-S-060-152775_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-060-152775_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-060-152775_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

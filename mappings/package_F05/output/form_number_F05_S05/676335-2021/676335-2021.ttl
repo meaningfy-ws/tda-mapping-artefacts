@@ -1,0 +1,275 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-255-676335_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.marketsite.gr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-255-676335_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF a epo:Buyer;
+  epo:hasBuyerProfile "http://www.admie.gr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-255-676335_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF;
+  epo:playedBy epd:id_2021-S-255-676335_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2021-S-255-676335_AdditionalContactPoint_gFUcNYVmTUBiATKNrzmurF a cccev:ContactPoint;
+  epo:hasContactName "Π. Νίκα"@el;
+  epo:hasFax "+30 2105192326";
+  epo:hasInternetAddress "http://www.admie.gr"^^xsd:anyURI;
+  cccev:email "p.nika@admie.gr";
+  cccev:telephone "+30 2105192329" .
+
+epd:id_2021-S-255-676335_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF a org:Organization;
+  epo:hasLegalName "ΔΙΑΧΕΙΡΙΣΤΗΣ ΕΛΛΗΝΙΚΟΥ ΔΙΚΤΥΟΥ ΔΙΑΝΟΜΗΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ (ΔΕΔΔΗΕ) ΑΕ  "@el;
+  cccev:registeredAddress epd:id_2021-S-255-676335_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF .
+
+epd:id_2021-S-255-676335_AwardCriterionPrice_ViFLHYiizzehBKNxWmyibc a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-255-676335_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-255-676335_BuyerOrganisationGroup_gFUcNYVmTUBiATKNrzmurF a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMember epd:id_2021-S-255-676335_AdditionalOrganisation_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2021-S-255-676335_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-255-676335_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "http://www.admie.gr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-255-676335_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-255-676335_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-255-676335_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ (ΑΔΜΗΕ) Α.Ε./ ΔΙΕΥΘΥΝΣΗ ΕΦΟΔΙΑΣΤΙΚΗΣ ΑΛΥΣΙΔΑΣ"@el;
+  epo:hasFax "+30 2105192326";
+  epo:hasInternetAddress "http://www.admie.gr"^^xsd:anyURI;
+  cccev:email "p.nika@admie.gr";
+  cccev:telephone "+30 2105192329" .
+
+epd:id_2021-S-255-676335_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL422> .
+
+epd:id_2021-S-255-676335_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL422> .
+
+epd:id_2021-S-255-676335_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-255-676335_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-255-676335_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """Η Εταιρεία (ή ο ΔΕΔΔΗΕ κατά περίπτωση) διατηρεί το δικαίωμα να αναθέσει στον Ανάδοχο:- 	την προμήθεια συνιστώμενων ανταλλακτικών που περιλαμβάνονται στον πίνακα L-2.  Η Εταιρεία (ή ο ΔΕΔΔΗΕ) ειδοποιεί τον Ανάδοχο έως την ημερομηνία Προσωρινής Παραλαβής του τελευταίου χρονικά Υ/Σ του Έργου, να προμηθεύσει τα ζητούμενα  από τα συνιστώμενα ανταλλακτικά, που περιέχονται στον Πίνακα Ανταλλακτικών L-2 της Σύμβασης. O Ανάδοχος υποχρεούται να παραδώσει τα ανταλλακτικά αυτά, μέχρι την Οριστική Παραλαβή του πρώτου χρονικά Υ/Σ Έργου, έναντι των αναγραφόμενων στον Πίνακα L-2 τιμών.-	την παράταση εγγύησης Η/Μ εξοπλισμού, εντός του υποβληθέντος χρονοδιαγράμματος του έργου. Η Εταιρεία (ή ο ΔΕΔΔΗΕ) ειδοποιεί τον Ανάδοχο έως την ημερομηνία βεβαίωσης πέρατος ενός ή περισσότερων Υ/Σ του έργου, να επεκτείνει το χρόνο εγγύησης όλου του Η/Μ εξοπλισμού του ή των υπόψη Υ/Σ, πέραν της συμβατικά προβλεπόμενης ημερομηνίας της Οριστικής Παραλαβής του/τους, κατά πλήθος μηνών της επιλογής του ΑΔΜΗΕ/ΔΕΔΔΗΕ και το ανώτερο έως είκοσι τέσσερις (24) μήνες για κάθε Υ/Σ. Ο  Ανάδοχος δεσμεύεται να αναλάβει να υλοποιήσει το αντικείμενο της παρούσας προαίρεσης του Έργου, ως περιγράφεται στην Τεχνική Περιγραφή και στους σχετικούς Πίνακες Τιμημάτων. Η εκτιμώμενη αξία προαίρεσης ανέρχεται σε ένα εκατομμύριο τριακόσιες είκοσι πέντε χιλιάδες  ευρώ, 1.325.000 €, χωρίς ΦΠΑ, ήτοι 5% του προϋπολογισμού του έργου."""@el .
+
+epd:id_2021-S-255-676335_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-255-676335_Duration_2tPkBpSHtbcCKtpNaLfLoy;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-255-676335_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """Η Εταιρεία (ή ο ΔΕΔΔΗΕ κατά περίπτωση) διατηρεί το δικαίωμα να αναθέσει στον Ανάδοχο:- 	την προμήθεια συνιστώμενων ανταλλακτικών που περιλαμβάνονται στον πίνακα L-2.  Σε αυτή την περίπτωση, η Εταιρεία (ή ο ΔΕΔΔΗΕ) θα ειδοποιήσει τον Ανάδοχο έως την ημερομηνία Προσωρινής Παραλαβής του Έργου, να προμηθεύσει τα ζητούμενα από τα συνιστώμενα ανταλλακτικά, που περιέχονται στον Πίνακα Ανταλλακτικών L-2 της Σύμβασης. O Ανάδοχος υποχρεούται να παραδώσει τα ανταλλακτικά αυτά, μέχρι την Οριστική Παραλαβή του Έργου, έναντι των αναγραφόμενων στον Πίνακα L-2 τιμών.-	την παράταση εγγύησης Η/Μ εξοπλισμού, εντός του υποβληθέντος χρονοδιαγράμματος του έργου. Σε αυτή την περίπτωση, η Εταιρεία (ή ο ΔΕΔΔΗΕ) θα ειδοποιήσει τον Ανάδοχο έως την ημερομηνία βεβαίωσης πέρατος του έργου, να επεκτείνει το χρόνο εγγύησης όλου του Η/Μ εξοπλισμού του Υ/Σ, πέραν της συμβατικά προβλεπόμενης ημερομηνίας της Οριστικής Παραλαβής του, κατά πλήθος μηνών της επιλογής του ΑΔΜΗΕ/ΔΕΔΔΗΕ και το ανώτερο έως είκοσι τέσσερις (24) μήνες. Ο  Ανάδοχος θα δεσμεύεται να αναλάβει να υλοποιήσει το αντικείμενο της παρούσας προαίρεσης του Έργου, ως περιγράφεται στην Τεχνική Περιγραφή και στους σχετικούς Πίνακες Τιμημάτων. Ο συνολικός προϋπολογισμός της προαίρεσης ανέρχεται σε επτακόσιες πενήντα χιλιάδες  ευρώ, 750.000€, χωρίς ΦΠΑ, ήτοι 5% του προϋπολογισμού του έργου."""@el .
+
+epd:id_2021-S-255-676335_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-255-676335_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
+  time:numericDuration 22.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-255-676335_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 24.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-255-676335_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a epo:EAuctionTechniqueUsage .
+
+epd:id_2021-S-255-676335_Fund_HKNfdBmeACvzBZy3TfjLFj a epo:Fund;
+  epo:hasDescription "Το έργο πρόκειται να ενταχθεί για συγχρηματοδότηση από το Ταμείο Ανάκαμψης και Ανθεκτικότητας στο πλαίσιο του  Εθνικού  Σχεδίου Ανάκαμψης και Ανθεκτικότητας Ελλάδα 2.0. Η Δημόσια Δαπάνη χορηγείται μέσω του ΠΔΕ (ΣΑΤΑ: ΤΑ075 ) και χρηματοδοτείται από το Ευρωπαϊκό Πρόγραμμα  Νext Generation EU.To έργο θα χρηματοδοτηθεί με Ίδια Κεφάλαια, Εταιρικό Δανεισμό και Χρηματοδότηση από το Ταμείο Ανάκαμψης."@el .
+
+epd:id_2021-S-255-676335_Fund_Vxue4SiZ9v6DD9ffmckCQj a epo:Fund;
+  epo:hasDescription "Το έργο πρόκειται να ενταχθεί για συγχρηματοδότηση από το Ταμείο Ανάκαμψης και Ανθεκτικότητας στο πλαίσιο του  Εθνικού  Σχεδίου Ανάκαμψης και Ανθεκτικότητας Ελλάδα 2.0. Η Δημόσια Δαπάνη χορηγείται μέσω του ΠΔΕ (ΣΑΤΑ: ΤΑ075 ) και χρηματοδοτείται από το Ευρωπαϊκό Πρόγραμμα  Νext Generation EU.To έργο θα χρηματοδοτηθεί με Ίδια Κεφάλαια, Εταιρικό Δανεισμό και Χρηματοδότηση από το Ταμείο Ανάκαμψης."@el .
+
+epd:id_2021-S-255-676335_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2021-S-255-676335_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2021-S-255-676335_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45232220> .
+
+epd:id_2021-S-255-676335_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45232220> .
+
+epd:id_2021-S-255-676335_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-255-676335_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription "Μελέτη, προμήθεια εξοπλισμού και εγκατάσταση («έργο με το κλειδί στο χέρι») των νέων Υποσταθμών:GIS 150kV/ΜΤ Φολεγάνδρου και Μήλου στα πλαίσια της Δ’ φάσης Διασύνδεσης των Κυκλάδων"@el;
+  epo:hasEstimatedValue epd:id_2021-S-255-676335_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasID epd:id_2021-S-255-676335_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2021-S-255-676335_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasTitle "ΤΜΗΜΑ Α: Υ/Σ GIS 150kV/ΜΤ Φολεγάνδρου και Μήλου"@el;
+  epo:isFundedBy epd:id_2021-S-255-676335_Fund_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2021-S-255-676335_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
+
+epd:id_2021-S-255-676335_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-255-676335_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasDescription "«Μελέτη, προμήθεια εξοπλισμού και εγκατάσταση («έργο με το κλειδί στο χέρι») του νέου ΥποσταθμούGIS 150kV/ΜΤ Σερίφου στα πλαίσια της Δ’ φάσης Διασύνδεσης των Κυκλάδων»."@el;
+  epo:hasEstimatedValue epd:id_2021-S-255-676335_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasID epd:id_2021-S-255-676335_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-255-676335_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasTitle "ΤMHMA Β: Υ/Σ GIS 150kV/ΜΤ Σερίφου"@el;
+  epo:isFundedBy epd:id_2021-S-255-676335_Fund_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2021-S-255-676335_AwardCriterionPrice_ViFLHYiizzehBKNxWmyibc .
+
+epd:id_2021-S-255-676335_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
+  epo:hasAmountValue 27825000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-255-676335_MainMonetaryValueLot_Vxue4SiZ9v6DD9ffmckCQj a epo:MonetaryValue;
+  epo:hasAmountValue 15750000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-255-676335_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
+  cccev:telephone "+30 2132141216" .
+
+epd:id_2021-S-255-676335_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "18233";
+  locn:postName "ΑΘΗΝΑ";
+  locn:thoroughfare "Λεωφ. Θηβών 196-198, Αγ. Ιωάννης Ρέντη, κτίριο Κεράνης" .
+
+epd:id_2021-S-255-676335_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organization;
+  epo:hasLegalName "ΑΡΧΗ ΕΚΔΙΚΑΣΗΣ ΠΡΟΔΙΚΑΣΤΙΚΩΝ ΠΡΟΣΦΥΓΩΝ"@el;
+  epo:hasPrimaryContactPoint epd:id_2021-S-255-676335_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU;
+  cccev:registeredAddress epd:id_2021-S-255-676335_MediatorOrganisationAddress_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2021-S-255-676335_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
+  epo:playedBy epd:id_2021-S-255-676335_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2021-S-255-676335_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
+  epo:hasAmountValue 43575000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-255-676335_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-255-676335_AdditionalBuyer_gFUcNYVmTUBiATKNrzmurF,
+    epd:id_2021-S-255-676335_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-255-676335_Mediator_Der4dmnz4iLnj5vKZroTMU,
+    epd:id_2021-S-255-676335_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2021-S-255-676335_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
+    epd:id_2021-S-255-676335_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2021-S-255-676335_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2021-12-28"^^xsd:date;
+  epo:hasID epd:id_2021-S-255-676335_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20211231";
+  epo:refersToLot epd:id_2021-S-255-676335_Lot_HKNfdBmeACvzBZy3TfjLFj, epd:id_2021-S-255-676335_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:refersToProcedure epd:id_2021-S-255-676335_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2021-S-255-676335_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 255-676335" .
+
+epd:id_2021-S-255-676335_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL>;
+  locn:postCode "10443";
+  locn:postName "ΑΘΗΝΑ";
+  locn:thoroughfare "ΔΥΡΡΑΧΙΟΥ 89 & ΚΗΦΙΣΟΥ" .
+
+epd:id_2021-S-255-676335_OrganisationAddress_gFUcNYVmTUBiATKNrzmurF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/EL>;
+  locn:postName "ΑΘΗΝΑ" .
+
+epd:id_2021-S-255-676335_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "099877486" .
+
+epd:id_2021-S-255-676335_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2021-S-255-676335_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ (ΑΔΜΗΕ) Α.Ε."@el;
+  cccev:registeredAddress epd:id_2021-S-255-676335_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-255-676335_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "ΔΕΑ – 42125" .
+
+epd:id_2021-S-255-676335_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45232220> .
+
+epd:id_2021-S-255-676335_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb a epo:ProcedureTerm;
+  epo:hasMaximumNumberOfLotsToBeAwarded 1;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2021-S-255-676335_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-255-676335_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasDescription "Στο αντικείμενο του έργου περιλαμβάνεται η μελέτη, προμήθεια εξοπλισμού και εγκατάσταση («έργο με το κλειδί στο χέρι») των νέων Υποσταθμών  GIS 150 kV/ΜΤ Φολέγανδρου, Μήλου και Σερίφου στο πλαίσιο της Δ’ φάσης Διασύνδεσης των Κυκλάδων."@el;
+  epo:hasEstimatedValue epd:id_2021-S-255-676335_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasID epd:id_2021-S-255-676335_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-255-676335_Lot_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-255-676335_Lot_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:hasPurpose epd:id_2021-S-255-676335_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "ΜΕΛΕΤΗ, ΠΡΟΜΗΘΕΙΑ ΕΞΟΠΛΙΣΜΟΥ και ΕΓΚΑΤΑΣΤΑΣΗ  («έργο με το κλειδί στο χέρι») των νέων Υ/Σ GIS 150kV/ΜΤ Φολεγάνδρου, Μήλου καιΣερίφου στα πλαίσια της Δ’ φάσης Διασύνδεσης των Κυκλάδων "@el;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-255-676335_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2021-S-255-676335_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb, epd:id_2021-S-255-676335_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB,
+    epd:id_2021-S-255-676335_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:usesTechnique epd:id_2021-S-255-676335_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-255-676335_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-255-676335_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-255-676335_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2021-S-255-676335_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "18233";
+  locn:postName "ΑΘΗΝΑ";
+  locn:thoroughfare "Λεωφ. Θηβών 196-198, Αγ. Ιωάννης Ρέντη, κτίριο Κεράνης," .
+
+epd:id_2021-S-255-676335_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd
+  a cccev:ContactPoint;
+  cccev:telephone "+30 2132141216" .
+
+epd:id_2021-S-255-676335_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd
+  a org:Organization;
+  epo:hasLegalName "Αρχή Εξέτασης Προδικαστικών Προσφυγών"@el;
+  epo:hasPrimaryContactPoint epd:id_2021-S-255-676335_ReviewProcedureInformationProviderContactPoint_S6PHy2YyfctbUgf5WdBqHd;
+  cccev:registeredAddress epd:id_2021-S-255-676335_ReviewProcedureInformationProviderAddress_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-255-676335_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-255-676335_ReviewProcedureInformationProviderOrganisation_S6PHy2YyfctbUgf5WdBqHd .
+
+epd:id_2021-S-255-676335_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "1. Κάθε ενδιαφερόμενος, ο οποίος έχει ή είχε συμφέρον να του ανατεθεί η συγκεκριμένη σύμβαση και έχει ή είχε υποστεί ή ενδέχεται να υποστεί ζημία από εκτελεστή πράξη ή παράλειψη του Αναθέτοντος Φορές κατά παράβαση της νομοθεσίας της Ευρωπαϊκής Ένωσης ή της εσωτερικής νομοθεσίας, δικαιούται να ασκήσει προδικαστική προσφυγή ενώπιον της ΑΕΠΠ κατά της σχετικής πράξης ή παράλειψης του Αναθέτοντος Φορέα, προσδιορίζοντας ειδικώς τις νομικές και πραγματικές αιτιάσεις που δικαιολογούν το αίτημά του. 2. Σε περίπτωση προσφυγής κατά πράξης του Αναθέτοντος Φορέα, η προθεσμία για την άσκηση της προδικαστικής προσφυγής είναι: (α) δέκα (10) ημέρες από την κοινοποίηση της προσβαλλόμενης πράξης στον ενδιαφερόμενο Οικονομικό Φορέα αν η πράξη κοινοποιήθηκε με ηλεκτρονικά μέσα ή τηλεομοιοτυπία ή (β) δεκαπέντε (15) ημέρες από την κοινοποίηση της προσβαλλόμενης πράξης σε αυτόν αν χρησιμοποιήθηκαν άλλα μέσα επικοινωνίας, άλλως (γ) δέκα (10) ημέρες από την πλήρη, πραγματική ή τεκμαιρόμενη, γνώση της πράξης που βλάπτει τα συμφέροντα του ενδιαφερόμενου Οικονομικού Φορέα. (δ) σε περίπτωση παράλειψης, η προθεσμία για την άσκηση της προδικαστικής προσφυγής είναι δεκαπέντε (15) ημέρες από την επομένη της συντέλεσης της προσβαλλόμενης παράλειψης. 3. Η προδικαστική προσφυγή, με βάση και τα όσα προβλέπονται στο π.δ. 39/2017, κατατίθεται ηλεκτρονικά βάσει του τυποποιημένου εντύπου και μέσω της λειτουργικότητας «Επικοινωνία» του ΣΥΣΤΗΜΑΤΟΣ προς τον Αναθέτοντα Φορέα, επιλέγοντας κατά περίπτωση την ένδειξη « Προσφυγές» και επισυνάπτοντας το σχετικό έγγραφο. 4. Για το παραδεκτό της άσκησης της προδικαστικής προσφυγής κατατίθεται παράβολο από τον προσφεύγοντα υπέρ του Δημοσίου, κατά τα ειδικά οριζόμενα στο άρθρο 363 του ν. 4412/2016, το οποίο επιστρέφεται στον προσφεύγοντα σε περίπτωση ολικής ή μερικής αποδοχής της προσφυγής του ή σε περίπτωση που πριν την έκδοση της απόφασης της ΑΕΠΠ επί της προσφυγής, ο Αναθέτων Φορέας ανακαλεί την προσβαλλόμενη πράξη ή προβαίνει στην οφειλόμενη ενέργεια. 5. Η προθεσμία για την άσκηση της προδικαστικής προσφυγής και η άσκησή της κωλύουν τη σύναψη της σύμβασης επί ποινή ακυρότητας, η οποία διαπιστώνεται με απόφαση της ΑΕΠΠ μετά από άσκηση προσφυγής, σύμφωνα με το άρθρο 368 του ν. 4412/2016. 6. Κατά τα λοιπά, η άσκηση της προδικαστικής προσφυγής δεν κωλύει την πρόοδο της διαγωνιστικής διαδικασίας, εκτός αν ζητηθούν προσωρινά μέτρα προστασίας κατά το άρθρο 366 του ν.4412/2016. 7. Ο Αναθέτων Φορέας, μέσω της λειτουργίας της «Επικοινωνίας»: (α) κοινοποιεί την προδικαστική προσφυγή σε κάθε ενδιαφερόμενο τρίτο σύμφωνα με τα προβλεπόμενα στην περ. α της παρ. 1 του άρθρου 365 του ν. 4412/2016 και την περ. α΄ της παρ. 1 του άρθρου 9 του π.δ. 39/2017, (β) ειδοποιεί, παρέχει πρόσβαση στο σύνολο των στοιχείων του διαγωνισμού και διαβιβάζει στην Αρχή Εξέτασης Προδικαστικών Προσφυγών (ΑΕΠΠ) τα προβλεπόμενα στην περ. β’ της παρ. 1 του άρθρου 365 του ν. 4412/2016, σύμφωνα και με την παρ. 1 του άρθρου 9 του π.δ. 39/2017. 8. Η ΑΕΠΠ αποφαίνεται αιτιολογημένα επί της βασιμότητας των προβαλλόμενων πραγματικών και νομικών ισχυρισμών της προσφυγής και των ισχυρισμών του Αναθέτοντος Φορέα και, σε περίπτωση παρέμβασης, των ισχυρισμών του παρεμβαίνοντος και δέχεται (εν όλω ή εν μέρει) ή απορρίπτει την προσφυγή με απόφασή της, η οποία εκδίδεται μέσα σε αποκλειστική προθεσμία είκοσι (20) ημερών από την ημέρα εξέτασης της προσφυγής. 9. Η άσκηση της προδικαστικής προσφυγής αποτελεί προϋπόθεση για την άσκηση των ένδικων βοηθημάτων της αίτησης αναστολής και της αίτησης ακύρωσης του άρθρου 372 του ν. 4412/2016 κατά των εκτελεστών πράξεων ή παραλείψεων του Αναθέτοντος Φορέα. 10. Όποιος έχει έννομο συμφέρον μπορεί να ζητήσει την αναστολή της εκτέλεσης της απόφασης της ΑΕΠΠ και την ακύρωσή της ενώπιον του αρμοδίου δικαστηρίου. Δικαίωμα άσκησης των ίδιων ενδίκων βοηθημάτων έχει και ο Αναθέτων Φορέας, αν η ΑΕΠΠ κάνει δεκτή την προδικαστική προσφυγή." .
+
+epd:id_2021-S-255-676335_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  cccev:telephone "+30 2132141216" .
+
+epd:id_2021-S-255-676335_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GRC>;
+  locn:postCode "18233";
+  locn:postName "ΑΘΗΝΑ";
+  locn:thoroughfare "Λεωφ. Θηβών 196-198, Αγ. Ιωάννης Ρέντη, κτίριο Κεράνης" .
+
+epd:id_2021-S-255-676335_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "ΑΡΧΗ ΕΚΔΙΚΑΣΗΣ ΠΡΟΔΙΚΑΣΤΙΚΩΝ ΠΡΟΣΦΥΓΩΝ"@el;
+  epo:hasPrimaryContactPoint epd:id_2021-S-255-676335_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2021-S-255-676335_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-255-676335_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-255-676335_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-255-676335_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "EL", "EN" .
+
+epd:id_2021-S-255-676335_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-255-676335_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2021-S-255-676335_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

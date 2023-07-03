@@ -1,0 +1,220 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-029-052526_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.vhodne-uverejneni.cz/profil/60713470"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-029-052526_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2017-S-029-052526_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasBuyerProfile "https://www.vhodne-uverejneni.cz/profil/60713470"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-029-052526_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-029-052526_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-029-052526_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "MT Legal s.r.o., advokátní kancelář, Jakubská 121/1, 602 00 Brno"@cs;
+  epo:hasInternetAddress "http://www.sako.cz/"^^xsd:anyURI;
+  cccev:email "vz@mt-legal.com";
+  cccev:telephone "+420 542210351" .
+
+epd:id_2017-S-029-052526_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+Místo spalovny, místo bývalého průmyslového areálu Zetor na adrese Jedovnická 4247/2, 628 00 Brno a dotčené pozemky v lokalitě ulic Trnkova, Novolíšeňská, Jedovnická a Sedláčkova.
+"""@cs .
+
+epd:id_2017-S-029-052526_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CZ064>;
+  locn:address epd:id_2017-S-029-052526_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2017-S-029-052526_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-029-052526_Duration_Wt9hTKqTB6wXtR2gujyw8e;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-029-052526_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2017-S-029-052526_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2017-S-029-052526_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
+  time:numericDuration 6.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-029-052526_Fund_HKNfdBmeACvzBZy3TfjLFj a epo:Fund;
+  epo:hasDescription "Veřejná zakázka je spolufinancována Evropskou unií – Ministerstvem průmyslu a obchodu ČR v rámci Operačního programu Podnikání a inovace pro konkurenceschopnost (dále jen „OPPIK“)."@cs .
+
+epd:id_2017-S-029-052526_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe a
+    cccev:ContactPoint;
+  epo:hasContactName "Klára Vítková"@cs;
+  epo:hasInternetAddress "http://www.sako.cz/"^^xsd:anyURI;
+  cccev:email "vz@mt-legal.com";
+  cccev:telephone "+420 542210351" .
+
+epd:id_2017-S-029-052526_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CZ064>;
+  locn:postCode "602 00";
+  locn:postName "Brno";
+  locn:thoroughfare "Jakubská 121/1" .
+
+epd:id_2017-S-029-052526_InformationProviderOrganisationIdentifier_FxmRFqszG85mxBF5kaCcKe
+  a epo:Identifier;
+  epo:hasIdentifierValue "28305043" .
+
+epd:id_2017-S-029-052526_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe a
+    org:Organization;
+  epo:hasID epd:id_2017-S-029-052526_InformationProviderOrganisationIdentifier_FxmRFqszG85mxBF5kaCcKe;
+  epo:hasLegalName "MT Legal s.r.o., advokátní kancelář"@cs;
+  cccev:registeredAddress epd:id_2017-S-029-052526_InformationProviderOrganisationAddress_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2017-S-029-052526_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/44162000>, <http://data.europa.eu/cpv/cpv/71320000>,
+    <http://data.europa.eu/cpv/cpv/71322200> .
+
+epd:id_2017-S-029-052526_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-029-052526_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation """
+Bližší informace o době trvání zakázky jsou uvedeny v ZD.
+"""@cs;
+  epo:hasDescription """
+Předmětem plnění veřejné zakázky je vyvedení výkonu horkovodní výměníkové stanice (dále jen „HVS“) zadavatele do horkovodů v přilehlé městské části Brno – Líšeň a Brno – Vinohrady. Zadavatel realizuje vyvedení výkonu spalovny Sako Brno, a.s. pomocí nové HVS s výkonem 54 MW. Tato nově zbudovaná HVS bude zásobovat teplem horkovody Líšeň výkonem 40 MW, jejichž zbudování je předmětem této veřejné zakázky.
+Hlavním cílem veřejné zakázky je výstavba horkovodního potrubí v délce 1 730 m, které bude sloužit k vyvedení výkonu HVS směrem na městskou část Vinohrady a Líšeň. Výstavba bude realizována zejm. jako podzemní liniová stavba předizolovaného potrubí s technologií uložení do země bezkanálovým způsobem.
+Realizací předmětu veřejné zakázky dojde k naplnění požadavku společnosti Teplárny Brno, a.s. na zajištění dodávek tepla v horké vodě namísto dodávek tepla v páře. Díky přechodu z páry na horkou vodu dojde k úspoře tepla díky vyšší účinnosti a k úspoře primárních zdrojů na síti CZT v celkové výši 8 %. Veřejná zakázka je spolufinancována Evropskou unií – Ministerstvem průmyslu a obchodu ČR v rámci Operačního programu Podnikání a inovace pro konkurenceschopnost (dále jen „OPPIK“). Podrobné vymezení předmětu veřejné zakázky, včetně technických podmínek v podrobnostech nezbytných pro zpracování nabídky, je uvedeno v příloze č. 2 (Projektová dokumentace) zadávací dokumentace.
+"""@cs;
+  epo:hasPurpose epd:id_2017-S-029-052526_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isFundedBy epd:id_2017-S-029-052526_Fund_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2017-S-029-052526_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN .
+
+epd:id_2017-S-029-052526_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-029-052526_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-029-052526_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
+    epd:id_2017-S-029-052526_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2017-S-029-052526_TenderReceiver_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasDispatchDate "2017-02-06"^^xsd:date;
+  epo:hasID epd:id_2017-S-029-052526_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20170210";
+  epo:refersToLot epd:id_2017-S-029-052526_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2017-S-029-052526_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-029-052526_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 029-052526" .
+
+epd:id_2017-S-029-052526_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CZ064>;
+  locn:postCode "628 00";
+  locn:postName "Brno";
+  locn:thoroughfare "Jedovnická 4247/2" .
+
+epd:id_2017-S-029-052526_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Identifier;
+  epo:hasIdentifierValue "60713470" .
+
+epd:id_2017-S-029-052526_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasID epd:id_2017-S-029-052526_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:hasLegalName "Sako Brno, a.s."@cs;
+  epo:hasMainActivityDescription "svoz komunálních a tříděných odpadů, odpadové hospodářství";
+  cccev:registeredAddress epd:id_2017-S-029-052526_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-029-052526_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45000000> .
+
+epd:id_2017-S-029-052526_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-029-052526_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+Tato veřejná zakázka je zadávána v režimu zákona dobrovolně. Bližší informace jsou uvedeny v ZD.
+Prohlídka místa plnění bude učiněna 21.2.2017 v 10:00 hod. Setkání za účelem prohlídky proběhne na vrátnici zadavatele (adresa: Jedovnická 4247/2, 628 00 Židenice).
+"""@cs;
+  epo:hasDescription """
+Předmětem plnění veřejné zakázky je vyvedení výkonu horkovodní výměníkové stanice (dále jen „HVS“) zadavatele do horkovodů v přilehlé městské části Brno – Líšeň a Brno – Vinohrady. Zadavatel realizuje vyvedení výkonu spalovny Sako Brno, a.s. pomocí nové HVS s výkonem 54 MW. Tato nově zbudovaná HVS bude zásobovat teplem horkovody Líšeň výkonem 40 MW, jejichž zbudování je předmětem této veřejné zakázky.
+Hlavním cílem veřejné zakázky je výstavba horkovodního potrubí v délce 1 730 m, které bude sloužit k vyvedení výkonu HVS směrem na městskou část Vinohrady a Líšeň. Výstavba bude realizována zejm. jako podzemní liniová stavba předizolovaného potrubí s technologií uložení do země bezkanálovým způsobem. Blíže v ZD.
+"""@cs;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-029-052526_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-029-052526_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Vyvedení výkonu HVS Sako Brno, a.s. do horkovodů Líšeň a Vinohrady.
+"""@cs;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-029-052526_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-029-052526_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2017-S-029-052526_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-029-052526_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-029-052526_InformationProviderContactPoint_FxmRFqszG85mxBF5kaCcKe;
+  epo:playedBy epd:id_2017-S-029-052526_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe .
+
+epd:id_2017-S-029-052526_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Podmínkou pro podání návrhu k ÚOHS je podání námitek k Zadavateli, které je nutné doručit do 15 dnů ode dne, kdy se stěžovatel dozvěděl o domnělém porušení zákona Zadavatelem, nejpozději však do uzavření smlouvy nebo do chvíle, kdy se soutěž o návrh považuje po výběru návrhu za ukončenou.
+Námitky proti úkonům oznamovaným v dokumentech, které je Zadavatel povinen podle zákona uveřejnit či odeslat stěžovateli, musí být doručeny Zadavateli do 15 dnů od jejich uveřejnění či doručení stěžovateli. Pokud je v zadávacím řízení stanovena lhůta pro podání žádostí o účast, musí být námitky proti podmínkám vztahujícím se ke kvalifikaci dodavatele doručeny Zadavateli nejpozději do skončení této lhůty. Pokud je v zadávacím řízení stanovena lhůta pro podání nabídek, musí být námitky proti zadávací dokumentaci doručeny Zadavateli nejpozději do skončení této lhůty. Námitky proti dobrovolnému oznámení o záměru uzavřít smlouvu podle § 212 odst. 2 ZZVZ musí být doručeny Zadavateli do 30 dnů od uveřejnění tohoto oznámení. Zadavatel je povinen námitky vyřídit do 15 dnů. Návrh je nutné doručit ÚOHS i Zadavateli do 10 dnů ode dne, v němž stěžovatel obdržel rozhodnutí, kterým Zadavatel námitky odmítnul nebo do 25 dnů od odeslání námitek, pokud Zadavatel o námitkách nerozhodl.
+Po uzavření smlouvy na veřejnou zakázku či rámcové dohody lze podat pouze návrh na uložení zákazu plnění smlouvy, a to i bez předchozího podání námitek. Návrh na uložení zákazu plnění smlouvy doručí navrhovatel ÚOHS a ve stejnopisu Zadavateli do 1 měsíce ode dne, kdy Zadavatel uveřejnil oznámení o uzavření smlouvy způsobem podle § 212 odst. 2 ZZVZ s uvedením důvodu pro zadání veřejné zakázky bez uveřejnění oznámení o zahájení zadávacího řízení, nejpozději však do 6 měsíců od uzavření této smlouvy.
+Ve lhůtě pro doručení návrhu je navrhovatel povinen složit na účet ÚOHS kauci ve výši 1 % z nabídkové ceny navrhovatele za celou dobu plnění veřejné zakázky nebo za dobu prvních 4 let plnění v případě smluv na dobu neurčitou, nejméně však ve výši 50 000 CZK, nejvýše ve výši 10 000 000 CZK. V případě, že navrhovatel nemůže stanovit celkovou nabídkovou cenu, je povinen složit kauci ve výši 100 000 CZK. V případě návrhu na uložení zákazu plnění smlouvy je navrhovatel povinen složit kauci ve výši 200 000 CZK.
+""" .
+
+epd:id_2017-S-029-052526_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+420 542167115";
+  epo:hasInternetAddress "http://www.uohs.cz"^^xsd:anyURI;
+  cccev:email "posta@compet.cz";
+  cccev:telephone "+420 542167811" .
+
+epd:id_2017-S-029-052526_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
+  locn:postCode "604 55";
+  locn:postName "Brno";
+  locn:thoroughfare "tř. Kpt. Jaroše 7" .
+
+epd:id_2017-S-029-052526_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Úřad pro ochranu hospodářské soutěže"@cs;
+  epo:hasPrimaryContactPoint epd:id_2017-S-029-052526_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2017-S-029-052526_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-029-052526_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-029-052526_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-029-052526_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "CS" .
+
+epd:id_2017-S-029-052526_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CZ064>;
+  locn:postCode "602 00";
+  locn:postName "Brno";
+  locn:thoroughfare "Jakubská 121/1" .
+
+epd:id_2017-S-029-052526_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR
+  a cccev:ContactPoint;
+  epo:hasContactName "Klára Vítková"@cs;
+  epo:hasInternetAddress "http://www.sako.cz/"^^xsd:anyURI;
+  cccev:email "vz@mt-legal.com";
+  cccev:telephone "+420 542210351" .
+
+epd:id_2017-S-029-052526_TenderReceiverOrganisationIdentifier_RmPNyhSxpRtChEASKUU5BR
+  a epo:Identifier;
+  epo:hasIdentifierValue "28305043" .
+
+epd:id_2017-S-029-052526_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR a org:Organization;
+  epo:hasID epd:id_2017-S-029-052526_TenderReceiverOrganisationIdentifier_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasLegalName "MT Legal s.r.o., advokátní kancelář"@cs;
+  epo:hasPrimaryContactPoint epd:id_2017-S-029-052526_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  cccev:registeredAddress epd:id_2017-S-029-052526_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR .
+
+epd:id_2017-S-029-052526_TenderReceiver_RmPNyhSxpRtChEASKUU5BR a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-029-052526_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  epo:playedBy epd:id_2017-S-029-052526_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR .

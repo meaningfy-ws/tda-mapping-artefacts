@@ -1,0 +1,172 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-050-126982_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://limeil-brevannes.e-marchespublics.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-050-126982_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://limeil-brevannes.e-marchespublics.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-050-126982_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-050-126982_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-050-126982_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.limeil-brevannes.fr/"^^xsd:anyURI;
+  cccev:email "commandepublique@limeil.fr";
+  cccev:telephone "+33 145107660" .
+
+epd:id_2021-S-050-126982_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "Multi-accueil «Pommes de Reinette», 2 rue d'Aquitaine, 94450 Limeil-Brévannes."@fr .
+
+epd:id_2021-S-050-126982_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR107>;
+  locn:address epd:id_2021-S-050-126982_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-050-126982_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-050-126982_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-050-126982_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-050-126982_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true .
+
+epd:id_2021-S-050-126982_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 57.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-050-126982_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/85312110> .
+
+epd:id_2021-S-050-126982_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-050-126982_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasAdditionalInformation "La convention de délégation de service public est conclue pour une durée de quatre ans, neuf mois et dix jours à compter de la date indiquée dans le courrier de notification adressé au délégataire après sa transmission au contrôle de légalité, soit la date réelle du début d'exploitation. La date prévisionnelle de début d'exécution de la convention est fixée au 21.10.2021."@fr;
+  epo:hasDescription "La commune de Limeil-Brévannes souhaite déléguer à titre exclusif et aux frais et risques de l'exploitant (transfert d'un risque lié à l'exploitation du service) la gestion d'un multi-accueil de 36 places. Le délégataire assurer la gestion continue du service délégué, dans les conditions fixées dans le contrat, dans le respect de la réglementation, des droits et de la sécurité des enfants, des familles et des tiers, des biens et des locaux mis à sa disposition et dans une parfaite transparence technique et financière. Toutes les missions confiées au délégataire sont précisées dans le dossier de consultation des entreprises."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-050-126982_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-050-126982_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-050-126982_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 2645750.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-050-126982_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 2645750.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-050-126982_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-050-126982_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-050-126982_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2021-S-050-126982_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2021-S-050-126982_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT, epd:id_2021-S-050-126982_TenderReceiver_aP3jbqKZt8F8sgshNeBowu;
+  epo:hasDispatchDate "2021-03-09"^^xsd:date;
+  epo:hasID epd:id_2021-S-050-126982_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210312";
+  epo:refersToLot epd:id_2021-S-050-126982_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2021-S-050-126982_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-050-126982_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 050-126982" .
+
+epd:id_2021-S-050-126982_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR107>;
+  locn:postCode "94456";
+  locn:postName "Limeil-Brévannes";
+  locn:thoroughfare "Hôtel de Ville — CS 20001" .
+
+epd:id_2021-S-050-126982_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Mairie de Limeil-Brévannes"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2021-S-050-126982_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-050-126982_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "MA21SDP" .
+
+epd:id_2021-S-050-126982_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/85312110> .
+
+epd:id_2021-S-050-126982_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-050-126982_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Le présent contrat est une délégation de service public soumise aux dispositions des articles L. 1411-1 et suivants du Code général des collectivités territoriales (CGCT) et R. 1411-1 et suivants du CGCT et un contrat de concession soumis au code de la commande publique. Choix de la procédure ouverte dans laquelle le DCE est adressé à tous les candidats qui doivent remettre un pli contenant leur candidature et leur offre dans les conditions fixées par le présent avis. Le contenu des plis est détaillé à l'article 20 du Règlement de la consultation (RC) joint au DCE. Le DCE est disponible immédiatement et fait l'objet d'une transmission gratuite aux candidats dans les conditions détaillées à l'article 8 du RC. Le déroulement de la procédure et les conditions de participation sont détaillées dans le RC. Les modalités de remise des candidatures et des offres sont notamment détaillées à l'article 15 du RC."@fr;
+  epo:hasDescription "La commune de Limeil-Brévannes souhaite déléguer à titre exclusif et aux frais et risques de l'exploitant (transfert d'un risque lié à l'exploitation du service) la gestion d'un multi-accueil de 36 places."@fr;
+  epo:hasEstimatedValue epd:id_2021-S-050-126982_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasID epd:id_2021-S-050-126982_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-050-126982_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-050-126982_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Délégation de service public sous forme d'un affermage, relative à la gestion de l'établissement d'accueil du jeune enfant «Pommes de Reinette» sur le territoire de la Ville de Limeil-Brévannes"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-050-126982_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-050-126982_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2021-S-050-126982_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2021-S-050-126982_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-050-126982_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-050-126982_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-050-126982_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "77008";
+  locn:postName "Melun";
+  locn:thoroughfare "43 rue du Général de Gaulle, case postale nº 8630" .
+
+epd:id_2021-S-050-126982_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://melun.tribunal-administratif.fr/Informations-pratiques/Acces-et-coordonnees"^^xsd:anyURI;
+  cccev:email "greffe.ta-melun@juradm.fr" .
+
+epd:id_2021-S-050-126982_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Melun"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-050-126982_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2021-S-050-126982_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-050-126982_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-050-126982_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2021-S-050-126982_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Précisions concernant les délais d'introduction de recours: la présente procédure de DSP pourra faire l'objet:— d'un référé précontractuel prévu aux articles L. 551-1 à L. 551-12 et R. 551-1 à R. 551-6 du Code de justice administrative (CJA) et pouvant être exercé avant la signature du contrat;— d'un référé contractuel prévu aux articles L. 551-13 à L. 551-23 du CJA et R. 551-7 à R. 551-10, et pouvant être exercé dans les délais prévus à l'article R. 551-7 du CJA;— d'un recours de pleine juridiction en contestation de la validité du contrat ou de certaines de ses clauses non réglementaires qui en sont divisibles assorti le cas échéant de conclusions indemnitaires et pouvant être exercé par tout tiers dans un délai de deux mois à compter de l'accomplissement des mesures de publicité appropriées.Les requérants peuvent éventuellement assortir leur recours d'une demande tendant, sur le fondement de l'article L. 521-1 du CJA, à la suspension de l'exécution du contrat. Les actes détachables du contrat ne peuvent être contestés qu'à l'occasion de ce recours. Le requérant est recevable à former un recours pour excès de pouvoir contre les clauses réglementaires du contrat dans un délai de deux mois à compter de sa publicité. Les requérants peuvent éventuellement assortir leur recours d'une demande tendant, sur le fondement de l'article L. 521-1 du CJA, à la suspension de l'exécution du contrat. Les personnes lésées par le contrat ou sa passation, peuvent introduire un recours en indemnisation après avoir effectué, le plus souvent, une demande préalable auprès de la personne publique. Au-delà d'un délai de quatre ans à compter du 1er janvier de l'année qui suit celle où la créance sur la personne publique est née, le requérant s'expose à l'opposition de la prescription quadriennale." .
+
+epd:id_2021-S-050-126982_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 160566610";
+  epo:hasInternetAddress "http://melun.tribunal-administratif"^^xsd:anyURI;
+  cccev:email "greffe.ta-melun@juradm.fr";
+  cccev:telephone "+33 160566630" .
+
+epd:id_2021-S-050-126982_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "77008";
+  locn:postName "Melun";
+  locn:thoroughfare "43 rue du Général de Gaulle, case postale nº 8630" .
+
+epd:id_2021-S-050-126982_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Melun"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-050-126982_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2021-S-050-126982_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-050-126982_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-050-126982_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-050-126982_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://limeil-brevannes.e-marchespublics.com"^^xsd:anyURI .
+
+epd:id_2021-S-050-126982_TenderReceiver_aP3jbqKZt8F8sgshNeBowu a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-050-126982_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-050-126982_Organisation_jXahEP38X6pEFgd4J9tLvF .

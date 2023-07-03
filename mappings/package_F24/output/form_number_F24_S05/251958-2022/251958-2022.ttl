@@ -1,0 +1,185 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-091-251958_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://www.deauville-marches.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2022-S-091-251958_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "http://www.deauville-marches.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-091-251958_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2022-S-091-251958_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-091-251958_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasContactName "Sandra OUSSELIN"@fr;
+  epo:hasInternetAddress "http://www.deauville-mairie.fr"^^xsd:anyURI;
+  cccev:email "s.ousselin@deauville.fr" .
+
+epd:id_2022-S-091-251958_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ a locn:Address;
+  locn:fullAddress "deauville  (14800) un mobilier à Saint-Arnoult ( 14800)"@fr .
+
+epd:id_2022-S-091-251958_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRD11>;
+  locn:address epd:id_2022-S-091-251958_ContractTermLotLocationAddress_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2022-S-091-251958_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2022-S-091-251958_Period_RgULVPVVYP9pkvK789PCUZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-091-251958_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2022-S-091-251958_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true .
+
+epd:id_2022-S-091-251958_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/34928400>, <http://data.europa.eu/cpv/cpv/79341000> .
+
+epd:id_2022-S-091-251958_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-091-251958_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription """le contrat a pour objet la mise à disposition, l'installation, l'entretien, la maintenance et l'exploitation de mobiliers urbains neufs, publicitaires et non publicitaires, avec des prestations d'affichage, dans le cadre d'une occupation temporaire du domaine public, dans le territoire de la Ville de Deauville, ou dont la Ville est propriétaire, à Saint-Arnoult. Ces prestations concernent : -	6 abris voyageurs, -	39 mobiliers urbains (36 simples, 3 doubles),-	9 colonnes d'information culturelle, -	Un panneau d'entrée de ville de 24m² (8m x 3m), avec pose de 12 bâches en quadrichromie par an,-	20 mâts porte-drapeaux regroupés par 4 sur 5 axes d'accès à la Ville,-	Du mobilier d'information, chaque année, pour des actions événementiellesles prestations d'affichages sont effectuées pour la Commune, l'epic \" Les Franciscaines \" et la SEM du Cid.Le Concessionnaire perçoit l'intégralité des recettes publicitaires. Il verse une redevance à la Ville (partie fixe, partie variable). Le Concessionnaire est propriétaire des mobiliers urbains, dont il assure et finance l'installation, le nettoyage, la maintenance et l'exploitation. La Ville, Autorité Concédante, exerce un contrôle sur le Concessionnaire et peut résilier unilatéralement le contrat."""@fr;
+  epo:hasEstimatedValue epd:id_2022-S-091-251958_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2022-S-091-251958_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2022-S-091-251958_MainMonetaryValueLot_RgULVPVVYP9pkvK789PCUZ a epo:MonetaryValue;
+  epo:hasAmountValue 5719900.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-091-251958_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM a cccev:ContactPoint;
+  epo:hasFax "+33 231524217";
+  epo:hasInternetAddress "http://caen.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-caen@juradm.fr";
+  cccev:telephone "+33 231707272" .
+
+epd:id_2022-S-091-251958_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "14100";
+  locn:postName "Caen";
+  locn:thoroughfare "3, rue Arthur Le Duc" .
+
+epd:id_2022-S-091-251958_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM a org:Organization;
+  epo:hasLegalName "tribunal administratif de Caen"@fr;
+  epo:hasPrimaryContactPoint epd:id_2022-S-091-251958_MediatorContactPoint_PMKvGTWSa3gLdxRfJtvToM;
+  cccev:registeredAddress epd:id_2022-S-091-251958_MediatorOrganisationAddress_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2022-S-091-251958_Mediator_PMKvGTWSa3gLdxRfJtvToM a epo:Mediator;
+  epo:playedBy epd:id_2022-S-091-251958_MediatorOrganisation_PMKvGTWSa3gLdxRfJtvToM .
+
+epd:id_2022-S-091-251958_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk a epo:MonetaryValue;
+  epo:hasAmountValue 5719900.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2022-S-091-251958_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-091-251958_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2022-S-091-251958_Mediator_PMKvGTWSa3gLdxRfJtvToM,
+    epd:id_2022-S-091-251958_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2022-S-091-251958_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
+    epd:id_2022-S-091-251958_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2022-05-06"^^xsd:date;
+  epo:hasID epd:id_2022-S-091-251958_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20220511";
+  epo:refersToLot epd:id_2022-S-091-251958_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2022-S-091-251958_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2022-S-091-251958_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 091-251958" .
+
+epd:id_2022-S-091-251958_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRD11>;
+  locn:postCode "14800";
+  locn:postName "Deauville";
+  locn:thoroughfare "20 rue Robert Fossorier" .
+
+epd:id_2022-S-091-251958_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "ville de Deauville"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2022-S-091-251958_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-091-251958_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;
+  epo:hasBeginning "2023-01-01"^^xsd:date;
+  epo:hasEnd "2037-12-31"^^xsd:date .
+
+epd:id_2022-S-091-251958_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79341000> .
+
+epd:id_2022-S-091-251958_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-091-251958_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "les critères de sélection des candidatures sont la capacité d'assurer la continuité du service public, fondée sur les capacités professionnelles et financières, appréciées sur la base du dossier de candidature à fournir, conformément aux dispositions du Code de la commande publique (v. Point Iii.1.1, Iii.1.2 et Iii.1.3).Le dossier de consultation sera mis à disposition des candidats admis à présenter une offre, après analyse des candidatures par la commission de délégation de service public , dite \" d'ouverture des plis \" [Art. L. 1411-1 et suivants du Cgct]."@fr;
+  epo:hasDescription "mise à disposition, installation, entretien, maintenance et exploitation de mobiliers urbains d'informations publicitaires et non publicitaires.Autre CPV : Mobilier urbain 34928400"@fr;
+  epo:hasEstimatedValue epd:id_2022-S-091-251958_MonetaryValueProcedure_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-091-251958_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2022-S-091-251958_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "concession de service public de mobiliers urbains"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-091-251958_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2022-S-091-251958_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr, epd:id_2022-S-091-251958_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2022-S-091-251958_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-091-251958_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2022-S-091-251958_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2022-S-091-251958_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "14100";
+  locn:postName "Caen";
+  locn:thoroughfare "3, rue Arthur Le Duc" .
+
+epd:id_2022-S-091-251958_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije
+  a cccev:ContactPoint;
+  epo:hasFax "+33 231524217";
+  epo:hasInternetAddress "http://caen.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-caen@juradm.fr";
+  cccev:telephone "+33 231707272" .
+
+epd:id_2022-S-091-251958_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije
+  a org:Organization;
+  epo:hasLegalName "tribunal administratif de Caen"@fr;
+  epo:hasPrimaryContactPoint epd:id_2022-S-091-251958_ReviewProcedureInformationProviderContactPoint_36ekFsuguo4hEmeGQAsije;
+  cccev:registeredAddress epd:id_2022-S-091-251958_ReviewProcedureInformationProviderAddress_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2022-S-091-251958_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-091-251958_ReviewProcedureInformationProviderOrganisation_36ekFsuguo4hEmeGQAsije .
+
+epd:id_2022-S-091-251958_ReviewTerm_YWvUkv6xM4rLZ2zvFJSHFr a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "référé précontractuel à tout moment avant la signature du contrat. Recours de plein contentieux contre le contrat dans un délai de deux mois à compter de la première ou dernière formalité de publicité de l'attribution ou de la signature. " .
+
+epd:id_2022-S-091-251958_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 231524217";
+  epo:hasInternetAddress "http://caen.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-caen@juradm.fr";
+  cccev:telephone "+33 231707272" .
+
+epd:id_2022-S-091-251958_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "14100";
+  locn:postName "Caen";
+  locn:thoroughfare "3, rue Arthur Le Duc" .
+
+epd:id_2022-S-091-251958_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "tribunal administratif de Caen"@fr;
+  epo:hasPrimaryContactPoint epd:id_2022-S-091-251958_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2022-S-091-251958_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2022-S-091-251958_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-091-251958_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2022-S-091-251958_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.deauville-marches.fr"^^xsd:anyURI .

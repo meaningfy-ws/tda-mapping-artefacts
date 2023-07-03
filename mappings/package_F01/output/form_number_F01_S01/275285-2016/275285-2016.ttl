@@ -1,0 +1,277 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-152-275285_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://marchespublics-aquitaine.org"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2016-S-152-275285_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38 a epo:Buyer;
+  epo:hasBuyerProfile "https://marchespublics-aquitaine.org"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-152-275285_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38;
+  epo:playedBy epd:id_2016-S-152-275285_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2016-S-152-275285_AdditionalContactPoint_5ZAqFrPEQTFNv88ScKSm38 a cccev:ContactPoint;
+  epo:hasContactName "Cathala"@fr;
+  epo:hasInternetAddress "https://marchespublics-aquitaine.org"^^xsd:anyURI;
+  cccev:email "contactbazas@cdcdubazadais.fr";
+  cccev:telephone "+33 0556252881" .
+
+epd:id_2016-S-152-275285_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38 a org:Organization;
+  epo:hasLegalName "CDC du Bazadais"@fr;
+  cccev:registeredAddress epd:id_2016-S-152-275285_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 .
+
+epd:id_2016-S-152-275285_BuyerOrganisationGroup_5ZAqFrPEQTFNv88ScKSm38 a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  epo:hasMember epd:id_2016-S-152-275285_AdditionalOrganisation_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2016-S-152-275285_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-152-275285_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://marchespublics-aquitaine.org"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-152-275285_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-152-275285_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-152-275285_Channel_iRCDPixbNsrvdzVqkxqWso a cccev:Channel;
+  epo:hasURL "http://marchespublics-aquitaine.org"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2016-S-152-275285_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Duvigneau"@fr;
+  epo:hasInternetAddress "https://marchespublics-aquitaine.org"^^xsd:anyURI;
+  cccev:email "duvigneau@cdcsudgironde.fr";
+  cccev:telephone "+33 0556638110" .
+
+epd:id_2016-S-152-275285_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress """
+Gironde.
+"""@fr .
+
+epd:id_2016-S-152-275285_ContractTermLotLocationAddress_kKEXkgEhBpbdu5CJYA2aUT a locn:Address;
+  locn:fullAddress """
+Gironde.
+"""@fr .
+
+epd:id_2016-S-152-275285_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR612>;
+  locn:address epd:id_2016-S-152-275285_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2016-S-152-275285_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR612>;
+  locn:address epd:id_2016-S-152-275285_ContractTermLotLocationAddress_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2016-S-152-275285_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-152-275285_Duration_mZV3GUsXZWTQENF5BEv5i5;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-152-275285_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+Extension du territoire possible au 1.1.2017 pour la CDC du Sud Gironde avec intégration de 8 nouvelles communes.
+"""@fr .
+
+epd:id_2016-S-152-275285_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-152-275285_Duration_VLUhcjCcfriMRVVeLidxGZ;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-152-275285_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2016-S-152-275285_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-152-275285_Duration_VLUhcjCcfriMRVVeLidxGZ a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2016-S-152-275285_Duration_mZV3GUsXZWTQENF5BEv5i5 a epo:SpecificDuration;
+  time:numericDuration 72.0;
+  time:unitType time:unitMonth .
+
+epd:id_2016-S-152-275285_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2016-S-152-275285_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2016-S-152-275285_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71410000> .
+
+epd:id_2016-S-152-275285_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71410000> .
+
+epd:id_2016-S-152-275285_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-152-275285_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription """
+Réaliser l'ensemble des études préalables, l'animation et les productions matérielles nécessaires jusqu'à l'approbation finale de chaque PLUI. Une période de suivi de 2 ans est prévue après approbation.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2016-S-152-275285_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasID epd:id_2016-S-152-275285_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2016-S-152-275285_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasTitle """
+Conception et rédaction des PLUI
+"""@fr;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-152-275285_Lot_kKEXkgEhBpbdu5CJYA2aUT a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-152-275285_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasDescription """
+Assistance juridique durant les 4 ans de la conception et réalisation des PLUI.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2016-S-152-275285_MainMonetaryValueLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasID epd:id_2016-S-152-275285_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2016-S-152-275285_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasTitle """
+Mission d'assistance juridique
+"""@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-152-275285_MultipleStageProcedureTerm_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-152-275285_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
+  epo:hasAmountValue 850000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-152-275285_MainMonetaryValueLot_kKEXkgEhBpbdu5CJYA2aUT a epo:MonetaryValue;
+  epo:hasAmountValue 240000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-152-275285_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG a epo:MonetaryValue;
+  epo:hasAmountValue 1090000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-152-275285_MultipleStageProcedureTerm_kKEXkgEhBpbdu5CJYA2aUT a epo:MultipleStageProcedureTerm .
+
+epd:id_2016-S-152-275285_Notice a epo:CompetitionNotice, epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-152-275285_AdditionalBuyer_5ZAqFrPEQTFNv88ScKSm38,
+    epd:id_2016-S-152-275285_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2016-S-152-275285_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs,
+    epd:id_2016-S-152-275285_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk,
+    epd:id_2016-S-152-275285_Reviewer_kNwzAnsDUkmLUrSJHhyRUY, epd:id_2016-S-152-275285_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU;
+  epo:hasDispatchDate "2016-08-05"^^xsd:date;
+  epo:hasID epd:id_2016-S-152-275285_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasPublicationDate "20160809";
+  epo:refersToLot epd:id_2016-S-152-275285_Lot_c4Jggv3QHLrvEuoxvHMwcK, epd:id_2016-S-152-275285_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:refersToProcedure epd:id_2016-S-152-275285_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2016-S-152-275285_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 152-275285" .
+
+epd:id_2016-S-152-275285_OrganisationAddress_5ZAqFrPEQTFNv88ScKSm38 a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR612>;
+  locn:postCode "33430";
+  locn:postName "Bazas";
+  locn:thoroughfare "route de Lerm" .
+
+epd:id_2016-S-152-275285_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR612>;
+  locn:postCode "33213";
+  locn:postName "Langon Cedex";
+  locn:thoroughfare "Parc d'activités du Pays de Langon — 21 rue des Acacias" .
+
+epd:id_2016-S-152-275285_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "20004397400019" .
+
+epd:id_2016-S-152-275285_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasID epd:id_2016-S-152-275285_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Communauté de communes Sud Gironde"@fr;
+  cccev:registeredAddress epd:id_2016-S-152-275285_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-152-275285_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71410000> .
+
+epd:id_2016-S-152-275285_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw """
+Législation française.
+"""@fr;
+  epo:hasMaximumNumberOfLotsToBeAwarded 1;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2016-S-152-275285_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-152-275285_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription """
+Élaboration des PLUI de chaque communautés de communes à savoir les CDC du Sud Gironde et du bazadais. Ce marché est divisé en 2 lots possédant chacun 2 actes d'engagement, 1 destiné à la CDC du Sud Gironde et le second à la CDC du Bazadais. Lot 1: conception et rédaction de PLUI. Lot 2: mission d'assistance juridique.
+"""@fr;
+  epo:hasEstimatedValue epd:id_2016-S-152-275285_MonetaryValueProcedure_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-152-275285_Lot_c4Jggv3QHLrvEuoxvHMwcK,
+    epd:id_2016-S-152-275285_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2016-S-152-275285_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle """
+Élaboration des PLUI des CDC du Sud Gironde et du Bazadais.
+"""@fr;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-152-275285_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd,
+    epd:id_2016-S-152-275285_ProcedureTerm_BYzYaqPcdcaqVZEUggLaqG, epd:id_2016-S-152-275285_ReviewTerm_KjhWjVv578XNpvpTRjZhAs,
+    epd:id_2016-S-152-275285_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62;
+  epo:usesChannel epd:id_2016-S-152-275285_Channel_iRCDPixbNsrvdzVqkxqWso .
+
+epd:id_2016-S-152-275285_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-152-275285_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-152-275285_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2016-S-152-275285_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "33000";
+  locn:postName "Bordeaux";
+  locn:thoroughfare "9 rue Tastet" .
+
+epd:id_2016-S-152-275285_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://bordeaux.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-bordeaux@juradm.fr";
+  cccev:telephone "+33 0556993800" .
+
+epd:id_2016-S-152-275285_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Bordeaux"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-152-275285_ReviewProcedureInformationProviderContactPoint_28VogETmaFHpKwWGRmsGrk;
+  cccev:registeredAddress epd:id_2016-S-152-275285_ReviewProcedureInformationProviderAddress_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2016-S-152-275285_ReviewProcedureInformationProvider_28VogETmaFHpKwWGRmsGrk
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-152-275285_ReviewProcedureInformationProviderOrganisation_28VogETmaFHpKwWGRmsGrk .
+
+epd:id_2016-S-152-275285_ReviewTerm_KjhWjVv578XNpvpTRjZhAs a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Délais de recours sont ceux en vigueur dans les textes au moment du recours.
+""" .
+
+epd:id_2016-S-152-275285_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY a cccev:ContactPoint;
+  epo:hasInternetAddress "http://bordeaux.tribunal-administratif.fr"^^xsd:anyURI;
+  cccev:email "greffe.ta-bordeaux@juradm.fr";
+  cccev:telephone "+33 0556993800" .
+
+epd:id_2016-S-152-275285_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "33000";
+  locn:postName "Bordeaux";
+  locn:thoroughfare "9 rue Tastet" .
+
+epd:id_2016-S-152-275285_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Bordeaux"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-152-275285_ReviewerContactPoint_kNwzAnsDUkmLUrSJHhyRUY;
+  cccev:registeredAddress epd:id_2016-S-152-275285_ReviewerOrganisationAddress_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-152-275285_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-152-275285_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-152-275285_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasReceiptExpressionDeadline "2016-09-23T12:00";
+  epo:hasSubmissionURL "https://demat-ampa.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=7806&orgAcronyme=a8c"^^xsd:anyURI .
+
+epd:id_2016-S-152-275285_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-152-275285_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2016-S-152-275285_Organisation_gqoAAwSV3JaTMsopb9zyKP .

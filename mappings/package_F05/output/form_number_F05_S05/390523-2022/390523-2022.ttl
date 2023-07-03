@@ -1,0 +1,172 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-136-390523_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.deutsches-ausschreibungsblatt.de/VN/X-BSAG-2022-0035"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-136-390523_AwardCriterionCost_cC3ziTMBQ3JgrEnVYmznhR a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Preis"@de;
+  cccev:weight "50,00"@de .
+
+epd:id_2022-S-136-390523_AwardCriterionQuality_MHHVFRAwG5ikE4mcm67ZLA a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Organisation Projektteam"@de;
+  cccev:weight "15,00"@de .
+
+epd:id_2022-S-136-390523_AwardCriterionQuality_TsKZe6UgmJqv2LrQtTUrTD a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Sicherung der Qualität"@de;
+  cccev:weight "10,00"@de .
+
+epd:id_2022-S-136-390523_AwardCriterionQuality_UuagQs9t9uyZhDc2RjhaVb a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Referenzen"@de;
+  cccev:weight "15,00"@de .
+
+epd:id_2022-S-136-390523_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Projektspezisches Bearbeitungskonzept"@de;
+  cccev:weight "10,00"@de .
+
+epd:id_2022-S-136-390523_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-136-390523_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-136-390523_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-136-390523_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Fachbereich Einkauf und Vergaben"@de;
+  epo:hasFax "+49 4215596496";
+  epo:hasInternetAddress "www.bsag.de"^^xsd:anyURI;
+  cccev:email "k61.ab@bsag.de";
+  cccev:telephone "+49 4215596314" .
+
+epd:id_2022-S-136-390523_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress "Bremer Straßenbahn AGBetriebshof Bremen BlumenthalErmlandstraße 47, 28777 Bremen"@de .
+
+epd:id_2022-S-136-390523_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE501>;
+  locn:address epd:id_2022-S-136-390523_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2022-S-136-390523_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2022-S-136-390523_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-136-390523_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Zunächst werden nur die Grundleistungen der HOAI-Leistungsphasen 1 und 2 der Leistungsbilder abgerufen / beauftragt.Die Leistungsphasen ab 3 sind optional ausgeschrieben."@de .
+
+epd:id_2022-S-136-390523_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEPayment true .
+
+epd:id_2022-S-136-390523_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71240000>, <http://data.europa.eu/cpv/cpv/71300000>,
+    <http://data.europa.eu/cpv/cpv/71322500>, <http://data.europa.eu/cpv/cpv/71520000> .
+
+epd:id_2022-S-136-390523_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-136-390523_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasAdditionalInformation "Mit den Heberanlagen regelgmäßig anzuhebende Fahrzeuge- Dreiachsige Elektrobusse (Gelenkbusse)"@de;
+  epo:hasDescription "Die BSAG betreibt in Bremen Ortsteil Blumenthal an der Ermlandstraße 47, 28777 Bremen, einen Busbetriebshof bestehend aus Werkstattund Abstellanlage für Busse.Die BSAG beschafft für den Standort fünfzig Elektrobusse.Gegenstand dieser Ausschreibung sind die erforderlichenPlanungsleistungen für die im Zusammenhang stehenden Umbarbeiten der Infrastruktur einschließlich Ladetechnik."@de;
+  epo:hasPurpose epd:id_2022-S-136-390523_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-136-390523_AwardCriterionCost_cC3ziTMBQ3JgrEnVYmznhR,
+    epd:id_2022-S-136-390523_AwardCriterionQuality_MHHVFRAwG5ikE4mcm67ZLA, epd:id_2022-S-136-390523_AwardCriterionQuality_TsKZe6UgmJqv2LrQtTUrTD,
+    epd:id_2022-S-136-390523_AwardCriterionQuality_UuagQs9t9uyZhDc2RjhaVb, epd:id_2022-S-136-390523_AwardCriterionQuality_kpksbwJ7McDWiCGFuQqr5J .
+
+epd:id_2022-S-136-390523_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-136-390523_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2022-S-136-390523_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2022-S-136-390523_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2022-S-136-390523_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr;
+  epo:hasDispatchDate "2022-07-13"^^xsd:date;
+  epo:hasID epd:id_2022-S-136-390523_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220718";
+  epo:refersToLot epd:id_2022-S-136-390523_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2022-S-136-390523_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2022-S-136-390523_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 136-390523" .
+
+epd:id_2022-S-136-390523_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE501>;
+  locn:postCode "28199";
+  locn:postName "Bremen";
+  locn:thoroughfare "Flughafendamm 12" .
+
+epd:id_2022-S-136-390523_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Bremer Straßenbahn AG"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2022-S-136-390523_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-136-390523_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2022-10-04"^^xsd:date;
+  epo:hasEnd "2029-06-30"^^xsd:date .
+
+epd:id_2022-S-136-390523_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "X-BSAG-2022-0035" .
+
+epd:id_2022-S-136-390523_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2022-S-136-390523_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-136-390523_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation "1. Die Vergabeunterlagen können unter dem angegebenen Link heruntergeladen werden.2. Rückfragen zu der Bekanntmachung müssen nur beantwortet werden, wenn sie unter Angabe der Auftragsbezeichnung elektronisch über die Vergabeplattform bis spätestens zwei Wochen (Zugang bei der Auftraggeberin) vor Ablauf der Frist für die Einreichung der Teilnahmeanträge bei der Auftraggeberin gestellt werden. Außerdem müssen Rückfragen zu Inhalten von Antworten auf Rückfragen oder Rügen oder sonstigen Mitteilungen der Auftraggeberin, die nach dem letzten Termin für den Eingang von Rückfragen versandt werden, beantwortet werden, wenn sie der Auftraggeberin innerhalb von zwei Tagen nach der jeweiligen Antwort / Mitteilung unter Verwendung der eben genannten elektronischen Kommunikationsmittel gestellt werden.Spätere Rückfragen können noch beantwortet werden, wenn dies unter Abwägung der Interessen der Bewerber am Erhalt entsprechender Auskünfte und dem Interesse der Auftraggeberin an einer Durchführung des Teilnahmewettbewerbs in der in dieser Bekanntmachung genannten Frist aus Sicht der Auftraggeberin geboten erscheint.3. Die Auftraggeberin wird alle fristgerecht eingegangenen Bewerberanfragen spätestens 6 Tage vor Ablauf der Frist zur Abgabe des Teilnahmeantrages beantworten. Antworten auf Rückfragen oder Rügen sowie weitere Mitteilungen der Auftraggeberin werden, soweit sie Informationen enthalten, die für alle Bewerber von Interesse sind, veröffentlicht und dem Teilnehmerkreis mitgeteilt.4. Der Teilnahmeantrag ist entsprechend der in der Bekanntmachung in Verbindung mit den herunterzuladenden Unterlagen mit den genannten Angaben und Nachweise zu fertigen.5. Die genannten Nachweise und Erklärungen müssen nicht im Original vorgelegt werden, es sei denn die in der Urkunde genannte Erklärung ist nur im Original gültig; die Vorlage von einfachen Kopien ist ansonsten ausreichend.6. Der Teilnahmeantrag ist in deutscher Sprache abzufassen. Bei fremdsprachigen Bescheinigungen ist eine Übersetzung in deutscher Sprache beizufügen.7. Kosten/Aufwendungen für die Erstellung der Teilnahmeanträge werden nicht erstattet.8. Die Auftraggeberin behält sich vor, unvollständige, fehlende oder sonst nicht den formalen Vorgaben entsprechende Nachweise, Erklärungen oder sonstige Angaben der Bewerber nachzufordern. Ein Anspruch auf eine derartige Handhabung besteht jedoch nicht. Insbesondere kann die Auftraggeberin aus Gründen der Gleichbehandlung solche Teilnahmeanträge vom Vergabeverfahren ausschließen. Teilnahmeanträge, die nicht die geforderten oder nachgeforderten Angaben, Erklärungen und Nachweise enthalten, werden nicht zum weiteren Vergabeverfahren zugelassen.Hat die Auftraggeberin nach Auswertung der eingereichten Angaben, Nachweise und Erklärungen Zweifel an der Eignung des Bewerbers, kann sie den Bewerber zur Erläuterung der von ihm eingereichten Angaben, Erklärungen und Nachweise und zur Einreichung weiterer, ursprünglich nicht geforderter, Unterlagen auffordern; im Übrigen behält sich die Auftraggeberin auch für die als Mindestbedingungen für den Beleg der Eignung geforderten Angaben, Erklärungen und Nachweise Nachforderungen vor.9. Mehrere Bewerber können sich zu einer Bewerbergemeinschaft zusammenschließen. In diesem Fall hat die Bewerbergemeinschaft eine von allen Mitgliedern unterschriebene Bewerbergemeinschaftserklärung mit dem nachfolgenden Inhalt mit dem Teilnahmeantrag einzureichen:a. Benennung sämtlicher Mitglieder der an der Bewerbergemeinschaft beteiligten Unternehmen namentlich mit Anschrift, Telefon- und Telefaxnummer sowie Email-Adresse.b. Bekanntgabe eines für alle Mitglieder der Bewerbergemeinschaft bevollmächtigten Vertreters für das Vergabeverfahren und den Abschluss und die Durchführung des zur Vergabe anstehenden Vertrages, Erklärung, dass alle Mitglieder der Bewerbergemeinschaft gesamtschuldnerisch haften.10 .Im Hinblick auf eine etwaige spätere Angebotsabgabe ist bereits bei Bildung einer Bewerbergemeinschaft zwingend zu berücksichtigen, dass der Entschluss zur Mitgliedschaft in der Bewerbergemeinschaft (später ggf. Bietergemeinschaft) für jedes der beteiligten Unternehmen eine im Rahmen zweckmäßigen und kaufmännisch vernünftigen Handelns liegende Entscheidung sein muss. Sofern einer Bewerbergemeinschaft ausschließlich mehrere Unternehmen derselben Branche (gleichartige Unternehmen) angehören, ist ein derartiger Zusammenschluss nur zulässig, sofern - objektiv - ein jedes der beteiligten Unternehmen für sich aufgrund seiner betrieblichen oder geschäftlichen Verhältnisse nicht leistungsfähig ist und erst der Zusammenschluss zu einer Bewerbergemeinschaft (später Bietergemeinschaft) sie in die Lage versetzt, sich an diesem Vergabeverfahren zu beteiligen. Dies gilt auch für den Fall, dass die Bewerbergemeinschaft nicht ausschließlich, sondern teilweise aus gleichartigen Unternehmen besteht. Bei Bedarf ist die Auftraggeberin berechtigt, die Bewerbergemeinschaft aufzufordern, zusätzlich geeignete und nachprüfbare Angaben hierzu anhand objektiver Kriterien glaubhaft zu machen und entsprechende Unterlagen vorzulegen.11. Die Anforderungen der Bekanntmachung gelten auch für Bewerbergemeinschaften und deren Mitglieder.Die geforderten Nachweise, Angaben und Erklärungen für die Zuverlässigkeit sind von jedem Mitglied der Bewerbergemeinschaft vorzulegen. Die Nachweise, Angaben und Erklärungen für die wirtschaftliche und die technische Leistungsfähigkeit müssen lediglich für mindestens ein Mitglied der Bewerbergemeinschaft vorgelegt werden. Hier ist es ausreichend, wenn die Anforderungen durch alle Bewerbergemeinschaftsmitglieder gemeinsam erfüllt werden.12. Die Auftraggeberin wird, im Zuge des Teilnahmewettbewerbes die Anzahl der Bewerber so weit begrenzen, dass ein angemessenes Verhältnis zwischen den Merkmalen des Vergabeverfahrens und dem zu seiner Durchführung notwendigen Ressourcen sichergestellt ist (45 Abs. 3 SektVO) und nur diese Bewerber zu Verhandlungen und zur Abgabe eines Angebotes auffordern. Bei Erfüllung der Eignungsvoraussetzungen von mehr als 3 Bewerbern nimmt die Auftraggeberin ein Auswahlverfahren vor. Dabei werden die Kriterien der hochgeladenen Wertungsmatrix angewendet."@de;
+  epo:hasDescription "Generalplanung Werkstatt Bremen Blumenthal- Objektplanung- Tragwerksplanung- Energieplanung gemäß Gebäude-Energie-Gesetz- Technische Ausrüstung Anlagengruppen 1 bis 8- Verkehrsplanung und Entwässerungsplanung"@de;
+  epo:hasID epd:id_2022-S-136-390523_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-136-390523_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2022-S-136-390523_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle "Generalplanung Werkstatt Bremen Blumenthal"@de;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-136-390523_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2022-S-136-390523_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2022-S-136-390523_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2022-S-136-390523_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-136-390523_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-136-390523_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2022-S-136-390523_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Innerhalb von 15 Kalendertagen nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, kann ein Nachprüfverfahren bei der Vergabekammer beantragt werden (§ 160 Abs. 3 Nr. 4 GWB).Danach ist ein Nachprüfungsverfahren unzulässig, soweit:1) der Antragsteller den geltend gemachten Verstoß gegen Vergabevorschriften vor Einreichen des Nachprüfungsantrags erkannt und gegenüber dem Auftraggeber nicht innerhalb einer Frist von 10 Kalendertagen gerügt hat; der Ablauf der Frist nach § 134 Absatz 2 bleibt unberührt,2) Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, nicht spätestens bis zum Ablauf der in der Bekanntmachung benannten Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden,3) Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, nicht spätestens bis zum Ablauf der Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden,4) mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind." .
+
+epd:id_2022-S-136-390523_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj a cccev:ContactPoint;
+  epo:hasFax "+49 42149632311";
+  epo:hasInternetAddress "https://www.bauumwelt.bremen.de/ressort/vergabekammer-3529"^^xsd:anyURI;
+  cccev:email "vergabekammer@bau.bremen.de";
+  cccev:telephone "+49 42136159796" .
+
+epd:id_2022-S-136-390523_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "28195";
+  locn:postName "Bremen";
+  locn:thoroughfare "Contrescarpe 72" .
+
+epd:id_2022-S-136-390523_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Vergabekammer Bremen, Senatorin für Klimaschutz, Umwelt, Mobilität, Stadtentwicklung und Wohnungsbau"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-136-390523_ReviewerContactPoint_Zgn49ZJAMhimY7VJZcSfaj;
+  cccev:registeredAddress epd:id_2022-S-136-390523_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-136-390523_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-136-390523_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2022-S-136-390523_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.deutsches-ausschreibungsblatt.de/VN/X-BSAG-2022-0035"^^xsd:anyURI .
+
+epd:id_2022-S-136-390523_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-136-390523_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2022-S-136-390523_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .

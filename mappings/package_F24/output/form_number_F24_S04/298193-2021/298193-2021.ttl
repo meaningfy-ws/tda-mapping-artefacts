@@ -1,0 +1,117 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-113-298193_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2021_47B2f8Cyfp"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-113-298193_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
+  epo:hasBuyerProfile "https://www.achatpublic.com/sdm/ent/gen/index.jsp"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-113-298193_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-113-298193_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-113-298193_ContactPoint_jXahEP38X6pEFgd4J9tLvF a cccev:ContactPoint;
+  epo:hasFax "+33 468616480";
+  epo:hasInternetAddress "http://www.ch-perpignan.fr"^^xsd:anyURI;
+  cccev:email "Serveco.marches@ch-perpignan.fr";
+  cccev:telephone "+33 468616437" .
+
+epd:id_2021-S-113-298193_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ15> .
+
+epd:id_2021-S-113-298193_ContractTermLot_RgULVPVVYP9pkvK789PCUZ a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-113-298193_Duration_CNLW2ncMyL5mhSEmgoh43E;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-113-298193_ContractTermLotLocation_RgULVPVVYP9pkvK789PCUZ .
+
+epd:id_2021-S-113-298193_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-113-298193_Duration_CNLW2ncMyL5mhSEmgoh43E a epo:SpecificDuration;
+  time:numericDuration 72.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-113-298193_LotPurpose_RgULVPVVYP9pkvK789PCUZ a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/85312110> .
+
+epd:id_2021-S-113-298193_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-113-298193_ContractTermLot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasDescription "La présente consultation a pour objet de désigner le délégataire qui assurera la gestion et l'exploitation de la crèche «Joan Petit» dans le cadre d'un contrat de concession de services publics."@fr;
+  epo:hasPurpose epd:id_2021-S-113-298193_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-113-298193_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-113-298193_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-113-298193_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
+    epd:id_2021-S-113-298193_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
+  epo:hasDispatchDate "2021-06-09"^^xsd:date;
+  epo:hasID epd:id_2021-S-113-298193_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0023>;
+  epo:hasPublicationDate "20210614";
+  epo:refersToLot epd:id_2021-S-113-298193_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:refersToProcedure epd:id_2021-S-113-298193_Procedure_ASGTpKiU8XT26Zf8pwgdwk .
+
+epd:id_2021-S-113-298193_NoticeIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 113-298193" .
+
+epd:id_2021-S-113-298193_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRJ15>;
+  locn:postCode "66046";
+  locn:postName "Perpignan Cedex 09";
+  locn:thoroughfare "Centre hospitalier de Perpignan — 20 avenue du Languedoc — BP 49954" .
+
+epd:id_2021-S-113-298193_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Centre hospitalier";
+  epo:hasLegalName "Centre hospitalier de Perpignan"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2021-S-113-298193_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-113-298193_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk a epo:Identifier;
+  epo:hasIdentifierValue "Concession services Gestion Crèche no01H21" .
+
+epd:id_2021-S-113-298193_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/85312110> .
+
+epd:id_2021-S-113-298193_Procedure_ASGTpKiU8XT26Zf8pwgdwk a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-113-298193_ContractTermProcedure_aqJpTtir4aD6XFwsZUcxzv;
+  epo:hasAdditionalInformation "Il est exigé des candidats d'effectuer une visite obligatoire afin de pouvoir répondre à la consultation en toute connaissance de cause sous peine de voir leur offre rejetée. Elle est organisée par la direction des ressources humaines, aux dates suivantes:— mardi 22.6.2021 (12h00);— lundi 28.6.2021 (12h00).Il est demandé à chaque candidat de confirmer sa présence au préalable et au plus tard 48 heures avant la date de la visite par courriel à: Vanessa Falchetti, adjoint des cadres DRH, vanessa.falchetti@ch-perpignan.fr — Les candidats peuvent poser des questions, après la visite, sur le profil acheteur www.achatpublic.com — Les réponses seront transmises aux candidats sur ce même profil acheteur. Une attestation de présence sera remise et signée par le soumissionnaire le jour de la visite. Ce document deviendra une pièce contractuelle du contrat de concession."@fr;
+  epo:hasDescription "Contrat de concession de services — nº 01 H 21 — pour la gestion de la crèche «Joan Petit» du Centre hospitalier de Perpignan. La consultation se compose d'un lot unique."@fr;
+  epo:hasID epd:id_2021-S-113-298193_ProcedureIdentifier_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-113-298193_Lot_RgULVPVVYP9pkvK789PCUZ;
+  epo:hasPurpose epd:id_2021-S-113-298193_ProcedurePurpose_ASGTpKiU8XT26Zf8pwgdwk;
+  epo:hasTitle "Contrat de concession de services — nº 01 H 21 — gestion crèche"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-113-298193_AccessTerm_i7DzDaWCEZJKutzCZmQxGd,
+    epd:id_2021-S-113-298193_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv .
+
+epd:id_2021-S-113-298193_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-113-298193_ContactPoint_jXahEP38X6pEFgd4J9tLvF;
+  epo:playedBy epd:id_2021-S-113-298193_Organisation_jXahEP38X6pEFgd4J9tLvF .
+
+epd:id_2021-S-113-298193_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT a cccev:ContactPoint;
+  epo:hasFax "+33 467547410";
+  cccev:telephone "+33 46548100" .
+
+epd:id_2021-S-113-298193_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "34063";
+  locn:postName "Montpellier";
+  locn:thoroughfare "6 rue Pitot" .
+
+epd:id_2021-S-113-298193_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT a org:Organization;
+  epo:hasLegalName "Tribunal administratif"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-113-298193_ReviewerContactPoint_GCgEQ8HTQYwy3PnQqSQmPT;
+  cccev:registeredAddress epd:id_2021-S-113-298193_ReviewerOrganisationAddress_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-113-298193_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-113-298193_ReviewerOrganisation_GCgEQ8HTQYwy3PnQqSQmPT .
+
+epd:id_2021-S-113-298193_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2021_47B2f8Cyfp"^^xsd:anyURI .

@@ -1,0 +1,168 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-044-081796_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://www.simap.ch/shabforms/servlet/Search?NOTICE_NR=956775"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2017-S-044-081796_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2017-S-044-081796_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-044-081796_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-044-081796_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-044-081796_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoint;
+  epo:hasContactName "Xavier Ballansat"@fr;
+  epo:hasInternetAddress "https://www.simap.ch"^^xsd:anyURI;
+  cccev:email "xavier.ballansat@swissgrid.ch" .
+
+epd:id_2017-S-044-081796_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj a locn:Address;
+  locn:fullAddress """
+Valais, Suisse.
+"""@fr .
+
+epd:id_2017-S-044-081796_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CH0>;
+  locn:address epd:id_2017-S-044-081796_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
+
+epd:id_2017-S-044-081796_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2017-S-044-081796_Period_HKNfdBmeACvzBZy3TfjLFj;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-044-081796_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasOptions false .
+
+epd:id_2017-S-044-081796_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-044-081796_LotPurpose_HKNfdBmeACvzBZy3TfjLFj a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45442180> .
+
+epd:id_2017-S-044-081796_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-044-081796_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasDescription """
+Les pylônes de type treillis à 4 pieds, ont été livrés par la société italienne Europa. Excepté la boulonnerie, toutes les cornières ont été galvanisées et peintes en usine.
+L'objet de l'appel d'offres comprend les travaux de retouches sur la peinture des nouvelles structures ayant subi des atteintes lors des opérations de transport ou de montage. Un contrôle du serrage des boulons a également été inclus dans les prestations à fournir.
+"""@fr;
+  epo:hasPurpose epd:id_2017-S-044-081796_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-044-081796_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN .
+
+epd:id_2017-S-044-081796_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-044-081796_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-044-081796_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
+    epd:id_2017-S-044-081796_Reviewer_Zgn49ZJAMhimY7VJZcSfaj, epd:id_2017-S-044-081796_TenderReceiver_RmPNyhSxpRtChEASKUU5BR;
+  epo:hasDispatchDate "2017-02-28"^^xsd:date;
+  epo:hasID epd:id_2017-S-044-081796_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasPublicationDate "20170303";
+  epo:refersToLot epd:id_2017-S-044-081796_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:refersToProcedure epd:id_2017-S-044-081796_Procedure_9mbUbNZTkZjYLzuqbonrEb .
+
+epd:id_2017-S-044-081796_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 044-081796" .
+
+epd:id_2017-S-044-081796_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CHE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CH0>;
+  locn:postCode "5070";
+  locn:postName "Frick";
+  locn:thoroughfare "Dammstraße 3" .
+
+epd:id_2017-S-044-081796_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
+  epo:hasLegalName "Swissgrid AG Zentraleinkauf Assetmanagement"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2017-S-044-081796_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-044-081796_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
+  epo:hasBeginning "2017-05-02"^^xsd:date;
+  epo:hasEnd "2017-10-15"^^xsd:date .
+
+epd:id_2017-S-044-081796_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45442121> .
+
+epd:id_2017-S-044-081796_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-044-081796_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasAdditionalInformation """
+Des offres partielles ne sont pas admises.
+Conditions pour les pays n'ayant pas adhéré aux accords de l'OMC: aucun/e.
+Conditions générales: cf. partie contractuelle B — les conditions générales du soumissionnaire ne sont pas applicables.
+Négociations: demeurent réservées.
+Conditions régissant la procédure: le pouvoir adjudicateur adjuge des marchés publics pour des prestations en Suisse uniquement à des adjudicataires qui garantissent le respect des dispositions sur la protection des travailleurs, les conditions de travail et l'égalité de salaire entre hommes et femmes.
+Autres indications:
+A) L'adjudicataire n'a aucun droit à une adjudication complète des prestations mises en soumission.
+B) Le pouvoir adjudicateur se réserve le droit d'adjuger de nouveaux marchés similaires, liés au marché de base, selon la procédure de gré à gré (art. 13, al. 1, lit. h de l'OMP).
+C) L'adjudication a lieu sous réserve de l'obtention de toutes les autorisations nécessaires à la réalisation du projet dans son ensemble.
+D) Le soumissionnaire habilite le pouvoir adjudicateur à vérifier toutes les indications faites dans le cadre du présent appel d'offres.
+Indication des voies de recours: conformément à l'art. 30 LMP, la présente publication peut être attaquée, dans un délai de 20 jours à compter de sa notification, auprès du Tribunal administratif fédéral, case postale, 9023 St. Gall. Le mémoire de recours, à présenter en 2 exemplaires, indiquera les conclusions, motifs et moyens de preuve et portera la signature de la partie recourante ou de son mandataire; y seront jointes une copie de la présente publication et les pièces invoquées comme moyens de preuve, lorsqu'elles sont disponibles.
+Publication de référence nationale: SIMAP de la 28.2.2017, doc. 956775.
+Délai souhaité pour poser des questions par écrit: 8.3.2017.
+"""@fr;
+  epo:hasDescription """
+Les pylônes de type treillis à 4 pieds, ont été livrés par la société italienne Europa. Excepté la boulonnerie, toutes les cornières ont été galvanisées et peintes en usine.
+L'objet de l'appel d'offres comprend les travaux de retouches sur la peinture des nouvelles structures ayant subi des atteintes lors des opérations de transport ou de montage. Un contrôle du serrage des boulons a également été inclus dans les prestations à fournir.
+"""@fr;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-044-081796_Lot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:hasPurpose epd:id_2017-S-044-081796_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb;
+  epo:hasTitle """
+Ligne aérienne 380 kV Châtelard-Bâtiaz — travaux de peinture.
+"""@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-044-081796_AccessTerm_T4mynogGdLKyTZh8YakGYW,
+    epd:id_2017-S-044-081796_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-044-081796_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-044-081796_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
+  epo:playedBy epd:id_2017-S-044-081796_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
+
+epd:id_2017-S-044-081796_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CHE>;
+  locn:postCode "9023";
+  locn:postName "St. Gallen";
+  locn:thoroughfare "Postfach" .
+
+epd:id_2017-S-044-081796_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organization;
+  epo:hasLegalName "Bundesverwaltungsgericht"@fr;
+  cccev:registeredAddress epd:id_2017-S-044-081796_ReviewerOrganisationAddress_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-044-081796_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-044-081796_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-044-081796_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasLanguage "DE", "FR" .
+
+epd:id_2017-S-044-081796_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CHE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/CH0>;
+  locn:postCode "1008";
+  locn:postName "Prilly-Malley";
+  locn:thoroughfare "Route des Flumeaux 41" .
+
+epd:id_2017-S-044-081796_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR
+  a cccev:ContactPoint;
+  epo:hasContactName "Xavier Ballansat"@fr;
+  epo:hasInternetAddress "https://www.simap.ch"^^xsd:anyURI;
+  cccev:email "xavier.ballansat@swissgrid.ch" .
+
+epd:id_2017-S-044-081796_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR a org:Organization;
+  epo:hasLegalName "Swissgrid SA"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-044-081796_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  cccev:registeredAddress epd:id_2017-S-044-081796_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR .
+
+epd:id_2017-S-044-081796_TenderReceiver_RmPNyhSxpRtChEASKUU5BR a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-044-081796_TenderReceiverOrganisationContactPoint_RmPNyhSxpRtChEASKUU5BR;
+  epo:playedBy epd:id_2017-S-044-081796_TenderReceiverOrganisation_RmPNyhSxpRtChEASKUU5BR .

@@ -1,0 +1,121 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-040-099881_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
+  epo:hasBuyerProfile "https://consultations-cofiroute.safetender.com/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-040-099881_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-040-099881_Organisation_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-040-099881_ContactPoint_gqoAAwSV3JaTMsopb9zyKP a cccev:ContactPoint;
+  epo:hasContactName "Direction de la Maîtrise d'Ouvrage - Cellule Marchés"@fr;
+  epo:hasInternetAddress "http://www.vinci-autoroutes.com"^^xsd:anyURI;
+  cccev:email "marches.cofiroute@vinci-autoroutes.com";
+  cccev:telephone "+33 157987600" .
+
+epd:id_2022-S-040-099881_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a locn:Address;
+  locn:fullAddress "Département de l’Eure-et-Loir – Commune de Luigny"@fr .
+
+epd:id_2022-S-040-099881_ContractTermLotLocationAddress_kKEXkgEhBpbdu5CJYA2aUT a locn:Address;
+  locn:fullAddress "Département de l’Eure-et-Loir – Commune de Miermaigne"@fr .
+
+epd:id_2022-S-040-099881_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRB02>;
+  locn:address epd:id_2022-S-040-099881_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-040-099881_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRB02>;
+  locn:address epd:id_2022-S-040-099881_ContractTermLotLocationAddress_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2022-S-040-099881_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-040-099881_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK .
+
+epd:id_2022-S-040-099881_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-040-099881_ContractTermLotLocation_kKEXkgEhBpbdu5CJYA2aUT .
+
+epd:id_2022-S-040-099881_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62 a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2022-S-040-099881_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2022-S-040-099881_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2022-S-040-099881_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45220000> .
+
+epd:id_2022-S-040-099881_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45220000> .
+
+epd:id_2022-S-040-099881_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-040-099881_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasDescription "Les travaux de renforcement de la buses A11PH1035 comprennent notamment :- La mise en œuvre du renforcement par tubage en PRV selon les sections hydrauliques fixées,- La gestion du cours d’eau durant les travaux de renforcement,- Le reprofilage du cours d’eau sur la zone chantier,- La création d’aménagements connexes à destination de l’exploitation des ouvrages.La nature des travaux concerne des ouvrages de technicité moyenne à haute."@fr;
+  epo:hasID epd:id_2022-S-040-099881_LotIdentifier_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasPurpose epd:id_2022-S-040-099881_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:hasTitle "Autoroute A11 – Renforcement de la buse métallique A11PH1035 par tubage PRV"@fr .
+
+epd:id_2022-S-040-099881_Lot_kKEXkgEhBpbdu5CJYA2aUT a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-040-099881_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasDescription "Les travaux de renforcement des buses A11PH1072 et A11PH1205 comprennent notamment :- La mise en œuvre du renforcement par chemisage en béton armé selon les sections hydrauliques fixées,- La gestion du cours d’eau durant les travaux de renforcement,- Le reprofilage du cours d’eau sur la zone chantier,- La création d’aménagements connexes à destination de l’exploitation des ouvrages.La nature des travaux concerne des ouvrages de technicité moyenne à haute."@fr;
+  epo:hasID epd:id_2022-S-040-099881_LotIdentifier_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2022-S-040-099881_LotPurpose_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasTitle "Autoroute A11 – Renforcement des buses métalliques A11PH1072 et A11PH1205 par chemisage en béton armé"@fr .
+
+epd:id_2022-S-040-099881_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2022-S-040-099881_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
+  epo:announcesRole epd:id_2022-S-040-099881_Buyer_ha4qvRdaNhmdBCzz2cwKfd, epd:id_2022-S-040-099881_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs;
+  epo:hasDispatchDate "2022-02-22"^^xsd:date;
+  epo:hasID epd:id_2022-S-040-099881_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220225";
+  epo:refersToLot epd:id_2022-S-040-099881_Lot_c4Jggv3QHLrvEuoxvHMwcK, epd:id_2022-S-040-099881_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:refersToProcedure epd:id_2022-S-040-099881_Procedure_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2022-S-040-099881_NoticeIdentifier_BYzYaqPcdcaqVZEUggLaqG a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 040-099881" .
+
+epd:id_2022-S-040-099881_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR105>;
+  locn:postCode "92757";
+  locn:postName "Nanterre Cedex";
+  locn:thoroughfare "Bâtiment HYDRA 1973 Boulevard de la Défense – CS 10268" .
+
+epd:id_2022-S-040-099881_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP a epo:Identifier;
+  epo:hasIdentifierValue "552 115 891 00426" .
+
+epd:id_2022-S-040-099881_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Société de droit privé";
+  epo:hasID epd:id_2022-S-040-099881_OrganisationIdentifier_gqoAAwSV3JaTMsopb9zyKP;
+  epo:hasLegalName "Cofiroute"@fr;
+  epo:hasMainActivityDescription "Concessionnaire autoroutier";
+  cccev:registeredAddress epd:id_2022-S-040-099881_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
+
+epd:id_2022-S-040-099881_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2022-S-040-099881_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG .
+
+epd:id_2022-S-040-099881_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45220000> .
+
+epd:id_2022-S-040-099881_Procedure_BYzYaqPcdcaqVZEUggLaqG a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-040-099881_ContractTermProcedure_KX8MaayAMxqXBuD94Kuz62;
+  epo:hasDescription """Le programme pluriannuel de travaux de renforcement des buses entre 2023 et 2025 porte sur 13 buses du réseau autoroutier exploité par COFIROUTE :•	4 buses sur A10 (A10PH2400A, A10PH2400B, A10PI78/56BIS, A10PH2905)•	7 buses sur A11 (A11PH1035, A11PH1072, A11PH1205, A11PH1379, A11PH1380, A11CPH4077, A11BPI9TER)•	1 buse sur A71 (A71PI103/9)•	1 buse sur A81 (A81PI7BIS/5B)Ce programme comprend trois opérations de travaux, chacune à réaliser au cours d’une année 2023, 2024 ou 2025. Le présent avis de pré information vise les travaux à exécuter en 2023 et répartis en deux lots :•	Lot n°1 : Autoroute A11 – Travaux de renforcement de la buse métallique A11PH1035 par tubage PRV•	Lot n°2 : Autoroute A11 – Travaux de renforcement des buses métalliques A11PH1072 et A11PH1205 par chemisage en béton armé"""@fr;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-040-099881_Lot_c4Jggv3QHLrvEuoxvHMwcK,
+    epd:id_2022-S-040-099881_Lot_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:hasPurpose epd:id_2022-S-040-099881_ProcedurePurpose_BYzYaqPcdcaqVZEUggLaqG;
+  epo:hasTitle "Autoroute A11 – Renforcement de trois buses métalliques"@fr;
+  epo:isCoveredByGPA false .
+
+epd:id_2022-S-040-099881_ProcessPlanningTerm_BYzYaqPcdcaqVZEUggLaqG a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2022-05-23"^^xsd:date .
+
+epd:id_2022-S-040-099881_ProcurementProcedureInformationProvider_6PNL5tgvYHwwqcZsEQimxs
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-040-099881_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
+  epo:playedBy epd:id_2022-S-040-099881_Organisation_gqoAAwSV3JaTMsopb9zyKP .

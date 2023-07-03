@@ -1,0 +1,177 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-199-520366_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.dtvp.de/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-199-520366_AwardCriterionCost_kzxi3VGw6HDT4rbiPYwGVV a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Gewichtung"@de;
+  cccev:weight "50"@de .
+
+epd:id_2021-S-199-520366_AwardCriterionQuality_QYkCrW7ZYftWpqjiWsgkfi a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Funktionalität/Anforderungen Leistungsbeschreibung"@de;
+  cccev:weight "50"@de .
+
+epd:id_2021-S-199-520366_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-199-520366_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
+  epo:playedBy epd:id_2021-S-199-520366_Organisation_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-199-520366_ContactPoint_W8v6KSqiUn74jPKJmENKoH a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.oeffis.de"^^xsd:anyURI;
+  cccev:email "vergabe@mmv-recht.de" .
+
+epd:id_2021-S-199-520366_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE923> .
+
+epd:id_2021-S-199-520366_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-199-520366_Duration_AGiSJu3PhXvpSFTMjvjUGk;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-199-520366_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "In den Vergabeunterlagen sind in den Lastenheften und im Preisblatt optionale Leistungen als solche gekennzeichnet."@de .
+
+epd:id_2021-S-199-520366_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-199-520366_Duration_AGiSJu3PhXvpSFTMjvjUGk a epo:SpecificDuration;
+  time:numericDuration 120.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-199-520366_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ a
+    cccev:ContactPoint;
+  epo:hasContactName "Herrn Martin Schumm"@de;
+  epo:hasFax "+49 228184379871";
+  epo:hasInternetAddress "https://www.mmv-recht.de/de"^^xsd:anyURI;
+  cccev:email "vergabe@mmv-recht.de";
+  cccev:telephone "+49 228184379814" .
+
+epd:id_2021-S-199-520366_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA22>;
+  locn:postCode "53227";
+  locn:postName "Bonn";
+  locn:thoroughfare "Joseph-Schumpeter-Allee 23" .
+
+epd:id_2021-S-199-520366_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ a
+    org:Organization;
+  epo:hasLegalName "Martini Mogg Vogt Rechtsanwälte Wirtschaftsprüfer Steuerberater Partnerschaftsgesellschaft mbB "@de;
+  cccev:registeredAddress epd:id_2021-S-199-520366_InformationProviderOrganisationAddress_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2021-S-199-520366_LotPurpose_aNssKXiFyYxii2v93ivV4N a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/42961300>, <http://data.europa.eu/cpv/cpv/48000000> .
+
+epd:id_2021-S-199-520366_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-199-520366_ContractTermLot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasAdditionalInformation "Die Bekanntmachung dient der Fristverkürzung der Angebotsfrist nach § 36 Abs. 3 SektVO. "@de;
+  epo:hasDescription "Die Verkehrsgesellschaft Hameln-Pyrmont mbH (VHP) betreibt im Landkreis Hameln-Pyrmont und in Randgebieten angrenzender Landkreise Linienverkehr vom Betriebsstandort Hameln und einer Abstellanlage in Bad Pyrmont. Alleiniger Gesellschafter ist der Landkreis Hameln-Pyrmont, der gleichzeitig ÖPNV-Aufgabenträger ist. Die VHP betreibt mit ca. 135 Linienbusse, eigene und die der Subunternehmer, 23 Linien. Den Schwerpunkt bilden dabei 6 Stadtbuslinien, die überwiegend im 30-Minuten-Takt fahren. Das vorhandene Vertriebssystem und das itcs (Intermodal Transport Control System) werden erneuert und den aktuellen Anforderungen angepasst. Neue Vertriebswege und zusätzliche Funktionen im Bereich Fahrgastinformation ergänzen den status quo.Wesentliche Leistungsbestandteile sind (abschließende Festlegung in den Vergabedokumenten):VERTRIEBSSYSTEMKlassischer Vertrieb von Papierfahrscheinen, Bargeldloser Zahlungsverkehr, Nebenbuchhaltung Verkäuferabrechnung, Schnittstellen Geldeinzahlautomat, Finanzbuchhaltung, Reporting …LEITSYSTEM ITCSÜberwachung und Visualisierung des Betriebs, Disposition mit Aktualisierung aller Kanäle der Fahrgastinformation, Anschlusssicherung intern und extern, Einbindung Bedarfsverkehr, Ansteuerung vorhandene DFI-Anzeiger, VDV 453/454 zur ZDD des VBNFAHRZEUGAUSRÜSTUNGBordrechner/Fahrausweisdrucker als Kompaktgerät, ELA, VoIP, Parallelbetrieb IBIS-WB (VDV 300) und IBIS-IP (VDV 301), LSA-Ansteuerung über Analogfunk, Rückkanal ANS auf Doppel-TFT, Ansteuerung vorhandene Doppel-TFT (Perlschnur, Umsteige- und Anschlussinformationen), Bargeldloser Zahlungsverkehr mit Hybridkartenleser, Barcodescanner, Kontrolle eTicket (NFC/RFID-fähige Nutzermedien, 2D-Barcode), Schnittstelle „ivantoCore\" (GeoMobile), Haltewunsch, Abfrage vorhandene AFZS …E-TICKETINGKontrolle von eTickets (VDV KA und UIC) sowie Kurkarten der Staatsbäder Bad Pyrmont und Bad Münder, Ausgabe und Kontrolle Abo-Karten, Schülerzeitkarten (inkl. Zugriff für die Schulen), ID-TicketingREISEZENTRUM UND VORVERKAUFInformations- und Verkaufssystem, Bargeldloser ZahlungsverkehrKOMMUNIKATIONDatenübertragung über Mobilfunknetz, Sprechfunk als VoIP, Rückfalleben GSM, LSA-Ansteuerung über Analogfunk DATENVERSORGUNGNetz- und Fahrplandaten über VDV 452 aus IVU.planLIZENZEN UND RECHENZENTRUM Kauflizenzen Software, Betrieb durch den Auftragnehmer (Hosting), Wartungs- undServicevertragIn zwei vorausgegangenen Projekten konnten die angebotenen und beauftragten Leistungen nicht termingerecht hergestellt werden. Daher ist eine Neuvergabe der Leistung erforderlich. Das Projekt wird aus dem Programm DKV durch das BMVI gefördert. Die Fertigstellung muss daher bis Dez. 2022 erfolgen.WESENTLICHE TERMINE10/11.2021 Interessenbekundung11/12.2021 Interessenbestätigung und Angebotsphase12.2021 Verifizierende Teststellung01.2022 ZuschlagQ2.2022 Aufbau vorhandene StandardsystemeQ3.2022 Erstdatenversorgung und FahrzeugverkabelungQ4.2022 Inbetriebnahme, Testbetrieb und Rollout GesamtflotteWESENTLICHE KAUFMÄNNISCHE- UND VERTRAGLICHE BEDINGUNGENEVB-IT Systemvertrag verbindlich vorgegebenVerjährungsfrist für Mängel des Gesamtsystems: 36 Monate10% Vertragserfüllungs- und 10% MängelansprüchebürgschaftBürgschaft durch ein in der europäischen Gemeinschaft zugelassenes Kreditinstitut oder KreditversichererFührt der Verzug bei Erstellung des Gesamtsystems zum Verlust von Zuwendungen, führt dies zu Schadenersatzforderungen nach den gesetzlichen Bestimmungen.Um die termingerechte Lieferung und Inbetriebnahme zu gewährleisten, sollen Systeme beschafft werden, die bereits funktionsfähig zur Verfügung stehen und im Rahmen des Projektes in der Systemwelt der VHP in Betrieb genommen werden. Hierbei sollen nach Möglichkeit nur eine Erstdatenversorgung und ein kundenbezogenes Customizing erforderlich sein. Diese Voraussetzungen sind wertungsrelevant und werden im Vergabeverfahren in einer verifizierenden Teststellung gepr."@de;
+  epo:hasPurpose epd:id_2021-S-199-520366_LotPurpose_aNssKXiFyYxii2v93ivV4N;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-199-520366_AwardCriterionCost_kzxi3VGw6HDT4rbiPYwGVV,
+    epd:id_2021-S-199-520366_AwardCriterionQuality_QYkCrW7ZYftWpqjiWsgkfi .
+
+epd:id_2021-S-199-520366_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
+  epo:announcesPlannedProcurementPart epd:id_2021-S-199-520366_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY;
+  epo:announcesRole epd:id_2021-S-199-520366_Buyer_cs2UnTLTWSEtLoQNm2LF8L, epd:id_2021-S-199-520366_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ,
+    epd:id_2021-S-199-520366_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH,
+    epd:id_2021-S-199-520366_Reviewer_K99XaY97dQrtEEJSTmwy9e;
+  epo:hasDispatchDate "2021-10-08"^^xsd:date;
+  epo:hasID epd:id_2021-S-199-520366_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20211013";
+  epo:refersToLot epd:id_2021-S-199-520366_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:refersToProcedure epd:id_2021-S-199-520366_Procedure_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-199-520366_NoticeIdentifier_eKatToTqpEHkNRiu4wyHAY a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 199-520366" .
+
+epd:id_2021-S-199-520366_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE923>;
+  locn:postCode "31785";
+  locn:postName "Hameln";
+  locn:thoroughfare "Bahnhofstraße 19" .
+
+epd:id_2021-S-199-520366_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
+  epo:hasLegalName "Verkehrsgesellschaft Hameln-Pyrmont mbH"@de;
+  epo:hasMainActivityDescription "Öffentlicher Personennahverkehr (ÖPNV)";
+  cccev:registeredAddress epd:id_2021-S-199-520366_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
+
+epd:id_2021-S-199-520366_PlannedProcurementPart_eKatToTqpEHkNRiu4wyHAY a epo:PlannedProcurementPart;
+  epo:isSubjectToTerm epd:id_2021-S-199-520366_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY .
+
+epd:id_2021-S-199-520366_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/48813200> .
+
+epd:id_2021-S-199-520366_Procedure_eKatToTqpEHkNRiu4wyHAY a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-199-520366_ContractTermProcedure_42ewgEwxZiroeKCXpa2kAY;
+  epo:hasAdditionalInformation " Hat der Auftraggeber eine regelmäßige nicht verbindliche Bekanntmachung nach § 36 Absatz 1 SektO veröffentlicht, kann die Mindestfrist für den Eingang von Angeboten im offenen Verfahren auf 15 Tage verkürzt werden, sofern 1.die regelmäßige nicht verbindliche Bekanntmachung alle nach Anhang IV der Durchführungsverordnung (EU) 2015/1986 geforderten Informationen enthält, soweit diese zum Zeitpunkt der Veröffentlichung der regelmäßigen nicht verbindlichen Bekanntmachung vorlagen, und 2.die regelmäßige nicht verbindliche Bekanntmachung wenigstens 35 Tage und nicht mehr als zwölf Monate vor dem Tag der Absendung der Auftragsbekanntmachung zur Veröffentlichung an das Amt für Veröffentlichungen der Europäischen Union übermittelt wurde. Der Auftraggeber beabsichtigt, die Verkürzung der Angebotsfrist in Anspruch zu nehmen, sofern das Verfahren gestartet wird."@de;
+  epo:hasDescription "In zwei vorausgegangenen Projekten konnten die angebotenen und beauftragten Leistungen nicht termingerecht hergestellt werden. Daher ist eine Neuvergabe der Leistung erforderlich. Das Projekt wird vom BMVI gefördert. Die Fertigstellung muss daher bis Dez. 2022 erfolgen.Um dies zu gewährleisten, sollen Systeme beschafft werden, die bereits funktionsfähig zur Verfügung stehen und im Rahmen des Projektes in der Systemwelt der VHP in Betrieb genommen werden. Hierbei sollen nach Möglichkeit nur eine Erstdatenversorgung und ein kundenbezogenes Customizing erforderlich sein. Diese Voraussetzungen sind wertungsrelevant und werden im Vergabeverfahren geprüft. Beschafft werden Systeme für Vertrieb (klassisch & eTicket), itcs (Disposition, ANS, Fahrgastinformation, VDV 453/454), Kompaktgeräte für 145 Fzg. (Bordrechner/EFAD, LSA, IBIS-IP, eTicket, Navigation), Mobile Tabletlösung für 5 Kleinbusse, 20 Vorverkaufsstellen, Abo & Schülerzeitkarten, Schnittstellen (VDV 452, GEA, Fibu, Statistik)."@de;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-199-520366_Lot_aNssKXiFyYxii2v93ivV4N;
+  epo:hasPurpose epd:id_2021-S-199-520366_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY;
+  epo:hasTitle "VHP BR ITCS ABO eTicket"@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-199-520366_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L,
+    epd:id_2021-S-199-520366_ReviewTerm_ZsxuomNURxGbRdavxJPhLN, epd:id_2021-S-199-520366_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY .
+
+epd:id_2021-S-199-520366_ProcessPlanningTerm_eKatToTqpEHkNRiu4wyHAY a epo:ProcessPlanningTerm;
+  epo:hasEstimatedContractNoticePublicationDate "2021-11-21"^^xsd:date .
+
+epd:id_2021-S-199-520366_ProcurementProcedureInformationProvider_jiCDC4MpzgdtnmeA6sk8ZQ
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-199-520366_InformationProviderContactPoint_jiCDC4MpzgdtnmeA6sk8ZQ;
+  epo:playedBy epd:id_2021-S-199-520366_InformationProviderOrganisation_jiCDC4MpzgdtnmeA6sk8ZQ .
+
+epd:id_2021-S-199-520366_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "21339";
+  locn:postName "Lüneburg";
+  locn:thoroughfare "Auf der Hude 2" .
+
+epd:id_2021-S-199-520366_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer Niedersachsen beim Nds. Ministerium für Wirtschaft, Arbeit, Verkehr und Digitalisierung"@de;
+  cccev:registeredAddress epd:id_2021-S-199-520366_ReviewProcedureInformationProviderAddress_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2021-S-199-520366_ReviewProcedureInformationProvider_G34c4CecCc2SsTmjP9RsgH
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-199-520366_ReviewProcedureInformationProviderOrganisation_G34c4CecCc2SsTmjP9RsgH .
+
+epd:id_2021-S-199-520366_ReviewTerm_ZsxuomNURxGbRdavxJPhLN a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Ergeht eine Mitteilung des Auftraggebers, der Rüge nicht abhelfen zu wollen, kann der Bieter wegen Nichtbeachtung der Vergabevorschriften ein Nachprüfungsverfahren nur innerhalb von 15 Kalendertagen nach Eingang vor der Vergabekammer beantragen. Nach Ablauf der Frist ist der Antrag unzulässig. (§ 160 Abs. 3 Nr. 4 GWB)." .
+
+epd:id_2021-S-199-520366_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "21339";
+  locn:postName "Lüneburg";
+  locn:thoroughfare "Auf der Hude 2" .
+
+epd:id_2021-S-199-520366_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e a org:Organization;
+  epo:hasLegalName "Vergabekammer Niedersachsen beim Nds. Ministerium für Wirtschaft, Arbeit, Verkehr und Digitalisierung"@de;
+  cccev:registeredAddress epd:id_2021-S-199-520366_ReviewerOrganisationAddress_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-199-520366_Reviewer_K99XaY97dQrtEEJSTmwy9e a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-199-520366_ReviewerOrganisation_K99XaY97dQrtEEJSTmwy9e .
+
+epd:id_2021-S-199-520366_SubmissionTerm_42ewgEwxZiroeKCXpa2kAY a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.dtvp.de/"^^xsd:anyURI .
