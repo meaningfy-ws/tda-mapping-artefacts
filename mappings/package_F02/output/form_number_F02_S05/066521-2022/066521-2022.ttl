@@ -1,0 +1,193 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-026-066521_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://abruf.bi-medien.de/D445928142"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-026-066521_AwardCriterionCost_LZXPc54dghndgUKmLLkWYh a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Preis Honorar"@de;
+  cccev:weight "30"@de .
+
+epd:id_2022-S-026-066521_AwardCriterionQuality_FvcEU7WVvPoGhurygGgNv9 a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Kommunikation und Verfügbarkeit"@de;
+  cccev:weight "10"@de .
+
+epd:id_2022-S-026-066521_AwardCriterionQuality_SCcNgmEndqqZvfw98H8z7v a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Qualität"@de;
+  cccev:weight "40"@de .
+
+epd:id_2022-S-026-066521_AwardCriterionQuality_aDam54DqENHigUj4DJyHNL a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Fachlicher Wert"@de;
+  cccev:weight "20"@de .
+
+epd:id_2022-S-026-066521_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-026-066521_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2022-S-026-066521_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-026-066521_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Der Bürgermeister"@de;
+  epo:hasInternetAddress "https://www.wedel.de"^^xsd:anyURI;
+  cccev:email "info@stadt.wedel.de" .
+
+epd:id_2022-S-026-066521_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress "22880  Wedel"@de .
+
+epd:id_2022-S-026-066521_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEF09>;
+  locn:address epd:id_2022-S-026-066521_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2022-S-026-066521_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2022-S-026-066521_Period_oEYZZQWPrbQFajcRU6KZAY;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-026-066521_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2022-S-026-066521_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2022-S-026-066521_InformationProviderContactPoint_TQABXDaYTEjCPjunpz6abq a
+    cccev:ContactPoint;
+  epo:hasContactName "Zentrale Vergabestelle"@de;
+  epo:hasInternetAddress "https://www.wedel.de"^^xsd:anyURI;
+  cccev:email "vergabestelle@stadt.wedel.de";
+  cccev:telephone "+49 4103707354" .
+
+epd:id_2022-S-026-066521_InformationProviderOrganisationAddress_TQABXDaYTEjCPjunpz6abq
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEF09>;
+  locn:postCode "22880";
+  locn:postName "Wedel";
+  locn:thoroughfare "Rathausplatz 3 - 5" .
+
+epd:id_2022-S-026-066521_InformationProviderOrganisation_TQABXDaYTEjCPjunpz6abq a
+    org:Organization;
+  epo:hasLegalName "Stadt Wedel"@de;
+  cccev:registeredAddress epd:id_2022-S-026-066521_InformationProviderOrganisationAddress_TQABXDaYTEjCPjunpz6abq .
+
+epd:id_2022-S-026-066521_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-026-066521_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasAdditionalInformation "Bietergemeinschaften sind zugelassen, wenn jedes Mitglied der Bietergemeinschaft gesamtschuldnerisch haftet und dem Auftraggeber einAnsprechpartner benannt und mit unbeschränkter Vertretungsbefugnis ausgestattet wird."@de;
+  epo:hasDescription "Die Beauftragung der Planungsleistungen soll voraussichtlich in folgenden Schritten erfolgen:LP 1 bis 4 zu erbringen bis Oktober 2022LP 5 bis 9 zu erbringen entsprechend dem Baufortschritt Hochbau bis 30.11.2023"@de;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-026-066521_AwardCriterionCost_LZXPc54dghndgUKmLLkWYh,
+    epd:id_2022-S-026-066521_AwardCriterionQuality_FvcEU7WVvPoGhurygGgNv9, epd:id_2022-S-026-066521_AwardCriterionQuality_SCcNgmEndqqZvfw98H8z7v,
+    epd:id_2022-S-026-066521_AwardCriterionQuality_aDam54DqENHigUj4DJyHNL .
+
+epd:id_2022-S-026-066521_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2022-S-026-066521_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2022-S-026-066521_ProcurementProcedureInformationProvider_TQABXDaYTEjCPjunpz6abq,
+    epd:id_2022-S-026-066521_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2022-S-026-066521_Reviewer_Sc23ScTxybJ3bYD3QjmgGS;
+  epo:hasDispatchDate "2022-02-02"^^xsd:date;
+  epo:hasID epd:id_2022-S-026-066521_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20220207";
+  epo:refersToLot epd:id_2022-S-026-066521_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2022-S-026-066521_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2022-S-026-066521_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 026-066521" .
+
+epd:id_2022-S-026-066521_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEF09>;
+  locn:postCode "22880";
+  locn:postName "Wedel";
+  locn:thoroughfare "Rathausplatz 3 - 5" .
+
+epd:id_2022-S-026-066521_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Stadt Wedel"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2022-S-026-066521_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2022-S-026-066521_Period_oEYZZQWPrbQFajcRU6KZAY a epo:Period;
+  epo:hasBeginning "2022-06-01"^^xsd:date;
+  epo:hasEnd "2023-11-30"^^xsd:date .
+
+epd:id_2022-S-026-066521_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71420000> .
+
+epd:id_2022-S-026-066521_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-026-066521_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation "Teilnahmeantrag (Bewerbung) in elektronischer Form:Für die elektronische Einreichung des Teilnahmeantrags ist die Registrierung im B_I eVergabeSystem erforderlich. Informationen zu den Registrierungsmöglichkeiten sind zu finden unter:https://bi-medien.de/ausschreibungsdienste.Kommunikation:Anfragen zum Verfahren können elektronisch über die B_I eVergabe (www.bi-medien.de) oder an die unter I.3) genannte Adresse gestellt werden.Zugang zur elektronischen Kommunikation und zur Bewerbung in elektronischer Form als registrierter Nutzer der B_I eVergabe über den Menüpunkt - Meine Vergaben - unter dem B_I code D445928142 im Bereich - Mitteilungen - bzw. - Bewerbung -."@de;
+  epo:hasDescription "Für den Unterstufentrakt des Johann-Rist-Gymnasiums wird zurzeit ein Neubau geplant.Der nördlich gelegene Schulhof wurde 2017 neugestaltet. An der Südseite des Gebäudes entlang verläuft ein Verbindungsweg aus Gehwegplatten zwischen Parkplatz bei der Pinneberger Straße und südlichem Haupteingang der Schule. Die Fläche vor dem südlichen Haupteingang ist mit Fahrradabstellplätzen belegt. Der Zugang vom etwa 3 m tiefer gelegenen Parkplatz an der Pinneberger Straße besteht aus einer sanierungsbedürftigen Treppenanlage.Die für die Bauarbeiten in Anspruch genommene Fläche vom nördlich gelegen Schulhof muss wiederhergestellt werden. Die restlichen Außenbereiche um den Schulneubau sind Zugangsflächen zur Schule und sollen funktional gestaltet werden. Dabei stehen besonders die Wegeflächen sowie Raum für Fahrradabstellplätze oder -anlagen im Vordergrund. Die Flächenentwässerung muss neu konzipiert werden."@de;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-026-066521_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2022-S-026-066521_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Außenanlagen um den Neubau des Unterstufentraktes des Johann-Rist-Gymnasiums"@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-026-066521_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2022-S-026-066521_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2022-S-026-066521_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2022-S-026-066521_ProcurementProcedureInformationProvider_TQABXDaYTEjCPjunpz6abq
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-026-066521_InformationProviderContactPoint_TQABXDaYTEjCPjunpz6abq;
+  epo:playedBy epd:id_2022-S-026-066521_InformationProviderOrganisation_TQABXDaYTEjCPjunpz6abq .
+
+epd:id_2022-S-026-066521_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "22880";
+  locn:postName "Wedel";
+  locn:thoroughfare "Rathausplatz 3 - 5" .
+
+epd:id_2022-S-026-066521_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.wedel.de"^^xsd:anyURI;
+  cccev:email "vergabestelle@stadt.wedel.de";
+  cccev:telephone "+49 4103707354" .
+
+epd:id_2022-S-026-066521_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "Stadt Wedel"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-026-066521_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2022-S-026-066521_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2022-S-026-066521_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-026-066521_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2022-S-026-066521_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Die Vergabekammer leitet gem. § 160 (1) GWB ein Nachprüfungsverfahren nur auf Antrag ein. Der Antrag ist gem. § 160 (3) Nr. 1-4 GWB unzulässig,soweit1. Der Antragsteller den geltend gemachten Verstoß gegen Vergabevorschriften vor Einreichen des Nachprüfungsantrags erkannt und gegenüber demAuftraggeber nicht innerhalb einer Frist von 10 Kalendertagen gerügt hat.2. Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind nicht spät. bis zum Ablauf der in der Bekanntmachungbenannten Frist zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden.3. Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, nicht spät. bis zum Ablauf der Frist zur Bewerbung oder zurAngebotsabgabe gegenüber dem Auftraggeber gerügt werden.4. mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind." .
+
+epd:id_2022-S-026-066521_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.wimi.landsh.de"^^xsd:anyURI;
+  cccev:email "vergabekammer@wimi.landsh.de";
+  cccev:telephone "+49 4319884640" .
+
+epd:id_2022-S-026-066521_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "24105";
+  locn:postName "Kiel";
+  locn:thoroughfare "Düsternbrooker Weg 94" .
+
+epd:id_2022-S-026-066521_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Vergabekammer des Landes Schleswig-Holstein"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-026-066521_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2022-S-026-066521_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2022-S-026-066521_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-026-066521_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2022-S-026-066521_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "http://www.bi-medien.de"^^xsd:anyURI .

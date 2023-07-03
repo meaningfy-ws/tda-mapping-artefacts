@@ -1,0 +1,174 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-139-371398_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://community.vortal.biz/PRODPublic/Tendering/OpportunityDetail/Index?noticeUID=PT1.NTC.1591542"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-139-371398_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "30"@fr .
+
+epd:id_2021-S-139-371398_AwardCriterionQuality_aDam54DqENHigUj4DJyHNL a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Valeur technique de l'offre"@fr;
+  cccev:weight "70"@fr .
+
+epd:id_2021-S-139-371398_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasBuyerProfile "https://www.edqm.eu/fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-139-371398_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-139-371398_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-139-371398_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Section «Achat»"@fr;
+  epo:hasInternetAddress "https://www.coe.int/"^^xsd:anyURI;
+  cccev:email "purchasing@edqm.eu" .
+
+epd:id_2021-S-139-371398_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress "Conseil de l'Europe — EDQM — 7 allée Kastner — 67000 Strasbourg."@fr .
+
+epd:id_2021-S-139-371398_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRF11>;
+  locn:address epd:id_2021-S-139-371398_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2021-S-139-371398_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-139-371398_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-139-371398_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2021-S-139-371398_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-139-371398_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 61.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-139-371398_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/72253200> .
+
+epd:id_2021-S-139-371398_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-139-371398_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription "Les prestations de ce marché portent sur l’assistance et le support de premier niveau informatique de quasi l’ensemble des composantes IT de l’EDQM, avec pour certaines thématiques une gestion de niveau 2 pour la gestion, l’exploitation et l’administration du parc de type poste de travail Windows. Ces prestations doivent permettre d’enregistrer l’ensemble des tickets et demandes des utilisateurs; et d’assurer un traitement des demandes de premier niveau sur quasiment l’ensemble des domaines de informatique de l’EDQM."@fr;
+  epo:hasPurpose epd:id_2021-S-139-371398_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-139-371398_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog,
+    epd:id_2021-S-139-371398_AwardCriterionQuality_aDam54DqENHigUj4DJyHNL .
+
+epd:id_2021-S-139-371398_MediatorOrganisationAddress_4Z4veE2PHRh5zv62ATRwnh a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "67000";
+  locn:postName "Strasbourg";
+  locn:thoroughfare "avenue de l'Europe" .
+
+epd:id_2021-S-139-371398_MediatorOrganisation_4Z4veE2PHRh5zv62ATRwnh a org:Organization;
+  epo:hasLegalName "Conseil de l'Europe"@fr;
+  cccev:registeredAddress epd:id_2021-S-139-371398_MediatorOrganisationAddress_4Z4veE2PHRh5zv62ATRwnh .
+
+epd:id_2021-S-139-371398_Mediator_4Z4veE2PHRh5zv62ATRwnh a epo:Mediator;
+  epo:playedBy epd:id_2021-S-139-371398_MediatorOrganisation_4Z4veE2PHRh5zv62ATRwnh .
+
+epd:id_2021-S-139-371398_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-139-371398_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2021-S-139-371398_Mediator_4Z4veE2PHRh5zv62ATRwnh,
+    epd:id_2021-S-139-371398_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2021-S-139-371398_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2021-S-139-371398_Reviewer_Sc23ScTxybJ3bYD3QjmgGS;
+  epo:hasDispatchDate "2021-07-16"^^xsd:date;
+  epo:hasID epd:id_2021-S-139-371398_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasPublicationDate "20210721";
+  epo:refersToLot epd:id_2021-S-139-371398_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2021-S-139-371398_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2021-S-139-371398_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 139-371398" .
+
+epd:id_2021-S-139-371398_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRF11>;
+  locn:postCode "67000";
+  locn:postName "Strasbourg";
+  locn:thoroughfare "7 allée Kastner" .
+
+epd:id_2021-S-139-371398_OrganisationIdentifier_bhAnCWhMtKVDKPwFpTfXJN a epo:Identifier;
+  epo:hasIdentifierValue "77886008000010APE990Z" .
+
+epd:id_2021-S-139-371398_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-int-org>;
+  epo:hasID epd:id_2021-S-139-371398_OrganisationIdentifier_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:hasLegalName "Conseil de l'Europe — Direction européenne de la qualité du médicament et soins de santé (EDQM)"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2021-S-139-371398_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-139-371398_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2021AO46" .
+
+epd:id_2021-S-139-371398_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/72253100> .
+
+epd:id_2021-S-139-371398_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-139-371398_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasDescription "Les prestations de ce marché portent sur l’assistance et le support de premier niveau informatique de quasi l’ensemble des composantes IT de l’EDQM, avec pour certaines thématiques une gestion de niveau 2 pour la gestion, l’exploitation et l’administration du parc de type poste de travail Windows. Ces prestations doivent permettre d’enregistrer l’ensemble des tickets et demandes des utilisateurs; et d’assurer un traitement des demandes de premier niveau sur quasiment l’ensemble des domaines de informatique de l’EDQM."@fr;
+  epo:hasID epd:id_2021-S-139-371398_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-139-371398_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2021-S-139-371398_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Prestations de services pour le Helpdesk de l’EDQM"@fr;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-139-371398_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2021-S-139-371398_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2021-S-139-371398_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-139-371398_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-139-371398_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-139-371398_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "67000";
+  locn:postName "Strasbourg";
+  locn:thoroughfare "7 allée Kastner" .
+
+epd:id_2021-S-139-371398_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  cccev:email "purchasing@edqm.eu" .
+
+epd:id_2021-S-139-371398_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "Conseil de l'Europe — EDQM"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-139-371398_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2021-S-139-371398_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2021-S-139-371398_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-139-371398_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2021-S-139-371398_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "67000";
+  locn:postName "Strasbourg";
+  locn:thoroughfare "avenue de l'Europe" .
+
+epd:id_2021-S-139-371398_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Conseil de l'Europe"@fr;
+  cccev:registeredAddress epd:id_2021-S-139-371398_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2021-S-139-371398_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-139-371398_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2021-S-139-371398_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "EN", "FR";
+  epo:hasSubmissionURL "https://www.coe.int/fr/web/portal/e-procurement"^^xsd:anyURI .

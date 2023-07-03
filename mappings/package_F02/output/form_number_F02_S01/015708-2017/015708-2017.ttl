@@ -1,0 +1,170 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-237-432224_Notice a epo:Notice;
+  epo:hasID epd:id_2016-S-237-432224_NoticeIdentifier_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2016-S-237-432224_NoticeIdentifier_36ktLAsh4DDGMtAzNZMEnw a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 237-432224" .
+
+epd:id_2017-S-011-015708_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://procontract.due-north.com/Advert/Index?advertId=3d18f477-c9d1-e611-80da-005056b64545"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-011-015708_AdditionalBuyer_n3AiVAiqhTocTL76peYHtw a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-011-015708_AdditionalContactPoint_n3AiVAiqhTocTL76peYHtw;
+  epo:playedBy epd:id_2017-S-011-015708_AdditionalOrganisation_n3AiVAiqhTocTL76peYHtw .
+
+epd:id_2017-S-011-015708_AdditionalContactPoint_n3AiVAiqhTocTL76peYHtw a cccev:ContactPoint;
+  epo:hasInternetAddress "www.plymouth.gov.uk"^^xsd:anyURI;
+  cccev:email "mikeshillaber@cornwall.gov.uk" .
+
+epd:id_2017-S-011-015708_AdditionalOrganisation_n3AiVAiqhTocTL76peYHtw a org:Organization;
+  epo:hasLegalName "Plymouth City Council"@en;
+  cccev:registeredAddress epd:id_2017-S-011-015708_OrganisationAddress_n3AiVAiqhTocTL76peYHtw .
+
+epd:id_2017-S-011-015708_BuyerOrganisationGroup_n3AiVAiqhTocTL76peYHtw a epo:OrganisationGroup;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  epo:hasMember epd:id_2017-S-011-015708_AdditionalOrganisation_n3AiVAiqhTocTL76peYHtw,
+    epd:id_2017-S-011-015708_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2017-S-011-015708_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasBuyerProfile "http://www.cornwall.gov.uk"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-011-015708_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2017-S-011-015708_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2017-S-011-015708_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Mr Mike Shillaber"@en;
+  epo:hasInternetAddress "http://www.cornwall.gov.uk"^^xsd:anyURI;
+  cccev:email "mshillaber@cornwall.gov.uk";
+  cccev:telephone "+44 1872322716" .
+
+epd:id_2017-S-011-015708_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress """
+The Tamar Bridge that crosses the River Tamar between the main Towns of Saltash in Cornwall and Plymouth in Devon.
+"""@en .
+
+epd:id_2017-S-011-015708_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKK3>;
+  locn:address epd:id_2017-S-011-015708_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2017-S-011-015708_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-011-015708_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-011-015708_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2017-S-011-015708_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-011-015708_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 18.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-011-015708_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-011-015708_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasAdditionalInformation """
+Please note that the bolts are located across 120 Hanger locations, spanning the full length of the Bridge, and as such it is envisaged a programme of complete replacement may take between 12 and 18 months.
+This opportunity is also being advertised via the Contracts Finder website from where a detailed Contractor Briefing Document can be downloaded for information purposes.
+"""@en;
+  epo:hasDescription """
+It should be noted that testing works and interpretation are still ongoing at the date of publication of this document and therefore the final scope of the works cannot yet be defined. As such, it is envisaged that the client will develop and enhance the agreed specification and scope of works in collaboration with a likely maximum of 3 Contractors to be selected to discuss possibilities and options through a formal Competitive Dialogue Procurement Process, to arrive at an optimum working solution of planned replacement for these key components of the Bridge structure over an agreed period of time. Currently, the range of work may vary from the minimal replacements of bolts, i.e. approximately 20 % out of a total of 1 374 bolts, up to full replacement and this is reflected in the estimated value of work, envisaged to be between 2 825 000 and 4 788 000 GBP.
+"""@en;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-011-015708_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
+  epo:hasAmountValue 4788000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
+
+epd:id_2017-S-011-015708_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-011-015708_AdditionalBuyer_n3AiVAiqhTocTL76peYHtw,
+    epd:id_2017-S-011-015708_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2017-S-011-015708_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2017-S-011-015708_Reviewer_Sc23ScTxybJ3bYD3QjmgGS;
+  epo:hasDispatchDate "2017-01-13"^^xsd:date;
+  epo:hasID epd:id_2017-S-011-015708_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasPublicationDate "20170117";
+  epo:refersToLot epd:id_2017-S-011-015708_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToPrevious epd:id_2016-S-237-432224_Notice;
+  epo:refersToProcedure epd:id_2017-S-011-015708_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2017-S-011-015708_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 011-015708" .
+
+epd:id_2017-S-011-015708_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKK3>;
+  locn:postCode "TR1 3AY";
+  locn:postName "Truro";
+  locn:thoroughfare "County Hall, Treyew Road" .
+
+epd:id_2017-S-011-015708_OrganisationAddress_n3AiVAiqhTocTL76peYHtw a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKK4>;
+  locn:postCode "PL1 3BJ";
+  locn:postName "Plymouth";
+  locn:thoroughfare "Civic Centre" .
+
+epd:id_2017-S-011-015708_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasLegalName "Cornwall Council"@en;
+  cccev:registeredAddress epd:id_2017-S-011-015708_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2017-S-011-015708_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "DN231976" .
+
+epd:id_2017-S-011-015708_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2017-S-011-015708_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-011-015708_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasDescription """
+Inspection of hidden critical elements (hanger and cable band bolts) in 2014 and associated laboratory testing in 2015 revealed some anomalies in bolt hardness values.
+Some additional sample hardness testing was instructed and undertaken in Summer 2016. This was further extended to full coverage hardness testing in Autumn 2016.
+Preliminary results of the full testing exercise have indicated that provision for a programme of bolt replacement is now required. The nature of the proposed replacement works is of a relatively specialist nature and will involve works at height adjacent to live traffic and a waterway. The works are likely to be instructed for priority completion.
+In view of the likely mobilisation period and winter working restrictions this is expected to mean a start on site in Spring 2017.
+"""@en;
+  epo:hasEstimatedValue epd:id_2017-S-011-015708_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasID epd:id_2017-S-011-015708_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/comp-dial>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-011-015708_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2017-S-011-015708_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle """
+Tamar Road Bridge Suspension System Remedial Works.
+"""@en;
+  epo:isCoveredByGPA true;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-011-015708_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2017-S-011-015708_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2017-S-011-015708_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-011-015708_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2017-S-011-015708_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2017-S-011-015708_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postName "Truro" .
+
+epd:id_2017-S-011-015708_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Cornwall Council Monitoring Officer"@en;
+  cccev:registeredAddress epd:id_2017-S-011-015708_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2017-S-011-015708_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-011-015708_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2017-S-011-015708_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "https://procontract.due-north.com/Advert/Index?advertId=3d18f477-c9d1-e611-80da-005056b64545"^^xsd:anyURI .

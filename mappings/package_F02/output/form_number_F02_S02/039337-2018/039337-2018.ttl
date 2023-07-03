@@ -1,0 +1,217 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-019-039337_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.e-marchespublics.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-019-039337_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasBuyerProfile "http://www.e-marchespublics.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-019-039337_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2018-S-019-039337_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2018-S-019-039337_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Olivier Coloneaux"@fr;
+  epo:hasInternetAddress "http://www.ens.fr/"^^xsd:anyURI;
+  cccev:email "olivier.coloneaux@samop.fr" .
+
+epd:id_2018-S-019-039337_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress """
+                  Département de chimie bâtiment Erasme — 24 rue Lhomond — 75005 Paris.
+               """@fr .
+
+epd:id_2018-S-019-039337_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:address epd:id_2018-S-019-039337_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2018-S-019-039337_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2018-S-019-039337_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-019-039337_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+                  En application de l'article 30 I 7o du Décret no 2016-360 du 25.3.2016, un ou plusieurs marchés négociés passés sans publicité ni mise en concurrence préalable et relatifs à des prestations similaires pourront être passés ultérieurement. La durée pendant laquelle le ou les nouveaux marchés publics pourront être conclus ne pourra dépasser 3 ans à compter de la notification du marché public initial.
+               """@fr .
+
+epd:id_2018-S-019-039337_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2018-S-019-039337_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 28.0;
+  time:unitType time:unitMonth .
+
+epd:id_2018-S-019-039337_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71000000>, <http://data.europa.eu/cpv/cpv/71240000> .
+
+epd:id_2018-S-019-039337_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-019-039337_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription """
+                  Mission de maîtrise d'œuvre de base avec VISA au sens de la loi no 85-704 du 12.7.1985 modifiée et textes y afférents (décret no 93-1268 du 29.11.1993 et arrêté du 21.12.1993) et avec les missions complémentaires suivantes: cssi, opc, synthese et EXE partielle.
+                  L'opération porte sur la rénovation du département de Chimie comprenant:
+                  — paragraphe Mise en conformité des installations électriques,
+                  — paragraphe Mise en conformité des installations de Cvcd-Pb,
+                  — paragraphe Rafraîchissement des peintures, revêtements sols murs et plafonds.
+                  — paragraphe Réaménagements et transformation de locaux,
+                  Les travaux concernés s'étendent sur une surface de 2.617,30 m2.
+                  L'enveloppe prévisionnelle affectée aux travaux arrêtée par le Maître de l'ouvrage s'élève à 3 085 915 EUR (HT) en valeur 6.2016.
+               """@fr;
+  epo:hasEstimatedValue epd:id_2018-S-019-039337_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2018-S-019-039337_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-019-039337_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:MonetaryValue;
+  epo:hasAmountValue 370000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-019-039337_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
+  epo:hasAmountValue 370000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-019-039337_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2018-S-019-039337_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2018-S-019-039337_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2018-S-019-039337_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2018-S-019-039337_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2018-S-019-039337_TenderReceiver_5gEXzR8qwWo7DYKmgnYdCd;
+  epo:hasDispatchDate "2018-01-24"^^xsd:date;
+  epo:hasID epd:id_2018-S-019-039337_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasPublicationDate "20180127";
+  epo:refersToLot epd:id_2018-S-019-039337_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2018-S-019-039337_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2018-S-019-039337_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 019-039337" .
+
+epd:id_2018-S-019-039337_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75005";
+  locn:postName "Paris";
+  locn:thoroughfare "45 rue d'Ulm" .
+
+epd:id_2018-S-019-039337_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Etablissement public à caractère scientifique, culturel et professionnel";
+  epo:hasLegalName "Ecole Normale Supérieure"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/education>;
+  cccev:registeredAddress epd:id_2018-S-019-039337_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2018-S-019-039337_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71000000> .
+
+epd:id_2018-S-019-039337_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-019-039337_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasDescription """
+               Mission de maitrise d'œuvre de base avec VISA au sens de la loi no 85-704 du 12.7.1985 modifiée et textes y afférents (décret no 93-1268 du 29.11.1993 et arrêté du 21.12.1993) et avec les missions complémentaires suivantes: cssi, opc, synthese et EXE partielle.
+               L'opération concerne la rénovation du département de Chimie comprenant:
+               — paragraphe Mise en conformité des installations électriques,
+               — paragraphe Mise en conformité des installations de Cvcd-Pb,
+               — paragraphe Rafraîchissement des peintures, revêtements sols murs et plafonds,
+               — paragraphe Réaménagements et transformation de locaux,
+               Les travaux concernés s'étendent sur une surface de 2.617,30 m2.
+               L'enveloppe prévisionnelle affectée aux travaux arrêtée par le Maître de l'ouvrage s'élève à 3 085 915 EUR (HT) en valeur 6.2016.
+            """@fr;
+  epo:hasEstimatedValue epd:id_2018-S-019-039337_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-019-039337_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2018-S-019-039337_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle """
+               Mission de maîtrise d'œuvre pour la rénovation du département de chimie dans la bâtiment Erasme-24 rue Lhomond — 75005 Paris
+            """@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-019-039337_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2018-S-019-039337_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2018-S-019-039337_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2018-S-019-039337_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-019-039337_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2018-S-019-039337_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2018-S-019-039337_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2018-S-019-039337_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2018-S-019-039337_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-019-039337_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2018-S-019-039337_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2018-S-019-039337_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-019-039337_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2018-S-019-039337_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               — référé précontractuel prévu aux articles L 551-1 à L 551-12 du code de justice administrative (CJA), et pouvant être exercé avant la signature du contrat,
+               — référé contractuel prévu aux articles L 551-13 à L 551-23 du CJA, et pouvant être exercé dans les délais prévus à l'article R. 551-7 du CJA,
+               — recours de pleine juridiction pouvant être exercé dans les 2 mois suivant la date à laquelle la conclusion du contrat est rendue publique conformément à l'arrêt du Conseil d'Etat no 358994 du 4.11.2014, Département du Tarn-et-Garonne.
+            """ .
+
+epd:id_2018-S-019-039337_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2018-S-019-039337_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue Jouy" .
+
+epd:id_2018-S-019-039337_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Tribunal Administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-019-039337_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2018-S-019-039337_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2018-S-019-039337_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-019-039337_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2018-S-019-039337_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://www.e-marchespublics.com"^^xsd:anyURI .
+
+epd:id_2018-S-019-039337_TenderReceiverOrganisationAddress_5gEXzR8qwWo7DYKmgnYdCd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "94120";
+  locn:postName "Fontenay-sous-Bois";
+  locn:thoroughfare "bal 166-4 rue Paul Langevin" .
+
+epd:id_2018-S-019-039337_TenderReceiverOrganisationContactPoint_5gEXzR8qwWo7DYKmgnYdCd
+  a cccev:ContactPoint;
+  epo:hasContactName "Olivier Coloneaux"@fr;
+  epo:hasInternetAddress "http://www.samop.fr"^^xsd:anyURI;
+  cccev:email "olivier.coloneaux@samop.fr";
+  cccev:telephone "+33 141955273" .
+
+epd:id_2018-S-019-039337_TenderReceiverOrganisation_5gEXzR8qwWo7DYKmgnYdCd a org:Organization;
+  epo:hasLegalName "SAMOP"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-019-039337_TenderReceiverOrganisationContactPoint_5gEXzR8qwWo7DYKmgnYdCd;
+  cccev:registeredAddress epd:id_2018-S-019-039337_TenderReceiverOrganisationAddress_5gEXzR8qwWo7DYKmgnYdCd .
+
+epd:id_2018-S-019-039337_TenderReceiver_5gEXzR8qwWo7DYKmgnYdCd a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-019-039337_TenderReceiverOrganisationContactPoint_5gEXzR8qwWo7DYKmgnYdCd;
+  epo:playedBy epd:id_2018-S-019-039337_TenderReceiverOrganisation_5gEXzR8qwWo7DYKmgnYdCd .

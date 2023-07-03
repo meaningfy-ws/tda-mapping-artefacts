@@ -1,0 +1,217 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-062-115435_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://marches.maximilien.fr"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-062-115435_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasBuyerProfile "https://marches.maximilien.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-062-115435_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2017-S-062-115435_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2017-S-062-115435_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Bureau des marchés"@fr;
+  epo:hasInternetAddress "http://www.paris.fr"^^xsd:anyURI;
+  cccev:email "DFA-BM5@paris.fr" .
+
+epd:id_2017-S-062-115435_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress """
+14ème arrondissement — Paris.
+"""@fr .
+
+epd:id_2017-S-062-115435_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:address epd:id_2017-S-062-115435_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2017-S-062-115435_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-062-115435_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-062-115435_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions true;
+  epo:hasOptionsDescription """
+Des variantes autorisées ainsi que des prestations supplémentaires éventuelles pourront être prises en considération lors de la phase offre de la présente consultation.
+"""@fr .
+
+epd:id_2017-S-062-115435_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-062-115435_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 20.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-062-115435_InformationProviderContactPoint_TQABXDaYTEjCPjunpz6abq a
+    cccev:ContactPoint;
+  epo:hasContactName "Bureau des Marchés"@fr;
+  epo:hasInternetAddress "http://www.paris.fr"^^xsd:anyURI;
+  cccev:email "DFA-BM5@paris.fr" .
+
+epd:id_2017-S-062-115435_InformationProviderOrganisationAddress_TQABXDaYTEjCPjunpz6abq
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75004";
+  locn:postName "Paris";
+  locn:thoroughfare "17 boulevard Morland" .
+
+epd:id_2017-S-062-115435_InformationProviderOrganisation_TQABXDaYTEjCPjunpz6abq a
+    org:Organization;
+  epo:hasLegalName "Ville de Paris — direction des finances et des achats — sous-direction des achats"@fr;
+  cccev:registeredAddress epd:id_2017-S-062-115435_InformationProviderOrganisationAddress_TQABXDaYTEjCPjunpz6abq .
+
+epd:id_2017-S-062-115435_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45210000> .
+
+epd:id_2017-S-062-115435_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-062-115435_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasAdditionalInformation """
+Le montant de l'estimation du marché est de 9 000 000 d'EUR HT arrondi par défaut à 500 000 EUR HT près. Une prime de 6 000 EUR HT pourra être accordée aux candidats classés 2ème et 3ème. La durée du marché se compose de 2 mois de préparation puis de 17,5 mois de travaux. Le marché est à prix forfaitaire et révisable.
+"""@fr;
+  epo:hasDescription """
+La présente consultation a pour objet les travaux de construction neuve d'un conservatoire municipal de danse, théâtre, art dramatique et extension de la cour d'école élémentaire du groupe scolaire Alain Fournier à Paris 14ème. Ce marché est passé selon la procédure concurrentielle avec négociation décrite aux articles 71 et suivants du décret no 2016-360 du 25.3.2016 relatif aux marchés publics. Cette procédure a pour particularité de se dérouler en deux phases successives, une phase candidature et une phase offre. Il s'agit ci de la phase candidature.
+"""@fr;
+  epo:hasPurpose epd:id_2017-S-062-115435_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-062-115435_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-062-115435_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2017-S-062-115435_ProcurementProcedureInformationProvider_TQABXDaYTEjCPjunpz6abq,
+    epd:id_2017-S-062-115435_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2017-S-062-115435_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2017-S-062-115435_TenderReceiver_5gEXzR8qwWo7DYKmgnYdCd;
+  epo:hasDispatchDate "2017-03-24"^^xsd:date;
+  epo:hasID epd:id_2017-S-062-115435_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasPublicationDate "20170329";
+  epo:refersToLot epd:id_2017-S-062-115435_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2017-S-062-115435_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2017-S-062-115435_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 062-115435" .
+
+epd:id_2017-S-062-115435_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75004";
+  locn:postName "Paris";
+  locn:thoroughfare "17 boulevard Morland" .
+
+epd:id_2017-S-062-115435_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Ville de Paris"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-062-115435_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2017-S-062-115435_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2017V12030230" .
+
+epd:id_2017-S-062-115435_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45210000> .
+
+epd:id_2017-S-062-115435_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-062-115435_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation """
+La durée du marché court à compter de la date de notification jusqu'à la plus tardive des 2 dates suivantes:
+— l'établissement du décompte général et définitif du marché,
+— l'exécution par le titulaire de la totalité de ses obligations dues dans le cadre de la garantie de parfait achèvement.
+La durée des travaux se décompose en 2 mois de préparation et 17 mois et demi de travaux. Le document de la consultation peut être consulté et téléchargé à l'adresse suivante: https://marches.maximilien.fr. Les soumissionnaires sont invités à répondre par voie électronique à cette même adresse dans les conditions prévues à l'article 5 du règlement de la consultation. Des niveaux minimaux de capacités sont exigés (comme indiqué à l'article 3.1 du règlement de la consultation). Les critères d'attribution seront énoncés dans le document de la consultation de la phase offre. Sauf renoncement porté à l'acte d'engagement, une avance sera accordée au titulaire du marché. Le montant de cette avance sera fixé à 15 % du montant initial, toutes taxes comprises, du marché. Date prévisionnelle pour l'envoi de l'invitation à présenter une offre aux candidats: juin 2017. Le délai minimal pendant lequel le soumissionnaire sera tenu de maintenir son offre sera précisé dans les documents de la phase offre.
+"""@fr;
+  epo:hasDescription """
+Travaux de construction neuve d'un conservatoire municipal de danse, théâtre, art dramatique et extension de la cour d'école élémentaire du groupe scolaire Alain Fournier à Paris 14ème.
+"""@fr;
+  epo:hasID epd:id_2017-S-062-115435_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-062-115435_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2017-S-062-115435_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle """
+Travaux de construction neuve d'un conservatoire municipal de danse, théâtre, art dramatique et extension de la cour d'école élémentaire du groupe scolaire Alain Fournier à Paris 14ème.
+"""@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-062-115435_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2017-S-062-115435_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2017-S-062-115435_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2017-S-062-115435_ProcurementProcedureInformationProvider_TQABXDaYTEjCPjunpz6abq
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-062-115435_InformationProviderContactPoint_TQABXDaYTEjCPjunpz6abq;
+  epo:playedBy epd:id_2017-S-062-115435_InformationProviderOrganisation_TQABXDaYTEjCPjunpz6abq .
+
+epd:id_2017-S-062-115435_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75004";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2017-S-062-115435_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  cccev:email "greffe.ta-paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2017-S-062-115435_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-062-115435_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2017-S-062-115435_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2017-S-062-115435_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-062-115435_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2017-S-062-115435_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Avant la conclusion du contrat, la présente consultation peut faire l'objet d'un référé précontractuel dans les conditions des articles L. 551-13 et suivants du code de justice administrative. A compter de sa signature, la présente consultation peut faire l'objet d'un référé contractuel dans les conditions des articles L.551-13 et suivants du code de la justice administrative. Le tribunal administratif peut en outre être saisi d'un recours en contestation de la validité du contrat dans un délai de 2 mois à compter de l'accomplissement des mesures de publicité appropriées dans des conditions définies par le Conseil d'État dans son arrêt «Département de Tarn-et-Garonne» du 4.4.2014 (no 358994).
+""" .
+
+epd:id_2017-S-062-115435_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  cccev:email "greffe.ta-paris@juradm.fr" .
+
+epd:id_2017-S-062-115435_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75004";
+  locn:postName "Paris";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2017-S-062-115435_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-062-115435_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2017-S-062-115435_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2017-S-062-115435_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-062-115435_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2017-S-062-115435_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://marches.maximilien.fr"^^xsd:anyURI .
+
+epd:id_2017-S-062-115435_TenderReceiverOrganisationAddress_5gEXzR8qwWo7DYKmgnYdCd
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR101>;
+  locn:postCode "75004";
+  locn:postName "Paris";
+  locn:thoroughfare "17 boulevard Morland" .
+
+epd:id_2017-S-062-115435_TenderReceiverOrganisationContactPoint_5gEXzR8qwWo7DYKmgnYdCd
+  a cccev:ContactPoint;
+  epo:hasContactName "Bureau des marchés — bureau n° 3094 ( 3ème étage) — horaires d'ouverture: du lundi au vendredi de 9:30 à 12:00 et de 14:00 à 16:00"@fr;
+  epo:hasInternetAddress "http://www.paris.fr"^^xsd:anyURI;
+  cccev:email "DFA-BM-TRANSVERSE@paris.fr" .
+
+epd:id_2017-S-062-115435_TenderReceiverOrganisation_5gEXzR8qwWo7DYKmgnYdCd a org:Organization;
+  epo:hasLegalName "Ville de Paris — direction des finances et des achats — sous-direction des achats"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-062-115435_TenderReceiverOrganisationContactPoint_5gEXzR8qwWo7DYKmgnYdCd;
+  cccev:registeredAddress epd:id_2017-S-062-115435_TenderReceiverOrganisationAddress_5gEXzR8qwWo7DYKmgnYdCd .
+
+epd:id_2017-S-062-115435_TenderReceiver_5gEXzR8qwWo7DYKmgnYdCd a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-062-115435_TenderReceiverOrganisationContactPoint_5gEXzR8qwWo7DYKmgnYdCd;
+  epo:playedBy epd:id_2017-S-062-115435_TenderReceiverOrganisation_5gEXzR8qwWo7DYKmgnYdCd .

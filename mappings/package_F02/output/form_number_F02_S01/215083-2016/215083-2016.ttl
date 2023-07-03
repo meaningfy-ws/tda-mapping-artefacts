@@ -1,0 +1,146 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-121-215083_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.comune.bari.it"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-121-215083_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-121-215083_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2016-S-121-215083_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2016-S-121-215083_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasFax "+39 0805775050";
+  epo:hasInternetAddress "www.comune.bari.it"^^xsd:anyURI;
+  cccev:email "rip.contrattiedappalti@comune.bari.it";
+  cccev:telephone "+39 080577500-0/6" .
+
+epd:id_2016-S-121-215083_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress """
+Bari.
+"""@it .
+
+epd:id_2016-S-121-215083_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  locn:address epd:id_2016-S-121-215083_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2016-S-121-215083_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2016-S-121-215083_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-121-215083_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2016-S-121-215083_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-121-215083_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 36.0;
+  time:unitType time:unitMonth .
+
+epd:id_2016-S-121-215083_InformationProviderContactPoint_TQABXDaYTEjCPjunpz6abq a
+    cccev:ContactPoint;
+  epo:hasFax "+39 0805239753";
+  epo:hasInternetAddress "www.comune.bari.it"^^xsd:anyURI;
+  cccev:email "rip.contrattiedappalti@comune.bari.it";
+  cccev:telephone "+39 0805238335" .
+
+epd:id_2016-S-121-215083_InformationProviderOrganisationAddress_TQABXDaYTEjCPjunpz6abq
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode ": 70122";
+  locn:postName "Bari";
+  locn:thoroughfare "Via Roberto Da Bari 1" .
+
+epd:id_2016-S-121-215083_InformationProviderOrganisation_TQABXDaYTEjCPjunpz6abq a
+    org:Organization;
+  epo:hasLegalName "Ufficio Relazioni con il Pubblico"@it;
+  cccev:registeredAddress epd:id_2016-S-121-215083_InformationProviderOrganisationAddress_TQABXDaYTEjCPjunpz6abq .
+
+epd:id_2016-S-121-215083_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-121-215083_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription """
+Gestione dei servizi di assistenza domiciliare (SAD) di tipo sociale ed integrata (ADI) a favore di soggetti con disabilità.
+"""@it;
+  epo:hasEstimatedValue epd:id_2016-S-121-215083_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-121-215083_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:MonetaryValue;
+  epo:hasAmountValue 3597750.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-121-215083_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2016-S-121-215083_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2016-S-121-215083_ProcurementProcedureInformationProvider_TQABXDaYTEjCPjunpz6abq,
+    epd:id_2016-S-121-215083_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2016-S-121-215083_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE;
+  epo:hasDispatchDate "2016-06-22"^^xsd:date;
+  epo:hasID epd:id_2016-S-121-215083_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasPublicationDate "20160625";
+  epo:refersToLot epd:id_2016-S-121-215083_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2016-S-121-215083_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2016-S-121-215083_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 121-215083" .
+
+epd:id_2016-S-121-215083_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "70122";
+  locn:postName "Bari";
+  locn:thoroughfare "Via Garruba 51" .
+
+epd:id_2016-S-121-215083_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Comune di Bari — Ripartizione Stazione Unica Appaltante, Contratti e Gestione LL.PP."@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2016-S-121-215083_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2016-S-121-215083_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/85311200> .
+
+epd:id_2016-S-121-215083_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-121-215083_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation """
+Termine per il ricevimento delle richieste di documenti o per l'accesso ai documenti: 26.7.2016 ore 12:00.
+Cauzioni e garanzie richieste per un importo pari a 71 955 EUR.
+Modalità di apertura delle offerte Data da fissarsi da parte della Commissione di Gara.
+Persone ammesse ad assistere all'apertura delle offerte: sì.
+Per quanto non indicato si rinvia al bando integrale di gara.
+"""@it;
+  epo:hasDescription """
+Gestione dei servizi di assistenza domiciliare (SAD) di tipo sociale ed integrata (ADI) a favore di soggetti con disabilità.
+"""@it;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-121-215083_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2016-S-121-215083_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle """
+Gestione dei servizi di assistenza domiciliare (SAD) di tipo sociale ed integrata (ADI) a favore di soggetti con disabilità.
+"""@it;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-121-215083_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2016-S-121-215083_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2016-S-121-215083_ProcurementProcedureInformationProvider_TQABXDaYTEjCPjunpz6abq
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-121-215083_InformationProviderContactPoint_TQABXDaYTEjCPjunpz6abq;
+  epo:playedBy epd:id_2016-S-121-215083_InformationProviderOrganisation_TQABXDaYTEjCPjunpz6abq .
+
+epd:id_2016-S-121-215083_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postName "Bari" .
+
+epd:id_2016-S-121-215083_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "TAR Puglia"@it;
+  cccev:registeredAddress epd:id_2016-S-121-215083_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2016-S-121-215083_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-121-215083_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2016-S-121-215083_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "IT" .
+
+epd:id_2016-S-121-215083_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-121-215083_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2016-S-121-215083_Organisation_bhAnCWhMtKVDKPwFpTfXJN .

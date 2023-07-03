@@ -1,0 +1,183 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-077-197339_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://Meoss.achatpublic.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-077-197339_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasBuyerProfile "http://Meoss.achatpublic.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-077-197339_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-077-197339_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-077-197339_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.sesam-vitale.fr"^^xsd:anyURI;
+  cccev:email "Secretariatsecg@sesam-vitale.fr";
+  cccev:telephone "+33 243574202" .
+
+epd:id_2021-S-077-197339_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress "Titulaire/GIE SESAM-Vitale."@fr .
+
+epd:id_2021-S-077-197339_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRG04>;
+  locn:address epd:id_2021-S-077-197339_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2021-S-077-197339_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2021-S-077-197339_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-077-197339_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2021-S-077-197339_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-077-197339_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 12.0;
+  time:unitType time:unitMonth .
+
+epd:id_2021-S-077-197339_FrameworkAgreementTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2021-S-077-197339_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw a epo:FrameworkAgreementTerm;
+  epo:hasDurationExtensionJustification "Dans le cas d'accords-cadres, justification d'une durée dépassant quatre ans: Accord-Cadre à bons de commande conclu au titre des articles L2125-1 1o, R2162-1 à R2162-6 et des articles R2162-13 et R 2162-14 du Code de la commande publique"@fr .
+
+epd:id_2021-S-077-197339_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/72223000> .
+
+epd:id_2021-S-077-197339_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-077-197339_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription "Le GIE SESAM-Vitale souhaite obtenir une assistance technique faisant appel à des compétences et des savoir-faire en analyse fonctionnelle, architecture fonctionnelle et en expertise métier en vue de réaliser un ensemble de prestations d'études fonctionnelles. Ces prestations s'inscrivent dans les phases amont du cycle de vie des projets, en particulier dans: — les phases d'avant-projet: expertise métier, rapport d'études fonctionnelles, — les phases de définition: réalisation de cahiers des charges, spécifications fonctionnelles générales, maquettage, document de mise en œuvre. Ces prestations peuvent s'inscrire dans le cadre de projets gérés en cycle en V ou selon une méthodologie agile. Ces études concernent les domaines fonctionnels suivants: — les conditions d'exercice des professionnels de santé (médecine de ville, établissements de santé, télémédecine, prescriptions, DMP, etc.), — les processus d'identifications des professionnels de santé et des bénéficiaires de soins, — les processus de facturation liés à l'assurance maladie obligatoire et complémentaire (parcours de soin, tarification, nomenclatures, norme B2…), — les processus amont (prise en charge…) et aval (liquidation…) associés, — la gestion et l'accès des contrats d'assurance maladie obligatoire et complémentaire, des droits et des garanties associés, — la gestion des supports (cartes à puce, application mobile): délivrance et cycle de vie, — le suivi décisionnel, — l'administration et la supervision «métier». Le marché est passé sous la forme d'une procédure avec négociation au sens des articles L. 2124-1, L. 2124-3, R. 2124-3, R. 2142-17 et R. 2161-12 à R. 2161-20 du code de la commande publique."@fr;
+  epo:hasPurpose epd:id_2021-S-077-197339_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-077-197339_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-077-197339_MediatorOrganisationAddress_4Z4veE2PHRh5zv62ATRwnh a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "44000";
+  locn:postName "Nantes";
+  locn:thoroughfare "8 rue de Chateaubriand" .
+
+epd:id_2021-S-077-197339_MediatorOrganisation_4Z4veE2PHRh5zv62ATRwnh a org:Organization;
+  epo:hasLegalName "Comité consultatif interrégional de règlement amiable des différents ou litiges relatifs aux marchés publics"@fr;
+  cccev:registeredAddress epd:id_2021-S-077-197339_MediatorOrganisationAddress_4Z4veE2PHRh5zv62ATRwnh .
+
+epd:id_2021-S-077-197339_Mediator_4Z4veE2PHRh5zv62ATRwnh a epo:Mediator;
+  epo:playedBy epd:id_2021-S-077-197339_MediatorOrganisation_4Z4veE2PHRh5zv62ATRwnh .
+
+epd:id_2021-S-077-197339_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-077-197339_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-077-197339_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2021-S-077-197339_Mediator_4Z4veE2PHRh5zv62ATRwnh,
+    epd:id_2021-S-077-197339_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2021-S-077-197339_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2021-S-077-197339_Reviewer_Sc23ScTxybJ3bYD3QjmgGS;
+  epo:hasDispatchDate "2021-04-16"^^xsd:date;
+  epo:hasID epd:id_2021-S-077-197339_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210421";
+  epo:refersToLot epd:id_2021-S-077-197339_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2021-S-077-197339_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2021-S-077-197339_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 077-197339" .
+
+epd:id_2021-S-077-197339_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRG04>;
+  locn:postCode "72019";
+  locn:postName "Le Mans Cedex 2";
+  locn:thoroughfare "5 boulevard Marie-et-Alexandre-Oyon" .
+
+epd:id_2021-S-077-197339_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalTypeDescription "Maîtrise d'œuvre, opérateur de solutions et dispositif essentiel du déploiement des services de l'Assurance maladie via les industriels fournisseurs de solutions aux professionnels de santé.";
+  epo:hasLegalName "GIE SESAM-Vitale"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2021-S-077-197339_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-077-197339_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "PAN-21-05" .
+
+epd:id_2021-S-077-197339_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/72223000> .
+
+epd:id_2021-S-077-197339_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-077-197339_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation "L'article R. 2132-1 du code de la commande publique impose, au moment de la publication de l'avis d'appel public à la concurrence, de mettre à disposition des opérateurs économiques, l'ensemble des documents de la consultation, décrivant à la fois son besoin et les modalités de passation et d'exécution de la procédure. Les informations fournies à ce titre doivent être suffisamment précises pour permettre à ces derniers de déterminer la nature et l'étendue du besoin et de décider de demander ou non à participer à la procédure. Les candidatures sont transmises par voie électronique dans les conditions définies par les articles L. 2132-2, L. 2332-2, R. 2132-2, R. 2132-2, R .2132-3 et R. 2132-7 à R. 2132-10 du code de la commande publique, à l'adresse suivante: https://meoss.achatpublic.com - Référence publique: Pan-21-05 (modalités d'inscription, de transmission des plis et une aide technique à l'utilisation de la salle des marchés sont disponibles sur le site précité). La liste des formats autorisés pour la transmission électronique des candidatures est la suivante: Acrobat Reader, Microsoft Word et Excel. Le GIE SESAM-Vitale utilisera un anti-virus sur tous les documents électroniques des candidats. En cas de dépôt de plusieurs candidatures par un même candidat, seul le dernier dépôt en date sera ouvert et pris en compte. Copie de sauvegarde: les candidats ont la possibilité de fournir, au pouvoir adjudicateur, dans les délais impartis pour la remise des candidatures, une copie de sauvegarde sur support physique électronique ou sur support papier. Cette copie de sauvegarde doit alors être placée dans un pli scellé comportant la mention lisible «Copie de sauvegarde». Elle peut être: — soit déposée, contre récépissé, du lundi au vendredi (de 09h00 à 12h00 et de 14h00 à 17h00, sauf jours fériés) à l'adresse suivante: GIE SESAM-Vitale, 5 boulevard Marie-et-Alexandre-Oyon, 72019 le Mans Cedex 2, — soit envoyée à la même adresse par lettre/colis recommandés avec accusé de réception. En cas d'acheminement par un tiers, le candidat fait son affaire des frais de transport et d'assurance des prestations. Les indications suivantes doivent être apportées de manière apparente sur les enveloppes et/ou colis contenant la candidature: Pan-21-05- Candidature — copie de sauvegarde. La copie de sauvegarde peut être ouverte par le pouvoir adjudicateur dans les hypothèses suivantes: — si la candidature transmise par voie électronique présente un programme informatique malveillant détecté par le pouvoir adjudicateur, — si la candidature transmise par voie électronique n'a pu être ouverte par le pouvoir adjudicateur."@fr;
+  epo:hasDescription "Le marché a pour objet de réaliser des études sur des avant-projets, des cahiers des charges, des spécifications fonctionnelles générales, des analyses d'impacts ou des expertises. Il doit permettre au GIE SESAM-Vitale de disposer d'une assistance technique en analyse fonctionnelle, en architecture fonctionnelle, et en expertise métier dans le cadre d'études préalables ou de définition."@fr;
+  epo:hasID epd:id_2021-S-077-197339_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-077-197339_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2021-S-077-197339_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Assistance technique études fonctionnelles"@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-077-197339_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2021-S-077-197339_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw, epd:id_2021-S-077-197339_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf,
+    epd:id_2021-S-077-197339_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
+  epo:usesTechnique epd:id_2021-S-077-197339_FrameworkAgreementTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2021-S-077-197339_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-077-197339_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-077-197339_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-077-197339_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "72019";
+  locn:postName "Le Mans Cedex 2";
+  locn:thoroughfare "Pour le TA, 6 allée de l'Île-gloriette, BP 24111, F-44041 Nantes Cedex, e-mail: greffe.ta-nantes@juradm.fr - tél.: +33 255101002, fax: +33 255101003; pour la DAJ du GIE SESAM-Vitale, 5 boulevard Marie-et-Alexandre-Oyon" .
+
+epd:id_2021-S-077-197339_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  epo:hasFax "+33 243235429";
+  cccev:email "Secretariatsecg@sesam-vitale.fr";
+  cccev:telephone "+33 243574202" .
+
+epd:id_2021-S-077-197339_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "Greffe du tribunal administratif de nantes ou direction des affaires juridiques du GIE SESAM-Vitale"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-077-197339_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2021-S-077-197339_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2021-S-077-197339_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-077-197339_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2021-S-077-197339_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Les candidats ont la faculté d'introduire un référé précontractuel depuis le début de la procédure de passation jusqu'à la signature du marché en application de l'article L. 551.1 du code de justice administrative. Les tiers au marché sans considération de leur qualité ont la faculté d'introduire un référé en contestation de la validité du marché dans un délai de deux mois à compter de la publication de l'avis d'attribution." .
+
+epd:id_2021-S-077-197339_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasFax "+33 255101003";
+  cccev:email "Greffe.ta-nantes@juradm.fr";
+  cccev:telephone "+33 55101002" .
+
+epd:id_2021-S-077-197339_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "44041";
+  locn:postName "Nantes Cedex";
+  locn:thoroughfare "6 allée de l'Île-Gloriette, BP 24111" .
+
+epd:id_2021-S-077-197339_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Nantes"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-077-197339_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2021-S-077-197339_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2021-S-077-197339_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-077-197339_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2021-S-077-197339_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "http://Meoss.achatpublic.com"^^xsd:anyURI .

@@ -1,0 +1,221 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-160-330449_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://marches.maximilien.fr/index.php?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=285563&orgAcronyme=a8z"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-160-330449_AwardCriterionPrice_i3DfK3H4UywvSXp2C2Vary a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "40"@fr .
+
+epd:id_2017-S-160-330449_AwardCriterionQuality_iU9jCEAWGn5xUqEcaXsqsJ a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Valeur technique"@fr;
+  cccev:weight "60"@fr .
+
+epd:id_2017-S-160-330449_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasBuyerProfile "http://www.maximilien.fr"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-160-330449_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2017-S-160-330449_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2017-S-160-330449_Channel_Zfp5YfoNfJomE833qJVsZY a cccev:Channel;
+  epo:hasURL "https://marches.maximilien.fr/index.php?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=285563&orgAcronyme=a8z"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2017-S-160-330449_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "M. le président du conseil départemental du Val-de-Marne"@fr;
+  epo:hasInternetAddress "http://www.valdemarne.fr"^^xsd:anyURI;
+  cccev:email "sdm@valdemarne.fr" .
+
+epd:id_2017-S-160-330449_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress """
+                  Principalement dans le département du Val-de-Marne.
+               """@fr .
+
+epd:id_2017-S-160-330449_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR107>;
+  locn:address epd:id_2017-S-160-330449_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2017-S-160-330449_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractDuration epd:id_2017-S-160-330449_Duration_AvcCuw3xpUXoTAF29u4PAa;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-160-330449_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions false .
+
+epd:id_2017-S-160-330449_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2017-S-160-330449_Duration_AvcCuw3xpUXoTAF29u4PAa a epo:SpecificDuration;
+  time:numericDuration 48.0;
+  time:unitType time:unitMonth .
+
+epd:id_2017-S-160-330449_FrameworkAgreementTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw a
+    epo:FrameworkAgreementTechniqueUsage .
+
+epd:id_2017-S-160-330449_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw a epo:FrameworkAgreementTerm .
+
+epd:id_2017-S-160-330449_LotIdentifier_oEYZZQWPrbQFajcRU6KZAY a epo:Identifier;
+  epo:hasIdentifierValue "2" .
+
+epd:id_2017-S-160-330449_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/63510000>, <http://data.europa.eu/cpv/cpv/79997000> .
+
+epd:id_2017-S-160-330449_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-160-330449_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasAdditionalInformation """
+                  Montants annuels: mini 125 000 EUR HT et maxi 500 000 EUR HT. Pour la première et la dernière période d'exécution, montants rapportés au prorata temporis de la période exécutée. Les prix du marché, sont fixes jusqu'au 31.12.2018, puis révisables au 1er janvier de chaque année. Réel N-1 est de: 254 217 EUR HT.
+               """@fr;
+  epo:hasDescription """
+                  Il s'agit d'un accord-cadre à bons de commande, relatif à des prestations d'agence de voyages (Titres de transport, réservation hôtelière et autres prestations). Il prendra effet à compter de sa date de notification, au plus tôt le 25.11.2017, jusqu'au 31.12.2018.
+               """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-160-330449_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasID epd:id_2017-S-160-330449_LotIdentifier_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2017-S-160-330449_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasTitle """
+                  Prestation d'agence de voyages (Titres de transport, réservation hôtelière et autres prestations)
+               """@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-160-330449_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-160-330449_AwardCriterionPrice_i3DfK3H4UywvSXp2C2Vary,
+    epd:id_2017-S-160-330449_AwardCriterionQuality_iU9jCEAWGn5xUqEcaXsqsJ .
+
+epd:id_2017-S-160-330449_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:MonetaryValue;
+  epo:hasAmountValue 1120000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-160-330449_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
+  epo:hasAmountValue 1120000.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2017-S-160-330449_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
+
+epd:id_2017-S-160-330449_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2017-S-160-330449_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2017-S-160-330449_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2017-S-160-330449_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
+    epd:id_2017-S-160-330449_Reviewer_Sc23ScTxybJ3bYD3QjmgGS;
+  epo:hasDispatchDate "2017-08-21"^^xsd:date;
+  epo:hasID epd:id_2017-S-160-330449_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasPublicationDate "20170823";
+  epo:refersToLot epd:id_2017-S-160-330449_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2017-S-160-330449_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2017-S-160-330449_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 160-330449" .
+
+epd:id_2017-S-160-330449_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR107>;
+  locn:postCode "94054";
+  locn:postName "Créteil Cedex";
+  locn:thoroughfare "Direction de la logistique" .
+
+epd:id_2017-S-160-330449_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
+  epo:hasLegalName "Département du Val-de-Marne"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  cccev:registeredAddress epd:id_2017-S-160-330449_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2017-S-160-330449_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "DL-2017-15" .
+
+epd:id_2017-S-160-330449_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79997000> .
+
+epd:id_2017-S-160-330449_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c a epo:ProcedureTerm;
+  epo:hasLotAwardCombination """
+                  Néant.
+               """;
+  epo:isOneLotOnlyAllowed true .
+
+epd:id_2017-S-160-330449_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-160-330449_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation """
+               Le pouvoir adjudicateur ne souhaite imposer aucune forme de groupement à l'attributaire de l'accord-cadre.
+               Les modalités de remise des offres sont spécifiées au règlement de la consultation (art 6): la consultation des avis, le retrait des DCE et le dépôt des questions éventuelles ainsi que des offres par voie électronique sont obligatoires sur le site www.valdemarne.fr/marches-publics ou depuis le portail Maximilien (http://www.maximilien.fr), plate-forme des marchés publics franciliens ou depuis l'adresse URL des adresses complémentaires. La transmission des plis, obligatoire par voie électronique, s'effectue conformément à la directive 2014/24/CE du Parlement européen et du Conseil du 26.2.2014 et aux articles 38 à 42 du décret n° 2016-360 du 25.3.2016 relatif aux marchés publics, sauf copie de sauvegarde (le cas échéant). Cette copie de sauvegarde devra parvenir par tous moyens permettant de déterminer de façon certaine la date et l'heure de sa réception et d'en garantir la confidentialité. Pour son envoi postal: Conseil départemental du Val-de-Marne, direction des Finances et des Marchés, service des Marchés, (ouvert du lundi au vendredi de 9:00 à 12:00 et de 14:00 à 16:00). Immeuble Thalès-Bureau 156-1er étage au 25 rue Olof Palme à Créteil (94000). La transmission des plis électroniques s'effectue conformément à la directive 2014/24/CE du Parlement européen et du Conseil du 26.2.2014 et aux articles 38 à 42 du décret n° 2016-360 du 25.3.2016 relatif aux marchés publics, «Avant la date limite des remises des plis. Chaque pli portera la mention suivante: “Copie de sauvegarde-Ne pas ouvrir, marché relatif à des” prestation d'agence de voyages (Titres de transport, réservation hôtelière et autres prestations)», ainsi que le nom de la société expéditrice.
+               Par ailleurs, dans le cadre de la dématérialisation de la facture et conformément à la règlementation en vigueur, à compter du 1.1.2017, les factures électroniques peuvent être déposées par l'entreprise attributaire sur le portail chorus Pro: https://chorus-pro.gouv.fr
+               Conformément à la nouvelle règlementation des marchés publics, cet accord-cadre correspond à un lot qui fait l'objet d'une procédure de mise en concurrence distincte d'un deuxième lot relatif à des prestations de réservation-billetterie de transport ferroviaire pour la DPEJ. Du fait de contraintes calendaires externes au Département, il n'a pas été possible de rassembler les procédures.
+               Pour évaluer ses garanties techniques financières et ses capacités professionnelles, le candidat individuel, ou les membres du groupement, en cas de candidature groupée, produira une lettre de candidature (DC1) et une déclaration du candidat (DC2, un formulaire pour chacun des membres du groupement). Le candidat individuel ou chacun des membres du groupement, fournira également, en annexe du DC2, les éléments demandés par le pouvoir adjudicateur dans le règlement de la consultation (art. 5 du RC). Les DC1 et DC2 sont disponibles sur le site: http://www.economie.gouv.fr/daj/formulaires-declaration-candidat. Ils peuvent également être établis sur papier libre. Le Département accepte en lieu et place des DC1 et DC2, le Document unique de marché européen (DUME), accompagné des éléments demandés au règlement de la consultation. La réponse est électronique, mais la signature n'est plus requise lors du dépôt, et sera demandée à postériori à la seule entreprise retenue.
+            """@fr;
+  epo:hasDescription """
+               Le présent marché à pour objet de faire appel à un prestataire qui assurera, pour le compte du département, l'achat et la livraison de titres de transports aériens et ferroviaires, ainsi que la fourniture de toutes les prestations qui y sont associées (location de véhicules, réservation de chambres d'hôtel avec petits déjeuners). La valeur estimée ci-dessous s'entend pour toute la durée reconductions comprises. Cette valeur est donnée à titre indicatif et n'est pas contractuelle.
+            """@fr;
+  epo:hasEstimatedValue epd:id_2017-S-160-330449_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasID epd:id_2017-S-160-330449_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-160-330449_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2017-S-160-330449_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle """
+               Prestation d'agence de voyages (Titres de transport, réservation hôtelière et autres prestations).
+            """@fr;
+  epo:isCoveredByGPA true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-160-330449_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2017-S-160-330449_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw, epd:id_2017-S-160-330449_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c,
+    epd:id_2017-S-160-330449_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
+  epo:usesChannel epd:id_2017-S-160-330449_Channel_Zfp5YfoNfJomE833qJVsZY;
+  epo:usesTechnique epd:id_2017-S-160-330449_FrameworkAgreementTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2017-S-160-330449_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-160-330449_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2017-S-160-330449_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2017-S-160-330449_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "77008";
+  locn:postName "Melun Cedex";
+  locn:thoroughfare "43 rue du Général de Gaulle — case postale 8630" .
+
+epd:id_2017-S-160-330449_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP
+  a cccev:ContactPoint;
+  epo:hasFax "+33 160566610";
+  cccev:telephone "+33 160566630" .
+
+epd:id_2017-S-160-330449_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP
+  a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Melun"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-160-330449_ReviewProcedureInformationProviderContactPoint_9rUrzw8RCjgmc7dEceJsAP;
+  cccev:registeredAddress epd:id_2017-S-160-330449_ReviewProcedureInformationProviderAddress_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2017-S-160-330449_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-160-330449_ReviewProcedureInformationProviderOrganisation_9rUrzw8RCjgmc7dEceJsAP .
+
+epd:id_2017-S-160-330449_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasFax "+33 160566610";
+  cccev:telephone "+33 160566630" .
+
+epd:id_2017-S-160-330449_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "77008";
+  locn:postName "Melun Cedex";
+  locn:thoroughfare "43 rue du Général de Gaulle — case postale 8630" .
+
+epd:id_2017-S-160-330449_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Tribunal administratif de Melun"@fr;
+  epo:hasPrimaryContactPoint epd:id_2017-S-160-330449_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2017-S-160-330449_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2017-S-160-330449_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-160-330449_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2017-S-160-330449_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://marches.maximilien.fr/index.php?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=285563&orgAcronyme=a8z"^^xsd:anyURI .

@@ -1,0 +1,164 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-065-166982_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.evergabe.nrw.de/VMPSatellite/notice/CXPNY5YD4CK/documents"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-065-166982_AwardCriterionCost_LZXPc54dghndgUKmLLkWYh a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Honorarangebot"@de;
+  cccev:weight "50 %"@de .
+
+epd:id_2021-S-065-166982_AwardCriterionQuality_SCcNgmEndqqZvfw98H8z7v a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Präsentation"@de;
+  cccev:weight "30 %"@de .
+
+epd:id_2021-S-065-166982_AwardCriterionQuality_aDam54DqENHigUj4DJyHNL a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Konzeptpapier"@de;
+  cccev:weight "20 %"@de .
+
+epd:id_2021-S-065-166982_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-065-166982_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-065-166982_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-065-166982_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoint;
+  epo:hasContactName "Einkauf Bau/FM"@de;
+  epo:hasInternetAddress "https://www.ukbonn.de/"^^xsd:anyURI;
+  cccev:email "baueinkauf@ukbonn.de" .
+
+epd:id_2021-S-065-166982_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
+  locn:fullAddress "Universitätsklinikum Bonn AöR Venusberg-Campus 1 53127 Bonn"@de .
+
+epd:id_2021-S-065-166982_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA22>;
+  locn:address epd:id_2021-S-065-166982_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
+
+epd:id_2021-S-065-166982_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-065-166982_Period_oEYZZQWPrbQFajcRU6KZAY;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-065-166982_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasOptions true;
+  epo:hasOptionsDescription "Der Abruf der Leistungsphasen 9 wird ggf. optional erfolgen.Die Beauftragung weitere Leistungsphasen zur Planung (Lph. 5-6 gem. HOAI) behält sich der AG vor."@de .
+
+epd:id_2021-S-065-166982_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-065-166982_LotPurpose_oEYZZQWPrbQFajcRU6KZAY a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71000000>, <http://data.europa.eu/cpv/cpv/71221000>,
+    <http://data.europa.eu/cpv/cpv/71300000>, <http://data.europa.eu/cpv/cpv/71320000>,
+    <http://data.europa.eu/cpv/cpv/71321000> .
+
+epd:id_2021-S-065-166982_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-065-166982_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasDescription "Leistungen der TGA Planung für:KG 410 Bauwerk — technische Anlagen (Abwasser, Wasser, Gas)KG 420 Bauwerk — technische Anlagen (Wärmeversorgung)KG 430 Bauwerk — technische Anlagen (Lufttechnische Anlagen)KG 470 Bauwerk — technische Anlagen (Nutzungsspezifische Anlagen)KG 480 Bauwerk — technische Anlagen (Gebäudeautomation)Leistungsbild in Anlehnung an die Regelungen der HOAI (§ 55 Abs. 1 HOAI 2020)Leistungsphasen 7 — 9 (teilw. 5-6)"@de;
+  epo:hasEstimatedValue epd:id_2021-S-065-166982_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2021-S-065-166982_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-065-166982_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-065-166982_AwardCriterionCost_LZXPc54dghndgUKmLLkWYh,
+    epd:id_2021-S-065-166982_AwardCriterionQuality_SCcNgmEndqqZvfw98H8z7v, epd:id_2021-S-065-166982_AwardCriterionQuality_aDam54DqENHigUj4DJyHNL .
+
+epd:id_2021-S-065-166982_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-065-166982_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
+  epo:hasAmountValue 1.0;
+  epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-065-166982_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-065-166982_Notice a epo:Notice, epo:ResultNotice;
+  epo:announcesRole epd:id_2021-S-065-166982_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2021-S-065-166982_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
+    epd:id_2021-S-065-166982_Reviewer_Sc23ScTxybJ3bYD3QjmgGS;
+  epo:hasDispatchDate "2021-03-31"^^xsd:date;
+  epo:hasID epd:id_2021-S-065-166982_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasPublicationDate "20210402";
+  epo:refersToLot epd:id_2021-S-065-166982_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:refersToProcedure epd:id_2021-S-065-166982_Procedure_THKQ4fNuRdgBWJVgrGgi3c .
+
+epd:id_2021-S-065-166982_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 065-166982" .
+
+epd:id_2021-S-065-166982_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA22>;
+  locn:postCode "53127";
+  locn:postName "Bonn";
+  locn:thoroughfare "Venusberg-Campus 1" .
+
+epd:id_2021-S-065-166982_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
+  epo:hasLegalName "Universitätsklinikum Bonn AöR"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
+  cccev:registeredAddress epd:id_2021-S-065-166982_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-065-166982_Period_oEYZZQWPrbQFajcRU6KZAY a epo:Period;
+  epo:hasBeginning "2021-08-06"^^xsd:date;
+  epo:hasEnd "2024-09-04"^^xsd:date .
+
+epd:id_2021-S-065-166982_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
+  epo:hasIdentifierValue "2020-037-736" .
+
+epd:id_2021-S-065-166982_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71221000> .
+
+epd:id_2021-S-065-166982_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-065-166982_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasAdditionalInformation "Bekanntmachungs-ID: CXPNY5YD4CK"@de;
+  epo:hasDescription "Das Projekt Herzzentrum stellt den 1. Bauabschnitt des Zentralklinikums auf dem Campusgelände des Venusberg dar. Das Zentralklinikum stellt die Vollendung der baulich-funktionellen Entwicklung der Krankenversorgung dar und baut auf den beiden vorangehenden Großprojekten der Krankenversorgung (Neubauten NPP und ELKI) auf. Erst mit Realisierung des Zentralklinikums wird es möglich, die Leistungsausweitung voll zu erreichen und die Einsparungen im Betrieb zu generieren, damit ein modernes Klinikum der Maximalversorgung dauerhaft kostendeckend betrieben werden kann.Als erste Baustufe soll ein Herzzentrum, welches die Innere Medizin II (Kardiologie) und Herzchirurgie mit integrierter Notfallradiologie mit einer geplanten Fläche von 14 283 m2 NF. realisiert werden. Die in der HU-Bau eingereichten Baukosten betragen derzeit 85 495 926,76 EUR brutto. Die Planungsphasen 1-4 sind derzeit damit bereits abgeschlossen. Derzeit befindet sich das Projekt teilweise in der LPH 5, teilweise in der LPH 6 und teilweise bereits in der LPH 8 (Tiefbauplanung). Das Projekt wird aus Zeitgründen in baubegleitender Planung realisiert.Aus dem bestehenden Generalplanungsvertrag sollen die optional enthaltenen Leistungen der Leistungsphasen 7-9 nicht abgerufen werden. Zur Errichtung des Gebäudes sind diese Leistungen jedoch notwendig.Mit dieser Ausschreibung sollen die TGA Planungsleistungen der Anlagengruppen 1, 2, 3, 7 und 8 der LPH 7-9 und teilweise 5-6 im Rahmen eines Verhandlungsverfahrens mit vorgeschaltetem Teilnahmewettbewerb vergeben werden."@de;
+  epo:hasEstimatedValue epd:id_2021-S-065-166982_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasID epd:id_2021-S-065-166982_ProcedureIdentifier_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-065-166982_Lot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:hasPurpose epd:id_2021-S-065-166982_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasTitle "Neubau Herzzentrum, TGA Planungsleistungen der Anlagengruppen 1, 2, 3, 7 und 8 Lph. 7-9 (tlw. 5-6)"@de;
+  epo:isCoveredByGPA false;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-065-166982_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
+    epd:id_2021-S-065-166982_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2021-S-065-166982_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2021-S-065-166982_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-065-166982_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
+  epo:playedBy epd:id_2021-S-065-166982_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
+
+epd:id_2021-S-065-166982_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Es wird auf die im § 160 Abs. 3 Nr. 4 GWB dargestellte Frist von 15 Kalendertagen nach Eingang der Mitteilungdes Auftraggebers, einer Rüge nicht abhelfen zu wollen, verwiesen." .
+
+epd:id_2021-S-065-166982_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS a cccev:ContactPoint;
+  epo:hasFax "+49 2211472889";
+  cccev:telephone "+49 2211473116" .
+
+epd:id_2021-S-065-166982_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "50606";
+  locn:postName "Köln" .
+
+epd:id_2021-S-065-166982_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organization;
+  epo:hasLegalName "Vergabekammer Rheinland bei der Bezirksregierung Köln Spruchkörper Köln"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-065-166982_ReviewerContactPoint_Sc23ScTxybJ3bYD3QjmgGS;
+  cccev:registeredAddress epd:id_2021-S-065-166982_ReviewerOrganisationAddress_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2021-S-065-166982_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-065-166982_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
+
+epd:id_2021-S-065-166982_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.evergabe.nrw.de/VMPSatellite/notice/CXPNY5YD4CK"^^xsd:anyURI .
