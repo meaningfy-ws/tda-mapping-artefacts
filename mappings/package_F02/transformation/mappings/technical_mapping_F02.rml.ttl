@@ -1658,6 +1658,47 @@ tedm:ProcedureTerm a rr:TriplesMap ;
             rml:iterator "/TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT" ;
             rml:referenceFormulation ql:XPath
         ] .
+
+tedm:SubmissionPeriod  a rr:TriplesMap ;
+    rml:logicalSource
+        [
+            rml:source "data/source.xml" ;
+            rml:iterator "/TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE" ;
+            rml:referenceFormulation ql:XPath
+        ] ;
+    rr:subjectMap
+        [
+            rml:reference
+                "if(exists(DATE_TENDER_VALID) or exists(DURATION_TENDER_VALID) or exists(DURATION_TENDER_VALID/@TYPE)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_SubmissionPeriod_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+            rr:class epo:Period
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasEnd;
+            rr:objectMap
+                [
+                    rml:reference "DATE_TENDER_VALID";
+                    rr:datatype xsd:date
+                ]
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasDescription;
+            rr:objectMap
+                [
+                    rml:reference "DURATION_TENDER_VALID";
+                    rr:datatype xsd:string
+                ]
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasTimePeriod;
+            rr:objectMap
+                [
+                    rml:reference "DURATION_TENDER_VALID/@TYPE";
+                ]
+        ] .
+
 tedm:SubmissionTerm a rr:TriplesMap ;
     rr:subjectMap
         [
@@ -1670,6 +1711,18 @@ tedm:SubmissionTerm a rr:TriplesMap ;
             rml:source "data/source.xml" ;
             rml:iterator "/TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE" ;
             rml:referenceFormulation ql:XPath
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasValidityPeriod ;
+            rr:objectMap
+                [
+                    rr:parentTriplesMap tedm:SubmissionPeriod;
+                    rr:joinCondition [
+                        rr:child "path(.)";
+                        rr:parent "path(.)";
+                    ];
+                ] ;
         ] .
 # controlled values
 tedm:contractNature  a rr:TriplesMap ;
