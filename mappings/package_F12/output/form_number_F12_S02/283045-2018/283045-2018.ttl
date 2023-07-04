@@ -35,6 +35,17 @@ epd:id_2018-S-124-283045_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Lo
 epd:id_2018-S-124-283045_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2018-S-124-283045_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
 
+epd:id_2018-S-124-283045_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR a epo:Prize;
+  epo:hasFollowupContract true .
+
+epd:id_2018-S-124-283045_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR a epo:DesignContestRegimeTerm;
+  epo:definesPrize epd:id_2018-S-124-283045_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR;
+  epo:hasFollowupContract true;
+  epo:hasJuryDecisionBinding true;
+  epo:hasParticipationPayment """
+               Mezi ostatní neoceněné účastníky, jejichž soutěžní návrh nebude zadavatelem v průběhu posuzování vyloučen ze soutěže, může být rozdělena částka 240 000 CZK.
+            """ .
+
 epd:id_2018-S-124-283045_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
     cccev:ContactPoint;
   epo:hasContactName "PhDr. Markéta Pražanová"@cs;
@@ -69,6 +80,7 @@ epd:id_2018-S-124-283045_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
                   Předmětem soutěže je zpracování architektonického návrhu řešení novostavby sportovní haly s venkovním sportovištěm v blízkosti Základní školy M. Alše v Praze-Suchdole. Sportovní areál by měl sloužit zejména pro zajištění výuky tělovýchovy a sportu pro přilehlou základní školu a následně pro činnost sportovních a zájmových oddílů v Praze-Suchdole. Hala je určena pro sálové míčové sporty. Součástí řešení bude také návrh venkovního sportoviště, které má především sloužit pro atletiku, míčové hry, doplněné bude o horolezeckou stěnu. Zadavatel klade důraz na urbanistické začlenění nové haly do území, na řešení dopravní obslužnosti areálu a na energeticky efektivní řešení a kvalitu vnitřního prostředí haly.
                """@cs;
   epo:hasPurpose epd:id_2018-S-124-283045_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-124-283045_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
 epd:id_2018-S-124-283045_Notice a epo:Notice, epo:ResultNotice;

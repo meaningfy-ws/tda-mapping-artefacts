@@ -28,11 +28,23 @@ epd:id_2017-S-134-275113_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Lo
 epd:id_2017-S-134-275113_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2017-S-134-275113_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
 
+epd:id_2017-S-134-275113_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR a epo:Prize;
+  epo:hasFollowupContract true .
+
+epd:id_2017-S-134-275113_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR a epo:DesignContestRegimeTerm;
+  epo:definesPrize epd:id_2017-S-134-275113_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR;
+  epo:hasFollowupContract false;
+  epo:hasJuryDecisionBinding true;
+  epo:hasParticipationPayment """
+               Наградният фонд се изплаща на класираните участници не по-късно от 30 дни след приключване журирането на конкурса и влизане в сила на решението за класиране на Възложителя.
+            """ .
+
 epd:id_2017-S-134-275113_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2017-S-134-275113_ContractTermLot_k5UiCNjVxapva2MShsi99p;
   epo:hasDescription """
                   Цел на настоящия конкурс е да бъдат получени идейни решения, които да послужат за възлагане на обществена поръчка за избор на изпълнител по реда на чл. 79, ал. 1, т. 9 от ЗОП, на базата на резултатите от класирането на проектите. Изборът на идейния проект, който е в съответствие с изискванията, описани в настоящата конкурсна програма, следва да послужи за основа съдържаща изисквания към обема и съдържанието на бъдещия инвестиционен проект, включваща всичките му необходими части.
                """@bg;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-134-275113_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-134-275113_Notice a epo:Notice, epo:ResultNotice;

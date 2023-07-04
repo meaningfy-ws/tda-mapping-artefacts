@@ -56,6 +56,17 @@ epd:id_2017-S-041-075264_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Lo
 epd:id_2017-S-041-075264_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2017-S-041-075264_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
 
+epd:id_2017-S-041-075264_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR a epo:Prize;
+  epo:hasFollowupContract true .
+
+epd:id_2017-S-041-075264_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR a epo:DesignContestRegimeTerm;
+  epo:definesPrize epd:id_2017-S-041-075264_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR;
+  epo:hasFollowupContract true;
+  epo:hasJuryDecisionBinding false;
+  epo:hasParticipationPayment """
+30 jours à compter de la réception de la facture de la part des mandataires — règlement par mandat administratif.
+""" .
+
 epd:id_2017-S-041-075264_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
   epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71500000> .
 
@@ -65,6 +76,7 @@ epd:id_2017-S-041-075264_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
 Lot n° 1 MOE construction d'un foyer d'accueil et de soins de 42 places; lot n° 2 MOE construction d'un foyer de vie de 38 places; lot n° 3 MOE construction d'un foyer de vie de 15 places et d'un foyer d'hébergement de 20 places; lot n° 4 MOE construction d'un établissement et service d'aide par le travail de 43 places.
 """@fr;
   epo:hasPurpose epd:id_2017-S-041-075264_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-041-075264_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-041-075264_Notice a epo:Notice, epo:ResultNotice;

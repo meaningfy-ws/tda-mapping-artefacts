@@ -36,6 +36,18 @@ epd:id_2017-S-101-202331_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Lo
 epd:id_2017-S-101-202331_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2017-S-101-202331_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
 
+epd:id_2017-S-101-202331_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR a epo:Prize;
+  epo:hasFollowupContract true .
+
+epd:id_2017-S-101-202331_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR a epo:DesignContestRegimeTerm;
+  epo:definesPrize epd:id_2017-S-101-202331_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR;
+  epo:hasFollowupContract true;
+  epo:hasJuryDecisionBinding false;
+  epo:hasParticipationPayment """
+La prime versée au lauréat du concours constituera une avance sur le marché négocié de maîtrise d'oeuvre qui lui sera confié.
+La prime sera versée dans le délai de 30 jours qui suit la désignation du lauréat.
+""" .
+
 epd:id_2017-S-101-202331_Fund_k5UiCNjVxapva2MShsi99p a epo:Fund;
   epo:hasDescription "Fonds Europe."@fr .
 
@@ -49,6 +61,7 @@ Le concours porte sur la réalisation d'une esquisse plus préalable à la passa
 """@fr;
   epo:hasPurpose epd:id_2017-S-101-202331_LotPurpose_k5UiCNjVxapva2MShsi99p;
   epo:isFundedBy epd:id_2017-S-101-202331_Fund_k5UiCNjVxapva2MShsi99p;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-101-202331_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds true .
 
 epd:id_2017-S-101-202331_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs a cccev:ContactPoint;

@@ -97,6 +97,14 @@ epd:id_2017-S-191-391843_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Lo
 epd:id_2017-S-191-391843_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2017-S-191-391843_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
 
+epd:id_2017-S-191-391843_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR a epo:Prize;
+  epo:hasFollowupContract false .
+
+epd:id_2017-S-191-391843_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR a epo:DesignContestRegimeTerm;
+  epo:definesPrize epd:id_2017-S-191-391843_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR;
+  epo:hasFollowupContract true;
+  epo:hasJuryDecisionBinding false .
+
 epd:id_2017-S-191-391843_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
   epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/72000000> .
 
@@ -118,6 +126,7 @@ epd:id_2017-S-191-391843_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
                   Die (maximal) 15 ausgewählten Bewerber werden dann von der ARGE zum sog. Pitch aufgefordert. Die Aufforderung zum Pitch soll am 5.2.2018 abgesandt werden, die Frist zur Einreichung soll 4 Wochen betragen. Die Anforderungen an die mit dem Pitch einzureichenden Unterlagen, die dem Preisgericht (Jury) nach Ablauf der First für den Pitch in nicht-anonymisierter Form zur Verfügung gestellt werden, werden mit der Aufforderung zum Pitch mitgeteilt. Ebenfalls erfolgt mit der Aufforderung zum Pitch die Einladung zu einem persönlichen Präsentationstermin vor der Jury. Dieser ist Bestandteil des Pitches.
                """@de;
   epo:hasPurpose epd:id_2017-S-191-391843_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-191-391843_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-191-391843_Notice a epo:Notice, epo:ResultNotice;

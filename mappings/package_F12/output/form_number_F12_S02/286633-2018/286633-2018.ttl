@@ -55,6 +55,17 @@ epd:id_2018-S-125-286633_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Lo
 epd:id_2018-S-125-286633_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2018-S-125-286633_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
 
+epd:id_2018-S-125-286633_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR a epo:Prize;
+  epo:hasFollowupContract true .
+
+epd:id_2018-S-125-286633_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR a epo:DesignContestRegimeTerm;
+  epo:definesPrize epd:id_2018-S-125-286633_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR;
+  epo:hasFollowupContract false;
+  epo:hasJuryDecisionBinding true;
+  epo:hasParticipationPayment """
+               Die Teilnehmenden erhalten ein Bearbeitungshonorar von jeweils 2 500 EUR.
+            """ .
+
 epd:id_2018-S-125-286633_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
     cccev:ContactPoint;
   epo:hasContactName "KARO* architekten, Antje Heuer"@de;
@@ -94,6 +105,7 @@ epd:id_2018-S-125-286633_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
                   Ein Auftragsversprechen kann nicht erteilt werden. Der Ideenwettbewerb zielt auf die Lösung einer konzeptionellen Aufgabe, welche als Grundlage einer weiteren Entscheidungsfindung dienen soll.
                """@de;
   epo:hasPurpose epd:id_2018-S-125-286633_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-125-286633_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
 epd:id_2018-S-125-286633_Notice a epo:Notice, epo:ResultNotice;

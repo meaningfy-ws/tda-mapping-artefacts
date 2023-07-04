@@ -34,6 +34,14 @@ epd:id_2016-S-251-463218_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Lo
 epd:id_2016-S-251-463218_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2016-S-251-463218_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
 
+epd:id_2016-S-251-463218_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR a epo:Prize;
+  epo:hasFollowupContract true .
+
+epd:id_2016-S-251-463218_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR a epo:DesignContestRegimeTerm;
+  epo:definesPrize epd:id_2016-S-251-463218_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR;
+  epo:hasFollowupContract false;
+  epo:hasJuryDecisionBinding false .
+
 epd:id_2016-S-251-463218_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
   epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71221000> .
 
@@ -47,6 +55,7 @@ En outre, l'équipe ainsi composée devra dès le stade candidature obligatoirem
 Un architecte n'a pas la possibilité de présenter pour ce marché plusieurs candidatures en agissant en tant que membre de plusieurs groupements.
 """@fr;
   epo:hasPurpose epd:id_2016-S-251-463218_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-251-463218_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
 epd:id_2016-S-251-463218_Notice a epo:Notice, epo:ResultNotice;

@@ -35,6 +35,17 @@ epd:id_2018-S-039-085714_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Lo
 epd:id_2018-S-039-085714_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2018-S-039-085714_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
 
+epd:id_2018-S-039-085714_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR a epo:Prize;
+  epo:hasFollowupContract true .
+
+epd:id_2018-S-039-085714_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR a epo:DesignContestRegimeTerm;
+  epo:definesPrize epd:id_2018-S-039-085714_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR;
+  epo:hasFollowupContract true;
+  epo:hasJuryDecisionBinding false;
+  epo:hasParticipationPayment """
+               L'université allouera la prime à chacun des concurrents admis à la phase 2 du concours, qui ont remis des prestations conformes. Le jury se prononce, le cas échéant, sur la non-conformité des prestations remises et propose alors une éventuelle réduction de cette prime. Cette proposition lie l'université. L'attributaire recevra également cette prime qui viendra en déduction du montant de sa rémunération.
+            """ .
+
 epd:id_2018-S-039-085714_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
     cccev:ContactPoint;
   epo:hasContactName "Service achats marchés"@fr;
@@ -65,6 +76,7 @@ epd:id_2018-S-039-085714_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
                   — autres éléments de mission: ordonnancement pilotage coordination (OPC).
                """@fr;
   epo:hasPurpose epd:id_2018-S-039-085714_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-039-085714_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
 epd:id_2018-S-039-085714_MediatorContactPoint_eMEmZdeMkSWP9DfmobsFLs a cccev:ContactPoint;

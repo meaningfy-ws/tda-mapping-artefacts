@@ -34,6 +34,20 @@ epd:id_2017-S-132-270550_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Lo
 epd:id_2017-S-132-270550_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2017-S-132-270550_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
 
+epd:id_2017-S-132-270550_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR a epo:Prize;
+  epo:hasFollowupContract true .
+
+epd:id_2017-S-132-270550_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR a epo:DesignContestRegimeTerm;
+  epo:definesPrize epd:id_2017-S-132-270550_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR;
+  epo:hasFollowupContract true;
+  epo:hasJuryDecisionBinding true;
+  epo:hasParticipationPayment """
+               Razpisani odškodninski sklad je:
+               — odškodnine po 1 200 EUR.
+               Skupni znesek odškodninskega sklada je: 24 000 EUR.
+               V primeru, da bo podeljenih več kot 20 odškodnin se zneski ustrezno znižajo.
+            """ .
+
 epd:id_2017-S-132-270550_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
     cccev:ContactPoint;
   epo:hasFax "+386 12420680";
@@ -68,6 +82,7 @@ epd:id_2017-S-132-270550_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
                   Javni, projektni, odprti, anonimni, enostopenjski arhitekturno krajinski natečaj za izbiro strokovno najprimernejše rešitve in izbiro izdelovalca projektne dokumentacije za namen reševanja prostorske problematike Zavoda za prestajanje kazni zapora Ig na obstoječi lokaciji tega zavoda.
                """@sl;
   epo:hasPurpose epd:id_2017-S-132-270550_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-132-270550_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-132-270550_Notice a epo:Notice, epo:ResultNotice;

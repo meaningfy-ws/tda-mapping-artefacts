@@ -33,6 +33,17 @@ epd:id_2016-S-225-410290_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Lo
 epd:id_2016-S-225-410290_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2016-S-225-410290_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
 
+epd:id_2016-S-225-410290_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR a epo:Prize;
+  epo:hasFollowupContract true .
+
+epd:id_2016-S-225-410290_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR a epo:DesignContestRegimeTerm;
+  epo:definesPrize epd:id_2016-S-225-410290_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR;
+  epo:hasFollowupContract true;
+  epo:hasJuryDecisionBinding true;
+  epo:hasParticipationPayment """
+Die Erstellung der Bewerbungsunterlagen in der Stufe 1 (Präqualifikation) wird nicht vergütet. Für die Höhe der Preise für Stufe 2 (Planungswettbewerb) siehe Ziffer IV.3.1).
+""" .
+
 epd:id_2016-S-225-410290_InformationProviderContactPoint_ejikeUyHJRYBkbdZUxEu3Y a
     cccev:ContactPoint;
   epo:hasContactName "Drees & Sommer GmbH Stuttgart"@de;
@@ -57,6 +68,7 @@ epd:id_2016-S-225-410290_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
   epo:hasDescription """
 Die Stadtwerke Filderstadt planen einen neuen Betriebsstandort. Dieser soll in der Seestraße 15 in Sielmingen entstehen. Auf dem Grundstück ist eine Bestandsimmobilie vorhanden, welche abgebrochen werden muss. Es handelt sich um einen nicht-offenen Planungswettbewerb nach VgV/RPW 2013 mit vorgeschaltetem Präqualifikationsverfahren und nachgeschaltetem Verhandlungsverfahren. Der zu planende Neubau wird voraussichtlich eine BGF von ca. 2 100 m2 haben. Nach aktuellem Stand ist die Realisierung bis 2020 geplant.
 """@de;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-225-410290_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
 epd:id_2016-S-225-410290_Notice a epo:Notice, epo:ResultNotice;

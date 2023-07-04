@@ -28,6 +28,17 @@ epd:id_2017-S-084-164005_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Lo
 epd:id_2017-S-084-164005_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2017-S-084-164005_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
 
+epd:id_2017-S-084-164005_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR a epo:Prize;
+  epo:hasFollowupContract true .
+
+epd:id_2017-S-084-164005_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR a epo:DesignContestRegimeTerm;
+  epo:definesPrize epd:id_2017-S-084-164005_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR;
+  epo:hasFollowupContract true;
+  epo:hasJuryDecisionBinding false;
+  epo:hasParticipationPayment """
+Ces précisions seront données par le pouvoir adjudicateur dans le règlement du concours (phase « remise des prestations »).
+""" .
+
 epd:id_2017-S-084-164005_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
   epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71221000>, <http://data.europa.eu/cpv/cpv/71300000>,
     <http://data.europa.eu/cpv/cpv/71313000>, <http://data.europa.eu/cpv/cpv/71321100> .
@@ -44,6 +55,7 @@ La part de l'enveloppe financière affectée aux travaux par le maître de l'ouv
 Le présent concours est un concours sur esquisse.
 """@fr;
   epo:hasPurpose epd:id_2017-S-084-164005_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-084-164005_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-084-164005_Notice a epo:Notice, epo:ResultNotice;

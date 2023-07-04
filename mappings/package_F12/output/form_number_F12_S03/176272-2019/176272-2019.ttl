@@ -4,7 +4,15 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epd:id_2019-S-074-176272_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
@@ -45,6 +53,14 @@ epd:id_2019-S-074-176272_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p a dct:Lo
 epd:id_2019-S-074-176272_ContractTermLot_k5UiCNjVxapva2MShsi99p a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2019-S-074-176272_ContractTermLotLocation_k5UiCNjVxapva2MShsi99p .
 
+epd:id_2019-S-074-176272_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR a epo:Prize;
+  epo:hasFollowupContract true .
+
+epd:id_2019-S-074-176272_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR a epo:DesignContestRegimeTerm;
+  epo:definesPrize epd:id_2019-S-074-176272_DesignContestRegimeTermPrize_jzfUStbcPNEXArDM2fL5TR;
+  epo:hasFollowupContract true;
+  epo:hasJuryDecisionBinding false .
+
 epd:id_2019-S-074-176272_LotPurpose_k5UiCNjVxapva2MShsi99p a epo:Purpose;
   epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71200000> .
 
@@ -52,6 +68,7 @@ epd:id_2019-S-074-176272_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2019-S-074-176272_ContractTermLot_k5UiCNjVxapva2MShsi99p;
   epo:hasDescription "Désignation d'une équipe de maîtrise d'œuvre pour la réalisation de 100 logements et 1 200 m2 de locaux d'activités à rennes, ZAC Armorique."@fr;
   epo:hasPurpose epd:id_2019-S-074-176272_LotPurpose_k5UiCNjVxapva2MShsi99p;
+  epo:isSubjectToLotSpecificTerm epd:id_2019-S-074-176272_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
 epd:id_2019-S-074-176272_Notice a epo:Notice, epo:ResultNotice;
