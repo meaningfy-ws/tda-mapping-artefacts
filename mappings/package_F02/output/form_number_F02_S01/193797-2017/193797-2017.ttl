@@ -157,6 +157,7 @@ Protection juridique.
   epo:hasTitle """
 Protection juridique
 """@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-098-193797_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-098-193797_Lot_XgDjBcfYCsz7NdkrVQLYVX a epo:Lot;
@@ -173,6 +174,7 @@ Automobile et risques annexes.
   epo:hasTitle """
 Automobile et risques annexes
 """@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-098-193797_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-098-193797_Lot_hwn2ViGxdekSZaFD46S6bD a epo:Lot;
@@ -188,6 +190,7 @@ Assurance dommages aux biens.
   epo:hasTitle """
 Dommages aux biens et risques annexes
 """@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-098-193797_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-098-193797_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
@@ -203,6 +206,7 @@ Assurance responsabilité générale et risques annexes.
   epo:hasTitle """
 Responsabilité générale et risques annexes
 """@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-098-193797_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-098-193797_Notice a epo:Notice, epo:ResultNotice;
@@ -219,6 +223,9 @@ epd:id_2017-S-098-193797_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2017-S-098-193797_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2017/S 098-193797" .
+
+epd:id_2017-S-098-193797_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:hasOpeningDateTime "2017-07-06T10:00"^^xsd:dateTime .
 
 epd:id_2017-S-098-193797_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
@@ -285,11 +292,15 @@ Groupement de commandes de la Ville et du CCAS de Oignies dans le cadre d'un mar
     epd:id_2017-S-098-193797_Lot_XgDjBcfYCsz7NdkrVQLYVX, epd:id_2017-S-098-193797_Lot_hwn2ViGxdekSZaFD46S6bD,
     epd:id_2017-S-098-193797_Lot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasPurpose epd:id_2017-S-098-193797_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasRecurrenceDescription """
+Durée du marché 5 ans (60 mois) à compter du 1.1.2018, soit une fin au 31.12.2022.
+""";
   epo:hasTitle """
 Groupement de commandes de la Ville et du CCAS de Oignies dans le cadre d'un marché public de prestations de services en assurance.
 """@fr;
   epo:isCoveredByGPA true;
   epo:isJointProcurement true;
+  epo:isRecurrent true;
   epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-098-193797_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2017-S-098-193797_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2017-S-098-193797_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -342,8 +353,12 @@ epd:id_2017-S-098-193797_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2017-S-098-193797_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2017-S-098-193797_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2017-S-098-193797_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasEnd "2017-12-31"^^xsd:date .
+
 epd:id_2017-S-098-193797_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
-  epo:hasLanguage "FR" .
+  epo:hasLanguage "FR";
+  epo:hasValidityPeriod epd:id_2017-S-098-193797_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2017-S-098-193797_TenderReceiverOrganisationAddress_5gEXzR8qwWo7DYKmgnYdCd
   a locn:Address;

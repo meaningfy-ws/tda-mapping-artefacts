@@ -737,6 +737,7 @@ epd:id_2021-S-252-669548_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2021-S-252-669548_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasDescription "Предметът на обществената поръчка включва доставка на нетна активна електрическа енергия средно и нисконапрежение и изпълнение функциите на координатор на стандартна балансираща група за нуждите на Българскаакадемия на науките и още 37 самостоятелни звена на БАН.Обществената поръчка има за цел да бъде избран доставчик на електрическа енергия и координатор настандартна балансираща група, като се сключи договор за комбинирани услуги по смисъла на чл. 20 от Правилатаза търговия с електрическа енергия (ПТЕЕ).Доставката на електрическата енергия трябва да бъде в съответствие с действащите нормативни документи в РБългария: Закон за енергетиката (ЗЕ), Правилата за търговия с електрическа енергия (ПТЕЕ) и Правилата заизмерване на количествата електрическа енергия (ПИКЕЕ) и всички приложими нормативни разпоредби,уреждащи тази материя.Общият прогнозен разход на активна електрическа енергия, която Възложителят залага за срока на поръчката от 36 месеца е 47 580 MWh. Това прогнозно количество може както да не бъде достигнато по време на изпълнението на поръчката, така и да бъде надвишено. За повече информация виж приложената Техническа Спецификация за възлагане на поръчката."@bg;
   epo:hasEstimatedValue epd:id_2021-S-252-669548_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-252-669548_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2021-S-252-669548_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog .
 
@@ -780,6 +781,13 @@ epd:id_2021-S-252-669548_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2021-S-252-669548_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2021/S 252-669548" .
+
+epd:id_2021-S-252-669548_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  locn:fullAddress "В системата" .
+
+epd:id_2021-S-252-669548_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2021-S-252-669548_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR;
+  epo:hasOpeningDateTime "2022-01-31T15:00"^^xsd:dateTime .
 
 epd:id_2021-S-252-669548_OrganisationAddress_2db7Bw6wcib5huAUrbXrPu a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
@@ -1177,9 +1185,11 @@ epd:id_2021-S-252-669548_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
   epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-252-669548_Lot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasPurpose epd:id_2021-S-252-669548_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasRecurrenceDescription "След 36 месеца.";
   epo:hasTitle "„Доставка на активна електрическа енергия и изпълнение на функциите на координатор на стандартна балансираща група за нуждите на Българска академия на науките (БАН) и самостоятелни звена на БАН“."@bg;
   epo:isCoveredByGPA false;
   epo:isJointProcurement true;
+  epo:isRecurrent true;
   epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-252-669548_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2021-S-252-669548_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2021-S-252-669548_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -1235,9 +1245,14 @@ epd:id_2021-S-252-669548_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2021-S-252-669548_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2021-S-252-669548_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2021-S-252-669548_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "6";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2021-S-252-669548_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "BG";
-  epo:hasSubmissionURL "https://app.eop.bg/today/179204"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://app.eop.bg/today/179204"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2021-S-252-669548_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2021-S-252-669548_TenderReceiverOrganisationAddress_5gEXzR8qwWo7DYKmgnYdCd
   a locn:Address;

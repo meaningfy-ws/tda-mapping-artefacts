@@ -52,6 +52,7 @@ epd:id_2021-S-124-329824_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2021-S-124-329824_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasDescription "Abgehängte Decke aus verstärkten armierte Zementplatten zu Malen und perforierten Akustikplatten zu Malen."@de,
     "Faux-plafonds en plaques de ciment armé à peindre et en plaques de plâtre perforées acoustique à peindre."@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-124-329824_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false .
 
 epd:id_2021-S-124-329824_Notice a epo:Notice, epo:ResultNotice;
@@ -66,6 +67,15 @@ epd:id_2021-S-124-329824_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2021-S-124-329824_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2021/S 124-329824" .
+
+epd:id_2021-S-124-329824_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  locn:fullAddress "1950 Sion", "1950 Sion." .
+
+epd:id_2021-S-124-329824_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2021-S-124-329824_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR;
+  epo:hasOpeningDateTime "2021-08-10T13:45"^^xsd:dateTime;
+  epo:hasOpeningDescription "Lieu: Ville de Sion, bâtiment administratif, Rue de Lausanne 23, salle de conférences, 4e étage.",
+    "Ort: Ville de Sion, Bâtiment administratif, Rue de Lausanne 23, Salle de conférences, 4e étage" .
 
 epd:id_2021-S-124-329824_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CHE>;
@@ -95,6 +105,7 @@ epd:id_2021-S-124-329824_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasTitle "Erweiterung des Schulzentrums Champsec: Bau von neu Klassenzimmer, einer Doppelturnhalle mit Foyer und einer Einheit für ausserschulische Betreuung."@de,
     "Extension du centre scolaire de Champsec: construction de neuf nouvelles salles de classe, d'une salle de gymnastique double avec un foyer et d'une UAPE"@fr;
   epo:isCoveredByGPA true;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-124-329824_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2021-S-124-329824_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -116,8 +127,13 @@ epd:id_2021-S-124-329824_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2021-S-124-329824_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2021-S-124-329824_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2021-S-124-329824_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "12";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2021-S-124-329824_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
-  epo:hasLanguage "FR" .
+  epo:hasLanguage "FR";
+  epo:hasValidityPeriod epd:id_2021-S-124-329824_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2021-S-124-329824_TenderReceiverOrganisationAddress_5gEXzR8qwWo7DYKmgnYdCd
   a locn:Address;

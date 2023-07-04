@@ -68,7 +68,8 @@ Le délai d'exécution de la prestation annuelle de transport est de deux (2) mo
   epo:hasTitle """
 Prestation de transport par bus pour la saison estivale
 """@fr;
-  epo:isSubjectToLotSpecificTerm epd:id_2017-S-033-059661_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-033-059661_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY,
+    epd:id_2017-S-033-059661_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-033-059661_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:MonetaryValue;
@@ -112,6 +113,9 @@ epd:id_2017-S-033-059661_Notice a epo:Notice, epo:ResultNotice;
 epd:id_2017-S-033-059661_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2017/S 033-059661" .
 
+epd:id_2017-S-033-059661_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:hasOpeningDateTime "2017-04-03T09:00"^^xsd:dateTime .
+
 epd:id_2017-S-033-059661_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
   epo:hasNutsCode <http://data.europa.eu/nuts/code/FR825>;
@@ -153,11 +157,15 @@ Marché conclu pour 3 ans (2017, 2018, 2019). La durée d'exécution de la prest
   epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
   epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-033-059661_Lot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasPurpose epd:id_2017-S-033-059661_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasRecurrenceDescription """
+1er semestre 2020.
+""";
   epo:hasTitle """
 Prestation de transport par bus pour la saison estivale.
 """@fr;
   epo:isAccelerated true;
   epo:isCoveredByGPA true;
+  epo:isRecurrent true;
   epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-033-059661_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2017-S-033-059661_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2017-S-033-059661_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf,
     epd:id_2017-S-033-059661_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
@@ -207,9 +215,14 @@ epd:id_2017-S-033-059661_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2017-S-033-059661_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2017-S-033-059661_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2017-S-033-059661_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "3";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2017-S-033-059661_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasSubmissionURL "http://www.klekoon.com"^^xsd:anyURI .
+  epo:hasSubmissionURL "http://www.klekoon.com"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2017-S-033-059661_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2017-S-033-059661_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2017-S-033-059661_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

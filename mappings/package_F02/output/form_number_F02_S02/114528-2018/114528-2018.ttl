@@ -68,6 +68,7 @@ epd:id_2018-S-052-114528_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
                   S.S. 685 – Lavori di ripristino dei calcestruzzi del fornice della galleria Cesaronica (progetto esecutivo COD.: MS.AN.13.E.17.06; cod. SIL: ANMSSIS17014; cod. CUP: F67H17001460001)
                """@it;
   epo:isFundedBy epd:id_2018-S-052-114528_Fund_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-052-114528_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds true;
   epo:specifiesAwardCriterion epd:id_2018-S-052-114528_AwardCriterionPrice_i3DfK3H4UywvSXp2C2Vary,
     epd:id_2018-S-052-114528_AwardCriterionQuality_iU9jCEAWGn5xUqEcaXsqsJ .
@@ -87,6 +88,18 @@ epd:id_2018-S-052-114528_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2018-S-052-114528_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2018/S 052-114528" .
+
+epd:id_2018-S-052-114528_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  locn:fullAddress """
+                  ANAS S.p.A. – Direzione generale – Via Monzambano 10 – Roma.
+               """ .
+
+epd:id_2018-S-052-114528_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2018-S-052-114528_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR;
+  epo:hasOpeningDateTime "2018-04-17T10:00"^^xsd:dateTime;
+  epo:hasOpeningDescription """
+                  Chiunque può presenziare allo svolgimento della gara, ma soltanto i titolari o i rappresentanti legali dei concorrenti, o persone munite di procura dei medesimi, potranno effettuare dichiarazioni a verbale.
+               """ .
 
 epd:id_2018-S-052-114528_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
@@ -125,6 +138,7 @@ epd:id_2018-S-052-114528_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
             """@it;
   epo:isAccelerated true;
   epo:isCoveredByGPA false;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-052-114528_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2018-S-052-114528_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2018-S-052-114528_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -149,9 +163,14 @@ epd:id_2018-S-052-114528_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2018-S-052-114528_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2018-S-052-114528_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2018-S-052-114528_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "6";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2018-S-052-114528_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "IT";
-  epo:hasSubmissionURL "https://acquisti.stradeanas.it"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://acquisti.stradeanas.it"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2018-S-052-114528_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2018-S-052-114528_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2018-S-052-114528_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

@@ -100,6 +100,7 @@ Realizací předmětu veřejné zakázky dojde k naplnění požadavku společno
 """@cs;
   epo:hasPurpose epd:id_2017-S-029-052526_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
   epo:isFundedBy epd:id_2017-S-029-052526_Fund_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-029-052526_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds true;
   epo:specifiesAwardCriterion epd:id_2017-S-029-052526_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN .
 
@@ -114,6 +115,18 @@ epd:id_2017-S-029-052526_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2017-S-029-052526_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2017/S 029-052526" .
+
+epd:id_2017-S-029-052526_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  locn:fullAddress """
+MT Legal s.r.o., advokátní kancelář, Jakubská 1, 602 00 Brno.
+""" .
+
+epd:id_2017-S-029-052526_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2017-S-029-052526_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH;
+  epo:hasOpeningDateTime "2017-03-17T10:05"^^xsd:dateTime;
+  epo:hasOpeningDescription """
+Otevírání obálek s nabídkami jsou oprávněni se účastnit všichni účastníci (maximálně však 2 osoby za účastníka, které se prokážou plnou mocí či pověřením, nejde-li o statutární orgán či jeho člena nebo účastníka – fyzickou osobu), kteří podali nabídku ve lhůtě pro podání nabídek.
+""" .
 
 epd:id_2017-S-029-052526_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CZE>;
@@ -188,8 +201,13 @@ epd:id_2017-S-029-052526_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2017-S-029-052526_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-029-052526_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2017-S-029-052526_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasDescription "5";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2017-S-029-052526_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
-  epo:hasLanguage "CS" .
+  epo:hasLanguage "CS";
+  epo:hasValidityPeriod epd:id_2017-S-029-052526_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
 
 epd:id_2017-S-029-052526_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

@@ -60,7 +60,8 @@ epd:id_2020-S-014-028434_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2020-S-014-028434_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasDescription "Servizi di portierato non armato."@it;
   epo:hasEstimatedValue epd:id_2020-S-014-028434_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
-  epo:isSubjectToLotSpecificTerm epd:id_2020-S-014-028434_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-014-028434_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY,
+    epd:id_2020-S-014-028434_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false .
 
 epd:id_2020-S-014-028434_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:MonetaryValue;
@@ -85,6 +86,13 @@ epd:id_2020-S-014-028434_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2020-S-014-028434_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2020/S 014-028434" .
+
+epd:id_2020-S-014-028434_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  locn:fullAddress "Presso UOC ABS, largo Lama 4, 4o piano — Pescara." .
+
+epd:id_2020-S-014-028434_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2020-S-014-028434_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR;
+  epo:hasOpeningDateTime "2020-03-05T10:00"^^xsd:dateTime .
 
 epd:id_2020-S-014-028434_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
@@ -112,6 +120,7 @@ epd:id_2020-S-014-028434_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasPurpose epd:id_2020-S-014-028434_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
   epo:hasTitle "Servizi di portierato non armato"@it;
   epo:isCoveredByGPA true;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-014-028434_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2020-S-014-028434_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw, epd:id_2020-S-014-028434_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf,
     epd:id_2020-S-014-028434_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
@@ -144,8 +153,13 @@ epd:id_2020-S-014-028434_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2020-S-014-028434_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2020-S-014-028434_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2020-S-014-028434_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "8";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2020-S-014-028434_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
-  epo:hasLanguage "IT" .
+  epo:hasLanguage "IT";
+  epo:hasValidityPeriod epd:id_2020-S-014-028434_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2020-S-014-028434_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2020-S-014-028434_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

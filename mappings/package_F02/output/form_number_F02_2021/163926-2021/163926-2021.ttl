@@ -65,6 +65,7 @@ epd:id_2021-S-065-163926_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:hasEstimatedValue epd:id_2021-S-065-163926_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasPurpose epd:id_2021-S-065-163926_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
   epo:isFundedBy epd:id_2021-S-065-163926_Fund_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-065-163926_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds true .
 
 epd:id_2021-S-065-163926_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:MonetaryValue;
@@ -84,6 +85,10 @@ epd:id_2021-S-065-163926_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2021-S-065-163926_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2021/S 065-163926" .
+
+epd:id_2021-S-065-163926_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:hasOpeningDateTime "2021-05-04T14:00"^^xsd:dateTime;
+  epo:hasOpeningDescription "L'ouverture des plis n'est pas publique. Les candidats n'y sont pas admis." .
 
 epd:id_2021-S-065-163926_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
@@ -118,6 +123,7 @@ epd:id_2021-S-065-163926_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasPurpose epd:id_2021-S-065-163926_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
   epo:hasTitle "Acquisition, livraison, installation, mise en service, formations à l'utilisation, garantie d'un système de microscopie à microdissection laser pour le compte du CRCA-CNRS (UMR 5169)"@fr;
   epo:isCoveredByGPA true;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-065-163926_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2021-S-065-163926_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2021-S-065-163926_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -172,9 +178,14 @@ epd:id_2021-S-065-163926_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2021-S-065-163926_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2021-S-065-163926_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2021-S-065-163926_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "3";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2021-S-065-163926_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasSubmissionURL "https://www.marches-publics.gouv.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=732040&orgAcronyme=f2h"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://www.marches-publics.gouv.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=732040&orgAcronyme=f2h"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2021-S-065-163926_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2021-S-065-163926_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2021-S-065-163926_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

@@ -82,6 +82,7 @@ epd:id_2020-S-015-032253_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:hasEstimatedValue epd:id_2020-S-015-032253_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2020-S-015-032253_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
   epo:isFundedBy epd:id_2020-S-015-032253_Fund_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-015-032253_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds true;
   epo:specifiesAwardCriterion epd:id_2020-S-015-032253_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ,
     epd:id_2020-S-015-032253_AwardCriterionQuality_MHHVFRAwG5ikE4mcm67ZLA, epd:id_2020-S-015-032253_AwardCriterionQuality_UuagQs9t9uyZhDc2RjhaVb,
@@ -104,6 +105,14 @@ epd:id_2020-S-015-032253_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2020-S-015-032253_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2020/S 015-032253" .
+
+epd:id_2020-S-015-032253_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  locn:fullAddress "Централно управление на „Булгартрансгаз“ ЕАД: гр. София, бул. „Панчо Владигеров“ № 66" .
+
+epd:id_2020-S-015-032253_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2020-S-015-032253_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH;
+  epo:hasOpeningDateTime "2020-02-25T14:00"^^xsd:dateTime;
+  epo:hasOpeningDescription "Лицата по чл. 54, ал. 2 от Правилника за прилагане на Закона за обществените поръчки (ППЗОП), желаещи да присъстват при отварянето на офертите, следва да представят документите, посочени в раздел VI.3) „Допълнителна информация“, т. 2 от настоящото обявление." .
 
 epd:id_2020-S-015-032253_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
@@ -193,8 +202,13 @@ epd:id_2020-S-015-032253_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2020-S-015-032253_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2020-S-015-032253_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2020-S-015-032253_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasDescription "6";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2020-S-015-032253_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
-  epo:hasLanguage "BG" .
+  epo:hasLanguage "BG";
+  epo:hasValidityPeriod epd:id_2020-S-015-032253_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
 
 epd:id_2020-S-015-032253_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

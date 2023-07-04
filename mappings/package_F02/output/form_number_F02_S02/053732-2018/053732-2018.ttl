@@ -175,6 +175,7 @@ epd:id_2018-S-025-053732_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
                VgV-Verfahren zur Vergabe der Planungsleistungen (Objektplanung Gebäude und Freiraum) für die „Sanierung und Modernisierung Schulzentrum Coesfeld“
             """@de;
   epo:isCoveredByGPA true;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-025-053732_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2018-S-025-053732_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -225,8 +226,13 @@ epd:id_2018-S-025-053732_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2018-S-025-053732_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2018-S-025-053732_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2018-S-025-053732_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "6";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2018-S-025-053732_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
-  epo:hasLanguage "DE" .
+  epo:hasLanguage "DE";
+  epo:hasValidityPeriod epd:id_2018-S-025-053732_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2018-S-025-053732_TenderReceiverOrganisationAddress_5gEXzR8qwWo7DYKmgnYdCd
   a locn:Address;

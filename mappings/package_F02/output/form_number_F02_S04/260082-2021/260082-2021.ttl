@@ -58,6 +58,7 @@ epd:id_2021-S-098-260082_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2021-S-098-260082_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasDescription "Achiziționarea echipamentului pentru stația de epurare a deversărilor din canalizări."@ro;
   epo:hasEstimatedValue epd:id_2021-S-098-260082_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-098-260082_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2021-S-098-260082_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog .
 
@@ -81,6 +82,14 @@ epd:id_2021-S-098-260082_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2021-S-098-260082_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2021/S 098-260082" .
+
+epd:id_2021-S-098-260082_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  locn:fullAddress "https://achizitii.md SIA RSAP" .
+
+epd:id_2021-S-098-260082_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2021-S-098-260082_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR;
+  epo:hasOpeningDateTime "2021-06-07T11:00"^^xsd:dateTime;
+  epo:hasOpeningDescription "Munteanu Serghei." .
 
 epd:id_2021-S-098-260082_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/MDA>;
@@ -112,6 +121,7 @@ epd:id_2021-S-098-260082_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasPurpose epd:id_2021-S-098-260082_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
   epo:hasTitle "Stație de epurare tip MMBR Q = 700 m3/zi. Etapa 1 Q = 350 m3/zi. ului"@ro;
   epo:isCoveredByGPA false;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-098-260082_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2021-S-098-260082_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2021-S-098-260082_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
   epo:usesChannel epd:id_2021-S-098-260082_Channel_Zfp5YfoNfJomE833qJVsZY;
@@ -140,9 +150,14 @@ epd:id_2021-S-098-260082_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2021-S-098-260082_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2021-S-098-260082_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2021-S-098-260082_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "2";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2021-S-098-260082_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "RO";
-  epo:hasSubmissionURL "https://achizitii.md/ro"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://achizitii.md/ro"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2021-S-098-260082_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2021-S-098-260082_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2021-S-098-260082_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

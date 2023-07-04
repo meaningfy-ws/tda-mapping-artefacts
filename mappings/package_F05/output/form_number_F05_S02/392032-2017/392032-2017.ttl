@@ -109,6 +109,7 @@ epd:id_2017-S-191-392032_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
                   Застраховка на отговорността на летище София и летище Пловдив за причинени имуществени и неимуществени вреди на трети лица при настъпване на застрахователно събитие или серия от събития, независимо от мястото на събитието. Застраховката покрива отговорността на летище София и летище Пловдив за изпълняваните от тях функции в качеството им на упражняващи правата и осъществяващи дейност като летищни оператори и оператори по наземно обслужване. Поръчката включва и пълна презастраховка на риска.
                """@bg;
   epo:hasEstimatedValue epd:id_2017-S-191-392032_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-191-392032_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2017-S-191-392032_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN .
 
@@ -128,6 +129,18 @@ epd:id_2017-S-191-392032_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2017-S-191-392032_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2017/S 191-392032" .
+
+epd:id_2017-S-191-392032_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  locn:fullAddress """
+                  Заседателната зала на „Летище София“ ЕАД, София, Аерогара София.
+               """ .
+
+epd:id_2017-S-191-392032_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2017-S-191-392032_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH;
+  epo:hasOpeningDateTime "2017-10-19T14:00"^^xsd:dateTime;
+  epo:hasOpeningDescription """
+                  Оферти се отварят на публично заседание, на което могат да присъстват кандидатите или участниците в процедурата или техни упълномощени представители, както и представители на средствата за масово осведомяване.
+               """ .
 
 epd:id_2017-S-191-392032_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
@@ -210,8 +223,13 @@ epd:id_2017-S-191-392032_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2017-S-191-392032_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-191-392032_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2017-S-191-392032_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasDescription "3";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2017-S-191-392032_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
-  epo:hasLanguage "BG" .
+  epo:hasLanguage "BG";
+  epo:hasValidityPeriod epd:id_2017-S-191-392032_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
 
 epd:id_2017-S-191-392032_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

@@ -56,7 +56,8 @@ epd:id_2021-S-060-152775_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2021-S-060-152775_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasDescription "L'appalto prevede le seguenti attività:— fornitura e posa in opera, previa progettazione costruttiva, di un impianto BHS (Baggage Handling System),— completa rimozione ed il completo smaltimento della porzione dell’impianto BHS attualmente installato presso l’aeroporto di Olbia, di cui si prevede la dismissione,— servizio di manutenzione ordinaria e straordinaria,— addestramento del personale della committente alle attività di manutenzione e controllo dell’impianto."@it;
   epo:hasEstimatedValue epd:id_2021-S-060-152775_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isSubjectToLotSpecificTerm epd:id_2021-S-060-152775_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-060-152775_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-060-152775_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false .
 
 epd:id_2021-S-060-152775_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
@@ -81,6 +82,14 @@ epd:id_2021-S-060-152775_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2021-S-060-152775_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2021/S 060-152775" .
+
+epd:id_2021-S-060-152775_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  locn:fullAddress "Olbia — aeroporto Costa Smeralda c/o gli uffici della stazione appaltante." .
+
+epd:id_2021-S-060-152775_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2021-S-060-152775_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH;
+  epo:hasOpeningDateTime "2021-05-10T10:00"^^xsd:dateTime;
+  epo:hasOpeningDescription "Attraverso la piattaforma telematica, le imprese partecipanti potranno assistere alla seduta di gara da remoto.Le imprese partecipanti, dopo aver effettuato l’accesso con le proprie credenziali nell’area dedicata alla gara, potranno pertanto accedere alla seduta tramite il pulsante «Assisti alla seduta di gara»." .
 
 epd:id_2021-S-060-152775_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
@@ -131,8 +140,13 @@ epd:id_2021-S-060-152775_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2021-S-060-152775_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2021-S-060-152775_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2021-S-060-152775_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasDescription "6";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2021-S-060-152775_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
-  epo:hasLanguage "IT" .
+  epo:hasLanguage "IT";
+  epo:hasValidityPeriod epd:id_2021-S-060-152775_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
 
 epd:id_2021-S-060-152775_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2021-S-060-152775_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

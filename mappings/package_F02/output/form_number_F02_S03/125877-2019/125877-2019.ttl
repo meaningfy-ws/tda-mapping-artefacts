@@ -92,6 +92,7 @@ epd:id_2019-S-055-125877_Lot_hwn2ViGxdekSZaFD46S6bD a epo:Lot;
   epo:hasID epd:id_2019-S-055-125877_LotIdentifier_hwn2ViGxdekSZaFD46S6bD;
   epo:hasPurpose epd:id_2019-S-055-125877_LotPurpose_hwn2ViGxdekSZaFD46S6bD;
   epo:hasTitle "Menuiseries extérieures bois aluminium"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2019-S-055-125877_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false .
 
 epd:id_2019-S-055-125877_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
@@ -101,6 +102,7 @@ epd:id_2019-S-055-125877_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:hasID epd:id_2019-S-055-125877_LotIdentifier_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasPurpose epd:id_2019-S-055-125877_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasTitle "Charpente métallique"@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2019-S-055-125877_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false .
 
 epd:id_2019-S-055-125877_MainMonetaryValueLot_hwn2ViGxdekSZaFD46S6bD a epo:MonetaryValue;
@@ -149,6 +151,14 @@ epd:id_2019-S-055-125877_Notice a epo:Notice, epo:ResultNotice;
 epd:id_2019-S-055-125877_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2019/S 055-125877" .
 
+epd:id_2019-S-055-125877_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  locn:fullAddress "— voir adresse indiquée au point I.1)." .
+
+epd:id_2019-S-055-125877_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2019-S-055-125877_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR;
+  epo:hasOpeningDateTime "2019-04-15T09:00"^^xsd:dateTime;
+  epo:hasOpeningDescription "Le ou les représentants de l'acheteur." .
+
 epd:id_2019-S-055-125877_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
   epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK26>;
@@ -183,6 +193,7 @@ epd:id_2019-S-055-125877_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasPurpose epd:id_2019-S-055-125877_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
   epo:hasTitle "Extension et restructuration du collège Gabriel Rosset situé 74 Rue Challemel Lacour à Lyon 7e-lot no 03: charpente métallique et lot no 05: Menuiseries extérieures bois aluminium"@fr;
   epo:isCoveredByGPA false;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-055-125877_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2019-S-055-125877_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2019-S-055-125877_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -210,6 +221,11 @@ epd:id_2019-S-055-125877_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2019-S-055-125877_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2019-S-055-125877_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2019-S-055-125877_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "6";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2019-S-055-125877_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasSubmissionURL "http://marchespublics.grandlyon.com"^^xsd:anyURI .
+  epo:hasSubmissionURL "http://marchespublics.grandlyon.com"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2019-S-055-125877_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .

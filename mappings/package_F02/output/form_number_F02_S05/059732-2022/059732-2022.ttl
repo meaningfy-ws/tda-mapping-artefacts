@@ -76,6 +76,7 @@ epd:id_2022-S-025-059732_InformationProviderOrganisation_TQABXDaYTEjCPjunpz6abq 
 epd:id_2022-S-025-059732_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2022-S-025-059732_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasDescription "LeistungsumfangBaustelleneinrichtung;Bodenbelagsarbeiten;Stundenlohnarbeiten;Art und Umfang der Arbeiten:ca. 7.500 m2 Bodenbelag elastischca. 3.000 m Hohlkehlsockelca. 3.000 m Aluminium Sockelprofil"@de;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-025-059732_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2022-S-025-059732_AwardCriterionCost_LZXPc54dghndgUKmLLkWYh .
 
@@ -92,6 +93,14 @@ epd:id_2022-S-025-059732_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2022-S-025-059732_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2022/S 025-059732" .
+
+epd:id_2022-S-025-059732_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  locn:fullAddress "Ort: Campus Berlin-Buch GmbH, Robert-Rössle-Str. 10, 13125 Berlin, Pankow, Buch." .
+
+epd:id_2022-S-025-059732_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2022-S-025-059732_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR;
+  epo:hasOpeningDateTime "2022-03-09T12:00"^^xsd:dateTime;
+  epo:hasOpeningDescription "Nur Vertreter des Auftraggebers." .
 
 epd:id_2022-S-025-059732_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
@@ -126,6 +135,7 @@ epd:id_2022-S-025-059732_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasPurpose epd:id_2022-S-025-059732_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
   epo:hasTitle "Bodenbelagarbeiten"@de;
   epo:isCoveredByGPA true;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-025-059732_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2022-S-025-059732_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2022-S-025-059732_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -179,6 +189,10 @@ epd:id_2022-S-025-059732_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2022-S-025-059732_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2022-S-025-059732_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2022-S-025-059732_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasEnd "2022-05-08"^^xsd:date .
+
 epd:id_2022-S-025-059732_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "DE";
-  epo:hasSubmissionURL "http://www.bi-medien.de"^^xsd:anyURI .
+  epo:hasSubmissionURL "http://www.bi-medien.de"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2022-S-025-059732_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .

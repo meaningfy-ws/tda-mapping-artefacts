@@ -98,6 +98,7 @@ epd:id_2020-S-234-578675_InformationProviderOrganisation_FxmRFqszG85mxBF5kaCcKe 
 epd:id_2020-S-234-578675_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2020-S-234-578675_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasDescription "Le présent marché a pour objet la fourniture d’appareils de voie et boîtes de manœuvre neufs pour l’OTW — direction de Charleroi dans le cadre de travaux d’entretien, de la modification de la gare du sud et d’adaptations au dépôt de Jumet."@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-234-578675_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2020-S-234-578675_AwardCriterionCost_SFuLczgdgTfCKWdiCYWipE,
     epd:id_2020-S-234-578675_AwardCriterionCost_cC3ziTMBQ3JgrEnVYmznhR, epd:id_2020-S-234-578675_AwardCriterionQuality_MHHVFRAwG5ikE4mcm67ZLA,
@@ -115,6 +116,13 @@ epd:id_2020-S-234-578675_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2020-S-234-578675_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2020/S 234-578675" .
+
+epd:id_2020-S-234-578675_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  locn:fullAddress "Bâtiment Villette, réfectoire, 1er étage." .
+
+epd:id_2020-S-234-578675_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2020-S-234-578675_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH;
+  epo:hasOpeningDateTime "2021-01-07T09:30"^^xsd:dateTime .
 
 epd:id_2020-S-234-578675_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
@@ -177,6 +185,10 @@ epd:id_2020-S-234-578675_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2020-S-234-578675_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2020-S-234-578675_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2020-S-234-578675_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasEnd "2021-05-07"^^xsd:date .
+
 epd:id_2020-S-234-578675_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasSubmissionURL "https://eten.publicprocurement.be"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://eten.publicprocurement.be"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2020-S-234-578675_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .

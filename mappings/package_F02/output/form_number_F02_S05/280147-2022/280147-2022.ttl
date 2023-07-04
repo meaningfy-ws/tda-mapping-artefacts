@@ -81,7 +81,8 @@ epd:id_2022-S-101-280147_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2022-S-101-280147_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasDescription "GHA gemiddeld 1970 ton per jaar.Textiel gemiddeld 194 ton per jaar."@nl;
   epo:hasPurpose epd:id_2022-S-101-280147_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
-  epo:isSubjectToLotSpecificTerm epd:id_2022-S-101-280147_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-101-280147_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY,
+    epd:id_2022-S-101-280147_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2022-S-101-280147_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog,
     epd:id_2022-S-101-280147_AwardCriterionQuality_FvcEU7WVvPoGhurygGgNv9, epd:id_2022-S-101-280147_AwardCriterionQuality_SCcNgmEndqqZvfw98H8z7v,
@@ -102,6 +103,9 @@ epd:id_2022-S-101-280147_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2022-S-101-280147_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2022/S 101-280147" .
+
+epd:id_2022-S-101-280147_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:hasOpeningDateTime "2022-07-04T11:10"^^xsd:dateTime .
 
 epd:id_2022-S-101-280147_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NLD>;
@@ -139,6 +143,7 @@ epd:id_2022-S-101-280147_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasPurpose epd:id_2022-S-101-280147_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
   epo:hasTitle "Inzameling en verwerking van grof huishoudelijk afval en textiel"@nl;
   epo:isCoveredByGPA true;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-101-280147_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2022-S-101-280147_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -166,9 +171,14 @@ epd:id_2022-S-101-280147_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2022-S-101-280147_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2022-S-101-280147_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2022-S-101-280147_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "3";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2022-S-101-280147_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "NL";
-  epo:hasSubmissionURL "https://www.tenderned.nl/tenderned-web/aankondiging/detail/publicatie/akid/d4bd8580baf987807245f732fe93618f"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://www.tenderned.nl/tenderned-web/aankondiging/detail/publicatie/akid/d4bd8580baf987807245f732fe93618f"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2022-S-101-280147_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2022-S-101-280147_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2022-S-101-280147_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

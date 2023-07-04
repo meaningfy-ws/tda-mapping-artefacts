@@ -179,8 +179,10 @@ epd:id_2019-S-010-018943_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call>;
   epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-010-018943_Lot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasPurpose epd:id_2019-S-010-018943_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasRecurrenceDescription "18-24 months prior to the framework contract expiry date.";
   epo:hasTitle "Neutral Vendor Managed Service for Specialist Professional Services (“NEPRO3”)"@en;
   epo:isCoveredByGPA true;
+  epo:isRecurrent true;
   epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-010-018943_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2019-S-010-018943_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw, epd:id_2019-S-010-018943_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c,
     epd:id_2019-S-010-018943_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
@@ -233,9 +235,14 @@ epd:id_2019-S-010-018943_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2019-S-010-018943_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2019-S-010-018943_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2019-S-010-018943_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "6";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2019-S-010-018943_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "EN";
-  epo:hasSubmissionURL "www.nepo.org"^^xsd:anyURI .
+  epo:hasSubmissionURL "www.nepo.org"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2019-S-010-018943_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2019-S-010-018943_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2019-S-010-018943_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

@@ -242,6 +242,7 @@ Planungsleistungen – Sanierung und Erweiterung Heinrich-Heine-Schule Warnemün
 """@de;
   epo:isAccelerated true;
   epo:isCoveredByGPA true;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-091-180226_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2017-S-091-180226_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2017-S-091-180226_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf,
     epd:id_2017-S-091-180226_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
@@ -298,8 +299,12 @@ epd:id_2017-S-091-180226_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2017-S-091-180226_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2017-S-091-180226_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2017-S-091-180226_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasEnd "2017-11-30"^^xsd:date .
+
 epd:id_2017-S-091-180226_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
-  epo:hasLanguage "DE" .
+  epo:hasLanguage "DE";
+  epo:hasValidityPeriod epd:id_2017-S-091-180226_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2017-S-091-180226_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2017-S-091-180226_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

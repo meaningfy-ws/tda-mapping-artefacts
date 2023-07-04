@@ -187,6 +187,7 @@ Provision of School Transport Services.
   epo:isAccelerated true;
   epo:isCoveredByGPA true;
   epo:isJointProcurement true;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-141-254315_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2016-S-141-254315_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw, epd:id_2016-S-141-254315_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c,
     epd:id_2016-S-141-254315_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2016-S-141-254315_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
@@ -223,9 +224,14 @@ epd:id_2016-S-141-254315_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2016-S-141-254315_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2016-S-141-254315_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2016-S-141-254315_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "12";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2016-S-141-254315_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "AR";
-  epo:hasSubmissionURL "www.asite.com"^^xsd:anyURI .
+  epo:hasSubmissionURL "www.asite.com"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2016-S-141-254315_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2016-S-141-254315_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2016-S-141-254315_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

@@ -57,6 +57,7 @@ epd:id_2020-S-055-131241_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:hasDescription "Diagnostics de repérage amiante sur le patrimoine des transports."@fr;
   epo:hasEstimatedValue epd:id_2020-S-055-131241_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2020-S-055-131241_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-055-131241_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false .
 
 epd:id_2020-S-055-131241_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
@@ -80,6 +81,14 @@ epd:id_2020-S-055-131241_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2020-S-055-131241_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2020/S 055-131241" .
+
+epd:id_2020-S-055-131241_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  locn:fullAddress "Bâtiment de la Mel." .
+
+epd:id_2020-S-055-131241_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2020-S-055-131241_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH;
+  epo:hasOpeningDateTime "2020-04-20T13:00"^^xsd:dateTime;
+  epo:hasOpeningDescription "Seulement le représentant du pouvoir adjudicateur et les services gestionnaires du marché." .
 
 epd:id_2020-S-055-131241_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
@@ -172,6 +181,11 @@ epd:id_2020-S-055-131241_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2020-S-055-131241_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2020-S-055-131241_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2020-S-055-131241_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasDescription "9";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2020-S-055-131241_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasSubmissionURL "https://marchespublics596280.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=19874&orgAcronyme=5C371"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://marchespublics596280.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=19874&orgAcronyme=5C371"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2020-S-055-131241_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .

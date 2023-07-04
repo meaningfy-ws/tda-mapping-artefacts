@@ -78,6 +78,7 @@ Oceľové priehradové stožiare a konzoly pre vedenia do 45 kV – predmetné s
 """@sk;
   epo:hasEstimatedValue epd:id_2017-S-097-192218_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2017-S-097-192218_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-097-192218_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2017-S-097-192218_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN .
 
@@ -115,6 +116,15 @@ epd:id_2017-S-097-192218_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2017-S-097-192218_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2017/S 097-192218" .
+
+epd:id_2017-S-097-192218_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  locn:fullAddress """
+Neverejné otváranie časti ponuky „Ostatné“ na adrese obstarávateľa uvedenej v bode I.
+""" .
+
+epd:id_2017-S-097-192218_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2017-S-097-192218_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH;
+  epo:hasOpeningDateTime "2017-06-22T09:00"^^xsd:dateTime .
 
 epd:id_2017-S-097-192218_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
@@ -223,6 +233,10 @@ epd:id_2017-S-097-192218_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2017-S-097-192218_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-097-192218_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2017-S-097-192218_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasEnd "2017-12-31"^^xsd:date .
+
 epd:id_2017-S-097-192218_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "SK";
-  epo:hasSubmissionURL "https://vsds.eranet.sk/"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://vsds.eranet.sk/"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2017-S-097-192218_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .

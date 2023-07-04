@@ -125,6 +125,7 @@ epd:id_2017-S-213-442737_Lot_hwn2ViGxdekSZaFD46S6bD a epo:Lot;
   epo:hasTitle """
                   ТП „Държавно ловно стопанство — Тракия”, с. Стряма, обл. Пловдив към „Южноцентрално държавно предприятие“ — гр.Смолян“ — за влятото ТП „ДГС Кричим“ и ловностопански участък „Тъмраш“
                """@bg;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-213-442737_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2017-S-213-442737_AwardCriterionPrice_2LSCU4PVmSFudjnyDFCejK .
 
@@ -144,6 +145,7 @@ epd:id_2017-S-213-442737_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:hasTitle """
                   ТП „Държавно горско стопанство — Пловдив”, гр. Пловдив, обл. Пловдив към „Южноцентрално държавно предприятие“ — гр. Смолян“
                """@bg;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-213-442737_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2017-S-213-442737_AwardCriterionPrice_i3DfK3H4UywvSXp2C2Vary .
 
@@ -172,6 +174,18 @@ epd:id_2017-S-213-442737_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2017-S-213-442737_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2017/S 213-442737" .
+
+epd:id_2017-S-213-442737_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  locn:fullAddress """
+                  Административната сграда на Регионална дирекция по горите — Пловдив на адрес: гр. Пловдив, бул. „Санкт Петербург“ № 57.
+               """ .
+
+epd:id_2017-S-213-442737_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2017-S-213-442737_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR;
+  epo:hasOpeningDateTime "2017-12-12T10:30"^^xsd:dateTime;
+  epo:hasOpeningDescription """
+                  Отварянето на офертите е публично и на него могат да присъстват участниците в процедурата или техни упълномощени представители, както и представители на средствата за масово осведомяване и на други лица при спазване на установения режим за достъп до сградата, в която се извършва отварянето.
+               """ .
 
 epd:id_2017-S-213-442737_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
@@ -230,6 +244,7 @@ epd:id_2017-S-213-442737_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
             """@bg;
   epo:isCoveredByGPA false;
   epo:isJointProcurement true;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-213-442737_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2017-S-213-442737_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2017-S-213-442737_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf,
     epd:id_2017-S-213-442737_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
@@ -288,8 +303,12 @@ epd:id_2017-S-213-442737_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2017-S-213-442737_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2017-S-213-442737_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2017-S-213-442737_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasEnd "2018-02-01"^^xsd:date .
+
 epd:id_2017-S-213-442737_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
-  epo:hasLanguage "BG" .
+  epo:hasLanguage "BG";
+  epo:hasValidityPeriod epd:id_2017-S-213-442737_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2017-S-213-442737_TenderReceiverOrganisationAddress_5gEXzR8qwWo7DYKmgnYdCd
   a locn:Address;

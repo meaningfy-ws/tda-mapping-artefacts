@@ -58,6 +58,7 @@ Les pylônes de type treillis à 4 pieds, ont été livrés par la société ita
 L'objet de l'appel d'offres comprend les travaux de retouches sur la peinture des nouvelles structures ayant subi des atteintes lors des opérations de transport ou de montage. Un contrôle du serrage des boulons a également été inclus dans les prestations à fournir.
 """@fr;
   epo:hasPurpose epd:id_2017-S-044-081796_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-044-081796_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2017-S-044-081796_AwardCriterionPrice_Q69gWryarGTwyoHUaVk3eN .
 
@@ -72,6 +73,18 @@ epd:id_2017-S-044-081796_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2017-S-044-081796_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2017/S 044-081796" .
+
+epd:id_2017-S-044-081796_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  locn:fullAddress """
+Prilly.
+""" .
+
+epd:id_2017-S-044-081796_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2017-S-044-081796_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH;
+  epo:hasOpeningDateTime "2017-04-19T09:30"^^xsd:dateTime;
+  epo:hasOpeningDescription """
+L'ouverture des offres ainsi que le procès-verbal d'ouverture des offres ne sont pas publics.
+""" .
 
 epd:id_2017-S-044-081796_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CHE>;
@@ -142,8 +155,13 @@ epd:id_2017-S-044-081796_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2017-S-044-081796_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-044-081796_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2017-S-044-081796_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasDescription "6";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2017-S-044-081796_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
-  epo:hasLanguage "DE", "FR" .
+  epo:hasLanguage "DE", "FR";
+  epo:hasValidityPeriod epd:id_2017-S-044-081796_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
 
 epd:id_2017-S-044-081796_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

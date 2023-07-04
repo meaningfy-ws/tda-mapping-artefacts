@@ -55,6 +55,7 @@ epd:id_2021-S-110-289351_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2021-S-110-289351_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasDescription "Mission de contrôle technique pour la réhabilitation du théâtre du Gymnase — 4 rue du Théâtre Français — 13001 Marseille."@fr;
   epo:hasPurpose epd:id_2021-S-110-289351_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-110-289351_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2021-S-110-289351_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog,
     epd:id_2021-S-110-289351_AwardCriterionQuality_aDam54DqENHigUj4DJyHNL .
@@ -72,6 +73,9 @@ epd:id_2021-S-110-289351_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2021-S-110-289351_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2021/S 110-289351" .
+
+epd:id_2021-S-110-289351_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:hasOpeningDateTime "2021-07-19T09:00"^^xsd:dateTime .
 
 epd:id_2021-S-110-289351_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
@@ -106,6 +110,7 @@ epd:id_2021-S-110-289351_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasPurpose epd:id_2021-S-110-289351_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
   epo:hasTitle "Mission de contrôle technique pour la réhabilitation du théâtre du Gymnase"@fr;
   epo:isCoveredByGPA true;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-110-289351_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2021-S-110-289351_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2021-S-110-289351_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -161,6 +166,11 @@ epd:id_2021-S-110-289351_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2021-S-110-289351_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2021-S-110-289351_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2021-S-110-289351_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "6";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2021-S-110-289351_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasSubmissionURL "http://marchespublics.mairie-marseille.fr"^^xsd:anyURI .
+  epo:hasSubmissionURL "http://marchespublics.mairie-marseille.fr"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2021-S-110-289351_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .

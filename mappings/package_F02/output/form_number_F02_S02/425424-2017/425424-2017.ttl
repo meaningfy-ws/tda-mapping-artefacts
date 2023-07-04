@@ -84,6 +84,7 @@ epd:id_2017-S-206-425424_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
                   Mission d'assistance à maîtrise d'ouvrage en économie de la construction relatif à la réhabilitation du campus de l'université de Paris Dauphine.
                """@fr;
   epo:hasPurpose epd:id_2017-S-206-425424_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-206-425424_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-206-425424_MediatorContactPoint_4Z4veE2PHRh5zv62ATRwnh a cccev:ContactPoint;
@@ -116,6 +117,9 @@ epd:id_2017-S-206-425424_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2017-S-206-425424_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2017/S 206-425424" .
+
+epd:id_2017-S-206-425424_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:hasOpeningDateTime "2017-11-22T12:00"^^xsd:dateTime .
 
 epd:id_2017-S-206-425424_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
@@ -158,6 +162,7 @@ epd:id_2017-S-206-425424_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
                Marché d'assistance à la maîtrise d'ouvrage en économie de la construction pour l'opération de réhabilitation du campus de l'université Paris Dauphine.
             """@fr;
   epo:isCoveredByGPA true;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-206-425424_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2017-S-206-425424_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2017-S-206-425424_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -194,8 +199,13 @@ epd:id_2017-S-206-425424_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2017-S-206-425424_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2017-S-206-425424_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2017-S-206-425424_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "6";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2017-S-206-425424_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
-  epo:hasLanguage "FR" .
+  epo:hasLanguage "FR";
+  epo:hasValidityPeriod epd:id_2017-S-206-425424_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2017-S-206-425424_TenderReceiverOrganisationAddress_5gEXzR8qwWo7DYKmgnYdCd
   a locn:Address;

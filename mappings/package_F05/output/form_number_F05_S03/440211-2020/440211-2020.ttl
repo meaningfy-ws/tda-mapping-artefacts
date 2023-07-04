@@ -121,7 +121,8 @@ epd:id_2020-S-182-440211_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:hasID epd:id_2020-S-182-440211_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2020-S-182-440211_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasTitle "Rácsos szerkezetű nagyfeszültségű acéloszlopok"@hu;
-  epo:isSubjectToLotSpecificTerm epd:id_2020-S-182-440211_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-182-440211_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2020-S-182-440211_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2020-S-182-440211_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
 
@@ -132,7 +133,8 @@ epd:id_2020-S-182-440211_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
   epo:hasID epd:id_2020-S-182-440211_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
   epo:hasPurpose epd:id_2020-S-182-440211_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
   epo:hasTitle "Rácsos szerkezetű középfeszültségű acéloszlopok"@hu;
-  epo:isSubjectToLotSpecificTerm epd:id_2020-S-182-440211_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-182-440211_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj,
+    epd:id_2020-S-182-440211_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2020-S-182-440211_AwardCriterionPrice_ViFLHYiizzehBKNxWmyibc .
 
@@ -166,6 +168,14 @@ epd:id_2020-S-182-440211_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2020-S-182-440211_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2020/S 182-440211" .
+
+epd:id_2020-S-182-440211_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  locn:fullAddress "EKR rendszer" .
+
+epd:id_2020-S-182-440211_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2020-S-182-440211_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH;
+  epo:hasOpeningDateTime "2020-11-30T12:00"^^xsd:dateTime;
+  epo:hasOpeningDescription "A Kbt. 68. §, valamint a 424/2017 (XII.19.) Korm. rendelet 15. § szerint." .
 
 epd:id_2020-S-182-440211_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
@@ -272,9 +282,14 @@ epd:id_2020-S-182-440211_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2020-S-182-440211_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2020-S-182-440211_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2020-S-182-440211_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasDescription "1";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2020-S-182-440211_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "HU";
-  epo:hasSubmissionURL "https://ekr.gov.hu/portal/kozbeszerzes/eljarasok/EKR000774402020/reszletek"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://ekr.gov.hu/portal/kozbeszerzes/eljarasok/EKR000774402020/reszletek"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2020-S-182-440211_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
 
 epd:id_2020-S-182-440211_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2020-S-182-440211_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

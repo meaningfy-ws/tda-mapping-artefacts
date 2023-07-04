@@ -161,6 +161,7 @@ epd:id_2017-S-247-521064_Lot_32L5QtPBVpA5CJ4PqGRoL2 a epo:Lot;
   epo:hasTitle """
                   CIG 7329468455
                """@it;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-247-521064_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-247-521064_Lot_8SnxRM7z7L8aATWrQVC4hf a epo:Lot;
@@ -179,6 +180,7 @@ epd:id_2017-S-247-521064_Lot_8SnxRM7z7L8aATWrQVC4hf a epo:Lot;
   epo:hasTitle """
                   CIG 7329478C93
                """@it;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-247-521064_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-247-521064_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
@@ -197,6 +199,7 @@ epd:id_2017-S-247-521064_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:hasTitle """
                   CIG 73294315CC
                """@it;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-247-521064_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-247-521064_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
@@ -215,6 +218,7 @@ epd:id_2017-S-247-521064_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
   epo:hasTitle """
                   CIG 73294483D4
                """@it;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-247-521064_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-247-521064_MainMonetaryValueLot_32L5QtPBVpA5CJ4PqGRoL2 a epo:MonetaryValue;
@@ -250,6 +254,18 @@ epd:id_2017-S-247-521064_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2017-S-247-521064_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2017/S 247-521064" .
+
+epd:id_2017-S-247-521064_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  locn:fullAddress """
+                  Via Prenestina, 45 - palazzina D (ex API) - 2o piano - 00176 Roma (sala gare).
+               """ .
+
+epd:id_2017-S-247-521064_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2017-S-247-521064_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH;
+  epo:hasOpeningDateTime "2018-02-05T10:00"^^xsd:dateTime;
+  epo:hasOpeningDescription """
+                  Seduta aperta al pubblico.
+               """ .
 
 epd:id_2017-S-247-521064_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
@@ -340,8 +356,13 @@ epd:id_2017-S-247-521064_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2017-S-247-521064_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-247-521064_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2017-S-247-521064_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasDescription "8";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2017-S-247-521064_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
-  epo:hasLanguage "IT" .
+  epo:hasLanguage "IT";
+  epo:hasValidityPeriod epd:id_2017-S-247-521064_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
 
 epd:id_2017-S-247-521064_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2017-S-247-521064_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

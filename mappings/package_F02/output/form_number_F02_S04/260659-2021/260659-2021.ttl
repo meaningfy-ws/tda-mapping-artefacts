@@ -230,6 +230,7 @@ epd:id_2021-S-099-260659_Lot_hwn2ViGxdekSZaFD46S6bD a epo:Lot;
   epo:hasID epd:id_2021-S-099-260659_LotIdentifier_hwn2ViGxdekSZaFD46S6bD;
   epo:hasPurpose epd:id_2021-S-099-260659_LotPurpose_hwn2ViGxdekSZaFD46S6bD;
   epo:hasTitle "20m3/h alatti beszerzés"@hu;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-099-260659_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2021-S-099-260659_AwardCriterionPrice_BbVacUK5WMhxHAz9w8q8UG .
 
@@ -239,6 +240,7 @@ epd:id_2021-S-099-260659_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:hasID epd:id_2021-S-099-260659_LotIdentifier_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasPurpose epd:id_2021-S-099-260659_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasTitle "20m3/h feletti beszerzés"@hu;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-099-260659_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2021-S-099-260659_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog .
 
@@ -260,6 +262,14 @@ epd:id_2021-S-099-260659_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2021-S-099-260659_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2021/S 099-260659" .
+
+epd:id_2021-S-099-260659_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  locn:fullAddress "Az ajánlatok felbontása elektronikusan történik az EKR-ben." .
+
+epd:id_2021-S-099-260659_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2021-S-099-260659_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR;
+  epo:hasOpeningDateTime "2021-06-24T14:00"^^xsd:dateTime;
+  epo:hasOpeningDescription "Az elektronikus bontás szabályait az elektronikus közbeszerzés részletes szabályairól szóló 424/2017. (XII.19.) Korm. rendelet (továbbiakban: e-Kr.) 15. §-a tartalmazza. A Kbt. 68. § szerint." .
 
 epd:id_2021-S-099-260659_OrganisationAddress_6gDbEGqfFE2xGy6QfWrpmT a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/HUN>;
@@ -386,6 +396,7 @@ epd:id_2021-S-099-260659_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasTitle "Földgáz energia közbeszerzés"@hu;
   epo:isCoveredByGPA false;
   epo:isJointProcurement true;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-099-260659_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2021-S-099-260659_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2021-S-099-260659_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf,
     epd:id_2021-S-099-260659_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
@@ -440,9 +451,14 @@ epd:id_2021-S-099-260659_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2021-S-099-260659_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2021-S-099-260659_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2021-S-099-260659_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "1";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2021-S-099-260659_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "HU";
-  epo:hasSubmissionURL "https://ekr.gov.hu/portal/kozbeszerzes/eljarasok/EKR000517142021/reszletek"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://ekr.gov.hu/portal/kozbeszerzes/eljarasok/EKR000517142021/reszletek"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2021-S-099-260659_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2021-S-099-260659_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2021-S-099-260659_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

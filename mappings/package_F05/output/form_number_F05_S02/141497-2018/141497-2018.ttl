@@ -80,7 +80,8 @@ epd:id_2018-S-063-141497_Lot_32L5QtPBVpA5CJ4PqGRoL2 a epo:Lot;
                """@de;
   epo:hasID epd:id_2018-S-063-141497_LotIdentifier_32L5QtPBVpA5CJ4PqGRoL2;
   epo:hasPurpose epd:id_2018-S-063-141497_LotPurpose_32L5QtPBVpA5CJ4PqGRoL2;
-  epo:isSubjectToLotSpecificTerm epd:id_2018-S-063-141497_MultipleStageProcedureTerm_32L5QtPBVpA5CJ4PqGRoL2;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-063-141497_MultipleStageProcedureTerm_32L5QtPBVpA5CJ4PqGRoL2,
+    epd:id_2018-S-063-141497_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false .
 
 epd:id_2018-S-063-141497_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
@@ -90,7 +91,8 @@ epd:id_2018-S-063-141497_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
                """@de;
   epo:hasID epd:id_2018-S-063-141497_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2018-S-063-141497_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isSubjectToLotSpecificTerm epd:id_2018-S-063-141497_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-063-141497_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2018-S-063-141497_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false .
 
 epd:id_2018-S-063-141497_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
@@ -100,7 +102,8 @@ epd:id_2018-S-063-141497_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
                """@de;
   epo:hasID epd:id_2018-S-063-141497_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
   epo:hasPurpose epd:id_2018-S-063-141497_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
-  epo:isSubjectToLotSpecificTerm epd:id_2018-S-063-141497_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-063-141497_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj,
+    epd:id_2018-S-063-141497_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false .
 
 epd:id_2018-S-063-141497_MultipleStageProcedureTerm_32L5QtPBVpA5CJ4PqGRoL2 a epo:MultipleStageProcedureTerm .
@@ -121,6 +124,18 @@ epd:id_2018-S-063-141497_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2018-S-063-141497_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2018/S 063-141497" .
+
+epd:id_2018-S-063-141497_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  locn:fullAddress """
+                  Aargauerstrasse 182
+               """ .
+
+epd:id_2018-S-063-141497_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2018-S-063-141497_OpeningTermLocation_cXSnYA74JQqvZFUrXASMUH;
+  epo:hasOpeningDateTime "2018-07-02T09:30"^^xsd:dateTime;
+  epo:hasOpeningDescription """
+                  Die Offertöffnung ist nicht öffentlich und erfolgt durch Mitarbeiter von Energie 360o AG
+               """ .
 
 epd:id_2018-S-063-141497_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/CHE>;
@@ -196,8 +211,13 @@ epd:id_2018-S-063-141497_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2018-S-063-141497_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2018-S-063-141497_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2018-S-063-141497_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasDescription "12";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2018-S-063-141497_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
-  epo:hasLanguage "DE" .
+  epo:hasLanguage "DE";
+  epo:hasValidityPeriod epd:id_2018-S-063-141497_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
 
 epd:id_2018-S-063-141497_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2018-S-063-141497_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

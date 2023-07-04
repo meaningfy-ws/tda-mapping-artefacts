@@ -67,6 +67,7 @@ epd:id_2021-S-055-139783_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:hasEstimatedValue epd:id_2021-S-055-139783_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2021-S-055-139783_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
   epo:isFundedBy epd:id_2021-S-055-139783_Fund_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-055-139783_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds true .
 
 epd:id_2021-S-055-139783_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
@@ -111,6 +112,10 @@ epd:id_2021-S-055-139783_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2021-S-055-139783_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2021/S 055-139783" .
+
+epd:id_2021-S-055-139783_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:hasOpeningDateTime "2021-04-14T10:00"^^xsd:dateTime;
+  epo:hasOpeningDescription "Les dates et heures d'ouverture des offres précisées au point IV.2.7) ne sont pas définitives." .
 
 epd:id_2021-S-055-139783_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
@@ -199,6 +204,11 @@ epd:id_2021-S-055-139783_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2021-S-055-139783_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2021-S-055-139783_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2021-S-055-139783_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasDescription "12";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2021-S-055-139783_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR", "IT";
-  epo:hasSubmissionURL "https://telt.achatpublic.com/accueil/"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://telt.achatpublic.com/accueil/"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2021-S-055-139783_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .

@@ -4,7 +4,14 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -67,6 +74,7 @@ epd:id_2016-S-121-215083_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
 Gestione dei servizi di assistenza domiciliare (SAD) di tipo sociale ed integrata (ADI) a favore di soggetti con disabilità.
 """@it;
   epo:hasEstimatedValue epd:id_2016-S-121-215083_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-121-215083_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false .
 
 epd:id_2016-S-121-215083_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:MonetaryValue;
@@ -84,6 +92,9 @@ epd:id_2016-S-121-215083_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2016-S-121-215083_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2016/S 121-215083" .
+
+epd:id_2016-S-121-215083_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:hasOpeningDateTime "2016-08-09T9:30"^^xsd:dateTime .
 
 epd:id_2016-S-121-215083_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
@@ -119,6 +130,7 @@ Gestione dei servizi di assistenza domiciliare (SAD) di tipo sociale ed integrat
 Gestione dei servizi di assistenza domiciliare (SAD) di tipo sociale ed integrata (ADI) a favore di soggetti con disabilità.
 """@it;
   epo:isCoveredByGPA false;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-121-215083_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2016-S-121-215083_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -138,8 +150,13 @@ epd:id_2016-S-121-215083_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2016-S-121-215083_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2016-S-121-215083_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2016-S-121-215083_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "8";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2016-S-121-215083_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
-  epo:hasLanguage "IT" .
+  epo:hasLanguage "IT";
+  epo:hasValidityPeriod epd:id_2016-S-121-215083_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2016-S-121-215083_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2016-S-121-215083_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

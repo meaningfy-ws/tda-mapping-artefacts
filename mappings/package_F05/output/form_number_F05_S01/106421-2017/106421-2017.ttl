@@ -91,7 +91,8 @@ L'accord-cadre concerne des marchés subséquents séparés, relatifs aux:
 Les candidats peuvent postuler à l'accord-cadre même s'ils ne sont pas en capacité de répondre à l'ensemble des prestations concernées lors de la sélection des candidats.
 """@fr;
   epo:hasPurpose epd:id_2017-S-057-106421_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isSubjectToLotSpecificTerm epd:id_2017-S-057-106421_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-057-106421_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2017-S-057-106421_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-057-106421_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
@@ -108,6 +109,12 @@ epd:id_2017-S-057-106421_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2017-S-057-106421_NoticeIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
   epo:hasIdentifierValue "2017/S 057-106421" .
+
+epd:id_2017-S-057-106421_OpeningTerm_cXSnYA74JQqvZFUrXASMUH a epo:OpeningTerm;
+  epo:hasOpeningDateTime "2017-05-12T00:00"^^xsd:dateTime;
+  epo:hasOpeningDescription """
+Séance non publique.
+""" .
 
 epd:id_2017-S-057-106421_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
@@ -196,8 +203,13 @@ epd:id_2017-S-057-106421_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2017-S-057-106421_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-057-106421_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2017-S-057-106421_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
+  epo:hasDescription "4";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2017-S-057-106421_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
-  epo:hasLanguage "DE", "FR" .
+  epo:hasLanguage "DE", "FR";
+  epo:hasValidityPeriod epd:id_2017-S-057-106421_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
 
 epd:id_2017-S-057-106421_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

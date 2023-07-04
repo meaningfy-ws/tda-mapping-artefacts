@@ -83,7 +83,8 @@ epd:id_2019-S-124-302300_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:hasID epd:id_2019-S-124-302300_LotIdentifier_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasPurpose epd:id_2019-S-124-302300_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasTitle "Papier reprographie"@fr;
-  epo:isSubjectToLotSpecificTerm epd:id_2019-S-124-302300_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2019-S-124-302300_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY,
+    epd:id_2019-S-124-302300_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false .
 
 epd:id_2019-S-124-302300_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
@@ -102,6 +103,9 @@ epd:id_2019-S-124-302300_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2019-S-124-302300_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2019/S 124-302300" .
+
+epd:id_2019-S-124-302300_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:hasOpeningDateTime "2019-07-26T09:00"^^xsd:dateTime .
 
 epd:id_2019-S-124-302300_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
@@ -136,9 +140,11 @@ epd:id_2019-S-124-302300_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
   epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-124-302300_Lot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasPurpose epd:id_2019-S-124-302300_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
+  epo:hasRecurrenceDescription "Pour la période initiale, l'accord-cadre aura une périodicité allant de la date de notification jusqu'au 31.12.2019. Il est reconductible tacitement au maximum 3 fois, pour une période d'une année civile, soit du 1er janvier au 31 décembre. La durée totale de l'accord-cadre ne peut pas excéder 4 ans.";
   epo:hasTitle "Accord-cadre relatif à l'acquisition de papier reprographie"@fr;
   epo:isCoveredByGPA true;
   epo:isJointProcurement true;
+  epo:isRecurrent true;
   epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-124-302300_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2019-S-124-302300_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2019-S-124-302300_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf,
     epd:id_2019-S-124-302300_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
@@ -192,9 +198,14 @@ epd:id_2019-S-124-302300_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2019-S-124-302300_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2019-S-124-302300_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2019-S-124-302300_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "4";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2019-S-124-302300_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasSubmissionURL "http://www.klekoon.com"^^xsd:anyURI .
+  epo:hasSubmissionURL "http://www.klekoon.com"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2019-S-124-302300_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2019-S-124-302300_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2019-S-124-302300_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

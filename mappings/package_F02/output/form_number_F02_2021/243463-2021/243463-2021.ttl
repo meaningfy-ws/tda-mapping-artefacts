@@ -4,7 +4,14 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -54,7 +61,8 @@ epd:id_2021-S-093-243463_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:hasPurpose epd:id_2021-S-093-243463_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasTitle "Fourniture de denrées alimentaires destinées à la restauration scolaire des écoles du 6e arrondissement. Assistance technique, menus et approvisionnement"@fr;
   epo:isFundedBy epd:id_2021-S-093-243463_Fund_oEYZZQWPrbQFajcRU6KZAY;
-  epo:isSubjectToLotSpecificTerm epd:id_2021-S-093-243463_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-093-243463_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY,
+    epd:id_2021-S-093-243463_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds true .
 
 epd:id_2021-S-093-243463_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
@@ -71,6 +79,13 @@ epd:id_2021-S-093-243463_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2021-S-093-243463_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2021/S 093-243463" .
+
+epd:id_2021-S-093-243463_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  locn:fullAddress "Caisse des écoles du 6e arrondissement, 78 rue Bonaparte, 75006 Paris." .
+
+epd:id_2021-S-093-243463_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2021-S-093-243463_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR;
+  epo:hasOpeningDateTime "2021-06-17T14:00"^^xsd:dateTime .
 
 epd:id_2021-S-093-243463_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
@@ -103,6 +118,7 @@ epd:id_2021-S-093-243463_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
   epo:hasPurpose epd:id_2021-S-093-243463_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c;
   epo:hasTitle "Fourniture de denrées alimentaires destinées à la restauration scolaire des écoles du 6e arrondissement, assistance technique: menus et approvisionnement"@fr;
   epo:isCoveredByGPA false;
+  epo:isRecurrent true;
   epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-093-243463_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2021-S-093-243463_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2021-S-093-243463_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 

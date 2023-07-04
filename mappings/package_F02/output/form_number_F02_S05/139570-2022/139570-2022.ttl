@@ -97,6 +97,7 @@ epd:id_2022-S-054-139570_Lot_hwn2ViGxdekSZaFD46S6bD a epo:Lot;
     "Europa Experience в Париж"@bg, "Europa Experience, Pariisi"@fi, "Europa Experience, París"@es,
     "Európa-élményközpont, Párizs"@hu, "razstava Doživi Evropo v Parizu"@sl, "“Europa Experience” Parīzē"@lv,
     "„Europa Experience“ Paryžiuje"@lt;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-054-139570_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2022-S-054-139570_AwardCriterionPrice_BbVacUK5WMhxHAz9w8q8UG .
 
@@ -138,6 +139,7 @@ epd:id_2022-S-054-139570_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
     "Varnostne storitve na lokacijah Evropskega parlamenta: sklop 1: Hiša Jeana Monneta v kraju Bazoches-sur-Guyonne"@sl,
     "Υπηρεσίες ασφάλειας στους χώρους του Ευρωπαϊκού Κοινοβουλίου: παρτίδα 1: Οίκος Jean Monnet στο Bazoches-sur-Guyonne"@el,
     "Охранителни услуги на обектите на Европейския парламент: обособена позиция1: Дом Jean Monnet, Базош сюр Гион"@bg;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-054-139570_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2022-S-054-139570_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog .
 
@@ -181,6 +183,15 @@ epd:id_2022-S-054-139570_Notice a epo:Notice, epo:ResultNotice;
 
 epd:id_2022-S-054-139570_NoticeIdentifier_THKQ4fNuRdgBWJVgrGgi3c a epo:Identifier;
   epo:hasIdentifierValue "2022/S 054-139570" .
+
+epd:id_2022-S-054-139570_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  locn:fullAddress "Brisele.", "Briuselis.", "Bruksela.", "Brusel.", "Bruselas.", "Bruselj.",
+    "Brussel.", "Brussell.", "Brussels.", "Bruxelas.", "Bruxelles.", "Bryssel.", "Brüssel.",
+    "Brüsszel.", "an Bhruiséil.", "Βρυξέλλες.", "Брюксел." .
+
+epd:id_2022-S-054-139570_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_2022-S-054-139570_OpeningTermLocation_NQu78Tu5A4ggZptDFZEdSR;
+  epo:hasOpeningDateTime "2022-04-28T11:00"^^xsd:dateTime .
 
 epd:id_2022-S-054-139570_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Address;
   epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
@@ -298,6 +309,7 @@ epd:id_2022-S-054-139570_Procedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Procedure;
     "Υπηρεσίες ασφάλειας στους χώρους του Ευρωπαϊκού Κοινοβουλίου – παρτίδα 1: Οίκος Jean Monnet στο Bazoches-sur-Guyonne, παρτίδα 2: Europa Experience στο Παρίσι"@el,
     "Охранителни услуги на обектите на Европейския парламент - обособена позиция1: Дом Jean Monnet, Базош сюр Гион, обособена позиция 2: Europa Experience в Париж"@bg;
   epo:isCoveredByGPA false;
+  epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-054-139570_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2022-S-054-139570_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2022-S-054-139570_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
 
@@ -358,10 +370,15 @@ epd:id_2022-S-054-139570_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS a org:Organ
 epd:id_2022-S-054-139570_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
   epo:playedBy epd:id_2022-S-054-139570_ReviewerOrganisation_Sc23ScTxybJ3bYD3QjmgGS .
 
+epd:id_2022-S-054-139570_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
+  epo:hasDescription "6";
+  epo:hasTimePeriod "MONTH" .
+
 epd:id_2022-S-054-139570_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "BG", "CS", "DA", "DE", "EL", "EN", "ES", "ET", "FI", "FR", "GA",
     "HR", "HU", "IT", "LT", "LV", "MT", "NL", "PL", "PT", "RO", "SK", "SL", "SV";
-  epo:hasSubmissionURL "https://etendering.ted.europa.eu/cft/cft-display.html?cftId=10292"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://etendering.ted.europa.eu/cft/cft-display.html?cftId=10292"^^xsd:anyURI;
+  epo:hasValidityPeriod epd:id_2022-S-054-139570_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2022-S-054-139570_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2022-S-054-139570_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
