@@ -1679,7 +1679,7 @@ tedm:FrameworkAgreementTermLot a rr:TriplesMap ;
 tedm:MultipleStageProcedureTerm a rr:TriplesMap ;
     rr:subjectMap
         [
-            rml:reference "if(exists(TED_EXPORT/FORM_SECTION/F12_2014/PROCEDURE/RIGHT_CONTRACT_INITIAL_TENDERS) or exists(TED_EXPORT/FORM_SECTION/F12_2014/PROCEDURE/PARTICIPANT_NAME) or exists(QS/INDEFINITE_DURATION) or exists(QS/DATE_START) or exists(QS/DATE_END) or exists(RENEWAL) or exists(RENEWAL_DESC)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_MultipleStageProcedureTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+            rml:reference "if(exists(NB_MIN_LIMIT_CANDIDATE) or exists(NB_MAX_LIMIT_CANDIDATE) or exists(CRITERIA_CANDIDATE) or exists(TED_EXPORT/FORM_SECTION/F12_2014/PROCEDURE/RIGHT_CONTRACT_INITIAL_TENDERS) or exists(TED_EXPORT/FORM_SECTION/F12_2014/PROCEDURE/PARTICIPANT_NAME) or exists(QS/INDEFINITE_DURATION) or exists(QS/DATE_START) or exists(QS/DATE_END) or exists(RENEWAL) or exists(RENEWAL_DESC)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_MultipleStageProcedureTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
             rr:class epo:MultipleStageProcedureTerm
 
         ] ;
