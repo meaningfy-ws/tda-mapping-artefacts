@@ -983,3 +983,24 @@ tedm:SubmissionTerm a rr:TriplesMap ;
                     rr:datatype xsd:anyURI;
                 ] ;
         ] .
+
+
+tedm:ContractTermLot a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:isRenewalIndicator ;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(RENEWAL)) then 'true' else if(exists(NO_RENEWAL)) then 'false' else null";
+                    rr:datatype xsd:boolean
+                ] ;
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasRenewalDescription ;
+            rr:objectMap
+                [
+                    rml:reference "RENEWAL_DESCR";
+                    rr:datatype xsd:string;
+                ] ;
+        ] .
