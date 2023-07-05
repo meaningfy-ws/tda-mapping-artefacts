@@ -1,0 +1,1724 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+
+
+    
+
+
+
+
+    
+
+
+    
+    
+
+
+F04 SPARQL Validation Summary Report</title>
+    <link href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+                margin: 25px auto;
+                width: 80%;
+        }
+        table th, table td {
+            vertical-align: top;
+        }
+        .center {
+            text-align: center;
+        }
+        table thead th, table tr th {
+            text-align: left;
+        }
+        .success, .valid, .unverifiable {
+          color: #3c763d;
+        }
+        .info {
+          color: #31708f;
+        }
+        .warning {
+          color: #8a6d3b;
+        }
+        .danger, .invalid, .error {
+          color: #a94442;
+        }
+        .strong {
+            font-weight: bold;
+        }
+        .dialog h4 {
+            margin: 0 0 10px;
+        }
+        .dialog ul, .dialog ol {
+            margin-top: 0;
+        }
+        .dialog {
+            display: none;
+        }
+        .dialog li {
+            margin-bottom: 8px;
+        }
+
+        [data-role=collapsible].collapsible-wrapper {
+            padding: 10px 0;
+        }
+        .nowrap, table.report-details>tbody>tr>th {
+            white-space: nowrap;
+        }
+        table.report-details>tbody>tr>td {
+            width: 100%;
+        }
+        table.report-details>thead>tr{
+            height: 0;
+        }
+        [data-role=collapsible] h4 {
+            margin: 0;
+        }
+        [data-role=collapsible] h4 a {
+            padding: 3px 10px;
+            background: #ccc;
+            width: 100%;
+            box-sizing: border-box;
+            display: block;
+            color: #111;
+            text-decoration: none;
+            margin: -3px 0;
+        }
+
+        [data-role=collapsible][data-state=collapsed] h4 a:before {
+            content: '+ expand';
+        }
+        [data-role=collapsible] h4 a:before {
+            content: '- collapse';
+        }
+        [data-role=collapsible][data-state=collapsed] .ui-collapsible-content {
+            visibility: hidden;
+            height: 0;
+            padding: 0 10px;;
+        }
+
+        [data-role=collapsible] .ui-collapsible-content {
+            padding: 10px;
+        }
+
+        hr {
+            margin: 12px 0;
+            height: 5PX;
+            background: #ccc;
+            border: 0;
+        }
+    </style>
+  </head>
+  <body>
+	<h1>SPARQL Validation Summary Report</h1>
+	<hr>
+    <h2>Report details: </h2>
+    <table class="dataTable report-details">
+    <tbody>
+        <tr>
+            <th>Date created</th>
+            <td>2023-07-05T11:52:25.801906</td>
+        </tr>
+        
+        <tr>
+            <th>Mapping Suites</th>
+            <td>package_F04_v2.1.2-alpha.1</td>
+        </tr>
+        
+        
+        <tr>
+            <th>Test Suites</th>
+            <td>integration_tests</td>
+        </tr>
+        
+        
+        <tr>
+            
+            
+            
+                <th>Notice identifiers (17)</th>
+            <td><div data-role="collapsible" data-state="collapsed"
+                class="collapsible-wrapper">
+                <h4><a href="#"></a></h4>
+                <div class="ui-collapsible-content">
+                    
+                        086783-2017<br>
+                    
+                        121587-2016<br>
+                    
+                        129000-2017<br>
+                    
+                        164132-2017<br>
+                    
+                        190808-2016<br>
+                    
+                        213452-2017<br>
+                    
+                        213642-2017<br>
+                    
+                        223427-2016<br>
+                    
+                        228312-2017<br>
+                    
+                        235562-2016<br>
+                    
+                        285011-2016<br>
+                    
+                        314482-2016<br>
+                    
+                        363582-2016<br>
+                    
+                        390202-2016<br>
+                    
+                        395345-2016<br>
+                    
+                        406918-2016<br>
+                    
+                        406919-2016<br>
+                    
+                </div>
+            </div></td>
+            
+        </tr>
+        
+    </tbody>
+    </table>
+
+    <hr>
+    <h2>Results summary</h2>
+        <table class="display summary" data-order='[[0, "asc"]]'>
+            <thead class="center aligned">
+            <tr>
+                <th>Result</th>
+                <th>Count</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            <tr>
+                
+                <td class="strong valid">valid</td>
+                <td>153</td>
+            </tr>
+            
+            <tr>
+                
+                <td class="strong unverifiable">unverifiable</td>
+                <td>0</td>
+            </tr>
+            
+            <tr>
+                
+                <td class="strong warning">warning</td>
+                <td>0</td>
+            </tr>
+            
+            <tr>
+                
+                <td class="strong invalid">invalid</td>
+                <td>0</td>
+            </tr>
+            
+            <tr>
+                
+                <td class="strong error">error</td>
+                <td>0</td>
+            </tr>
+            
+            <tr>
+                
+                <td class="strong unknown">unknown</td>
+                <td>0</td>
+            </tr>
+            
+            </tbody>
+        </table>
+    <hr>
+    <h2>Results</h2>
+    <table class="display results" data-order='[[0, "asc"]]'>
+     <thead class="center aligned">
+        <tr>
+            <th>Form Field</th>
+            <th>Test Suite</th>
+            <th>Query</th>
+            
+                <th><span class="strong valid">valid</span></th>
+            
+                <th><span class="strong unverifiable">unverifiable</span></th>
+            
+                <th><span class="strong warning">warning</span></th>
+            
+                <th><span class="strong invalid">invalid</span></th>
+            
+                <th><span class="strong error">error</span></th>
+            
+                <th><span class="strong unknown">unknown</span></th>
+            
+        </tr>
+     </thead>
+    <tbody>
+        
+            <tr>
+                <td>Dangling Individuals ASK TED-929/TED-932</td>
+                <td>integration_tests</td>
+                <td>PREFIX epd: &lt;http://data.europa.eu/a4g/resource/&gt;<br><br>ASK {<br>  SELECT ?this WHERE {<br>    {<br>      SELECT ?this (COUNT(?someValue) AS ?vCount)  WHERE {<br>      { ?this ?outProp ?someValue.<br>        FILTER isIRI(?someValue)<br>      }<br>      UNION<br>      { ?someValue ?inProp ?this.<br>      }<br><br>      FILTER strstarts(str(?this),str(epd:)).<br>      FILTER strstarts(str(?someValue),str(epd:)).<br>      } GROUP BY ?this<br>    }<br>    FILTER (?vCount &gt; 0)<br>  }<br>}</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong valid">17</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[VALID] Dangling Individuals ASK TED-929/TED-932">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017/test_suite_report" target="_blank">086783-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017" target="_blank"><b>form_number_F04_S01/086783-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016/test_suite_report" target="_blank">121587-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016" target="_blank"><b>form_number_F04_S01/121587-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017/test_suite_report" target="_blank">129000-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017" target="_blank"><b>form_number_F04_S01/129000-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017/test_suite_report" target="_blank">164132-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017" target="_blank"><b>form_number_F04_S01/164132-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016/test_suite_report" target="_blank">190808-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016" target="_blank"><b>form_number_F04_S01/190808-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017/test_suite_report" target="_blank">213452-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017" target="_blank"><b>form_number_F04_S01/213452-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017/test_suite_report" target="_blank">213642-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017" target="_blank"><b>form_number_F04_S01/213642-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016/test_suite_report" target="_blank">223427-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016" target="_blank"><b>form_number_F04_S01/223427-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017/test_suite_report" target="_blank">228312-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017" target="_blank"><b>form_number_F04_S01/228312-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016/test_suite_report" target="_blank">235562-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016" target="_blank"><b>form_number_F04_S01/235562-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016/test_suite_report" target="_blank">285011-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016" target="_blank"><b>form_number_F04_S01/285011-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016/test_suite_report" target="_blank">314482-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016" target="_blank"><b>form_number_F04_S01/314482-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016/test_suite_report" target="_blank">363582-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016" target="_blank"><b>form_number_F04_S01/363582-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016/test_suite_report" target="_blank">390202-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016" target="_blank"><b>form_number_F04_S01/390202-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016/test_suite_report" target="_blank">395345-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016" target="_blank"><b>form_number_F04_S01/395345-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016/test_suite_report" target="_blank">406918-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016" target="_blank"><b>form_number_F04_S01/406918-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016/test_suite_report" target="_blank">406919-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016" target="_blank"><b>form_number_F04_S01/406919-2016</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <td>Empty Individuals ASK TED-929/TED-933</td>
+                <td>integration_tests</td>
+                <td>PREFIX epd: &lt;http://data.europa.eu/a4g/resource/&gt;<br><br>ASK {<br>SELECT ?this WHERE {<br>    {<br>      SELECT ?this (COUNT(?someValue) AS ?vCount)  WHERE {<br>        ?this ?property ?someValue.<br>  		FILTER strstarts(str(?this),str(epd:)).<br>      } GROUP BY ?this<br>    }<br>    FILTER ((EXISTS {?this a ?class}) &amp;&amp; ?vCount &gt; 1)<br>}<br>}</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong valid">17</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[VALID] Empty Individuals ASK TED-929/TED-933">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017/test_suite_report" target="_blank">086783-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017" target="_blank"><b>form_number_F04_S01/086783-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016/test_suite_report" target="_blank">121587-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016" target="_blank"><b>form_number_F04_S01/121587-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017/test_suite_report" target="_blank">129000-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017" target="_blank"><b>form_number_F04_S01/129000-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017/test_suite_report" target="_blank">164132-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017" target="_blank"><b>form_number_F04_S01/164132-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016/test_suite_report" target="_blank">190808-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016" target="_blank"><b>form_number_F04_S01/190808-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017/test_suite_report" target="_blank">213452-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017" target="_blank"><b>form_number_F04_S01/213452-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017/test_suite_report" target="_blank">213642-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017" target="_blank"><b>form_number_F04_S01/213642-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016/test_suite_report" target="_blank">223427-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016" target="_blank"><b>form_number_F04_S01/223427-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017/test_suite_report" target="_blank">228312-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017" target="_blank"><b>form_number_F04_S01/228312-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016/test_suite_report" target="_blank">235562-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016" target="_blank"><b>form_number_F04_S01/235562-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016/test_suite_report" target="_blank">285011-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016" target="_blank"><b>form_number_F04_S01/285011-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016/test_suite_report" target="_blank">314482-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016" target="_blank"><b>form_number_F04_S01/314482-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016/test_suite_report" target="_blank">363582-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016" target="_blank"><b>form_number_F04_S01/363582-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016/test_suite_report" target="_blank">390202-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016" target="_blank"><b>form_number_F04_S01/390202-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016/test_suite_report" target="_blank">395345-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016" target="_blank"><b>form_number_F04_S01/395345-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016/test_suite_report" target="_blank">406918-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016" target="_blank"><b>form_number_F04_S01/406918-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016/test_suite_report" target="_blank">406919-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016" target="_blank"><b>form_number_F04_S01/406919-2016</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <td>Generic query checking for presence of language tags TED-929/TED-1157</td>
+                <td>integration_tests</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX locn: &lt;http://www.w3.org/ns/locn#&gt;<br>PREFIX cccev: &lt;http://data.europa.eu/m8g/&gt;<br><br>ASK {<br>  {<br>    SELECT (COUNT(?s) AS ?cNoLangTag) WHERE {<br>      VALUES ?property {epo:hasLegalName epo:hasContactName<br>            epo:hasTitle epo:hasDescription epo:hasAdditionalInformation epo:hasOptionsDescription<br>            locn:fullAddress cccev:name cccev:weight cccev:description}<br>      ?s ?property ?value<br>      FILTER (lang(?value) = &#34;&#34;)<br>    }<br>  }<br>  FILTER (?cNoLangTag = 0)<br>}</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong valid">17</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[VALID] Generic query checking for presence of language tags TED-929/TED-1157">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017/test_suite_report" target="_blank">086783-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017" target="_blank"><b>form_number_F04_S01/086783-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016/test_suite_report" target="_blank">121587-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016" target="_blank"><b>form_number_F04_S01/121587-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017/test_suite_report" target="_blank">129000-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017" target="_blank"><b>form_number_F04_S01/129000-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017/test_suite_report" target="_blank">164132-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017" target="_blank"><b>form_number_F04_S01/164132-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016/test_suite_report" target="_blank">190808-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016" target="_blank"><b>form_number_F04_S01/190808-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017/test_suite_report" target="_blank">213452-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017" target="_blank"><b>form_number_F04_S01/213452-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017/test_suite_report" target="_blank">213642-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017" target="_blank"><b>form_number_F04_S01/213642-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016/test_suite_report" target="_blank">223427-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016" target="_blank"><b>form_number_F04_S01/223427-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017/test_suite_report" target="_blank">228312-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017" target="_blank"><b>form_number_F04_S01/228312-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016/test_suite_report" target="_blank">235562-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016" target="_blank"><b>form_number_F04_S01/235562-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016/test_suite_report" target="_blank">285011-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016" target="_blank"><b>form_number_F04_S01/285011-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016/test_suite_report" target="_blank">314482-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016" target="_blank"><b>form_number_F04_S01/314482-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016/test_suite_report" target="_blank">363582-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016" target="_blank"><b>form_number_F04_S01/363582-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016/test_suite_report" target="_blank">390202-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016" target="_blank"><b>form_number_F04_S01/390202-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016/test_suite_report" target="_blank">395345-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016" target="_blank"><b>form_number_F04_S01/395345-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016/test_suite_report" target="_blank">406918-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016" target="_blank"><b>form_number_F04_S01/406918-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016/test_suite_report" target="_blank">406919-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016" target="_blank"><b>form_number_F04_S01/406919-2016</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <td>TED-929/TED-1132 GH issue 237</td>
+                <td>integration_tests</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br><br>ASK {<br>  {<br>    SELECT (COUNT(?instance) AS ?cAllInst) {<br>      ?instance a epo:SubmissionStatisticalInformation.<br>    }<br>  }<br><br>  {<br>    SELECT (COUNT(?instance) AS ?cInstancesWithNewLinks) {<br>      SELECT ?instance WHERE {<br>        ?instance a epo:SubmissionStatisticalInformation.<br>        ?instance epo:summarisesInformationForLotAwardOutcome ?value.<br>        ?value a epo:LotAwardOutcome.<br>      } GROUP BY ?instance<br>    }<br>  }<br><br>  {<br>    SELECT (COUNT(?instance) AS ?cInstancesWithOldLinks) {<br>      SELECT ?instance WHERE {<br>        VALUES ?p {epo:summarisesInformationForLotAwardOutcome epo:concernsSubmissionsForLot}<br>        ?instance a epo:SubmissionStatisticalInformation.<br>        ?instance ?p ?value.<br>        ?value a ?class<br>        FILTER (?class = epo:Lot || ?p = epo:concernsSubmissionsForLot)<br>      } GROUP BY ?instance<br>    }<br>  }<br><br>  FILTER (?cAllInst = ?cInstancesWithNewLinks &amp;&amp; ?cInstancesWithOldLinks = 0)<br>}</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong valid">17</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[VALID] TED-929/TED-1132 GH issue 237">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017/test_suite_report" target="_blank">086783-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017" target="_blank"><b>form_number_F04_S01/086783-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016/test_suite_report" target="_blank">121587-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016" target="_blank"><b>form_number_F04_S01/121587-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017/test_suite_report" target="_blank">129000-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017" target="_blank"><b>form_number_F04_S01/129000-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017/test_suite_report" target="_blank">164132-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017" target="_blank"><b>form_number_F04_S01/164132-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016/test_suite_report" target="_blank">190808-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016" target="_blank"><b>form_number_F04_S01/190808-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017/test_suite_report" target="_blank">213452-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017" target="_blank"><b>form_number_F04_S01/213452-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017/test_suite_report" target="_blank">213642-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017" target="_blank"><b>form_number_F04_S01/213642-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016/test_suite_report" target="_blank">223427-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016" target="_blank"><b>form_number_F04_S01/223427-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017/test_suite_report" target="_blank">228312-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017" target="_blank"><b>form_number_F04_S01/228312-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016/test_suite_report" target="_blank">235562-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016" target="_blank"><b>form_number_F04_S01/235562-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016/test_suite_report" target="_blank">285011-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016" target="_blank"><b>form_number_F04_S01/285011-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016/test_suite_report" target="_blank">314482-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016" target="_blank"><b>form_number_F04_S01/314482-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016/test_suite_report" target="_blank">363582-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016" target="_blank"><b>form_number_F04_S01/363582-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016/test_suite_report" target="_blank">390202-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016" target="_blank"><b>form_number_F04_S01/390202-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016/test_suite_report" target="_blank">395345-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016" target="_blank"><b>form_number_F04_S01/395345-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016/test_suite_report" target="_blank">406918-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016" target="_blank"><b>form_number_F04_S01/406918-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016/test_suite_report" target="_blank">406919-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016" target="_blank"><b>form_number_F04_S01/406919-2016</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <td>TED-929/TED-1133 GH issue #275</td>
+                <td>integration_tests</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br><br>ASK {<br>  {<br>    SELECT (COUNT(?s) AS ?cNoLangTag) WHERE {<br>      VALUES ?property {epo:hasJustification}<br>      ?s ?property ?value<br>      FILTER (lang(?value) = &#34;&#34;)<br>    }<br>  }<br>  FILTER (?cNoLangTag = 0)<br>}</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong valid">17</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[VALID] TED-929/TED-1133 GH issue #275">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017/test_suite_report" target="_blank">086783-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017" target="_blank"><b>form_number_F04_S01/086783-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016/test_suite_report" target="_blank">121587-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016" target="_blank"><b>form_number_F04_S01/121587-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017/test_suite_report" target="_blank">129000-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017" target="_blank"><b>form_number_F04_S01/129000-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017/test_suite_report" target="_blank">164132-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017" target="_blank"><b>form_number_F04_S01/164132-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016/test_suite_report" target="_blank">190808-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016" target="_blank"><b>form_number_F04_S01/190808-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017/test_suite_report" target="_blank">213452-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017" target="_blank"><b>form_number_F04_S01/213452-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017/test_suite_report" target="_blank">213642-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017" target="_blank"><b>form_number_F04_S01/213642-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016/test_suite_report" target="_blank">223427-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016" target="_blank"><b>form_number_F04_S01/223427-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017/test_suite_report" target="_blank">228312-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017" target="_blank"><b>form_number_F04_S01/228312-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016/test_suite_report" target="_blank">235562-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016" target="_blank"><b>form_number_F04_S01/235562-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016/test_suite_report" target="_blank">285011-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016" target="_blank"><b>form_number_F04_S01/285011-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016/test_suite_report" target="_blank">314482-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016" target="_blank"><b>form_number_F04_S01/314482-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016/test_suite_report" target="_blank">363582-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016" target="_blank"><b>form_number_F04_S01/363582-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016/test_suite_report" target="_blank">390202-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016" target="_blank"><b>form_number_F04_S01/390202-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016/test_suite_report" target="_blank">395345-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016" target="_blank"><b>form_number_F04_S01/395345-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016/test_suite_report" target="_blank">406918-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016" target="_blank"><b>form_number_F04_S01/406918-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016/test_suite_report" target="_blank">406919-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016" target="_blank"><b>form_number_F04_S01/406919-2016</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <td>TED-929/TED-1133 GH issue #276</td>
+                <td>integration_tests</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br><br>ASK {<br>  {<br>    SELECT (COUNT(?s) AS ?cNoLangTag) WHERE {<br>      VALUES ?property {epo:hasCrossBorderLaw}<br>      ?s ?property ?value<br>      FILTER (lang(?value) = &#34;&#34;)<br>    }<br>  }<br>  FILTER (?cNoLangTag = 0)<br>}</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong valid">17</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[VALID] TED-929/TED-1133 GH issue #276">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017/test_suite_report" target="_blank">086783-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017" target="_blank"><b>form_number_F04_S01/086783-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016/test_suite_report" target="_blank">121587-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016" target="_blank"><b>form_number_F04_S01/121587-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017/test_suite_report" target="_blank">129000-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017" target="_blank"><b>form_number_F04_S01/129000-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017/test_suite_report" target="_blank">164132-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017" target="_blank"><b>form_number_F04_S01/164132-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016/test_suite_report" target="_blank">190808-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016" target="_blank"><b>form_number_F04_S01/190808-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017/test_suite_report" target="_blank">213452-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017" target="_blank"><b>form_number_F04_S01/213452-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017/test_suite_report" target="_blank">213642-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017" target="_blank"><b>form_number_F04_S01/213642-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016/test_suite_report" target="_blank">223427-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016" target="_blank"><b>form_number_F04_S01/223427-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017/test_suite_report" target="_blank">228312-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017" target="_blank"><b>form_number_F04_S01/228312-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016/test_suite_report" target="_blank">235562-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016" target="_blank"><b>form_number_F04_S01/235562-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016/test_suite_report" target="_blank">285011-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016" target="_blank"><b>form_number_F04_S01/285011-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016/test_suite_report" target="_blank">314482-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016" target="_blank"><b>form_number_F04_S01/314482-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016/test_suite_report" target="_blank">363582-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016" target="_blank"><b>form_number_F04_S01/363582-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016/test_suite_report" target="_blank">390202-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016" target="_blank"><b>form_number_F04_S01/390202-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016/test_suite_report" target="_blank">395345-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016" target="_blank"><b>form_number_F04_S01/395345-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016/test_suite_report" target="_blank">406918-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016" target="_blank"><b>form_number_F04_S01/406918-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016/test_suite_report" target="_blank">406919-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016" target="_blank"><b>form_number_F04_S01/406919-2016</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <td>TED-929/TED-1133 GH issue #277</td>
+                <td>integration_tests</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br><br>ASK {<br>  {<br>    SELECT (COUNT(?s) AS ?cNoLangTag) WHERE {<br>      VALUES ?property {epo:hasAcceleratedProcedureJustification}<br>      ?s ?property ?value<br>      FILTER (lang(?value) = &#34;&#34;)<br>    }<br>  }<br>  FILTER (?cNoLangTag = 0)<br>}</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong valid">17</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[VALID] TED-929/TED-1133 GH issue #277">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017/test_suite_report" target="_blank">086783-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017" target="_blank"><b>form_number_F04_S01/086783-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016/test_suite_report" target="_blank">121587-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016" target="_blank"><b>form_number_F04_S01/121587-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017/test_suite_report" target="_blank">129000-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017" target="_blank"><b>form_number_F04_S01/129000-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017/test_suite_report" target="_blank">164132-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017" target="_blank"><b>form_number_F04_S01/164132-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016/test_suite_report" target="_blank">190808-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016" target="_blank"><b>form_number_F04_S01/190808-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017/test_suite_report" target="_blank">213452-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017" target="_blank"><b>form_number_F04_S01/213452-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017/test_suite_report" target="_blank">213642-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017" target="_blank"><b>form_number_F04_S01/213642-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016/test_suite_report" target="_blank">223427-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016" target="_blank"><b>form_number_F04_S01/223427-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017/test_suite_report" target="_blank">228312-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017" target="_blank"><b>form_number_F04_S01/228312-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016/test_suite_report" target="_blank">235562-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016" target="_blank"><b>form_number_F04_S01/235562-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016/test_suite_report" target="_blank">285011-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016" target="_blank"><b>form_number_F04_S01/285011-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016/test_suite_report" target="_blank">314482-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016" target="_blank"><b>form_number_F04_S01/314482-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016/test_suite_report" target="_blank">363582-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016" target="_blank"><b>form_number_F04_S01/363582-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016/test_suite_report" target="_blank">390202-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016" target="_blank"><b>form_number_F04_S01/390202-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016/test_suite_report" target="_blank">395345-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016" target="_blank"><b>form_number_F04_S01/395345-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016/test_suite_report" target="_blank">406918-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016" target="_blank"><b>form_number_F04_S01/406918-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016/test_suite_report" target="_blank">406919-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016" target="_blank"><b>form_number_F04_S01/406919-2016</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <td>TED-929/TED-1178 GH issue #286</td>
+                <td>integration_tests</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br><br>ASK {<br>  {<br>    SELECT (COUNT(?s) AS ?cNoLangTag) WHERE {<br>      VALUES ?property {epo:hasDurationExtensionJustification}<br>      ?s ?property ?value<br>      FILTER (lang(?value) = &#34;&#34;)<br>    }<br>  }<br>  FILTER (?cNoLangTag = 0)<br>}</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong valid">17</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[VALID] TED-929/TED-1178 GH issue #286">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017/test_suite_report" target="_blank">086783-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017" target="_blank"><b>form_number_F04_S01/086783-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016/test_suite_report" target="_blank">121587-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016" target="_blank"><b>form_number_F04_S01/121587-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017/test_suite_report" target="_blank">129000-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017" target="_blank"><b>form_number_F04_S01/129000-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017/test_suite_report" target="_blank">164132-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017" target="_blank"><b>form_number_F04_S01/164132-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016/test_suite_report" target="_blank">190808-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016" target="_blank"><b>form_number_F04_S01/190808-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017/test_suite_report" target="_blank">213452-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017" target="_blank"><b>form_number_F04_S01/213452-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017/test_suite_report" target="_blank">213642-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017" target="_blank"><b>form_number_F04_S01/213642-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016/test_suite_report" target="_blank">223427-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016" target="_blank"><b>form_number_F04_S01/223427-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017/test_suite_report" target="_blank">228312-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017" target="_blank"><b>form_number_F04_S01/228312-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016/test_suite_report" target="_blank">235562-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016" target="_blank"><b>form_number_F04_S01/235562-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016/test_suite_report" target="_blank">285011-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016" target="_blank"><b>form_number_F04_S01/285011-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016/test_suite_report" target="_blank">314482-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016" target="_blank"><b>form_number_F04_S01/314482-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016/test_suite_report" target="_blank">363582-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016" target="_blank"><b>form_number_F04_S01/363582-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016/test_suite_report" target="_blank">390202-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016" target="_blank"><b>form_number_F04_S01/390202-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016/test_suite_report" target="_blank">395345-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016" target="_blank"><b>form_number_F04_S01/395345-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016/test_suite_report" target="_blank">406918-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016" target="_blank"><b>form_number_F04_S01/406918-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016/test_suite_report" target="_blank">406919-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016" target="_blank"><b>form_number_F04_S01/406919-2016</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <td>Unique ID ASK GH issue 273 TED-929/TED-1151</td>
+                <td>integration_tests</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br><br>ASK {<br>   {<br>    SELECT (COUNT(?sub) AS ?instanceCount) {<br>      {<br>       SELECT ?sub (COUNT(?obj) AS ?pCount) WHERE {<br>         ?sub epo:hasID ?obj .<br>         ?obj a epo:Identifier .<br>       }<br>       GROUP BY ?sub<br>      }<br>      FILTER (?pCount &gt; 1)<br>    }<br>   }<br>   FILTER(?instanceCount = 0)<br>}</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong valid">17</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[VALID] Unique ID ASK GH issue 273 TED-929/TED-1151">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017/test_suite_report" target="_blank">086783-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/086783-2017" target="_blank"><b>form_number_F04_S01/086783-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016/test_suite_report" target="_blank">121587-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/121587-2016" target="_blank"><b>form_number_F04_S01/121587-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017/test_suite_report" target="_blank">129000-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/129000-2017" target="_blank"><b>form_number_F04_S01/129000-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017/test_suite_report" target="_blank">164132-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/164132-2017" target="_blank"><b>form_number_F04_S01/164132-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016/test_suite_report" target="_blank">190808-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/190808-2016" target="_blank"><b>form_number_F04_S01/190808-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017/test_suite_report" target="_blank">213452-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213452-2017" target="_blank"><b>form_number_F04_S01/213452-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017/test_suite_report" target="_blank">213642-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/213642-2017" target="_blank"><b>form_number_F04_S01/213642-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016/test_suite_report" target="_blank">223427-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/223427-2016" target="_blank"><b>form_number_F04_S01/223427-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017/test_suite_report" target="_blank">228312-2017</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/228312-2017" target="_blank"><b>form_number_F04_S01/228312-2017</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016/test_suite_report" target="_blank">235562-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/235562-2016" target="_blank"><b>form_number_F04_S01/235562-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016/test_suite_report" target="_blank">285011-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/285011-2016" target="_blank"><b>form_number_F04_S01/285011-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016/test_suite_report" target="_blank">314482-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/314482-2016" target="_blank"><b>form_number_F04_S01/314482-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016/test_suite_report" target="_blank">363582-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/363582-2016" target="_blank"><b>form_number_F04_S01/363582-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016/test_suite_report" target="_blank">390202-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/390202-2016" target="_blank"><b>form_number_F04_S01/390202-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016/test_suite_report" target="_blank">395345-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/395345-2016" target="_blank"><b>form_number_F04_S01/395345-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016/test_suite_report" target="_blank">406918-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406918-2016" target="_blank"><b>form_number_F04_S01/406918-2016</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016/test_suite_report" target="_blank">406919-2016</a>
+                                        in <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output" target="_blank"><b>package_F04</b></a>
+                                        at <a href="file:///mnt/c/Users/Csongor/git/meaningfy-ws/tda-mapping-artefacts/mappings/package_F04/output/form_number_F04_S01/406919-2016" target="_blank"><b>form_number_F04_S01/406919-2016</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+    </tbody>
+    </table>
+    <hr>
+  </body>
+</html>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.4/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.4/js/buttons.print.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("[data-role=collapsible] h4 a").on("click", function (e) {
+            $p = $(this).closest("[data-role=collapsible]");
+            $p.attr("data-state", $p.attr("data-state") == "collapsed" ? "expanded" : "collapsed");
+            $c = $p.find('.ui-collapsible-content');
+            $c.attr("data-state", $c.attr("data-state") == "collapsed" ? "expanded" : "collapsed");
+            return false;
+        });
+        $("table.display.summary").DataTable({
+            dom: 'r'
+        });
+        $("table.display.results").DataTable({
+            dom: 'B<"clear">lfiprtip',
+            buttons: [],
+            "lengthMenu": [[5, 15, 30, -1], [5, 15, 30, "All"]],
+            "pageLength": 15,
+            responsive: {
+                details: true
+            }
+        });
+
+        $(document).on('click', '.open-dialog', function () {
+            $dialog = $(this).next('.dialog');
+            $dialog.dialog({
+                        width: 800,
+                        modal: true,
+                        buttons: {
+                                        "Close": function(event, ui) {
+                                          $dialog.dialog('destroy');
+                                        }
+                                     },
+                        close: function(event, ui) {
+                                    $dialog.dialog('destroy');
+                                }
+                        })
+            $dialog.dialog('open');
+            return false;
+        });
+    });
+
+</script>

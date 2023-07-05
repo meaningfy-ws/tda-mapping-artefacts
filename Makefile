@@ -93,6 +93,13 @@ test:
 	@ mapping_suite_validator package_F22
 	@ mapping_suite_validator package_F23
 	@ mapping_suite_validator package_F25
+	@ mapping_suite_validator package_F01
+	@ mapping_suite_validator package_F02
+	@ mapping_suite_validator package_F04
+	@ mapping_suite_validator package_F05
+	@ mapping_suite_validator package_F08
+	@ mapping_suite_validator package_F12
+	@ mapping_suite_validator package_F24
 
 
 clear-xml-resolver-cache:
