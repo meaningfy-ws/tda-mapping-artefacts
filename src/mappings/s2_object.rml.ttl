@@ -938,3 +938,21 @@ tedm:Fund a rr:TriplesMap ;
                 ]
         ] .
 
+tedm:SubmissionTerm a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasECataloguePermission ;
+            rr:objectMap
+                [
+                    rml:reference "../OBJECT_CONTRACT/OBJECT_DESCR/ECATALOGUE_REQUIRED";
+                ] ;
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasVariantPermission ;
+            rr:objectMap
+                [
+                    rml:reference "if (exists(../OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS)) then 'true' else if(exists(../OBJECT_CONTRACT/OBJECT_DESCR/NO_ACCEPTED_VARIANTS)) then 'false' else null";
+                    rr:datatype xsd:anyURI;
+                ] ;
+        ] .
