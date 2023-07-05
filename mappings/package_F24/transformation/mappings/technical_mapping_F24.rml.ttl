@@ -360,25 +360,6 @@ tedm:Procedure a rr:TriplesMap ;
             rml:source "data/source.xml" ;
             rml:iterator "/TED_EXPORT/FORM_SECTION/F24_2014/OBJECT_CONTRACT" ;
             rml:referenceFormulation ql:XPath
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasRecurrenceDescription ;
-            rr:objectMap
-                [
-                    rml:reference "../COMPLEMENTARY_INFO/ESTIMATED_TIMING";
-                ]
-
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:isRecurrent ;
-            rr:objectMap
-                [
-                    rml:reference "if(exists(../COMPLEMENTARY_INFO/RECURRENT_PROCUREMENT)) then 'true' else if(exists(../COMPLEMENTARY_INFO/NO_RECURRENT_PROCUREMENT)) then 'false' else null";
-                    rr:datatype xsd:boolean
-                ]
-
         ] .
 #    rr:predicateObjectMap
 #        [

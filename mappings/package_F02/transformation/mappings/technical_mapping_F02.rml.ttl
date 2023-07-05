@@ -360,37 +360,6 @@ tedm:Procedure a rr:TriplesMap ;
             rml:source "data/source.xml" ;
             rml:iterator "/TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT" ;
             rml:referenceFormulation ql:XPath
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasRecurrenceDescription ;
-            rr:objectMap
-                [
-                    rml:reference "../COMPLEMENTARY_INFO/ESTIMATED_TIMING";
-                ]
-
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:isRecurrent ;
-            rr:objectMap
-                [
-                    rml:reference "if(exists(../COMPLEMENTARY_INFO/RECURRENT_PROCUREMENT)) then 'true' else if(exists(../COMPLEMENTARY_INFO/NO_RECURRENT_PROCUREMENT)) then 'false' else null";
-                    rr:datatype xsd:boolean
-                ]
-
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasProcurementScopeDividedIntoLot ;
-            rr:objectMap
-                [
-                    rr:parentTriplesMap tedm:Lot;
-                    rr:joinCondition [
-                        rr:child "path(..)";
-                        rr:parent "path(.)";
-                    ];
-                ] ;
         ] .
 #    rr:predicateObjectMap
 #        [
@@ -514,36 +483,6 @@ tedm:OpeningTerm  a rr:TriplesMap ;
             rml:reference
                 "if(exists(INFO_ADD) or exists(DATE_OPENING_TENDERS) or exists(TIME_OPENING_TENDERS)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_OpeningTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
             rr:class epo:OpeningTerm
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasOpeningDescription;
-            rr:objectMap
-                [
-                    rml:reference "INFO_ADD";
-                    rr:datatype xsd:string
-                ]
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasOpeningDateTime ;
-            rr:objectMap
-                [
-                    rml:reference "if(exists(DATE_OPENING_TENDERS) and exists(TIME_OPENING_TENDERS)) then DATE_OPENING_TENDERS || 'T' || TIME_OPENING_TENDERS else if(exists(DATE_OPENING_TENDERS)) then TIME_OPENING_TENDERS else null";
-                    rr:datatype xsd:dateTime;
-                ]
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:definesOpeningPlace ;
-            rr:objectMap
-                [
-                    rr:parentTriplesMap tedm:OpeningTermLocation;
-                    rr:joinCondition [
-                        rr:child "path(.)";
-                        rr:parent "path(.)";
-                    ];
-                ] ;
         ] .
 
  tedm:OpeningTermLocation  a rr:TriplesMap ;
@@ -558,15 +497,6 @@ tedm:OpeningTerm  a rr:TriplesMap ;
             rml:reference
                 "if(exists(PLACE)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_OpeningTermLocation_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
             rr:class epo:OpeningTerm
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate locn:fullAddress;
-            rr:objectMap
-                [
-                    rml:reference "PLACE";
-                    rr:datatype xsd:string
-                ]
         ] .
 
 tedm:Lot a rr:TriplesMap ;
@@ -580,18 +510,6 @@ tedm:Lot a rr:TriplesMap ;
         [
             rr:template "http://data.europa.eu/a4g/resource/id_{replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-')}_Lot_{unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw')}" ;
             rr:class epo:Lot
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:isSubjectToLotSpecificTerm ;
-            rr:objectMap
-                [
-                    rr:parentTriplesMap tedm:OpeningTerm;
-                    rr:joinCondition [
-                        rr:child "path(../..)";
-                        rr:parent "path(../..)";
-                    ];
-                ] ;
         ] .
 tedm:LotIdentifier a rr:TriplesMap ;
     rml:logicalSource
@@ -1143,6 +1061,37 @@ tedm:SubcontractingEstimatedValueMonetaryValue a rr:TriplesMap ;
             rr:class epo:MonetaryValue
 
         ] .
+
+#Section 4
+tedm:DesignContestRegimeTerm  a rr:TriplesMap ;
+    rml:logicalSource
+        [
+            rml:source "data/source.xml" ;
+            rml:iterator "/TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE" ;
+            rml:referenceFormulation ql:XPath
+        ] ;
+    rr:subjectMap
+        [
+            rml:reference
+                "if(exists(NO_DECISION_BINDING_CONTRACTING) or exists(DECISION_BINDING_CONTRACTING) or exists(NUMBER_VALUE_PRIZE) or exists(DETAILS_PAYMENT) or exists(NO_FOLLOW_UP_CONTRACTS) or exists(FOLLOW_UP_CONTRACTS)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_DesignContestRegimeTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+            rr:class epo:DesignContestRegimeTerm
+        ] .
+
+
+tedm:DesignContestRegimeTermPrize  a rr:TriplesMap ;
+    rml:logicalSource
+        [
+            rml:source "data/source.xml" ;
+            rml:iterator "/TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE" ;
+            rml:referenceFormulation ql:XPath
+        ] ;
+    rr:subjectMap
+        [
+            rml:reference
+                "if(exists(PRIZE_AWARDED) or exists(NO_PRIZE_AWARDED)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_DesignContestRegimeTermPrize_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+            rr:class epo:Prize
+        ] .
+
 #Section 6
 tedm:ReviewerContactPoint a rr:TriplesMap ;
     rml:logicalSource
@@ -1671,32 +1620,6 @@ tedm:SubmissionPeriod  a rr:TriplesMap ;
             rml:reference
                 "if(exists(DATE_TENDER_VALID) or exists(DURATION_TENDER_VALID) or exists(DURATION_TENDER_VALID/@TYPE)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_SubmissionPeriod_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
             rr:class epo:Period
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasEnd;
-            rr:objectMap
-                [
-                    rml:reference "DATE_TENDER_VALID";
-                    rr:datatype xsd:date
-                ]
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasDescription;
-            rr:objectMap
-                [
-                    rml:reference "DURATION_TENDER_VALID";
-                    rr:datatype xsd:string
-                ]
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasTimePeriod;
-            rr:objectMap
-                [
-                    rml:reference "DURATION_TENDER_VALID/@TYPE";
-                ]
         ] .
 
 tedm:SubmissionTerm a rr:TriplesMap ;
@@ -1711,18 +1634,6 @@ tedm:SubmissionTerm a rr:TriplesMap ;
             rml:source "data/source.xml" ;
             rml:iterator "/TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE" ;
             rml:referenceFormulation ql:XPath
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasValidityPeriod ;
-            rr:objectMap
-                [
-                    rr:parentTriplesMap tedm:SubmissionPeriod;
-                    rr:joinCondition [
-                        rr:child "path(.)";
-                        rr:parent "path(.)";
-                    ];
-                ] ;
         ] .
 # controlled values
 tedm:contractNature  a rr:TriplesMap ;

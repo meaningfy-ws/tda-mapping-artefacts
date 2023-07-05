@@ -28,6 +28,69 @@ tedm:ProcedureIdentifier a rr:TriplesMap ;
                 ]
         ] .
 
+tedm:Lot a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:isSubjectToLotSpecificTerm;
+            rr:objectMap
+                [
+                    rr:parentTriplesMap tedm:DesignContestRegimeTerm;
+                ]
+        ] .
+
+tedm:DesignContestRegimeTerm  a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasJuryDecisionBinding;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(DECISION_BINDING_CONTRACTING)) then 'true' else if(exists(NO_DECISION_BINDING_CONTRACTING)) then 'false' else null";
+                    rr:datatype xsd:boolean
+                ]
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasFollowupContract;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(FOLLOW_UP_CONTRACTS)) then 'true' else if(exists(NO_FOLLOW_UP_CONTRACTS)) then 'false' else null";
+                    rr:datatype xsd:boolean
+                ]
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasParticipationPayment;
+            rr:objectMap
+                [
+                    rml:reference "DETAILS_PAYMENT";
+                    rr:datatype xsd:string
+                ]
+        ];
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:definesPrize ;
+            rr:objectMap
+                [
+                    rr:parentTriplesMap tedm:DesignContestRegimeTermPrize;
+                    rr:joinCondition [
+                        rr:child "path(.)";
+                        rr:parent "path(.)";
+                    ];
+                ] ;
+        ] .
+
+
+tedm:DesignContestRegimeTermPrize  a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasFollowupContract;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(PRIZE_AWARDED)) then 'true' else if(exists(NO_PRIZE_AWARDED)) then 'false' else null";
+                    rr:datatype xsd:boolean
+                ]
+        ] .
+
 tedm:Procedure a rr:TriplesMap ;
     rr:predicateObjectMap
         [
