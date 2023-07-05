@@ -28,6 +28,27 @@ tedm:ProcedureIdentifier a rr:TriplesMap ;
                 ]
         ] .
 
+tedm:FrameworkAgreementTerm  a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasMaximumParticipantsNumber;
+            rr:objectMap
+                [
+                    rml:reference "descendant::NB_PARTICIPANTS";
+                    rr:datatype xsd:integer
+                ]
+        ].
+
+tedm:DynamicPurchaseSystemTechniqueUsage  a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasDPSScope;
+            rr:objectMap
+                [
+                    rml:reference "DPS_ADDITIONAL_PURCHASERS";
+                ]
+        ].
+
 tedm:MultipleStageProcedureTerm  a rr:TriplesMap ;
     rr:predicateObjectMap
         [
