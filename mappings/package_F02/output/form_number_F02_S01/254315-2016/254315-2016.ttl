@@ -68,7 +68,11 @@ epd:id_2016-S-141-254315_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTe
   epo:hasOptions true;
   epo:hasOptionsDescription """
 Yes.
-"""@en .
+"""@en;
+  epo:hasRenewalDescription """
+Renewal is based on quality and deadline of work.
+""";
+  epo:isRenewalIndicator true .
 
 epd:id_2016-S-141-254315_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
@@ -120,7 +124,8 @@ epd:id_2016-S-141-254315_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Mon
   epo:hasAmountValue 123.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
 
-epd:id_2016-S-141-254315_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
+epd:id_2016-S-141-254315_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm;
+  epo:hasMaximumNumberOfCandidates 1 .
 
 epd:id_2016-S-141-254315_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2016-S-141-254315_AdditionalBuyer_n3AiVAiqhTocTL76peYHtw,
@@ -231,9 +236,11 @@ epd:id_2016-S-141-254315_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2016-S-141-254315_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
+  epo:hasECataloguePermission "";
   epo:hasLanguage "AR";
   epo:hasSubmissionURL "www.asite.com"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2016-S-141-254315_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
+  epo:hasValidityPeriod epd:id_2016-S-141-254315_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasVariantPermission "false"^^xsd:anyURI .
 
 epd:id_2016-S-141-254315_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2016-S-141-254315_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

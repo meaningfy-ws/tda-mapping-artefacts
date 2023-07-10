@@ -53,7 +53,9 @@ epd:id_2022-S-093-255180_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTe
   epo:definesContractPeriod epd:id_2022-S-093-255180_Period_oEYZZQWPrbQFajcRU6KZAY;
   epo:definesSpecificPlaceOfPerformance epd:id_2022-S-093-255180_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasOptions true;
-  epo:hasOptionsDescription "Die Auftraggeberin behält sich eine stufenweise Beauftragung der einzelnen Leistungsphasen vor. Ein Rechtsanspruch auf die Übertragung aller Leistungsphasen besteht nicht."@de .
+  epo:hasOptionsDescription "Die Auftraggeberin behält sich eine stufenweise Beauftragung der einzelnen Leistungsphasen vor. Ein Rechtsanspruch auf die Übertragung aller Leistungsphasen besteht nicht."@de;
+  epo:hasRenewalDescription "Die o.g. Laufzeit beruht auf einer derzeitigen Schätzung. Aufgrund der Option der stufenweisen Beauftragung oder derzeit noch nicht absehbarer Gründe behält sich die Auftraggeberin vor, den Auftrag zu verlängern.";
+  epo:isRenewalIndicator true .
 
 epd:id_2022-S-093-255180_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
@@ -91,7 +93,10 @@ epd:id_2022-S-093-255180_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Mon
   epo:hasAmountValue 3240000.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
 
-epd:id_2022-S-093-255180_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
+epd:id_2022-S-093-255180_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm;
+  epo:hasMaximumNumberOfCandidates 5;
+  epo:hasMinimumNumberOfCandidates 3;
+  epo:hasQualificationSystemRenewalDescription "Für die Vergabephase sollen zusätzlich zu dem vorab ausgewählten Teilnehmer mind. 3 und max. 5 Bieter ausgewählt werden. Die Auswahl der Bieter erfolgt aufgrund der Rangfolge der erreichten Punkte der Gesamtbewertung (absteigende Rangfolge). Bei Bewerbern mit gleicher Punktzahl entscheidet das Los." .
 
 epd:id_2022-S-093-255180_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2022-S-093-255180_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2022-S-093-255180_ProcurementProcedureInformationProvider_TQABXDaYTEjCPjunpz6abq,
@@ -174,7 +179,8 @@ epd:id_2022-S-093-255180_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
 epd:id_2022-S-093-255180_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "DE";
   epo:hasSubmissionURL "http://www.bi-medien.de"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2022-S-093-255180_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
+  epo:hasValidityPeriod epd:id_2022-S-093-255180_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasVariantPermission "false"^^xsd:anyURI .
 
 epd:id_2022-S-093-255180_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2022-S-093-255180_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

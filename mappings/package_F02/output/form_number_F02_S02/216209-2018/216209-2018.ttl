@@ -75,17 +75,29 @@ epd:id_2018-S-095-216209_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Lo
 epd:id_2018-S-095-216209_ContractTermLot_XgDjBcfYCsz7NdkrVQLYVX a epo:ContractTerm;
   epo:definesContractDuration epd:id_2018-S-095-216209_Duration_BiAn7cTB8hYzq69k3YohKz;
   epo:definesSpecificPlaceOfPerformance epd:id_2018-S-095-216209_ContractTermLotLocation_XgDjBcfYCsz7NdkrVQLYVX;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:hasRenewalDescription """
+                  An initial period of 12 months with an option to extend for an additional 12 months.
+               """;
+  epo:isRenewalIndicator true .
 
 epd:id_2018-S-095-216209_ContractTermLot_hwn2ViGxdekSZaFD46S6bD a epo:ContractTerm;
   epo:definesContractDuration epd:id_2018-S-095-216209_Duration_9Bbq5bTgQzHtMfNVxrW3c6;
   epo:definesSpecificPlaceOfPerformance epd:id_2018-S-095-216209_ContractTermLotLocation_hwn2ViGxdekSZaFD46S6bD;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:hasRenewalDescription """
+                  An initial period of 12 months with an option for an additional 12 months.
+               """;
+  epo:isRenewalIndicator true .
 
 epd:id_2018-S-095-216209_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
   epo:definesContractDuration epd:id_2018-S-095-216209_Duration_AvcCuw3xpUXoTAF29u4PAa;
   epo:definesSpecificPlaceOfPerformance epd:id_2018-S-095-216209_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:hasRenewalDescription """
+                  An initial 12 month period with an option to extend for an additional 12 months.
+               """;
+  epo:isRenewalIndicator true .
 
 epd:id_2018-S-095-216209_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
@@ -283,11 +295,14 @@ epd:id_2018-S-095-216209_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Mon
   epo:hasAmountValue 10000000.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
 
-epd:id_2018-S-095-216209_MultipleStageProcedureTerm_XgDjBcfYCsz7NdkrVQLYVX a epo:MultipleStageProcedureTerm .
+epd:id_2018-S-095-216209_MultipleStageProcedureTerm_XgDjBcfYCsz7NdkrVQLYVX a epo:MultipleStageProcedureTerm;
+  epo:hasMinimumNumberOfCandidates 5 .
 
-epd:id_2018-S-095-216209_MultipleStageProcedureTerm_hwn2ViGxdekSZaFD46S6bD a epo:MultipleStageProcedureTerm .
+epd:id_2018-S-095-216209_MultipleStageProcedureTerm_hwn2ViGxdekSZaFD46S6bD a epo:MultipleStageProcedureTerm;
+  epo:hasMinimumNumberOfCandidates 5 .
 
-epd:id_2018-S-095-216209_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
+epd:id_2018-S-095-216209_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm;
+  epo:hasMinimumNumberOfCandidates 5 .
 
 epd:id_2018-S-095-216209_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2018-S-095-216209_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2018-S-095-216209_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
@@ -390,4 +405,5 @@ epd:id_2018-S-095-216209_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
 
 epd:id_2018-S-095-216209_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "EN";
-  epo:hasSubmissionURL "https://www.publictendersscotland.publiccontractsscotland.gov.uk"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://www.publictendersscotland.publiccontractsscotland.gov.uk"^^xsd:anyURI;
+  epo:hasVariantPermission "false"^^xsd:anyURI .

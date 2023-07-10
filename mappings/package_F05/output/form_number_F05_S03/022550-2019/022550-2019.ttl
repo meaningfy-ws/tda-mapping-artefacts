@@ -72,12 +72,16 @@ epd:id_2019-S-011-022550_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Lo
 epd:id_2019-S-011-022550_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
   epo:definesContractDuration epd:id_2019-S-011-022550_Duration_Wt9hTKqTB6wXtR2gujyw8e;
   epo:definesSpecificPlaceOfPerformance epd:id_2019-S-011-022550_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:hasRenewalDescription "Le contrat est conclu pour une première période de 2 ans et 11 mois à partir du 9.5.2019 jusqu'au 31.3.2022. Il peut être renouvelé par périodes successives de 1 an avec 3 reconduction max. Lot 1 Lyon-Saint-Exupéry, en d'une superfermance en débit horaire le titulaire pourra être notifié des années renouvelables dès la première période. La durée totale du contrat est 5 ans 11 mois max.";
+  epo:isRenewalIndicator true .
 
 epd:id_2019-S-011-022550_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
   epo:definesContractDuration epd:id_2019-S-011-022550_Duration_2tPkBpSHtbcCKtpNaLfLoy;
   epo:definesSpecificPlaceOfPerformance epd:id_2019-S-011-022550_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:hasRenewalDescription "Le contrat est conclu pour une première période de 2 ans et 11 mois à partir du 9.5.2019 jusqu'au 31.3.2022. Il peut être renouvelé par périodes successives de 1 an avec un nombre max de reconduction de 3. La durée totale du contrat ne pourra donc excéder 5 ans et 11 mois.";
+  epo:isRenewalIndicator true .
 
 epd:id_2019-S-011-022550_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
@@ -158,9 +162,15 @@ epd:id_2019-S-011-022550_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:Mon
   epo:hasAmountValue 94000000.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
 
-epd:id_2019-S-011-022550_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+epd:id_2019-S-011-022550_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
+  epo:hasMaximumNumberOfCandidates 6;
+  epo:hasMinimumNumberOfCandidates 1;
+  epo:hasQualificationSystemRenewalDescription "Le nombre de candidatures retenues est limité à 6 maximum dans la mesure où le nombre et la qualité de dossiers le permettent. Les candidatures seront analysées et notées en fonction des critères décrits au point III.1.4) Règles et critères objectifs de participation de ce document." .
 
-epd:id_2019-S-011-022550_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:MultipleStageProcedureTerm .
+epd:id_2019-S-011-022550_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:MultipleStageProcedureTerm;
+  epo:hasMaximumNumberOfCandidates 6;
+  epo:hasMinimumNumberOfCandidates 1;
+  epo:hasQualificationSystemRenewalDescription "Le nombre de candidatures retenues est limité à 6 maximum dans la mesure où le nombre et la qualité de dossiers le permettent. Les candidatures seront analysées et notées en fonction des critères décrits au point III.1.4) Règles et critères objectifs de participation de ce document." .
 
 epd:id_2019-S-011-022550_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2019-S-011-022550_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2019-S-011-022550_Mediator_Der4dmnz4iLnj5vKZroTMU,
@@ -271,7 +281,8 @@ epd:id_2019-S-011-022550_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
 epd:id_2019-S-011-022550_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "http://www.e-marchespublics.com"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2019-S-011-022550_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
+  epo:hasValidityPeriod epd:id_2019-S-011-022550_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasVariantPermission "true"^^xsd:anyURI .
 
 epd:id_2019-S-011-022550_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2019-S-011-022550_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

@@ -43,7 +43,8 @@ epd:id_2021-S-144-381689_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Lo
 epd:id_2021-S-144-381689_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
   epo:definesContractDuration epd:id_2021-S-144-381689_Duration_AvcCuw3xpUXoTAF29u4PAa;
   epo:definesSpecificPlaceOfPerformance epd:id_2021-S-144-381689_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:isRenewalIndicator false .
 
 epd:id_2021-S-144-381689_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
@@ -66,6 +67,7 @@ epd:id_2021-S-144-381689_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:hasEstimatedValue epd:id_2021-S-144-381689_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasPurpose epd:id_2021-S-144-381689_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
   epo:isFundedBy epd:id_2021-S-144-381689_Fund_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-144-381689_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
   epo:isUsingEUFunds true .
 
 epd:id_2021-S-144-381689_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:MonetaryValue;
@@ -75,6 +77,9 @@ epd:id_2021-S-144-381689_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:Monet
 epd:id_2021-S-144-381689_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
   epo:hasAmountValue 500000.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-144-381689_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm;
+  epo:hasQualificationSystemRenewalDescription "The number of candidates is not limited. Please consult the procurement documents available at the address indicated in section I.3)." .
 
 epd:id_2021-S-144-381689_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2021-S-144-381689_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2021-S-144-381689_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
@@ -154,7 +159,8 @@ epd:id_2021-S-144-381689_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
 
 epd:id_2021-S-144-381689_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "EN";
-  epo:hasValidityPeriod epd:id_2021-S-144-381689_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
+  epo:hasValidityPeriod epd:id_2021-S-144-381689_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasVariantPermission "false"^^xsd:anyURI .
 
 epd:id_2021-S-144-381689_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2021-S-144-381689_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

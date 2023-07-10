@@ -40,7 +40,9 @@ epd:id_2021-S-040-101018_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Lo
 epd:id_2021-S-040-101018_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
   epo:definesContractDuration epd:id_2021-S-040-101018_Duration_Wt9hTKqTB6wXtR2gujyw8e;
   epo:definesSpecificPlaceOfPerformance epd:id_2021-S-040-101018_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:hasRenewalDescription "Le marché est reconductible sept fois, pour une période de un an, soit une durée maximale de huit ans.";
+  epo:isRenewalIndicator true .
 
 epd:id_2021-S-040-101018_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
@@ -90,7 +92,9 @@ epd:id_2021-S-040-101018_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:Mon
   epo:hasAmountValue 4480000.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
 
-epd:id_2021-S-040-101018_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+epd:id_2021-S-040-101018_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
+  epo:hasMinimumNumberOfCandidates 1;
+  epo:hasQualificationSystemRenewalDescription "À l'issue de l'analyse des candidatures, le nombre de candidats qui sera admis à présenter une offre n'est pas limité." .
 
 epd:id_2021-S-040-101018_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2021-S-040-101018_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-040-101018_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
@@ -192,7 +196,8 @@ epd:id_2021-S-040-101018_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
 epd:id_2021-S-040-101018_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://www.marches-securises.fr"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2021-S-040-101018_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
+  epo:hasValidityPeriod epd:id_2021-S-040-101018_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasVariantPermission "true"^^xsd:anyURI .
 
 epd:id_2021-S-040-101018_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

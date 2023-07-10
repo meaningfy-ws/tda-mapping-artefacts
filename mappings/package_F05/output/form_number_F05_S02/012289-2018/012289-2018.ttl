@@ -42,7 +42,8 @@ epd:id_2018-S-007-012289_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Lo
 epd:id_2018-S-007-012289_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
   epo:definesContractDuration epd:id_2018-S-007-012289_Duration_Wt9hTKqTB6wXtR2gujyw8e;
   epo:definesSpecificPlaceOfPerformance epd:id_2018-S-007-012289_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:isRenewalIndicator false .
 
 epd:id_2018-S-007-012289_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
@@ -64,7 +65,15 @@ epd:id_2018-S-007-012289_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
                   Les offres sont sollicitées en vue: d'un achat.
                """@fr;
   epo:hasPurpose epd:id_2018-S-007-012289_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-007-012289_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
   epo:isUsingEUFunds false .
+
+epd:id_2018-S-007-012289_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
+  epo:hasQualificationSystemRenewalDescription """
+                  Les candidats devront obligatoirement présenter un chiffre d'affaires annuel global minimal de 8 000 000 EUR sur le dernier exercice comptable (copie du dernier bilan disponible).
+                  Les candidatures recevables seront notées selon les ritères financiers pour 30 % et les critères techniques pour 70 %.
+                  Se référer au document intitulé «Candidature cabines spécialisées.xls».
+               """ .
 
 epd:id_2018-S-007-012289_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2018-S-007-012289_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2018-S-007-012289_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
@@ -184,4 +193,5 @@ epd:id_2018-S-007-012289_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
 
 epd:id_2018-S-007-012289_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasSubmissionURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI .
+  epo:hasSubmissionURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
+  epo:hasVariantPermission "false"^^xsd:anyURI .

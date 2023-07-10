@@ -346,7 +346,11 @@ epd:id_2018-S-081-181548_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTe
   epo:hasOptions true;
   epo:hasOptionsDescription """
                   An option to extend for an additional 2 years. The aforementioned estimated contract value is for the 5+2.
-               """@en .
+               """@en;
+  epo:hasRenewalDescription """
+                  The contract will be for an initial 5 years (from 1.4.2019 to 31.3.2024), with the option to extend by a further 2 years, after completion of the initial term. The Commissioners will determine over the course of the initial 5 years what the renewal plans will be.
+               """;
+  epo:isRenewalIndicator true .
 
 epd:id_2018-S-081-181548_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
@@ -393,7 +397,10 @@ epd:id_2018-S-081-181548_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Mon
   epo:hasAmountValue 119470000.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
 
-epd:id_2018-S-081-181548_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
+epd:id_2018-S-081-181548_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm;
+  epo:hasQualificationSystemRenewalDescription """
+                  Up to a maximum of 5 bidders will be invited to participate at the Invitation to Participate in Dialogue (ITPD) stage. Criteria are set out in the detailed technical evaluation as defined in the SQ.
+               """ .
 
 epd:id_2018-S-081-181548_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2018-S-081-181548_AdditionalBuyer_38bHtgBQiX3GYUZAt3nYcb,
@@ -658,7 +665,8 @@ epd:id_2018-S-081-181548_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
 
 epd:id_2018-S-081-181548_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "EN";
-  epo:hasValidityPeriod epd:id_2018-S-081-181548_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
+  epo:hasValidityPeriod epd:id_2018-S-081-181548_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasVariantPermission "false"^^xsd:anyURI .
 
 epd:id_2018-S-081-181548_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2018-S-081-181548_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

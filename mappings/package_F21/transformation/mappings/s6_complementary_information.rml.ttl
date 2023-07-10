@@ -29,6 +29,37 @@ tedm:Procedure a rr:TriplesMap ;
                 [
                     rr:parentTriplesMap tedm:ReviewTerm
                 ] ;
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasRecurrenceDescription ;
+            rr:objectMap
+                [
+                    rml:reference "../COMPLEMENTARY_INFO/ESTIMATED_TIMING";
+                ]
+
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:isRecurrent ;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(../COMPLEMENTARY_INFO/RECURRENT_PROCUREMENT)) then 'true' else if(exists(../COMPLEMENTARY_INFO/NO_RECURRENT_PROCUREMENT)) then 'false' else null";
+                    rr:datatype xsd:boolean
+                ]
+
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasProcurementScopeDividedIntoLot ;
+            rr:objectMap
+                [
+                    rr:parentTriplesMap tedm:Lot;
+                    rr:joinCondition [
+                        rr:child "path(..)";
+                        rr:parent "path(.)";
+                    ];
+                ] ;
         ] .
 tedm:ReviewTerm a rr:TriplesMap ;
     rr:predicateObjectMap

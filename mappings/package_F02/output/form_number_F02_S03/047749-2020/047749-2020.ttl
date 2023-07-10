@@ -43,7 +43,8 @@ epd:id_2020-S-022-047749_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Lo
 epd:id_2020-S-022-047749_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
   epo:definesContractDuration epd:id_2020-S-022-047749_Duration_AvcCuw3xpUXoTAF29u4PAa;
   epo:definesSpecificPlaceOfPerformance epd:id_2020-S-022-047749_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:isRenewalIndicator false .
 
 epd:id_2020-S-022-047749_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
@@ -64,6 +65,7 @@ epd:id_2020-S-022-047749_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:hasDescription "Vedi II.1.1)."@it;
   epo:hasEstimatedValue epd:id_2020-S-022-047749_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasPurpose epd:id_2020-S-022-047749_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2020-S-022-047749_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2020-S-022-047749_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog .
 
@@ -74,6 +76,9 @@ epd:id_2020-S-022-047749_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:Monet
 epd:id_2020-S-022-047749_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
   epo:hasAmountValue 405279.15;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2020-S-022-047749_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm;
+  epo:hasMinimumNumberOfCandidates 5 .
 
 epd:id_2020-S-022-047749_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2020-S-022-047749_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2020-S-022-047749_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
@@ -164,7 +169,8 @@ epd:id_2020-S-022-047749_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
 
 epd:id_2020-S-022-047749_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "IT";
-  epo:hasValidityPeriod epd:id_2020-S-022-047749_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
+  epo:hasValidityPeriod epd:id_2020-S-022-047749_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasVariantPermission "false"^^xsd:anyURI .
 
 epd:id_2020-S-022-047749_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2020-S-022-047749_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

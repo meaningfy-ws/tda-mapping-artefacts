@@ -38,12 +38,14 @@ epd:id_2017-S-024-042489_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Lo
 epd:id_2017-S-024-042489_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
   epo:definesContractDuration epd:id_2017-S-024-042489_Duration_Wt9hTKqTB6wXtR2gujyw8e;
   epo:definesSpecificPlaceOfPerformance epd:id_2017-S-024-042489_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:isRenewalIndicator false .
 
 epd:id_2017-S-024-042489_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
   epo:definesContractDuration epd:id_2017-S-024-042489_Duration_2tPkBpSHtbcCKtpNaLfLoy;
   epo:definesSpecificPlaceOfPerformance epd:id_2017-S-024-042489_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:isRenewalIndicator false .
 
 epd:id_2017-S-024-042489_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
@@ -82,6 +84,7 @@ Electricity supply contracts.
   epo:hasTitle """
 Electricity Supply
 """@en;
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-024-042489_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
   epo:isUsingEUFunds false .
 
 epd:id_2017-S-024-042489_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
@@ -99,6 +102,11 @@ Natural Gas
 epd:id_2017-S-024-042489_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
   epo:hasAmountValue 500000000.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/GBP> .
+
+epd:id_2017-S-024-042489_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
+  epo:hasQualificationSystemRenewalDescription """
+Mandatory law Public Procurement regulations 2015.
+""" .
 
 epd:id_2017-S-024-042489_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2017-S-024-042489_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-024-042489_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
@@ -186,4 +194,5 @@ epd:id_2017-S-024-042489_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
 
 epd:id_2017-S-024-042489_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "EN";
-  epo:hasSubmissionURL "www.mytenders.org"^^xsd:anyURI .
+  epo:hasSubmissionURL "www.mytenders.org"^^xsd:anyURI;
+  epo:hasVariantPermission "false"^^xsd:anyURI .

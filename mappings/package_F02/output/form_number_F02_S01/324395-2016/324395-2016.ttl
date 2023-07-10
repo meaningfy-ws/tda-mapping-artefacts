@@ -44,7 +44,8 @@ epd:id_2016-S-181-324395_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Lo
 epd:id_2016-S-181-324395_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
   epo:definesContractPeriod epd:id_2016-S-181-324395_Period_oEYZZQWPrbQFajcRU6KZAY;
   epo:definesSpecificPlaceOfPerformance epd:id_2016-S-181-324395_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:isRenewalIndicator false .
 
 epd:id_2016-S-181-324395_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
@@ -59,6 +60,7 @@ Planung ab LPH 4 HOAI und schlüsselfertige Errichtung eines Schulerweiterungsne
 """@de;
   epo:hasEstimatedValue epd:id_2016-S-181-324395_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY;
   epo:hasPurpose epd:id_2016-S-181-324395_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-181-324395_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2016-S-181-324395_AwardCriterionPrice_i3DfK3H4UywvSXp2C2Vary .
 
@@ -69,6 +71,17 @@ epd:id_2016-S-181-324395_MainMonetaryValueLot_oEYZZQWPrbQFajcRU6KZAY a epo:Monet
 epd:id_2016-S-181-324395_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
   epo:hasAmountValue 13000000.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2016-S-181-324395_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm;
+  epo:hasMaximumNumberOfCandidates 5;
+  epo:hasMinimumNumberOfCandidates 3;
+  epo:hasQualificationSystemRenewalDescription """
+Bei Eingang von mehr als 5 wertungsfähigen Anträgen erfolgt die Auswahl der Teilnehmer wie folgt:
+1. Jeder Bewerber hat Referenzen sowohl für die Bauleistungen als auch die Planungsleistungen anzugeben, die folgende Angaben enthalten: ? Nutzungsart? Größe BGF? Zeitpunkt der Fertigstellung? Auftraggeber mit Ansprechpartner (einschließlich Telefonnummer)? kurze Beschreibung des Vorhabens? erbrachte Leistungsphasen (Planungsleistung). Die Vergabestelle wird maximal 5 von dem Bewerber genannte Referenzen bewerten. Der Bewerber hat die Möglichkeit, diese 5 von der Vergabestelle zu wertenden Referenzen entsprechend eindeutig zu markieren. Unterbleibt eine solche Festlegung, so wertet die Vergabestelle jeweils für die Bereiche Bauleistungen und Planungsleistungen die in der Reihenfolge zuerst genannten 5 Referenzen.
+2. Geeignete Referenzen sind nur solche Vorhaben, die den nachfolgenden Mindestbedingungen entsprechen:? Nutzungsart Schulbau? Leistungsumfang Schlüsselfertigbau, Generalunternehmer, Generalübernehmer, Planungsleistung ab Leistungsphase 4? mindestens 2 000 m2 BGF? Fertigstellung ab 2010 einschließlich.
+3. Die Wertung der Referenzen für die Bauleistungen wird zu 80 % in die Auswahlentscheidung einfließen, die Referenzen für die Planungsleistungen (eigener Architekt oder fremder Architekt? Nachunternehmer) mit 20 %.
+Die Referenzen werden wie folgt gewertet: ? Pro Referenz Bauleistung maximal 12 Punkte hinsichtlich der Vergleichbarkeit zu dieser Baumaßnahme und maximal 4 Punkte hinsichtlich der Zufriedenheit des Referenzauftraggebers, somit insgesamt maximal 16 Punkte pro Referenz; ? für die Planungsleistungen maximal 3 Punkte für die Vergleichbarkeit, 1 Punkt für die Zufriedenheit des Referenzauftraggebers. Mit der Benennung der Referenzen und der Benennung des Ansprechpartners erklärt der Bewerber sein Einverständnis mit einer Kontaktaufnahme der Vergabestelle mit dem Referenzauftraggeber. Soweit der genannte Ansprechpartner mit zumutbarem Aufwand nicht erreichbar ist, wird die jeweilige Zufriedenheit pro Referenz mit dem Mittelwert (Bauleistung 2  Punkte, Planungsleistung 0,5 Punkte) gewertet.
+""" .
 
 epd:id_2016-S-181-324395_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2016-S-181-324395_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2016-S-181-324395_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
@@ -170,7 +183,8 @@ epd:id_2016-S-181-324395_Reviewer_Sc23ScTxybJ3bYD3QjmgGS a epo:Reviewer;
 
 epd:id_2016-S-181-324395_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "DE";
-  epo:hasSubmissionURL "https://www.evergabe.nrw.de/VMPCenter/company/announcements/categoryOverview.do?method=search&searchString=%22CXSNYYDYY54%22"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://www.evergabe.nrw.de/VMPCenter/company/announcements/categoryOverview.do?method=search&searchString=%22CXSNYYDYY54%22"^^xsd:anyURI;
+  epo:hasVariantPermission "true"^^xsd:anyURI .
 
 epd:id_2016-S-181-324395_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2016-S-181-324395_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

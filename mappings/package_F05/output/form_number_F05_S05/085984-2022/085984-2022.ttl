@@ -37,7 +37,8 @@ epd:id_2022-S-033-085984_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTe
   epo:definesContractDuration epd:id_2022-S-033-085984_Duration_Wt9hTKqTB6wXtR2gujyw8e;
   epo:definesSpecificPlaceOfPerformance epd:id_2022-S-033-085984_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasOptions true;
-  epo:hasOptionsDescription "Options to prolong the Contract 2 x 1 year."@en .
+  epo:hasOptionsDescription "Options to prolong the Contract 2 x 1 year."@en;
+  epo:isRenewalIndicator false .
 
 epd:id_2022-S-033-085984_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
@@ -58,11 +59,15 @@ epd:id_2022-S-033-085984_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:hasDescription "The Object of the Procurement is stated in the tender document “the descriptive document” section 2."@en;
   epo:hasEstimatedValue epd:id_2022-S-033-085984_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2022-S-033-085984_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-033-085984_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
   epo:isUsingEUFunds false .
 
 epd:id_2022-S-033-085984_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
   epo:hasAmountValue 50000000.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/DKK> .
+
+epd:id_2022-S-033-085984_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
+  epo:hasQualificationSystemRenewalDescription "If more than 5 applicants fulfill the minimum requirements, cf. section III, the Contracting Authority will prequalify the 5 applicants who are evaluated as most qualified for the specific tendered as-signment. Only these applicants will be invited to submit a tender. The selection of the applicants will be based on the submitted references. That is to which extent the reference(s) are assesed to be similar to the tendered assignment, cf. section II.2.4, in terms of comparability and relevance. As a result, the number of references will not be the determining factor alone, but more importantly to which degree the specific forwarded references are comparable and relevant to the tendered as-signment regarding solution and scope." .
 
 epd:id_2022-S-033-085984_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2022-S-033-085984_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2022-S-033-085984_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
@@ -170,7 +175,8 @@ epd:id_2022-S-033-085984_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
 epd:id_2022-S-033-085984_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "EN";
   epo:hasSubmissionURL "http://eu.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=323900&B=ENERGINET"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2022-S-033-085984_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
+  epo:hasValidityPeriod epd:id_2022-S-033-085984_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasVariantPermission "false"^^xsd:anyURI .
 
 epd:id_2022-S-033-085984_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2022-S-033-085984_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

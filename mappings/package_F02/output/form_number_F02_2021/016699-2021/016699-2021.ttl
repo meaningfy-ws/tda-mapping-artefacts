@@ -87,7 +87,8 @@ epd:id_2021-S-010-016699_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Lo
 epd:id_2021-S-010-016699_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTerm;
   epo:definesContractDuration epd:id_2021-S-010-016699_Duration_AvcCuw3xpUXoTAF29u4PAa;
   epo:definesSpecificPlaceOfPerformance epd:id_2021-S-010-016699_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:isRenewalIndicator false .
 
 epd:id_2021-S-010-016699_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
@@ -105,6 +106,7 @@ epd:id_2021-S-010-016699_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
   epo:hasAdditionalInformation "La durée de 72 mois est découpée en trois phases dont une durée ferme de 48 mois pour la phase 3. La durée est de 18 à 24 mois concernant la phase 1 «Étude» et la phase 2 «Développement». La DLRO pour la réception des candidatures est le 5.3.2021. La date de remise des offres finales sera déterminée ultérieurement."@fr;
   epo:hasDescription "Conception et acquisition de masques auto-sauveteurs."@fr;
   epo:hasPurpose epd:id_2021-S-010-016699_LotPurpose_oEYZZQWPrbQFajcRU6KZAY;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-010-016699_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2021-S-010-016699_AwardCriterionPrice_baMgfwbeaaogZGyRBvFgog,
     epd:id_2021-S-010-016699_AwardCriterionQuality_SCcNgmEndqqZvfw98H8z7v, epd:id_2021-S-010-016699_AwardCriterionQuality_aDam54DqENHigUj4DJyHNL .
@@ -112,6 +114,11 @@ epd:id_2021-S-010-016699_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
 epd:id_2021-S-010-016699_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:MonetaryValue;
   epo:hasAmountValue 150000.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2021-S-010-016699_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm;
+  epo:hasMaximumNumberOfCandidates 5;
+  epo:hasMinimumNumberOfCandidates 3;
+  epo:hasQualificationSystemRenewalDescription "Après sélection des candidatures, le partenariat d'innovation sera conclu avec plusieurs opérateurs économiques (trois maximum), sous réserve d'un nombre suffisant d'offres. Dans l'hypothèse où plusieurs opérateurs économiques sont retenus, le partenariat d'innovation sera alors composé de plusieurs contrats individuels (un avec chaque titulaire) s'exécutant séparément. Les critères de sélection des candidatures sont les suivants:— expériences en matière de conception de masques auto-sauveteurs;— capacités techniques en matière de conception, développement et modification de masques auto-sauveteurs ainsi qu'à mener des essais et construire un prototype;— capacités professionnelles générales du candidat au regard de la composition, de la qualification et de l'organisation de l'équipe affectée à la réalisation des prestations d'étude et de développement objet du marché;— moyens humains et techniques dédiés au SAV, à l'acquisition des masques, à la fourniture des pièces détachées et à la maintenance, le cas échéant.Les critères de sélection des offres seront précisés dans le règlement de la consultation au stade de l'offre comme suit:— pertinence des innovations proposées;— estimation provisoire des conditions économiques et financières;— organisation et moyens mis en œuvre pour garantir l'atteinte des objectifs dans les délais." .
 
 epd:id_2021-S-010-016699_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2021-S-010-016699_AdditionalBuyer_e4a9xjpfmkAtmTBbFkFWJC,
@@ -236,7 +243,8 @@ epd:id_2021-S-010-016699_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
 epd:id_2021-S-010-016699_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://marches.maximilien.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&id=765963&orgAcronyme=a8z"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2021-S-010-016699_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
+  epo:hasValidityPeriod epd:id_2021-S-010-016699_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasVariantPermission "false"^^xsd:anyURI .
 
 epd:id_2021-S-010-016699_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2021-S-010-016699_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;

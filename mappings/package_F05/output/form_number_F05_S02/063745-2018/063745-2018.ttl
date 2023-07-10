@@ -57,7 +57,8 @@ epd:id_2018-S-029-063745_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Lo
 epd:id_2018-S-029-063745_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
   epo:definesContractDuration epd:id_2018-S-029-063745_Duration_Wt9hTKqTB6wXtR2gujyw8e;
   epo:definesSpecificPlaceOfPerformance epd:id_2018-S-029-063745_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:isRenewalIndicator false .
 
 epd:id_2018-S-029-063745_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
@@ -81,6 +82,7 @@ epd:id_2018-S-029-063745_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
                """@fr;
   epo:hasEstimatedValue epd:id_2018-S-029-063745_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2018-S-029-063745_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-029-063745_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2018-S-029-063745_AwardCriterionCost_PdhiwFgRo6dt8S8aCpwTR7,
     epd:id_2018-S-029-063745_AwardCriterionQuality_GbygUBPt5DBBXAGfKLxSjH, epd:id_2018-S-029-063745_AwardCriterionQuality_c875KbKHSSEYdJLphMo2rf .
@@ -92,6 +94,21 @@ epd:id_2018-S-029-063745_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:Monet
 epd:id_2018-S-029-063745_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
   epo:hasAmountValue 3300000.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
+
+epd:id_2018-S-029-063745_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
+  epo:hasMaximumNumberOfCandidates 5;
+  epo:hasMinimumNumberOfCandidates 3;
+  epo:hasQualificationSystemRenewalDescription """
+                  Un classement des candidatures sera réalisé au regard des éléments suivants: qualité des références professionnelles et techniques (100 points): pour chaque sous-critère ci-dessous, l'attribution des notes s'effectuera en fonction des 5 meilleures références au cours des 5 dernières années. Le candidat présentera 5 références maximum par domaine d'exigence requis pour des ouvrages réceptionnés au cours des 5 dernières années, de même nature et d'importance, appuyées d'attestation de bonne exécution. La capacité process (sur 60 points) sera évaluée sur les références de station d'épuration d'eaux usées résiduaires urbaines de type boues activées de capacité en Eq/Hab: 
+                  — strictement inférieur à 3 000 Eq/Hab: 1 pt, 
+                  — 3 000 à 6 000 Eq/Hab: 6 pts, 
+                  — strictement supérieure à 6 000 Eq/Hab: 12 pts. 
+                  La capacité génie civil (sur 40 points) sera évaluée sur des compétences en réalisation d'ouvrages hydrauliques coulés en place en fonction du volume unitaire d'ouvrages étanches: 
+                  — strictement inférieur à 1 000 m3 : 1 pt, 
+                  — 1 000 à 2 000 m3 : 4 pts, 
+                  — strictement supérieur à 2 000 m3 : 8 pts. 
+                  Critère additionnel: les candidats ayant une note strictement inférieure à 60 points à l'issue du jugement des candidatures ne seront pas admis à remettre une offre. Critère additionnel: en cas d'égalité de points entre 2 candidats, le niveau des capacités économiques et financières, apprécié au regard de l'importance du chiffre d'affaires réalisé au cours des 3 dernières années sera analysé afin de départager les candidats, le cas échéant. La transmission et la vérification des documents de candidatures peut être effectuée par le dispositif marché public simplifié sur présentation du numéro de Siret: non.
+               """ .
 
 epd:id_2018-S-029-063745_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2018-S-029-063745_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2018-S-029-063745_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
@@ -196,7 +213,8 @@ epd:id_2018-S-029-063745_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
 epd:id_2018-S-029-063745_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "http://www.marches-publics.info/"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2018-S-029-063745_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
+  epo:hasValidityPeriod epd:id_2018-S-029-063745_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasVariantPermission "true"^^xsd:anyURI .
 
 epd:id_2018-S-029-063745_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

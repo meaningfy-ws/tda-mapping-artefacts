@@ -905,6 +905,33 @@ tedm:MultipleStageProcedureTerm a rr:TriplesMap ;
                 [
                     rml:reference "RENEWAL_DESC"
                 ]
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasMinimumNumberOfCandidates;
+            rr:objectMap
+                [
+                    rml:reference "NB_MIN_LIMIT_CANDIDATE";
+                    rr:datatype xsd:integer
+                ]
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasMaximumNumberOfCandidates;
+            rr:objectMap
+                [
+                    rml:reference "NB_MAX_LIMIT_CANDIDATE";
+                    rr:datatype xsd:integer
+                ]
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasQualificationSystemRenewalDescription;
+            rr:objectMap
+                [
+                    rml:reference "CRITERIA_CANDIDATE";
+                    rr:datatype xsd:string
+                ]
         ] .
 tedm:MultipleStageProcedurePeriod a rr:TriplesMap ;
     rr:predicateObjectMap
@@ -938,3 +965,42 @@ tedm:Fund a rr:TriplesMap ;
                 ]
         ] .
 
+tedm:SubmissionTerm a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasECataloguePermission ;
+            rr:objectMap
+                [
+                    rml:reference "../OBJECT_CONTRACT/OBJECT_DESCR/ECATALOGUE_REQUIRED";
+                ] ;
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasVariantPermission ;
+            rr:objectMap
+                [
+                    rml:reference "if (exists(../OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS)) then 'true' else if(exists(../OBJECT_CONTRACT/OBJECT_DESCR/NO_ACCEPTED_VARIANTS)) then 'false' else null";
+                    rr:datatype xsd:anyURI;
+                ] ;
+        ] .
+
+
+tedm:ContractTermLot a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:isRenewalIndicator ;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(RENEWAL)) then 'true' else if(exists(NO_RENEWAL)) then 'false' else null";
+                    rr:datatype xsd:boolean
+                ] ;
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasRenewalDescription ;
+            rr:objectMap
+                [
+                    rml:reference "RENEWAL_DESCR";
+                    rr:datatype xsd:string;
+                ] ;
+        ] .

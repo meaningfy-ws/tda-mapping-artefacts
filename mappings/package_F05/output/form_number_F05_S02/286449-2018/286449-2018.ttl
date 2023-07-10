@@ -54,7 +54,11 @@ epd:id_2018-S-125-286449_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTe
   epo:hasOptions true;
   epo:hasOptionsDescription """
                   Les options sont les périodes de reconduction éventuelle du marché. Le marché sera conclu pour une durée de 12 mois ferme, renouvelable par tacite reconduction par périodes successives de 12 mois dans la limite de 2 fois.
-               """@fr .
+               """@fr;
+  epo:hasRenewalDescription """
+                  Le marché sera conclu pour une période de 12 mois ferme, renouvelable par tacite reconduction par périodes successives de 12 mois dans la limite de 2 fois. Soit une période maximale de 36 mois, reconductions incluses.
+               """;
+  epo:isRenewalIndicator true .
 
 epd:id_2018-S-125-286449_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTerm;
   epo:definesContractDuration epd:id_2018-S-125-286449_Duration_2tPkBpSHtbcCKtpNaLfLoy;
@@ -62,7 +66,11 @@ epd:id_2018-S-125-286449_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTe
   epo:hasOptions true;
   epo:hasOptionsDescription """
                   Les options sont les périodes de reconduction éventuelle du marché. Le marché sera conclu pour une durée de 12 mois ferme, renouvelable par tacite reconduction par périodes successives de 12 mois dans la limite de 2 fois.
-               """@fr .
+               """@fr;
+  epo:hasRenewalDescription """
+                  Le marché sera conclu pour une période de 12 mois ferme, renouvelable par tacite reconduction par périodes successives de 12 mois dans la limite de 2 fois. Soit une période maximale de 36 mois, reconductions incluses.
+               """;
+  epo:isRenewalIndicator true .
 
 epd:id_2018-S-125-286449_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
@@ -145,7 +153,10 @@ epd:id_2018-S-125-286449_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organ
 epd:id_2018-S-125-286449_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
   epo:playedBy epd:id_2018-S-125-286449_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
 
-epd:id_2018-S-125-286449_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
+epd:id_2018-S-125-286449_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
+  epo:hasQualificationSystemRenewalDescription """
+                  Seuls seront invités à présenter une offre les 5 candidats ayant obtenus la meilleure note, sous réserve de l'obtention d'une note supérieure ou égale à 10/20.
+               """ .
 
 epd:id_2018-S-125-286449_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:MultipleStageProcedureTerm .
 
@@ -271,4 +282,5 @@ epd:id_2018-S-125-286449_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
 epd:id_2018-S-125-286449_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "http://espacefournisseurs.inter.laposte.fr"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2018-S-125-286449_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
+  epo:hasValidityPeriod epd:id_2018-S-125-286449_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasVariantPermission "false"^^xsd:anyURI .

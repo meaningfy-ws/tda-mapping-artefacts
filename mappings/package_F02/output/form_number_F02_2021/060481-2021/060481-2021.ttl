@@ -46,7 +46,15 @@ epd:id_2021-S-025-060481_ContractTermLot_oEYZZQWPrbQFajcRU6KZAY a epo:ContractTe
   epo:hasOptionsDescription """
                         — tranche ferme (TF): phase de prise en charge et phase d’exploitation;
                         — tranche optionnelle 1 (TO1): phase de réversibilité.
-                    """@fr .
+                    """@fr;
+  epo:hasRenewalDescription """
+                        Le marché entre en vigueur à compter de sa date de notification. La date de début d’exécution
+                            du marché est fixée au 1.9.2021. Le délai d’exécution des prestations est de 40 mois à
+                            compter de la date de début d’exécution. Le marché est reconductible de manière expresse, au
+                            maximum trois fois pour une période de douze mois chacune.
+                        
+                    """;
+  epo:isRenewalIndicator true .
 
 epd:id_2021-S-025-060481_ContractTermProcedure_36ktLAsh4DDGMtAzNZMEnw a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
@@ -118,7 +126,21 @@ epd:id_2021-S-025-060481_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Mon
   epo:hasAmountValue 6000000.0;
   epo:hasCurrency <http://publications.europa.eu/resource/authority/currency/EUR> .
 
-epd:id_2021-S-025-060481_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm .
+epd:id_2021-S-025-060481_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm;
+  epo:hasQualificationSystemRenewalDescription """
+                        Si le nombre de candidats est supérieur à cinq, les entreprises dont la candidature est
+                            recevable au regard des exigences exposées à la section III du présent avis de marché seront
+                            sélectionnées en fonction des critères suivants pondérés de la façon suivante:
+                        
+                        — capacité technique et professionnelle appréciée au regard des renseignements demandés au
+                            point III.1.3) du présent avis:
+                        
+                        —— appréciation des références: 80 %;
+                        —— appréciation des certificats de qualifications professionnelles: 20 %.
+                        En cas d’égalité de note, les candidatures classées au même dernier rang seront toutes
+                            retenues.
+                        
+                    """ .
 
 epd:id_2021-S-025-060481_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2021-S-025-060481_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2021-S-025-060481_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
@@ -294,4 +316,5 @@ epd:id_2021-S-025-060481_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
 epd:id_2021-S-025-060481_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://banque-france.achatpublic.com"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2021-S-025-060481_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
+  epo:hasValidityPeriod epd:id_2021-S-025-060481_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw;
+  epo:hasVariantPermission "false"^^xsd:anyURI .

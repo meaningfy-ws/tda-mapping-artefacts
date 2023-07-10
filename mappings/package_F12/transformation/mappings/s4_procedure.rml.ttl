@@ -28,6 +28,47 @@ tedm:ProcedureIdentifier a rr:TriplesMap ;
                 ]
         ] .
 
+tedm:FrameworkAgreementTerm  a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasMaximumParticipantsNumber;
+            rr:objectMap
+                [
+                    rml:reference "descendant::NB_PARTICIPANTS";
+                    rr:datatype xsd:integer
+                ]
+        ].
+
+tedm:DynamicPurchaseSystemTechniqueUsage  a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasDPSScope;
+            rr:objectMap
+                [
+                    rml:reference "DPS_ADDITIONAL_PURCHASERS";
+                ]
+        ].
+
+tedm:MultipleStageProcedureTerm  a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasNoNegotiationNecessary;
+            rr:objectMap
+                [
+                    rml:reference "TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE/RIGHT_CONTRACT_INITIAL_TENDERS";
+                    rr:datatype xsd:boolean
+                ]
+        ];
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasSuccessiveReduction;
+            rr:objectMap
+                [
+                    rml:reference "TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE/PARTICIPANT_NAME";
+                    rr:datatype xsd:boolean
+                ]
+        ].
+
 tedm:Lot a rr:TriplesMap ;
     rr:predicateObjectMap
         [
@@ -36,6 +77,18 @@ tedm:Lot a rr:TriplesMap ;
                 [
                     rr:parentTriplesMap tedm:DesignContestRegimeTerm;
                 ]
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:isSubjectToLotSpecificTerm ;
+            rr:objectMap
+                [
+                    rr:parentTriplesMap tedm:OpeningTerm;
+                    rr:joinCondition [
+                        rr:child "path(../..)";
+                        rr:parent "path(../..)";
+                    ];
+                ] ;
         ] .
 
 tedm:DesignContestRegimeTerm  a rr:TriplesMap ;
@@ -88,6 +141,49 @@ tedm:DesignContestRegimeTermPrize  a rr:TriplesMap ;
                 [
                     rml:reference "if(exists(PRIZE_AWARDED)) then 'true' else if(exists(NO_PRIZE_AWARDED)) then 'false' else null";
                     rr:datatype xsd:boolean
+                ]
+        ] .
+
+tedm:OpeningTerm  a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasOpeningDescription;
+            rr:objectMap
+                [
+                    rml:reference "INFO_ADD";
+                    rr:datatype xsd:string
+                ]
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasOpeningDateTime ;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(DATE_OPENING_TENDERS) and exists(TIME_OPENING_TENDERS)) then DATE_OPENING_TENDERS || 'T' || TIME_OPENING_TENDERS else if(exists(DATE_OPENING_TENDERS)) then TIME_OPENING_TENDERS else null";
+                    rr:datatype xsd:dateTime;
+                ]
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:definesOpeningPlace ;
+            rr:objectMap
+                [
+                    rr:parentTriplesMap tedm:OpeningTermLocation;
+                    rr:joinCondition [
+                        rr:child "path(.)";
+                        rr:parent "path(.)";
+                    ];
+                ] ;
+        ] .
+
+ tedm:OpeningTermLocation  a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate locn:fullAddress;
+            rr:objectMap
+                [
+                    rml:reference "PLACE";
+                    rr:datatype xsd:string
                 ]
         ] .
 
@@ -316,5 +412,44 @@ tedm:SubmissionTerm a rr:TriplesMap ;
                     rml:reference "../CONTRACTING_BODY/URL_PARTICIPATION";
                     rr:datatype xsd:anyURI;
                 ] ;
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasValidityPeriod ;
+            rr:objectMap
+                [
+                    rr:parentTriplesMap tedm:SubmissionPeriod;
+                    rr:joinCondition [
+                        rr:child "path(.)";
+                        rr:parent "path(.)";
+                    ];
+                ] ;
         ] .
 
+tedm:SubmissionPeriod  a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasEnd;
+            rr:objectMap
+                [
+                    rml:reference "DATE_TENDER_VALID";
+                    rr:datatype xsd:date
+                ]
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasDescription;
+            rr:objectMap
+                [
+                    rml:reference "DURATION_TENDER_VALID";
+                    rr:datatype xsd:string
+                ]
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasTimePeriod;
+            rr:objectMap
+                [
+                    rml:reference "DURATION_TENDER_VALID/@TYPE";
+                ]
+        ] .

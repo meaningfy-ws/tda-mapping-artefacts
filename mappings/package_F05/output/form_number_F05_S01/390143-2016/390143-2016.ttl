@@ -47,7 +47,8 @@ epd:id_2016-S-214-390143_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTe
 Une partie des CNPE 900 MW et postes RTE associés sera en option.
 L'approvisionnement des équipements nécessaires et leur livraison sur chantier est en option; EDF peut assurer ces prestations par ses propres moyens.
 La durée du marché de 10 ans définie au II.2.7 inclue 2 options d'une durée de 1 an chacune.
-"""@fr .
+"""@fr;
+  epo:isRenewalIndicator false .
 
 epd:id_2016-S-214-390143_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
@@ -71,7 +72,15 @@ Cependant, des études techniques sont en cours et permettront éventuellement �
   epo:hasDescription """
 Prestation complète d'études et de travaux de renouvellement des postes électriques HTB aériens des centrales nucléaires de production d'électricité (CNPE) d'EDF, incluant la fourniture des équipements et les études d'interchangeabilité.
 """@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-214-390143_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
   epo:isUsingEUFunds false .
+
+epd:id_2016-S-214-390143_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
+  epo:hasMaximumNumberOfCandidates 7;
+  epo:hasMinimumNumberOfCandidates 5;
+  epo:hasQualificationSystemRenewalDescription """
+Analyse d'un dossier d'aptitude selon une grille de cotation.
+""" .
 
 epd:id_2016-S-214-390143_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2016-S-214-390143_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2016-S-214-390143_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
@@ -180,7 +189,8 @@ epd:id_2016-S-214-390143_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
 
 epd:id_2016-S-214-390143_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasSubmissionURL "https://pha.edf.com"^^xsd:anyURI .
+  epo:hasSubmissionURL "https://pha.edf.com"^^xsd:anyURI;
+  epo:hasVariantPermission "true"^^xsd:anyURI .
 
 epd:id_2016-S-214-390143_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2016-S-214-390143_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

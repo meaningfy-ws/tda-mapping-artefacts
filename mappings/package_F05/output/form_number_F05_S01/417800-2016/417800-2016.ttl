@@ -48,7 +48,8 @@ epd:id_2016-S-229-417800_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Lo
 epd:id_2016-S-229-417800_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
   epo:definesContractPeriod epd:id_2016-S-229-417800_Period_HKNfdBmeACvzBZy3TfjLFj;
   epo:definesSpecificPlaceOfPerformance epd:id_2016-S-229-417800_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj;
-  epo:hasOptions false .
+  epo:hasOptions false;
+  epo:isRenewalIndicator false .
 
 epd:id_2016-S-229-417800_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
@@ -67,6 +68,7 @@ epd:id_2016-S-229-417800_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
 73 Stück Alu-Fenster mit Außenrollos.
 """@de;
   epo:hasPurpose epd:id_2016-S-229-417800_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-229-417800_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
   epo:isUsingEUFunds false .
 
 epd:id_2016-S-229-417800_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
@@ -88,6 +90,10 @@ epd:id_2016-S-229-417800_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU a org:Organ
 
 epd:id_2016-S-229-417800_Mediator_Der4dmnz4iLnj5vKZroTMU a epo:Mediator;
   epo:playedBy epd:id_2016-S-229-417800_MediatorOrganisation_Der4dmnz4iLnj5vKZroTMU .
+
+epd:id_2016-S-229-417800_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
+  epo:hasMaximumNumberOfCandidates 6;
+  epo:hasMinimumNumberOfCandidates 3 .
 
 epd:id_2016-S-229-417800_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2016-S-229-417800_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2016-S-229-417800_Mediator_Der4dmnz4iLnj5vKZroTMU,
@@ -200,7 +206,8 @@ epd:id_2016-S-229-417800_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
 
 epd:id_2016-S-229-417800_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "DE";
-  epo:hasValidityPeriod epd:id_2016-S-229-417800_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
+  epo:hasValidityPeriod epd:id_2016-S-229-417800_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasVariantPermission "false"^^xsd:anyURI .
 
 epd:id_2016-S-229-417800_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2016-S-229-417800_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
