@@ -42,9 +42,12 @@ epd:id_2022-S-033-085984_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTe
 
 epd:id_2022-S-033-085984_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription "No special legal form is required.If the agreements are awarded to a group of economic operators (e.g. a consortium) the partici-pants are required to undertake joint and several liabilities and to appoint one economic operator to represent the group.";
   epo:hasEInvoicing true;
   epo:hasEOrdering true;
-  epo:hasEPayment true .
+  epo:hasEPayment true;
+  epo:hasPaymentArrangement "The information is stated in the Tender Documents." .
 
 epd:id_2022-S-033-085984_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 36.0;
@@ -168,15 +171,28 @@ epd:id_2022-S-033-085984_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2022-S-033-085984_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2022-S-033-085984_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2022-S-033-085984_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2022-S-033-085984_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2022-S-033-085984_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description "It is a minimum requirement that the applicant has prior experience with procurement of energy on a power exchange." .
+
+epd:id_2022-S-033-085984_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2022-S-033-085984_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  cccev:description """The applicant must confirm the economic ability in the ESPD part IV.B: “Economic and financial standing” with information from the latest annual report regarding the following economic indicators:1.	Equity (total equity incl. share capital, reserves, revaluation, retained earning etc.)2.	Equity ratio (equity/total assets)If the applicant is relying on the capacities of one or more other entities (e.g. a parent or sister company or a subcontractor) or the applicant is a group of economic operators (e.g. a consortium) the information for the ESPD part IV.B must also be given in a separate ESPD from each of these entities, cf. section VI.3 “Additional information”. It is the sole responsibility of the applicant to secure that the minimum level(s) of standards required are reached when the applicant is relying on the capacity of other entities or when the applicant is a group of economic operators (e.g. a consortium).""" .
+
 epd:id_2022-S-033-085984_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "3";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2022-S-033-085984_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription "The information is stated in the Tender Documents.";
   epo:hasLanguage "EN";
   epo:hasSubmissionURL "http://eu.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=323900&B=ENERGINET"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2022-S-033-085984_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2022-S-033-085984_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2022-S-033-085984_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

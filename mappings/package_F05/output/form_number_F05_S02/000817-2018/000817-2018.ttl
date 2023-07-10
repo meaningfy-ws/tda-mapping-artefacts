@@ -168,7 +168,14 @@ epd:id_2018-S-001-000817_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTe
 
 epd:id_2018-S-001-000817_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
-  epo:hasEInvoicing true .
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+               Conformément à l'article 45 du décret, les opérateurs économiques sont autorisés à se présenter en candidat unique ou dans le cadre d'un groupement conjoint ou solidaire. La forme du groupement après l'attribution de l'accord-cadre n'est pas imposée. En cas de groupement conjoint, le mandataire sera solidaire pour l'exécution de l'accord-cadre de chacun des membres du groupement pour ses obligations contractuelles. Les candidats peuvent présenter pour l'accord-cadre plusieurs offres en agissant à la fois en qualité de candidats individuels et de membres d'un ou plusieurs groupements, et en qualité de membres de plusieurs groupements.
+            """;
+  epo:hasEInvoicing true;
+  epo:hasPaymentArrangement """
+               Les stipulations relatives au mode de règlement et aux modalités de financement figurent au CCAP.
+            """ .
 
 epd:id_2018-S-001-000817_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
   time:numericDuration 24.0;
@@ -588,15 +595,45 @@ epd:id_2018-S-001-000817_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2018-S-001-000817_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2018-S-001-000817_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2018-S-001-000817_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2018-S-001-000817_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2018-S-001-000817_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description """
+               Le candidat démontre qu'il réalise annuellement le chiffre d'affaire minimum suivant:
+               — pour le lot nº 1 : 650 000 EUR,
+               — pour le lot nº 2 : 500 000 EUR,
+               — pour le lot nº 3 : 500 000 EUR,
+               — pour le lot nº 4 : 500 000 EUR,
+               — pour le lot nº 5 : 500 000 EUR.
+            """ .
+
+epd:id_2018-S-001-000817_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2018-S-001-000817_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType """
+               1º une lettre de candidature comprenant l'identification du candidat, le nº du lot et l'objet de l'accord-cadre. Pour une soumission en groupement, les candidats indiqueront, par tous les moyens à leur convenance, la forme de leur groupement, l'identification des membres du groupement, ainsi que la désignation du mandataire;
+               2º une déclaration sur l'honneur du candidat pour justifier qu'il n'entre dans aucun des cas mentionnés aux articles 45 et 48 de l'ordonnance nº 2015-899 du 23.7.2015 relative aux marchés publics et notamment qu'il est en règle au regard des articles L. 5212-1 à L. 5212-11 du code du travail concernant l'emploi des travailleurs handicapés;
+               3º le(s) document(s) relatif(s) aux pouvoirs de la personne habilitée à engager l'entreprise ainsi qu'une habilitation du mandataire par ses co-traitants en cas de groupement d'entreprise
+            """;
+  cccev:description """
+               Pour chacun des membres du groupement éventuel:
+               4º une déclaration concernant le chiffre d'affaires global du candidat et, le cas échéant, le chiffre d'affaires du domaine d'activité faisant l'objet de l'accord-cadre, portant sur les 3 derniers exercices disponibles en fonction de la date de création de l'entreprise ou du début d'activité de l'opérateur économique, dans la mesure où les informations sur ces chiffres d'affaires sont disponibles.
+            """ .
+
 epd:id_2018-S-001-000817_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "6";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2018-S-001-000817_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """
+               Les stipulations relatives aux modalités de cautionnement et de garanties exigés figurent au CCAP.
+            """;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://marchespublics.ampmetropole.fr/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=1229&orgAcronyme=t5y"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2018-S-001-000817_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2018-S-001-000817_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

@@ -58,7 +58,22 @@ Les candidats sont informés que l'acheteur se réserve la possibilité de concl
   epo:isRenewalIndicator false .
 
 epd:id_2017-S-015-024456_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+Après l'attribution du marché, l'acheteur exigera que le titulaire adopte la forme juridique suivante: groupement conjoint.
+Le mandataire sera solidaire de chacun des membres du groupement conjoint pour ses obligations contractuelles à l'égard de la personne publique pour l'exécution.
+Cette forme de groupement se justifie par la diversité des compétences demandées et des missions exigées qui restent très spécialisées. Chacun des cotraitants ne doit se trouver ainsi engagé que pour la partie du marché qu'il exécute. La responsabilité du mandataire permet de garantir la bonne exécution de la globalité des prestations et ainsi en cas de défaillance d'un cotraitant, proposer au maître d'ouvrage les solutions pour y remédier.
+Pour un même marché, les candidats n'ont pas la possibilité de soumissionner en agissant à la fois en qualité de candidat individuel et de membre d'un ou plusieurs groupement(s). La participation à plusieurs groupements, pour un même marché, est également interdite.
+""";
+  epo:hasPaymentArrangement """
+— articles 109 à 132 du décret nº 2016-360 du 25.3.2016 relatif aux marchés publics,
+— modalités de financements: les ressources qui seront mobilisées pour financer l'opération sont constituées par les fonds propres du Sytral,
+— les prix sont révisables dans les conditions fixées dans le cahier des clauses administratives particulières,
+— caractéristique des prix: prix global et forfaitaire,
+— modalité de règlement des comptes: selon les modalités du CCAG travaux et du CCAP,
+— les paiements seront effectués par virement administratif dans le délai réglementaire de 30 jours, selon les dispositions du décret nº 2013-269 du 29.3.2013. Le point de départ du délai est la réception de la demande par les services de l'entité adjudicatrice.
+""" .
 
 epd:id_2017-S-015-024456_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 22.0;
@@ -249,15 +264,61 @@ epd:id_2017-S-015-024456_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2017-S-015-024456_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-015-024456_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2017-S-015-024456_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2017-S-015-024456_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2017-S-015-024456_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description """
+Le candidat apportera la preuve de ses capacités à:
+1. Réaliser des travaux de pieux forés tubés.
+2. Réaliser des travaux de micropieux.
+3. Réaliser des travaux de renforcement de sols par inclusions rigides ou par colonnes ballastées.
+4. Réaliser des travaux de gros œuvre sur un site tramway en exploitation.
+Chacune des capacités 1 à 4 décrites ci-dessus pourra être attestée par la fourniture d'une sélection de 1 à 5 références identifiées au maximum précisant impérativement le montant, la date, le nom du client et l'ensemble de ses coordonnées, ainsi qu'une description succincte du périmètre technique des travaux similaires.
+Certificats de qualifications professionnelles selon nomenclature Qualibat ou tout moyen de preuve équivalent:
+— 2111: maçonnerie et béton armé courant- technicité courante,
+— 2211: béton armé et béton précontraint — technicité courante,
+— 1233: pieux,
+— 1232: micropieux type III et IV,
+— 1311: terrassements — fouilles (technicité courante),
+— 1263: consolidation des sols.
+""" .
+
+epd:id_2017-S-015-024456_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2017-S-015-024456_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType """
+DUME.
+ou
+DC1.
+Preuve de l'aptitude à exercer l'activité professionnelle: inscription sur le registre professionnel ou du commerce de l'état membre dans lequel il est établi: extrait K-Bis, DC1, ou équivalent, pouvoirs de la personne habilitée à engager le candidat.
+En cas de groupement,habilitation donnée au mandataire par chacun des membres,
+À défaut d'utiliser le DC1:
+Lettre de candidature libre, datée et signée comportant:
+Le nom, adresse, numéro de SIRET du candidat (ou numéro d'identification européen ou international ou propre au pays d'origine).
+Si le candidat se présente seul ou en groupement; dans ce dernier cas, identification des membres, désignation du mandataire et indication de la forme de groupement.
+Déclaration sur l'honneur justifiant que le candidat n'entre dans aucun des cas mentionnés aux articles 45 et 48 de l'ordonnance 2015-899 du 23.7.2015 et qu'il est en règle au regard des articles L. 5212-1 à L. 5212-11 du code du travail.
+""";
+  cccev:description """
+Déclaration concernant le chiffre d'affaires global et le chiffre d'affaires concernant les prestations de même nature que celles du marché, réalisées au cours des 3 derniers exercices disponibles. (DC2 ou document libre).
+Déclaration appropriée de banques ou preuve d'une assurance pour les risques professionnels en cours de validité faisant apparaître les montants des risques garantis (responsabilité civile professionnelle et décennale).
+""" .
+
 epd:id_2017-S-015-024456_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "6";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2017-S-015-024456_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """
+En cas de versement d'une avance, le titulaire devra fournir la garantie à première demande prévue à l'article 112 du décret nº 2016-360 du 25.3.2016 relatif aux marchés publics et couvrant 100 % du montant de l'avance.
+Une retenue de garantie égale à 5 % du montant initial du marché, augmenté, le cas échéant, du montant des avenants sera appliquée. La retenue de garantie peut être remplacée par une garantie à première demande dans les conditions prévues à l'article 123 du décret nº 2016-360 du 25.3.2016 relatif aux marchés publics.
+Les travaux feront l'objet d'une période de garantie de parfait achèvement.
+""";
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://www.marches-publics.info"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2017-S-015-024456_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2017-S-015-024456_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

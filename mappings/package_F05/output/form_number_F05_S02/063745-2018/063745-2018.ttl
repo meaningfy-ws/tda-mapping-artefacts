@@ -61,7 +61,14 @@ epd:id_2018-S-029-063745_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTe
   epo:isRenewalIndicator false .
 
 epd:id_2018-S-029-063745_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+               L'attributaire pourra être une entreprise seule ou un groupement d'entreprises conjointes ou solidaires. Si le groupement attributaire est un groupement conjoint, le mandataire dudit groupement sera solidaire de chacun des membres du groupement pour ses obligations contractuelles à l'égard de l'entité adjudicatrice. En application de l'article 45-V-1o du décret nº 2016-360 du 25.3.2016, il est interdit aux candidats de présenter plusieurs offres en agissant à la fois en qualité de candidats individuels ou de membres d'un ou plusieurs groupements. En application de l'article 45-V-2o du décret nº 2016-360 du 25.3.2016, il est interdit aux candidats de présenter plusieurs offres en qualité de membre de plusieurs groupements.
+            """;
+  epo:hasPaymentArrangement """
+               Financement sur fonds propres de SMDEA et subventions agence de l'eau et conseil départemental et, emprunt. Les sommes dues au(x) titulaire(s) et au(x) sous-traitant(s) de premier rang éventuel(s) du marché, seront payées dans un délai global de 30 jours à compter de la date de réception des factures ou des demandes de paiement équivalentes. Prix global et forfaitaire révisable. Il est prévu le versement d'une avance de 5 % sous condition de la présentation d'une garantie à 1ère demande à concurrence de 100 % du montant de cette avance et dont les conditions de versement et de remboursement seront précisées au Ccap.
+            """ .
 
 epd:id_2018-S-029-063745_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 14.0;
@@ -206,15 +213,40 @@ epd:id_2018-S-029-063745_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2018-S-029-063745_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2018-S-029-063745_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2018-S-029-063745_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2018-S-029-063745_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2018-S-029-063745_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description """
+               — références d'ouvrages réceptionnés au cours des 5 dernières années de même nature et importance, appuyées d'attestations de bonne exécution (ces attestations préciseront les lieux et dates de réalisation, et si les travaux ont été effectués selon les règles de l'art et menés régulièrement à bonne fin). Niveau(x) spécifique(s) minimal (aux) exigé(s): Process: études d'exécution et réalisation de station d'épuration d'eaux résiduaires urbaines de type boues activées de capacité minimale 3 000 EH, génie civil: études et exécution d'ouvrage hydraulique en béton coulé en place d'au moins 1 000 m3 en capacité unitaire d'ouvrage.
+            """ .
+
+epd:id_2018-S-029-063745_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2018-S-029-063745_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType """
+               — en application de l'article 49 du décret nº 2016-360 du 25.3.2016 l'acheteur accepte que le candidat présente sa candidature sous la forme d'un document unique de marché européen (DUME) rédigé en français — lettre de candidature (ou DC1) mentionnant l'identité du candidat, sa forme juridique et les pouvoirs de la personne habilitée pour l'engager ainsi que, le cas échéant, les habilitations nécessaires données au mandataire du groupement pour représenter ses membres lors de la passation du marché, 
+               — déclaration sur l'honneur (DC2) du candidat pour justifier qu'il n'entre dans aucun des cas d'exclusion mentionnés à l'article 45 de l'ordonnance du 23.7.2015 et notamment: 
+               —— situation en règle au regard des articles L 5212-1 à L 5212-11 du code du travail concernant l'emploi des travailleurs handicapés,
+               —— attestation d'assurance responsabilité civile en cours de validité.
+            """;
+  cccev:description """
+               — déclaration concernant le chiffre d'affaires global des 3 derniers exercices disponibles et le chiffre d'affaires concernant les travaux objet du contrat, réalisés au cours des 3 derniers exercices disponibles.
+            """ .
+
 epd:id_2018-S-029-063745_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "6";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2018-S-029-063745_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """
+               Une retenue de garantie de 5 % du montant initial du marché sera constituée et prélevée sur le montant de chaque acompte. La retenue de garantie peut être remplacée au gré du titulaire par une garantie à première demande. En revanche il ne sera pas accepté de caution personnelle et solidaire.
+            """;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "http://www.marches-publics.info/"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2018-S-029-063745_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "true"^^xsd:anyURI .
+  epo:hasVariantPermission "true"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2018-S-029-063745_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

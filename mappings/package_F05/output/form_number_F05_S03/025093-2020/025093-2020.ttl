@@ -54,7 +54,9 @@ epd:id_2020-S-012-025093_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTe
   epo:isRenewalIndicator true .
 
 epd:id_2020-S-012-025093_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription "Where the contract is awarded to a union of financial players (such as a consortium, joint venture or similar), the participants in the union must undertake joint and several, direct and unconditional liability and appoint a joint representative." .
 
 epd:id_2020-S-012-025093_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 96.0;
@@ -188,6 +190,17 @@ epd:id_2020-S-012-025093_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 
 epd:id_2020-S-012-025093_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2020-S-012-025093_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2020-S-012-025093_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2020-S-012-025093_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2020-S-012-025093_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description "No minimum requirements are set for technical and professional capacity." .
+
+epd:id_2020-S-012-025093_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2020-S-012-025093_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  cccev:description "The applicant must provide the following information for the 3 past financial years:— equity,— revenue,— solvency ratio.The said information must be stated when completing part IV, paragraph B of the eESPD. Revenue must be stated under annual revenue. Equity and solvency ratio must be stated under key financial ratios.The minimum requirements apply to the applicant, not any subconsultants. If the application is submitted by a consortium, the minimum requirements apply to all consortium members." .
 
 epd:id_2020-S-012-025093_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "6";

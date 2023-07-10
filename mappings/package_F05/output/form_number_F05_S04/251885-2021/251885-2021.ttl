@@ -59,8 +59,11 @@ epd:id_2021-S-096-251885_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTe
 
 epd:id_2021-S-096-251885_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription "En cas de groupement celui ci devra être un groupement solidaire.";
   epo:hasEInvoicing true;
-  epo:hasEOrdering true .
+  epo:hasEOrdering true;
+  epo:hasPaymentArrangement "Les sommes dues en exécution du marché seront payées par virement bancaire dans un délai global de 60 jours.Le financement des prestations est assuré par des fonds propres et des emprunts bancaires." .
 
 epd:id_2021-S-096-251885_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
   time:numericDuration 24.0;
@@ -186,6 +189,18 @@ epd:id_2021-S-096-251885_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 
 epd:id_2021-S-096-251885_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2021-S-096-251885_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-096-251885_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2021-S-096-251885_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2021-S-096-251885_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description "Le candidat devra démontrer clairement sa capacité à pouvoir répondre à l'ensemble des prestations demandées et présenter des références équivalentes en adéquation avec l'objet de la consultation." .
+
+epd:id_2021-S-096-251885_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2021-S-096-251885_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType "Les documents à remettre pour faire acte de candidature sont:— la Fiche de renseignements entreprise (FRE) téléchargeable sur https://fournisseursaeroportsdeparis.fr (à remplir intégralement par le candidat sur son compte en ligne);— le K bis de moins de trois mois ou équivalent et— les déclarations fiscales et sociales à jour.";
+  cccev:description "Capacité financière: deux derniers CA." .
 
 epd:id_2021-S-096-251885_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "4";

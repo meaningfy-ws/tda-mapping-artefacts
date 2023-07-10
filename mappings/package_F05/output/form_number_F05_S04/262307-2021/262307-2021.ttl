@@ -41,7 +41,10 @@ epd:id_2021-S-099-262307_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTe
   epo:isRenewalIndicator false .
 
 epd:id_2021-S-099-262307_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription "L'entité adjudicatrice ne souhaite imposer aucune forme de groupement à l'attributaire du marché. En revanche, en cas de groupement conjoint, l'entité adjudicatrice impose que le mandataire soit solidaire.Si le groupement attributaire est d'une forme différente, il pourra se voir contraint d'assurer sa transformation pour se conformer au souhait du pouvoir adjudicateur.Il est interdit aux candidats de présenter plusieurs candidatures et offres en agissant à la fois en qualité de candidats individuels et de membres d'un ou plusieurs groupements ou en qualité de membres de plusieurs groupements.";
+  epo:hasPaymentArrangement "Prestations réglées par un prix global forfaitaire. Avance de 5 % accordée dans les conditions prévues au contrat. Délai global de paiement des prestations de 30 jours.Modalités de financement des prestations: fonds propres." .
 
 epd:id_2021-S-099-262307_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 36.0;
@@ -142,12 +145,18 @@ epd:id_2021-S-099-262307_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2021-S-099-262307_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2021-S-099-262307_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2021-S-099-262307_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasSelectionCriterionType "— les pouvoirs de la personne habilitée à engager le candidat;— déclaration sur l'honneur pour justifier que le candidat n'entre dans aucun des cas d'interdiction de soumissionner;— renseignements sur le respect de l'obligation d'emploi mentionnée aux articles L. 5212-1 à L. 5212-11 du code du travail.";
+  cccev:description "Déclaration concernant le chiffre d'affaires global et le chiffre d'affaires concernant les prestations objet du contrat, réalisées au cours des trois derniers exercices disponibles." .
+
 epd:id_2021-S-099-262307_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "6";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2021-S-099-262307_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription "Retenue de garantie de 5 %, qui peut être remplacée par une garantie à première demande. Garantie à première demande couvrant 100 % du montant de l'avance.";
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "http://www.achatpublic.com"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2021-S-099-262307_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .

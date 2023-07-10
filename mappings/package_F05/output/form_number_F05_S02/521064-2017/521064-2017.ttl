@@ -107,7 +107,14 @@ epd:id_2017-S-247-521064_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTe
   epo:isRenewalIndicator false .
 
 epd:id_2017-S-247-521064_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+               Il Raggruppamento Temporaneo e il Consorzio ordinario di concorrenti che risultasse aggiudicatario per ciascun lotto dovrà mantenere la stessa composizione rispetto a quella risultante dall’impegno presentato in sede di offerta.
+            """;
+  epo:hasPaymentArrangement """
+               L’appalto è autofinanziato da ATAC SpA; i pagamenti avranno luogo secondo quanto previsto nel Capitolato Speciale.
+            """ .
 
 epd:id_2017-S-247-521064_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
   time:numericDuration 9.0;
@@ -360,14 +367,28 @@ epd:id_2017-S-247-521064_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2017-S-247-521064_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-247-521064_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2017-S-247-521064_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasSelectionCriterionType """
+               Iscrizione in un registro commerciale (CCIAA) (dichiarazione redatta in modo conforme al DGUE parte II sez. A).
+            """;
+  cccev:description """
+               Requisiti unificati con quelli di cui al successivo punto III.1.3) al quale si rinvia.
+            """ .
+
 epd:id_2017-S-247-521064_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "8";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2017-S-247-521064_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """
+               Ai fini della garanzia della serietà dell’offerta proposta da parte del concorrente è dovuta la presentazione di una garanzia provvisoria corrispondente al 2 % dell’importo a base di gara per ciascun lotto, arrotondato per eccesso, pari a 23 355,00 EUR per il lotto 1, 29 007,00 EUR per il lotto 2, 43 341,00 EUR per il lotto 3, 31 454,00 EUR per il lotto 4, fatto salvo il beneficio di cui al comma 7 del medesimo art. 93, come dettagliatamente riportato all’art. 7 del DGNC.
+               Ai sensi dell’art. 93, comma 5 del D.lgs. 50/2016, la garanzia deve avere validità per almeno 240 (duecentoquaranta) giorni dalla data di presentazione dell'offerta.
+               Il soggetto che risulterà aggiudicatario per ciascun lotto si impegna a costituire una garanzia definitiva, per il lotto di riferimento, secondo le condizioni e prescrizioni previste all’art. 103 del D.lgs. n. 50/2016 (come dettagliatamente riportato all’art. 17 del DGNC).
+            """;
   epo:hasLanguage "IT";
   epo:hasValidityPeriod epd:id_2017-S-247-521064_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2017-S-247-521064_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2017-S-247-521064_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

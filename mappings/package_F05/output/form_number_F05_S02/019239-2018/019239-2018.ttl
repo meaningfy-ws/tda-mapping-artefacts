@@ -220,7 +220,14 @@ epd:id_2018-S-010-019239_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTe
 
 epd:id_2018-S-010-019239_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
-  epo:hasEInvoicing true .
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+               Pas de forme imposée. En cas d'attribution à un groupement conjoint, le mandataire du groupement sera solidaire, pour l'exécution du marché, de chacun des membres du groupement pour ses obligations contractuelles. L'entité adjudicatrice interdit aux candidats de présenter leurs offres en agissant à la fois en qualité de candidat individuel et de membre d'un ou plusieurs groupements. L'entité adjudicatrice interdit aux candidats de présenter leurs offres en agissant à la fois en qualité de membres de plusieurs groupements.
+            """;
+  epo:hasEInvoicing true;
+  epo:hasPaymentArrangement """
+               Ressources propres de l'établissement — mode de paiement: virement bancaire (mandat administratif) — délai de paiement: 30 jours. Son dépassement ouvre droit au bénéfice des intérêts moratoires sous réserve de l'application éventuelle des dispositions de l'article 91 du code des marchés publics en vigueur, il ne sera versé aucun acompte. Les fournitures, objet d'un bon de commande, seront réglées en totalité après exécution, sans réserve, de tous les produits et matières visées à la commande. L'octroi d'une avance ne se justifie pas, eu regard aux seuils minimaux de commande définis au marché.
+            """ .
 
 epd:id_2018-S-010-019239_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
   time:numericDuration 6.0;
@@ -699,12 +706,25 @@ epd:id_2018-S-010-019239_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2018-S-010-019239_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2018-S-010-019239_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2018-S-010-019239_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasSelectionCriterionType """
+               — lettre de candidature et/ou de désignation du mandataire avec déclaration sur l'honneur visée à l'article 48-1 du décret nº 2016-360 du 25.3.2016 relatif aux marchés publics, type formulaire DC1 (MAJ avril 2016) ou tout autre document contenant les mêmes informations,
+               — renseignements permettant d'apprécier que le candidat dispose des capacités nécessaires à l'exécution du marché, et le cas échéant, de l'aptitude à exercer l'activité professionnelle en utilisant l'imprimé-type DC2 ou un document contenant les mêmes informations.
+            """;
+  cccev:description """
+               Déclaration concernant le chiffre d'affaires global et le chiffre d'affaires fournitures objet du marché, réalisées au cours des 3 derniers exercices disponibles.
+            """ .
+
 epd:id_2018-S-010-019239_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "6";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2018-S-010-019239_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """
+               Le titulaire est dispensé de fournir une retenue de garantie ou tous autres mécanismes substitutifs équivalents.
+            """;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://www.eaudeparis.fr/marches-publics"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2018-S-010-019239_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .

@@ -64,7 +64,16 @@ epd:id_2018-S-086-194241_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTe
 
 epd:id_2018-S-086-194241_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
-  epo:hasEInvoicing true .
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+               Les groupements momentanés d'entreprises, solidaires ou conjoints, sont autorisés. Dans le cas d'un groupement conjoint, l'Aéroport Marseille Provence imposera, pour l'attribution de l'accord-cadre/ du marché, que le mandataire du groupement soit solidaire. Un candidat ne peut présenter pour le marché/accord-cadre plusieurs offres en agissant à la fois en qualité de:
+               — candidats individuels et de membres d'un ou plusieurs groupements,
+               — membres de plusieurs groupements.
+            """;
+  epo:hasEInvoicing true;
+  epo:hasPaymentArrangement """
+               Le financement est assuré par des fonds propres et/ou emprunts bancaires. Paiement dans un délai de 30 jours fin de mois, à compter de la réception de facture. Aucune avance ne sera versée.
+            """ .
 
 epd:id_2018-S-086-194241_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 12.0;
@@ -211,15 +220,33 @@ epd:id_2018-S-086-194241_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2018-S-086-194241_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2018-S-086-194241_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2018-S-086-194241_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasSelectionCriterionType """
+               La candidature sera examinée conformément aux articles 43 à 55 du décret 2016-360 du 25.3.2016 et 45 à 48 de l'ordonnance 2015-899 du 23.7.2015. Seules les candidatures présentant les garanties techniques, financières et professionnelles suffisantes au regard de l'objet et de l'importance du marché, ou du lot(s) concerné(s), seront retenues. Les candidats produiront:
+               — la lettre de candidature ou DC1,
+               — la déclaration du candidat ou DC 2,
+               — en cas de redressement judiciaire, la copie du jugement,
+               — les pièces exigées aux points III.1.2. et III.1.3.
+               En remplacement le candidat peut présenter un DUME accompagné des éléments exigés aux III.1.2 et III.1.3. En cas de groupement ou de sous-traitance, chacun doit fournir un dossier de candidature complet. Pour les sous-traitants, il devra être fourni une déclaration DC4 ou une lettre d'engagement.
+            """;
+  cccev:description """
+               — Déclaration du CA global et du CA relatif à l'objet du marché des 3 dernières années.
+               — Une attestation d'assurance couvrant les risques professionnels pour lannée en cours.
+            """ .
+
 epd:id_2018-S-086-194241_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "5";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2018-S-086-194241_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """
+               Il n'est pas prévu de retenue de garantie.
+            """;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://marches.mrs.aero"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2018-S-086-194241_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "true"^^xsd:anyURI .
+  epo:hasVariantPermission "true"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2018-S-086-194241_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2018-S-086-194241_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

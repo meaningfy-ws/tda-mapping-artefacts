@@ -163,7 +163,10 @@ epd:id_2021-S-126-335122_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTe
   epo:isRenewalIndicator true .
 
 epd:id_2021-S-126-335122_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription "Gesamtschuldnerisch haftend";
+  epo:hasPaymentArrangement "Siehe Vergabeunterlagen" .
 
 epd:id_2021-S-126-335122_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a
     epo:FrameworkAgreementTechniqueUsage .
@@ -464,11 +467,25 @@ epd:id_2021-S-126-335122_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2021-S-126-335122_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2021-S-126-335122_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2021-S-126-335122_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2021-S-126-335122_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2021-S-126-335122_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description "Die vorgenanne technische Leistungsfähigkeit muss je Los und bei Bewerbung um mehrere Lose kummulativ erreicht sein." .
+
+epd:id_2021-S-126-335122_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2021-S-126-335122_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType "Referenzen für durchgeführten Winterdienst:Jeder Bewerber hat zur Teilnahme an der weiteren Vergabe nachzuweisen, dass bereits erfolgreich Winterdienstleistungen durchgeführt worden sind. Hierzu gibt der Bewerber im Formblatt „Eigenerklärung zur Eignung“ mindestens 3 Referenzen an, die mit der zu vergebenden Leistung vergleichbar sind. Eine Referenz wird als vergleichbar angesehen, wenn Winterdienstleistungen mit dem Inhalt der Schneeberäumung, Glättebeseitigung und Streugutaufnahme nachgewiesen werden.";
+  cccev:description "2) Finanzielle Leistungsfähigkeit— B1 – Los 1 nicht weniger als 50 000 EUR p.a.,— B2 – Los 2 nicht weniger als 35 000 EUR p.a.,— B3 – Los 3 nicht weniger als 80 000 EUR p.a.,— B4 – Los 4 nicht weniger als 30 000 EUR p.a.,— B5 – Los 5 nicht weniger als 40 000 EUR p.a.,— B6 – Los 6 nicht weniger als 15 000 EUR p.a.,— B7 – Los 7 nicht weniger als 60 000 EUR p.a.,— B8 – Los 8 nicht weniger als 25 000 EUR p.a.,— B9 – Los 9 nicht weniger als 40 000 EUR p.a.Bei der Bewerbung um alle Lose muss der durchschnittliche Umsatz der letzten 3 abgeschlossenen Geschäftsjahre höher sein als 500 000 EURDie detaillierte Darstellung der Eignungsanforderungen ist der Anlage „Bewertungsmatrix extern.xls“ – Tabellenreiter „Eignungskriterien“ zu entnehmen." .
+
 epd:id_2021-S-126-335122_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasEnd "2021-10-05"^^xsd:date .
 
 epd:id_2021-S-126-335122_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription "Die Versicherung bzw. Versicherungen muss/müssen die Risiken dieses Vertrages entsprechend der nachfolgend genannten Mindestversicherungssummen abdecken:— 1 Mio. EUR für Sachschäden,— 2 Mio. EUR für Personenschäden,— 500 000 EUR sonstige Schäden (insbes. Vermögens- und Umweltschäden).Die Jahreshöchstsumme der Versicherung muss mindestens das dreifache der jeweils genannten Summen betragen. Die Benennung von Mindestversicherungssummen beinhaltet keine Haftungsbeschränkung für den AN auf die von den Versicherungen abgedeckten Beträge.";
   epo:hasLanguage "DE";
   epo:hasSubmissionURL "https://vergabekooperation.berlin/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-179ccdd781b-2c86ce0dc98727e2"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2021-S-126-335122_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .

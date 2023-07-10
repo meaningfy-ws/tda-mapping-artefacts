@@ -51,7 +51,10 @@ epd:id_2017-S-029-052526_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTe
 epd:id_2017-S-029-052526_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
   epo:hasEInvoicing true;
-  epo:hasEPayment true .
+  epo:hasEPayment true;
+  epo:hasPaymentArrangement """
+Viz zadávací podmínky.
+""" .
 
 epd:id_2017-S-029-052526_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 6.0;
@@ -202,14 +205,36 @@ epd:id_2017-S-029-052526_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2017-S-029-052526_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-029-052526_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2017-S-029-052526_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasSelectionCriterionType """
+Dodavatel předloží dle § 77 (odst. 1 a odst. 2 písm. a), c) zákona:
+a) výpis z obchodního rejstříku nebo jiné obdobné evidence;
+b) doklad, že je oprávněn podnikat v rozsahu odpovídajícímu předmětu veřejné zakázky;
+Platné oprávnění k podnikání v oboru:
+— projektová činnost ve výstavbě,
+— provádění staveb, jejich změn a odstraňování,
+— nakládání s odpady (vyjma nebezpečných).
+Zadavatel uzná za průkaz podnikatelského oprávnění v požadovaném oboru aktuální výpis z živnostenského rejstříku nebo dosud platný živnostenský list či listy dokládající oprávnění dodavatele k podnikání v oboru (či oborech), který bude zadavatelem požadovanému oboru obsahově odpovídat (jedná se zejména o živnostenské listy vydané za dříve platné právní úpravy).
+c) doklad o tom, že je odborně způsobilý nebo disponuje osobou, jejímž prostřednictvím odbornou způsobilost zabezpečuje:
+Osvědčení o odborné způsobilosti odpovědné osoby dle zákona č. 360/1992 Sb., o výkonu povolání autorizovaných architektů a o výkonu povolání autorizovaných inženýrů a techniků činných ve výstavbě, ve znění pozdějších předpisů, v oboru pozemní stavby.
+Dodavatel dále uvede vztah uvedené osoby k dodavateli (zaměstnanecký či obdobný, nebo smluvní – v takovém případě je nutno doložit doklady dle čl. 6.4 ZD). Výpis z obchodního rejstříku nebo výpis z jiné obdobné evidence musí prokazovat splnění požadovaného kritéria způsobilosti dle čl. 5.2 písm. a) ZD nejpozději v době 3 měsíců přede dnem zahájení zadávacího řízení (tedy nesmí být k okamžiku zahájení zadávacího řízení starší 3 měsíců). Doklady nemusí dodavatel předložit, pokud právní předpisy v zemi jeho sídla obdobnou profesní způsobilost nevyžadují.
+Prokázání profesní způsobilosti může dodavatel prokázat také předložením výpisu ze seznamu kvalifikovaných dodavatelů v souladu s ust. § 228 ZZVZ či certifikátu systému certifikovaných dodavatelů dle § 234 ZZVZ v tom rozsahu, v jakém údaje ve výpisu ze seznamu kvalifikovaných dodavatelů nebo certifikátu prokazují splnění kritérií profesní způsobilosti.
+""" .
+
 epd:id_2017-S-029-052526_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "5";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2017-S-029-052526_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """
+Zadavatel v souladu s ust. § 41 ZZVZ požaduje, aby účastníci k zajištění plnění svých povinností vyplývajících z účasti v zadávacím řízení poskytli jistotu ve výši 1 000 000 CZK (slovy: jeden milion korun českých). Forma poskytnutí jistoty je pospána v bodě 15.2. ZD. 
+Dodavatel je povinen předat objednateli před uzavřením smlouvy bankovní záruku za dokončení díla dle čl. 17.1.1. obchodních podmínek (součástí ZD):
+Zhotovitel poskytne Objednateli před uzavřením této smlouvy jako jistotu na řádné dokončení díla ve sjednané lhůtě bankovní záruku ve výši 10 % z ceny díla bez DPH sjednané smluvními stranami v článku 4. odstavec 4.1. smlouvy. Blíže v obchodních podmínkách.
+""";
   epo:hasLanguage "CS";
   epo:hasValidityPeriod epd:id_2017-S-029-052526_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2017-S-029-052526_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

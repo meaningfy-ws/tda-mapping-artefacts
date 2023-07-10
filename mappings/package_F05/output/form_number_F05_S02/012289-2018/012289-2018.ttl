@@ -47,7 +47,17 @@ epd:id_2018-S-007-012289_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTe
 
 epd:id_2018-S-007-012289_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
   epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
-  epo:hasEInvoicing true .
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+               Les candidats ne sont pas autorisés à faire acte de candidature en agissant à la fois en qualité de candidats individuels et de membres d'un ou plusieurs groupements, ou en qualité de membres de plusieurs groupements.
+               Que le groupement soit solidaire ou conjoint, le mandataire est toujours solidaire de chacun des membres du groupement pour leurs obligations contractuelles.
+            """;
+  epo:hasEInvoicing true;
+  epo:hasPaymentArrangement """
+               Les offres doivent être exprimées en euros. Les prix sont fermes.
+               Paiement net par virement à échéance fixé à 60 jours de l'émission de la facture, émis après acceptation qualitative et quantitative des fournitures, prestations ou travaux et vérifications de la facture.
+               Financement sur fonds propres SNCF mobilités.
+            """ .
 
 epd:id_2018-S-007-012289_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 24.0;
@@ -191,7 +201,41 @@ epd:id_2018-S-007-012289_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2018-S-007-012289_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2018-S-007-012289_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2018-S-007-012289_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2018-S-007-012289_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2018-S-007-012289_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description """
+               Se référer au document intitulé «Candidature cabines spécialisées.xls»
+            """ .
+
+epd:id_2018-S-007-012289_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2018-S-007-012289_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType """
+               Les candidats doivent joindre à leur acte de candidature les documents et les renseignements suivants (En cas de candidature groupée, chacune des pièces exigées ci-après doit être transmise par chacun des membres du groupement):
+               — le document intitulé «Candidature cabines spécialisées.xls» dûment complété (mis en pièce jointe) et les documents justificatifs.
+               Ce document dûment complété est à remettre en format pdf et en format xls.
+               — justifier de l'existence légale de l'entreprise, avec le numéro d'immatriculation au registre du commerce et des sociétés (ou équivalent),
+               — l'imprimé DC1 intitulé «Lettre de candidature — Désignation du mandataire par ses cotraitants» dûment complété,
+               — l'imprimé DC2 intitulé «Déclaration du candidat individuel ou du membre du groupement» dûment complété.
+               Ces documents sont à se procurer par internet à l'adresse suivante: http://www.economie.gouv.fr/daj/formulaires-declaration-du-candidat.
+            """;
+  cccev:description """
+               Lorsque les candidats veulent faire valoir les capacités d'autres opérateurs économiques, ils doivent justifier des capacités de ces opérateurs ainsi que du fait qu'ils en disposeront pour l'exécution du marché.
+               Les candidats doivent joindre à leur acte de candidature les documents et les renseignements suivants (En cas de candidature groupée, chacune des pièces exigées ci-après doit être transmise par chacun des membres du groupement):
+               — une déclaration indiquant, pour chacun des 3 derniers exercices disponibles, le chiffre d'affaires annuel global et le chiffre d'affaire relatif aux fournitures, prestations ou travaux faisant l'objet du marché,
+               — une copie du dernier bilan, ou extraits de bilans, des opérateurs économiques pour lesquels l'établissement des bilans est obligatoire en vertu de la loi,
+               — une déclaration indiquant, pour chacun des 3 derniers exercices, les effectifs moyens annuels de l'entreprise et l'importance du personnel d'encadrement,
+               — le cas échéant, une description de la consistance du lien financier qui lie la filiale à la maison-mère, la relation d'appartenance à tel groupe,
+               — le cas échéant, une déclaration appropriée de banques ou preuve d'une assurance pour les risques professionnels.
+            """ .
+
 epd:id_2018-S-007-012289_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """
+               Garantie à première demande.
+            """;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .

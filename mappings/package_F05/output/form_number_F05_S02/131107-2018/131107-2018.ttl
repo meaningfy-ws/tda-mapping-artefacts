@@ -74,7 +74,14 @@ epd:id_2018-S-059-131107_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTe
   epo:isRenewalIndicator true .
 
 epd:id_2018-S-059-131107_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+               Aucune forme de groupement n'est imposée par l'entité adjudicatrice (conjoint ou solidaire). Toutefois en cas de groupement conjoint le mandataire devra être solidaire. L'entité adjudicatrice interdit aux candidats de présenter leurs offres en agissant à la fois en qualité de candidats individuels et de membres d'un ou plusieurs groupements, conformément à l'article 45-V-1 du décret nº 2016-360 du 25.3.2016. L'entité adjudicatrice interdit aux candidats de présenter leurs offres en agissant à la fois en qualité de membres de plusieurs groupements, conformément à l'article 45-V-2 du décret nº 2016-360 du 25.3.2016.
+            """;
+  epo:hasPaymentArrangement """
+               Les modalités de règlement des prestations s'opéreront selon les règles de la comptabilité publique et celles prévues par le décret nº 2016-360 du 25.3.2016 relatif aux marchés publics et par mandat administratif. Le délai global de paiement est fixé à 30 j à compter de la réception de la facture. Le comptable assignataire est l'agent comptable de la régie Eau d'Azur. Les prix (unitaires et forfaitaires) seront révisables dans les conditions prévues au CCAP — avance: sauf renoncement à l'acte d'engagement, le montant de l'avance est déterminé par application de l'article 110 du décret nº 2016-360 du 25.3.2016.
+            """ .
 
 epd:id_2018-S-059-131107_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
   time:numericDuration 12.0;
@@ -300,15 +307,33 @@ epd:id_2018-S-059-131107_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2018-S-059-131107_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2018-S-059-131107_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2018-S-059-131107_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasSelectionCriterionType """
+               — lettre de candidature-habilitation du mandataire par ses co-traitants (DC1 disponible sur http://www.economie.gouv.fr/daj/formulaires-marches-publics/),
+               — déclaration du candidat individuelle ou du membre du groupement (DC2 disponible sur http://www.economie.gouv.fr/daj/formulaires-marches-publics/),
+               — fiche d'identité de l'entreprise faisant apparaître: raison sociale, adresse du siège social, nº de SIRET, coordonnées du correspondant du dossier,
+               — extrait K-bis ou équivalent,
+               — attestations d'assurance en cours de validité: responsabilité civile professionnelle,
+               — pouvoirs: les documents relatifs aux pouvoirs des personnes habilitées à engager le candidat, si le signataire n'est pas le représentant légal. Le candidat doit veiller à ce que les pouvoirs soient en cours de validité et qu'ils ne soient pas limités à un montant inférieur à l'offre qui sera proposée. Par ailleurs, en cas de groupement solidaire d'entreprises, les pouvoirs relatifs à chaque membre du groupement ne doivent pas être limités à un montant inférieur à l'offre globale du groupement.
+            """;
+  cccev:description """
+               Déclaration concernant le chiffre d'affaires global et le chiffre d'affaires concernant les services objet du marché, réalisés au cours des 3 derniers exercices disponibles.
+            """ .
+
 epd:id_2018-S-059-131107_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "6";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2018-S-059-131107_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """
+               — chaque paiement fera l'objet d'une retenue de garantie au taux de 5 % dans les conditions prévues aux articles 122, 123 et 124 du décret nº 2016-360 du 25.3.2016. Cette sûreté s'applique sur l'intégralité des prestations objet du marché. La retenue de garantie peut être remplacée, au gré du titulaire, par une garantie à 1re demande, dans les conditions prévues à l'article 123 du décret nº 2016-360 du 25.3.2016. Le remplacement de la retenue de garantie par une caution personnelle et solidaire n'est pas autorisé,
+               — l'avance ne pourra être versée qu'après constitution de la garantie à 1re demande à hauteur du montant de l'avance prévue à l'article 112 du décret nº 2016-360 du 25.3.2016. Cette garantie à 1re demande ne pourra pas être remplacée par une caution personnelle et solidaire.
+            """;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://www.marches-securises.fr"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2018-S-059-131107_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2018-S-059-131107_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

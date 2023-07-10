@@ -85,7 +85,10 @@ epd:id_2021-S-100-265130_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTe
   epo:isRenewalIndicator false .
 
 epd:id_2021-S-100-265130_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription "L'entité adjudicatrice ne souhaite imposer aucune forme de groupement à l'attributaire du marché. Il est interdit aux candidats de présenter plusieurs offres en agissant à la fois en qualité de candidats individuels et de membres d'un ou plusieurs groupements.";
+  epo:hasPaymentArrangement "Fonds propre de la CAVBS et subvention de l'AERMC et état. Les prestations sont réglées par des prix unitaires et forfaitaires. Les prix sont actualisables. Le paiement des prestations se fera dans le respect du délai global de paiement applicable à l'acheteur." .
 
 epd:id_2021-S-100-265130_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
   time:numericDuration 14.0;
@@ -229,12 +232,18 @@ epd:id_2021-S-100-265130_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2021-S-100-265130_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2021-S-100-265130_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2021-S-100-265130_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasSelectionCriterionType "— déclaration sur l'honneur pour justifier que le candidat n'entre dans aucun des cas d'interdiction de soumissionner;— renseignements sur le respect de l'obligation d'emploi mentionnée aux articles L. 5212-1 à L. 5212-11 du code du travail;— le Kbis.";
+  cccev:description "Déclaration concernant le chiffre d'affaires global et le chiffre d'affaires concernant les prestations objet du contrat, réalisées au cours des trois derniers exercices disponibles." .
+
 epd:id_2021-S-100-265130_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "4";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2021-S-100-265130_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription "Une retenue de garantie de 5 % du montant initial du marché (augmenté le cas échéant du montant des avenants) sera constituée. Cette retenue de garantie sera prélevée sur le montant de chaque acompte par le comptable assignataire des paiements. Cette retenue de garantie peut être remplacée au gré du titulaire par une garantie à première demande. En revanche, il ne sera pas accepté de caution personnelle et solidaire.";
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "http://marchespublics.agglo-villefranche.fr/"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2021-S-100-265130_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "true"^^xsd:anyURI .
+  epo:hasVariantPermission "true"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .

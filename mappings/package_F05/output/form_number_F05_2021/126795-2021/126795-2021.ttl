@@ -128,7 +128,10 @@ epd:id_2021-S-050-126795_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTe
   epo:isRenewalIndicator true .
 
 epd:id_2021-S-050-126795_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription "Aucune forme de groupement n'est imposée par l'entité adjudicatrice. L'entité adjudicatrice interdit aux candidats de présenter leurs offres en agissant à la fois en qualité de candidats individuels et de membres d'un ou plusieurs groupements, conformément à l'article R. 2142-2-1º du code de la commande publique. L'entité adjudicatrice interdit aux candidats de présenter leurs offres en agissant à la fois en qualité de membres de plusieurs groupements, conformément à l'article R. 2142-2-2º du code de la commande publique. En cas d'attribution de l'accord-cadre à un groupement conjoint, le mandataire du groupement sera solidaire, pour l'exécution de l'accord-cadre, de chacun des membres du groupement pour ses obligations contractuelles en application de l'article R. 2142-24 du code de la commande publique.";
+  epo:hasPaymentArrangement "— Financement sur fonds propres;— Les modalités de règlement s'opéreront selon les règles de la comptabilité publique et celles prévues par le code de la commande publique;— Le délai global de paiement est fixé à 30 jours à compter de la réception de la facture;— Le comptable assignataire est l'agent comptable de la Régie Eau d'Azur;— Les prix sont révisables annuellement;— Avance: le versement d'une avance est prévue, sous réserve d'acceptation par le titulaire, dans les conditions indiquées au CCAP et à l'AE." .
 
 epd:id_2021-S-050-126795_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
   time:numericDuration 96.0;
@@ -416,15 +419,29 @@ epd:id_2021-S-050-126795_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2021-S-050-126795_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2021-S-050-126795_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2021-S-050-126795_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2021-S-050-126795_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2021-S-050-126795_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description "Pour le lot 1, il est demandé au candidat de présenter, au minimum:— une référence sur un projet similaire portant sur de la détection de réseaux dans le cadre de l'amélioration du patrimoine;— une référence sur un projet portant sur au moins 60 kms de réseaux détectés dans des secteurs montagneux et complexes (sans chaussées bitumées);— trois références sur de la détection de réseaux Adductions d'eau potable (AEP).Pour le lot 2, il est demandé au candidat de présenter, au minimum:— une référence sur un projet similaire portant sur de la détection de réseaux dans le cadre de l'amélioration du patrimoine;— une référence sur un projet portant sur au moins 100 kms de réseaux détectés dans des secteurs montagneux et urbain;— trois références sur de la détection de réseaux AEP.Pour le lot 3, il est demandé au candidat de présenter, au minimum:— une référence sur un projet similaire portant sur de la détection de réseaux dans le cadre de l'amélioration du patrimoine;— une référence sur un projet portant sur au moins 100 kms de réseaux détectés dans des secteurs ayant une très forte urbanisation et une densité de population très élevée;— trois références sur de la détection de réseaux AEP.Pour le lot 4, il est demandé au candidat de présenter, au minimum:— une référence minimale sur un projet portant sur au moins 10 kms de réseaux détectés dans des secteurs montagneux et complexes (sans chaussées bitumées);— une référence minimale sur un projet portant sur au moins 10 kms de réseaux détectés dans des secteurs montagneux et urbain;— une référence minimale sur un projet portant sur au moins 10 kms de réseaux détectés dans des secteurs ayant une très forte urbanisation et une densité de population très élevée." .
+
+epd:id_2021-S-050-126795_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2021-S-050-126795_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType "— lettre de candidature — habilitation du mandataire par ses cotraitants (DC1 disponible sur http://www.economie.gouv.fr/daj/formulaires-marches-publics/);— déclaration du candidat individuelle ou du membre du groupement (DC2 disponible sur http://www.economie.gouv.fr/daj/formulaires-marches-publics/);— extrait K-bis ou équivalent;— pouvoirs: les documents relatifs aux pouvoirs des personnes habilitées à engager le candidat, si le signataire n'est pas le représentant légal. Le candidat doit veiller à ce que les pouvoirs soient en cours de validité et qu'ils ne soient pas limités à un montant inférieur à l'offre qui sera proposée. Par ailleurs, en cas de groupement solidaire d'entreprises, les pouvoirs relatifs à chaque membre du groupement ne doivent pas être limités à un montant inférieur à l'offre globale du groupement;— attestations d'assurance en cours de validité: responsabilité civile professionnelle couvrant spécifiquement les activités de géo-référencement et détection de réseaux;— certification «Prestataire en géo-référencement et détection des réseaux», conforme aux annexes de l'arrêté du 19.2.2013 encadrant la certification des prestataires en géo-référencement et en détection des réseaux, délivrée par un organisme certificateur accrédité par le COFRAC ou par tout autre organisme d'accréditation équivalent signataire de l'accord multilatéral pris dans le cadre de la coordination européenne des organismes d'accréditation.";
+  cccev:description "Déclaration concernant le chiffre d'affaires global et le chiffre d'affaires concernant les services objet du marché, réalisés au cours des trois derniers exercices disponibles." .
+
 epd:id_2021-S-050-126795_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "6";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2021-S-050-126795_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription "Sans objet.";
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://www.marches-securises.fr"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2021-S-050-126795_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2021-S-050-126795_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

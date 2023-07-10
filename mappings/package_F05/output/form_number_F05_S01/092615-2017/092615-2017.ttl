@@ -49,7 +49,20 @@ Durée ferme de 15 ans, reconductible une fois pour une durée de 5 ans.
   epo:isRenewalIndicator true .
 
 epd:id_2017-S-050-092615_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+Un opérateur économique répondant seul n'est pas autorisé à répondre aussi en groupement.
+Tout groupement doit être conjoint avec mandataire solidaire.
+En cas de groupement, la désignation d'un mandataire dans le dossier de candidature est obligatoire.
+""";
+  epo:hasPaymentArrangement """
+Modalités de paiement:
+— Les offres doivent être exprimées en euros.
+— Paiement net par virement à échéance fixé à 60 jours de l'émission de la facture, émis après acceptation qualitative et quantitative des fournitures, prestations ou travaux et vérifications de la facture.
+Financement:
+— SNCF Réseau.
+""" .
 
 epd:id_2017-S-050-092615_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 240.0;
@@ -229,6 +242,36 @@ epd:id_2017-S-050-092615_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 
 epd:id_2017-S-050-092615_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-050-092615_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2017-S-050-092615_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2017-S-050-092615_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2017-S-050-092615_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description """
+Le candidat, opérateur économique répondant seul ou le groupement d'entreprises doit avoir préalablement développé et déployé un projet de poste d'enclenchement informatique ou un projet similaire au cours des 5 dernières années.
+Le candidat doit également apporter la preuve qu'il emploie des agents habilités possédant les qualifications professionnelles au sein du décret Aptitude ou du guide n° 13 de l'EPSF pour des activités d'études, de signalisation, d'intervention et d'essais via un certificat, ou toute preuve de son engagement dans une démarche d'habilitation auprès de SNCF Réseau.
+""" .
+
+epd:id_2017-S-050-092615_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2017-S-050-092615_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType """
+Les candidats doivent joindre à leur acte de candidature les documents et les renseignements suivants (en cas de candidature groupée, chacune des pièces exigées ci-après doit être transmise par chacun des membres du groupement):
+— Doc 1: Pièces justifiant de l'existence légale de l'entreprise, avec le numéro d'immatriculation au Registre du commerce et des sociétés (ou équivalent),
+— Doc 2: Imprimé DC1 intitulé «Lettre de candidature — Désignation du mandataire par ses cotraitants» dûment complété et signé,
+— Doc 3: Imprimé DC2 intitulé «Déclaration du candidat individuel ou du membre du groupement» dûment complété et signé.
+Ces documents sont à se procurer par internet à l'adresse suivante:
+http://www.economie.gouv.fr/daj/formulaires-declaration-du-candidat
+Si le candidat est en redressement judiciaire, il fournit la copie du (ou des) jugement(s) prononcés(s).
+""";
+  cccev:description """
+Lorsque les candidats veulent faire valoir les capacités d'autres opérateurs économiques, ils doivent justifier des capacités de ces opérateurs ainsi que du fait qu'ils en disposeront pour l'exécution du marché.
+Les candidats doivent joindre à leur acte de candidature les documents et les renseignements suivants (en cas de candidature groupée, chacune des pièces exigées ci-après doit être transmise par chacun des membres du groupement):
+— Doc 4: Une déclaration indiquant le chiffre d'affaire relatif aux fournitures, prestations ou travaux en signalisation ferroviaire en 2016.
+— Doc 5: Une déclaration indiquant, pour chacun des 3 derniers exercices, les effectifs moyens annuels de l'entreprise par rapport aux différentes étapes du cycle de vie d'un projet de signalisation ferroviaire (recherche et développement, étude, paramétrage, travaux).
+— Doc 6: Une décomposition du chiffre d'affaire des projets de signalisation ferroviaire en 2016 par rapport aux quatre étapes du cycle du projet.
+— Le cas échéant, une déclaration appropriée de banques ou preuve d'une assurance pour les risques professionnels.
+""" .
 
 epd:id_2017-S-050-092615_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "8";

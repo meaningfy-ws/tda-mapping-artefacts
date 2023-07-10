@@ -125,7 +125,14 @@ epd:id_2017-S-069-130948_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTe
   epo:isRenewalIndicator true .
 
 epd:id_2017-S-069-130948_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+Неприложимо.
+""";
+  epo:hasPaymentArrangement """
+Финансирането на поръчката е със собствени средства на възложителя. Заплащането, включително възлагане „опция допълнителна услуга“, се извършва въз основа на предоставени от изпълнителя оригинална фактура и кантарни бележки (включващи количеството на депонирания отпадък, номера на превозното средство, датата на услугата, и наименование и местонахождение на депото), по банков път в срок до 30 (тридесет) календарни дни считано от представянето на посочените документи.
+""" .
 
 epd:id_2017-S-069-130948_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
   time:numericDuration 24.0;
@@ -381,14 +388,56 @@ epd:id_2017-S-069-130948_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2017-S-069-130948_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-069-130948_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2017-S-069-130948_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2017-S-069-130948_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2017-S-069-130948_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description """
+1. Участникът следва да е изпълнил дейности с предмет и обем, идентични или сходни с тези на поръчката, за последните 3 години, считано от датата на подаване на офертата:
+За ОП 1 — в размер на минимум 500 м3 (петстотин кубични метра);
+За ОП 2 — в размер на минимум 400 м3 (четиристотин кубични метра);
+За ОП 3 — в размер на минимум 3 600 м3 (три хиляди и шестстотин кубични метра).
+2. Участникът следва да разполага с персонал с определена професионална компетентност за изпълнението на поръчката (за водене на необходимата отчетна документация) — минимум 1 (един) специалист — еколог, с висше образование степен магистър, специалност Екология и опазване на околната среда, работа по специалността не по-малко от 5 години — за всяка об. позиция.
+3. Участникът следва да разполага с техническо оборудване, необходимо за изпълнение на поръчката:
+За ОП 1 и ОП 2 — минимум 2 броя специализирани автомобили тип контейнеровоз.
+За ОП 3 — минимум 1 брой товарен автомобил с технически допустима максимална маса минимум 12 тона, с добре уплътнена каросерия.
+4. Участникът следва да прилага система за управление на качеството EN ISO 9001 или еквивалент.
+5. Участникът следва да да прилага системи или стандарти за опазване на околната среда EN ISO 14001 или еквивалент.
+""" .
+
+epd:id_2017-S-069-130948_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2017-S-069-130948_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType """
+За об. позиция 1:
+1. Участникът следва да притежава разрешителни/регистрационни документи по чл. 35 от ЗУО за дейностите по събиране и транспортиране на отпадъци с код 19 08 01. Попълва се част IV, раздел А, т. 2) в ЕЕДОП.
+2. Участникът следва да притежава Лиценз за автотранспортна дейност за превоз на товари. Попълва се част IV, раздел А, т. 2) в ЕЕДОП.
+За об. позиция 2:
+1. Участникът следва да притежава разрешителни/регистрационни документи по чл. 35 от ЗУО за дейностите по събиране и транспортиране на отпадъци с код 19 08 02. Попълва се част IV, раздел А, т. 2) в ЕЕДОП.
+2. Участникът следва да притежава Лиценз за автотранспортна дейност за превоз на товари. Попълва се част IV, раздел А, т. 2) в ЕЕДОП.
+За об. позиция 3:
+1. Участникът следва да притежава разрешителни/регистрационни документи по чл. 35 от ЗУО за дейностите по събиране и транспортиране на отпадъци с код 19 08 05. Попълва се част IV, раздел А, т. 2) в ЕЕДОП.
+2. Участникът следва да притежава Лиценз за автотранспортна дейност за превоз на товари. Попълва се част IV, раздел А, т. 2) в ЕЕДОП.
+За доказване на годност (правоспособност) за упражняване на професионална дейност на участниците, за целите на чл. 67, ал. 5 от ЗОП и чл. 54, ал. 13 от ППЗОП, се представят 1 или няколко от следните документи и доказателства, във връзка с поставените изисквания:
+1. Копие от разрешителни/регистрационни документи по чл. 35 от ЗУО.
+2. Копие от Лиценз за автотранспортна дейност за превоз на товари.
+""";
+  cccev:description """
+Неприложимо.
+""" .
+
 epd:id_2017-S-069-130948_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "6";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2017-S-069-130948_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """
+Неприложимо.
+""";
   epo:hasLanguage "BG";
   epo:hasValidityPeriod epd:id_2017-S-069-130948_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2017-S-069-130948_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

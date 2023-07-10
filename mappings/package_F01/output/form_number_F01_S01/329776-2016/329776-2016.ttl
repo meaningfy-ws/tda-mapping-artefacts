@@ -4,7 +4,14 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -164,6 +171,33 @@ epd:id_2016-S-184-329776_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY a org:Organ
 
 epd:id_2016-S-184-329776_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
   epo:playedBy epd:id_2016-S-184-329776_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
+
+epd:id_2016-S-184-329776_SelectionCriterionConstraint_eFnqVP3UzE3fXUda5fCFdW a cccev:Constraint;
+  cccev:constrains epd:id_2016-S-184-329776_SelectionCriterionInformationConcept_eFnqVP3UzE3fXUda5fCFdW .
+
+epd:id_2016-S-184-329776_SelectionCriterionInformationConcept_eFnqVP3UzE3fXUda5fCFdW
+  a cccev:InformationConcept;
+  cccev:description """
+Zu a) Jährliches Mittel von fünf Mitarbeitern inklusive Geschäftsführung.
+Zu b) Die Person des Projektleiters erfüllt die fachlichen Anforderungen, wenn sie berechtigt ist, die Berufsbezeichnung „Beratender Ingenieur oder Ingenieur“ (im Sinne des § 75 Abs. 2 VgV) zu führen.
+Die Person des stellvertretenden Projektleiters erfüllt die fachlichen Anforderungen, wenn sie berechtigt ist, die Berufsbezeichnung „Beratender Ingenieur oder Ingenieur“ (im Sinne des § 75 Abs. 2 VgV) zu führen.
+Mindestanforderung sind 8 Jahre Berufserfahrung für den Projektleiter und 5 Jahre für den stellvertretenden Projektleiter im Leistungsbild Objektplanung Gebäude und Innenräume LPH 6-9.
+zu c) Der Referenzzeitraum muss zwischen 2006 und 2016 liegen. In diesem Zeitraum muss die LPH 6 begonnen und die LPH 8 abgeschlossen sein. Es müssen mindestens die LPH 6 bis 8 beauftragt und erbracht worden sein.
+""" .
+
+epd:id_2016-S-184-329776_SelectionCriterion_eFnqVP3UzE3fXUda5fCFdW a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2016-S-184-329776_SelectionCriterionConstraint_eFnqVP3UzE3fXUda5fCFdW;
+  epo:hasSelectionCriterionType """
+A) Erklärung über das Nichtvorliegen von Ausschlussgründen nach § 123 und § 124 GWB;
+b) Erklärung zu wirtschaftlichen Verknüpfungen mit anderen Unternehmen;
+c) Erklärung gem. § 43 VgV Rechtsform von Unternehmen und Bietergemeinschaften;
+d) Erklärung zu Unteraufträgen gem. § 46 Abs. 3 Nr. 10 VgV und § 36 Abs. 1 VgV;
+e) Erklärung gem. § 1 des Verpflichtungsgesetzes im Falle einer Beauftragung.
+""";
+  cccev:description """
+A) Erklärung über den Gesamtumsatz in den letzten 3 abgeschlossenen Geschäftsjahren (2013, 2014, 2015) gem. § 45 Abs. 1 Nr. 1 VgV;
+b) Nachweis einer Berufshaftpflichtversicherung gem. § 45 Abs. 1 Nr. 1 bzw. 4 VgV.
+""" .
 
 epd:id_2016-S-184-329776_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
   epo:hasLanguage "DE";

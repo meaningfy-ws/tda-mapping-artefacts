@@ -49,7 +49,15 @@ Le marché peut être reconduit 1 fois.
   epo:isRenewalIndicator true .
 
 epd:id_2017-S-057-106421_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+Une entreprise ne peut figurer dans la composition de plus d'une candidature pour un même marché, qu'elle agisse en qualité de membre d'un groupement, de candidat unique.
+En cas de groupement, la forme souhaitée par l'aéroport est le groupement solidaire. Si le groupement attributaire du marché est d'une forme différente, il serait contraint d'assurer sa transformation pour se conformer à ce souhait sous peine d'élimination de son offre.
+""";
+  epo:hasPaymentArrangement """
+Financement sur fonds propres de l'aéroport de Bâle-Mulhouse. Paiement selon article 8 du cahier des clauses générales produits et services édité par l'aéroport de Bâle-Mulhouse.
+""" .
 
 epd:id_2017-S-057-106421_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 36.0;
@@ -207,14 +215,26 @@ epd:id_2017-S-057-106421_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2017-S-057-106421_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-057-106421_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2017-S-057-106421_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasSelectionCriterionType """
+Ne peuvent accéder à un marché de l'aéroport que les seules entreprises qui sont en règle avec les situations précisées dans la lettre de candidature.
+""";
+  cccev:description """
+Se référer aux indications figurant dans l'article 4 du RC pour les conditions administratives ainsi que pour les conditions minimales de caractère financier, économique, technique et professionnel à remplir.
+""" .
+
 epd:id_2017-S-057-106421_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "4";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2017-S-057-106421_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """
+Aucun.
+""";
   epo:hasLanguage "DE", "FR";
   epo:hasValidityPeriod epd:id_2017-S-057-106421_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2017-S-057-106421_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

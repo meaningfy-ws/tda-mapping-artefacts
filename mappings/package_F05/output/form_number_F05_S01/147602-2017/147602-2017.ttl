@@ -72,7 +72,20 @@ Les prestations, objet de la présente consultation, pourront donner lieu à un 
   epo:isRenewalIndicator false .
 
 epd:id_2017-S-076-147602_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+Groupement conjoint avec mandataire solidaire. Il est interdit aux candidats de présenter plusieurs offres en agissant à la fois: — en qualité de candidats individuels et de membres d'un ou plusieurs groupements, — en qualité de membres de plusieurs groupements
+concernant les sous-traitants, un même sous-traitant ne pourra pas être sous-traitant de plusieurs candidats.
+Les candidats (seul ou en groupement) doivent disposer des compétences nécessaires l'exécution du marché, avec une compétence spécifique dans les domaines suivants:
+1) Conception et construction de chaufferie bois et gaz, de réseau de chaleur (Terrassement, génie civil, génie climatique, système bois énergie, hydraulique et électricité);
+2) Exploitation de chaufferies bois et gaz et de réseau de chaleur;
+3) Architecture, détenue par un architecte, qui aura en charge la réalisation du dossier de permis de construire;
+4) Ingénierie (conception et pilotage des travaux et opérations de réception).
+""";
+  epo:hasPaymentArrangement """
+Caractéristiques des prix: prix forfaitaires et unitaires. Modalités de variation des prix: révision mensuelle. Une avance de 5 % sera accordée dans les conditions prévues au contrat. Modalité de règlement des comptes: selon les modalités du CCAP. Le délai global de paiement est de 30 jours. Modalités de financements: l'opération est inscrite au budget annexe de la régie réseau de chaleur. La collectivité financera le marché sur ses ressources budgétaires propres et par d'éventuelles subventions (fonds chaleur notamment).
+""" .
 
 epd:id_2017-S-076-147602_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 58.0;
@@ -218,14 +231,38 @@ epd:id_2017-S-076-147602_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2017-S-076-147602_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2017-S-076-147602_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2017-S-076-147602_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2017-S-076-147602_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2017-S-076-147602_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description """
+Les certificats de qualifications professionnelles: RGE sur la conception et les travaux liés au système bois énergie; la preuve de la capacité de l'entreprise peut être apportée par tout moyen, notamment par des certificats d'identité professionnelle ou des références de travaux attestant de la compétence de l'entreprise à réaliser la prestation pour laquelle elle se porte candidate.
+""" .
+
+epd:id_2017-S-076-147602_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2017-S-076-147602_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType """
+Déclaration sur l'honneur pour justifier que le candidat n'entre dans aucun des cas des interdictions de soumissionner
+— renseignements sur le respect de l'obligation d'emploi mentionnée aux articles L. 5212-1 à L. 5212-11 du code du travail;
+""";
+  cccev:description """
+— déclaration concernant le chiffre d'affaires global et le chiffre d'affaires concernant des prestations similaires, réalisées au cours des 3 derniers exercices disponibles;
+pour justifier des capacités professionnelles, techniques et financières d'autres opérateurs économiques sur lesquels il s'appuie pour présenter sa candidature, le candidat produit les mêmes documents concernant cet opérateur économique que ceux qui lui sont exigés par l'entité adjudicatrice. En outre, pour justifier qu'il dispose des capacités de cet opérateur économique pour l'exécution des prestations, le candidat produit un engagement écrit de l'opérateur économique.
+""" .
+
 epd:id_2017-S-076-147602_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "8";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2017-S-076-147602_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """
+Retenue de garantie de 5 %, qui peut être remplacée par une garantie à première demande; une avance pourra être versée au titulaire dans les conditions définies aux articles 110 et suivants du décret no 2016-360 du 25.3.2016. Garantie à première demande couvrant 100 % du montant de l'avance.
+""";
   epo:hasLanguage "FR";
   epo:hasValidityPeriod epd:id_2017-S-076-147602_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "true"^^xsd:anyURI .
+  epo:hasVariantPermission "true"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2017-S-076-147602_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2017-S-076-147602_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

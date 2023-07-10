@@ -45,7 +45,10 @@ epd:id_2021-S-040-101018_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTe
   epo:isRenewalIndicator true .
 
 epd:id_2021-S-040-101018_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription "Aucune forme de groupement n'est imposée par l'entité adjudicatrice. L'entité adjudicatrice interdit aux candidats de présenter leurs offres en agissant à la fois en qualité de candidats individuels et de membres d'un ou plusieurs groupements, conformément à l'article R. 2142-21 1o du code de la commande publique. L'entité adjudicatrice interdit aux candidats de présenter leurs offres en agissant à la fois en qualité de membres de plusieurs groupements, conformément à l'article R. 2142-21 2o du code de la commande publique.";
+  epo:hasPaymentArrangement "— financement sur fonds propres;— les modalités de règlement des prestations s'opéreront par mandat administratif selon les règles de la comptabilité publique et celles prévues par le code de la commande publique;— le délai global de paiement est fixé à 30 jours à compter de la réception de la facture;— le comptable assignataire est l'agent comptable de la Régie Eau d'Azur;— prix: l'organisme titulaire est tenu de maintenir les taux pendant deux ans. Au-delà de cette période, la révision des taux de cotisation s'effectuera chaque année. Les modalités sont détaillées au CCAP." .
 
 epd:id_2021-S-040-101018_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 96.0;
@@ -189,15 +192,29 @@ epd:id_2021-S-040-101018_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2021-S-040-101018_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2021-S-040-101018_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2021-S-040-101018_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2021-S-040-101018_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2021-S-040-101018_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description "Justification de gestion d'un minimum de 50 000 adhérents sur de la santé d'entreprise (ou de branche)." .
+
+epd:id_2021-S-040-101018_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2021-S-040-101018_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType "Les candidats auront à produire un dossier complet comprenant les pièces suivantes:— lettre de candidature — habilitation du mandataire par ses cotraitants (DC1 disponible sur http://www.economie.gouv.fr/daj/formulaires-marches-publics/);— déclaration du candidat individuelle ou du membre du groupement (DC2 disponible sur http://www.economie.gouv.fr/daj/formulaires-marches-publics/);— fiche d'identité de l'entreprise faisant apparaître: raison sociale, adresse du siège social, numéro de SIRET, coordonnées du correspondant du dossier;— extrait Kbis ou équivalent;— attestations d'assurance en cours de validité: responsabilité civile professionnelle;— pouvoirs: les documents relatifs aux pouvoirs des personnes habilitées à engager le candidat, si le signataire n'est pas le représentant légal.Le candidat doit veiller à ce que les pouvoirs soient en cours de validité et qu'ils ne soient pas limités à un montant inférieur à l'offre qui sera proposée. Par ailleurs, en cas de groupement solidaire d'entreprises, les pouvoirs relatifs à chaque membre du groupement ne doivent pas être limités à un montant inférieur à l'offre globale du groupement.";
+  cccev:description "Le candidat devra présenter les éléments suivants en renseignant le document type de réponse déposé sur la plate-forme de dématérialisation:— structure du candidat: nom de l'entreprise, date de création, captal social, forme juridique, effectifs salariés;— groupe d'appartenance: actionnariat, groupe(s) financier(s) de référence, comptes consolidés, principales participations, notations;— liste des prestations objet du marché réalisées au cours des trois dernières années." .
+
 epd:id_2021-S-040-101018_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "6";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2021-S-040-101018_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription "Sans objet.";
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://www.marches-securises.fr"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2021-S-040-101018_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "true"^^xsd:anyURI .
+  epo:hasVariantPermission "true"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2021-S-040-101018_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

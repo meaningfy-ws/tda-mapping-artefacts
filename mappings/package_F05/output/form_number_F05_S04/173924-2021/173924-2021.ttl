@@ -61,7 +61,10 @@ epd:id_2021-S-067-173924_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj a epo:ContractTe
   epo:isRenewalIndicator true .
 
 epd:id_2021-S-067-173924_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription "En cas de groupement d'opérateurs économiques, un mandataire de groupement devra être désigné.Le mandataire solidaire est chargé de représenter le groupement auprès de La Poste.";
+  epo:hasPaymentArrangement "La Poste financera le marché par ses propres ressources. La Poste procédera au paiement des prestations, sauf disposition légale contraire ou accord spécifique entre les parties, dans un délai de 60 jours à compter de la date d'émission de la facture.L'euro est l'unité monétaire choisie pour le paiement des prestations.Les sous-traitants bénéficieront du paiement direct dans les conditions de la loi nº 75-1334 du 31.12.1975 modifiée." .
 
 epd:id_2021-S-067-173924_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
   time:numericDuration 60.0;
@@ -224,15 +227,21 @@ epd:id_2021-S-067-173924_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 epd:id_2021-S-067-173924_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2021-S-067-173924_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
 
+epd:id_2021-S-067-173924_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasSelectionCriterionType "Le candidat remettra, sur la plate-forme Provigis (https://www.provigis.com/), les documents indiqués ci-dessous:1) un extrait Kbis ou équivalence;2) s'il est en redressement judiciaire, la copie du ou des jugements prononcés;3) une déclaration dûment datée et signée sur papier à en-tête du fournisseur, pour justifier qu'il n'entre dans aucun des cas mentionnés à l’article L. 2141-1 et au 1o et 3o de l’article L. 2141-4 du code de la commande publique;4) les certificats délivrés par les administrations et organismes compétents attestant que le candidat ne se trouve pas dans un cas d'interdiction de soumissionner mentionné à l’article L. 2141-2 du code de la commande publique, c'est-à-dire:— une attestation de vigilance délivrée par l'Urssaf;— une attestation fiscale justifiant de la régularité de sa situation fiscale (paiement de la TVA, de l'impôt sur les sociétés ou de l'impôt sur le revenu);— un certificat attestant de la régularité de sa situation au regard de l'obligation d'emploi des travailleurs handicapés;5) le cas échéant, la liste nominative des salariés étrangers employés par le candidat et soumis à l'autorisation de travail mentionnée à l'article L. 5221-2 du code du travail, précisant pour chaque salarié, conformément à l'article D. 8254-2 du code du travail, sa date d'embauche, sa nationalité ainsi que le type et le numéro d'ordre du titre valant autorisation de travail. Les candidats établis à l'étranger fournissent les pièces prévues aux articles D. 8222-7 et D. 8254-3 du code du travail;6) le cas échéant, les pièces prévues à l'article R. 1263-12 du code du travail en cas de détachement de salariés.";
+  cccev:description "Les critères définis ci-après sont applicables à chacun des lots.Pérennité financière: ce critère représente 40 % de la notation globale.La notation de la pérennité financière sera fondée sur l'analyse des bilans et comptes de résultat du candidat. Le candidat devra fournir les liasses fiscales (aussi appelées liasses CERFA) ou tout document équivalent, des trois derniers exercices clôturés." .
+
 epd:id_2021-S-067-173924_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
   epo:hasDescription "12";
   epo:hasTimePeriod "MONTH" .
 
 epd:id_2021-S-067-173924_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription "Le prestataire candidat devra fournir, avant la signature du contrat, une attestation d'assurance en cours de validité (RC exploitation, RC professionnelle, RC produit).";
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://e-sourcing.extra.laposte.fr"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2021-S-067-173924_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission "false"^^xsd:anyURI .
+  epo:hasVariantPermission "false"^^xsd:anyURI;
+  epo:isGuaranteeRequired true .
 
 epd:id_2021-S-067-173924_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2021-S-067-173924_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

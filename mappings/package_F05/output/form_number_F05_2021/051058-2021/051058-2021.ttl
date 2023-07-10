@@ -268,7 +268,10 @@ epd:id_2021-S-021-051058_ContractTermLot_ZDNJb9jFZA3zcrQTAEd7uJ a epo:ContractTe
   epo:isRenewalIndicator false .
 
 epd:id_2021-S-021-051058_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription "En cas de Groupement momentané d'entreprises (GME) attributaire du marché, l’un des membres du groupement est désigné comme mandataire. Celui-ci coordonne les prestations de chacun des membres du groupement et représente ceux-ci auprès d’Enedis et est solidaire des obligations contractuelles de chacun d'entre eux. Enedis accepte les groupements conjoints.Sans préjudice du code de la commande publique du 5.12.2018, le GME sera déclaré avec la candidature, et la composition du GME ne peut pas être modifiée entre la date de remise des candidatures et la date de signature du marché, sauf en cas de restructuration de société ou si le groupement apporte la preuve qu'un de ses membres se trouve dans l'impossibilité d'accomplir sa tâche pour des raisons qui ne sont pas de son fait. Le fait de répondre au titre d'un groupement rend impossible pour ses membres de soumissionner à titre individuel ou au sein d'un autre GME.";
+  epo:hasPaymentArrangement "Financement sur ressources propres. Paiement à 60 jours à compter de la date d'émission de facture." .
 
 epd:id_2021-S-021-051058_Duration_2tPkBpSHtbcCKtpNaLfLoy a epo:SpecificDuration;
   time:numericDuration 60.0;
@@ -799,6 +802,18 @@ epd:id_2021-S-021-051058_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 
 epd:id_2021-S-021-051058_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2021-S-021-051058_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2021-S-021-051058_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2021-S-021-051058_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2021-S-021-051058_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description "Complément:Les travaux objet de cet appel d’offres sont des travaux de pose, de renforcement, d’extension, de modification ou de réseaux souterrains HTA ou BT (au sens de la norme UTE C 18510) en milieu rural et urbain.Tous les intervenants devront être a minima habilités H0 et BO (au sens de la norme UTE C 18510).Les travaux se réaliseront hors ou sous tension (pour la partie en basse tension) par des équipes formées et habilitées à travailler en souterrain dans les domaines de tensions concernés (au sens de la norme UTE C18510): B1, B1T, B2, B2T, H1V, H2V; mais aussi les équipements pour travailler en sécurité (jeu de mise à la terre et en court circuits, outillages, TST, EPI…).Les entreprises répondant à l’appel d’offre devront être en capacité de réaliser: le terrassement, la pose de câbles HTA et BT (y compris en tranchée commune avec d’autres concessionnaires), le remblayage, la réfection des tranchées et la pose d’armoires, la confection des accessoires basse tension en ligne hors tension et sous tension (réseau et extrémités branchements), les raccordements hors et sous tension (pour la BT): sur réseaux souterrains et réseaux aériens ou dans les postes.Ils devront pour cela être équipées du matériel nécessaire au terrassement ainsi qu'au déroulage de câbles (galets, chaussette, dynamomètre, remorques à tourets…).Dans sa réponse, le candidat doit démontrer sa connaissance et sa maîtrise des normes, standards, codes, etc. suivants:— UTE C18-510 (prévention du risque électrique);— UTE C11-001 arrêté technique du 17.5.2001;— norme C11-201;— norme NF P98-331 ouverture, remblayage et réfection des tranchées;— guide technique remblayage des tranchées (SETRA 1994 et additifs);— code de la voirie routière;— décret no 65-48 du 8.1.1965, protection des travailleurs (version 2004 tenant compte du décret no 2004-924 de septembre 2004)." .
+
+epd:id_2021-S-021-051058_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2021-S-021-051058_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType "Le candidat doit fournir une déclaration sur l'honneur datée et signée justifiant qu'il n'entre dans aucun des cas d'interdiction de soumissionner mentionnés dans le code de la commande publique du 5.12.2018. Cette déclaration est à fournir par les candidats individuels, et par chacun des membres d'un groupement candidat le cas échéant.";
+  cccev:description "Le candidat doit fournir les états financiers (bilans et comptes de résultats) des trois derniers exercices disponibles, ainsi que le prévisionnel 2020, attestant de sa pérennité financière. Si, compte tenu de la date de création de son entreprise, le candidat ne dispose pas de l'ensemble des informations, remettre des justificatifs équivalents." .
 
 epd:id_2021-S-021-051058_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";

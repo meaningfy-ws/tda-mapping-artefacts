@@ -51,7 +51,18 @@ La durée du marché de 10 ans définie au II.2.7 inclue 2 options d'une durée 
   epo:isRenewalIndicator false .
 
 epd:id_2016-S-214-390143_ContractTermProcedure_ENkaVK94Yfx7TfS6UZfS4G a epo:ContractTerm;
-  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasContractorLegalFormRequirement true;
+  epo:hasContractorLegalFormRequirementDescription """
+L'un des membres du groupement est désigné comme mandataire, celui-ci coordonne les prestations de chacun des membres du groupement et représente ceux-ci auprès d'EDF.
+En cas de groupement attributaire du marché, chacun des membres du groupement est engagé pour la totalité du marché, la nature du groupement est donc «solidaire», en application de l'art. 23 du décret n° 2005-1308 du 20.10.2005.
+Les moyens et les références analysées sont ceux des entreprises cumulés.
+Chaque membre du groupement, séparément, doit justifier de sa situation juridique et de ses capacités économiques et financières.
+Un soumissionnaire au titre d'un groupement, ne peut pas remettre d'offre individuelle ou avec un autre groupement.
+""";
+  epo:hasPaymentArrangement """
+Financement sur ressources propres. Paiement à 60 jours à compter de la date d'émission de facture et versement d'acomptes correspondants aux prestations réalisées.
+""" .
 
 epd:id_2016-S-214-390143_Duration_Wt9hTKqTB6wXtR2gujyw8e a epo:SpecificDuration;
   time:numericDuration 120.0;
@@ -186,6 +197,38 @@ epd:id_2016-S-214-390143_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj a org:Organ
 
 epd:id_2016-S-214-390143_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
   epo:playedBy epd:id_2016-S-214-390143_ReviewerOrganisation_Zgn49ZJAMhimY7VJZcSfaj .
+
+epd:id_2016-S-214-390143_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD a cccev:Constraint;
+  cccev:constrains epd:id_2016-S-214-390143_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD .
+
+epd:id_2016-S-214-390143_SelectionCriterionInformationConcept_YvcuudSefyGVAMRDjLo4yD
+  a cccev:InformationConcept;
+  cccev:description """
+Les niveaux requis seront précisés dans le dossier de pré-qualification.
+""" .
+
+epd:id_2016-S-214-390143_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:SelectionCriterion;
+  epo:hasConstraint epd:id_2016-S-214-390143_SelectionCriterionConstraint_YvcuudSefyGVAMRDjLo4yD;
+  epo:hasSelectionCriterionType """
+Renseignements et formalités nécessaires pour évaluer si ces exigences sont remplies:
+A. Le candidat devra fournir sous peine de rejet de sa candidature les documents suivants:
+— un extrait, datant de moins de 3 mois, de l'inscription du candidat au registre du commerce et des sociétés (imprimé k bis pour les entreprises françaises) ou, le cas échéant, une attestation officielle de situation délivrée par une autorité judiciaire ou administrative du pays où il est établi pour justifier qu'il ne se trouve pas dans une des situations suivantes: état de liquidation judiciaire, de redressement judiciaire sans habilitation à poursuivre l'activité, de cession judiciaire ou dans une situation analogue résultant d'une procédure de même nature existant dans les législations et réglementations nationales,
+— un extrait de casier judiciaire des dirigeants, datant de moins de 1 an, ou, le cas échéant, une attestation officielle de situation délivrée par une autorité judiciaire ou administrative du pays où le candidat est établi, pour justifier que les dirigeants ne sont pas en état de faillite personnelle et n'ont pas fait l'objet d'une condamnation prononcée par un jugement ayant autorité de chose jugée pour tout délit affectant sa moralité professionnelle,
+— une attestation, datant de moins de 1 an, de l'administration ou de l'autorité compétente certifiant que le candidat est à jour de ses impôts,
+— une attestation délivrée par l'organisme de recouvrement certifiant que le paiement des cotisations sociales est à jour (original ou copie certifiée de moins de 1 an), au regard du règlement CEE n° 1408-71 du 14.6.1971 et selon les dispositions légales du pays où le candidat est établi, ou celles de la France pour la part de son activité qui est soumise à ces dernières,
+— une attestation sur l'honneur certifiant que le travail, réalisé en France, sera fait avec des salariés employés régulièrement au regard des art L.3243-1, L.3243-2, L.3243-4, L.1221-10, L.1221-13, L.221-15 et l'art R.8253-15 du code français du travail, pour l'emploi de salariés de nationalité étrangère et avec leur équivalent pour le travail réalisé à l'étranger,
+— une attestation d'une compagnie d'assurance certifiant qu'elle garantit les conséquences pécuniaires de la responsabilité civile, et indiquant le montant et la durée de cette garantie,
+— un justificatif prouvant que le candidat n'appartient pas à un État, et que son capital ne comprend pas de capitaux originaires d'un pays dont le commerce est interdit avec la France,
+— un document précisant la forme juridique de la candidature dans le cas d'un groupement d'entreprises ainsi que le nom du mandataire du groupement,
+— un document précisant le périmètre de consolidation du groupe auquel le candidat appartient (filiales et prises de participations).
+Lorsqu'un document ou certificat mentionné ci-dessus n'est pas délivré par le pays en question, il peut-être remplacé par une déclaration sous serment ou une déclaration solennelle faite par l'intéressé devant une autorité judiciaire ou administrative, un notaire ou toute autre autorité qualifiée de l'État concerné.
+Ces documents ou certificats sont accompagnés d'une traduction en français s'ils ne sont pas écrits dans cette langue.
+B. Ne peuvent soumissionner: voir III 1 2 «niveaux exigés».
+Ces conditions sont applicables aux candidats et à chacun des membres d'un groupement candidat.
+""";
+  cccev:description """
+Fournir les 3 derniers bilans financiers et comptes de résultats (cf. portail achats https://pha.edf.com)
+""" .
 
 epd:id_2016-S-214-390143_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
