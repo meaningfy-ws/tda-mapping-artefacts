@@ -130,3 +130,58 @@ tedm:legal_economic_financial
 #                    rr:termType rr:IRI
 #                ]
 #        ] .
+
+
+tedm:SelectionCriterion a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate cccev:description ;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(ECONOMIC_FINANCIAL_INFO)) then ECONOMIC_FINANCIAL_INFO else if(exists(TECHNICAL_PROFESSIONAL_INFO)) then TECHNICAL_PROFESSIONAL_INFO else if(exists(CRITERIA_SELECTION)) then CRITERIA_SELECTION else null";
+                ] ;
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasSelectionCriterionType ;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(SUITABILITY)) then SUITABILITY else if(exists(ECONOMIC_CRITERIA_DOC)) then SECONOMIC_CRITERIA_DOC else if(exists(TECHNICAL_CRITERIA_DOC)) then TECHNICAL_CRITERIA_DOC else null";
+                ] ;
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasConstraint ;
+            rr:objectMap
+                [
+                    rr:parentTriplesMap tedm:SelectionCriterionConstraint;
+                    rr:joinCondition [
+                        rr:child "path(.)";
+                        rr:parent "path(.)";
+                    ];
+                ] ;
+        ] .
+
+tedm:SelectionCriterionConstraint a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate cccev:constrains ;
+            rr:objectMap
+                [
+                    rr:parentTriplesMap tedm:SelectionCriterionInformationConcept;
+                    rr:joinCondition [
+                        rr:child "path(.)";
+                        rr:parent "path(.)";
+                    ];
+                ] ;
+        ] .
+
+tedm:SelectionCriterionInformationConcept a rr:TriplesMap ;
+        rr:predicateObjectMap
+        [
+            rr:predicate cccev:description ;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(TECHNICAL_PROFESSIONAL_MIN_LEVEL)) then TECHNICAL_PROFESSIONAL_MIN_LEVEL else if(exists(ECONOMIC_FINANCIAL_MIN_LEVEL)) then ECONOMIC_FINANCIAL_MIN_LEVEL else null";
+                ] ;
+        ] .

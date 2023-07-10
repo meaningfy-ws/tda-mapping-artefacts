@@ -1062,6 +1062,49 @@ tedm:SubcontractingEstimatedValueMonetaryValue a rr:TriplesMap ;
 
         ] .
 
+#Section 3
+tedm:SelectionCriterion a rr:TriplesMap ;
+    rml:logicalSource
+        [
+            rml:source "data/source.xml" ;
+            rml:iterator "/TED_EXPORT/FORM_SECTION/F02_2014/LEFTI" ;
+            rml:referenceFormulation ql:XPath
+        ] ;
+    rr:subjectMap
+        [
+            rml:reference "if (exists(SUITABILITY) or exists(ECONOMIC_CRITERIA_DOC) or exists(ECONOMIC_FINANCIAL_INFO) or exists(ECONOMIC_FINANCIAL_MIN_LEVEL) or exists(ECONOMIC_FINANCIAL_INFO) or exists(TECHNICAL_PROFESSIONAL_INFO) or exists(TECHNICAL_CRITERIA_DOC) or exists(TECHNICAL_PROFESSIONAL_MIN_LEVEL) or exists(CRITERIA_SELECTION)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_SelectionCriterion_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+            rr:class epo:SelectionCriterion
+
+        ] .
+
+tedm:SelectionCriterionConstraint a rr:TriplesMap ;
+    rml:logicalSource
+        [
+            rml:source "data/source.xml" ;
+            rml:iterator "/TED_EXPORT/FORM_SECTION/F02_2014/LEFTI" ;
+            rml:referenceFormulation ql:XPath
+        ] ;
+    rr:subjectMap
+        [
+            rml:reference "if (exists(ECONOMIC_FINANCIAL_MIN_LEVEL) or exists(TECHNICAL_PROFESSIONAL_MIN_LEVEL)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_SelectionCriterionConstraint_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+            rr:class cccev:Constraint
+
+        ] .
+
+tedm:SelectionCriterionInformationConcept a rr:TriplesMap ;
+    rml:logicalSource
+        [
+            rml:source "data/source.xml" ;
+            rml:iterator "/TED_EXPORT/FORM_SECTION/F02_2014/LEFTI" ;
+            rml:referenceFormulation ql:XPath
+        ] ;
+    rr:subjectMap
+        [
+            rml:reference "if (exists(ECONOMIC_FINANCIAL_MIN_LEVEL) or exists(TECHNICAL_PROFESSIONAL_MIN_LEVEL)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_SelectionCriterionInformationConcept_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+            rr:class cccev:InformationConcept
+
+        ] .
+
 #Section 4
 tedm:DesignContestRegimeTerm  a rr:TriplesMap ;
     rml:logicalSource
