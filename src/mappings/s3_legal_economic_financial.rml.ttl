@@ -185,3 +185,51 @@ tedm:SelectionCriterionInformationConcept a rr:TriplesMap ;
                     rml:reference "if(exists(TECHNICAL_PROFESSIONAL_MIN_LEVEL)) then TECHNICAL_PROFESSIONAL_MIN_LEVEL else if(exists(ECONOMIC_FINANCIAL_MIN_LEVEL)) then ECONOMIC_FINANCIAL_MIN_LEVEL else null";
                 ] ;
         ] .
+
+
+tedm:SubmissionTerm a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:isGuaranteeRequired ;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(../LEFTI/DEPOSIT_GUARANTEE_REQUIRED)) then 'true' else null";
+                    rr:datatype xsd:boolean
+                ] ;
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasGuaranteeDescription ;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(../LEFTI/DEPOSIT_GUARANTEE_REQUIRED)) then ../LEFTI/DEPOSIT_GUARANTEE_REQUIRED else null";
+                ] ;
+        ] .
+
+
+tedm:ContractTermProcedure a rr:TriplesMap ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasContractorLegalFormRequirement ;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(../LEFTI/LEGAL_FORM)) then 'true' else null";
+                    rr:datatype xsd:boolean
+                ] ;
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasContractorLegalFormRequirementDescription ;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(../LEFTI/LEGAL_FORM)) then ../LEFTI/LEGAL_FORM else null";
+                ] ;
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:hasPaymentArrangement ;
+            rr:objectMap
+                [
+                    rml:reference "if(exists(../LEFTI/MAIN_FINANCING_CONDITION)) then ../LEFTI/MAIN_FINANCING_CONDITION else null";
+                ] ;
+        ] .
