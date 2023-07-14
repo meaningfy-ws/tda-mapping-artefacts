@@ -49,26 +49,6 @@ tedm:DynamicPurchaseSystemTechniqueUsage  a rr:TriplesMap ;
                 ]
         ].
 
-tedm:MultipleStageProcedureTerm  a rr:TriplesMap ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasNoNegotiationNecessary;
-            rr:objectMap
-                [
-                    rml:reference "TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE/RIGHT_CONTRACT_INITIAL_TENDERS";
-                    rr:datatype xsd:boolean
-                ]
-        ];
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasSuccessiveReduction;
-            rr:objectMap
-                [
-                    rml:reference "TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE/PARTICIPANT_NAME";
-                    rr:datatype xsd:boolean
-                ]
-        ].
-
 tedm:Lot a rr:TriplesMap ;
     rr:predicateObjectMap
         [
@@ -139,7 +119,8 @@ tedm:DesignContestRegimeTermPrize  a rr:TriplesMap ;
             rr:predicate epo:hasFollowupContract;
             rr:objectMap
                 [
-                    rml:reference "if(exists(PRIZE_AWARDED)) then 'true' else if(exists(NO_PRIZE_AWARDED)) then 'false' else null";
+                    #rml:reference "if(exists(PRIZE_AWARDED)) then 'true' else if(exists(NO_PRIZE_AWARDED)) then 'false' else null";
+                    rml:reference "if(exists(PRIZE_AWARDED)) then 'true' else null";
                     rr:datatype xsd:boolean
                 ]
         ] .
@@ -435,21 +416,21 @@ tedm:SubmissionPeriod  a rr:TriplesMap ;
                     rml:reference "DATE_TENDER_VALID";
                     rr:datatype xsd:date
                 ]
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasDescription;
-            rr:objectMap
-                [
-                    rml:reference "DURATION_TENDER_VALID";
-                    rr:datatype xsd:string
-                ]
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasTimePeriod;
-            rr:objectMap
-                [
-                    rml:reference "DURATION_TENDER_VALID/@TYPE";
-                ]
         ] .
+#    rr:predicateObjectMap
+#        [
+#            rr:predicate epo:hasDescription;
+#            rr:objectMap
+#                [
+#                    rml:reference "DURATION_TENDER_VALID";
+#                    rr:datatype xsd:string
+#                ]
+#        ] ;
+#    rr:predicateObjectMap
+#        [
+#            rr:predicate epo:hasTimePeriod;
+#            rr:objectMap
+#                [
+#                    rml:reference "DURATION_TENDER_VALID/@TYPE";
+#                ]
+#        ] .

@@ -900,39 +900,57 @@ tedm:MultipleStageProcedureTerm a rr:TriplesMap ;
         ] ;
     rr:predicateObjectMap
         [
-            rr:predicate epo:hasQualificationSystemRenewalDescription;
+            rr:predicate epo:hasNoNegotiationNecessary;
             rr:objectMap
                 [
-                    rml:reference "RENEWAL_DESC"
+                    rml:reference "if(exists(../../PROCEDURE/RIGHT_CONTRACT_INITIAL_TENDERS)) then 'true' else null";
+                    rr:datatype xsd:boolean
                 ]
-        ] ;
+        ];
     rr:predicateObjectMap
         [
-            rr:predicate epo:hasMinimumNumberOfCandidates;
+            rr:predicate epo:hasSuccessiveReduction;
             rr:objectMap
                 [
-                    rml:reference "NB_MIN_LIMIT_CANDIDATE";
-                    rr:datatype xsd:integer
+                    rml:reference "if(exists(../../PROCEDURE/REDUCTION_RECOURSE)) then 'true' else null";
+                    rr:datatype xsd:boolean
                 ]
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasMaximumNumberOfCandidates;
-            rr:objectMap
-                [
-                    rml:reference "NB_MAX_LIMIT_CANDIDATE";
-                    rr:datatype xsd:integer
-                ]
-        ] ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasQualificationSystemRenewalDescription;
-            rr:objectMap
-                [
-                    rml:reference "CRITERIA_CANDIDATE";
-                    rr:datatype xsd:string
-                ]
-        ] .
+        ].
+#    rr:predicateObjectMap
+#        [
+#            rr:predicate epo:hasQualificationSystemRenewalDescription;
+#            rr:objectMap
+#                [
+#                    rml:reference "../../PROCEDURE/RENEWAL_DESC"
+#                ]
+#        ] .
+#    rr:predicateObjectMap
+#        [
+#            rr:predicate epo:hasMinimumNumberOfCandidates;
+#            rr:objectMap
+#                [
+#                    rml:reference "../../PROCEDURE/NB_MIN_LIMIT_CANDIDATE";
+#                    rr:datatype xsd:integer
+#                ]
+#        ] ;
+#    rr:predicateObjectMap
+#        [
+#            rr:predicate epo:hasMaximumNumberOfCandidates;
+#            rr:objectMap
+#                [
+#                    rml:reference "../../PROCEDURE/NB_MAX_LIMIT_CANDIDATE";
+#                    rr:datatype xsd:integer
+#                ]
+#        ] .
+#    rr:predicateObjectMap
+#        [
+#            rr:predicate epo:hasQualificationSystemRenewalDescription;
+#            rr:objectMap
+#                [
+#                    rml:reference "../../PROCEDURE/CRITERIA_CANDIDATE";
+#                    rr:datatype xsd:string
+#                ]
+#        ] .
 tedm:MultipleStageProcedurePeriod a rr:TriplesMap ;
     rr:predicateObjectMap
         [
