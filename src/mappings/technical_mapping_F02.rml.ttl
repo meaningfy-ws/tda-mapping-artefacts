@@ -1116,7 +1116,7 @@ tedm:DesignContestRegimeTerm  a rr:TriplesMap ;
     rr:subjectMap
         [
             rml:reference
-                "if(exists(NO_DECISION_BINDING_CONTRACTING) or exists(DECISION_BINDING_CONTRACTING) or exists(NUMBER_VALUE_PRIZE) or exists(DETAILS_PAYMENT) or exists(NO_FOLLOW_UP_CONTRACTS) or exists(FOLLOW_UP_CONTRACTS)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_DesignContestRegimeTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+                "if(exists(PRIZE_AWARDED) or exists(NO_PRIZE_AWARDED) or exists(NUMBER_VALUE_PRIZE) or exists(DETAILS_PAYMENT) or exists(FOLLOW_UP_CONTRACTS) or exists(NO_FOLLOW_UP_CONTRACTS) or exists(DECISION_BINDING_CONTRACTING) or exists(NO_DECISION_BINDING_CONTRACTING)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_DesignContestRegimeTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
             rr:class epo:DesignContestRegimeTerm
         ] .
 
@@ -1131,7 +1131,7 @@ tedm:DesignContestRegimeTermPrize  a rr:TriplesMap ;
     rr:subjectMap
         [
             rml:reference
-                "if(exists(PRIZE_AWARDED) or exists(NO_PRIZE_AWARDED)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_DesignContestRegimeTermPrize_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+                "if(exists(PRIZE_AWARDED)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_DesignContestRegimeTermPrize_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
             rr:class epo:Prize
         ] .
 
