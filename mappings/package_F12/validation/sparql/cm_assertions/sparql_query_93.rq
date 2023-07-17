@@ -1,0 +1,10 @@
+#title: IV.3.2 - Details of payments to all participants
+#description: “IV.3.2 - Details of payments to all participants” in SF corresponds to “BT-45 Rewards Other” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F12_2014/PROCEDURE/DETAILS_PAYMENT. The expected ontology instances are epo: epo:Procedure / epo:Lot / epo:DesignContestRegimeTerm / rdf:langString .
+#xpath: /TED_EXPORT/FORM_SECTION/F12_2014/PROCEDURE/DETAILS_PAYMENT
+
+PREFIX epo: <http://data.europa.eu/a4g/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK WHERE { 
+		?this rdf:type epo:Procedure .
+		?this epo:hasProcurementScopeDividedIntoLot / epo:isSubjectToLotSpecificTerm / epo:hasParticipationPayment ?value . }

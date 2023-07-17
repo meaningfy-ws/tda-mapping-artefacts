@@ -1,0 +1,10 @@
+#title: II.2.10.1 - Variants will be accepted
+#description: “II.2.10.1 - Variants will be accepted” in SF corresponds to “BT-63 Variants” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F01_2014/OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS. The expected ontology instances are epo: epo:Lot / epo:SubmissionTerm / at-voc:permission .
+#xpath: /TED_EXPORT/FORM_SECTION/F01_2014/OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS
+
+PREFIX epo: <http://data.europa.eu/a4g/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK WHERE { 
+		?this rdf:type epo:Lot .
+		?this epo:isSubjectToLotSpecificTerm / epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> . }

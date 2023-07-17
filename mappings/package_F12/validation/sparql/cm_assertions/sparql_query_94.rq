@@ -1,0 +1,10 @@
+#title: IV.3.3.1.1 - Any service contract following the contest will be awarded to the winner or winners of the contest (yes)
+#description: “IV.3.3.1.1 - Any service contract following the contest will be awarded to the winner or winners of the contest (yes)” in SF corresponds to “BT-41 Following Contract” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F12_2014/PROCEDURE/FOLLOW_UP_CONTRACTS. The expected ontology instances are epo: epo:Procedure / epo:Lot / epo:DesignContestRegimeTerm / xsd:boolean .
+#xpath: /TED_EXPORT/FORM_SECTION/F12_2014/PROCEDURE/FOLLOW_UP_CONTRACTS
+
+PREFIX epo: <http://data.europa.eu/a4g/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK WHERE { 
+		?this rdf:type epo:Procedure .
+		?this epo:hasProcurementScopeDividedIntoLot / epo:isSubjectToLotSpecificTerm / epo:hasFollowupContract true . }

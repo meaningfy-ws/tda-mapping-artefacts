@@ -1,0 +1,10 @@
+#title: II.2.9.1 - Envisaged number of candidates
+#description: “II.2.9.1 - Envisaged number of candidates” in SF corresponds to “nan nan” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/NB_ENVISAGED_CANDIDATE. The expected ontology instances are epo: epo:Lot / epo:MultipleStageProcedureTerm / xsd:integer .
+#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/NB_ENVISAGED_CANDIDATE
+
+PREFIX epo: <http://data.europa.eu/a4g/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK WHERE { 
+		?this rdf:type epo:Lot .
+		?this epo:isSubjectToLotSpecificTerm / epo:hasMaximumNumberOfCandidates ?value . }

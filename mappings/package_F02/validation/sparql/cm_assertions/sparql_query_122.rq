@@ -1,0 +1,10 @@
+#title: III.1.2 - Economic and financial standing
+#description: “III.1.2 - Economic and financial standing” in SF corresponds to “BT-747 Selection Criteria Type” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/ECONOMIC_CRITERIA_DOC. The expected ontology instances are epo: epo:Lot / epo:SelectionCriterion / at-voc:selection-criterion  .
+#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/ECONOMIC_CRITERIA_DOC
+
+PREFIX epo: <http://data.europa.eu/a4g/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK WHERE { 
+		?this rdf:type epo:Lot .
+		?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType ?<http://publications.europa.eu/resource/authority/selection-criterion/ef-stand> . }

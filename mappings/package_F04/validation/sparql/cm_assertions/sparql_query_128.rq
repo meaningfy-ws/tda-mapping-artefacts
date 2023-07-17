@@ -1,0 +1,11 @@
+#title: III.1.1.1 - List and brief description of conditions, indication of information and documentation required
+#description: “III.1.1.1 - List and brief description of conditions, indication of information and documentation required” in SF corresponds to “BT-750 Selection Criteria Description” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/LEFTI/SUITABILITY/P. The expected ontology instances are epo: epo:Lot / epo:SelectionCriterion / rdf:langString .
+#xpath: /TED_EXPORT/FORM_SECTION/F04_2014/LEFTI/SUITABILITY/P
+
+PREFIX ccev: <^>
+PREFIX epo: <http://data.europa.eu/a4g/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK WHERE { 
+		?this rdf:type epo:Lot .
+		?this epo:specifiesSelectionCriterion / ccev:description ?value . }

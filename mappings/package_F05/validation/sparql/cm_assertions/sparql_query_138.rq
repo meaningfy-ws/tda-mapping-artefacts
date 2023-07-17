@@ -1,0 +1,10 @@
+#title: III.1.6 - Deposits and guarantees required
+#description: “III.1.6 - Deposits and guarantees required” in SF corresponds to “BT-751 Guarantee Required” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F05_2014/LEFTI/DEPOSIT_GUARANTEE_REQUIRED. The expected ontology instances are epo: epo:Procedure / epo:SubmissionTerm / xsd:boolean .
+#xpath: /TED_EXPORT/FORM_SECTION/F05_2014/LEFTI/DEPOSIT_GUARANTEE_REQUIRED
+
+PREFIX epo: <http://data.europa.eu/a4g/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK WHERE { 
+		?this rdf:type epo:Procedure .
+		?this epo:isSubjectToProcedureSpecificTerm / epo:isGuaranteeRequired true . }
