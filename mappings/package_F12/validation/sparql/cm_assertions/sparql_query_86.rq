@@ -2,10 +2,10 @@
 #description: “III.1.10 - Criteria for the selection of participants: (in the case of a restricted contest)” in SF corresponds to “BT-750 Selection Criteria Description” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F12_2014/LEFTI/CRITERIA_SELECTION/P. The expected ontology instances are epo: epo:Lot / epo:SelectionCriterion / rdf:langString .
 #xpath: /TED_EXPORT/FORM_SECTION/F12_2014/LEFTI/CRITERIA_SELECTION/P
 
-PREFIX ccev: <^>
+PREFIX cccev: <http://data.europa.eu/m8g/>
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
 		?this rdf:type epo:Lot .
-		?this epo:specifiesSelectionCriterion / ccev:description ?value . }
+		?this epo:specifiesSelectionCriterion / cccev:description ?value . }

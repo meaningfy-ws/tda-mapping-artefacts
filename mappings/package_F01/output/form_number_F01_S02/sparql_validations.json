@@ -1,5 +1,5 @@
 {
-    "created": "2023-07-17T14:23:23.291276",
+    "created": "2023-07-20T17:35:12.120589",
     "mapping_suite_ids": [
         "package_F01_v2.1.2-alpha.1"
     ],
@@ -16853,7 +16853,11 @@
         {
             "aggregate": {
                 "error": {
-                    "count": 17,
+                    "count": 0,
+                    "notices": []
+                },
+                "invalid": {
+                    "count": 7,
                     "notices": [
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -16861,6 +16865,51 @@
                             "notice_id": "067685-2018",
                             "path": "form_number_F01_S02/067685-2018"
                         },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "328063-2017",
+                            "path": "form_number_F01_S02/328063-2017"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "009240-2018",
+                            "path": "form_number_F01_S02/009240-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "276196-2017",
+                            "path": "form_number_F01_S02/276196-2017"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "201757-2018",
+                            "path": "form_number_F01_S02/201757-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "301810-2017",
+                            "path": "form_number_F01_S02/301810-2017"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "303508-2017",
+                            "path": "form_number_F01_S02/303508-2017"
+                        }
+                    ]
+                },
+                "unknown": {
+                    "count": 0,
+                    "notices": []
+                },
+                "unverifiable": {
+                    "count": 10,
+                    "notices": [
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
@@ -16894,32 +16943,8 @@
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "328063-2017",
-                            "path": "form_number_F01_S02/328063-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "009240-2018",
-                            "path": "form_number_F01_S02/009240-2018"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "276196-2017",
-                            "path": "form_number_F01_S02/276196-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "282623-2017",
                             "path": "form_number_F01_S02/282623-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "201757-2018",
-                            "path": "form_number_F01_S02/201757-2018"
                         },
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -16944,32 +16969,8 @@
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "308552-2017",
                             "path": "form_number_F01_S02/308552-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "301810-2017",
-                            "path": "form_number_F01_S02/301810-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "303508-2017",
-                            "path": "form_number_F01_S02/303508-2017"
                         }
                     ]
-                },
-                "invalid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unknown": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unverifiable": {
-                    "count": 0,
-                    "notices": []
                 },
                 "valid": {
                     "count": 0,
@@ -16982,7 +16983,7 @@
             },
             "identifier": "sparql_query_127",
             "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType ?<http://publications.europa.eu/resource/authority/selection-criterion/sui-act> . }",
+                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType <http://publications.europa.eu/resource/authority/selection-criterion/sui-act> . }",
                 "title": "III.1.1 - Suitability to pursue the professional activity, including requirements relating to enrolment on professional or trade registers"
             },
             "test_suite_identifier": "cm_assertions"
@@ -16990,7 +16991,11 @@
         {
             "aggregate": {
                 "error": {
-                    "count": 17,
+                    "count": 0,
+                    "notices": []
+                },
+                "invalid": {
+                    "count": 7,
                     "notices": [
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -16998,6 +17003,51 @@
                             "notice_id": "067685-2018",
                             "path": "form_number_F01_S02/067685-2018"
                         },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "328063-2017",
+                            "path": "form_number_F01_S02/328063-2017"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "009240-2018",
+                            "path": "form_number_F01_S02/009240-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "276196-2017",
+                            "path": "form_number_F01_S02/276196-2017"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "201757-2018",
+                            "path": "form_number_F01_S02/201757-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "301810-2017",
+                            "path": "form_number_F01_S02/301810-2017"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "303508-2017",
+                            "path": "form_number_F01_S02/303508-2017"
+                        }
+                    ]
+                },
+                "unknown": {
+                    "count": 0,
+                    "notices": []
+                },
+                "unverifiable": {
+                    "count": 10,
+                    "notices": [
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
@@ -17031,32 +17081,8 @@
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "328063-2017",
-                            "path": "form_number_F01_S02/328063-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "009240-2018",
-                            "path": "form_number_F01_S02/009240-2018"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "276196-2017",
-                            "path": "form_number_F01_S02/276196-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "282623-2017",
                             "path": "form_number_F01_S02/282623-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "201757-2018",
-                            "path": "form_number_F01_S02/201757-2018"
                         },
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -17081,32 +17107,8 @@
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "308552-2017",
                             "path": "form_number_F01_S02/308552-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "301810-2017",
-                            "path": "form_number_F01_S02/301810-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "303508-2017",
-                            "path": "form_number_F01_S02/303508-2017"
                         }
                     ]
-                },
-                "invalid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unknown": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unverifiable": {
-                    "count": 0,
-                    "notices": []
                 },
                 "valid": {
                     "count": 0,
@@ -17119,7 +17121,7 @@
             },
             "identifier": "sparql_query_128",
             "query": {
-                "query": "PREFIX ccev: <^>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / ccev:description ?value . }",
+                "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / cccev:description ?value . }",
                 "title": "III.1.1.1 - List and brief description of conditions, indication of information and documentation required"
             },
             "test_suite_identifier": "cm_assertions"
@@ -17127,7 +17129,11 @@
         {
             "aggregate": {
                 "error": {
-                    "count": 17,
+                    "count": 0,
+                    "notices": []
+                },
+                "invalid": {
+                    "count": 5,
                     "notices": [
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -17135,6 +17141,39 @@
                             "notice_id": "067685-2018",
                             "path": "form_number_F01_S02/067685-2018"
                         },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "214678-2018",
+                            "path": "form_number_F01_S02/214678-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "276196-2017",
+                            "path": "form_number_F01_S02/276196-2017"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "181431-2018",
+                            "path": "form_number_F01_S02/181431-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "301810-2017",
+                            "path": "form_number_F01_S02/301810-2017"
+                        }
+                    ]
+                },
+                "unknown": {
+                    "count": 0,
+                    "notices": []
+                },
+                "unverifiable": {
+                    "count": 12,
+                    "notices": [
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
@@ -17162,12 +17201,6 @@
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "214678-2018",
-                            "path": "form_number_F01_S02/214678-2018"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "328063-2017",
                             "path": "form_number_F01_S02/328063-2017"
                         },
@@ -17176,12 +17209,6 @@
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "009240-2018",
                             "path": "form_number_F01_S02/009240-2018"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "276196-2017",
-                            "path": "form_number_F01_S02/276196-2017"
                         },
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -17210,20 +17237,8 @@
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "181431-2018",
-                            "path": "form_number_F01_S02/181431-2018"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "308552-2017",
                             "path": "form_number_F01_S02/308552-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "301810-2017",
-                            "path": "form_number_F01_S02/301810-2017"
                         },
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -17232,18 +17247,6 @@
                             "path": "form_number_F01_S02/303508-2017"
                         }
                     ]
-                },
-                "invalid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unknown": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unverifiable": {
-                    "count": 0,
-                    "notices": []
                 },
                 "valid": {
                     "count": 0,
@@ -17256,7 +17259,7 @@
             },
             "identifier": "sparql_query_129",
             "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType ?<http://publications.europa.eu/resource/authority/selection-criterion/ef-stand> . }",
+                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType <http://publications.europa.eu/resource/authority/selection-criterion/ef-stand> . }",
                 "title": "III.1.2 - Economic and financial standing"
             },
             "test_suite_identifier": "cm_assertions"
@@ -17264,19 +17267,56 @@
         {
             "aggregate": {
                 "error": {
-                    "count": 17,
+                    "count": 0,
+                    "notices": []
+                },
+                "invalid": {
+                    "count": 5,
+                    "notices": [
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "085126-2018",
+                            "path": "form_number_F01_S02/085126-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "328063-2017",
+                            "path": "form_number_F01_S02/328063-2017"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "009240-2018",
+                            "path": "form_number_F01_S02/009240-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "201757-2018",
+                            "path": "form_number_F01_S02/201757-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "303508-2017",
+                            "path": "form_number_F01_S02/303508-2017"
+                        }
+                    ]
+                },
+                "unknown": {
+                    "count": 0,
+                    "notices": []
+                },
+                "unverifiable": {
+                    "count": 12,
                     "notices": [
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "067685-2018",
                             "path": "form_number_F01_S02/067685-2018"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "085126-2018",
-                            "path": "form_number_F01_S02/085126-2018"
                         },
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -17305,18 +17345,6 @@
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "328063-2017",
-                            "path": "form_number_F01_S02/328063-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "009240-2018",
-                            "path": "form_number_F01_S02/009240-2018"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "276196-2017",
                             "path": "form_number_F01_S02/276196-2017"
                         },
@@ -17325,12 +17353,6 @@
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "282623-2017",
                             "path": "form_number_F01_S02/282623-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "201757-2018",
-                            "path": "form_number_F01_S02/201757-2018"
                         },
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -17361,26 +17383,8 @@
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "301810-2017",
                             "path": "form_number_F01_S02/301810-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "303508-2017",
-                            "path": "form_number_F01_S02/303508-2017"
                         }
                     ]
-                },
-                "invalid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unknown": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unverifiable": {
-                    "count": 0,
-                    "notices": []
                 },
                 "valid": {
                     "count": 0,
@@ -17393,7 +17397,7 @@
             },
             "identifier": "sparql_query_130",
             "query": {
-                "query": "PREFIX ccev: <^>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / ccev:description ?value . }",
+                "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / cccev:description ?value . }",
                 "title": "III.1.2.2 - List and brief description of selection criteria, indication of information and documentation required:"
             },
             "test_suite_identifier": "cm_assertions"
@@ -17539,7 +17543,11 @@
         {
             "aggregate": {
                 "error": {
-                    "count": 17,
+                    "count": 0,
+                    "notices": []
+                },
+                "invalid": {
+                    "count": 6,
                     "notices": [
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -17547,6 +17555,45 @@
                             "notice_id": "067685-2018",
                             "path": "form_number_F01_S02/067685-2018"
                         },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "214678-2018",
+                            "path": "form_number_F01_S02/214678-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "276196-2017",
+                            "path": "form_number_F01_S02/276196-2017"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "201757-2018",
+                            "path": "form_number_F01_S02/201757-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "181431-2018",
+                            "path": "form_number_F01_S02/181431-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "301810-2017",
+                            "path": "form_number_F01_S02/301810-2017"
+                        }
+                    ]
+                },
+                "unknown": {
+                    "count": 0,
+                    "notices": []
+                },
+                "unverifiable": {
+                    "count": 11,
+                    "notices": [
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
@@ -17574,12 +17621,6 @@
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "214678-2018",
-                            "path": "form_number_F01_S02/214678-2018"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "328063-2017",
                             "path": "form_number_F01_S02/328063-2017"
                         },
@@ -17592,20 +17633,8 @@
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "276196-2017",
-                            "path": "form_number_F01_S02/276196-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "282623-2017",
                             "path": "form_number_F01_S02/282623-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "201757-2018",
-                            "path": "form_number_F01_S02/201757-2018"
                         },
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -17622,20 +17651,8 @@
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "181431-2018",
-                            "path": "form_number_F01_S02/181431-2018"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "308552-2017",
                             "path": "form_number_F01_S02/308552-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "301810-2017",
-                            "path": "form_number_F01_S02/301810-2017"
                         },
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -17644,18 +17661,6 @@
                             "path": "form_number_F01_S02/303508-2017"
                         }
                     ]
-                },
-                "invalid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unknown": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unverifiable": {
-                    "count": 0,
-                    "notices": []
                 },
                 "valid": {
                     "count": 0,
@@ -17668,7 +17673,7 @@
             },
             "identifier": "sparql_query_132",
             "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType ?<http://publications.europa.eu/resource/authority/selection-criterion/tp-abil> . }",
+                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType <http://publications.europa.eu/resource/authority/selection-criterion/tp-abil> . }",
                 "title": "III.1.3 - Technical and professional ability"
             },
             "test_suite_identifier": "cm_assertions"
@@ -17676,19 +17681,56 @@
         {
             "aggregate": {
                 "error": {
-                    "count": 17,
+                    "count": 0,
+                    "notices": []
+                },
+                "invalid": {
+                    "count": 5,
+                    "notices": [
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "085126-2018",
+                            "path": "form_number_F01_S02/085126-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "187250-2018",
+                            "path": "form_number_F01_S02/187250-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "328063-2017",
+                            "path": "form_number_F01_S02/328063-2017"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "009240-2018",
+                            "path": "form_number_F01_S02/009240-2018"
+                        },
+                        {
+                            "mapping_suite_identifier": "package_F01",
+                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
+                            "notice_id": "303508-2017",
+                            "path": "form_number_F01_S02/303508-2017"
+                        }
+                    ]
+                },
+                "unknown": {
+                    "count": 0,
+                    "notices": []
+                },
+                "unverifiable": {
+                    "count": 12,
                     "notices": [
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "067685-2018",
                             "path": "form_number_F01_S02/067685-2018"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "085126-2018",
-                            "path": "form_number_F01_S02/085126-2018"
                         },
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -17705,26 +17747,8 @@
                         {
                             "mapping_suite_identifier": "package_F01",
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "187250-2018",
-                            "path": "form_number_F01_S02/187250-2018"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "214678-2018",
                             "path": "form_number_F01_S02/214678-2018"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "328063-2017",
-                            "path": "form_number_F01_S02/328063-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "009240-2018",
-                            "path": "form_number_F01_S02/009240-2018"
                         },
                         {
                             "mapping_suite_identifier": "package_F01",
@@ -17773,26 +17797,8 @@
                             "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
                             "notice_id": "301810-2017",
                             "path": "form_number_F01_S02/301810-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F01",
-                            "mapping_suite_versioned_id": "package_F01_v2.1.2-alpha.1",
-                            "notice_id": "303508-2017",
-                            "path": "form_number_F01_S02/303508-2017"
                         }
                     ]
-                },
-                "invalid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unknown": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unverifiable": {
-                    "count": 0,
-                    "notices": []
                 },
                 "valid": {
                     "count": 0,
@@ -17805,7 +17811,7 @@
             },
             "identifier": "sparql_query_133",
             "query": {
-                "query": "PREFIX ccev: <^>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / ccev:description ?value . }",
+                "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / cccev:description ?value . }",
                 "title": "III.1.3.2 - List and brief description of selection criteria, indication of information and documentation required:"
             },
             "test_suite_identifier": "cm_assertions"

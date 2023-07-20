@@ -1,6 +1,6 @@
 [
     {
-        "created": "2023-07-17T15:09:13.698924",
+        "created": "2023-07-20T17:35:36.782298",
         "mapping_suite_identifier": "package_F02_v2.1.2-alpha.1",
         "object_data": "SPARQLTestSuiteValidationReport",
         "test_suite_identifier": "cm_assertions",
@@ -1680,8 +1680,8 @@
                 "identifier": "sparql_query_87",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY/AC_CRITERION",
-                    "/TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY/AC_CRITERION"
+                    "/TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY/AC_CRITERION",
+                    "/TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY/AC_CRITERION"
                 ],
                 "query": {
                     "description": "\u201cII.2.5.1.1 - Name\u201d in SF corresponds to \u201cBT-734 Award Criterion name\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY/AC_CRITERION ;; /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY/AC_CRITERION. The expected ontology instances are epo: epo:AwardCriterion / rdf:langString .",
@@ -1701,8 +1701,8 @@
                 "identifier": "sparql_query_88",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY/AC_WEIGHTING",
-                    "/TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY/AC_WEIGHTING"
+                    "/TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY/AC_WEIGHTING",
+                    "/TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY/AC_WEIGHTING"
                 ],
                 "query": {
                     "description": "\u201cII.2.5.1.2 - Weighting\u201d in SF corresponds to \u201cBT-543 Award Criterion complicated\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY/AC_WEIGHTING ;; /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY/AC_WEIGHTING. The expected ontology instances are epo: epo:AwardCriterion / rdf:langString .",
@@ -2120,72 +2120,74 @@
                 "result": "unverifiable"
             },
             {
-                "error": "Expected AskQuery, found '?'  (at char 179), (line:6, col:17)",
+                "error": null,
                 "fields_covered": true,
                 "identifier": "sparql_query_120",
                 "message": null,
                 "missing_fields": [],
                 "query": {
                     "description": "\u201cIII.1.1 - Suitability to pursue the professional activity, including requirements relating to enrolment on professional or trade registers\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/SUITABILITY. The expected ontology instances are epo: epo:Lot / epo:SelectionCriterion / at-voc:selection-criterion  .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType ?<http://publications.europa.eu/resource/authority/selection-criterion/sui-act> . }",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType <http://publications.europa.eu/resource/authority/selection-criterion/sui-act> . }",
                     "title": "III.1.1 - Suitability to pursue the professional activity, including requirements relating to enrolment on professional or trade registers",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/SUITABILITY"
                     ]
                 },
-                "query_result": null,
-                "result": "error"
+                "query_result": "False",
+                "result": "invalid"
             },
             {
-                "error": "Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found 'PREFIX'  (at char 0), (li",
+                "error": null,
                 "fields_covered": true,
                 "identifier": "sparql_query_121",
                 "message": null,
                 "missing_fields": [],
                 "query": {
                     "description": "\u201cIII.1.1.1 - List and brief description of conditions, indication of information and documentation required\u201d in SF corresponds to \u201cBT-750 Selection Criteria Description\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/SUITABILITY/P. The expected ontology instances are epo: epo:Lot / epo:SelectionCriterion / rdf:langString .",
-                    "query": "PREFIX ccev: <^>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / ccev:description ?value . }",
+                    "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / cccev:description ?value . }",
                     "title": "III.1.1.1 - List and brief description of conditions, indication of information and documentation required",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/SUITABILITY/P"
                     ]
                 },
-                "query_result": null,
-                "result": "error"
+                "query_result": "False",
+                "result": "invalid"
             },
             {
-                "error": "Expected AskQuery, found '?'  (at char 179), (line:6, col:17)",
-                "fields_covered": true,
+                "error": null,
+                "fields_covered": false,
                 "identifier": "sparql_query_122",
                 "message": null,
-                "missing_fields": [],
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/ECONOMIC_CRITERIA_DOC"
+                ],
                 "query": {
                     "description": "\u201cIII.1.2 - Economic and financial standing\u201d in SF corresponds to \u201cBT-747 Selection Criteria Type\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/ECONOMIC_CRITERIA_DOC. The expected ontology instances are epo: epo:Lot / epo:SelectionCriterion / at-voc:selection-criterion  .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType ?<http://publications.europa.eu/resource/authority/selection-criterion/ef-stand> . }",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType <http://publications.europa.eu/resource/authority/selection-criterion/ef-stand> . }",
                     "title": "III.1.2 - Economic and financial standing",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/ECONOMIC_CRITERIA_DOC"
                     ]
                 },
-                "query_result": null,
-                "result": "error"
+                "query_result": "False",
+                "result": "unverifiable"
             },
             {
-                "error": "Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found 'PREFIX'  (at char 0), (li",
+                "error": null,
                 "fields_covered": true,
                 "identifier": "sparql_query_123",
                 "message": null,
                 "missing_fields": [],
                 "query": {
                     "description": "\u201cIII.1.2.2 - List and brief description of selection criteria, indication of information and documentation required:\u201d in SF corresponds to \u201cBT-750 Selection Criteria Description\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/ECONOMIC_FINANCIAL_INFO. The expected ontology instances are epo: epo:Lot / epo:SelectionCriterion / rdf:langString .",
-                    "query": "PREFIX ccev: <^>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / ccev:description ?value . }",
+                    "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / cccev:description ?value . }",
                     "title": "III.1.2.2 - List and brief description of selection criteria, indication of information and documentation required:",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/ECONOMIC_FINANCIAL_INFO"
                     ]
                 },
-                "query_result": null,
-                "result": "error"
+                "query_result": "False",
+                "result": "invalid"
             },
             {
                 "error": null,
@@ -2205,38 +2207,40 @@
                 "result": "invalid"
             },
             {
-                "error": "Expected AskQuery, found '?'  (at char 179), (line:6, col:17)",
-                "fields_covered": true,
+                "error": null,
+                "fields_covered": false,
                 "identifier": "sparql_query_125",
                 "message": null,
-                "missing_fields": [],
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/TECHNICAL_CRITERIA_DOC"
+                ],
                 "query": {
                     "description": "\u201cIII.1.3 - Technical and professional ability\u201d in SF corresponds to \u201cBT-747 Selection Criteria Type\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/TECHNICAL_CRITERIA_DOC. The expected ontology instances are epo: epo:Lot / epo:SelectionCriterion / at-voc:selection-criterion  .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType ?<http://publications.europa.eu/resource/authority/selection-criterion/tp-abil> . }",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType <http://publications.europa.eu/resource/authority/selection-criterion/tp-abil> . }",
                     "title": "III.1.3 - Technical and professional ability",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/TECHNICAL_CRITERIA_DOC"
                     ]
                 },
-                "query_result": null,
-                "result": "error"
+                "query_result": "False",
+                "result": "unverifiable"
             },
             {
-                "error": "Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found 'PREFIX'  (at char 0), (li",
+                "error": null,
                 "fields_covered": true,
                 "identifier": "sparql_query_126",
                 "message": null,
                 "missing_fields": [],
                 "query": {
                     "description": "\u201cIII.1.3.2 - List and brief description of selection criteria, indication of information and documentation required:\u201d in SF corresponds to \u201cBT-750 Selection Criteria Description\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/TECHNICAL_PROFESSIONAL_INFO. The expected ontology instances are epo: epo:Lot / epo:SelectionCriterion / rdf:langString .",
-                    "query": "PREFIX ccev: <^>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / ccev:description ?value . }",
+                    "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / cccev:description ?value . }",
                     "title": "III.1.3.2 - List and brief description of selection criteria, indication of information and documentation required:",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/TECHNICAL_PROFESSIONAL_INFO"
                     ]
                 },
-                "query_result": null,
-                "result": "error"
+                "query_result": "False",
+                "result": "invalid"
             },
             {
                 "error": null,
@@ -3525,7 +3529,7 @@
         ]
     },
     {
-        "created": "2023-07-17T15:09:13.698924",
+        "created": "2023-07-20T17:35:36.782298",
         "mapping_suite_identifier": "package_F02_v2.1.2-alpha.1",
         "object_data": "SPARQLTestSuiteValidationReport",
         "test_suite_identifier": "integration_tests",
