@@ -125,7 +125,7 @@ F02 SPARQL Validation Summary Report</title>
     <tbody>
         <tr>
             <th>Date created</th>
-            <td>2023-07-20T17:35:36.782298</td>
+            <td>2023-07-21T15:03:42.327138</td>
         </tr>
         
         <tr>
@@ -136,7 +136,7 @@ F02 SPARQL Validation Summary Report</title>
         
         <tr>
             <th>Test Suites</th>
-            <td>cm_assertions<br>integration_tests</td>
+            <td>integration_tests<br>cm_assertions</td>
         </tr>
         
         
@@ -214,7 +214,7 @@ F02 SPARQL Validation Summary Report</title>
             <tr>
                 
                 <td class="strong unverifiable">unverifiable</td>
-                <td>1539</td>
+                <td>1579</td>
             </tr>
             
             <tr>
@@ -226,13 +226,13 @@ F02 SPARQL Validation Summary Report</title>
             <tr>
                 
                 <td class="strong invalid">invalid</td>
-                <td>196</td>
+                <td>210</td>
             </tr>
             
             <tr>
                 
                 <td class="strong error">error</td>
-                <td>18</td>
+                <td>36</td>
             </tr>
             
             <tr>
@@ -20127,7 +20127,7 @@ F02 SPARQL Validation Summary Report</title>
             <tr>
                 <td>III.1.1 - Suitability to pursue the professional activity, including requirements relating to enrolment on professional or trade registers</td>
                 <td>cm_assertions</td>
-                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Lot .<br>		?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType &lt;http://publications.europa.eu/resource/authority/selection-criterion/sui-act&gt; . }</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Procedure .<br>		?this epo:specifiesProcurementCriteriaSummary ?value. }</td>
                 
                     <td class="center">
                         
@@ -20300,7 +20300,7 @@ F02 SPARQL Validation Summary Report</title>
             <tr>
                 <td>III.1.1.1 - List and brief description of conditions, indication of information and documentation required</td>
                 <td>cm_assertions</td>
-                <td>PREFIX cccev: &lt;http://data.europa.eu/m8g/&gt;<br>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Lot .<br>		?this epo:specifiesSelectionCriterion / cccev:description ?value . }</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:ProfessionalSuitabilitySummary .<br>		?this epo:hasQualificationCondition ?value . }</td>
                 
                     <td class="center">
                         
@@ -20473,7 +20473,7 @@ F02 SPARQL Validation Summary Report</title>
             <tr>
                 <td>III.1.2 - Economic and financial standing</td>
                 <td>cm_assertions</td>
-                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Lot .<br>		?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType &lt;http://publications.europa.eu/resource/authority/selection-criterion/ef-stand&gt; . }</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Procedure .<br>		?this epo:specifiesProcurementCriteriaSummary ?value. }</td>
                 
                     <td class="center">
                         
@@ -20644,9 +20644,182 @@ F02 SPARQL Validation Summary Report</title>
             </tr>
         
             <tr>
+                <td>III.1.2.1 - Selection criteria as stated in the procurement documents</td>
+                <td>cm_assertions</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:EconomicStandingSummary .<br>		?this epo:hasSelectionCriteriaStatedInProcurementDocuments true . }</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong unverifiable">12</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[UNVERIFIABLE] III.1.2.1 - Selection criteria as stated in the procurement documents">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/095227-2021/test_suite_report" target="_blank">095227-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/095227-2021" target="_blank"><b>form_number_F02_2021/095227-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/060481-2021/test_suite_report" target="_blank">060481-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/060481-2021" target="_blank"><b>form_number_F02_2021/060481-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/016699-2021/test_suite_report" target="_blank">016699-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/016699-2021" target="_blank"><b>form_number_F02_2021/016699-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/097556-2021/test_suite_report" target="_blank">097556-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/097556-2021" target="_blank"><b>form_number_F02_2021/097556-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/014265-2021/test_suite_report" target="_blank">014265-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/014265-2021" target="_blank"><b>form_number_F02_2021/014265-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/669548-2021/test_suite_report" target="_blank">669548-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/669548-2021" target="_blank"><b>form_number_F02_2021/669548-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/381689-2021/test_suite_report" target="_blank">381689-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/381689-2021" target="_blank"><b>form_number_F02_2021/381689-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/333462-2021/test_suite_report" target="_blank">333462-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/333462-2021" target="_blank"><b>form_number_F02_2021/333462-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/133856-2021/test_suite_report" target="_blank">133856-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/133856-2021" target="_blank"><b>form_number_F02_2021/133856-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/197339-2021/test_suite_report" target="_blank">197339-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/197339-2021" target="_blank"><b>form_number_F02_2021/197339-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/243463-2021/test_suite_report" target="_blank">243463-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/243463-2021" target="_blank"><b>form_number_F02_2021/243463-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/491121-2021/test_suite_report" target="_blank">491121-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/491121-2021" target="_blank"><b>form_number_F02_2021/491121-2021</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong invalid">6</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[INVALID] III.1.2.1 - Selection criteria as stated in the procurement documents">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/041604-2021/test_suite_report" target="_blank">041604-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/041604-2021" target="_blank"><b>form_number_F02_2021/041604-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/371398-2021/test_suite_report" target="_blank">371398-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/371398-2021" target="_blank"><b>form_number_F02_2021/371398-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/331333-2021/test_suite_report" target="_blank">331333-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/331333-2021" target="_blank"><b>form_number_F02_2021/331333-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/163926-2021/test_suite_report" target="_blank">163926-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/163926-2021" target="_blank"><b>form_number_F02_2021/163926-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057651-2021/test_suite_report" target="_blank">057651-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057651-2021" target="_blank"><b>form_number_F02_2021/057651-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057194-2021/test_suite_report" target="_blank">057194-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057194-2021" target="_blank"><b>form_number_F02_2021/057194-2021</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+            <tr>
                 <td>III.1.2.2 - List and brief description of selection criteria, indication of information and documentation required:</td>
                 <td>cm_assertions</td>
-                <td>PREFIX cccev: &lt;http://data.europa.eu/m8g/&gt;<br>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Lot .<br>		?this epo:specifiesSelectionCriterion / cccev:description ?value . }</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:EconomicStandingSummary .<br>		?this epo:hasQualificationCondition ?value . }</td>
                 
                     <td class="center">
                         
@@ -20819,7 +20992,7 @@ F02 SPARQL Validation Summary Report</title>
             <tr>
                 <td>III.1.2.3 - Minimum level(s) of standards possibly required:</td>
                 <td>cm_assertions</td>
-                <td>PREFIX cccev: &lt;http://data.europa.eu/m8g/&gt;<br>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Lot .<br>		?this epo:specifiesSelectionCriterion / epo:hasConstraint / cccev:constrains / epo:hasDescription ?value . }</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:EconomicStandingSummary .<br>		?this epo:describesMinimumLevelOfStandards ?value . }</td>
                 
                     <td class="center">
                         
@@ -20992,7 +21165,7 @@ F02 SPARQL Validation Summary Report</title>
             <tr>
                 <td>III.1.3 - Technical and professional ability</td>
                 <td>cm_assertions</td>
-                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Lot .<br>		?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType &lt;http://publications.europa.eu/resource/authority/selection-criterion/tp-abil&gt; . }</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Procedure .<br>		?this epo:specifiesProcurementCriteriaSummary ?value. }</td>
                 
                     <td class="center">
                         
@@ -21163,9 +21336,182 @@ F02 SPARQL Validation Summary Report</title>
             </tr>
         
             <tr>
+                <td>III.1.3.1 - Selection criteria as stated in the procurement documents</td>
+                <td>cm_assertions</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:TechnicalAbilitySummary .<br>		?this epo:hasSelectionCriteriaStatedInProcurementDocuments true . }</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong unverifiable">12</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[UNVERIFIABLE] III.1.3.1 - Selection criteria as stated in the procurement documents">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/095227-2021/test_suite_report" target="_blank">095227-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/095227-2021" target="_blank"><b>form_number_F02_2021/095227-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/060481-2021/test_suite_report" target="_blank">060481-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/060481-2021" target="_blank"><b>form_number_F02_2021/060481-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/016699-2021/test_suite_report" target="_blank">016699-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/016699-2021" target="_blank"><b>form_number_F02_2021/016699-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/097556-2021/test_suite_report" target="_blank">097556-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/097556-2021" target="_blank"><b>form_number_F02_2021/097556-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/014265-2021/test_suite_report" target="_blank">014265-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/014265-2021" target="_blank"><b>form_number_F02_2021/014265-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/669548-2021/test_suite_report" target="_blank">669548-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/669548-2021" target="_blank"><b>form_number_F02_2021/669548-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/381689-2021/test_suite_report" target="_blank">381689-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/381689-2021" target="_blank"><b>form_number_F02_2021/381689-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/333462-2021/test_suite_report" target="_blank">333462-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/333462-2021" target="_blank"><b>form_number_F02_2021/333462-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/133856-2021/test_suite_report" target="_blank">133856-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/133856-2021" target="_blank"><b>form_number_F02_2021/133856-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/197339-2021/test_suite_report" target="_blank">197339-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/197339-2021" target="_blank"><b>form_number_F02_2021/197339-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/243463-2021/test_suite_report" target="_blank">243463-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/243463-2021" target="_blank"><b>form_number_F02_2021/243463-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/491121-2021/test_suite_report" target="_blank">491121-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/491121-2021" target="_blank"><b>form_number_F02_2021/491121-2021</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong invalid">6</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[INVALID] III.1.3.1 - Selection criteria as stated in the procurement documents">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/041604-2021/test_suite_report" target="_blank">041604-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/041604-2021" target="_blank"><b>form_number_F02_2021/041604-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/371398-2021/test_suite_report" target="_blank">371398-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/371398-2021" target="_blank"><b>form_number_F02_2021/371398-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/331333-2021/test_suite_report" target="_blank">331333-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/331333-2021" target="_blank"><b>form_number_F02_2021/331333-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/163926-2021/test_suite_report" target="_blank">163926-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/163926-2021" target="_blank"><b>form_number_F02_2021/163926-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057651-2021/test_suite_report" target="_blank">057651-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057651-2021" target="_blank"><b>form_number_F02_2021/057651-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057194-2021/test_suite_report" target="_blank">057194-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057194-2021" target="_blank"><b>form_number_F02_2021/057194-2021</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+            <tr>
                 <td>III.1.3.2 - List and brief description of selection criteria, indication of information and documentation required:</td>
                 <td>cm_assertions</td>
-                <td>PREFIX cccev: &lt;http://data.europa.eu/m8g/&gt;<br>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Lot .<br>		?this epo:specifiesSelectionCriterion / cccev:description ?value . }</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:TechnicalAbilitySummary .<br>		?this epo:hasQualificationCondition ?value . }</td>
                 
                     <td class="center">
                         
@@ -21338,7 +21684,7 @@ F02 SPARQL Validation Summary Report</title>
             <tr>
                 <td>III.1.3.3 - Minimum level(s) of standards possibly required</td>
                 <td>cm_assertions</td>
-                <td>PREFIX cccev: &lt;http://data.europa.eu/m8g/&gt;<br>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Lot .<br>		?this epo:specifiesSelectionCriterion / epo:hasConstraint / cccev:constrains / epo:hasDescription ?value . }</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:TechnicalAbilitySummary .<br>		?this epo:describesMinimumLevelOfStandards ?value . }</td>
                 
                     <td class="center">
                         
@@ -21497,6 +21843,341 @@ F02 SPARQL Validation Summary Report</title>
                     <td class="center">
                         
                         <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <td>III.2.1.1 - Execution of the service is reserved to a particular profession</td>
+                <td>cm_assertions</td>
+                <td>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Procedure .<br>		?this epo:specifiesProcurementCriteriaSummary / epo:hasServiceReservedToParticularProfession true . }</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong unverifiable">16</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[UNVERIFIABLE] III.2.1.1 - Execution of the service is reserved to a particular profession">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/371398-2021/test_suite_report" target="_blank">371398-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/371398-2021" target="_blank"><b>form_number_F02_2021/371398-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/095227-2021/test_suite_report" target="_blank">095227-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/095227-2021" target="_blank"><b>form_number_F02_2021/095227-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/016699-2021/test_suite_report" target="_blank">016699-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/016699-2021" target="_blank"><b>form_number_F02_2021/016699-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/097556-2021/test_suite_report" target="_blank">097556-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/097556-2021" target="_blank"><b>form_number_F02_2021/097556-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/014265-2021/test_suite_report" target="_blank">014265-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/014265-2021" target="_blank"><b>form_number_F02_2021/014265-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/331333-2021/test_suite_report" target="_blank">331333-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/331333-2021" target="_blank"><b>form_number_F02_2021/331333-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/163926-2021/test_suite_report" target="_blank">163926-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/163926-2021" target="_blank"><b>form_number_F02_2021/163926-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/669548-2021/test_suite_report" target="_blank">669548-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/669548-2021" target="_blank"><b>form_number_F02_2021/669548-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/381689-2021/test_suite_report" target="_blank">381689-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/381689-2021" target="_blank"><b>form_number_F02_2021/381689-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/333462-2021/test_suite_report" target="_blank">333462-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/333462-2021" target="_blank"><b>form_number_F02_2021/333462-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057651-2021/test_suite_report" target="_blank">057651-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057651-2021" target="_blank"><b>form_number_F02_2021/057651-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/133856-2021/test_suite_report" target="_blank">133856-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/133856-2021" target="_blank"><b>form_number_F02_2021/133856-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/197339-2021/test_suite_report" target="_blank">197339-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/197339-2021" target="_blank"><b>form_number_F02_2021/197339-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057194-2021/test_suite_report" target="_blank">057194-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057194-2021" target="_blank"><b>form_number_F02_2021/057194-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/243463-2021/test_suite_report" target="_blank">243463-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/243463-2021" target="_blank"><b>form_number_F02_2021/243463-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/491121-2021/test_suite_report" target="_blank">491121-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/491121-2021" target="_blank"><b>form_number_F02_2021/491121-2021</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong invalid">2</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[INVALID] III.2.1.1 - Execution of the service is reserved to a particular profession">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/041604-2021/test_suite_report" target="_blank">041604-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/041604-2021" target="_blank"><b>form_number_F02_2021/041604-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/060481-2021/test_suite_report" target="_blank">060481-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/060481-2021" target="_blank"><b>form_number_F02_2021/060481-2021</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <td>III.2.1.2 - Reference to the relevant law, regulation or administrative provision</td>
+                <td>cm_assertions</td>
+                <td>epo:Procedure / epo:ProfessionalSuitabilitySummary / rdf:langString .<br><br>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type <br>epo:Procedure .<br>		?this specifiesProcurementCriteriaSummary  / epo:describesProfessionRelevantLaw ?value . }</td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong">0</span></div>
+                        
+                    </td>
+                
+                    <td class="center">
+                        
+                        <div><span class="strong error">18</span></div>
+                        
+                        <br>
+                        <button class="open-dialog">Details</button>
+                        <div class="dialog" title="[ERROR] III.2.1.2 - Reference to the relevant law, regulation or administrative provision">
+                            
+                            <h4>Notices:</h4>
+                            <ol>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/041604-2021/test_suite_report" target="_blank">041604-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/041604-2021" target="_blank"><b>form_number_F02_2021/041604-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/371398-2021/test_suite_report" target="_blank">371398-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/371398-2021" target="_blank"><b>form_number_F02_2021/371398-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/095227-2021/test_suite_report" target="_blank">095227-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/095227-2021" target="_blank"><b>form_number_F02_2021/095227-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/060481-2021/test_suite_report" target="_blank">060481-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/060481-2021" target="_blank"><b>form_number_F02_2021/060481-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/016699-2021/test_suite_report" target="_blank">016699-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/016699-2021" target="_blank"><b>form_number_F02_2021/016699-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/097556-2021/test_suite_report" target="_blank">097556-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/097556-2021" target="_blank"><b>form_number_F02_2021/097556-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/014265-2021/test_suite_report" target="_blank">014265-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/014265-2021" target="_blank"><b>form_number_F02_2021/014265-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/331333-2021/test_suite_report" target="_blank">331333-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/331333-2021" target="_blank"><b>form_number_F02_2021/331333-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/163926-2021/test_suite_report" target="_blank">163926-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/163926-2021" target="_blank"><b>form_number_F02_2021/163926-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/669548-2021/test_suite_report" target="_blank">669548-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/669548-2021" target="_blank"><b>form_number_F02_2021/669548-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/381689-2021/test_suite_report" target="_blank">381689-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/381689-2021" target="_blank"><b>form_number_F02_2021/381689-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/333462-2021/test_suite_report" target="_blank">333462-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/333462-2021" target="_blank"><b>form_number_F02_2021/333462-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057651-2021/test_suite_report" target="_blank">057651-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057651-2021" target="_blank"><b>form_number_F02_2021/057651-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/133856-2021/test_suite_report" target="_blank">133856-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/133856-2021" target="_blank"><b>form_number_F02_2021/133856-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/197339-2021/test_suite_report" target="_blank">197339-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/197339-2021" target="_blank"><b>form_number_F02_2021/197339-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057194-2021/test_suite_report" target="_blank">057194-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/057194-2021" target="_blank"><b>form_number_F02_2021/057194-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/243463-2021/test_suite_report" target="_blank">243463-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/243463-2021" target="_blank"><b>form_number_F02_2021/243463-2021</b></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/491121-2021/test_suite_report" target="_blank">491121-2021</a>
+                                        in <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output" target="_blank"><b>package_F02</b></a>
+                                        at <a href="file:///home/valexande/work/repos/tda-mapping-artefacts/mappings/package_F02/output/form_number_F02_2021/491121-2021" target="_blank"><b>form_number_F02_2021/491121-2021</b></a>
+                                    </li>
+                                
+                            </ol>
+                            
+                        </div>
                         
                     </td>
                 
