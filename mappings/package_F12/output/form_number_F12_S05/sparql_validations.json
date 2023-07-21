@@ -1,5 +1,5 @@
 {
-    "created": "2023-07-21T15:43:16.059019",
+    "created": "2023-07-21T19:46:56.032687",
     "mapping_suite_ids": [
         "package_F12_v2.1.2-alpha.1"
     ],
@@ -43,8 +43,8 @@
     ],
     "object_data": "SPARQLValidationSummaryReport",
     "test_suite_ids": [
-        "cm_assertions",
-        "integration_tests"
+        "integration_tests",
+        "cm_assertions"
     ],
     "validation_results": [
         {
@@ -7128,11 +7128,7 @@
         {
             "aggregate": {
                 "error": {
-                    "count": 0,
-                    "notices": []
-                },
-                "invalid": {
-                    "count": 3,
+                    "count": 9,
                     "notices": [
                         {
                             "mapping_suite_identifier": "package_F12",
@@ -7151,16 +7147,7 @@
                             "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
                             "notice_id": "130514-2022",
                             "path": "form_number_F12_S05/130514-2022"
-                        }
-                    ]
-                },
-                "unknown": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unverifiable": {
-                    "count": 6,
-                    "notices": [
+                        },
                         {
                             "mapping_suite_identifier": "package_F12",
                             "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
@@ -7199,6 +7186,18 @@
                         }
                     ]
                 },
+                "invalid": {
+                    "count": 0,
+                    "notices": []
+                },
+                "unknown": {
+                    "count": 0,
+                    "notices": []
+                },
+                "unverifiable": {
+                    "count": 0,
+                    "notices": []
+                },
                 "valid": {
                     "count": 0,
                     "notices": []
@@ -7210,7 +7209,7 @@
             },
             "identifier": "sparql_query_86",
             "query": {
-                "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / cccev:description ?value . }",
+                "query": "PREFIX ccev: <^>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / ccev:description ?value . }",
                 "title": "III.1.10 - Criteria for the selection of participants: (in the case of a restricted contest)"
             },
             "test_suite_identifier": "cm_assertions"
@@ -11341,149 +11340,6 @@
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:hasDispatchDate ?value . }",
                 "title": "VI.5 - Date of dispatch of this notice (dd/mm/yyyy)"
-            },
-            "test_suite_identifier": "cm_assertions"
-        },
-        {
-            "aggregate": {
-                "error": {
-                    "count": 18,
-                    "notices": [
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "345064-2022",
-                            "path": "form_number_F12_S05/345064-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "345064-2022",
-                            "path": "form_number_F12_S05/345064-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "125334-2022",
-                            "path": "form_number_F12_S05/125334-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "125334-2022",
-                            "path": "form_number_F12_S05/125334-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "130514-2022",
-                            "path": "form_number_F12_S05/130514-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "130514-2022",
-                            "path": "form_number_F12_S05/130514-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "372000-2022",
-                            "path": "form_number_F12_S05/372000-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "372000-2022",
-                            "path": "form_number_F12_S05/372000-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "244605-2022",
-                            "path": "form_number_F12_S05/244605-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "244605-2022",
-                            "path": "form_number_F12_S05/244605-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "271595-2022",
-                            "path": "form_number_F12_S05/271595-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "271595-2022",
-                            "path": "form_number_F12_S05/271595-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "120422-2022",
-                            "path": "form_number_F12_S05/120422-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "120422-2022",
-                            "path": "form_number_F12_S05/120422-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "117249-2022",
-                            "path": "form_number_F12_S05/117249-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "117249-2022",
-                            "path": "form_number_F12_S05/117249-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "419325-2022",
-                            "path": "form_number_F12_S05/419325-2022"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F12",
-                            "mapping_suite_versioned_id": "package_F12_v2.1.2-alpha.1",
-                            "notice_id": "419325-2022",
-                            "path": "form_number_F12_S05/419325-2022"
-                        }
-                    ]
-                },
-                "invalid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unknown": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unverifiable": {
-                    "count": 0,
-                    "notices": []
-                },
-                "valid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "warning": {
-                    "count": 0,
-                    "notices": []
-                }
-            },
-            "identifier": "sparql_query_132",
-            "query": {
-                "query": "",
-                "title": "untitled query"
             },
             "test_suite_identifier": "cm_assertions"
         },

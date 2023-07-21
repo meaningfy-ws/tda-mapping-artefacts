@@ -116,7 +116,7 @@ F12/345064-2022 SPARQL Validation Report</title>
 	<hr>
     <h2>Report details: </h2>
     <ul>
-        <li>Date created: 2023-07-21T15:43:16.059019</li>
+        <li>Date created: 2023-07-21T19:46:56.032687</li>
         <li>SPARQL test suite identifier: cm_assertions</li>
         <li>Mapping suite identifier: package_F12_v2.1.2-alpha.1</li>
     </ul>
@@ -149,7 +149,7 @@ F12/345064-2022 SPARQL Validation Report</title>
                 <a href="#" data-search-by-status="valid" class="strong valid">valid</a>
             </td>
             <td>81</td>
-            <td>60.9%</td>
+            <td>61.83%</td>
         </tr>
         
         <tr>
@@ -158,7 +158,7 @@ F12/345064-2022 SPARQL Validation Report</title>
                 <a href="#" data-search-by-status="unverifiable" class="strong unverifiable">unverifiable</a>
             </td>
             <td>25</td>
-            <td>18.8%</td>
+            <td>19.08%</td>
         </tr>
         
         <tr>
@@ -167,7 +167,7 @@ F12/345064-2022 SPARQL Validation Report</title>
                 <a href="#" data-search-by-status="warning" class="strong warning">warning</a>
             </td>
             <td>20</td>
-            <td>15.04%</td>
+            <td>15.27%</td>
         </tr>
         
         <tr>
@@ -175,8 +175,8 @@ F12/345064-2022 SPARQL Validation Report</title>
             <td>
                 <a href="#" data-search-by-status="invalid" class="strong invalid">invalid</a>
             </td>
-            <td>5</td>
-            <td>3.76%</td>
+            <td>4</td>
+            <td>3.05%</td>
         </tr>
         
         <tr>
@@ -184,8 +184,8 @@ F12/345064-2022 SPARQL Validation Report</title>
             <td>
                 <a href="#" data-search-by-status="error" class="strong error">error</a>
             </td>
-            <td>2</td>
-            <td>1.5%</td>
+            <td>1</td>
+            <td>0.76%</td>
         </tr>
         
         <tr>
@@ -3428,13 +3428,13 @@ F12/345064-2022 SPARQL Validation Report</title>
                         “III.1.10 - Criteria for the selection of participants: (in the case of a restricted contest)” in SF corresponds to “BT-750 Selection Criteria Description” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F12_2014/LEFTI/CRITERIA_SELECTION/P. The expected ontology instances are epo: epo:Lot / epo:SelectionCriterion / rdf:langString .
                     </div>
                 </td>
-                <td>PREFIX cccev: &lt;http://data.europa.eu/m8g/&gt;<br>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Lot .<br>		?this epo:specifiesSelectionCriterion / cccev:description ?value . }</td>
-                <td class="strong invalid" data-search="invalid">invalid</td>
+                <td>PREFIX ccev: &lt;^&gt;<br>PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;<br>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br><br>ASK WHERE { <br>		?this rdf:type epo:Lot .<br>		?this epo:specifiesSelectionCriterion / ccev:description ?value . }</td>
+                <td class="strong error" data-search="error">error</td>
                 <td>
                     <button class="open-dialog">Details</button>
                     <div class="dialog" title="III.1.10 - Criteria for the selection of participants: (in the case of a restricted contest)">
                     <ul>
-                    <li>Query result: False</li>
+                    <li>Query result: None</li>
                     
                         <li>Fields are covered: True</li>
                         <li>
@@ -3448,6 +3448,12 @@ F12/345064-2022 SPARQL Validation Report</title>
                     
                     
                     
+                    
+                        <li>
+                            <hr>
+                            <h4 class="danger strong">ERROR:</h4>
+                            Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found 'PREFIX'  (at char 0), (li
+                        </li>
                     
                     </ul>
                     </div>
@@ -5076,70 +5082,6 @@ F12/345064-2022 SPARQL Validation Report</title>
                 </td>
             </tr>
         
-            <tr>
-                <td>untitled query</td>
-                <td>
-                    <button class="open-dialog">Description</button>
-                    <div class="dialog" title="untitled query">
-                        un-described query
-                    </div>
-                </td>
-                <td></td>
-                <td class="strong error" data-search="error">error</td>
-                <td>
-                    <button class="open-dialog">Details</button>
-                    <div class="dialog" title="untitled query">
-                    <ul>
-                    <li>Query result: None</li>
-                    
-                        <li>No XPATHs provided</li>
-                    
-                    
-                    
-                    
-                        <li>
-                            <hr>
-                            <h4 class="danger strong">ERROR:</h4>
-                            Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}  (at char 0), (line:1, col:1)
-                        </li>
-                    
-                    </ul>
-                    </div>
-                </td>
-            </tr>
-        
-            <tr>
-                <td>untitled query</td>
-                <td>
-                    <button class="open-dialog">Description</button>
-                    <div class="dialog" title="untitled query">
-                        un-described query
-                    </div>
-                </td>
-                <td></td>
-                <td class="strong error" data-search="error">error</td>
-                <td>
-                    <button class="open-dialog">Details</button>
-                    <div class="dialog" title="untitled query">
-                    <ul>
-                    <li>Query result: None</li>
-                    
-                        <li>No XPATHs provided</li>
-                    
-                    
-                    
-                    
-                        <li>
-                            <hr>
-                            <h4 class="danger strong">ERROR:</h4>
-                            Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}  (at char 0), (line:1, col:1)
-                        </li>
-                    
-                    </ul>
-                    </div>
-                </td>
-            </tr>
-        
     </tbody>
     </table>
     <hr>
@@ -5158,14 +5100,14 @@ F12/345064-2022 SPARQL Validation Report</title>
             
             <td class="strong">True</td>
             <td>101</td>
-            <td>75.94%</td>
+            <td>77.1%</td>
         </tr>
         <tr>
             
             
             <td class="strong">False</td>
-            <td>30</td>
-            <td>22.56%</td>
+            <td>29</td>
+            <td>22.14%</td>
         </tr>
         <tr>
             

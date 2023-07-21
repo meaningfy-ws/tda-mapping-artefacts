@@ -1,5 +1,5 @@
 {
-    "created": "2023-07-21T15:03:42.327138",
+    "created": "2023-07-21T20:20:51.011315",
     "mapping_suite_ids": [
         "package_F02_v2.1.2-alpha.1"
     ],
@@ -83,8 +83,8 @@
     ],
     "object_data": "SPARQLValidationSummaryReport",
     "test_suite_ids": [
-        "integration_tests",
-        "cm_assertions"
+        "cm_assertions",
+        "integration_tests"
     ],
     "validation_results": [
         {
@@ -17463,7 +17463,7 @@
             },
             "identifier": "sparql_query_120",
             "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:specifiesProcurementCriteriaSummary ?value. }",
+                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType <http://publications.europa.eu/resource/authority/selection-criterion/sui-act> . }",
                 "title": "III.1.1 - Suitability to pursue the professional activity, including requirements relating to enrolment on professional or trade registers"
             },
             "test_suite_identifier": "cm_assertions"
@@ -17613,7 +17613,7 @@
             },
             "identifier": "sparql_query_121",
             "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ProfessionalSuitabilitySummary .\n\t\t?this epo:hasQualificationCondition ?value . }",
+                "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / cccev:description ?value . }",
                 "title": "III.1.1.1 - List and brief description of conditions, indication of information and documentation required"
             },
             "test_suite_identifier": "cm_assertions"
@@ -17763,158 +17763,8 @@
             },
             "identifier": "sparql_query_122",
             "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:specifiesProcurementCriteriaSummary ?value. }",
+                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType <http://publications.europa.eu/resource/authority/selection-criterion/ef-stand> . }",
                 "title": "III.1.2 - Economic and financial standing"
-            },
-            "test_suite_identifier": "cm_assertions"
-        },
-        {
-            "aggregate": {
-                "error": {
-                    "count": 0,
-                    "notices": []
-                },
-                "invalid": {
-                    "count": 6,
-                    "notices": [
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "256382-2016",
-                            "path": "form_number_F02_S01/256382-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "197640-2017",
-                            "path": "form_number_F02_S01/197640-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "015708-2017",
-                            "path": "form_number_F02_S01/015708-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "059661-2017",
-                            "path": "form_number_F02_S01/059661-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "115435-2017",
-                            "path": "form_number_F02_S01/115435-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "180226-2017",
-                            "path": "form_number_F02_S01/180226-2017"
-                        }
-                    ]
-                },
-                "unknown": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unverifiable": {
-                    "count": 13,
-                    "notices": [
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "296968-2016",
-                            "path": "form_number_F02_S01/296968-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "193797-2017",
-                            "path": "form_number_F02_S01/193797-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "282053-2016",
-                            "path": "form_number_F02_S01/282053-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "097979-2017",
-                            "path": "form_number_F02_S01/097979-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "070891-2017",
-                            "path": "form_number_F02_S01/070891-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "227023-2017",
-                            "path": "form_number_F02_S01/227023-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "324395-2016",
-                            "path": "form_number_F02_S01/324395-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "111575-2017",
-                            "path": "form_number_F02_S01/111575-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "133853-2017",
-                            "path": "form_number_F02_S01/133853-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "125793-2017",
-                            "path": "form_number_F02_S01/125793-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "366397-2016",
-                            "path": "form_number_F02_S01/366397-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "254315-2016",
-                            "path": "form_number_F02_S01/254315-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "215083-2016",
-                            "path": "form_number_F02_S01/215083-2016"
-                        }
-                    ]
-                },
-                "valid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "warning": {
-                    "count": 0,
-                    "notices": []
-                }
-            },
-            "identifier": "sparql_query_123",
-            "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:EconomicStandingSummary .\n\t\t?this epo:hasSelectionCriteriaStatedInProcurementDocuments true . }",
-                "title": "III.1.2.1 - Selection criteria as stated in the procurement documents"
             },
             "test_suite_identifier": "cm_assertions"
         },
@@ -18061,9 +17911,9 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_124",
+            "identifier": "sparql_query_123",
             "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:EconomicStandingSummary .\n\t\t?this epo:hasQualificationCondition ?value . }",
+                "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / cccev:description ?value . }",
                 "title": "III.1.2.2 - List and brief description of selection criteria, indication of information and documentation required:"
             },
             "test_suite_identifier": "cm_assertions"
@@ -18211,9 +18061,9 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_125",
+            "identifier": "sparql_query_124",
             "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:EconomicStandingSummary .\n\t\t?this epo:describesMinimumLevelOfStandards ?value . }",
+                "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasConstraint / cccev:constrains / epo:hasDescription ?value . }",
                 "title": "III.1.2.3 - Minimum level(s) of standards possibly required:"
             },
             "test_suite_identifier": "cm_assertions"
@@ -18361,160 +18211,10 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_126",
+            "identifier": "sparql_query_125",
             "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:specifiesProcurementCriteriaSummary ?value. }",
+                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasSelectionCriterionType <http://publications.europa.eu/resource/authority/selection-criterion/tp-abil> . }",
                 "title": "III.1.3 - Technical and professional ability"
-            },
-            "test_suite_identifier": "cm_assertions"
-        },
-        {
-            "aggregate": {
-                "error": {
-                    "count": 0,
-                    "notices": []
-                },
-                "invalid": {
-                    "count": 6,
-                    "notices": [
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "256382-2016",
-                            "path": "form_number_F02_S01/256382-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "197640-2017",
-                            "path": "form_number_F02_S01/197640-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "015708-2017",
-                            "path": "form_number_F02_S01/015708-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "059661-2017",
-                            "path": "form_number_F02_S01/059661-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "115435-2017",
-                            "path": "form_number_F02_S01/115435-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "180226-2017",
-                            "path": "form_number_F02_S01/180226-2017"
-                        }
-                    ]
-                },
-                "unknown": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unverifiable": {
-                    "count": 13,
-                    "notices": [
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "296968-2016",
-                            "path": "form_number_F02_S01/296968-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "193797-2017",
-                            "path": "form_number_F02_S01/193797-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "282053-2016",
-                            "path": "form_number_F02_S01/282053-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "097979-2017",
-                            "path": "form_number_F02_S01/097979-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "070891-2017",
-                            "path": "form_number_F02_S01/070891-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "227023-2017",
-                            "path": "form_number_F02_S01/227023-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "324395-2016",
-                            "path": "form_number_F02_S01/324395-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "111575-2017",
-                            "path": "form_number_F02_S01/111575-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "133853-2017",
-                            "path": "form_number_F02_S01/133853-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "125793-2017",
-                            "path": "form_number_F02_S01/125793-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "366397-2016",
-                            "path": "form_number_F02_S01/366397-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "254315-2016",
-                            "path": "form_number_F02_S01/254315-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "215083-2016",
-                            "path": "form_number_F02_S01/215083-2016"
-                        }
-                    ]
-                },
-                "valid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "warning": {
-                    "count": 0,
-                    "notices": []
-                }
-            },
-            "identifier": "sparql_query_127",
-            "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:TechnicalAbilitySummary .\n\t\t?this epo:hasSelectionCriteriaStatedInProcurementDocuments true . }",
-                "title": "III.1.3.1 - Selection criteria as stated in the procurement documents"
             },
             "test_suite_identifier": "cm_assertions"
         },
@@ -18661,9 +18361,9 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_128",
+            "identifier": "sparql_query_126",
             "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:TechnicalAbilitySummary .\n\t\t?this epo:hasQualificationCondition ?value . }",
+                "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / cccev:description ?value . }",
                 "title": "III.1.3.2 - List and brief description of selection criteria, indication of information and documentation required:"
             },
             "test_suite_identifier": "cm_assertions"
@@ -18811,309 +18511,10 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_129",
+            "identifier": "sparql_query_127",
             "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:TechnicalAbilitySummary .\n\t\t?this epo:describesMinimumLevelOfStandards ?value . }",
+                "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / epo:hasConstraint / cccev:constrains / epo:hasDescription ?value . }",
                 "title": "III.1.3.3 - Minimum level(s) of standards possibly required"
-            },
-            "test_suite_identifier": "cm_assertions"
-        },
-        {
-            "aggregate": {
-                "error": {
-                    "count": 0,
-                    "notices": []
-                },
-                "invalid": {
-                    "count": 4,
-                    "notices": [
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "193797-2017",
-                            "path": "form_number_F02_S01/193797-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "070891-2017",
-                            "path": "form_number_F02_S01/070891-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "059661-2017",
-                            "path": "form_number_F02_S01/059661-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "180226-2017",
-                            "path": "form_number_F02_S01/180226-2017"
-                        }
-                    ]
-                },
-                "unknown": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unverifiable": {
-                    "count": 15,
-                    "notices": [
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "256382-2016",
-                            "path": "form_number_F02_S01/256382-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "296968-2016",
-                            "path": "form_number_F02_S01/296968-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "282053-2016",
-                            "path": "form_number_F02_S01/282053-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "197640-2017",
-                            "path": "form_number_F02_S01/197640-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "097979-2017",
-                            "path": "form_number_F02_S01/097979-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "227023-2017",
-                            "path": "form_number_F02_S01/227023-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "324395-2016",
-                            "path": "form_number_F02_S01/324395-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "111575-2017",
-                            "path": "form_number_F02_S01/111575-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "015708-2017",
-                            "path": "form_number_F02_S01/015708-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "133853-2017",
-                            "path": "form_number_F02_S01/133853-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "115435-2017",
-                            "path": "form_number_F02_S01/115435-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "125793-2017",
-                            "path": "form_number_F02_S01/125793-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "366397-2016",
-                            "path": "form_number_F02_S01/366397-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "254315-2016",
-                            "path": "form_number_F02_S01/254315-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "215083-2016",
-                            "path": "form_number_F02_S01/215083-2016"
-                        }
-                    ]
-                },
-                "valid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "warning": {
-                    "count": 0,
-                    "notices": []
-                }
-            },
-            "identifier": "sparql_query_130",
-            "query": {
-                "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:specifiesProcurementCriteriaSummary / epo:hasServiceReservedToParticularProfession true . }",
-                "title": "III.2.1.1 - Execution of the service is reserved to a particular profession"
-            },
-            "test_suite_identifier": "cm_assertions"
-        },
-        {
-            "aggregate": {
-                "error": {
-                    "count": 19,
-                    "notices": [
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "256382-2016",
-                            "path": "form_number_F02_S01/256382-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "296968-2016",
-                            "path": "form_number_F02_S01/296968-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "193797-2017",
-                            "path": "form_number_F02_S01/193797-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "282053-2016",
-                            "path": "form_number_F02_S01/282053-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "197640-2017",
-                            "path": "form_number_F02_S01/197640-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "097979-2017",
-                            "path": "form_number_F02_S01/097979-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "070891-2017",
-                            "path": "form_number_F02_S01/070891-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "227023-2017",
-                            "path": "form_number_F02_S01/227023-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "324395-2016",
-                            "path": "form_number_F02_S01/324395-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "111575-2017",
-                            "path": "form_number_F02_S01/111575-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "015708-2017",
-                            "path": "form_number_F02_S01/015708-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "059661-2017",
-                            "path": "form_number_F02_S01/059661-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "133853-2017",
-                            "path": "form_number_F02_S01/133853-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "115435-2017",
-                            "path": "form_number_F02_S01/115435-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "125793-2017",
-                            "path": "form_number_F02_S01/125793-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "180226-2017",
-                            "path": "form_number_F02_S01/180226-2017"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "366397-2016",
-                            "path": "form_number_F02_S01/366397-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "254315-2016",
-                            "path": "form_number_F02_S01/254315-2016"
-                        },
-                        {
-                            "mapping_suite_identifier": "package_F02",
-                            "mapping_suite_versioned_id": "package_F02_v2.1.2-alpha.1",
-                            "notice_id": "215083-2016",
-                            "path": "form_number_F02_S01/215083-2016"
-                        }
-                    ]
-                },
-                "invalid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unknown": {
-                    "count": 0,
-                    "notices": []
-                },
-                "unverifiable": {
-                    "count": 0,
-                    "notices": []
-                },
-                "valid": {
-                    "count": 0,
-                    "notices": []
-                },
-                "warning": {
-                    "count": 0,
-                    "notices": []
-                }
-            },
-            "identifier": "sparql_query_131",
-            "query": {
-                "query": "epo:Procedure / epo:ProfessionalSuitabilitySummary / rdf:langString .\n\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type \nepo:Procedure .\n\t\t?this specifiesProcurementCriteriaSummary  / epo:describesProfessionRelevantLaw ?value . }",
-                "title": "III.2.1.2 - Reference to the relevant law, regulation or administrative provision"
             },
             "test_suite_identifier": "cm_assertions"
         },
@@ -19260,7 +18661,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_132",
+            "identifier": "sparql_query_128",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open> . }",
                 "title": "IV.1.1.1 - Open procedure"
@@ -19410,7 +18811,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_133",
+            "identifier": "sparql_query_129",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isAccelerated true . }",
                 "title": "IV.1.1.1.1 - Accelerated procedure"
@@ -19560,7 +18961,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_134",
+            "identifier": "sparql_query_130",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasAcceleratedProcedureJustification ?value . }",
                 "title": "IV.1.1.1.2 - Justification:"
@@ -19710,7 +19111,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_135",
+            "identifier": "sparql_query_131",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted> . }",
                 "title": "IV.1.1.2 - Restricted procedure"
@@ -19860,7 +19261,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_136",
+            "identifier": "sparql_query_132",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isAccelerated true . }",
                 "title": "IV.1.1.2.1 - Accelerated procedure"
@@ -20010,7 +19411,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_137",
+            "identifier": "sparql_query_133",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasAcceleratedProcedureJustification ?value . }",
                 "title": "IV.1.1.2.2 - Justification:"
@@ -20160,7 +19561,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_138",
+            "identifier": "sparql_query_134",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call> . }",
                 "title": "IV.1.1.3 - Competitive procedure with negotiation"
@@ -20310,7 +19711,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_139",
+            "identifier": "sparql_query_135",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isAccelerated true . }",
                 "title": "IV.1.1.3.1 - Accelerated procedure"
@@ -20460,7 +19861,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_140",
+            "identifier": "sparql_query_136",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasAcceleratedProcedureJustification ?value . }",
                 "title": "IV.1.1.3.2 - Justification:"
@@ -20610,7 +20011,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_141",
+            "identifier": "sparql_query_137",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/comp-dial> . }",
                 "title": "IV.1.1.4 - Competitive dialogue"
@@ -20760,7 +20161,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_142",
+            "identifier": "sparql_query_138",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/innovation> . }",
                 "title": "IV.1.1.5 - Innovation partnership"
@@ -20911,7 +20312,7 @@
                     ]
                 }
             },
-            "identifier": "sparql_query_143",
+            "identifier": "sparql_query_139",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:usesTechnique ?value . }",
                 "title": "IV.1.3.1 - The procurement involves the establishment of a framework agreement"
@@ -21061,7 +20462,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_144",
+            "identifier": "sparql_query_140",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm / epo:hasMaximumParticipantsNumber ?value . }",
                 "title": "IV.1.3.1.3 - Envisaged maximum number of participants to the framework agreement"
@@ -21211,7 +20612,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_147",
+            "identifier": "sparql_query_143",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm / epo:hasDurationExtensionJustification ?value . }",
                 "title": "IV.1.3.2 - In the case of framework agreements, provide justification for any duration exceeding 8 years"
@@ -21362,7 +20763,7 @@
                     ]
                 }
             },
-            "identifier": "sparql_query_145",
+            "identifier": "sparql_query_141",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:usesTechnique ?value . }",
                 "title": "IV.1.3.2 - The procurement involves the setting up of a dynamic purchasing system"
@@ -21512,7 +20913,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_146",
+            "identifier": "sparql_query_142",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:DynamicPurchaseSystemTechniqueUsage .\n\t\t?this epo:hasDPSScope <http://publications.europa.eu/resource/authority/dps-usage/dps-nlist> . }",
                 "title": "IV.1.3.2.1 - The dynamic purchasing system might be used by additional purchasers"
@@ -21662,7 +21063,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_148",
+            "identifier": "sparql_query_144",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasProcurementScopeDividedIntoLot / epo:isSubjectToLotSpecificTerm / epo:hasSuccessiveReduction true . }",
                 "title": "IV.1.4.1 - Recourse to staged procedure to gradually reduce the number of solutions to be discussed or tenders to be negotiated"
@@ -21812,7 +21213,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_149",
+            "identifier": "sparql_query_145",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasProcurementScopeDividedIntoLot / epo:isSubjectToLotSpecificTerm / epo:hasNoNegotiationNecessary true . }",
                 "title": "IV.1.5.1 - The contracting authority reserves the right to award the contract on the basis of the initial tenders without conducting negotiations"
@@ -21962,7 +21363,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_150",
+            "identifier": "sparql_query_146",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:usesTechnique / a epo:EAuctionTechniqueUsage . }",
                 "title": "IV.1.6.1 - An electronic auction will be used"
@@ -22112,7 +21513,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_151",
+            "identifier": "sparql_query_147",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isCoveredByGPA true . }",
                 "title": "IV.1.8.1 - The procurement is covered by the Government Procurement Agreement (yes)"
@@ -22262,7 +21663,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_152",
+            "identifier": "sparql_query_148",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isCoveredByGPA false . }",
                 "title": "IV.1.8.2 - The procurement is covered by the Government Procurement Agreement (no)"
@@ -22412,7 +21813,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_153",
+            "identifier": "sparql_query_149",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:refersToPrevious / epo:hasID / epo:hasIdentifierValue ?value . }",
                 "title": "IV.2.1 - Previous publication concerning this procedure"
@@ -22561,7 +21962,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_154",
+            "identifier": "sparql_query_150",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm  / epo:hasReceiptDeadline ?value . }",
                 "title": "IV.2.2 - Time limit for receipt of tenders or requests to participate (Date/Time)"
@@ -22710,7 +22111,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_155",
+            "identifier": "sparql_query_151",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm  / epo:hasReceiptExpressionDeadline ?value . }",
                 "title": "IV.2.3 - Time limit for receipt of tenders or requests to participate (Date/Time)"
@@ -22859,7 +22260,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_156",
+            "identifier": "sparql_query_152",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm  / epo:hasLanguage ?value . }",
                 "title": "IV.2.4 - Languages in which tenders or requests to participate may be submitted"
@@ -23009,7 +22410,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_157",
+            "identifier": "sparql_query_153",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm  / epo:hasValidityPeriod / epo:hasEnd ?value . }",
                 "title": "IV.2.6.1 - Tender must be valid until"
@@ -23158,7 +22559,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_158",
+            "identifier": "sparql_query_154",
             "query": {
                 "query": "(Date/Time)\n(Date/Time)\u201d in SF corresponds to \u201cBT-132 Public Opening Date\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE/OPENING_CONDITION/DATE_OPENING_TENDERS ;; /TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE/OPENING_CONDITION/TIME_OPENING_TENDERS. The expected ontology instances are epo: epo:Procedure / epo:Lot / epo:OpeningTerm / xsd:dateTime .\n\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasProcurementScopeDividedIntoLot / epo:isSubjectToLotSpecificTerm / epo:hasOpeningDateTime ?value . }",
                 "title": "IV.2.7.1 - Public Opening"
@@ -23308,7 +22709,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_159",
+            "identifier": "sparql_query_155",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasProcurementScopeDividedIntoLot / epo:isSubjectToLotSpecificTerm /  epo:definesOpeningPlace / locn:fullAddress ?value . }",
                 "title": "IV.2.7.2 - Place"
@@ -23458,7 +22859,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_160",
+            "identifier": "sparql_query_156",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasProcurementScopeDividedIntoLot / epo:isSubjectToLotSpecificTerm / epo:hasOpeningDescription ?value . }",
                 "title": "IV.2.7.3 - Information about authorised persons and opening procedure"
@@ -23906,7 +23307,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_161",
+            "identifier": "sparql_query_157",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isRecurrent true . }",
                 "title": "VI.1.1.1 - This is a recurrent procurement (yes)"
@@ -24056,7 +23457,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_162",
+            "identifier": "sparql_query_158",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isRecurrent false . }",
                 "title": "VI.1.1.2 - This is a recurrent procurement (no)"
@@ -24206,7 +23607,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_163",
+            "identifier": "sparql_query_159",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasRecurrenceDescription ?value . }",
                 "title": "VI.1.2 - Estimated timing for further notices to be published"
@@ -24356,7 +23757,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_164",
+            "identifier": "sparql_query_160",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:foreseesContractSpecificTerm / epo:hasEOrdering true . }",
                 "title": "VI.2.1 - Electronic ordering will be used"
@@ -24506,7 +23907,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_165",
+            "identifier": "sparql_query_161",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:foreseesContractSpecificTerm / epo:hasEInvoicing true . }",
                 "title": "VI.2.2 - Electronic invoicing will be accepted"
@@ -24656,7 +24057,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_166",
+            "identifier": "sparql_query_162",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:foreseesContractSpecificTerm / epo:hasEPayment true . }",
                 "title": "VI.2.3 - Electronic payment will be used"
@@ -24806,7 +24207,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_167",
+            "identifier": "sparql_query_163",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasAdditionalInformation ?value . }",
                 "title": "VI.3 - Additional information"
@@ -24955,7 +24356,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_168",
+            "identifier": "sparql_query_164",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:announcesRole ?value }",
                 "title": "VI.4.1 - Review body"
@@ -25104,7 +24505,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_169",
+            "identifier": "sparql_query_165",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Reviewer .\n\t\t?this epo:playedBy / epo:hasLegalName ?value . }",
                 "title": "VI.4.1.1 - Official name"
@@ -25254,7 +24655,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_170",
+            "identifier": "sparql_query_166",
             "query": {
                 "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Reviewer .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:thoroughfare ?value . }",
                 "title": "VI.4.1.2 - Postal address"
@@ -25403,7 +24804,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_171",
+            "identifier": "sparql_query_167",
             "query": {
                 "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Reviewer .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:postName ?value . }",
                 "title": "VI.4.1.3 - Town"
@@ -25553,7 +24954,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_172",
+            "identifier": "sparql_query_168",
             "query": {
                 "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Reviewer .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:postCode ?value . }",
                 "title": "VI.4.1.4 - Postal code"
@@ -25702,7 +25103,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_173",
+            "identifier": "sparql_query_169",
             "query": {
                 "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Reviewer .\n\t\t?this epo:playedBy / cv:registeredAddress / epo:hasCountryCode ?value . }",
                 "title": "VI.4.1.5 - Country"
@@ -25852,7 +25253,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_174",
+            "identifier": "sparql_query_170",
             "query": {
                 "query": "PREFIX cpov: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Reviewer .\n\t\t?this epo:playedBy / epo:hasPrimaryContactPoint / cpov:email ?value . }",
                 "title": "VI.4.1.6 - E-mail"
@@ -26002,7 +25403,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_175",
+            "identifier": "sparql_query_171",
             "query": {
                 "query": "PREFIX cpov: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Reviewer .\n\t\t?this epo:playedBy / epo:hasPrimaryContactPoint / cpov:telephone ?value . }",
                 "title": "VI.4.1.7 - Telephone"
@@ -26152,7 +25553,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_176",
+            "identifier": "sparql_query_172",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Reviewer .\n\t\t?this epo:playedBy / epo:hasPrimaryContactPoint / epo:hasInternetAddress ?value . }",
                 "title": "VI.4.1.8 - Internet Addresses (URL)"
@@ -26302,7 +25703,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_177",
+            "identifier": "sparql_query_173",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Reviewer .\n\t\t?this epo:playedBy / epo:hasPrimaryContactPoint / epo:hasFax ?value . }",
                 "title": "VI.4.1.9 - Fax"
@@ -26452,7 +25853,7 @@
                     ]
                 }
             },
-            "identifier": "sparql_query_178",
+            "identifier": "sparql_query_174",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:announcesRole ?value }",
                 "title": "VI.4.2 - Body responsible for mediation procedures"
@@ -26602,7 +26003,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_179",
+            "identifier": "sparql_query_175",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Mediator .\n\t\t?this epo:playedBy / epo:hasLegalName ?value . }",
                 "title": "VI.4.2.1 - Official name"
@@ -26752,7 +26153,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_180",
+            "identifier": "sparql_query_176",
             "query": {
                 "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Mediator .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:thoroughfare ?value . }",
                 "title": "VI.4.2.2 - Postal address"
@@ -26902,7 +26303,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_181",
+            "identifier": "sparql_query_177",
             "query": {
                 "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Mediator .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:postName ?value . }",
                 "title": "VI.4.2.3 - Town"
@@ -27052,7 +26453,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_182",
+            "identifier": "sparql_query_178",
             "query": {
                 "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Mediator .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:postCode ?value . }",
                 "title": "VI.4.2.4 - Postal code"
@@ -27202,7 +26603,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_183",
+            "identifier": "sparql_query_179",
             "query": {
                 "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Mediator .\n\t\t?this epo:playedBy / cv:registeredAddress / epo:hasCountryCode ?value . }",
                 "title": "VI.4.2.5 - Country"
@@ -27352,7 +26753,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_184",
+            "identifier": "sparql_query_180",
             "query": {
                 "query": "PREFIX cpov: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Mediator .\n\t\t?this epo:playedBy / epo:hasPrimaryContactPoint / cpov:email ?value . }",
                 "title": "VI.4.2.6 - E-mail"
@@ -27502,7 +26903,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_185",
+            "identifier": "sparql_query_181",
             "query": {
                 "query": "PREFIX cpov: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Mediator .\n\t\t?this epo:playedBy / epo:hasPrimaryContactPoint / cpov:telephone ?value . }",
                 "title": "VI.4.2.7 - Telephone"
@@ -27652,7 +27053,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_186",
+            "identifier": "sparql_query_182",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Mediator .\n\t\t?this epo:playedBy / epo:hasPrimaryContactPoint / epo:hasInternetAddress ?value . }",
                 "title": "VI.4.2.8 - Internet Addresses (URL)"
@@ -27802,7 +27203,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_187",
+            "identifier": "sparql_query_183",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Mediator .\n\t\t?this epo:playedBy / epo:hasPrimaryContactPoint / epo:hasFax ?value . }",
                 "title": "VI.4.2.9 - Fax"
@@ -27952,7 +27353,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_188",
+            "identifier": "sparql_query_184",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm / epo:hasReviewDeadlineInformation ?value . }",
                 "title": "VI.4.3 - Review procedure"
@@ -28102,7 +27503,7 @@
                     ]
                 }
             },
-            "identifier": "sparql_query_189",
+            "identifier": "sparql_query_185",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:announcesRole ?value }",
                 "title": "VI.4.4 - Service from which information about the review procedure may be obtained"
@@ -28252,7 +27653,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_190",
+            "identifier": "sparql_query_186",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ReviewProcedureInformationProvider .\n\t\t?this epo:playedBy / epo:hasLegalName ?value . }",
                 "title": "VI.4.4.1 - Official name"
@@ -28402,7 +27803,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_191",
+            "identifier": "sparql_query_187",
             "query": {
                 "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ReviewProcedureInformationProvider .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:thoroughfare ?value . }",
                 "title": "VI.4.4.2 - Postal address"
@@ -28552,7 +27953,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_192",
+            "identifier": "sparql_query_188",
             "query": {
                 "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ReviewProcedureInformationProvider .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:postName ?value . }",
                 "title": "VI.4.4.3 - Town"
@@ -28702,7 +28103,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_193",
+            "identifier": "sparql_query_189",
             "query": {
                 "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ReviewProcedureInformationProvider .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:postCode ?value . }",
                 "title": "VI.4.4.4 - Postal code"
@@ -28852,7 +28253,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_194",
+            "identifier": "sparql_query_190",
             "query": {
                 "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ReviewProcedureInformationProvider .\n\t\t?this epo:playedBy / cv:registeredAddress / epo:hasCountryCode ?value . }",
                 "title": "VI.4.4.5 - Country"
@@ -29002,7 +28403,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_195",
+            "identifier": "sparql_query_191",
             "query": {
                 "query": "PREFIX cpov: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ReviewProcedureInformationProvider .\n\t\t?this epo:playedBy / epo:hasPrimaryContactPoint / cpov:email ?value . }",
                 "title": "VI.4.4.6 - E-mail"
@@ -29152,7 +28553,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_196",
+            "identifier": "sparql_query_192",
             "query": {
                 "query": "PREFIX cpov: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ReviewProcedureInformationProvider .\n\t\t?this epo:playedBy / epo:hasPrimaryContactPoint / cpov:telephone ?value . }",
                 "title": "VI.4.4.7 - Telephone"
@@ -29302,7 +28703,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_197",
+            "identifier": "sparql_query_193",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ReviewProcedureInformationProvider .\n\t\t?this epo:playedBy / epo:hasPrimaryContactPoint / epo:hasInternetAddress ?value . }",
                 "title": "VI.4.4.8 - Internet Addresses (URL)"
@@ -29452,7 +28853,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_198",
+            "identifier": "sparql_query_194",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ReviewProcedureInformationProvider .\n\t\t?this epo:playedBy / epo:hasPrimaryContactPoint / epo:hasFax ?value . }",
                 "title": "VI.4.4.9 - Fax"
@@ -29601,7 +29002,7 @@
                     "notices": []
                 }
             },
-            "identifier": "sparql_query_199",
+            "identifier": "sparql_query_195",
             "query": {
                 "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:hasDispatchDate ?value . }",
                 "title": "VI.5 - Date of dispatch of this notice (dd/mm/yyyy)"
