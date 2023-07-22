@@ -1,6 +1,6 @@
 [
     {
-        "created": "2023-07-21T19:46:56.032687",
+        "created": "2023-07-22T18:08:17.959106",
         "mapping_suite_identifier": "package_F12_v2.1.2-alpha.1",
         "object_data": "SPARQLTestSuiteValidationReport",
         "test_suite_identifier": "cm_assertions",
@@ -1486,21 +1486,21 @@
                 "result": "valid"
             },
             {
-                "error": "Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found 'PREFIX'  (at char 0), (li",
+                "error": null,
                 "fields_covered": true,
                 "identifier": "sparql_query_86",
                 "message": null,
                 "missing_fields": [],
                 "query": {
                     "description": "\u201cIII.1.10 - Criteria for the selection of participants: (in the case of a restricted contest)\u201d in SF corresponds to \u201cBT-750 Selection Criteria Description\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F12_2014/LEFTI/CRITERIA_SELECTION/P. The expected ontology instances are epo: epo:Lot / epo:SelectionCriterion / rdf:langString .",
-                    "query": "PREFIX ccev: <^>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / ccev:description ?value . }",
+                    "query": "PREFIX cccev: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesSelectionCriterion / cccev:description ?value . }",
                     "title": "III.1.10 - Criteria for the selection of participants: (in the case of a restricted contest)",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F12_2014/LEFTI/CRITERIA_SELECTION/P"
                     ]
                 },
-                "query_result": null,
-                "result": "error"
+                "query_result": "False",
+                "result": "invalid"
             },
             {
                 "error": null,
@@ -2331,7 +2331,7 @@
         ]
     },
     {
-        "created": "2023-07-21T19:46:56.032687",
+        "created": "2023-07-22T18:08:17.959106",
         "mapping_suite_identifier": "package_F12_v2.1.2-alpha.1",
         "object_data": "SPARQLTestSuiteValidationReport",
         "test_suite_identifier": "integration_tests",
