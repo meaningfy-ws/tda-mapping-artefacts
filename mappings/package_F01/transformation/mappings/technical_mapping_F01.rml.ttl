@@ -1118,7 +1118,7 @@ tedm:DesignContestRegimeTerm  a rr:TriplesMap ;
     rr:subjectMap
         [
             rml:reference
-                "if(exists(NO_DECISION_BINDING_CONTRACTING) or exists(DECISION_BINDING_CONTRACTING) or exists(NUMBER_VALUE_PRIZE) or exists(DETAILS_PAYMENT) or exists(NO_FOLLOW_UP_CONTRACTS) or exists(FOLLOW_UP_CONTRACTS)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_DesignContestRegimeTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+                "if(exists(PRIZE_AWARDED) or exists(NO_PRIZE_AWARDED) or exists(NUMBER_VALUE_PRIZE) or exists(DETAILS_PAYMENT) or exists(FOLLOW_UP_CONTRACTS) or exists(NO_FOLLOW_UP_CONTRACTS) or exists(DECISION_BINDING_CONTRACTING) or exists(NO_DECISION_BINDING_CONTRACTING)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_DesignContestRegimeTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
             rr:class epo:DesignContestRegimeTerm
         ] .
 
@@ -1133,7 +1133,7 @@ tedm:DesignContestRegimeTermPrize  a rr:TriplesMap ;
     rr:subjectMap
         [
             rml:reference
-                "if(exists(PRIZE_AWARDED) or exists(NO_PRIZE_AWARDED)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_DesignContestRegimeTermPrize_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+                "if(exists(PRIZE_AWARDED)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_DesignContestRegimeTermPrize_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
             rr:class epo:Prize
         ] .
 
@@ -1671,7 +1671,7 @@ tedm:SubmissionTerm a rr:TriplesMap ;
     rr:subjectMap
         [
             rml:reference
-                "if(exists(TED_EXPORT/FORM_SECTION/F01_2014[1]/OBJECT_CONTRACT/OBJECT_DESCR/ECATALOGUE_REQUIRED) or exists(TED_EXPORT/FORM_SECTION/F01_2014[1]/OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS) or exists(TED_EXPORT/FORM_SECTION/F01_2014[1]/OBJECT_CONTRACT/OBJECT_DESCR/NO_ACCEPTED_VARIANTS) or exists(DATE_RECEIPT_TENDERS) or exists(TIME_RECEIPT_TENDERS) or exists(../CONTRACTING_BODY/URL_PARTICIPATION)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_SubmissionTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+                "if(exists(TED_EXPORT/FORM_SECTION/F01_2014[1]/OBJECT_CONTRACT/OBJECT_DESCR/ECATALOGUE_REQUIRED) or exists(TED_EXPORT/FORM_SECTION/F01_2014[1]/OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS) or exists(TED_EXPORT/FORM_SECTION/F01_2014[1]/OBJECT_CONTRACT/OBJECT_DESCR/NO_ACCEPTED_VARIANTS) or exists(DATE_RECEIPT_TENDERS) or exists(TIME_RECEIPT_TENDERS) or exists(LANGUAGES/LANGUAGE/@VALUE) or exists(../CONTRACTING_BODY/URL_PARTICIPATION)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_SubmissionTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
             rr:class epo:SubmissionTerm
         ] ;
     rml:logicalSource
