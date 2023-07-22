@@ -45,7 +45,8 @@ tedm:DynamicPurchaseSystemTechniqueUsage  a rr:TriplesMap ;
             rr:predicate epo:hasDPSScope;
             rr:objectMap
                 [
-                    rml:reference "DPS_ADDITIONAL_PURCHASERS";
+                    rml:reference "if (exists(DPS_ADDITIONAL_PURCHASERS)) then 'http://publications.europa.eu/resource/authority/dps-usage/dps-nlist' else null";
+                    rr:termType rr:IRI;
                 ]
         ].
 
