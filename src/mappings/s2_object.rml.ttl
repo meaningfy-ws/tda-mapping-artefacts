@@ -997,8 +997,8 @@ tedm:SubmissionTerm a rr:TriplesMap ;
             rr:predicate epo:hasVariantPermission ;
             rr:objectMap
                 [
-                    rml:reference "if (exists(../OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS)) then 'true' else if(exists(../OBJECT_CONTRACT/OBJECT_DESCR/NO_ACCEPTED_VARIANTS)) then 'false' else null";
-                    rr:datatype xsd:anyURI;
+                    rml:reference "if (exists(../OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS)) then 'http://publications.europa.eu/resource/authority/permission/allowed' else if(exists(../OBJECT_CONTRACT/OBJECT_DESCR/NO_ACCEPTED_VARIANTS)) then 'http://publications.europa.eu/resource/authority/permission/not-allowed' else null";
+                    rr:termType rr:IRI;
                 ] ;
         ] .
 
