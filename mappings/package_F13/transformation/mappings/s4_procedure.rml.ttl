@@ -45,7 +45,8 @@ tedm:DynamicPurchaseSystemTechniqueUsage  a rr:TriplesMap ;
             rr:predicate epo:hasDPSScope;
             rr:objectMap
                 [
-                    rml:reference "DPS_ADDITIONAL_PURCHASERS";
+                    rml:reference "if (exists(DPS_ADDITIONAL_PURCHASERS)) then 'http://publications.europa.eu/resource/authority/dps-usage/dps-nlist' else null";
+                    rr:termType rr:IRI;
                 ]
         ].
 
@@ -105,24 +106,7 @@ tedm:DesignContestRegimeTerm  a rr:TriplesMap ;
             rr:objectMap
                 [
                     rr:parentTriplesMap tedm:DesignContestRegimeTermPrize;
-                    rr:joinCondition [
-                        rr:child "path(.)";
-                        rr:parent "path(.)";
-                    ];
                 ] ;
-        ] .
-
-
-tedm:DesignContestRegimeTermPrize  a rr:TriplesMap ;
-    rr:predicateObjectMap
-        [
-            rr:predicate epo:hasFollowupContract;
-            rr:objectMap
-                [
-                    #rml:reference "if(exists(PRIZE_AWARDED)) then 'true' else if(exists(NO_PRIZE_AWARDED)) then 'false' else null";
-                    rml:reference "if(exists(PRIZE_AWARDED)) then 'true' else null";
-                    rr:datatype xsd:boolean
-                ]
         ] .
 
 tedm:OpeningTerm  a rr:TriplesMap ;
