@@ -989,7 +989,8 @@ tedm:SubmissionTerm a rr:TriplesMap ;
             rr:predicate epo:hasECataloguePermission ;
             rr:objectMap
                 [
-                    rml:reference "../OBJECT_CONTRACT/OBJECT_DESCR/ECATALOGUE_REQUIRED";
+                    rml:reference "if (exists(../OBJECT_CONTRACT/OBJECT_DESCR/ECATALOGUE_REQUIRED)) then 'http://publications.europa.eu/resource/authority/permission/required' else null";
+                    rr:termType rr:IRI;
                 ] ;
         ] ;
     rr:predicateObjectMap
