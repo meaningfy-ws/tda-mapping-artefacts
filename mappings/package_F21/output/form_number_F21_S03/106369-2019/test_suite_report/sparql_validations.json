@@ -1,29 +1,10 @@
 [
     {
-        "created": "2023-06-13T15:20:07.207746",
-        "mapping_suite_identifier": "package_F21_v6.8.1",
+        "created": "2023-07-24T10:51:17.343561",
+        "mapping_suite_identifier": "package_F21_v2.1.1",
         "object_data": "SPARQLTestSuiteValidationReport",
         "test_suite_identifier": "cm_assertions",
         "validation_results": [
-            {
-                "error": null,
-                "fields_covered": false,
-                "identifier": "sparql_query_210",
-                "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_OPEN"
-                ],
-                "query": {
-                    "description": "\u201cD1.1.1.1 - Open procedure\u201d in SF corresponds to \u201cBT-1252 Direct Award Justification Previous Procedure Identifier\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_OPEN. The expected ontology instances are epo: epo:Procedure / epo:DirectAwardTerm / at-voc:direct-award-justification .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm / epo:hasDirectAwardJustification <http://publications.europa.eu/resource/authority/direct-award-justification/unsuitable> . }",
-                    "title": "D1.1.1.1 - Open procedure",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_OPEN"
-                    ]
-                },
-                "query_result": "False",
-                "result": "unverifiable"
-            },
             {
                 "error": null,
                 "fields_covered": false,
@@ -46,17 +27,17 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_212",
+                "identifier": "sparql_query_210",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_RESTRICTED"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_OPEN"
                 ],
                 "query": {
-                    "description": "\u201cD1.1.1.2 - Restricted procedure\u201d in SF corresponds to \u201cBT-1252 Direct Award Justification Previous Procedure Identifier\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_RESTRICTED. The expected ontology instances are epo: epo:Procedure / epo:DirectAwardTerm / at-voc:direct-award-justification .",
+                    "description": "\u201cD1.1.1.1 - Open procedure\u201d in SF corresponds to \u201cBT-1252 Direct Award Justification Previous Procedure Identifier\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_OPEN. The expected ontology instances are epo: epo:Procedure / epo:DirectAwardTerm / at-voc:direct-award-justification .",
                     "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm / epo:hasDirectAwardJustification <http://publications.europa.eu/resource/authority/direct-award-justification/unsuitable> . }",
-                    "title": "D1.1.1.2 - Restricted procedure",
+                    "title": "D1.1.1.1 - Open procedure",
                     "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_RESTRICTED"
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_OPEN"
                     ]
                 },
                 "query_result": "False",
@@ -73,6 +54,25 @@
                 "query": {
                     "description": "\u201cD1.1.1.2 - Restricted procedure\u201d in SF corresponds to \u201cBT-1252 Direct Award Justification Previous Procedure Identifier\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_RESTRICTED. The expected ontology instances are epo: epo:DirectAwardTerm / epo:Procedure / at-voc:procurement-procedure-type .",
                     "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:DirectAwardTerm .\n\t\t?this epo:refersToPreviousProcedure / epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted> . }",
+                    "title": "D1.1.1.2 - Restricted procedure",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_RESTRICTED"
+                    ]
+                },
+                "query_result": "False",
+                "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
+                "identifier": "sparql_query_212",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_RESTRICTED"
+                ],
+                "query": {
+                    "description": "\u201cD1.1.1.2 - Restricted procedure\u201d in SF corresponds to \u201cBT-1252 Direct Award Justification Previous Procedure Identifier\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_RESTRICTED. The expected ontology instances are epo: epo:Procedure / epo:DirectAwardTerm / at-voc:direct-award-justification .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm / epo:hasDirectAwardJustification <http://publications.europa.eu/resource/authority/direct-award-justification/unsuitable> . }",
                     "title": "D1.1.1.2 - Restricted procedure",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F21_2014/PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE/D_PROC_RESTRICTED"
@@ -473,6 +473,25 @@
             {
                 "error": null,
                 "fields_covered": false,
+                "identifier": "sparql_query_19",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/NATIONALID"
+                ],
+                "query": {
+                    "description": "\u201cI.1.2 - National registration number\u201d in SF corresponds to \u201cBT-501 Organisation Identifier\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/NATIONALID. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) / epo:Identifier / rdf:langString .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:playedBy / epo:hasID / epo:hasIdentifierValue ?value . }",
+                    "title": "I.1.2 - National registration number",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/NATIONALID"
+                    ]
+                },
+                "query_result": "False",
+                "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
                 "identifier": "sparql_query_4",
                 "message": null,
                 "missing_fields": [
@@ -492,21 +511,21 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_19",
+                "identifier": "sparql_query_20",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/NATIONALID"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/ADDRESS"
                 ],
                 "query": {
-                    "description": "\u201cI.1.2 - National registration number\u201d in SF corresponds to \u201cBT-501 Organisation Identifier\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/NATIONALID. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) / epo:Identifier / rdf:langString .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:playedBy / epo:hasID / epo:hasIdentifierValue ?value . }",
-                    "title": "I.1.2 - National registration number",
+                    "description": "\u201cI.1.3 - Postal address\u201d in SF corresponds to \u201cBT-510 Organisation Street\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/ADDRESS. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) /  locn:Address / rdf:langString .",
+                    "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:thoroughfare ?value . }",
+                    "title": "I.1.3 - Postal address",
                     "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/NATIONALID"
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/ADDRESS"
                     ]
                 },
-                "query_result": "False",
-                "result": "unverifiable"
+                "query_result": "True",
+                "result": "warning"
             },
             {
                 "error": null,
@@ -524,25 +543,6 @@
                 },
                 "query_result": "True",
                 "result": "valid"
-            },
-            {
-                "error": null,
-                "fields_covered": false,
-                "identifier": "sparql_query_20",
-                "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/ADDRESS"
-                ],
-                "query": {
-                    "description": "\u201cI.1.3 - Postal address\u201d in SF corresponds to \u201cBT-510 Organisation Street\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/ADDRESS. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) /  locn:Address / rdf:langString .",
-                    "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:thoroughfare ?value . }",
-                    "title": "I.1.3 - Postal address",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/ADDRESS"
-                    ]
-                },
-                "query_result": "True",
-                "result": "warning"
             },
             {
                 "error": null,
@@ -583,25 +583,6 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_7",
-                "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/NUTS/@CODE"
-                ],
-                "query": {
-                    "description": "\u201cI.1.5 - NUTS code\u201d in SF corresponds to \u201cBT-507 Organisation Country Subdivision\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/NUTS/@CODE. The expected ontology instances are epo: epo:AgentInRole (from CL1)  / org:Organization (from CL2) / locn:Address / at-voc:nuts (from nuts.json) .",
-                    "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:playedBy / cv:registeredAddress / epo:hasNutsCode ?value . }",
-                    "title": "I.1.5 - NUTS code",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/NUTS/@CODE"
-                    ]
-                },
-                "query_result": "True",
-                "result": "warning"
-            },
-            {
-                "error": null,
-                "fields_covered": false,
                 "identifier": "sparql_query_22",
                 "message": null,
                 "missing_fields": [
@@ -613,6 +594,25 @@
                     "title": "I.1.5 - NUTS code",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/NUTS/@CODE"
+                    ]
+                },
+                "query_result": "True",
+                "result": "warning"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
+                "identifier": "sparql_query_7",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/NUTS/@CODE"
+                ],
+                "query": {
+                    "description": "\u201cI.1.5 - NUTS code\u201d in SF corresponds to \u201cBT-507 Organisation Country Subdivision\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/NUTS/@CODE. The expected ontology instances are epo: epo:AgentInRole (from CL1)  / org:Organization (from CL2) / locn:Address / at-voc:nuts (from nuts.json) .",
+                    "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:playedBy / cv:registeredAddress / epo:hasNutsCode ?value . }",
+                    "title": "I.1.5 - NUTS code",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/NUTS/@CODE"
                     ]
                 },
                 "query_result": "True",
@@ -656,23 +656,6 @@
             },
             {
                 "error": null,
-                "fields_covered": true,
-                "identifier": "sparql_query_9",
-                "message": null,
-                "missing_fields": [],
-                "query": {
-                    "description": "\u201cI.1.7 - Country\u201d in SF corresponds to \u201cBT-514 Organisation Country Code\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/COUNTRY. The expected ontology instances are epo: epo:AgentInRole (from CL1)  / org:Organization (from CL2) / locn:Address / at-voc:country (from country.json) .",
-                    "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:playedBy / cv:registeredAddress / epo:hasCountryCode ?value . }",
-                    "title": "I.1.7 - Country",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/COUNTRY"
-                    ]
-                },
-                "query_result": "True",
-                "result": "valid"
-            },
-            {
-                "error": null,
                 "fields_covered": false,
                 "identifier": "sparql_query_24",
                 "message": null,
@@ -692,22 +675,20 @@
             },
             {
                 "error": null,
-                "fields_covered": false,
-                "identifier": "sparql_query_25",
+                "fields_covered": true,
+                "identifier": "sparql_query_9",
                 "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/CONTACT_POINT"
-                ],
+                "missing_fields": [],
                 "query": {
-                    "description": "\u201cI.1.8 - Contact person\u201d in SF corresponds to \u201cBT-502 Organisation Contact Point\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/CONTACT_POINT. The expected ontology instances are epo: epo:AgentInRole (from CL1) / cpov:ContactPoint / rdf:langString .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:hasContactPointInRole / epo:hasContactName ?value . }",
-                    "title": "I.1.8 - Contact person",
+                    "description": "\u201cI.1.7 - Country\u201d in SF corresponds to \u201cBT-514 Organisation Country Code\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/COUNTRY. The expected ontology instances are epo: epo:AgentInRole (from CL1)  / org:Organization (from CL2) / locn:Address / at-voc:country (from country.json) .",
+                    "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:playedBy / cv:registeredAddress / epo:hasCountryCode ?value . }",
+                    "title": "I.1.7 - Country",
                     "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/CONTACT_POINT"
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/COUNTRY"
                     ]
                 },
-                "query_result": "False",
-                "result": "unverifiable"
+                "query_result": "True",
+                "result": "valid"
             },
             {
                 "error": null,
@@ -723,6 +704,25 @@
                     "title": "I.1.8 - Contact person",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/CONTACT_POINT"
+                    ]
+                },
+                "query_result": "False",
+                "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
+                "identifier": "sparql_query_25",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/CONTACT_POINT"
+                ],
+                "query": {
+                    "description": "\u201cI.1.8 - Contact person\u201d in SF corresponds to \u201cBT-502 Organisation Contact Point\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/CONTACT_POINT. The expected ontology instances are epo: epo:AgentInRole (from CL1) / cpov:ContactPoint / rdf:langString .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:hasContactPointInRole / epo:hasContactName ?value . }",
+                    "title": "I.1.8 - Contact person",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/CONTACT_POINT"
                     ]
                 },
                 "query_result": "False",
@@ -911,12 +911,12 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_40",
+                "identifier": "sparql_query_39",
                 "message": null,
                 "missing_fields": [],
                 "query": {
-                    "description": "\u201cI.3.3.1 - The above mentioned address\u201d in SF corresponds to \u201cno direct match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO_IDEM. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ProcurementProcedureInformationProvider .\n\t\t?this epo:playedBy ?value . }",
+                    "description": "\u201cI.3.3.1 - The above mentioned address\u201d in SF corresponds to \u201cno direct match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO_IDEM. The expected ontology instances are epo: epo:Notice / epo:AgentInRole (from CL1) .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:announcesRole ?value }",
                     "title": "I.3.3.1 - The above mentioned address",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO_IDEM"
@@ -928,12 +928,12 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_39",
+                "identifier": "sparql_query_40",
                 "message": null,
                 "missing_fields": [],
                 "query": {
-                    "description": "\u201cI.3.3.1 - The above mentioned address\u201d in SF corresponds to \u201cno direct match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO_IDEM. The expected ontology instances are epo: epo:Notice / epo:AgentInRole (from CL1) .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:announcesRole ?value }",
+                    "description": "\u201cI.3.3.1 - The above mentioned address\u201d in SF corresponds to \u201cno direct match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO_IDEM. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ProcurementProcedureInformationProvider .\n\t\t?this epo:playedBy ?value . }",
                     "title": "I.3.3.1 - The above mentioned address",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO_IDEM"
@@ -1209,25 +1209,6 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_56",
-                "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION_IDEM"
-                ],
-                "query": {
-                    "description": "\u201cI.3.4.2 - To the abovementioned address\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION_IDEM. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:TenderReceiver .\n\t\t?this epo:playedBy ?value . }",
-                    "title": "I.3.4.2 - To the abovementioned address",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION_IDEM"
-                    ]
-                },
-                "query_result": "False",
-                "result": "unverifiable"
-            },
-            {
-                "error": null,
-                "fields_covered": false,
                 "identifier": "sparql_query_55",
                 "message": null,
                 "missing_fields": [
@@ -1243,6 +1224,25 @@
                 },
                 "query_result": "True",
                 "result": "warning"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
+                "identifier": "sparql_query_56",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION_IDEM"
+                ],
+                "query": {
+                    "description": "\u201cI.3.4.2 - To the abovementioned address\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION_IDEM. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:TenderReceiver .\n\t\t?this epo:playedBy ?value . }",
+                    "title": "I.3.4.2 - To the abovementioned address",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION_IDEM"
+                    ]
+                },
+                "query_result": "False",
+                "result": "unverifiable"
             },
             {
                 "error": null,
@@ -1494,14 +1494,14 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_71",
+                "identifier": "sparql_query_70",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/URL_TOOL"
                 ],
                 "query": {
-                    "description": "\u201cI.3.5 - Electronic communication requires the use of tools and devices that are not generally available. Unrestricted and full direct access to these tools and devices is possible free of charge, at (URL)\u201d in SF corresponds to \u201cBT-124 nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/URL_TOOL. The expected ontology instances are epo: epo:Procedure / cv:Channel / xsd:boolean .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:usesChannel  / epo:isAdhocChannel true . }",
+                    "description": "\u201cI.3.5 - Electronic communication requires the use of tools and devices that are not generally available. Unrestricted and full direct access to these tools and devices is possible free of charge, at (URL)\u201d in SF corresponds to \u201cBT-124 nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/URL_TOOL. The expected ontology instances are epo: epo:Procedure / cv:Channel / xsd:anyURI .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:usesChannel  / epo:hasURL ?value . }",
                     "title": "I.3.5 - Electronic communication requires the use of tools and devices that are not generally available. Unrestricted and full direct access to these tools and devices is possible free of charge, at (URL)",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/URL_TOOL"
@@ -1513,14 +1513,14 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_70",
+                "identifier": "sparql_query_71",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/URL_TOOL"
                 ],
                 "query": {
-                    "description": "\u201cI.3.5 - Electronic communication requires the use of tools and devices that are not generally available. Unrestricted and full direct access to these tools and devices is possible free of charge, at (URL)\u201d in SF corresponds to \u201cBT-124 nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/URL_TOOL. The expected ontology instances are epo: epo:Procedure / cv:Channel / xsd:anyURI .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:usesChannel  / epo:hasURL ?value . }",
+                    "description": "\u201cI.3.5 - Electronic communication requires the use of tools and devices that are not generally available. Unrestricted and full direct access to these tools and devices is possible free of charge, at (URL)\u201d in SF corresponds to \u201cBT-124 nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/URL_TOOL. The expected ontology instances are epo: epo:Procedure / cv:Channel / xsd:boolean .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:usesChannel  / epo:isAdhocChannel true . }",
                     "title": "I.3.5 - Electronic communication requires the use of tools and devices that are not generally available. Unrestricted and full direct access to these tools and devices is possible free of charge, at (URL)",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F21_2014/CONTRACTING_BODY/URL_TOOL"
@@ -1897,8 +1897,8 @@
                 "identifier": "sparql_query_92",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT/VAL_TOTAL/@CURRENCY",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT/VAL_RANGE_TOTAL/@CURRENCY"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT/VAL_RANGE_TOTAL/@CURRENCY",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT/VAL_TOTAL/@CURRENCY"
                 ],
                 "query": {
                     "description": "\u201cII.1.7.4 - Currency\u201d in SF corresponds to \u201cno direct match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT/VAL_TOTAL/@CURRENCY ;; /TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT/VAL_RANGE_TOTAL/@CURRENCY. The expected ontology instances are epo: epo:Notice / epo:NoticeAwardInformation / epo:MonetaryValue / at-voc:currency (from currency.json) .",
@@ -1915,12 +1915,12 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_94",
+                "identifier": "sparql_query_93",
                 "message": null,
                 "missing_fields": [],
                 "query": {
-                    "description": "\u201cII.2 - Description\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT. The expected ontology instances are epo: epo:Procedure / epo:Lot .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasProcurementScopeDividedIntoLot ?value }",
+                    "description": "\u201cII.2 - Description\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT. The expected ontology instances are epo: epo:Notice / epo:Lot .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:refersToLot ?value . }",
                     "title": "II.2 - Description",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT"
@@ -1932,12 +1932,12 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_93",
+                "identifier": "sparql_query_94",
                 "message": null,
                 "missing_fields": [],
                 "query": {
-                    "description": "\u201cII.2 - Description\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT. The expected ontology instances are epo: epo:Notice / epo:Lot .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:refersToLot ?value . }",
+                    "description": "\u201cII.2 - Description\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT. The expected ontology instances are epo: epo:Procedure / epo:Lot .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:hasProcurementScopeDividedIntoLot ?value }",
                     "title": "II.2 - Description",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT"
@@ -1986,23 +1986,6 @@
             },
             {
                 "error": null,
-                "fields_covered": true,
-                "identifier": "sparql_query_109",
-                "message": null,
-                "missing_fields": [],
-                "query": {
-                    "description": "\u201cII.2.13.1 - The procurement is related to a project and/or programme financed by European Union funds\u201d in SF corresponds to \u201cBT-60 EU Funds\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT/OBJECT_DESCR/NO_EU_PROGR_RELATED. The expected ontology instances are epo: epo:Lot / xsd:boolean .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:isUsingEUFunds false . }",
-                    "title": "II.2.13.1 - The procurement is related to a project and/or programme financed by European Union funds",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT/OBJECT_DESCR/NO_EU_PROGR_RELATED"
-                    ]
-                },
-                "query_result": "True",
-                "result": "valid"
-            },
-            {
-                "error": null,
                 "fields_covered": false,
                 "identifier": "sparql_query_108",
                 "message": null,
@@ -2019,6 +2002,23 @@
                 },
                 "query_result": "False",
                 "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": true,
+                "identifier": "sparql_query_109",
+                "message": null,
+                "missing_fields": [],
+                "query": {
+                    "description": "\u201cII.2.13.1 - The procurement is related to a project and/or programme financed by European Union funds\u201d in SF corresponds to \u201cBT-60 EU Funds\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT/OBJECT_DESCR/NO_EU_PROGR_RELATED. The expected ontology instances are epo: epo:Lot / xsd:boolean .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:isUsingEUFunds false . }",
+                    "title": "II.2.13.1 - The procurement is related to a project and/or programme financed by European Union funds",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/OBJECT_CONTRACT/OBJECT_DESCR/NO_EU_PROGR_RELATED"
+                    ]
+                },
+                "query_result": "True",
+                "result": "valid"
             },
             {
                 "error": null,
@@ -2580,25 +2580,6 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_129",
-                "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT"
-                ],
-                "query": {
-                    "description": "\u201cSection V - Award of contract\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT. The expected ontology instances are epo: epo:LotAwardOutcome / epo:Lot .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:LotAwardOutcome .\n\t\t?this epo:describesLot ?value }",
-                    "title": "Section V - Award of contract",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT"
-                    ]
-                },
-                "query_result": "False",
-                "result": "unverifiable"
-            },
-            {
-                "error": null,
-                "fields_covered": false,
                 "identifier": "sparql_query_128",
                 "message": null,
                 "missing_fields": [
@@ -2618,17 +2599,17 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_131",
+                "identifier": "sparql_query_129",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/CONTRACT_NO"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT"
                 ],
                 "query": {
-                    "description": "\u201cV.0.1 - Contract No\u201d in SF corresponds to \u201cBT-150 Contract Identifier\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/CONTRACT_NO. The expected ontology instances are epo: epo:LotAwardOutcome / xsd:string .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:LotAwardOutcome .\n\t\t?this epo:hasNonAwardedContractNumber ?value . }",
-                    "title": "V.0.1 - Contract No",
+                    "description": "\u201cSection V - Award of contract\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT. The expected ontology instances are epo: epo:LotAwardOutcome / epo:Lot .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:LotAwardOutcome .\n\t\t?this epo:describesLot ?value }",
+                    "title": "Section V - Award of contract",
                     "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/CONTRACT_NO"
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT"
                     ]
                 },
                 "query_result": "False",
@@ -2645,6 +2626,25 @@
                 "query": {
                     "description": "\u201cV.0.1 - Contract No\u201d in SF corresponds to \u201cBT-150 Contract Identifier\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/CONTRACT_NO. The expected ontology instances are epo: epo:Contract / epo:Identifier / xsd:string .",
                     "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Contract .\n\t\t?this epo:hasID / epo:hasIdentifierValue ?value . }",
+                    "title": "V.0.1 - Contract No",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/CONTRACT_NO"
+                    ]
+                },
+                "query_result": "False",
+                "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
+                "identifier": "sparql_query_131",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/CONTRACT_NO"
+                ],
+                "query": {
+                    "description": "\u201cV.0.1 - Contract No\u201d in SF corresponds to \u201cBT-150 Contract Identifier\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/CONTRACT_NO. The expected ontology instances are epo: epo:LotAwardOutcome / xsd:string .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:LotAwardOutcome .\n\t\t?this epo:hasNonAwardedContractNumber ?value . }",
                     "title": "V.0.1 - Contract No",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/CONTRACT_NO"
@@ -2770,14 +2770,14 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_139",
+                "identifier": "sparql_query_138",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT"
                 ],
                 "query": {
-                    "description": "\u201cV.2.0.1 - Award of contract\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT. The expected ontology instances are epo: epo:LotAwardOutcome / epo:TenderAwardOutcome / epo:Winner .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:LotAwardOutcome .\n\t\t?this epo:comprisesTenderAwardOutcome / epo:indicatesAwardOfLotToWinner ?value }",
+                    "description": "\u201cV.2.0.1 - Award of contract\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT. The expected ontology instances are epo: epo:LotAwardOutcome / epo:TenderAwardOutcome / epo:Tender .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:LotAwardOutcome .\n\t\t?this epo:comprisesTenderAwardOutcome / epo:describesTender ?value }",
                     "title": "V.2.0.1 - Award of contract",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT"
@@ -2789,14 +2789,14 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_138",
+                "identifier": "sparql_query_139",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT"
                 ],
                 "query": {
-                    "description": "\u201cV.2.0.1 - Award of contract\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT. The expected ontology instances are epo: epo:LotAwardOutcome / epo:TenderAwardOutcome / epo:Tender .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:LotAwardOutcome .\n\t\t?this epo:comprisesTenderAwardOutcome / epo:describesTender ?value }",
+                    "description": "\u201cV.2.0.1 - Award of contract\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT. The expected ontology instances are epo: epo:LotAwardOutcome / epo:TenderAwardOutcome / epo:Winner .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:LotAwardOutcome .\n\t\t?this epo:comprisesTenderAwardOutcome / epo:indicatesAwardOfLotToWinner ?value }",
                     "title": "V.2.0.1 - Award of contract",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT"
@@ -2849,8 +2849,8 @@
                 "identifier": "sparql_query_142",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/NB_TENDERS_RECEIVED",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/TENDERS/NB_TENDERS_RECEIVED"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/TENDERS/NB_TENDERS_RECEIVED",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/NB_TENDERS_RECEIVED"
                 ],
                 "query": {
                     "description": "\u201cV.2.2.1 - Number of tenders received\u201d in SF corresponds to \u201cBT-759 Received Submissions Count\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/TENDERS/NB_TENDERS_RECEIVED ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/NB_TENDERS_RECEIVED. The expected ontology instances are epo:  epo:SubmissionStatisticalInformation / xsd:integer .",
@@ -2933,8 +2933,8 @@
                 "identifier": "sparql_query_146",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/TENDERS/NB_TENDERS_RECEIVED_EMEANS",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/NB_TENDERS_RECEIVED_EMEANS"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/NB_TENDERS_RECEIVED_EMEANS",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/TENDERS/NB_TENDERS_RECEIVED_EMEANS"
                 ],
                 "query": {
                     "description": "\u201cV.2.2.5 - Number of tenders received by electronic means\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/TENDERS/NB_TENDERS_RECEIVED_EMEANS ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/NB_TENDERS_RECEIVED_EMEANS. The expected ontology instances are epo: epo:SubmissionStatisticalInformation / xsd:integer .",
@@ -2954,8 +2954,8 @@
                 "identifier": "sparql_query_147",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/OFFICIALNAME",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/OFFICIALNAME"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/OFFICIALNAME",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/OFFICIALNAME"
                 ],
                 "query": {
                     "description": "\u201cV.2.3.1 - Official name\u201d in SF corresponds to \u201cBT-500 Organisation Name\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/OFFICIALNAME ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/OFFICIALNAME. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) / rdf:langString .",
@@ -3014,32 +3014,11 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_159",
-                "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/SME",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/SME"
-                ],
-                "query": {
-                    "description": "\u201cV.2.3.12 - The contractor is an SME\u201d in SF corresponds to \u201cBT-165 Winner Size\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/SME ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/SME. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2)  / at-voc:economic-operator-size .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\n\nASK WHERE { \n\t\t?this epo:playedBy / epo:hasBusinessSize <http://publications.europa.eu/resource/authority/economic-operator-size/sme> }",
-                    "title": "V.2.3.12 - The contractor is an SME",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/SME",
-                        "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/SME"
-                    ]
-                },
-                "query_result": "False",
-                "result": "unverifiable"
-            },
-            {
-                "error": null,
-                "fields_covered": false,
                 "identifier": "sparql_query_158",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/SME",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/SME"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/SME",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/SME"
                 ],
                 "query": {
                     "description": "\u201cV.2.3.12 - The contractor is an SME\u201d in SF corresponds to \u201cBT-165 Winner Size\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/SME ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/SME. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) .",
@@ -3056,11 +3035,32 @@
             {
                 "error": null,
                 "fields_covered": false,
+                "identifier": "sparql_query_159",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/SME",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/SME"
+                ],
+                "query": {
+                    "description": "\u201cV.2.3.12 - The contractor is an SME\u201d in SF corresponds to \u201cBT-165 Winner Size\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/SME ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/SME. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2)  / at-voc:economic-operator-size .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\n\nASK WHERE { \n\t\t?this epo:playedBy / epo:hasBusinessSize <http://publications.europa.eu/resource/authority/economic-operator-size/sme> }",
+                    "title": "V.2.3.12 - The contractor is an SME",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/SME",
+                        "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/SME"
+                    ]
+                },
+                "query_result": "False",
+                "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
                 "identifier": "sparql_query_148",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/NATIONALID",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/NATIONALID"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/NATIONALID",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/NATIONALID"
                 ],
                 "query": {
                     "description": "\u201cV.2.3.2 - National registration number\u201d in SF corresponds to \u201cBT-501 Organisation Identifier\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/NATIONALID ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/NATIONALID. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) / epo:Identifier / rdf:langString .",
@@ -3122,8 +3122,8 @@
                 "identifier": "sparql_query_151",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/NUTS/@CODE",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/NUTS/@CODE"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/NUTS/@CODE",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/NUTS/@CODE"
                 ],
                 "query": {
                     "description": "\u201cV.2.3.5 - NUTS code\u201d in SF corresponds to \u201cBT-507 Organisation Country Subdivision\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/NUTS/@CODE ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/NUTS/@CODE. The expected ontology instances are epo: epo:AgentInRole (from CL1)  / org:Organization (from CL2) / locn:Address / at-voc:nuts (from nuts.json) .",
@@ -3164,8 +3164,8 @@
                 "identifier": "sparql_query_153",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/COUNTRY",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/COUNTRY"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/COUNTRY",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/COUNTRY"
                 ],
                 "query": {
                     "description": "\u201cV.2.3.7 - Country\u201d in SF corresponds to \u201cBT-514 Organisation Country Code\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/COUNTRY ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/COUNTRY. The expected ontology instances are epo: epo:AgentInRole (from CL1)  / org:Organization (from CL2) / locn:Address / at-voc:country (from country.json) .",
@@ -3185,8 +3185,8 @@
                 "identifier": "sparql_query_154",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/E_MAIL",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/E_MAIL"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/E_MAIL",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/E_MAIL"
                 ],
                 "query": {
                     "description": "\u201cV.2.3.8 - E-mail\u201d in SF corresponds to \u201cBT-506 Organisation Contact Email Address\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/E_MAIL ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/E_MAIL. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) / cpov:ContactPoint / xsd:anyURI .",
@@ -3206,8 +3206,8 @@
                 "identifier": "sparql_query_155",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/PHONE",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/PHONE"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/PHONE",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/PHONE"
                 ],
                 "query": {
                     "description": "\u201cV.2.3.9 - Telephone\u201d in SF corresponds to \u201cBT-503 Organisation Contact Telephone Number\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTORS/CONTRACTOR/ADDRESS_CONTRACTOR/PHONE ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR/PHONE. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) / cpov:ContactPoint / rdf:langString .",
@@ -3227,8 +3227,8 @@
                 "identifier": "sparql_query_160",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_ESTIMATED_TOTAL",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_ESTIMATED_TOTAL",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_ESTIMATED_TOTAL",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_ESTIMATED_TOTAL"
                 ],
                 "query": {
@@ -3250,9 +3250,9 @@
                 "identifier": "sparql_query_161",
                 "message": null,
                 "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_ESTIMATED_TOTAL/@CURRENCY",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_ESTIMATED_TOTAL/@CURRENCY",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_ESTIMATED_TOTAL/@CURRENCY",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_ESTIMATED_TOTAL/@CURRENCY"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_ESTIMATED_TOTAL/@CURRENCY"
                 ],
                 "query": {
                     "description": "\u201cV.2.4.1.1 - Currency\u201d in SF corresponds to \u201cno direct match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_ESTIMATED_TOTAL/@CURRENCY ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_ESTIMATED_TOTAL/@CURRENCY ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_ESTIMATED_TOTAL/@CURRENCY. The expected ontology instances are epo: epo:Lot / epo:MonetaryValue / at-voc:currency (from currency.json) .",
@@ -3273,8 +3273,8 @@
                 "identifier": "sparql_query_162",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_TOTAL",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_TOTAL",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_TOTAL",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_TOTAL"
                 ],
                 "query": {
@@ -3296,9 +3296,9 @@
                 "identifier": "sparql_query_163",
                 "message": null,
                 "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_TOTAL/@CURRENCY",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_TOTAL/@CURRENCY",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_TOTAL/@CURRENCY",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_TOTAL/@CURRENCY"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_TOTAL/@CURRENCY"
                 ],
                 "query": {
                     "description": "\u201cV.2.4.2.1 - Currency\u201d in SF corresponds to \u201cno direct match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_TOTAL/@CURRENCY ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_TOTAL/@CURRENCY ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_TOTAL/@CURRENCY. The expected ontology instances are epo: epo:LotAwardOutcome / epo:MonetaryValue / at-voc:currency (from currency.json) .",
@@ -3319,9 +3319,9 @@
                 "identifier": "sparql_query_164",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_RANGE_TOTAL/LOW",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_RANGE_TOTAL/LOW",
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_RANGE_TOTAL/LOW"
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_RANGE_TOTAL/LOW",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_RANGE_TOTAL/LOW"
                 ],
                 "query": {
                     "description": "\u201cV.2.4.3 - Lowest offer\u201d in SF corresponds to \u201cBT-710 Tender Value Lowest\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_RANGE_TOTAL/LOW ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_RANGE_TOTAL/LOW ;; /TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_RANGE_TOTAL/LOW. The expected ontology instances are epo: epo:SubmissionStatisticalInformation / epo:MonetaryValue / xsd:decimal .",
@@ -3342,8 +3342,8 @@
                 "identifier": "sparql_query_165",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_RANGE_TOTAL/@CURRENCY",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_RANGE_TOTAL/@CURRENCY",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_RANGE_TOTAL/@CURRENCY",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_RANGE_TOTAL/@CURRENCY"
                 ],
                 "query": {
@@ -3365,8 +3365,8 @@
                 "identifier": "sparql_query_166",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_RANGE_TOTAL/HIGH",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_RANGE_TOTAL/HIGH",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_RANGE_TOTAL/HIGH",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_RANGE_TOTAL/HIGH"
                 ],
                 "query": {
@@ -3388,8 +3388,8 @@
                 "identifier": "sparql_query_167",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_RANGE_TOTAL/@CURRENCY",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VAL_RANGE_TOTAL/@CURRENCY",
+                    "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUES/VAL_RANGE_TOTAL/@CURRENCY",
                     "/TED_EXPORT/FORM_SECTION/F21_2014/AWARD_CONTRACT/AWARDED_CONTRACT/VALUE/VAL_RANGE_TOTAL/@CURRENCY"
                 ],
                 "query": {
@@ -4167,8 +4167,8 @@
         ]
     },
     {
-        "created": "2023-06-13T15:20:07.207746",
-        "mapping_suite_identifier": "package_F21_v6.8.1",
+        "created": "2023-07-24T10:51:17.343561",
+        "mapping_suite_identifier": "package_F21_v2.1.1",
         "object_data": "SPARQLTestSuiteValidationReport",
         "test_suite_identifier": "integration_tests",
         "validation_results": [
