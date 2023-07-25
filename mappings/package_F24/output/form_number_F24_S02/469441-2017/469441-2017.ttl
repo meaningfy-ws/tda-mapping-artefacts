@@ -4,20 +4,14 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
-@prefix rr: <http://www.w3.org/ns/r2rml#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
-@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epd:id_2017-S-225-469441_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
   epo:hasPublicAccessURL "http://www.marches-securises.fr"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-225-469441_AwardCriterionInDocuments_kogTxTCFwno6qMv3vvCK5J a epo:AwardCriterion .
 
 epd:id_2017-S-225-469441_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
   epo:hasBuyerProfile "http://www.marches-securises.fr"^^xsd:anyURI;
@@ -58,7 +52,8 @@ epd:id_2017-S-225-469441_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
                   Le contrat concerne les services de mobilité urbaine. L'exploitation s'effectue aux risques et périls du délégataire. Les recettes seront perçues auprès des usagers par le délégataire, soit pour son compte propre, soit pour le compte de l'autorité délégante, suivant des tarifs qui seront fixés dans la convention. Une contribution financière forfaitaire sera par ailleurs versée par l'autorité délégante en contrepartie des sujétions tarifaires et de service public imposées au délégataire. Le délégataire réalise et finance les investissements (véhicules et dépôt), mais il sera demandé aux candidats d'étudier en option l'acquisition et le financement des matériels roulant.
                """@fr;
   epo:hasPurpose epd:id_2017-S-225-469441_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
-  epo:isUsingEUFunds false .
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-225-469441_AwardCriterionInDocuments_kogTxTCFwno6qMv3vvCK5J .
 
 epd:id_2017-S-225-469441_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2017-S-225-469441_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2017-S-225-469441_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
@@ -82,8 +77,7 @@ epd:id_2017-S-225-469441_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Addre
 epd:id_2017-S-225-469441_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
   epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
   epo:hasLegalName "CA Les Sables-d'Olonne Agglomération"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
   cccev:registeredAddress epd:id_2017-S-225-469441_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
 
 epd:id_2017-S-225-469441_Period_RgULVPVVYP9pkvK789PCUZ a epo:Period;

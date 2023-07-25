@@ -450,6 +450,18 @@ tedm:Lot a rr:TriplesMap ;
                     ];
                 ] ;
         ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:specifiesAwardCriterion ;
+            rr:objectMap
+                [
+                    rr:parentTriplesMap tedm:AwardCriterionInDocuments;
+                    rr:joinCondition [
+                        rr:child "./@ITEM";
+                        rr:parent "ancestor::OBJECT_DESCR/@ITEM";
+                    ];
+                ] ;
+        ] ;
 
     rr:predicateObjectMap
         [
