@@ -4,7 +4,15 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epd:id_2021-S-126-332459_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
@@ -18,7 +26,7 @@ epd:id_2021-S-126-332459_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoin
   cccev:telephone "+32 24416832" .
 
 epd:id_2021-S-126-332459_ContractTermLotLocationAddress_PNm7nZntEXiu4JieackQnj a locn:Address;
-  locn:fullAddress "Peutie"@nl, "Peutie."@fr .
+  locn:fullAddress "Peutie."@fr, "Peutie"@nl .
 
 epd:id_2021-S-126-332459_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
   epo:hasNutsCode <http://data.europa.eu/nuts/code/BE10>;
@@ -61,8 +69,9 @@ epd:id_2021-S-126-332459_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC a epo:Ide
 epd:id_2021-S-126-332459_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
   epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/cga>;
   epo:hasID epd:id_2021-S-126-332459_OrganisationIdentifier_TigDgN9yDLHn3hDtQD7BVC;
-  epo:hasLegalName "MRMP-SDV - Verkoopdienst"@nl, "MRMP-SDV — service des ventes"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/defence>;
+  epo:hasLegalName "MRMP-SDV — service des ventes"@fr, "MRMP-SDV - Verkoopdienst"@nl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
+    <http://publications.europa.eu/resource/authority/main-activity/defence>;
   cccev:registeredAddress epd:id_2021-S-126-332459_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .
 
 epd:id_2021-S-126-332459_ProcedureIdentifier_AMEokiDjGuTvrfRF5KkTBZ a epo:Identifier;

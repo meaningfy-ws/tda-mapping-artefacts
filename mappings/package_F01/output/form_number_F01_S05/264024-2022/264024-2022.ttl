@@ -4,7 +4,15 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epd:id_2022-S-096-264024_AwardCriterionPrice_RBGYEez98Pij3NLYxwzMz2 a epo:AwardCriterion;
@@ -24,7 +32,6 @@ epd:id_2022-S-096-264024_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a
   locn:fullAddress "D-54675 Mettendorf"@de .
 
 epd:id_2022-S-096-264024_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
-  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
   locn:address epd:id_2022-S-096-264024_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
 
 epd:id_2022-S-096-264024_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
@@ -73,7 +80,8 @@ epd:id_2022-S-096-264024_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Addre
 epd:id_2022-S-096-264024_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
   epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
   epo:hasLegalName "Südeifelwerke AöR"@de;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/env-pro>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
+    <http://publications.europa.eu/resource/authority/main-activity/env-pro>;
   cccev:registeredAddress epd:id_2022-S-096-264024_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
 
 epd:id_2022-S-096-264024_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
