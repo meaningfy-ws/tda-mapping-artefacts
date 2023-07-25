@@ -342,6 +342,14 @@ tedm:Lot a rr:TriplesMap ;
                     rr:parentTriplesMap tedm:FrameworkAgreementTermLot
                 ] ;
         ] ;
+   rr:predicateObjectMap
+        [
+            rr:predicate epo:isSubjectToLotSpecificTerm;
+            rr:objectMap
+                [
+                    rr:parentTriplesMap tedm:SubmissionTermLot
+                ] ;
+        ] ;
     rr:predicateObjectMap
         [
             rr:predicate epo:isSubjectToLotSpecificTerm;
@@ -436,6 +444,18 @@ tedm:Lot a rr:TriplesMap ;
             rr:objectMap
                 [
                     rr:parentTriplesMap tedm:AwardCriterionCost;
+                    rr:joinCondition [
+                        rr:child "./@ITEM";
+                        rr:parent "ancestor::OBJECT_DESCR/@ITEM";
+                    ];
+                ] ;
+        ] ;
+    rr:predicateObjectMap
+        [
+            rr:predicate epo:specifiesAwardCriterion ;
+            rr:objectMap
+                [
+                    rr:parentTriplesMap tedm:AwardCriterionInDocuments;
                     rr:joinCondition [
                         rr:child "./@ITEM";
                         rr:parent "ancestor::OBJECT_DESCR/@ITEM";
@@ -992,13 +1012,13 @@ tedm:Fund a rr:TriplesMap ;
                 ]
         ] .
 
-tedm:SubmissionTerm a rr:TriplesMap ;
+tedm:SubmissionTermLot a rr:TriplesMap ;
     rr:predicateObjectMap
         [
             rr:predicate epo:hasECataloguePermission ;
             rr:objectMap
                 [
-                    rml:reference "if (exists(../OBJECT_CONTRACT/OBJECT_DESCR/ECATALOGUE_REQUIRED)) then 'http://publications.europa.eu/resource/authority/permission/required' else null";
+                    rml:reference "if (exists(ECATALOGUE_REQUIRED)) then 'http://publications.europa.eu/resource/authority/permission/required' else null";
                     rr:termType rr:IRI;
                 ] ;
         ] ;
@@ -1007,7 +1027,7 @@ tedm:SubmissionTerm a rr:TriplesMap ;
             rr:predicate epo:hasVariantPermission ;
             rr:objectMap
                 [
-                    rml:reference "if (exists(../OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS)) then 'http://publications.europa.eu/resource/authority/permission/allowed' else if(exists(../OBJECT_CONTRACT/OBJECT_DESCR/NO_ACCEPTED_VARIANTS)) then 'http://publications.europa.eu/resource/authority/permission/not-allowed' else null";
+                    rml:reference "if (exists(ACCEPTED_VARIANTS)) then 'http://publications.europa.eu/resource/authority/permission/allowed' else if(exists(NO_ACCEPTED_VARIANTS)) then 'http://publications.europa.eu/resource/authority/permission/not-allowed' else null";
                     rr:termType rr:IRI;
                 ] ;
         ] .
