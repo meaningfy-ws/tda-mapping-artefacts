@@ -15,6 +15,8 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+epd:id_2021-S-027-066753_AwardCriterionInDocuments_gvfAaTBPcQ27KymCGAwk3z a epo:AwardCriterion .
+
 epd:id_2021-S-027-066753_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
   epo:hasContactPointInRole epd:id_2021-S-027-066753_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
   epo:playedBy epd:id_2021-S-027-066753_Organisation_gqoAAwSV3JaTMsopb9zyKP .
@@ -29,6 +31,7 @@ epd:id_2021-S-027-066753_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a
   locn:fullAddress "Durchführung einer forstlichen Bodenschutzkalkung im Zuständigkeitsbereich des Forstamtes Uelzen der Landwirtschaftskammer Niedersachsen in den Bezirksförstereien Bodenteich, Boecke, Polau und Reinstorf Nord in den Landkreisen Uelzen und Lüneburg."@de .
 
 epd:id_2021-S-027-066753_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE935>;
   locn:address epd:id_2021-S-027-066753_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
 
 epd:id_2021-S-027-066753_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
@@ -65,7 +68,8 @@ epd:id_2021-S-027-066753_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2021-S-027-066753_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK;
   epo:hasDescription "Durchführung einer forstlichen Bodenschutzkalkung mit Luftfahrzeugen in den Landkreisen Uelzen und Lüneburg im Zuständigkeitsbereich des LwK Forstamtes Uelzen auf ca. 750 ha. Die Leistung umfasst die Beschaffung und Anlieferung von kohlensaurem Magnesiumkalk einschließlich der Zwischenlagerung und Umschlag, ihre Ausbringung mit geeigneter Technik in gleichmäßiger Verteilung und geforderter Ausbringungsmenge gemäß Leistungsbeschreibung."@de;
   epo:hasPurpose epd:id_2021-S-027-066753_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
-  epo:isUsingEUFunds false .
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-027-066753_AwardCriterionInDocuments_gvfAaTBPcQ27KymCGAwk3z .
 
 epd:id_2021-S-027-066753_Notice a epo:Notice, epo:PlanningNotice, epo:ResultNotice;
   epo:announcesPlannedProcurementPart epd:id_2021-S-027-066753_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG;
@@ -89,21 +93,8 @@ epd:id_2021-S-027-066753_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Addre
   locn:thoroughfare "Wendlandstr. 10" .
 
 epd:id_2021-S-027-066753_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasBuyerLegalTypeDescription "Forstwirtschaftliche Vereinigung";
   epo:hasLegalName "Forstwirtschaftliche Vereinigung Lüneburg GmBH"@de;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>;
   epo:hasMainActivityDescription "Forstwirtschaft";
   cccev:registeredAddress epd:id_2021-S-027-066753_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
 

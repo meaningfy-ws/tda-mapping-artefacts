@@ -19,6 +19,10 @@ epd:id_2020-S-152-373055_AccessTerm_cs2UnTLTWSEtLoQNm2LF8L a epo:AccessTerm;
   epo:hasRestrictedAccessURL "https://portail-achats.enedis.fr"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted true .
 
+epd:id_2020-S-152-373055_AwardCriterionInDocuments_Z5CUqQB8W7rfKPZ36JBztW a epo:AwardCriterion .
+
+epd:id_2020-S-152-373055_AwardCriterionInDocuments_Zyuz7zYCBuVmDenPm32tPz a epo:AwardCriterion .
+
 epd:id_2020-S-152-373055_Buyer_cs2UnTLTWSEtLoQNm2LF8L a epo:Buyer;
   epo:hasBuyerProfile "http://portail-achats.enedis.fr"^^xsd:anyURI;
   epo:hasContactPointInRole epd:id_2020-S-152-373055_ContactPoint_W8v6KSqiUn74jPKJmENKoH;
@@ -37,9 +41,11 @@ epd:id_2020-S-152-373055_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq a
   locn:fullAddress "Le lot est défini par les communes de la 1re Couronne Sud Est de Paris."@fr .
 
 epd:id_2020-S-152-373055_ContractTermLotLocation_aNssKXiFyYxii2v93ivV4N a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR106>;
   locn:address epd:id_2020-S-152-373055_ContractTermLotLocationAddress_aNssKXiFyYxii2v93ivV4N .
 
 epd:id_2020-S-152-373055_ContractTermLotLocation_ig8mEGUXVMgcuxfgHrQXuq a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR107>;
   locn:address epd:id_2020-S-152-373055_ContractTermLotLocationAddress_ig8mEGUXVMgcuxfgHrQXuq .
 
 epd:id_2020-S-152-373055_ContractTermLot_aNssKXiFyYxii2v93ivV4N a epo:ContractTerm;
@@ -90,7 +96,8 @@ epd:id_2020-S-152-373055_Lot_aNssKXiFyYxii2v93ivV4N a epo:Lot;
   epo:hasID epd:id_2020-S-152-373055_LotIdentifier_aNssKXiFyYxii2v93ivV4N;
   epo:hasPurpose epd:id_2020-S-152-373055_LotPurpose_aNssKXiFyYxii2v93ivV4N;
   epo:hasTitle "1re Couronne Nord"@fr;
-  epo:isUsingEUFunds false .
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2020-S-152-373055_AwardCriterionInDocuments_Z5CUqQB8W7rfKPZ36JBztW .
 
 epd:id_2020-S-152-373055_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2020-S-152-373055_ContractTermLot_ig8mEGUXVMgcuxfgHrQXuq;
@@ -100,7 +107,8 @@ epd:id_2020-S-152-373055_Lot_ig8mEGUXVMgcuxfgHrQXuq a epo:Lot;
   epo:hasID epd:id_2020-S-152-373055_LotIdentifier_ig8mEGUXVMgcuxfgHrQXuq;
   epo:hasPurpose epd:id_2020-S-152-373055_LotPurpose_ig8mEGUXVMgcuxfgHrQXuq;
   epo:hasTitle "1re Couronne Sud"@fr;
-  epo:isUsingEUFunds false .
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2020-S-152-373055_AwardCriterionInDocuments_Zyuz7zYCBuVmDenPm32tPz .
 
 epd:id_2020-S-152-373055_MainMonetaryValueLot_aNssKXiFyYxii2v93ivV4N a epo:MonetaryValue;
   epo:hasAmountValue 5940000.0;
@@ -136,21 +144,8 @@ epd:id_2020-S-152-373055_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH a locn:Addre
   locn:thoroughfare "34 place des Corolles" .
 
 epd:id_2020-S-152-373055_Organisation_W8v6KSqiUn74jPKJmENKoH a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "Enedis"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
   cccev:registeredAddress epd:id_2020-S-152-373055_OrganisationAddress_W8v6KSqiUn74jPKJmENKoH .
 
 epd:id_2020-S-152-373055_ProcedurePurpose_eKatToTqpEHkNRiu4wyHAY a epo:Purpose;

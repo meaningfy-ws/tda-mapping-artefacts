@@ -20,6 +20,8 @@ epd:id_2021-S-124-329824_AccessTerm_RWiSPwVxxCucurXbvBUteJ a epo:AccessTerm;
     "http://www.simap.ch/shabforms/servlet/Search?NOTICE_NR=1204219"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted true .
 
+epd:id_2021-S-124-329824_AwardCriterionInDocuments_cv6BTjK8bvYwvfxgcyY8yx a epo:AwardCriterion .
+
 epd:id_2021-S-124-329824_Buyer_RWiSPwVxxCucurXbvBUteJ a epo:Buyer;
   epo:hasContactPointInRole epd:id_2021-S-124-329824_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN;
   epo:playedBy epd:id_2021-S-124-329824_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
@@ -29,8 +31,8 @@ epd:id_2021-S-124-329824_ContactPoint_bhAnCWhMtKVDKPwFpTfXJN a cccev:ContactPoin
   cccev:email "batiments-constructions@sion.ch" .
 
 epd:id_2021-S-124-329824_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY a locn:Address;
-  locn:fullAddress "Centre scolaire de ChampsecChemin des Pâquerettes1950 Sion"@de,
-    "Centre scolaire de Champsec, Chemin des Pâquerettes, 1950 Sion."@fr .
+  locn:fullAddress "Centre scolaire de Champsec, Chemin des Pâquerettes, 1950 Sion."@fr,
+    "Centre scolaire de ChampsecChemin des Pâquerettes1950 Sion"@de .
 
 epd:id_2021-S-124-329824_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
   epo:hasNutsCode <http://data.europa.eu/nuts/code/CH0>;
@@ -55,7 +57,8 @@ epd:id_2021-S-124-329824_Lot_oEYZZQWPrbQFajcRU6KZAY a epo:Lot;
     "Faux-plafonds en plaques de ciment armé à peindre et en plaques de plâtre perforées acoustique à peindre."@fr;
   epo:isSubjectToLotSpecificTerm epd:id_2021-S-124-329824_OpeningTerm_NQu78Tu5A4ggZptDFZEdSR,
     epd:id_2021-S-124-329824_SubmissionTerm_oEYZZQWPrbQFajcRU6KZAY;
-  epo:isUsingEUFunds false .
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-124-329824_AwardCriterionInDocuments_cv6BTjK8bvYwvfxgcyY8yx .
 
 epd:id_2021-S-124-329824_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2021-S-124-329824_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2021-S-124-329824_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
@@ -89,8 +92,7 @@ epd:id_2021-S-124-329824_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN a locn:Addre
 epd:id_2021-S-124-329824_Organisation_bhAnCWhMtKVDKPwFpTfXJN a org:Organization;
   epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
   epo:hasLegalName "Ville de Sion, Service Bâtiments et Constructions"@de, "Ville de Sion, service bâtiments et constructions"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
   cccev:registeredAddress epd:id_2021-S-124-329824_OrganisationAddress_bhAnCWhMtKVDKPwFpTfXJN .
 
 epd:id_2021-S-124-329824_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;

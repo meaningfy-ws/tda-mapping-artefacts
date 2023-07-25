@@ -19,6 +19,8 @@ epd:id_2021-S-148-394130_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
   epo:hasPublicAccessURL "https://inlecom.eu/group/tenders/"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2021-S-148-394130_AwardCriterionInDocuments_gvfAaTBPcQ27KymCGAwk3z a epo:AwardCriterion .
+
 epd:id_2021-S-148-394130_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
   epo:hasContactPointInRole epd:id_2021-S-148-394130_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
   epo:playedBy epd:id_2021-S-148-394130_Organisation_gqoAAwSV3JaTMsopb9zyKP .
@@ -31,6 +33,7 @@ epd:id_2021-S-148-394130_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK a
   locn:fullAddress "As a minimum the firm should be able to work in all the countries listed, either directly of by using a listed Agent of Record"@en .
 
 epd:id_2021-S-148-394130_ContractTermLotLocation_c4Jggv3QHLrvEuoxvHMwcK a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE>;
   locn:address epd:id_2021-S-148-394130_ContractTermLotLocationAddress_c4Jggv3QHLrvEuoxvHMwcK .
 
 epd:id_2021-S-148-394130_ContractTermLot_c4Jggv3QHLrvEuoxvHMwcK a epo:ContractTerm;
@@ -63,7 +66,8 @@ epd:id_2021-S-148-394130_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
   epo:hasEstimatedValue epd:id_2021-S-148-394130_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
   epo:isFundedBy epd:id_2021-S-148-394130_Fund_c4Jggv3QHLrvEuoxvHMwcK;
   epo:isSubjectToLotSpecificTerm epd:id_2021-S-148-394130_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
-  epo:isUsingEUFunds true .
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2021-S-148-394130_AwardCriterionInDocuments_gvfAaTBPcQ27KymCGAwk3z .
 
 epd:id_2021-S-148-394130_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
   epo:hasAmountValue 800000.0;
@@ -95,21 +99,8 @@ epd:id_2021-S-148-394130_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Addre
   locn:postName "Brussels" .
 
 epd:id_2021-S-148-394130_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasBuyerLegalTypeDescription "Private company working in various H2020 projects";
   epo:hasLegalName "Inlecom Group BV and related companies"@en;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>;
   epo:hasMainActivityDescription "Research and Innovation Consultancy working in EU Grant Funded Projects";
   cccev:registeredAddress epd:id_2021-S-148-394130_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
 

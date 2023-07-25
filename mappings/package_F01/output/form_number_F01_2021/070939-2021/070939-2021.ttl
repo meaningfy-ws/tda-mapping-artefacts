@@ -15,6 +15,8 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+epd:id_2021-S-030-070939_AwardCriterionInDocuments_gvfAaTBPcQ27KymCGAwk3z a epo:AwardCriterion .
+
 epd:id_2021-S-030-070939_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
   epo:hasBuyerProfile "https://marches.maximilien.fr"^^xsd:anyURI;
   epo:hasContactPointInRole epd:id_2021-S-030-070939_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
@@ -52,7 +54,9 @@ epd:id_2021-S-030-070939_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
   epo:hasDescription "Ce projet comprend:— la rénovation et la mise en conformité des équipements techniques bâtiment,— la restructuration de la salle, de la cage de scène et de ses équipements scénographiques,— la création d'un nouveau studio de répétition (l'aménagement se fera ultérieurement à la livraison des travaux),— la rénovation de différents espaces connexes au fonctionnement de la salle Jean Vilar et plus largement à l'exploitation du théâtre.Interventions dans le volume de la salle Jean Vilar:— modification du volume de la cage de scène, dépose et remplacement de tout le dispositif scénographique,— création d'une tribune fixe selon l'objectif de 1 200 places,— création d'un studio de répétition en sous-face des gradins (l'aménagement se fera ultérieurement à la livraison des travaux), — aménagements des accès à la salle,— aménagements des locaux dédiés aux différentes régies.Interventions connexes à la salle:— remplacement et travaux aux niveaux des combles et autres locaux techniques, pour la rénovation des équipements techniques (CVC, CFO/CFA, plomberie),— interventions dans les différents espaces et zones connexes pour mise en conformité de l'ensemble des réseaux (fluides et électricité) dépendants des équipement techniques remplacés,— réfection complète des loges,— modification des espaces d'arrière-scène (stockages et espaces techniciens).La réhabilitation de cet ensemble vise l'exemplarité des constructions publiques en matière de performance énergétique et environnementale avec des engagements de performance."@fr;
   epo:hasEstimatedValue epd:id_2021-S-030-070939_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK;
   epo:hasPurpose epd:id_2021-S-030-070939_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-030-070939_SubmissionTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-030-070939_AwardCriterionInDocuments_gvfAaTBPcQ27KymCGAwk3z .
 
 epd:id_2021-S-030-070939_MainMonetaryValueLot_c4Jggv3QHLrvEuoxvHMwcK a epo:MonetaryValue;
   epo:hasAmountValue 30000000.0;
@@ -84,22 +88,9 @@ epd:id_2021-S-030-070939_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Addre
   locn:postName "Paris" .
 
 epd:id_2021-S-030-070939_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasBuyerLegalTypeDescription "Personne morale de droit public (établissement public industriel et commercial de l'État)";
   epo:hasLegalName "Théâtre national de Chaillot"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/rcr>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rcr>;
   cccev:registeredAddress epd:id_2021-S-030-070939_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
 
 epd:id_2021-S-030-070939_PlannedProcurementPart_BYzYaqPcdcaqVZEUggLaqG a epo:PlannedProcurementPart;
@@ -174,7 +165,9 @@ epd:id_2021-S-030-070939_Reviewer_kNwzAnsDUkmLUrSJHhyRUY a epo:Reviewer;
   epo:playedBy epd:id_2021-S-030-070939_ReviewerOrganisation_kNwzAnsDUkmLUrSJHhyRUY .
 
 epd:id_2021-S-030-070939_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
-  epo:hasSubmissionURL "https://marches.maximilien.fr"^^xsd:anyURI;
+  epo:hasSubmissionURL "https://marches.maximilien.fr"^^xsd:anyURI .
+
+epd:id_2021-S-030-070939_SubmissionTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .
 
 epd:id_2021-S-030-070939_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;

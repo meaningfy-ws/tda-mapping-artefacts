@@ -18,6 +18,10 @@
 epd:id_2018-S-031-067685_AccessTerm_ha4qvRdaNhmdBCzz2cwKfd a epo:AccessTerm;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2018-S-031-067685_AwardCriterionInDocuments_7PBbYkSrZCR62TFQWsUDha a epo:AwardCriterion .
+
+epd:id_2018-S-031-067685_AwardCriterionInDocuments_gSTbkHr7WPd4t4gtq3Y6A3 a epo:AwardCriterion .
+
 epd:id_2018-S-031-067685_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
   epo:hasContactPointInRole epd:id_2018-S-031-067685_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
   epo:playedBy epd:id_2018-S-031-067685_Organisation_gqoAAwSV3JaTMsopb9zyKP .
@@ -86,8 +90,10 @@ epd:id_2018-S-031-067685_Lot_c4Jggv3QHLrvEuoxvHMwcK a epo:Lot;
   epo:hasTitle """
                   Vehicles 16 seats and larger
                """@en;
-  epo:isSubjectToLotSpecificTerm epd:id_2018-S-031-067685_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-031-067685_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK,
+    epd:id_2018-S-031-067685_SubmissionTerm_c4Jggv3QHLrvEuoxvHMwcK, epd:id_2018-S-031-067685_SubmissionTerm_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-031-067685_AwardCriterionInDocuments_7PBbYkSrZCR62TFQWsUDha .
 
 epd:id_2018-S-031-067685_Lot_kKEXkgEhBpbdu5CJYA2aUT a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2018-S-031-067685_ContractTermLot_kKEXkgEhBpbdu5CJYA2aUT;
@@ -105,8 +111,10 @@ epd:id_2018-S-031-067685_Lot_kKEXkgEhBpbdu5CJYA2aUT a epo:Lot;
   epo:hasTitle """
                   Small and specialist vehicles below 16 seats
                """@en;
-  epo:isSubjectToLotSpecificTerm epd:id_2018-S-031-067685_MultipleStageProcedureTerm_kKEXkgEhBpbdu5CJYA2aUT;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-031-067685_MultipleStageProcedureTerm_kKEXkgEhBpbdu5CJYA2aUT,
+    epd:id_2018-S-031-067685_SubmissionTerm_c4Jggv3QHLrvEuoxvHMwcK, epd:id_2018-S-031-067685_SubmissionTerm_kKEXkgEhBpbdu5CJYA2aUT;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-031-067685_AwardCriterionInDocuments_gSTbkHr7WPd4t4gtq3Y6A3 .
 
 epd:id_2018-S-031-067685_MediatorContactPoint_2t4SUwdC66NGJuVrEY4e6J a cccev:ContactPoint;
   epo:hasInternetAddress "www.suffolksourcing.uk"^^xsd:anyURI .
@@ -157,8 +165,7 @@ epd:id_2018-S-031-067685_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Addre
 epd:id_2018-S-031-067685_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
   epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/rl-aut>;
   epo:hasLegalName "Suffolk County Council"@en;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
   cccev:registeredAddress epd:id_2018-S-031-067685_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
 
 epd:id_2018-S-031-067685_Period_c4Jggv3QHLrvEuoxvHMwcK a epo:Period;
@@ -247,7 +254,12 @@ epd:id_2018-S-031-067685_SelectionCriterion_eFnqVP3UzE3fXUda5fCFdW a epo:Selecti
 epd:id_2018-S-031-067685_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
   epo:hasLanguage "EN";
   epo:hasReceiptExpressionDeadline "2025-02-11T12:00";
-  epo:hasSubmissionURL "www.suffolksourcing.uk"^^xsd:anyURI;
+  epo:hasSubmissionURL "www.suffolksourcing.uk"^^xsd:anyURI .
+
+epd:id_2018-S-031-067685_SubmissionTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:SubmissionTerm;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .
+
+epd:id_2018-S-031-067685_SubmissionTerm_kKEXkgEhBpbdu5CJYA2aUT a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .
 
 epd:id_2018-S-031-067685_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;

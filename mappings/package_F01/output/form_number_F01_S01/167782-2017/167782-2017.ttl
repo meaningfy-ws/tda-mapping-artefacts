@@ -15,6 +15,8 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+epd:id_2017-S-086-167782_AwardCriterionInDocuments_7PBbYkSrZCR62TFQWsUDha a epo:AwardCriterion .
+
 epd:id_2017-S-086-167782_Buyer_ha4qvRdaNhmdBCzz2cwKfd a epo:Buyer;
   epo:hasContactPointInRole epd:id_2017-S-086-167782_ContactPoint_gqoAAwSV3JaTMsopb9zyKP;
   epo:playedBy epd:id_2017-S-086-167782_Organisation_gqoAAwSV3JaTMsopb9zyKP .
@@ -60,8 +62,10 @@ Es wird eine umsatzabhängige Pacht erhoben. Weiterhin ist eine Betriebs- und Ne
 Wir bitten Sie, bis zum 16.5.2017 Ihre Bewerbung bei uns einzureichen. Später bekundetes Interesse an der Mensa können wir im Bewerbungsprozess nicht berücksichtigen.
 """@de;
   epo:hasPurpose epd:id_2017-S-086-167782_LotPurpose_c4Jggv3QHLrvEuoxvHMwcK;
-  epo:isSubjectToLotSpecificTerm epd:id_2017-S-086-167782_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-086-167782_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK,
+    epd:id_2017-S-086-167782_SubmissionTerm_c4Jggv3QHLrvEuoxvHMwcK;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-086-167782_AwardCriterionInDocuments_7PBbYkSrZCR62TFQWsUDha .
 
 epd:id_2017-S-086-167782_MultipleStageProcedureTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:MultipleStageProcedureTerm .
 
@@ -86,21 +90,8 @@ epd:id_2017-S-086-167782_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP a locn:Addre
   locn:thoroughfare "Keibelstr. 36" .
 
 epd:id_2017-S-086-167782_Organisation_gqoAAwSV3JaTMsopb9zyKP a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasBuyerLegalTypeDescription "Land Berlin (SILB Sondervermögen Immobilien des Landes Berlin)";
   epo:hasLegalName "Land Berlin – SILB Sondervermögen Immobilien des Landes Berlin, vertreten durch die BIM Berliner Immobilienmanagement GmbH"@de;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>;
   epo:hasMainActivityDescription "Immobilienwirtschaft";
   cccev:registeredAddress epd:id_2017-S-086-167782_OrganisationAddress_gqoAAwSV3JaTMsopb9zyKP .
 
@@ -182,7 +173,9 @@ epd:id_2017-S-086-167782_SelectionCriterion_eFnqVP3UzE3fXUda5fCFdW a epo:Selecti
 
 epd:id_2017-S-086-167782_SubmissionTerm_KX8MaayAMxqXBuD94Kuz62 a epo:SubmissionTerm;
   epo:hasLanguage "DE";
-  epo:hasReceiptExpressionDeadline "2017-05-16";
+  epo:hasReceiptExpressionDeadline "2017-05-16" .
+
+epd:id_2017-S-086-167782_SubmissionTerm_c4Jggv3QHLrvEuoxvHMwcK a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .
 
 epd:id_2017-S-086-167782_TenderReceiver_8pKhtQvMqBvLceMDCBJfqU a epo:TenderReceiver;
