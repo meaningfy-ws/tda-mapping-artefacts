@@ -1670,11 +1670,25 @@ tedm:SubmissionPeriod  a rr:TriplesMap ;
             rr:class epo:Period
         ] .
 
-tedm:SubmissionTermProcedure a rr:TriplesMap ;
+tedm:SubmissionTermLot a rr:TriplesMap ;
     rr:subjectMap
         [
             rml:reference
-                "if(exists(../OBJECT_CONTRACT/OBJECT_DESCR/ECATALOGUE_REQUIRED) or exists(../OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS) or exists(../OBJECT_CONTRACT/OBJECT_DESCR/NO_ACCEPTED_VARIANTS) or exists(DATE_RECEIPT_TENDERS) or exists(TIME_RECEIPT_TENDERS) or exists(LANGUAGES/LANGUAGE/@VALUE) or exists(../CONTRACTING_BODY/URL_PARTICIPATION)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_SubmissionTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+                "if(exists(ECATALOGUE_REQUIRED) or exists(ACCEPTED_VARIANTS) or exists(NO_ACCEPTED_VARIANTS)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_SubmissionTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
+            rr:class epo:SubmissionTerm
+        ] ;
+    rml:logicalSource
+        [
+            rml:source "data/source.xml" ;
+            rml:iterator "/TED_EXPORT/FORM_SECTION/F08_2014/OBJECT_CONTRACT/OBJECT_DESCR" ;
+            rml:referenceFormulation ql:XPath
+        ] .
+
+tedm:SubmissionTerm a rr:TriplesMap ;
+    rr:subjectMap
+        [
+            rml:reference
+                "if(exists(DATE_RECEIPT_TENDERS) or exists(TIME_RECEIPT_TENDERS) or exists(LANGUAGES/LANGUAGE/@VALUE) or exists(../CONTRACTING_BODY/URL_PARTICIPATION)) then 'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_SubmissionTerm_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw') else null" ;
             rr:class epo:SubmissionTerm
         ] ;
     rml:logicalSource
