@@ -1,10 +1,10 @@
-#title: II.2.7.5.2 - This contract is subject to renewal
-#description: “II.2.7.5.2 - This contract is subject to renewal” in SF corresponds to “BT-58 Renewal Maximum” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F05_2014/OBJECT_CONTRACT/OBJECT_DESCR/NO_RENEWAL. The expected ontology instances are epo: epo:Lot / epo:ContractTerm / xsd:boolean .
-#xpath: /TED_EXPORT/FORM_SECTION/F05_2014/OBJECT_CONTRACT/OBJECT_DESCR/NO_RENEWAL
+#title: II.2.7.6 - Description of renewals
+#description: “II.2.7.6 - Description of renewals” in SF corresponds to “BT-57 Renewal Description” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F05_2014/OBJECT_CONTRACT/OBJECT_DESCR/RENEWAL_DESCR. The expected ontology instances are epo: epo:Lot / epo:ContractTerm / rdf:langString .
+#xpath: /TED_EXPORT/FORM_SECTION/F05_2014/OBJECT_CONTRACT/OBJECT_DESCR/RENEWAL_DESCR
 
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
 		?this rdf:type epo:Lot .
-		?this epo:foreseesContractSpecificTerm / epo:isRenewalIndicator false . }
+		?this epo:foreseesContractSpecificTerm / epo:hasRenewalDescription ?value . }

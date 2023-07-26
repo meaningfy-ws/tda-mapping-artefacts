@@ -1,10 +1,10 @@
-#title: IV.1.3.2 - The procurement involves the setting up of a dynamic purchasing system
-#description: “IV.1.3.2 - The procurement involves the setting up of a dynamic purchasing system” in SF corresponds to “BT-766 Dynamic Purchasing System” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/DPS. The expected ontology instances are epo: epo:Procedure / epo:DynamicPurchaseSystemTechniqueUsage .
-#xpath: /TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/DPS
+#title: VI.2.2 - Electronic invoicing will be accepted
+#description: “VI.2.2 - Electronic invoicing will be accepted” in SF corresponds to “BT-743 nan” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/EINVOICING. The expected ontology instances are epo: epo:Procedure / epo:ContractTerm / xsd:boolean .
+#xpath: /TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/EINVOICING
 
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
 		?this rdf:type epo:Procedure .
-		?this epo:usesTechnique ?value . }
+		?this epo:foreseesContractSpecificTerm / epo:hasEInvoicing true . }
