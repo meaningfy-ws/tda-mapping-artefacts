@@ -1,10 +1,10 @@
-#title: III.1.8 - Legal form to be taken by the group of economic operators to whom the contract is to be awarded:
-#description: “III.1.8 - Legal form to be taken by the group of economic operators to whom the contract is to be awarded:” in SF corresponds to “BT-761 Tenderer Legal Form” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F05_2014/LEFTI/LEGAL_FORM/P. The expected ontology instances are epo: epo:Procedure / epo:ContractTerm / rdf:langString .
-#xpath: /TED_EXPORT/FORM_SECTION/F05_2014/LEFTI/LEGAL_FORM/P
+#title: IV.1.3.2.1 - The dynamic purchasing system might be used by additional purchasers
+#description: “IV.1.3.2.1 - The dynamic purchasing system might be used by additional purchasers” in SF corresponds to “BT-766 Dynamic Purchasing System” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F05_2014/PROCEDURE/DPS_ADDITIONAL_PURCHASERS. The expected ontology instances are epo: epo:DynamicPurchaseSystemTechniqueUsage / at-voc:dps-usage .
+#xpath: /TED_EXPORT/FORM_SECTION/F05_2014/PROCEDURE/DPS_ADDITIONAL_PURCHASERS
 
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
-		?this rdf:type epo:Procedure .
-		?this epo:foreseesContractSpecificTerm /         epo:hasContractorLegalFormRequirementDescription ?value . }
+		?this rdf:type epo:DynamicPurchaseSystemTechniqueUsage .
+		?this epo:hasDPSScope <http://publications.europa.eu/resource/authority/dps-usage/dps-nlist> . }

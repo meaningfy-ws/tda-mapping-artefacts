@@ -1,10 +1,10 @@
-#title: IV.2.7.1 - Public Opening (Date/Time)
-#description: “IV.2.7.1 - Public Opening (Date/Time)” in SF corresponds to “BT-132 Public Opening Date” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F05_2014/PROCEDURE/OPENING_CONDITION/DATE_OPENING_TENDERS ;; /TED_EXPORT/FORM_SECTION/F05_2014/PROCEDURE/OPENING_CONDITION/TIME_OPENING_TENDERS. The expected ontology instances are epo: epo:Procedure / epo:Lot / epo:OpeningTerm / xsd:dateTime .
-#xpath: /TED_EXPORT/FORM_SECTION/F05_2014/PROCEDURE/OPENING_CONDITION/DATE_OPENING_TENDERS ;; /TED_EXPORT/FORM_SECTION/F05_2014/PROCEDURE/OPENING_CONDITION/TIME_OPENING_TENDERS
+#title: VI.3 - Additional information
+#description: “VI.3 - Additional information” in SF corresponds to “BT-300 Additional Information” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F05_2014/COMPLEMENTARY_INFO/INFO_ADD. The expected ontology instances are epo: epo:Procedure / rdf:langString .
+#xpath: /TED_EXPORT/FORM_SECTION/F05_2014/COMPLEMENTARY_INFO/INFO_ADD
 
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
 		?this rdf:type epo:Procedure .
-		?this epo:hasProcurementScopeDividedIntoLot / epo:isSubjectToLotSpecificTerm / epo:hasOpeningDateTime ?value . }
+		?this epo:hasAdditionalInformation ?value . }
