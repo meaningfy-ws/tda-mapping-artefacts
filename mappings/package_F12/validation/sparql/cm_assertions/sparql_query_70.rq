@@ -1,5 +1,5 @@
 #title: I.3.5 - Electronic communication requires the use of tools and devices that are not generally available. Unrestricted and full direct access to these tools and devices is possible free of charge, at (URL)
-#description: “I.3.5 - Electronic communication requires the use of tools and devices that are not generally available. Unrestricted and full direct access to these tools and devices is possible free of charge, at (URL)” in SF corresponds to “BT-124 nan” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F12_2014/CONTRACTING_BODY/URL_TOOL. The expected ontology instances are epo: epo:Procedure / cv:Channel / xsd:anyURI .
+#description: “I.3.5 - Electronic communication requires the use of tools and devices that are not generally available. Unrestricted and full direct access to these tools and devices is possible free of charge, at (URL)” in SF corresponds to “BT-124 nan” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F12_2014/CONTRACTING_BODY/URL_TOOL. The expected ontology instances are epo: epo:Procedure / cv:Channel / xsd:boolean .
 #xpath: /TED_EXPORT/FORM_SECTION/F12_2014/CONTRACTING_BODY/URL_TOOL
 
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
@@ -7,4 +7,4 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
 		?this rdf:type epo:Procedure .
-		?this epo:usesChannel  / epo:hasURL ?value . }
+		?this epo:usesChannel  / epo:isAdhocChannel true . }
