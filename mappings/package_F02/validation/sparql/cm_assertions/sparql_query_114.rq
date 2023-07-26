@@ -1,10 +1,10 @@
-#title: II.2.11.2 - Description of options
-#description: “II.2.11.2 - Description of options” in SF corresponds to “BT-54 Options Description” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/OPTIONS_DESCR. The expected ontology instances are epo: epo:Lot / epo:ContractTerm / rdf:langString .
-#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/OPTIONS_DESCR
+#title: II.2.12.1 - Tenders must be presented in the form of electronic catalogues or include an electronic catalogue
+#description: “II.2.12.1 - Tenders must be presented in the form of electronic catalogues or include an electronic catalogue” in SF corresponds to “BT-764 Submission Electronic Catalogue” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/ECATALOGUE_REQUIRED. The expected ontology instances are epo: epo:Lot / epo:SubmissionTerm / at-voc:permission .
+#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/ECATALOGUE_REQUIRED
 
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
 		?this rdf:type epo:Lot .
-		?this epo:foreseesContractSpecificTerm / epo:hasOptionsDescription ?value . }
+		?this epo:isSubjectToLotSpecificTerm / epo:hasECataloguePermission <http://publications.europa.eu/resource/authority/permission/required> . }

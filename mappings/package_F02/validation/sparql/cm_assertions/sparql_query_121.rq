@@ -1,11 +1,10 @@
-#title: III.1.1.1 - List and brief description of conditions, indication of information and documentation required
-#description: “III.1.1.1 - List and brief description of conditions, indication of information and documentation required” in SF corresponds to “BT-750 Selection Criteria Description” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/SUITABILITY/P. The expected ontology instances are epo: epo:Lot / epo:SelectionCriterion / rdf:langString .
-#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/LEFTI/SUITABILITY/P
+#title: IV.1.1.1.2 - Justification:
+#description: “IV.1.1.1.2 - Justification:” in SF corresponds to “BT-1351 Procedure Accelerated Justification” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE/ACCELERATED_PROC. The expected ontology instances are epo: epo:Procedure / rdf:langString .
+#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE/ACCELERATED_PROC
 
-PREFIX cccev: <http://data.europa.eu/m8g/>
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
-		?this rdf:type epo:Lot .
-		?this epo:specifiesSelectionCriterion / cccev:description ?value . }
+		?this rdf:type epo:Procedure .
+		?this epo:hasAcceleratedProcedureJustification ?value . }
