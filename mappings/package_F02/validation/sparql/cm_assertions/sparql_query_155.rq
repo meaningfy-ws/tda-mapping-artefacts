@@ -1,11 +1,10 @@
-#title: IV.2.7.2 - Place
-#description: “IV.2.7.2 - Place” in SF corresponds to “BT-133 Public Opening Place” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE/OPENING_CONDITION/PLACE. The expected ontology instances are epo: epo:Procedure / epo:Lot / epo:OpeningTerm / locn:Address / rdf:langString .
-#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/PROCEDURE/OPENING_CONDITION/PLACE
+#title: VI.4.1 - Review body
+#description: “VI.4.1 - Review body” in SF corresponds to “--- nan” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY. The expected ontology instances are epo: epo:Notice / epo:AgentInRole (from CL1) .
+#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY
 
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
-PREFIX locn: <http://www.w3.org/ns/locn#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
-		?this rdf:type epo:Procedure .
-		?this epo:hasProcurementScopeDividedIntoLot / epo:isSubjectToLotSpecificTerm /  epo:definesOpeningPlace / locn:fullAddress ?value . }
+		?this rdf:type epo:Notice .
+		?this epo:announcesRole ?value }
