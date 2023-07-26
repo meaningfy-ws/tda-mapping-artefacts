@@ -4,20 +4,15 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
-@prefix rr: <http://www.w3.org/ns/r2rml#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epd:id_2018-S-115-262742_AccessTerm_i7DzDaWCEZJKutzCZmQxGd a epo:AccessTerm;
   epo:hasPublicAccessURL "https://www.etenders.gov.mt/epps/cft/prepareViewCfTWS.do?resourceId=4617256"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-115-262742_AwardCriterionInDocuments_kogTxTCFwno6qMv3vvCK5J a epo:AwardCriterion .
 
 epd:id_2018-S-115-262742_Buyer_i7DzDaWCEZJKutzCZmQxGd a epo:Buyer;
   epo:hasBuyerProfile "https://www.etenders.gov.mt/epps"^^xsd:anyURI;
@@ -54,7 +49,8 @@ epd:id_2018-S-115-262742_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
                   Concession for tuck shop.
                """@en;
   epo:hasPurpose epd:id_2018-S-115-262742_LotPurpose_RgULVPVVYP9pkvK789PCUZ;
-  epo:isUsingEUFunds false .
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-115-262742_AwardCriterionInDocuments_kogTxTCFwno6qMv3vvCK5J .
 
 epd:id_2018-S-115-262742_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2018-S-115-262742_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2018-S-115-262742_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
@@ -76,20 +72,7 @@ epd:id_2018-S-115-262742_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Addre
   locn:thoroughfare "Ministry for Education and Employment, Francesco Buonamici Street" .
 
 epd:id_2018-S-115-262742_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "Ministry for Education and Employment"@en;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>;
   epo:hasMainActivityDescription "Tuck Shop";
   cccev:registeredAddress epd:id_2018-S-115-262742_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
 
