@@ -1,11 +1,10 @@
-#title: II.2.5.1.2 - The criteria described below (Criterion:)
-#description: “II.2.5.1.2 - The criteria described below (Criterion:)” in SF corresponds to “BT-543 Award Criterion complicated” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F24_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_CRITERION ;; /TED_EXPORT/FORM_SECTION/F24_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_CRITERION. The expected ontology instances are epo: epo:AwardCriterion / rdf:langString .
-#xpath: /TED_EXPORT/FORM_SECTION/F24_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_CRITERION ;; /TED_EXPORT/FORM_SECTION/F24_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_CRITERION
+#title: II.2.6.1 - Value excluding VAT
+#description: “II.2.6.1 - Value excluding VAT” in SF corresponds to “BT-27 Estimated Value” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F24_2014/OBJECT_CONTRACT/OBJECT_DESCR/VAL_OBJECT. The expected ontology instances are epo: epo:Lot / epo:MonetaryValue / xsd:decimal .
+#xpath: /TED_EXPORT/FORM_SECTION/F24_2014/OBJECT_CONTRACT/OBJECT_DESCR/VAL_OBJECT
 
-PREFIX cccev: <http://data.europa.eu/m8g/>
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
-		?this rdf:type epo:AwardCriterion .
-		?this cccev:description ?value . }
+		?this rdf:type epo:Lot .
+		?this epo:hasEstimatedValue / epo:hasAmountValue ?value . }
