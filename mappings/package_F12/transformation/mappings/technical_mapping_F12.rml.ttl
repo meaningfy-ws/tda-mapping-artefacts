@@ -1428,6 +1428,19 @@ tedm:AwardCriterion a rr:TriplesMap ;
                 "'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_AwardCriterion_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw')" ;
             rr:class epo:AwardCriterion
         ] .
+tedm:AwardCriterionInDocuments a rr:TriplesMap ;
+    rml:logicalSource
+        [
+            rml:source "data/source.xml" ;
+            rml:iterator "/TED_EXPORT/FORM_SECTION/F12_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_PROCUREMENT_DOC | /TED_EXPORT/FORM_SECTION/F12_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PROCUREMENT_DOC" ;
+            rml:referenceFormulation ql:XPath
+        ] ;
+    rr:subjectMap
+        [
+            rml:reference
+                "'http://data.europa.eu/a4g/resource/id_' || replace(replace(/TED_EXPORT/CODED_DATA_SECTION/NOTICE_DATA/NO_DOC_OJS, ' ', '-' ), '/' , '-') || '_AwardCriterionInDocuments_' || unparsed-text('https://digest-api.ted-data.eu/api/v1/hashing/fn/uuid/' || encode-for-uri(path()) || '?response_type=raw')" ;
+            rr:class epo:AwardCriterion
+        ] .
 tedm:ConcessionEstimate a rr:TriplesMap ;
     rml:logicalSource
         [
