@@ -19,6 +19,8 @@ epd:id_2017-S-050-092615_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasRestrictedAccessURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted true .
 
+epd:id_2017-S-050-092615_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V a epo:AwardCriterion .
+
 epd:id_2017-S-050-092615_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasBuyerProfile "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
   epo:hasContactPointInRole epd:id_2017-S-050-092615_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
@@ -110,8 +112,10 @@ A l'issue de la Phase R1, SNCF Réseau dispose de trois mois pour analyser et cl
 — Phase D: Il s'agit de la phase développement. Les titulaires, 3 sous réserve d'un nombre suffisant d'offres recevables, sélectionnés réalisent une prestation de développement de la solution conformément à l'Expression de besoins. La Phase de développement court sur 36 mois et se termine une fois l'homologation prononcée et la tête de série mise en service. A l'issue de la phase D, si un ou plusieurs Titulaires ne respectent pas les niveaux de performance technique (Objectifs d'innovation et objectifs de réalisation) et les gains économiques minimums (Objectifs économiques) convenus, le Contrat est résilié de plein droit.
 — Phase de déploiement: Il s'agit du déploiement des PAI NG3. Les titulaires, 3 sous réserve d'un nombre suffisant d'offres recevables, sélectionnés à l'issue de la Phase D doivent réaliser le déploiement des PAI NG3. La phase de déploiement court sur une période de 10 ans et à l'issue sur une reconduction potentielle de 5 ans.
 """@fr;
-  epo:isSubjectToLotSpecificTerm epd:id_2017-S-050-092615_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-050-092615_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2017-S-050-092615_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-050-092615_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V .
 
 epd:id_2017-S-050-092615_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
   epo:hasAmountValue 1150000000.0;
@@ -142,21 +146,8 @@ epd:id_2017-S-050-092615_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Addre
   locn:thoroughfare "120 boulevard Vivier Merle" .
 
 epd:id_2017-S-050-092615_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "SNCF Réseau"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
   cccev:registeredAddress epd:id_2017-S-050-092615_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2017-S-050-092615_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
@@ -268,8 +259,10 @@ epd:id_2017-S-050-092615_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:Selecti
 epd:id_2017-S-050-092615_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period .
 
 epd:id_2017-S-050-092615_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
-  epo:hasECataloguePermission <http://publications.europa.eu/resource/authority/permission/required>;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2017-S-050-092615_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasValidityPeriod epd:id_2017-S-050-092615_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-050-092615_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
+  epo:hasECataloguePermission <http://publications.europa.eu/resource/authority/permission/required>;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .

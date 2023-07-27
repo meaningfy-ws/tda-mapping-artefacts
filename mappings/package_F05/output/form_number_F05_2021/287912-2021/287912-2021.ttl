@@ -19,6 +19,8 @@ epd:id_2021-S-109-287912_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasPublicAccessURL "https://alsacemarchespublics.eu/?page=entreprise.EntrepriseAdvancedSearch&AllCons&id=527103&orgAcronyme=d8w"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2021-S-109-287912_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s a epo:AwardCriterion .
+
 epd:id_2021-S-109-287912_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasContactPointInRole epd:id_2021-S-109-287912_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:playedBy epd:id_2021-S-109-287912_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
@@ -63,8 +65,9 @@ epd:id_2021-S-109-287912_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:hasEstimatedValue epd:id_2021-S-109-287912_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2021-S-109-287912_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
   epo:isSubjectToLotSpecificTerm epd:id_2021-S-109-287912_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
-    epd:id_2021-S-109-287912_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
-  epo:isUsingEUFunds false .
+    epd:id_2021-S-109-287912_OpeningTerm_cXSnYA74JQqvZFUrXASMUH, epd:id_2021-S-109-287912_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-109-287912_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s .
 
 epd:id_2021-S-109-287912_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
   epo:hasAmountValue 2000000.0;
@@ -103,21 +106,8 @@ epd:id_2021-S-109-287912_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Ide
   epo:hasIdentifierValue "49924660100011" .
 
 epd:id_2021-S-109-287912_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasID epd:id_2021-S-109-287912_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:hasLegalName "Fondation CIRFC"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>;
   epo:hasMainActivityDescription "Opérateur de recherche";
   cccev:registeredAddress epd:id_2021-S-109-287912_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
@@ -163,5 +153,7 @@ epd:id_2021-S-109-287912_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
 
 epd:id_2021-S-109-287912_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "EN", "FR";
-  epo:hasSubmissionURL "https://alsacemarchespublics.eu/?page=entreprise.EntrepriseAdvancedSearch&AllCons&id=527103&orgAcronyme=d8w"^^xsd:anyURI;
+  epo:hasSubmissionURL "https://alsacemarchespublics.eu/?page=entreprise.EntrepriseAdvancedSearch&AllCons&id=527103&orgAcronyme=d8w"^^xsd:anyURI .
+
+epd:id_2021-S-109-287912_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .

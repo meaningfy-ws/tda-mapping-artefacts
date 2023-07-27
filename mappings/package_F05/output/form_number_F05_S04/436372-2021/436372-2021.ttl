@@ -19,6 +19,8 @@ epd:id_2021-S-166-436372_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasPublicAccessURL "https://tendsign.com/doc.aspx?UniqueId=affqpjjhxs&GoTo=Docs"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2021-S-166-436372_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s a epo:AwardCriterion .
+
 epd:id_2021-S-166-436372_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasContactPointInRole epd:id_2021-S-166-436372_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:playedBy epd:id_2021-S-166-436372_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
@@ -55,8 +57,10 @@ epd:id_2021-S-166-436372_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2021-S-166-436372_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasDescription "Datacenter för dricksvattenverken i Gränby och Bäcklösa samt Kungsängsverket och biogasanläggningen."@sv;
   epo:hasPurpose epd:id_2021-S-166-436372_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isSubjectToLotSpecificTerm epd:id_2021-S-166-436372_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-166-436372_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-166-436372_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-166-436372_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s .
 
 epd:id_2021-S-166-436372_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
 
@@ -84,22 +88,9 @@ epd:id_2021-S-166-436372_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Ide
   epo:hasIdentifierValue "556025-0051" .
 
 epd:id_2021-S-166-436372_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasID epd:id_2021-S-166-436372_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:hasLegalName "Uppsala Vatten och Avfall AB"@sv;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/water>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
   cccev:registeredAddress epd:id_2021-S-166-436372_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2021-S-166-436372_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
@@ -148,5 +139,7 @@ epd:id_2021-S-166-436372_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period;
 epd:id_2021-S-166-436372_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "SV";
   epo:hasSubmissionURL "https://tendsign.com/doc.aspx?UniqueId=affqpjjhxs&GoTo=Tender"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2021-S-166-436372_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasValidityPeriod epd:id_2021-S-166-436372_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-166-436372_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .

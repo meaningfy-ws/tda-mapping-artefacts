@@ -19,6 +19,8 @@ epd:id_2018-S-007-012289_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasPublicAccessURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2018-S-007-012289_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V a epo:AwardCriterion .
+
 epd:id_2018-S-007-012289_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasBuyerProfile "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
   epo:hasContactPointInRole epd:id_2018-S-007-012289_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
@@ -75,8 +77,10 @@ epd:id_2018-S-007-012289_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
                   Les offres sont sollicitées en vue: d'un achat.
                """@fr;
   epo:hasPurpose epd:id_2018-S-007-012289_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isSubjectToLotSpecificTerm epd:id_2018-S-007-012289_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-007-012289_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2018-S-007-012289_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-007-012289_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V .
 
 epd:id_2018-S-007-012289_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
   epo:hasMaximumNumberOfCandidates 3 .
@@ -102,21 +106,8 @@ epd:id_2018-S-007-012289_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Addre
   locn:thoroughfare "116 cours Lafayette — CS 13511" .
 
 epd:id_2018-S-007-012289_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "SNCF mobilités"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
   cccev:registeredAddress epd:id_2018-S-007-012289_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2018-S-007-012289_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
@@ -223,5 +214,7 @@ epd:id_2018-S-007-012289_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionT
             """;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
-  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed>;
   epo:isGuaranteeRequired true .
+
+epd:id_2018-S-007-012289_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .

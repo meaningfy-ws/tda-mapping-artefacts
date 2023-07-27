@@ -19,6 +19,8 @@ epd:id_2017-S-142-292951_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasRestrictedAccessURL "https://pmp.b2g.etat.lu/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=14443&orgAcronyme=t5y"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted true .
 
+epd:id_2017-S-142-292951_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V a epo:AwardCriterion .
+
 epd:id_2017-S-142-292951_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasContactPointInRole epd:id_2017-S-142-292951_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:playedBy epd:id_2017-S-142-292951_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
@@ -86,7 +88,9 @@ epd:id_2017-S-142-292951_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
                   
                """@fr;
   epo:hasPurpose epd:id_2017-S-142-292951_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-142-292951_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-142-292951_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V .
 
 epd:id_2017-S-142-292951_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2017-S-142-292951_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-142-292951_ProcurementProcedureInformationProvider_FxmRFqszG85mxBF5kaCcKe,
@@ -108,21 +112,8 @@ epd:id_2017-S-142-292951_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Addre
   locn:thoroughfare "9, place de la Gare" .
 
 epd:id_2017-S-142-292951_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "Société nationale des chemins de fer luxembourgeois"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
   cccev:registeredAddress epd:id_2017-S-142-292951_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2017-S-142-292951_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
@@ -178,7 +169,9 @@ epd:id_2017-S-142-292951_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:Selecti
 
 epd:id_2017-S-142-292951_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasSubmissionURL "https://pmp.b2g.etat.lu/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=14443&orgAcronyme=t5y"^^xsd:anyURI;
+  epo:hasSubmissionURL "https://pmp.b2g.etat.lu/?page=entreprise.EntrepriseAdvancedSearch&AllCons&refConsultation=14443&orgAcronyme=t5y"^^xsd:anyURI .
+
+epd:id_2017-S-142-292951_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .
 
 epd:id_2017-S-142-292951_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;

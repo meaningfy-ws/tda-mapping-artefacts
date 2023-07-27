@@ -19,6 +19,8 @@ epd:id_2021-S-126-334815_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasPublicAccessURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2021_kschaRtYFR"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2021-S-126-334815_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s a epo:AwardCriterion .
+
 epd:id_2021-S-126-334815_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasBuyerProfile "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2021_kschaRtYFR"^^xsd:anyURI;
   epo:hasContactPointInRole epd:id_2021-S-126-334815_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
@@ -66,7 +68,9 @@ epd:id_2021-S-126-334815_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:hasDescription "La présente consultation a pour objet la fourniture, le développement et l'installation des systèmes de courants faibles (réseau Multi-services, vidéosurveillance, gestion technique centralisée) déployés sur l'ensemble de la ligne T Zen 4."@fr;
   epo:hasEstimatedValue epd:id_2021-S-126-334815_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2021-S-126-334815_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-126-334815_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-126-334815_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s .
 
 epd:id_2021-S-126-334815_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
   epo:hasAmountValue 1830000.0;
@@ -121,22 +125,9 @@ epd:id_2021-S-126-334815_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Ide
   epo:hasIdentifierValue "28750007800020" .
 
 epd:id_2021-S-126-334815_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasID epd:id_2021-S-126-334815_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:hasLegalName "Île de France mobilités"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
   cccev:registeredAddress epd:id_2021-S-126-334815_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2021-S-126-334815_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
@@ -216,5 +207,7 @@ epd:id_2021-S-126-334815_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionT
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2021_kschaRtYFR"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2021-S-126-334815_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed>;
   epo:isGuaranteeRequired true .
+
+epd:id_2021-S-126-334815_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .

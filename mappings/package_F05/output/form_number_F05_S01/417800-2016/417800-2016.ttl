@@ -25,6 +25,8 @@ epd:id_2016-S-229-417800_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasPublicAccessURL "https://www.vergabe24.de/vergabeunterlagen/54321-Tender-1588a753e37-668727e0331ead2f"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2016-S-229-417800_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V a epo:AwardCriterion .
+
 epd:id_2016-S-229-417800_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasContactPointInRole epd:id_2016-S-229-417800_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:playedBy epd:id_2016-S-229-417800_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
@@ -68,8 +70,10 @@ epd:id_2016-S-229-417800_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
 73 Stück Alu-Fenster mit Außenrollos.
 """@de;
   epo:hasPurpose epd:id_2016-S-229-417800_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isSubjectToLotSpecificTerm epd:id_2016-S-229-417800_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-229-417800_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2016-S-229-417800_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2016-S-229-417800_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V .
 
 epd:id_2016-S-229-417800_MediatorContactPoint_Der4dmnz4iLnj5vKZroTMU a cccev:ContactPoint;
   epo:hasFax "+49 621-860861-20";
@@ -119,21 +123,8 @@ epd:id_2016-S-229-417800_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Addre
   locn:thoroughfare "Parkstraße 16" .
 
 epd:id_2016-S-229-417800_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "Zweckverband Schönbuchbahn"@de;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
   cccev:registeredAddress epd:id_2016-S-229-417800_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2016-S-229-417800_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
@@ -226,8 +217,10 @@ S. Vergabeunterlagen.
 """;
   epo:hasLanguage "DE";
   epo:hasValidityPeriod epd:id_2016-S-229-417800_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed>;
   epo:isGuaranteeRequired true .
+
+epd:id_2016-S-229-417800_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .
 
 epd:id_2016-S-229-417800_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2016-S-229-417800_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;

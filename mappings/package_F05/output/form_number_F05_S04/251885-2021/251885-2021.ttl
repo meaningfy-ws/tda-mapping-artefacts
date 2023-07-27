@@ -19,6 +19,10 @@ epd:id_2021-S-096-251885_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasPublicAccessURL "https://fournisseurs.aeroportsdeparis.fr"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2021-S-096-251885_AwardCriterionInDocuments_9fUhtni3Jzbzki2Lh5ftvC a epo:AwardCriterion .
+
+epd:id_2021-S-096-251885_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s a epo:AwardCriterion .
+
 epd:id_2021-S-096-251885_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasContactPointInRole epd:id_2021-S-096-251885_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:playedBy epd:id_2021-S-096-251885_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
@@ -34,9 +38,11 @@ epd:id_2021-S-096-251885_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a
   locn:fullAddress "Aéroport de Paris Orly — terminaux d'Orly 1, 2, 3 et 4 parkings au contact (périmètre Oryea)."@fr .
 
 epd:id_2021-S-096-251885_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR104>;
   locn:address epd:id_2021-S-096-251885_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
 
 epd:id_2021-S-096-251885_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR104>;
   locn:address epd:id_2021-S-096-251885_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
 
 epd:id_2021-S-096-251885_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
@@ -99,8 +105,10 @@ epd:id_2021-S-096-251885_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:hasID epd:id_2021-S-096-251885_LotIdentifier_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2021-S-096-251885_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasTitle "SPA017776L01 — lot 1 — Maintenance équipements électroméca PARIFS-SSLIA"@fr;
-  epo:isSubjectToLotSpecificTerm epd:id_2021-S-096-251885_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-096-251885_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-096-251885_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj, epd:id_2021-S-096-251885_SubmissionTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-096-251885_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s .
 
 epd:id_2021-S-096-251885_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2021-S-096-251885_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
@@ -109,8 +117,10 @@ epd:id_2021-S-096-251885_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
   epo:hasID epd:id_2021-S-096-251885_LotIdentifier_Vxue4SiZ9v6DD9ffmckCQj;
   epo:hasPurpose epd:id_2021-S-096-251885_LotPurpose_Vxue4SiZ9v6DD9ffmckCQj;
   epo:hasTitle "SPA017776L02 — lot 2 — maintenance équipements électroméca galeries techniques, parking et terminaux de la plate-forme Paris Orly"@fr;
-  epo:isSubjectToLotSpecificTerm epd:id_2021-S-096-251885_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-096-251885_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj,
+    epd:id_2021-S-096-251885_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj, epd:id_2021-S-096-251885_SubmissionTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-096-251885_AwardCriterionInDocuments_9fUhtni3Jzbzki2Lh5ftvC .
 
 epd:id_2021-S-096-251885_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
   epo:hasMaximumNumberOfCandidates 10;
@@ -141,21 +151,8 @@ epd:id_2021-S-096-251885_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Addre
   locn:thoroughfare "1 rue de France" .
 
 epd:id_2021-S-096-251885_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "Aéroports de Paris"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
   cccev:registeredAddress epd:id_2021-S-096-251885_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2021-S-096-251885_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
@@ -215,5 +212,10 @@ epd:id_2021-S-096-251885_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period .
 epd:id_2021-S-096-251885_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://fournisseurs.aeroportsdeparis.fr"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2021-S-096-251885_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasValidityPeriod epd:id_2021-S-096-251885_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-096-251885_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .
+
+epd:id_2021-S-096-251885_SubmissionTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .

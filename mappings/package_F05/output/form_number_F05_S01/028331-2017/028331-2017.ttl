@@ -19,6 +19,14 @@ epd:id_2017-S-017-028331_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasPublicAccessURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2017-S-017-028331_AwardCriterionInDocuments_7SxvHLovMHPvh6GwyTXDkF a epo:AwardCriterion .
+
+epd:id_2017-S-017-028331_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V a epo:AwardCriterion .
+
+epd:id_2017-S-017-028331_AwardCriterionInDocuments_WdHEsPnmdVBr6Qsqp4ecFA a epo:AwardCriterion .
+
+epd:id_2017-S-017-028331_AwardCriterionInDocuments_neq3x275q9o7Ex9sbfFrDX a epo:AwardCriterion .
+
 epd:id_2017-S-017-028331_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasBuyerProfile "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
   epo:hasContactPointInRole epd:id_2017-S-017-028331_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
@@ -51,6 +59,7 @@ Régions Bourgogne Franche-Comté, Auvergne-Rhône-Alpes, Occitanie, Provence-Al
 """@fr .
 
 epd:id_2017-S-017-028331_ContractTermLotLocation_32L5QtPBVpA5CJ4PqGRoL2 a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR51>;
   locn:address epd:id_2017-S-017-028331_ContractTermLotLocationAddress_32L5QtPBVpA5CJ4PqGRoL2 .
 
 epd:id_2017-S-017-028331_ContractTermLotLocation_8SnxRM7z7L8aATWrQVC4hf a dct:Location;
@@ -58,9 +67,11 @@ epd:id_2017-S-017-028331_ContractTermLotLocation_8SnxRM7z7L8aATWrQVC4hf a dct:Lo
   locn:address epd:id_2017-S-017-028331_ContractTermLotLocationAddress_8SnxRM7z7L8aATWrQVC4hf .
 
 epd:id_2017-S-017-028331_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR3>;
   locn:address epd:id_2017-S-017-028331_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
 
 epd:id_2017-S-017-028331_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR43>;
   locn:address epd:id_2017-S-017-028331_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
 
 epd:id_2017-S-017-028331_ContractTermLot_32L5QtPBVpA5CJ4PqGRoL2 a epo:ContractTerm;
@@ -156,7 +167,11 @@ Missions de gestion des risques, de connaissance des actifs, de réalisation de 
   epo:hasTitle """
 Ouest et Sud-Ouest
 """@fr;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-017-028331_SubmissionTerm_32L5QtPBVpA5CJ4PqGRoL2,
+    epd:id_2017-S-017-028331_SubmissionTerm_8SnxRM7z7L8aATWrQVC4hf, epd:id_2017-S-017-028331_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2017-S-017-028331_SubmissionTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-017-028331_AwardCriterionInDocuments_neq3x275q9o7Ex9sbfFrDX .
 
 epd:id_2017-S-017-028331_Lot_8SnxRM7z7L8aATWrQVC4hf a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2017-S-017-028331_ContractTermLot_8SnxRM7z7L8aATWrQVC4hf;
@@ -168,7 +183,11 @@ Missions de gestion des risques, de connaissance des actifs, de réalisation de 
   epo:hasTitle """
 Île-de-France
 """@fr;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-017-028331_SubmissionTerm_32L5QtPBVpA5CJ4PqGRoL2,
+    epd:id_2017-S-017-028331_SubmissionTerm_8SnxRM7z7L8aATWrQVC4hf, epd:id_2017-S-017-028331_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2017-S-017-028331_SubmissionTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-017-028331_AwardCriterionInDocuments_7SxvHLovMHPvh6GwyTXDkF .
 
 epd:id_2017-S-017-028331_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2017-S-017-028331_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
@@ -180,7 +199,11 @@ Missions de gestion des risques, de connaissance des actifs, de réalisation de 
   epo:hasTitle """
 Nord et Est
 """@fr;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-017-028331_SubmissionTerm_32L5QtPBVpA5CJ4PqGRoL2,
+    epd:id_2017-S-017-028331_SubmissionTerm_8SnxRM7z7L8aATWrQVC4hf, epd:id_2017-S-017-028331_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2017-S-017-028331_SubmissionTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-017-028331_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V .
 
 epd:id_2017-S-017-028331_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2017-S-017-028331_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
@@ -192,7 +215,11 @@ Missions de gestion des risques, de connaissance des actifs, de réalisation de 
   epo:hasTitle """
 Grand Sud et Sud-Est
 """@fr;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-017-028331_SubmissionTerm_32L5QtPBVpA5CJ4PqGRoL2,
+    epd:id_2017-S-017-028331_SubmissionTerm_8SnxRM7z7L8aATWrQVC4hf, epd:id_2017-S-017-028331_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2017-S-017-028331_SubmissionTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-017-028331_AwardCriterionInDocuments_WdHEsPnmdVBr6Qsqp4ecFA .
 
 epd:id_2017-S-017-028331_Notice a epo:Notice, epo:ResultNotice;
   epo:announcesRole epd:id_2017-S-017-028331_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2017-S-017-028331_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
@@ -216,21 +243,8 @@ epd:id_2017-S-017-028331_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Addre
   locn:thoroughfare "4 rue André Campra" .
 
 epd:id_2017-S-017-028331_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "SNCF"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
   cccev:registeredAddress epd:id_2017-S-017-028331_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2017-S-017-028331_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
@@ -336,8 +350,19 @@ epd:id_2017-S-017-028331_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:Selecti
 
 epd:id_2017-S-017-028331_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period .
 
+epd:id_2017-S-017-028331_SubmissionTerm_32L5QtPBVpA5CJ4PqGRoL2 a epo:SubmissionTerm;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .
+
+epd:id_2017-S-017-028331_SubmissionTerm_8SnxRM7z7L8aATWrQVC4hf a epo:SubmissionTerm;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .
+
 epd:id_2017-S-017-028331_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "http://www.sncf.com/fr/fournisseurs/avis-de-marche"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2017-S-017-028331_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasValidityPeriod epd:id_2017-S-017-028331_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-017-028331_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .
+
+epd:id_2017-S-017-028331_SubmissionTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .

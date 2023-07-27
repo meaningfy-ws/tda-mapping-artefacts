@@ -19,6 +19,8 @@ epd:id_2017-S-057-106421_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasPublicAccessURL "https://www.marches-securises.fr/"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2017-S-057-106421_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V a epo:AwardCriterion .
+
 epd:id_2017-S-057-106421_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasBuyerProfile "http://www.marches-securises.fr/"^^xsd:anyURI;
   epo:hasContactPointInRole epd:id_2017-S-057-106421_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
@@ -104,8 +106,9 @@ Les candidats peuvent postuler à l'accord-cadre même s'ils ne sont pas en capa
 """@fr;
   epo:hasPurpose epd:id_2017-S-057-106421_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
   epo:isSubjectToLotSpecificTerm epd:id_2017-S-057-106421_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
-    epd:id_2017-S-057-106421_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
-  epo:isUsingEUFunds false .
+    epd:id_2017-S-057-106421_OpeningTerm_cXSnYA74JQqvZFUrXASMUH, epd:id_2017-S-057-106421_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-057-106421_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V .
 
 epd:id_2017-S-057-106421_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm .
 
@@ -136,21 +139,8 @@ epd:id_2017-S-057-106421_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Addre
   locn:thoroughfare "Établissement public franco-suisse, BP 60120" .
 
 epd:id_2017-S-057-106421_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "Aéroport de Bâle-Mulhouse"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
   cccev:registeredAddress epd:id_2017-S-057-106421_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2017-S-057-106421_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
@@ -238,8 +228,10 @@ Aucun.
 """;
   epo:hasLanguage "DE", "FR";
   epo:hasValidityPeriod epd:id_2017-S-057-106421_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed>;
   epo:isGuaranteeRequired true .
+
+epd:id_2017-S-057-106421_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .
 
 epd:id_2017-S-057-106421_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

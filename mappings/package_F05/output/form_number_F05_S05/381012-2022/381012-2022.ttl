@@ -34,7 +34,8 @@ epd:id_2022-S-133-381012_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW a cccev:ContactPoin
   cccev:email "karol.szkurat@operator.enea.pl";
   cccev:telephone "+48 618843942" .
 
-epd:id_2022-S-133-381012_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location .
+epd:id_2022-S-133-381012_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL41> .
 
 epd:id_2022-S-133-381012_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
   epo:definesContractPeriod epd:id_2022-S-133-381012_Period_HKNfdBmeACvzBZy3TfjLFj;
@@ -56,7 +57,8 @@ epd:id_2022-S-133-381012_EAuctionTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G a epo:EAu
 epd:id_2022-S-133-381012_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2022-S-133-381012_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasDescription "Przedmiotem zamówienia jest dostawa wkładek bezpiecznikowych nn dla potrzeb ENEA Operator Sp. z o.o. Szczegółowe informacje dotyczące zamówienia znajdują się SWZ, zamieszczonej na stronie internetowej Zamawiającego wskazanej w sekcji I.3) Komunikacja – ogłoszenia."@pl;
-  epo:isSubjectToLotSpecificTerm epd:id_2022-S-133-381012_OpeningTerm_cXSnYA74JQqvZFUrXASMUH;
+  epo:isSubjectToLotSpecificTerm epd:id_2022-S-133-381012_OpeningTerm_cXSnYA74JQqvZFUrXASMUH,
+    epd:id_2022-S-133-381012_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2022-S-133-381012_AwardCriterionPrice_cBFBS3nRWorKMdTzCTdXbJ .
 
@@ -111,22 +113,9 @@ epd:id_2022-S-133-381012_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Ide
   epo:hasIdentifierValue "PL" .
 
 epd:id_2022-S-133-381012_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasID epd:id_2022-S-133-381012_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:hasLegalName "ENEA Operator Sp. z o.o."@pl;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
   cccev:registeredAddress epd:id_2022-S-133-381012_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2022-S-133-381012_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
@@ -214,8 +203,10 @@ epd:id_2022-S-133-381012_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionT
   epo:hasLanguage "PL";
   epo:hasSubmissionURL "https://ezamowienia.gov.pl/pl/"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2022-S-133-381012_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed>;
   epo:isGuaranteeRequired true .
+
+epd:id_2022-S-133-381012_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .
 
 epd:id_2022-S-133-381012_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

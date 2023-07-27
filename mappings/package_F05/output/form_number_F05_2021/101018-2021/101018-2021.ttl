@@ -19,6 +19,8 @@ epd:id_2021-S-040-101018_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasPublicAccessURL "https://www.marches-securises.fr"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2021-S-040-101018_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s a epo:AwardCriterion .
+
 epd:id_2021-S-040-101018_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasBuyerProfile "https://www.marches-securises.fr"^^xsd:anyURI;
   epo:hasContactPointInRole epd:id_2021-S-040-101018_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
@@ -84,8 +86,10 @@ epd:id_2021-S-040-101018_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:hasDescription "Le marché n'est pas alloti. Le marché n'est pas un accord-cadre à bons de commande. La Régie Eau d'Azur impose une contrainte budgétaire maximale qui correspond au budget global actuellement alloué au régime frais de santé. Le montant de cette contrainte budgétaire annuelle s'élève à 560 000 EUR pour le régime des actifs (à effectifs constant), soit 4 480 000 EUR sur la durée maximale du marché (huit ans). Pour information, la Régie Eau d'Azur prend en charge 50 % de la cotisation totale, soit un budget annuel de 280 000 EUR."@fr;
   epo:hasEstimatedValue epd:id_2021-S-040-101018_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2021-S-040-101018_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isSubjectToLotSpecificTerm epd:id_2021-S-040-101018_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-040-101018_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-040-101018_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-040-101018_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s .
 
 epd:id_2021-S-040-101018_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
   epo:hasAmountValue 4480000.0;
@@ -121,21 +125,8 @@ epd:id_2021-S-040-101018_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Addre
   locn:thoroughfare "Crystal Palace, 369/371 promenade des Anglais — CS 53135" .
 
 epd:id_2021-S-040-101018_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "Régie Eau d'Azur"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/water>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
   cccev:registeredAddress epd:id_2021-S-040-101018_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2021-S-040-101018_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
@@ -219,8 +210,10 @@ epd:id_2021-S-040-101018_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionT
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://www.marches-securises.fr"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2021-S-040-101018_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
-  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed>;
   epo:isGuaranteeRequired true .
+
+epd:id_2021-S-040-101018_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .
 
 epd:id_2021-S-040-101018_TenderReceiverOrganisationAddress_RmPNyhSxpRtChEASKUU5BR
   a locn:Address;

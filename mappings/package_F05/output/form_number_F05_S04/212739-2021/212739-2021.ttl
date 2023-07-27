@@ -19,6 +19,8 @@ epd:id_2021-S-082-212739_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasPublicAccessURL "https://marches.megalis.bretagne.bzh/"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2021-S-082-212739_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s a epo:AwardCriterion .
+
 epd:id_2021-S-082-212739_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasContactPointInRole epd:id_2021-S-082-212739_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:playedBy epd:id_2021-S-082-212739_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
@@ -56,8 +58,10 @@ epd:id_2021-S-082-212739_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:hasDescription "Accord-cadre mono-attributaire pour l'entretien des espaces verts et prestations complémentaires sur l'usine de production d'AEP  de Pont ar Bled."@fr;
   epo:hasEstimatedValue epd:id_2021-S-082-212739_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasPurpose epd:id_2021-S-082-212739_LotPurpose_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isSubjectToLotSpecificTerm epd:id_2021-S-082-212739_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-082-212739_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-082-212739_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-082-212739_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s .
 
 epd:id_2021-S-082-212739_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
   epo:hasAmountValue 20000.0;
@@ -90,21 +94,8 @@ epd:id_2021-S-082-212739_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Addre
   locn:thoroughfare "210 boulevard F. Mitterrand, CS 30117" .
 
 epd:id_2021-S-082-212739_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "Eau du Ponant"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/water>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/water>;
   cccev:registeredAddress epd:id_2021-S-082-212739_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2021-S-082-212739_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
@@ -148,5 +139,7 @@ epd:id_2021-S-082-212739_Reviewer_Zgn49ZJAMhimY7VJZcSfaj a epo:Reviewer;
 
 epd:id_2021-S-082-212739_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasSubmissionURL "https://marches.megalis.bretagne.bzh/"^^xsd:anyURI;
+  epo:hasSubmissionURL "https://marches.megalis.bretagne.bzh/"^^xsd:anyURI .
+
+epd:id_2021-S-082-212739_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .

@@ -19,6 +19,8 @@ epd:id_2021-S-053-134692_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasPublicAccessURL "https://ratp.bravosolution.com/web/login.html"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted false .
 
+epd:id_2021-S-053-134692_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s a epo:AwardCriterion .
+
 epd:id_2021-S-053-134692_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasBuyerProfile "https://ratp.bravosolution.com/web/login.html"^^xsd:anyURI;
   epo:hasContactPointInRole epd:id_2021-S-053-134692_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
@@ -60,8 +62,10 @@ epd:id_2021-S-053-134692_Lot_HKNfdBmeACvzBZy3TfjLFj a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2021-S-053-134692_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj;
   epo:hasAdditionalInformation "D44 services — exploitation."@fr;
   epo:hasDescription "Le marché envisagé est un accord-cadre à commandes avec un montant minimal et un montant maximal.Les prestations incluses dans le périmètre du marché sont décrites ci-dessous:Prestations du montant minimal:— des prestations récurrentes de gestes de proximité en data center en heures ouvrées d’une durée de 36 mois.Prestations du montant maximal:— les prestations du montant minimum;— une prestation d’initialisation d’une durée d'un mois;— des prestations récurrentes de gestes de proximité en data center en heures ouvrées d’une durée maximale complémentaire de 24 mois maximum;— des prestations d'astreinte en data center d’une durée maximale de 60 mois;— des prestations de prise en charge à l'acte lors de prestations d’astreintes en data center pour un maximum de 75 occurrences;— des prestations de déplacements d’équipements entre sites informatiques pour un maximum de 180 équipements sur la durée du marché;— des prestations associées sur site informatique pour un maximum de 140 jours × hommes sur la durée du marché;— une prestation de réversibilité à un tiers ou à la RATP d’une durée de trois mois."@fr;
-  epo:isSubjectToLotSpecificTerm epd:id_2021-S-053-134692_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-053-134692_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2021-S-053-134692_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-053-134692_AwardCriterionInDocuments_FMAKDjmkCh8Jbtq87Qgk2s .
 
 epd:id_2021-S-053-134692_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
   epo:hasSuccessiveReduction true .
@@ -91,22 +95,9 @@ epd:id_2021-S-053-134692_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Ide
   epo:hasIdentifierValue "77566343801906" .
 
 epd:id_2021-S-053-134692_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasID epd:id_2021-S-053-134692_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:hasLegalName "RATP"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
   cccev:registeredAddress epd:id_2021-S-053-134692_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2021-S-053-134692_ProcedureIdentifier_9mbUbNZTkZjYLzuqbonrEb a epo:Identifier;
@@ -186,7 +177,9 @@ epd:id_2021-S-053-134692_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period .
 epd:id_2021-S-053-134692_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
   epo:hasSubmissionURL "https://ratp.bravosolution.com/web/login.html"^^xsd:anyURI;
-  epo:hasValidityPeriod epd:id_2021-S-053-134692_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasValidityPeriod epd:id_2021-S-053-134692_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-053-134692_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .
 
 epd:id_2021-S-053-134692_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;

@@ -19,6 +19,8 @@ epd:id_2017-S-023-040145_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasRestrictedAccessURL "http://www.grdf.fr/"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted true .
 
+epd:id_2017-S-023-040145_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V a epo:AwardCriterion .
+
 epd:id_2017-S-023-040145_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasContactPointInRole epd:id_2017-S-023-040145_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:playedBy epd:id_2017-S-023-040145_Organisation_8Vr7PSUfbFjPG8q2pCjrDW .
@@ -35,6 +37,7 @@ IDF Est, 1ère couronne.
 """@fr .
 
 epd:id_2017-S-023-040145_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR108>;
   locn:address epd:id_2017-S-023-040145_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
 
 epd:id_2017-S-023-040145_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
@@ -92,8 +95,10 @@ Engagement financier: 10 000 000 EUR.
   epo:hasTitle """
 Renouvellement de réseau IDF Est, 1ère couronne
 """@fr;
-  epo:isSubjectToLotSpecificTerm epd:id_2017-S-023-040145_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-023-040145_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2017-S-023-040145_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-023-040145_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V .
 
 epd:id_2017-S-023-040145_MainMonetaryValueLot_HKNfdBmeACvzBZy3TfjLFj a epo:MonetaryValue;
   epo:hasAmountValue 10000000.0;
@@ -130,22 +135,9 @@ epd:id_2017-S-023-040145_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW a epo:Ide
   epo:hasIdentifierValue "444736511" .
 
 epd:id_2017-S-023-040145_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasID epd:id_2017-S-023-040145_OrganisationIdentifier_8Vr7PSUfbFjPG8q2pCjrDW;
   epo:hasLegalName "GRDF"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/gas-heat>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gas-heat>;
   cccev:registeredAddress epd:id_2017-S-023-040145_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2017-S-023-040145_Period_HKNfdBmeACvzBZy3TfjLFj a epo:Period;
@@ -239,7 +231,9 @@ epd:id_2017-S-023-040145_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period .
 
 epd:id_2017-S-023-040145_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasValidityPeriod epd:id_2017-S-023-040145_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:hasValidityPeriod epd:id_2017-S-023-040145_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2017-S-023-040145_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .
 
 epd:id_2017-S-023-040145_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;

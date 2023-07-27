@@ -19,6 +19,8 @@ epd:id_2016-S-214-390143_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasRestrictedAccessURL "https://pha.edf.com"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted true .
 
+epd:id_2016-S-214-390143_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V a epo:AwardCriterion .
+
 epd:id_2016-S-214-390143_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasBuyerProfile "www.pha.edf.com"^^xsd:anyURI;
   epo:hasContactPointInRole epd:id_2016-S-214-390143_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
@@ -83,8 +85,10 @@ Cependant, des études techniques sont en cours et permettront éventuellement �
   epo:hasDescription """
 Prestation complète d'études et de travaux de renouvellement des postes électriques HTB aériens des centrales nucléaires de production d'électricité (CNPE) d'EDF, incluant la fourniture des équipements et les études d'interchangeabilité.
 """@fr;
-  epo:isSubjectToLotSpecificTerm epd:id_2016-S-214-390143_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-214-390143_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2016-S-214-390143_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2016-S-214-390143_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V .
 
 epd:id_2016-S-214-390143_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj a epo:MultipleStageProcedureTerm;
   epo:hasMaximumNumberOfCandidates 7;
@@ -111,21 +115,8 @@ epd:id_2016-S-214-390143_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Addre
   locn:thoroughfare "22-30 avenue de Wagram" .
 
 epd:id_2016-S-214-390143_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "EDF SA"@fr;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
   cccev:registeredAddress epd:id_2016-S-214-390143_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2016-S-214-390143_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
@@ -217,7 +208,9 @@ epd:id_2016-S-214-390143_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:Selecti
 
 epd:id_2016-S-214-390143_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
-  epo:hasSubmissionURL "https://pha.edf.com"^^xsd:anyURI;
+  epo:hasSubmissionURL "https://pha.edf.com"^^xsd:anyURI .
+
+epd:id_2016-S-214-390143_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> .
 
 epd:id_2016-S-214-390143_TenderReceiver_KXgPXnPXfxE32oaEMfEEqr a epo:TenderReceiver;

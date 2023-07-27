@@ -19,6 +19,10 @@ epd:id_2017-S-024-042489_AccessTerm_T4mynogGdLKyTZh8YakGYW a epo:AccessTerm;
   epo:hasRestrictedAccessURL "www.mytenders.org"^^xsd:anyURI;
   epo:isProcurementDocumentRestricted true .
 
+epd:id_2017-S-024-042489_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V a epo:AwardCriterion .
+
+epd:id_2017-S-024-042489_AwardCriterionInDocuments_WdHEsPnmdVBr6Qsqp4ecFA a epo:AwardCriterion .
+
 epd:id_2017-S-024-042489_Buyer_T4mynogGdLKyTZh8YakGYW a epo:Buyer;
   epo:hasBuyerProfile "http://www.mytenders.org/search/Search_AuthProfile.aspx?ID=AA39569"^^xsd:anyURI;
   epo:hasContactPointInRole epd:id_2017-S-024-042489_ContactPoint_8Vr7PSUfbFjPG8q2pCjrDW;
@@ -84,8 +88,10 @@ Electricity supply contracts.
   epo:hasTitle """
 Electricity Supply
 """@en;
-  epo:isSubjectToLotSpecificTerm epd:id_2017-S-024-042489_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-024-042489_MultipleStageProcedureTerm_HKNfdBmeACvzBZy3TfjLFj,
+    epd:id_2017-S-024-042489_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj, epd:id_2017-S-024-042489_SubmissionTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-024-042489_AwardCriterionInDocuments_G8Y9tXtaKVagoLD6zyk76V .
 
 epd:id_2017-S-024-042489_Lot_Vxue4SiZ9v6DD9ffmckCQj a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2017-S-024-042489_ContractTermLot_Vxue4SiZ9v6DD9ffmckCQj;
@@ -97,8 +103,10 @@ Natural Gas Supply Contracts.
   epo:hasTitle """
 Natural Gas
 """@en;
-  epo:isSubjectToLotSpecificTerm epd:id_2017-S-024-042489_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj;
-  epo:isUsingEUFunds false .
+  epo:isSubjectToLotSpecificTerm epd:id_2017-S-024-042489_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj,
+    epd:id_2017-S-024-042489_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj, epd:id_2017-S-024-042489_SubmissionTerm_Vxue4SiZ9v6DD9ffmckCQj;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-024-042489_AwardCriterionInDocuments_WdHEsPnmdVBr6Qsqp4ecFA .
 
 epd:id_2017-S-024-042489_MonetaryValueProcedure_9mbUbNZTkZjYLzuqbonrEb a epo:MonetaryValue;
   epo:hasAmountValue 500000000.0;
@@ -130,21 +138,8 @@ epd:id_2017-S-024-042489_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW a locn:Addre
   locn:thoroughfare "28 King Charles Crescent" .
 
 epd:id_2017-S-024-042489_Organisation_8Vr7PSUfbFjPG8q2pCjrDW a org:Organization;
-  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/def-cont>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/eu-ins-bod-ag>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/grp-p-aut>, <http://publications.europa.eu/resource/authority/buyer-legal-type/int-org>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/la>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-cga>, <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/org-sub-ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-cga>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-la>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/pub-undert-ra>,
-    <http://publications.europa.eu/resource/authority/buyer-legal-type/ra>, <http://publications.europa.eu/resource/authority/buyer-legal-type/spec-rights-entity>;
   epo:hasLegalName "Energy for Good Limited"@en;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
-    <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
   cccev:registeredAddress epd:id_2017-S-024-042489_OrganisationAddress_8Vr7PSUfbFjPG8q2pCjrDW .
 
 epd:id_2017-S-024-042489_ProcedurePurpose_9mbUbNZTkZjYLzuqbonrEb a epo:Purpose;
@@ -211,5 +206,10 @@ epd:id_2017-S-024-042489_SelectionCriterion_YvcuudSefyGVAMRDjLo4yD a epo:Selecti
 
 epd:id_2017-S-024-042489_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "EN";
-  epo:hasSubmissionURL "www.mytenders.org"^^xsd:anyURI;
+  epo:hasSubmissionURL "www.mytenders.org"^^xsd:anyURI .
+
+epd:id_2017-S-024-042489_SubmissionTerm_HKNfdBmeACvzBZy3TfjLFj a epo:SubmissionTerm;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .
+
+epd:id_2017-S-024-042489_SubmissionTerm_Vxue4SiZ9v6DD9ffmckCQj a epo:SubmissionTerm;
   epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .
