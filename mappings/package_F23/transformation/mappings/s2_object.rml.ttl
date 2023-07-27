@@ -339,7 +339,11 @@ tedm:Lot a rr:TriplesMap ;
             rr:predicate epo:isSubjectToLotSpecificTerm;
             rr:objectMap
                 [
-                    rr:parentTriplesMap tedm:FrameworkAgreementTermLot
+                    rr:parentTriplesMap tedm:FrameworkAgreementTermLot;
+                    rr:joinCondition [
+                        rr:child "path()";
+                        rr:parent "path()";
+                    ];
                 ] ;
         ] ;
    rr:predicateObjectMap
@@ -347,7 +351,11 @@ tedm:Lot a rr:TriplesMap ;
             rr:predicate epo:isSubjectToLotSpecificTerm;
             rr:objectMap
                 [
-                    rr:parentTriplesMap tedm:SubmissionTermLot
+                    rr:parentTriplesMap tedm:SubmissionTermLot;
+                    rr:joinCondition [
+                        rr:child "path()";
+                        rr:parent "path()";
+                    ];
                 ] ;
         ] ;
     rr:predicateObjectMap
