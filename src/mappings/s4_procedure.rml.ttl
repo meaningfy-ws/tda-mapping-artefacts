@@ -148,7 +148,9 @@ tedm:OpeningTerm  a rr:TriplesMap ;
             rr:objectMap
                 [
                     rml:reference "PLACE";
-                    rr:datatype xsd:string
+                    rml:languageMap [
+                        rml:reference "lower-case(ancestor::*/@LG)"
+                    ]
                 ]
         ] .
 
