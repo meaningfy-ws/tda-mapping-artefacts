@@ -71,12 +71,15 @@ install-rmlmapper-with-cached-xmlresolver:
 init-saxon:
 	@ echo -e "$(BUILD_PRINT)Saxon folder initialization $(END_BUILD_PRINT)"
 	@ wget -c https://kumisystems.dl.sourceforge.net/project/saxon/Saxon-HE/10/Java/SaxonHE10-6J.zip -P .saxon/
-	@ cd .saxon && unzip SaxonHE10-6J.zip && rm -rf SaxonHE10-6J.zip
+	@ cd .saxon && unzip SaxonHE10-6J.zip
 
 saxon-path-add-dotenv-file:
 	@ echo -e "$(BUILD_PRINT)Add Saxon path to local .env file $(END_BUILD_PRINT)"
 	@ sed -i '/^XML_PROCESSOR_PATH/d' $(ENV_FILE)
 	@ echo XML_PROCESSOR_PATH=${XML_PROCESSOR_PATH} >> $(ENV_FILE)
+
+clean:
+	@ test -d .saxon && rm -rfv .saxon/SaxonHE10-6J.zip
 
 clear-output:
 	@ rm -rf mappings/$(id)/output/*
