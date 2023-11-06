@@ -70,7 +70,7 @@ install-rmlmapper-with-cached-xmlresolver:
 
 init-saxon:
 	@ echo -e "$(BUILD_PRINT)Saxon folder initialization $(END_BUILD_PRINT)"
-	@ wget -c https://kumisystems.dl.sourceforge.net/project/saxon/Saxon-HE/10/Java/SaxonHE10-6J.zip -P .saxon/
+	@ wget -c https://downloads.sourceforge.net/project/saxon/Saxon-HE/10/Java/SaxonHE10-6J.zip -P .saxon/
 	@ cd .saxon && unzip SaxonHE10-6J.zip
 
 saxon-path-add-dotenv-file:
