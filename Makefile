@@ -28,12 +28,15 @@ install:
 
 dev-dotenv-file: init-dotenv-file rml-mapper-path-add-dotenv-file saxon-path-add-dotenv-file dev-secrets-dotenv-file
 
-local-dotenv-file: rml-mapper-path-add-dotenv-file saxon-path-add-dotenv-file local-secrets-dotenv-file
+local-dotenv-file: init-dotenv-file-local rml-mapper-path-add-dotenv-file saxon-path-add-dotenv-file local-secrets-dotenv-file
 
 init-dotenv-file:
 	@ echo VAULT_ADDR=${VAULT_ADDR} > $(ENV_FILE)
 	@ echo VAULT_TOKEN=${VAULT_TOKEN} >> $(ENV_FILE)
-	
+
+init-dotenv-file-local:
+	@ test -e $(ENV_FILE) || touch $(ENV_FILE)
+
 rml-mapper-path-add-dotenv-file:
 	@ echo -e "$(BUILD_PRINT)Add rml-mapper path to local .env file $(END_BUILD_PRINT)"
 	@ sed -i '/^RML_MAPPER_PATH/d' $(ENV_FILE)
