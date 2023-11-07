@@ -28,12 +28,15 @@ install:
 
 dev-dotenv-file: init-dotenv-file rml-mapper-path-add-dotenv-file saxon-path-add-dotenv-file dev-secrets-dotenv-file
 
-local-dotenv-file: rml-mapper-path-add-dotenv-file saxon-path-add-dotenv-file local-secrets-dotenv-file
+local-dotenv-file: init-dotenv-file-local rml-mapper-path-add-dotenv-file saxon-path-add-dotenv-file local-secrets-dotenv-file
 
 init-dotenv-file:
 	@ echo VAULT_ADDR=${VAULT_ADDR} > $(ENV_FILE)
 	@ echo VAULT_TOKEN=${VAULT_TOKEN} >> $(ENV_FILE)
-	
+
+init-dotenv-file-local:
+	@ test -e $(ENV_FILE) || touch $(ENV_FILE)
+
 rml-mapper-path-add-dotenv-file:
 	@ echo -e "$(BUILD_PRINT)Add rml-mapper path to local .env file $(END_BUILD_PRINT)"
 	@ sed -i '/^RML_MAPPER_PATH/d' $(ENV_FILE)
@@ -67,13 +70,16 @@ install-rmlmapper-with-cached-xmlresolver:
 
 init-saxon:
 	@ echo -e "$(BUILD_PRINT)Saxon folder initialization $(END_BUILD_PRINT)"
-	@ wget -c https://kumisystems.dl.sourceforge.net/project/saxon/Saxon-HE/10/Java/SaxonHE10-6J.zip -P .saxon/
-	@ cd .saxon && unzip SaxonHE10-6J.zip && rm -rf SaxonHE10-6J.zip
+	@ wget -c https://downloads.sourceforge.net/project/saxon/Saxon-HE/10/Java/SaxonHE10-6J.zip -P .saxon/
+	@ cd .saxon && unzip SaxonHE10-6J.zip
 
 saxon-path-add-dotenv-file:
 	@ echo -e "$(BUILD_PRINT)Add Saxon path to local .env file $(END_BUILD_PRINT)"
 	@ sed -i '/^XML_PROCESSOR_PATH/d' $(ENV_FILE)
 	@ echo XML_PROCESSOR_PATH=${XML_PROCESSOR_PATH} >> $(ENV_FILE)
+
+clean:
+	@ test -d .saxon && rm -rfv .saxon/SaxonHE10-6J.zip
 
 clear-output:
 	@ rm -rf mappings/$(id)/output/*
