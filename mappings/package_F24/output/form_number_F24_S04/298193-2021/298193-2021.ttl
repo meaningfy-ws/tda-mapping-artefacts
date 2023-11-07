@@ -4,7 +4,14 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -49,7 +56,7 @@ epd:id_2021-S-113-298193_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2021-S-113-298193_AwardCriterionInDocuments_7tyPb9orsuxsY7zD599rpi .
 
-epd:id_2021-S-113-298193_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2021-S-113-298193_Notice a epo:CompetitionNotice, epo:Notice;
   epo:announcesRole epd:id_2021-S-113-298193_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2021-S-113-298193_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
     epd:id_2021-S-113-298193_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
   epo:hasDispatchDate "2021-06-09"^^xsd:date;
@@ -70,7 +77,7 @@ epd:id_2021-S-113-298193_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Addre
   locn:thoroughfare "Centre hospitalier de Perpignan — 20 avenue du Languedoc — BP 49954" .
 
 epd:id_2021-S-113-298193_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
-  epo:hasBuyerLegalTypeDescription "Centre hospitalier";
+  epo:hasBuyerLegalTypeDescription "Centre hospitalier"@fr;
   epo:hasLegalName "Centre hospitalier de Perpignan"@fr;
   epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/health>;
   cccev:registeredAddress epd:id_2021-S-113-298193_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
@@ -121,4 +128,5 @@ epd:id_2021-S-113-298193_SelectionCriterion_mrRQveETBETMd3vM2NKqjA a epo:Selecti
 
 epd:id_2021-S-113-298193_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
   epo:hasLanguage "FR";
+  epo:hasReceiptDeadline "2021-07-26T16:45";
   epo:hasSubmissionURL "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2021_47B2f8Cyfp"^^xsd:anyURI .
