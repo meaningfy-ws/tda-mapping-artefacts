@@ -4,7 +4,15 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epd:id_2018-S-178-403911_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
@@ -42,7 +50,7 @@ epd:id_2018-S-178-403911_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
   epo:isSubjectToLotSpecificTerm epd:id_2018-S-178-403911_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
-epd:id_2018-S-178-403911_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2018-S-178-403911_Notice a epo:CompetitionNotice, epo:Notice;
   epo:announcesRole epd:id_2018-S-178-403911_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2018-S-178-403911_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
     epd:id_2018-S-178-403911_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2018-S-178-403911_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
   epo:hasDispatchDate "2018-09-12"^^xsd:date;
@@ -83,7 +91,11 @@ epd:id_2018-S-178-403911_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
   epo:hasTitle "Разработване на концептуален архитектурно-градоустройствен проект за площад „Света Неделя“, гр. София"@bg;
   epo:isDesignContest true;
   epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-178-403911_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
-    epd:id_2018-S-178-403911_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2018-S-178-403911_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+    epd:id_2018-S-178-403911_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2018-S-178-403911_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR;
+  epo:isSubjectToTerm epd:id_2018-S-178-403911_ProcessPlanningTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2018-S-178-403911_ProcessPlanningTerm_jzfUStbcPNEXArDM2fL5TR a epo:ProcessPlanningTerm;
+  epo:hasEstimatedTenderInvitationDate "2018-12-20"^^xsd:date .
 
 epd:id_2018-S-178-403911_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
   a epo:ProcurementProcedureInformationProvider;
@@ -116,7 +128,8 @@ epd:id_2018-S-178-403911_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
 epd:id_2018-S-178-403911_SelectionCriterion_KLMkPPxCmjNo7fzvNJfdkt a epo:SelectionCriterion .
 
 epd:id_2018-S-178-403911_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
-  epo:hasLanguage "BG" .
+  epo:hasLanguage "BG";
+  epo:hasReceiptDeadline "2018-10-18T17:30" .
 
 epd:id_2018-S-178-403911_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
   epo:hasContactPointInRole epd:id_2018-S-178-403911_ContactPoint_VX8RygdBbvDo5gNDhjcsTj;

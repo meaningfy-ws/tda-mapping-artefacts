@@ -4,7 +4,15 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epd:id_2017-S-084-164005_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
@@ -57,7 +65,7 @@ Le présent concours est un concours sur esquisse.
   epo:isSubjectToLotSpecificTerm epd:id_2017-S-084-164005_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
-epd:id_2017-S-084-164005_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2017-S-084-164005_Notice a epo:CompetitionNotice, epo:Notice;
   epo:announcesRole epd:id_2017-S-084-164005_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2017-S-084-164005_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
     epd:id_2017-S-084-164005_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2017-S-084-164005_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
   epo:hasDispatchDate "2017-04-27"^^xsd:date;
@@ -105,7 +113,11 @@ Concours restreint de maîtrise d'œuvre pour l'extension de la capacité d'accu
 """@fr;
   epo:isDesignContest true;
   epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-084-164005_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
-    epd:id_2017-S-084-164005_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2017-S-084-164005_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+    epd:id_2017-S-084-164005_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2017-S-084-164005_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR;
+  epo:isSubjectToTerm epd:id_2017-S-084-164005_ProcessPlanningTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2017-S-084-164005_ProcessPlanningTerm_jzfUStbcPNEXArDM2fL5TR a epo:ProcessPlanningTerm;
+  epo:hasEstimatedTenderInvitationDate "2017-07-21"^^xsd:date .
 
 epd:id_2017-S-084-164005_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
   a epo:ProcurementProcedureInformationProvider;
@@ -143,6 +155,7 @@ epd:id_2017-S-084-164005_SelectionCriterion_KLMkPPxCmjNo7fzvNJfdkt a epo:Selecti
 
 epd:id_2017-S-084-164005_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
   epo:hasLanguage "FR";
+  epo:hasReceiptDeadline "2017-05-30T12:00";
   epo:hasSubmissionURL "http://splmpc.achatpublic.com"^^xsd:anyURI .
 
 epd:id_2017-S-084-164005_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
