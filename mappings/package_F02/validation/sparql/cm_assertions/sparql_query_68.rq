@@ -1,10 +1,11 @@
-#title: I.3.4.3.12.1 - Main address
-#description: “I.3.4.3.12.1 - Main address” in SF corresponds to “BT-505 Organisation Internet Address” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/URL_GENERAL. The expected ontology instances are epo: epo:AgentInRole (from CL1) / cpov:ContactPoint / xsd:anyURI .
-#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/URL_GENERAL
+#title: I.3.4.3.9 - Telephone
+#description: “I.3.4.3.9 - Telephone” in SF corresponds to “BT-503 Organisation Contact Telephone Number” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/PHONE. The expected ontology instances are epo: epo:AgentInRole (from CL1) / cpov:ContactPoint / rdf:langString .
+#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/PHONE
 
+PREFIX cpov: <http://data.europa.eu/m8g/>
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
 		?this rdf:type epo:TenderReceiver .
-		?this epo:hasContactPointInRole / epo:hasInternetAddress ?value . }
+		?this epo:hasContactPointInRole  / cpov:telephone ?value . }

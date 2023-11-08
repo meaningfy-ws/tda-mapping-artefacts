@@ -1,10 +1,10 @@
-#title: II.2.14 - Additional information
-#description: “II.2.14 - Additional information” in SF corresponds to “BT-300 Additional Information” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/INFO_ADD. The expected ontology instances are epo: epo:Lot / rdf:langString .
-#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/INFO_ADD
+#title: II.2.9.3 - Envisaged maximum number
+#description: “II.2.9.3 - Envisaged maximum number” in SF corresponds to “BT-51 Maximum Candidates Number” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/NB_MAX_LIMIT_CANDIDATE. The expected ontology instances are epo: epo:Lot / epo:MultipleStageProcedureTerm / xsd:integer .
+#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/NB_MAX_LIMIT_CANDIDATE
 
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
 		?this rdf:type epo:Lot .
-		?this epo:hasAdditionalInformation ?value . }
+		?this epo:isSubjectToLotSpecificTerm / epo:hasMaximumNumberOfCandidates ?value . }
