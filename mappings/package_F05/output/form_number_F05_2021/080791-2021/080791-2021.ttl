@@ -41,11 +41,9 @@ epd:id_2021-S-032-080791_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a
   locn:fullAddress "Saint-Cyr-l'École."@fr .
 
 epd:id_2021-S-032-080791_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
-  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
   locn:address epd:id_2021-S-032-080791_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
 
 epd:id_2021-S-032-080791_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
-  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
   locn:address epd:id_2021-S-032-080791_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
 
 epd:id_2021-S-032-080791_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
@@ -149,7 +147,7 @@ epd:id_2021-S-032-080791_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj a epo
   epo:hasMaximumNumberOfCandidates 8;
   epo:hasSuccessiveReduction true .
 
-epd:id_2021-S-032-080791_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2021-S-032-080791_Notice a epo:CompetitionNotice, epo:Notice;
   epo:announcesRole epd:id_2021-S-032-080791_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-032-080791_Mediator_Der4dmnz4iLnj5vKZroTMU,
     epd:id_2021-S-032-080791_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
     epd:id_2021-S-032-080791_ReviewProcedureInformationProvider_S6PHy2YyfctbUgf5WdBqHd,
@@ -203,7 +201,11 @@ epd:id_2021-S-032-080791_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
   epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-032-080791_AccessTerm_T4mynogGdLKyTZh8YakGYW,
     epd:id_2021-S-032-080791_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-032-080791_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
     epd:id_2021-S-032-080791_ReviewTerm_hwCeZpttZ4vWQ7Hhp6LskB, epd:id_2021-S-032-080791_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:isSubjectToTerm epd:id_2021-S-032-080791_ProcessPlanningTerm_ENkaVK94Yfx7TfS6UZfS4G;
   epo:usesTechnique epd:id_2021-S-032-080791_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-032-080791_ProcessPlanningTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:ProcessPlanningTerm;
+  epo:hasEstimatedTenderInvitationDate "2021-03-05"^^xsd:date .
 
 epd:id_2021-S-032-080791_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
   a epo:ProcurementProcedureInformationProvider;
@@ -248,6 +250,7 @@ epd:id_2021-S-032-080791_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period .
 
 epd:id_2021-S-032-080791_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
+  epo:hasReceiptDeadline "2021-03-01T12:00";
   epo:hasSubmissionURL "https://fournisseurs.aeroportsdeparis.fr"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2021-S-032-080791_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
 
