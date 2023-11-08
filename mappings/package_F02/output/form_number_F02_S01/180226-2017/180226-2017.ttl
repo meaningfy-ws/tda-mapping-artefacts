@@ -58,15 +58,12 @@ Heinrich-Heine Grundschule Heinrich-Heine-Str. 3 18119 Warnemünde.
 """@de .
 
 epd:id_2017-S-091-180226_ContractTermLotLocation_XgDjBcfYCsz7NdkrVQLYVX a dct:Location;
-  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
   locn:address epd:id_2017-S-091-180226_ContractTermLotLocationAddress_XgDjBcfYCsz7NdkrVQLYVX .
 
 epd:id_2017-S-091-180226_ContractTermLotLocation_hwn2ViGxdekSZaFD46S6bD a dct:Location;
-  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
   locn:address epd:id_2017-S-091-180226_ContractTermLotLocationAddress_hwn2ViGxdekSZaFD46S6bD .
 
 epd:id_2017-S-091-180226_ContractTermLotLocation_oEYZZQWPrbQFajcRU6KZAY a dct:Location;
-  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
   locn:address epd:id_2017-S-091-180226_ContractTermLotLocationAddress_oEYZZQWPrbQFajcRU6KZAY .
 
 epd:id_2017-S-091-180226_ContractTermLot_XgDjBcfYCsz7NdkrVQLYVX a epo:ContractTerm;
@@ -211,7 +208,7 @@ epd:id_2017-S-091-180226_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo
   epo:hasNoNegotiationNecessary true;
   epo:hasSuccessiveReduction true .
 
-epd:id_2017-S-091-180226_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2017-S-091-180226_Notice a epo:CompetitionNotice, epo:Notice;
   epo:announcesRole epd:id_2017-S-091-180226_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2017-S-091-180226_ProcurementProcedureInformationProvider_TQABXDaYTEjCPjunpz6abq,
     epd:id_2017-S-091-180226_ReviewProcedureInformationProvider_9rUrzw8RCjgmc7dEceJsAP,
     epd:id_2017-S-091-180226_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2017-S-091-180226_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE;
@@ -281,7 +278,11 @@ Planungsleistungen – Sanierung und Erweiterung Heinrich-Heine-Schule Warnemün
   epo:isRecurrent false;
   epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-091-180226_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2017-S-091-180226_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c, epd:id_2017-S-091-180226_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf,
-    epd:id_2017-S-091-180226_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw .
+    epd:id_2017-S-091-180226_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
+  epo:isSubjectToTerm epd:id_2017-S-091-180226_ProcessPlanningTerm_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2017-S-091-180226_ProcessPlanningTerm_36ktLAsh4DDGMtAzNZMEnw a epo:ProcessPlanningTerm;
+  epo:hasEstimatedTenderInvitationDate "2017-07-03"^^xsd:date .
 
 epd:id_2017-S-091-180226_ProcurementProcedureInformationProvider_TQABXDaYTEjCPjunpz6abq
   a epo:ProcurementProcedureInformationProvider;
@@ -342,6 +343,7 @@ epd:id_2017-S-091-180226_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period;
 
 epd:id_2017-S-091-180226_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "DE";
+  epo:hasReceiptDeadline "2017-06-12T14:00";
   epo:hasValidityPeriod epd:id_2017-S-091-180226_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 
 epd:id_2017-S-091-180226_SubmissionTerm_XgDjBcfYCsz7NdkrVQLYVX a epo:SubmissionTerm;

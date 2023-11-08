@@ -872,8 +872,10 @@ tedm:ProcedureTerm a rr:TriplesMap ;
             rr:predicate epo:hasLotAwardCombination;
             rr:objectMap
                 [
-                    rml:reference "LOT_DIVISION/LOT_COMBINING_CONTRACT_RIGHT"
-
+                    rml:reference "LOT_DIVISION/LOT_COMBINING_CONTRACT_RIGHT" ;
+                    rml:languageMap [
+                        rml:reference "lower-case(ancestor::*/@LG)"
+                    ]
                 ]
         ] .
 tedm:ContractTermProcedure a rr:TriplesMap ;
