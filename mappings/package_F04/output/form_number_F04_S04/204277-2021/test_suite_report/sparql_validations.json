@@ -1,7 +1,7 @@
 [
     {
-        "created": "2023-07-26T17:02:22.142974",
-        "mapping_suite_identifier": "package_F04_v2.1.2-alpha.6",
+        "created": "2023-11-08T21:29:53.747980",
+        "mapping_suite_identifier": "package_F04_v2.2.0-alpha.1",
         "object_data": "SPARQLTestSuiteValidationReport",
         "test_suite_identifier": "cm_assertions",
         "validation_results": [
@@ -79,25 +79,8 @@
             },
             {
                 "error": null,
-                "fields_covered": true,
-                "identifier": "sparql_query_12",
-                "message": null,
-                "missing_fields": [],
-                "query": {
-                    "description": "\u201cI.1.10 - E-mail\u201d in SF corresponds to \u201cBT-506 Organisation Contact Email Address\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/E_MAIL. The expected ontology instances are epo: epo:AgentInRole (from CL1) / cpov:ContactPoint / xsd:anyURI .",
-                    "query": "PREFIX cpov: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:hasContactPointInRole  / cpov:email ?value . }",
-                    "title": "I.1.10 - E-mail",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/E_MAIL"
-                    ]
-                },
-                "query_result": "True",
-                "result": "valid"
-            },
-            {
-                "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_26",
+                "identifier": "sparql_query_18",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/E_MAIL"
@@ -116,7 +99,24 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_13",
+                "identifier": "sparql_query_4",
+                "message": null,
+                "missing_fields": [],
+                "query": {
+                    "description": "\u201cI.1.10 - E-mail\u201d in SF corresponds to \u201cBT-506 Organisation Contact Email Address\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/E_MAIL. The expected ontology instances are epo: epo:AgentInRole (from CL1) / cpov:ContactPoint / xsd:anyURI .",
+                    "query": "PREFIX cpov: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:hasContactPointInRole  / cpov:email ?value . }",
+                    "title": "I.1.10 - E-mail",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/E_MAIL"
+                    ]
+                },
+                "query_result": "True",
+                "result": "valid"
+            },
+            {
+                "error": null,
+                "fields_covered": true,
+                "identifier": "sparql_query_5",
                 "message": null,
                 "missing_fields": [],
                 "query": {
@@ -133,7 +133,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_27",
+                "identifier": "sparql_query_19",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/FAX"
@@ -152,7 +152,7 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_14",
+                "identifier": "sparql_query_6",
                 "message": null,
                 "missing_fields": [],
                 "query": {
@@ -169,7 +169,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_28",
+                "identifier": "sparql_query_20",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/URL_GENERAL"
@@ -188,26 +188,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_15",
-                "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/URL_BUYER"
-                ],
-                "query": {
-                    "description": "\u201cI.1.12.2 - Address of the buyer profile\u201d in SF corresponds to \u201cBT-508 Buyer Profile URL\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/URL_BUYER. The expected ontology instances are epo: epo:AgentInRole (from CL1) / xsd:anyURI .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:hasBuyerProfile ?value . }",
-                    "title": "I.1.12.2 - Address of the buyer profile",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/URL_BUYER"
-                    ]
-                },
-                "query_result": "False",
-                "result": "unverifiable"
-            },
-            {
-                "error": null,
-                "fields_covered": false,
-                "identifier": "sparql_query_29",
+                "identifier": "sparql_query_21",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/URL_BUYER"
@@ -226,7 +207,26 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_18",
+                "identifier": "sparql_query_7",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/URL_BUYER"
+                ],
+                "query": {
+                    "description": "\u201cI.1.12.2 - Address of the buyer profile\u201d in SF corresponds to \u201cBT-508 Buyer Profile URL\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/URL_BUYER. The expected ontology instances are epo: epo:AgentInRole (from CL1) / xsd:anyURI .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:hasBuyerProfile ?value . }",
+                    "title": "I.1.12.2 - Address of the buyer profile",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/URL_BUYER"
+                    ]
+                },
+                "query_result": "False",
+                "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
+                "identifier": "sparql_query_22",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/NATIONALID"
@@ -245,7 +245,7 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_4",
+                "identifier": "sparql_query_8",
                 "message": null,
                 "missing_fields": [],
                 "query": {
@@ -262,7 +262,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_19",
+                "identifier": "sparql_query_23",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/ADDRESS"
@@ -281,7 +281,7 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_5",
+                "identifier": "sparql_query_9",
                 "message": null,
                 "missing_fields": [],
                 "query": {
@@ -298,7 +298,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_20",
+                "identifier": "sparql_query_24",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/TOWN"
@@ -317,7 +317,7 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_6",
+                "identifier": "sparql_query_10",
                 "message": null,
                 "missing_fields": [],
                 "query": {
@@ -334,7 +334,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_21",
+                "identifier": "sparql_query_25",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/NUTS/@CODE"
@@ -353,7 +353,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_7",
+                "identifier": "sparql_query_11",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/NUTS/@CODE"
@@ -371,8 +371,25 @@
             },
             {
                 "error": null,
+                "fields_covered": true,
+                "identifier": "sparql_query_12",
+                "message": null,
+                "missing_fields": [],
+                "query": {
+                    "description": "\u201cI.1.6 - Postal code\u201d in SF corresponds to \u201cBT-512 Place Performance Post Code\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/POSTAL_CODE. The expected ontology instances are epo: epo:AgentInRole (from CL1)  / org:Organization (from CL2) / locn:Address / rdf:langString .",
+                    "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:postCode ?value . }",
+                    "title": "I.1.6 - Postal code",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/POSTAL_CODE"
+                    ]
+                },
+                "query_result": "True",
+                "result": "valid"
+            },
+            {
+                "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_22",
+                "identifier": "sparql_query_26",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/POSTAL_CODE"
@@ -390,25 +407,8 @@
             },
             {
                 "error": null,
-                "fields_covered": true,
-                "identifier": "sparql_query_8",
-                "message": null,
-                "missing_fields": [],
-                "query": {
-                    "description": "\u201cI.1.6 - Postal code\u201d in SF corresponds to \u201cBT-512 Place Performance Post Code\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/POSTAL_CODE. The expected ontology instances are epo: epo:AgentInRole (from CL1)  / org:Organization (from CL2) / locn:Address / rdf:langString .",
-                    "query": "PREFIX cv: <http://data.europa.eu/m8g/>\nPREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Buyer .\n\t\t?this epo:playedBy / cv:registeredAddress / locn:postCode ?value . }",
-                    "title": "I.1.6 - Postal code",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/POSTAL_CODE"
-                    ]
-                },
-                "query_result": "True",
-                "result": "valid"
-            },
-            {
-                "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_23",
+                "identifier": "sparql_query_27",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/COUNTRY"
@@ -427,7 +427,7 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_9",
+                "identifier": "sparql_query_13",
                 "message": null,
                 "missing_fields": [],
                 "query": {
@@ -444,7 +444,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_10",
+                "identifier": "sparql_query_14",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/CONTACT_POINT"
@@ -463,7 +463,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_24",
+                "identifier": "sparql_query_28",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/CONTACT_POINT"
@@ -482,7 +482,7 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_11",
+                "identifier": "sparql_query_15",
                 "message": null,
                 "missing_fields": [],
                 "query": {
@@ -499,7 +499,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_25",
+                "identifier": "sparql_query_29",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL/PHONE"
@@ -668,12 +668,12 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_38",
+                "identifier": "sparql_query_39",
                 "message": null,
                 "missing_fields": [],
                 "query": {
-                    "description": "\u201cI.3.3.1 - The above mentioned address\u201d in SF corresponds to \u201cno direct match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO_IDEM. The expected ontology instances are epo: epo:Notice / epo:AgentInRole (from CL1) .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:announcesRole ?value }",
+                    "description": "\u201cI.3.3.1 - The above mentioned address\u201d in SF corresponds to \u201cno direct match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO_IDEM. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ProcurementProcedureInformationProvider .\n\t\t?this epo:playedBy ?value . }",
                     "title": "I.3.3.1 - The above mentioned address",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO_IDEM"
@@ -685,12 +685,12 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_39",
+                "identifier": "sparql_query_38",
                 "message": null,
                 "missing_fields": [],
                 "query": {
-                    "description": "\u201cI.3.3.1 - The above mentioned address\u201d in SF corresponds to \u201cno direct match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO_IDEM. The expected ontology instances are epo: epo:AgentInRole (from CL1) / org:Organization (from CL2) .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:ProcurementProcedureInformationProvider .\n\t\t?this epo:playedBy ?value . }",
+                    "description": "\u201cI.3.3.1 - The above mentioned address\u201d in SF corresponds to \u201cno direct match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO_IDEM. The expected ontology instances are epo: epo:Notice / epo:AgentInRole (from CL1) .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:announcesRole ?value }",
                     "title": "I.3.3.1 - The above mentioned address",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO_IDEM"
@@ -740,7 +740,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_50",
+                "identifier": "sparql_query_42",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO/E_MAIL"
@@ -759,7 +759,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_51",
+                "identifier": "sparql_query_43",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO/FAX"
@@ -778,7 +778,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_52",
+                "identifier": "sparql_query_44",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO/URL_GENERAL"
@@ -797,7 +797,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_42",
+                "identifier": "sparql_query_45",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO/NATIONALID"
@@ -816,7 +816,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_43",
+                "identifier": "sparql_query_46",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO/ADDRESS"
@@ -835,7 +835,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_44",
+                "identifier": "sparql_query_47",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO/TOWN"
@@ -854,7 +854,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_45",
+                "identifier": "sparql_query_48",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO/NUTS/@CODE"
@@ -873,7 +873,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_46",
+                "identifier": "sparql_query_49",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO/POSTAL_CODE"
@@ -892,7 +892,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_47",
+                "identifier": "sparql_query_50",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO/COUNTRY"
@@ -911,7 +911,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_48",
+                "identifier": "sparql_query_51",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO/CONTACT_POINT"
@@ -930,7 +930,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_49",
+                "identifier": "sparql_query_52",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_FURTHER_INFO/PHONE"
@@ -968,25 +968,6 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_54",
-                "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION_IDEM"
-                ],
-                "query": {
-                    "description": "\u201cI.3.4.2 - To the abovementioned address\u201d in SF corresponds to \u201cBT-18 nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION_IDEM. The expected ontology instances are epo: epo:Notice / epo:AgentInRole (from CL1) .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:announcesRole ?value }",
-                    "title": "I.3.4.2 - To the abovementioned address",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION_IDEM"
-                    ]
-                },
-                "query_result": "True",
-                "result": "warning"
-            },
-            {
-                "error": null,
-                "fields_covered": false,
                 "identifier": "sparql_query_55",
                 "message": null,
                 "missing_fields": [
@@ -1002,6 +983,25 @@
                 },
                 "query_result": "False",
                 "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
+                "identifier": "sparql_query_54",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION_IDEM"
+                ],
+                "query": {
+                    "description": "\u201cI.3.4.2 - To the abovementioned address\u201d in SF corresponds to \u201cBT-18 nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION_IDEM. The expected ontology instances are epo: epo:Notice / epo:AgentInRole (from CL1) .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:announcesRole ?value }",
+                    "title": "I.3.4.2 - To the abovementioned address",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION_IDEM"
+                    ]
+                },
+                "query_result": "True",
+                "result": "warning"
             },
             {
                 "error": null,
@@ -1044,7 +1044,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_66",
+                "identifier": "sparql_query_58",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/E_MAIL"
@@ -1063,7 +1063,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_67",
+                "identifier": "sparql_query_59",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/FAX"
@@ -1082,7 +1082,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_68",
+                "identifier": "sparql_query_60",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/URL_GENERAL"
@@ -1101,7 +1101,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_58",
+                "identifier": "sparql_query_61",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/NATIONALID"
@@ -1120,7 +1120,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_59",
+                "identifier": "sparql_query_62",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/ADDRESS"
@@ -1139,7 +1139,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_60",
+                "identifier": "sparql_query_63",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/TOWN"
@@ -1158,7 +1158,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_61",
+                "identifier": "sparql_query_64",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/NUTS/@CODE"
@@ -1177,7 +1177,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_62",
+                "identifier": "sparql_query_65",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/POSTAL_CODE"
@@ -1196,7 +1196,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_63",
+                "identifier": "sparql_query_66",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/COUNTRY"
@@ -1215,7 +1215,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_64",
+                "identifier": "sparql_query_67",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/CONTACT_POINT"
@@ -1234,7 +1234,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_65",
+                "identifier": "sparql_query_68",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/CONTRACTING_BODY/ADDRESS_PARTICIPATION/PHONE"
@@ -1617,26 +1617,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_116",
-                "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS"
-                ],
-                "query": {
-                    "description": "\u201cII.2.10.1 - Variants will be accepted\u201d in SF corresponds to \u201cBT-63 Variants\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS. The expected ontology instances are epo: epo:Lot / epo:SubmissionTerm / at-voc:permission .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:isSubjectToLotSpecificTerm / epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> . }",
-                    "title": "II.2.10.1 - Variants will be accepted",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS"
-                    ]
-                },
-                "query_result": "False",
-                "result": "unverifiable"
-            },
-            {
-                "error": null,
-                "fields_covered": false,
-                "identifier": "sparql_query_117",
+                "identifier": "sparql_query_90",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/NO_ACCEPTED_VARIANTS"
@@ -1655,7 +1636,26 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_118",
+                "identifier": "sparql_query_89",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS"
+                ],
+                "query": {
+                    "description": "\u201cII.2.10.1 - Variants will be accepted\u201d in SF corresponds to \u201cBT-63 Variants\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS. The expected ontology instances are epo: epo:Lot / epo:SubmissionTerm / at-voc:permission .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:isSubjectToLotSpecificTerm / epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/allowed> . }",
+                    "title": "II.2.10.1 - Variants will be accepted",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/ACCEPTED_VARIANTS"
+                    ]
+                },
+                "query_result": "False",
+                "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
+                "identifier": "sparql_query_91",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/OPTIONS"
@@ -1674,7 +1674,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_119",
+                "identifier": "sparql_query_92",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/NO_OPTIONS"
@@ -1693,7 +1693,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_120",
+                "identifier": "sparql_query_93",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/OPTIONS_DESCR"
@@ -1712,7 +1712,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_121",
+                "identifier": "sparql_query_94",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/EU_PROGR_RELATED"
@@ -1731,7 +1731,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_122",
+                "identifier": "sparql_query_95",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/NO_EU_PROGR_RELATED"
@@ -1750,7 +1750,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_123",
+                "identifier": "sparql_query_96",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/EU_PROGR_RELATED"
@@ -1769,7 +1769,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_124",
+                "identifier": "sparql_query_97",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/INFO_ADD"
@@ -1788,7 +1788,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_89",
+                "identifier": "sparql_query_98",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/CPV_ADDITIONAL/CPV_CODE/@CODE"
@@ -1807,7 +1807,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_90",
+                "identifier": "sparql_query_99",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/NUTS/@CODE"
@@ -1826,7 +1826,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_91",
+                "identifier": "sparql_query_100",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/MAIN_SITE"
@@ -1845,7 +1845,7 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_92",
+                "identifier": "sparql_query_101",
                 "message": null,
                 "missing_fields": [],
                 "query": {
@@ -1862,7 +1862,7 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_93",
+                "identifier": "sparql_query_102",
                 "message": null,
                 "missing_fields": [],
                 "query": {
@@ -1879,32 +1879,11 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_94",
+                "identifier": "sparql_query_104",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY",
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY"
-                ],
-                "query": {
-                    "description": "\u201cII.2.5.1 - Quality criterion \u2013 Name: / Weighting:\u201d in SF corresponds to \u201cBT-539 Award Criterion Type\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY ;; /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY. The expected ontology instances are epo: epo:Lot / epo:AwardCriterion  .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesAwardCriterion ?value . }",
-                    "title": "II.2.5.1 - Quality criterion \u2013 Name: / Weighting:",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY",
-                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY"
-                    ]
-                },
-                "query_result": "False",
-                "result": "unverifiable"
-            },
-            {
-                "error": null,
-                "fields_covered": false,
-                "identifier": "sparql_query_95",
-                "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY",
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY"
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY",
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY"
                 ],
                 "query": {
                     "description": "\u201cII.2.5.1 - Quality criterion \u2013 Name: / Weighting:\u201d in SF corresponds to \u201cBT-539 Award Criterion Type\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY ;; /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY. The expected ontology instances are epo: epo:AwardCriterion / at-voc:award-criterion-type .",
@@ -1921,11 +1900,32 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_96",
+                "identifier": "sparql_query_103",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY/AC_CRITERION",
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY/AC_CRITERION"
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY",
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY"
+                ],
+                "query": {
+                    "description": "\u201cII.2.5.1 - Quality criterion \u2013 Name: / Weighting:\u201d in SF corresponds to \u201cBT-539 Award Criterion Type\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY ;; /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY. The expected ontology instances are epo: epo:Lot / epo:AwardCriterion  .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesAwardCriterion ?value . }",
+                    "title": "II.2.5.1 - Quality criterion \u2013 Name: / Weighting:",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY",
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY"
+                    ]
+                },
+                "query_result": "False",
+                "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
+                "identifier": "sparql_query_105",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY/AC_CRITERION",
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY/AC_CRITERION"
                 ],
                 "query": {
                     "description": "\u201cII.2.5.1.1 - Name\u201d in SF corresponds to \u201cBT-734 Award Criterion name\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY/AC_CRITERION ;; /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY/AC_CRITERION. The expected ontology instances are epo: epo:AwardCriterion / rdf:langString .",
@@ -1942,7 +1942,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_97",
+                "identifier": "sparql_query_106",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY/AC_WEIGHTING",
@@ -1963,32 +1963,11 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_98",
+                "identifier": "sparql_query_108",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_COST",
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_COST"
-                ],
-                "query": {
-                    "description": "\u201cII.2.5.2 - Cost criterion \u2013 Name: / Weighting:\u201d in SF corresponds to \u201cBT-539 Award Criterion Type\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_COST ;; /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_COST. The expected ontology instances are epo: epo:Lot / epo:AwardCriterion  .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesAwardCriterion ?value . }",
-                    "title": "II.2.5.2 - Cost criterion \u2013 Name: / Weighting:",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_COST",
-                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_COST"
-                    ]
-                },
-                "query_result": "False",
-                "result": "unverifiable"
-            },
-            {
-                "error": null,
-                "fields_covered": false,
-                "identifier": "sparql_query_99",
-                "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_COST",
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_COST"
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_COST",
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_COST"
                 ],
                 "query": {
                     "description": "\u201cII.2.5.2 - Cost criterion \u2013 Name: / Weighting:\u201d in SF corresponds to \u201cBT-539 Award Criterion Type\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_COST ;; /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_COST. The expected ontology instances are epo: epo:AwardCriterion / at-voc:award-criterion-type .",
@@ -2005,7 +1984,28 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_100",
+                "identifier": "sparql_query_107",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_COST",
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_COST"
+                ],
+                "query": {
+                    "description": "\u201cII.2.5.2 - Cost criterion \u2013 Name: / Weighting:\u201d in SF corresponds to \u201cBT-539 Award Criterion Type\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_COST ;; /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_COST. The expected ontology instances are epo: epo:Lot / epo:AwardCriterion  .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesAwardCriterion ?value . }",
+                    "title": "II.2.5.2 - Cost criterion \u2013 Name: / Weighting:",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_COST",
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_COST"
+                    ]
+                },
+                "query_result": "False",
+                "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
+                "identifier": "sparql_query_109",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_COST/AC_CRITERION",
@@ -2026,7 +2026,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_101",
+                "identifier": "sparql_query_110",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_COST/AC_WEIGHTING",
@@ -2047,28 +2047,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_102",
-                "message": null,
-                "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PRICE",
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_PRICE"
-                ],
-                "query": {
-                    "description": "\u201cII.2.5.3 - Price \u2013 Weighting\u201d in SF corresponds to \u201cBT-539 Award Criterion Type\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_PRICE ;; /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PRICE. The expected ontology instances are epo: epo:Lot / epo:AwardCriterion  .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesAwardCriterion ?value . }",
-                    "title": "II.2.5.3 - Price \u2013 Weighting",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_PRICE",
-                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PRICE"
-                    ]
-                },
-                "query_result": "False",
-                "result": "unverifiable"
-            },
-            {
-                "error": null,
-                "fields_covered": false,
-                "identifier": "sparql_query_103",
+                "identifier": "sparql_query_112",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PRICE",
@@ -2089,7 +2068,28 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_104",
+                "identifier": "sparql_query_111",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PRICE",
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_PRICE"
+                ],
+                "query": {
+                    "description": "\u201cII.2.5.3 - Price \u2013 Weighting\u201d in SF corresponds to \u201cBT-539 Award Criterion Type\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_PRICE ;; /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PRICE. The expected ontology instances are epo: epo:Lot / epo:AwardCriterion  .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Lot .\n\t\t?this epo:specifiesAwardCriterion ?value . }",
+                    "title": "II.2.5.3 - Price \u2013 Weighting",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_PRICE",
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PRICE"
+                    ]
+                },
+                "query_result": "False",
+                "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
+                "identifier": "sparql_query_113",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PRICE/AC_WEIGHTING",
@@ -2110,11 +2110,11 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_105",
+                "identifier": "sparql_query_114",
                 "message": null,
                 "missing_fields": [
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_PROCUREMENT_DOC",
-                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PROCUREMENT_DOC"
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PROCUREMENT_DOC",
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_PROCUREMENT_DOC"
                 ],
                 "query": {
                     "description": "\u201cII.2.5.4 - Price is not the only award criterion and all criteria are stated only in the procurement documents\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_PROCUREMENT_DOC ;; /TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PROCUREMENT_DOC. The expected ontology instances are epo: epo:Lot / epo:AwardCriterion  .",
@@ -2131,7 +2131,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_106",
+                "identifier": "sparql_query_115",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/VAL_OBJECT"
@@ -2150,7 +2150,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_107",
+                "identifier": "sparql_query_116",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/VAL_OBJECT/@CURRENCY"
@@ -2169,7 +2169,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_108",
+                "identifier": "sparql_query_117",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/DURATION"
@@ -2188,7 +2188,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_109",
+                "identifier": "sparql_query_118",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/DURATION/@TYPE"
@@ -2207,7 +2207,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_110",
+                "identifier": "sparql_query_119",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/DURATION/@TYPE"
@@ -2226,7 +2226,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_111",
+                "identifier": "sparql_query_120",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/DATE_START"
@@ -2245,7 +2245,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_112",
+                "identifier": "sparql_query_121",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/DATE_END"
@@ -2264,7 +2264,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_113",
+                "identifier": "sparql_query_122",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/RENEWAL"
@@ -2283,7 +2283,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_114",
+                "identifier": "sparql_query_123",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/NO_RENEWAL"
@@ -2302,7 +2302,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_115",
+                "identifier": "sparql_query_124",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/OBJECT_CONTRACT/OBJECT_DESCR/RENEWAL_DESCR"
@@ -2414,7 +2414,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_132",
+                "identifier": "sparql_query_131",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/FRAMEWORK/JUSTIFICATION"
@@ -2452,7 +2452,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_131",
+                "identifier": "sparql_query_132",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/DPS_ADDITIONAL_PURCHASERS"
@@ -2526,16 +2526,16 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_136",
+                "identifier": "sparql_query_137",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/DATE_RECEIPT_TENDERS",
                     "/TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/TIME_RECEIPT_TENDERS"
                 ],
                 "query": {
-                    "description": "\u201cIV.2.2 - Time limit for submission of applications or receipt of tenders (Date/Time)\u201d in SF corresponds to \u201cno match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/DATE_RECEIPT_TENDERS ;; /TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/TIME_RECEIPT_TENDERS. The expected ontology instances are epo: epo:Procedure / epo:SubmissionTerm / xsd:string .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm  / epo:hasReceiptDeadline ?value . }",
-                    "title": "IV.2.2 - Time limit for submission of applications or receipt of tenders (Date/Time)",
+                    "description": "\u201cIV.2.2 - Time limit for receipt of expressions of interest (Date/Time)\u201d in SF corresponds to \u201cno match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/DATE_RECEIPT_TENDERS ;; /TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/TIME_RECEIPT_TENDERS. The expected ontology instances are epo: epo:Procedure / epo:SubmissionTerm / xsd:string .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm  / epo:hasReceiptExpressionDeadline ?value . }",
+                    "title": "IV.2.2 - Time limit for receipt of expressions of interest (Date/Time)",
                     "xpath": [
                         "/TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/DATE_RECEIPT_TENDERS",
                         "/TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/TIME_RECEIPT_TENDERS"
@@ -2547,7 +2547,28 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_137",
+                "identifier": "sparql_query_136",
+                "message": null,
+                "missing_fields": [
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/DATE_RECEIPT_TENDERS",
+                    "/TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/TIME_RECEIPT_TENDERS"
+                ],
+                "query": {
+                    "description": "\u201cIV.2.2 - Time limit for the receipt of applications for an invitation to tender or to negotiate\u201d in SF corresponds to \u201cno match nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/DATE_RECEIPT_TENDERS ;; /TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/TIME_RECEIPT_TENDERS. The expected ontology instances are epo: epo:Procedure / epo:SubmissionTerm / xsd:string .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Procedure .\n\t\t?this epo:isSubjectToProcedureSpecificTerm  / epo:hasReceiptDeadline ?value . }",
+                    "title": "IV.2.2 - Time limit for the receipt of applications for an invitation to tender or to negotiate",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/DATE_RECEIPT_TENDERS",
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/TIME_RECEIPT_TENDERS"
+                    ]
+                },
+                "query_result": "False",
+                "result": "unverifiable"
+            },
+            {
+                "error": null,
+                "fields_covered": false,
+                "identifier": "sparql_query_138",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/PROCEDURE/LANGUAGES/LANGUAGE/@VALUE"
@@ -2562,23 +2583,6 @@
                 },
                 "query_result": "False",
                 "result": "unverifiable"
-            },
-            {
-                "error": null,
-                "fields_covered": true,
-                "identifier": "sparql_query_0",
-                "message": null,
-                "missing_fields": [],
-                "query": {
-                    "description": "\u201cMetaData\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/LEGAL_BASIS/@VALUE. The expected ontology instances are epo: epo:Notice / at-voc:legal-basis .",
-                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:hasLegalBasis ?value }",
-                    "title": "MetaData",
-                    "xpath": [
-                        "/TED_EXPORT/FORM_SECTION/F04_2014/LEGAL_BASIS/@VALUE"
-                    ]
-                },
-                "query_result": "True",
-                "result": "valid"
             },
             {
                 "error": null,
@@ -2599,8 +2603,25 @@
             },
             {
                 "error": null,
+                "fields_covered": true,
+                "identifier": "sparql_query_0",
+                "message": null,
+                "missing_fields": [],
+                "query": {
+                    "description": "\u201cMetaData\u201d in SF corresponds to \u201cnan nan\u201d in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F04_2014/LEGAL_BASIS/@VALUE. The expected ontology instances are epo: epo:Notice / at-voc:legal-basis .",
+                    "query": "PREFIX epo: <http://data.europa.eu/a4g/ontology#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nASK WHERE { \n\t\t?this rdf:type epo:Notice .\n\t\t?this epo:hasLegalBasis ?value }",
+                    "title": "MetaData",
+                    "xpath": [
+                        "/TED_EXPORT/FORM_SECTION/F04_2014/LEGAL_BASIS/@VALUE"
+                    ]
+                },
+                "query_result": "True",
+                "result": "valid"
+            },
+            {
+                "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_138",
+                "identifier": "sparql_query_139",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/EORDERING"
@@ -2619,7 +2640,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_139",
+                "identifier": "sparql_query_140",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/EINVOICING"
@@ -2638,7 +2659,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_140",
+                "identifier": "sparql_query_141",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/EPAYMENT"
@@ -2657,7 +2678,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_141",
+                "identifier": "sparql_query_142",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/INFO_ADD"
@@ -2676,7 +2697,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_142",
+                "identifier": "sparql_query_143",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY"
@@ -2695,7 +2716,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_143",
+                "identifier": "sparql_query_144",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY/OFFICIALNAME"
@@ -2714,7 +2735,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_144",
+                "identifier": "sparql_query_145",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY/ADDRESS"
@@ -2733,7 +2754,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_145",
+                "identifier": "sparql_query_146",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY/TOWN"
@@ -2752,7 +2773,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_146",
+                "identifier": "sparql_query_147",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY/POSTAL_CODE"
@@ -2771,7 +2792,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_147",
+                "identifier": "sparql_query_148",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY/COUNTRY"
@@ -2790,7 +2811,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_148",
+                "identifier": "sparql_query_149",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY/E_MAIL"
@@ -2809,7 +2830,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_149",
+                "identifier": "sparql_query_150",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY/PHONE"
@@ -2828,7 +2849,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_150",
+                "identifier": "sparql_query_151",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY/URL"
@@ -2847,7 +2868,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_151",
+                "identifier": "sparql_query_152",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY/FAX"
@@ -2866,7 +2887,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_152",
+                "identifier": "sparql_query_153",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_MEDIATION_BODY"
@@ -2885,7 +2906,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_153",
+                "identifier": "sparql_query_154",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_MEDIATION_BODY/OFFICIALNAME"
@@ -2904,7 +2925,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_154",
+                "identifier": "sparql_query_155",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_MEDIATION_BODY/ADDRESS"
@@ -2923,7 +2944,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_155",
+                "identifier": "sparql_query_156",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_MEDIATION_BODY/TOWN"
@@ -2942,7 +2963,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_156",
+                "identifier": "sparql_query_157",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_MEDIATION_BODY/POSTAL_CODE"
@@ -2961,7 +2982,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_157",
+                "identifier": "sparql_query_158",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_MEDIATION_BODY/COUNTRY"
@@ -2980,7 +3001,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_158",
+                "identifier": "sparql_query_159",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_MEDIATION_BODY/E_MAIL"
@@ -2999,7 +3020,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_159",
+                "identifier": "sparql_query_160",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_MEDIATION_BODY/PHONE"
@@ -3018,7 +3039,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_160",
+                "identifier": "sparql_query_161",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_MEDIATION_BODY/URL"
@@ -3037,7 +3058,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_161",
+                "identifier": "sparql_query_162",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_MEDIATION_BODY/FAX"
@@ -3056,7 +3077,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_162",
+                "identifier": "sparql_query_163",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/REVIEW_PROCEDURE"
@@ -3075,7 +3096,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_163",
+                "identifier": "sparql_query_164",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_INFO"
@@ -3094,7 +3115,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_164",
+                "identifier": "sparql_query_165",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_INFO/OFFICIALNAME"
@@ -3113,7 +3134,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_165",
+                "identifier": "sparql_query_166",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_INFO/ADDRESS"
@@ -3132,7 +3153,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_166",
+                "identifier": "sparql_query_167",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_INFO/TOWN"
@@ -3151,7 +3172,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_167",
+                "identifier": "sparql_query_168",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_INFO/POSTAL_CODE"
@@ -3170,7 +3191,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_168",
+                "identifier": "sparql_query_169",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_INFO/COUNTRY"
@@ -3189,7 +3210,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_169",
+                "identifier": "sparql_query_170",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_INFO/E_MAIL"
@@ -3208,7 +3229,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_170",
+                "identifier": "sparql_query_171",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_INFO/PHONE"
@@ -3227,7 +3248,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_171",
+                "identifier": "sparql_query_172",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_INFO/URL"
@@ -3246,7 +3267,7 @@
             {
                 "error": null,
                 "fields_covered": false,
-                "identifier": "sparql_query_172",
+                "identifier": "sparql_query_173",
                 "message": null,
                 "missing_fields": [
                     "/TED_EXPORT/FORM_SECTION/F04_2014/COMPLEMENTARY_INFO/ADDRESS_REVIEW_INFO/FAX"
@@ -3265,7 +3286,7 @@
             {
                 "error": null,
                 "fields_covered": true,
-                "identifier": "sparql_query_173",
+                "identifier": "sparql_query_174",
                 "message": null,
                 "missing_fields": [],
                 "query": {
@@ -3282,8 +3303,8 @@
         ]
     },
     {
-        "created": "2023-07-26T17:02:22.142974",
-        "mapping_suite_identifier": "package_F04_v2.1.2-alpha.6",
+        "created": "2023-11-08T21:29:53.747980",
+        "mapping_suite_identifier": "package_F04_v2.2.0-alpha.1",
         "object_data": "SPARQLTestSuiteValidationReport",
         "test_suite_identifier": "integration_tests",
         "validation_results": [
