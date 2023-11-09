@@ -38,11 +38,9 @@ epd:id_2021-S-096-251885_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj a
   locn:fullAddress "Aéroport de Paris Orly — terminaux d'Orly 1, 2, 3 et 4 parkings au contact (périmètre Oryea)."@fr .
 
 epd:id_2021-S-096-251885_ContractTermLotLocation_HKNfdBmeACvzBZy3TfjLFj a dct:Location;
-  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR104>;
   locn:address epd:id_2021-S-096-251885_ContractTermLotLocationAddress_HKNfdBmeACvzBZy3TfjLFj .
 
 epd:id_2021-S-096-251885_ContractTermLotLocation_Vxue4SiZ9v6DD9ffmckCQj a dct:Location;
-  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR104>;
   locn:address epd:id_2021-S-096-251885_ContractTermLotLocationAddress_Vxue4SiZ9v6DD9ffmckCQj .
 
 epd:id_2021-S-096-251885_ContractTermLot_HKNfdBmeACvzBZy3TfjLFj a epo:ContractTerm;
@@ -130,7 +128,7 @@ epd:id_2021-S-096-251885_MultipleStageProcedureTerm_Vxue4SiZ9v6DD9ffmckCQj a epo
   epo:hasMaximumNumberOfCandidates 10;
   epo:hasSuccessiveReduction true .
 
-epd:id_2021-S-096-251885_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2021-S-096-251885_Notice a epo:CompetitionNotice, epo:Notice;
   epo:announcesRole epd:id_2021-S-096-251885_Buyer_T4mynogGdLKyTZh8YakGYW, epd:id_2021-S-096-251885_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu,
     epd:id_2021-S-096-251885_Reviewer_Zgn49ZJAMhimY7VJZcSfaj;
   epo:hasDispatchDate "2021-05-14"^^xsd:date;
@@ -180,7 +178,11 @@ epd:id_2021-S-096-251885_Procedure_9mbUbNZTkZjYLzuqbonrEb a epo:Procedure;
   epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-096-251885_AccessTerm_T4mynogGdLKyTZh8YakGYW,
     epd:id_2021-S-096-251885_FrameworkAgreementTerm_ENkaVK94Yfx7TfS6UZfS4G, epd:id_2021-S-096-251885_ProcedureTerm_9mbUbNZTkZjYLzuqbonrEb,
     epd:id_2021-S-096-251885_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G;
+  epo:isSubjectToTerm epd:id_2021-S-096-251885_ProcessPlanningTerm_ENkaVK94Yfx7TfS6UZfS4G;
   epo:usesTechnique epd:id_2021-S-096-251885_FrameworkAgreementTechniqueUsage_ENkaVK94Yfx7TfS6UZfS4G .
+
+epd:id_2021-S-096-251885_ProcessPlanningTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:ProcessPlanningTerm;
+  epo:hasEstimatedTenderInvitationDate "2021-06-15"^^xsd:date .
 
 epd:id_2021-S-096-251885_ProcurementProcedureInformationProvider_3BbEuTQcmE7PmcVhtHdgcu
   a epo:ProcurementProcedureInformationProvider;
@@ -211,6 +213,7 @@ epd:id_2021-S-096-251885_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G a epo:Period .
 
 epd:id_2021-S-096-251885_SubmissionTerm_ENkaVK94Yfx7TfS6UZfS4G a epo:SubmissionTerm;
   epo:hasLanguage "FR";
+  epo:hasReceiptDeadline "2021-06-01T12:00";
   epo:hasSubmissionURL "https://fournisseurs.aeroportsdeparis.fr"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2021-S-096-251885_SubmissionPeriod_ENkaVK94Yfx7TfS6UZfS4G .
 

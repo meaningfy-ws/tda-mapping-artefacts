@@ -4,7 +4,15 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epd:id_2018-S-054-120031_Buyer_4zjJjpytu5bmHbyNSmtsju a epo:Buyer;
@@ -62,7 +70,7 @@ epd:id_2018-S-054-120031_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
                   Nei giorni successivi, un sistema di FAQ (forum online) sarà mantenuto attivo sul sito web della stazio.
                """@it .
 
-epd:id_2018-S-054-120031_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2018-S-054-120031_Notice a epo:Notice, epo:PlanningNotice;
   epo:announcesRole epd:id_2018-S-054-120031_Buyer_4zjJjpytu5bmHbyNSmtsju, epd:id_2018-S-054-120031_ProcurementProcedureInformationProvider_PHAC3pV7Mi9mSueG6pbn8k;
   epo:hasDispatchDate "2018-03-15"^^xsd:date;
   epo:hasID epd:id_2018-S-054-120031_NoticeIdentifier_AMEokiDjGuTvrfRF5KkTBZ;
@@ -81,7 +89,7 @@ epd:id_2018-S-054-120031_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC a locn:Addre
   locn:thoroughfare "Via Università 40" .
 
 epd:id_2018-S-054-120031_Organisation_TigDgN9yDLHn3hDtQD7BVC a org:Organization;
-  epo:hasBuyerLegalTypeDescription "Università";
+  epo:hasBuyerLegalTypeDescription "Università"@it;
   epo:hasLegalName "Università degli Studi di Cagliari Italia"@it;
   epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/education>;
   cccev:registeredAddress epd:id_2018-S-054-120031_OrganisationAddress_TigDgN9yDLHn3hDtQD7BVC .

@@ -4,7 +4,14 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -49,7 +56,7 @@ epd:id_2019-S-101-245756_Lot_RgULVPVVYP9pkvK789PCUZ a epo:Lot;
   epo:isUsingEUFunds false;
   epo:specifiesAwardCriterion epd:id_2019-S-101-245756_AwardCriterionInDocuments_7tyPb9orsuxsY7zD599rpi .
 
-epd:id_2019-S-101-245756_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2019-S-101-245756_Notice a epo:CompetitionNotice, epo:Notice;
   epo:announcesRole epd:id_2019-S-101-245756_Buyer_i7DzDaWCEZJKutzCZmQxGd, epd:id_2019-S-101-245756_ProcurementProcedureInformationProvider_ZBf9RnZirHQ7L8JhK77TPT,
     epd:id_2019-S-101-245756_ReviewProcedureInformationProvider_36ekFsuguo4hEmeGQAsije,
     epd:id_2019-S-101-245756_Reviewer_GCgEQ8HTQYwy3PnQqSQmPT;
@@ -71,7 +78,7 @@ epd:id_2019-S-101-245756_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF a locn:Addre
   locn:thoroughfare "34 rue la Combe aux Biches — CS 75267" .
 
 epd:id_2019-S-101-245756_Organisation_jXahEP38X6pEFgd4J9tLvF a org:Organization;
-  epo:hasBuyerLegalTypeDescription "Entreprise sociale de l'habitat";
+  epo:hasBuyerLegalTypeDescription "Entreprise sociale de l'habitat"@fr;
   epo:hasLegalName "Néolia"@fr;
   epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/hc-am>;
   cccev:registeredAddress epd:id_2019-S-101-245756_OrganisationAddress_jXahEP38X6pEFgd4J9tLvF .
@@ -127,4 +134,5 @@ epd:id_2019-S-101-245756_SelectionCriterion_mrRQveETBETMd3vM2NKqjA a epo:Selecti
 
 epd:id_2019-S-101-245756_SubmissionTerm_aqJpTtir4aD6XFwsZUcxzv a epo:SubmissionTerm;
   epo:hasLanguage "FR";
+  epo:hasReceiptDeadline "2019-07-15T12:00";
   epo:hasSubmissionURL "http://www.marches-securises.fr"^^xsd:anyURI .

@@ -1,10 +1,10 @@
-#title: II.2.5.1 - Quality criterion – Name: / Weighting:
-#description: “II.2.5.1 - Quality criterion – Name: / Weighting:” in SF corresponds to “BT-539 Award Criterion Type” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY ;; /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY. The expected ontology instances are epo: epo:AwardCriterion / at-voc:award-criterion-type .
-#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_QUALITY ;; /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY
+#title: II.2.12.1 - Tenders must be presented in the form of electronic catalogues or include an electronic catalogue
+#description: “II.2.12.1 - Tenders must be presented in the form of electronic catalogues or include an electronic catalogue” in SF corresponds to “BT-764 Submission Electronic Catalogue” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/ECATALOGUE_REQUIRED. The expected ontology instances are epo: epo:Lot / epo:SubmissionTerm / at-voc:permission .
+#xpath: /TED_EXPORT/FORM_SECTION/F02_2014/OBJECT_CONTRACT/OBJECT_DESCR/ECATALOGUE_REQUIRED
 
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
-		?this rdf:type epo:AwardCriterion .
-		?this epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality> . }
+		?this rdf:type epo:Lot .
+		?this epo:isSubjectToLotSpecificTerm / epo:hasECataloguePermission <http://publications.europa.eu/resource/authority/permission/required> . }

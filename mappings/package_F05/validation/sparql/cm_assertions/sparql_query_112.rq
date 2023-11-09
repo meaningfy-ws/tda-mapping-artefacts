@@ -1,10 +1,10 @@
-#title: II.2.7.3 - End
-#description: “II.2.7.3 - End” in SF corresponds to “BT-537 Duration End Date” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F05_2014/OBJECT_CONTRACT/OBJECT_DESCR/DATE_END. The expected ontology instances are epo: epo:Lot / epo:ContractTerm / epo:Period / xsd:date .
-#xpath: /TED_EXPORT/FORM_SECTION/F05_2014/OBJECT_CONTRACT/OBJECT_DESCR/DATE_END
+#title: II.2.5.3 - Price – Weighting
+#description: “II.2.5.3 - Price – Weighting” in SF corresponds to “BT-539 Award Criterion Type” in eForms. The corresponding XML element is /TED_EXPORT/FORM_SECTION/F05_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_PRICE ;; /TED_EXPORT/FORM_SECTION/F05_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PRICE. The expected ontology instances are epo: epo:Lot / epo:AwardCriterion  .
+#xpath: /TED_EXPORT/FORM_SECTION/F05_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC/AC_PRICE ;; /TED_EXPORT/FORM_SECTION/F05_2014/OBJECT_CONTRACT/OBJECT_DESCR/AC_PRICE
 
 PREFIX epo: <http://data.europa.eu/a4g/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK WHERE { 
 		?this rdf:type epo:Lot .
-		?this epo:foreseesContractSpecificTerm / epo:definesContractPeriod / epo:hasEnd ?value . }
+		?this epo:specifiesAwardCriterion ?value . }

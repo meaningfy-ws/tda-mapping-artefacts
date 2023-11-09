@@ -4,7 +4,15 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epd:id_2022-S-098-271595_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
@@ -64,7 +72,7 @@ epd:id_2022-S-098-271595_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
   epo:isSubjectToLotSpecificTerm epd:id_2022-S-098-271595_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
-epd:id_2022-S-098-271595_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2022-S-098-271595_Notice a epo:CompetitionNotice, epo:Notice;
   epo:announcesRole epd:id_2022-S-098-271595_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2022-S-098-271595_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y,
     epd:id_2022-S-098-271595_Reviewer_gQh8JdpqsE2bYBRikawiBu;
   epo:hasDispatchDate "2022-05-16"^^xsd:date;
@@ -84,7 +92,7 @@ epd:id_2022-S-098-271595_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Addre
   locn:postName "Sainghin-en-Weppes" .
 
 epd:id_2022-S-098-271595_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
-  epo:hasBuyerLegalTypeDescription "EHPAD";
+  epo:hasBuyerLegalTypeDescription "EHPAD"@fr;
   epo:hasLegalName "ehpad Résidence de la vigne"@fr;
   epo:hasMainActivityDescription "EHPAD";
   cccev:registeredAddress epd:id_2022-S-098-271595_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
@@ -104,7 +112,11 @@ epd:id_2022-S-098-271595_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
   epo:isDesignContest true;
   epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-098-271595_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
     epd:id_2022-S-098-271595_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR;
+  epo:isSubjectToTerm epd:id_2022-S-098-271595_ProcessPlanningTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:usesChannel epd:id_2022-S-098-271595_Channel_G9uAqcYuooZwAU3Pwzv6eq .
+
+epd:id_2022-S-098-271595_ProcessPlanningTerm_jzfUStbcPNEXArDM2fL5TR a epo:ProcessPlanningTerm;
+  epo:hasEstimatedTenderInvitationDate "2022-07-06"^^xsd:date .
 
 epd:id_2022-S-098-271595_ProcurementProcedureInformationProvider_ejikeUyHJRYBkbdZUxEu3Y
   a epo:ProcurementProcedureInformationProvider;
@@ -130,4 +142,5 @@ epd:id_2022-S-098-271595_Reviewer_gQh8JdpqsE2bYBRikawiBu a epo:Reviewer;
 
 epd:id_2022-S-098-271595_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
   epo:hasLanguage "FR";
+  epo:hasReceiptDeadline "2022-06-15";
   epo:hasSubmissionURL "http://www.klekoon.com"^^xsd:anyURI .

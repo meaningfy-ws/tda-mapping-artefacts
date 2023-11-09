@@ -36,7 +36,7 @@ epd:id_2021-S-162-427490_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF a org:Org
   cccev:registeredAddress epd:id_2021-S-162-427490_OrganisationAddress_Vx4nE2MhH2AK3p6fvMzsYF .
 
 epd:id_2021-S-162-427490_BuyerOrganisationGroup_Vx4nE2MhH2AK3p6fvMzsYF a epo:OrganisationGroup;
-  epo:hasBuyerLegalTypeDescription "územní rozvoj";
+  epo:hasBuyerLegalTypeDescription "územní rozvoj"@cs;
   epo:hasMainActivityDescription "územní rozvoj";
   epo:hasMember epd:id_2021-S-162-427490_AdditionalOrganisation_Vx4nE2MhH2AK3p6fvMzsYF,
     epd:id_2021-S-162-427490_Organisation_VX8RygdBbvDo5gNDhjcsTj .
@@ -78,7 +78,7 @@ epd:id_2021-S-162-427490_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
   epo:isSubjectToLotSpecificTerm epd:id_2021-S-162-427490_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
-epd:id_2021-S-162-427490_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2021-S-162-427490_Notice a epo:CompetitionNotice, epo:Notice;
   epo:announcesRole epd:id_2021-S-162-427490_AdditionalBuyer_Vx4nE2MhH2AK3p6fvMzsYF,
     epd:id_2021-S-162-427490_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2021-S-162-427490_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
     epd:id_2021-S-162-427490_ReviewProcedureInformationProvider_VeBi6Ziihr6uYRaern8K6A,
@@ -130,7 +130,11 @@ epd:id_2021-S-162-427490_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
   epo:isDesignContest true;
   epo:isJointProcurement true;
   epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-162-427490_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
-    epd:id_2021-S-162-427490_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2021-S-162-427490_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR .
+    epd:id_2021-S-162-427490_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2021-S-162-427490_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR;
+  epo:isSubjectToTerm epd:id_2021-S-162-427490_ProcessPlanningTerm_jzfUStbcPNEXArDM2fL5TR .
+
+epd:id_2021-S-162-427490_ProcessPlanningTerm_jzfUStbcPNEXArDM2fL5TR a epo:ProcessPlanningTerm;
+  epo:hasEstimatedTenderInvitationDate "2021-08-20"^^xsd:date .
 
 epd:id_2021-S-162-427490_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
   a epo:ProcurementProcedureInformationProvider;
@@ -188,6 +192,7 @@ epd:id_2021-S-162-427490_SelectionCriterion_KLMkPPxCmjNo7fzvNJfdkt a epo:Selecti
 
 epd:id_2021-S-162-427490_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
   epo:hasLanguage "CS", "EN";
+  epo:hasReceiptDeadline "2021-09-30T15:00";
   epo:hasSubmissionURL "https://www.tenderarena.cz/profily/IPRPraha"^^xsd:anyURI .
 
 epd:id_2021-S-162-427490_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;

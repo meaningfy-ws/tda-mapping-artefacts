@@ -4,7 +4,15 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epd:id_2022-S-016-038914_AdditionalBuyer_Lb7cRT6hA6Ej7aEP2r8N4Z a epo:Buyer;
@@ -54,8 +62,7 @@ epd:id_2022-S-016-038914_ContactPoint_TigDgN9yDLHn3hDtQD7BVC a cccev:ContactPoin
   epo:hasInternetAddress "http://www.gruppocap.it"^^xsd:anyURI;
   cccev:email "appalti.gruppocap@legalmail.it" .
 
-epd:id_2022-S-016-038914_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location;
-  epo:hasNutsCode <http://data.europa.eu/nuts/code/IT> .
+epd:id_2022-S-016-038914_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj a dct:Location .
 
 epd:id_2022-S-016-038914_ContractTermLot_PNm7nZntEXiu4JieackQnj a epo:ContractTerm;
   epo:definesSpecificPlaceOfPerformance epd:id_2022-S-016-038914_ContractTermLotLocation_PNm7nZntEXiu4JieackQnj .
@@ -64,7 +71,7 @@ epd:id_2022-S-016-038914_Lot_PNm7nZntEXiu4JieackQnj a epo:Lot;
   epo:foreseesContractSpecificTerm epd:id_2022-S-016-038914_ContractTermLot_PNm7nZntEXiu4JieackQnj;
   epo:hasDescription "Servizio di pubblicazione avviso ed esiti di gara G.U.R.I. e quotidiani"@it .
 
-epd:id_2022-S-016-038914_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2022-S-016-038914_Notice a epo:Notice, epo:PlanningNotice;
   epo:announcesRole epd:id_2022-S-016-038914_AdditionalBuyer_Lb7cRT6hA6Ej7aEP2r8N4Z,
     epd:id_2022-S-016-038914_AdditionalBuyer_buWwWuLJmMxGCWAYPLfZdz, epd:id_2022-S-016-038914_Buyer_4zjJjpytu5bmHbyNSmtsju,
     epd:id_2022-S-016-038914_ProcurementProcedureInformationProvider_XCDmyRkixA99TuYbXMPHaZ;

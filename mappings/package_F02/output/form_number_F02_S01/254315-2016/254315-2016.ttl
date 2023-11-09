@@ -38,7 +38,7 @@ epd:id_2016-S-141-254315_AdditionalOrganisation_n3AiVAiqhTocTL76peYHtw a org:Org
 epd:id_2016-S-141-254315_AwardCriterionInDocuments_LmBJeQ9Jm9JmbvtZGAYpEK a epo:AwardCriterion .
 
 epd:id_2016-S-141-254315_BuyerOrganisationGroup_n3AiVAiqhTocTL76peYHtw a epo:OrganisationGroup;
-  epo:hasBuyerLegalTypeDescription "regional or local authority";
+  epo:hasBuyerLegalTypeDescription "regional or local authority"@en;
   epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/education>;
   epo:hasMember epd:id_2016-S-141-254315_AdditionalOrganisation_n3AiVAiqhTocTL76peYHtw,
     epd:id_2016-S-141-254315_Organisation_bhAnCWhMtKVDKPwFpTfXJN .
@@ -131,7 +131,7 @@ epd:id_2016-S-141-254315_MonetaryValueProcedure_THKQ4fNuRdgBWJVgrGgi3c a epo:Mon
 epd:id_2016-S-141-254315_MultipleStageProcedureTerm_oEYZZQWPrbQFajcRU6KZAY a epo:MultipleStageProcedureTerm;
   epo:hasMaximumNumberOfCandidates 1 .
 
-epd:id_2016-S-141-254315_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2016-S-141-254315_Notice a epo:CompetitionNotice, epo:Notice;
   epo:announcesRole epd:id_2016-S-141-254315_AdditionalBuyer_n3AiVAiqhTocTL76peYHtw,
     epd:id_2016-S-141-254315_Buyer_RWiSPwVxxCucurXbvBUteJ, epd:id_2016-S-141-254315_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA,
     epd:id_2016-S-141-254315_Reviewer_Sc23ScTxybJ3bYD3QjmgGS, epd:id_2016-S-141-254315_TenderReceiver_o6BobSwwdYb4ymwzqpzTvE;
@@ -174,7 +174,7 @@ epd:id_2016-S-141-254315_ProcedurePurpose_THKQ4fNuRdgBWJVgrGgi3c a epo:Purpose;
 epd:id_2016-S-141-254315_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c a epo:ProcedureTerm;
   epo:hasLotAwardCombination """
 Yes.
-""";
+"""@en;
   epo:hasMaximumLotSubmissionAllowed 12;
   epo:hasMaximumNumberOfLotsToBeAwarded 125;
   epo:isAwardedByCPB true .
@@ -202,8 +202,12 @@ Provision of School Transport Services.
   epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-141-254315_AccessTerm_RWiSPwVxxCucurXbvBUteJ,
     epd:id_2016-S-141-254315_FrameworkAgreementTerm_36ktLAsh4DDGMtAzNZMEnw, epd:id_2016-S-141-254315_ProcedureTerm_THKQ4fNuRdgBWJVgrGgi3c,
     epd:id_2016-S-141-254315_ReviewTerm_HWXWsPNypjdVtaGtGNiDyf, epd:id_2016-S-141-254315_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw;
+  epo:isSubjectToTerm epd:id_2016-S-141-254315_ProcessPlanningTerm_36ktLAsh4DDGMtAzNZMEnw;
   epo:usesTechnique epd:id_2016-S-141-254315_DynamicPurchaseSystemTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw,
     epd:id_2016-S-141-254315_EAuctionTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw, epd:id_2016-S-141-254315_FrameworkAgreementTechniqueUsage_36ktLAsh4DDGMtAzNZMEnw .
+
+epd:id_2016-S-141-254315_ProcessPlanningTerm_36ktLAsh4DDGMtAzNZMEnw a epo:ProcessPlanningTerm;
+  epo:hasEstimatedTenderInvitationDate "2016-03-23"^^xsd:date .
 
 epd:id_2016-S-141-254315_ProcurementProcedureInformationProvider_42zSNNxMoECsmnrCvYXfpA
   a epo:ProcurementProcedureInformationProvider;
@@ -239,6 +243,7 @@ epd:id_2016-S-141-254315_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw a epo:Period .
 
 epd:id_2016-S-141-254315_SubmissionTerm_36ktLAsh4DDGMtAzNZMEnw a epo:SubmissionTerm;
   epo:hasLanguage "AR";
+  epo:hasReceiptDeadline "2016-07-26T12:00";
   epo:hasSubmissionURL "www.asite.com"^^xsd:anyURI;
   epo:hasValidityPeriod epd:id_2016-S-141-254315_SubmissionPeriod_36ktLAsh4DDGMtAzNZMEnw .
 

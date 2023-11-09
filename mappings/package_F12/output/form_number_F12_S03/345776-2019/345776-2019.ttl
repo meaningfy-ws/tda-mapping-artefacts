@@ -4,7 +4,15 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epd:id_2019-S-140-345776_AccessTerm_57fXPDDcVS8FkRK2gHRQMN a epo:AccessTerm;
@@ -48,7 +56,7 @@ epd:id_2019-S-140-345776_Lot_k5UiCNjVxapva2MShsi99p a epo:Lot;
   epo:isSubjectToLotSpecificTerm epd:id_2019-S-140-345776_DesignContestRegimeTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:isUsingEUFunds false .
 
-epd:id_2019-S-140-345776_Notice a epo:Notice, epo:ResultNotice;
+epd:id_2019-S-140-345776_Notice a epo:CompetitionNotice, epo:Notice;
   epo:announcesRole epd:id_2019-S-140-345776_Buyer_57fXPDDcVS8FkRK2gHRQMN, epd:id_2019-S-140-345776_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm,
     epd:id_2019-S-140-345776_Reviewer_gQh8JdpqsE2bYBRikawiBu, epd:id_2019-S-140-345776_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw;
   epo:hasDispatchDate "2019-07-18"^^xsd:date;
@@ -69,7 +77,7 @@ epd:id_2019-S-140-345776_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj a locn:Addre
   locn:thoroughfare "col de la Quillane" .
 
 epd:id_2019-S-140-345776_Organisation_VX8RygdBbvDo5gNDhjcsTj a org:Organization;
-  epo:hasBuyerLegalTypeDescription "EPCI";
+  epo:hasBuyerLegalTypeDescription "EPCI"@fr;
   epo:hasLegalName "Communauté de communes Pyrénées catalanes"@fr;
   epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
   cccev:registeredAddress epd:id_2019-S-140-345776_OrganisationAddress_VX8RygdBbvDo5gNDhjcsTj .
@@ -90,7 +98,11 @@ epd:id_2019-S-140-345776_Procedure_n9YtPUZG9SDZ5m8nAb77dU a epo:Procedure;
   epo:isDesignContest true;
   epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-140-345776_AccessTerm_57fXPDDcVS8FkRK2gHRQMN,
     epd:id_2019-S-140-345776_ReviewTerm_RW9aiajURL5iSUCvDaitUd, epd:id_2019-S-140-345776_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR;
+  epo:isSubjectToTerm epd:id_2019-S-140-345776_ProcessPlanningTerm_jzfUStbcPNEXArDM2fL5TR;
   epo:usesChannel epd:id_2019-S-140-345776_Channel_G9uAqcYuooZwAU3Pwzv6eq .
+
+epd:id_2019-S-140-345776_ProcessPlanningTerm_jzfUStbcPNEXArDM2fL5TR a epo:ProcessPlanningTerm;
+  epo:hasEstimatedTenderInvitationDate "2019-09-20"^^xsd:date .
 
 epd:id_2019-S-140-345776_ProcurementProcedureInformationProvider_6QKxTetK36iAko3QRH7zRm
   a epo:ProcurementProcedureInformationProvider;
@@ -117,6 +129,7 @@ epd:id_2019-S-140-345776_SelectionCriterion_KLMkPPxCmjNo7fzvNJfdkt a epo:Selecti
 
 epd:id_2019-S-140-345776_SubmissionTerm_jzfUStbcPNEXArDM2fL5TR a epo:SubmissionTerm;
   epo:hasLanguage "FR";
+  epo:hasReceiptDeadline "2019-08-26T16:00";
   epo:hasSubmissionURL "https://www.e-marchespublics.com"^^xsd:anyURI .
 
 epd:id_2019-S-140-345776_TenderReceiver_hBeKPtGTKUfM7giwGqnWGw a epo:TenderReceiver;
