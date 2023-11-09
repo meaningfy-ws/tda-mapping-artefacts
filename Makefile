@@ -22,7 +22,7 @@ LOCAL_ID_MANAGER_API_PORT = 8000
 setup: install install-rmlmapper init-saxon local-dotenv-file
 
 install:
-	@ echo -e "$(BUILD_PRINT)Installing the requirements$(END_BUILD_PRINT)"
+	@ echo -e "$(BUILD_PRINT)Installing user requirements$(END_BUILD_PRINT)"
 	@ python -m pip install --upgrade pip
 	@ python -m pip install --no-cache-dir --upgrade --force-reinstall -r requirements.txt
 
@@ -85,13 +85,9 @@ clear-output:
 	@ rm -rf mappings/$(id)/output/*
 	@ rm -rf mappings/$(id)/validation/sparql/cm_assertions/*
 
-install-dev:
-	@ echo -e "$(BUILD_PRINT)Installing the requirements$(END_BUILD_PRINT)"
-#	@ python -m pip install --no-cache-dir --upgrade --force-reinstall --no-deps ../ted-rdf-conversion-pipeline
-#	@ python -m pip install --no-cache-dir --upgrade --force-reinstall git+https://github.com/meaningfy-ws/mapping-workbench@feature/TED-1090
-#	@ python -m pip install --no-cache-dir --upgrade --force-reinstall git+https://github.com/OP-TED/ted-rdf-conversion-pipeline@feature/TED-1090
-	@ python -m pip install --no-cache-dir --upgrade --force-reinstall git+https://github.com/meaningfy-ws/mapping-workbench
-	@ python -m pip install --no-cache-dir --upgrade --force-reinstall git+https://github.com/OP-TED/ted-rdf-conversion-pipeline
+install-dev: install
+	@ echo -e "$(BUILD_PRINT)Installing dev requirements$(END_BUILD_PRINT)"
+	@ python -m pip install --no-cache-dir --upgrade --force-reinstall -r requirements-dev.txt
 
 test:
 	@ mapping_suite_validator package_F03
