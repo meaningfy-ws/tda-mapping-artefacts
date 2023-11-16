@@ -1,0 +1,148 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-063-167270_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://www.equinor.com/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2022-S-063-167270_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 a epo:AwardCriterion .
+
+epd:id_2022-S-063-167270_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://kgv.doffin.no/ctm/Company/CompanyInformation/Index/79190"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-063-167270_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-063-167270_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-063-167270_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Ingrid Eline Tøsdal"@en;
+  epo:hasInternetAddress "https://www.equinor.com/"^^xsd:anyURI;
+  cccev:email "itos@equinor.com";
+  cccev:telephone "+47 48110829" .
+
+epd:id_2022-S-063-167270_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "Kårstø and/or Sture and Kollsnes"@en .
+
+epd:id_2022-S-063-167270_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  locn:address epd:id_2022-S-063-167270_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2022-S-063-167270_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-063-167270_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2022-S-063-167270_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2022-S-063-167270_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45255300> .
+
+epd:id_2022-S-063-167270_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-063-167270_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "The contract will cover work within the following main areas under contractor work:• Multi-disciplinary maintenance and assistance• Condition checks/inspection• Other services including:o Engineering designo Support for 1st and 2nd line stand-byo Participate in oil pollution actions (beach cleaning, etc.)These will be assignments within the following fields/disciplines:• Maintenance/construction of buildings, including concrete buildings, steel buildings, barracks, etc.• Maintenance of concrete bridges• Foundations and pipe supports• Maintenance of main dishes for bringing gas pipelines onto land• Fences, including boundary protection, gates, rotating gates, etc.• Cable ditches/culverts• Quays• Tanks• Maintenance of tunnels• Excavation work• Underground pipe installations, (concrete, GRE, GRP, PVC, PE, pipe renewal/pipe stockings, etc.)• Maintenance of roads and open spaces• Winter maintenance on roads and open spaces• Clearing buildings/constructions"@en;
+  epo:hasPurpose epd:id_2022-S-063-167270_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-063-167270_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 .
+
+epd:id_2022-S-063-167270_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2022-S-063-167270_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2022-S-063-167270_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2022-S-063-167270_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2022-S-063-167270_TenderReceiver_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasDispatchDate "2022-03-25"^^xsd:date;
+  epo:hasID epd:id_2022-S-063-167270_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220330";
+  epo:refersToLot epd:id_2022-S-063-167270_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2022-S-063-167270_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2022-S-063-167270_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 063-167270" .
+
+epd:id_2022-S-063-167270_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NOR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/NO0A>;
+  locn:postCode "4035";
+  locn:postName "STAVANGER";
+  locn:thoroughfare "Forusbeen 50" .
+
+epd:id_2022-S-063-167270_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue " 990 888 213" .
+
+epd:id_2022-S-063-167270_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2022-S-063-167270_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Equinor Energy AS"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gas-oil>;
+  cccev:registeredAddress epd:id_2022-S-063-167270_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-063-167270_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "ENQ467589" .
+
+epd:id_2022-S-063-167270_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45255800> .
+
+epd:id_2022-S-063-167270_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-063-167270_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasID epd:id_2022-S-063-167270_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-063-167270_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2022-S-063-167270_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Civil work Kårstø process plant, Sture terminal, and Kollsnes process plant"@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-063-167270_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2022-S-063-167270_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2022-S-063-167270_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-063-167270_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-063-167270_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-063-167270_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NOR>;
+  locn:postCode "4012";
+  locn:postName "Stavanger" .
+
+epd:id_2022-S-063-167270_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Stavanger Tingrett"@en;
+  cccev:registeredAddress epd:id_2022-S-063-167270_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2022-S-063-167270_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-063-167270_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2022-S-063-167270_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "NO" .
+
+epd:id_2022-S-063-167270_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NOR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/NO>;
+  locn:postCode "4035 ";
+  locn:postName "STAVANGER";
+  locn:thoroughfare "Forusbeen 50" .
+
+epd:id_2022-S-063-167270_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx
+  a cccev:ContactPoint;
+  epo:hasContactName "Ingrid Tøsdal"@en;
+  epo:hasInternetAddress "https://www.equinor.com/"^^xsd:anyURI;
+  cccev:email "itos@equinor.com";
+  cccev:telephone "+47 48110829" .
+
+epd:id_2022-S-063-167270_TenderReceiverOrganisationIdentifier_7qc7fbmR56uUqsniJHkNyx
+  a epo:Identifier;
+  epo:hasIdentifierValue "990 888 213" .
+
+epd:id_2022-S-063-167270_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx a org:Organization;
+  epo:hasID epd:id_2022-S-063-167270_TenderReceiverOrganisationIdentifier_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasLegalName "Equinor Energy AS"@en;
+  epo:hasPrimaryContactPoint epd:id_2022-S-063-167270_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  cccev:registeredAddress epd:id_2022-S-063-167270_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx .
+
+epd:id_2022-S-063-167270_TenderReceiver_7qc7fbmR56uUqsniJHkNyx a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-063-167270_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  epo:playedBy epd:id_2022-S-063-167270_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx .

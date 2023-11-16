@@ -1,0 +1,149 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-091-251916_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://fournisseurs.aeroportsdeparis.fr/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-091-251916_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 a epo:AwardCriterion .
+
+epd:id_2022-S-091-251916_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-091-251916_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-091-251916_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-091-251916_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasInternetAddress "www.aeroportsdeparis.fr"^^xsd:anyURI;
+  cccev:email "guillaume.luneau@adp.fr";
+  cccev:telephone "+33 763442835" .
+
+epd:id_2022-S-091-251916_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10> .
+
+epd:id_2022-S-091-251916_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-091-251916_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2022-S-091-251916_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2022-S-091-251916_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/48000000>, <http://data.europa.eu/cpv/cpv/48331000> .
+
+epd:id_2022-S-091-251916_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-091-251916_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Le Système de Qualification a pour objet de procéder à un référencement de prestataire qualifiés par l'Agence Nationale de la Sécurité des Systèmes d'Information en tant que Prestataire de Réponses aux Incidents de Sécurité. (PRIS).Ces prestataires doivent réaliser des prestations de réponses aux incidents de sécurité qui pourraient survenir sur les Systèmes d'Information d'Aéroports de Paris. "@fr;
+  epo:hasPurpose epd:id_2022-S-091-251916_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-091-251916_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 .
+
+epd:id_2022-S-091-251916_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75017";
+  locn:postName "Paris";
+  locn:thoroughfare "29-45 Avenue de la Porte de Clichy" .
+
+epd:id_2022-S-091-251916_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS a org:Organization;
+  epo:hasLegalName "Greffe du Tribunal judiciaire de Paris"@fr;
+  cccev:registeredAddress epd:id_2022-S-091-251916_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2022-S-091-251916_Mediator_3YJsnAYcTDrfQQSNseUiyS a epo:Mediator;
+  epo:playedBy epd:id_2022-S-091-251916_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2022-S-091-251916_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2022-S-091-251916_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2022-S-091-251916_Mediator_3YJsnAYcTDrfQQSNseUiyS,
+    epd:id_2022-S-091-251916_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2022-S-091-251916_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2022-S-091-251916_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2022-S-091-251916_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2022-05-06"^^xsd:date;
+  epo:hasID epd:id_2022-S-091-251916_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220511";
+  epo:refersToLot epd:id_2022-S-091-251916_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2022-S-091-251916_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2022-S-091-251916_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 091-251916" .
+
+epd:id_2022-S-091-251916_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR10>;
+  locn:postCode "93240";
+  locn:postName "Tremblay en France";
+  locn:thoroughfare "1 rue de France" .
+
+epd:id_2022-S-091-251916_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "Aéroports de Paris"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  cccev:registeredAddress epd:id_2022-S-091-251916_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-091-251916_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/72000000> .
+
+epd:id_2022-S-091-251916_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-091-251916_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "Tout prestataire souhaitant transmettre une candidature et être qualifié pour ce système de qualification devra fournir les documents suivants :• Une attestation sur l'honneur indiquant que l'entreprise candidate n'a pas fait l'objet, d'une des condamnations visées à l'article 45 de l'ordonnance du 23 juillet 2015 ;• Une attestation sur l'honneur que l'entreprise candidate ne fait pas l'objet d'une procédure de liquidation judiciaire ou règles d'effet équivalent pour les candidats étrangers ;• Un extrait K bis ou équivalent de moins de trois mois ;• Une attestation de fourniture de déclarations sociales établie par l'URSSAF ou autre organisme chargé du recouvrement des cotisations et contributions sociales de moins de six mois ;• Le questionnaire de qualification complété ;• Un document de présentation de l'entreprise candidate complété ;• Les certifications, labels et qualifications éventuelles ;• Un mémoire général décrivant la méthodologie et l'organisation générale de travail pour les prestations proposées ainsi que les spécialités de recherche. Ce mémoire devra comporter notamment la répartition des activités entre les assistants de recherches et les consultants, les outils et méthodes d'évaluation utilisées, les CV des principaux intervenants ;• Un document de deux pages de références et réalisations détaillées en recrutement par approche directe en indiquant notamment l'année, la fonction du poste et le profil du candidat recherché en complément de références à lister dans le questionnaire de qualification.Aéroports de Paris se réserve le droit de rejeter tout dossier incomplet."@fr;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-091-251916_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2022-S-091-251916_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Prestataires de réponse aux incidents de sécurité qualifié par l'ANSSI"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-091-251916_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2022-S-091-251916_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP, epd:id_2022-S-091-251916_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2022-S-091-251916_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-091-251916_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-091-251916_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-091-251916_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75017";
+  locn:postName "Paris";
+  locn:thoroughfare "29-45 Avenue de la Porte de Clichy" .
+
+epd:id_2022-S-091-251916_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Greffe du Tribunal judiciaire de Paris"@fr;
+  cccev:registeredAddress epd:id_2022-S-091-251916_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2022-S-091-251916_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-091-251916_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2022-S-091-251916_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— référé précontractuel pouvant être exercé depuis le début de la procédure de passation jusqu'à la signature du marché (article 5 de l'ordonnance du 7.5.2009),— référé contractuel prévu par l'article 11 de l'ordonnance du 7.5.2009, — recours en nullité relative (5 ans), — recours en nullité absolue (30 ans)." .
+
+epd:id_2022-S-091-251916_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75017";
+  locn:postName "Paris";
+  locn:thoroughfare "29-45 Avenue de la Porte de Clichy" .
+
+epd:id_2022-S-091-251916_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Tribunal judiciaire de Paris"@fr;
+  cccev:registeredAddress epd:id_2022-S-091-251916_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2022-S-091-251916_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-091-251916_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2022-S-091-251916_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2022-S-091-251916_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-091-251916_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-091-251916_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

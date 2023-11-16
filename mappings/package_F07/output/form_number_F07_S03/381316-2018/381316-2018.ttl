@@ -1,0 +1,189 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-167-381316_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2018-S-167-381316_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://www.uvo.gov.sk/profily/-/profil/pdetail/14101"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-167-381316_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-167-381316_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-167-381316_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Ing. Peter Kráľovič"@sk;
+  epo:hasInternetAddress "https://www.zsdis.sk/"^^xsd:anyURI;
+  cccev:email "peter.kralovic@zsdis.sk";
+  cccev:telephone "+421 250612472 / 917771891" .
+
+epd:id_2018-S-167-381316_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "Západoslovenský kraj"@sk .
+
+epd:id_2018-S-167-381316_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SK>;
+  locn:address epd:id_2018-S-167-381316_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2018-S-167-381316_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-167-381316_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription "Obstarávateľ si vyhradzuje právo aktualizovať podľa potreby kritériá a pravidlá tohto kvalifikačného systému. V prípade aktualizácie kvalifikačného systému sa záujemcom a kvalifikovaným dodávateľov oznámia zmeny v kritériách a pravidlách kvalifikačného systému.";
+  epo:isRenewalIndicator true .
+
+epd:id_2018-S-167-381316_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2018-S-167-381316_EAuctionTechniqueUsage_E5T8LK7GWtcY6SLmbwzAoM a epo:EAuctionTechniqueUsage .
+
+epd:id_2018-S-167-381316_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8 a
+    cccev:ContactPoint;
+  epo:hasContactName "Jarmila Vyňuchalová"@sk;
+  epo:hasInternetAddress "https://www.zsdis.sk/"^^xsd:anyURI;
+  cccev:email "jarmila.vynuchalova@zsdis.sk";
+  cccev:telephone "+421 250612952 / 905781890" .
+
+epd:id_2018-S-167-381316_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SK>;
+  locn:postCode "816 47";
+  locn:postName "Bratislava";
+  locn:thoroughfare "Čulenova 3" .
+
+epd:id_2018-S-167-381316_InformationProviderOrganisationIdentifier_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:Identifier;
+  epo:hasIdentifierValue "36361518" .
+
+epd:id_2018-S-167-381316_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 a
+    org:Organization;
+  epo:hasID epd:id_2018-S-167-381316_InformationProviderOrganisationIdentifier_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:hasLegalName "Západoslovenská distribučná, a.s."@sk;
+  cccev:registeredAddress epd:id_2018-S-167-381316_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2018-S-167-381316_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45000000> .
+
+epd:id_2018-S-167-381316_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-167-381316_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Predmet zákazky je rozdelený na dva samostatné stupne:1. stupeň: Stavebno-montážne práce menšieho rozsahu v prevádzkových objektoch a areáloch2. stupeň: Stavebné opravy murovaných trafostaníc."@sk;
+  epo:hasPurpose epd:id_2018-S-167-381316_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-167-381316_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-167-381316_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r .
+
+epd:id_2018-S-167-381316_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-167-381316_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2018-S-167-381316_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2018-S-167-381316_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8,
+    epd:id_2018-S-167-381316_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2018-S-167-381316_Reviewer_cnThDUHhCN7pjvrhJdwbGS;
+  epo:hasDispatchDate "2018-08-28"^^xsd:date;
+  epo:hasID epd:id_2018-S-167-381316_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20180831";
+  epo:refersToLot epd:id_2018-S-167-381316_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2018-S-167-381316_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2018-S-167-381316_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 167-381316" .
+
+epd:id_2018-S-167-381316_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SK>;
+  locn:postCode "816 47";
+  locn:postName "Bratislava";
+  locn:thoroughfare "Čulenova 6" .
+
+epd:id_2018-S-167-381316_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "36361518" .
+
+epd:id_2018-S-167-381316_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2018-S-167-381316_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Západoslovenská distribučná, a.s."@sk;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2018-S-167-381316_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-167-381316_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "ID-0086" .
+
+epd:id_2018-S-167-381316_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45000000> .
+
+epd:id_2018-S-167-381316_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-167-381316_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "Nejedná sa o zelené obstarávanie, obstarávanie inovácií ani obstarávanie zamerané na sociálne aspekty."@sk;
+  epo:hasID epd:id_2018-S-167-381316_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-167-381316_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2018-S-167-381316_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Stavebné práce a opravy"@sk;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-167-381316_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP,
+    epd:id_2018-S-167-381316_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:usesTechnique epd:id_2018-S-167-381316_EAuctionTechniqueUsage_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2018-S-167-381316_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-167-381316_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:playedBy epd:id_2018-S-167-381316_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2018-S-167-381316_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  locn:postCode "820 05";
+  locn:postName "Bratislava";
+  locn:thoroughfare "Ružová dolina 10, P.O.Box" .
+
+epd:id_2018-S-167-381316_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasFax "+421 250264219";
+  epo:hasInternetAddress "http://www.uvo.gov.sk"^^xsd:anyURI;
+  cccev:telephone "+421 250264176" .
+
+epd:id_2018-S-167-381316_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Úrad pre verejné obstarávanie"@sk;
+  epo:hasPrimaryContactPoint epd:id_2018-S-167-381316_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2018-S-167-381316_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2018-S-167-381316_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-167-381316_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2018-S-167-381316_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "§ 163 a násl. zákona č. 343/2015 Z. z. o verejnom obstarávaní a o zmene a doplnení niektorých zákonov." .
+
+epd:id_2018-S-167-381316_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+421 250264219";
+  epo:hasInternetAddress "http://www.uvo.gov.sk"^^xsd:anyURI;
+  cccev:telephone "+421 250264176" .
+
+epd:id_2018-S-167-381316_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SVK>;
+  locn:postCode "820 05";
+  locn:postName "Bratislava";
+  locn:thoroughfare "Ružová dolina 10, P.O.Box" .
+
+epd:id_2018-S-167-381316_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Úrad pre verejné obstarávanie"@sk;
+  epo:hasPrimaryContactPoint epd:id_2018-S-167-381316_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2018-S-167-381316_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-167-381316_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-167-381316_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-167-381316_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "CS", "SK";
+  epo:hasSubmissionURL "https://zsdis.eranet.sk"^^xsd:anyURI .

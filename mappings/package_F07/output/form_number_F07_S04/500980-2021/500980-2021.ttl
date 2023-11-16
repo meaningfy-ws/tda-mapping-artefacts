@@ -1,0 +1,135 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-192-500980_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-192-500980_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://app.eop.bg/buyer/14843"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-192-500980_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-192-500980_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-192-500980_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Емил Тончев"@bg;
+  epo:hasFax "+359 42663510";
+  epo:hasInternetAddress "www.contourglobal.com"^^xsd:anyURI;
+  cccev:email "emil.tonchev@contourglobal.com";
+  cccev:telephone "+359 42663536" .
+
+epd:id_2021-S-192-500980_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "ТЕЦ \"КонтурГлобал Марица Изток 3\", с. Медникарово, 6294"@bg .
+
+epd:id_2021-S-192-500980_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:address epd:id_2021-S-192-500980_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-192-500980_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-192-500980_Period_W3EavcErM2fLz5G9WDkXcn;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-192-500980_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-192-500980_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2021-S-192-500980_EAuctionTechniqueUsage_E5T8LK7GWtcY6SLmbwzAoM a epo:EAuctionTechniqueUsage .
+
+epd:id_2021-S-192-500980_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-192-500980_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Доставка на варовик фракция 10-50 мм."@bg;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-192-500980_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r .
+
+epd:id_2021-S-192-500980_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2021-S-192-500980_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2021-S-192-500980_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2021-S-192-500980_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2021-S-192-500980_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2021-09-29"^^xsd:date;
+  epo:hasID epd:id_2021-S-192-500980_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20211004";
+  epo:refersToLot epd:id_2021-S-192-500980_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2021-S-192-500980_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2021-S-192-500980_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 192-500980" .
+
+epd:id_2021-S-192-500980_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:postCode "1505";
+  locn:postName "гр. София";
+  locn:thoroughfare "бул.Ситняково №.48 ет.9" .
+
+epd:id_2021-S-192-500980_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "130020522" .
+
+epd:id_2021-S-192-500980_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2021-S-192-500980_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "КонтурГлобал Марица Изток 3 АД"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2021-S-192-500980_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-192-500980_Period_W3EavcErM2fLz5G9WDkXcn a epo:Period;
+  epo:hasBeginning "2021-10-01"^^xsd:date;
+  epo:hasEnd "2024-12-31"^^xsd:date .
+
+epd:id_2021-S-192-500980_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "77-141-21" .
+
+epd:id_2021-S-192-500980_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/44921300> .
+
+epd:id_2021-S-192-500980_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-192-500980_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "Стопанските субекти могат да подават заявление за участие в квалификационната система по всяко време в срокана действие на квалификационната система. Получените заявления се регистрират автоматично с входящ номер врегистъра на АОП в ЦАИС и се разглеждат от назначена комисия. Възложителят взема решение относновключване или отказа за включване на заинтересовани лица в квалификационна система в 6-месечен срок отподаване на заявлението за включване в квалификационната система."@bg;
+  epo:hasID epd:id_2021-S-192-500980_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-192-500980_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2021-S-192-500980_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Доставка на варовик фракция 10-50 мм"@bg;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-192-500980_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:usesTechnique epd:id_2021-S-192-500980_EAuctionTechniqueUsage_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2021-S-192-500980_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-192-500980_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-192-500980_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-192-500980_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "delovodstvo@cpc.bg";
+  cccev:telephone "+359 29356113" .
+
+epd:id_2021-S-192-500980_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. Витоша № 18" .
+
+epd:id_2021-S-192-500980_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2021-S-192-500980_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2021-S-192-500980_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-192-500980_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-192-500980_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-192-500980_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "BG";
+  epo:hasSubmissionURL "https://app.eop.bg/today/163333"^^xsd:anyURI .
+
+epd:id_2021-S-192-500980_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-192-500980_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-192-500980_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

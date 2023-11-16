@@ -1,0 +1,170 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-184-480010_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-184-480010_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "www.atap.pn.it"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-184-480010_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-184-480010_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-184-480010_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "RUP - Luca Piasentier"@it;
+  epo:hasFax "+39 0434224410";
+  epo:hasInternetAddress "www.atap.pn.it"^^xsd:anyURI;
+  cccev:email "piasentier@atap.pn.it";
+  cccev:telephone "+39 0434224401" .
+
+epd:id_2021-S-184-480010_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "ATAP S.p.A.Via Candiani, n. 2633170 PORDENONE (PN)ITALIA"@it .
+
+epd:id_2021-S-184-480010_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITH41>;
+  locn:address epd:id_2021-S-184-480010_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-184-480010_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-184-480010_Period_W3EavcErM2fLz5G9WDkXcn;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-184-480010_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-184-480010_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true .
+
+epd:id_2021-S-184-480010_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8 a
+    cccev:ContactPoint;
+  epo:hasContactName "Direzione Appalti e Acquisti - Area Appalti di Gruppo"@it;
+  epo:hasInternetAddress "www.actv.it"^^xsd:anyURI;
+  cccev:email "gare@avmspa.it";
+  cccev:telephone "+39 0412722403" .
+
+epd:id_2021-S-184-480010_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITH35>;
+  locn:postCode "30135";
+  locn:postName "Venezia";
+  locn:thoroughfare "Isola Nova del Tronchetto" .
+
+epd:id_2021-S-184-480010_InformationProviderOrganisationIdentifier_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:Identifier;
+  epo:hasIdentifierValue "00762090272" .
+
+epd:id_2021-S-184-480010_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 a
+    org:Organization;
+  epo:hasID epd:id_2021-S-184-480010_InformationProviderOrganisationIdentifier_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:hasLegalName "ACTV S.p.A."@it;
+  cccev:registeredAddress epd:id_2021-S-184-480010_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2021-S-184-480010_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-184-480010_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Comunicazione ai sensi dell'art. 134 comma 3 — D.Lgs. 50/2016Atap S.p.A. con sede in Via Candiani, n. 2 - 33170 Pordenone (Italia) utilizza il sistema di qualificazione attivato da ACTV S.p.A. valido per il periodo dal 01/04/2019 al 31/03/2024, con avviso pubblicato nella Gazzetta Ufficiale dell’Unione Europea n. 2019/S 039-088982 del 25/02/2019 e G.U.R.I. n. 24 del 25/02/2019, per la fornitura di gasolio per autotrazioneProcedura ristretta ai sensi art. 134 comma 8 del D.Lgs. 50/2016. Oggetto: somministrazione di stimati 6.000.000,00 (sei milioni) +/- 5 % litri di gasolio ad uso autotrazione BTZ 0,001 % (10 ppm) a valere presumibilmente per il periodo 01/01/2022 – 31/12/2022 ed ulteriori opzioni per i periodi 01/01/2023 – 30/06/2023 e 01/07/2023 – 31/12/2023.Ulteriori informazioni: RUP - Luca Piasentier - +39 0434224401"@it;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-184-480010_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r .
+
+epd:id_2021-S-184-480010_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2021-S-184-480010_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2021-S-184-480010_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8,
+    epd:id_2021-S-184-480010_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2021-S-184-480010_TenderReceiver_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasDispatchDate "2021-09-17"^^xsd:date;
+  epo:hasID epd:id_2021-S-184-480010_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210922";
+  epo:refersToLot epd:id_2021-S-184-480010_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2021-S-184-480010_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2021-S-184-480010_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 184-480010" .
+
+epd:id_2021-S-184-480010_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITH41>;
+  locn:postCode "33170";
+  locn:postName "Pordenone";
+  locn:thoroughfare "Via Candiani, n. 26" .
+
+epd:id_2021-S-184-480010_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "00188590939" .
+
+epd:id_2021-S-184-480010_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2021-S-184-480010_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "ATAP S.p.A."@it;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2021-S-184-480010_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-184-480010_Period_W3EavcErM2fLz5G9WDkXcn a epo:Period;
+  epo:hasBeginning "2022-01-01"^^xsd:date;
+  epo:hasEnd "2023-12-31"^^xsd:date .
+
+epd:id_2021-S-184-480010_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09134100> .
+
+epd:id_2021-S-184-480010_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-184-480010_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "La partecipazione alla gara implica la totale accettazione di tutte le clausole contenute nella lettera di invito e nel Capitolato Speciale.La ditta aggiudicataria dovrà certificare l’osservanza delle disposizioni della vigente disciplina in materia di sicurezza, ai sensi del D.Lgs 81/2008 e s.m.i..Il Responsabile Unico del Procedimento è l'ing. Luca Piasentier - +39 0434224401Tutte le eventuali spese inerenti la stipula del contratto saranno a carico dell’aggiudicatario.Ulteriori informazioni da richiedersi mezzo PEC all'indirizzo pec.atappn@legalmail.it"@it;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-184-480010_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2021-S-184-480010_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Atap S.p.A. con sede in Via Candiani, n. 26 - 33170 Pordenone (Italia) utilizza il sistema di qualificazione attivato da ACTV S.p.A."@it;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-184-480010_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2021-S-184-480010_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-184-480010_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:playedBy epd:id_2021-S-184-480010_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2021-S-184-480010_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postName "Trieste" .
+
+epd:id_2021-S-184-480010_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Tribunale Amministrativo Regionale Friuli Venezia Giulia"@it;
+  cccev:registeredAddress epd:id_2021-S-184-480010_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-184-480010_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-184-480010_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-184-480010_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "IT" .
+
+epd:id_2021-S-184-480010_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/ITH41>;
+  locn:postCode "33170";
+  locn:postName "Pordenone";
+  locn:thoroughfare "Via Candiani, n. 5" .
+
+epd:id_2021-S-184-480010_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx
+  a cccev:ContactPoint;
+  epo:hasContactName "RUP - Luca Piasentier"@it;
+  epo:hasFax "+39 0434224410";
+  epo:hasInternetAddress "www.atap.pn.it"^^xsd:anyURI;
+  cccev:email "piasentier@atap.pn.it";
+  cccev:telephone "+39 0434224401" .
+
+epd:id_2021-S-184-480010_TenderReceiverOrganisationIdentifier_7qc7fbmR56uUqsniJHkNyx
+  a epo:Identifier;
+  epo:hasIdentifierValue "00188590939" .
+
+epd:id_2021-S-184-480010_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx a org:Organization;
+  epo:hasID epd:id_2021-S-184-480010_TenderReceiverOrganisationIdentifier_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasLegalName "ATAP S.p.A."@it;
+  epo:hasPrimaryContactPoint epd:id_2021-S-184-480010_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  cccev:registeredAddress epd:id_2021-S-184-480010_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx .
+
+epd:id_2021-S-184-480010_TenderReceiver_7qc7fbmR56uUqsniJHkNyx a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-184-480010_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  epo:playedBy epd:id_2021-S-184-480010_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx .

@@ -1,0 +1,187 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-075-205113_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://www.vergabe.metropoleruhr.de/VMPSatellite/notice/CXPSYDKD4YB/documents"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2022-S-075-205113_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "0"@de .
+
+epd:id_2022-S-075-205113_AwardCriterionQuality_nb5it8NzBJxDRf7WBnLSyS a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Bewertungsmatrix Qualitätssystem"@de;
+  cccev:weight "100"@de .
+
+epd:id_2022-S-075-205113_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-075-205113_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-075-205113_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-075-205113_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Herr Sebastian Brinkert"@de;
+  epo:hasFax "+49 209708-1717";
+  epo:hasInternetAddress "https://www.gelsenwasser.de"^^xsd:anyURI;
+  cccev:email "vergabestelle-sg1@gelsenwasser.de";
+  cccev:telephone "+49 209708-0" .
+
+epd:id_2022-S-075-205113_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "Infrastrukturleistungen Tiefbau/ Rohrbau Gas+Wasser/ Kabelbau Strom/ Beleuchtung Willy-Brandt-Allee 26 45891 Gelsenkirchen Das GELSENWASSER-Qualifizierungssystem umfasst die Eignungsprüfung für nachfolgende Gesellschaften:GELSENWASSER AGGELSENWASSER ENERGIENETZE GmbHVereinigte Gas-und Wasserversorgung GmbHWasserwerke Westfalen GmbHWassergewinnung Essen GmbHWasserbeschaffung und Energieerzeugung Mittlere Ruhr GmbHNetzservicegesellschaft Niederrhein mbHVersorgungs- und Verkehrsbetrieb der Stadt StraelenGemeinschaftsstadtwerke Kamen, Bergkamen, Bönen  GmbHStadtwerke Unna GmbHWeserstadtwerke Service GmbH, Höxter"@de .
+
+epd:id_2022-S-075-205113_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA32>;
+  locn:address epd:id_2022-S-075-205113_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2022-S-075-205113_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-075-205113_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2022-S-075-205113_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2022-S-075-205113_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-075-205113_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Das vorliegende Qualifizierungssystem soll den Auftraggebern bei der Beschaffung von immer wieder anfallenden Leistungen für den Tief-, Rohr- und Kabelbau an Wasser-, Gas- und Stromverteilungsanlagen sowie für die Straßenbeleuchtung einen geeigneten Bieterkreis aufzeigen."@de;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-075-205113_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r,
+    epd:id_2022-S-075-205113_AwardCriterionQuality_nb5it8NzBJxDRf7WBnLSyS .
+
+epd:id_2022-S-075-205113_MediatorContactPoint_3YJsnAYcTDrfQQSNseUiyS a cccev:ContactPoint;
+  epo:hasFax "+49 251/4112165";
+  epo:hasInternetAddress "www.bezreg-muenster.de"^^xsd:anyURI;
+  cccev:email "vergabekammer@bezreg-muenster.nrw.de";
+  cccev:telephone "+49 251/4111691" .
+
+epd:id_2022-S-075-205113_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "48147";
+  locn:postName "Münster";
+  locn:thoroughfare "Albrecht-Thaer-Str. 9" .
+
+epd:id_2022-S-075-205113_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS a org:Organization;
+  epo:hasLegalName "Vergabekammer Westfalen bei der Bezirksregierung Münster"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-075-205113_MediatorContactPoint_3YJsnAYcTDrfQQSNseUiyS;
+  cccev:registeredAddress epd:id_2022-S-075-205113_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2022-S-075-205113_Mediator_3YJsnAYcTDrfQQSNseUiyS a epo:Mediator;
+  epo:playedBy epd:id_2022-S-075-205113_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2022-S-075-205113_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2022-S-075-205113_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2022-S-075-205113_Mediator_3YJsnAYcTDrfQQSNseUiyS,
+    epd:id_2022-S-075-205113_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2022-S-075-205113_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2022-S-075-205113_Reviewer_cnThDUHhCN7pjvrhJdwbGS;
+  epo:hasDispatchDate "2022-04-12"^^xsd:date;
+  epo:hasID epd:id_2022-S-075-205113_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220415";
+  epo:refersToLot epd:id_2022-S-075-205113_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2022-S-075-205113_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2022-S-075-205113_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 075-205113" .
+
+epd:id_2022-S-075-205113_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEA32>;
+  locn:postCode "45891";
+  locn:postName "Gelsenkirchen";
+  locn:thoroughfare "Willy-Brandt-Allee 26" .
+
+epd:id_2022-S-075-205113_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "DE 124978719" .
+
+epd:id_2022-S-075-205113_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2022-S-075-205113_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Infrastrukturleistungen Tiefbau/ Rohrbau Gas+Wasser/ Kabelbau Strom/ Beleuchtung"@de;
+  epo:hasMainActivityDescription "Bauleistungen Gas/Wasser/Strom/Beleuchtung";
+  cccev:registeredAddress epd:id_2022-S-075-205113_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-075-205113_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "1" .
+
+epd:id_2022-S-075-205113_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45231000> .
+
+epd:id_2022-S-075-205113_ProcedureTerm_Y6NRwnV2zPRQbkgqc6rurv a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2022-S-075-205113_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-075-205113_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "Bekanntmachungs-ID: CXPSYDKD4YB"@de;
+  epo:hasID epd:id_2022-S-075-205113_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-075-205113_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2022-S-075-205113_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Infrastrukturleistungen Tiefbau/ Rohrbau Gas+Wasser/ Kabelbau Strom/ Beleuchtung"@de;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-075-205113_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2022-S-075-205113_ProcedureTerm_Y6NRwnV2zPRQbkgqc6rurv, epd:id_2022-S-075-205113_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP,
+    epd:id_2022-S-075-205113_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2022-S-075-205113_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-075-205113_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-075-205113_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-075-205113_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "48147";
+  locn:postName "Münster";
+  locn:thoroughfare "Albrecht-Thaer-Str. 9" .
+
+epd:id_2022-S-075-205113_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasFax "+49 251/4112165";
+  epo:hasInternetAddress "www.bezreg-muenster.de"^^xsd:anyURI;
+  cccev:email "vergabekammer@brms.nrw.de";
+  cccev:telephone "+49 251/4111691" .
+
+epd:id_2022-S-075-205113_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Vergabekammer Westfalen bei der Bezirksregierung Münster"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-075-205113_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2022-S-075-205113_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2022-S-075-205113_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-075-205113_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2022-S-075-205113_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Die Vergabestelle weist ausdrücklich auf die Rügeobliegenheiten der Unternehmen/Bewerber/Bieter sowie auf die Präklusionsregelungen gemäß § 160 Abs. 3 S. 1 Nr. 1 bis Nr. 4 GWB hinsichtlich der Behauptung von Verstößen gegen die Bestimmungen über das Vergabeverfahren hin. § 160 Abs. 3 S. 1 GWB lautet:\"Der Antrag (auf Nachprüfung) ist unzulässig, soweit:1) der Antragsteller den geltend gemachten Verstoß gegen Vergabevorschriften vor Einreichung des Nachprüfungsantrags erkannt und gegenüber dem Auftraggeber nicht innerhalb einer Frist von 10Kalendertagen gerügt hat; der Ablauf der Frist nach § 134 Abs. 2 bleibt unberührt,2) Verstöße gegen Vergabevorschriften, die aufgrund der Bekanntmachung erkennbar sind, nicht spätestens biszum Ablauf der in der Bekanntmachung benannten Frist zur Bewerbung oder zur Angebotsabgabe gegenüberdem Auftraggeber gerügt werden3) Verstöße gegen Vergabevorschriften, die erst in den Vergabeunterlagen erkennbar sind, nicht spätestens biszum Ablauf der Frist zur Bewerbung oder zur Angebotsabgabe gegenüber dem Auftraggeber gerügt werden,4) mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, eine Rüge nicht abhelfen zuwollen, vergangen sind.\"Die Vergabestelle weist insbesondere darauf hin, dass ein Antrag auf Nachprüfung nach § 160 Abs. 3 S. 1 Nr.4 GWB unzulässig ist, soweit mehr als 15 Kalendertage nach Eingang der Mitteilung der Vergabestelle, einer Rüge nicht abhelfen zu wollen, vergangen sind." .
+
+epd:id_2022-S-075-205113_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+49 251/4112165";
+  epo:hasInternetAddress "www.bezreg-muenster.de"^^xsd:anyURI;
+  cccev:email "vergabekammer@bezreg-muenster.nrw.de";
+  cccev:telephone "+49 251/4111691" .
+
+epd:id_2022-S-075-205113_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "48147";
+  locn:postName "Münster";
+  locn:thoroughfare "Albrecht-Thaer-Str. 9" .
+
+epd:id_2022-S-075-205113_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Vergabekammer Westfalen bei der Bezirksregierung Münster"@de;
+  epo:hasPrimaryContactPoint epd:id_2022-S-075-205113_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2022-S-075-205113_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2022-S-075-205113_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-075-205113_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2022-S-075-205113_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://www.vergabe.metropoleruhr.de/VMPSatellite/notice/CXPSYDKD4YB"^^xsd:anyURI .

@@ -1,0 +1,181 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-241-501414_Notice a epo:Notice;
+  epo:hasID epd:id_2017-S-241-501414_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2017-S-241-501414_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 241-501414" .
+
+epd:id_2021-S-036-091121_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://irl.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=182026&B=ETENDERS_SIMPLE"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-036-091121_AwardCriterionCost_mEMvTdgGP66fdes4vLEMRw a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "Tariff"@en;
+  cccev:weight "N/A"@en .
+
+epd:id_2021-S-036-091121_AwardCriterionQuality_nZsGk22j3hSNZNkFM3G37f a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Legal"@en;
+  cccev:weight "Pass/Fail"@en .
+
+epd:id_2021-S-036-091121_AwardCriterionQuality_nb5it8NzBJxDRf7WBnLSyS a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Technical compliance"@en;
+  cccev:weight "Pass/Fail"@en .
+
+epd:id_2021-S-036-091121_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://irl.eu-supply.com/ctm/Company/CompanyInformation/Index/219"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-036-091121_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-036-091121_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-036-091121_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Sinéad Connolly"@en;
+  epo:hasInternetAddress "http://www.eirgrid.com"^^xsd:anyURI;
+  cccev:email "Sinead.Connolly@eirgrid.com";
+  cccev:telephone "+353 12370335" .
+
+epd:id_2021-S-036-091121_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "IRELAND."@en .
+
+epd:id_2021-S-036-091121_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE>;
+  locn:address epd:id_2021-S-036-091121_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-036-091121_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-036-091121_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription "Option for each TSO to extend the term of its contract in respect of any or all of its applicable lots in certain defined cases for 2 additional time periods of up to eighteen (18) months each, at the discretion of the contracting entity. This option might apply where, for instance, there is a delay in completing the procurement for any subsequent phases envisaged under the DS3 Programme.";
+  epo:isRenewalIndicator true .
+
+epd:id_2021-S-036-091121_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-036-091121_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71314000> .
+
+epd:id_2021-S-036-091121_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-036-091121_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Gate 4B covers all 12 services as outlined in this Qualification System Briefing Document. There is s separate DS3 System Services Agreement for services in Ireland, which is to be entered into with EirGrid; and a separate DS3 System Services Agreement for services in Northern Ireland, which is to be entered into with SONI. The services are split into a number of Lots for each of the TSOs as follows:Lots 1IE – 12IE relate to the System Services required by EirGrid.Lots 1NI – 12NI relate to the System Services required by SONI.It is intended that the start date of each of the contracts awarded under Gate 4B is 1 July 2021.It is intended that the term of each contract will last until 30 April 2023, but with an option for each TSO to extend the term of its Contract in respect of any or all of its applicable lots in certain defined cases for two additional time periods of up to eighteen (18) months each, at the discretion of the contracting entity. This option might apply where, for instance, there is a delay in completing the procurement for any subsequent phases envisaged under the DS3 Programme."@en;
+  epo:hasPurpose epd:id_2021-S-036-091121_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-036-091121_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-036-091121_AwardCriterionCost_mEMvTdgGP66fdes4vLEMRw,
+    epd:id_2021-S-036-091121_AwardCriterionQuality_nZsGk22j3hSNZNkFM3G37f, epd:id_2021-S-036-091121_AwardCriterionQuality_nb5it8NzBJxDRf7WBnLSyS .
+
+epd:id_2021-S-036-091121_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-036-091121_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2021-S-036-091121_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2021-S-036-091121_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2021-S-036-091121_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2021-S-036-091121_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2021-S-036-091121_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2021-02-17"^^xsd:date;
+  epo:hasID epd:id_2021-S-036-091121_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210222";
+  epo:refersToLot epd:id_2021-S-036-091121_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToPrevious epd:id_2017-S-241-501414_Notice;
+  epo:refersToProcedure epd:id_2021-S-036-091121_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2021-S-036-091121_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 036-091121" .
+
+epd:id_2021-S-036-091121_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE>;
+  locn:postName "Ballsbridge";
+  locn:thoroughfare "Block 2 — The Oval, 160 Shelbourne Road, Dublin 4" .
+
+epd:id_2021-S-036-091121_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "N/A" .
+
+epd:id_2021-S-036-091121_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2021-S-036-091121_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "EirGrid plc"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2021-S-036-091121_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-036-091121_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "ENQEIR742" .
+
+epd:id_2021-S-036-091121_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71314000> .
+
+epd:id_2021-S-036-091121_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-036-091121_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "1) Interested parties must register their interest on the eTenders website (www.etenders.gov.ie) in order to be included on the mailing list for clarifications. All information relating to attachments, including clarifications and changes, will be published on the Irish Government Procurement Opportunities Portal (www.etenders.gov.ie) only. Registration is free of charge. The contracting authority will not accept responsibility for information relayed (or not relayed) via third parties.2) The contracting authority will not be responsible for any costs, charges or expenses incurred by candidates or tenderers.3) Contract award will be subject to the approval of the competent authorities.4) It will be a condition of award that candidates are tax compliant and are in a position to produce a valid tax clearance certificate or eTax clearance from the revenue commissioners when requested.5) At its absolute discretion, the contracting authority may elect to terminate this procurement process or any contract awarded.6) Please note in relation to all documents, that where reference is made to a particular standard, make, source, process, trademark, type or patent, that this is not to be regarded as a de facto requirement. In all such cases.It should be understood that such indications are to be treated strictly and solely for reference purposes only, to which the words ‘or equivalent’ will always be appended.7) Without prejudice to the principle of equal treatment, the contracting authority is not obliged to engage in a clarification process in respect of questionnaires with missing or incomplete information. Therefore, candidates are advised to ensure that they return fully completed questionnaires in order to avoid the risk of elimination from the competition."@en;
+  epo:hasID epd:id_2021-S-036-091121_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-036-091121_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2021-S-036-091121_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "DS3 System Services — Volume Uncapped – Gate 4B"@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-036-091121_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2021-S-036-091121_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP, epd:id_2021-S-036-091121_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2021-S-036-091121_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-036-091121_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-036-091121_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-036-091121_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postName "Dublin 7";
+  locn:thoroughfare "Ground Floor, East Wing, Inns Quay" .
+
+epd:id_2021-S-036-091121_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.courts.ie"^^xsd:anyURI;
+  cccev:telephone "+353 18886000" .
+
+epd:id_2021-S-036-091121_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Central Office of the High Courts (Appeal Section)"@en;
+  epo:hasPrimaryContactPoint epd:id_2021-S-036-091121_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2021-S-036-091121_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2021-S-036-091121_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-036-091121_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2021-S-036-091121_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "The contracting authority will not conclude this contract to which a standstill period applies in accordance with Council Directive 2014/25/EU, until after the expiry of the standstill period which commences on the day following the date of notification on concerned candidates and tenderers. The duration of the standstill period will be 14 calendar days where notifications are sent electronically or by fax and 16 calendar days where these are sent by any other means. The Statutory Instrument mentioned above provides that review procedures are available in the High Court to a person who has or has had an interest in obtaining the reviewable public contract and alleges that he or she has been harmed or is at risk of being harmed by an infringement of the law in relation in this contract." .
+
+epd:id_2021-S-036-091121_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.courts.ie"^^xsd:anyURI;
+  cccev:telephone "+353 18886000" .
+
+epd:id_2021-S-036-091121_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postName "Dublin 7";
+  locn:thoroughfare "Four Courts" .
+
+epd:id_2021-S-036-091121_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "The High Court"@en;
+  epo:hasPrimaryContactPoint epd:id_2021-S-036-091121_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2021-S-036-091121_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-036-091121_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-036-091121_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-036-091121_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "http://irl.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=182026&B=ETENDERS_SIMPLE"^^xsd:anyURI .
+
+epd:id_2021-S-036-091121_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-036-091121_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-036-091121_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

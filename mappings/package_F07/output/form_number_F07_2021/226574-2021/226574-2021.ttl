@@ -1,0 +1,176 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-087-226574_AdditionalBuyer_MNAAtEANyxw9zKp73s95Qe a epo:Buyer;
+  epo:hasBuyerProfile "http://www.sncf.com/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-087-226574_AdditionalContactPoint_MNAAtEANyxw9zKp73s95Qe;
+  epo:playedBy epd:id_2021-S-087-226574_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe .
+
+epd:id_2021-S-087-226574_AdditionalContactPoint_MNAAtEANyxw9zKp73s95Qe a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.sncf.com/"^^xsd:anyURI;
+  cccev:email "isabel.jourdain@sncf.fr" .
+
+epd:id_2021-S-087-226574_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe a org:Organization;
+  epo:hasLegalName "Société nationale SNCF — direction des achats"@fr;
+  cccev:registeredAddress epd:id_2021-S-087-226574_OrganisationAddress_MNAAtEANyxw9zKp73s95Qe .
+
+epd:id_2021-S-087-226574_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 a epo:AwardCriterion .
+
+epd:id_2021-S-087-226574_BuyerOrganisationGroup_MNAAtEANyxw9zKp73s95Qe a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  epo:hasMember epd:id_2021-S-087-226574_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe,
+    epd:id_2021-S-087-226574_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-087-226574_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "http://www.sncf.com/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-087-226574_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-087-226574_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-087-226574_Channel_6nzVNRgtoDbqibciDT5jYq a cccev:Channel;
+  epo:hasURL "http://www.sncf.fr/fournisseurs/dossiers-qualification"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2021-S-087-226574_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "A — Département Catégorie Prestations de main d'œuvre"@fr;
+  epo:hasInternetAddress "http://www.sncf.com/"^^xsd:anyURI;
+  cccev:email "isabel.jourdain@sncf.fr" .
+
+epd:id_2021-S-087-226574_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "Principalement France métropolitaine pour exécution des marchés de nettoyage du matériel roulant de la SNCF Voyageurs."@fr .
+
+epd:id_2021-S-087-226574_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:address epd:id_2021-S-087-226574_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-087-226574_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-087-226574_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription "Se référer au document de qualification à l'adresse indiquée.";
+  epo:isRenewalIndicator true .
+
+epd:id_2021-S-087-226574_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-087-226574_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-087-226574_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Prestation de service de nettoyage, à bord du matériel roulant ou sur site de nettoyage. Les exigences précises sont précisées dans le CDC de chaque marché soumis à qualification.Le présent système de qualification n'est applicable qu'aux achats d'un montant égal ou supérieur à 428 000 EUR HT."@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-087-226574_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-087-226574_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 .
+
+epd:id_2021-S-087-226574_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-087-226574_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2021-S-087-226574_AdditionalBuyer_MNAAtEANyxw9zKp73s95Qe,
+    epd:id_2021-S-087-226574_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2021-S-087-226574_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2021-S-087-226574_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2021-S-087-226574_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2021-S-087-226574_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2021-04-30"^^xsd:date;
+  epo:hasID epd:id_2021-S-087-226574_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210505";
+  epo:refersToLot epd:id_2021-S-087-226574_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2021-S-087-226574_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2021-S-087-226574_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 087-226574" .
+
+epd:id_2021-S-087-226574_OrganisationAddress_MNAAtEANyxw9zKp73s95Qe a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postName "Lyon Cedex 03" .
+
+epd:id_2021-S-087-226574_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postName "Saint-Denis" .
+
+epd:id_2021-S-087-226574_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "SNCF Voyageurs"@fr;
+  cccev:registeredAddress epd:id_2021-S-087-226574_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-087-226574_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "16_ service de voirie et d'enlèvement des ordures service d'assainissement et services analogues" .
+
+epd:id_2021-S-087-226574_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/90917000> .
+
+epd:id_2021-S-087-226574_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-087-226574_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "La candidature ainsi que tout échange d'informations doivent être rédigés en français.Dans le cadre de la mise en place du groupe public unifié institué par la loi nº 2018-515 du 27.6.2018 pour un nouveau pacte ferroviaire, le présent système de qualification pourra notamment être utilisé par SNCF, SNCF Réseau et SNCF Voyageurs.Le présent avis de qualification est lancé par la SA SNCF Voyageurs mais le processus de qualification est mené par la direction des achats groupe de la société nationale SNCF qui agit au nom et pour le compte de la SA SNCF Voyageurs.Par ailleurs, le présent système de qualification peut également être utilisé par les entités suivantes du groupe public unifié créé par la loi nº 2018-515 du 27.6.2018 pour un nouveau pacte ferroviaire: la société nationale SNCF, la SA SNCF Réseau, la SA SNCF Gares et Connexions et la SAS SNCF Fret."@fr;
+  epo:hasID epd:id_2021-S-087-226574_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-087-226574_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2021-S-087-226574_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Service de nettoyage de matériel roulant"@fr;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-087-226574_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP,
+    epd:id_2021-S-087-226574_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:usesChannel epd:id_2021-S-087-226574_Channel_6nzVNRgtoDbqibciDT5jYq .
+
+epd:id_2021-S-087-226574_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-087-226574_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-087-226574_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-087-226574_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75859";
+  locn:postName "Paris";
+  locn:thoroughfare "parvis du tribunal de Paris" .
+
+epd:id_2021-S-087-226574_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.tribunal-de-paris.justice.fr/75"^^xsd:anyURI;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2021-S-087-226574_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Tribunal judiciaire"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-087-226574_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2021-S-087-226574_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2021-S-087-226574_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-087-226574_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2021-S-087-226574_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Les procédures de recours applicables sont:— le référé précontractuel (CPC, articles 1441-1 et 1441-2) qui peut être exercé jusqu'à la signature du marché;— le référé contractuel (CPC, articles 1441-3 et 1441-3-1) qui peut être exercé dans un délai de:—— 31 jours à compter de la publication d’un avis d’attribution au JOUE ou, pour les marchés fondés sur un accord-cadre, à compter de la notification de la conclusion du contrat;—— six mois à compter du lendemain du jour de la conclusion du contrat si aucun avis d’attribution n’a été publié ou si aucune notification de la conclusion du contrat n’a été effectuée." .
+
+epd:id_2021-S-087-226574_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.tribunal-de-paris.justice.fr/75"^^xsd:anyURI;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2021-S-087-226574_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75859";
+  locn:postName "Paris";
+  locn:thoroughfare "parvis du tribunal de Paris" .
+
+epd:id_2021-S-087-226574_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Tribunal judiciaire"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-087-226574_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2021-S-087-226574_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-087-226574_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-087-226574_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-087-226574_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2021-S-087-226574_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-087-226574_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-087-226574_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

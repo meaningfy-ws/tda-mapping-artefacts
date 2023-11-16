@@ -1,0 +1,138 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-117-308549_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://irl.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=191166&B=ETENDERS_SIMPLE"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-117-308549_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "30 %"@en .
+
+epd:id_2021-S-117-308549_AwardCriterionQuality_nb5it8NzBJxDRf7WBnLSyS a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Quality"@en;
+  cccev:weight "70 %"@en .
+
+epd:id_2021-S-117-308549_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://irl.eu-supply.com/ctm/Company/CompanyInformation/Index/374"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-117-308549_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-117-308549_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-117-308549_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Kira Scully"@en;
+  epo:hasInternetAddress "www.buseireann.ie"^^xsd:anyURI;
+  cccev:email "kira.scully@buseireann.ie";
+  cccev:telephone "+353 17033356" .
+
+epd:id_2021-S-117-308549_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE> .
+
+epd:id_2021-S-117-308549_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-117-308549_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-117-308549_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-117-308549_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/39000000> .
+
+epd:id_2021-S-117-308549_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-117-308549_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Qualification Panel 2021-2025 for Office Furniture."@en;
+  epo:hasPurpose epd:id_2021-S-117-308549_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-117-308549_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r,
+    epd:id_2021-S-117-308549_AwardCriterionQuality_nb5it8NzBJxDRf7WBnLSyS .
+
+epd:id_2021-S-117-308549_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2021-S-117-308549_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2021-S-117-308549_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2021-S-117-308549_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2021-S-117-308549_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2021-06-14"^^xsd:date;
+  epo:hasID epd:id_2021-S-117-308549_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210618";
+  epo:refersToLot epd:id_2021-S-117-308549_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2021-S-117-308549_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2021-S-117-308549_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 117-308549" .
+
+epd:id_2021-S-117-308549_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE>;
+  locn:postCode "Broadstone";
+  locn:postName "Dublin 7";
+  locn:thoroughfare "21 Phibsboro Road" .
+
+epd:id_2021-S-117-308549_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "N/A" .
+
+epd:id_2021-S-117-308549_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2021-S-117-308549_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Bus Eireann/Irish Bus"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2021-S-117-308549_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-117-308549_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "BE/SU/14/06/2021" .
+
+epd:id_2021-S-117-308549_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/39130000> .
+
+epd:id_2021-S-117-308549_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-117-308549_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasID epd:id_2021-S-117-308549_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-117-308549_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2021-S-117-308549_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Office Furniture — Qualification Panel 2021-2025"@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-117-308549_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2021-S-117-308549_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2021-S-117-308549_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-117-308549_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-117-308549_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-117-308549_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  cccev:email "kira.scully@buseireann.ie";
+  cccev:telephone "+353 7033356" .
+
+epd:id_2021-S-117-308549_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postCode "7";
+  locn:postName "Broadstone";
+  locn:thoroughfare "21 Phibsboro Road" .
+
+epd:id_2021-S-117-308549_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Bus Eireann"@en;
+  epo:hasPrimaryContactPoint epd:id_2021-S-117-308549_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2021-S-117-308549_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-117-308549_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-117-308549_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-117-308549_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "http://irl.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=191166&B=ETENDERS_SIMPLE"^^xsd:anyURI .
+
+epd:id_2021-S-117-308549_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-117-308549_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-117-308549_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

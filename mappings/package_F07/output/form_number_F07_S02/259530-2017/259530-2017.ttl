@@ -1,0 +1,201 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-127-259530_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://10.104.67.27/purchaserprofile/qualification.php%20"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2017-S-127-259530_AwardCriterionPrice_mYYXDJSxRBHuKZpEgX3awp a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2017-S-127-259530_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://webservices.contourglobal.eu/purchaserprofile/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-127-259530_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2017-S-127-259530_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2017-S-127-259530_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Валентина Манева"@bg;
+  epo:hasFax "+359 42663610";
+  epo:hasInternetAddress "https://www.contourglobal.com"^^xsd:anyURI;
+  cccev:email "MaritsaProcurement@contourglobal.com";
+  cccev:telephone "+359 42663602" .
+
+epd:id_2017-S-127-259530_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress """
+                  ТЕЦ „КонтурГлобал Марица Изток 3“, с. Медникарово, обл. Стара Загора.
+               """@bg .
+
+epd:id_2017-S-127-259530_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:address epd:id_2017-S-127-259530_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2017-S-127-259530_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-127-259530_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2017-S-127-259530_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2017-S-127-259530_EAuctionTechniqueUsage_E5T8LK7GWtcY6SLmbwzAoM a epo:EAuctionTechniqueUsage .
+
+epd:id_2017-S-127-259530_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8 a
+    cccev:ContactPoint;
+  epo:hasContactName "Ваня Колева"@bg;
+  epo:hasFax "+359 42663610";
+  epo:hasInternetAddress "https://www.contourglobal.com"^^xsd:anyURI;
+  cccev:email "MaritsaProcurement@contourglobal.com";
+  cccev:telephone "+359 42663667" .
+
+epd:id_2017-S-127-259530_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:postCode "6294";
+  locn:postName "Медникарово";
+  locn:thoroughfare "обл. Стара Загора, о-л „ОП и Снабдяване“" .
+
+epd:id_2017-S-127-259530_InformationProviderOrganisationIdentifier_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:Identifier;
+  epo:hasIdentifierValue "130020522" .
+
+epd:id_2017-S-127-259530_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 a
+    org:Organization;
+  epo:hasID epd:id_2017-S-127-259530_InformationProviderOrganisationIdentifier_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:hasLegalName "„КонтурГлобал Марица Изток 3“ АД"@bg;
+  cccev:registeredAddress epd:id_2017-S-127-259530_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2017-S-127-259530_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-127-259530_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+                  Поддръжка на вентилационни и климатични /ОВК/ инсталации не територията на ТЕЦ „КонтурГлобал Марица Изток 3“ по техническа спецификация.
+               """@bg;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-127-259530_AwardCriterionPrice_mYYXDJSxRBHuKZpEgX3awp .
+
+epd:id_2017-S-127-259530_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2017-S-127-259530_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2017-S-127-259530_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8,
+    epd:id_2017-S-127-259530_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2017-S-127-259530_TenderReceiver_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasDispatchDate "2017-07-03"^^xsd:date;
+  epo:hasID epd:id_2017-S-127-259530_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20170706";
+  epo:refersToLot epd:id_2017-S-127-259530_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2017-S-127-259530_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2017-S-127-259530_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 127-259530" .
+
+epd:id_2017-S-127-259530_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1505";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Ситняково“ № 48, ет. 9" .
+
+epd:id_2017-S-127-259530_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "130020522" .
+
+epd:id_2017-S-127-259530_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2017-S-127-259530_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "„КонтурГлобал Марица Изток 3“ АД"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2017-S-127-259530_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2017-S-127-259530_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "96-141-17" .
+
+epd:id_2017-S-127-259530_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/50721000> .
+
+epd:id_2017-S-127-259530_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-127-259530_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation """
+               Заинтересованите лица, подготвят и изпращат заявление за участие в квалификационната система. Заявлението се изпраща на адрес: ТЕЦ „КонтурГлобал Марица Изток 3“, о-л „ОП и Снабдяване“, с. Медникарово 6294, обл. Стара Загора с надпис: Заявление за участие в квалификационна система № 96-141-17 предмет: Текуща и аварийна поддръжка на вентилационни и климатични инсталации в ТЕЦ „КонтурГлобал Марица Изток 3“. Кандидатите представя ЕЕДОП документ, в който посочва изискуема информация съгласно документацията за участие.
+            """@bg;
+  epo:hasID epd:id_2017-S-127-259530_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-127-259530_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2017-S-127-259530_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+               Текуща и аварийна поддръжка на вентилационни и климатични /ОВК/ инсталации не територията на ТЕЦ „КонтурГлобал Марица Изток 3“.
+            """@bg;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-127-259530_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2017-S-127-259530_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP, epd:id_2017-S-127-259530_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:usesTechnique epd:id_2017-S-127-259530_EAuctionTechniqueUsage_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2017-S-127-259530_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-127-259530_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:playedBy epd:id_2017-S-127-259530_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2017-S-127-259530_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Съгласно чл. 197, ал. 1, т. 5 от ЗОП.
+            """ .
+
+epd:id_2017-S-127-259530_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "cpcadmin@cpc.bg";
+  cccev:telephone "+359 29884070" .
+
+epd:id_2017-S-127-259530_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Витоша“ № 18" .
+
+epd:id_2017-S-127-259530_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-127-259530_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2017-S-127-259530_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2017-S-127-259530_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-127-259530_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2017-S-127-259530_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "BG" .
+
+epd:id_2017-S-127-259530_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:postCode "6294";
+  locn:postName "Медникарово";
+  locn:thoroughfare "обл. Стара Загора, о-л „ОП и Снабдяване“" .
+
+epd:id_2017-S-127-259530_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx
+  a cccev:ContactPoint;
+  epo:hasContactName "Ваня Колева"@bg;
+  epo:hasFax "+359 42663610";
+  epo:hasInternetAddress "https://www.contourglobal.com"^^xsd:anyURI;
+  cccev:email "MaritsaProcurement@contourglobal.com";
+  cccev:telephone "+359 42663667" .
+
+epd:id_2017-S-127-259530_TenderReceiverOrganisationIdentifier_7qc7fbmR56uUqsniJHkNyx
+  a epo:Identifier;
+  epo:hasIdentifierValue "130020522" .
+
+epd:id_2017-S-127-259530_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx a org:Organization;
+  epo:hasID epd:id_2017-S-127-259530_TenderReceiverOrganisationIdentifier_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasLegalName "„КонтурГлобал Марица Изток 3“ АД"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-127-259530_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  cccev:registeredAddress epd:id_2017-S-127-259530_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx .
+
+epd:id_2017-S-127-259530_TenderReceiver_7qc7fbmR56uUqsniJHkNyx a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-127-259530_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  epo:playedBy epd:id_2017-S-127-259530_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx .

@@ -1,0 +1,213 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-033-072691_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://enot.publicprocurement.be/changeLanguage.do?language=fr-FR"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-033-072691_AwardCriterionPrice_mYYXDJSxRBHuKZpEgX3awp a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2018-S-033-072691_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-033-072691_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-033-072691_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-033-072691_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Madame Anna Delaune"@fr;
+  epo:hasFax "+32 64232301";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "anna.delaune@ores.net";
+  cccev:telephone "+32 64232308" .
+
+epd:id_2018-S-033-072691_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress """
+                  Magasin principal Aye, Zoning industriel de Aye 10 rue A Feher à 6900 AYE.
+               """@fr .
+
+epd:id_2018-S-033-072691_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:address epd:id_2018-S-033-072691_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2018-S-033-072691_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2018-S-033-072691_Period_W3EavcErM2fLz5G9WDkXcn;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-033-072691_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2018-S-033-072691_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2018-S-033-072691_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8 a
+    cccev:ContactPoint;
+  epo:hasContactName "Madame Anne-Marie Giallonardi"@fr;
+  epo:hasFax "+32 67232301";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "anne-marie.giallonardi@ores.net";
+  cccev:telephone "+32 64232312" .
+
+epd:id_2018-S-033-072691_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE>;
+  locn:postCode "7110";
+  locn:postName "Strépy-Bracquegnies";
+  locn:thoroughfare "Route du grand Peuplier, 4" .
+
+epd:id_2018-S-033-072691_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 a
+    org:Organization;
+  epo:hasLegalName "Service achats"@fr;
+  cccev:registeredAddress epd:id_2018-S-033-072691_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2018-S-033-072691_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/37322100>, <http://data.europa.eu/cpv/cpv/44163210>,
+    <http://data.europa.eu/cpv/cpv/44330000>, <http://data.europa.eu/cpv/cpv/44530000>,
+    <http://data.europa.eu/cpv/cpv/44531400> .
+
+epd:id_2018-S-033-072691_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-033-072691_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+                  Établissement d'une liste de candidats qualifiés pour la fourniture de boulonnerie-visserie et autre matériel de fixation pour réseaux d’électricité et de gaz.
+               """@fr;
+  epo:hasPurpose epd:id_2018-S-033-072691_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-033-072691_AwardCriterionPrice_mYYXDJSxRBHuKZpEgX3awp .
+
+epd:id_2018-S-033-072691_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2018-S-033-072691_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2018-S-033-072691_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8,
+    epd:id_2018-S-033-072691_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2018-S-033-072691_TenderReceiver_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasDispatchDate "2018-02-13"^^xsd:date;
+  epo:hasID epd:id_2018-S-033-072691_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20180216";
+  epo:refersToLot epd:id_2018-S-033-072691_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2018-S-033-072691_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2018-S-033-072691_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 033-072691" .
+
+epd:id_2018-S-033-072691_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:postCode "7110";
+  locn:postName "Strépy-Bracquegnies";
+  locn:thoroughfare "Route du grand peuplier 4" .
+
+epd:id_2018-S-033-072691_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "BE 0543 696 579" .
+
+epd:id_2018-S-033-072691_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2018-S-033-072691_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Intercommunale ORES Assets SCRL"@fr;
+  epo:hasMainActivityDescription "Electricité + Production, transport et distribution de gaz et de chaleur";
+  cccev:registeredAddress epd:id_2018-S-033-072691_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-033-072691_Period_W3EavcErM2fLz5G9WDkXcn a epo:Period;
+  epo:hasBeginning "2018-02-14"^^xsd:date;
+  epo:hasEnd "2026-02-13"^^xsd:date .
+
+epd:id_2018-S-033-072691_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "WFQVISWA" .
+
+epd:id_2018-S-033-072691_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/44531510> .
+
+epd:id_2018-S-033-072691_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-033-072691_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation """
+               Le candidat doit formuler sa marque d'intérêt pour la participation au système de qualification à l’aide d’un dossier comprenant les documents suivants:
+               1. Identification du candidat:
+               1.1. nom et coordonnées complètes (adresse, téléphone, fax, mail, no de compte bancaire à);
+               1.2. coordonnées complètes des succursales/agences en Belgique concernées pour le marché considéré;
+               1.3. forme juridique, date de création ou de constitution;
+               1.4. No d'immatriculation à la TVA;
+               1.5. No d'immatriculation à un organisme de sécurité sociale.
+               2. représentation et relations dans le cadre de la présente procédure:
+               2.1. coordonnées complètes de la Direction;
+               2.2. nom et coordonnées complètes (adresse, tél., fax, mail …) de l'interlocuteur unique chargé des relations avec ORES SCRL;
+               2.3. nom et coordonnées complètes du conseiller en prévention.
+               Toutes ces personnes doivent pouvoir s'exprimer correctement en français.
+               Par le dépôt de sa manifestation d’intérêt, le candidat s’engage à pouvoir lire les informations transmises dans le dossier de qualification et lors de la demande de prix sur CD-ROM (Excel, Power Point, Word, Acrobat Reader).
+               Chaque point doit faire l’objet d’une réponse (le cas échéant, indiquer «pas d’application»). Une absence de la mention «pas d’application» est considérée comme élément manquant.
+               Tous ces documents doivent répondre aux exigences formelles suivantes:
+               — être classés dans un classeur à anneaux comportant des intercalaires numérotés. Chaque intercalaire reprendra une des rubriques de la structure définie ci-dessus,
+               — chacune des feuilles sera paraphée et numérotée,
+               — le dossier de marque d'intérêt sera soit envoyé par la poste en recommandé, soit déposé au service Achats pendant les heures de bureau: du lundi au jeudi de 7:45 à 12:00 et de 12:30 à 15:30; le vendredi de 7:45 à 12:00 et de 12:30 à 15:00. Ce dossier devra être livré sous enveloppe marquée «demande de dossier de qualification» avec la référence du marché Réf: WFQVISWA et adressé à ORES SCRL — Service achats, à l'attention de Madame Anna Delaune, route du Grand Peuplier 12 à 7110 Strepy-Bracquegnies contre un accusé de réception revêtu du cachet de la Cellule marchés publics précisant les date et heure de réception; toute autre forme de transmission (par exemple par fax ou à une autre adresse …) conduit au rejet de la demande de dossier qualification du candidat.
+               Système de qualification pour une durée de 8 ans renouvelable.
+            """@fr;
+  epo:hasID epd:id_2018-S-033-072691_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-033-072691_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2018-S-033-072691_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+               Système de qualification — Système de qualification pour la fourniture de boulonnerie-visserie et autre matériel de fixation pour réseaux d’électricité et de gaz
+            """@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-033-072691_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2018-S-033-072691_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP, epd:id_2018-S-033-072691_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2018-S-033-072691_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-033-072691_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:playedBy epd:id_2018-S-033-072691_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2018-S-033-072691_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               — recours en annulation devant le Conseil d’État ou le juge judiciaire: 60 jours à compter de la publication, de la communication ou de la prise de connaissance de l’acte selon le cas,
+               — recours en suspension devant le Conseil d’État, selon la procédure d’extrême urgence, ou devant le juge judiciaire, selon la procédure de référé: 15 jours à compter de la publication, de la communication ou de la prise de connaissance de l’acte selon le cas,
+               — ce délai est réduit à 10 jours en cas de publication d’un avis de transparence ex ante volontaire.
+            """ .
+
+epd:id_2018-S-033-072691_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.raadvst-consetat.be"^^xsd:anyURI;
+  cccev:telephone "+32 22349611" .
+
+epd:id_2018-S-033-072691_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Bruxelles (Etterbeek)";
+  locn:thoroughfare "Rue de la Science 33" .
+
+epd:id_2018-S-033-072691_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Conseil d'État"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-033-072691_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2018-S-033-072691_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-033-072691_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-033-072691_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-033-072691_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2018-S-033-072691_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE>;
+  locn:postCode "7110";
+  locn:postName "Strépy-Bracquegnies";
+  locn:thoroughfare "Route du grand Peuplier, 4" .
+
+epd:id_2018-S-033-072691_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx
+  a cccev:ContactPoint;
+  epo:hasContactName "Madame Anna Delaune"@fr;
+  epo:hasFax "+32 64232301";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "anna.delaune@ores.net";
+  cccev:telephone "+32 64232308" .
+
+epd:id_2018-S-033-072691_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx a org:Organization;
+  epo:hasLegalName "Service achats"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-033-072691_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  cccev:registeredAddress epd:id_2018-S-033-072691_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx .
+
+epd:id_2018-S-033-072691_TenderReceiver_7qc7fbmR56uUqsniJHkNyx a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-033-072691_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  epo:playedBy epd:id_2018-S-033-072691_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx .
