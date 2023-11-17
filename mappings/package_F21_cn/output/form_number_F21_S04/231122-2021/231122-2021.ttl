@@ -4,7 +4,15 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epd:id_2021-S-089-231122_AccessTerm_LTC4ztdQQn6ue8NBpQv4rF a epo:AccessTerm;
@@ -20,8 +28,7 @@ epd:id_2021-S-089-231122_ContactPoint_7D5VmvEvVafBz7JQr2uuS8 a cccev:ContactPoin
   cccev:email "avoterapiahankinnat@kela.fi";
   cccev:telephone "+358 2063411" .
 
-epd:id_2021-S-089-231122_ContractTermLotLocation_9kJZhTgye29otV72ZHovp4 a dct:Location;
-  epo:hasNutsCode <http://data.europa.eu/nuts/code/FI> .
+epd:id_2021-S-089-231122_ContractTermLotLocation_9kJZhTgye29otV72ZHovp4 a dct:Location .
 
 epd:id_2021-S-089-231122_ContractTermLot_9kJZhTgye29otV72ZHovp4 a epo:ContractTerm;
   epo:definesContractPeriod epd:id_2021-S-089-231122_Period_9kJZhTgye29otV72ZHovp4;
@@ -67,7 +74,8 @@ epd:id_2021-S-089-231122_Organisation_7D5VmvEvVafBz7JQr2uuS8 a org:Organization;
   epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl>;
   epo:hasID epd:id_2021-S-089-231122_OrganisationIdentifier_7D5VmvEvVafBz7JQr2uuS8;
   epo:hasLegalName "Kansaneläkelaitos"@fi;
-  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/soc-pro>;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/OP_DATPRO>,
+    <http://publications.europa.eu/resource/authority/main-activity/soc-pro>;
   cccev:registeredAddress epd:id_2021-S-089-231122_OrganisationAddress_7D5VmvEvVafBz7JQr2uuS8 .
 
 epd:id_2021-S-089-231122_Period_9kJZhTgye29otV72ZHovp4 a epo:Period;
