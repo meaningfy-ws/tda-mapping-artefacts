@@ -1,0 +1,244 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-151-273793_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://webservices.contourglobal.eu/purchaserprofile/"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-151-273793_AdditionalBuyer_MNAAtEANyxw9zKp73s95Qe a epo:Buyer;
+  epo:hasBuyerProfile "https://webservices.contourglobal.eu/purchaserprofile/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-151-273793_AdditionalContactPoint_MNAAtEANyxw9zKp73s95Qe;
+  epo:playedBy epd:id_2016-S-151-273793_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe .
+
+epd:id_2016-S-151-273793_AdditionalContactPoint_MNAAtEANyxw9zKp73s95Qe a cccev:ContactPoint;
+  epo:hasContactName "Валентина Манева"@bg;
+  epo:hasFax "+359 42663610";
+  epo:hasInternetAddress "https://www.contourglobal.com"^^xsd:anyURI;
+  cccev:email "MaritsaProcurement@contourglobal.com";
+  cccev:telephone "+359 42663602" .
+
+epd:id_2016-S-151-273793_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe a org:Organization;
+  epo:hasID epd:id_2016-S-151-273793_OrganisationIdentifier_MNAAtEANyxw9zKp73s95Qe;
+  epo:hasLegalName "„КонтурГлобал Оперейшънс България“ АД"@bg;
+  cccev:registeredAddress epd:id_2016-S-151-273793_OrganisationAddress_MNAAtEANyxw9zKp73s95Qe .
+
+epd:id_2016-S-151-273793_AwardCriterionPrice_mYYXDJSxRBHuKZpEgX3awp a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "30"@bg .
+
+epd:id_2016-S-151-273793_AwardCriterionQuality_SusozLciNyYZniT3DQMaXG a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Оценка на техническо предложение за извършване на одита"@bg;
+  cccev:weight "70"@bg .
+
+epd:id_2016-S-151-273793_BuyerOrganisationGroup_MNAAtEANyxw9zKp73s95Qe a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMember epd:id_2016-S-151-273793_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe,
+    epd:id_2016-S-151-273793_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-151-273793_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://webservices.contourglobal.eu/purchaserprofile/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-151-273793_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-151-273793_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-151-273793_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Валентина Манева"@bg;
+  epo:hasFax "+359 42663610";
+  epo:hasInternetAddress "https://www.contourglobal.com"^^xsd:anyURI;
+  cccev:email "MaritsaProcurement@contourglobal.com";
+  cccev:telephone "+359 42663602" .
+
+epd:id_2016-S-151-273793_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress """
+София.
+"""@bg .
+
+epd:id_2016-S-151-273793_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:address epd:id_2016-S-151-273793_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2016-S-151-273793_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-151-273793_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2016-S-151-273793_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2016-S-151-273793_EAuctionTechniqueUsage_E5T8LK7GWtcY6SLmbwzAoM a epo:EAuctionTechniqueUsage .
+
+epd:id_2016-S-151-273793_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8 a
+    cccev:ContactPoint;
+  epo:hasContactName "Валентина Манева"@bg;
+  epo:hasFax "+359 42663610";
+  epo:hasInternetAddress "https://www.contourglobal.com"^^xsd:anyURI;
+  cccev:email "MaritsaProcurement@contourglobal.com";
+  cccev:telephone "+359 42663602" .
+
+epd:id_2016-S-151-273793_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:postCode "6294";
+  locn:postName "Медникарово";
+  locn:thoroughfare "обл. Стара Загора, о-л ОП и Снабдяване" .
+
+epd:id_2016-S-151-273793_InformationProviderOrganisationIdentifier_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:Identifier;
+  epo:hasIdentifierValue "130020522" .
+
+epd:id_2016-S-151-273793_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 a
+    org:Organization;
+  epo:hasID epd:id_2016-S-151-273793_InformationProviderOrganisationIdentifier_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:hasLegalName "„КонтурГлобал Марица Изток 3“ АД"@bg;
+  cccev:registeredAddress epd:id_2016-S-151-273793_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2016-S-151-273793_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-151-273793_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+Поръчката включва извършване на одит на дружествата на КонтурГлобал в България, съгласно Международните одиторски стандарти, който обхваща:
+1. Извършване на одиторска проверка на годишния пакет финансови отчети и форми (reporting package) на дружествата — за целите на консолидирания отчет на групата. Издаване на доклад за одиторската проверка към груповия одитор;
+2. Извършване на независим годишен финансов одит. Извършване на проверка на съответствието на годишния доклад за дейността с годишния финансов отчет към 31. декември на съответната година и издаване на одиторско мнение в доклад на независимия одитор към тази дата;
+3. Извършване на преглед на междинната финансова информация на дружествата за всяко тримесечие на отчетната година. Издаване на доклад за прегледа към груповия одитор.
+"""@bg;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2016-S-151-273793_AwardCriterionPrice_mYYXDJSxRBHuKZpEgX3awp,
+    epd:id_2016-S-151-273793_AwardCriterionQuality_SusozLciNyYZniT3DQMaXG .
+
+epd:id_2016-S-151-273793_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2016-S-151-273793_AdditionalBuyer_MNAAtEANyxw9zKp73s95Qe,
+    epd:id_2016-S-151-273793_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2016-S-151-273793_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8,
+    epd:id_2016-S-151-273793_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2016-S-151-273793_TenderReceiver_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasDispatchDate "2016-08-04"^^xsd:date;
+  epo:hasID epd:id_2016-S-151-273793_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20160806";
+  epo:refersToLot epd:id_2016-S-151-273793_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2016-S-151-273793_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2016-S-151-273793_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 151-273793" .
+
+epd:id_2016-S-151-273793_OrganisationAddress_MNAAtEANyxw9zKp73s95Qe a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:postCode "6294";
+  locn:postName "Медникарово";
+  locn:thoroughfare "обл. Стара Загора" .
+
+epd:id_2016-S-151-273793_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1505";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Ситняково“ № 48, ет. 9" .
+
+epd:id_2016-S-151-273793_OrganisationIdentifier_MNAAtEANyxw9zKp73s95Qe a epo:Identifier;
+  epo:hasIdentifierValue "123559633" .
+
+epd:id_2016-S-151-273793_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "130020522" .
+
+epd:id_2016-S-151-273793_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2016-S-151-273793_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "„КонтурГлобал Марица изток 3“ АД"@bg;
+  cccev:registeredAddress epd:id_2016-S-151-273793_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-151-273793_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "77-141-16" .
+
+epd:id_2016-S-151-273793_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/79212000> .
+
+epd:id_2016-S-151-273793_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-151-273793_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation """
+Кандидатите изпращат заявления за участие в квалификационната система в запечатана непрозрачна опаковка на адрес: „ТЕЦ КонтурГлобал Марица Изток 3“, о-л ОП и Снабдяване, с. Медникарово, 6294, обл. Стара Загора. Няма срок за представяне на заявленията за участие, кандидатите изпращат заявленията до посочения адрес по всяко време след публикуване на обявлението в сайта на АОП. Всички получени заявления се регистрират с входящ номер в регистъра на кандидатите за участие в процедури по ЗОП в о-л ОП и Снабдяване. Възложителят взема решение относно включване или отказа за включване на заинтересовани лица в квалификационната система в шест месечен срок от подаването на заявление за участие.
+"""@bg;
+  epo:hasID epd:id_2016-S-151-273793_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-151-273793_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2016-S-151-273793_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+Избор на одитор на дружествата на КонтурГлобал в България.
+"""@bg;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-151-273793_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2016-S-151-273793_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP, epd:id_2016-S-151-273793_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:usesTechnique epd:id_2016-S-151-273793_EAuctionTechniqueUsage_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2016-S-151-273793_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-151-273793_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:playedBy epd:id_2016-S-151-273793_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2016-S-151-273793_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Съгласно чл. 197, ал. 1 т. 5 от ЗОП.
+""" .
+
+epd:id_2016-S-151-273793_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "cpcadmin@cpc.bg";
+  cccev:telephone "+359 29884070" .
+
+epd:id_2016-S-151-273793_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Витоша“ № 18" .
+
+epd:id_2016-S-151-273793_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2016-S-151-273793_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2016-S-151-273793_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2016-S-151-273793_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-151-273793_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2016-S-151-273793_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "BG" .
+
+epd:id_2016-S-151-273793_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:postCode "6294";
+  locn:postName "Медникарово";
+  locn:thoroughfare "обл. Стара Загора, о-л ОП и Снабдяване" .
+
+epd:id_2016-S-151-273793_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx
+  a cccev:ContactPoint;
+  epo:hasContactName "Валентина Манева"@bg;
+  epo:hasFax "+359 42663610";
+  epo:hasInternetAddress "https://www.contourglobal.com"^^xsd:anyURI;
+  cccev:email "MaritsaProcurement@contourglobal.com";
+  cccev:telephone "+359 42663602" .
+
+epd:id_2016-S-151-273793_TenderReceiverOrganisationIdentifier_7qc7fbmR56uUqsniJHkNyx
+  a epo:Identifier;
+  epo:hasIdentifierValue "130020522" .
+
+epd:id_2016-S-151-273793_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx a org:Organization;
+  epo:hasID epd:id_2016-S-151-273793_TenderReceiverOrganisationIdentifier_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasLegalName "„КонтурГлобал Марица Изток 3“ АД"@bg;
+  epo:hasPrimaryContactPoint epd:id_2016-S-151-273793_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  cccev:registeredAddress epd:id_2016-S-151-273793_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx .
+
+epd:id_2016-S-151-273793_TenderReceiver_7qc7fbmR56uUqsniJHkNyx a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-151-273793_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  epo:playedBy epd:id_2016-S-151-273793_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx .

@@ -1,0 +1,192 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-135-387553_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=434019"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2022-S-135-387553_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 a epo:AwardCriterion .
+
+epd:id_2022-S-135-387553_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=434019"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-135-387553_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-135-387553_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-135-387553_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Kristof Dammekens"@fr, "Kristof Dammekens"@nl;
+  epo:hasInternetAddress "http://www.nmbs.be"^^xsd:anyURI;
+  cccev:email "kristof.dammekens@belgiantrain.be";
+  cccev:telephone "+32 25252148" .
+
+epd:id_2022-S-135-387553_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE10> .
+
+epd:id_2022-S-135-387553_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-135-387553_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2022-S-135-387553_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2022-S-135-387553_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-135-387553_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Système de qualification pour différentes assurances que la SNCB souscrit"@fr,
+    "Kwalificatiesysteem voor de verschillende verzekeringen die de NMBS afsluit"@nl;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-135-387553_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 .
+
+epd:id_2022-S-135-387553_MediatorContactPoint_3YJsnAYcTDrfQQSNseUiyS a cccev:ContactPoint;
+  epo:hasFax "+32 22349842";
+  cccev:telephone "+32 22349611" .
+
+epd:id_2022-S-135-387553_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Bruxelles";
+  locn:thoroughfare "Rue de la Science 33" .
+
+epd:id_2022-S-135-387553_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS a org:Organization;
+  epo:hasLegalName "Conseil d'Etat - Section du contentieux administratif"@fr, "Raad van State - afdeling administratieve geschillen"@nl;
+  epo:hasPrimaryContactPoint epd:id_2022-S-135-387553_MediatorContactPoint_3YJsnAYcTDrfQQSNseUiyS;
+  cccev:registeredAddress epd:id_2022-S-135-387553_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2022-S-135-387553_Mediator_3YJsnAYcTDrfQQSNseUiyS a epo:Mediator;
+  epo:playedBy epd:id_2022-S-135-387553_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2022-S-135-387553_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2022-S-135-387553_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2022-S-135-387553_Mediator_3YJsnAYcTDrfQQSNseUiyS,
+    epd:id_2022-S-135-387553_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2022-S-135-387553_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2022-S-135-387553_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2022-S-135-387553_TenderReceiver_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasDispatchDate "2022-07-11"^^xsd:date;
+  epo:hasID epd:id_2022-S-135-387553_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220715";
+  epo:refersToLot epd:id_2022-S-135-387553_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2022-S-135-387553_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2022-S-135-387553_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 135-387553" .
+
+epd:id_2022-S-135-387553_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE100>;
+  locn:postCode "1060";
+  locn:postName "Bruxelles";
+  locn:thoroughfare "Rue de France 56" .
+
+epd:id_2022-S-135-387553_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "0203.430.576_27312" .
+
+epd:id_2022-S-135-387553_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2022-S-135-387553_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "SNCB SA de Droit Public"@fr, "NMBS NV van Publiek Recht"@nl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2022-S-135-387553_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-135-387553_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "H-LA.024-22INJUR002-F07_0" .
+
+epd:id_2022-S-135-387553_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/66000000> .
+
+epd:id_2022-S-135-387553_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-135-387553_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "Le courtier en assurances AON Belgium a été désigné pour assister le service B-SL dans la réalisation du système de qualification."@fr,
+    "De verzekeringsmakelaar AON Belgium werd aangeduid om de dienst B-SL bij te staan in de realisatie van het kwalificatiesysteem."@nl;
+  epo:hasID epd:id_2022-S-135-387553_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-135-387553_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2022-S-135-387553_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Système de qualification pour différentes assurances"@fr, "Kwalificatiesysteem voor verschillende verzekeringen"@nl;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-135-387553_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2022-S-135-387553_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2022-S-135-387553_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-135-387553_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-135-387553_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-135-387553_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Bruxelles";
+  locn:thoroughfare "Rue de la Science 33" .
+
+epd:id_2022-S-135-387553_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasFax "+32 22349842";
+  cccev:telephone "+32 22349611" .
+
+epd:id_2022-S-135-387553_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Conseil d'Etat - Section du contentieux administratif"@fr, "Raad van State - afdeling administratieve geschillen"@nl;
+  epo:hasPrimaryContactPoint epd:id_2022-S-135-387553_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2022-S-135-387553_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2022-S-135-387553_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-135-387553_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2022-S-135-387553_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+32 22349842";
+  cccev:telephone "+32 22349611" .
+
+epd:id_2022-S-135-387553_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Bruxelles";
+  locn:thoroughfare "Rue de la Science 33" .
+
+epd:id_2022-S-135-387553_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Conseil d'Etat - Section du contentieux administratif"@fr, "Raad van State - afdeling administratieve geschillen"@nl;
+  epo:hasPrimaryContactPoint epd:id_2022-S-135-387553_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2022-S-135-387553_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2022-S-135-387553_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-135-387553_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2022-S-135-387553_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "FR", "NL" .
+
+epd:id_2022-S-135-387553_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE100>;
+  locn:postCode "1060";
+  locn:postName "Bruxelles";
+  locn:thoroughfare "Rue de France 56" .
+
+epd:id_2022-S-135-387553_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx
+  a cccev:ContactPoint;
+  epo:hasContactName "Kristof Dammekens"@fr, "Kristof Dammekens"@nl;
+  epo:hasInternetAddress "http://www.nmbs.be"^^xsd:anyURI;
+  cccev:email "kristof.dammekens@belgiantrain.be";
+  cccev:telephone "+33 25252148" .
+
+epd:id_2022-S-135-387553_TenderReceiverOrganisationIdentifier_7qc7fbmR56uUqsniJHkNyx
+  a epo:Identifier;
+  epo:hasIdentifierValue "0203.430.576_27312" .
+
+epd:id_2022-S-135-387553_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx a org:Organization;
+  epo:hasID epd:id_2022-S-135-387553_TenderReceiverOrganisationIdentifier_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasLegalName "SNCB SA de Droit Public"@fr, "NMBS NV van Publiek Recht"@nl;
+  epo:hasPrimaryContactPoint epd:id_2022-S-135-387553_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  cccev:registeredAddress epd:id_2022-S-135-387553_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx .
+
+epd:id_2022-S-135-387553_TenderReceiver_7qc7fbmR56uUqsniJHkNyx a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-135-387553_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  epo:playedBy epd:id_2022-S-135-387553_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx .

@@ -1,0 +1,162 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-058-128994_AwardCriterionInDocuments_anTw2hmgo2Xh6TEAbuwm8f a epo:AwardCriterion .
+
+epd:id_2018-S-058-128994_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-058-128994_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-058-128994_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-058-128994_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Zu Händen von: Lothar Rumlich"@de;
+  epo:hasFax "+49 69-26549787";
+  epo:hasInternetAddress "https://bieterportal.noncd.db.de/Portal/"^^xsd:anyURI;
+  cccev:email "lothar.rumlich@deutschebahn.com";
+  cccev:telephone "+49 69-26523132" .
+
+epd:id_2018-S-058-128994_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress """
+                  Bundesweite Liefer- und Ausführungsorte
+               """@de .
+
+epd:id_2018-S-058-128994_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
+  locn:address epd:id_2018-S-058-128994_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2018-S-058-128994_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-058-128994_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription """
+                  Wiederholungs-Bekanntmachung: bisher erteilte Präqualifikationen behalten entsprechend dem jeweiligen Schriftverkehr Gültigkeit.
+               """;
+  epo:isRenewalIndicator true .
+
+epd:id_2018-S-058-128994_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2018-S-058-128994_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/31171000>, <http://data.europa.eu/cpv/cpv/31173000>,
+    <http://data.europa.eu/cpv/cpv/31210000>, <http://data.europa.eu/cpv/cpv/31212000>,
+    <http://data.europa.eu/cpv/cpv/31214000>, <http://data.europa.eu/cpv/cpv/31230000>,
+    <http://data.europa.eu/cpv/cpv/31600000>, <http://data.europa.eu/cpv/cpv/31700000> .
+
+epd:id_2018-S-058-128994_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-058-128994_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+                  Im Einzelnen sind folgende Gegenstände/Produktkategorien Bestandteil:
+                  — 15-kV/16,7-Hz metallgekapselte Schaltanlagen,
+                  — 110-kV-/16,7-Hz-Freiluft-Hybridmodule sowie Leistungsschalter,
+                  — 15-MVA- und 10-MVA/(13-MVA) 16,7-Hz-Einphasen-Bahnstromtransformator,
+                  — 110-kV-Freiluft-Drehtrennschalter,
+                  — 110-kV/16,7-Hz Wandler,
+                  — 16,7-Hz-Bahnstromleitungsschutz,
+                  — 110-kV-16,7-Hz-Erdschluss-Richtungsrelais,
+                  — 16,7-Hz-Oberleitungsschutz,
+                  — Sammelschienenschutz 16,7 Hz,
+                  — Übergeordneter Schutz 16,7 Hz,
+                  — Transformatorschutz 16,7 Hz,
+                  — UMZ-Schutz 16,7 Hz,
+                  — Stationsleittechnik für Bahnstromschaltanlagen, Gleichstromunterwerke und Erzeugeranlagen,
+                  — Errichtung und Montage von 110-kV-/15-kV-Schaltanlagen 16,7 Hz,
+                  — Ortssteuereinrichtungen / Fernwirkanlagen Oberleitung (OSE/FWA OLA),
+                  — Oberleitungsspannungsprüf- und Oberleitungserdungsautomatik (OLSP),
+                  — DC-Schaltanlage/DC-Schaltfelder,
+                  — DC-Schutz,
+                  — Engineering- und Integrationsleistungen für Stationsleittechnik,
+                  — DC-Leistungsschalter,
+                  — Fabrikfertige Werke für S-Bahnenergieversorgung.
+               """@de;
+  epo:hasPurpose epd:id_2018-S-058-128994_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-058-128994_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-058-128994_AwardCriterionInDocuments_anTw2hmgo2Xh6TEAbuwm8f .
+
+epd:id_2018-S-058-128994_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-058-128994_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2018-S-058-128994_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2018-S-058-128994_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2018-S-058-128994_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2018-S-058-128994_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2018-03-19"^^xsd:date;
+  epo:hasID epd:id_2018-S-058-128994_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20180323";
+  epo:refersToLot epd:id_2018-S-058-128994_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2018-S-058-128994_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2018-S-058-128994_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 058-128994" .
+
+epd:id_2018-S-058-128994_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
+  locn:postCode "60326";
+  locn:postName "Frankfurt am Main";
+  locn:thoroughfare "Pfarrer-Perabo-Platz 2" .
+
+epd:id_2018-S-058-128994_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "DB Energie GmbH"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2018-S-058-128994_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-058-128994_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/31214000> .
+
+epd:id_2018-S-058-128994_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-058-128994_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation """
+               Alle Unterlagen sind in deutscher Sprache (DE) vorzulegen. Verhandlungs- und Vertragssprache ist deutsch(DE). Verträge unterliegen dem deutschen Recht.
+               Es wird kein Entgelt für die Erstellung der Angebote gezahlt.
+               Das Verfahren wird elektronisch geführt und mit der Selbstregistrierung der Lieferanten über: https://marktplatzr3k.noncd.db.de/sap/bc/webdynpro/sap/ZWDA_E_SUPP_REG initiiert.
+               Die Verfahrensregeln werden ständig fortgeschrieben und können über die Kontaktstelle unter I.1) abgefordert werden. Das Prüfungssystem bleibt aber als solches erhalten und die Gültigkeit der Präqualifizierungen besteht unverändert fort. Über die Requalifizierung ist durch diese Lieferanten zur Aufrechterhaltung der Qualifikation eine Aktualisierung ihrer eingereichten Unterlagen vorzunehmen.
+               Die letzte Bekanntmachung mit der Nummer 2017/S 058-108443 ist nicht mehr gültig, die erteilten Präqualifikationsnachweise behalten jedoch ihre Gültigkeit.
+            """@de;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-058-128994_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2018-S-058-128994_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+               Lieferung sowie Errichtung und Montage von Schaltanlagen 16,7 Hz und DC sowie Komponenten davon und Komponenten zur Steuerung/Überwachung von Oberleitungsanlagen
+            """@de;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-058-128994_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP,
+    epd:id_2018-S-058-128994_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2018-S-058-128994_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-058-128994_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-058-128994_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-058-128994_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Ein Nachprüfungsantrag ist unzulässig, soweit mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind (§ 160 Abs. 3 S. 1 Nr. 4 GWB). Ein Nachprüfungsantrag ist zudem unzulässig, soweit der Antrag erst nach Zuschlagserteilung zugestellt wird (vgl. § 168 Abs. 2 Satz 1 GWB). Die Zuschlagserteilung ist möglich 10 Tage nach Absendung der Bekanntgabe der Vergabeentscheidung per Fax oder per Email bzw. 15 Tage nach Absendung der Bekanntgabe der Vergabeentscheidung per Post (§ 134 Abs. 2 GWB). Die Zulässigkeit eines Nachprüfungsantrags setzt ferner voraus, dass die geltend gemachten Vergabeverstöße innerhalb von 10 Kalendertagen nach Kenntnis bzw. – soweit die Vergabeverstöße aus der Bekanntmachung oder den Vergabeunterlagen erkennbar sind – bis zum Ablauf der Teilnahme- bzw. Angebotsfrist gerügt wurden (§ 160 Abs. 3 S. 1 Nr. 1 – 3 GWB). Des Weiteren wird auf die in 135 Abs. 2 GWB genannten Fristen verwiesen.
+            """ .
+
+epd:id_2018-S-058-128994_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "53123";
+  locn:postName "Bonn";
+  locn:thoroughfare "Villemombler Straße 76" .
+
+epd:id_2018-S-058-128994_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Vergabekammer des Bundes"@de;
+  cccev:registeredAddress epd:id_2018-S-058-128994_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-058-128994_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-058-128994_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-058-128994_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://marktplatzr3k.noncd.db.de/sap/bc/webdynpro/sap/ZWDA_E_SUPP_REG"^^xsd:anyURI .
+
+epd:id_2018-S-058-128994_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-058-128994_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-058-128994_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

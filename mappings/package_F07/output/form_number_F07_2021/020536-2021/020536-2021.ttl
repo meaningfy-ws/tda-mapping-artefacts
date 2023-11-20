@@ -1,0 +1,134 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-010-020536_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://transfer.thuega.de/download/1638f2b7-23b2-4e4f-9af2-8aa3931ea43a"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-010-020536_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  cccev:weight "75"@de .
+
+epd:id_2021-S-010-020536_AwardCriterionQuality_nZsGk22j3hSNZNkFM3G37f a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Akzeptanz der Vertragsbedingungen"@de;
+  cccev:weight "10"@de .
+
+epd:id_2021-S-010-020536_AwardCriterionQuality_nb5it8NzBJxDRf7WBnLSyS a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "Lieferfähigkeit"@de;
+  cccev:weight "15"@de .
+
+epd:id_2021-S-010-020536_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-010-020536_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-010-020536_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-010-020536_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasFax "+49 361652/3485";
+  epo:hasInternetAddress "https://www.thueringerenergie.de"^^xsd:anyURI;
+  cccev:email "heiko.wirsing@teag.de";
+  cccev:telephone "+49 361652/2319" .
+
+epd:id_2021-S-010-020536_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location .
+
+epd:id_2021-S-010-020536_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-010-020536_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-010-020536_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-010-020536_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/31321700> .
+
+epd:id_2021-S-010-020536_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-010-020536_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Erstellung einer Liste qualifizierter Lieferanten, von der Kandidaten gemäß Richtlinie 93/38/EWG im Rahmen eines Verhandlungsverfahrens für die Lieferung folgender Produktgruppen ausgewählt werden können: LWL Kabel, Mini/Mikrokabel und Leitungen (optical cable) entsprechend der technischen Spezifikation (diese finden Sie unter dem Link:https://transfer.thuega.de/download/1638f2b7-23b2-4e4f-9af2-8aa3931ea43a für die Gesellschaften der Thüga Gruppe.Bereits präqualifizierte Unternehmen können von einer erneuten Bewerbung absehen."@de;
+  epo:hasPurpose epd:id_2021-S-010-020536_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-010-020536_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r,
+    epd:id_2021-S-010-020536_AwardCriterionQuality_nZsGk22j3hSNZNkFM3G37f, epd:id_2021-S-010-020536_AwardCriterionQuality_nb5it8NzBJxDRf7WBnLSyS .
+
+epd:id_2021-S-010-020536_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2021-S-010-020536_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2021-S-010-020536_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2021-S-010-020536_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2021-S-010-020536_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2021-01-11"^^xsd:date;
+  epo:hasID epd:id_2021-S-010-020536_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210115";
+  epo:refersToLot epd:id_2021-S-010-020536_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2021-S-010-020536_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2021-S-010-020536_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 010-020536" .
+
+epd:id_2021-S-010-020536_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DEG0>;
+  locn:postCode "99087";
+  locn:postName "Erfurt";
+  locn:thoroughfare "TEAG Thüringer Energie AG (federführend für die im Abschnitt VI aufgeführten Thüga Beteiligungen), Schwerborner Straße 30, 99087 Erfurt" .
+
+epd:id_2021-S-010-020536_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "Präqualifikationsverfahren zur Lieferung: LWL Kabel und Leitungen (optical cable) und Mini und Mikrokabel"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2021-S-010-020536_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-010-020536_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/44212221> .
+
+epd:id_2021-S-010-020536_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-010-020536_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "Die Bekanntmachung dieses Prüfungsverfahren zu LWL Kabel, Mini/Mikro-Kabel und Leitungen werden vonFolgenden beteiligten Gesellschaften der Thüga Gruppe anerkannt:1 badenova AG & Co. KG, Tullastraße 61, 79108 Freiburg,2. e-werk Sachsenwald GmbH, Hermann-Körner-Straße 61-63, 21465 Reinbek,3. eins energie in sachsen GmbH & Co. KG, Augustusburger Str. 1, 09111 Chemnitz,4. enwag energie- und wassergesellschaft mbh, Hermannsteiner Straße 1, 35576 Wetzlar,5. Energieversorgung Selb-Marktredwitz GmbH, Gebrüder-Netzsch-Straße 14, 95100 Selb,6. ESWE Versorgungs AG, Konradinerallee 25, 65189 Wiesbaden,7. Energieversorgung Rudolstadt GmbH, Oststraße 18, 07407 Rudolstadt,8. Eisenacher Versorgungs-Betriebe GmbH, An der Feuerwache 4, 99817 Eisenach,9. EVI Energieversorgung Hildesheim GmbH & Co. KG, Römerring 1, 31137 Hildesheim,10. Energieversorgung Mittelrhein AG, Ludwig-Erhard-Straße 8, 56073 Koblenz,11. Energie Waldeck-Frankenberg GmbH, Arolser Landstraße 27, 34497 Korbach,12. EWR GmbH, Neuenkamper Straße 81-87, 42855 Remscheid,13. Gemeindewerke Haßloch GmbH, Gottlieb-Duttenhöfer-Straße 27, 67454 Haßloch,14. Hanau Einkauf GmbH, Leipziger Straße 17, 63450 Hanau,15. Harz Energie Netz GmbH, Lasfelder Straße 10, 37520 Osterode am Harz,16. Licht-, Kraft- und Wasserwerke Kitzingen GmbH, Wörthstraße 5, 97318 Kitzingen,17. Mainova AG, Solmsstraße 38, 60623 Frankfurt am Main,18. N-ERGIE Aktiengesellschaft, Am Plärrer 43, 90429 Nürnberg,19. Rheinhessische Energie- und Wasserversorgungs-GmbH, Binger Straße 135, 55218 Ingelheim,20. Stadtwerke Energie Jena-Pößneck GmbH, Rudolstädter Straße 39, 07745 Jena,21. Stadtwerke Meerane GmbH, Obere Bahnstr. 10, 08393 Meerane,22. Städtische Werke Aktiengesellschaft, Kassel, Königstor 3-13, 34117 Kassel,23. Stadtwerke Bad Harzburg GmbH, Schützenstraße 3a, 38667 Bad Harzburg,24. Stadtwerke ETO GmbH & Co. KG, Münstertor 46-48, 48291 Telgte,25. Stadtwerke Frankenthal GmbH, Wormser Straße 111, 67227 Frankenthal,26. enercity, Ihmeplatz 2, 30449 Hannover,27. Stadtwerke Ilmenau GmbH, Auf dem Mittelfeld 5, 98693 Ilmenau,28. Stadtwerke Kelheim GmbH & Co KG, Hallstattstr. 15, 93309 Kelheim,29. Stadtwerke Mühlhausen GmbH, Windeberger Landstraße 73, 99974 Mühlhausen,30. SWP Stadtwerke Pforzheim GmbH & Co. KG, Sandweg 22, 75179 Pforzheim,31. Stadtwerk Tauberfranken GmbH, Max-Planck-Str. 5, 97980 Bad Mergentheim,32. Stadtwerke Villingen-Schwenningen GmbH, Pforzheimer Straße 1, 78048 Villingen-Schwenningen,33. Stadtwerke Wertheim GmbH, Mühlenstraße 60, 97877 Wertheim,34. Würzburger Versorgungs- und Verkehrs-GmbH, Haugerring 5, 97070 Würzburg,35. Stadtwerke Zweibrücken GmbH, Gasstraße 1, 66482 Zweibrücken,36. SWK Stadtwerke Kaiserslautern GmbH, Bismarckstraße 14, 67655 Kaiserslautern,37. Thüringer Energie AG, Schwerborner Straße 30, 99087 Erfurt,38. WEMAG AG, Obotritenring 40, 19053 Schwerin,39. erdgas schwaben gmbh, Bayerstraße 43, 86199 Augsburg,40. Energie Südbayern GmbH, Ungsteiner Straße 31, 81539 München,41. Harz Energie Netz GmbH, Lasfelder Straße 10, 37520 Osterode am Harz,42. Rheinhessische Energie- und Wasserversorgungs-GmbH, Binger Straße 135, 55218 Ingelheim,43. RhönEnergie Fulda GmbH, Bahnhofstraße 2, 36037 Fulda,44. Stadtwerke Zweibrücken GmbH, Gasstraße 1, 66482 Zweibrücken,45. Stadtwerke Homburg GmbH, Lessingstr. 3, 66424 Homburg,46. Stadtwerk Tauberfranken GmbH, Max-Planck-Str. 5, 97980 Bad Mergentheim,47. Stadtwerke Greven GmbH, Saerbecker Str. 77-81, 48268 Greven,48. Thüringer Netkom GmbH, Schwanseestraße 13, 99423 Weimar,49. TEN Thüringer Energienetze GmbH & Co. KG, Schwerborner Straße 30, 99087 Erfurt."@de;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-010-020536_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2021-S-010-020536_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Prüfungssystem zur Lieferung von LWL Kabel, Mini/Mikrokabel und Leitungen (optical cable)"@de;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-010-020536_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2021-S-010-020536_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2021-S-010-020536_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-010-020536_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-010-020536_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-010-020536_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+49 361/37739354";
+  cccev:email "vergabekammer@tlvwa.thueringen.de";
+  cccev:telephone "+49 361/37737254" .
+
+epd:id_2021-S-010-020536_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "99423";
+  locn:postName "Weimar";
+  locn:thoroughfare "Thüringer Landesverwaltungsamt, Weimarplatz 4" .
+
+epd:id_2021-S-010-020536_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Nachprüfungsstelle:"@de;
+  epo:hasPrimaryContactPoint epd:id_2021-S-010-020536_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2021-S-010-020536_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-010-020536_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-010-020536_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-010-020536_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2021-S-010-020536_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-010-020536_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-010-020536_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

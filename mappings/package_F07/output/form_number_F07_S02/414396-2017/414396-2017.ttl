@@ -1,0 +1,164 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-201-414396_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "http://zop.toplo.bg/?q=page&idd=index&porachkaid=20171017khlf2824058"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2017-S-201-414396_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2017-S-201-414396_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2017-S-201-414396_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Маргарита Дончевска, Грета Събева"@bg;
+  epo:hasFax "+359 28594149";
+  epo:hasInternetAddress "www.toplo.bg"^^xsd:anyURI;
+  cccev:email "mto@toplo.bg";
+  cccev:telephone "+359 29033216" .
+
+epd:id_2017-S-201-414396_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress """
+                  София.
+               """@bg .
+
+epd:id_2017-S-201-414396_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:address epd:id_2017-S-201-414396_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2017-S-201-414396_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2017-S-201-414396_Period_W3EavcErM2fLz5G9WDkXcn;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-201-414396_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2017-S-201-414396_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2017-S-201-414396_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-201-414396_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+                  „Топлофикация София“ ЕАД в качеството си на възложител по член 5, ал. 4, т. 2 от Закона за обществените поръчки (ЗОП), на основание и в съответствие с изискванията на глава седемнадесета, раздел III от ЗОП, създава квалификационна система за избор на изпълнители /стопански субекти/.
+                  Цел на квалификационната система: Квалификационна система се създава за възлагане на обществени поръчки с предмет: „Доставка на водомери с импулсен изход за студена вода за нуждите на „Топлофикация София“ ЕАД“.
+                  Цялата документация за системата е налична безплатно за всяко заинтересовано лице на Профила на купувача на „Топлофикация София“ ЕАД.
+                  Срок на действие на системата: Системата се обявява със срок на действие 3 (три) години от дата на обявяване. Възложителят си запазва правото да удължава срока ѝ на действие.
+               """@bg;
+  epo:isUsingEUFunds false .
+
+epd:id_2017-S-201-414396_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2017-S-201-414396_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2017-S-201-414396_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2017-S-201-414396_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2017-S-201-414396_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2017-S-201-414396_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2017-10-17"^^xsd:date;
+  epo:hasID epd:id_2017-S-201-414396_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20171019";
+  epo:refersToLot epd:id_2017-S-201-414396_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2017-S-201-414396_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2017-S-201-414396_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 201-414396" .
+
+epd:id_2017-S-201-414396_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1680";
+  locn:postName "София";
+  locn:thoroughfare "ул. „Ястребец“ № 23 Б" .
+
+epd:id_2017-S-201-414396_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "831609046" .
+
+epd:id_2017-S-201-414396_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2017-S-201-414396_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "„Топлофикация София“ ЕАД"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gas-heat>;
+  cccev:registeredAddress epd:id_2017-S-201-414396_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2017-S-201-414396_Period_W3EavcErM2fLz5G9WDkXcn a epo:Period;
+  epo:hasBeginning "2017-10-17"^^xsd:date;
+  epo:hasEnd "2020-10-17"^^xsd:date .
+
+epd:id_2017-S-201-414396_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/38421100> .
+
+epd:id_2017-S-201-414396_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-201-414396_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation """
+               Подробна информация във връзка с настоящата квалификационна система може да бъде получена на профила на купувача на възложителя www.zop.toplo.bg
+            """@bg;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-201-414396_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2017-S-201-414396_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+               „Доставка на водомери с импулсен изход за студена вода за нуждите на „Топлофикация София“ ЕАД“.
+            """@bg;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-201-414396_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP,
+    epd:id_2017-S-201-414396_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2017-S-201-414396_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-201-414396_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2017-S-201-414396_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2017-S-201-414396_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Витоша“ № 18" .
+
+epd:id_2017-S-201-414396_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "cpcadmin@cpc.bg";
+  cccev:telephone "+359 29884070" .
+
+epd:id_2017-S-201-414396_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Комисията за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-201-414396_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2017-S-201-414396_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2017-S-201-414396_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-201-414396_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2017-S-201-414396_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Сроковете за подаване на жалба по процедурата са съгласно чл. 197, ал. 1 от ЗОП.
+            """ .
+
+epd:id_2017-S-201-414396_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "cpcadmin@cpc.bg";
+  cccev:telephone "+359 29884070" .
+
+epd:id_2017-S-201-414396_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Витоша“ № 18" .
+
+epd:id_2017-S-201-414396_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2017-S-201-414396_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2017-S-201-414396_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2017-S-201-414396_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-201-414396_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2017-S-201-414396_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "BG" .
+
+epd:id_2017-S-201-414396_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-201-414396_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2017-S-201-414396_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

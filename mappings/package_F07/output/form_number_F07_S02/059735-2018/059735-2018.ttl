@@ -1,0 +1,195 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-022-038131_Notice a epo:Notice;
+  epo:hasID epd:id_2017-S-022-038131_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2017-S-022-038131_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 022-038131" .
+
+epd:id_2018-S-027-059735_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.sncf.com/fr/fournisseurs/dossiers-qualification"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-027-059735_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-027-059735_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-027-059735_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-027-059735_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Renaud Lafeuillade"@fr;
+  epo:hasInternetAddress "http://www.sncf.com/fr/fournisseurs/dossiers-qualification"^^xsd:anyURI;
+  cccev:email "renaud.lafeuillade@sncf.fr";
+  cccev:telephone "+33 428890176" .
+
+epd:id_2018-S-027-059735_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2018-S-027-059735_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-027-059735_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription """
+                  La qualification est prononcée pour 4 ans, sous réserve que le prestataire maintienne les conditions nécessaires à celle-ci sur cette durée (notamment les documents obligatoires suivis sous e-attestation). Avant l'expiration du délai de 4 ans, le prestataire qualifié devra actualiser son dossier de qualification.
+               """;
+  epo:isRenewalIndicator true .
+
+epd:id_2018-S-027-059735_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2018-S-027-059735_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-027-059735_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+                  Transport routier de voyageurs SNCF en situation normale (lignes régulières TER et Transilien principalement) ainsi qu'en situations perturbées (services de substitution routière lors des travaux d'infrastructures ferroviaires ou d'aléas de production ou d'exploitation), lorsque la valeur du besoin est égale ou supérieure au seuil communautaire de publication au JOUE (421 000 EUR).
+               """@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-027-059735_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-027-059735_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-027-059735_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2018-S-027-059735_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2018-S-027-059735_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2018-S-027-059735_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2018-S-027-059735_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2018-S-027-059735_TenderReceiver_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasDispatchDate "2018-02-06"^^xsd:date;
+  epo:hasID epd:id_2018-S-027-059735_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20180208";
+  epo:refersToLot epd:id_2018-S-027-059735_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToPrevious epd:id_2017-S-022-038131_Notice;
+  epo:refersToProcedure epd:id_2018-S-027-059735_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2018-S-027-059735_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 027-059735" .
+
+epd:id_2018-S-027-059735_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "69003";
+  locn:postName "Lyon";
+  locn:thoroughfare "Tour in City — 116 cours Lafayette" .
+
+epd:id_2018-S-027-059735_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "SNCF — DAG département stratégie, projets et innovations"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2018-S-027-059735_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-027-059735_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60112000> .
+
+epd:id_2018-S-027-059735_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-027-059735_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation """
+               SNCF émet cet avis de qualification en son nom et pour son compte et au nom et pour le compte de SNCF Réseau et SNCF Mobilités.
+               La candidature ainsi que tout échange d'informations doivent être rédigés en français.
+               Les critères d'attribution des offres: offre économiquement la plus avantageuse en fonction des critères énoncés dans le dossier de consultation.
+               Pour tout complément d'information ou un entretien préalable, le candidat est invité à contacter un représentant de la Direction des achats groupe en responsabilité sur son périmètre géographique de couverture. Les contacts nationaux et régionaux en Centrale d'achat interrégionales (CAI) sont mentionnés dans le document «TRV présentation du système de qualification 2018» mis à disposition sur le site: http://www.sncf.com/fr/fournisseurs/dossiers-qualification
+               Contact en cas de difficultés pour obtenir le dossier de qualification: Mme Sylvie Souchet.
+               Mail: qualification.prestations@sncf.fr. ou sylvie.souchet@sncf.fr
+            """@fr;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-027-059735_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2018-S-027-059735_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+               Transport routier de voyageurs
+            """@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-027-059735_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2018-S-027-059735_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP, epd:id_2018-S-027-059735_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2018-S-027-059735_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-027-059735_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-027-059735_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-027-059735_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2018-S-027-059735_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta.paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2018-S-027-059735_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Greffe du tribunal administratif"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-027-059735_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2018-S-027-059735_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2018-S-027-059735_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-027-059735_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2018-S-027-059735_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Les procédures de recours applicables sont:
+               — le référé pré-contractuel qui peut être exercé jusqu’à la signature du marché,
+               — le référé contractuel qui peut être exercé dans un délai de:
+               —— 31 jours à compter de la publication d’un avis d’attribution au JOUE ou, pour les marchés fondés sur un accord-cadre, à compter de la notification de la conclusion du contrat,
+               —— 6 mois à compter du lendemain du jour de la conclusion du contrat si aucun avis d’attribution n’a été publié ou si aucun notification de la conclusion du contrat n’a été effectué,
+               — le recours en contestation de validité du contrat ou de certaines de ses clauses (dans un délai de 2 mois à compter de l’accomplissement des mesures de publicité appropriées).
+            """ .
+
+epd:id_2018-S-027-059735_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+33 144594646";
+  epo:hasInternetAddress "http://paris.tribunal-administratif.fr/"^^xsd:anyURI;
+  cccev:email "greffe.ta.paris@juradm.fr";
+  cccev:telephone "+33 144594400" .
+
+epd:id_2018-S-027-059735_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75181";
+  locn:postName "Paris Cedex 04";
+  locn:thoroughfare "7 rue de Jouy" .
+
+epd:id_2018-S-027-059735_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Tribunal administratif"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-027-059735_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2018-S-027-059735_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-027-059735_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-027-059735_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-027-059735_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2018-S-027-059735_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "93212";
+  locn:postName "La Plaine Saint-Denis";
+  locn:thoroughfare "4 rue André Campra — CS 20012" .
+
+epd:id_2018-S-027-059735_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx
+  a cccev:ContactPoint;
+  epo:hasContactName "Sylvie Souchet ou Monique Brasseur"@fr;
+  epo:hasInternetAddress "http://www.sncf.com/fr/fournisseurs/dossiers-qualification"^^xsd:anyURI;
+  cccev:email "qualification.prestations@sncf.fr";
+  cccev:telephone "+33 185587770" .
+
+epd:id_2018-S-027-059735_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx a org:Organization;
+  epo:hasLegalName "SNCF — Direction des achats groupe — DDQPF — pôle méthodes et organisations"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-027-059735_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  cccev:registeredAddress epd:id_2018-S-027-059735_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx .
+
+epd:id_2018-S-027-059735_TenderReceiver_7qc7fbmR56uUqsniJHkNyx a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-027-059735_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  epo:playedBy epd:id_2018-S-027-059735_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx .

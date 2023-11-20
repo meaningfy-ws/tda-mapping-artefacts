@@ -1,0 +1,136 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-068-162630_Notice a epo:Notice;
+  epo:hasID epd:id_2020-S-068-162630_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2020-S-068-162630_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 068-162630" .
+
+epd:id_2021-S-127-338132_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "http://www.deutschebahn.com/bieterportal"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-127-338132_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-127-338132_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-127-338132_Channel_6nzVNRgtoDbqibciDT5jYq a cccev:Channel;
+  epo:hasURL "https://smart.noncd.db.de/"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2021-S-127-338132_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Beschaffung Infrastruktur Region West, Teilsystem Elektrotechnik (FE.EI-W); Herr Sven Bednarek"@de;
+  epo:hasFax "+49 20330174724";
+  epo:hasInternetAddress "http://www.deutschebahn.com/de/geschaefte/lieferantenportal"^^xsd:anyURI;
+  cccev:email "sven.bednarek@deutschebahn.com";
+  cccev:telephone "+49 6926523132" .
+
+epd:id_2021-S-127-338132_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "Bundesweite Liefer- und Ausführungsorte"@de .
+
+epd:id_2021-S-127-338132_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
+  locn:address epd:id_2021-S-127-338132_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-127-338132_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-127-338132_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription "Wiederholungs-Bekanntmachung: bisher erteilte Präqualifikationen behalten entsprechend dem jeweiligen Schriftverkehr Gültigkeit.";
+  epo:isRenewalIndicator true .
+
+epd:id_2021-S-127-338132_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2021-S-127-338132_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/31171000>, <http://data.europa.eu/cpv/cpv/31200000>,
+    <http://data.europa.eu/cpv/cpv/31212000>, <http://data.europa.eu/cpv/cpv/31214000>,
+    <http://data.europa.eu/cpv/cpv/31230000>, <http://data.europa.eu/cpv/cpv/31600000>,
+    <http://data.europa.eu/cpv/cpv/31700000>, <http://data.europa.eu/cpv/cpv/31730000> .
+
+epd:id_2021-S-127-338132_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-127-338132_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Im Einzelnen sind folgende Gegenstände/Produktkategorien Bestandteil:1.1 – fabrikfertige Kompakttrafostationen,1.2 – 50-Hz Mittelspannungsschaltanlagen,2.1 – Werksgefertigte Werke für S-Bahnenergieversorgung,2.2 – DC-Schaltanlage / DC-Schaltfelder,2.3 – DC-Leistungsschalter,2.4 – Erdungskurzschließer,3.1 – 15-kV/16,7-Hz metallgekapselte Schaltanlagen,3.2 – 110-kV-/16,7-Hz-Freiluft- Hybridschaltmodule sowie Leistungsschalter,3.3 – 15-MVA- und 10-MVA / (13-MVA) 16,7-Hz-Einphasen-Bahnstromtransformator,3.4 – 110-kV-Freiluft-Drehtrennschalter,3.5 – 110-kV/16,7-Hz Kombi-, Strom- und Spannungswandler,3.6 – Errichtung und Montage von 110-kV-/ 15-kV-Schaltanlagen 16,7 Hz,3.7 – Oberleitungsprüfeinrichtung,4.1 – Erdschlussrichtungsortungsrelais – 16,7 Hz,4.2 – Leitungsdistanzschutz – 16,7 Hz,4.3 – Leitungsdifferentialschutz – 16,7 Hz,4.4 – Sammelschienenschutz – 16,7 Hz,4.5 – Fahrleitungsschutz – 16,7 Hz,4.6 – Übergeordneter Schutz – 16,7 Hz,4.7 – Transformatorschutz – 16,7 Hz,4.8 – UMZ-Schutz – 16,7 Hz,4.9 – Fahrleitungsschutz – DC,4.10 – Netzschutzgeräte – 50 Hz,4.11 – Übergeordneter Schutz – DC,5.1 – Stationsleittechnik für Bahnstromschaltanlagen, Gleichrichterunterwerke und Erzeugeranlagen,5.2 – Engineering- und Integrationsleistungen für Stationsleittechnik der Bahnenergieversorgungsanlagen,6.1 – Ortssteuereinrichtungen / Fernwirkanlagen Oberleitung (OSE/FWA OLA),7.1 – Oberleitungsspannungsprüfautomatik und Oberleitungserdungsautomatik (OLSP)."@de;
+  epo:hasPurpose epd:id_2021-S-127-338132_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-127-338132_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false .
+
+epd:id_2021-S-127-338132_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-127-338132_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2021-S-127-338132_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2021-S-127-338132_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2021-S-127-338132_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2021-S-127-338132_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2021-06-30"^^xsd:date;
+  epo:hasID epd:id_2021-S-127-338132_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210705";
+  epo:refersToLot epd:id_2021-S-127-338132_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToPrevious epd:id_2020-S-068-162630_Notice;
+  epo:refersToProcedure epd:id_2021-S-127-338132_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2021-S-127-338132_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 127-338132" .
+
+epd:id_2021-S-127-338132_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE712>;
+  locn:postCode "60326";
+  locn:postName "Frankfurt am Main";
+  locn:thoroughfare "Pfarrer-Perabo-Platz 2" .
+
+epd:id_2021-S-127-338132_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "DB Energie GmbH"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2021-S-127-338132_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-127-338132_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/31214000> .
+
+epd:id_2021-S-127-338132_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-127-338132_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "Alle Unterlagen sind in deutscher Sprache (DE) vorzulegen. Verhandlungs- und Vertragssprache ist deutsch(DE). Verträge unterliegen dem deutschen Recht. Es wird kein Entgelt für die Erstellung der Angebote gezahlt.Das Verfahren wird elektronisch geführt und mit der Selbstregistrierung der Lieferanten über: https://smart.noncd.db.de. initiiert. Die Verfahrensregeln werden ständig fortgeschrieben und können über http://www.deutschebahn.com/lieferantenportal/verfahrensregeln abgerufen werden. Das Prüfungssystem bleibt aber als solches erhalten und die Gültigkeit der Präqualifizierungen besteht unverändert fort. Über die Requalifizierung ist durch diese Lieferanten zur Aufrechterhaltung der Qualifikation eine Aktualisierung ihrer eingereichten Unterlagen vorzunehmen. Die letzte Bekanntmachung mit der Nummer 2020/S. 068-162630 ist nicht mehr gültig, die erteilten Präqualifikationsnachweise behalten jedoch ihre vermerkte Gültigkeit."@de;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-127-338132_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2021-S-127-338132_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Lieferung von Komponenten für Schaltanlagen 16,7 Hz und DC und zur Steuerung/Überwachung von Oberleitungsanlagen und von Netzschutzgeräten 50 Hz sowie die Errichtung und Montage von Schaltanlagen 16,7 H."@de;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-127-338132_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP,
+    epd:id_2021-S-127-338132_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:usesChannel epd:id_2021-S-127-338132_Channel_6nzVNRgtoDbqibciDT5jYq .
+
+epd:id_2021-S-127-338132_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-127-338132_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-127-338132_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-127-338132_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Ein Nachprüfungsantrag ist unzulässig, soweit mehr als 15 Kalendertage nach Eingang der Mitteilung des Auftraggebers, einer Rüge nicht abhelfen zu wollen, vergangen sind (§ 160 Abs. 3 S. 1 Nr. 4 GWB). Ein Nachprüfungsantrag ist zudem unzulässig, soweit der Antrag erst nach Zuschlagserteilung zugestellt wird (vgl. § 168 Abs. 2 Satz 1 GWB). Die Zuschlagserteilung ist möglich 10 Tage nach Absendung der Bekanntgabe der Vergabeentscheidung per Fax oder per E-Mail bzw. 15 Tage nach Absendung der Bekanntgabe der Vergabeentscheidung per Post (§ 134 Abs. 2 GWB). Die Zulässigkeit eines Nachprüfungsantrags setzt ferner voraus, dass die geltend gemachten Vergabeverstöße innerhalb von 10 Kalendertagen nach Kenntnis bzw. – soweit die Vergabeverstöße aus der Bekanntmachung oder den Vergabeunterlagen erkennbar sind – bis zum Ablauf der Teilnahme- bzw. Angebotsfrist gerügt wurden (§ 160 Abs. 3 S. 1 Nr. 1-3 GWB). Des Weiteren wird auf die in 135 Abs. 2 GWB genannten Fristen verwiesen." .
+
+epd:id_2021-S-127-338132_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "53123";
+  locn:postName "Bonn";
+  locn:thoroughfare "Villemombler Straße 76" .
+
+epd:id_2021-S-127-338132_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Vergabekammer des Bundes"@de;
+  cccev:registeredAddress epd:id_2021-S-127-338132_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-127-338132_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-127-338132_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-127-338132_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://smart.noncd.db.de/"^^xsd:anyURI .
+
+epd:id_2021-S-127-338132_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-127-338132_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-127-338132_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

@@ -1,0 +1,117 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2020-S-096-230455_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=374349"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2020-S-096-230455_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=374349"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2020-S-096-230455_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2020-S-096-230455_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2020-S-096-230455_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasFax "+32 25153281";
+  epo:hasInternetAddress "www.stib.be"^^xsd:anyURI;
+  cccev:email "pascale.dewolf@stib.brussels";
+  cccev:telephone "+32 25155874" .
+
+epd:id_2020-S-096-230455_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE10> .
+
+epd:id_2020-S-096-230455_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2020-S-096-230455_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2020-S-096-230455_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2020-S-096-230455_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-096-230455_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "La STIB recherche des candidats intéressés par la fourniture de gaz naturel de chauffage sur différents sites de la STIB, situés sur le territoire de la Région de Bruxelles Capitale. En 2020, le volume de consommation annuelle est estimé à 44 GWh/an."@fr,
+    "De MIVB zoekt geïnteresseerde kandidaten voor de levering van aardgas voor verwarming op verschillende sites van de MIVB, gelegen op het grondgebied van het Brussels Hoofdstedelijk Gewest. In 2020, het volume van het jaarlijks verbruik is geraamd op 44 GWh/jaar."@nl;
+  epo:isUsingEUFunds false .
+
+epd:id_2020-S-096-230455_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2020-S-096-230455_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2020-S-096-230455_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2020-S-096-230455_Reviewer_cnThDUHhCN7pjvrhJdwbGS;
+  epo:hasDispatchDate "2020-05-13"^^xsd:date;
+  epo:hasID epd:id_2020-S-096-230455_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20200518";
+  epo:refersToLot epd:id_2020-S-096-230455_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2020-S-096-230455_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2020-S-096-230455_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2020/S 096-230455" .
+
+epd:id_2020-S-096-230455_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE100>;
+  locn:postCode "1000";
+  locn:postName "Bruxelles";
+  locn:thoroughfare "Rue Royale 76" .
+
+epd:id_2020-S-096-230455_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "0247.499.953_241" .
+
+epd:id_2020-S-096-230455_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2020-S-096-230455_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Société des transports intercommunaux de Bruxelles — procurement & logistics department"@fr,
+    "Maatschappij voor het Intercommunaal Vervoer te Brussel - Procurement & Logistics Department"@nl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2020-S-096-230455_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2020-S-096-230455_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "MIVB - STIB Procurement & Logistics-AL 4214-F07_0" .
+
+epd:id_2020-S-096-230455_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09310000> .
+
+epd:id_2020-S-096-230455_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2020-S-096-230455_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "— tout candidat n’ayant pas obtenu sa qualification ne peut introduire un nouveau dossier de qualification pour ce présent marché endéans les douze mois à dater de la date de la signification écrite par la STIB de la non-obtention de la qualification.Dans le cadre de la réglementation concernant le RGPD le candidat reste lui-même responsable de demander les permissions nécessaires de ses clients ou autres tiers concernés afin de pouvoir utiliser les données personnelles demandées dans le cadre de la présente procédure;— suite à l’entrée en vigueur de la nouvelle réglementation sur les marchés publics, le 30.6.2017, la publication annuelle n’est plus obligatoire. Le système de qualification reste donc valable tant que celui-ci n’est ni adapté, ni modifié, ni abrogé;— seules les firmes qualifiées au terme de la procédure de qualification recevront les cahiers spéciaux des charges de la STIB et seront invitées à remettre offre."@fr,
+    "Elke kandidaat die zijn erkenning niet bekomen heeft, mag geen nieuw erkenningsdossier voor deze opdracht indienen binnen de twaalf maanden na de datum van de schriftelijke betekening door de MIVB van het niet-verkrijgen van de erkenning.In het kader van de GDPR blijft de kandidaat zelf verantwoordelijk voor het vragen van de toelatingen van zijn klanten of andere betrokken derden die nodig zijn om de persoonlijke gegevens die in het kader van deze procedure gevraagd werden, te mogen gebruiken.Als gevolg van de invoegetreding van de nieuwe reglementering betreffende de overheidsopdrachten op 30.6.2017, is de jaarlijkse publicatie niet langer verplicht. De erkenningsregeling blijft dus geldig zolang ze niet aangepast noch gewijzigd noch afgeschaft wordt.Enkel de firma’s die op het einde van de erkenningsprocedure erkend worden, zullen de bestekken van de MIVB ontvangen en verzocht worden om een offerte in te dienen."@nl;
+  epo:hasID epd:id_2020-S-096-230455_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2020-S-096-230455_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2020-S-096-230455_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Gaz naturel de chauffage"@fr, "Aardgas voor verwarming"@nl;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2020-S-096-230455_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2020-S-096-230455_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP, epd:id_2020-S-096-230455_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2020-S-096-230455_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2020-S-096-230455_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2020-S-096-230455_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2020-S-096-230455_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— conformément à l’article 23 de la loi du 17.6.2013 relative à la motivation, à l’information et aux voies de recours en matière de marchés publics et de certains marchés de travaux, de fournitures et de services, les recours sont, sous peine d’irrecevabilité, introduits dans les délais visés aux §§ 2 à 4, 5 alinéa 1er et 6, à compter de la publication, de la communication ou de la prise de connaissance de l’acte, selon le cas;— le recours en annulation visé à l’article 14 est introduit dans un délai de soixante jours;— la demande en suspension visée à l’article 15 est introduite dans un délai de quinze jours; — en cas d’application de l’article 18, le délai est de dix jours;— le recours en dommages et intérêts visé à l’article 16 est introduit dans un délai de cinq ans." .
+
+epd:id_2020-S-096-230455_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postName "Bruxelles";
+  locn:thoroughfare "Rue de la Science 33" .
+
+epd:id_2020-S-096-230455_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Conseil d'État"@fr, "Raad van State"@nl;
+  cccev:registeredAddress epd:id_2020-S-096-230455_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2020-S-096-230455_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2020-S-096-230455_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2020-S-096-230455_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "FR", "NL";
+  epo:hasSubmissionURL "https://eten.publicprocurement.be/etendering/viewWorkspacesBasedOnExtUrl.do?wsName=MIVB+-+STIB+Procurement+%26+Logistics-AL+4214-F07"^^xsd:anyURI .

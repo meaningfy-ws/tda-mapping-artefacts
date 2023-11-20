@@ -1,0 +1,159 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-097-192261_AwardCriterionInDocuments_anTw2hmgo2Xh6TEAbuwm8f a epo:AwardCriterion .
+
+epd:id_2017-S-097-192261_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-097-192261_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2017-S-097-192261_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2017-S-097-192261_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Sandra Schwarz"@de;
+  epo:hasInternetAddress "www.oebb.at"^^xsd:anyURI;
+  cccev:email "sandra.schwarz@oebb.at" .
+
+epd:id_2017-S-097-192261_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress """
+Werkstättenstraße 17, 3100 St. Pölten.
+"""@de .
+
+epd:id_2017-S-097-192261_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT123>;
+  locn:address epd:id_2017-S-097-192261_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2017-S-097-192261_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-097-192261_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2017-S-097-192261_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2017-S-097-192261_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-097-192261_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+Prüfsysteme Ersatzteile der Fa. Contitech – Lieferantenprüfsystem.
+"""@de;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-097-192261_AwardCriterionInDocuments_anTw2hmgo2Xh6TEAbuwm8f .
+
+epd:id_2017-S-097-192261_MediatorContactPoint_3YJsnAYcTDrfQQSNseUiyS a cccev:ContactPoint;
+  epo:hasFax "+43 153109-153357";
+  epo:hasInternetAddress "www.bvwg.gv.at"^^xsd:anyURI;
+  cccev:email "einlaufstelle@bwwg.gv.at";
+  cccev:telephone "+43 1601490" .
+
+epd:id_2017-S-097-192261_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  locn:postCode "1030";
+  locn:postName "Wien";
+  locn:thoroughfare "Erdbergstraße 192-196" .
+
+epd:id_2017-S-097-192261_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS a org:Organization;
+  epo:hasLegalName "Bundesverwaltungsgericht"@de;
+  epo:hasPrimaryContactPoint epd:id_2017-S-097-192261_MediatorContactPoint_3YJsnAYcTDrfQQSNseUiyS;
+  cccev:registeredAddress epd:id_2017-S-097-192261_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2017-S-097-192261_Mediator_3YJsnAYcTDrfQQSNseUiyS a epo:Mediator;
+  epo:playedBy epd:id_2017-S-097-192261_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2017-S-097-192261_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2017-S-097-192261_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2017-S-097-192261_Mediator_3YJsnAYcTDrfQQSNseUiyS,
+    epd:id_2017-S-097-192261_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2017-S-097-192261_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2017-S-097-192261_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2017-S-097-192261_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2017-05-17"^^xsd:date;
+  epo:hasID epd:id_2017-S-097-192261_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20170520";
+  epo:refersToLot epd:id_2017-S-097-192261_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2017-S-097-192261_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2017-S-097-192261_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 097-192261" .
+
+epd:id_2017-S-097-192261_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT123>;
+  locn:postCode "3100";
+  locn:postName "St. Pölten";
+  locn:thoroughfare "Werkstättenstraße 17" .
+
+epd:id_2017-S-097-192261_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "Österreichische Bundebahnen – Technische Services GmbH"@de;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/rail>;
+  cccev:registeredAddress epd:id_2017-S-097-192261_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2017-S-097-192261_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/60210000> .
+
+epd:id_2017-S-097-192261_ProcedureTerm_Y6NRwnV2zPRQbkgqc6rurv a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2017-S-097-192261_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-097-192261_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-097-192261_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2017-S-097-192261_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+Prüfsysteme Ersatzteile der Fa. Contitech – Lieferantenprüfsystem.
+"""@de;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-097-192261_ProcedureTerm_Y6NRwnV2zPRQbkgqc6rurv,
+    epd:id_2017-S-097-192261_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2017-S-097-192261_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2017-S-097-192261_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2017-S-097-192261_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2017-S-097-192261_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  locn:postCode "1030";
+  locn:postName "Wien";
+  locn:thoroughfare "Erdbergstraße 192-196" .
+
+epd:id_2017-S-097-192261_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasFax "+43 153109-153357";
+  epo:hasInternetAddress "www.bvwg.gv.at"^^xsd:anyURI;
+  cccev:email "einlaufstelle@bwwg.gv.at";
+  cccev:telephone "+43 1601490" .
+
+epd:id_2017-S-097-192261_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Bundesverwaltungsgericht"@de;
+  epo:hasPrimaryContactPoint epd:id_2017-S-097-192261_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2017-S-097-192261_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2017-S-097-192261_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2017-S-097-192261_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2017-S-097-192261_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  locn:postName "Wien" .
+
+epd:id_2017-S-097-192261_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Bundesverwaltungsgericht"@de;
+  cccev:registeredAddress epd:id_2017-S-097-192261_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2017-S-097-192261_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-097-192261_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2017-S-097-192261_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2017-S-097-192261_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2017-S-097-192261_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2017-S-097-192261_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

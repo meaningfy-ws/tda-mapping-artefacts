@@ -1,0 +1,186 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-010-019200_Notice a epo:Notice;
+  epo:hasID epd:id_2018-S-010-019200_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2018-S-010-019200_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 010-019200" .
+
+epd:id_2021-S-015-034396_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://enot.publicprocurement.be/changeLanguage.do?language=fr-FR"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-015-034396_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-015-034396_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-015-034396_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-015-034396_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-015-034396_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasFax "+32 71549696";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "publicationsMP@ores.be" .
+
+epd:id_2021-S-015-034396_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "Wallonie."@fr .
+
+epd:id_2021-S-015-034396_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:address epd:id_2021-S-015-034396_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-015-034396_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-015-034396_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:isRenewalIndicator true .
+
+epd:id_2021-S-015-034396_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2021-S-015-034396_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8 a
+    cccev:ContactPoint;
+  epo:hasContactName "Madame Aurélie Van Branteghem"@fr;
+  epo:hasFax "+32 64232301";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "aurelie.vanbranteghem@ores.be";
+  cccev:telephone "+32 64232330" .
+
+epd:id_2021-S-015-034396_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE>;
+  locn:postCode "6041";
+  locn:postName "Gosselies";
+  locn:thoroughfare "Avenue Jean Mermoz 14" .
+
+epd:id_2021-S-015-034396_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 a
+    org:Organization;
+  epo:hasLegalName "Service achats"@fr;
+  cccev:registeredAddress epd:id_2021-S-015-034396_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2021-S-015-034396_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/45333000> .
+
+epd:id_2021-S-015-034396_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-015-034396_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Établissement d’une liste de candidats qualifiés pour les travaux de raccordements BT + gaz."@fr;
+  epo:hasPurpose epd:id_2021-S-015-034396_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-015-034396_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-015-034396_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r .
+
+epd:id_2021-S-015-034396_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-015-034396_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2021-S-015-034396_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2021-S-015-034396_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8,
+    epd:id_2021-S-015-034396_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2021-S-015-034396_TenderReceiver_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasDispatchDate "2021-01-19"^^xsd:date;
+  epo:hasID epd:id_2021-S-015-034396_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210122";
+  epo:refersToLot epd:id_2021-S-015-034396_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToPrevious epd:id_2018-S-010-019200_Notice;
+  epo:refersToProcedure epd:id_2021-S-015-034396_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2021-S-015-034396_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 015-034396" .
+
+epd:id_2021-S-015-034396_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:postCode "6041";
+  locn:postName "Gosselies";
+  locn:thoroughfare "Avenue Jean Mermoz 14" .
+
+epd:id_2021-S-015-034396_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "BE 0543 696 579" .
+
+epd:id_2021-S-015-034396_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2021-S-015-034396_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Intercommunale ORES Assets SC"@fr;
+  epo:hasMainActivityDescription "Électricité et gaz";
+  cccev:registeredAddress epd:id_2021-S-015-034396_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-015-034396_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "WQXRBWA" .
+
+epd:id_2021-S-015-034396_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45317000> .
+
+epd:id_2021-S-015-034396_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-015-034396_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "L'entité adjudicatrice a décidé de renoncer au présent système de qualification."@fr;
+  epo:hasID epd:id_2021-S-015-034396_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-015-034396_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2021-S-015-034396_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Système de qualification — système de qualification pour les travaux de raccordements BT + gaz"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-015-034396_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2021-S-015-034396_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP, epd:id_2021-S-015-034396_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2021-S-015-034396_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-015-034396_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:playedBy epd:id_2021-S-015-034396_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2021-S-015-034396_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— recours en annulation devant le Conseil d'Étatou le juge judiciaire: 60 jours à compter de la publication, de la communication ou de la prise de connaissance de l'acte selon le cas;— recours en suspension devant le Conseil d'état, selon la procédure d'extrême urgence, ou devant le juge judiciaire, selon la procédure de référé: quinze jours à compter de la publication, de la communication ou de la prise de connaissance de l'acte selon le cas;— ce délai est réduit à 10 jours en cas de publication d’un avis de transparence ex ante volontaire." .
+
+epd:id_2021-S-015-034396_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.raadvst-consetat.be"^^xsd:anyURI;
+  cccev:telephone "+32 22349611" .
+
+epd:id_2021-S-015-034396_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Bruxelles (Etterbeek)";
+  locn:thoroughfare "Rue de la Science 33" .
+
+epd:id_2021-S-015-034396_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Conseil d'état"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-015-034396_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2021-S-015-034396_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-015-034396_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-015-034396_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-015-034396_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2021-S-015-034396_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE>;
+  locn:postCode "6041";
+  locn:postName "Gosselies";
+  locn:thoroughfare "Avenue Jean Mermoz 14" .
+
+epd:id_2021-S-015-034396_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx
+  a cccev:ContactPoint;
+  epo:hasContactName "Madame Dorothée Pasciullo"@fr;
+  epo:hasFax "+32 71549696";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "dorothee.pasciullo@ores.be";
+  cccev:telephone "+32 71547706" .
+
+epd:id_2021-S-015-034396_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx a org:Organization;
+  epo:hasLegalName "Service achats"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-015-034396_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  cccev:registeredAddress epd:id_2021-S-015-034396_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx .
+
+epd:id_2021-S-015-034396_TenderReceiver_7qc7fbmR56uUqsniJHkNyx a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-015-034396_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  epo:playedBy epd:id_2021-S-015-034396_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx .

@@ -1,0 +1,139 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-131-235589_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://platform.negometrix.com/PublishedTenders.aspx?tenderId=28319&companyId=3133"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-131-235589_AwardCriterionCost_CE4ReaF8HhUU5JosBfpVZB a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "2"@en;
+  cccev:weight "50"@en .
+
+epd:id_2016-S-131-235589_AwardCriterionQuality_SusozLciNyYZniT3DQMaXG a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "1"@en;
+  cccev:weight "50"@en .
+
+epd:id_2016-S-131-235589_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-131-235589_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-131-235589_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-131-235589_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Dirk Berkenbos"@en;
+  epo:hasInternetAddress "http://www.tennet.eu/de/home.html"^^xsd:anyURI;
+  cccev:email "dirk.berkenbos@tennet.eu";
+  cccev:telephone "+49 92150740-2914" .
+
+epd:id_2016-S-131-235589_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE> .
+
+epd:id_2016-S-131-235589_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-131-235589_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2016-S-131-235589_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2016-S-131-235589_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/65310000> .
+
+epd:id_2016-S-131-235589_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-131-235589_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+TenneT is looking for further more qualified partners for their supply and demand in Overhead Line Insulators. To become a A — Supplier at TenneT there must be done some different steps. The 1st and important step is the TQS.
+"""@en;
+  epo:hasPurpose epd:id_2016-S-131-235589_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2016-S-131-235589_AwardCriterionCost_CE4ReaF8HhUU5JosBfpVZB,
+    epd:id_2016-S-131-235589_AwardCriterionQuality_SusozLciNyYZniT3DQMaXG .
+
+epd:id_2016-S-131-235589_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2016-S-131-235589_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2016-S-131-235589_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2016-S-131-235589_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2016-S-131-235589_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2016-07-07"^^xsd:date;
+  epo:hasID epd:id_2016-S-131-235589_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20160709";
+  epo:refersToLot epd:id_2016-S-131-235589_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2016-S-131-235589_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2016-S-131-235589_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 131-235589" .
+
+epd:id_2016-S-131-235589_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
+  locn:postCode "95448";
+  locn:postName "Bayreuth";
+  locn:thoroughfare "Bernecker Str. 70" .
+
+epd:id_2016-S-131-235589_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "DE815073514" .
+
+epd:id_2016-S-131-235589_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2016-S-131-235589_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "TenneT TSO GmbH"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2016-S-131-235589_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-131-235589_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "28319" .
+
+epd:id_2016-S-131-235589_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/65310000> .
+
+epd:id_2016-S-131-235589_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-131-235589_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasID epd:id_2016-S-131-235589_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-131-235589_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2016-S-131-235589_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+TenneT Qualification System (TQS) for Overhead Line Insulators (Composite, Glass and Porcelain).
+"""@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-131-235589_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2016-S-131-235589_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2016-S-131-235589_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-131-235589_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-131-235589_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-131-235589_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+49 981531837";
+  epo:hasInternetAddress "http://www.regierung.mittelfranken.bayern.de"^^xsd:anyURI;
+  cccev:email "vergabekammer.nordbayern@reg-mfr.bayern.de";
+  cccev:telephone "+49 981531277" .
+
+epd:id_2016-S-131-235589_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "91511";
+  locn:postName "Ansbach";
+  locn:thoroughfare "Postfach 606" .
+
+epd:id_2016-S-131-235589_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Regierung von Mittelfranken — Vergabekammer Nordbayern"@en;
+  epo:hasPrimaryContactPoint epd:id_2016-S-131-235589_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2016-S-131-235589_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2016-S-131-235589_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-131-235589_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2016-S-131-235589_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "DE", "EN" .
+
+epd:id_2016-S-131-235589_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-131-235589_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-131-235589_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

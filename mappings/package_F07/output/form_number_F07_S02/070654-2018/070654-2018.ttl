@@ -1,0 +1,208 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-032-070654_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=299519"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-032-070654_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-032-070654_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-032-070654_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasFax "+32 25153281";
+  epo:hasInternetAddress "www.stib.be"^^xsd:anyURI;
+  cccev:email "pascale.dewolf@stib.brussels";
+  cccev:telephone "+32 25155874" .
+
+epd:id_2018-S-032-070654_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress """
+                  Région Bruxelles capitale.
+               """@fr,
+    """
+                  Brussels Hoodstedelijke Gewest.
+               """@nl .
+
+epd:id_2018-S-032-070654_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE100>;
+  locn:address epd:id_2018-S-032-070654_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2018-S-032-070654_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-032-070654_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription """
+                  De firma’s die in het kader van onderhavig erkenningssysteem al gekwalificeerd zijn geweest, moeten de volgende documenten overmaken:
+                  — de contactgegevens van de persoon die belast is met het dossier (tel gsm e-mail),
+                  — een geschrift dat hun interesse bevestigt in het behouden van hun erkenning voor het jaar 2018,
+                  — de melding van elke betekenisvolle verandering aan hun statuten.
+               """,
+    """
+                  Les sociétés qui ont déjà été qualifiées dans le cadre du présent système de qualification doivent remettre les documents suivants.
+                  — les coordonnées de la personne en charge du dossier (tel gsm email),
+                  — un écrit confirmant leur intérêt à conserver leur qualification pour l’année 2018,
+                  — la communication de tout changement significatif de leurs statuts.
+               """;
+  epo:isRenewalIndicator true .
+
+epd:id_2018-S-032-070654_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2018-S-032-070654_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-032-070654_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+                  Qualification de fournisseurs d’énergie électrique haute tension (11 kV et 36 kV) nécessaire à l’exploitation du réseau de métro et de tramways de la STIB, capables de fournir annuellement environ 250 GWh.
+                  Ils devront tenir compte de contraintes:
+                  — une pointe quart-horaire maximale de 55 000 kW,
+                  — 12 points de raccordement dont 11 sur la région de Bruxelles-Capitale et 1 sur la Flandre.
+                  Seules les firmes qualifiées au terme de la procédure de qualification recevront les cahiers spéciaux des charges de la STIB et seront invitées à remettre offre.
+               """@fr,
+    """
+                  Erkenningsregeling voor energieleveranciers van hoogspanningselektriciteit (11 kV en 36 kV) die nodig is voor de exploitatie van het metro- en tramnet van de MIVB, welke in staat zijn om jaarlijks ongeveer 250 GWh te leveren.
+                  Ze zullen met plichtmatigheden rekening moeten houden:
+                  — een maximum kwartuurpiek van 55.000 kW,
+                  — 12 aansluitingspunten waarvan 11 in het Brussels Hoofdstedelijk Gewest en 1 op Vlaams grondgebied.
+                  Enkel de firma’s die na afloop van de erkenningsprocedure gekwalificeerd zijn, zullen het bestek ontvangen en verzocht worden om een offerte in te dienen.
+               """@nl;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-032-070654_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-032-070654_MediatorContactPoint_3YJsnAYcTDrfQQSNseUiyS a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.raadvst-consetat.be"^^xsd:anyURI;
+  cccev:email "info@raadvst-consetat.be";
+  cccev:telephone "+32 22349611" .
+
+epd:id_2018-S-032-070654_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Bruxelles";
+  locn:thoroughfare "Rue de la Science, 33" .
+
+epd:id_2018-S-032-070654_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS a org:Organization;
+  epo:hasLegalName "Conseil d'État"@fr, "Raad van State"@nl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-032-070654_MediatorContactPoint_3YJsnAYcTDrfQQSNseUiyS;
+  cccev:registeredAddress epd:id_2018-S-032-070654_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2018-S-032-070654_Mediator_3YJsnAYcTDrfQQSNseUiyS a epo:Mediator;
+  epo:playedBy epd:id_2018-S-032-070654_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2018-S-032-070654_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-032-070654_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2018-S-032-070654_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2018-S-032-070654_Mediator_3YJsnAYcTDrfQQSNseUiyS,
+    epd:id_2018-S-032-070654_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2018-S-032-070654_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2018-S-032-070654_Reviewer_cnThDUHhCN7pjvrhJdwbGS;
+  epo:hasDispatchDate "2018-02-13"^^xsd:date;
+  epo:hasID epd:id_2018-S-032-070654_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20180215";
+  epo:refersToLot epd:id_2018-S-032-070654_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2018-S-032-070654_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2018-S-032-070654_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 032-070654" .
+
+epd:id_2018-S-032-070654_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE100>;
+  locn:postCode "1000";
+  locn:postName "Bruxelles";
+  locn:thoroughfare "Rue Royale 76" .
+
+epd:id_2018-S-032-070654_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "0247.499.953_241" .
+
+epd:id_2018-S-032-070654_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2018-S-032-070654_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Société des transports intercommunaux de Bruxelles — Procurement & logistics department"@fr,
+    "Maatschappij voor het Intercommunaal Vervoer te Brussel - Procurement & Logistics Department"@nl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  cccev:registeredAddress epd:id_2018-S-032-070654_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-032-070654_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "MIVB - STIB Procurement & Logistics-3894/TVV/PdW-F07_0" .
+
+epd:id_2018-S-032-070654_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/09310000> .
+
+epd:id_2018-S-032-070654_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-032-070654_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasID epd:id_2018-S-032-070654_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-032-070654_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2018-S-032-070654_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+               Électricité haute tension (11KV et 36KV)
+            """@fr,
+    """
+               ELEKTRICITEIT hoogspanning (11kV en 36kV)
+            """@nl;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-032-070654_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP,
+    epd:id_2018-S-032-070654_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2018-S-032-070654_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-032-070654_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-032-070654_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-032-070654_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Bruxelles";
+  locn:thoroughfare "Rue de la Science, 33" .
+
+epd:id_2018-S-032-070654_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.raadvst-consetat.be"^^xsd:anyURI;
+  cccev:email "info@raadvst-consetat.be";
+  cccev:telephone "+32 22349611" .
+
+epd:id_2018-S-032-070654_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Conseil d'État"@fr, "Raad van State"@nl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-032-070654_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2018-S-032-070654_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2018-S-032-070654_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-032-070654_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2018-S-032-070654_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+               Conformément à l’article 23 de la loi du 17.6.2013 relative à la motivation, à l’information et aux voies de recours en matière de marchés publics et de certains marchés de travaux, de fournitures et de services, les recours sont, sous peine d’irrecevabilité, introduits dans les délais visés aux §§ 2 à 4, 5 alinéa 1er et 6, à compter de la publication, de la communication ou de la prise de connaissance de l’acte, selon le cas.
+               Le recours en annulation visé à l’article 14 est introduit dans un délai de 60 jours.
+               La demande en suspension visée à l’article 15 est introduite dans un délai de quinze jours. En cas d’application de l’article 18, le délai est de 10 jours.
+               Le recours en dommages et intérêts visé à l’article 16 est introduit dans un délai de 5 ans.
+            """ .
+
+epd:id_2018-S-032-070654_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.raadvst-consetat.be"^^xsd:anyURI;
+  cccev:email "info@raadvst-consetat.be";
+  cccev:telephone "+32 22349611" .
+
+epd:id_2018-S-032-070654_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Bruxelles";
+  locn:thoroughfare "Rue de la science, 33" .
+
+epd:id_2018-S-032-070654_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Conseil d'État"@fr, "Raad van State"@nl;
+  epo:hasPrimaryContactPoint epd:id_2018-S-032-070654_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2018-S-032-070654_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-032-070654_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-032-070654_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-032-070654_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "FR", "NL";
+  epo:hasSubmissionURL "https://eten.publicprocurement.be/etendering/viewWorkspacesBasedOnExtUrl.do?wsName=MIVB+-+STIB+Procurement+%26+Logistics-3894%2FMH%2FPdW-F07"^^xsd:anyURI .

@@ -1,0 +1,157 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-155-445829_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2022-S-155-445829_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://app.eop.bg/buyer/10687"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2022-S-155-445829_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-155-445829_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-155-445829_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Александър Дянков Капитанов"@bg;
+  epo:hasFax "+359 41783363";
+  epo:hasInternetAddress "https://www.marica-iztok.com/"^^xsd:anyURI;
+  cccev:email "aleksandar.kapitanov@marica-iztok.com";
+  cccev:telephone "+359 41783305/4109" .
+
+epd:id_2022-S-155-445829_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "условията на доставка на стоката са DDP складова база на Възложителя, съгласно Инкотермс 2020"@bg .
+
+epd:id_2022-S-155-445829_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:address epd:id_2022-S-155-445829_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2022-S-155-445829_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2022-S-155-445829_Period_W3EavcErM2fLz5G9WDkXcn;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-155-445829_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2022-S-155-445829_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2022-S-155-445829_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-155-445829_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Предмет на квалификационната система за подбор на стопански субекти е доставка чрез покупка на резервни части за автомобили ЗИЛ, КРАЗ, УРАЛ, КАМАЗ, МАЗ, УАЗ, необходими за правилната, безопасна и безаварийна работа на технологичната механизация в „Мини Марица-изток“ ЕАД.Количествата резервни части за автомобили ЗИЛ, КРАЗ, УРАЛ, КАМАЗ, МАЗ, УАЗ не могат да бъдат определени с абсолютна точност поради ремонтният характер на дейността свързана с тях, обусловена от тежките режими на експлоатация на технологичната механизация от всякакъв вид в условията на „Мини Марица-изток“ ЕАД.Э.С поканата за представяне на оферта за всяка конкретна поръчка се посочва конкретна спецификация (с видове и количества) за доставка.Всяка отделна поръчка ще включва резервни части само за една марка машини от предмета на системата. Възложителят определя минимална прогнозна стойност на конкретна поръчка, възлагана чрез квалификационната система, в размер на 40 000 лева без ДДС."@bg;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-155-445829_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r .
+
+epd:id_2022-S-155-445829_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2022-S-155-445829_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2022-S-155-445829_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2022-S-155-445829_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2022-S-155-445829_Reviewer_cnThDUHhCN7pjvrhJdwbGS;
+  epo:hasDispatchDate "2022-08-08"^^xsd:date;
+  epo:hasID epd:id_2022-S-155-445829_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220812";
+  epo:refersToLot epd:id_2022-S-155-445829_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2022-S-155-445829_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2022-S-155-445829_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 155-445829" .
+
+epd:id_2022-S-155-445829_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:postCode "6260";
+  locn:postName "гр. Раднево";
+  locn:thoroughfare "ул. ГЕОРГИ ДИМИТРОВ № 13" .
+
+epd:id_2022-S-155-445829_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "833017552" .
+
+epd:id_2022-S-155-445829_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2022-S-155-445829_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "МИНИ МАРИЦА - ИЗТОК ЕАД"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/solid-fuel>;
+  cccev:registeredAddress epd:id_2022-S-155-445829_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-155-445829_Period_W3EavcErM2fLz5G9WDkXcn a epo:Period;
+  epo:hasBeginning "2022-08-12"^^xsd:date;
+  epo:hasEnd "2024-02-12"^^xsd:date .
+
+epd:id_2022-S-155-445829_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "КС 7/2022" .
+
+epd:id_2022-S-155-445829_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/34300000> .
+
+epd:id_2022-S-155-445829_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-155-445829_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "1. Пандемията от COVID-19 доведе до срив на глобалната търговия със стоки и услуги, до намаляване на обема на производството и прекъсване на глобалните вериги за доставка. Голяма част от икономическите оператори са били затруднени и/или възпрепятствани да осъществяват обичайната си търговска дейност, в следствие на което не са реализирали доставки или реализираният обем е драстично намален. Чрез определяне на по-дълъг срок за изпълнени от кандидата доставки, ще се разшири  кръга на стопанските субекти и ще се повиши конкуренцията.2. Съгласно чл. 5к, пар. 1 от Регламент (EС) № 2022/576 на Съвета от 8 април 2022 г. за изменение на Регламент (ЕС) № 833/2014 г., считано от 09.04.2022 г. се забранява сключването на нови, а след 10.10.2022 г. изпълнението на вече сключени договори за обществени поръчки, вкл. и на такива, попадащи в някои от изключенията, с лица по чл. 5к, пар. 1, б., „а“ – „в“ от Регламента, а именно:а) руски граждани или физически или юридически лица, образувания или органи, установени в Русия;б) юридически лица, образувания или органи, при които повече от 50 % от правото на собственост, пряко или непряко се притежава от субект, посочен в буква а); илив) физически или юридически лица, образувания или органи, действащи от името или по указание на субект, посочен в буква а) или б).Забраната се прилага и спрямо подизпълнители, доставчици или образувания, чийто капацитет се използва в съответствие със ЗОП, когато участието им в изпълнението на поръчката е повече от 10 % от нейната стойност.Изключения са допустими при условията на чл. 5к, пар. 2 във вр. с чл. 9 от Регламента.Възложителите имат задължението да спазват Регламента на всички етапи от процеса по възлагане, сключване и изпълнение на договори за обществени поръчки. В тази връзка участниците декларират обстоятелствата в приложената декларация и представят същата с ЕЕДОП."@bg;
+  epo:hasID epd:id_2022-S-155-445829_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-155-445829_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2022-S-155-445829_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Доставка на резервни части за автомобили ЗИЛ, КРАЗ, УРАЛ, КАМАЗ, МАЗ, УАЗ"@bg;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-155-445829_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP,
+    epd:id_2022-S-155-445829_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2022-S-155-445829_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-155-445829_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-155-445829_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-155-445829_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "6260";
+  locn:postName "Раднево";
+  locn:thoroughfare "ул. \"Георги Димитров\" № 13" .
+
+epd:id_2022-S-155-445829_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasFax "+359 41783363";
+  epo:hasInternetAddress "www.marica-iztok.com"^^xsd:anyURI;
+  cccev:email "ivan.nikolaev@marica-iztok.com";
+  cccev:telephone "+359 417833054045" .
+
+epd:id_2022-S-155-445829_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "\"Мини Марица-изток\" ЕАД"@bg;
+  epo:hasPrimaryContactPoint epd:id_2022-S-155-445829_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2022-S-155-445829_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2022-S-155-445829_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2022-S-155-445829_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2022-S-155-445829_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "На обжалване подлежат актовете, действията и бездействията на възложителя, посочени в чл. 196 от ЗОП, като подаването на жалба е обвързано със сроковете по чл. 197 от ЗОП." .
+
+epd:id_2022-S-155-445829_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "delovodstvo@cpc.bg";
+  cccev:telephone "+359 29356113" .
+
+epd:id_2022-S-155-445829_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. Витоша № 18" .
+
+epd:id_2022-S-155-445829_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2022-S-155-445829_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2022-S-155-445829_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2022-S-155-445829_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-155-445829_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2022-S-155-445829_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "BG";
+  epo:hasSubmissionURL "https://app.eop.bg/today/215121"^^xsd:anyURI .

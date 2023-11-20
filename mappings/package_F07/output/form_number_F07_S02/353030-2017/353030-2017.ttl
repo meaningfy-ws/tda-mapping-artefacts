@@ -1,0 +1,134 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-172-353030_AwardCriterionCost_CE4ReaF8HhUU5JosBfpVZB a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/cost>;
+  cccev:name "EMVI"@nl;
+  cccev:weight "100"@nl .
+
+epd:id_2017-S-172-353030_AwardCriterionQuality_9ZHU2fT5PJZ7Exj9bvGPcm a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "EMVI"@nl;
+  cccev:weight "100"@nl .
+
+epd:id_2017-S-172-353030_AwardCriterionQuality_SusozLciNyYZniT3DQMaXG a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "EMVI"@nl;
+  cccev:weight "100"@nl .
+
+epd:id_2017-S-172-353030_AwardCriterionQuality_nL3xpE7rGEQjsv5TaXme4s a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/quality>;
+  cccev:name "EMVI"@nl;
+  cccev:weight "100"@nl .
+
+epd:id_2017-S-172-353030_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2017-S-172-353030_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2017-S-172-353030_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2017-S-172-353030_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Ab Zijlstra"@nl;
+  epo:hasInternetAddress "http://www.stedin.net"^^xsd:anyURI;
+  cccev:email "FM.Inkoop@stedin.net" .
+
+epd:id_2017-S-172-353030_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress """
+                  NL.
+               """@nl .
+
+epd:id_2017-S-172-353030_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/NL>;
+  locn:address epd:id_2017-S-172-353030_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2017-S-172-353030_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2017-S-172-353030_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2017-S-172-353030_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2017-S-172-353030_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-172-353030_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+                  Ntb.
+               """@nl;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2017-S-172-353030_AwardCriterionCost_CE4ReaF8HhUU5JosBfpVZB,
+    epd:id_2017-S-172-353030_AwardCriterionQuality_9ZHU2fT5PJZ7Exj9bvGPcm, epd:id_2017-S-172-353030_AwardCriterionQuality_SusozLciNyYZniT3DQMaXG,
+    epd:id_2017-S-172-353030_AwardCriterionQuality_nL3xpE7rGEQjsv5TaXme4s .
+
+epd:id_2017-S-172-353030_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2017-S-172-353030_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2017-S-172-353030_Reviewer_cnThDUHhCN7pjvrhJdwbGS;
+  epo:hasDispatchDate "2017-09-04"^^xsd:date;
+  epo:hasID epd:id_2017-S-172-353030_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20170908";
+  epo:refersToLot epd:id_2017-S-172-353030_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2017-S-172-353030_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2017-S-172-353030_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 172-353030" .
+
+epd:id_2017-S-172-353030_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NLD>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/NL>;
+  locn:postCode "3011 TA";
+  locn:postName "Rotterdam";
+  locn:thoroughfare "Blaak 8" .
+
+epd:id_2017-S-172-353030_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "132194383" .
+
+epd:id_2017-S-172-353030_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2017-S-172-353030_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Stedin Netbeheer BV"@nl;
+  epo:hasMainActivityDescription "elektriciteit en gas";
+  cccev:registeredAddress epd:id_2017-S-172-353030_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2017-S-172-353030_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45231000> .
+
+epd:id_2017-S-172-353030_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2017-S-172-353030_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation """
+               Publicatie betreft een jaarlijkse aankondiging van deze erkenningsregeling (tenderned kenmerk 68016) die een looptijd heeft voor onbepaalde duur. Alle partijen die reeds onder deze regeling zijn erkend, hoeven zich niet opnieuw aan te melden. Dit jaar zal voor het laatst een herpublicatie van deze erkennings regeling plaatsvinden.
+            """@nl;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2017-S-172-353030_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2017-S-172-353030_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+               Erkenningsregeling Structin 2017.
+            """@nl;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2017-S-172-353030_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2017-S-172-353030_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.rechtspraak.nl/organisatie-en-contact/organisatie/rechtbanken/rechtbank-rotterdam/contact/"^^xsd:anyURI;
+  cccev:email "rechtbankrotterdam@rechtspraak.nl" .
+
+epd:id_2017-S-172-353030_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/NLD>;
+  locn:postCode "3007 BL";
+  locn:postName "Rotterdam";
+  locn:thoroughfare "Postbus 50950" .
+
+epd:id_2017-S-172-353030_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Rechtbank Rotterdam"@nl;
+  epo:hasPrimaryContactPoint epd:id_2017-S-172-353030_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2017-S-172-353030_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2017-S-172-353030_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2017-S-172-353030_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2017-S-172-353030_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "NL";
+  epo:hasSubmissionURL "https://www.tenderned.nl/tenderned-web/aankondiging/detail/publicatie/akid/97198f6b0f3f1f560d94cf0c3a448f68"^^xsd:anyURI .

@@ -1,0 +1,155 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-151-273738_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-151-273738_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-151-273738_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-151-273738_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.rte-france.com"^^xsd:anyURI;
+  cccev:email "arbia.abdellatif@rte-france.com";
+  cccev:telephone "+33 179248294" .
+
+epd:id_2016-S-151-273738_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2016-S-151-273738_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-151-273738_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription """
+La présente parution renouvelle l'avis concernant un système de qualification paru au JOUE le 5.8.2014 référencé 2015/S 149-276372. Il est inutile que les entreprises, déjà qualifiées ou en cours de qualification au titre du système de qualification rappelé ci-avant, répondent au présent avis.
+""";
+  epo:isRenewalIndicator true .
+
+epd:id_2016-S-151-273738_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2016-S-151-273738_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-151-273738_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+Fourniture, transport, stockage de parafoudres à enveloppe porcelaine et synthétique destinés à l'équipement du réseau de transport d'électricité HTB.
+"""@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-151-273738_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false .
+
+epd:id_2016-S-151-273738_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postName "Voir article VI.4.3" .
+
+epd:id_2016-S-151-273738_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS a org:Organization;
+  epo:hasLegalName "Voir article VI.4.3"@fr;
+  cccev:registeredAddress epd:id_2016-S-151-273738_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2016-S-151-273738_Mediator_3YJsnAYcTDrfQQSNseUiyS a epo:Mediator;
+  epo:playedBy epd:id_2016-S-151-273738_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2016-S-151-273738_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2016-S-151-273738_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2016-S-151-273738_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2016-S-151-273738_Mediator_3YJsnAYcTDrfQQSNseUiyS,
+    epd:id_2016-S-151-273738_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2016-S-151-273738_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2016-S-151-273738_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2016-S-151-273738_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2016-08-04"^^xsd:date;
+  epo:hasID epd:id_2016-S-151-273738_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20160806";
+  epo:refersToLot epd:id_2016-S-151-273738_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2016-S-151-273738_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2016-S-151-273738_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 151-273738" .
+
+epd:id_2016-S-151-273738_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR>;
+  locn:postCode "92932";
+  locn:postName "Paris La Défense Cedex";
+  locn:thoroughfare "immeuble Cœur Défense — 100 esplanade du Général de Gaulle" .
+
+epd:id_2016-S-151-273738_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "RTE — réseau de transport d'électricité"@fr;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2016-S-151-273738_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-151-273738_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/31216000> .
+
+epd:id_2016-S-151-273738_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-151-273738_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation """
+Nous agissons pour le compte d'ERDF dans le cadre de ces 3 systèmes de qualification.
+Électricité réseau distribution France — 34 place des Corolles — 92079 La Défense — n° TVA: FR 66 444 608 442 — SIREN: 444 608 442.
+"""@fr;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-151-273738_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2016-S-151-273738_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+Fourniture de parafoudres de poste à enveloppe porcelaine et synthétique destinés au réseau de transport d'énergie HTB 72,5 kV à 420 kV.
+"""@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-151-273738_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP,
+    epd:id_2016-S-151-273738_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2016-S-151-273738_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-151-273738_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-151-273738_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-151-273738_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "92020";
+  locn:postName "Nanterre Cedex";
+  locn:thoroughfare "179-191 avenue Joliot-Curie" .
+
+epd:id_2016-S-151-273738_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasFax "+33 147243161";
+  cccev:telephone "+33 140971010" .
+
+epd:id_2016-S-151-273738_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Nanterre"@fr;
+  epo:hasPrimaryContactPoint epd:id_2016-S-151-273738_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2016-S-151-273738_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2016-S-151-273738_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-151-273738_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2016-S-151-273738_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+Référé précontractuel prévu aux articles 5 et suivants de l'ordonnance n° 2009-515 du 7.5.2009 relative aux procédures de recours applicables aux contrats de la commande publique. Le recours doit être formé avant la conclusion du contrat.
+Référé contractuel prévu aux articles 11 et suivants de l'ordonnance n° 2009-515 du 7.5.2009 relative aux procédures de recours applicables aux contrats de la commande publique.
+Le recours doit être formé au plus tard le 31ème jour suivant la publication au journal officiel de l'Union européenne de l'avis d'attribution du contrat ou, pour les marchés fondés sur un accord-cadre ou un système d'acquisition dynamique, suivant la notification de la conclusion du contrat.
+En l'absence de la publication d'avis ou de la notification, la juridiction peut être saisie jusqu'à l'expiration d'un délai de 6 mois à compter du lendemain du jour de la conclusion du contrat en vertu de l'article 1441-3 du code de procédure civile.
+""" .
+
+epd:id_2016-S-151-273738_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postName "Voir article VI.4.3" .
+
+epd:id_2016-S-151-273738_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Voir article VI.4.3"@fr;
+  cccev:registeredAddress epd:id_2016-S-151-273738_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2016-S-151-273738_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-151-273738_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2016-S-151-273738_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "FR" .
+
+epd:id_2016-S-151-273738_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-151-273738_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-151-273738_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

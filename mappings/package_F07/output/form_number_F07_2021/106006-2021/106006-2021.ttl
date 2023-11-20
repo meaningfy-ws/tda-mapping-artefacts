@@ -1,0 +1,137 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-042-106006_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://cloud.3p.eu/Downloads/1/892/OA/2020"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-042-106006_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 a epo:AwardCriterion .
+
+epd:id_2021-S-042-106006_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-042-106006_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-042-106006_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-042-106006_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Mme Kim-Anne Bang-Rouhet"@fr;
+  epo:hasFax "+32 71549696";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "kim-anne.bangrouhet@ores.be";
+  cccev:telephone "+32 71547595" .
+
+epd:id_2021-S-042-106006_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "Magasin principal Aye, zoning industriel de Aye 10 rue A Feher à 6900 Aye."@fr .
+
+epd:id_2021-S-042-106006_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:address epd:id_2021-S-042-106006_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-042-106006_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-042-106006_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:isRenewalIndicator true .
+
+epd:id_2021-S-042-106006_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2021-S-042-106006_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/31650000>, <http://data.europa.eu/cpv/cpv/31651000>,
+    <http://data.europa.eu/cpv/cpv/44313100>, <http://data.europa.eu/cpv/cpv/44424200>,
+    <http://data.europa.eu/cpv/cpv/45233290> .
+
+epd:id_2021-S-042-106006_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-042-106006_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Cette procédure a pour objet l'établissement d'une liste de candidats qualifiés pour la fourniturede rubans et bandes (signalisation réseau, bandes inox, système anti-corrosion, protection mécanique, et larget et treillis)."@fr;
+  epo:hasPurpose epd:id_2021-S-042-106006_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-042-106006_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-042-106006_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 .
+
+epd:id_2021-S-042-106006_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-042-106006_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2021-S-042-106006_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2021-S-042-106006_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2021-S-042-106006_Reviewer_cnThDUHhCN7pjvrhJdwbGS;
+  epo:hasDispatchDate "2021-02-25"^^xsd:date;
+  epo:hasID epd:id_2021-S-042-106006_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210302";
+  epo:refersToLot epd:id_2021-S-042-106006_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2021-S-042-106006_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2021-S-042-106006_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 042-106006" .
+
+epd:id_2021-S-042-106006_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:postCode "6041";
+  locn:postName "Gosselies";
+  locn:thoroughfare "Avenue Jean-Mermoz 14" .
+
+epd:id_2021-S-042-106006_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "BE 0543 696 579" .
+
+epd:id_2021-S-042-106006_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2021-S-042-106006_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Intercommunale ORES Assets SC"@fr;
+  epo:hasMainActivityDescription "Électricité et gaz";
+  cccev:registeredAddress epd:id_2021-S-042-106006_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-042-106006_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "WFQBANWA" .
+
+epd:id_2021-S-042-106006_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/44173000> .
+
+epd:id_2021-S-042-106006_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-042-106006_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "Cet avis annule et remplace celui paru le 22.2.2021 sous la référence no 2021-000007.Après validation de la marque d'intérêt par l'entité adjudicatrice, cette dernière communique le mot de passe qui donnera accès au dossier de qualification. Celui-ci contient tous les éléments nécessaires pour compléter le dossier de demande de qualification ainsi que les règles applicables pour le système concerné."@fr;
+  epo:hasID epd:id_2021-S-042-106006_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-042-106006_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2021-S-042-106006_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Système de qualification — système de qualification pour la fourniture de rubans et bandes (signalisation réseau, bandes inox, système anti-corrosion, protection mécanique, et, larget et treillis)."@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-042-106006_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2021-S-042-106006_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP, epd:id_2021-S-042-106006_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2021-S-042-106006_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-042-106006_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-042-106006_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-042-106006_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— Recours en annulation devant le Conseil d’État ou le juge judiciaire: soixante jours à compter de la publication, de la communication ou de la prise de connaissance de l’acte selon le cas;— Recours en suspension devant le Conseil d’État, selon la procédure d’extrême urgence, ou devant le juge judiciaire, selon la procédure de référé: quinze jours à compter de la publication, de la communication ou de la prise de connaissance de l’acte selon le cas;— Ce délai est réduit à dix jours en cas de publication d’un avis de transparence ex ante volontaire." .
+
+epd:id_2021-S-042-106006_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.raadvst-consetat.be"^^xsd:anyURI;
+  cccev:telephone "+32 22349611" .
+
+epd:id_2021-S-042-106006_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1040";
+  locn:postName "Bruxelles (Etterbeek)";
+  locn:thoroughfare "Rue de la Science 33" .
+
+epd:id_2021-S-042-106006_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Conseil d'État"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-042-106006_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2021-S-042-106006_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-042-106006_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-042-106006_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-042-106006_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://eten.publicprocurement.be"^^xsd:anyURI .

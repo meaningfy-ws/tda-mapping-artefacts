@@ -1,0 +1,155 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-086-223619_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2021-S-086-223619_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://app.eop.bg/buyer/2354"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-086-223619_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-086-223619_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-086-223619_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Деница Цонева"@bg;
+  epo:hasInternetAddress "www.cez-rp.bg"^^xsd:anyURI;
+  cccev:email "denitsa.tsoneva@cez.bg";
+  cccev:telephone "+359 28958928" .
+
+epd:id_2021-S-086-223619_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "Доставката ще се извършва франко складове на възложителя в градовете: София, Враца, Левски и Дупница или на конкретни адреси на обекти на възложителя."@bg .
+
+epd:id_2021-S-086-223619_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  locn:address epd:id_2021-S-086-223619_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-086-223619_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-086-223619_Period_W3EavcErM2fLz5G9WDkXcn;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-086-223619_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-086-223619_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2021-S-086-223619_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-086-223619_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Квалификационната система има за предмет включване на заинтересовани лица с цел възлагане на обществени поръчки за доставка и покупка на усукани изолирани проводници ниско напрежение, съгласно условията и изискванията на възложителя.Видовете усукани проводници с посочени ориентировъчни количества за срока на дейстие на квалификационната система са, както следва:1 Самоносещ ВКЛ, AI жила 2х16 mm2 - 3 676 630 м.2 Самоносещ ВКЛ, AI жила 4х16 mm2 - 918 890 м.3 Самоносещ ВКЛ, AI жила 4х25 mm2 - 336 040 м.4 ВКЛ с носеща неутрала, AI - 3x35+54.6 mm2 - 239 520 м.5 ВКЛ с носеща неутрала, AI - 3x50+54.6 mm2 - 248 370 м.6 ВКЛ с носеща неутрала, AI - 3x70+54.6 mm2 - 311 010 м.7 ВКЛ с носеща неутрала, AI - 3x95+70 mm2 - 154 710 м.8 ВКЛ с носеща неутрала, AI - 3x150+70 mm2 - 32 080 м.Срок на действие на квалификационната система - срокът на действие на КС е 60 (шестдесет) месеца, считано от датата на публикуването й в Централизираната автоматизирана информационна система „Електронни обществени поръчки“ (ЦАИС ЕОП). Възложителят си запазва правото за промяна в срока на действието й при условията на чл. 141, ал. 2 от ЗОП.Прилагане на квалификационната система:Квалификационната система дава възможност на стопанските субекти да бъдат включени по всяко време в нея, в резултат на извършен предварителен подбор. Заинтересованите лица могат да подават заявление за включване в КС през целия срок на действие на системата.При необходимост от актуализиране на критериите и правилата на КС, възложителят информира включените в системата кандидати и заинтересованите лица чрез съобщение в публичната преписка на КС. Всяка промяна в КС, както и прекратяването ѝ ще бъде обявена/о в Профила на купувача и в Регистъра на обществените поръчки в Централизирана автоматизирана информационна система „Електронни обществени поръчки“ (ЦАИС ЕОП).За възлагането на конкретна обществена поръчка за доставка, възложителят ще провежда предвидената в ЗОП процедура от вида „договаряне с предварителна покана за участие“, за определяне на изпълнител на всеки конкретен договор измежду лицата, включени в квалификационната система.В поканата за участие, при провеждане на последващата обществена поръчка за доставка и сключване на конкретен договор, ще се определят ориентировъчните количества и видове стоки, които ще се доставят за определен от възложителя период от времe. На база ориентировъчните количества ще бъде определена максималната стойност на конкретния договор.Критерий за възлагане - критерият за възлагане на всяка конкретна обществена поръчка при определяне на икономически най-изгодната оферта е „най-ниска цена”. На първо място се класира участникът, предложил най-ниска обща стойност.Условия и място на доставка - доставката ще се извършва франко складове на възложителя в градовете: София, Враца, Левски и Дупница или на конкретни адреси на обекти на възложителя, посочени от него в съответната поръчка за доставка. Стоката по предмета на поръчката ще се транспортира (доставя) от изпълнителя, за негова сметка, на негова отговорност и с негови технически средства (ресурси)."@bg;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-086-223619_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r .
+
+epd:id_2021-S-086-223619_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2021-S-086-223619_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2021-S-086-223619_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2021-S-086-223619_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2021-S-086-223619_Reviewer_cnThDUHhCN7pjvrhJdwbGS;
+  epo:hasDispatchDate "2021-04-29"^^xsd:date;
+  epo:hasID epd:id_2021-S-086-223619_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210504";
+  epo:refersToLot epd:id_2021-S-086-223619_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2021-S-086-223619_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2021-S-086-223619_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 086-223619" .
+
+epd:id_2021-S-086-223619_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG411>;
+  locn:postCode "1784";
+  locn:postName "София";
+  locn:thoroughfare "бул. Цариградско шосе № 159, БенчМарк Бизнес Център" .
+
+epd:id_2021-S-086-223619_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "130277958" .
+
+epd:id_2021-S-086-223619_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2021-S-086-223619_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "„ЧЕЗ Разпределение България“ АД"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2021-S-086-223619_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-086-223619_Period_W3EavcErM2fLz5G9WDkXcn a epo:Period;
+  epo:hasBeginning "2021-05-01"^^xsd:date;
+  epo:hasEnd "2026-05-01"^^xsd:date .
+
+epd:id_2021-S-086-223619_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "КС 21-038" .
+
+epd:id_2021-S-086-223619_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/44318000> .
+
+epd:id_2021-S-086-223619_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-086-223619_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "Основните условия и методи на възложителя за квалифициране на кандидатите в системата са подробно описани в документа \"КС 21-038_ПРАВИЛА И КРИТЕРИИ\", в секция \"Параметри\".Възложителят може да променя и актуализира документацията за участие в квалификационната система, като уведомява лицата, подали заявление за включване в КС, чрез съобщение в публичната преписка на КС. Всяка промяна в КС, както и прекратяването ѝ ще бъде обявена/о в Профила на купувача и в Регистъра на обществените поръчки в ЦАИС ЕОП.В случай на необходимост от представяне на нови/допълнителни документи за доказване на съответствието с критериите за подбор, ще бъде изпратено съобщение с конкретни указания до лицата, подали заявление за включване в квалификационната система.През всяка календарна година от действието на квалификационната система, възложителят е в правото си да изиска от всеки кандидат, включен в системата, да изпрати нов Единен европейски документ за обществени поръчки (ЕЕДОП) с актуални данни. Възложителят си запазва правото да извърши проверка на място на декларираните обстоятелства."@bg;
+  epo:hasID epd:id_2021-S-086-223619_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-086-223619_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2021-S-086-223619_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Доставка на усукани изолирани проводници ниско напрежение (НН), реф. № КС 21-038"@bg;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-086-223619_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP,
+    epd:id_2021-S-086-223619_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2021-S-086-223619_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-086-223619_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-086-223619_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-086-223619_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. Витоша № 18" .
+
+epd:id_2021-S-086-223619_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "delovodstvo@cpc.bg";
+  cccev:telephone "+359 29356113" .
+
+epd:id_2021-S-086-223619_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2021-S-086-223619_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2021-S-086-223619_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2021-S-086-223619_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2021-S-086-223619_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2021-S-086-223619_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Съгласно чл. 197, ал. 1, т. 1 от ЗОП жалба може да се подава в 10-дневен срок от изтичането на срока по чл. 100, ал. 3 от ЗОП." .
+
+epd:id_2021-S-086-223619_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "delovodstvo@cpc.bg";
+  cccev:telephone "+359 29356113" .
+
+epd:id_2021-S-086-223619_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. Витоша № 18" .
+
+epd:id_2021-S-086-223619_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2021-S-086-223619_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2021-S-086-223619_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-086-223619_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-086-223619_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-086-223619_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "BG";
+  epo:hasSubmissionURL "https://app.eop.bg/today/133200"^^xsd:anyURI .

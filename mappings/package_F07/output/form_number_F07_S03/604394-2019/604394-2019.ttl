@@ -1,0 +1,173 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2017-S-104-208340_Notice a epo:Notice;
+  epo:hasID epd:id_2017-S-104-208340_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2017-S-104-208340_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM a epo:Identifier;
+  epo:hasIdentifierValue "2017/S 104-208340" .
+
+epd:id_2019-S-245-604394_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2019-S-245-604394_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "http://www.tpp2.com/invitation/view/id/1209.html"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2019-S-245-604394_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2019-S-245-604394_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2019-S-245-604394_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "по техническите въпроси: инж. Д. Радовски — н-к КЦ; въпроси по процедурата: инж. П. Събчева — специалист „Търговия“, ТО"@bg;
+  epo:hasFax "+359 42662950";
+  epo:hasInternetAddress "www.tpp2.com"^^xsd:anyURI;
+  cccev:email "p.sabcheva@tpp2.com";
+  cccev:telephone "+359 42662240 / 42662544" .
+
+epd:id_2019-S-245-604394_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "„ТЕЦ Марица изток 2“ ЕАД, с. Ковачево, КА-1?12"@bg .
+
+epd:id_2019-S-245-604394_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:address epd:id_2019-S-245-604394_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2019-S-245-604394_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2019-S-245-604394_Period_W3EavcErM2fLz5G9WDkXcn;
+  epo:definesSpecificPlaceOfPerformance epd:id_2019-S-245-604394_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription "Всички критерии за подбор по КС с рег. № 17055 на кандидатите остават същите съгласно т. III.1.9) на обявление в ОВ на ЕС 2017/S 104-208340.";
+  epo:isRenewalIndicator true .
+
+epd:id_2019-S-245-604394_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2019-S-245-604394_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-245-604394_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Ремонт на котелно оборудване —  разделена на 3 обособени позиции:— I обособена позиция „Ремонт (основен, среден, авариен и др.) на котелно оборудване (ППС, МВ, ГУ, ГЗШ, ПСВ, БСД, ИВП, ЕФ, ХШО, въздуховоди, газоходи, стълби и площадки, носещи конструкции, тръбопроводи ниско налягане и други инсталации)“,— IІ обособена позиция „Ремонт (основен, среден, авариен и др.) на нагревни повърхности на котли“,— III обособена позиция „Ремонт (основен, среден, авариен и др.) на арматура и тръбопроводи на котли“.Конкретните поръчки за ремонти се възлагат чрез процедури на договаряне с предварителна покана за участие, като изпълнителят на договора ще се избира сред лицата, вписани в квалификационната система. С поканата за участие в преговори за всяка конкретна поръчка се посочва конкретен обем за ремонт.Срок на действие на квалификационната система — 3 (три) години."@bg;
+  epo:isSubjectToLotSpecificTerm epd:id_2019-S-245-604394_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2019-S-245-604394_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r .
+
+epd:id_2019-S-245-604394_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2019-S-245-604394_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2019-S-245-604394_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2019-S-245-604394_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2019-S-245-604394_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2019-S-245-604394_TenderReceiver_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasDispatchDate "2019-12-16"^^xsd:date;
+  epo:hasID epd:id_2019-S-245-604394_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20191219";
+  epo:refersToLot epd:id_2019-S-245-604394_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToPrevious epd:id_2017-S-104-208340_Notice;
+  epo:refersToProcedure epd:id_2019-S-245-604394_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2019-S-245-604394_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 245-604394" .
+
+epd:id_2019-S-245-604394_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:postCode "6265";
+  locn:postName "с. Ковачево";
+  locn:thoroughfare "„ТЕЦ Марица изток 2“ ЕАД" .
+
+epd:id_2019-S-245-604394_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "123531939" .
+
+epd:id_2019-S-245-604394_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2019-S-245-604394_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "„ТЕЦ Марица изток 2“ ЕАД"@bg;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2019-S-245-604394_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2019-S-245-604394_Period_W3EavcErM2fLz5G9WDkXcn a epo:Period;
+  epo:hasBeginning "2019-12-16"^^xsd:date;
+  epo:hasEnd "2020-12-31"^^xsd:date .
+
+epd:id_2019-S-245-604394_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "17055" .
+
+epd:id_2019-S-245-604394_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/50531100> .
+
+epd:id_2019-S-245-604394_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2019-S-245-604394_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "Продължение от III.2.2):4. „ТЕЦ Марица изток 2“ ЕАД осигурява на изпълнителя: масло, грес; метали – профили, ламарина и тръби; лагери; резервни части; уплътнителни материали; свързващи елементи.Квалификационната система има за цел създаването и поддържането на списък с одобрени кандидати, които да участват в провежданите от възложителя процедури за възлагане на обществени поръчки с горепосочения предмет. Конкретните поръчки за ремонти се възлагат чрез процедури на договаряне с предварителна покана за участие. С поканата за участие в преговори за всяка конкретна поръчка се посочват конкретните обекти и обеми за ремонт.Заинтересованите лица имат пълен достъп по електронен път до документацията за участие в квалификационната система в „Профил на купувача“ на страницата на „ТЕЦ Марица изток 2“ ЕАД. Всички решения и разяснения към настоящата система ще бъдат публикувани в профила на купувача. Конкретните поръчки по настоящата система ще се възлагат за срока на нейното действие."@bg;
+  epo:hasID epd:id_2019-S-245-604394_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2019-S-245-604394_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2019-S-245-604394_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Ремонт на котелно оборудване"@bg;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2019-S-245-604394_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP,
+    epd:id_2019-S-245-604394_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2019-S-245-604394_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2019-S-245-604394_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2019-S-245-604394_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2019-S-245-604394_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Съгласно чл. 196, чл. 197 и сл. от ЗОП" .
+
+epd:id_2019-S-245-604394_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+359 29807315";
+  epo:hasInternetAddress "http://www.cpc.bg"^^xsd:anyURI;
+  cccev:email "cpcadmin@cpc.bg";
+  cccev:telephone "+359 29884070" .
+
+epd:id_2019-S-245-604394_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  locn:postCode "1000";
+  locn:postName "София";
+  locn:thoroughfare "бул. „Витоша“ № 18" .
+
+epd:id_2019-S-245-604394_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Комисия за защита на конкуренцията"@bg;
+  epo:hasPrimaryContactPoint epd:id_2019-S-245-604394_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2019-S-245-604394_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2019-S-245-604394_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2019-S-245-604394_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2019-S-245-604394_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "BG" .
+
+epd:id_2019-S-245-604394_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG344>;
+  locn:postCode "6265";
+  locn:postName "с. Ковачево";
+  locn:thoroughfare "„ТЕЦ Марица изток 2“ ЕАД, регистратура „Обществени поръчки“" .
+
+epd:id_2019-S-245-604394_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx
+  a cccev:ContactPoint;
+  epo:hasContactName "Христина Димитрова — завеждащ регистратура"@bg;
+  epo:hasFax "+359 42662507";
+  epo:hasInternetAddress "www.tpp2.com"^^xsd:anyURI;
+  cccev:email "h.dimitrova@tpp2.com";
+  cccev:telephone "+359 42662717" .
+
+epd:id_2019-S-245-604394_TenderReceiverOrganisationIdentifier_7qc7fbmR56uUqsniJHkNyx
+  a epo:Identifier;
+  epo:hasIdentifierValue "123531939" .
+
+epd:id_2019-S-245-604394_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx a org:Organization;
+  epo:hasID epd:id_2019-S-245-604394_TenderReceiverOrganisationIdentifier_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasLegalName "„ТЕЦ Марица изток 2“ ЕАД"@bg;
+  epo:hasPrimaryContactPoint epd:id_2019-S-245-604394_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  cccev:registeredAddress epd:id_2019-S-245-604394_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx .
+
+epd:id_2019-S-245-604394_TenderReceiver_7qc7fbmR56uUqsniJHkNyx a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2019-S-245-604394_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  epo:playedBy epd:id_2019-S-245-604394_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx .

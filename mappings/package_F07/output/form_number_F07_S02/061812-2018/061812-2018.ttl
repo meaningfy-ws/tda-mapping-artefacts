@@ -1,0 +1,206 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-028-061812_AdditionalBuyer_MNAAtEANyxw9zKp73s95Qe a epo:Buyer;
+  epo:hasBuyerProfile "https://pha.edf.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-028-061812_AdditionalContactPoint_MNAAtEANyxw9zKp73s95Qe;
+  epo:playedBy epd:id_2018-S-028-061812_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe .
+
+epd:id_2018-S-028-061812_AdditionalContactPoint_MNAAtEANyxw9zKp73s95Qe a cccev:ContactPoint;
+  epo:hasContactName "Marie-Elizabeth Velly — agence achats hydraulique"@fr;
+  epo:hasInternetAddress "http://www.edf.com"^^xsd:anyURI;
+  cccev:email "marie-elizabeth.velly@edf.fr";
+  cccev:telephone "+33 479266824" .
+
+epd:id_2018-S-028-061812_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe a org:Organization;
+  epo:hasID epd:id_2018-S-028-061812_OrganisationIdentifier_MNAAtEANyxw9zKp73s95Qe;
+  epo:hasLegalName "EDF — SA — Direction des achats groupe — agence achats hydraulique"@fr;
+  cccev:registeredAddress epd:id_2018-S-028-061812_OrganisationAddress_MNAAtEANyxw9zKp73s95Qe .
+
+epd:id_2018-S-028-061812_AwardCriterionInDocuments_anTw2hmgo2Xh6TEAbuwm8f a epo:AwardCriterion .
+
+epd:id_2018-S-028-061812_BuyerOrganisationGroup_MNAAtEANyxw9zKp73s95Qe a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMember epd:id_2018-S-028-061812_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe,
+    epd:id_2018-S-028-061812_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-028-061812_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://pha.edf.com"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-028-061812_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-028-061812_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-028-061812_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Marie-Elizabeth Velly — agence achats hydraulique"@fr;
+  epo:hasInternetAddress "http://www.edf.com"^^xsd:anyURI;
+  cccev:email "marie-elizabeth.velly@edf.fr";
+  cccev:telephone "+33 479266824" .
+
+epd:id_2018-S-028-061812_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FR> .
+
+epd:id_2018-S-028-061812_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-028-061812_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription """
+                  Un dossier de qualification peut être obtenu auprès du point de contact ci-dessus mentionné. Les entreprises devront, lors de leur candidature, préciser pour lesquelles des catégories et activités elles se portent candidates.
+                  Le présent avis renouvelle l'avis de système de qualification précédemment publié sous la référence 2015/S 203-369408 du 20.10.2015.
+               """;
+  epo:isRenewalIndicator true .
+
+epd:id_2018-S-028-061812_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies> .
+
+epd:id_2018-S-028-061812_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-028-061812_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+                  Le présent avis renouvelle l'avis de système de qualification qui permettra au groupe EDF de consulter un panel d'entreprises reconnues aptes et compétentes dans le domaine des alternateurs des groupes de production hydroélectrique d'EDF:
+                  — activité «alternateurs neufs» comprenant notamment: les études, la fourniture, le transport, l'installation sur site, les essais,
+                  — activité «reconstruction de stators»: les études, la fourniture, le transport, l'installation sur site, les essais,
+                  — activité «maintenance» sur les alternateurs en parc, travaux sur le rotor et le stator. Les opérations de maintenance lourde sont à réaliser sur site ou en atelier.
+                  Ces activités portent en grande majorité sur des matériels amiantés.
+                  Catégories d'alternateurs pour chaque type d'activité:
+                  — catégorie 1: les alternateurs de centrales non stratégiques (fils de l'eau sans éclusée),
+                  — catégorie 2: les alternateurs de centrales stratégiques (énergie placée, centrales téléconduites, groupes bulbes).
+                  Le candidat précise lors de sa réponse les catégories et activités (neuf et /ou maintenance) pour lesquelles il demande la qualification.
+               """@fr;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-028-061812_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-028-061812_AwardCriterionInDocuments_anTw2hmgo2Xh6TEAbuwm8f .
+
+epd:id_2018-S-028-061812_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-028-061812_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2018-S-028-061812_AdditionalBuyer_MNAAtEANyxw9zKp73s95Qe,
+    epd:id_2018-S-028-061812_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2018-S-028-061812_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2018-S-028-061812_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2018-S-028-061812_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2018-S-028-061812_TenderReceiver_7qc7fbmR56uUqsniJHkNyx;
+  epo:hasDispatchDate "2018-02-08"^^xsd:date;
+  epo:hasID epd:id_2018-S-028-061812_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20180209";
+  epo:refersToLot epd:id_2018-S-028-061812_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2018-S-028-061812_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2018-S-028-061812_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 028-061812" .
+
+epd:id_2018-S-028-061812_OrganisationAddress_MNAAtEANyxw9zKp73s95Qe a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK27>;
+  locn:postCode "73026";
+  locn:postName "Chambéry Cedex";
+  locn:thoroughfare "Agence achats hydraulique — 30 rue Ambroise Croizat" .
+
+epd:id_2018-S-028-061812_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK27>;
+  locn:postCode "73026";
+  locn:postName "Chambéry Cedex";
+  locn:thoroughfare "Agence achats hydraulique — 30 rue Ambroise Croizat" .
+
+epd:id_2018-S-028-061812_OrganisationIdentifier_MNAAtEANyxw9zKp73s95Qe a epo:Identifier;
+  epo:hasIdentifierValue "55208131788740" .
+
+epd:id_2018-S-028-061812_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "55208131788740" .
+
+epd:id_2018-S-028-061812_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2018-S-028-061812_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "EDF — SA — Direction des achats Groupe — agence achats hydraulique"@fr;
+  cccev:registeredAddress epd:id_2018-S-028-061812_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-028-061812_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/31130000> .
+
+epd:id_2018-S-028-061812_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-028-061812_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-028-061812_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2018-S-028-061812_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+               Système de qualification pour les marchés de construction et de maintenance des alternateurs hydroélectriques
+            """@fr;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-028-061812_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2018-S-028-061812_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-028-061812_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-028-061812_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-028-061812_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75055";
+  locn:postName "Paris Cedex 01";
+  locn:thoroughfare "4 boulevard du Palais" .
+
+epd:id_2018-S-028-061812_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.justice.gouv.fr/"^^xsd:anyURI;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2018-S-028-061812_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Greffe du tribunal de grande instance de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-028-061812_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2018-S-028-061812_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2018-S-028-061812_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2018-S-028-061812_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2018-S-028-061812_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.justice.gouv.fr/"^^xsd:anyURI;
+  cccev:telephone "+33 144325151" .
+
+epd:id_2018-S-028-061812_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  locn:postCode "75055";
+  locn:postName "Paris Cedex 01";
+  locn:thoroughfare "4 boulevard du Palais" .
+
+epd:id_2018-S-028-061812_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Tribunal de grande instance de Paris"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-028-061812_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2018-S-028-061812_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-028-061812_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-028-061812_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-028-061812_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://pha.edf.com"^^xsd:anyURI .
+
+epd:id_2018-S-028-061812_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/FRA>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/FRK28>;
+  locn:postCode "74000";
+  locn:postName "Annecy";
+  locn:thoroughfare "22 avenue des Vieux Moulins" .
+
+epd:id_2018-S-028-061812_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx
+  a cccev:ContactPoint;
+  epo:hasInternetAddress "http://hydrostadium.com"^^xsd:anyURI;
+  cccev:email "contact@hydrostadium.fr" .
+
+epd:id_2018-S-028-061812_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx a org:Organization;
+  epo:hasLegalName "Hydrostadium"@fr;
+  epo:hasPrimaryContactPoint epd:id_2018-S-028-061812_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  cccev:registeredAddress epd:id_2018-S-028-061812_TenderReceiverOrganisationAddress_7qc7fbmR56uUqsniJHkNyx .
+
+epd:id_2018-S-028-061812_TenderReceiver_7qc7fbmR56uUqsniJHkNyx a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-028-061812_TenderReceiverOrganisationContactPoint_7qc7fbmR56uUqsniJHkNyx;
+  epo:playedBy epd:id_2018-S-028-061812_TenderReceiverOrganisation_7qc7fbmR56uUqsniJHkNyx .

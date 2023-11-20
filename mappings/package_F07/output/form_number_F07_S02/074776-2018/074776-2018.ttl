@@ -1,0 +1,146 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_1945-S-012-212344_Notice a epo:Notice;
+  epo:hasID epd:id_1945-S-012-212344_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_1945-S-012-212344_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM a epo:Identifier;
+  epo:hasIdentifierValue "1945/S 012-212344" .
+
+epd:id_2018-S-034-074776_AwardCriterionPrice_mYYXDJSxRBHuKZpEgX3awp a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2018-S-034-074776_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-034-074776_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-034-074776_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-034-074776_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasInternetAddress "www.google.com"^^xsd:anyURI;
+  cccev:email "e@gmail.com" .
+
+epd:id_2018-S-034-074776_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress """
+                  Tessttessttessttesst.
+                  Tessttessttesst.
+                  Tessttessttesst.
+               """@en .
+
+epd:id_2018-S-034-074776_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  locn:address epd:id_2018-S-034-074776_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2018-S-034-074776_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-034-074776_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription """
+                  Tessttessttessttesst.
+                  Tessttessttesst.
+                  Tessttessttesst.
+               """;
+  epo:isRenewalIndicator true .
+
+epd:id_2018-S-034-074776_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2018-S-034-074776_EAuctionTechniqueUsage_E5T8LK7GWtcY6SLmbwzAoM a epo:EAuctionTechniqueUsage .
+
+epd:id_2018-S-034-074776_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-034-074776_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+                  Tessttessttessttesst.
+                  Tessttessttesst.
+                  Tessttessttesst.
+               """@en;
+  epo:isSubjectToLotSpecificTerm epd:id_2018-S-034-074776_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2018-S-034-074776_AwardCriterionPrice_mYYXDJSxRBHuKZpEgX3awp .
+
+epd:id_2018-S-034-074776_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2018-S-034-074776_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2018-S-034-074776_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2018-S-034-074776_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2018-S-034-074776_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2018-S-034-074776_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2018-02-15"^^xsd:date;
+  epo:hasID epd:id_2018-S-034-074776_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20180217";
+  epo:refersToLot epd:id_2018-S-034-074776_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToPrevious epd:id_1945-S-012-212344_Notice;
+  epo:refersToProcedure epd:id_2018-S-034-074776_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2018-S-034-074776_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 034-074776" .
+
+epd:id_2018-S-034-074776_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postName "Milano" .
+
+epd:id_2018-S-034-074776_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "123455" .
+
+epd:id_2018-S-034-074776_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2018-S-034-074776_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Test"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gas-heat>;
+  cccev:registeredAddress epd:id_2018-S-034-074776_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-034-074776_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2344" .
+
+epd:id_2018-S-034-074776_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/18832100> .
+
+epd:id_2018-S-034-074776_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-034-074776_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation """
+               Tessttessttessttesst.
+               Tessttessttesst.
+               Tessttessttesst.
+            """@en;
+  epo:hasID epd:id_2018-S-034-074776_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-034-074776_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2018-S-034-074776_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+               Test
+            """@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-034-074776_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:usesTechnique epd:id_2018-S-034-074776_EAuctionTechniqueUsage_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2018-S-034-074776_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-034-074776_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-034-074776_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-034-074776_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/ITA>;
+  locn:postCode "123345";
+  locn:postName "Milano" .
+
+epd:id_2018-S-034-074776_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Test"@en;
+  cccev:registeredAddress epd:id_2018-S-034-074776_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-034-074776_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-034-074776_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-034-074776_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "BG", "CS", "DA", "DE", "EL", "EN", "ES", "ET", "FI", "FR", "GA",
+    "HR", "HU", "IT", "LT", "LV", "MT", "NL", "PL", "PT", "RO", "SK", "SL", "SV" .
+
+epd:id_2018-S-034-074776_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-034-074776_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-034-074776_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

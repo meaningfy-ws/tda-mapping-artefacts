@@ -1,0 +1,149 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2016-S-090-160439_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "http://www.etenders.gov.ie"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2016-S-090-160439_AwardCriterionInDocuments_anTw2hmgo2Xh6TEAbuwm8f a epo:AwardCriterion .
+
+epd:id_2016-S-090-160439_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "http://www.esb.ie"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-090-160439_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-090-160439_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-090-160439_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Oliver Cunningham"@en;
+  epo:hasInternetAddress "http://www.esb.ie"^^xsd:anyURI;
+  cccev:email "networkscontractorprocurement@esb.ie" .
+
+epd:id_2016-S-090-160439_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE021> .
+
+epd:id_2016-S-090-160439_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-090-160439_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:isRenewalIndicator true .
+
+epd:id_2016-S-090-160439_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2016-S-090-160439_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/31682540>, <http://data.europa.eu/cpv/cpv/45232221>,
+    <http://data.europa.eu/cpv/cpv/51110000>, <http://data.europa.eu/cpv/cpv/51112000> .
+
+epd:id_2016-S-090-160439_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-090-160439_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+Electricity Supply Board proposes to establish a multi stage qualification system under a negotiated procedure for works contractors for the turnkey (EPC) delivery of electricity HV substations (110kV and above) of various specifications and scopes over an unlimited period. In order to apply for inclusion on the qualification system economic operators must complete and return the questionnaire available at www.etenders.gov.ie (Tender ID: 104740).
+The 1st procurement contract to be concluded on foot of this qualification system will be that of the delivery of a 220/110 kV GIS Network substation under the FIDIC Conditions of Contract with amendments for EPC/Turnkey Projects. Economic operators who wish to register interest in this 1st procurement contract must also complete (in addition to the aforementioned questionnaire) the specific questionnaire relating to this 1st procurement contract available at www.etenders.gov.ie (Tender ID: 104740).
+"""@en;
+  epo:hasPurpose epd:id_2016-S-090-160439_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-090-160439_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2016-S-090-160439_AwardCriterionInDocuments_anTw2hmgo2Xh6TEAbuwm8f .
+
+epd:id_2016-S-090-160439_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2016-S-090-160439_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2016-S-090-160439_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2016-S-090-160439_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2016-S-090-160439_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2016-S-090-160439_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2016-S-090-160439_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2016-05-09"^^xsd:date;
+  epo:hasID epd:id_2016-S-090-160439_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20160511";
+  epo:refersToLot epd:id_2016-S-090-160439_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2016-S-090-160439_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2016-S-090-160439_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 090-160439" .
+
+epd:id_2016-S-090-160439_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE021>;
+  locn:postCode "11";
+  locn:postName "Dublin";
+  locn:thoroughfare "St Margaret's Road, Finglas" .
+
+epd:id_2016-S-090-160439_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "Electricity Supply Board"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  cccev:registeredAddress epd:id_2016-S-090-160439_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-090-160439_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "Etender ID no :104740" .
+
+epd:id_2016-S-090-160439_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45232220> .
+
+epd:id_2016-S-090-160439_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-090-160439_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation """
+— The qualification system will be based upon this Notice which is the 1st Call for Competition under the system, and the rules of qualifications systems in accordance with Directive 2014/25/EU of the European Parliament and of the Council which has now come into force. Although not yet transposed into Irish law, the latter directive insofar as its provisions are unconditional and sufficiently precise will have direct effect in Ireland in accordance with the case law of the Court of Justice of the EU.
+— The Contracting Authority will not be responsible for any costs, charges or expenses incurred by applicants or tenderers in response to this competition.
+— At its absolute discretion, the contracting authority may elect to terminate this procurement process at any time.
+"""@en;
+  epo:hasID epd:id_2016-S-090-160439_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-090-160439_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2016-S-090-160439_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+Electricity Supply Board — Qualification System for Turnkey (EPC) HV Electrical Substation Works.
+"""@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-090-160439_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2016-S-090-160439_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2016-S-090-160439_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-090-160439_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-090-160439_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-090-160439_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postName "Dublin" .
+
+epd:id_2016-S-090-160439_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Consult legal advisor"@en;
+  cccev:registeredAddress epd:id_2016-S-090-160439_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2016-S-090-160439_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-090-160439_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2016-S-090-160439_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.courts.ie"^^xsd:anyURI;
+  cccev:email "highcourtcentraloffice@courts.ie" .
+
+epd:id_2016-S-090-160439_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postName "Dublin" .
+
+epd:id_2016-S-090-160439_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "The High Court"@en;
+  epo:hasPrimaryContactPoint epd:id_2016-S-090-160439_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2016-S-090-160439_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2016-S-090-160439_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-090-160439_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2016-S-090-160439_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "www.etenders.gov.ie"^^xsd:anyURI .
+
+epd:id_2016-S-090-160439_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-090-160439_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-090-160439_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

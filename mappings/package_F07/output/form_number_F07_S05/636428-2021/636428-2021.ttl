@@ -1,0 +1,164 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2021-S-079-204060_Notice a epo:Notice;
+  epo:hasID epd:id_2021-S-079-204060_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2021-S-079-204060_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 079-204060" .
+
+epd:id_2021-S-241-636428_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.etenders.gov.ie"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2021-S-241-636428_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 a epo:AwardCriterion .
+
+epd:id_2021-S-241-636428_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://irl.eu-supply.com/ctm/Company/CompanyInformation/Index/376"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2021-S-241-636428_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-241-636428_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-241-636428_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "tender admin"@en;
+  epo:hasInternetAddress "http://www.ervia.ie"^^xsd:anyURI;
+  cccev:email "tenders@ervia.ie";
+  cccev:telephone "+353 0214239065" .
+
+epd:id_2021-S-241-636428_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "Ireland"@en .
+
+epd:id_2021-S-241-636428_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE>;
+  locn:address epd:id_2021-S-241-636428_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-241-636428_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2021-S-241-636428_Period_W3EavcErM2fLz5G9WDkXcn;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-241-636428_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription "Yearly basis";
+  epo:isRenewalIndicator true .
+
+epd:id_2021-S-241-636428_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEInvoicing true;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2021-S-241-636428_Fund_W3EavcErM2fLz5G9WDkXcn a epo:Fund;
+  epo:hasDescription "Green Connect."@en .
+
+epd:id_2021-S-241-636428_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/39340000>, <http://data.europa.eu/cpv/cpv/42123000>,
+    <http://data.europa.eu/cpv/cpv/42123100>, <http://data.europa.eu/cpv/cpv/42131142>,
+    <http://data.europa.eu/cpv/cpv/42131147>, <http://data.europa.eu/cpv/cpv/42131148>,
+    <http://data.europa.eu/cpv/cpv/42968000>, <http://data.europa.eu/cpv/cpv/50000000>,
+    <http://data.europa.eu/cpv/cpv/50511200>, <http://data.europa.eu/cpv/cpv/79132000> .
+
+epd:id_2021-S-241-636428_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-241-636428_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "This Qualification System is designed to allow for the assembly of a multi-supplier panel with competent entities whose capabilities include but are not limited to providing services and supply associated with Compressed Natural Gas (CNG) equipment, maintenance and associated services, such as maintenance, certification, etc. to and for GNI projects located in the Republic of Ireland."@en;
+  epo:hasPurpose epd:id_2021-S-241-636428_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isFundedBy epd:id_2021-S-241-636428_Fund_W3EavcErM2fLz5G9WDkXcn;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-241-636428_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds true;
+  epo:specifiesAwardCriterion epd:id_2021-S-241-636428_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 .
+
+epd:id_2021-S-241-636428_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-241-636428_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2021-S-241-636428_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2021-S-241-636428_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2021-S-241-636428_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2021-S-241-636428_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2021-12-08"^^xsd:date;
+  epo:hasID epd:id_2021-S-241-636428_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20211213";
+  epo:refersToLot epd:id_2021-S-241-636428_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToPrevious epd:id_2021-S-079-204060_Notice;
+  epo:refersToProcedure epd:id_2021-S-241-636428_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2021-S-241-636428_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 241-636428" .
+
+epd:id_2021-S-241-636428_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE>;
+  locn:postCode "Cork";
+  locn:postName "Cork";
+  locn:thoroughfare "P.O.Box 900, Webworks, Eglinton Street" .
+
+epd:id_2021-S-241-636428_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "N/A" .
+
+epd:id_2021-S-241-636428_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2021-S-241-636428_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Ervia"@en;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/gas-heat>;
+  cccev:registeredAddress epd:id_2021-S-241-636428_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-241-636428_Period_W3EavcErM2fLz5G9WDkXcn a epo:Period;
+  epo:hasBeginning "2021-12-08"^^xsd:date;
+  epo:hasEnd "2031-12-07"^^xsd:date .
+
+epd:id_2021-S-241-636428_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "21/003" .
+
+epd:id_2021-S-241-636428_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/39341000> .
+
+epd:id_2021-S-241-636428_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-241-636428_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "You must submit through the eTenders system before the deadline. It is very important that you commence the scanning & uploading of your response in a timely manner. The system will automatically lockdown at the exact time specified in the Tender documents. Tenders that are not fully uploaded by the response deadline will not be accepted by the system. Please submit via the eTenders system not later than 12.00hrs (local time) on Friday 21st January 2022. www.etenders.gov.ie/system-user-guides"@en;
+  epo:hasID epd:id_2021-S-241-636428_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-241-636428_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2021-S-241-636428_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "21/003 - Compressed Natural Gas (CNG) Equipment Supply, Maintenance & associated services Qualification System"@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-241-636428_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2021-S-241-636428_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP, epd:id_2021-S-241-636428_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2021-S-241-636428_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-241-636428_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-241-636428_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-241-636428_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "Please refer to Statutory Instrument 131 of 2010, European Communities (Award of Contracts by Utility Undertaking) (Review Procedures) Regulations 2010 (and in particular Regulation 7 and 10(2))." .
+
+epd:id_2021-S-241-636428_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasInternetAddress "http://www.courts.ie"^^xsd:anyURI;
+  cccev:email "highcourtcentraloffice@courts.ie";
+  cccev:telephone "+353 18886000" .
+
+epd:id_2021-S-241-636428_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postCode "7";
+  locn:postName "Dublin";
+  locn:thoroughfare "The Four Courts " .
+
+epd:id_2021-S-241-636428_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "The High Court"@en;
+  epo:hasPrimaryContactPoint epd:id_2021-S-241-636428_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2021-S-241-636428_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-241-636428_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-241-636428_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-241-636428_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "EN", "GA";
+  epo:hasSubmissionURL "www.etenders.gov.ie"^^xsd:anyURI .
+
+epd:id_2021-S-241-636428_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2021-S-241-636428_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-241-636428_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

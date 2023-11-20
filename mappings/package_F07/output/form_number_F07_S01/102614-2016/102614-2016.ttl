@@ -1,0 +1,227 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2015-S-052-091684_Notice a epo:Notice;
+  epo:hasID epd:id_2015-S-052-091684_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2015-S-052-091684_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM a epo:Identifier;
+  epo:hasIdentifierValue "2015/S 052-091684" .
+
+epd:id_2016-S-061-102614_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://willistowerswatson.com"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2016-S-061-102614_AdditionalBuyer_MNAAtEANyxw9zKp73s95Qe a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-061-102614_AdditionalContactPoint_MNAAtEANyxw9zKp73s95Qe;
+  epo:playedBy epd:id_2016-S-061-102614_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe .
+
+epd:id_2016-S-061-102614_AdditionalContactPoint_MNAAtEANyxw9zKp73s95Qe a cccev:ContactPoint;
+  epo:hasContactName "Petra Sernulf"@en;
+  epo:hasInternetAddress "www.lfv.se"^^xsd:anyURI;
+  cccev:email "petra.sernulf@lfv.se" .
+
+epd:id_2016-S-061-102614_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe a org:Organization;
+  epo:hasLegalName "Luftfartsverket"@en;
+  cccev:registeredAddress epd:id_2016-S-061-102614_OrganisationAddress_MNAAtEANyxw9zKp73s95Qe .
+
+epd:id_2016-S-061-102614_AwardCriterionInDocuments_anTw2hmgo2Xh6TEAbuwm8f a epo:AwardCriterion .
+
+epd:id_2016-S-061-102614_BuyerOrganisationGroup_MNAAtEANyxw9zKp73s95Qe a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/airport>;
+  epo:hasMember epd:id_2016-S-061-102614_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe,
+    epd:id_2016-S-061-102614_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-061-102614_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2016-S-061-102614_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-061-102614_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-061-102614_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Charlotte Hellinghus"@en;
+  epo:hasFax "+45 32478800";
+  epo:hasInternetAddress "www.naviair.dk"^^xsd:anyURI;
+  cccev:email "cpe@naviair.dk";
+  cccev:telephone "+45 32478912" .
+
+epd:id_2016-S-061-102614_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location .
+
+epd:id_2016-S-061-102614_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-061-102614_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription """
+Insurance companies who are already qualified according to pre-qualification phase conducted previous years shall not apply again, but they are required to update their data and documentation in case of changes in their ability to meet the requirements at any time during the qualification period.
+""";
+  epo:isRenewalIndicator true .
+
+epd:id_2016-S-061-102614_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-061-102614_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8 a
+    cccev:ContactPoint;
+  epo:hasContactName "Jon Rafn Petursson"@en;
+  epo:hasInternetAddress "http://willistowerswatson.com"^^xsd:anyURI;
+  cccev:email "jon.petursson@willistowerswatson.com";
+  cccev:telephone "+46 84638907" .
+
+epd:id_2016-S-061-102614_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SWE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/SE11>;
+  locn:postCode "103 89";
+  locn:postName "Stockholm";
+  locn:thoroughfare "Lästmakargatan 22" .
+
+epd:id_2016-S-061-102614_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 a
+    org:Organization;
+  epo:hasLegalName "Willis Towers Watson"@en;
+  cccev:registeredAddress epd:id_2016-S-061-102614_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2016-S-061-102614_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-061-102614_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+This notice is to inform interested insurance companies that the Swedish and Danish Air Navigation Service Providers LFV (Sweden) and Naviair (Denmark) have created an ongoing Qualification System for the prequalification and registration of insurance companies for the purpose of awarding contracts for common Aviation Liability Insurances. The insurance cover required is protection against LFV and Naviair and their associated and subsidiary companies' legal liability arising from the provision of Air Navigation Services and therewith associated activities. The Qualification System covers both Leading Insurers and insurance companies who offers support behind a Leading Insurer.
+Pre-qualification of interested applicants will be handled/administered by the insurance broker Willis Towers Watson.
+"""@en;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-061-102614_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2016-S-061-102614_AwardCriterionInDocuments_anTw2hmgo2Xh6TEAbuwm8f .
+
+epd:id_2016-S-061-102614_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2016-S-061-102614_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2016-S-061-102614_AdditionalBuyer_MNAAtEANyxw9zKp73s95Qe,
+    epd:id_2016-S-061-102614_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2016-S-061-102614_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8,
+    epd:id_2016-S-061-102614_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2016-S-061-102614_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2016-S-061-102614_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2016-03-22"^^xsd:date;
+  epo:hasID epd:id_2016-S-061-102614_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20160326";
+  epo:refersToLot epd:id_2016-S-061-102614_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToPrevious epd:id_2015-S-052-091684_Notice;
+  epo:refersToProcedure epd:id_2016-S-061-102614_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2016-S-061-102614_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 061-102614" .
+
+epd:id_2016-S-061-102614_OrganisationAddress_MNAAtEANyxw9zKp73s95Qe a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/SWE>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK012>;
+  locn:postCode "602 27";
+  locn:postName "Norrköping";
+  locn:thoroughfare "Hospitalsgatan 30" .
+
+epd:id_2016-S-061-102614_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DK012>;
+  locn:postCode "2770";
+  locn:postName "Kastrup";
+  locn:thoroughfare "Naviair Allé 1" .
+
+epd:id_2016-S-061-102614_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "26059763" .
+
+epd:id_2016-S-061-102614_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2016-S-061-102614_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "Naviair"@en;
+  cccev:registeredAddress epd:id_2016-S-061-102614_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-061-102614_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/66516000> .
+
+epd:id_2016-S-061-102614_ProcedureTerm_Y6NRwnV2zPRQbkgqc6rurv a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw """
+Danish law.
+"""@en .
+
+epd:id_2016-S-061-102614_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-061-102614_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation """
+The Qualification System will be the first stage of qualification and will either be used as the basis for tender selection or may be supplemented by additional qualification criteria established by Naviair and LFV.
+When a tender procedure is launched Naviair and LFV reserves the right to limit the number of participants who will be invited to tender. The selection of candidates will either be based on an evaluation of the documentation submitted in accordance with section III.1) and III.2), or on the basis of further information obtained at the pre-qualified insurance companies, in order to find the candidates who are deemed to provide the best basis for competition.
+The Qualification System is an ongoing program where a notice will be published once a year. Deadline for applying for prequalification within the Qualification System in order to be invited to the upcoming tender procedure is 12.4.2016.
+"""@en;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-061-102614_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2016-S-061-102614_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+Aviation Liability Insurance.
+"""@en;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-061-102614_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2016-S-061-102614_ProcedureTerm_Y6NRwnV2zPRQbkgqc6rurv, epd:id_2016-S-061-102614_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP,
+    epd:id_2016-S-061-102614_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2016-S-061-102614_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-061-102614_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:playedBy epd:id_2016-S-061-102614_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2016-S-061-102614_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  locn:postCode "2500";
+  locn:postName "Valby";
+  locn:thoroughfare "Carl Jacobsens Vej 35" .
+
+epd:id_2016-S-061-102614_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2
+  a cccev:ContactPoint;
+  cccev:email "kfst@kfst.dk";
+  cccev:telephone "+45 41715000" .
+
+epd:id_2016-S-061-102614_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Konkurrence- og Forbrugerstyrelsen, Center for Tjenesteydelser, Udbud og Karteller (Danish Competition and Consumer Authority)"@en;
+  epo:hasPrimaryContactPoint epd:id_2016-S-061-102614_ReviewProcedureInformationProviderContactPoint_KxdgF9fjC7dbRiaV5Lc2v2;
+  cccev:registeredAddress epd:id_2016-S-061-102614_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2016-S-061-102614_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-061-102614_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2016-S-061-102614_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation """
+As a consequence of Danish Act No 492 of 12.5.2010 on the enforcement of procurement rules, etc. there are following deadlines for lodging appeals in Denmark:
+Complaints about not being pre-qualified shall be submitted to ‘Klagenævnet for Udbud’ (Board of Appeal) within 20 calendar days from the day following the day on which the contracting entity has sent a notification with an explanation of the decision to interested applicants who have been prequalified. In other situations, the complaint against the tender or the decision must be submitted to ‘Klagenævnet for Udbud’ before:
+1) 45 days after the contracting entity has published a notice in the Official Journal stating that the contracting entity has entered into a contract. The period is calculated from the day following the day on which notice has been published.
+2) 30 calendar days from the day following the day on which the contracting entity informed the tenderers that a contract based on a framework contract with reopening of competition or a dynamic purchasing system has been signed, if notification is given a brief explanation of the relevant reasons for the decision.
+3) 6 months after the entity has signed a framework agreement — calculated from the day after the day on which the contracting entity informed the tenderers and candidates, cf § 2 (2).
+4) 20 calendar days from the day following the day on which the contracting entity has announced the decision according to the Danish law of procurement (No 1564 of 15.12.2015) § 185 (2) second sentence.
+At the latest at the same time as an appeal is sent to ‘Klagenævnet for Udbud’, the appellant shall in writing inform the contracting entity that the complaint will be sent to ‘Klagenævnet for Udbud’, and whether the complaint is filed during the standstill period referred to in § 3. If the appeal has not been lodged in the stand-still period, the appellant must also state whether it is requested that the appeal is granted delaying effect pursuant to § 12 (1).
+""" .
+
+epd:id_2016-S-061-102614_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasInternetAddress "https://erhvervsstyrelsen.dk/klagenaevnet-for-udbud"^^xsd:anyURI;
+  cccev:email "klfu@erst.dk";
+  cccev:telephone "+45 35291095" .
+
+epd:id_2016-S-061-102614_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DNK>;
+  locn:postCode "2100";
+  locn:postName "København Ø";
+  locn:thoroughfare "Dahlerups Pakhus, Langelinie Allé 17" .
+
+epd:id_2016-S-061-102614_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Klagenævnet for Udbud (The Complaints Board for Public Procurement) c/o Erhvervsstyrelsen (Danish Business Agency)"@en;
+  epo:hasPrimaryContactPoint epd:id_2016-S-061-102614_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2016-S-061-102614_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2016-S-061-102614_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-061-102614_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2016-S-061-102614_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "EN" .
+
+epd:id_2016-S-061-102614_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-061-102614_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-061-102614_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

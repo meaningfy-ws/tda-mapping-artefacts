@@ -1,0 +1,187 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2015-S-228-415860_Notice a epo:Notice;
+  epo:hasID epd:id_2015-S-228-415860_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2015-S-228-415860_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM a epo:Identifier;
+  epo:hasIdentifierValue "2015/S 228-415860" .
+
+epd:id_2018-S-092-209728_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://beschaffung.evn.at"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-092-209728_AdditionalBuyer_MNAAtEANyxw9zKp73s95Qe a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2018-S-092-209728_AdditionalContactPoint_MNAAtEANyxw9zKp73s95Qe;
+  epo:playedBy epd:id_2018-S-092-209728_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe .
+
+epd:id_2018-S-092-209728_AdditionalContactPoint_MNAAtEANyxw9zKp73s95Qe a cccev:ContactPoint;
+  epo:hasContactName "Ing. Stefan Mandl, BA, MLS"@de;
+  epo:hasFax "+43 2236/200-82119";
+  epo:hasInternetAddress "www.netz.noe.at"^^xsd:anyURI;
+  cccev:email "stefan.mandl@evn.at";
+  cccev:telephone "+43 2236/200-12119" .
+
+epd:id_2018-S-092-209728_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe a org:Organization;
+  epo:hasLegalName "Elektrorazpredelenie YUG EAD"@de;
+  cccev:registeredAddress epd:id_2018-S-092-209728_OrganisationAddress_MNAAtEANyxw9zKp73s95Qe .
+
+epd:id_2018-S-092-209728_BuyerOrganisationGroup_MNAAtEANyxw9zKp73s95Qe a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/electricity>;
+  epo:hasMember epd:id_2018-S-092-209728_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe,
+    epd:id_2018-S-092-209728_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-092-209728_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://beschaffung.evn.at"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-092-209728_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-092-209728_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-092-209728_Channel_6nzVNRgtoDbqibciDT5jYq a cccev:Channel;
+  epo:hasURL "https://beschaffung.evn.at"^^xsd:anyURI;
+  epo:isAdhocChannel true .
+
+epd:id_2018-S-092-209728_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Ing. Stefan Mandl, BA, MLS"@de;
+  epo:hasFax "+43 2236 / 200-82119";
+  epo:hasInternetAddress "www.netz.noe.at"^^xsd:anyURI;
+  cccev:email "stefan.mandl@evn.at";
+  cccev:telephone "+43 2236 / 200-12119" .
+
+epd:id_2018-S-092-209728_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location .
+
+epd:id_2018-S-092-209728_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-092-209728_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2018-S-092-209728_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEOrdering true .
+
+epd:id_2018-S-092-209728_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-092-209728_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+                  Verteiltransformatoren in Freiluftausführung,
+                  mineralölgefüllt,
+                  50 kVA bis 2500 kVA.
+               """@de;
+  epo:isUsingEUFunds false .
+
+epd:id_2018-S-092-209728_MediatorContactPoint_3YJsnAYcTDrfQQSNseUiyS a cccev:ContactPoint;
+  epo:hasFax "+43 2742 / 9005-13845";
+  cccev:telephone "+43 2742 / 9005-12109" .
+
+epd:id_2018-S-092-209728_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  locn:postCode "3100";
+  locn:postName "St.Pölten";
+  locn:thoroughfare "Landhausplatz 1" .
+
+epd:id_2018-S-092-209728_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS a org:Organization;
+  epo:hasLegalName "Niederösterreichische Schlichtungsstelle für öffentliche Aufträge – Landesamtsdirektion – Allgem. Verwaltung"@de;
+  epo:hasPrimaryContactPoint epd:id_2018-S-092-209728_MediatorContactPoint_3YJsnAYcTDrfQQSNseUiyS;
+  cccev:registeredAddress epd:id_2018-S-092-209728_MediatorOrganisationAddress_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2018-S-092-209728_Mediator_3YJsnAYcTDrfQQSNseUiyS a epo:Mediator;
+  epo:playedBy epd:id_2018-S-092-209728_MediatorOrganisation_3YJsnAYcTDrfQQSNseUiyS .
+
+epd:id_2018-S-092-209728_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2018-S-092-209728_AdditionalBuyer_MNAAtEANyxw9zKp73s95Qe,
+    epd:id_2018-S-092-209728_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2018-S-092-209728_Mediator_3YJsnAYcTDrfQQSNseUiyS,
+    epd:id_2018-S-092-209728_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2018-S-092-209728_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2018-S-092-209728_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2018-05-14"^^xsd:date;
+  epo:hasID epd:id_2018-S-092-209728_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20180516";
+  epo:refersToLot epd:id_2018-S-092-209728_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToPrevious epd:id_2015-S-228-415860_Notice;
+  epo:refersToProcedure epd:id_2018-S-092-209728_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2018-S-092-209728_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 092-209728" .
+
+epd:id_2018-S-092-209728_OrganisationAddress_MNAAtEANyxw9zKp73s95Qe a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BGR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BG>;
+  locn:postCode "4000";
+  locn:postName "Plovdiv";
+  locn:thoroughfare "37 Hristo G. Danov Street" .
+
+epd:id_2018-S-092-209728_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/AT12>;
+  locn:postCode "2344";
+  locn:postName "Maria Enzersdorf";
+  locn:thoroughfare "EVN Platz" .
+
+epd:id_2018-S-092-209728_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "Netz Niederösterreich GmH"@de;
+  cccev:registeredAddress epd:id_2018-S-092-209728_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-092-209728_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "BE-EU-P/18/025-814" .
+
+epd:id_2018-S-092-209728_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/31170000> .
+
+epd:id_2018-S-092-209728_ProcedureTerm_Y6NRwnV2zPRQbkgqc6rurv a epo:ProcedureTerm;
+  epo:hasCrossBorderLaw """
+               BVergG 2006 (Österreich)
+            """@de .
+
+epd:id_2018-S-092-209728_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-092-209728_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasID epd:id_2018-S-092-209728_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-092-209728_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2018-S-092-209728_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+               Verteiltransformatoren
+            """@de;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-092-209728_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2018-S-092-209728_ProcedureTerm_Y6NRwnV2zPRQbkgqc6rurv, epd:id_2018-S-092-209728_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:usesChannel epd:id_2018-S-092-209728_Channel_6nzVNRgtoDbqibciDT5jYq .
+
+epd:id_2018-S-092-209728_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-092-209728_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-092-209728_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-092-209728_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasFax "+43 2742 / 90590-15540";
+  cccev:email "post@lvwg.noel.gv.at";
+  cccev:telephone "+43 2742 / 90590-15570" .
+
+epd:id_2018-S-092-209728_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/AUT>;
+  locn:postCode "3100";
+  locn:postName "St.Pölten";
+  locn:thoroughfare "Rennbahnstraße 29" .
+
+epd:id_2018-S-092-209728_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Landesverwaltungsgericht Niederösterreich"@de;
+  epo:hasPrimaryContactPoint epd:id_2018-S-092-209728_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2018-S-092-209728_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-092-209728_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-092-209728_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-092-209728_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "DE";
+  epo:hasSubmissionURL "https://beschaffung.evn.at"^^xsd:anyURI .
+
+epd:id_2018-S-092-209728_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-092-209728_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-092-209728_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

@@ -1,0 +1,180 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2015-S-248-453128_Notice a epo:Notice;
+  epo:hasID epd:id_2015-S-248-453128_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2015-S-248-453128_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM a epo:Identifier;
+  epo:hasIdentifierValue "2015/S 248-453128" .
+
+epd:id_2016-S-083-146763_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "http://www.achilles.ie"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2016-S-083-146763_AwardCriterionInDocuments_anTw2hmgo2Xh6TEAbuwm8f a epo:AwardCriterion .
+
+epd:id_2016-S-083-146763_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "http://www.providenceresources.com/"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2016-S-083-146763_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-083-146763_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-083-146763_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Supply-Line Team"@en;
+  epo:hasFax "+353 14020110";
+  epo:hasInternetAddress "http://www.achilles.ie"^^xsd:anyURI;
+  cccev:email "supply-line@achilles.com";
+  cccev:telephone "+353 14020111" .
+
+epd:id_2016-S-083-146763_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress """
+Various locations in Ireland.
+"""@en .
+
+epd:id_2016-S-083-146763_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE0>;
+  locn:address epd:id_2016-S-083-146763_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2016-S-083-146763_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2016-S-083-146763_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasRenewalDescription """
+Supply-Line is subject to annual renewal of subscription and information. Vendors may join at any time but should note the deadline for the initial contract is registration on Supply-Line be Tuesday, 10.5.2016. In order to ensure appropriate registration suppliers should join Supply-line before Friday, 6th May and complete questionnaire by 10th May.
+""";
+  epo:isRenewalIndicator true .
+
+epd:id_2016-S-083-146763_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2016-S-083-146763_EAuctionTechniqueUsage_E5T8LK7GWtcY6SLmbwzAoM a epo:EAuctionTechniqueUsage .
+
+epd:id_2016-S-083-146763_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8 a
+    cccev:ContactPoint;
+  epo:hasContactName "Supply-Line Team"@en;
+  epo:hasFax "+353 14020110";
+  epo:hasInternetAddress "http://www.achilles.com/en/communities/103-supply-line"^^xsd:anyURI;
+  cccev:email "supply-line@achilles.com";
+  cccev:telephone "+353 14020111" .
+
+epd:id_2016-S-083-146763_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE021>;
+  locn:postCode "D6W TF84";
+  locn:postName "Dublin";
+  locn:thoroughfare "1 Harmsworth, Greenmount Office, Park Harolds Cross" .
+
+epd:id_2016-S-083-146763_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 a
+    org:Organization;
+  epo:hasLegalName "Achilles Procurement Services Ltd"@en;
+  cccev:registeredAddress epd:id_2016-S-083-146763_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2016-S-083-146763_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/72224000>, <http://data.europa.eu/cpv/cpv/76431000> .
+
+epd:id_2016-S-083-146763_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-083-146763_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription """
+Supply-Line is a qualification system operated by Achilles and used by Providence Resources Plc. It is used as a source for tenderer selection for contracts valued above the EU thresholds (418 000 EUR for supplies and services and 5 225 000 EUR for works). This qualification system will be used by Provide Resources Plc to source tender lists for a range of supplies, works and services directly linked to oil exploration activities off the coast of Ireland. This notice is being published on a voluntary basis in the Official Journal of the EU.
+Providence Resources Plc currently has a requirement for a contractor to provide Drilling Project Management Services offshore Ireland, 2017. Services required to include full well project management services including completion of planning, procurement and operations support. Interested parties will have to be registered on Supply-Line by 10.5.2016 in order to be considered for the initial contract.
+"""@en;
+  epo:hasPurpose epd:id_2016-S-083-146763_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isSubjectToLotSpecificTerm epd:id_2016-S-083-146763_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2016-S-083-146763_AwardCriterionInDocuments_anTw2hmgo2Xh6TEAbuwm8f .
+
+epd:id_2016-S-083-146763_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2016-S-083-146763_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2016-S-083-146763_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2016-S-083-146763_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8,
+    epd:id_2016-S-083-146763_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2,
+    epd:id_2016-S-083-146763_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2016-S-083-146763_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2016-04-25"^^xsd:date;
+  epo:hasID epd:id_2016-S-083-146763_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasPublicationDate "20160428";
+  epo:refersToLot epd:id_2016-S-083-146763_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToPrevious epd:id_2015-S-248-453128_Notice;
+  epo:refersToProcedure epd:id_2016-S-083-146763_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2016-S-083-146763_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2016/S 083-146763" .
+
+epd:id_2016-S-083-146763_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/IE0>;
+  locn:postCode "4";
+  locn:postName "Dublin";
+  locn:thoroughfare "Airfield House, Airfield Park, Donnybrook" .
+
+epd:id_2016-S-083-146763_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "Providence Resources Plc"@en;
+  epo:hasMainActivityDescription "voluntary for exploration of oil and gas";
+  cccev:registeredAddress epd:id_2016-S-083-146763_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2016-S-083-146763_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/76000000> .
+
+epd:id_2016-S-083-146763_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2016-S-083-146763_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation """
+Further notices will be published in due course covering a range of related works and services required by Providence Resources Plc.
+Please note Supply-Line is also used by other contracting entities in the utility field in Ireland: www.achilles.ie for further information.
+"""@en;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2016-S-083-146763_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2016-S-083-146763_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle """
+Providence Resources Plc Supply-Line Qualification System — Services (2016).
+"""@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2016-S-083-146763_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2016-S-083-146763_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:usesTechnique epd:id_2016-S-083-146763_EAuctionTechniqueUsage_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2016-S-083-146763_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2016-S-083-146763_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:playedBy epd:id_2016-S-083-146763_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2016-S-083-146763_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postName "Dublin" .
+
+epd:id_2016-S-083-146763_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2
+  a org:Organization;
+  epo:hasLegalName "Not applicable"@en;
+  cccev:registeredAddress epd:id_2016-S-083-146763_ReviewProcedureInformationProviderAddress_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2016-S-083-146763_ReviewProcedureInformationProvider_KxdgF9fjC7dbRiaV5Lc2v2
+  a epo:ReviewProcedureInformationProvider;
+  epo:playedBy epd:id_2016-S-083-146763_ReviewProcedureInformationProviderOrganisation_KxdgF9fjC7dbRiaV5Lc2v2 .
+
+epd:id_2016-S-083-146763_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/IRL>;
+  locn:postName "Dublin" .
+
+epd:id_2016-S-083-146763_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Not applicable"@en;
+  cccev:registeredAddress epd:id_2016-S-083-146763_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2016-S-083-146763_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2016-S-083-146763_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2016-S-083-146763_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "http://www.achilles.com/en/communities/103-supply-line"^^xsd:anyURI .
+
+epd:id_2016-S-083-146763_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2016-S-083-146763_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2016-S-083-146763_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

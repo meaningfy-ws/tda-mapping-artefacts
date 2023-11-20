@@ -1,0 +1,140 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2022-S-155-445835_AdditionalBuyer_MNAAtEANyxw9zKp73s95Qe a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-155-445835_AdditionalContactPoint_MNAAtEANyxw9zKp73s95Qe;
+  epo:playedBy epd:id_2022-S-155-445835_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe .
+
+epd:id_2022-S-155-445835_AdditionalContactPoint_MNAAtEANyxw9zKp73s95Qe a cccev:ContactPoint;
+  epo:hasContactName "VDV eTicket Service GmbH & Co. KG"@de;
+  epo:hasFax "+49 221/716174213";
+  epo:hasInternetAddress "www.eTicket-Deutschland.de"^^xsd:anyURI;
+  cccev:email "Hoffmann@vdv.de";
+  cccev:telephone "+49 221/716174113" .
+
+epd:id_2022-S-155-445835_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe a org:Organization;
+  epo:hasLegalName "Verkehrsunternehmen und -Verbünde des Öffentlichen Personenverkehrs"@de;
+  cccev:registeredAddress epd:id_2022-S-155-445835_OrganisationAddress_MNAAtEANyxw9zKp73s95Qe .
+
+epd:id_2022-S-155-445835_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price> .
+
+epd:id_2022-S-155-445835_BuyerOrganisationGroup_MNAAtEANyxw9zKp73s95Qe a epo:OrganisationGroup;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/urttb>;
+  epo:hasMember epd:id_2022-S-155-445835_AdditionalOrganisation_MNAAtEANyxw9zKp73s95Qe,
+    epd:id_2022-S-155-445835_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-155-445835_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2022-S-155-445835_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-155-445835_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-155-445835_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "VDV eTicket Service GmbH & Co. KG"@de;
+  epo:hasInternetAddress "www.eTicket-Deutschland.de"^^xsd:anyURI;
+  cccev:email "Hoffmann@vdv.de";
+  cccev:telephone "+49 221/716174113" .
+
+epd:id_2022-S-155-445835_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "Deutschland"@de .
+
+epd:id_2022-S-155-445835_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
+  locn:address epd:id_2022-S-155-445835_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2022-S-155-445835_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2022-S-155-445835_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2022-S-155-445835_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/supplies>;
+  epo:hasEOrdering true;
+  epo:hasEPayment true .
+
+epd:id_2022-S-155-445835_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-155-445835_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Der VDV eTicket Service ist die Regiegesellschaft für den elektronischen Ticketvertrieb im Öffentlichen Personenverkehr. Er verantwortet den (((eTicket-Deutschland-Standard der VDV-Kernapplikation. Zudem betreibt er zentrale Systeme des (((eTicket-Deutschland wie das Sicherheits- und Sperrlistenmanagement, das Clearing und das Zertifizierungslabor zur Überprüfung der Standardkonformität der eingesetzten Komponenten (Chipkarten, Sicherheitsmodule, Terminals, Hintergrundsysteme).Der VDV eTicket Service führt regelmäßig Ausschreibungen im Auftrag von einer Vielzahl von Verkehrsunternehmen und –verbünden zur gemeinschaftlichen Chipkartenbeschaffung durch. Die nächste europaweite Ausschreibung eines Rahmenvertrags wird voraussichtlich im März 2023 starten mit einem Auftragsvolumen von bis zu 15 Mio. Chipkarten über 4 Jahre (Laufzeit des Rahmenvertrags: September 2024 - September 2028). Um an dieser Ausschreibung teilnehmen zu können ist das erfolgreiche Absolvieren dieses Präqualifizierungsverfahrens erforderlich. Interessierte Wirtschaftsteilnehmer müssen beim Auftraggeber einen Antrag auf Anerkennung ihrer Qualifikation gemäß dem Qualifizierungssystem stellen. Der Auftrag wird/Die Aufträge werden ohne Veröffentlichung eines weiteren Aufrufs zum Wettbewerb vergeben. Nur diejenigen Bewerber, die bis zum 28.02.2023 das Präqualifizierungsverfahren erfolgreich durchlaufen haben, werden zur Angebotsabgabe im Rahmen der kommenden Ausschreibung aufgefordert (§ 48 Abs.9 SektVO). Zentrale Anforderung an die Bewerber ist der Nachweis einer KA-Zertifizierung für Chipkarten seit dem 01.01.2008. Nähere Informationen zur Zertifizierung können beim VDV eTicket-Service erfragt werden. Weitere Auftragsunterlagen werden erst mit Aufforderung zur Angebotsabgabe zur Verfügung gestellt.Wirtschaftsteilnehmer, die bereits bei vorherigen Ausschreibungen dieses Rahmenvertrags ein Präqualifizierungsverfahren erfolgreich durchlaufen haben, brauchen keinen erneuten Antrag auf Präqualifizierung zu stellen. Deren Eignung wird dann mit Angebotsabgabe erneut überprüft.   "@de;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2022-S-155-445835_AwardCriterionPrice_XRYGYuvsnGckdthPyyCN9r .
+
+epd:id_2022-S-155-445835_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2022-S-155-445835_AdditionalBuyer_MNAAtEANyxw9zKp73s95Qe,
+    epd:id_2022-S-155-445835_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2022-S-155-445835_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2022-S-155-445835_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2022-S-155-445835_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2022-08-10"^^xsd:date;
+  epo:hasID epd:id_2022-S-155-445835_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20220812";
+  epo:refersToLot epd:id_2022-S-155-445835_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2022-S-155-445835_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2022-S-155-445835_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2022/S 155-445835" .
+
+epd:id_2022-S-155-445835_OrganisationAddress_MNAAtEANyxw9zKp73s95Qe a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
+  locn:postName "Deutschland" .
+
+epd:id_2022-S-155-445835_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/DE>;
+  locn:postCode "50670";
+  locn:postName "Köln";
+  locn:thoroughfare "Im Mediapark 8a" .
+
+epd:id_2022-S-155-445835_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "VDV eTicket Service GmbH & Co. KG"@de;
+  cccev:registeredAddress epd:id_2022-S-155-445835_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-155-445835_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/30162000> .
+
+epd:id_2022-S-155-445835_ProcedureTerm_Y6NRwnV2zPRQbkgqc6rurv a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2022-S-155-445835_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2022-S-155-445835_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2022-S-155-445835_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2022-S-155-445835_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Rahmenvertrag über die Lieferung kontaktloser Chipkarten nach VDV-Kernapplikation zur Nutzung als elektronisches Ticket im Öffentlichen Personenverkehr"@de;
+  epo:isJointProcurement true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2022-S-155-445835_ProcedureTerm_Y6NRwnV2zPRQbkgqc6rurv,
+    epd:id_2022-S-155-445835_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2022-S-155-445835_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2022-S-155-445835_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-155-445835_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2022-S-155-445835_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/DEU>;
+  locn:postCode "50667";
+  locn:postName "Köln";
+  locn:thoroughfare "Zeughausstraße 2-10" .
+
+epd:id_2022-S-155-445835_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Vergabekammer bei der Bezirksregierung Köln"@de;
+  cccev:registeredAddress epd:id_2022-S-155-445835_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2022-S-155-445835_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2022-S-155-445835_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2022-S-155-445835_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "DE" .
+
+epd:id_2022-S-155-445835_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2022-S-155-445835_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2022-S-155-445835_Organisation_gdUoCtZa5cSRUgG3VzDvoH .

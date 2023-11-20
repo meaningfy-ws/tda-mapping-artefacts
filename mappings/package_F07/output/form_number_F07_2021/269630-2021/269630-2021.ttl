@@ -1,0 +1,161 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2019-S-091-220867_Notice a epo:Notice;
+  epo:hasID epd:id_2019-S-091-220867_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2019-S-091-220867_NoticeIdentifier_E5T8LK7GWtcY6SLmbwzAoM a epo:Identifier;
+  epo:hasIdentifierValue "2019/S 091-220867" .
+
+epd:id_2021-S-102-269630_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasRestrictedAccessURL "https://cloud.3p.eu/Downloads/1/369/OA/2014"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted true .
+
+epd:id_2021-S-102-269630_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 a epo:AwardCriterion .
+
+epd:id_2021-S-102-269630_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasContactPointInRole epd:id_2021-S-102-269630_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2021-S-102-269630_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-102-269630_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasFax "+32 71549696";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "secretserviceachatsores@ores.be";
+  cccev:telephone "+32 71547777" .
+
+epd:id_2021-S-102-269630_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "Wallonie."@fr .
+
+epd:id_2021-S-102-269630_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:address epd:id_2021-S-102-269630_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2021-S-102-269630_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_2021-S-102-269630_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn;
+  epo:isRenewalIndicator true .
+
+epd:id_2021-S-102-269630_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_2021-S-102-269630_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8 a
+    cccev:ContactPoint;
+  epo:hasContactName "M. Stefan de Smet"@fr;
+  epo:hasFax "+32 71549696";
+  epo:hasInternetAddress "www.ores.be"^^xsd:anyURI;
+  cccev:email "stefan.desmet2@ores.be";
+  cccev:telephone "+32 71547731" .
+
+epd:id_2021-S-102-269630_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:postCode "6041";
+  locn:postName "Gosselies";
+  locn:thoroughfare "Avenue Jean Mermoz 14" .
+
+epd:id_2021-S-102-269630_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 a
+    org:Organization;
+  epo:hasLegalName "Service achats"@fr;
+  cccev:registeredAddress epd:id_2021-S-102-269630_InformationProviderOrganisationAddress_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2021-S-102-269630_LotPurpose_W3EavcErM2fLz5G9WDkXcn a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/71355000>, <http://data.europa.eu/cpv/cpv/71355200> .
+
+epd:id_2021-S-102-269630_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-102-269630_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "Cette procédure a pour objet l’établissement d’une liste de candidats qualifiés pour les services suivants:— recherche de terrains pour futures cabines;— établissement des plans de mesurage pour futures cabines;— placement de bornes à la demande de l'entité adjudicatrice (minimum quatre bornes, prix des bornes compris);— implantation du bâtiment + fourniture des plans correspondants conformément au CWATUPE (PV d’implantation)."@fr;
+  epo:hasPurpose epd:id_2021-S-102-269630_LotPurpose_W3EavcErM2fLz5G9WDkXcn;
+  epo:isSubjectToLotSpecificTerm epd:id_2021-S-102-269630_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds false;
+  epo:specifiesAwardCriterion epd:id_2021-S-102-269630_AwardCriterionInDocuments_5pwXwFpdowMEU23BhPk396 .
+
+epd:id_2021-S-102-269630_MultipleStageProcedureTerm_W3EavcErM2fLz5G9WDkXcn a epo:MultipleStageProcedureTerm .
+
+epd:id_2021-S-102-269630_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2021-S-102-269630_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2021-S-102-269630_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8,
+    epd:id_2021-S-102-269630_Reviewer_cnThDUHhCN7pjvrhJdwbGS;
+  epo:hasDispatchDate "2021-05-25"^^xsd:date;
+  epo:hasID epd:id_2021-S-102-269630_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20210528";
+  epo:refersToLot epd:id_2021-S-102-269630_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToPrevious epd:id_2019-S-091-220867_Notice;
+  epo:refersToProcedure epd:id_2021-S-102-269630_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2021-S-102-269630_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2021/S 102-269630" .
+
+epd:id_2021-S-102-269630_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/BE3>;
+  locn:postCode "6041";
+  locn:postName "Gosselies";
+  locn:thoroughfare "Avenue Jean Mermoz 14" .
+
+epd:id_2021-S-102-269630_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH a epo:Identifier;
+  epo:hasIdentifierValue "BE 0897436971" .
+
+epd:id_2021-S-102-269630_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasID epd:id_2021-S-102-269630_OrganisationIdentifier_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:hasLegalName "ORES SC"@fr;
+  epo:hasMainActivityDescription "Électricité et gaz";
+  cccev:registeredAddress epd:id_2021-S-102-269630_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2021-S-102-269630_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "OQGECWA" .
+
+epd:id_2021-S-102-269630_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/71353200> .
+
+epd:id_2021-S-102-269630_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2021-S-102-269630_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "Après validation de la marque d’intérêt par l’entité adjudicatrice, cette dernière communique le mot de passe qui donnera accès au dossier de qualification. Celui-ci contient tous les éléments nécessaires pour compléter le dossier demande de qualification ainsi que les règles applicables pour le système concerné.Les entrepreneurs ayant marqué intérêt dans le cadre du système de qualification pour les services de géomètre pour les bâtiments techniques maçonnés et préfabriqués (réf. Oqgecwa) ne doivent plus marquer intérêt au présent avis. En outre, les entrepreneurs déjà qualifiés restent qualifiés dans ce domaine pour autant qu'ils répondent toujours aux critères repris dans le dossier de qualification en leur possession."@fr;
+  epo:hasID epd:id_2021-S-102-269630_ProcedureIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2021-S-102-269630_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2021-S-102-269630_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Système de qualification — Système de qualification pour les services de géomètre pour les bâtiments techniques maçonnés et préfabriqués"@fr;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2021-S-102-269630_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2021-S-102-269630_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP, epd:id_2021-S-102-269630_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2021-S-102-269630_ProcurementProcedureInformationProvider_GtRHdRNRRAt6HwPbvoDJW8
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2021-S-102-269630_InformationProviderContactPoint_GtRHdRNRRAt6HwPbvoDJW8;
+  epo:playedBy epd:id_2021-S-102-269630_InformationProviderOrganisation_GtRHdRNRRAt6HwPbvoDJW8 .
+
+epd:id_2021-S-102-269630_ReviewTerm_nhBsb54yvo3m2oHVP7o6vP a epo:ReviewTerm;
+  epo:hasReviewDeadlineInformation "— recours en annulation devant le Conseil d’État ou le juge judiciaire: 60 jours à compter de la publication, de la communication ou de la prise de connaissance de l’acte selon le cas;— recours en suspension devant le Conseil d’État, selon la procédure d’extrême urgence, ou devant le juge judiciaire, selon la procédure de référé: quinze jours à compter de la publication, de la communication ou de la prise de connaissance de l’acte selon le cas;— ce délai est réduit à dix jours en cas de publication d’un avis de transparence ex ante volontaire." .
+
+epd:id_2021-S-102-269630_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  cccev:telephone "+32 67282336" .
+
+epd:id_2021-S-102-269630_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/BEL>;
+  locn:postCode "1400";
+  locn:postName "Nivelles";
+  locn:thoroughfare "Palais de Justice, Place Albert 1er, 17" .
+
+epd:id_2021-S-102-269630_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Tribunal de première instance"@fr;
+  epo:hasPrimaryContactPoint epd:id_2021-S-102-269630_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2021-S-102-269630_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-102-269630_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2021-S-102-269630_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2021-S-102-269630_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "FR";
+  epo:hasSubmissionURL "https://eten.publicprocurement.be"^^xsd:anyURI .

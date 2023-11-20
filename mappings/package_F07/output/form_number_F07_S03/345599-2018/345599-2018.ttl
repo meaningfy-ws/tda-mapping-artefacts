@@ -1,0 +1,130 @@
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_2018-S-150-345599_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq a epo:AccessTerm;
+  epo:hasPublicAccessURL "www.waxdigital.co.uk"^^xsd:anyURI;
+  epo:isProcurementDocumentRestricted false .
+
+epd:id_2018-S-150-345599_Buyer_gy5ASvJ42XgoBMJFgiNxhq a epo:Buyer;
+  epo:hasBuyerProfile "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA21002"^^xsd:anyURI;
+  epo:hasContactPointInRole epd:id_2018-S-150-345599_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-150-345599_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-150-345599_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH a cccev:ContactPoint;
+  epo:hasContactName "Sidonia Michoux"@en;
+  epo:hasInternetAddress "https://www.scotrail.co.uk/about-scotrail"^^xsd:anyURI;
+  cccev:email "sidonia.michoux@abellio.com";
+  cccev:telephone "+44 1315502330" .
+
+epd:id_2018-S-150-345599_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn a locn:Address;
+  locn:fullAddress "Scotland"@en .
+
+epd:id_2018-S-150-345599_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn a dct:Location;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UKM>;
+  locn:address epd:id_2018-S-150-345599_ContractTermLotLocationAddress_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2018-S-150-345599_ContractTermLot_W3EavcErM2fLz5G9WDkXcn a epo:ContractTerm;
+  epo:definesContractPeriod epd:id_2018-S-150-345599_Period_W3EavcErM2fLz5G9WDkXcn;
+  epo:definesSpecificPlaceOfPerformance epd:id_2018-S-150-345599_ContractTermLotLocation_W3EavcErM2fLz5G9WDkXcn .
+
+epd:id_2018-S-150-345599_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/works> .
+
+epd:id_2018-S-150-345599_Fund_W3EavcErM2fLz5G9WDkXcn a epo:Fund;
+  epo:hasDescription "CP5 Funds"@en .
+
+epd:id_2018-S-150-345599_Lot_W3EavcErM2fLz5G9WDkXcn a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-150-345599_ContractTermLot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasDescription "The bidder needs to deliver the following:— supply and install 4 additional cameras per station, covering platform edges,— the solution is to be similar to the LNE offering,— the new cameras are to be connected to the site recorder and in turn through to the Victor platform,— upon alarm activations, the system must be capable of providing local warning automatically and remote CSC alarms allowing Control Staff to intervene by PA."@en;
+  epo:isFundedBy epd:id_2018-S-150-345599_Fund_W3EavcErM2fLz5G9WDkXcn;
+  epo:isUsingEUFunds true .
+
+epd:id_2018-S-150-345599_Notice a epo:CompetitionNotice, epo:Notice;
+  epo:announcesRole epd:id_2018-S-150-345599_Buyer_gy5ASvJ42XgoBMJFgiNxhq, epd:id_2018-S-150-345599_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE,
+    epd:id_2018-S-150-345599_Reviewer_cnThDUHhCN7pjvrhJdwbGS, epd:id_2018-S-150-345599_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH;
+  epo:hasDispatchDate "2018-08-03"^^xsd:date;
+  epo:hasID epd:id_2018-S-150-345599_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0025>;
+  epo:hasPublicationDate "20180807";
+  epo:refersToLot epd:id_2018-S-150-345599_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:refersToProcedure epd:id_2018-S-150-345599_Procedure_Y6NRwnV2zPRQbkgqc6rurv .
+
+epd:id_2018-S-150-345599_NoticeIdentifier_Y6NRwnV2zPRQbkgqc6rurv a epo:Identifier;
+  epo:hasIdentifierValue "2018/S 150-345599" .
+
+epd:id_2018-S-150-345599_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/UK>;
+  locn:postCode "G2 1LU";
+  locn:postName "Glasgow";
+  locn:thoroughfare "Culzean House, 36 Renfield Street" .
+
+epd:id_2018-S-150-345599_Organisation_gdUoCtZa5cSRUgG3VzDvoH a org:Organization;
+  epo:hasLegalName "Abellio ScotRail Ltd"@en;
+  epo:hasMainActivityDescription "Electronic Monitoring Systems";
+  cccev:registeredAddress epd:id_2018-S-150-345599_OrganisationAddress_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-150-345599_Period_W3EavcErM2fLz5G9WDkXcn a epo:Period;
+  epo:hasBeginning "2018-08-03"^^xsd:date;
+  epo:hasEnd "2018-08-15"^^xsd:date .
+
+epd:id_2018-S-150-345599_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv a epo:Purpose;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/45315300> .
+
+epd:id_2018-S-150-345599_ProcedureTerm_Y6NRwnV2zPRQbkgqc6rurv a epo:ProcedureTerm;
+  epo:isAwardedByCPB true .
+
+epd:id_2018-S-150-345599_Procedure_Y6NRwnV2zPRQbkgqc6rurv a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_2018-S-150-345599_ContractTermProcedure_E5T8LK7GWtcY6SLmbwzAoM;
+  epo:hasAdditionalInformation "Note: To register your interest in this notice and obtain any additional information please visit the Public Contracts Scotland Web Site at https://www.publiccontractsscotland.gov.uk/Search/Search_Switch.aspx?ID=552626(SC Ref:552626)"@en;
+  epo:hasProcurementScopeDividedIntoLot epd:id_2018-S-150-345599_Lot_W3EavcErM2fLz5G9WDkXcn;
+  epo:hasPurpose epd:id_2018-S-150-345599_ProcedurePurpose_Y6NRwnV2zPRQbkgqc6rurv;
+  epo:hasTitle "Bidders' Briefing note"@en;
+  epo:isSubjectToProcedureSpecificTerm epd:id_2018-S-150-345599_AccessTerm_gy5ASvJ42XgoBMJFgiNxhq,
+    epd:id_2018-S-150-345599_ProcedureTerm_Y6NRwnV2zPRQbkgqc6rurv, epd:id_2018-S-150-345599_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM .
+
+epd:id_2018-S-150-345599_ProcurementProcedureInformationProvider_HtbYDSk6JFx8EvnsNvdiXE
+  a epo:ProcurementProcedureInformationProvider;
+  epo:hasContactPointInRole epd:id_2018-S-150-345599_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-150-345599_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
+
+epd:id_2018-S-150-345599_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS a cccev:ContactPoint;
+  epo:hasInternetAddress "https://www.scotrail.co.uk/about-scotrail"^^xsd:anyURI;
+  cccev:email "sidonia.michoux@abellio.com";
+  cccev:telephone "+44 1315502330" .
+
+epd:id_2018-S-150-345599_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/GBR>;
+  locn:postCode "G2 1LU";
+  locn:postName "Glasgow";
+  locn:thoroughfare "Culzean House, 36 Renfield Street" .
+
+epd:id_2018-S-150-345599_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS a org:Organization;
+  epo:hasLegalName "Abellio ScotRail Ltd"@en;
+  epo:hasPrimaryContactPoint epd:id_2018-S-150-345599_ReviewerContactPoint_cnThDUHhCN7pjvrhJdwbGS;
+  cccev:registeredAddress epd:id_2018-S-150-345599_ReviewerOrganisationAddress_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-150-345599_Reviewer_cnThDUHhCN7pjvrhJdwbGS a epo:Reviewer;
+  epo:playedBy epd:id_2018-S-150-345599_ReviewerOrganisation_cnThDUHhCN7pjvrhJdwbGS .
+
+epd:id_2018-S-150-345599_SubmissionTerm_E5T8LK7GWtcY6SLmbwzAoM a epo:SubmissionTerm;
+  epo:hasLanguage "EN";
+  epo:hasSubmissionURL "www.waxdigital.co.uk"^^xsd:anyURI .
+
+epd:id_2018-S-150-345599_TenderReceiver_UmUcv5N9cYgmbDUzzY73cH a epo:TenderReceiver;
+  epo:hasContactPointInRole epd:id_2018-S-150-345599_ContactPoint_gdUoCtZa5cSRUgG3VzDvoH;
+  epo:playedBy epd:id_2018-S-150-345599_Organisation_gdUoCtZa5cSRUgG3VzDvoH .
