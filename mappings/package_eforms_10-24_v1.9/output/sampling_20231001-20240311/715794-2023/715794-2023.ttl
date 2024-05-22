@@ -1,0 +1,503 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epd: <http://data.europa.eu/a4g/resource/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix idlab-fn: <http://example.com/idlab/function/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix person: <http://www.w3.org/ns/person#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tedm: <http://data.europa.eu/a4g/mapping/sf-rml/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_AccessTerm_naE3mfoLZyth2mWXywVhn6 a epo:AccessTerm;
+  epo:hasPublicAccessURL "https://platformazakupowa.pl/pn/zuo_siedlce"^^xsd:anyURI;
+  epo:hasRestrictedAccessURL "https://platformazakupowa.pl/pn/zuo_siedlce"^^xsd:anyURI;
+  epo:involvesProcurementDocument epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcurementDocument_H37RTFL7PcotjVpzPrAkWu;
+  epo:isProcurementDocumentRestricted "non-restricted-document" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_AuctionTerms_Y7WNjU2HSM4HNny2xZsabR a
+    epo:EAuctionTechniqueUsage;
+  epo:hasUsage <http://publications.europa.eu/resource/authority/usage/n-used> .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_AwardCriterion_kJu9SkmLfQYWH3GxqnddRV
+  a epo:AwardCriterion;
+  epo:hasAwardCriterionType <http://publications.europa.eu/resource/authority/award-criterion-type/price>;
+  dct:description """1.	Za najkorzystniejszą zostanie uznana oferta, która zyska najwyższą liczbę punktów obliczoną w oparciu o ustalone poniżej kryteria.
+2.	W ramach kryterium Wykonawcy zostaną przyznane punkty w skali od 0 do 100 w ramach kryterium „Cena” 
+cena Oferty najtańszej
+Cena = _______________________ x 100 pkt
+cena Oferty ocenianej
+3.	Oferta spełniająca w najwyższym stopniu wymagania określone w każdym kryterium otrzyma maksymalna liczbę punktów. Pozostałym wykonawcom wypełniającym wymagania kryterialne przypisana zostanie odpowiednio mniejsza liczba punktów.
+"""@pl .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Buyer_MT3gdCnJ9BA7aEqaGqKxAh a epo:Buyer;
+  epo:hasBuyerProfile "https://platformazakupowa.pl/pn/zuo_siedlce"^^xsd:anyURI;
+  epo:playedBy epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Organization_ORG-0001 .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_CompanyAddress_SyrXybB9qnydTsiCYvqfwn
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL925>;
+  locn:fullAddress "ul. Błonie 3, Siedlce, 08-110, POL";
+  locn:postCode "08-110";
+  locn:postName "Siedlce" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_CompanyAddress_kp4YHhT2Gw9BnTPKnwxcdW
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL911>;
+  locn:fullAddress "Organ Odwoławczy, ul. Postępu 17a, Warszawa, Warszawa, 02-676 , POL";
+  locn:postCode "02-676 ";
+  locn:postName "Warszawa" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_CompanyContactPoint_7iFD8NVFhULkdXRNPqKyHs
+  a cccev:ContactPoint;
+  epo:hasFax "+48256332526";
+  epo:hasInternetAddress "https://zuo.siedlce.pl/"^^xsd:anyURI;
+  cccev:email "bok@zuo.siedlce.pl";
+  cccev:telephone "+48256332522" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_CompanyContactPoint_CCKfjNm3UAMuYf3dDso6C2
+  a cccev:ContactPoint;
+  epo:hasContactName "Krajowa Izba Odwoławcza";
+  epo:hasFax "+48 224587800";
+  epo:hasInternetAddress "https://www.uzp.gov.pl/kio"^^xsd:anyURI;
+  cccev:email "odwolania@uzp.gov.pl";
+  cccev:telephone "+48 224587801" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ContractLocation_btiykpkF9yYEWFnDmvRf6a
+  a dct:Location;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL925>;
+  locn:address epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcedurePlacePerformance_btiykpkF9yYEWFnDmvRf6a .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ContractTerm_246rmGzZvwFBcxRNZTXjTW a
+    epo:ContractTerm;
+  epo:hasEInvoicingPermission <http://publications.europa.eu/resource/authority/permission/allowed>;
+  epo:hasEOrdering true;
+  epo:hasEPayment true;
+  epo:hasReservedExecution <http://publications.europa.eu/resource/authority/applicability/no> .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_DynamicPurchaseSystemTechnicalUsage_bq3rWUnhLReULR3Pe8QxDZ
+  a epo:DynamicPurchaseSystemTechnique;
+  epo:hasDPSScope <http://publications.europa.eu/resource/authority/dps-usage/none> .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_EmploymentInformationProvider_YWMCGu6i5HBxweh3xaUekn
+  a epo:EmploymentInformationProvider;
+  epo:contextualisedBy epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Lot_LOT-0001 .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_EnvironmentalProtectionInformationProvider_246rmGzZvwFBcxRNZTXjTW
+  a epo:EnvironmentalProtectionInformationProvider;
+  epo:contextualisedBy epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Lot_LOT-0001 .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_5wQytch458NVWvEDHFqRwG
+  a epo:ExclusionGround;
+  dct:type "sanction" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_65B5ieqPopJApHPkYdhiAi
+  a epo:ExclusionGround;
+  dct:type "envir-law" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_BpL5yyeW3cMvEHbh6b4ScW
+  a epo:ExclusionGround;
+  dct:type "susp-act" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_LGVLo87ArD4HobVYoAGR5B
+  a epo:ExclusionGround;
+  dct:type "corruption" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_SGPTD68m84zt8Q9GNUnuFA
+  a epo:ExclusionGround;
+  dct:type "socsec-pay" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_T2q43pjq3JHuJtvxjmL6vf
+  a epo:ExclusionGround;
+  dct:type "bankr-nat" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_TTD43oQXgzgzeUvR3mf5zL
+  a epo:ExclusionGround;
+  dct:type "liq-admin" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_TTUy3kEUkWQjLYAVZE4jQa
+  a epo:ExclusionGround;
+  dct:type "labour-law" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_TkXrCvoxtk4GKQN38wAzMt
+  a epo:ExclusionGround;
+  dct:type "crime-org" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_TyUFN5TJLPnpNx9yoZf5Ti
+  a epo:ExclusionGround;
+  dct:type "fraud" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_YGYLhb2LyjG3THWmzopx5a
+  a epo:ExclusionGround;
+  dct:type "cred-arran" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_YLEyVjkvPySnYWBMN2kXn3
+  a epo:ExclusionGround;
+  dct:type "human-traffic" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_ZY3SnQBRXooC6NjbRDS9an
+  a epo:ExclusionGround;
+  dct:description """Przesłanki te dotyczą:
+1) wykluczenia wykonawcy w przypadku
+skazania za przestępstwo, o którym mowa w
+art. 47 ustawy o sporcie;
+2) wykluczenia wykonawcy w przypadku
+skazania za przestępstwa przeciwko
+wiarygodności dokumentów i przestępstwa
+przeciwko obrotowi gospodarczemu (art.
+108 ust. 1 pkt 1 lit. g) i pkt 2 ustawy Pzp), tj.
+za przestępstwa, o których mowa w art.
+270- 277d Kodeksu karnego [przestępstwa
+wiarygodności dokumentów] i przestępstwa,
+o których mowa w art. 296-307 Kodeksu
+karnego [przestępstwa przeciwko obrotowi
+gospodarczemu] , z wyjątkiem przestępstwa
+udaremniania lub utrudniania stwierdzenia
+przestępnego pochodzenia pieniędzy lub
+ukrywania ich pochodzenia, o którym mowa
+w art. 299 Kodeksu karnego.
+3) wykluczenia wykonawcy, wobec którego
+prawomocnie orzeczono zakaz ubiegania się
+o zamówieni a publiczne (art. 108 ust. 1 pkt
+4 ustawy Pzp); zakaz orzekany jest wobec
+podmiotu zbiorowego w oparciu o przepisy
+ustawy z dnia 28 października 2002 r. o
+odpowiedzialności podmiotów zbiorowych
+za czyny zabronione pod groźbą kary (Dz. U.
+z 2016 r. poz. 1541 oraz z 2017 r. poz. 724 i
+933 ), a wobec osoby fizycznej w oparciu o
+przepisy Kodeks u postępowania karnego .
+4) art. 108 ust. 2 ustawy Pzp,
+5) postawy wykluczenia wskazanych art. 7 ust.
+1 ustawy z dnia 13 kwietnia 2022 – o
+szczególnych rozwiązaniach w zakresie
+przeciwdziałania wspieraniu agresji na
+Ukrainę oraz służących ochronie
+bezpieczeństwa narodowego (Dz.U. poz.
+835)
+Dotyczy art.108 ust. 1 pkt 1 ustawy Pzp
+Dotyczy art.108 ust. 1 pkt 4 ustawy Pzp
+Dotyczy art. 108 ust. 2 ustawy Pzp"""@pl;
+  dct:type "nati-ground" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_ZrLAZ2zYt9ZSkyNyucoZjB
+  a epo:ExclusionGround;
+  dct:type "bankruptcy" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_bm6uSwy7hkcan8rVF5YHgR
+  a epo:ExclusionGround;
+  dct:type "prep-confl" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_ckYPsVin4htwF867bz6Ghf
+  a epo:ExclusionGround;
+  dct:type "terr-offence" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_eE9UGyZshPCAPa9HY5m3SS
+  a epo:ExclusionGround;
+  dct:type "insolvency" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_gsqwnkSxN5gKbqYWRFqTmc
+  a epo:ExclusionGround;
+  dct:type "labour-law" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_hqawu5kJC8i3dxZ99zexxB
+  a epo:ExclusionGround;
+  dct:type "socsec-law" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_i8mnWUe2qMrSYiJiu25QXu
+  a epo:ExclusionGround;
+  dct:type "tax-pay" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_jNvYhB6XsMWdsYzwKuupXY
+  a epo:ExclusionGround;
+  dct:type "distorsion" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_m4kTXGLiFNt2eMFdMeyrJs
+  a epo:ExclusionGround;
+  dct:type "finan-laund" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_mFrDghNEkNrmi5Ra6xpuYu
+  a epo:ExclusionGround;
+  dct:type "misrepresent" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_FrameworkAgreementTechnicalUsage_bq3rWUnhLReULR3Pe8QxDZ
+  a epo:FrameworkAgreementTerm;
+  epo:hasFrameworkAgreementType <http://publications.europa.eu/resource/authority/framework-agreement/none> .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Identifier_ORG-0001 a adms:Identifier;
+  skos:notation "ORG-0001" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Identifier_ORG-0002 a adms:Identifier;
+  skos:notation "ORG-0002" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Identifier_TPO-0001 a epo:Identifier;
+  skos:notation "TPO-0001" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_LotIdentifier_246rmGzZvwFBcxRNZTXjTW a
+    adms:Identifier;
+  epo:hasScheme "Lot";
+  skos:notation "LOT-0001" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Lot_LOT-0001 a epo:Lot;
+  epo:foreseesContractSpecificTerm epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ContractTerm_246rmGzZvwFBcxRNZTXjTW;
+  epo:hasRecurrenceDescription "w 2024 roku "@pl;
+  epo:isCoveredByGPA false;
+  epo:isRecurrent true;
+  epo:isSubjectToLotSpecificTerm epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_AccessTerm_naE3mfoLZyth2mWXywVhn6,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_FrameworkAgreementTechnicalUsage_bq3rWUnhLReULR3Pe8QxDZ,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_NonDisclosureAgreementTerm_YWMCGu6i5HBxweh3xaUekn,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_OpeningTerm_SJDjVPGsRNCb7nBWqTThP5, epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_SecurityClearanceTerm_246rmGzZvwFBcxRNZTXjTW,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_SecurityClearanceTerm_YWMCGu6i5HBxweh3xaUekn,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_SubmissionTerm_246rmGzZvwFBcxRNZTXjTW,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_SubmissionTerm_YWMCGu6i5HBxweh3xaUekn;
+  epo:isUsingEUFunds false;
+  epo:specifiesProcurementCriterion epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_AwardCriterion_kJu9SkmLfQYWH3GxqnddRV,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_5wQytch458NVWvEDHFqRwG,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_65B5ieqPopJApHPkYdhiAi,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_BpL5yyeW3cMvEHbh6b4ScW,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_LGVLo87ArD4HobVYoAGR5B,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_SGPTD68m84zt8Q9GNUnuFA,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_T2q43pjq3JHuJtvxjmL6vf,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_TTD43oQXgzgzeUvR3mf5zL,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_TTUy3kEUkWQjLYAVZE4jQa,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_TkXrCvoxtk4GKQN38wAzMt,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_TyUFN5TJLPnpNx9yoZf5Ti,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_YGYLhb2LyjG3THWmzopx5a,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_YLEyVjkvPySnYWBMN2kXn3,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_ZY3SnQBRXooC6NjbRDS9an,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_ZrLAZ2zYt9ZSkyNyucoZjB,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_bm6uSwy7hkcan8rVF5YHgR,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_ckYPsVin4htwF867bz6Ghf,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_eE9UGyZshPCAPa9HY5m3SS,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_gsqwnkSxN5gKbqYWRFqTmc,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_hqawu5kJC8i3dxZ99zexxB,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_i8mnWUe2qMrSYiJiu25QXu,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_jNvYhB6XsMWdsYzwKuupXY,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_m4kTXGLiFNt2eMFdMeyrJs,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ExclusionGround_mFrDghNEkNrmi5Ra6xpuYu,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ParticipationCondition_Wbukq4uv37BmR2FRZxpHbN,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcurementCriterion_246rmGzZvwFBcxRNZTXjTW,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_SelectionTerm_F2EkrTHhwGTB3ZRA69q4nd;
+  epo:usesTechnique epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_AuctionTerms_Y7WNjU2HSM4HNny2xZsabR,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_DynamicPurchaseSystemTechnicalUsage_bq3rWUnhLReULR3Pe8QxDZ;
+  adms:identifier epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_LotIdentifier_246rmGzZvwFBcxRNZTXjTW .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_NonDisclosureAgreementTerm_YWMCGu6i5HBxweh3xaUekn
+  a epo:NonDisclosureAgreementTerm;
+  epo:isNonDisclosureAgreementRequired false .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Notice a epo:CompetitionNotice, epo:Notice,
+    epo:Notice16;
+  epo:announcesLot epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Lot_LOT-0001;
+  epo:announcesRole epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Buyer_MT3gdCnJ9BA7aEqaGqKxAh,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_EmploymentInformationProvider_YWMCGu6i5HBxweh3xaUekn,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_EnvironmentalProtectionInformationProvider_246rmGzZvwFBcxRNZTXjTW,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_TaxInformationProvider_28mpSsyXhEY3Eg89ym5obS;
+  epo:hasESenderDispatchDate "2023-11-23T14:38:03Z"^^xsd:dateTime;
+  epo:hasFormType <http://publications.europa.eu/resource/authority/form-type/competition>;
+  epo:hasNoticePublicationNumber "00715794-2023";
+  epo:hasNoticeType <http://publications.europa.eu/resource/authority/notice-type/cn-standard>;
+  epo:hasOJSIssueNumber "227/2023";
+  epo:hasOfficialLanguage <http://publications.europa.eu/resource/authority/language/POL>;
+  epo:hasPublicationDate "2023-11-24Z"^^xsd:date;
+  epo:hasVersion "01";
+  epo:refersToProcedure epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Procedure_MnX8qyREnFMNLeS5MJAX9K;
+  adms:identifier epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_NoticeIdentifier_cMBzh6pL4JRkiaCd4DWjT2 .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_NoticeIdentifier_cMBzh6pL4JRkiaCd4DWjT2
+  a adms:Identifier;
+  epo:hasScheme "notice-id";
+  skos:notation "540022e6-fd69-40b6-95ce-3b4c6cfc867d" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_OpenTenderEventPlace_JFbBX6QvdBoDFe7oMMpuNc
+  a locn:Address;
+  locn:fullAddress "https://platformazakupowa.pl/pn/zuo_siedlce"@pl .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_OpeningTerm_SJDjVPGsRNCb7nBWqTThP5 a epo:OpeningTerm;
+  epo:definesOpeningPlace epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_OpenTenderEventPlace_JFbBX6QvdBoDFe7oMMpuNc;
+  epo:hasOpeningDateTime "2023-12-12T10:15:00+01:00"^^xsd:dateTime;
+  epo:hasOpeningDescription "Ofertę wraz z wymaganymi dokumentami należy umieścić na  platformazakupowa.pl pod adresem : https://platformazakupowa.pl/pn/zuo_siedlce  w myśl Ustawy na stronie internetowej prowadzonego postępowania."@pl .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_OrganisationIdentifier_ZowVe8fwBUBP7Pd4ikinCk
+  a adms:Identifier;
+  skos:notation "5262239325" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_OrganisationIdentifier_ezhXiD7oQurCdTdR4RSM9g
+  a adms:Identifier;
+  skos:notation "8212090331" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Organization_ORG-0001 a org:Organization;
+  epo:hasBuyerLegalType <http://publications.europa.eu/resource/authority/buyer-legal-type/body-pl-la>;
+  epo:hasLegalIdentifier epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_OrganisationIdentifier_ezhXiD7oQurCdTdR4RSM9g;
+  epo:hasLegalName "Zakład Utylizacji Odpadów spółka z ograniczoną odpowiedzialnością"@pl;
+  epo:hasMainActivity <http://publications.europa.eu/resource/authority/main-activity/env-pro>;
+  epo:hasPrimaryContactPoint epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_CompanyContactPoint_7iFD8NVFhULkdXRNPqKyHs;
+  cccev:registeredAddress epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_CompanyAddress_SyrXybB9qnydTsiCYvqfwn;
+  adms:identifier epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Identifier_ORG-0001 .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Organization_ORG-0002 a org:Organization;
+  epo:hasLegalIdentifier epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_OrganisationIdentifier_ZowVe8fwBUBP7Pd4ikinCk;
+  epo:hasLegalName "Krajowa Izba Odwoławcza"@pl;
+  epo:hasPrimaryContactPoint epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_CompanyContactPoint_CCKfjNm3UAMuYf3dDso6C2;
+  cccev:registeredAddress epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_CompanyAddress_kp4YHhT2Gw9BnTPKnwxcdW;
+  adms:identifier epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Identifier_ORG-0002 .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Organization_TPO-0001 a org:Organization;
+  owl:sameAs epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Organization_ORG-0001 .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ParticipationCondition_Wbukq4uv37BmR2FRZxpHbN
+  a epo:ParticipationCondition;
+  epo:hasReservedProcurement <http://publications.europa.eu/resource/authority/reserved-procurement/none> .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcedureIdentifier_MnX8qyREnFMNLeS5MJAX9K
+  a adms:Identifier;
+  skos:notation "a9b81008-44ed-49ba-b6fa-c8734bfe0fe9" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcedureIdentifier_eySzap22e3jkZr3f7VXYNj
+  a adms:Identifier;
+  skos:notation "Z/18/2023" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcedurePlacePerformance_btiykpkF9yYEWFnDmvRf6a
+  a locn:Address;
+  epo:hasCountryCode <http://publications.europa.eu/resource/authority/country/POL>;
+  epo:hasNutsCode <http://data.europa.eu/nuts/code/PL925>;
+  locn:fullAddress "ul. Błonie 3, Siedlce, 08-110, POL";
+  locn:postCode "08-110";
+  locn:postName "Siedlce" .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcedurePurpose_eySzap22e3jkZr3f7VXYNj
+  a epo:Purpose;
+  epo:hasAdditionalClassification <http://data.europa.eu/cpv/cpv/90511000>, <http://data.europa.eu/cpv/cpv/90512000>;
+  epo:hasMainClassification <http://data.europa.eu/cpv/cpv/90500000> .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcedureTerm_MnX8qyREnFMNLeS5MJAX9K a
+    epo:ProcedureTerm;
+  epo:isSubmissionForAllLotsRequired true .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Procedure_MnX8qyREnFMNLeS5MJAX9K a epo:Procedure;
+  epo:foreseesContractSpecificTerm epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcurementProjectContractTerm_QmFgWdHMQiunuxrdtntYZx,
+    epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcurementProjectContractTerm_eySzap22e3jkZr3f7VXYNj;
+  epo:hasAcceleratedProcedureJustification "Pilna potrzeba udzielenia zamówienia publicznego i skrócenie terminu składania ofert wynika z konieczności jak najszybszego odbioru odpadów ex19 12 12. Podstawa art. 138 ust. 2 pkt 2 ustawy z dnia 11 września 2019 r. - Prawo Zamówień Publicznych"@pl;
+  epo:hasInternalIdentifier epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcedureIdentifier_eySzap22e3jkZr3f7VXYNj;
+  epo:hasLegalBasis <http://publications.europa.eu/resource/authority/legal-basis/32014L0024>;
+  epo:hasMainFeature "nie dotyczy"@pl;
+  epo:hasProcedureType <http://publications.europa.eu/resource/authority/procurement-procedure-type/open>;
+  epo:hasPurpose epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcedurePurpose_eySzap22e3jkZr3f7VXYNj;
+  epo:isAccelerated true;
+  epo:isSubjectToProcedureSpecificTerm epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcedureTerm_MnX8qyREnFMNLeS5MJAX9K;
+  dct:description "Przedmiotem zamówienia jest usługa odbioru, transportu i zagospodarowania odpadów kalorycznych pochodzących z mechanicznej obróbki odpadów wytwarzanych w Zakładzie w Woli Suchożebrskiej, ul. Sokołowska 2, tj: odpadów o kodzie ex 19 12 12 - inne odpady (w tym zmieszane substancje i przedmioty) pochodzących z mechanicznej obróbki odpadów inne niż wymienione w 19 12 11 komponent do produkcji paliwa alternatywnego (RDF) poprzez ich odzysk w procesie wymienionym w załączniku nr 1 (w tym w procesie R12) do ustawy o odpadach lub recykling w ilości 7 000,00 Mg."@pl;
+  dct:title "Usługa odbioru, transportu i zagospodarowania odpadów - komponentów do produkcji paliwa alternatywnego RDF pochodzących z Zakładu Utylizacji Odpadów sp. z o.o. w Woli Suchożebrskiej "@pl;
+  adms:identifier epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcedureIdentifier_MnX8qyREnFMNLeS5MJAX9K .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcurementCriterion_246rmGzZvwFBcxRNZTXjTW
+  a epo:ProcurementCriterion .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcurementDocument_H37RTFL7PcotjVpzPrAkWu
+  a epo:ProcurementDocument;
+  epo:hasOfficialLanguage <http://publications.europa.eu/resource/authority/language/POL> .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcurementProcessInformation_Bh5qwhngs3Hc9wnu7VDUTo
+  a epo:ProcurementProcessInformation;
+  epo:concernsProcedure epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Procedure_MnX8qyREnFMNLeS5MJAX9K;
+  epo:isToBeRelaunched false .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcurementProcessInformation_Mr323VGZHTwXWe84RBZp2c
+  a epo:ProcurementProcessInformation;
+  epo:concernsLot epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Lot_LOT-0001;
+  epo:isToBeRelaunched false .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcurementProjectContractTerm_QmFgWdHMQiunuxrdtntYZx
+  a epo:ContractTerm;
+  epo:definesSpecificPlaceOfPerformance epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ContractLocation_btiykpkF9yYEWFnDmvRf6a;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services>;
+  epo:hasPlaceOfPerformanceAdditionalInformation """1. Warunki udziału w postępowaniu zostały określone w swz w rozdziale VI. 
+2. Wymagane oświadczenia lub dokumenty, w tym wykaz oświadczeń lub dokumentów potwierdzających spełnienie warunków udziału w postępowaniu i wykazanie podstaw braku wykluczenia określa rozdział VII SWZ . 
+3. Wykonawcy mogą wspólnie ubiegać się o udzielenie zamówienia. Szczegółowy opis zawiera rozdział IX SWZ.
+4. Postępowanie prowadzone jest w języku polskim za pośrednictwem platformazakupowa.pl pod adresem: https://platformazakupowa.pl/pn/zuo_siedlce. Szczegółowy opis zawiera rozdział X SWZ.  
+5. Zamawiający wymaga wniesienia wadium w wysokości 20 000,00 zł. Szczegółowy opis zawiera rozdział XI swz.  
+6. Na ofertę składają się wypełnione i podpisane dokumenty:
+1)formularz oferty sporządzony według wzoru stanowiącego załącznik nr 1 do SWZ – powinien być przekazany wyłącznie w postaci elektronicznej opatrzonej kwalifikowanym podpisem elektronicznym;
+2)oświadczenie składane na podstawie art. 125 ust. 1 Pzp o niepodleganiu wykluczeniu oraz spełnianiu warunków udziału w postępowaniu sporządzone na formularzu jednolitego europejskiego dokumentu zamówienia, sporządzonym zgodnie ze wzorem standardowego formularza określonego w rozporządzeniu wykonawczym Komisji (UE) 2016/7 z dnia 5 stycznia 2016 r. ustanawiającym standardowy formularz jednolitego europejskiego dokumentu zamówienia,  według wzoru załącznik nr 2 do SWZ - w postaci elektronicznej opatrzonej kwalifikowanym podpisem elektronicznym.
+Informacje zawarte w oświadczeniu będą stanowić wstępne potwierdzenie, że wykonawca nie podlega wykluczeniu oraz spełnia warunki udziału w postępowaniu:
+3)oświadczenie wykonawcy dot. wykluczenia w związku z Specustawą -załącznik nr 2a - w postaci elektronicznej opatrzonej kwalifikowanym podpisem elektronicznym,
+4)pełnomocnictwo lub inny dokument potwierdzający umocowanie do reprezentowania Wykonawcy – jeśli umocowanie nie wynika z dokumentów rejestrowych,
+5)jeżeli dotyczy - oświadczenie podmiotu trzeciego dot. wykluczenia w związku z Specustawą – załącznik nr 2b - w postaci elektronicznej opatrzonej kwalifikowanym podpisem elektronicznym
+6)jeżeli dotyczy - pełnomocnictwo lub inny dokument potwierdzający umocowanie do reprezentowania wykonawców wspólnie ubiegających się o udzielenie zamówienia publicznego,
+7)jeżeli dotyczy - oświadczenie, z którego będzie wynikało, które usługi wykonają poszczególni Wykonawcy składający ofertę wspólnie, podpisane kwalifikowanym podpisem elektronicznym, pełnomocnika, o którym mowa w ppkt e;
+8)jeżeli dotyczy - zobowiązanie podmiotu udostępniającego zasoby do oddania mu do dyspozycji niezbędnych zasobów na potrzeby realizacji danego zamówienia lub inny podmiotowy środek dowodowy potwierdzający, że Wykonawca, realizując zamówienie, będzie dysponował niezbędnymi zasobami tych podmiotów - podpisane  kwalifikowanym podpisem elektronicznym podmiotu udostępniającego zasoby,
+9)wadium – jeżeli zostało wniesionej w innej formie niż pieniądz.
+Sposób przygotowania ofert został określony w rozdziale XIII SWZ. 
+7. Opis sposobu obliczenia określony został w rozdziale XV SWZ. 
+8. Opis kryteriów którymi Zamawiający będzie się kierował przy wyborze oferty, wraz podaniem znaczenia tych kryteriów i sposobu oceny zawiera rozdział XVI SWZ.
+9. Zamawiający wymaga wniesienia zabezpieczenia należytego wykonania umowy w wysokości 1,5% ceny całkowitej brutto podanej w ofercie. Szczegółowy opis zawiera rozdział XVIII swz.
+10. Istotne postanowienia umowy zawiera załącznik nr 3 do swz - projekt umowy. """@pl .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_ProcurementProjectContractTerm_eySzap22e3jkZr3f7VXYNj
+  a epo:ContractTerm;
+  epo:hasContractNatureType <http://publications.europa.eu/resource/authority/contract-nature/services> .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_SecurityClearanceTerm_246rmGzZvwFBcxRNZTXjTW
+  a epo:SecurityClearanceTerm .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_SecurityClearanceTerm_YWMCGu6i5HBxweh3xaUekn
+  a epo:SecurityClearanceTerm;
+  epo:isSecurityClearanceRequired false .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_SelectionTerm_F2EkrTHhwGTB3ZRA69q4nd a
+    epo:SelectionCriterion;
+  epo:hasSelectionCriteriaUsage "used";
+  epo:hasSelectionCriterionType "sui-act";
+  dct:description """- Zamawiający wymaga aby wykonawca posiadał:
+a)	aktualne zezwolenie na przetwarzanie odpadów o kodach 19 12 12 lub ex 19 12 12 poprzez ich odzysk w procesie wymienionym w załączniku nr 1 (w tym w procesie R12) do ustawy o odpadach lub recykling, w ilości nie mniejszej niż określona w przedmiocie zamówienia,
+b)	aktualny wpis do rejestru podmiotów wprowadzających produkty, produkty w opakowaniach i gospodarujących odpadami prowadzony przez właściwego marszałka województwa na podstawie ustawy z dnia 14 grudnia 2012 r. o odpadach (Dz. U. z 2023 r. poz. 1587) w zakresie transportu odpadów o kodach 19 12 12 lub ex 19 12 12  lub inny dokument uprawniający do transportu odpadów."""@pl;
+  skos:prefLabel """a) zezwolenie
+b) wpis do BDO"""@pl .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_SpecificDuration_F7UWe8nDJG7d3PMXR3mkVa
+  a epo:SpecificDuration;
+  time:numericDuration "90";
+  time:unitType time:unitDay .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_SubmissionTerm_246rmGzZvwFBcxRNZTXjTW
+  a epo:SubmissionTerm;
+  epo:hasECataloguePermission <http://publications.europa.eu/resource/authority/permission/not-allowed>;
+  epo:hasESubmissionPermission <http://publications.europa.eu/resource/authority/permission/required>;
+  epo:hasLanguage "POL";
+  epo:hasReceiptTenderDeadline "2023-12-12T10:00:00+01:00"^^xsd:dateTime;
+  epo:hasTenderValidityDuration epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_SpecificDuration_F7UWe8nDJG7d3PMXR3mkVa;
+  epo:hasVariantPermission <http://publications.europa.eu/resource/authority/permission/not-allowed> .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_SubmissionTerm_YWMCGu6i5HBxweh3xaUekn
+  a epo:SubmissionTerm;
+  epo:hasGuaranteeDescription """1.	Zamawiający wymaga wniesienia zabezpieczenia należytego wykonania umowy na zabezpieczenie roszczeń z tytułu niewykonania umowy lub nienależytego wykonania umowy. 
+2.	Od Wykonawcy, którego oferta zostanie uznana jako najkorzystniejsza wymagane będzie wniesienie zabezpieczenia należytego wykonania umowy w wysokości 1,5 % ceny całkowitej brutto podanej w ofercie.
+Szczegółowe zapisy zawiera dział XVIII. Wymagania dotyczące zabezpieczenia należytego wykonania umowy swz.
+"""@pl;
+  epo:hasSubmissionURL "https://platformazakupowa.pl/pn/zuo_siedlce"^^xsd:anyURI;
+  epo:isAdvancedElectronicSignatureRequired true;
+  epo:isGuaranteeRequired true .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_TaxInformationProvider_28mpSsyXhEY3Eg89ym5obS
+  a epo:TaxInformationProvider;
+  epo:contextualisedBy epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Lot_LOT-0001;
+  epo:playedBy epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Organization_ORG-0001 .
+
+epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_TouchPoint_TPO-0001 a cccev:ContactPoint;
+  epo:hasInternetAddress "https://zuo.siedlce.pl/"^^xsd:anyURI;
+  dct:description "Zakład Utylizacji Odpadów spółka z ograniczoną odpowiedzialnością"@pl;
+  adms:identifier epd:id_540022e6-fd69-40b6-95ce-3b4c6cfc867d_Identifier_TPO-0001 .
